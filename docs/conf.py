@@ -75,7 +75,7 @@ latex_use_xindy = False
 latex_elements = {
     'papersize': 'a4paper',
     'pointsize': '11pt',
-    'preamble': '\\usepackage{kotex}\n',
+    'preamble': '\\usepackage[UTF8]{kotex}\n',
     'extraclassoptions': 'openany,oneside',
 }
 
