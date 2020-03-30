@@ -73,7 +73,10 @@ html_static_path = ['_static']
 latex_engine = 'xelatex'
 latex_use_xindy = False
 latex_elements = {
-    'preamble': '\\usepackage[UTF8]{kotex}\n',
+    'papersize': 'a4paper',
+    'pointsize': '11pt',
+    'preamble': '\\usepackage{kotex}\n',
+    'extraclassoptions': 'openany,oneside',
 }
 
 
