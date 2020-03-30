@@ -23,12 +23,15 @@ poetry install
 
 ## Build documents
 
-To build html documentation, run following command in the `docs` directory.
-Built documents will be located under `docs/_build`.
+To build html documentation, run following command in the `docs` directory. All
+commands should be executed under poetry's virtual environment. For example, you
+can run `poetry shell` to enter a command shell with virtualenv.
 
 ```console
 make html
 ```
+
+Built documents will be located under `docs/_build`.
 
 
 ## Translation
