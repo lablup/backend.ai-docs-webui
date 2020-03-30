@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Console
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Console User Guide 19.09\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-26 01:24+0900\n"
+"PO-Revision-Date: 2020-03-27 15:04+0900\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
+"Language-Team: Lablup\n"
+"Language: ko\n"
+"X-Generator: Poedit 2.3\n"
+
+#: ../../vfolder/vfolder.rst:3
+msgid "Handing Folders"
+msgstr "폴더 다루기"
+
+#: ../../vfolder/vfolder.rst:5
+msgid ""
+"Backend.AI supports dedicated storage to preserve user's files. Since "
+"the files and directories of a compute session are deleted upon session "
+"termination, it is recommended to save them in a storage folder. List of "
+"storage folders can be found by selecting the Storage on the left "
+"sidebar."
+msgstr ""
+"Backend.AI는 사용자의 파일을 보존할 수 있도록 별도의 저장소를 지원합니"
+"다. 연산 세션의 기본 폴더는 세션이 삭제되면 같이 삭제되므로, 보존해야 하"
+"는 파일이 있을 경우 Storage 폴더에 저장하는 것이 좋습니다. Storage 폴더"
+"는 좌측 메뉴의 Storage 탭을 선택하면 조회할 수 있습니다."
+
+#: ../../vfolder/vfolder.rst:13
+msgid ""
+"There are two types of storage folders. User type folders can be created "
+"by normal users, and you can check that ther is one user icon in the "
+"Type column. On the other hand, Group folders can be recognized by an "
+"icon with multiple users in the column. Group folders are created by "
+"domain admins, and normal users can only see group folders which are "
+"created in a group where user belongs."
+msgstr ""
+"Storage 폴더에는 두 가지 형태가 있습니다. 사용자 형태(User)의 경우 일반 "
+"사용자가 자신의 폴더를 생성한 것으로, Type 컬럼에서 한 명의 사용자가 있"
+"는 것으로 확인할 수 있습니다. 그룹 폴더(Group)의 경우 Type 컬럼에 여러 명"
+"의 사용자가 있는 아이콘으로 알아볼 수 있으며, 도메인 관리자에 의해서만 그"
+"룹별로 생성되고 일반 사용자는 생성된 그룹폴더를 사용만 할 수 있습니다."
+
+#: ../../vfolder/vfolder.rst:22
+msgid "Create storage folder"
+msgstr "폴더 생성"
+
+#: ../../vfolder/vfolder.rst:24
+msgid ""
+"You can create a storage folder with the desired name by clicking the "
+"NEW FOLDER button. Enter the name of the folder to be created in Folder "
+"name, and select one of User / Group for Type. (Depending on the server "
+"settings, only one of User or Group may be selectable.) When creating a "
+"group folder, the Group field must be set. The group folder will be bind "
+"to the group specified in the Group field, and only users belonging to "
+"the group can mount and use the group folder. After setting the values "
+"as desired, you can create a folder by clicking the CREATE button."
+msgstr ""
+"NEW FOLDER 버튼을 눌러서 폴더를 원하는 이름으로 생성할 수 있습니다.  "
+"Folder name에 생성할 폴더의 이름을 입력하고, Type은 User/Group 중 하나를 "
+"선택합니다. (서버 설정에 따라 User, Group 중 하나만 선택 가능할 수 있습니"
+"다.) 그룹 폴더를 생성할 경우 Group 필드를 설정해 주어야 합니다. 그룹 폴더"
+"는 Group 필드에 지정된 그룹 전용이 되며, 해당 그룹에 속해있는 사용자만 "
+"그 그룹 폴더를 마운트해서 사용할 수 있습니다. 원하는 대로 값을 설정한 후 "
+"CREATE 버튼을 클릭하여 폴더를 생성할 수 있습니다."
+
+#: ../../vfolder/vfolder.rst:40
+msgid "Explore folder"
+msgstr "폴더 내용 조회하기"
+
+#: ../../vfolder/vfolder.rst:42
+msgid ""
+"You can click the folder icon in the Control column to bring up a file "
+"explorer where you can view the contents of that folder."
+msgstr ""
+"Control 열의 폴더 아이콘을 클릭하여 해당 폴더의 내용을 조회할 수 있는 파"
+"일 탐색기를 띄울 수 있습니다."
+
+#: ../../vfolder/vfolder.rst:48
+msgid ""
+"You can see that directories and files inside the folder will be listed, "
+"if exists. Click a directory name in the Name column to move to the "
+"directory. For regular files, you can click the download button and "
+"delete button in the Actions column to download it or delete it entirely "
+"from the directory. We do not yet support the ability to download or "
+"delete the whole directory, but we plan to support it soon. If you need "
+"those function now, you can mount this folder when creating a compute "
+"session, and then use a service like Terminal or Jupyter Notebook to do "
+"it."
+msgstr ""
+"내부에 폴더 및 파일이 존재하고 있는 것을 확인할 수 있습니다. Name 열에 있"
+"는 폴더 이름을 클릭하면 해당 폴더로 이동할 수 있습니다. 일반 파일의 경우 "
+"Actions 열의 다운로드 버튼과 삭제 버튼을 클릭하여 파일을 받거나 폴더 상에"
+"서 완전히 삭제할 수 있습니다. 아직 폴더를 통째로 다운로드 하거나 삭제하"
+"는 기능은 지원하지 않고 있으며, 조만간 지원 예정에 있습니다. 해당 기능이 "
+"지금 필요하다면 이 폴더를 연산 세션 생성 시 마운트 한 뒤 터미널이나 "
+"Jupyter Notebook 등과 같은 서비스를 활용해서 수행할 수 있습니다."
+
+#: ../../vfolder/vfolder.rst:60
+msgid ""
+"You can create a new directory on the current path with the NEW FOLDER "
+"button (in the file explorer), or upload a local file with the UPLOAD "
+"FILES button. All of these file operations can also be performed using "
+"the above-described method of mounting folders into a compute session."
+msgstr ""
+"NEW FOLDER 버튼으로 현재 경로 상에 새로운 폴더를 생성할 수 있으며, "
+"UPLOAD FILES 버튼으로 현재 경로에 로컬 파일을 업로드 할 수도 있습니다. 이"
+"런 파일 작업은 앞서 설명한 연산 세션 마운트 방식으로도 모두 수행 가능합니"
+"다."
+
+#: ../../vfolder/vfolder.rst:65
+msgid "To close file explorer, click the X button in the upper right."
+msgstr "파일 탐색기를 닫기 위해서는 우측 상단의 X 버튼을 누르면 됩니다."
+
+#: ../../vfolder/vfolder.rst:69
+msgid "Delete folder"
+msgstr "폴더 삭제하기"
+
+#: ../../vfolder/vfolder.rst:71
+msgid ""
+"If you have permission to delete the storage folder, you can delete it "
+"by clicking the trash can icon in the Control column. When you click the "
+"Delete button, a confirm dialog appears. To prevent accidental deletion, "
+"you have to enter the name of the folder to be deleted, explicitly."
+msgstr ""
+"Storage 폴더의 삭제 권한을 가지고 있는 경우, Control 열의 휴지통 아이콘"
+"을 눌러서 폴더 삭제할 수 있습니다. 삭제 버튼을 클릭하면 확인 다이얼로그"
+"가 나오는데, 실수로 인한 삭제를 방지하기 위해 삭제할 폴더의 이름을 입력"
+"한 후에 삭제 가능하게 만들어져 있습니다."
+
+#: ../../vfolder/vfolder.rst:81
+msgid ""
+"The folders created here can be mounted when creating a compute session. "
+"Folders are mounted under the user's default working directory, ``/home/"
+"work/``, and the files stored in this directory will not be deleted when "
+"the compute session is terminated. (However, if you delete the folder "
+"itself, it will be gone)."
+msgstr ""
+"여기서 생성한 폴더는 연산 세션을 만들 때 마운트 할 수 있습니다. 폴더는 사"
+"용자의 기본 작업 폴더인 ``/home/work/`` 폴더 아래에 마운트 되며, 이 폴더"
+"에 저장한 파일은 연산 세션이 종료되어도 사라지지 않습니다(단, 폴더 자체"
+"를 삭제하면 사라지게 됩니다)."

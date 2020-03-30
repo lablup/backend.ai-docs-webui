@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Console
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Console User Guide 19.09\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-26 01:24+0900\n"
+"PO-Revision-Date: 2020-03-27 15:01+0900\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
+"Language-Team: Lablup\n"
+"Language: ko\n"
+"X-Generator: Poedit 2.3\n"
+
+#: ../../session_use/session_use.rst:3
+msgid "Using Compute Session"
+msgstr "연산 세션 실행하기"
+
+#: ../../session_use/session_use.rst:5
+msgid ""
+"In addition to see the list of compute sessions, Sessions tab lets you "
+"start new sessions or use and manage already running sessions."
+msgstr ""
+"Sessions 탭에서는 연산 세션을 조회하는 것뿐만 아니라 새로운 세션을 시작하"
+"거나 실행 중인 세션을 사용 및 관리할 수도 있습니다."
+
+#: ../../session_use/session_use.rst:10
+msgid "Start a new session"
+msgstr "새로운 세션 시작하기"
+
+#: ../../session_use/session_use.rst:12
+msgid ""
+"Click START button to start a new compute session. The following setup "
+"dialog will appear. Specify the language environment (Environments, "
+"Version), the amount of resources (CPU, RAM, GPU, etc.) you want to use, "
+"and then press the LAUNCH button. Wait for a while for the compute "
+"session to be started. If you have created a folder in the Storage menu, "
+"you can also choose them from the Folders to mount menu.  Folders/"
+"Storages are discussed in a separate section."
+msgstr ""
+"새로운 연산 세션을 시작하려면 START 버튼을 누르세요. 다음과 같은 설정 창"
+"이 뜨는데, 사용하려는 언어 환경(Environments, Version)과 자원 설정(원하"
+"는 CPU, RAM, GPU 등 할당량)을 지정하고 LAUNCH 버튼을 누른 후 잠시 기다리"
+"면 연산 세션이 시작됩니다. 미리 만들어둔 저장소(Storage)가 있다면 "
+"Folders to mount 메뉴에서 선택할 수도 있습니다. 저장소에 관해서는 별도 섹"
+"션에서 설명합니다."
+
+#: ../../session_use/session_use.rst:24
+msgid "Notice that a new compute session is created in the Running tab."
+msgstr "Running 탭에서 새로운 연산 세션이 생성되는 것을 확인합시다."
+
+#: ../../session_use/session_use.rst:31
+msgid "Use and Manage Running Session"
+msgstr "이미 실행 중인 세션을 사용하고 관리하기"
+
+#: ../../session_use/session_use.rst:33
+msgid ""
+"This time, let's take a look at how to use and manage a running compute "
+"session. If you see the Control column in the session list, there are "
+"several icons. When you click the first icon, several app services "
+"supported by the session will appear as shown in the following figure."
+msgstr ""
+"이번에는 이미 실행 중인 연산 세션을 사용하고 관리하는 법에 관해 살펴보겠"
+"습니다. 세션 리스트의 Control 열을 보면 몇 가지 아이콘이 있습니다. 플레"
+"이 아이콘을 누르면 다음 그림과 같이 해당 세션이 지원하는 몇 가지 앱 서비"
+"스가 뜨게 됩니다."
+
+#: ../../session_use/session_use.rst:43
+msgid "As a test, let's click on Jupyter Notebook."
+msgstr "시험 삼아 Jupyter Notebook을 눌러봅시다."
+
+#: ../../session_use/session_use.rst:48
+msgid ""
+"You will see a new window pop up and Jupyter Notebook is running. This "
+"Notebook was created inside the running compute session, and it's easy "
+"to use with just a click of a button without any setup. In addition, you "
+"can just use the language environment and libraries provided by the "
+"compute session as is, so there is no need to install a separate "
+"packages. For more information on how to use Jupyter Notebook, please "
+"refer to the official documentation."
+msgstr ""
+"새로운 창이 뜨면서 Jupyter Notebook이 실행되는 것을 확인할 수 있습니다. "
+"이 Notebook은 실행 중인 연산 세션 내부에서 생성된 것으로, 별다른 설정 없"
+"이 버튼 클릭만으로 손쉽게 사용할 수 있습니다. 또한, 연산 세션이 기본적으"
+"로 제공하는 언어 환경 및 라이브러리를 그대로 활용할 수 있어 별도의 패키"
+"지 설치 과정이 필요 없습니다. 자세한 Jupyter Notebook 사용법은 공식 문서 "
+"등을 참고하시기 바랍니다."
+
+#: ../../session_use/session_use.rst:55
+msgid ""
+"In the notebook's file explorer, the ``id_container file`` contains a "
+"private SSH key. If necessary, you can download it and use it for SSH / "
+"SFTP access to the container."
+msgstr ""
+"Notebook의 파일 탐색기에서 ``id_container`` 파일은 private SSH key를 담"
+"고 있습니다. 필요할 경우 다운로드 하여 컨테이너로의 SSH/SFTP 접속에 이용"
+"할 수 있습니다."
+
+#: ../../session_use/session_use.rst:59
+msgid ""
+"Click the NEW button on the upper right corner and select Notebook for "
+"Backend.AI, and ipynb window will pop up where you can enter the new "
+"code."
+msgstr ""
+"우측 상단의 NEW 버튼을 클릭한 후 Backend.AI 용 Notebook을 선택하면 새로"
+"운 코드를 입력할 수 있는 ipynb 창이 뜹니다."
+
+#: ../../session_use/session_use.rst:67
+msgid ""
+"In this window, you can enter and execute any code you want using the "
+"environment that session provides.  The code execution happens on one of "
+"the Backend.AI nodes where the compute session is actually created, and "
+"there is no need to configure a separate environment on the local "
+"machine."
+msgstr ""
+"이 창에서 세션 환경에 맞는 코드를 입력하고 실행해볼 수 있습니다. 코드는 "
+"Backend.AI 서버를 구성하는 노드 중 연산 세션이 실제로 생성된 노드에서 실"
+"행이 되며, 로컬 머신에는 별도 환경을 구성할 필요가 없습니다."
+
+#: ../../session_use/session_use.rst:75
+msgid ""
+"When you close the window, you can notice that the ``Untitled.ipynb`` "
+"file is created in the Notebook File Explorer. Note that the files "
+"created here are deleted when you destroy the session. The way to "
+"preserve those files even when the session is gone is described in the "
+"Storage/Folders section."
+msgstr ""
+"창을 닫으면 Notebook 파일 탐색기에 방금 작업한 ``Untitled.ipynb`` 파일이 "
+"생성되어 있는 것을 확인할 수 있습니다. 여기 생성된 파일은 세션을 삭제할 "
+"경우 같이 삭제되는 것에 주의 하십시오. 생성된 파일을 세션이 사라지더라도 "
+"보존하는 방법은 폴더 섹션에서 설명합니다."
+
+#: ../../session_use/session_use.rst:83
+msgid ""
+"Return to the Session list page. This time, let's launch the terminal. "
+"Click the terminal icon (the second button) to use the container's ttyd "
+"daemon. The terminal will also appear in a new window, and you can type "
+"commands, just like any usual terminal, which will be delivered to the "
+"compute session as shown in the following figure. If you are familiar "
+"with using command-line interface (CLI), you can easily interact with "
+"Linux commands."
+msgstr ""
+"다시 세션 리스트 페이지로 돌아옵니다. 이번에는 터미널을 띄워보도록 하겠습"
+"니다. 플레이 버튼 우측의 터미널 아이콘을 누르면 해당 컨테이너의 터미널을 "
+"사용할 수 있습니다. 터미널 역시 새 창에서 뜨게 되며, 다음 그림처럼 연산 "
+"세션 내부에 접속해서 커맨드 명령을 내릴 수 있습니다. 커맨드 사용에 익숙"
+"한 분이라면 손쉽게 여러 가지 리눅스 명령을 내릴 수가 있습니다."
+
+#: ../../session_use/session_use.rst:95
+msgid ""
+"If you create a file here, you can immediately see it in the Jupyter "
+"Notebook you opened earlier as well. Conversely, changes made to files "
+"in Jupyter Notebook can also be checked right from the terminal. This is "
+"because they are using the same files in the same compute session."
+msgstr ""
+"만약 여기서 파일을 만들면 앞서 띄운 Jupyter Notebook에서 즉시 그 파일을 "
+"확인할 수 있습니다. 반대로, Jupyter Notebook에서 편집한 파일의 변경 사항"
+"도 터미널에서 바로 확인할 수 있습니다. 같은 연산 세션을 사용하고 있기 때"
+"문입니다."
+
+#: ../../session_use/session_use.rst:100
+msgid ""
+"In addition, you can use web-based services such as TensorBoard, Jupyter "
+"Lab, etc., depending on the type of services provided by the compute "
+"session."
+msgstr ""
+"이 외에도 연산 세션이 제공하는 서비스의 종류에 따라 TensorBoard, Jupyter "
+"Lab 등과 같은 웹 기반 서비스를 이용할 수 있습니다."
+
+#: ../../session_use/session_use.rst:103
+msgid ""
+"To delete a specific session, tap the red trash icon. Since the data in "
+"the folder inside the compute session is deleted as soon as the compute "
+"session ends, it is recommended that you move the data to the mounted "
+"folder or upload it to the folder from the beginning if you want to keep "
+"it."
+msgstr ""
+"특정 세션을 삭제하기 위해서는 빨간색 휴지통 아이콘을 누르면 됩니다. 연산 "
+"세션 내부 폴더의 데이터는 연산 세션이 종료되는 순간 같이 삭제되므로, 계"
+"속 유지해야 하는 데이터라면 마운트 한 폴더에 옮기거나 처음부터 폴더에 업"
+"로드하는 것을 권합니다."

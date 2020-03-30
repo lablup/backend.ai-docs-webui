@@ -1,0 +1,84 @@
+===============
+Handing Folders
+===============
+
+Backend.AI supports dedicated storage to preserve user's files. Since the files
+and directories of a compute session are deleted upon session termination, it is
+recommended to save them in a storage folder. List of storage folders can be
+found by selecting the Storage on the left sidebar.
+
+.. image:: vfolder_list.png
+   :alt: Folder list in Storage page
+
+There are two types of storage folders. User type folders can be created by
+normal users, and you can check that ther is one user icon in the Type column.
+On the other hand, Group folders can be recognized by an icon with multiple
+users in the column. Group folders are created by domain admins, and normal
+users can only see group folders which are created in a group where user
+belongs.
+
+
+Create storage folder
+---------------------
+
+You can create a storage folder with the desired name by clicking the NEW FOLDER
+button. Enter the name of the folder to be created in Folder name, and select
+one of User / Group for Type. (Depending on the server settings, only one of
+User or Group may be selectable.) When creating a group folder, the Group field
+must be set. The group folder will be bind to the group specified in the Group
+field, and only users belonging to the group can mount and use the group folder.
+After setting the values as desired, you can create a folder by clicking the
+CREATE button.
+
+.. image:: vfolder_create_dialog.png
+   :width: 400
+   :align: center
+   :alt: Folder creation dialog
+
+
+Explore folder
+--------------
+
+You can click the folder icon in the Control column to bring up a file explorer
+where you can view the contents of that folder.
+
+.. image:: vfolder_item_with_controls.png
+   :alt: Controls in folder item
+
+You can see that directories and files inside the folder will be listed, if
+exists. Click a directory name in the Name column to move to the directory. For
+regular files, you can click the download button and delete button in the
+Actions column to download it or delete it entirely from the directory. We do
+not yet support the ability to download or delete the whole directory, but we
+plan to support it soon. If you need those function now, you can mount this
+folder when creating a compute session, and then use a service like Terminal or
+Jupyter Notebook to do it.
+
+.. image:: vfolder_explorer.png
+   :alt: File explorer of a storage folder
+
+You can create a new directory on the current path with the NEW FOLDER button
+(in the file explorer), or upload a local file with the UPLOAD FILES button. All
+of these file operations can also be performed using the above-described method
+of mounting folders into a compute session.
+
+To close file explorer, click the X button in the upper right.
+
+
+Delete folder
+-------------
+
+If you have permission to delete the storage folder, you can delete it by
+clicking the trash can icon in the Control column. When you click the Delete
+button, a confirm dialog appears. To prevent accidental deletion, you have to
+enter the name of the folder to be deleted, explicitly.
+
+.. image:: vfolder_delete_dialog.png
+   :width: 400
+   :align: center
+   :alt: Folder deletion dialog
+
+The folders created here can be mounted when creating a compute session. Folders
+are mounted under the user's default working directory, ``/home/work/``, and the
+files stored in this directory will not be deleted when the compute session
+is terminated. (However, if you delete the folder itself, it will be gone).

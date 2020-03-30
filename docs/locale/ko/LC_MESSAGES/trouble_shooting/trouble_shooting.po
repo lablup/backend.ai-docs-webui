@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Console
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Console User Guide 19.09\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-26 01:24+0900\n"
+"PO-Revision-Date: 2020-03-27 15:30+0900\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
+"Language-Team: Lablup\n"
+"Language: ko\n"
+"X-Generator: Poedit 2.3\n"
+
+#: ../../trouble_shooting/trouble_shooting.rst:3
+msgid "Trouble Shooting"
+msgstr "GUI 콘솔 사용시 문제 해결"
+
+#: ../../trouble_shooting/trouble_shooting.rst:5
+msgid ""
+"If you use the GUI Console for a long time, you may experience "
+"connection problems to Jupyter and/or terminal service, or compute "
+"session list not updating. Those problems often disappear when you "
+"refresh the Console page. You may refresh the Console by following "
+"methods."
+msgstr ""
+"GUI 콘솔을 오래 사용하다 보면 세션 리스트 갱신이나 Jupyter Notebook, 터미"
+"널 등의 앱에 연결 상태가 좋지 않은 문제가 발생할 수 있습니다. 이 때 콘솔 "
+"페이지를 갱신하면 문제가 사라지는 경우가 많습니다. 콘솔 페이지를 갱신하려"
+"면 다음과 같은 명령을 내립니다."
+
+#: ../../trouble_shooting/trouble_shooting.rst:10
+msgid ""
+"Web-based Console: Refresh the browser page (use the shortcut provided "
+"by browsers such as Ctrl-R). Since the browser's cache may cause "
+"troubles sometimes, it is recommended to refresh the page bypassing the "
+"cache (such as Shift-Ctrl-R, but the keys may different on each browser)."
+msgstr ""
+"웹 기반 콘솔: 브라우저 페이지를 갱신합니다(Ctrl-R 등 브라우저 별 제공하"
+"는 페이지 갱신 단축키 사용). 브라우저의 캐시가 쌓여 오동작 하는 경우도 있"
+"으므로 캐시를 사용하지 않고 페이지 갱신을 해보는 것도 좋습니다(Shift-"
+"Ctrl-R 등 브라우저 별 상이)."
+
+#: ../../trouble_shooting/trouble_shooting.rst:14
+msgid "Console App: Press Ctrl-R shortcut to refresh the app."
+msgstr ""
+"앱 기반 설치형 콘솔: Ctrl-R 단축키를 클릭하여 앱 페이지를 갱신할 수 있습"
+"니다."
+
+#: ../../trouble_shooting/trouble_shooting.rst:18
+msgid "SFTP disconnection"
+msgstr "SFTP 연결이 끊기는 경우"
+
+#: ../../trouble_shooting/trouble_shooting.rst:20
+msgid ""
+"When Console App launches SFTP connection, it uses a local proxy server "
+"which is embeded in the App. If you exit the Console App during the file "
+"transfer with SFTP protocol, the transfer will immediately fail because "
+"the connection established through the local proxy server is "
+"disconnected.  Therefore, even if you are not using a compute session, "
+"you should not quit the Console App while using SFTP. If you need to "
+"refresh the page, we recommend using the Ctrl-R shortcut."
+msgstr ""
+"콘솔 앱을 통한 SFTP 연결은 콘솔 앱이 내장하고 있는 로컬 proxy 서버를 사용"
+"합니다. SFTP 연결 후 파일 전송하는 과정에서 콘솔 앱을 종료하면 로컬 "
+"proxy 서버로 같이 종료되므로 파일 전송이 중간에 실패하게 됩니다. 따라서, "
+"세션을 사용하지 않는다고 해도 SFTP 사용 중에는 콘솔 앱을 종료하면 안 됩니"
+"다. 만약 페이지 갱신이 필요한 상황이면 Ctrl-R 단축키를 이용하는 것을 권합"
+"니다."
+
+#: ../../trouble_shooting/trouble_shooting.rst:28
+msgid ""
+"Also, if the Console App is closed and restarted, the SFTP service is "
+"not automatically initiated for the existing compute session. You must "
+"explicitly start the SSH/SFTP service in the desired container to "
+"establish the SFTP connection."
+msgstr ""
+"또한, 콘솔 앱을 종료한 후 다시 시작한 경우 기존에 존재하던 컨테이너에서 "
+"SFTP 서비스를 자동으로 시작하지 않습니다. 명시적으로 원하는 컨테이너에서 "
+"SSH / SFTP 서비스를 시작해줘야 SFTP 연결을 맺을 수 있습니다."
+
+#: ../../trouble_shooting/trouble_shooting.rst:35
+msgid "Inconsistency between allocated and actually using resources"
+msgstr "세션이 실제 사용중인 자원과 표시되는 자원이 불일치하는 경우"
+
+#: ../../trouble_shooting/trouble_shooting.rst:38
+#: ../../trouble_shooting/trouble_shooting.rst:50
+msgid "This feature is only available for superadmins."
+msgstr "이 기능은 super admin만 사용할 수 있습니다."
+
+#: ../../trouble_shooting/trouble_shooting.rst:40
+msgid ""
+"Occasionally, unstable network connection and container management "
+"issues by the docker daemon may cause incorrect display of allocated "
+"resources. If this problem occurs, you can go to the Maintenance page "
+"and click the RECALCULATE USAGE button to manually correct it."
+msgstr ""
+"간혹 네트워크 접속 및 도커 데몬 자체의 컨테이너 관리 문제로 세션이 실제"
+"로 사용 중인 자원과 콘솔 앱에서 표시되는 자원 점유량이 어긋나는 경우가 있"
+"을 수 있습니다. 만약 이런 문제가 발생한 경우 Maintenance 페이지로 이동하"
+"여 RECALCULATE USAGE 버튼을 클릭해서 수동 보정할 수 있습니다."
+
+#: ../../trouble_shooting/trouble_shooting.rst:47
+msgid "Image is not displayed after it is pushed to a docker registry"
+msgstr ""
+"도커 레지스트리에 이미지 등록 후 세션 생성 환경에 이미지가 보이지 않을 때"
+
+#: ../../trouble_shooting/trouble_shooting.rst:52
+msgid ""
+"If new image is pushed to one of Backend.AI docker registries, the image "
+"metadata must be updated in Backend.AI to be used in creating a compute "
+"session. Metadata update can be performed by clicking the RESCAN IMAGES "
+"button on the Maintenance page. This will update metadata for every "
+"docker registries, if there are multiple registries."
+msgstr ""
+"사설 도커 레지스트리에 이미지가 새로 등록된 경우 Backend.AI에서 레지스트"
+"리 별 이미지 메타 데이터를 업데이트 해야 세션 생성할 때 이용할 수 있습니"
+"다. 메타 데이터 업데이트는 Maintenance 페이지의 RESCAN IMAGES 버튼을 클릭"
+"하여 수행할 수 있습니다. 만약 연결된 도커 레지스트리가 여러 개일 경우, "
+"RESCAN IMAGES 버튼을 클릭하면 모든 레지스트리에서 메타 정보를 받아 옵니"
+"다."
+
+#: ../../trouble_shooting/trouble_shooting.rst:58
+msgid ""
+"If you want to update the metadata for a specific docker registry, you "
+"can go to the Registries tab in Environments page.  Just click the "
+"refresh button in the Controls column of the desired registry. Be "
+"careful not to delete the registry by clicking the trash icon."
+msgstr ""
+"특정한 도커 레지스트리의 메타 정보만 업데이트 하고자 할 경우 "
+"Environments 페이지의 Registries 탭에서 원하는 레지스트리의 정보만 갱신"
+"할 수 있습니다. 원하는 레지스트리의 Controls 열에서 리프레시 버튼을 클릭"
+"하면 됩니다. 휴지통 아이콘을 클릭하여 레지스트리를 삭제하지 않도록 주의해"
+"야 합니다."

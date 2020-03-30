@@ -1,0 +1,185 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Console
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Console User Guide 19.09\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-26 01:24+0900\n"
+"PO-Revision-Date: 2020-03-26 11:03+0900\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
+"Language-Team: Lablup\n"
+"Language: ko_KR\n"
+"X-Generator: Poedit 2.3\n"
+
+#: ../../summary/summary.rst:3
+msgid "Summary Page"
+msgstr "Summary 페이지"
+
+#: ../../summary/summary.rst:5
+msgid ""
+"The Summary page allows you to view resource and session usage "
+"information. There are also shortcut links to frequently used features."
+msgstr ""
+"Summary 페이지에서는 사용자의 자원 및 세션 사용 현황을 확인할 수 있으며, "
+"자주 사용되는 기능의 단축 링크가 있습니다."
+
+#: ../../summary/summary.rst:10
+msgid "Monitoring resource usage"
+msgstr "자원 사용 현황 모니터링"
+
+#: ../../summary/summary.rst:12
+msgid ""
+"In the Start menu, you can see the total amount of resources you can "
+"allocate and how much you are currently using. You can check the CPU, "
+"RAM, GPU occupancy status, the number of sessions currently running, "
+"etc. You can also click the + START button to create a session "
+"immediately (see the Sessions page for how to create a session)."
+msgstr ""
+"Start menu에서는 사용자가 할당할 수 있는 자원의 총량과 현재 사용하고 있"
+"는 양을 확인할 수 있습니다. CPU, RAM, GPU 점유 현황 및 현재 실행 중인 세"
+"션의 개수 등을 확인할 수 있으며, +START 버튼을 클릭해서 세션의 바로 생성"
+"해볼 수 있습니다 (세션 생성 방법은 Sessions 페이지를 참조하시기 바랍니"
+"다)."
+
+#: ../../summary/summary.rst:18
+msgid ""
+"A user can belong to one or more groups. If you want to change the group "
+"you want to use, click the Project button on the top left corner to "
+"select the group you want. When the group is changed, the total amount "
+"of available resources is changed according to the resource usage policy "
+"set in the group, and the amount of resources currently used is updated "
+"with the amount of resources occupied by sessions running in the group. "
+"The group to which the user belongs is set up by the administrator. If "
+"you want to change the group, you should contact the administrator in "
+"charge."
+msgstr ""
+"사용자는 하나 이상의 그룹에 속할 수 있습니다. 사용하고자 하는 그룹을 변경"
+"하려면 좌측 상단에 있는 Project 버튼을 클릭하여 원하는 그룹을 선택할 수 "
+"있습니다. 그룹이 바뀌게 되면 그룹에 설정된 자원 사용 정책에 따라 사용 가"
+"능한 자원의 총량도 바뀌게 되고, 현재 사용하고 있는 자원의 양도 해당 그룹 "
+"내에서 돌아가고 있는 세션의 점유 자원량으로 업데이트 됩니다. 사용자가 속"
+"하는 그룹은 관리자가 설정하는 부분으로, 그룹을 변경하고 싶다면 담당 관리"
+"자에게 문의해야 합니다."
+
+#: ../../summary/summary.rst:27
+msgid ""
+"A user can be set up to use multiple resource groups by an "
+"administrator. Resource groups are administrator functions that allow "
+"you to set up worker nodes that can be accessed by user, group, or "
+"domain. For example, if you group multiple V100 GPU servers into one "
+"resource group, group multiple P100 GPU servers into another resource "
+"group, and make specific users accessible only to the P100 resource "
+"group, that user Only resources on the server are available, not "
+"resources on the V100 GPU server. You can select a resource group to "
+"which you have access by clicking Resource Group within the Start Menu. "
+"Each time a resource group is changed, the amount of available resources "
+"is changed accordingly. Resource group policies are set up by "
+"administrators. If you want to use a particular resource, you should "
+"contact your administrator."
+msgstr ""
+"사용자는 관리자에 의해 여러 개의 리소스 그룹을 사용하도록 설정될 수 있습"
+"니다. 리소스 그룹은 사용자, 그룹 또는 도메인 별로 접근 가능한 워커 노드"
+"를 설정할 수 있는 관리자 기능입니다. 예를 들어, V100 GPU 서버 여러 대를 "
+"하나의 리소스 그룹으로 묶고, P100 GPU 서버 여러 대를 또 다른 리소스 그룹"
+"으로 묶은 후 특정 사용자에게 P100 리소스 그룹만 접근할 수 있도록 설정하"
+"면, 해당 사용자는 P100 GPU 서버의 자원만 사용할 수 있고 V100 GPU 서버의 "
+"자원은 사용할 수 없습니다. Start Menu 내의 Resource Group을 클릭하여 자신"
+"이 접근 가능한 리소스 그룹을 선택할 수 있습니다. 리소스 그룹이 변경될 때"
+"마다 가용한 자원량도 따라서 바뀌게 됩니다. 리소스 그룹 정책은 관리자가 설"
+"정하는 부분으로, 특정 자원을 사용하고 싶다면 담당 관리자에게 문의해야 합"
+"니다."
+
+#: ../../summary/summary.rst:44
+msgid ""
+"In the Project section at the bottom, you can see the total usage within "
+"your group and your usage within that group."
+msgstr ""
+"하단의 Project 섹션에서는 사용자가 속한 그룹 내의 총 사용량 및 자신의 해"
+"당 그룹 내 사용량을 확인할 수 있습니다."
+
+#: ../../summary/summary.rst:47
+msgid ""
+"The System Health panel shows the total number of sessions currently "
+"running by the user. Other session related information will be added in "
+"the future."
+msgstr ""
+"System Health 패널에서는 현재 사용자가 실행하고 있는 총 세션의 수를 보여"
+"줍니다. 기타 세션 관련 정보가 향후 추가될 예정입니다."
+
+#: ../../summary/summary.rst:55
+msgid "Change password"
+msgstr "비밀번호 변경"
+
+#: ../../summary/summary.rst:57
+msgid ""
+"You can change the password by clicking the Update password link in the "
+"Preferences panel or by clicking user information in the upper right "
+"corner. Enter the current password in the Original password field and "
+"the new password in the New password and New password (again) fields, "
+"then press the UPDATE button to update the password. At this time, the "
+"password should follow the rules below:"
+msgstr ""
+"Preferences 패널의 Update password 링크를 클릭하거나, 오른쪽 상단의 사용"
+"자 정보를 클릭해서 비밀번호를 변경할 수 있습니다. Original password 필드"
+"에 현재 비밀번호를, New password와 New password (again) 필드에 새로 설정"
+"할 비밀번호를 입력한 후 UPDATE 버튼을 눌러 비밀번호를 갱신합니다. 이 때, "
+"비밀번호는 다음과 같은 규칙을 따라야만 합니다:"
+
+#: ../../summary/summary.rst:64
+msgid "8 letters or more"
+msgstr "글자 이상"
+
+#: ../../summary/summary.rst:65
+msgid "One or more alphabets"
+msgstr "하나 이상의 알파벳"
+
+#: ../../summary/summary.rst:66
+msgid "One or more special characters"
+msgstr "하나 이상의 특수문자"
+
+#: ../../summary/summary.rst:67
+msgid "One or more numbers"
+msgstr "하나 이상의 숫자"
+
+#: ../../summary/summary.rst:76
+msgid "Change SSH Keypair"
+msgstr "SSH Keypair 변경"
+
+#: ../../summary/summary.rst:78
+msgid ""
+"If you are using the GUI console app, you can create SSH/SFTP connection "
+"directly to the container. You can query or create a SSH keypair, which "
+"is used for SSH/SFTP connection. Clicking the Refresh SSH Keypair link "
+"in the Preferences panel brings up a dialog. Current public key is "
+"displayed, if exists, and new public key and private key can be created "
+"by clicking CONFIRM button. This will generate a new SSH keypair and "
+"save it into the database."
+msgstr ""
+"앱 형태의 GUI 콘솔을 사용하는 경우 컨테이너로 직접 SSH/SFTP 접속을 할 수 "
+"있습니다. (주의: 웹 기반 콘솔에서는 아직 SSH/SFTP 접속을 지원하지 않습니"
+"다.) 이 때 사용되는 SSH keypair를 조회하거나 새로 생성할 수 있습니다. "
+"Preferences 패널의 Refresh SSH Keypair 링크를 클릭하면 다음과 같은 다이얼"
+"로그가 뜹니다. 현재 설정된 public key를 조회할 수 있으며 (private key는 "
+"조회되지 않습니다), CONFIRM 버튼을 클릭하여 새로운 public key, private "
+"key를 생성할 수 있습니다."
+
+#: ../../summary/summary.rst:91
+msgid "The web-based console does not yet support SSH/SFTP connections."
+msgstr "웹기반 콘솔은 아직 SSH/SFTP 연결을 지원하지 않습니다."
+
+#: ../../summary/summary.rst:94
+msgid ""
+"Backend.AI uses SSH keypair based on OpenSSH. On Windows, you may "
+"convert this into PPK key."
+msgstr ""
+"Backend.AI는 OpenSSH에 기반한 SSH keypair를 사용합니다. 윈도우즈에서는 "
+"PPK 기반 키로 변환해야 할 수 있습니다."
