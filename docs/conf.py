@@ -87,10 +87,11 @@ latex_elements = {
     ''',
     'preamble': r'''
         \usepackage{kotex}
+        \usepackage{setspace}
+
         %% \setmainfont{NanumSquare}  % bold characters are broken
         \setsansfont{Montserrat}
         \setmonofont{JetBrains Mono}
-        \usepackage{setspace}
         \doublespacing
     ''',
     'maketitle': r'''
