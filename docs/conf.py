@@ -89,9 +89,13 @@ latex_elements = {
         \usepackage{kotex}
         \usepackage{setspace}
 
-        %% \setmainfont{NanumSquare}  % bold characters are broken
+        \setmainhangulfont{NanumSquare}
+        \setsanshangulfont{NanumSquare}
+        \setmainfont{Montserrat}
         \setsansfont{Montserrat}
         \setmonofont{JetBrains Mono}
+
+        \setcounter{chapter}{-1}
         \doublespacing
     ''',
     'maketitle': r'''

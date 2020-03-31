@@ -55,7 +55,8 @@ with them. For eaiser `.po` translation, you may use GUI apps like
 
 After translation, run following to build translated html document. To build a
 pdf document, just replace `html` to `latexpdf`. Note that your local machine
-should be equipped with latex generation environment to make pdf file.
+should be prepared with latex generation environment, such as MacTex, to make
+pdf file.
 
 ```console
 make -e SPHINXOPTS="-D language='ko'" html

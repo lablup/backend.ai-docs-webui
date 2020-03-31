@@ -29,10 +29,3 @@ to work with the Backend.AI server.
    trouble_shooting/trouble_shooting
    license_agreement/license_agreement
    references/references
-
-
-Indices and Tables
-==================
-
-* :ref:`genindex`
-* :ref:`search`
