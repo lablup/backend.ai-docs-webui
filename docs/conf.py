@@ -83,8 +83,26 @@ latex_elements = {
     'papersize': 'a4paper',
     'pointsize': '12pt',
     'extraclassoptions': 'openany,oneside',
-    'fontpkg': r'''
-    ''',
+    'sphinxsetup': (
+        'noteBorderColor={RGB}{106,176,222},'
+        'noteborder=2pt,'
+        'tipBorderColor={RGB}{106,176,222},'
+        'tipborder=2pt,'
+        'hintBorderColor={RGB}{106,176,222},'
+        'hintborder=2pt,'
+        'importantBorderColor={RGB}{171,18,88},'
+        'attentionBorderColor={RGB}{106,176,222},'
+        'attentionBgColor={RGB}{231,242,250},'
+        'cautionBorderColor={RGB}{240,179,126},'
+        'cautionBgColor={RGB}{247,229,198},'
+        'warningBorderColor={RGB}{240,179,126},'
+        'warningBgColor={RGB}{247,229,198},'
+        'dangerBorderColor={RGB}{240,179,126},'
+        'dangerBgColor={RGB}{247,229,198},'
+        'errorBorderColor={RGB}{240,179,126},'
+        'errorBgColor={RGB}{247,229,198},'
+    ),
+    'fontpkg': '',
     'preamble': r'''
         \usepackage{kotex}
         \usepackage{setspace}
