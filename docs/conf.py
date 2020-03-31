@@ -97,12 +97,12 @@ latex_elements = {
         \makeatletter
         \begin{titlepage}
             \centering
-            \vspace*{20mm}  %% * is used to give space from top
+            \vspace*{15mm}  %% * is used to give space from top
             \sphinxlogo
-            \textbf{\Huge \@title}\par
-            {\large (\py@release \releaseinfo)}\par
+            \textbf{\Huge Backend.AI Console\\User's Guide}\par
+            {\LARGE (\version)}\par
             \vspace{25mm}
-            \textbf{\Large \@author}\par
+            \textbf{\LARGE \@author}\par
             \vspace{10mm}
             \includegraphics[scale=0.1]{lablup_logo}
         \end{titlepage}
