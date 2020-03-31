@@ -70,17 +70,56 @@ html_static_path = ['_static']
 html_css_files = ['css/custom.css']
 
 
+def setup(app):
+    app.add_stylesheet('css/custom.css')
+
+
 # -- Options for LaTeX output ------------------------------------------------
 latex_engine = 'xelatex'
 latex_use_xindy = False
+latex_logo = '_static/backendai_logo.png'
+latex_additional_files = ['_static/lablup_logo.png']
 latex_elements = {
     'papersize': 'a4paper',
     'pointsize': '12pt',
+    'extraclassoptions': 'openany,oneside',
+    'fontpkg': r'''
+    ''',
     'preamble': r'''
         \usepackage{kotex}
+        %% \setmainfont{NanumSquare}  % bold characters are broken
+        \setsansfont{Montserrat}
+        \setmonofont{JetBrains Mono}
+        \usepackage{setspace}
+        \doublespacing
     ''',
-    'extraclassoptions': 'openany,oneside',
+    'maketitle': r'''
+        \makeatletter
+        \begin{titlepage}
+            \centering
+            \vspace*{20mm}  %% * is used to give space from top
+            \sphinxlogo
+            \textbf{\Huge \@title}\par
+            {\large (\py@release \releaseinfo)}\par
+            \vspace{25mm}
+            \textbf{\Large \@author}\par
+            \vspace{10mm}
+            \includegraphics[scale=0.1]{lablup_logo}
+        \end{titlepage}
+        \makeatother
+    ''',
 }
+
+# Grouping the document tree into LaTeX files. List of tuples
+# (source start file, target name, title,
+#  author, documentclass [howto, manual, or own class]).
+latex_documents = [
+    (master_doc,
+     'backendaiconsoleuserguide.tex',
+     'Backend.AI Console User\'s Guide',
+     author, 'manual'),
+]
+
 
 
 # -- Internationalization ----------------------------------------------------
