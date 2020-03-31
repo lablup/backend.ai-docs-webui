@@ -74,8 +74,10 @@ latex_engine = 'xelatex'
 latex_use_xindy = False
 latex_elements = {
     'papersize': 'a4paper',
-    'pointsize': '11pt',
-    'preamble': '\\usepackage[UTF8]{kotex}\n',
+    'pointsize': '12pt',
+    'preamble': r'''
+        \usepackage{kotex}
+    ''',
     'extraclassoptions': 'openany,oneside',
 }
 
