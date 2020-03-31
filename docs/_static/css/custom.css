@@ -1,23 +1,49 @@
 @font-face {
-  font-family: "Nanum Square Regular";
+  font-family: "Nanum Square";
   src: url("../fonts/NanumSquareRegular.ttf");
 }
-
 @font-face {
   font-family: "Nanum Square Light";
   src: url("../fonts/NanumSquareLight.ttf");
 }
-
 @font-face {
   font-family: "Nanum Square Bold";
   src: url("../fonts/NanumSquareBold.ttf");
 }
-
 @font-face {
   font-family: "Nanum Square ExtraBold";
   src: url("../fonts/NanumSquareExtraBold.ttf");
 }
 
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../fonts/JetBrainsMono-Regular.ttf");
+}
+@font-face {
+  font-family: "JetBrains Mono Italic";
+  src: url("../fonts/JetBrainsMono-Italic.ttf");
+}
+@font-face {
+  font-family: "JetBrains Mono Medium";
+  src: url("../fonts/JetBrainsMono-Medium.ttf");
+}
+@font-face {
+  font-family: "JetBrains Mono Medium Italic";
+  src: url("../fonts/JetBrainsMono-Medium-Italic.ttf");
+}
+@font-face {
+  font-family: "JetBrains Mono Bold";
+  src: url("../fonts/JetBrainsMono-Bold.ttf");
+}
+@font-face {
+  font-family: "JetBrains Mono Bold Italic";
+  src: url("../fonts/JetBrainsMono-Bold-Italic.ttf");
+}
+
 body {
-  font-family: "NanumSquare";
+  font-family: "Nanum Square";
+}
+
+.pre {
+  font-family: "JetBrains Mono";
 }
