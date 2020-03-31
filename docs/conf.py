@@ -67,6 +67,82 @@ html_theme = "sphinx_rtd_theme"
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+html_css_files = ['css/custom.css']
+
+
+def setup(app):
+    app.add_stylesheet('css/custom.css')
+
+
+# -- Options for LaTeX output ------------------------------------------------
+latex_engine = 'xelatex'
+latex_use_xindy = False
+latex_logo = '_static/backendai_logo.png'
+latex_additional_files = ['_static/lablup_logo.png']
+latex_elements = {
+    'papersize': 'a4paper',
+    'pointsize': '12pt',
+    'extraclassoptions': 'openany,oneside',
+    'sphinxsetup': (
+        'noteBorderColor={RGB}{106,176,222},'
+        'noteborder=2pt,'
+        'tipBorderColor={RGB}{106,176,222},'
+        'tipborder=2pt,'
+        'hintBorderColor={RGB}{106,176,222},'
+        'hintborder=2pt,'
+        'importantBorderColor={RGB}{171,18,88},'
+        'attentionBorderColor={RGB}{106,176,222},'
+        'attentionBgColor={RGB}{231,242,250},'
+        'cautionBorderColor={RGB}{240,179,126},'
+        'cautionBgColor={RGB}{247,229,198},'
+        'warningBorderColor={RGB}{240,179,126},'
+        'warningBgColor={RGB}{247,229,198},'
+        'dangerBorderColor={RGB}{240,179,126},'
+        'dangerBgColor={RGB}{247,229,198},'
+        'errorBorderColor={RGB}{240,179,126},'
+        'errorBgColor={RGB}{247,229,198},'
+    ),
+    'fontpkg': '',
+    'preamble': r'''
+        \usepackage{kotex}
+        \usepackage{setspace}
+
+        \setmainhangulfont{NanumSquare}
+        \setsanshangulfont{NanumSquare}
+        \setmainfont{Montserrat}
+        \setsansfont{Montserrat}
+        \setmonofont{JetBrains Mono}
+
+        \setcounter{chapter}{-1}
+        \doublespacing
+    ''',
+    'maketitle': r'''
+        \makeatletter
+        \begin{titlepage}
+            \centering
+            \vspace*{15mm}  %% * is used to give space from top
+            \sphinxlogo
+            \textbf{\Huge Backend.AI Console\\User's Guide}\par
+            {\LARGE (\version)}\par
+            \vspace{25mm}
+            \textbf{\LARGE \@author}\par
+            \vspace{10mm}
+            \includegraphics[scale=0.1]{lablup_logo}
+        \end{titlepage}
+        \makeatother
+    ''',
+}
+
+# Grouping the document tree into LaTeX files. List of tuples
+# (source start file, target name, title,
+#  author, documentclass [howto, manual, or own class]).
+latex_documents = [
+    (master_doc,
+     'backendaiconsoleuserguide.tex',
+     'Backend.AI Console User\'s Guide',
+     author, 'manual'),
+]
+
 
 
 # -- Internationalization ----------------------------------------------------
