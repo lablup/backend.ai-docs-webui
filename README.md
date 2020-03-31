@@ -53,7 +53,9 @@ Now, `.po` files are generated in `locale/ko/LC_MESSAGES/`. Translate messages
 with them. For eaiser `.po` translation, you may use GUI apps like
 [POEDIT](https://poedit.net/).
 
-After translation, run following to build translated html document.
+After translation, run following to build translated html document. To build a
+pdf document, just replace `html` to `latexpdf`. Note that your local machine
+should be equipped with latex generation environment to make pdf file.
 
 ```console
 make -e SPHINXOPTS="-D language='ko'" html
