@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Nanum Square Regular";
+  src: url("../fonts/NanumSquareRegular.ttf");
+}
+
+@font-face {
+  font-family: "Nanum Square Light";
+  src: url("../fonts/NanumSquareLight.ttf");
+}
+
+@font-face {
+  font-family: "Nanum Square Bold";
+  src: url("../fonts/NanumSquareBold.ttf");
+}
+
+@font-face {
+  font-family: "Nanum Square ExtraBold";
+  src: url("../fonts/NanumSquareExtraBold.ttf");
+}
+
+body {
+  font-family: "NanumSquare";
+}
