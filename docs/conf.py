@@ -108,8 +108,6 @@ latex_elements = {
         \usepackage{charter}
         \usepackage[defaultsans]{lato}
         \usepackage{inconsolata}
-        %% \usepackage{bera}
-        %% \usepackage{beramono}
 
         \setcounter{chapter}{-1}
         \doublespacing
