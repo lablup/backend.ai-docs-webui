@@ -106,8 +106,12 @@ latex_elements = {
     'preamble': r'''
         \usepackage{kotex}
         \usepackage{setspace}
-        \usepackage{bera}
-        \usepackage{beramono}
+
+        \setmainhangulfont{NanumSquare}
+        \setsanshangulfont{NanumSquare}
+        \setmainfont{Montserrat}
+        \setsansfont{Montserrat}
+        \setmonofont{JetBrains Mono}
 
         \setcounter{chapter}{-1}
         \doublespacing
