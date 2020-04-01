@@ -75,8 +75,6 @@ def setup(app):
 
 
 # -- Options for LaTeX output ------------------------------------------------
-latex_engine = 'xelatex'
-latex_use_xindy = False
 latex_logo = '_static/backendai_logo.png'
 latex_additional_files = ['_static/lablup_logo.png']
 latex_elements = {
@@ -104,6 +102,7 @@ latex_elements = {
     ),
     'fontpkg': '',
     'preamble': r'''
+        \usepackage[utf8x]{inputenc}
         \usepackage{kotex}
         \usepackage{setspace}
         %% \usepackage{bera}
