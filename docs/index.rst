@@ -11,6 +11,11 @@ User's guide for the Backend.AI GUI Console.
 Backend.AI GUI Console is a web or app that provides easy-to-use GUI interface
 to work with the Backend.AI server.
 
+The latest versions of this document can be found from sites below:
+
+- https://console.docs.backend.ai/en/stable (English)
+- https://console.docs.backend.ai/ko/stable (Korean)
+
 .. toctree::
    :maxdepth: 2
    :caption: Table of Contents

@@ -83,7 +83,7 @@ msgid ""
 "the file was created successfully. Also note the contents of the file "
 "with the ``cat`` command."
 msgstr ""
-"``user2-vfolder``를 대상으로 ``ls`` 명령을 실행해보면 파일이 잘 생성된 것"
+"``user2-vfolder`` 를 대상으로 ``ls`` 명령을 실행해보면 파일이 잘 생성된 것"
 "을 확인할 수 있습니다. ``cat`` 명령으로 파일 내용도 확인해 보았습니다."
 
 #: ../../mount_vfolder/mount_vfolder.rst:40
