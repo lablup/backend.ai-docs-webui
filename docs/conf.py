@@ -106,8 +106,8 @@ latex_elements = {
     'preamble': r'''
         \usepackage{kotex}
         \usepackage{setspace}
-        \usepackage{bera}
-        \usepackage{beramono}
+        %% \usepackage{bera}
+        %% \usepackage{beramono}
 
         \setcounter{chapter}{-1}
         \doublespacing
