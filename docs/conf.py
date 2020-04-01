@@ -105,6 +105,9 @@ latex_elements = {
         \usepackage[utf8x]{inputenc}
         \usepackage{kotex}
         \usepackage{setspace}
+        \usepackage{charter}
+        \usepackage[defaultsans]{lato}
+        \usepackage{inconsolata}
         %% \usepackage{bera}
         %% \usepackage{beramono}
 
