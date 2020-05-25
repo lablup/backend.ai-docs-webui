@@ -1,16 +1,16 @@
 Disclaimer
 ==========
 
-The information and content in this document is provided for informational and
+The information and content in this document is provided for information and
 informational purposes only, and including, without limitation, any warranty of
 any kind, either express or implied, including, but not limited to, the implied
 warranties of merchantability, fitness for a particular purpose and
 non-infringement. AS IS. Lablup Inc. is not responsible for any damages
 resulting from the use of this manual, including consequential damages. Although
 much effort has been made to ensure the accuracy of the data provided, Lablup
-Inc. Makes no representations, promises, or warranties with respect to the
+Inc. makes no representations, promises, or warranties with respect to the
 completeness, accuracy, up-to-date or adequacy of the information, and assumes
-no responsibility for outdated information or errors. Lablup Inc. Makes no
+no responsibility for outdated information or errors. Lablup Inc. makes no
 representations or warranties, either expressed or implied, with respect to the
 accuracy or completeness of the information contained in this manual.
 
