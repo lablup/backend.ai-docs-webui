@@ -33,6 +33,7 @@ before you can log in with your account.
 
 Login
 -----
+
 Enter your ID and password and press the LOGIN button. In API ENDPOINT, the URL
 of Backend.AI Console Server, which relays the request to the Manager, should be
 entered.
@@ -55,6 +56,7 @@ can logout by selecting the Log Out menu.
 
 When you forgot your password
 -----------------------------
+
 If you have forgotten your password, you can click the CHANGE PASSWORD button on
 the login panel to email a link to change password. You can change your password
 by reading and following the instruction. Depending on the server settings, the
@@ -62,6 +64,10 @@ password change feature may be disabled. In this case, contact the
 administrator.
 
 .. image:: forgot_password_panel.png
-   :width: 300
+   :width: 350
    :align: center
    :alt: Signout button
+
+.. note::
+   This is also a modular feature, so changing password may not be possible in
+   some systems.

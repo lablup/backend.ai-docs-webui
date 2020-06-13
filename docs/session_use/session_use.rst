@@ -12,9 +12,26 @@ Start a new session
 Click START button to start a new compute session. The following setup dialog
 will appear. Specify the language environment (Environments, Version), the
 amount of resources (CPU, RAM, GPU, etc.) you want to use, and then press the
-LAUNCH button. Wait for a while for the compute session to be started. If you
-have created a folder in the Storage menu, you can also choose them from the
-Folders to mount menu.  Folders/Storages are discussed in a separate section.
+LAUNCH button.
+
+.. note::
+   If the GPU resource is marked as FGPU, this means that the server is serving
+   the GPU resources in a virtualized form. Backend.AI supports GPU
+   virtualization technology that a single physical GPU can be divided and
+   shared by multiple users for better utilization. Therefore, if you want to
+   execute a task that does not require a large amount of GPU computation, you
+   can create a compute session by allocating only a portion of a GPU. The
+   amount of GPU resources that 1 FGPU actually allocates may vary from system
+   to system depending on the administrator's setting. For example, if
+   administrator has set to split one physical GPU into five pieces, 5 FGPU
+   means 1 physical GPU, or 1 FGPU means 0.2 physical GPU. At this
+   configuration, if you create a compute session by allocating 1 FGPU, you can
+   utilize SM (streaming multiprocessor) and GPU memory corresponding to 0.2
+   physical GPU for the session.
+
+Wait for a while for the compute session to be started. If you have created a
+folder in the Storage menu, you can also choose them from the Folders to mount
+menu. Folders/Storages are discussed in a separate section.
 
 .. image:: session_launch_dialog.png
    :width: 350
@@ -64,7 +81,7 @@ Backend.AI, and ipynb window will pop up where you can enter the new code.
    :align: center
    :alt: Backend.AI notebook on Jupyter menu
 
-In this window, you can enter and execute any code you want using the
+In this window, you can enter and execute any code you want by using the
 environment that session provides.  The code execution happens on one of the
 Backend.AI nodes where the compute session is actually created, and there is no
 need to configure a separate environment on the local machine.

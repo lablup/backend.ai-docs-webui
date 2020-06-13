@@ -1,3 +1,5 @@
+.. _session-with-mounts:
+
 =============================================
 Create a Compute Session with Mounted Folders
 =============================================
