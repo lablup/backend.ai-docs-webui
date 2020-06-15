@@ -8,17 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-26 01:24+0900\n"
-"PO-Revision-Date: 2020-03-27 15:01+0900\n"
+"POT-Creation-Date: 2020-06-13 23:19+0900\n"
+"PO-Revision-Date: 2020-06-13 23:21+0900\n"
+"Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
+"Language: ko\n"
+"Language-Team: Lablup\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
-"Language-Team: Lablup\n"
-"Language: ko\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.3.1\n"
 
 #: ../../session_use/session_use.rst:3
 msgid "Using Compute Session"
@@ -41,27 +41,60 @@ msgid ""
 "Click START button to start a new compute session. The following setup "
 "dialog will appear. Specify the language environment (Environments, "
 "Version), the amount of resources (CPU, RAM, GPU, etc.) you want to use, "
-"and then press the LAUNCH button. Wait for a while for the compute "
-"session to be started. If you have created a folder in the Storage menu, "
-"you can also choose them from the Folders to mount menu.  Folders/"
-"Storages are discussed in a separate section."
+"and then press the LAUNCH button."
 msgstr ""
 "새로운 연산 세션을 시작하려면 START 버튼을 누르세요. 다음과 같은 설정 창"
 "이 뜨는데, 사용하려는 언어 환경(Environments, Version)과 자원 설정(원하"
-"는 CPU, RAM, GPU 등 할당량)을 지정하고 LAUNCH 버튼을 누른 후 잠시 기다리"
-"면 연산 세션이 시작됩니다. 미리 만들어둔 저장소(Storage)가 있다면 "
-"Folders to mount 메뉴에서 선택할 수도 있습니다. 저장소에 관해서는 별도 섹"
-"션에서 설명합니다."
+"는 CPU, RAM, GPU 등 할당량)을 지정하고 LAUNCH 버튼을 누릅니다."
 
-#: ../../session_use/session_use.rst:24
+#: ../../session_use/session_use.rst:18
+msgid ""
+"If the GPU resource is marked as FGPU, this means that the server is "
+"serving the GPU resources in a virtualized form. Backend.AI supports GPU "
+"virtualization technology that a single physical GPU can be divided and "
+"shared by multiple users for better utilization. Therefore, if you want "
+"to execute a task that does not require a large amount of GPU "
+"computation, you can create a compute session by allocating only a "
+"portion of a GPU. The amount of GPU resources that 1 FGPU actually "
+"allocates may vary from system to system depending on the "
+"administrator's setting. For example, if administrator has set to split "
+"one physical GPU into five pieces, 5 FGPU means 1 physical GPU, or 1 "
+"FGPU means 0.2 physical GPU. At this configuration, if you create a "
+"compute session by allocating 1 FGPU, you can utilize SM (streaming "
+"multiprocessor) and GPU memory corresponding to 0.2 physical GPU for the "
+"session."
+msgstr ""
+"만약 GPU 자원이 FGPU로 표시되어 있다면, 이는 서버가 GPU 자원을 가상화된 "
+"형태로 제공하고 있다는 것을 의미합니다. Backend.AI는 하나의 물리 GPU를 여"
+"러 개로 분할해서 여러 사용자가 나누어 사용할 수 있는 가상화 기술을 지원하"
+"고 있습니다. 따라서, GPU 연산 소요가 크지 않은 작업을 수행하고자 할 경우"
+"에는 GPU의 일부만 할당하여 연산 세션을 생성할 수 있습니다. 1 FGPU가 실제"
+"로 할당하는 GPU 자원의 양은 관리자 설정에 따라 시스템 별로 다양할 수 있습"
+"니다. 예를 들어, 관리자가 하나의 GPU를 다섯 조각으로 분할 설정한 경우, 5 "
+"FGPU가 1 물리 GPU, 또는 1 FGPU가 0.2 물리 GPU를 뜻합니다. 이 때 1 FGPU를 "
+"설정하여 연산 세션을 생성하면, 그 세션에서는 0.2 물리 GPU에 해당하는 "
+"SM(streaming multiprocessor)과 GPU 메모리를 활용할 수 있습니다."
+
+#: ../../session_use/session_use.rst:32
+msgid ""
+"Wait for a while for the compute session to be started. If you have "
+"created a folder in the Storage menu, you can also choose them from the "
+"Folders to mount menu. Folders/Storages are discussed in a separate "
+"section."
+msgstr ""
+"잠시 기다리면 연산 세션이 시작됩니다. 미리 만들어둔 저장소(Storage)가 있"
+"다면 Folders to mount 메뉴에서 선택할 수도 있습니다. 저장소에 관해서는 별"
+"도 섹션에서 설명합니다."
+
+#: ../../session_use/session_use.rst:41
 msgid "Notice that a new compute session is created in the Running tab."
 msgstr "Running 탭에서 새로운 연산 세션이 생성되는 것을 확인합시다."
 
-#: ../../session_use/session_use.rst:31
+#: ../../session_use/session_use.rst:48
 msgid "Use and Manage Running Session"
 msgstr "이미 실행 중인 세션을 사용하고 관리하기"
 
-#: ../../session_use/session_use.rst:33
+#: ../../session_use/session_use.rst:50
 msgid ""
 "This time, let's take a look at how to use and manage a running compute "
 "session. If you see the Control column in the session list, there are "
@@ -73,11 +106,11 @@ msgstr ""
 "이 아이콘을 누르면 다음 그림과 같이 해당 세션이 지원하는 몇 가지 앱 서비"
 "스가 뜨게 됩니다."
 
-#: ../../session_use/session_use.rst:43
+#: ../../session_use/session_use.rst:60
 msgid "As a test, let's click on Jupyter Notebook."
 msgstr "시험 삼아 Jupyter Notebook을 눌러봅시다."
 
-#: ../../session_use/session_use.rst:48
+#: ../../session_use/session_use.rst:65
 msgid ""
 "You will see a new window pop up and Jupyter Notebook is running. This "
 "Notebook was created inside the running compute session, and it's easy "
@@ -94,7 +127,7 @@ msgstr ""
 "지 설치 과정이 필요 없습니다. 자세한 Jupyter Notebook 사용법은 공식 문서 "
 "등을 참고하시기 바랍니다."
 
-#: ../../session_use/session_use.rst:55
+#: ../../session_use/session_use.rst:72
 msgid ""
 "In the notebook's file explorer, the ``id_container file`` contains a "
 "private SSH key. If necessary, you can download it and use it for SSH / "
@@ -104,7 +137,7 @@ msgstr ""
 "고 있습니다. 필요할 경우 다운로드 하여 컨테이너로의 SSH/SFTP 접속에 이용"
 "할 수 있습니다."
 
-#: ../../session_use/session_use.rst:59
+#: ../../session_use/session_use.rst:76
 msgid ""
 "Click the NEW button on the upper right corner and select Notebook for "
 "Backend.AI, and ipynb window will pop up where you can enter the new "
@@ -113,9 +146,9 @@ msgstr ""
 "우측 상단의 NEW 버튼을 클릭한 후 Backend.AI 용 Notebook을 선택하면 새로"
 "운 코드를 입력할 수 있는 ipynb 창이 뜹니다."
 
-#: ../../session_use/session_use.rst:67
+#: ../../session_use/session_use.rst:84
 msgid ""
-"In this window, you can enter and execute any code you want using the "
+"In this window, you can enter and execute any code you want by using the "
 "environment that session provides.  The code execution happens on one of "
 "the Backend.AI nodes where the compute session is actually created, and "
 "there is no need to configure a separate environment on the local "
@@ -125,7 +158,7 @@ msgstr ""
 "Backend.AI 서버를 구성하는 노드 중 연산 세션이 실제로 생성된 노드에서 실"
 "행이 되며, 로컬 머신에는 별도 환경을 구성할 필요가 없습니다."
 
-#: ../../session_use/session_use.rst:75
+#: ../../session_use/session_use.rst:92
 msgid ""
 "When you close the window, you can notice that the ``Untitled.ipynb`` "
 "file is created in the Notebook File Explorer. Note that the files "
@@ -138,7 +171,7 @@ msgstr ""
 "경우 같이 삭제되는 것에 주의 하십시오. 생성된 파일을 세션이 사라지더라도 "
 "보존하는 방법은 폴더 섹션에서 설명합니다."
 
-#: ../../session_use/session_use.rst:83
+#: ../../session_use/session_use.rst:100
 msgid ""
 "Return to the Session list page. This time, let's launch the terminal. "
 "Click the terminal icon (the second button) to use the container's ttyd "
@@ -154,7 +187,7 @@ msgstr ""
 "세션 내부에 접속해서 커맨드 명령을 내릴 수 있습니다. 커맨드 사용에 익숙"
 "한 분이라면 손쉽게 여러 가지 리눅스 명령을 내릴 수가 있습니다."
 
-#: ../../session_use/session_use.rst:95
+#: ../../session_use/session_use.rst:112
 msgid ""
 "If you create a file here, you can immediately see it in the Jupyter "
 "Notebook you opened earlier as well. Conversely, changes made to files "
@@ -166,7 +199,7 @@ msgstr ""
 "도 터미널에서 바로 확인할 수 있습니다. 같은 연산 세션을 사용하고 있기 때"
 "문입니다."
 
-#: ../../session_use/session_use.rst:100
+#: ../../session_use/session_use.rst:117
 msgid ""
 "In addition, you can use web-based services such as TensorBoard, Jupyter "
 "Lab, etc., depending on the type of services provided by the compute "
@@ -175,7 +208,7 @@ msgstr ""
 "이 외에도 연산 세션이 제공하는 서비스의 종류에 따라 TensorBoard, Jupyter "
 "Lab 등과 같은 웹 기반 서비스를 이용할 수 있습니다."
 
-#: ../../session_use/session_use.rst:103
+#: ../../session_use/session_use.rst:120
 msgid ""
 "To delete a specific session, tap the red trash icon. Since the data in "
 "the folder inside the compute session is deleted as soon as the compute "

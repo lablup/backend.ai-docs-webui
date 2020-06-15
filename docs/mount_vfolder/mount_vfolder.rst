@@ -1,3 +1,5 @@
+.. _session-with-mounts:
+
 =============================================
 Create a Compute Session with Mounted Folders
 =============================================
@@ -49,3 +51,71 @@ of the file are "file inside user2-vfolder".
 Like this, when creating a compute session, you can mount storage folders and
 perform any file operations on those mounted folders to save data even after the
 compute session termination.
+
+
+.. _using-automount-folder:
+
+Configuring a compute session environment using an automount folder
+-------------------------------------------------------------------
+
+Sometimes you need a new program or library that is not pre-installed in a
+compute session. In that case, you can install packages and configure a certain
+environment regardless of the type of compute session by using the Storage
+folder, which persists independent of session lifecycle, and the :ref:`automount
+folder<automount-folder>`.
+
+**Install Python packages via pip**
+
+Creating a folder named ``.local`` allows a user to install Python user packages
+in that folder. This is because installing a package with the ``–-user`` option
+appended to ``pip`` installs the package in the ``.local`` folder under the
+user's home folder (note that automount folder is mounted under user's home
+folder). So, if you want to install and keep the Python package ``tqdm``
+regardless of the type of computing environment, you can issue the following
+command in your terminal:
+
+.. code-block:: shell
+
+   pip install --user tqdm
+
+After that, when a new compute session is created, the ``.local`` folder where
+the ``tqdm`` package is installed is automatically mounted, so you can use the
+``tqdm`` package without reinstalling.
+
+.. warning::
+
+   If you spawn multiple sessions that uses multiple Python versions, there may
+   be compatibility issues with the packages. This can be circumvented by
+   branching ``PYTHONPATH`` environment variable via the ``.bashrc``. This is
+   because the user's ``pip`` package is installed in the path specified in the
+   ``PYTHONPATH``.
+
+**Install packages via Homebrew**
+
+Package managers like Ubuntu's ``apt`` or CentOS's ``yum`` usually require
+``sudo`` permissions. For security, ``sudo`` and ``root`` accesses are blocked
+by default in Backend.AI's compute session (it may allowed depending on the
+configuration), so we recommend to use `Homebrew on Linux
+<https://docs.brew.sh/Homebrew-on-Linux>`_ which does not require ``sudo``.
+Homebrew can be installed and used in the following ways:
+
+- Create ``.linuxbrew`` folder in Data & Storage page
+- Create a compute session (``.linuxbrew`` folder is automatically mounted)
+- Install Homebrew on Linux
+
+.. code-block:: shell
+
+   sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+   export PATH=/home/work/.linuxbrew/bin:$PATH
+   brew
+
+- Install package
+
+.. code-block:: shell
+
+   brew install fortune
+   fortune
+
+You can manage various settings using the automount folder in the same way as
+above. More details can be found on the `Backend.AI wiki
+<https://github.com/lablup/backend.ai/blob/master/docs/install/install-user-programs.rst>`_.
