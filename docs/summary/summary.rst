@@ -16,13 +16,13 @@ START button to create a session immediately (see the Sessions page for how to
 create a session).
 
 A user can belong to one or more groups. If you want to change the group you
-want to use, click the Project button on the top left corner to select the group
-you want. When the group is changed, the total amount of available resources is
-changed according to the resource usage policy set in the group, and the amount
-of resources currently used is updated with the amount of resources occupied by
-sessions running in the group. The group to which the user belongs is set up by
-the administrator. If you want to change the group, you should contact the
-administrator in charge.
+want to use, click the Project button on the top right corner to select the
+group you want. When the group is changed, the total amount of available
+resources is changed according to the resource usage policy set in the group,
+and the amount of resources currently used is updated with the amount of
+resources occupied by sessions running in the group. The group to which the user
+belongs is set up by the administrator. If you want to change the group, you
+should contact the administrator in charge.
 
 A user can be set up to use multiple resource groups by an administrator.
 Resource groups are administrator functions that allow you to set up worker
@@ -44,8 +44,9 @@ to use a particular resource, you should contact your administrator.
 In the Project section at the bottom, you can see the total usage within your
 group and your usage within that group.
 
-The System Health panel shows the total number of sessions currently running by
-the user. Other session related information will be added in the future.
+The Resource Statistics panel shows the total number of sessions currently
+running by the user. Other session related information will be displayed
+depending on the user's permission.
 
 .. image:: summary_page.png
    :alt: Summary page
@@ -54,12 +55,11 @@ the user. Other session related information will be added in the future.
 Change password
 ---------------
 
-You can change the password by clicking the Update password link in the
-Preferences panel or by clicking user information in the upper right corner.
-Enter the current password in the Original password field and the new password
-in the New password and New password (again) fields, then press the UPDATE
-button to update the password. At this time, the password should follow the
-rules below:
+You can change the password by clicking the Change Password menu of the settings
+button in the upper right corner. Enter the current password in the Original
+password field and the new password in the New password and New password (again)
+fields, then press the UPDATE button to update the password. At this time, the
+password should follow the rules below:
 
 - 8 letters or more
 - One or more alphabets

@@ -46,13 +46,12 @@ where you can view the contents of that folder.
    :alt: Controls in folder item
 
 You can see that directories and files inside the folder will be listed, if
-exists. Click a directory name in the Name column to move to the directory. For
-regular files, you can click the download button and delete button in the
-Actions column to download it or delete it entirely from the directory. We do
-not yet support the ability to download or delete the whole directory, but we
-plan to support it soon. If you need those function now, you can mount this
-folder when creating a compute session, and then use a service like Terminal or
-Jupyter Notebook to do it.
+exists. Click a directory name in the Name column to move to the directory.  You
+can click the download button or delete button in the Actions column to download
+it or delete it entirely from the directory. You can rename a file/directory as
+well. For more detailed file operations, you can mount this folder when creating
+a compute session, and then use a service like Terminal or Jupyter Notebook to
+do it.
 
 .. image:: vfolder_explorer.png
    :alt: File explorer of a storage folder
@@ -63,6 +62,14 @@ of these file operations can also be performed using the above-described method
 of mounting folders into a compute session.
 
 To close file explorer, click the X button in the upper right.
+
+
+Rename folder
+-------------
+
+If you have permission to rename the storage folder, you can rename it by
+clicking the edit icon in the Control column. When you click the icon button, a
+rename dialog will appears. Write new folder name and then click RENAME button.
 
 
 Delete folder
@@ -82,3 +89,25 @@ The folders created here can be mounted when creating a compute session. Folders
 are mounted under the user's default working directory, ``/home/work/``, and the
 files stored in this directory will not be deleted when the compute session
 is terminated. (However, if you delete the folder itself, it will be gone).
+
+
+.. _automount-folder:
+
+Automount folder
+----------------
+
+Storage & Folders page has an Automount Folders tab. Click this tab to see a
+list of folders whose names prefixed with a dot (.). When you create a folder,
+if you specify a name that starts with a dot (.), it is added to the Automount
+Folders tab, not the Folders tab. Automount Folders are special folders that are
+automatically mounted in your home directory even if you do not mount them
+manually when creating a compute session. By using this feature, creating and
+using Storage folders such as ``.local``, ``.linuxbrew``, ``.pyenv``, and etc.,
+you can configure a certain user packages or environments that do not change
+with different kinds of compute session.
+
+For more detailed information on the usage of Automount folders, refer to
+:ref:`examples of using automount folders<using-automount-folder>`.
+
+.. image:: vfolder_automount_folders.png
+   :alt: Automount folders
