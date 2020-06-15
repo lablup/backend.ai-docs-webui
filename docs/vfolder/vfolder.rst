@@ -91,6 +91,8 @@ files stored in this directory will not be deleted when the compute session
 is terminated. (However, if you delete the folder itself, it will be gone).
 
 
+.. _automount-folder:
+
 Automount folder
 ----------------
 
@@ -105,8 +107,7 @@ you can configure a certain user packages or environments that do not change
 with different kinds of compute session.
 
 For more detailed information on the usage of Automount folders, refer to
-:ref:`Create a Compute Session with Mounted Folders<session-with-mounts>`
-section.
+:ref:`examples of using automount folders<using-automount-folder>`.
 
 .. image:: vfolder_automount_folders.png
    :alt: Automount folders
