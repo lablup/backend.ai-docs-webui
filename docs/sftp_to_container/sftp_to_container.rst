@@ -1,64 +1,102 @@
 ==========================================
-Connect to Container with SFTP (FileZilla)
+Connect to a Compute Session with SSH/SFTP
 ==========================================
 
-Backend.AI supports SSH/SFTP connection to the created container. In this
-section, we will look at how to access container through SFTP with a FileZilla
-client.
+Backend.AI supports SSH/SFTP connection to the created compute sessions
+(containers). In this section, we will lear how.
 
 .. note::
-   SSH/SFTP connection is supported only on desktop app, and not yet supported
+   SSH/SFTP connection is supported only on desktop apps, and not yet supported
    on web-based console service.
 
-Backend.AI Console app supports OpenSSH-based public key connection (RSA2048).
-To access with a client such as PuTTY on Windows, a private key must be
-converted into a ppk file through a program such as PuTTYgen. You can refer to
-the following link for the conversion method:
-https://wiki.filezilla-project.org/Howto.
 
-If you want to use your own public key, you can create a user-type storage
-folder named ``.ssh`` and store the public key in that folder to use that public
-key for authentication. In this example, we will use an automatically generated
-key.
+SSH/SFTP connection to a compute session (Linux/Mac)
+----------------------------------------------------
 
 First, create a compute session, then click the app icon (first button) in
-Control, followed by SSH/SFTP icon. Then, a daemon that allows SSH/SFTP access
-inside the container will be initiated, and the Console app interacts with the
-daemon through a local wsproxy service.
+Control, followed by SSH / SFTP icon. Then, a daemon that allows SSH/SFTP access
+from inside the container will be initiated, and the Console app interacts with
+the daemon through a local proxy service.
 
 .. warning::
-   You cannot establish a SSH/SFTP connection to the container until you click
-   this SSH/SFTP icon. When you close the Console app and launch it again, the
+   You cannot establish a SSH/SFTP connection to the session until you click
+   the SSH/SFTP icon. When you close the Console app and launch it again, the
    connection between the local proxy and the Console app is initialized, so the
    SSH/SFTP icon must be clicked again.
 
 Next, a dialog containing SSH/SFTP connection information will be pop up.
-Remember the address written in the SFTP URL and click the download link to save
-the ``id_container`` file on the local machine. This file is an auto-generated
-SSH private key. Instead of using a link, you can also download the
-auto-generated ``id_container`` file under ``/home/work/`` with your terminal or
-Jupyter Notebook. The auto-generated SSH key does not change unless renewed.
-
-.. note::
-   The current connection port number is 10000, 10001, 10002, ... in the order
-   of clicking the SSH/SFTP icon after starting the Console app. Therefore, the
-   session where the first SSH/SFTP app is clicked will occupy port 10000, and
-   the session where the second SSH/SFTP app is clicked will take port 10001.
-   When the Console app is restarted, the port mapping is initialized, so the
-   session where the SSH/SFTP app is clicked for the first time after the
-   Console app restart will take over from port 10000 again. In the future, we
-   will add the ability for user to specify the port number of SSH/SFTP
-   connection.
+Remember the address (especially the assigned port) written in the SFTP URL and
+click the download link to save the ``id_container`` file on the local machine.
+This file is an automatically generated SSH private key. Instead of using the
+link, you can also download the ``id_container`` file located under
+``/home/work/`` with your web terminal or Jupyter Notebook. The auto-generated
+SSH key may change when new session is created. In that case, it must be
+downloaded again.
 
 .. image:: sftp_app.png
    :alt: Starting SSH/SFTP daemon inside a compute session (container)
 
-``id_container`` is an OpenSSH-based key, so if you use a client that supports
-only Windows or ppk type keys, you must convert it. Here, we will convert
-through the PuTTYgen program installed with PuTTY. After running the PuTTYgen,
-click on the import key in the Conversions menu. Select the downloaded
-``id_container`` file from the file open dialog. Click the Save private key
-button of PuTTYGen and save the file with the name ``id_container.ppk``.
+To SSH connect to the compute session with the downloaded SSH private key, you
+can run the following command in the shell environment. You should write the
+path to the downloaded ``id_container`` file after ``-i`` option and the
+assigned port number after ``-p`` option. The user inside the compute session is
+usually set to ``work``, but if your session uses other account, the ``work``
+part in ``work@localhost`` should be changed to the actual session account.  If
+you run the command correctly, you can see that SSH connection is made to the
+compute session and you are welcomed by the container's shell environment.
+
+.. code-block:: shell
+
+   $ ssh -o StrictHostKeyChecking=no \
+   >     -o UserKnownHostsFile=/dev/null \
+   >     -i ~/.ssh/id_container \
+   >     work@localhost -p 10022
+   Warning: Permanently added '[127.0.0.1]:9922' (RSA) to the list of known hosts.
+   f310e8dbce83:~$
+
+Connting by SFTP would almost be the same. After running the SFTP client and
+setting public key-based connection method, then simply specify ``id_container``
+as the SSH private key. Each FTP client may adopt different way, so refer to
+each FTP client manual for details.
+
+.. note::
+   The SSH/SFTP connection port number is randomly assigned each time a session
+   is created. If you want to use a specific SSH/SFTP port number, you can input
+   the port number in the "Preferred SSH Port" field in the user settings menu.
+   To avoid possible collisions with other services within the compute session,
+   it is recommended to specify a port number between 10000-65000. However, if
+   SSH/SFTP connections are made by two or more compute sessions at the same
+   time, the second SSH/SFTP connection cannot use the designated port (since
+   the first SSH/SFTP connection is already taken it), so a random port number
+   will be assigned.
+
+.. note::
+   If you want to use your own SSH keypair instead of ``id_container``, create a
+   user-type folder named ``.ssh``. If you create ``authorized_keys`` file in
+   that folder and append it with the contents of your SSH public key, you can
+   connect by SSH/SFTP through your own SSH private key without having to
+   download the ``id_container`` after creating the compute session.
+   There is.
+
+
+SSH/SFTP connection to a compute session (Windows / FileZilla)
+--------------------------------------------------------------
+
+Backend.AI Console app supports OpenSSH-based public key connection (RSA2048).
+To access with a client such as PuTTY on Windows, a private key must be
+converted into a ``ppk`` file through a program such as PuTTYgen. You can refer
+to the following link for the conversion method:
+https://wiki.filezilla-project.org/Howto. For easier explanation, this section
+will describe how to connect to SFTP through FileZilla client on Windows.
+
+Refer to the connection method on Linux/Mac, create a compute session, check the
+connection port and download ``id_container``. ``id_container`` is an
+OpenSSH-based key, so if you use a client that supports only Windows or ppk type
+keys, you must convert it. Here, we will convert through the PuTTYgen program
+installed with PuTTY. After running the PuTTYgen, click on the import key in the
+Conversions menu. Select the downloaded ``id_container`` file from the file open
+dialog. Click the Save private key button of PuTTYGen and save the file with the
+name ``id_container.ppk``.
 
 .. image:: puttygen_conversion.png
    :alt: SSH key conversion with PuttyGen
