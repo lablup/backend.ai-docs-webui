@@ -14,6 +14,11 @@ will appear. Specify the language environment (Environments, Version), the
 amount of resources (CPU, RAM, GPU, etc.) you want to use, and then press the
 LAUNCH button.
 
+.. image:: session_launch_dialog.png
+   :width: 350
+   :align: center
+   :alt: Session launch dialog with various settings
+
 .. note::
    If the GPU resource is marked as FGPU, this means that the server is serving
    the GPU resources in a virtualized form. Backend.AI supports GPU
@@ -29,14 +34,22 @@ LAUNCH button.
    utilize SM (streaming multiprocessor) and GPU memory corresponding to 0.2
    physical GPU for the session.
 
-Wait for a while for the compute session to be started. If you have created a
-folder in the Storage menu, you can also choose them from the Folders to mount
-menu. Folders/Storages are discussed in a separate section.
+If no mount folder is specified in "Folders to mount", the following
+notification dialog may appear. It is recommended that one or more storage
+folders to be mounted because terminating compute session by default deletes all
+the data inside the session. If you specify a mount folder and save your data in
+that folder, you can keep the data even if the compute session is destroyed.
+Data preserved in the storage folder can also be reused by re-mounting it when
+creating another compute session. You can ignore the alarm and create a session.
+However, it's a good idea to mount a folder if you're working on a job that
+requires you to keep data from within a session. For information on how to mount
+a folder and run a compute session, see :ref:`Related
+Content<session-with-mounts>`.
 
-.. image:: session_launch_dialog.png
+.. image:: no_vfolder_notification_dialog.png
    :width: 350
    :align: center
-   :alt: Session launch dialog with various settings
+   :alt: Notification dialog when no storage folder is mounted to the session
 
 Notice that a new compute session is created in the Running tab.
 
