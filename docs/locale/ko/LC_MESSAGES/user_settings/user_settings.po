@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Console
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Console User Guide 19.09\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-11 02:24+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../user_settings/user_settings.rst:3
+msgid "User Settings & Logs"
+msgstr "설정 및 로그"
+
+#: ../../user_settings/user_settings.rst:5
+msgid ""
+"User Setting and Logs tab allow users to change the preferred Console "
+"Environment. From language setting, SSH keypair management, editing user "
+"config script, and even using Beta Features is available by just a few "
+"clicks of each button. Every message from server will be logged in Logs. "
+"You can see how the miscellaneous error occurred in the Logs tab."
+msgstr ""
+"설정 및 로그 탭에서는 사용자가 선호하는 콘솔 환경에 맞게 변경할 수 있습니다. 언어 설정부터 "
+"SSH 키페어 관리, 사용자 설정 스크립트 수정과 베타 기능 사용까지 각 기능의 버튼을 몇 번 클릭"
+"하는 것만으로도 가능합니다. 서버로부터 오는 모든 메시지는 로그 페이지에 저장됩니다. "
+"에러가 발생하였을 때, 어떻게 발생하였는지 로그 탭에서 확인하실 수 있습니다."
+
+#: ../../user_settings/user_settings.rst:13
+msgid "Language Setting"
+msgstr "언어 설정"
+
+#: ../../user_settings/user_settings.rst:15
+msgid "Click Language Dropdown to check supported languages."
+msgstr "언어 드롭다운 메뉴를 클릭해서 지원하는 언어를 확인할 수 있습니다."
+
+#: ../../user_settings/user_settings.rst:18
+msgid "Currently, only Korean and English are supported."
+msgstr "현재는 한국어와 영어만 지원됩니다."
+
+#: ../../user_settings/user_settings.rst:22
+msgid "Change SSH Keypair"
+msgstr "SSH 키페어 변경"
+
+#: ../../user_settings/user_settings.rst:24
+msgid ""
+"If you are using the GUI console app, you can create SSH/SFTP connection "
+"directly to the container. You can query or create a SSH keypair, which "
+"is used for SSH/SFTP connection. Clicking the button next to the SSH "
+"keypair Management in Preferences panel brings up a dialog. Current "
+"public key is displayed, if exists, and new public key and private key "
+"can be created by clicking GENERATE button. This will generate a new SSH "
+"keypair and save it into the database."
+msgstr ""
+"앱 형태의 GUI 콘솔을 사용하는 경우 컨테이너로 직접 SSH/SFTP 접속을 할 수 있습니다. "
+"(주의: 웹 기반 콘솔에서는 아직 SSH/SFTP 접속을 지원하지 않습니다.) 이 때 사용되는 "
+"SSH keypair를 조회하거나 새로 생성할 수 있습니다. 설정 패널의 SSH 키페어 관리 옆의
+버튼을 클릭하면 다음과 같은 다이얼로그가 뜹니다. 현재 설정된 public key를 조회할 수 있으며 "
+"(private key는 조회되지 않습니다), 생성 버튼을 클릭하여 새로운 public key, "
+" private key를 생성하고 데이터베이스에 저장할 수 있습니다."
+
+#: ../../user_settings/user_settings.rst:37
+msgid "The web-based console does not yet support SSH/SFTP connections."
+msgstr ""
+"웹기반 콘솔은 아직 SSH/SFTP 연결을 지원하지 않습니다."
+
+#: ../../user_settings/user_settings.rst:40
+msgid ""
+"Backend.AI uses SSH keypair based on OpenSSH. On Windows, you may convert"
+" this into PPK key."
+msgstr ""
+"Backend.AI는 OpenSSH에 기반한 SSH keypair를 사용합니다. 윈도우즈에서는 PPK 기반 키로 "
+"변환해야 할 수 있습니다."
+
+#: ../../user_settings/user_settings.rst:45
+msgid "Edit Shell Environment"
+msgstr "쉘 환경 수정"
+
+#: ../../user_settings/user_settings.rst:47
+msgid ""
+"Existing shell scripts can be applied to new sessions. You can copy the "
+"shell script and save it to your favorite shell script run command. Shell"
+" editing feature also supports setting Renviron file used in the R "
+"language."
+msgstr ""
+"기존에 사용중인 쉘 스크립트를 새로운 세션에 적용할 수 있습니다. 쉘 스크립트를 복사해서 선호하는"
+"쉘스크립트 실행 커맨드에 저장할 수 있습니다. 쉘 수정 기능은 R 언어에서 사용되는 Renviron 파일 "
+"또한 지원합니다. "
+
+#: ../../user_settings/user_settings.rst:57
+msgid "Only .zshrc, .bashrc and .Renviron are editable for now."
+msgstr ".zshrc, .bashrc 와 .Renvrion 파일만 현재 수정가능합니다."
