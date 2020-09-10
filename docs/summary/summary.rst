@@ -70,26 +70,3 @@ password should follow the rules below:
    :width: 300
    :align: center
    :alt: Change password dialog
-
-
-Change SSH Keypair
-------------------
-
-If you are using the GUI console app, you can create SSH/SFTP connection
-directly to the container. You can query or create a SSH keypair, which is used
-for SSH/SFTP connection. Clicking the Refresh SSH Keypair link in the
-Preferences panel brings up a dialog. Current public key is displayed, if
-exists, and new public key and private key can be created by clicking CONFIRM
-button. This will generate a new SSH keypair and save it into the database.
-
-.. image:: refresh_ssh_keypair_dialog.png
-   :width: 500
-   :align: center
-   :alt: Change password dialog
-
-.. note::
-   The web-based console does not yet support SSH/SFTP connections.
-
-.. note::
-   Backend.AI uses SSH keypair based on OpenSSH. On Windows, you may convert
-   this into PPK key.
