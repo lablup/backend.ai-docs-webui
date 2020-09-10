@@ -23,9 +23,9 @@ Change SSH Keypair
 
 If you are using the GUI console app, you can create SSH/SFTP connection
 directly to the container. You can query or create a SSH keypair, which is used
-for SSH/SFTP connection. Clicking the Refresh SSH Keypair link in the
-Preferences panel brings up a dialog. Current public key is displayed, if
-exists, and new public key and private key can be created by clicking CONFIRM
+for SSH/SFTP connection. Clicking the button next to the SSH keypair Management
+in Preferences panel brings up a dialog. Current public key is displayed, if
+exists, and new public key and private key can be created by clicking GENERATE
 button. This will generate a new SSH keypair and save it into the database.
 
 .. image:: refresh_ssh_keypair_dialog.png
