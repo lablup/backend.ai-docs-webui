@@ -1,6 +1,12 @@
-===============
-Handing Folders
-===============
+=============================================================
+Handing Folders for Consistent Management of Data and Modlels
+=============================================================
+
+.. note:: Objectives
+
+   * Concept of the storage folder
+   * Create/delete/navigate a storage folder
+   * Automount storage folder
 
 Backend.AI supports dedicated storage to preserve user's files. Since the files
 and directories of a compute session are deleted upon session termination, it is

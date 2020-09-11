@@ -4,6 +4,12 @@
 Create a Compute Session with Mounted Folders
 =============================================
 
+.. note:: Objectives
+
+   * Mount persistent storage folders when creating a compute session
+   * Data can be managed independently from the life cycle of the compute
+     session
+
 When you start a compute session, the user has access to the ``/home/work/``
 directory, and the normal directores and files created under ``/home/work/``
 will disappear when the compute session is destroyed. This is because compute

@@ -27,8 +27,6 @@ The latest versions of full user's guide can be found from sites below:
    allocate_gpu/allocate_gpu
    resource_and_scheduler/resource_and_scheduler
    resource_limit/resource_limit
-
-
    vfolder/vfolder
    mount_vfolder/mount_vfolder
    license_agreement/license_agreement
