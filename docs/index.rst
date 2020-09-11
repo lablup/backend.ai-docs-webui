@@ -28,6 +28,7 @@ The latest versions of this document can be found from sites below:
    session_list/session_list
    session_use/session_use
    vfolder/vfolder
+   share_vfolder/share_vfolder
    mount_vfolder/mount_vfolder
    sftp_to_container/sftp_to_container
    admin_user_keypair_management/admin_user_keypair_management
