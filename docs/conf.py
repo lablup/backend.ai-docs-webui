@@ -118,7 +118,7 @@ latex_elements = {
             \centering
             \vspace*{15mm}  %% * is used to give space from top
             \sphinxlogo
-            \textbf{\Huge Backend.AI Console\\User's Guide}\par
+            \textbf{\Huge Backend.AI Console\\Essential Guide}\par
             {\LARGE (\version)}\par
             \vspace{25mm}
             \textbf{\LARGE \@author}\par
@@ -135,7 +135,7 @@ latex_elements = {
 latex_documents = [
     (master_doc,
      'backendaiconsoleuserguide.tex',
-     'Backend.AI Console User\'s Guide',
+     'Backend.AI Console Essential Guide',
      author, 'manual'),
 ]
 
