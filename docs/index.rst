@@ -3,18 +3,17 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Backend.AI GUI Console User Guide
-=================================
-
-User's guide for the Backend.AI GUI Console.
+Backend.AI GUI Console Essential Guide
+======================================
 
 Backend.AI GUI Console is a web or app that provides easy-to-use GUI interface
 to work with the Backend.AI server.
 
-The latest versions of this document can be found from sites below:
+This document is an essential guide for Backend.AI GUI Console.
+The latest versions of full user's guide can be found from sites below:
 
-- https://console.docs.backend.ai/en/stable (English)
-- https://console.docs.backend.ai/ko/stable (Korean)
+- https://console.docs.backend.ai/en/latest (English)
+- https://console.docs.backend.ai/ko/latest (Korean)
 
 .. toctree::
    :maxdepth: 2
@@ -24,9 +23,9 @@ The latest versions of this document can be found from sites below:
    overview/overview
    installation/installation
    login/login
-   summary/summary
-   session_list/session_list
-   session_use/session_use
+   allocate_cpu_mem/allocate_cpu_mem
+
+
    vfolder/vfolder
    mount_vfolder/mount_vfolder
    sftp_to_container/sftp_to_container
