@@ -20,8 +20,8 @@
 project = 'Backend.AI Console User Guide'
 copyright = '2020, Lablup Inc.'
 author = 'Lablup Inc.'
-version = '19.09'
-release = '19.09'
+version = '20.03'
+release = '20.03'
 
 # -- General configuration ---------------------------------------------------
 
