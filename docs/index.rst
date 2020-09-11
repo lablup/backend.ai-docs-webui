@@ -24,12 +24,10 @@ The latest versions of full user's guide can be found from sites below:
    installation/installation
    login/login
    allocate_cpu_mem/allocate_cpu_mem
+   allocate_gpu/allocate_gpu
 
 
    vfolder/vfolder
    mount_vfolder/mount_vfolder
-   sftp_to_container/sftp_to_container
-   admin_user_keypair_management/admin_user_keypair_management
-   trouble_shooting/trouble_shooting
    license_agreement/license_agreement
    references/references

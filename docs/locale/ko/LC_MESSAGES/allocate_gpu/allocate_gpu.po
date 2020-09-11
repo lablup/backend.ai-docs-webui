@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Console
+# Essential Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Console Essential Guide Enterprise R2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-11 20:04+0900\n"
+"PO-Revision-Date: 2020-09-11 20:07+0900\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko_KR\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#: ../../allocate_gpu/allocate_gpu.rst:3
+msgid "GPU Virtualization and Fractional GPU Allocation"
+msgstr "GPU 가상화를 통한 컨테이너 별 GPU 분할 할당"
+
+#: ../../allocate_gpu/allocate_gpu.rst:5
+msgid "Objectives"
+msgstr "목표"
+
+#: ../../allocate_gpu/allocate_gpu.rst:7
+msgid ""
+"From the GUI environment, the fGPU (fractional GPU) resource option can "
+"be dynamically given when creating a compute session"
+msgstr ""
+"GUI 환경에서 fGPU (fractional GPU) 자원 옵션을 동적으로 주고 연산 세션을 "
+"생성"
+
+#: ../../allocate_gpu/allocate_gpu.rst:9
+msgid ""
+"Check the allocated fGPU resource of a compute session from the GUI and "
+"make sure it is created with the amount requested"
+msgstr ""
+"GUI 상에서 해당 세션의 fGPU 자원 할당량을 확인하고 요청한 양대로 생성되는"
+"지 확인"
+
+#: ../../allocate_gpu/allocate_gpu.rst:11
+msgid ""
+"Open the web terminal app on the GUI and check the GPU is partially "
+"allocated at the container level by the ``nvidia-smi`` command"
+msgstr ""
+"GUI 상에서 웹 터미널 앱을 띄우고 nvidia-smi 명령을 통해 컨테이너 수준의 "
+"GPU 분할 공유 확인"
+
+#: ../../allocate_gpu/allocate_gpu.rst:14
+msgid ""
+"Backend.AI supports GPU virtualization technology which allows single "
+"physical GPU can be divided and shared by multiple users simultaneously. "
+"Therefore, if you want to execute a task that does not require much GPU "
+"computation capability, you can create a compute session by allocating a "
+"portion of the GPU. The amount of GPU resources that 1 fGPU actually "
+"allocates may vary from system to system depending on administrator "
+"settings. For example, if the administrator has set one physical GPU to "
+"be divided into five pieces, 5 fGPU means 1 physical GPU, or 1 fGPU "
+"means 0.2 physical GPU. If you set 1 fGPU when creating a compute "
+"session, the session can utilize the streaming multiprocessor (SM) and "
+"GPU memory equivalent to 0.2 physical GPU."
+msgstr ""
+"Backend.AI는 하나의 물리 GPU를 여러 개로 분할해서 여러 사용자가 나누어 사"
+"용할 수 있는 가상화 기술을 지원하고 있습니다. 따라서, GPU 연산 소요가 크"
+"지 않은 작업을 수행하고자 할 경우에는 GPU의 일부만 할당하여 연산 세션을 "
+"생성할 수 있습니다. 1 fGPU가 실제로 할당하는 GPU 자원의 양은 관리자 설정"
+"에 따라 시스템 별로 다양할 수 있습니다. 예를 들어, 관리자가 하나의 GPU를 "
+"다섯 조각으로 분할 설정한 경우, 5 fGPU가 1 물리 GPU, 또는 1 fGPU가 0.2 물"
+"리 GPU를 뜻합니다. 이 때 1 fGPU를 설정하여 연산 세션을 생성하면, 그 세션"
+"에서는 0.2 물리 GPU에 해당하는 SM(streaming multiprocessor)과 GPU 메모리"
+"를 활용할 수 있습니다."
+
+#: ../../allocate_gpu/allocate_gpu.rst:25
+msgid ""
+"In this section, we will create a compute session by allocating a "
+"portion of the GPU, and then check whether the GPU recognized inside the "
+"compute container is really corresponds to the partial physics GPU."
+msgstr ""
+"이번에는 GPU를 일부만 할당하여 연산 세션을 생성한 후 연산 컨테이너 내부에"
+"서 인식하는 GPU가 정말 물리 GPU의 일부분인지 확인 해보도록 하겠습니다."
+
+#: ../../allocate_gpu/allocate_gpu.rst:29
+msgid ""
+"First, let's check information such as the type of physical GPU "
+"installed in the host node and the amount of memory. The GPU node used "
+"in this guide is equipped with a GPU with 8 GB of memory as in the "
+"following figure. And through the administrator settings, 1 fGPU is set "
+"to an amount equivalent to 0.5 physical GPUs (or 1 physical GPU is 2 "
+"fGPU)."
+msgstr ""
+"먼저 호스트 노드에 장착되어 있는 물리 GPU의 종류와 메모리 용량 등의 정보"
+"를 확인 해보겠습니다. 이 가이드를 작성하면서 사용한 GPU 노드에는 다음과 "
+"같이 8 GB 메모리의 GPU가 장착되어 있습니다. 그리고 관리자 설정을 통해 1 "
+"fGPU를 0.5개의 물리 GPU(또는 1개의 물리 GPU가 2 fGPU)에 해당하는 양으로 "
+"설정하였습니다."
+
+#: ../../allocate_gpu/allocate_gpu.rst:39
+msgid ""
+"Now let's go to the Sessions page and create a compute session by "
+"allocating 0.5 fGPUs as follows:"
+msgstr ""
+"이제 Sessions 페이지로 이동하여 다음과 같이 0.5개의 fGPU를 할당하여 연산 "
+"세션을 생성 해봅시다:"
+
+#: ../../allocate_gpu/allocate_gpu.rst:46
+msgid ""
+"In the Configuration column of the calculation session list, you can see "
+"that 0.5 fGPU is allocated."
+msgstr ""
+"연산 세션 리스트의 Configuration 열에서 0.5의 fGPU가 할당된 것을 확인할 "
+"수 있습니다."
+
+#: ../../allocate_gpu/allocate_gpu.rst:51
+msgid ""
+"Now, let's connect directly to the inside of the container and check if "
+"the GPU memory (~2 GB) equivalent to 0.5 units is really allocated. "
+"Let's bring up a web terminal. When the terminal comes up, run the "
+"``nvidia-smi`` command. As you can see in the following figure, you can "
+"see that about 2 GB of GPU memory is allocated. This is not possible by "
+"a way like PCI passthrough, showing that the physical GPU is actually "
+"divided into quarters and allocated inside the container for this "
+"compute session."
+msgstr ""
+"이제 컨테이너 내부에 직접 접속하여 정말로 0.5 유닛에 해당하는 GPU 메모리"
+"(~2 GB)가 할당 되었는지 확인해보겠습니다. 웹 터미널을 띄워 봅시다. 터미널"
+"이 뜨면 ``nvidia-smi`` 명령을 실행합니다. 다음 그림에서 확인할 수 있는 것"
+"처럼 약 2 GB에 해당하는 GPU 메모리가 할당된 것을 확인할 수 있습니다. 이"
+"는 PCI passthrough 같은 방식으로는 불가능한 것으로, 물리 GPU가 실제로 1/4"
+"로 분할되어 이 연산 세션의 컨테이너 내부에 할당된 것을 보여줍니다."
+
+#: ../../allocate_gpu/allocate_gpu.rst:63
+msgid "Let's open up a Jupyter Notebook and run a simple ML training code."
+msgstr ""
+"이번에는 Jupyter Notebook을 띄워서 간단한 ML 학습 코드를 실행해보겠습니"
+"다."
+
+#: ../../allocate_gpu/allocate_gpu.rst:67
+msgid ""
+"While training is in progress, connect to the shell of the GPU host node "
+"and execute the ``nvidia-smi`` command. You can see that there is one "
+"GPU attached process, and this process is occupying about 25% of the "
+"resources of the physical GPU. (GPU occupancy can vary greatly depending "
+"on training code and GPU model)"
+msgstr ""
+"학습이 진행되는 동안 GPU 호스트 노드의 쉘로 접속해서 ``nvidia-smi`` 명령"
+"을 실행합니다. 다음과 같이 하나의 GPU 사용 프로세스가 있고 이 프로세스는 "
+"물리 GPU의 약 25%에 해당하는 자원을 점유중임을 알 수 있습니다. (GPU 점유"
+"량은 학습 코드와 GPU 모델에 따라 크게 다를 수 있습니다)"
+
+#: ../../allocate_gpu/allocate_gpu.rst:77
+msgid ""
+"Alternatively, you can run the ``nvidia-smi`` command from the web "
+"terminal you left earlier to query the GPU usage history recognized "
+"inside the container."
+msgstr ""
+"또는, 아까 띄워둔 웹 터미널에서 ``nvidia-smi`` 명령을 내려 컨테이너 내부"
+"에서 인식하는 GPU 사용 내역을 조회해보는 것도 가능합니다."
