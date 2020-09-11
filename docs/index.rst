@@ -26,6 +26,7 @@ The latest versions of full user's guide can be found from sites below:
    allocate_cpu_mem/allocate_cpu_mem
    allocate_gpu/allocate_gpu
    resource_and_scheduler/resource_and_scheduler
+   resource_limit/resource_limit
 
 
    vfolder/vfolder
