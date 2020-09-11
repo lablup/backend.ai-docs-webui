@@ -17,11 +17,11 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Backend.AI Console User Guide'
+project = 'Backend.AI Console Essential Guide'
 copyright = '2020, Lablup Inc.'
 author = 'Lablup Inc.'
-version = '19.09'
-release = '19.09'
+version = 'Enterprise R2'
+release = 'Enterprise R2'
 
 # -- General configuration ---------------------------------------------------
 
