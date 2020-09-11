@@ -29,5 +29,7 @@ The latest versions of full user's guide can be found from sites below:
    resource_limit/resource_limit
    vfolder/vfolder
    mount_vfolder/mount_vfolder
+   share_vfolder/share_vfolder
+   ml_kernels/ml_kernels
    license_agreement/license_agreement
    references/references
