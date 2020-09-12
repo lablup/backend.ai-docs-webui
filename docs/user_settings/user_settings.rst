@@ -46,7 +46,7 @@ Edit Shell Environment
 
 Existing shell scripts can be applied to new sessions.
 You can copy the shell script and save it to your favorite shell script run command.
-Shell editing feature also supports setting Renviron file used in the R language.
+Shell editing feature also supports setting ``.Renviron`` file used in the R language.
 
 .. image:: edit_user_config_script.png
    :width: 500
@@ -54,4 +54,4 @@ Shell editing feature also supports setting Renviron file used in the R language
    :alt: Edit Shell Environment dialog
 
 .. note::
-   Only .zshrc, .bashrc and .Renviron are editable for now.
+   Only ``.zshrc``, ``.bashrc`` and ``.Renviron`` are editable for now.
