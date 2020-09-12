@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-21 00:40+0900\n"
-"PO-Revision-Date: 2020-07-21 00:41+0900\n"
+"POT-Creation-Date: 2020-09-12 11:03+0900\n"
+"PO-Revision-Date: 2020-09-12 11:11+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko\n"
 "Language-Team: Lablup\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: ../../session_use/session_use.rst:3
 msgid "Using Compute Session"
-msgstr "연산 세션 실행하기"
+msgstr "연산 세션 사용하기"
 
 #: ../../session_use/session_use.rst:5
 msgid ""
@@ -47,35 +47,7 @@ msgstr ""
 "이 뜨는데, 사용하려는 언어 환경(Environments, Version)과 자원 설정(원하"
 "는 CPU, RAM, GPU 등 할당량)을 지정하고 LAUNCH 버튼을 누릅니다."
 
-#: ../../session_use/session_use.rst:23
-msgid ""
-"If the GPU resource is marked as FGPU, this means that the server is "
-"serving the GPU resources in a virtualized form. Backend.AI supports GPU "
-"virtualization technology that a single physical GPU can be divided and "
-"shared by multiple users for better utilization. Therefore, if you want "
-"to execute a task that does not require a large amount of GPU "
-"computation, you can create a compute session by allocating only a "
-"portion of a GPU. The amount of GPU resources that 1 FGPU actually "
-"allocates may vary from system to system depending on the "
-"administrator's setting. For example, if administrator has set to split "
-"one physical GPU into five pieces, 5 FGPU means 1 physical GPU, or 1 "
-"FGPU means 0.2 physical GPU. At this configuration, if you create a "
-"compute session by allocating 1 FGPU, you can utilize SM (streaming "
-"multiprocessor) and GPU memory corresponding to 0.2 physical GPU for the "
-"session."
-msgstr ""
-"만약 GPU 자원이 FGPU로 표시되어 있다면, 이는 서버가 GPU 자원을 가상화된 "
-"형태로 제공하고 있다는 것을 의미합니다. Backend.AI는 하나의 물리 GPU를 여"
-"러 개로 분할해서 여러 사용자가 나누어 사용할 수 있는 가상화 기술을 지원하"
-"고 있습니다. 따라서, GPU 연산 소요가 크지 않은 작업을 수행하고자 할 경우"
-"에는 GPU의 일부만 할당하여 연산 세션을 생성할 수 있습니다. 1 FGPU가 실제"
-"로 할당하는 GPU 자원의 양은 관리자 설정에 따라 시스템 별로 다양할 수 있습"
-"니다. 예를 들어, 관리자가 하나의 GPU를 다섯 조각으로 분할 설정한 경우, 5 "
-"FGPU가 1 물리 GPU, 또는 1 FGPU가 0.2 물리 GPU를 뜻합니다. 이 때 1 FGPU를 "
-"설정하여 연산 세션을 생성하면, 그 세션에서는 0.2 물리 GPU에 해당하는 "
-"SM(streaming multiprocessor)과 GPU 메모리를 활용할 수 있습니다."
-
-#: ../../session_use/session_use.rst:37
+#: ../../session_use/session_use.rst:22
 msgid ""
 "If no mount folder is specified in \"Folders to mount\", the following "
 "notification dialog may appear. It is recommended that one or more "
@@ -102,31 +74,81 @@ msgstr ""
 "하는 법에 관해서는 :ref:`관련 내용<session-with-mounts>` 을 참고 하십시"
 "오."
 
-#: ../../session_use/session_use.rst:54
+#: ../../session_use/session_use.rst:39
 msgid "Notice that a new compute session is created in the Running tab."
 msgstr "Running 탭에서 새로운 연산 세션이 생성되는 것을 확인합시다."
 
-#: ../../session_use/session_use.rst:61
+#: ../../session_use/session_use.rst:46
 msgid "Use and Manage Running Session"
 msgstr "이미 실행 중인 세션을 사용하고 관리하기"
 
-#: ../../session_use/session_use.rst:63
+#: ../../session_use/session_use.rst:48
 msgid ""
-"This time, let's take a look at how to use and manage a running compute "
-"session. If you see the Control column in the session list, there are "
+"Now, let's take a look at how to use and manage a running compute "
+"session.  If you see the Control column in the session list, there are "
 "several icons. When you click the first icon, several app services "
 "supported by the session will appear as shown in the following figure."
 msgstr ""
 "이번에는 이미 실행 중인 연산 세션을 사용하고 관리하는 법에 관해 살펴보겠"
-"습니다. 세션 리스트의 Control 열을 보면 몇 가지 아이콘이 있습니다. 플레"
-"이 아이콘을 누르면 다음 그림과 같이 해당 세션이 지원하는 몇 가지 앱 서비"
-"스가 뜨게 됩니다."
+"습니다. 세션 리스트의 Control 열을 보면 몇 가지 아이콘이 있습니다. 첫 번"
+"째 아이콘을 클릭하면 다음 그림과 같이 해당 세션이 지원하는 몇 가지 앱 서"
+"비스가 뜨게 됩니다."
 
-#: ../../session_use/session_use.rst:73
+#: ../../session_use/session_use.rst:59
+msgid ""
+"There are two check options under the app icons. Check each item and "
+"open the app to reflect the following features:"
+msgstr ""
+"앱 아이콘 아래에는 두 가지 체크 옵션이 있습니다. 각 항목을 체크하고 앱을 "
+"띄우면 다음과 같은 기능이 반영됩니다."
+
+#: ../../session_use/session_use.rst:62
+msgid ""
+"Open app to public: Open the app to the public. Basically, web services "
+"such as Terminal and Jupyter Notebook services here are not accessible "
+"by other users, even if the user knows the service URL, since they are "
+"considered unauthenticated. However, if you check this item anyone who "
+"knows the URL (and port number) of the service can access and use it. Of "
+"course, the user must have a network path to access the service."
+msgstr ""
+"Open app to public: 띄워진 앱을 외부로 공개합니다. 기본적으로 Terminal, "
+"Jupyter Notebook 등의 웹 서비스는 다른 사람이 주소를 알더라도 미인증 사용"
+"자로 간주되어 접근할 수 없습니다. 하지만, 이 옵션에 체크하고 앱을 띄우면 "
+"서비스의 주소와 포트 번호를 아는 누구나 해당 앱에 접근하고 사용할 수 있"
+"게 됩니다. 물론, 해당 서비스에 접근할 수 있는 네트워크 경로는 확보가 되"
+"어 있어야 합니다."
+
+#: ../../session_use/session_use.rst:68
+msgid ""
+"Try preferred port: When the web service is opened, a specific port is "
+"assigned from the port pool created in advance by Backend.AI. Users can "
+"use the service only when they connect to the port along with the IP "
+"address or domain name. If you check this item and enter the port "
+"number, the entered port number will be tried. However, there is no "
+"guarantee that the desired port will always be assigned. The port may "
+"not exist at all in the port pool, or another service may already be "
+"using the port. In this case, the port number is randomly assigned."
+msgstr ""
+"Try preferred port: 웹 서비스가 뜰 때 Backend.AI가 사전에 생성해 둔 포트 "
+"풀(pool)에서 특정 포트를 하나 할당받게 됩니다. 사용자는 IP주소 또는 도메"
+"인 이름과 함께 해당 포트로 접속을 해야 서비스를 사용할 수 있습니다. 이 항"
+"목에 체크하고 포트 번호를 입력하면 입력한 포트 번호를 우선적으로 할당 시"
+"도하게 됩니다. 하지만, 항상 원하는 포트를 할당받는다는 보장은 없습니다. "
+"포트 풀에 해당 포트가 아예 없을 수도 있고, 다른 서비스가 이미 해당 포트"
+"를 할당받아 사용하고 있을 수도 있습니다. 이런 경우에는 임의로 포트 번호"
+"를 할당합니다."
+
+#: ../../session_use/session_use.rst:77
+msgid ""
+"Do not open the app by checking one of the items unless you have a clear "
+"usage purpose and know what it means."
+msgstr "확실한 사용 목적이 없다면 두 항목을 체크해서 앱을 띄우지 마십시오."
+
+#: ../../session_use/session_use.rst:80
 msgid "As a test, let's click on Jupyter Notebook."
 msgstr "시험 삼아 Jupyter Notebook을 눌러봅시다."
 
-#: ../../session_use/session_use.rst:78
+#: ../../session_use/session_use.rst:85
 msgid ""
 "You will see a new window pop up and Jupyter Notebook is running. This "
 "Notebook was created inside the running compute session, and it's easy "
@@ -143,7 +165,7 @@ msgstr ""
 "지 설치 과정이 필요 없습니다. 자세한 Jupyter Notebook 사용법은 공식 문서 "
 "등을 참고하시기 바랍니다."
 
-#: ../../session_use/session_use.rst:85
+#: ../../session_use/session_use.rst:92
 msgid ""
 "In the notebook's file explorer, the ``id_container file`` contains a "
 "private SSH key. If necessary, you can download it and use it for SSH / "
@@ -153,7 +175,7 @@ msgstr ""
 "고 있습니다. 필요할 경우 다운로드 하여 컨테이너로의 SSH/SFTP 접속에 이용"
 "할 수 있습니다."
 
-#: ../../session_use/session_use.rst:89
+#: ../../session_use/session_use.rst:96
 msgid ""
 "Click the NEW button on the upper right corner and select Notebook for "
 "Backend.AI, and ipynb window will pop up where you can enter the new "
@@ -162,7 +184,7 @@ msgstr ""
 "우측 상단의 NEW 버튼을 클릭한 후 Backend.AI 용 Notebook을 선택하면 새로"
 "운 코드를 입력할 수 있는 ipynb 창이 뜹니다."
 
-#: ../../session_use/session_use.rst:97
+#: ../../session_use/session_use.rst:104
 msgid ""
 "In this window, you can enter and execute any code you want by using the "
 "environment that session provides.  The code execution happens on one of "
@@ -174,7 +196,7 @@ msgstr ""
 "Backend.AI 서버를 구성하는 노드 중 연산 세션이 실제로 생성된 노드에서 실"
 "행이 되며, 로컬 머신에는 별도 환경을 구성할 필요가 없습니다."
 
-#: ../../session_use/session_use.rst:105
+#: ../../session_use/session_use.rst:112
 msgid ""
 "When you close the window, you can notice that the ``Untitled.ipynb`` "
 "file is created in the Notebook File Explorer. Note that the files "
@@ -187,7 +209,7 @@ msgstr ""
 "경우 같이 삭제되는 것에 주의 하십시오. 생성된 파일을 세션이 사라지더라도 "
 "보존하는 방법은 폴더 섹션에서 설명합니다."
 
-#: ../../session_use/session_use.rst:113
+#: ../../session_use/session_use.rst:120
 msgid ""
 "Return to the Session list page. This time, let's launch the terminal. "
 "Click the terminal icon (the second button) to use the container's ttyd "
@@ -203,7 +225,7 @@ msgstr ""
 "세션 내부에 접속해서 커맨드 명령을 내릴 수 있습니다. 커맨드 사용에 익숙"
 "한 분이라면 손쉽게 여러 가지 리눅스 명령을 내릴 수가 있습니다."
 
-#: ../../session_use/session_use.rst:125
+#: ../../session_use/session_use.rst:132
 msgid ""
 "If you create a file here, you can immediately see it in the Jupyter "
 "Notebook you opened earlier as well. Conversely, changes made to files "
@@ -215,7 +237,7 @@ msgstr ""
 "도 터미널에서 바로 확인할 수 있습니다. 같은 연산 세션을 사용하고 있기 때"
 "문입니다."
 
-#: ../../session_use/session_use.rst:130
+#: ../../session_use/session_use.rst:137
 msgid ""
 "In addition, you can use web-based services such as TensorBoard, Jupyter "
 "Lab, etc., depending on the type of services provided by the compute "
@@ -224,7 +246,7 @@ msgstr ""
 "이 외에도 연산 세션이 제공하는 서비스의 종류에 따라 TensorBoard, Jupyter "
 "Lab 등과 같은 웹 기반 서비스를 이용할 수 있습니다."
 
-#: ../../session_use/session_use.rst:133
+#: ../../session_use/session_use.rst:140
 msgid ""
 "To delete a specific session, tap the red trash icon. Since the data in "
 "the folder inside the compute session is deleted as soon as the compute "
@@ -237,11 +259,11 @@ msgstr ""
 "속 유지해야 하는 데이터라면 마운트 한 폴더에 옮기거나 처음부터 폴더에 업"
 "로드하는 것을 권합니다."
 
-#: ../../session_use/session_use.rst:140
+#: ../../session_use/session_use.rst:147
 msgid "Advanced Web Terminal Usage"
 msgstr "웹 터미널 고급 사용법"
 
-#: ../../session_use/session_use.rst:142
+#: ../../session_use/session_use.rst:149
 msgid ""
 "The web-based terminal we used above internally embed a utility called "
 "`tmux <https://github.com/tmux/tmux/wiki>`_. tmux is a terminal "
@@ -258,15 +280,15 @@ msgstr ""
 "장점을 가지고 있습니다. 보다 강력한 터미널 기능을 활용하고 싶다면 tmux 공"
 "식 문서 및 기타 인터넷 상의 다양한 사용 예제를 참고하십시오."
 
-#: ../../session_use/session_use.rst:149
+#: ../../session_use/session_use.rst:156
 msgid "Here we are introducing some simple but useful features."
 msgstr "여기서는 몇 가지 간단하지만 유용한 기능을 소개하겠습니다."
 
-#: ../../session_use/session_use.rst:151
-msgid "**Copy terminal contents**"
-msgstr "**터미널 내용 복사하기**"
+#: ../../session_use/session_use.rst:159
+msgid "Copy terminal contents"
+msgstr "터미널 내용 복사하기"
 
-#: ../../session_use/session_use.rst:153
+#: ../../session_use/session_use.rst:161
 msgid ""
 "tmux offers a number of useful features, but it's a bit confusing for "
 "first-time users. In particular, tmux has its own clipboard buffer, so "
@@ -286,7 +308,7 @@ msgstr ""
 "컴퓨터의 다른 프로그램에 붙여넣을 수가 없습니다. 소위 말하는 ``Ctrl-"
 "C`` / ``Ctrl-V`` 가 작동하지 않는 것입니다."
 
-#: ../../session_use/session_use.rst:161
+#: ../../session_use/session_use.rst:169
 msgid ""
 "If you need to copy and paste the terminal contents to your system's "
 "clipboard, you can temporarily turn off tmux's mouse support. First, "
@@ -305,7 +327,7 @@ msgstr ""
 "로 원하는 텍스트를 드래그 하고 ``Ctrl-C`` 또는 ``Cmd-C`` 키를 누르면 사용"
 "자 컴퓨터의 클립보드에 해당 내용이 복사 됩니다."
 
-#: ../../session_use/session_use.rst:169
+#: ../../session_use/session_use.rst:177
 msgid ""
 "With mouse support turned off, you cannot scroll through the mouse wheel "
 "to see the contents of the previous page from the terminal. In this "
@@ -318,7 +340,7 @@ msgstr ""
 "``Ctrl-B`` 를 누른 후 이번에는 ``:set -g mouse on`` 을 입력해봅시다. 이"
 "제 마우스 휠을 스크롤하여 이전 페이지의 내용을 볼 수 있게 되었습니다."
 
-#: ../../session_use/session_use.rst:174
+#: ../../session_use/session_use.rst:182
 msgid ""
 "If you remember ``:set -g mouse off`` or ``:set -g mouse on`` after "
 "``Ctrl-B``, you can use the web terminal more conveniently."
@@ -326,7 +348,7 @@ msgstr ""
 "이와 같이 ``Ctrl-B`` 후 ``:set -g mouse off`` 또는 ``:set -g mouse on`` "
 "을 기억하면 조금 더 편리하게 웹 터미널을 활용할 수 있습니다."
 
-#: ../../session_use/session_use.rst:178
+#: ../../session_use/session_use.rst:186
 msgid ""
 "``Ctrl-B`` is tmux's default control mode key. If you set another "
 "control key by modifying ``.tmux.conf`` in user home directory, you "
@@ -336,11 +358,11 @@ msgstr ""
 "tmux.conf`` 를 수정하여 다른 제어 키를 설정한 경우에는, ``Ctrl-B`` 대신 "
 "설정된 키 조합을 눌러야 합니다."
 
-#: ../../session_use/session_use.rst:182
-msgid "**Checking the terminal history using keyboard**"
-msgstr "**키보드를 이용해 터미널 이전 내용 확인하기**"
+#: ../../session_use/session_use.rst:191
+msgid "Checking the terminal history using keyboard"
+msgstr "키보드를 이용해 터미널 이전 내용 확인하기"
 
-#: ../../session_use/session_use.rst:184
+#: ../../session_use/session_use.rst:193
 msgid ""
 "There is also a way to copy the terminal contents and check the previous "
 "contents of the terminal simultaneously. It is to check the previous "
@@ -359,11 +381,11 @@ msgstr ""
 "이 방법을 이용하면 마우스 지원을 끈 상태에서도 터미널 이전 내용 확인이 가"
 "능합니다."
 
-#: ../../session_use/session_use.rst:192
-msgid "**Spawn multiple shells**"
-msgstr "**여러 개의 쉘 띄우기**"
+#: ../../session_use/session_use.rst:202
+msgid "Spawn multiple shells"
+msgstr "여러 개의 쉘 띄우기"
 
-#: ../../session_use/session_use.rst:194
+#: ../../session_use/session_use.rst:204
 msgid ""
 "The main advantage of tmux is that you can launch and use multiple "
 "shells in one terminal window. Since seeing is believing, let's press "
@@ -387,7 +409,7 @@ msgstr ""
 "한 쉘입니다. 위/아래 방향 키를 이용해서 쉘 사이를 이동할 수 있습니다. "
 "``0:`` 번 쉘에 커서를 가져다 두고 엔터 키를 눌러 선택 해보겠습니다."
 
-#: ../../session_use/session_use.rst:208
+#: ../../session_use/session_use.rst:218
 msgid ""
 "You can see the shell environment you saw first appears. In this way, "
 "you can use multiple shell environments within a web terminal. To exit "
@@ -399,23 +421,23 @@ msgstr ""
 "쉘을 종료하려면 ``exit`` 명령을 입력하거나 ``Ctrl-B x`` 키를 누른 후 "
 "``y`` 를 입력하면 됩니다."
 
-#: ../../session_use/session_use.rst:213
+#: ../../session_use/session_use.rst:223
 msgid "In summary:"
 msgstr "정리하면 다음과 같습니다:"
 
-#: ../../session_use/session_use.rst:215
+#: ../../session_use/session_use.rst:225
 msgid "``Ctrl-B c``: create a new tmux shell"
 msgstr "``Ctrl-B c``: 새로운 tmux 쉘 생성"
 
-#: ../../session_use/session_use.rst:216
+#: ../../session_use/session_use.rst:226
 msgid "``Ctrl-B w``: query current tmux shells and move around among them"
 msgstr "``Ctrl-B w``: tmux 쉘 조회 및 이동/선택"
 
-#: ../../session_use/session_use.rst:217
+#: ../../session_use/session_use.rst:227
 msgid "``exit`` or ``Ctrl-B x``: terminate the current shell"
 msgstr "``exit`` 또는 ``Ctrl-B x``: 현재 tmux 쉘 종료"
 
-#: ../../session_use/session_use.rst:219
+#: ../../session_use/session_use.rst:229
 msgid ""
 "Combining the above commands allows you to perform various tasks "
 "simultaneously on multiple shells."
@@ -432,3 +454,43 @@ msgstr ""
 #~ "잠시 기다리면 연산 세션이 시작됩니다. 미리 만들어둔 저장소(Storage)가 "
 #~ "있다면 Folders to mount 메뉴에서 선택할 수도 있습니다. 저장소에 관해서"
 #~ "는 별도 섹션에서 설명합니다."
+
+#~ msgid ""
+#~ "If the GPU resource is marked as FGPU, this means that the server is "
+#~ "serving the GPU resources in a virtualized form. Backend.AI supports "
+#~ "GPU virtualization technology that a single physical GPU can be "
+#~ "divided and shared by multiple users for better utilization. "
+#~ "Therefore, if you want to execute a task that does not require a "
+#~ "large amount of GPU computation, you can create a compute session by "
+#~ "allocating only a portion of a GPU. The amount of GPU resources that "
+#~ "1 FGPU actually allocates may vary from system to system depending on "
+#~ "the administrator's setting. For example, if administrator has set to "
+#~ "split one physical GPU into five pieces, 5 FGPU means 1 physical GPU, "
+#~ "or 1 FGPU means 0.2 physical GPU. At this configuration, if you "
+#~ "create a compute session by allocating 1 FGPU, you can utilize SM "
+#~ "(streaming multiprocessor) and GPU memory corresponding to 0.2 "
+#~ "physical GPU for the session."
+#~ msgstr ""
+#~ "만약 GPU 자원이 FGPU로 표시되어 있다면, 이는 서버가 GPU 자원을 가상화"
+#~ "된 형태로 제공하고 있다는 것을 의미합니다. Backend.AI는 하나의 물리 "
+#~ "GPU를 여러 개로 분할해서 여러 사용자가 나누어 사용할 수 있는 가상화 기"
+#~ "술을 지원하고 있습니다. 따라서, GPU 연산 소요가 크지 않은 작업을 수행"
+#~ "하고자 할 경우에는 GPU의 일부만 할당하여 연산 세션을 생성할 수 있습니"
+#~ "다. 1 FGPU가 실제로 할당하는 GPU 자원의 양은 관리자 설정에 따라 시스"
+#~ "템 별로 다양할 수 있습니다. 예를 들어, 관리자가 하나의 GPU를 다섯 조각"
+#~ "으로 분할 설정한 경우, 5 FGPU가 1 물리 GPU, 또는 1 FGPU가 0.2 물리 GPU"
+#~ "를 뜻합니다. 이 때 1 FGPU를 설정하여 연산 세션을 생성하면, 그 세션에서"
+#~ "는 0.2 물리 GPU에 해당하는 SM(streaming multiprocessor)과 GPU 메모리"
+#~ "를 활용할 수 있습니다."
+
+#~ msgid ""
+#~ "This time, let's take a look at how to use and manage a running "
+#~ "compute session. If you see the Control column in the session list, "
+#~ "there are several icons. When you click the first icon, several app "
+#~ "services supported by the session will appear as shown in the "
+#~ "following figure."
+#~ msgstr ""
+#~ "이번에는 이미 실행 중인 연산 세션을 사용하고 관리하는 법에 관해 살펴보"
+#~ "겠습니다. 세션 리스트의 Control 열을 보면 몇 가지 아이콘이 있습니다. "
+#~ "플레이 아이콘을 누르면 다음 그림과 같이 해당 세션이 지원하는 몇 가지 "
+#~ "앱 서비스가 뜨게 됩니다."

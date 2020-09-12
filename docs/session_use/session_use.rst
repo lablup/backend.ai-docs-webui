@@ -19,21 +19,6 @@ LAUNCH button.
    :align: center
    :alt: Session launch dialog with various settings
 
-.. note::
-   If the GPU resource is marked as FGPU, this means that the server is serving
-   the GPU resources in a virtualized form. Backend.AI supports GPU
-   virtualization technology that a single physical GPU can be divided and
-   shared by multiple users for better utilization. Therefore, if you want to
-   execute a task that does not require a large amount of GPU computation, you
-   can create a compute session by allocating only a portion of a GPU. The
-   amount of GPU resources that 1 FGPU actually allocates may vary from system
-   to system depending on the administrator's setting. For example, if
-   administrator has set to split one physical GPU into five pieces, 5 FGPU
-   means 1 physical GPU, or 1 FGPU means 0.2 physical GPU. At this
-   configuration, if you create a compute session by allocating 1 FGPU, you can
-   utilize SM (streaming multiprocessor) and GPU memory corresponding to 0.2
-   physical GPU for the session.
-
 If no mount folder is specified in "Folders to mount", the following
 notification dialog may appear. It is recommended that one or more storage
 folders to be mounted because terminating compute session by default deletes all
@@ -60,8 +45,8 @@ Notice that a new compute session is created in the Running tab.
 Use and Manage Running Session
 ------------------------------
 
-This time, let's take a look at how to use and manage a running compute session.
-If you see the Control column in the session list, there are several icons. When
+Now, let's take a look at how to use and manage a running compute session.  If
+you see the Control column in the session list, there are several icons. When
 you click the first icon, several app services supported by the session will
 appear as shown in the following figure.
 
@@ -69,6 +54,28 @@ appear as shown in the following figure.
    :width: 400
    :align: center
    :alt: App launch dialog
+
+.. note::
+   There are two check options under the app icons. Check each item and open the
+   app to reflect the following features:
+
+   * Open app to public: Open the app to the public. Basically, web services
+     such as Terminal and Jupyter Notebook services here are not accessible by
+     other users, even if the user knows the service URL, since they are
+     considered unauthenticated. However, if you check this item anyone who
+     knows the URL (and port number) of the service can access and use it. Of
+     course, the user must have a network path to access the service.
+   * Try preferred port: When the web service is opened, a specific port is
+     assigned from the port pool created in advance by Backend.AI. Users can use
+     the service only when they connect to the port along with the IP address or
+     domain name. If you check this item and enter the port number, the entered
+     port number will be tried. However, there is no guarantee that the desired
+     port will always be assigned. The port may not exist at all in the port
+     pool, or another service may already be using the port. In this case, the
+     port number is randomly assigned.
+
+   Do not open the app by checking one of the items unless you have a clear
+   usage purpose and know what it means.
 
 As a test, let's click on Jupyter Notebook.
 
@@ -148,7 +155,8 @@ documentation and other usage examples on the Internet.
 
 Here we are introducing some simple but useful features.
 
-**Copy terminal contents**
+Copy terminal contents
+~~~~~~~~~~~~~~~~~~~~~~
 
 tmux offers a number of useful features, but it's a bit confusing for first-time
 users. In particular, tmux has its own clipboard buffer, so when copying the
@@ -179,7 +187,8 @@ you can use the web terminal more conveniently.
    by modifying ``.tmux.conf`` in user home directory, you should press the set
    key combination instead of ``Ctrl-B``.
 
-**Checking the terminal history using keyboard**
+Checking the terminal history using keyboard
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There is also a way to copy the terminal contents and check the previous
 contents of the terminal simultaneously. It is to check the previous contents
@@ -189,7 +198,8 @@ terminal's history with just keyboard. To exit search mode, just press the ``q``
 key. With this method, you can check the contents of the terminal history even
 when the mouse support is turned off to allow copy and paste.
 
-**Spawn multiple shells**
+Spawn multiple shells
+~~~~~~~~~~~~~~~~~~~~~
 
 The main advantage of tmux is that you can launch and use multiple shells in one
 terminal window. Since seeing is believing, let's press the ``Ctrl-B`` key and
