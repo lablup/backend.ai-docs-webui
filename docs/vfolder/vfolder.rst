@@ -1,6 +1,6 @@
-===============
-Handing Folders
-===============
+================
+Handling Folders
+================
 
 Backend.AI supports dedicated storage to preserve user's files. Since the files
 and directories of a compute session are deleted upon session termination, it is
