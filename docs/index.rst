@@ -31,6 +31,7 @@ The latest versions of this document can be found from sites below:
    mount_vfolder/mount_vfolder
    share_vfolder/share_vfolder
    sftp_to_container/sftp_to_container
+   user_settings/user_settings
    admin_user_keypair_management/admin_user_keypair_management
    trouble_shooting/trouble_shooting
    license_agreement/license_agreement
