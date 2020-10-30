@@ -295,9 +295,9 @@ resource preset by clicking the settings icon (cogwheel) in the Controls column.
 In the example below, the GPU field is disabled since the GPU provision mode of
 the Backend.AI server is set to "fractional". After setting the resources with
 the desired values, save it and check if the corresponding preset is displayed
-when creating the compute session. If you can only allocate resources less
+when creating a compute session. If available resources are less
 than the amount of resources defined in the preset, the corresponding preset
-would not be printed.
+would not be shown.
 
 .. image:: modify_resource_preset_dialog.png
    :width: 350
@@ -310,8 +310,8 @@ Query agent nodes
 
 Superadmins can view the list of agent worker nodes, currently connected to
 Backend.AI, by visiting the Resources page. You can check agent node's IP,
-connecting time, actual resources currently in use, and etc. The Console does
-not provide the ability to manipulate agent nodes.
+connecting time, actual resources currently in use, etc. The Console does
+not provide the function to manipulate agent nodes.
 
 .. image:: agent_list.png
    :alt: Agent node list
@@ -346,7 +346,7 @@ column. In the Select scheduler field, you can choose the scheduling method for
 creating a compute session. Currently, there are three types: FIFO, LIFO, and
 DRF. FIFO and LIFO are scheduling methods creating the first- or the
 last-enqueued compute session in the job queue. DRF stands for Dominant Resource
-Fairness, and it aims to provide resources as faie as possible for each users.
+Fairness, and it aims to provide resources as fair as possible for each user.
 You can deactivate a resource policy by turning off Active Status.
 
 .. image:: modify_resource_group.png
@@ -360,9 +360,8 @@ You can create a new resource policy by clicking the CREATE button.
 System settings
 ---------------
 
-In the System Settings page, you can see main settings set in Backend.AI server.
-Currently, it provides several controls which can change settings and setting
-list features.
+In the System Settings page, you can see main settings of Backend.AI server.
+Currently, it provides several controls which can change and list settings.
 
 .. note::
    We will continue to add broader range of setting controls.
