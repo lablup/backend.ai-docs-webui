@@ -4,8 +4,8 @@ Admin Menus
 
 When you log in with an admin account, you will see an additional Administration
 menu in the bottom left sidebar. User information registered in Backend.AI is
-listed in the Users tab. In the case of domain admin, users belong to the domain
-can be only be listed, while superadmin can see all user information. Only
+listed in the Users tab. Domain admin can see only the users who belong to the domain, 
+while superadmin can see all users' information. Only
 superadmin can create and deactivate a user.
 
 .. image:: admin_user_page.png
