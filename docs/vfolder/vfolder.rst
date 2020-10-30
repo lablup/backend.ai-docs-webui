@@ -25,7 +25,7 @@ You can create a storage folder with the desired name by clicking the NEW FOLDER
 button. Enter the name of the folder to be created in Folder name, and select
 one of User / Group for Type. (Depending on the server settings, only one of
 User or Group may be selectable.) When creating a group folder, the Group field
-must be set. The group folder will be bind to the group specified in the Group
+must be set. The group folder will be bound to the group specified in the Group
 field, and only users belonging to the group can mount and use the group folder.
 After setting the values as desired, you can create a folder by clicking the
 CREATE button.
@@ -69,7 +69,7 @@ Rename folder
 
 If you have permission to rename the storage folder, you can rename it by
 clicking the edit icon in the Control column. When you click the icon button, a
-rename dialog will appears. Write new folder name and then click RENAME button.
+rename dialog will appear. Write new folder name and then click RENAME button.
 
 
 Delete folder
@@ -87,7 +87,7 @@ enter the name of the folder to be deleted, explicitly.
 
 The folders created here can be mounted when creating a compute session. Folders
 are mounted under the user's default working directory, ``/home/work/``, and the
-files stored in this directory will not be deleted when the compute session
+files stored in the mounted directory will not be deleted when the compute session
 is terminated. (However, if you delete the folder itself, it will be gone).
 
 
@@ -96,13 +96,13 @@ is terminated. (However, if you delete the folder itself, it will be gone).
 Automount folder
 ----------------
 
-Storage & Folders page has an Automount Folders tab. Click this tab to see a
+Data & Storage page has an Automount Folders tab. Click this tab to see a
 list of folders whose names prefixed with a dot (.). When you create a folder,
 if you specify a name that starts with a dot (.), it is added to the Automount
 Folders tab, not the Folders tab. Automount Folders are special folders that are
 automatically mounted in your home directory even if you do not mount them
 manually when creating a compute session. By using this feature, creating and
-using Storage folders such as ``.local``, ``.linuxbrew``, ``.pyenv``, and etc.,
+using Storage folders such as ``.local``, ``.linuxbrew``, ``.pyenv``, etc.,
 you can configure a certain user packages or environments that do not change
 with different kinds of compute session.
 
