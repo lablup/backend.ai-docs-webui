@@ -6,7 +6,7 @@ Create a Compute Session with Mounted Folders
 
 When you start a compute session, the user has access to the ``/home/work/``
 directory, and the normal directores and files created under ``/home/work/``
-will disappear when the compute session is destroyed. This is because compute
+will disappear when the compute session is terminated. This is because compute
 sessions are dynamically created and deleted based on the container. To preserve
 the data inside the container independent of the life cycle of the container, a
 separate host folder must be mounted into the container, and then files must be
@@ -14,9 +14,9 @@ created within the mounted folder. Backend.AI provides a function to mount
 storage folders when creating a compute session.
 
 Let's go to the Sessions page and click the START button to create a new compute
-session. In the session create dialog, click Folders to mount to see a list of
-storage folders that a user can mount. Among them, you can add them by clicking
-the folder you want to mount. You can also mount multiple folders simultaneously
+session. In the session creation dialog, click Folders to mount to see a list of
+storage folders that a user can mount. By clicking
+the folder you want to mount, you can mount it. You can also mount multiple folders simultaneously
 by clicking multiple items. In this example, we will mount two folders,
 ``user1-ml-test`` and ``user2-vfolder``, and then create a compute session.
 
@@ -29,8 +29,7 @@ Now, open the terminal by clicking the terminal icon in the created session. If
 you run ``ls`` command in the terminal, you can see that the ``user1-ml-test``
 and ``user2-vfolder`` folders are mounted under the home directory. Let's create
 a ``test_file`` under ``user2-vfolder`` to see if the file can be preserved
-after the compute session is destroyed. The contents of this file will filled
-with "file inside user2-vfolder".
+after the compute session is terminated. The contents of this file will be "file inside user2-vfolder".
 
 .. image:: mounted_folders_in_terminal.png
    :alt: Mounted folders in terminal
@@ -42,7 +41,7 @@ command.
 Now delete the compute session and go to the Storage page. Locate the
 ``user2-vfolder folder``, open a file explorer and check that the file
 ``test_file`` exists. Click the file download button in Actions to download the
-file to the local machine and open it in an editor to confirm that the contents
+file to the local machine and open it to confirm that the contents
 of the file are "file inside user2-vfolder".
 
 .. image:: download_file_from_folder.png
@@ -84,7 +83,7 @@ the ``tqdm`` package is installed is automatically mounted, so you can use the
 
 .. warning::
 
-   If you spawn multiple sessions that uses multiple Python versions, there may
+   If you spawn multiple sessions that use different Python versions, there may
    be compatibility issues with the packages. This can be circumvented by
    branching ``PYTHONPATH`` environment variable via the ``.bashrc``. This is
    because the user's ``pip`` package is installed in the path specified in the
@@ -94,7 +93,7 @@ the ``tqdm`` package is installed is automatically mounted, so you can use the
 
 Package managers like Ubuntu's ``apt`` or CentOS's ``yum`` usually require
 ``sudo`` permissions. For security, ``sudo`` and ``root`` accesses are blocked
-by default in Backend.AI's compute session (it may allowed depending on the
+by default in Backend.AI's compute session (it may be allowed depending on the
 configuration), so we recommend to use `Homebrew on Linux
 <https://docs.brew.sh/Homebrew-on-Linux>`_ which does not require ``sudo``.
 Homebrew can be installed and used in the following ways:
