@@ -23,11 +23,11 @@ If no mount folder is specified in "Folders to mount", the following
 notification dialog may appear. It is recommended that one or more storage
 folders to be mounted because terminating compute session by default deletes all
 the data inside the session. If you specify a mount folder and save your data in
-that folder, you can keep the data even if the compute session is destroyed.
+that folder, you can keep the data even if the compute session is terminated.
 Data preserved in the storage folder can also be reused by re-mounting it when
 creating another compute session. You can ignore the alarm and create a session.
 However, it's a good idea to mount a folder if you're working on a job that
-requires you to keep data from within a session. For information on how to mount
+requires you to keep data. For information on how to mount
 a folder and run a compute session, see :ref:`Related
 Content<session-with-mounts>`.
 
@@ -86,7 +86,7 @@ You will see a new window pop up and Jupyter Notebook is running. This Notebook
 was created inside the running compute session, and it's easy to use with just a
 click of a button without any setup. In addition, you can just use the language
 environment and libraries provided by the compute session as is, so there is no
-need to install a separate packages. For more information on how to use Jupyter
+need to install separate packages. For more information on how to use Jupyter
 Notebook, please refer to the official documentation.
 
 In the notebook's file explorer, the ``id_container file`` contains a private
@@ -102,7 +102,7 @@ Backend.AI, and ipynb window will pop up where you can enter the new code.
    :alt: Backend.AI notebook on Jupyter menu
 
 In this window, you can enter and execute any code you want by using the
-environment that session provides.  The code execution happens on one of the
+environment that session provides. The code is executed on one of the
 Backend.AI nodes where the compute session is actually created, and there is no
 need to configure a separate environment on the local machine.
 
@@ -111,8 +111,8 @@ need to configure a separate environment on the local machine.
 
 When you close the window, you can notice that the ``Untitled.ipynb`` file is
 created in the Notebook File Explorer. Note that the files created here are
-deleted when you destroy the session. The way to preserve those files even when
-the session is gone is described in the Storage/Folders section.
+deleted when you terminate the session. The way to preserve those files even after
+the session is terminated is described in the Storage/Folders section.
 
 .. image:: untitled_ipynb_created.png
    :alt: Untitled.ipynb file is created in the Jupyter
@@ -120,7 +120,7 @@ the session is gone is described in the Storage/Folders section.
 Return to the Session list page. This time, let's launch the terminal. Click the
 terminal icon (the second button) to use the container's ttyd daemon. The
 terminal will also appear in a new window, and you can type commands, just like
-any usual terminal, which will be delivered to the compute session as shown in
+any usual terminals, which will be delivered to the compute session as shown in
 the following figure. If you are familiar with using command-line interface
 (CLI), you can easily interact with Linux commands.
 
@@ -146,7 +146,7 @@ it to the folder from the beginning if you want to keep it.
 Advanced Web Terminal Usage
 ---------------------------
 
-The web-based terminal we used above internally embed a utility called `tmux
+The web-based terminal we used above internally embeds a utility called `tmux
 <https://github.com/tmux/tmux/wiki>`_. tmux is a terminal multiplexer that
 supports to open multiple shell windows within a single shell, so as to allow
 multiple programs to run in foreground simultaneously. If you want to take
