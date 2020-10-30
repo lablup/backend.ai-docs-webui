@@ -77,11 +77,8 @@ Key Concepts
 - Console App: A GUI client that is served as a web or stand-alone app.
   You can use the service after logging in by specifying the address of the
   Backend.AI server and entering the user account information.
-- Local wsproxy: Proxy server built into the console app. Local wsproxy converts general HTTP requests between the server and console app to websocket and deliver the messages.
-  - If the console app loses its connection to wsproxy or the wsproxy server is
-    dead, it will not be possible to access services such as Jupyter Notebook
-    and Terminal.
-
+- Local wsproxy: Proxy server built into the console app. Local wsproxy converts general HTTP requests between the server and console app to websocket and delivers the messages.
+  - If the console app loses its connection to wsproxy or the wsproxy server is dead, it will not be possible to access services such as Jupyter Notebook and Terminal.
 - Web wsproxy: In the case of the console app provided in a web, the built-in
   server cannot be used due to the nature of the browser. In this case, you
   can use services such as Jupyter Notebook, Terminal, etc. in the web
