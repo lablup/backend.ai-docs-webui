@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-11 02:24+0900\n"
+"POT-Creation-Date: 2020-10-31 02:49+0900\n"
 "PO-Revision-Date: 2020-06-13 22:46+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko_KR\n"
@@ -34,11 +34,12 @@ msgid "Monitoring resource usage"
 msgstr "자원 사용 현황 모니터링"
 
 #: ../../summary/summary.rst:12
+#, fuzzy
 msgid ""
 "In the Start menu, you can see the total amount of resources you can "
 "allocate and how much you are currently using. You can check the CPU, "
 "RAM, GPU occupancy status, the number of sessions currently running, etc."
-" You can also click the + START button to create a session immediately "
+" Also, you can click the + START button to create a session immediately "
 "(see the Sessions page for how to create a session)."
 msgstr ""
 "Start menu에서는 사용자가 할당할 수 있는 자원의 총량과 현재 사용하고 있는 양을 확인할 수 있습니다. CPU, RAM, "
@@ -46,14 +47,15 @@ msgstr ""
 "있습니다 (세션 생성 방법은 Sessions 페이지를 참조하시기 바랍니다)."
 
 #: ../../summary/summary.rst:18
+#, fuzzy
 msgid ""
-"A user can belong to one or more groups. If you want to change the group "
-"you want to use, click the Project button on the top right corner to "
-"select the group you want. When the group is changed, the total amount of"
-" available resources is changed according to the resource usage policy "
-"set in the group, and the amount of resources currently used is updated "
+"A user can belong to one or more groups. If you want to change between "
+"the groups you are in, click the Project button on the top right corner "
+"to select the group you want. When the group is changed, the total amount"
+" of available resources is changed according to the resource usage policy"
+" set in the group, and the amount of resources currently used is updated "
 "with the amount of resources occupied by sessions running in the group. "
-"The group to which the user belongs is set up by the administrator. If "
+"The groups to which the user belongs is set up by the administrator. If "
 "you want to change the group, you should contact the administrator in "
 "charge."
 msgstr ""
@@ -62,74 +64,69 @@ msgstr ""
 "되고, 현재 사용하고 있는 자원의 양도 해당 그룹 내에서 돌아가고 있는 세션의 점유 자원량으로 업데이트 됩니다. 사용자가 속하는 "
 "그룹은 관리자가 설정하는 부분으로, 그룹을 변경하고 싶다면 담당 관리자에게 문의해야 합니다."
 
-#: ../../summary/summary.rst:27
+#: ../../summary/summary.rst:26
 msgid ""
 "A user can be set up to use multiple resource groups by an administrator."
-" Resource groups are administrator functions that allow you to set up "
-"worker nodes that can be accessed by user, group, or domain. For example,"
-" if you group multiple V100 GPU servers into one resource group, group "
-"multiple P100 GPU servers into another resource group, and make specific "
-"users accessible only to the P100 resource group, that user Only "
-"resources on the server are available, not resources on the V100 GPU "
-"server. You can select a resource group to which you have access by "
-"clicking Resource Group within the Start Menu. Each time a resource group"
-" is changed, the amount of available resources is changed accordingly. "
-"Resource group policies are set up by administrators. If you want to use "
-"a particular resource, you should contact your administrator."
+" Resource groups are administrator functions that allow to set up worker "
+"nodes that can be accessed by user, group, or domain. For example, if you"
+" group multiple V100 GPU servers into one resource group, group multiple "
+"P100 GPU servers into another resource group, and make specific users "
+"accessible only to the P100 resource group, then the users can use only "
+"the resources on the P100 servers, not on the V100 GPU servers. You can "
+"select a resource group to which you have access by clicking Resource "
+"Group within the Start Menu. Each time a resource group is changed, the "
+"amount of available resources is changed accordingly. Resource group "
+"policies are set up by administrators. If you want to use a particular "
+"resource, you should contact your administrator."
 msgstr ""
-"사용자는 관리자에 의해 여러 개의 리소스 그룹을 사용하도록 설정될 수 있습니다. 리소스 그룹은 사용자, 그룹 또는 도메인 별로 접근"
-" 가능한 워커 노드를 설정할 수 있는 관리자 기능입니다. 예를 들어, V100 GPU 서버 여러 대를 하나의 리소스 그룹으로 묶고,"
-" P100 GPU 서버 여러 대를 또 다른 리소스 그룹으로 묶은 후 특정 사용자에게 P100 리소스 그룹만 접근할 수 있도록 "
-"설정하면, 해당 사용자는 P100 GPU 서버의 자원만 사용할 수 있고 V100 GPU 서버의 자원은 사용할 수 없습니다. "
-"Start Menu 내의 Resource Group을 클릭하여 자신이 접근 가능한 리소스 그룹을 선택할 수 있습니다. 리소스 그룹이"
-" 변경될 때마다 가용한 자원량도 따라서 바뀌게 됩니다. 리소스 그룹 정책은 관리자가 설정하는 부분으로, 특정 자원을 사용하고 싶다면"
-" 담당 관리자에게 문의해야 합니다."
 
-#: ../../summary/summary.rst:44
+#: ../../summary/summary.rst:43
 msgid ""
 "In the Project section at the bottom, you can see the total usage within "
 "your group and your usage within that group."
 msgstr "하단의 Project 섹션에서는 사용자가 속한 그룹 내의 총 사용량 및 자신의 해당 그룹 내 사용량을 확인할 수 있습니다."
 
-#: ../../summary/summary.rst:47
+#: ../../summary/summary.rst:46
+#, fuzzy
 msgid ""
 "The Resource Statistics panel shows the total number of sessions "
-"currently running by the user. Other session related information will be "
+"currently running by the user. Other session-related information will be "
 "displayed depending on the user's permission."
 msgstr ""
 "Resource Statistics 패널에서는 현재 사용자가 실행하고 있는 총 세션의 수를 보여줍니다. 사용자의 권한에 따라 기타 "
 "세션 관련 정보가 추가로 출력됩니다."
 
-#: ../../summary/summary.rst:56
+#: ../../summary/summary.rst:55
 msgid "Change password"
 msgstr "비밀번호 변경"
 
-#: ../../summary/summary.rst:58
+#: ../../summary/summary.rst:57
+#, fuzzy
 msgid ""
 "You can change the password by clicking the Change Password menu of the "
 "settings button in the upper right corner. Enter the current password in "
 "the Original password field and the new password in the New password and "
-"New password (again) fields, then press the UPDATE button to update the "
-"password. At this time, the password should follow the rules below:"
+"New password (again) fields, then press the UPDATE button. At this time, "
+"the password should follow the rules below:"
 msgstr ""
 "우측 상단의 설정 버튼을 클릭하면 나오는 Change Password 메뉴를 클릭해서 비밀번호를 변경할 수 있습니다. "
 "Original password 필드에 현재 비밀번호를, New password와 New password (again) 필드에 새로"
 " 설정할 비밀번호를 입력한 후 UPDATE 버튼을 눌러 비밀번호를 갱신합니다. 이 때, 비밀번호는 다음과 같은 규칙을 따라야만 "
 "합니다:"
 
-#: ../../summary/summary.rst:64
+#: ../../summary/summary.rst:63
 msgid "8 letters or more"
 msgstr "8 글자 이상"
 
-#: ../../summary/summary.rst:65
+#: ../../summary/summary.rst:64
 msgid "One or more alphabets"
 msgstr "하나 이상의 알파벳"
 
-#: ../../summary/summary.rst:66
+#: ../../summary/summary.rst:65
 msgid "One or more special characters"
 msgstr "하나 이상의 특수문자"
 
-#: ../../summary/summary.rst:67
+#: ../../summary/summary.rst:66
 msgid "One or more numbers"
 msgstr "하나 이상의 숫자"
 
@@ -227,4 +224,47 @@ msgstr "하나 이상의 숫자"
 #~ "Backend.AI는 OpenSSH에 기반한 SSH keypair를 "
 #~ "사용합니다. 윈도우즈에서는 PPK 기반 키로 변환해야 할"
 #~ " 수 있습니다."
+
+#~ msgid ""
+#~ "A user can be set up to use"
+#~ " multiple resource groups by an "
+#~ "administrator. Resource groups are "
+#~ "administrator functions that allow you "
+#~ "to set up worker nodes that can"
+#~ " be accessed by user, group, or "
+#~ "domain. For example, if you group "
+#~ "multiple V100 GPU servers into one "
+#~ "resource group, group multiple P100 GPU"
+#~ " servers into another resource group, "
+#~ "and make specific users accessible only"
+#~ " to the P100 resource group, that "
+#~ "user Only resources on the server "
+#~ "are available, not resources on the "
+#~ "V100 GPU server. You can select a"
+#~ " resource group to which you have "
+#~ "access by clicking Resource Group within"
+#~ " the Start Menu. Each time a "
+#~ "resource group is changed, the amount"
+#~ " of available resources is changed "
+#~ "accordingly. Resource group policies are "
+#~ "set up by administrators. If you "
+#~ "want to use a particular resource, "
+#~ "you should contact your administrator."
+#~ msgstr ""
+#~ "사용자는 관리자에 의해 여러 개의 리소스 그룹을 "
+#~ "사용하도록 설정될 수 있습니다. 리소스 그룹은 사용자, "
+#~ "그룹 또는 도메인 별로 접근 가능한 워커 노드를"
+#~ " 설정할 수 있는 관리자 기능입니다. 예를 들어, "
+#~ "V100 GPU 서버 여러 대를 하나의 리소스 "
+#~ "그룹으로 묶고, P100 GPU 서버 여러 대를 또"
+#~ " 다른 리소스 그룹으로 묶은 후 특정 사용자에게 "
+#~ "P100 리소스 그룹만 접근할 수 있도록 설정하면, "
+#~ "해당 사용자는 P100 GPU 서버의 자원만 사용할 "
+#~ "수 있고 V100 GPU 서버의 자원은 사용할 수"
+#~ " 없습니다. Start Menu 내의 Resource Group을"
+#~ " 클릭하여 자신이 접근 가능한 리소스 그룹을 선택할"
+#~ " 수 있습니다. 리소스 그룹이 변경될 때마다 가용한"
+#~ " 자원량도 따라서 바뀌게 됩니다. 리소스 그룹 정책은"
+#~ " 관리자가 설정하는 부분으로, 특정 자원을 사용하고 "
+#~ "싶다면 담당 관리자에게 문의해야 합니다."
 
