@@ -2,7 +2,7 @@
 Data Sharing and Access Control by Shared Storage Folder
 ========================================================
 
-You may need to share the contents of a storage folder with other users or group
+You may need to share the contents of storage folders with other users or group
 members to collaborate. For this purpose, Backend.AI provides flexible folder
 sharing feature.
 
@@ -30,26 +30,26 @@ account.
 
 .. image:: no_test_vfolder_in_B.png
 
-Back to User A's account and click the third icon in the Control column on the
+Back to User A's account and click the share icon (third icon) in the Control column on the
 right of the ``test`` folder. Enter User B's email in the email input field and
 click the SHARE button to send a sharing invitation. No actual email is sent,
 and invitations are generated through the Backend.AI database. In the case of
 Permissions, if you check View, it is shared as read-only, and if you check Edit
-together, even write operation is allowed to User B. If you want to share with
+together, even writing is allowed to User B. If you want to share with
 multiple users, you can also click the + button to enter additional emails.
 
 .. image:: send_vfolder_invitation.png
    :width: 350
    :align: center
 
-Back to User B's account and visit to the Summary page. At the bottom of the
-page, you can see an invitation with the title Invitation arrived. If you don't
-see the invitation, go to another page once and then go back to the Summary
+Back to User B's account and go to the Summary page. At the bottom of the
+page, you can see the invitation arrived. If you don't
+see the invitation, go to another page once and then come back to the Summary
 page again. Click the ACCEPT button to accept the invitation.
 
 .. image:: invitation_accept.png
 
-Visit the Data & Storage page and check that the ``test`` folder is displayed in
+Go to the Data & Storage page and check that the ``test`` folder is displayed in
 the list. If you don't see it on the list, try refreshing your browser page.
 Since you have accepted the invitation, you can now view the contents of User
 A's ``test`` folder in User B account. Compared to the other folders created by
@@ -60,8 +60,8 @@ can also see only the R (read-only) mark displayed in the Permission column.
 
 Let's navigate inside the ``test`` folder by clicking the folder icon in the
 Control column of ``test``. You can check the ``hello.txt`` and ``myfolder``
-that you checked in the user A's account again. Let's create a compute session
-by mounting this storge folder with the user B's account.
+that you checked in the User A's account again. Let's create a compute session
+by mounting this storge folder with the User B's account.
 
 .. image:: launch_session_with_test_mounted_B.png
    :width: 350
@@ -90,8 +90,8 @@ specific user, and can be accessed by all users belonging to that group.
 
 .. note::
    Group folders can only be created by administrators. Normal users can only
-   access the contents of the group folder created by the administrator. Also,
-   there may be cases where group folder is not allowed depending on the system
+   access the contents of the group folders created by the administrator. Also,
+   there may be cases where the group folder is not allowed depending on the system
    settings.
 
 First, log in with an administrator account and create a group folder. After
@@ -106,7 +106,7 @@ this example to work.  Permission is set to Read-Only again.
 
 After confirming that the folder has been created, log in with the user B's
 account and check that the group folder just created on the Data & Storage page
-is displayed without an invitation procedure! You can see that R (Read Only) is
+is displayed without an invitation procedure. You can see that R (Read Only) is
 also displayed in the Permission column.
 
 .. image:: group_folder_listed_in_B.png
