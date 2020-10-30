@@ -6,7 +6,7 @@ To see the list of compute sessions, click Sessions in the left sidebar. In
 the Running tab on the right, you can check the information on the currently
 running sessions. Click the Finished tab to see the list of terminated
 sessions. For each session, you can check information such as ID, created date,
-used time, allocated resources, resource usage, and etc.
+used time, allocated resources, resource usage, etc.
 
 .. image:: session_list.png
    :align: center
@@ -16,7 +16,7 @@ As a superadmin, you can see the information of all sessions currently running
 (or ended) in the cluster. On the other hand, users can see their sessions only.
 
 The resource indicator is displayed at the top of the screen. You can check the
-amount of resources currently used by the user and the total amount of resources
+amount of resources currently used and the total amount of resources
 that can be allocated. The display bar is divided into two parts: the upper and
 the lower. The upper part shows the resource allocation status in the current
 scaling group, and the lower part shows the allocation status of total
