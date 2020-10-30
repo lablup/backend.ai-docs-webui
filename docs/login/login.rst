@@ -13,10 +13,10 @@ yet, press the SIGN UP button.
    :align: center
    :alt: Login dialog
 
-Enter email, username, password, etc., read and agree to the Terms of Service /
+Enter the required information, read and agree to the Terms of Service /
 Privacy Policy, and click the SIGNUP button. Depending on your system settings,
-you may need to enter an invitation token to sign up.  Furthermore, an email may
-be sent to verify that the email is yours. If a verification email is sent, you
+you may need to enter an invitation token to sign up. A verification email may
+be sent to verify that the email is yours. If the verification email is sent, you
 will need to read the email and click the link inside to pass verification
 before you can log in with your account.
 
@@ -26,7 +26,7 @@ before you can log in with your account.
    :alt: Signup dialog
 
 .. note::
-   Depending on the server configuration and plugin settings, sign up by
+   Depending on the server configuration and plugin settings, signing up by
    anonymous user may not be allowed. In that case, please contact administrator
    of your system.
 
@@ -45,7 +45,7 @@ entered.
 After login, you can check the information of the current resource usage in
 the Summary tab.
 
-Buy clicking the icon in the upper-right corner, you will see sub menus. You
+By clicking the icon in the upper-right corner, you will see sub menus. You
 can logout by selecting the Log Out menu.
 
 .. image:: signout_button.png
