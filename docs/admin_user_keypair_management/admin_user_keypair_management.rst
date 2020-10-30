@@ -39,7 +39,7 @@ user belongs.
    :alt: Detailed information of a user
 
 Click the gear icon in the Controls column to update information of a user who
-already exist. User's name, password, activation state, and etc. can be changed.
+already exists. User's name, password, activation state, etc. can be changed.
 
 .. image:: user_update_dialog.png
    :width: 350
@@ -73,12 +73,12 @@ authentication to the Backend.AI server, after user logs in. Login requires
 authentication via user email and password, but every request the user sends to
 the server is authenticated based on the keypair.
 
-A user can have multiple key pairs, but to reduce users the burden of managing
-keypair, we are currently using only one of user's keypairs to send requests.
+A user can have multiple keypairs, but to reduce the user's burden of managing
+keypairs, we are currently using only one of the user's keypairs to send requests.
 Also, when you create a new user, a keypair is automatically created, so you do
 not need to create and assign a keypair manually in most cases.
 
-Keypairs can be listed on the Credentials tab of in the Users page.  Active
+Keypairs can be listed on the Credentials tab of in the Users page. Active
 keypairs are shown immediately, and to see the inactive keypairs, click the
 Inactive panel at the bottom.
 
@@ -86,9 +86,9 @@ Inactive panel at the bottom.
    :alt: Credential list page
 
 Like in Users tab, you can use the buttons in the Controls column to view or
-update keypair details. Click the blue trash button to disable that key pair, or
+update keypair details. Click the blue trash button to disable that keypair, or
 click the red trash button to completely delete the keypair. However, if you
-have created a compute session using a key pair, you cannot delete it. If you
+have created a compute session using a keypair, you cannot delete it. If you
 accidentally deleted a keypair, you can re-create keypair for the user by
 clicking the ADD CREDENTIAL button at the upper right corner. If necessary, you
 can also explicitly enter the access key and secret key by clicking the Advanced
@@ -119,7 +119,7 @@ apply them separately to each keypair.
 .. note::
    To set resource policies at the domain and group level, you have to use
    Manager Hub, a UI for superadmin only. In the Console UI, you can only set
-   resource policies based on keypairs. Manager Hub is part of the enterprise
+   resource policies based on keypairs. Manager Hub is a part of the enterprise
    version.
 
 .. image:: resource_policy_tab.png
@@ -156,9 +156,9 @@ The meaning of each field is as follows.
   a single session. The ability to bundle multiple containers is under
   development and is currently not used.
 - Idle timeout: If a running session is not used for the time specified in the
-  idle timeout, the session is automatically garbage collected (destroyed). You
-  can set the time interval here. For example, if set to 600, sessions with no
-  usage for 10 minutes are automatically destroyed. If set to 0 or checked
+  idle timeout, the session is automatically garbage collected (terminated). You
+  can set the time interval here. For example, if set to 600, sessions which have not been used
+  for 10 minutes are automatically terminated. If set to 0 or checked
   Unlimited, garbage collection is not performed for the session created by the
   keypair.
 - Concurrent Jobs: The maximum number of sessions a user can create
@@ -167,7 +167,7 @@ The meaning of each field is as follows.
 - Allowed hosts: Used to control the accessible storage and/or NFS hosts from a
   session when multiple storage/NFS hosts are available. Even if a NFS is
   mounted and can be used from Backend.AI, a user will not be able to use that
-  host unless specified here. However, the NFS host may be accessible in case
+  host unless it is specified here. However, the NFS host may be accessible in case
   the host is configured to be accessible in the domain and/or group level.
   Domain / group level settings are possible in Manager Hub.
 - Capacity: This is where you set the maximum available storage size. The disk
@@ -191,7 +191,7 @@ Manage Images
 Admins can manage images, which are used in creating a compute session, in the
 Images tab of the Environments page. In the tab, meta information of all images
 currently in the Backend.AI server is displayed. You can check information such
-as registry, namespace, image name, image's based distros, digest, and minimum
+as registry, namespace, image name, image's based OS, digest, and minimum
 resources required for each image. For images downloaded to one or more agent
 nodes, a check mark is displayed on the left. An unchecked image means that it
 is not installed on any agent.
@@ -229,7 +229,7 @@ Manager docker registry
 -----------------------
 
 You can click on the Registries tab in Environments page to see the information
-of the docker registry that are currently connected to. ``index.docker.io`` is
+of the docker registry that are currently connected. ``index.docker.io`` is
 registered by default, and it is a registry provided by Docker.
 
 .. note::
@@ -237,7 +237,7 @@ registered by default, and it is a registry provided by Docker.
    click the trash icon on the right to delete it.
 
 Click the refresh icon in Controls to update image metadata for Backend.AI from
-the connected registry.AI. Image information which does not have labels for
+the connected registry. Image information which does not have labels for
 Backend.AI among the images stored in the registry is not updated.
 
 .. image:: image_registries_page.png
@@ -263,13 +263,13 @@ registry.
    :alt: Add registry dialog
 
 Even if you created a registry and update meta information, users cannot use the
-images in the registry, immediately. Just as you had to register allowed hosts
+images in the registry, immediately. Just as you had to register the allowed hosts
 to use the storage host, you must register the registry in the allowed docker
 registries field at the domain or group level, after registering the registry,
 so that users in the domain or group can access the registry image. Allowed
 docker registries can be registered using the Manager Hub with domain and group
-management. The ability to set allowed docker registries in the keypair's
-resource policy is not yet provided.
+management. The function to set the allowed docker registries in the keypair's
+resource policy is not provided yet.
 
 
 Manage resource preset
@@ -290,7 +290,7 @@ of currently defined resource presets.
 .. image:: resource_preset_list.png
    :alt: Resource presets tab
 
-You can set resources such as CPU, RAM, fGPU, and etc. to be provided by the
+You can set resources such as CPU, RAM, fGPU, etc. to be provided by the
 resource preset by clicking the settings icon (cogwheel) in the Controls column.
 In the example below, the GPU field is disabled since the GPU provision mode of
 the Backend.AI server is set to "fractional". After setting the resources with
