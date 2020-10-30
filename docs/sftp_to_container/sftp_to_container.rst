@@ -3,7 +3,7 @@ Connect to a Compute Session with SSH/SFTP
 ==========================================
 
 Backend.AI supports SSH/SFTP connection to the created compute sessions
-(containers). In this section, we will lear how.
+(containers). In this section, we will learn how to do it.
 
 .. note::
    SSH/SFTP connection is supported only on desktop apps, and not yet supported
@@ -37,7 +37,7 @@ downloaded again.
    :alt: Starting SSH/SFTP daemon inside a compute session (container)
 
 To SSH connect to the compute session with the downloaded SSH private key, you
-can run the following command in the shell environment. You should write the
+run the following command in the shell environment. You should write the
 path to the downloaded ``id_container`` file after ``-i`` option and the
 assigned port number after ``-p`` option. The user inside the compute session is
 usually set to ``work``, but if your session uses other account, the ``work``
@@ -50,24 +50,24 @@ compute session and you are welcomed by the container's shell environment.
    $ ssh -o StrictHostKeyChecking=no \
    >     -o UserKnownHostsFile=/dev/null \
    >     -i ~/.ssh/id_container \
-   >     work@localhost -p 10022
-   Warning: Permanently added '[127.0.0.1]:9922' (RSA) to the list of known hosts.
+   >     work@localhost -p 10000
+   Warning: Permanently added '[127.0.0.1]:10000' (RSA) to the list of known hosts.
    f310e8dbce83:~$
 
-Connting by SFTP would almost be the same. After running the SFTP client and
-setting public key-based connection method, then simply specify ``id_container``
+Connecting by SFTP would almost be the same. After running the SFTP client and
+setting public key-based connection method, simply specify ``id_container``
 as the SSH private key. Each FTP client may adopt different way, so refer to
 each FTP client manual for details.
 
 .. note::
-   The SSH/SFTP connection port number is randomly assigned each time a session
+   The SSH/SFTP connection port number is randomly assigned each time when a session
    is created. If you want to use a specific SSH/SFTP port number, you can input
    the port number in the "Preferred SSH Port" field in the user settings menu.
    To avoid possible collisions with other services within the compute session,
    it is recommended to specify a port number between 10000-65000. However, if
    SSH/SFTP connections are made by two or more compute sessions at the same
    time, the second SSH/SFTP connection cannot use the designated port (since
-   the first SSH/SFTP connection is already taken it), so a random port number
+   the first SSH/SFTP connection has already taken it), so a random port number
    will be assigned.
 
 .. note::
@@ -75,8 +75,8 @@ each FTP client manual for details.
    user-type folder named ``.ssh``. If you create ``authorized_keys`` file in
    that folder and append it with the contents of your SSH public key, you can
    connect by SSH/SFTP through your own SSH private key without having to
-   download the ``id_container`` after creating the compute session.
-   There is.
+   download the ``id_container`` after creating a compute session.
+   
 
 
 SSH/SFTP connection to a compute session (Windows / FileZilla)
