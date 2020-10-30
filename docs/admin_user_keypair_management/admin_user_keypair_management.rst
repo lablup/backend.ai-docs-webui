@@ -12,7 +12,7 @@ superadmin can create and deactivate a user.
    :alt: User management page
 
 
-Create and update user
+Create and update users
 ----------------------
 
 A user can be created by clicking the CREATE USER button. Note that the password
