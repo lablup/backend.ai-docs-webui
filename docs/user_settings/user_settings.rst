@@ -3,8 +3,8 @@ User Settings & Logs
 ====================
 
 User Setting and Logs tab allow users to change the preferred Console Environment.
-From language setting, SSH keypair management, editing user config script, and even using
-Beta Features is available by just a few clicks of each button. Every message from server
+From the language setting, SSH keypair management, editing user config script, and even to using
+Beta Features are available by just a few clicks of each button. Every message from server
 will be logged in Logs. You can see how the miscellaneous error occurred in the Logs tab.
 
 
