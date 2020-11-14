@@ -48,9 +48,8 @@ multiple users, you can also click the + button to enter additional emails.
    :align: center
 
 Back to User B's account and visit to the Summary page. At the bottom of the
-page, you can see an invitation with the title Invitation arrived. If you don't
-see the invitation, go to another page once and then go back to the Summary
-page again. Click the ACCEPT button to accept the invitation.
+page, you can see an invitation with the title Invitation arrived. Click the
+ACCEPT button to accept the invitation.
 
 .. image:: invitation_accept.png
    :width: 350
