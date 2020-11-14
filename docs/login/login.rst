@@ -49,8 +49,6 @@ Buy clicking the icon in the upper-right corner, you will see sub menus. You
 can logout by selecting the Log Out menu.
 
 .. image:: signout_button.png
-   :width: 300
-   :align: center
    :alt: Signout button
 
 

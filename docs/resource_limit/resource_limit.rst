@@ -39,7 +39,6 @@ This corresponds to the total amount of resources currently held by the test
 node.
 
 .. image:: resource_indicator_no_limit.png
-   :width: 500
    :align: center
 
 Click START to open the compute session creation dialog and pull the CPU, RAM,
@@ -59,7 +58,7 @@ set it to 2, 4 and 1 respectively. Click the UPDATE button to update the
 resource policy.
 
 .. image:: update_resource_policy.png
-   :width: 500
+   :width: 400
    :align: center
 
 In the resource policy list, check that the Resources value of the default
@@ -74,7 +73,6 @@ that the resource constraint value set earlier is reflected in the resource
 indicator at the top.
 
 .. image:: resource_indicator_limit.png
-   :width: 500
    :align: center
 
 Click START to open the calculation session creation dialog and pull the CPU,

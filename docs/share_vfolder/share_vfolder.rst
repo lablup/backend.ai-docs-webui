@@ -53,6 +53,8 @@ see the invitation, go to another page once and then go back to the Summary
 page again. Click the ACCEPT button to accept the invitation.
 
 .. image:: invitation_accept.png
+   :width: 350
+   :align: center
 
 Visit the Data & Storage page and check that the ``test`` folder is displayed in
 the list. If you don't see it on the list, try refreshing your browser page.

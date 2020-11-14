@@ -29,14 +29,13 @@ the amount of resources allocated by CPU, RAM, and FGPU in the upper resource
 indicator increases.
 
 .. image:: resource_indicator_after_creation.png
-   :width: 600
    :align: center
 
 Next, let's delete the compute session we just created. End the session by pressing
 the red power button in the Control column.
 
 .. image:: destroy_kernel.png
-   :width: 450
+   :width: 500
    :align: center
 
 After the compute session disappears from the list, you can see that the CPU,
@@ -44,7 +43,6 @@ RAM, and FGPU of the resource indicator decrease by the exact amount of
 resources.
 
 .. image:: resource_indicator_after_destroy.png
-   :width: 550
    :align: center
 
 
