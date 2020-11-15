@@ -76,8 +76,13 @@ by mounting this storge folder with the user B's account.
 After creating a session, open the web terminal and check that the ``test``
 folder is mounted in the home folder. The contents of the ``test`` folder are
 displayed, but attempts to create or delete files are not allowed. This is
-because User A shared it as read-only. User B can create a file in the ``test``
-folder if it has been shared including write access.
+because User A shared it as read-only. You can see UPLOAD FILES button and
+NEW FOLDER button are disabled, and operations modify icon and delete icon are
+also disabled since the folder is read-only.
+User B can create a file in the ``test`` folder if it has been shared including
+write access.
+
+.. image:: test_vfolder_explorer_B.png
 
 .. image:: file_operations_on_shared_test_folder.png
    :width: 450
