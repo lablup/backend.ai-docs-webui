@@ -37,7 +37,7 @@ msgstr "GUI 환경에서 CPU, 메모리 자원 옵션을 동적으로 주고 연
 #: ../../allocate_cpu_mem/allocate_cpu_mem.rst:9
 msgid "From the GUI, check the amount of CPU and memory resources of the session"
 msgstr ""
-"GUI 상에서 해당 세션의 CPU, 메모리 할당량을 확인하고 요청한 양대로 생성되는지 "
+"GUI 상에서 해당 세션의 CPU, 메모리 할당량을 확인하고 요청한 양에 맞게 생성되는지 "
 "확인"
 
 #: ../../allocate_cpu_mem/allocate_cpu_mem.rst:10
@@ -99,9 +99,9 @@ msgid ""
 "the Running tab."
 msgstr ""
 "이 때, Folder to mount 입력칸에 아무 마운트 폴더도 지정하지 않은 경우 저장 폴더"
-"가 마운트 되지 않았다는 경고 다이얼로그가 뜰 수 있습니다. 일단은 경고를 무시하"
-"고 LAUNCH WITHOUT STORAGE FOLDER 버튼을 클릭하여 연산 세션을 생성합니다. "
-"Running 탭에서 새로운 연산 세션이 생성되는 것을 확인합시다."
+"가 마운트 되지 않았다는 경고 창이 뜰 수 있습니다. 일단은 경고를 무시하고 "
+"LAUNCH WITHOUT STORAGE FOLDER 버튼을 클릭하여 연산 세션을 생성합니다. "
+"RUNNING 탭에서 새로운 연산 세션이 생성되는 것을 확인합시다."
 
 #: ../../allocate_cpu_mem/allocate_cpu_mem.rst:48
 msgid ""
@@ -121,7 +121,7 @@ msgid ""
 "created."
 msgstr ""
 "수퍼어드민의 경우 현재 클러스터에서 실행 중인 (또는 종료된) 모든 세션 정보를 확"
-"인할 수 있고, 사용자의 경우에는 자신이 사용한 세션만 조회 가능합니다."
+"인할 수 있고, 일반 사용자의 경우에는 자신이 사용한 세션만 조회 가능합니다."
 
 #: ../../allocate_cpu_mem/allocate_cpu_mem.rst:60
 msgid ""

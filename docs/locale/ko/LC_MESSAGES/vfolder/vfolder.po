@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../vfolder/vfolder.rst:3
 msgid "Handing Folders for Consistent Management of Data and Modlels"
-msgstr "일관적인 데이터 및 모델 관리를 위한 전용 저장소"
+msgstr "일관된 데이터 및 모델 관리를 위한 전용 저장소"
 
 #: ../../vfolder/vfolder.rst:5
 msgid "Objectives"
@@ -51,7 +51,7 @@ msgstr ""
 "Backend.AI는 사용자의 파일을 보존할 수 있도록 별도의 저장소를 지원합니"
 "다. 연산 세션의 기본 폴더는 세션이 삭제되면 같이 삭제되므로, 보존해야 하"
 "는 파일이 있을 경우 Storage 폴더에 저장하는 것이 좋습니다. Storage 폴더"
-"는 좌측 메뉴의 Storage 탭을 선택하면 조회할 수 있습니다."
+"는 좌측 메뉴의 Data & Storage 탭을 선택하면 조회할 수 있습니다."
 
 #: ../../vfolder/vfolder.rst:19
 msgid ""
@@ -148,7 +148,7 @@ msgid ""
 "click RENAME button."
 msgstr ""
 "Storage 폴더의 이름을 변경할 수 있는 권한을 가지고 있는 경우, Control 열"
-"의 편집 아이콘을 클릭해서 이름 변경 작업을 수행할 수 있습니다. 편집 아ㅏ"
+"의 편집 아이콘을 클릭해서 이름 변경 작업을 수행할 수 있습니다. 편집 아"
 "이콘을 클릭하면 이름 변경 다이얼로그가 나타나게 됩니다. 새로운 폴더 이름"
 "을 기록한 후 RENAME 버튼을 클릭하십시오."
 
@@ -164,9 +164,9 @@ msgid ""
 "you have to enter the name of the folder to be deleted, explicitly."
 msgstr ""
 "Storage 폴더의 삭제 권한을 가지고 있는 경우, Control 열의 휴지통 아이콘"
-"을 눌러서 폴더 삭제할 수 있습니다. 삭제 버튼을 클릭하면 확인 다이얼로그"
-"가 나오는데, 실수로 인한 삭제를 방지하기 위해 삭제할 폴더의 이름을 입력"
-"한 후에 삭제 가능하게 만들어져 있습니다."
+"을 눌러서 삭제할 수 있습니다. 삭제 버튼을 클릭하면 확인 창이 띄워집니다. 이는 "
+"사용자 실수로 인한 삭제를 방지하기 위한 절차로 삭제할 폴더의 이름을 입력하고 "
+"입력 값과 삭제할 폴더 명이 일치해야만 삭제가 가능합니다."
 
 #: ../../vfolder/vfolder.rst:94
 msgid ""
@@ -212,7 +212,7 @@ msgid ""
 "For more detailed information on the usage of Automount folders, refer "
 "to :ref:`examples of using automount folders<using-automount-folder>`."
 msgstr ""
-"Automount Folders 사용에 관한 보다 자세한 내용은 :ref:`자동 마운트 폴더 "
+"Automount Folders 사용에 관하여 보다 자세한 내용을 확인하시려면 :ref:`자동 마운트 폴더 "
 "사용 예제<using-automount-folder>` 섹션을 참고 하십시오."
 
 #~ msgid ""
