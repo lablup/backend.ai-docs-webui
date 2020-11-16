@@ -77,10 +77,10 @@ After creating a session, open the web terminal and check that the ``test``
 folder is mounted in the home folder. The contents of the ``test`` folder are
 displayed, but attempts to create or delete files are not allowed. This is
 because User A shared it as read-only. You can see UPLOAD FILES button and
-NEW FOLDER button are disabled, and operations modify icon and delete icon are
-also disabled since the folder is read-only.
-User B can create a file in the ``test`` folder if it has been shared including
-write access.
+NEW FOLDER button are disappeared, and READ-ONLY FOLDER text display on that
+spot. Also operations modify icon and delete icon are also disabled since the
+folder is read-only. User B can create a file in the ``test`` folder if it has
+been shared including write access.
 
 .. image:: test_vfolder_explorer_B.png
 
