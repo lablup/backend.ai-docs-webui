@@ -86,3 +86,10 @@ moved beyond the value after the resource constraint was placed.
 In this way, it was confirmed that the development user can control the maximum
 amount of resources that can be allocated when creating a compute session
 based on the user's key pair.
+
+.. note::
+   Occasionally, the amount of resources displayed on the resource indicator may
+   be out of sync due to a network connection problem or an error in the docker
+   daemon. In this case, after logging in with an administrator account, go to
+   the Maintenance page on the left sidebar and click the RECALCULATE USAGE
+   button to synchronize the resource status again.
