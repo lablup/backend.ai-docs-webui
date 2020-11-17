@@ -70,6 +70,18 @@ below, and several app services supported by the session appear.
 
 Let's click on Jupyter Notebook.
 
+.. note::
+   Try preferred port: When the web service is opened, a specific port is
+   assigned from the port pool created in advance by Backend.AI. Users can
+   use the service only when they connect to the port along with the IP 
+   address or domain name. If you check this item and enter the port number,
+   the entered port number will be tried.
+   However, there is no guarantee that the desired port will always be assigned.
+   The port may not exist at all in the port pool, or another service may
+   already be using the port.In this case, the port number is randomly assigned.
+   Do not open the app by checking this option unless you have a clear usage
+   purpose and know what it means.
+
 .. image:: jupyter_app.png
 
 A new window pops up and you can see that Jupyter Notebook is running. This
