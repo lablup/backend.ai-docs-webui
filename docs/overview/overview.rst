@@ -17,10 +17,10 @@ plug-in.
 
 A GUI client package is also provided to easily take advantage of the features
 supported by the Backend.AI server. Backend.AI Console is a GUI client in the
-form of a web service or standlone app. It provides a convenient graphical
-interface for accessing the Backend.AI server to utilize computing resources and
-manage its environment. Most tasks can be done with mouse clicks and brief
-typing, which achieves more intuitive use.
+form of a web service. It provides a convenient graphical interface for
+accessing the Backend.AI server to utilize computing resources and manage its
+environment. Most tasks can be done with mouse clicks and brief typing, which
+achieves more intuitive use.
 
 
 Key Concepts
@@ -74,20 +74,14 @@ Key Concepts
   etc.) running within the compute session. You do not need to know the
   container's address and port number directly, but you can use the provided CLI
   client or GUI console to directly access the desired daemon of the session.
-- Console App: A GUI client that is served as a web or standalond app.
-  You can use the service after logging in by specifying the address of the
-  Backend.AI server and entering the user account information.
-- Local wsproxy: Proxy server built into the console app. Services such as
-  Jupyter Notebook and Terminal that can be used in the console app communicate
-  with the server through websocket, which converts general HTTP requests to and
-  from the console app into websocket to deliver messages.
+- (GUI) Console: A GUI client that is served by web. You can use the service
+  after logging in by specifying the address of the Backend.AI server and
+  entering the user account information.
+- WSProxy: Proxy server which serves interactive apps, such as Jupyter Notebook
+  and Terminal, that can be used in the GUI Console to communicate with the
+  Backend.AI server through websocket, which converts general HTTP requests to
+  and from the Console into websocket to deliver messages.
 
-  - If the console app loses its connection to wsproxy or the wsproxy server is
+  - If the GUI Gonsole loses its connection to wsproxy or the wsproxy server is
     dead, it will not be possible to access services such as Jupyter Notebook
     and Terminal.
-
-- Web wsproxy: In the case of the console app provided as a web, the built-in
-  server cannot be operated due to the nature of the browser. In this case, you
-  can use services such as Jupyter Notebook, Terminal, etc. in the web
-  environment by making the wsproxy server as a separate web server
-  so that the console app can see the web wsproxy.
