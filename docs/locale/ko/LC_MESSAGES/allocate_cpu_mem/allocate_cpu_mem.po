@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console Essential Guide Enterprise R2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-18 00:48+0900\n"
-"PO-Revision-Date: 2020-09-11 19:16+0900\n"
+"POT-Creation-Date: 2020-11-18 19:17+0900\n"
+"PO-Revision-Date: 2020-11-16 19:19+0900\n"
 "Last-Translator: \n"
 "Language: ko_KR\n"
 "Language-Team: \n"
@@ -18,6 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #: ../../allocate_cpu_mem/allocate_cpu_mem.rst:3
 msgid "CPU/Memory Allocation and Using Compute Sessions"
@@ -35,7 +36,9 @@ msgstr "GUI 환경에서 CPU, 메모리 자원 옵션을 동적으로 주고 연
 
 #: ../../allocate_cpu_mem/allocate_cpu_mem.rst:9
 msgid "From the GUI, check the amount of CPU and memory resources of the session"
-msgstr "GUI 상에서 해당 세션의 CPU, 메모리 할당량을 확인하고 요청한 양에 맞게 생성되는지 확인"
+msgstr ""
+"GUI 상에서 해당 세션의 CPU, 메모리 할당량을 확인하고 요청한 양에 맞게 생성되는"
+"지 확인"
 
 #: ../../allocate_cpu_mem/allocate_cpu_mem.rst:10
 msgid "Using Jupyter Notebook and Terminal apps in container environment"
@@ -91,9 +94,10 @@ msgid ""
 " FOLDER button to create a compute session. Let's see that a new compute "
 "session is created in the Running tab."
 msgstr ""
-"이 때, Folder to mount 입력칸에 아무 마운트 폴더도 지정하지 않은 경우 저장 폴더가 마운트 되지 않았다는 경고 창이 "
-"뜰 수 있습니다. 일단은 경고를 무시하고 LAUNCH WITHOUT STORAGE FOLDER 버튼을 클릭하여 연산 세션을 "
-"생성합니다. RUNNING 탭에서 새로운 연산 세션이 생성되는 것을 확인합시다."
+"이 때, Folder to mount 입력칸에 아무 마운트 폴더도 지정하지 않은 경우 저장 폴더"
+"가 마운트 되지 않았다는 경고 창이 뜰 수 있습니다. 일단은 경고를 무시하고 "
+"LAUNCH WITHOUT STORAGE FOLDER 버튼을 클릭하여 연산 세션을 생성합니다. RUNNING "
+"탭에서 새로운 연산 세션이 생성되는 것을 확인합시다."
 
 #: ../../allocate_cpu_mem/allocate_cpu_mem.rst:48
 msgid ""
@@ -114,13 +118,23 @@ msgstr ""
 "수퍼어드민의 경우 현재 클러스터에서 실행 중인 (또는 종료된) 모든 세션 정보를 확인할 수 있고, 일반 사용자의 경우에는 자신이 "
 "사용한 세션만 조회 가능합니다."
 
-#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:60
+#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:59
+msgid ""
+"Compute session list may not be displayed normally due to intermittent network "
+"connection problems, and etc. This can be solved by refreshing the browser "
+"page."
+msgstr ""
+"간헐적인 네트워크 접속 불량 등의 문제로 세션 리스트가 정상적으로 표시되지 않는 "
+"경우가 발생할 수 있습니다. 이 때는 브라우저 페이지를 갱신해서 해결할 수 있습니"
+"다."
+
+#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:64
 msgid ""
 "Utilize Jupyter Notebook and check the resource quota from inside the "
 "container"
 msgstr "Jupyter Notebook 앱 활용 및 컨테이너 내부의 자원 할당량 확인"
 
-#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:62
+#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:66
 msgid ""
 "Let's look at how to use and manage compute sessions that are already "
 "running. If you look at the Control column of the session list, there are"
@@ -131,7 +145,7 @@ msgstr ""
 "이미 실행 중인 연산 세션을 사용하고 관리하는 법에 관해 살펴보겠습니다. 세션 리스트의 Control 열을 보면 몇 가지 아이콘이 "
 "있습니다. 제일 첫 아이콘을 클릭하면 다음 그림과 같이 앱 런처가 뜨면서 해당 세션이 지원하는 몇 가지 앱 서비스가 뜨게 됩니다."
 
-#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:71
+#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:75
 msgid "Let's click on Jupyter Notebook."
 msgstr "Jupyter Notebook을 클릭해봅시다."
 
@@ -171,7 +185,7 @@ msgstr ""
 " 환경 및 라이브러리를 그대로 활용할 수 있어 별도의 패키지 설치 과정이 필요 없습니다. 자세한 Jupyter Notebook "
 "사용법은 공식 문서 등을 참고하시기 바랍니다."
 
-#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:95
+#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:87
 msgid ""
 "Click the NEW button on the top right and select the Notebook for "
 "Backend.AI, then the ipynb window appears where you can enter your own "
@@ -180,7 +194,7 @@ msgstr ""
 "우측 상단의 NEW 버튼을 클릭한 후 Backend.AI 용 Notebook을 선택하면 새로운 코드를 입력할 수 있는 ipynb "
 "창이 뜹니다."
 
-#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:102
+#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:94
 msgid ""
 "In this window, you can enter and execute any code you want by using the "
 "environment that session provides. The code execution happens on one of "
@@ -195,7 +209,7 @@ msgstr ""
 " 클릭하거나 ``Ctrl-Enter`` 를 입력하여 코드를 실행해봅니다. ``/sys/fs/cgroup/`` 하위에 있는 자원 "
 "할당량을 읽고 출력하는 파이썬 코드입니다."
 
-#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:112
+#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:104
 msgid ""
 "Since Python is already installed in the TensorFlow 2.2 environment, the "
 "code will run without any configuration. Make sure that the amount of "
@@ -205,13 +219,13 @@ msgstr ""
 "TensorFlow 2.2 환경에는 이미 파이썬이 설치되어 있으므로, 별다른 설정 없이 코드가 실행될 것입니다. 처음 연산 세션을 "
 "생성할 때 지정했던 코어와 메모리 량이 출력되는 것을 확인하십시오."
 
-#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:117
+#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:109
 msgid ""
 "The amount of memory may vary slightly depending on the calculation "
 "method."
 msgstr "메모리 양은 계산 방식의 차이에 따라 값이 다소 차이날 수 있습니다."
 
-#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:119
+#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:111
 msgid ""
 "Like this, after creating a compute session, you can use web apps such as"
 " Jupyter Notebook, and in Jupyter Notebook, you can run Python code that "
@@ -221,11 +235,11 @@ msgstr ""
 "이처럼 연산 세션을 생성한 후 Jupyter Notebook 등과 같은 웹 앱을 사용할 수 있으며, Jupyter "
 "Notebook에서는 별도의 설치를 하지 않고 바로 자원 제약 상황을 확인하는 Python 코드를 실행할 수 있었습니다."
 
-#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:125
+#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:117
 msgid "Web terminal"
 msgstr "웹 터미널 활용"
 
-#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:127
+#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:119
 msgid ""
 "If you close the Jupyter Notebook app and open the app launcher screen of"
 " the math session again, you will see the Console app present. Let's "
@@ -234,7 +248,7 @@ msgstr ""
 "Jupyter Notebook 앱을 닫고 다시 연산 세션의 앱 런처 화면을 열면 Console 앱이 있는 것을 볼 수 있습니다. "
 "클릭 해봅시다."
 
-#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:134
+#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:126
 msgid ""
 "A terminal will also appear in a new window, and you can issue shell "
 "commands by accessing inside the computational session as shown in the "
@@ -249,7 +263,7 @@ msgstr ""
 "Untitled.ipynb 파일이 ``ls`` 명령을 통해 조회되는 것을 볼 수 있습니다. 두 앱이 같은 컨테이너 환경에서 돌아가고"
 " 있다는 증거입니다."
 
-#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:141
+#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:133
 msgid ""
 "In addition to this, you can use web-based services such as TensorBoard, "
 "Jupyter Lab, etc., depending on the type of service provided by the "
@@ -258,7 +272,7 @@ msgstr ""
 "이 외에도 연산 세션이 제공하는 서비스의 종류에 따라 TensorBoard, Jupyter Lab 등과 같은 웹 기반 서비스를 "
 "이용할 수 있습니다."
 
-#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:144
+#: ../../allocate_cpu_mem/allocate_cpu_mem.rst:136
 msgid "To delete a specific session, simply click on the red power icon."
 msgstr "특정 세션을 삭제하기 위해서는 빨간색 전원 아이콘을 클릭하면 됩니다."
 

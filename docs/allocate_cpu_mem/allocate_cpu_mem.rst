@@ -55,6 +55,10 @@ specified in creating the compute session are displayed.
    terminated) in the cluster, and users can view only the sessions they have
    created.
 
+.. note::
+   Compute session list may not be displayed normally due to intermittent
+   network connection problems, and etc. This can be solved by refreshing the
+   browser page.
 
 Utilize Jupyter Notebook and check the resource quota from inside the container
 -------------------------------------------------------------------------------

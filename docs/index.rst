@@ -6,7 +6,7 @@
 Backend.AI GUI Console Essential Guide
 ======================================
 
-Backend.AI GUI Console is a web or app that provides easy-to-use GUI interface
+Backend.AI GUI Console is a web client that provides easy-to-use GUI interface
 to work with the Backend.AI server.
 
 This document is an essential guide for Backend.AI GUI Console.
