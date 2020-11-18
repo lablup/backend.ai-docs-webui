@@ -2,26 +2,16 @@
 Overview
 ========
 
-Backend.AI is an open source cloud resource management platform. Backend.AI
-efficiently manages compute resources in a cloud or on-premises cluster,
-providing a virtualized compute environment to provide on-demand computation,
-anytime, anywhere. With GPU virtualization technique, Backend.AI helps
-scientists, DevOps, enterprise, and AI enthusiasts to scale up efficiently.
-
-Backend.AI offers a variety of performance-driven optimizations for machine
-learning and high-performance computing clusters, along with management and
-research features to support a diverse users, including researchers,
-administrators, and DevOps. The Enterprise Edition adds support for multi-domain
-management, a dedicated Hub app for superadmins, and the GPU virtualization
-plug-in.
-
-A GUI client package is also provided to easily take advantage of the features
-supported by the Backend.AI server. Backend.AI Console is a GUI client in the
-form of a web service. It provides a convenient graphical interface for
-accessing the Backend.AI server to utilize computing resources and manage its
-environment. Most tasks can be done with mouse clicks and brief typing, which
-achieves more intuitive use.
-
+Backend.AI Enterprise R2 is a platform that makes it easy to utilize virtualized
+compute resource clusters in a cloud or on-premises environment. Provides a
+convenient web-based GUI interface to access the Backend.AI server to utilize
+compute resources and manage user's own compute environment, and provides
+pre-made images which enables immediate creation of compute sessions without the
+need by users to install separate programs. In addition, the container-based GPU
+virtualization technology of Backend.AI supports the efficient use of GPUs by
+flexibly dividing one physical GPU, so that multiple users can use it at the
+same time. Most of this works can be done with some mouse clicks and short
+typings, making it more intuitive to use.
 
 Key Concepts
 ------------
@@ -30,12 +20,11 @@ Key Concepts
    :alt: Diagram explaining key concepts
 
 - User: The user is the person who connects to Backend.AI and performs work.
-  Users are divided into normal users, domain admins, and superadmins according
-  to their privileges. While ordinary users can only perform tasks related to
-  their computing sessions, domain admins have the authority to perform
-  tasks within a domain, and superadmins perform almost all tasks throughout the
-  system. A user belongs to one domain and can belong to
-  multiple groups within a domain.
+  Users are divided into normal users and superadmins according to their
+  privileges. While ordinary users can only perform tasks related to their
+  computing sessions, superadmins perform almost all tasks throughout the
+  system. A user belongs to one domain and can belong to multiple groups within
+  a domain.
 - Compute session, container: An isolated virtual environment in which your
   code runs. It looks like a real Linux server with full user rights,
   and you can't see other user's session even if it's running on the same
@@ -70,7 +59,7 @@ Key Concepts
   own program code, data, etc. in advance, and mount it when you run the
   compute session to read from and write to it as if it is on your local disk.
 - Application service, service port: A feature that allows you to access various
-  user applications (eg DIGITS, Jupyter Notebook, shell terminal, TensorBoard,
+  user applications (eg Jupyter Notebook, shell terminal, TensorBoard,
   etc.) running within the compute session. You do not need to know the
   container's address and port number directly, but you can use the provided CLI
   client or GUI console to directly access the desired daemon of the session.
