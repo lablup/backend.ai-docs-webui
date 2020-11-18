@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-01 17:44+0900\n"
+"POT-Creation-Date: 2020-11-18 18:41+0900\n"
 "PO-Revision-Date: 2020-04-01 16:34+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko\n"
@@ -24,22 +24,30 @@ msgid "References"
 msgstr "참고 자료"
 
 #: ../../references/references.rst:5
+msgid ""
+"You can see the manual by clicking question mark(``?``) in the left "
+"bottom of the navigation side bar. It directs to the manual by web page."
+msgstr ""
+"네비게이션 사이드바 왼쪽 하단의 물음표(``?``) 버튼을 클릭하여 매뉴얼을 확인할 수 있습니다. "
+"클릭시 매뉴얼 웹 페이지로 바로 이동하게 됩니다."
+
+#: ../../references/references.rst:13
 msgid "Online API Manual: https://docs.backend.ai"
 msgstr "온라인 API 매뉴얼 : https://docs.backend.ai"
 
-#: ../../references/references.rst:6
+#: ../../references/references.rst:14
 msgid "Online Client SDK Manual: https://docs.client-py.backend.ai"
 msgstr "온라인 Client SDK 매뉴얼 : https://docs.client-py.backend.ai"
 
-#: ../../references/references.rst:9
+#: ../../references/references.rst:17
 msgid "The latest versions of this document can be found from sites below:"
 msgstr "이 문서의 최신 버전은 아래 사이트에서 볼 수 있습니다:"
 
-#: ../../references/references.rst:11
+#: ../../references/references.rst:19
 msgid "https://console.docs.backend.ai/en/stable (English)"
 msgstr "https://console.docs.backend.ai/en/stable (영문)"
 
-#: ../../references/references.rst:12
+#: ../../references/references.rst:20
 msgid "https://console.docs.backend.ai/ko/stable (Korean)"
 msgstr "https://console.docs.backend.ai/ko/stable (한글)"
 
@@ -48,4 +56,12 @@ msgstr "https://console.docs.backend.ai/ko/stable (한글)"
 
 #~ msgid "**Online version of this document**"
 #~ msgstr "**이 문서의 온라인 버전**"
+
+#~ msgid ""
+#~ "You can see the manual by clicking"
+#~ " question mark(```?```) in the left "
+#~ "bottom of the navigation side bar. "
+#~ "It directs to the manual by web"
+#~ " page."
+#~ msgstr ""
 
