@@ -51,15 +51,36 @@ allocate more than the total amount shown in the resource indicator.
 
 Now log back into the administrator account and go to the Resource Policies tab.
 Click the gear button in the Control column of the default policy to enter the
-policy editing screen. Uncheck the Unlimited checkbox at the bottom of CPU, RAM,
-fGPU, and set the resource limits to the desired values. Set the amount of
-constrained resource to be smaller than the total amount of hardware. Here, we
-set it to 2, 4 and 1 respectively. Click the UPDATE button to update the
-resource policy.
+policy editing screen. In Update Resource Policy dialog, every option is
+changeable except Policy Name which is the primary key for distinguishing the
+resource policy from list. Each numeric value is regarded as maximum value for
+creating/destroying a session and also for the number of vfolders. Uncheck the
+Unlimited checkbox at the bottom of CPU, RAM, fGPU, and set the resource limits
+to the desired values. Set the amount of constrained resource to be smaller than
+the total amount of hardware. Here, we set it to 2, 4 and 1 respectively. Click
+the UPDATE button to update the resource policy.
 
 .. image:: update_resource_policy.png
    :width: 400
    :align: center
+
+About details in each option in resource policy dialog, see the description below.
+
+* Resource Policy
+   * CPU : The fundamental resource for all kind calculation. Mostly useful at handling single and complex calculations sequentially.
+   * RAM : It loads codes to execute the calculation for Machine learning. The bigger the size becomes, less overhead occurs.
+   * GPU : It does similar job as the CPU does. The difference between CPU and GPU is that GPU is much faster in processing multiple but simpler calculations parallel meanwhile CPU is for more general calculations.
+   * fGPU : Fractional GPU (fGPU) is literally split a single GPU to multiple partitions in order to use GPU economically. Notice that the minimum amount of fGPU required is differed by each image.
+
+* Sessions
+   * Container Per Session : The independent unit for calculating.
+   * Idle timeout (sec.) : Configurable period of time during which the user can be inactive without any impact on their session.
+   * Concurrent Jobs : It is about the number of jobs can be done in parallel.
+
+* Folders
+   * Allowed hosts : Allowed hosts for accessing vfolders created under this resource policy.
+   * Capacity(GB) : the maximum size(GB) for folder that can be afforded.
+   * Max. # : the maximum number of vfolders that can be created/invited.
 
 In the resource policy list, check that the Resources value of the default
 policy has been updated.
