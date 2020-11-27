@@ -26,6 +26,28 @@ character/ number should be included.
    :align: center
    :alt: Create user dialog
 
+If password didn't match the policy, then validation failed message will be displayed under the input field.
+A message displays the reason why the password you entered is wrong, so you can easily check it.
+
+* no inputs 
+
+   .. image:: create_user_dialog_wrong.png
+      :width: 405
+      :align: center
+
+* no input on password confirmation
+
+   .. image:: create_user_dialog_wrong2.png
+      :width: 405
+      :align: center
+
+* all input with non-matching value
+
+   .. image:: create_user_dialog_wrong3.png
+      :width: 405
+      :align: center
+
+
 Check if the user is created.
 
 .. image:: check_if_user_created.png
@@ -40,8 +62,11 @@ user belongs.
    :align: center
    :alt: Detailed information of a user
 
-Click the gear icon in the Controls column to update information of a user who
-already exist. User's name, password, activation state, and etc. can be changed.
+Click the gear icon in the Controls column to update information of a
+user who already exists. User’s name, password, activation state, etc.
+can be changed. Notice that user ID is disabled so that it can’t be changed. 
+
+Also, password can be updated with same policy as creating a new user.
 
 .. image:: user_update_dialog.png
    :width: 350
@@ -65,6 +90,40 @@ you can deactivate the user by clicking the OKAY button.
 
 Deactivated users are not listed in Users tab.
 
+.. _sharing-a-group-storage:
+
+Sharing a group storage folder with group members
+-------------------------------------------------
+
+In addition to user's storage folders, Backend.AI provides storage folders for
+groups. A group storage folder is a folder belonging to a specific group, not a
+specific user, and can be accessed by all users belonging to that group.
+
+.. note::
+   Group folders can only be created by administrators. Normal users can only
+   access the contents of the group folder created by the administrator. Also,
+   there may be cases where group folder is not allowed depending on the system
+   settings.
+
+First, log in with an administrator account and create a group folder. After
+moving to the Data & Storage page, click NEW FOLDER to open the folder creation
+dialog. Enter the folder name, set the Type to Group, and select the target
+group. The target group should be set to the group to which User B belongs for
+this example to work.  Permission is set to Read-Only again.
+
+.. image:: group_folder_creation.png
+   :width: 450
+   :align: center
+
+After confirming that the folder has been created, log in with the user B's
+account and check that the group folder just created on the Data & Storage page
+is displayed without an invitation procedure! You can see that R (Read Only) is
+also displayed in the Permission column.
+
+.. image:: group_folder_listed_in_B.png
+
+In this way, Backend.AI provides invitation for user's folders and group folders
+to help you share data and models in a flexible way.
 
 
 Limiting Maximum Compute Resources per User (Keypair)
