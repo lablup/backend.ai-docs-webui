@@ -29,7 +29,9 @@ release = 'Enterprise R2'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'recommonmark'
+    'recommonmark',
+    'sphinx.ext.autosectionlabel',
+    'sphinx.ext.intersphinx'
 ]
 
 # The file extensions of source files.
