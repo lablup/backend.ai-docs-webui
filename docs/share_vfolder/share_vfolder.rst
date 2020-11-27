@@ -91,36 +91,6 @@ been shared including write access.
 This way, you can share your personal storage folders with other users based on
 your Backend.AI email account.
 
-
-Sharing a group storage folder with group members
--------------------------------------------------
-
-In addition to user's storage folders, Backend.AI provides storage folders for
-groups. A group storage folder is a folder belonging to a specific group, not a
-specific user, and can be accessed by all users belonging to that group.
-
 .. note::
-   Group folders can only be created by administrators. Normal users can only
-   access the contents of the group folder created by the administrator. Also,
-   there may be cases where group folder is not allowed depending on the system
-   settings.
-
-First, log in with an administrator account and create a group folder. After
-moving to the Data & Storage page, click NEW FOLDER to open the folder creation
-dialog. Enter the folder name, set the Type to Group, and select the target
-group. The target group should be set to the group to which User B belongs for
-this example to work.  Permission is set to Read-Only again.
-
-.. image:: group_folder_creation.png
-   :width: 450
-   :align: center
-
-After confirming that the folder has been created, log in with the user B's
-account and check that the group folder just created on the Data & Storage page
-is displayed without an invitation procedure! You can see that R (Read Only) is
-also displayed in the Permission column.
-
-.. image:: group_folder_listed_in_B.png
-
-In this way, Backend.AI provides invitation for user's folders and group folders
-to help you share data and models in a flexible way.
+   Backend.AI also provides sharing group folder to group members.
+   To See the detail, go to :ref:`sharing a group storage folder with group members <sharing-a-group-storage>`.
