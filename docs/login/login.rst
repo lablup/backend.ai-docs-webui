@@ -29,3 +29,10 @@ can logout by selecting the Log Out menu.
    through email verification, which requires connection to AWS with paid
    account. For most on-premise installation, this feature is disabled by
    default.
+
+
+.. warning::
+   If there are more than 10 times of login failure occured, access to the
+   endpoint is temporarily restricted for security reasons.
+   
+   If the access is restricted due to the reasons above, please contact your system administrator.
