@@ -74,3 +74,32 @@ Key Concepts
   - If the GUI Gonsole loses its connection to wsproxy or the wsproxy server is
     dead, it will not be possible to access services such as Jupyter Notebook
     and Terminal.
+
+Guide for accessible menu by user role
+--------------------------------------
+
+.. note:: 
+
+   * pages with ``*`` mark are in Administration menu.
+   * Features for Admin-only is listed in :ref:`admin menu <admin-menu>`.
+
++----------------+------+-------+-------------+
+| page \\ role   | user | admin | super-admin |
++================+======+=======+=============+
+| Summary        |   O  |   O   |      O      |
++----------------+------+-------+-------------+
+| Sessions       |   O  |   O   |      O      |
++----------------+------+-------+-------------+
+| Data & Storage |   O  |   O   |      O      |
++----------------+------+-------+-------------+
+| Statistics     |   O  |   O   |      O      |
++----------------+------+-------+-------------+
+| Users*         |   X  |   X   |      O      |
++----------------+------+-------+-------------+
+| Maintenance*   |   X  |   X   |      O      |
++----------------+------+-------+-------------+
+| Information*   |   X  |   X   |      O      |
++----------------+------+-------+-------------+
+| UserSettings   |   O  |   O   |      O      |
++----------------+------+-------+-------------+
+
