@@ -15,6 +15,11 @@ used time, allocated resources, resource usage, etc.
 As a superadmin, you can see the information of all sessions currently running
 (or ended) in the cluster. On the other hand, users can see their sessions only.
 
+.. note::
+   Compute session list may not be displayed normally due to intermittent
+   network connection problems, and etc. This can be solved by refreshing the
+   browser page.
+
 The resource indicator is displayed at the top of the screen. You can check the
 amount of resources currently used and the total amount of resources
 that can be allocated. The display bar is divided into two parts: the upper and
