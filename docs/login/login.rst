@@ -30,9 +30,18 @@ can logout by selecting the Log Out menu.
    account. For most on-premise installation, this feature is disabled by
    default.
 
-
 .. warning::
-   If there are more than 10 times of login failure occured, access to the
-   endpoint is temporarily restricted for security reasons.
-   
-   If the access is restricted due to the reasons above, please contact your system administrator.
+   If there are more than 5 times of login failure occured, access to the
+   endpoint is temporarily restricted for 3 minutes for security reasons.
+   If the access restriction persists, , please contact your system
+   administrator.
+
+.. note::
+   After initial login, the browser session information will be keep for 30 days
+   from the console-server. That means, after 30 days of initial login, the user
+   needs to login again since server-side authentication information will be
+   expired. It would be controversal when the server expires the session cookie.
+   If its too short, customers are not happy, and if its too long, user's
+   account will be more vulnerable. Since many web-based applications, such as
+   Microsoft Teams, will expire session information after 30 days, we also
+   determined the period as 30 days.

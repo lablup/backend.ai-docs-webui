@@ -7,7 +7,8 @@ address prepared by the admins. So, users do not need to install a
 platform-dependent desktop applications, and just need the latest modern
 browsers such as Chrome.
 
-Recommended browser: latest Chrome (at least version 80)
+* Recommended browser: latest Chrome (at least version 80)
+* Requirement: any machine that runs Web Browser
 
 After initial installation, we will provide following materials/services:
 
@@ -39,6 +40,8 @@ Gateway server that accepts and handles every user requests. If the request is
 related with the compute session (container), Manager will delegate the request
 to Agent and/or containers in each Agent.
 
+* Requirement: 2 cores, 4 GiB memory
+
 .. code-block:: shell
 
    # check status
@@ -57,6 +60,8 @@ Agent
 
 Worker node. Manage the lifecycle of compute sessions (containers).
 
+* Requirement: 4 cores, 32 GiB memory, NVIDIA GPU for GPU workload, > 512 GiB SSD
+
 .. code-block:: shell
 
    # check status
@@ -74,6 +79,8 @@ Console-Server
 ^^^^^^^^^^^^^^
 
 Serves user web GUI Console and provides authentication by email and password.
+
+* Requirement: 2 cores, 4 GiB memory
 
 .. code-block:: shell
 
@@ -95,6 +102,8 @@ Proxies the connection between user-created web apps (such as web Terminal and
 Jupyter Notebook) and Manager, which is then relayed to a specific compute
 session (container).
 
+* Requirement: 2 cores, 4 GiB memory
+
 .. code-block:: shell
 
    cd /home/lablup/halfstack
@@ -113,6 +122,8 @@ PostgreSQL DB
 ^^^^^^^^^^^^^
 
 Database for Manager.
+
+* Requirement: 1 cores, 2 GiB memory
 
 .. code-block:: shell
 
@@ -135,6 +146,8 @@ Cache server which is used to collect per-session and per-agent usage
 statistics and relays heartbeat signal from Agent to Manager. It also keeps
 user's authentication information.
 
+* Requirement: 1 cores, 2 GiB memory
+
 .. code-block:: shell
 
    cd /home/lablup/halfstack
@@ -153,6 +166,8 @@ Etcd
 ^^^^^
 
 Config server, which contains Backend.AI system-wide configuration.
+
+* Requirement: 1 cores, 2 GiB memory
 
 .. code-block:: shell
 

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-01 14:37+0900\n"
-"PO-Revision-Date: 2020-12-01 14:52+0900\n"
+"POT-Creation-Date: 2020-12-01 15:11+0900\n"
+"PO-Revision-Date: 2020-12-01 15:12+0900\n"
 "Last-Translator: \n"
 "Language: ko_KR\n"
 "Language-Team: \n"
@@ -39,31 +39,35 @@ msgstr ""
 msgid "Recommended browser: latest Chrome (at least version 80)"
 msgstr "권장 브라우저: 최신 크롬 (최소한 버전 80 이상)"
 
-#: ../../installation/installation.rst:12
+#: ../../installation/installation.rst:11
+msgid "Requirement: any machine that runs Web Browser"
+msgstr "요구사항: 웹 브라우저를 구동할 수 있는 머신"
+
+#: ../../installation/installation.rst:13
 msgid "After initial installation, we will provide following materials/services:"
 msgstr "첫 설치 후 다음과 같은 자료 또는 서비스가 제공됩니다:"
 
-#: ../../installation/installation.rst:14
+#: ../../installation/installation.rst:15
 msgid "User GUI Guide manual"
 msgstr "사용자 GUI 가이드 매뉴얼"
 
-#: ../../installation/installation.rst:15
+#: ../../installation/installation.rst:16
 msgid "Admin GUI Guide manual (for Enterprise version)"
 msgstr "관리자 GUI 가이드 매뉴얼 (엔터프라이즈 고객 전용)"
 
-#: ../../installation/installation.rst:16
+#: ../../installation/installation.rst:17
 msgid "Installation report"
 msgstr "설치 리포트"
 
-#: ../../installation/installation.rst:17
+#: ../../installation/installation.rst:18
 msgid "First-time user/admin on-site tutorial (3-5 hours)"
 msgstr "사용자/관리자 초기 방문 교육 (3-5 시간)"
 
-#: ../../installation/installation.rst:22
+#: ../../installation/installation.rst:23
 msgid "Backend.AI Server Installation Information"
 msgstr "Backend.AI 서버 설치 정보"
 
-#: ../../installation/installation.rst:24
+#: ../../installation/installation.rst:25
 msgid ""
 "Backend.AI server daemons are installed by Lablup support team. If there are "
 "problems on the daemons or services, please contact with contact@lalbup.com."
@@ -71,11 +75,11 @@ msgstr ""
 "Backend.AI 서버 데몬은 래블업의 지원팀이 설치하게 됩니다. 만약 데몬이나 서비스"
 "에 문제가 발생했을 시에는 contact@lablup.com 으로 연락하십시오."
 
-#: ../../installation/installation.rst:28
+#: ../../installation/installation.rst:29
 msgid "Daemon information"
 msgstr "데몬 정보"
 
-#: ../../installation/installation.rst:30
+#: ../../installation/installation.rst:31
 msgid ""
 "Backend.AI is composed of many modules and daemons. Here, we briefly describe "
 "each services and provide basic maintenance guide in case of specific service "
@@ -87,11 +91,11 @@ msgstr ""
 "이드를 제공합니다. 관리 명령은 일반적으로 사용 가능하지만, 호스트 별 설치 상황"
 "에 따라 구체적인 사항은 달라질 수 있습니다."
 
-#: ../../installation/installation.rst:36
+#: ../../installation/installation.rst:37
 msgid "Manager"
 msgstr "Manager"
 
-#: ../../installation/installation.rst:38
+#: ../../installation/installation.rst:39
 msgid ""
 "Gateway server that accepts and handles every user requests. If the request is "
 "related with the compute session (container), Manager will delegate the "
@@ -101,30 +105,42 @@ msgstr ""
 "청이 연산 세션(컨테이너)과 관련 있다면, 해당 세션을 관리하는 Agent 또는 해당 컨"
 "테이너로 작업을 위임합니다."
 
-#: ../../installation/installation.rst:56
+#: ../../installation/installation.rst:43 ../../installation/installation.rst:83
+#: ../../installation/installation.rst:105
+msgid "Requirement: 2 cores, 4 GiB memory"
+msgstr "리"
+
+#: ../../installation/installation.rst:59
 msgid "Agent"
 msgstr "Agent"
 
-#: ../../installation/installation.rst:58
+#: ../../installation/installation.rst:61
 msgid "Worker node. Manage the lifecycle of compute sessions (containers)."
 msgstr "연산 워커 노드입니다. 연산 세션(컨테이너)의 수명주기를 관리합니다."
 
-#: ../../installation/installation.rst:74
+#: ../../installation/installation.rst:63
+msgid ""
+"Requirement: 4 cores, 32 GiB memory, NVIDIA GPU for GPU workload, > 512 GiB SSD"
+msgstr ""
+"요구 사항: 4 코어, 32 GiB 메모리, NVIDIA GPU (GPU 워크로드가 필요한 경우), > "
+"512 GiB SSD"
+
+#: ../../installation/installation.rst:79
 msgid "Console-Server"
 msgstr "Console-Server"
 
-#: ../../installation/installation.rst:76
+#: ../../installation/installation.rst:81
 msgid ""
 "Serves user web GUI Console and provides authentication by email and password."
 msgstr ""
 "사용자 웹 GUI 환경을 제공하고, 이메일/비밀번호 기반의 사용자 인증 또한 지원합니"
 "다."
 
-#: ../../installation/installation.rst:92
+#: ../../installation/installation.rst:99
 msgid "WSProxy"
 msgstr "WSProxy"
 
-#: ../../installation/installation.rst:94
+#: ../../installation/installation.rst:101
 msgid ""
 "Proxies the connection between user-created web apps (such as web Terminal and "
 "Jupyter Notebook) and Manager, which is then relayed to a specific compute "
@@ -133,19 +149,25 @@ msgstr ""
 "사용자가 띄운 웹기반 앱(터미널, Jupyter Notebook 등)과 매니저 사이의 통신을 중"
 "계하는 서비스입니다."
 
-#: ../../installation/installation.rst:113
+#: ../../installation/installation.rst:122
 msgid "PostgreSQL DB"
 msgstr "PostgreSQL DB"
 
-#: ../../installation/installation.rst:115
+#: ../../installation/installation.rst:124
 msgid "Database for Manager."
 msgstr "Manager가 사용하는 데이터베이스입니다."
 
-#: ../../installation/installation.rst:132
+#: ../../installation/installation.rst:126
+#: ../../installation/installation.rst:149
+#: ../../installation/installation.rst:170
+msgid "Requirement: 1 cores, 2 GiB memory"
+msgstr "요구 사항: 1 코어, 2 GiB 메모리"
+
+#: ../../installation/installation.rst:143
 msgid "Redis"
 msgstr "Redis"
 
-#: ../../installation/installation.rst:134
+#: ../../installation/installation.rst:145
 msgid ""
 "Cache server which is used to collect per-session and per-agent usage "
 "statistics and relays heartbeat signal from Agent to Manager. It also keeps "
@@ -155,11 +177,11 @@ msgstr ""
 "가는 heartbeat 신호를 중계합니다. 사용자의 로그인 인증 정보를 보관하기도 합니"
 "다."
 
-#: ../../installation/installation.rst:153
+#: ../../installation/installation.rst:166
 msgid "Etcd"
 msgstr "Etcd"
 
-#: ../../installation/installation.rst:155
+#: ../../installation/installation.rst:168
 msgid "Config server, which contains Backend.AI system-wide configuration."
 msgstr "설정 서버로, Backend.AI의 전역 설정값을 보관하고 있습니다."
 
