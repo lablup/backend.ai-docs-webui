@@ -108,15 +108,15 @@ session (container).
 
    cd /home/lablup/halfstack
    # check status
-   dockner-compose -f docker-compose.wsproxy-simple.yaml -p <project> ps
+   docker-compose -f docker-compose.wsproxy-simple.yaml -p <project> ps
    # start service
-   dockner-compose -f docker-compose.wsproxy-simple.yaml -p <project> start
+   docker-compose -f docker-compose.wsproxy-simple.yaml -p <project> up -d
    # stop service
-   dockner-compose -f docker-compose.wsproxy-simple.yaml -p <project> stop
+   docker-compose -f docker-compose.wsproxy-simple.yaml -p <project> down
    # restart service
-   dockner-compose -f docker-compose.wsproxy-simple.yaml -p <project> restart
+   docker-compose -f docker-compose.wsproxy-simple.yaml -p <project> restart
    # see logs
-   dockner-compose -f docker-compose.wsproxy-simple.yaml -p <project> logs
+   docker-compose -f docker-compose.wsproxy-simple.yaml -p <project> logs
 
 PostgreSQL DB
 ^^^^^^^^^^^^^
@@ -129,15 +129,15 @@ Database for Manager.
 
    cd /home/lablup/halfstack
    # check status
-   dockner-compose -f docker-compose.hs.postgres.yaml -p <project> ps
+   docker-compose -f docker-compose.hs.postgres.yaml -p <project> ps
    # start service
-   dockner-compose -f docker-compose.hs.postgres.yaml -p <project> start
+   docker-compose -f docker-compose.hs.postgres.yaml -p <project> up -d
    # stop service
-   dockner-compose -f docker-compose.hs.postgres.yaml -p <project> stop
+   docker-compose -f docker-compose.hs.postgres.yaml -p <project> down
    # restart service
-   dockner-compose -f docker-compose.hs.postgres.yaml -p <project> restart
+   docker-compose -f docker-compose.hs.postgres.yaml -p <project> restart
    # see logs
-   dockner-compose -f docker-compose.hs.postgres.yaml -p <project> logs
+   docker-compose -f docker-compose.hs.postgres.yaml -p <project> logs
 
 Redis
 ^^^^^
@@ -152,15 +152,15 @@ user's authentication information.
 
    cd /home/lablup/halfstack
    # check status
-   dockner-compose -f docker-compose.hs.redis.yaml -p <project> ps
+   docker-compose -f docker-compose.hs.redis.yaml -p <project> ps
    # start service
-   dockner-compose -f docker-compose.hs.redis.yaml -p <project> start
+   docker-compose -f docker-compose.hs.redis.yaml -p <project> up -d
    # stop service
-   dockner-compose -f docker-compose.hs.redis.yaml -p <project> stop
+   docker-compose -f docker-compose.hs.redis.yaml -p <project> down
    # restart service
-   dockner-compose -f docker-compose.hs.redis.yaml -p <project> restart
+   docker-compose -f docker-compose.hs.redis.yaml -p <project> restart
    # see logs
-   dockner-compose -f docker-compose.hs.redis.yaml -p <project> logs
+   docker-compose -f docker-compose.hs.redis.yaml -p <project> logs
 
 Etcd
 ^^^^^
@@ -173,12 +173,12 @@ Config server, which contains Backend.AI system-wide configuration.
 
    cd /home/lablup/halfstack
    # check status
-   dockner-compose -f docker-compose.hs.etcd.yaml -p <project> ps
+   docker-compose -f docker-compose.hs.etcd.yaml -p <project> ps
    # start service
-   dockner-compose -f docker-compose.hs.etcd.yaml -p <project> start
+   docker-compose -f docker-compose.hs.etcd.yaml -p <project> up -d
    # stop service
-   dockner-compose -f docker-compose.hs.etcd.yaml -p <project> stop
+   docker-compose -f docker-compose.hs.etcd.yaml -p <project> down
    # restart service
-   dockner-compose -f docker-compose.hs.etcd.yaml -p <project> restart
+   docker-compose -f docker-compose.hs.etcd.yaml -p <project> restart
    # see logs
-   dockner-compose -f docker-compose.hs.etcd.yaml -p <project> logs
+   docker-compose -f docker-compose.hs.etcd.yaml -p <project> logs
