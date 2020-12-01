@@ -6,9 +6,8 @@ Admin Menus
 
 When you log in with an admin account, you will see an additional Administration
 menu in the bottom left sidebar. User information registered in Backend.AI is
-listed in the Users tab. In the case of domain admin, users belong to the domain
-can be only be listed, while superadmin can see all user information. Only
-superadmin can create and deactivate a user.
+listed in the Users tab. Admins can see all user information. Only admins can
+create and deactivate a user.
 
 .. image:: admin_user_page.png
    :alt: User management page
@@ -29,7 +28,7 @@ character/ number should be included.
 If password didn't match the policy, then validation failed message will be displayed under the input field.
 A message displays the reason why the password you entered is wrong, so you can easily check it.
 
-* no inputs 
+* no inputs
 
    .. image:: create_user_dialog_wrong.png
       :width: 405
@@ -64,7 +63,7 @@ user belongs.
 
 Click the gear icon in the Controls column to update information of a
 user who already exists. User’s name, password, activation state, etc.
-can be changed. Notice that user ID is disabled so that it can’t be changed. 
+can be changed. Notice that user ID is disabled so that it can’t be changed.
 
 Also, password can be updated with same policy as creating a new user.
 
@@ -138,7 +137,7 @@ Limiting Maximum Compute Resources per User (Keypair)
 
 In Backend.AI, you can set a limit on the total amount of resources available
 for each user and group. Resource limits per group can only be set through the
-enterprise-dedicated administrator GUI console, but resource limits per user
+enterprise-dedicated administrator GUI Hub, but resource limits per user
 (precisely user's keypair) can be set in the user GUI console.
 
 Log in to the user GUI Console with an administrator account to check the
@@ -194,20 +193,37 @@ the UPDATE button to update the resource policy.
 About details in each option in resource policy dialog, see the description below.
 
 * Resource Policy
-   * CPU : The fundamental resource for all kind calculation. Mostly useful at handling single and complex calculations sequentially.
-   * RAM : It loads codes to execute the calculation for Machine learning. The bigger the size becomes, less overhead occurs.
-   * GPU : It does similar job as the CPU does. The difference between CPU and GPU is that GPU is much faster in processing multiple but simpler calculations parallel meanwhile CPU is for more general calculations.
-   * fGPU : Fractional GPU (fGPU) is literally split a single GPU to multiple partitions in order to use GPU economically. Notice that the minimum amount of fGPU required is differed by each image.
+   * CPU : Specify the maximum amount of CPU cores.
+   * RAM : Specify the maximum amount of memory in GB. It would be good practice
+     to set memory twice as large as the maximum value of GPU memory.
+   * GPU : Specify the maximum amount of physical GPUs. If fractional GPU is
+     enabled by the server (it is in most Enterprise sites), this setting has no
+     effect.
+   * fGPU : Fractional GPU (fGPU) is literally split a single GPU to multiple
+     partitions in order to use GPU efficiently. Notice that the minimum amount
+     of fGPU required is differed by each image. If fractional GPU is not
+     enabled by the server, this settings has no effect.
 
 * Sessions
-   * Container Per Session : The independent unit for calculating.
-   * Idle timeout (sec.) : Configurable period of time during which the user can be inactive without any impact on their session.
-   * Concurrent Jobs : It is about the number of jobs can be done in parallel.
+   * Container Per Session : The maximum number of containers per session.
+     Currently, this value has no effect since the server only allows one
+     container per compute session.
+   * Idle timeout (sec.) : Configurable period of time during which the user can
+     be inactive without any impact on their session. If there is no activity at
+     all on a compute session for idle timeout, the session will be garbage
+     collected and destroyed automatically.
+   * Concurrent Jobs : Maximum number of concurrent compute session per keypair.
+     If this value is set to 3, for example, user bound to this resource policy
+     caanot create more than 3 compute sessions simultaneously.
 
 * Folders
-   * Allowed hosts : Allowed hosts for accessing vfolders created under this resource policy.
-   * Capacity(GB) : the maximum size(GB) for folder that can be afforded.
-   * Max. # : the maximum number of vfolders that can be created/invited.
+   * Allowed hosts : Backend.AI supports many NFS mountpoint. This field limits
+     the accessibility to them. Even if a NFS named "data-1" is mounted on
+     Backend.AI, user cannot access it unless it is allowed by resource policy.
+   * Capacity(GB) : the maximum size (GB) a storage folder can contain. This
+     feature is only effective for special type of storages/filesystems such as
+     FlashBlade.
+   * Max. # : the maximum number of storage folders that can be created/invited.
 
 In the resource policy list, check that the Resources value of the default
 policy has been updated.
