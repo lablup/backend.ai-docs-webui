@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-17 16:24+0900\n"
-"PO-Revision-Date: 2020-11-17 16:25+0900\n"
+"POT-Creation-Date: 2020-12-01 14:37+0900\n"
+"PO-Revision-Date: 2020-12-01 14:40+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko\n"
 "Language-Team: \n"
@@ -53,6 +53,24 @@ msgstr "https://console.docs.backend.ai/en/latest (영문)"
 msgid "https://console.docs.backend.ai/ko/latest (Korean)"
 msgstr "https://console.docs.backend.ai/ko/latest (한글)"
 
+#: ../../index.rst:39
+msgid "Provider"
+msgstr "공급자"
+
+#: ../../index.rst:41
+msgid "Company: Lablup Inc."
+msgstr "회사: 래블업 주식회사 (Lablup Inc.)"
+
+#: ../../index.rst:42
+msgid ""
+"Headquarter: Namyoung Bldg. 403, 34, Seolleung-ro 100-gil, Gangnam-gu "
+"Seoul, Republic of Korea"
+msgstr "주소: 서울 강남구 선릉로100길 34, 403 (남영빌딩)"
+
+#: ../../index.rst:43
+msgid "Contact: contact@lablup.com (070-8200-2587)"
+msgstr "연락처: contact@lablup.com (070-8200-2587)"
+
 #~ msgid "Indices and Tables"
 #~ msgstr "색인 및 테이블"
 
@@ -61,3 +79,13 @@ msgstr "https://console.docs.backend.ai/ko/latest (한글)"
 
 #~ msgid "The latest versions of this document can be found from sites below:"
 #~ msgstr "이 문서의 최신 버전은 아래 사이트에서 볼 수 있습니다:"
+
+#~ msgid "Contact"
+#~ msgstr "연락처"
+
+#~ msgid ""
+#~ "If you have any questions on the usage of GUI Console and/or server "
+#~ "statuses, please contact with the following email: contact@lablup.com"
+#~ msgstr ""
+#~ "GUI Console 사용 관련 문의가 있거나, 서버 상태에 이상이 있을 경우 다음 이"
+#~ "메일로 문의 주십시오: contact@lablup.com"

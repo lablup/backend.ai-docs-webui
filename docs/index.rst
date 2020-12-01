@@ -33,4 +33,10 @@ The latest versions of full user's guide can be found from sites below:
    admin_menu/admin_menu
    license_agreement/license_agreement
    references/references
-   
+
+Provider
+--------
+
+* Company: Lablup Inc.
+* Headquarter: Namyoung Bldg. 403, 34, Seolleung-ro 100-gil, Gangnam-gu Seoul, Republic of Korea
+* Contact: contact@lablup.com (070-8200-2587)
