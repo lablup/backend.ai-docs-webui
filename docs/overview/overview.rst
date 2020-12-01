@@ -75,6 +75,85 @@ Key Concepts
     dead, it will not be possible to access services such as Jupyter Notebook
     and Terminal.
 
+Backend.AI feature details
+--------------------------
+
++----------------------+-------------------------------------------------------+
+| Category             | Feature                                               |
++======================+=======================================================+
+| GPU support          | Container-level multi GPU                             |
++                      +-------------------------------------------------------+
+|                      | (Enterprise) Fractional GPU sharing & scaling         |
++                      +-------------------------------------------------------+
+|                      | Multiple CUDA library version support (8.0 to 11.1)   |
++----------------------+-------------------------------------------------------+
+| Scaling              | On-premise installation on both bare-metal / VM       |
++                      +-------------------------------------------------------+
+|                      | Hybrid cloud (on-premise + cloud)                     |
++                      +-------------------------------------------------------+
+|                      | Polycloud (multi-cloud federation)                    |
++----------------------+-------------------------------------------------------+
+| Scheduling           | Unified scheduling & monitoring with GUI admin        |
++                      +-------------------------------------------------------+
+|                      | Per-user (keypair) resource policy                    |
++                      +-------------------------------------------------------+
+|                      | (Enterprise) Per-group resource policy                |
++                      +-------------------------------------------------------+
+|                      | Availability-slot based scheduling                    |
++----------------------+-------------------------------------------------------+
+| Cluster partitioning | Resource groups by H/W spec and usage                 |
++                      +-------------------------------------------------------+
+|                      | (Enterprise) Access control of users to               |
+|                      | resource group                                        |
++                      +-------------------------------------------------------+
+|                      | (Enterprise) Access control of group to               |
+|                      | resource group                                        |
++----------------------+-------------------------------------------------------+
+| Security             | Sandboxing via hypervisor/container                   |
++                      +-------------------------------------------------------+
+|                      | Access logs for each user                             |
++                      +-------------------------------------------------------+
+|                      | Per session (container) logs                          |
++----------------------+-------------------------------------------------------+
+| UI / UX              | GUI web interface                                     |
++                      +-------------------------------------------------------+
+|                      | (Enterprise) Admin GUI web interface                  |
++----------------------+-------------------------------------------------------+
+| Data management      | EFS, NFS, SMB and distributed file system             |
+|                      | (CephFS, GlusterFS, HDFS, etc)                        |
++                      +-------------------------------------------------------+
+|                      | (Enterprise) Dedicated flash-storage integration:     |
+|                      | PureStorage FlashBlade                                |
++                      +-------------------------------------------------------+
+|                      | Access control to data by user/group                  |
++----------------------+-------------------------------------------------------+
+| Developer support    | Universal programming languages (Python, C/C++, etc)  |
++                      +-------------------------------------------------------+
+|                      | Interactive web apps (Terminal, Jupyter, VSCode, etc) |
++----------------------+-------------------------------------------------------+
+| For data scientists  | NGC (NVIDIA GPU CLoud) image integration              |
++                      +-------------------------------------------------------+
+|                      | Popular ML libraries: TensorFlow, PyTorch, etc        |
++                      +-------------------------------------------------------+
+|                      | Concurrent user of multiple versions of libraries     |
++                      +-------------------------------------------------------+
+|                      | Periodic update of ML libraries                       |
++----------------------+-------------------------------------------------------+
+| Customer support     | On-site installation (bare-metal / VM)                |
++                      +-------------------------------------------------------+
+|                      | Configuration support (on-premise + cloud)            |
++                      +-------------------------------------------------------+
+|                      | Admin/user training                                   |
++                      +-------------------------------------------------------+
+|                      | Support for updating to latest version                |
++                      +-------------------------------------------------------+
+|                      | Priority development and escalation                   |
++                      +-------------------------------------------------------+
+|                      | Custmoized container image / kernel or kernel         |
+|                      | repository                                            |
++----------------------+-------------------------------------------------------+
+
+
 Guide for accessible menu by user role
 --------------------------------------
 

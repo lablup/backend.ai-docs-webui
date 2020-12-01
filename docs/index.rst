@@ -39,4 +39,6 @@ Provider
 
 * Company: Lablup Inc.
 * Headquarter: Namyoung Bldg. 403, 34, Seolleung-ro 100-gil, Gangnam-gu Seoul, Republic of Korea
+* Homepage: https://www.lablup.com
+* Cloud service: https://cloud.backend.ai
 * Contact: contact@lablup.com (070-8200-2587)
