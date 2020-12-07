@@ -188,3 +188,21 @@ To delete a specific session, simply click on the red power icon.
 .. image:: session_destroy_dialog.png
    :width: 400
    :align: center
+
+
+Session List Download
+---------------------
+
+On the right side of the OTHERS tab there is a menu marked with ``...``. When
+you click this menu, a sub-menu export CSV appears.
+
+.. image:: export_csv_menu.png
+
+If you click this menu, you can download the information of the calculation
+sessions created so far in CSV format. After the following dialog opens, enter
+an appropriate file name (if necessary) and click the EXPORT button. A CSV file
+will be downloaded soon.
+
+.. image:: export_session_dialog.png
+   :width: 350
+   :align: center
