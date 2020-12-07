@@ -190,6 +190,29 @@ To delete a specific session, simply click on the red power icon.
    :align: center
 
 
+Query compute session log
+-------------------------
+
+You can view the log of the compute session by clicking the last icon in the
+Control column of the running compute session.
+
+.. image:: session_log.png
+   :width: 500
+   :align: center
+
+
+Delete a compute session
+------------------------
+
+You can delete a compute session by clicking the trash can icon in the Control
+column of the running session. If you click OKAY button in the dialog box, the
+compute session will be deleted after a while.
+
+.. image:: destroy_dialog.png
+   :width: 500
+   :align: center
+
+
 Session List Download
 ---------------------
 

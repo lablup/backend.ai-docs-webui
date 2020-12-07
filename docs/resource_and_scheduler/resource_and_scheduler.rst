@@ -26,7 +26,21 @@ shown in the following figure.
 
 After creating a compute session by clicking the LAUNCH button, you can see that
 the amount of resources allocated by CPU, RAM, and FGPU in the upper resource
-indicator increases.
+indicator increases. You can check the amount of resources currently used and
+the total amount of resources that can be allocated. The display bar is divided
+into two parts: the upper and the lower. he upper part shows the resource
+allocation status in the current scaling group, and the lower part shows the
+allocation status of total accessible resources.
+
+* Upper: Allocated and available resources within the current scaling group
+
+  - (Resources allocated by the user in the current scaling group) / (Total
+    resources allocatable by the user in the current scaling group)
+
+* Lower: Total allocated and available resources
+
+  - (Resources allocated by the user) / (Resources allocated by the user + Total
+    resources allocatable by the user in the current scaling group)
 
 .. image:: resource_indicator_after_creation.png
    :align: center
