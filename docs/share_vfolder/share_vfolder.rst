@@ -94,3 +94,23 @@ your Backend.AI email account.
 .. note::
    Backend.AI also provides sharing group folder to group members.
    To See the detail, go to :ref:`sharing a group storage folder with group members <sharing-a-group-storage>`.
+
+
+Adjust permission for shared folders
+------------------------------------
+
+If you click the fourth person icon in the Control column, you can see a list of
+users who have shared the folder. Click Select permission to set the sharing
+permission.
+
+* View: Invited users only have read access to the folder.
+* Edit: The invited user has read and write access to the folder. The user
+  cannot delete folders or files.
+* Edit+Delete: The invited user has full access to the folder and can delete
+  files or folders.
+* Kick out user: Retrieves the user's invitation. The user can no longer view or
+  use the folder.
+
+.. image:: modify_perm.png
+   :width: 500
+   :align: center

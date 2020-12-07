@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-11 21:57+0900\n"
-"PO-Revision-Date: 2020-09-11 21:58+0900\n"
+"POT-Creation-Date: 2020-12-07 23:41+0900\n"
+"PO-Revision-Date: 2020-12-07 23:42+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko\n"
 "Language-Team: Lablup\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #: ../../vfolder/vfolder.rst:3
 msgid "Handing Folders for Consistent Management of Data and Modlels"
@@ -46,14 +46,18 @@ msgid ""
 "the files and directories of a compute session are deleted upon session "
 "termination, it is recommended to save them in a storage folder. List of "
 "storage folders can be found by selecting the Storage on the left "
-"sidebar."
+"sidebar. You can see the information such as the folder name and ID, the "
+"NFS host name where the folder is located (Location), and folder access "
+"rights (Permission)."
 msgstr ""
 "Backend.AI는 사용자의 파일을 보존할 수 있도록 별도의 저장소를 지원합니"
 "다. 연산 세션의 기본 폴더는 세션이 삭제되면 같이 삭제되므로, 보존해야 하"
 "는 파일이 있을 경우 Storage 폴더에 저장하는 것이 좋습니다. Storage 폴더"
-"는 좌측 메뉴의 Data & Storage 탭을 선택하면 조회할 수 있습니다."
+"는 좌측 메뉴의 Data & Storage 탭을 선택하면 조회할 수 있습니다. 폴더의 이"
+"름과 ID, 폴더가 위치하는 NFS 호스트명(Location), 폴더 접근 권한"
+"(Permission) 등의 정보가 출력되는 것을 볼 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:19
+#: ../../vfolder/vfolder.rst:21
 msgid ""
 "There are two types of storage folders. User type folders can be created "
 "by normal users, and you can check that ther is one user icon in the "
@@ -68,11 +72,11 @@ msgstr ""
 "의 사용자가 있는 아이콘으로 알아볼 수 있으며, 도메인 관리자에 의해서만 그"
 "룹별로 생성되고 일반 사용자는 생성된 그룹폴더를 사용만 할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:28
+#: ../../vfolder/vfolder.rst:30
 msgid "Create storage folder"
 msgstr "폴더 생성"
 
-#: ../../vfolder/vfolder.rst:30
+#: ../../vfolder/vfolder.rst:32
 msgid ""
 "You can create a storage folder with the desired name by clicking the "
 "NEW FOLDER button. Enter the name of the folder to be created in Folder "
@@ -91,11 +95,11 @@ msgstr ""
 "그 그룹 폴더를 마운트해서 사용할 수 있습니다. 원하는 대로 값을 설정한 후 "
 "CREATE 버튼을 클릭하여 폴더를 생성할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:46
+#: ../../vfolder/vfolder.rst:48
 msgid "Explore folder"
 msgstr "폴더 내용 조회하기"
 
-#: ../../vfolder/vfolder.rst:48
+#: ../../vfolder/vfolder.rst:50
 msgid ""
 "You can click the folder icon in the Control column to bring up a file "
 "explorer where you can view the contents of that folder."
@@ -103,7 +107,7 @@ msgstr ""
 "Control 열의 폴더 아이콘을 클릭하여 해당 폴더의 내용을 조회할 수 있는 파"
 "일 탐색기를 띄울 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:54
+#: ../../vfolder/vfolder.rst:56
 msgid ""
 "You can see that directories and files inside the folder will be listed, "
 "if exists. Click a directory name in the Name column to move to the "
@@ -120,7 +124,7 @@ msgstr ""
 "한 파일 작업이 필요하다면 이 폴더를 연산 세션 생성 시 마운트 한 뒤 터미널"
 "이나 Jupyter Notebook 등과 같은 서비스를 활용해서 수행할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:65
+#: ../../vfolder/vfolder.rst:67
 msgid ""
 "You can create a new directory on the current path with the NEW FOLDER "
 "button (in the file explorer), or upload a local file with the UPLOAD "
@@ -132,15 +136,15 @@ msgstr ""
 "런 파일 작업은 앞서 설명한 연산 세션 마운트 방식으로도 모두 수행 가능합니"
 "다."
 
-#: ../../vfolder/vfolder.rst:70
+#: ../../vfolder/vfolder.rst:72
 msgid "To close file explorer, click the X button in the upper right."
 msgstr "파일 탐색기를 닫기 위해서는 우측 상단의 X 버튼을 누르면 됩니다."
 
-#: ../../vfolder/vfolder.rst:74
+#: ../../vfolder/vfolder.rst:76
 msgid "Rename folder"
 msgstr "폴더 이름 변경"
 
-#: ../../vfolder/vfolder.rst:76
+#: ../../vfolder/vfolder.rst:78
 msgid ""
 "If you have permission to rename the storage folder, you can rename it "
 "by clicking the edit icon in the Control column. When you click the icon "
@@ -148,15 +152,15 @@ msgid ""
 "click RENAME button."
 msgstr ""
 "Storage 폴더의 이름을 변경할 수 있는 권한을 가지고 있는 경우, Control 열"
-"의 편집 아이콘을 클릭해서 이름 변경 작업을 수행할 수 있습니다. 편집 아"
-"이콘을 클릭하면 이름 변경 다이얼로그가 나타나게 됩니다. 새로운 폴더 이름"
-"을 기록한 후 RENAME 버튼을 클릭하십시오."
+"의 편집 아이콘을 클릭해서 이름 변경 작업을 수행할 수 있습니다. 편집 아이"
+"콘을 클릭하면 이름 변경 다이얼로그가 나타나게 됩니다. 새로운 폴더 이름을 "
+"기록한 후 RENAME 버튼을 클릭하십시오."
 
-#: ../../vfolder/vfolder.rst:82
+#: ../../vfolder/vfolder.rst:84
 msgid "Delete folder"
 msgstr "폴더 삭제하기"
 
-#: ../../vfolder/vfolder.rst:84
+#: ../../vfolder/vfolder.rst:86
 msgid ""
 "If you have permission to delete the storage folder, you can delete it "
 "by clicking the trash can icon in the Control column. When you click the "
@@ -164,11 +168,11 @@ msgid ""
 "you have to enter the name of the folder to be deleted, explicitly."
 msgstr ""
 "Storage 폴더의 삭제 권한을 가지고 있는 경우, Control 열의 휴지통 아이콘"
-"을 눌러서 삭제할 수 있습니다. 삭제 버튼을 클릭하면 확인 창이 띄워집니다. 이는 "
-"사용자 실수로 인한 삭제를 방지하기 위한 절차로 삭제할 폴더의 이름을 입력하고 "
-"입력 값과 삭제할 폴더 명이 일치해야만 삭제가 가능합니다."
+"을 눌러서 삭제할 수 있습니다. 삭제 버튼을 클릭하면 확인 창이 띄워집니다. "
+"이는 사용자 실수로 인한 삭제를 방지하기 위한 절차로 삭제할 폴더의 이름을 "
+"입력하고 입력 값과 삭제할 폴더 명이 일치해야만 삭제가 가능합니다."
 
-#: ../../vfolder/vfolder.rst:94
+#: ../../vfolder/vfolder.rst:96
 msgid ""
 "The folders created here can be mounted when creating a compute session. "
 "Folders are mounted under the user's default working directory, ``/home/"
@@ -181,11 +185,11 @@ msgstr ""
 "에 저장한 파일은 연산 세션이 종료되어도 사라지지 않습니다(단, 폴더 자체"
 "를 삭제하면 사라지게 됩니다)."
 
-#: ../../vfolder/vfolder.rst:103
+#: ../../vfolder/vfolder.rst:105
 msgid "Automount folder"
 msgstr "자동 마운트 폴더"
 
-#: ../../vfolder/vfolder.rst:105
+#: ../../vfolder/vfolder.rst:107
 msgid ""
 "Storage & Folders page has an Automount Folders tab. Click this tab to "
 "see a list of folders whose names prefixed with a dot (.). When you "
@@ -207,13 +211,13 @@ msgstr ""
 "폴더를 생성해서 사용하면 연산 세션에 관계없이 늘 일정한 사용자 패키지 또"
 "는 환경을 구성할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:115
+#: ../../vfolder/vfolder.rst:117
 msgid ""
 "For more detailed information on the usage of Automount folders, refer "
 "to :ref:`examples of using automount folders<using-automount-folder>`."
 msgstr ""
-"Automount Folders 사용에 관하여 보다 자세한 내용을 확인하시려면 :ref:`자동 마운트 폴더 "
-"사용 예제<using-automount-folder>` 섹션을 참고 하십시오."
+"Automount Folders 사용에 관하여 보다 자세한 내용을 확인하시려면 :ref:`자"
+"동 마운트 폴더 사용 예제<using-automount-folder>` 섹션을 참고 하십시오."
 
 #~ msgid ""
 #~ "You can see that directories and files inside the folder will be "

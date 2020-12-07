@@ -11,7 +11,9 @@ Handing Folders for Consistent Management of Data and Modlels
 Backend.AI supports dedicated storage to preserve user's files. Since the files
 and directories of a compute session are deleted upon session termination, it is
 recommended to save them in a storage folder. List of storage folders can be
-found by selecting the Storage on the left sidebar.
+found by selecting the Storage on the left sidebar. You can see the information
+such as the folder name and ID, the NFS host name where the folder is located
+(Location), and folder access rights (Permission).
 
 .. image:: vfolder_list.png
    :alt: Folder list in Storage page
