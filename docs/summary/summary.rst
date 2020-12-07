@@ -30,6 +30,24 @@ Each menu item has the following functions.
 * Logout: Log out. Users can also logout by clicking the icon on the far right
   of the top bar.
 
+If you click Change User Info, the following dialog appears.
+
+.. image:: change_user_info.png
+   :width: 350
+   :align: center
+
+Each item has the following meaning.
+
+* Full Name: User's name (up to 64 characters)
+* Original password: Original password. Click the right view icon to see the
+  input contents.
+* New password: New password (8 characters or more containing at least 1
+  alphabet, number, and symbol). Click the right view icon to see the input
+  contents. Ensure this is the same as the Original password.
+
+Enter the desired value and click the UPDATE button to update the user
+information.
+
 
 Summary panel
 -------------
