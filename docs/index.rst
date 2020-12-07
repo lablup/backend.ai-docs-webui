@@ -23,6 +23,7 @@ The latest versions of full user's guide can be found from sites below:
    overview/overview
    installation/installation
    login/login
+   summary/summary
    allocate_cpu_mem/allocate_cpu_mem
    allocate_gpu/allocate_gpu
    resource_and_scheduler/resource_and_scheduler

@@ -20,6 +20,11 @@ A user can be created by clicking the CREATE USER button. Note that the password
 must be longer or equal to 8 characters and at least 1 alphabet/special
 character/ number should be included.
 
+.. note::
+
+   If user with the same email or username already exists, it is not possible to
+   creat user account. Please try other email and username.
+
 .. image:: create_user_dialog.png
    :width: 500
    :align: center
