@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-01 15:34+0900\n"
-"PO-Revision-Date: 2020-12-01 15:36+0900\n"
+"POT-Creation-Date: 2020-12-07 20:54+0900\n"
+"PO-Revision-Date: 2020-12-07 20:55+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko\n"
 "Language-Team: \n"
@@ -94,6 +94,41 @@ msgstr ""
 "위험이 증가할 것입니다. Microsoft Teams 등과 같은 많은 웹 기반 애플리케이션에서 "
 "30일 만료 정책을 수행하고 있기에, Backend.AI에서도 30일 만료 정책을 설정하고 있"
 "습니다."
+
+#: ../../login/login.rst:51
+msgid "Menus in the sidebar"
+msgstr "사이드바의 메뉴"
+
+#: ../../login/login.rst:53
+msgid "There are three buttons at the top of the left sidebar."
+msgstr "좌측 사이드바의 위쪽에는 세 가지 버튼이 위치하고 있습니다."
+
+#: ../../login/login.rst:55
+msgid ""
+"The leftmost button changes the size of the sidebar. Click to make the sidebar "
+"narrower. Click again to bring the sidebar back to its original width."
+msgstr ""
+"가장 왼쪽의 버튼은 사이드바의 크기를 변경합니다. 클릭하면 사이드바의 폭이 크게 "
+"줄어들면서 내용을 보다 넓게 볼 수 있습니다. 다시 한 번 클릭하면 사이드바의 폭이 "
+"다시 원래대로 돌아옵니다."
+
+#: ../../login/login.rst:63
+msgid ""
+"The middle button is the event notification button. Events that need to be "
+"recorded during Console operation are displayed here."
+msgstr ""
+"중간의 버튼은 이벤트 알림 버튼입니다. Console 동작 중 기록해둘 필요가 있는 이벤"
+"트 내역이 여기에 표시 됩니다."
+
+#: ../../login/login.rst:66
+msgid ""
+"The rightmost button is the background task button. When background tasks are "
+"running, such as creating a compute session, you can check the jobs here.  When "
+"the background task is finished, it usually disappears as well."
+msgstr ""
+"가장 우측의 버튼은 백그라운드 작업 버튼입니다. 연산 세션을 생성 중에 있는 등 백"
+"그라운드 작업이 돌아가고 있을 때 여기에서 그 내역을 확인할 수 있습니다. 백그라운"
+"드 작업이 끝나면 보통 그 내역도 함께 사라집니다."
 
 #~ msgid ""
 #~ "After entering the e-mail, press the CHECK button to retrieve your "

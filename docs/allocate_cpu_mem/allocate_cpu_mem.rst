@@ -37,11 +37,49 @@ TensorFlow 2.2.
    :width: 350
    :align: center
 
+If you need more detailed settings, refer to the meaning of each items.
+
+* Environment: Specify the default environment for compute sessions such as
+  TensorFlow, PyTorch, C++, and etc. When you select a TensorFlow environment,
+  your compute session will automatically include the TensorFlow library.
+  If you select another environment, the corresponding environment is installed
+  by default.
+* Version: Select the version of the environment. For example, for TensorFlow
+  environment, you can select different versions such as 1.15, 2.3, etc.
+* Resource Group: Specify the resource group in which to create the compute
+  session. If there are multiple resource groups, you can select the desired
+  value, but if there is only one resource group, it cannot be changed.
+* Session name (optional): Specifies the name of the compute session to be
+  created. If specified, this name appears in Session Info, making it easy to
+  distinguish from other compute sessions. If not specified, a
+  randomly-generated name is used. You can set up to 4 to 64 characters, and no
+  spaces are allowed.
+* Folder to mount: Specifies the data folder to be mounted in the compute
+  session. When a compute session is deleted, by default all data is deleted
+  altogether, but the data stored in the folder mounted here is not deleted.
+* Resource allocation: This is a template that has predefined resources to be
+  allocated to the compute session. You can save and use frequently used
+  resource settings in advance. Resource templates can be managed in a dedicated
+  admin hub.
+* CPU: The number of CPU cores to allocate to the compute session. The maximum
+  value depends on the resource policy applied to the user.
+* RAM: The amount of memory (GB) to allocate for the compute session. The
+  maximum value depends on the resource policy applied to the user.
+* Shared Memory: The amount of shared memory (GB) to allocate for the
+  compute session. It can only be set up to 2 GB, and cannot be greater than the
+  amount specified in RAM.
+* GPU: The unit of GPU to allocate to the compute session. The maximum value
+  depends on the resource policy applied to the user.
+* Sessions: The number of compute sessions to be created with the specified
+  settings. You can specify when you need to create the same computational
+  sessions at once.
+
 If no mount folder is specified in the Folder to mount input box, a warning
 dialog may appear indicating that the storage folder is not mounted. For now,
 ignore the warning and click the LAUNCH WITHOUT STORAGE FOLDER button to create
 a compute session. Let's see that a new compute session is created in the
-Running tab.
+Running tab. In the FINISHED tab, you can see terminated compute sessions, and
+in the OTHERS tab you can query for compute sessions with errors.
 
 .. image:: session_created.png
 
@@ -77,7 +115,7 @@ Let's click on Jupyter Notebook.
 .. note::
    Try preferred port: When the web service is opened, a specific port is
    assigned from the port pool created in advance by Backend.AI. Users can
-   use the service only when they connect to the port along with the IP 
+   use the service only when they connect to the port along with the IP
    address or domain name. If you check this item and enter the port number,
    the entered port number will be tried.
    However, there is no guarantee that the desired port will always be assigned.

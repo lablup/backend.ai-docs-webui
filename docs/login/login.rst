@@ -45,3 +45,22 @@ can logout by selecting the Log Out menu.
    account will be more vulnerable. Since many web-based applications, such as
    Microsoft Teams, will expire session information after 30 days, we also
    determined the period as 30 days.
+
+
+Menus in the sidebar
+--------------------
+
+There are three buttons at the top of the left sidebar.
+
+The leftmost button changes the size of the sidebar. Click to make the sidebar
+narrower. Click again to bring the sidebar back to its original width.
+
+.. image:: ui_menu.png
+    :alt: Menus in the sidebar
+
+The middle button is the event notification button. Events that need to be
+recorded during Console operation are displayed here.
+
+The rightmost button is the background task button. When background tasks are
+running, such as creating a compute session, you can check the jobs here.  When
+the background task is finished, it usually disappears as well.
