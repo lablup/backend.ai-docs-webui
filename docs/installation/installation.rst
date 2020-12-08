@@ -8,7 +8,7 @@ platform-dependent desktop applications, and just need the latest modern
 browsers such as Chrome.
 
 * Recommended browser: latest Chrome (at least version 80)
-* Requirement: any machine that runs Web Browser
+* Requirement: any machine that runs Web Browser (2 cores, 4 GiB memory)
 
 For Backend.AI daemons/services, following hardware spec should be met. For
 optimal performance, just double the amount of each resources.
@@ -21,13 +21,32 @@ optimal performance, just double the amount of each resources.
 * Redis: 1 cores, 2 GiB memory
 * Etcd: 1 cores, 2 GiB memory
 
+The main host dependent packages that must be pre-installed before installing
+each service are:
+
+* GUI console: Operating system that can run the latest browsers (Windows, Mac
+  OS, Ubuntu, etc.)
+* Manager: Python (>=3.8), pyenv/pyenv-virtualenv (>=1.2)
+* Agent: docker (>=19.03), CUDA/CUDA Toolkit (>=8, recommend 11),
+  nvidia-docker v2, Python (>=3.8), pyenv/pyenv-virtualenv (>=1.2)
+* Console-Server: Python (>=3.8), pyenv/pyenv-virtualenv (>=1.2)
+* WSProxy: docker (>=19.03), docker-compose (>=1.24)
+* PostgreSQL DB: docker (>=19.03), docker-compose (>=1.24)
+* Redis: docker (>=19.03), docker-compose (>=1.24)
+* Etcd: docker (>=19.03), docker-compose (>=1.24)
+
 After initial installation, we will provide following materials/services:
 
+* DVD 1 (includes Backend.AI packages)
 * User GUI Guide manual
 * Admin GUI Guide manual (for Enterprise version)
 * Installation report
 * First-time user/admin on-site tutorial (3-5 hours)
 
+Product maintenance and support information: For on-premises customers,
+maintenance periods and scopes vary greatly depending on the terms of the
+contract, so it is difficult to describe them all. Maintenance and support
+information must be specified in the contract at the time of the contract.
 
 Simple Backend.AI Server Management Guide
 -----------------------------------------
