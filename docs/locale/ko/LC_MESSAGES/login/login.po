@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-07 20:54+0900\n"
-"PO-Revision-Date: 2020-12-07 20:55+0900\n"
+"POT-Creation-Date: 2020-12-08 10:56+0900\n"
+"PO-Revision-Date: 2020-12-08 10:57+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko\n"
 "Language-Team: \n"
@@ -95,15 +95,50 @@ msgstr ""
 "30일 만료 정책을 수행하고 있기에, Backend.AI에서도 30일 만료 정책을 설정하고 있"
 "습니다."
 
+#: ../../login/login.rst:49
+msgid "If you want to change this setting, please follow the steps below."
+msgstr "만약, 이 설정값을 바꾸고 싶다면 다음 과정을 따르십시오."
+
 #: ../../login/login.rst:51
+msgid "SSH connection to the host where Console-Server is installed."
+msgstr "Console-Server가 설치된 호스트로 SSH 접속."
+
+#: ../../login/login.rst:52
+msgid ""
+"Move to the location where Console-Server configuration file exist. Usually it "
+"is located at ``/home/lablup/.config/backend.ai/console-server.conf``, but this "
+"may change depending on the system configuration."
+msgstr ""
+"Console-Server의 설정 파일이 있는 위치로 이동. 통상적으로 ``/home/lablup/."
+"config/backend.ai/console-server.conf`` 위치에 있으나, 이는 시스템 구성에 따라 "
+"변할 수 있음."
+
+#: ../../login/login.rst:55
+msgid ""
+"Open the ``console-server.conf`` file with a text editor and set the value of "
+"``max_age`` in the ``[session]`` section to the desired value. For example, if "
+"you only want to keep the login session for one day, enter ``86400`` (unit: "
+"seconds)."
+msgstr ""
+"``console-server.conf`` 파일을 텍스트 편집기로 열고 ``[session]`` 섹션의 "
+"``max_age`` 를 원하는 값으로 수정. 예를 들어, 로그인 세션을 하루만 유지하고 싶"
+"은 경우 ``86400`` 입력 (단위: 초)."
+
+#: ../../login/login.rst:59
+msgid ""
+"Restart Console-Server: ``sudo systemctl restart backendai-console-server``"
+msgstr ""
+"Console-Server를 재시작: ``sudo systemctl restart backendai-console-server``"
+
+#: ../../login/login.rst:63
 msgid "Menus in the sidebar"
 msgstr "사이드바의 메뉴"
 
-#: ../../login/login.rst:53
+#: ../../login/login.rst:65
 msgid "There are three buttons at the top of the left sidebar."
 msgstr "좌측 사이드바의 위쪽에는 세 가지 버튼이 위치하고 있습니다."
 
-#: ../../login/login.rst:55
+#: ../../login/login.rst:67
 msgid ""
 "The leftmost button changes the size of the sidebar. Click to make the sidebar "
 "narrower. Click again to bring the sidebar back to its original width."
@@ -112,7 +147,7 @@ msgstr ""
 "줄어들면서 내용을 보다 넓게 볼 수 있습니다. 다시 한 번 클릭하면 사이드바의 폭이 "
 "다시 원래대로 돌아옵니다."
 
-#: ../../login/login.rst:63
+#: ../../login/login.rst:73
 msgid ""
 "The middle button is the event notification button. Events that need to be "
 "recorded during Console operation are displayed here."
@@ -120,7 +155,7 @@ msgstr ""
 "중간의 버튼은 이벤트 알림 버튼입니다. Console 동작 중 기록해둘 필요가 있는 이벤"
 "트 내역이 여기에 표시 됩니다."
 
-#: ../../login/login.rst:66
+#: ../../login/login.rst:76
 msgid ""
 "The rightmost button is the background task button. When background tasks are "
 "running, such as creating a compute session, you can check the jobs here.  When "

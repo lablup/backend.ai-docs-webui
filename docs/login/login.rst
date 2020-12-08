@@ -46,6 +46,18 @@ can logout by selecting the Log Out menu.
    Microsoft Teams, will expire session information after 30 days, we also
    determined the period as 30 days.
 
+   If you want to change this setting, please follow the steps below.
+
+   * SSH connection to the host where Console-Server is installed.
+   * Move to the location where Console-Server configuration file exist. Usually
+     it is located at ``/home/lablup/.config/backend.ai/console-server.conf``,
+     but this may change depending on the system configuration.
+   * Open the ``console-server.conf`` file with a text editor and set the value
+     of ``max_age`` in the ``[session]`` section to the desired value. For
+     example, if you only want to keep the login session for one day, enter
+     ``86400`` (unit: seconds).
+   * Restart Console-Server: ``sudo systemctl restart backendai-console-server``
+
 
 Menus in the sidebar
 --------------------
