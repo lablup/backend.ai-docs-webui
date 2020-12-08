@@ -81,6 +81,16 @@ Also, password can be updated with same policy as creating a new user.
    :align: center
    :alt: User update dialog
 
+Each of the two items at the bottom of this dialog has the following functions.
+
+* Active user?: Indicates the user's active status. Inactive users cannot log
+  in. You can adjust this option to change the user to active or inactive state.
+  Note that for inactive users, they are displayed separately in the Inactive
+  tab.
+* Require password change?: If an admin has randomly specified a password while
+  creating users in bulk, this field can be set to On to distinguish between
+  them. This is a kind of descriptive flag indicating that password change is
+  required, but it has no effect on actual use.
 
 Deactivate user account
 -----------------------
