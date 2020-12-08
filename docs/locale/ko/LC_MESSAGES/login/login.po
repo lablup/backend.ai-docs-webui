@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-08 10:56+0900\n"
-"PO-Revision-Date: 2020-12-08 10:57+0900\n"
+"POT-Creation-Date: 2020-12-08 12:12+0900\n"
+"PO-Revision-Date: 2020-12-08 12:12+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko\n"
 "Language-Team: \n"
@@ -40,7 +40,26 @@ msgid ""
 msgstr ""
 "Console server의 설치 및 설정 환경에 따라, Endpoint가 고정되어 있을 수 있습니다."
 
-#: ../../login/login.rst:18
+#: ../../login/login.rst:19
+msgid ""
+"Backend.AI keeps the user's password securely through a one-way hash. BCrypt, "
+"the default password hash of BSD, is used, so even the server admins cannot "
+"know the user's password."
+msgstr ""
+"Backend.AI는 사용자의 비밀번호를 단방향 해시를 통해 안전하게 보관하고 있습니다. "
+"BSD의 기본 암호 해시인 BCrypt를 사용하고 있어, 서버 관리자도 사용자의 비밀번호"
+"를 알 수 없습니다."
+
+#: ../../login/login.rst:24
+msgid ""
+"To keep malicious user from guessing user's password, password should longer "
+"than 8 characters with at least one alphabet(s), number(s), and special "
+"character(s)."
+msgstr ""
+"악성 사용자가 다른 사용자의 비밀번호를 추측하기 어렵게 만들기 위해, 비밀번호는 8"
+"자 이상, 알파벳/특수문자/숫자를 1개 이상 포함해야 합니다."
+
+#: ../../login/login.rst:28
 msgid ""
 "After login, you can check the information of the current resource usage in the "
 "Summary tab."
@@ -48,7 +67,7 @@ msgstr ""
 "로그인이 완료되면 Summary 탭에서 현재 사용하고 있는 자원량 등의 정보를 확인할 "
 "수 있습니다."
 
-#: ../../login/login.rst:21
+#: ../../login/login.rst:31
 msgid ""
 "Buy clicking the icon in the upper-right corner, you will see sub menus. You "
 "can logout by selecting the Log Out menu."
@@ -57,7 +76,7 @@ msgstr ""
 "아웃 할 수 있습니다. 또한 LogOut 이 쓰여진 곳의 아이콘을 클릭해서 로그아웃 할 수"
 "도 있습니다."
 
-#: ../../login/login.rst:28
+#: ../../login/login.rst:38
 msgid ""
 "Depending on the server/client setting, user can sign up by themselves through "
 "email verification, which requires connection to AWS with paid account. For "
@@ -67,7 +86,7 @@ msgstr ""
 "행할 수 있습니다. 이 기능은 AWS 연결을 필요로하며 클라우드 비용이 발생할 수 있으"
 "므로, 대부분의 온프레미스 환경에서는 기본적으로 비활성화 되어 있습니다."
 
-#: ../../login/login.rst:34
+#: ../../login/login.rst:44
 msgid ""
 "If there are more than 5 times of login failure occured, access to the endpoint "
 "is temporarily restricted for 3 minutes for security reasons. If the access "
@@ -76,7 +95,7 @@ msgstr ""
 "로그인 실패가 5 회 이상 발생하면 보안상의 이유로 로그인 시도가 3분 간 제한됩니"
 "다. 만약 로그인 제한이 계속 유지되는 경우에는 시스템 관리자에게 문의 하십시오."
 
-#: ../../login/login.rst:40
+#: ../../login/login.rst:50
 msgid ""
 "After initial login, the browser session information will be keep for 30 days "
 "from the console-server. That means, after 30 days of initial login, the user "
@@ -95,15 +114,15 @@ msgstr ""
 "30일 만료 정책을 수행하고 있기에, Backend.AI에서도 30일 만료 정책을 설정하고 있"
 "습니다."
 
-#: ../../login/login.rst:49
+#: ../../login/login.rst:59
 msgid "If you want to change this setting, please follow the steps below."
 msgstr "만약, 이 설정값을 바꾸고 싶다면 다음 과정을 따르십시오."
 
-#: ../../login/login.rst:51
+#: ../../login/login.rst:61
 msgid "SSH connection to the host where Console-Server is installed."
 msgstr "Console-Server가 설치된 호스트로 SSH 접속."
 
-#: ../../login/login.rst:52
+#: ../../login/login.rst:62
 msgid ""
 "Move to the location where Console-Server configuration file exist. Usually it "
 "is located at ``/home/lablup/.config/backend.ai/console-server.conf``, but this "
@@ -113,7 +132,7 @@ msgstr ""
 "config/backend.ai/console-server.conf`` 위치에 있으나, 이는 시스템 구성에 따라 "
 "변할 수 있음."
 
-#: ../../login/login.rst:55
+#: ../../login/login.rst:65
 msgid ""
 "Open the ``console-server.conf`` file with a text editor and set the value of "
 "``max_age`` in the ``[session]`` section to the desired value. For example, if "
@@ -124,21 +143,21 @@ msgstr ""
 "``max_age`` 를 원하는 값으로 수정. 예를 들어, 로그인 세션을 하루만 유지하고 싶"
 "은 경우 ``86400`` 입력 (단위: 초)."
 
-#: ../../login/login.rst:59
+#: ../../login/login.rst:69
 msgid ""
 "Restart Console-Server: ``sudo systemctl restart backendai-console-server``"
 msgstr ""
 "Console-Server를 재시작: ``sudo systemctl restart backendai-console-server``"
 
-#: ../../login/login.rst:63
+#: ../../login/login.rst:73
 msgid "Menus in the sidebar"
 msgstr "사이드바의 메뉴"
 
-#: ../../login/login.rst:65
+#: ../../login/login.rst:75
 msgid "There are three buttons at the top of the left sidebar."
 msgstr "좌측 사이드바의 위쪽에는 세 가지 버튼이 위치하고 있습니다."
 
-#: ../../login/login.rst:67
+#: ../../login/login.rst:77
 msgid ""
 "The leftmost button changes the size of the sidebar. Click to make the sidebar "
 "narrower. Click again to bring the sidebar back to its original width."
@@ -147,7 +166,7 @@ msgstr ""
 "줄어들면서 내용을 보다 넓게 볼 수 있습니다. 다시 한 번 클릭하면 사이드바의 폭이 "
 "다시 원래대로 돌아옵니다."
 
-#: ../../login/login.rst:73
+#: ../../login/login.rst:83
 msgid ""
 "The middle button is the event notification button. Events that need to be "
 "recorded during Console operation are displayed here."
@@ -155,7 +174,7 @@ msgstr ""
 "중간의 버튼은 이벤트 알림 버튼입니다. Console 동작 중 기록해둘 필요가 있는 이벤"
 "트 내역이 여기에 표시 됩니다."
 
-#: ../../login/login.rst:76
+#: ../../login/login.rst:86
 msgid ""
 "The rightmost button is the background task button. When background tasks are "
 "running, such as creating a compute session, you can check the jobs here.  When "

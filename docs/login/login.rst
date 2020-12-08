@@ -15,6 +15,16 @@ entered.
    Depending on the installation and setup environment of the Console Server,
    the endpoint might be pinned and not configurable.
 
+.. note::
+   Backend.AI keeps the user's password securely through a one-way hash. BCrypt,
+   the default password hash of BSD, is used, so even the server admins cannot
+   know the user's password.
+
+.. note::
+   To keep malicious user from guessing user's password, password should longer
+   than 8 characters with at least one alphabet(s), number(s), and special
+   character(s).
+
 After login, you can check the information of the current resource usage in
 the Summary tab.
 
