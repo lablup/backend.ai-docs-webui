@@ -6,8 +6,12 @@ Admin Menus
 
 When you log in with an admin account, you will see an additional Administration
 menu in the bottom left sidebar. User information registered in Backend.AI is
-listed in the Users tab. Admins can see all user information. Only admins can
-create and deactivate a user.
+listed in the Users tab. You can view active users in the Active tab and
+inactive users in the Inactive tab.  Admins can see all user information. Only
+admins can create and deactivate a user.
+
+User ID (email) and Name (username) can be filtered by typing some text in the
+search box on each column header.
 
 .. image:: admin_user_page.png
    :alt: User management page
@@ -18,7 +22,8 @@ Create and update user
 
 A user can be created by clicking the CREATE USER button. Note that the password
 must be longer or equal to 8 characters and at least 1 alphabet/special
-character/ number should be included.
+character/ number should be included. The maximum allowed length of E-Mail and
+Username is 64.
 
 .. note::
 
@@ -26,30 +31,29 @@ character/ number should be included.
    creat user account. Please try other email and username.
 
 .. image:: create_user_dialog.png
-   :width: 500
+   :width: 400
    :align: center
-   :alt: Create user dialog
 
 If password didn't match the policy, then validation failed message will be displayed under the input field.
 A message displays the reason why the password you entered is wrong, so you can easily check it.
 
 * no inputs
 
-   .. image:: create_user_dialog_wrong.png
-      :width: 405
-      :align: center
+.. image:: create_user_dialog_wrong.png
+   :width: 400
+   :align: center
 
 * no input on password confirmation
 
-   .. image:: create_user_dialog_wrong2.png
-      :width: 405
-      :align: center
+.. image:: create_user_dialog_wrong2.png
+   :width: 400
+   :align: center
 
 * all input with non-matching value
 
-   .. image:: create_user_dialog_wrong3.png
-      :width: 405
-      :align: center
+.. image:: create_user_dialog_wrong3.png
+   :width: 400
+   :align: center
 
 
 Check if the user is created.
@@ -88,19 +92,19 @@ trash icon in the Controls column. A dialog asking confirmation appears, and
 you can deactivate the user by clicking the OKAY button.
 
 .. image:: user_deactivate_confirmation.png
-   :width: 600
+   :width: 400
    :align: center
    :alt: Deactivating user account
 
-Deactivated users are not listed in Users tab.
+To re-activate users, go to Users - Inactive tab, and edit the target user to
+turn on "Active user?" field.
 
 .. _sharing-a-group-storage:
 
 Sharing a group storage folder with group members
 -------------------------------------------------
 
-In addition to user's storage folders, Backend.AI provides storage folders for
-groups. A group storage folder is a folder belonging to a specific group, not a
+In addition to user's storage folders, Backend.AI provides storage folders for groups. A group storage folder is a folder belonging to a specific group, not a
 specific user, and can be accessed by all users belonging to that group.
 
 .. note::
@@ -256,6 +260,19 @@ In this way, it was confirmed that the development user can control the maximum
 amount of resources that can be allocated when creating a compute session
 based on the user's key pair.
 
+.. note::
+
+   In each of USERS, CREDENTIALS, RESOURCE POLICIES tabs, there is an icon
+   (``...``) on the far right side of the tab header. Clicking this reveals
+   export CSV menu, which again brings up a CSV export dialog for each tabs.
+   By giving appropriate file name, if necessary, and clicking EXPORT CSV FILE
+   button, you can download the list of users, keypairs, and/or resource
+   policies.
+
+    .. image:: export_csv_user.png
+       :width: 400
+       :align: center
+
 Server management
 -----------------
 
@@ -271,3 +288,9 @@ Go to the Maintenance page and you will see some buttons to manage the server.
    :width: 500
    :align: center
    :alt: Maintenance page
+
+Information
+-----------
+
+Information page display various details about Backend.AI service, license
+information.
