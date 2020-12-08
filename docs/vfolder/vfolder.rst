@@ -43,6 +43,23 @@ CREATE button.
    :align: center
    :alt: Folder creation dialog
 
+The meaning of each fields that can be selected in the creation dialog is as
+follows.
+
+* Folder name: The name of the folder. You can enter up to 64 characters.
+* Host: NFS host to create folder. You can choose if you have multiple NFS
+  hosts.
+* Type: Determines the type of folder to be created. It can be set as User or
+  Group. The User folder is a folder that users can create and can use alone,
+  and the Group folder can be created by admin and shared by users in the group.
+* Usage Mode: You can set the purpose of the folder. There are three types:
+  General, Data, and Model. It is classified for the development of functions
+  exclusively for data and model stores in the future, and currently there is no
+  difference in UI depending on the purpose.
+* Group: When creating a group folder, designate the group to which the folder
+  belongs. Group folders must belong to a group. However, it does not play any
+  role when creating a user folder.
+
 
 Explore folder
 --------------
