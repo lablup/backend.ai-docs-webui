@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-01 15:11+0900\n"
-"PO-Revision-Date: 2020-12-01 15:12+0900\n"
+"POT-Creation-Date: 2020-12-08 12:02+0900\n"
+"PO-Revision-Date: 2020-12-08 12:04+0900\n"
 "Last-Translator: \n"
 "Language: ko_KR\n"
 "Language-Team: \n"
@@ -44,30 +44,68 @@ msgid "Requirement: any machine that runs Web Browser"
 msgstr "요구사항: 웹 브라우저를 구동할 수 있는 머신"
 
 #: ../../installation/installation.rst:13
+msgid ""
+"For Backend.AI daemons/services, following hardware spec should be met. For "
+"optimal performance, just double the amount of each resources."
+msgstr ""
+"Backend.AI 데몬/서비스 구동을 위해서는 다음과 같은 하드웨어가 필요합니다. 최적 "
+"성능을 위해서는 아래 명기된 사양의 두 배 이상 필요합니다."
+
+#: ../../installation/installation.rst:16
+msgid "Manager: 2 cores, 4 GiB memory"
+msgstr "Manager: 2 코어, 4 GiB 메모리"
+
+#: ../../installation/installation.rst:17
+msgid "Agent: 4 cores, 32 GiB memory, NVIDIA GPU for GPU workload, > 512 GiB SSD"
+msgstr ""
+"Agent: 4 코어, 32 GiB 메모리, NVIDIA GPU (GPU 워크로드가 필요한 경우), > 512 "
+"GiB SSD"
+
+#: ../../installation/installation.rst:18
+msgid "Console-Server: 2 cores, 4 GiB memory"
+msgstr "Console-Server: 2 코어, 4 GiB 메모리"
+
+#: ../../installation/installation.rst:19
+msgid "WSProxy: 2 cores, 4 GiB memory"
+msgstr "WSProxy: 2 코어, 4 GiB 메모리"
+
+#: ../../installation/installation.rst:20
+msgid "PostgreSQL DB: 2 cores, 4 GiB memory"
+msgstr "PostgreSQL DB: 2 코어, 4 GiB 메모리"
+
+#: ../../installation/installation.rst:21
+msgid "Redis: 1 cores, 2 GiB memory"
+msgstr "Redis: 1 코어, 2 GiB 메모리"
+
+#: ../../installation/installation.rst:22
+msgid "Etcd: 1 cores, 2 GiB memory"
+msgstr "Etcd: 1 코어, 2 GiB 메모리"
+
+#: ../../installation/installation.rst:24
 msgid "After initial installation, we will provide following materials/services:"
 msgstr "첫 설치 후 다음과 같은 자료 또는 서비스가 제공됩니다:"
 
-#: ../../installation/installation.rst:15
+#: ../../installation/installation.rst:26
 msgid "User GUI Guide manual"
 msgstr "사용자 GUI 가이드 매뉴얼"
 
-#: ../../installation/installation.rst:16
+#: ../../installation/installation.rst:27
 msgid "Admin GUI Guide manual (for Enterprise version)"
 msgstr "관리자 GUI 가이드 매뉴얼 (엔터프라이즈 고객 전용)"
 
-#: ../../installation/installation.rst:17
+#: ../../installation/installation.rst:28
 msgid "Installation report"
 msgstr "설치 리포트"
 
-#: ../../installation/installation.rst:18
+#: ../../installation/installation.rst:29
 msgid "First-time user/admin on-site tutorial (3-5 hours)"
 msgstr "사용자/관리자 초기 방문 교육 (3-5 시간)"
 
-#: ../../installation/installation.rst:23
-msgid "Backend.AI Server Installation Information"
-msgstr "Backend.AI 서버 설치 정보"
+#: ../../installation/installation.rst:33
+msgid "Simple Backend.AI Server Management Guide"
+msgstr "간단한 Backend.AI 서버 관리 가이드"
 
-#: ../../installation/installation.rst:25
+#: ../../installation/installation.rst:35
 msgid ""
 "Backend.AI server daemons are installed by Lablup support team. If there are "
 "problems on the daemons or services, please contact with contact@lalbup.com."
@@ -75,11 +113,7 @@ msgstr ""
 "Backend.AI 서버 데몬은 래블업의 지원팀이 설치하게 됩니다. 만약 데몬이나 서비스"
 "에 문제가 발생했을 시에는 contact@lablup.com 으로 연락하십시오."
 
-#: ../../installation/installation.rst:29
-msgid "Daemon information"
-msgstr "데몬 정보"
-
-#: ../../installation/installation.rst:31
+#: ../../installation/installation.rst:38
 msgid ""
 "Backend.AI is composed of many modules and daemons. Here, we briefly describe "
 "each services and provide basic maintenance guide in case of specific service "
@@ -91,11 +125,11 @@ msgstr ""
 "이드를 제공합니다. 관리 명령은 일반적으로 사용 가능하지만, 호스트 별 설치 상황"
 "에 따라 구체적인 사항은 달라질 수 있습니다."
 
-#: ../../installation/installation.rst:37
+#: ../../installation/installation.rst:44
 msgid "Manager"
 msgstr "Manager"
 
-#: ../../installation/installation.rst:39
+#: ../../installation/installation.rst:46
 msgid ""
 "Gateway server that accepts and handles every user requests. If the request is "
 "related with the compute session (container), Manager will delegate the "
@@ -105,42 +139,30 @@ msgstr ""
 "청이 연산 세션(컨테이너)과 관련 있다면, 해당 세션을 관리하는 Agent 또는 해당 컨"
 "테이너로 작업을 위임합니다."
 
-#: ../../installation/installation.rst:43 ../../installation/installation.rst:83
-#: ../../installation/installation.rst:105
-msgid "Requirement: 2 cores, 4 GiB memory"
-msgstr "리"
-
-#: ../../installation/installation.rst:59
+#: ../../installation/installation.rst:64
 msgid "Agent"
 msgstr "Agent"
 
-#: ../../installation/installation.rst:61
+#: ../../installation/installation.rst:66
 msgid "Worker node. Manage the lifecycle of compute sessions (containers)."
 msgstr "연산 워커 노드입니다. 연산 세션(컨테이너)의 수명주기를 관리합니다."
 
-#: ../../installation/installation.rst:63
-msgid ""
-"Requirement: 4 cores, 32 GiB memory, NVIDIA GPU for GPU workload, > 512 GiB SSD"
-msgstr ""
-"요구 사항: 4 코어, 32 GiB 메모리, NVIDIA GPU (GPU 워크로드가 필요한 경우), > "
-"512 GiB SSD"
-
-#: ../../installation/installation.rst:79
+#: ../../installation/installation.rst:82
 msgid "Console-Server"
 msgstr "Console-Server"
 
-#: ../../installation/installation.rst:81
+#: ../../installation/installation.rst:84
 msgid ""
 "Serves user web GUI Console and provides authentication by email and password."
 msgstr ""
 "사용자 웹 GUI 환경을 제공하고, 이메일/비밀번호 기반의 사용자 인증 또한 지원합니"
 "다."
 
-#: ../../installation/installation.rst:99
+#: ../../installation/installation.rst:100
 msgid "WSProxy"
 msgstr "WSProxy"
 
-#: ../../installation/installation.rst:101
+#: ../../installation/installation.rst:102
 msgid ""
 "Proxies the connection between user-created web apps (such as web Terminal and "
 "Jupyter Notebook) and Manager, which is then relayed to a specific compute "
@@ -149,25 +171,35 @@ msgstr ""
 "사용자가 띄운 웹기반 앱(터미널, Jupyter Notebook 등)과 매니저 사이의 통신을 중"
 "계하는 서비스입니다."
 
-#: ../../installation/installation.rst:122
+#: ../../installation/installation.rst:121
 msgid "PostgreSQL DB"
 msgstr "PostgreSQL DB"
 
-#: ../../installation/installation.rst:124
+#: ../../installation/installation.rst:123
 msgid "Database for Manager."
 msgstr "Manager가 사용하는 데이터베이스입니다."
 
-#: ../../installation/installation.rst:126
-#: ../../installation/installation.rst:149
-#: ../../installation/installation.rst:170
-msgid "Requirement: 1 cores, 2 GiB memory"
-msgstr "요구 사항: 1 코어, 2 GiB 메모리"
+#: ../../installation/installation.rst:139
+msgid ""
+"To back up the DB data, you can use the following command from the DB host. "
+"The specific command may vary depending on the configuration."
+msgstr ""
+"DB를 백업하기 위해서는 다음과 같은 명령을 사용할 수 있습니다. 구체적인 명령은 "
+"설치 환경에 따라 다양할 수 있습니다."
 
-#: ../../installation/installation.rst:143
+#: ../../installation/installation.rst:153
+msgid ""
+"To restore the from the backup data, you can execute the following command. "
+"Specific options may vary depending on the configuration."
+msgstr ""
+"백업 데이터를 통해 DB를 복원하려면 다음과 같은 명령을 실행할 수 있습니다. 구체"
+"적인 옵션을 설치 환경에 따라 다양할 수 있습니다."
+
+#: ../../installation/installation.rst:166
 msgid "Redis"
 msgstr "Redis"
 
-#: ../../installation/installation.rst:145
+#: ../../installation/installation.rst:168
 msgid ""
 "Cache server which is used to collect per-session and per-agent usage "
 "statistics and relays heartbeat signal from Agent to Manager. It also keeps "
@@ -177,13 +209,37 @@ msgstr ""
 "가는 heartbeat 신호를 중계합니다. 사용자의 로그인 인증 정보를 보관하기도 합니"
 "다."
 
-#: ../../installation/installation.rst:166
+#: ../../installation/installation.rst:186
+msgid ""
+"Usually, Redis data do not need backup since it contains temporary cached data "
+"only, such user's login session information, per-container live stat, and etc."
+msgstr ""
+"일반적으로, Redis 데이터를 백업할 필요가 없습니다. 사용자 로그인 세션 쿠키 정"
+"보, 컨테이너 별 실시간 사용량 등과 같은 일시적으로만 존재하면 되는 정보를 저장"
+"하고 있기 때문입니다."
+
+#: ../../installation/installation.rst:190
 msgid "Etcd"
 msgstr "Etcd"
 
-#: ../../installation/installation.rst:168
+#: ../../installation/installation.rst:192
 msgid "Config server, which contains Backend.AI system-wide configuration."
 msgstr "설정 서버로, Backend.AI의 전역 설정값을 보관하고 있습니다."
+
+#: ../../installation/installation.rst:208
+msgid ""
+"To back up the Etcd config data used by the Manager, go to the folder where "
+"the Manager is installed and use the following command."
+msgstr ""
+"Manager에서 사용하는 Etcd 설정 데이터를 백업하려면 Manager가 설치된 폴더로 이동"
+"한 후 다음과 같은 명령을 사용하면 됩니다."
+
+#: ../../installation/installation.rst:216
+msgid ""
+"To restore Etcd settings from the backup data, you can run a command like this."
+msgstr ""
+"백업 데이터를 통해 Etcd 설정을 복원하려면 다음과 같은 명령을 실행할 수 있습니"
+"다."
 
 #~ msgid ""
 #~ "The GUI console can be used in two forms. It can be used as a web service "
@@ -198,3 +254,9 @@ msgstr "설정 서버로, Backend.AI의 전역 설정값을 보관하고 있습�
 #~ "standalone 실행파일로 제공되는 앱 형태로 이용할 수도 있습니다. 앱 형태의 경"
 #~ "우 데스크톱 운영체제의 보안 설정에 따라 서명되지 않은 실행파일로 인식되어 권"
 #~ "한 허용 절차가 필요할 수 있습니다."
+
+#~ msgid "Backend.AI Server Installation Information"
+#~ msgstr "Backend.AI 서버 설치 정보"
+
+#~ msgid "Daemon information"
+#~ msgstr "데몬 정보"

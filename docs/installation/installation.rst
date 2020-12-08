@@ -10,6 +10,17 @@ browsers such as Chrome.
 * Recommended browser: latest Chrome (at least version 80)
 * Requirement: any machine that runs Web Browser
 
+For Backend.AI daemons/services, following hardware spec should be met. For
+optimal performance, just double the amount of each resources.
+
+* Manager: 2 cores, 4 GiB memory
+* Agent: 4 cores, 32 GiB memory, NVIDIA GPU for GPU workload, > 512 GiB SSD
+* Console-Server: 2 cores, 4 GiB memory
+* WSProxy: 2 cores, 4 GiB memory
+* PostgreSQL DB: 2 cores, 4 GiB memory
+* Redis: 1 cores, 2 GiB memory
+* Etcd: 1 cores, 2 GiB memory
+
 After initial installation, we will provide following materials/services:
 
 * User GUI Guide manual
@@ -18,15 +29,11 @@ After initial installation, we will provide following materials/services:
 * First-time user/admin on-site tutorial (3-5 hours)
 
 
-==========================================
-Backend.AI Server Installation Information
-==========================================
+Simple Backend.AI Server Management Guide
+-----------------------------------------
 
 Backend.AI server daemons are installed by Lablup support team. If there are
 problems on the daemons or services, please contact with contact@lalbup.com.
-
-Daemon information
-------------------
 
 Backend.AI is composed of many modules and daemons. Here, we briefly describe
 each services and provide basic maintenance guide in case of specific service
@@ -39,8 +46,6 @@ Manager
 Gateway server that accepts and handles every user requests. If the request is
 related with the compute session (container), Manager will delegate the request
 to Agent and/or containers in each Agent.
-
-* Requirement: 2 cores, 4 GiB memory
 
 .. code-block:: shell
 
@@ -60,8 +65,6 @@ Agent
 
 Worker node. Manage the lifecycle of compute sessions (containers).
 
-* Requirement: 4 cores, 32 GiB memory, NVIDIA GPU for GPU workload, > 512 GiB SSD
-
 .. code-block:: shell
 
    # check status
@@ -79,8 +82,6 @@ Console-Server
 ^^^^^^^^^^^^^^
 
 Serves user web GUI Console and provides authentication by email and password.
-
-* Requirement: 2 cores, 4 GiB memory
 
 .. code-block:: shell
 
@@ -102,8 +103,6 @@ Proxies the connection between user-created web apps (such as web Terminal and
 Jupyter Notebook) and Manager, which is then relayed to a specific compute
 session (container).
 
-* Requirement: 2 cores, 4 GiB memory
-
 .. code-block:: shell
 
    cd /home/lablup/halfstack
@@ -123,8 +122,6 @@ PostgreSQL DB
 
 Database for Manager.
 
-* Requirement: 1 cores, 2 GiB memory
-
 .. code-block:: shell
 
    cd /home/lablup/halfstack
@@ -139,14 +136,38 @@ Database for Manager.
    # see logs
    docker-compose -f docker-compose.hs.postgres.yaml -p <project> logs
 
+To back up the DB data, you can use the following command from the DB host. The
+specific command may vary depending on the configuration.
+
+.. code-block:: shell
+
+   # query postgresql container's ID
+   docker ps | grep halfstack-db
+   # Connect to the postgresql container via bash
+   docker exec -it <postgresql-container-id> bash
+   # Backup DB data. PGPASSWORD may vary depending on the system configuration
+   PGPASSWORD=develove pg_dumpall -U postgres > /var/lib/postgresql/backup_db_data.sql
+   # Exit container
+   exit
+
+To restore the from the backup data, you can execute the following command.
+Specific options may vary depending on the configuration.
+
+.. code-block:: shell
+
+   # query postgresql container's ID
+   docker ps | grep halfstack-db
+   # Connect to the postgresql container via bash
+   docker exec -it <postgresql-container-id> bash
+   # Restore from data
+   psql -U postgres < backup_db_data.sql
+
 Redis
 ^^^^^
 
 Cache server which is used to collect per-session and per-agent usage
 statistics and relays heartbeat signal from Agent to Manager. It also keeps
 user's authentication information.
-
-* Requirement: 1 cores, 2 GiB memory
 
 .. code-block:: shell
 
@@ -162,12 +183,13 @@ user's authentication information.
    # see logs
    docker-compose -f docker-compose.hs.redis.yaml -p <project> logs
 
+Usually, Redis data do not need backup since it contains temporary cached data
+only, such user's login session information, per-container live stat, and etc.
+
 Etcd
 ^^^^^
 
 Config server, which contains Backend.AI system-wide configuration.
-
-* Requirement: 1 cores, 2 GiB memory
 
 .. code-block:: shell
 
@@ -182,3 +204,18 @@ Config server, which contains Backend.AI system-wide configuration.
    docker-compose -f docker-compose.hs.etcd.yaml -p <project> restart
    # see logs
    docker-compose -f docker-compose.hs.etcd.yaml -p <project> logs
+
+To back up the Etcd config data used by the Manager, go to the folder where the
+Manager is installed and use the following command.
+
+.. code-block:: shell
+
+   cd /home/lablup/manager  # paths may vary
+   backend.ai mgr etcd get --prefix '' > etcd_backup.json
+
+To restore Etcd settings from the backup data, you can run a command like this.
+
+.. code-block:: shell
+
+   cd /home/lablup/manager  # paths may vary
+   backend.ai mgr etcd put-json '' etcd_backup.json
