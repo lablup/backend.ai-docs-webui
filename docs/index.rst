@@ -32,6 +32,7 @@ The latest versions of full user's guide can be found from sites below:
    share_vfolder/share_vfolder
    ml_kernels/ml_kernels
    statistics/statistics
+   user_setting/user_settings
    admin_menu/admin_menu
    faq/faq
    license_agreement/license_agreement
