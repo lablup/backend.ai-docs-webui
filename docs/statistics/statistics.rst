@@ -13,6 +13,10 @@ inquired are as follows.
 * GPU: The number of GPU units allocated while the compute session was created.
   If the Fractional GPU feature is enabled, it may not match the physics GPU.
 
+Note that only the statistics of terminated sessions will be displayed here.
+Also, week period may not be selectable by a user whose account is created not
+longer than a week.
+
 .. image:: usage_panel.png
 
 More detailed statistics can be found from the admin-only hub.
