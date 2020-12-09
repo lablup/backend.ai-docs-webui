@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-08 15:07+0900\n"
-"PO-Revision-Date: 2020-12-08 15:07+0900\n"
+"POT-Creation-Date: 2020-12-09 15:53+0900\n"
+"PO-Revision-Date: 2020-12-09 15:57+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko\n"
 "Language-Team: \n"
@@ -88,16 +88,57 @@ msgstr ""
 
 #: ../../login/login.rst:44
 msgid ""
-"If there are more than 5 times of login failure occured, access to the endpoint "
-"is temporarily restricted for 3 minutes for security reasons. If the access "
-"restriction persists, , please contact your system administrator."
+"If there are more than 10 times of consecutive login failure occured, access to "
+"the endpoint is temporarily restricted for 20 minutes for security reasons. If "
+"the access restriction persists after 20 minutes, please contact your system "
+"administrator."
 msgstr ""
-"로그인 실패가 5 회 이상 발생하면 보안상의 이유로 로그인 시도가 3분 간 제한됩니"
-"다. 만약 로그인 제한이 계속 유지되는 경우에는 시스템 관리자에게 문의 하십시오."
+"로그인 실패가 10 회 이상 발생하면 보안상의 이유로 로그인 시도가 20분 간 제한됩니"
+"다. 만약 20분 후에도 로그인 제한이 계속 유지되는 경우에는 시스템 관리자에게 문"
+"의 하십시오."
 
-#: ../../login/login.rst:50
+#: ../../login/login.rst:49
+msgid "Those settings can be configured like below."
+msgstr "이 설정은 다음과 같은 방법으로 수정할 수 있습니다."
+
+#: ../../login/login.rst:51 ../../login/login.rst:75
+msgid "SSH connection to the host where Console-Server is installed."
+msgstr "Console-Server가 설치된 호스트로 SSH 접속."
+
+#: ../../login/login.rst:52 ../../login/login.rst:76
 msgid ""
-"After initial login, the browser session information will be keep for 30 days "
+"Move to the location where Console-Server configuration file exist. Usually it "
+"is located at ``/home/lablup/.config/backend.ai/console-server.conf``, but this "
+"may change depending on the system configuration."
+msgstr ""
+"Console-Server의 설정 파일이 있는 위치로 이동. 통상적으로 ``/home/lablup/."
+"config/backend.ai/console-server.conf`` 위치에 있으나, 이는 시스템 구성에 따라 "
+"변할 수 있음."
+
+#: ../../login/login.rst:55
+msgid ""
+"Open the ``console-server.conf`` file with a text editor and set the value of "
+"``login_allowed_fail_count`` (default to 10) and ``login_block_time`` (default "
+"to 1200 seconds) in the ``[session]`` section to the desired value. For "
+"example, you can set ``login_allowed_fail_count = 5`` and ``login_block_time = "
+"3600`` to block users for 1 hr if the account is failed to login 5 times "
+"consecutively."
+msgstr ""
+"``console-server.conf`` 파일을 텍스트 편집기로 열고 ``[session]`` 섹션의 "
+"``login_allowed_fail_count`` (기본값 1200초) 와 ``login_block_time`` (기본값 10"
+"회)을 원하는 값으로 수정. 예를 들어, 5번 연속 로그인 실패한 사용자 계정을 1시간 "
+"동안 로그인 할 수 없도록 만들려면 ``login_allowed_fail_count = 5``, "
+"``login_block_time = 3600`` 과 같이 설정할 수 있음."
+
+#: ../../login/login.rst:61 ../../login/login.rst:83
+msgid ""
+"Restart Console-Server: ``sudo systemctl restart backendai-console-server``"
+msgstr ""
+"Console-Server를 재시작: ``sudo systemctl restart backendai-console-server``"
+
+#: ../../login/login.rst:64
+msgid ""
+"After initial login, the browser session information will be kept for 30 days "
 "from the console-server. That means, after 30 days of initial login, the user "
 "needs to login again since server-side authentication information will be "
 "expired. It would be controversal when the server expires the session cookie. "
@@ -114,25 +155,11 @@ msgstr ""
 "30일 만료 정책을 수행하고 있기에, Backend.AI에서도 30일 만료 정책을 설정하고 있"
 "습니다."
 
-#: ../../login/login.rst:59
+#: ../../login/login.rst:73
 msgid "If you want to change this setting, please follow the steps below."
 msgstr "만약, 이 설정값을 바꾸고 싶다면 다음 과정을 따르십시오."
 
-#: ../../login/login.rst:61
-msgid "SSH connection to the host where Console-Server is installed."
-msgstr "Console-Server가 설치된 호스트로 SSH 접속."
-
-#: ../../login/login.rst:62
-msgid ""
-"Move to the location where Console-Server configuration file exist. Usually it "
-"is located at ``/home/lablup/.config/backend.ai/console-server.conf``, but this "
-"may change depending on the system configuration."
-msgstr ""
-"Console-Server의 설정 파일이 있는 위치로 이동. 통상적으로 ``/home/lablup/."
-"config/backend.ai/console-server.conf`` 위치에 있으나, 이는 시스템 구성에 따라 "
-"변할 수 있음."
-
-#: ../../login/login.rst:65
+#: ../../login/login.rst:79
 msgid ""
 "Open the ``console-server.conf`` file with a text editor and set the value of "
 "``max_age`` in the ``[session]`` section to the desired value. For example, if "
@@ -143,21 +170,15 @@ msgstr ""
 "``max_age`` 를 원하는 값으로 수정. 예를 들어, 로그인 세션을 하루만 유지하고 싶"
 "은 경우 ``86400`` 입력 (단위: 초)."
 
-#: ../../login/login.rst:69
-msgid ""
-"Restart Console-Server: ``sudo systemctl restart backendai-console-server``"
-msgstr ""
-"Console-Server를 재시작: ``sudo systemctl restart backendai-console-server``"
-
-#: ../../login/login.rst:73
+#: ../../login/login.rst:87
 msgid "Menus in the sidebar"
 msgstr "사이드바의 메뉴"
 
-#: ../../login/login.rst:75
+#: ../../login/login.rst:89
 msgid "There are three buttons at the top of the left sidebar."
 msgstr "좌측 사이드바의 위쪽에는 세 가지 버튼이 위치하고 있습니다."
 
-#: ../../login/login.rst:77
+#: ../../login/login.rst:91
 msgid ""
 "The leftmost button changes the size of the sidebar. Click to make the sidebar "
 "narrower. Click again to bring the sidebar back to its original width."
@@ -166,7 +187,7 @@ msgstr ""
 "줄어들면서 내용을 보다 넓게 볼 수 있습니다. 다시 한 번 클릭하면 사이드바의 폭이 "
 "다시 원래대로 돌아옵니다."
 
-#: ../../login/login.rst:82
+#: ../../login/login.rst:96
 msgid ""
 "The middle button is the event notification button. Events that need to be "
 "recorded during Console operation are displayed here."
@@ -174,7 +195,7 @@ msgstr ""
 "중간의 버튼은 이벤트 알림 버튼입니다. Console 동작 중 기록해둘 필요가 있는 이벤"
 "트 내역이 여기에 표시 됩니다."
 
-#: ../../login/login.rst:85
+#: ../../login/login.rst:99
 msgid ""
 "The rightmost button is the background task button. When background tasks are "
 "running, such as creating a compute session, you can check the jobs here.  When "
@@ -184,7 +205,7 @@ msgstr ""
 "그라운드 작업이 돌아가고 있을 때 여기에서 그 내역을 확인할 수 있습니다. 백그라운"
 "드 작업이 끝나면 보통 그 내역도 함께 사라집니다."
 
-#: ../../login/login.rst:89
+#: ../../login/login.rst:103
 msgid ""
 "There is a question mark icon in the lower left corner of the sidebar. Click "
 "this icon to access the web version of this guide document."

@@ -41,13 +41,27 @@ can logout by selecting the Log Out menu.
    default.
 
 .. warning::
-   If there are more than 5 times of login failure occured, access to the
-   endpoint is temporarily restricted for 3 minutes for security reasons.
-   If the access restriction persists, , please contact your system
-   administrator.
+   If there are more than 10 times of consecutive login failure occured, access
+   to the endpoint is temporarily restricted for 20 minutes for security
+   reasons. If the access restriction persists after 20 minutes, please contact
+   your system administrator.
+
+   Those settings can be configured like below.
+
+   * SSH connection to the host where Console-Server is installed.
+   * Move to the location where Console-Server configuration file exist. Usually
+     it is located at ``/home/lablup/.config/backend.ai/console-server.conf``,
+     but this may change depending on the system configuration.
+   * Open the ``console-server.conf`` file with a text editor and set the value
+     of ``login_allowed_fail_count`` (default to 10) and ``login_block_time``
+     (default to 1200 seconds) in the ``[session]`` section to the desired
+     value. For example, you can set ``login_allowed_fail_count = 5`` and
+     ``login_block_time = 3600`` to block users for 1 hr if the account is
+     failed to login 5 times consecutively.
+   * Restart Console-Server: ``sudo systemctl restart backendai-console-server``
 
 .. note::
-   After initial login, the browser session information will be keep for 30 days
+   After initial login, the browser session information will be kept for 30 days
    from the console-server. That means, after 30 days of initial login, the user
    needs to login again since server-side authentication information will be
    expired. It would be controversal when the server expires the session cookie.
