@@ -5,7 +5,9 @@ Installation
 The GUI Console is served as a web client by connecting to a separate web
 address prepared by the admins. So, users do not need to install a
 platform-dependent desktop applications, and just need the latest modern
-browsers such as Chrome.
+browsers such as Chrome. We do not support MicroSoft Internet Explorer since it
+is deprecated and does not follow web standard and support modern brower
+features.
 
 * Recommended browser: latest Chrome (at least version 80)
 * Requirement: any machine that runs Web Browser (2 cores, 4 GiB memory)

@@ -86,6 +86,9 @@ You can create a new directory on the current path with the NEW FOLDER button
 of these file operations can also be performed using the above-described method
 of mounting folders into a compute session.
 
+The maximum length of file or directory inside a folder may depends on the host
+file system. But, it usually cannot exceed 255 characters.
+
 To close file explorer, click the X button in the upper right.
 
 

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-08 10:32+0900\n"
-"PO-Revision-Date: 2020-12-08 10:33+0900\n"
+"POT-Creation-Date: 2020-12-09 15:08+0900\n"
+"PO-Revision-Date: 2020-12-09 15:09+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko\n"
 "Language-Team: Lablup\n"
@@ -186,14 +186,22 @@ msgstr ""
 "업은 앞서 설명한 연산 세션 마운트 방식으로도 모두 수행 가능합니다."
 
 #: ../../vfolder/vfolder.rst:89
+msgid ""
+"The maximum length of file or directory inside a folder may depends on the "
+"host file system. But, it usually cannot exceed 255 characters."
+msgstr ""
+"폴더 내 파일 또는 디렉토리 이름의 최대 길이는 호스트의 파일 시스템마다 다를 "
+"수 있습니다. 하지만 일반적인 경우 255자를 초과할 수 없습니다."
+
+#: ../../vfolder/vfolder.rst:92
 msgid "To close file explorer, click the X button in the upper right."
 msgstr "파일 탐색기를 닫기 위해서는 우측 상단의 X 버튼을 누르면 됩니다."
 
-#: ../../vfolder/vfolder.rst:93
+#: ../../vfolder/vfolder.rst:96
 msgid "Rename folder"
 msgstr "폴더 이름 변경"
 
-#: ../../vfolder/vfolder.rst:95
+#: ../../vfolder/vfolder.rst:98
 msgid ""
 "If you have permission to rename the storage folder, you can rename it by "
 "clicking the edit icon in the Control column. When you click the icon "
@@ -205,11 +213,11 @@ msgstr ""
 "하면 이름 변경 다이얼로그가 나타나게 됩니다. 새로운 폴더 이름을 기록한 후 "
 "RENAME 버튼을 클릭하십시오."
 
-#: ../../vfolder/vfolder.rst:101
+#: ../../vfolder/vfolder.rst:104
 msgid "Delete folder"
 msgstr "폴더 삭제하기"
 
-#: ../../vfolder/vfolder.rst:103
+#: ../../vfolder/vfolder.rst:106
 msgid ""
 "If you have permission to delete the storage folder, you can delete it by "
 "clicking the trash can icon in the Control column. When you click the Delete "
@@ -221,7 +229,7 @@ msgstr ""
 "자 실수로 인한 삭제를 방지하기 위한 절차로 삭제할 폴더의 이름을 입력하고 입"
 "력 값과 삭제할 폴더 명이 일치해야만 삭제가 가능합니다."
 
-#: ../../vfolder/vfolder.rst:113
+#: ../../vfolder/vfolder.rst:116
 msgid ""
 "The folders created here can be mounted when creating a compute session. "
 "Folders are mounted under the user's default working directory, ``/home/work/"
@@ -234,11 +242,11 @@ msgstr ""
 "한 파일은 연산 세션이 종료되어도 사라지지 않습니다(단, 폴더 자체를 삭제하면 "
 "사라지게 됩니다)."
 
-#: ../../vfolder/vfolder.rst:122
+#: ../../vfolder/vfolder.rst:125
 msgid "Automount folder"
 msgstr "자동 마운트 폴더"
 
-#: ../../vfolder/vfolder.rst:124
+#: ../../vfolder/vfolder.rst:127
 msgid ""
 "Storage & Folders page has an Automount Folders tab. Click this tab to see a "
 "list of folders whose names prefixed with a dot (.). When you create a "
@@ -258,7 +266,7 @@ msgstr ""
 "``.linuxbrew``, ``.pyenv`` 등과 같은 Storage 폴더를 생성해서 사용하면 연산 세"
 "션에 관계없이 늘 일정한 사용자 패키지 또는 환경을 구성할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:134
+#: ../../vfolder/vfolder.rst:137
 msgid ""
 "For more detailed information on the usage of Automount folders, refer to :"
 "ref:`examples of using automount folders<using-automount-folder>`."
