@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console Essential Guide Enterprise R2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-16 19:17+0900\n"
+"POT-Creation-Date: 2020-11-20 18:14+0900\n"
 "PO-Revision-Date: 2020-11-16 19:18+0900\n"
 "Last-Translator: \n"
 "Language: ko_KR\n"
@@ -107,20 +107,96 @@ msgstr ""
 msgid ""
 "Now log back into the administrator account and go to the Resource "
 "Policies tab. Click the gear button in the Control column of the default "
-"policy to enter the policy editing screen. Uncheck the Unlimited checkbox"
-" at the bottom of CPU, RAM, fGPU, and set the resource limits to the "
-"desired values. Set the amount of constrained resource to be smaller than"
-" the total amount of hardware. Here, we set it to 2, 4 and 1 "
+"policy to enter the policy editing screen. In Update Resource Policy "
+"dialog, every option is changeable except Policy Name which is the "
+"primary key for distinguishing the resource policy from list. Each "
+"numeric value is regarded as maximum value for creating/destroying a "
+"session and also for the number of vfolders. Uncheck the Unlimited "
+"checkbox at the bottom of CPU, RAM, fGPU, and set the resource limits to "
+"the desired values. Set the amount of constrained resource to be smaller "
+"than the total amount of hardware. Here, we set it to 2, 4 and 1 "
 "respectively. Click the UPDATE button to update the resource policy."
 msgstr ""
 
-#: ../../resource_limit/resource_limit.rst:64
+#: ../../resource_limit/resource_limit.rst:67
+msgid ""
+"About details in each option in resource policy dialog, see the "
+"description below."
+msgstr ""
+
+#: ../../resource_limit/resource_limit.rst:73
+msgid "Resource Policy"
+msgstr ""
+
+#: ../../resource_limit/resource_limit.rst:70
+msgid ""
+"CPU : The fundamental resource for all kind calculation. Mostly useful at"
+" handling single and complex calculations sequentially."
+msgstr ""
+
+#: ../../resource_limit/resource_limit.rst:71
+msgid ""
+"RAM : It loads codes to execute the calculation for Machine learning. The"
+" bigger the size becomes, less overhead occurs."
+msgstr ""
+
+#: ../../resource_limit/resource_limit.rst:72
+msgid ""
+"GPU : It does similar job as the CPU does. The difference between CPU and"
+" GPU is that GPU is much faster in processing multiple but simpler "
+"calculations parallel meanwhile CPU is for more general calculations."
+msgstr ""
+
+#: ../../resource_limit/resource_limit.rst:73
+msgid ""
+"fGPU : Fractional GPU (fGPU) is literally split a single GPU to multiple "
+"partitions in order to use GPU economically. Notice that the minimum "
+"amount of fGPU required is differed by each image."
+msgstr ""
+
+#: ../../resource_limit/resource_limit.rst:78
+msgid "Sessions"
+msgstr ""
+
+#: ../../resource_limit/resource_limit.rst:76
+msgid "Container Per Session : The independent unit for calculating."
+msgstr ""
+
+#: ../../resource_limit/resource_limit.rst:77
+msgid ""
+"Idle timeout (sec.) : Configurable period of time during which the user "
+"can be inactive without any impact on their session."
+msgstr ""
+
+#: ../../resource_limit/resource_limit.rst:78
+msgid "Concurrent Jobs : It is about the number of jobs can be done in parallel."
+msgstr ""
+
+#: ../../resource_limit/resource_limit.rst:83
+msgid "Folders"
+msgstr ""
+
+#: ../../resource_limit/resource_limit.rst:81
+msgid ""
+"Allowed hosts : Allowed hosts for accessing vfolders created under this "
+"resource policy."
+msgstr ""
+
+#: ../../resource_limit/resource_limit.rst:82
+msgid "Capacity(GB) : the maximum size(GB) for folder that can be afforded."
+msgstr ""
+
+#: ../../resource_limit/resource_limit.rst:83
+msgid "Max. # : the maximum number of vfolders that can be created/invited."
+msgstr ""
+
+#: ../../resource_limit/resource_limit.rst:85
 msgid ""
 "In the resource policy list, check that the Resources value of the "
 "default policy has been updated."
 msgstr "자원 정책 리스트에서 default 정책의 Resources 값이 업데이트 된 것을 확인합니다."
 
-#: ../../resource_limit/resource_limit.rst:71
+#: ../../resource_limit/resource_limit.rst:92
 msgid ""
 "Once again, log in with your user account. Go to the Session page. You "
 "can see that the resource constraint value set earlier is reflected in "
@@ -129,7 +205,7 @@ msgstr ""
 "다시 한 번 사용자 계정으로 로그인 합니다. Session 페이지로 이동합니다. 상단의 자원 지시자(Resource "
 "Indicator)에 좀전에 설정한 자원 제약 값이 반영된 것을 볼 수 있습니다."
 
-#: ../../resource_limit/resource_limit.rst:78
+#: ../../resource_limit/resource_limit.rst:99
 msgid ""
 "Click START to open the calculation session creation dialog and pull the "
 "CPU, RAM, and GPU sliders all the way to the right, and you can see that "
@@ -139,7 +215,7 @@ msgstr ""
 "START를 클릭하여 연산 세션 생성 다이얼로그를 열고 CPU, RAM, GPU 슬라이더를 우측 끝까지 당겨보면 자원 제약을 건 "
 "후의 값 이상으로 움직일 수 없음을 알 수 있습니다."
 
-#: ../../resource_limit/resource_limit.rst:86
+#: ../../resource_limit/resource_limit.rst:107
 msgid ""
 "In this way, it was confirmed that the development user can control the "
 "maximum amount of resources that can be allocated when creating a compute"
@@ -148,7 +224,7 @@ msgstr ""
 "이렇게 사용자의 키페어 기반으로 개발 사용자가 연산 세션 생성 시 할당할 수 있는 최대 자원량을 조절할 수 있음을 확인 할 수 "
 "있었습니다."
 
-#: ../../resource_limit/resource_limit.rst:91
+#: ../../resource_limit/resource_limit.rst:112
 msgid ""
 "Occasionally, the amount of resources displayed on the resource indicator"
 " may be out of sync due to a network connection problem or an error in "
@@ -286,4 +362,22 @@ msgstr ""
 
 #~ msgid "Max. # : the maximum number of vfolders that can be created/invited."
 #~ msgstr "최대 (폴더) 갯수 : 생성 또는 공유 초대 받을 수 있는 vfolder의 최대 갯수입니다."
+
+#~ msgid ""
+#~ "Now log back into the administrator "
+#~ "account and go to the Resource "
+#~ "Policies tab. Click the gear button "
+#~ "in the Control column of the "
+#~ "default policy to enter the policy "
+#~ "editing screen. Uncheck the Unlimited "
+#~ "checkbox at the bottom of CPU, "
+#~ "RAM, fGPU, and set the resource "
+#~ "limits to the desired values. Set "
+#~ "the amount of constrained resource to"
+#~ " be smaller than the total amount "
+#~ "of hardware. Here, we set it to"
+#~ " 2, 4 and 1 respectively. Click "
+#~ "the UPDATE button to update the "
+#~ "resource policy."
+#~ msgstr ""
 

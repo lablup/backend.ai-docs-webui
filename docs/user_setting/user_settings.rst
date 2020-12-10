@@ -49,8 +49,9 @@ SSH Keypair Management
 This is a feature that retrieves and creates the SSH keypair required when
 connecting directly to the compute session via SSH. If you click the button on
 the right, the following dialog appears. Click the copy button on the right to
-copy the existing SSH public key. If there is no SSH keypair or if you want to
-renew it, click the GENERATE button. SSH public/private keys are randomly
+copy the existing SSH public key. There will be provided public key when you 
+signed in Backend.AI. You can update SSH keypair by clicking generate button
+on the right bottom of the dialog. SSH public/private keys are randomly
 generated and stored as user information. Please note that the secret key cannot
 be checked again unless it is saved manually immediately after creation.
 
