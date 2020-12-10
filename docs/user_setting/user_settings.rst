@@ -68,6 +68,12 @@ Automatic Update Check
 A notification window pops up when a new version of the GUI console is detected.
 It works only in an environment where Internet access is available.
 
+Auto logout
+^^^^^^^^^^^
+
+Log out automatically if all logined pages are closed except session originated
+pages for apps (e.g. jupyter notebook, web terminal, etc.).
+
 EDIT USER CONFIG SCRIPT
 ^^^^^^^^^^^^^^^^^^^^^^^
 
