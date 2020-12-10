@@ -104,3 +104,11 @@ can visit this page to find out more about your request when an error occurs.
 You can refresh or delete the logs by using the button at the top right.
 
 .. image:: user_log.png
+
+.. note::
+   If you only have one page logged in, clicking the REFRESH button may not seem
+   to work properly. Logs pages are collection of requests to the server and
+   responses from the server, and if current page is log page, then it will
+   not sending any requests to the server except refreshing the page explicitly.
+   To check logs are being stacked properly, please open another page and click
+   REFRESH button.

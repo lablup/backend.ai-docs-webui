@@ -52,8 +52,9 @@ If you need more detailed settings, refer to the meaning of each items.
 * Session name (optional): Specifies the name of the compute session to be
   created. If specified, this name appears in Session Info, making it easy to
   distinguish from other compute sessions. If not specified, a
-  randomly-generated name is used. You can set up to 4 to 64 characters, and no
-  spaces are allowed.
+  randomly-generated name is used. You can set the session name up to 4 to 
+  64 characters only with alphabetical character or numbers, and no spaces
+  are allowed.
 * Folder to mount: Specifies the data folder to be mounted in the compute
   session. When a compute session is deleted, by default all data is deleted
   altogether, but the data stored in the folder mounted here is not deleted.
@@ -183,7 +184,8 @@ apps are running in the same container environment.
 In addition to this, you can use web-based services such as TensorBoard, Jupyter
 Lab, etc., depending on the type of service provided by the compute session.
 
-To delete a specific session, simply click on the red power icon.
+To delete a specific session, simply click on the red power icon and click OKAY
+button in the dialog.
 
 .. image:: session_destroy_dialog.png
    :width: 400
@@ -223,7 +225,8 @@ you click this menu, a sub-menu export CSV appears.
 
 If you click this menu, you can download the information of the calculation
 sessions created so far in CSV format. After the following dialog opens, enter
-an appropriate file name (if necessary) and click the EXPORT button. A CSV file
+an appropriate file name (if necessary) and click the EXPORT button. Please note
+that file name can only contain up to 255 characters. A CSV file
 will be downloaded soon.
 
 .. image:: export_session_dialog.png

@@ -75,6 +75,7 @@ user who already exists. User’s name, password, activation state, etc.
 can be changed. Notice that user ID is disabled so that it can’t be changed.
 
 Also, password can be updated with same policy as creating a new user.
+Username and Fullname can contain up to 64 characters.
 
 .. image:: user_update_dialog.png
    :width: 350
@@ -212,28 +213,28 @@ the UPDATE button to update the resource policy.
 About details in each option in resource policy dialog, see the description below.
 
 * Resource Policy
-   * CPU : Specify the maximum amount of CPU cores.
+   * CPU : Specify the maximum amount of CPU cores. (max value: 512)
    * RAM : Specify the maximum amount of memory in GB. It would be good practice
-     to set memory twice as large as the maximum value of GPU memory.
+     to set memory twice as large as the maximum value of GPU memory. (max value: 1024)
    * GPU : Specify the maximum amount of physical GPUs. If fractional GPU is
      enabled by the server (it is in most Enterprise sites), this setting has no
-     effect.
+     effect. (max value: 64)
    * fGPU : Fractional GPU (fGPU) is literally split a single GPU to multiple
      partitions in order to use GPU efficiently. Notice that the minimum amount
      of fGPU required is differed by each image. If fractional GPU is not
-     enabled by the server, this settings has no effect.
+     enabled by the server, this settings has no effect. (max value: 256)
 
 * Sessions
    * Container Per Session : The maximum number of containers per session.
      Currently, this value has no effect since the server only allows one
-     container per compute session.
+     container per compute session. (max value: 100)
    * Idle timeout (sec.) : Configurable period of time during which the user can
      be inactive without any impact on their session. If there is no activity at
      all on a compute session for idle timeout, the session will be garbage
-     collected and destroyed automatically.
+     collected and destroyed automatically.(max value: 15552000 (approx. 180 days))
    * Concurrent Jobs : Maximum number of concurrent compute session per keypair.
      If this value is set to 3, for example, user bound to this resource policy
-     caanot create more than 3 compute sessions simultaneously.
+     caanot create more than 3 compute sessions simultaneously. (max value: 100)
 
 * Folders
    * Allowed hosts : Backend.AI supports many NFS mountpoint. This field limits
@@ -241,8 +242,9 @@ About details in each option in resource policy dialog, see the description belo
      Backend.AI, user cannot access it unless it is allowed by resource policy.
    * Capacity(GB) : the maximum size (GB) a storage folder can contain. This
      feature is only effective for special type of storages/filesystems such as
-     FlashBlade.
+     FlashBlade. (max value: 1024)
    * Max. # : the maximum number of storage folders that can be created/invited.
+     (max value: 50)
 
 In the resource policy list, check that the Resources value of the default
 policy has been updated.

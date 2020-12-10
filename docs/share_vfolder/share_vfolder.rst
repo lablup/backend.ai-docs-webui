@@ -114,3 +114,8 @@ permission.
 .. image:: modify_perm.png
    :width: 500
    :align: center
+
+.. note::
+   Renaming vfolder itself is available for the owner only, even if the user has granted
+   Edit or Edit+Delete permission. Please note that Edit permission does not provide
+   renaming vfolder.
