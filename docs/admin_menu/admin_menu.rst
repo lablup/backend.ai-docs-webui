@@ -110,6 +110,13 @@ you can deactivate the user by clicking the OKAY button.
 To re-activate users, go to Users - Inactive tab, and edit the target user to
 turn on "Active user?" field.
 
+.. note:: 
+
+   Please note that inactivating the user affects all of credentials to be inactive,
+   but reactivating the user does not affects inactivated credentials, since the user
+   account can have multiple keypairs, which brings hard to decide which credential 
+   should be reactivated.
+
 .. _sharing-a-group-storage:
 
 Sharing a group storage folder with group members
@@ -299,6 +306,26 @@ click OKAY button to delete.
     .. image:: export_csv_user.png
        :width: 400
        :align: center
+
+
+Session List Download
+---------------------
+
+There's additional feature in Session page for admin. 
+On the right side of the OTHERS tab there is a menu marked with ``...``.
+When you click this menu, a sub-menu export CSV appears.
+
+.. image:: export_csv_menu.png
+
+If you click this menu, you can download the information of the calculation sessions 
+created so far in CSV format. After the following dialog opens, enter an appropriate 
+file name (if necessary) and click the EXPORT button. Please note that file name can 
+only contain up to 255 characters. A CSV file will be downloaded soon.
+
+.. image:: export_session_dialog.png
+   :width: 350
+   :align: center
+
 
 Server management
 -----------------

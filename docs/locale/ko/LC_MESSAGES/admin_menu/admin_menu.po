@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console Essential Guide Enterprise R2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-11 14:18+0900\n"
+"POT-Creation-Date: 2020-12-11 15:21+0900\n"
 "PO-Revision-Date: 2020-12-08 13:07+0900\n"
 "Last-Translator: \n"
 "Language: ko\n"
@@ -170,11 +170,19 @@ msgstr ""
 "사용자를 다시 활성화 하려면 Users - Inactive 탭에 방문하여 사용자 편집 버튼(톱니 아이콘)을 클릭한 후 “Active"
 " user?” 필드를 켜 주십시오."
 
-#: ../../admin_menu/admin_menu.rst:116
+#: ../../admin_menu/admin_menu.rst:115
+msgid ""
+"Please note that inactivating the user affects all of credentials to be "
+"inactive, but reactivating the user does not affects inactivated "
+"credentials, since the user account can have multiple keypairs, which "
+"brings hard to decide which credential should be reactivated."
+msgstr ""
+
+#: ../../admin_menu/admin_menu.rst:123
 msgid "Sharing a group storage folder with group members"
 msgstr "그룹 Storage 폴더를 다른 사용자와 공유하기"
 
-#: ../../admin_menu/admin_menu.rst:118
+#: ../../admin_menu/admin_menu.rst:125
 msgid ""
 "In addition to user's storage folders, Backend.AI provides storage "
 "folders for groups. A group storage folder is a folder belonging to a "
@@ -184,7 +192,7 @@ msgstr ""
 "Backend.AI는 개인용 Storage 폴더 외에 그룹 전용 Storage 폴더를 제공합니다. 그룹 Storage 폴더는 특정 "
 "사용자가 아닌 특정 그룹에 속하는 폴더이며, 해당 그룹에 속한 모든 사용자가 접근할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:122
+#: ../../admin_menu/admin_menu.rst:129
 msgid ""
 "Group folders can only be created by administrators. Normal users can "
 "only access the contents of the group folder created by the "
@@ -194,7 +202,7 @@ msgstr ""
 "그룹 폴더는 오직 관리자만 생성할 수 있습니다. 일반 사용자는 관리자가 생성한 그룹 폴더 내용을 공유해서 접근할 수 있을 뿐입니다."
 " 또한, 시스템 설정에 따라 그룹 폴더 생성이 허용되지 않는 경우도 있을 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:127
+#: ../../admin_menu/admin_menu.rst:134
 msgid ""
 "First, log in with an administrator account and create a group folder. "
 "After moving to the Data & Storage page, click NEW FOLDER to open the "
@@ -207,7 +215,7 @@ msgstr ""
 " 클릭하여 폴더 생성 다이얼로그를 엽니다. 폴더 이름을 입력하고 Type을 Group으로 설정한 후 목표 Group을 선택합니다. "
 "이 때, 목표 그룹은 사용자B가 속한 그룹으로 설정합니다. Permission은 Read-Only로 설정하였습니다."
 
-#: ../../admin_menu/admin_menu.rst:137
+#: ../../admin_menu/admin_menu.rst:144
 msgid ""
 "After confirming that the folder has been created, log in with the user "
 "B's account and check that the group folder just created on the Data & "
@@ -217,7 +225,7 @@ msgstr ""
 "폴더가 생성된 것을 확인한 후 사용자B 계정으로 로그인 하여 Data & Storage 페이지에 방금 생성한 그룹 폴더가 별도의 "
 "초대 절차 없이 조회되는 것을 확인합니다. Permission 열에는 역시 R(읽기전용)이 표시된 것을 확인할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:144
+#: ../../admin_menu/admin_menu.rst:151
 msgid ""
 "In this way, Backend.AI provides invitation for user's folders and group "
 "folders to help you share data and models in a flexible way."
@@ -225,27 +233,27 @@ msgstr ""
 "이렇게 Backend.AI는 개인 폴더의 초대 및 그룹 폴더를 제공하여 유연한 방식으로 데이터 및 모델을 공유할 수 있도록 돕고 "
 "있습니다."
 
-#: ../../admin_menu/admin_menu.rst:149
+#: ../../admin_menu/admin_menu.rst:156
 msgid "Limiting Maximum Compute Resources per User (Keypair)"
 msgstr "사용자(키페어) 별 연산 자원 할당 및 제한"
 
-#: ../../admin_menu/admin_menu.rst:151
+#: ../../admin_menu/admin_menu.rst:158
 msgid "Objective"
 msgstr "목표"
 
-#: ../../admin_menu/admin_menu.rst:153
+#: ../../admin_menu/admin_menu.rst:160
 msgid ""
 "After logging in to the administrator account, use the function to set "
 "the allowed resources for each user (keypair)"
 msgstr "관리자 계정 로그인 후 사용자(키페어) 별 허용 자원 설정 기능 활용"
 
-#: ../../admin_menu/admin_menu.rst:155
+#: ../../admin_menu/admin_menu.rst:162
 msgid ""
 "Confirm that only allowed resources can be used at maximum when creating "
 "a compute session by a user"
 msgstr "연산 세션 생성 시 허용된 자원만 사용할 수 있음을 확인"
 
-#: ../../admin_menu/admin_menu.rst:158
+#: ../../admin_menu/admin_menu.rst:165
 msgid ""
 "In Backend.AI, you can set a limit on the total amount of resources "
 "available for each user and group. Resource limits per group can only be "
@@ -257,7 +265,7 @@ msgstr ""
 "전용 관리자 GUI Hub를 통해서만 가능하나, 사용자 별(정확하게는 사용자의 키페어 별) 자원 제한은 사용자 GUI "
 "Console에서도 설정할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:163
+#: ../../admin_menu/admin_menu.rst:170
 msgid ""
 "Log in to the user GUI Console with an administrator account to check the"
 " resource limit status. If you log in as an administrator, you will see "
@@ -277,18 +285,18 @@ msgstr ""
 "Ram, fGPU 등의 자원이 무한대(∞)로 표기된 것을 확인할 수 있습니다. 무한대 표시는 별도의 자원 제약이 이루어지지 않은 "
 "상태를 뜻합니다."
 
-#: ../../admin_menu/admin_menu.rst:175
+#: ../../admin_menu/admin_menu.rst:182
 msgid ""
 "Currently, the user accounts used in this guide are restricted by the "
 "default resource policy. This can be found in the Credentials tab on the "
 "left. If you look at the Resource Policy, you can also see that all "
 "resources can be used indefinitely (to the extent the hardware allows)."
 msgstr ""
-"현재 이 가이드에서 사용 중인 사용자 계정은 default 자원 정책의 제한을 받고 있습니다. 좌측의 Credentials 탭에서"
-" 확인할 수 있습니다. Resource Policy를 보면 역시 모든 자원을 (하드웨어가 허락하는 한도 내에서) 무한대로 활용할 수"
-" 있음을 확인할 수 있습니다."
+"현재 이 가이드에서 사용 중인 사용자 계정은 default 자원 정책의 제한을 받고 있습니다. 좌측의 Credentials 탭에서 "
+"확인할 수 있습니다. Resource Policy를 보면 역시 모든 자원을 (하드웨어가 허락하는 한도 내에서) 무한대로 활용할 수 "
+"있음을 확인할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:182
+#: ../../admin_menu/admin_menu.rst:189
 msgid ""
 "Log in again with your user account, now. Go to the Sessions page and "
 "check the resource indicator at the top. Check the maximum quota for CPU,"
@@ -298,7 +306,7 @@ msgstr ""
 "다시 사용자 계정으로 로그인 합니다. Sessions 페이지로 이동해서 상단의 리소스 인디케이터 를 확인합니다. CPU, RAM, "
 "FGPU의 최대 할당량을 확인 합니다. 이는 현재 테스트 노드가 보유하고 있는 총 자원량과 일치합니다."
 
-#: ../../admin_menu/admin_menu.rst:190
+#: ../../admin_menu/admin_menu.rst:197
 msgid ""
 "Click START to open the compute session creation dialog and pull the CPU,"
 " RAM, and GPU sliders all the way to the right, and you can see that you "
@@ -308,7 +316,7 @@ msgstr ""
 "START를 클릭하여 연산 세션 생성 다이얼로그를 열고 CPU, RAM, GPU 슬라이더를 우측 끝까지 당겨보면 리소스 인디케이터에"
 " 보이던 총량 이상으로는 할당할 수 없음을 알 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:198
+#: ../../admin_menu/admin_menu.rst:205
 msgid ""
 "Now log back into the administrator account and go to the Resource "
 "Policies tab. Click the gear button in the Control column of the default "
@@ -329,21 +337,21 @@ msgstr ""
 "Unlimited 체크박스를 해제하고 원하는 값으로 자원 제약을 설정해봅니다. 이 때,제약하는 자원의 양이 하드웨어의 총 자원량 "
 "보다 작게 설정합니다. 여기서는 각각 2,4,1 로 설정을 했습니다. UPDATE 버튼을 클릭하여 자원 정책을 수정합니다."
 
-#: ../../admin_menu/admin_menu.rst:213
+#: ../../admin_menu/admin_menu.rst:220
 msgid ""
 "About details in each option in resource policy dialog, see the "
 "description below."
 msgstr "자원 정책 창의 각 옵션에 대한 자세한 내용은 아래 설명을 참조하시기 바랍니다."
 
-#: ../../admin_menu/admin_menu.rst:225
+#: ../../admin_menu/admin_menu.rst:232
 msgid "Resource Policy"
 msgstr "자원 정책"
 
-#: ../../admin_menu/admin_menu.rst:216
+#: ../../admin_menu/admin_menu.rst:223
 msgid "CPU : Specify the maximum amount of CPU cores. (max value: 512)"
 msgstr "CPU : CPU 코어 최대 할당 가능량을 설정합니다. (최대 입력 값: 512)"
 
-#: ../../admin_menu/admin_menu.rst:217
+#: ../../admin_menu/admin_menu.rst:224
 msgid ""
 "RAM : Specify the maximum amount of memory in GB. It would be good "
 "practice to set memory twice as large as the maximum value of GPU memory."
@@ -352,7 +360,7 @@ msgstr ""
 "RAM : GB 단위로 최대 할당 가능한 메모리 양을 설정합니다. 최대 할당 가능한 GPU 메모리 양의 두 배 이상으로 설정하는 "
 "것을 권장합니다. (최대 입력 값: 1024)"
 
-#: ../../admin_menu/admin_menu.rst:219
+#: ../../admin_menu/admin_menu.rst:226
 msgid ""
 "GPU : Specify the maximum amount of physical GPUs. If fractional GPU is "
 "enabled by the server (it is in most Enterprise sites), this setting has "
@@ -361,7 +369,7 @@ msgstr ""
 "GPU : 할당 가능한 최대 물리 GPU 개수를 설정합니다. 서버에서 GPU 분할 가상화 기능이 켜져 있는 경우에는 (대부분의 "
 "엔터프라이즈 사이트에는 켜져 있습니다) 아무런 효과가 없습니다. (최대 입력 값: 64)"
 
-#: ../../admin_menu/admin_menu.rst:222
+#: ../../admin_menu/admin_menu.rst:229
 msgid ""
 "fGPU : Fractional GPU (fGPU) is literally split a single GPU to multiple "
 "partitions in order to use GPU efficiently. Notice that the minimum "
@@ -372,11 +380,11 @@ msgstr ""
 "세션에 나눠어 배치하고 효율적으로 사용할 수 있습니다. 할당 가능한 최대 분할 GPU 양은 여기서 설정합니다. 만약 서버에 GPU "
 "분할 가상화 기능이 꺼져 있다면 이 항목은 효과가 없습니다. (최대 입력 값: 256)"
 
-#: ../../admin_menu/admin_menu.rst:237
+#: ../../admin_menu/admin_menu.rst:244
 msgid "Sessions"
 msgstr "세션"
 
-#: ../../admin_menu/admin_menu.rst:228
+#: ../../admin_menu/admin_menu.rst:235
 msgid ""
 "Container Per Session : The maximum number of containers per session. "
 "Currently, this value has no effect since the server only allows one "
@@ -385,7 +393,7 @@ msgstr ""
 "Container Per Session : 한 세션이 가질 수 있는 최대 컨테이너의 수. 현재는 서버에서 한 세션 당 하나의 "
 "컨테이너만 강제하고 있으므로 값을 설정하더라도 효과가 없습니다. (최대 입력 값: 100)"
 
-#: ../../admin_menu/admin_menu.rst:231
+#: ../../admin_menu/admin_menu.rst:238
 msgid ""
 "Idle timeout (sec.) : Configurable period of time during which the user "
 "can be inactive without any impact on their session. If there is no "
@@ -397,7 +405,7 @@ msgstr ""
 "동안 연산 세션에 아무런 활동이 감지되지 않으면, 해당 세션은 자동으로 삭제 됩니다. (최대 입력 값: 15552000(초) (약 "
 "180일))"
 
-#: ../../admin_menu/admin_menu.rst:235
+#: ../../admin_menu/admin_menu.rst:242
 msgid ""
 "Concurrent Jobs : Maximum number of concurrent compute session per "
 "keypair. If this value is set to 3, for example, user bound to this "
@@ -408,11 +416,11 @@ msgstr ""
 "지정되어 있을 경우, 이 정책에 영향을 받는 사용자는 동시에 3개를 넘는 연산 세션을 생성할 수 없습니다. (최대 입력 값: "
 "100)"
 
-#: ../../admin_menu/admin_menu.rst:247
+#: ../../admin_menu/admin_menu.rst:254
 msgid "Folders"
 msgstr "폴더"
 
-#: ../../admin_menu/admin_menu.rst:240
+#: ../../admin_menu/admin_menu.rst:247
 msgid ""
 "Allowed hosts : Backend.AI supports many NFS mountpoint. This field "
 "limits the accessibility to them. Even if a NFS named \"data-1\" is "
@@ -423,7 +431,7 @@ msgstr ""
 "수 있는 마운트 위치를 지정할 수 있습니다. 예를 들어, “data-1” 이라는 NFS가 Backend.AI에서 인식되어 있는 "
 "상태일지라도, Allowed hosts 정책으로 허용되지 않은 경우 사용자는 해당 NFS에 접근할 수 없습니다."
 
-#: ../../admin_menu/admin_menu.rst:243
+#: ../../admin_menu/admin_menu.rst:250
 msgid ""
 "Capacity(GB) : the maximum size (GB) a storage folder can contain. This "
 "feature is only effective for special type of storages/filesystems such "
@@ -432,19 +440,19 @@ msgstr ""
 "Capacity(GB) : 하나의 저장 폴더가 가질 수 있는 최대 파일 크기입니다. 이 항목은 FlashBlade 등과 같은 특별한"
 " 저장소나 파일시스템에서만 작동합니다.(최대 입력 값: 1024)"
 
-#: ../../admin_menu/admin_menu.rst:246
+#: ../../admin_menu/admin_menu.rst:253
 msgid ""
 "Max. # : the maximum number of storage folders that can be "
 "created/invited. (max value: 50)"
 msgstr "Max. #: 생성 또는 공유 초대 받을 수 있는 저장 폴더의 최대 개수입니다. (최대 입력 값: 50)"
 
-#: ../../admin_menu/admin_menu.rst:249
+#: ../../admin_menu/admin_menu.rst:256
 msgid ""
 "In the resource policy list, check that the Resources value of the "
 "default policy has been updated."
 msgstr "자원 정책 리스트에서 default 정책의 Resources 값이 업데이트 된 것을 확인합니다."
 
-#: ../../admin_menu/admin_menu.rst:256
+#: ../../admin_menu/admin_menu.rst:263
 msgid ""
 "Once again, log in with your user account. Go to the Session page. You "
 "can see that the resource constraint value set earlier is reflected in "
@@ -453,7 +461,7 @@ msgstr ""
 "다시 한 번 사용자 계정으로 로그인 합니다. Session 페이지로 이동합니다. 상단의 리소스 인디케이터에 좀전에 설정한 자원 제약"
 " 값이 반영된 것을 볼 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:263
+#: ../../admin_menu/admin_menu.rst:270
 msgid ""
 "Click START to open the calculation session creation dialog and pull the "
 "CPU, RAM, and GPU sliders all the way to the right, and you can see that "
@@ -463,7 +471,7 @@ msgstr ""
 "START를 클릭하여 연산 세션 생성 다이얼로그를 열고 CPU, RAM, GPU 슬라이더를 우측 끝까지 당겨보면 리소스 제약을 건 "
 "후의 값 이상으로 움직일 수 없음을 알 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:271
+#: ../../admin_menu/admin_menu.rst:278
 msgid ""
 "In this way, it was confirmed that the development user can control the "
 "maximum amount of resources that can be allocated when creating a compute"
@@ -472,26 +480,26 @@ msgstr ""
 "이렇게 사용자의 키페어 기반으로 개발 사용자가 연산 세션 생성시 할당할 수 있는 최대 자원량을 조절할 수 있음을 확인 할 수 "
 "있었습니다."
 
-#: ../../admin_menu/admin_menu.rst:275
+#: ../../admin_menu/admin_menu.rst:282
 msgid ""
 "You can also delete each of resource keypairs by clicking trash can icon "
 "in the Control panel. When you click the icon, the confirmation dialog "
 "will appears. click OKAY button to delete."
 msgstr ""
-" Control 열의 휴지통 아이콘을 눌러서 자원 정책을 삭제할 수도 있습니다. 아이콘을 클릭하면 삭제 확인"
-" 다이얼로그가 나타나게 됩니다. OKAY 버튼을 눌러서 삭제할 수 있습니다."
+" Control 열의 휴지통 아이콘을 눌러서 자원 정책을 삭제할 수도 있습니다. 아이콘을 클릭하면 삭제 확인 다이얼로그가 나타나게 "
+"됩니다. OKAY 버튼을 눌러서 삭제할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:285
+#: ../../admin_menu/admin_menu.rst:292
 msgid ""
 "If there's any user including inactive user follows the resource policy "
 "to be deleted, It will throw an error. Please make sure that Before "
 "deleting the task, make sure that no users who have selected that "
 "resource policy remain."
 msgstr ""
-"비활성 사용자를 포함한 어떤 유저가 삭제할 자원 정책을 따르고 있다면, 삭제가 되지 않을 수 있습니다."
-"자원 정책을 삭제하기 위해서는 반드시 해당 자원 정책을 선택한 사용자가 남아 있지 않도록 하십시오."
+"비활성 사용자를 포함한 어떤 유저가 삭제할 자원 정책을 따르고 있다면, 삭제가 되지 않을 수 있습니다.자원 정책을 삭제하기 위해서는"
+" 반드시 해당 자원 정책을 선택한 사용자가 남아 있지 않도록 하십시오."
 
-#: ../../admin_menu/admin_menu.rst:292
+#: ../../admin_menu/admin_menu.rst:299
 msgid ""
 "In each of USERS, CREDENTIALS, RESOURCE POLICIES tabs, there is an icon "
 "(``...``) on the far right side of the tab header. Clicking this reveals "
@@ -502,20 +510,46 @@ msgid ""
 msgstr ""
 "USERS, CREDENTIALS, RESOURCE POLICIES 탭의 우측 끝부분에 ``…`` 모양의 아이콘이 있습니다. 이 "
 "버튼을 클릭하면 export CSV 메뉴가 뜨고, 다시 이 메뉴를 클릭하면 각 탭 자원 별 CSV export 다이얼로그가 뜹니다."
-" 필요한 경우 적당한 파일 이름을 쓰고 EXPORT CSV FILE 버튼을 클릭하면 사용자, 키페어, 자원 정책의 리스트를 CSV"
-" 형태로 다운로드 할 수 있습니다."
+" 필요한 경우 적당한 파일 이름을 쓰고 EXPORT CSV FILE 버튼을 클릭하면 사용자, 키페어, 자원 정책의 리스트를 CSV "
+"형태로 다운로드 할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:304
+#: ../../admin_menu/admin_menu.rst:312
+msgid "Session List Download"
+msgstr "세션 리스트 다운로드"
+
+#: ../../admin_menu/admin_menu.rst:314
+msgid ""
+"There's additional feature in Session page for admin. On the right side "
+"of the OTHERS tab there is a menu marked with ``...``. When you click "
+"this menu, a sub-menu export CSV appears."
+msgstr ""
+"세션 페이지에는 관리자를 위한 추가 기능이 있습니다."
+"OTHERS 탭 우측을 보면 ``…`` 으로 표시된 메뉴가 있습니다. 이 메뉴를 클릭하면 export CSV 라는 하위 메뉴가 "
+"나옵니다."
+
+#: ../../admin_menu/admin_menu.rst:320
+msgid ""
+"If you click this menu, you can download the information of the "
+"calculation sessions created so far in CSV format. After the following "
+"dialog opens, enter an appropriate file name (if necessary) and click the"
+" EXPORT button. Please note that file name can only contain up to 255 "
+"characters. A CSV file will be downloaded soon."
+msgstr ""
+"이 메뉴를 클릭하면 현재까지 생성된 연산 세션의 정보를 CSV 형태로 다운로드 받을 수 있습니다. 다음과 같은 다이얼로그가 열린 "
+"후, (필요한 경우) 적당한 파일 이름을 입력하고 EXPORT 버튼을 클릭하십시오. 파일 이름은 최대 255자까지만 입력 가능한 "
+"점에 유의하십시오. 곧 CSV 파일 하나가 다운로드 될 것입니다."
+
+#: ../../admin_menu/admin_menu.rst:331
 msgid "Server management"
 msgstr "서버 관리"
 
-#: ../../admin_menu/admin_menu.rst:306
+#: ../../admin_menu/admin_menu.rst:333
 msgid ""
 "Go to the Maintenance page and you will see some buttons to manage the "
 "server."
 msgstr "Maintenance 페이지로 이동하면 서버를 관리할 수 있는 몇 가지 버튼을 볼 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:308
+#: ../../admin_menu/admin_menu.rst:335
 msgid ""
 "RECALCULATE USAGE: Occasionally, due to unstable network connections or "
 "container management problem of Docker daemon, there may be a case where "
@@ -527,13 +561,21 @@ msgstr ""
 "Backend.AI에서 출력되는 자원 점유량이 일치하지 않는 경우가 있을 수 있습니다. 그 때 RECALCULATE USAGE "
 "버튼을 클릭하면 자원 점유량을 수동 보정할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:320
+#: ../../admin_menu/admin_menu.rst:347
 msgid "Information"
 msgstr "Information"
 
-#: ../../admin_menu/admin_menu.rst:322
+#: ../../admin_menu/admin_menu.rst:349
 msgid ""
 "Information page display various details about Backend.AI service, "
 "license information."
 msgstr "Information 페이지는 Backend.AI 서비스, 라이선스 정보 등과 같은 몇 가지 시스템 정보를 출력합니다."
+
+#~ msgid ""
+#~ "On the right side of the OTHERS"
+#~ " tab there is a menu marked "
+#~ "with ``...``. When you click this "
+#~ "menu, a sub-menu export CSV "
+#~ "appears."
+#~ msgstr ""
 
