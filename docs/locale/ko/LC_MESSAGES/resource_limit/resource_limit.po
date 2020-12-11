@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console Essential Guide Enterprise R2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-20 18:14+0900\n"
+"POT-Creation-Date: 2020-11-16 19:17+0900\n"
 "PO-Revision-Date: 2020-11-16 19:18+0900\n"
 "Last-Translator: \n"
 "Language: ko_KR\n"
@@ -107,96 +107,20 @@ msgstr ""
 msgid ""
 "Now log back into the administrator account and go to the Resource "
 "Policies tab. Click the gear button in the Control column of the default "
-"policy to enter the policy editing screen. In Update Resource Policy "
-"dialog, every option is changeable except Policy Name which is the "
-"primary key for distinguishing the resource policy from list. Each "
-"numeric value is regarded as maximum value for creating/destroying a "
-"session and also for the number of vfolders. Uncheck the Unlimited "
-"checkbox at the bottom of CPU, RAM, fGPU, and set the resource limits to "
-"the desired values. Set the amount of constrained resource to be smaller "
-"than the total amount of hardware. Here, we set it to 2, 4 and 1 "
+"policy to enter the policy editing screen. Uncheck the Unlimited checkbox"
+" at the bottom of CPU, RAM, fGPU, and set the resource limits to the "
+"desired values. Set the amount of constrained resource to be smaller than"
+" the total amount of hardware. Here, we set it to 2, 4 and 1 "
 "respectively. Click the UPDATE button to update the resource policy."
 msgstr ""
 
-#: ../../resource_limit/resource_limit.rst:67
-msgid ""
-"About details in each option in resource policy dialog, see the "
-"description below."
-msgstr ""
-
-#: ../../resource_limit/resource_limit.rst:73
-msgid "Resource Policy"
-msgstr ""
-
-#: ../../resource_limit/resource_limit.rst:70
-msgid ""
-"CPU : The fundamental resource for all kind calculation. Mostly useful at"
-" handling single and complex calculations sequentially."
-msgstr ""
-
-#: ../../resource_limit/resource_limit.rst:71
-msgid ""
-"RAM : It loads codes to execute the calculation for Machine learning. The"
-" bigger the size becomes, less overhead occurs."
-msgstr ""
-
-#: ../../resource_limit/resource_limit.rst:72
-msgid ""
-"GPU : It does similar job as the CPU does. The difference between CPU and"
-" GPU is that GPU is much faster in processing multiple but simpler "
-"calculations parallel meanwhile CPU is for more general calculations."
-msgstr ""
-
-#: ../../resource_limit/resource_limit.rst:73
-msgid ""
-"fGPU : Fractional GPU (fGPU) is literally split a single GPU to multiple "
-"partitions in order to use GPU economically. Notice that the minimum "
-"amount of fGPU required is differed by each image."
-msgstr ""
-
-#: ../../resource_limit/resource_limit.rst:78
-msgid "Sessions"
-msgstr ""
-
-#: ../../resource_limit/resource_limit.rst:76
-msgid "Container Per Session : The independent unit for calculating."
-msgstr ""
-
-#: ../../resource_limit/resource_limit.rst:77
-msgid ""
-"Idle timeout (sec.) : Configurable period of time during which the user "
-"can be inactive without any impact on their session."
-msgstr ""
-
-#: ../../resource_limit/resource_limit.rst:78
-msgid "Concurrent Jobs : It is about the number of jobs can be done in parallel."
-msgstr ""
-
-#: ../../resource_limit/resource_limit.rst:83
-msgid "Folders"
-msgstr ""
-
-#: ../../resource_limit/resource_limit.rst:81
-msgid ""
-"Allowed hosts : Allowed hosts for accessing vfolders created under this "
-"resource policy."
-msgstr ""
-
-#: ../../resource_limit/resource_limit.rst:82
-msgid "Capacity(GB) : the maximum size(GB) for folder that can be afforded."
-msgstr ""
-
-#: ../../resource_limit/resource_limit.rst:83
-msgid "Max. # : the maximum number of vfolders that can be created/invited."
-msgstr ""
-
-#: ../../resource_limit/resource_limit.rst:85
+#: ../../resource_limit/resource_limit.rst:64
 msgid ""
 "In the resource policy list, check that the Resources value of the "
 "default policy has been updated."
 msgstr "자원 정책 리스트에서 default 정책의 Resources 값이 업데이트 된 것을 확인합니다."
 
-#: ../../resource_limit/resource_limit.rst:92
+#: ../../resource_limit/resource_limit.rst:71
 msgid ""
 "Once again, log in with your user account. Go to the Session page. You "
 "can see that the resource constraint value set earlier is reflected in "
@@ -205,7 +129,7 @@ msgstr ""
 "다시 한 번 사용자 계정으로 로그인 합니다. Session 페이지로 이동합니다. 상단의 자원 지시자(Resource "
 "Indicator)에 좀전에 설정한 자원 제약 값이 반영된 것을 볼 수 있습니다."
 
-#: ../../resource_limit/resource_limit.rst:99
+#: ../../resource_limit/resource_limit.rst:78
 msgid ""
 "Click START to open the calculation session creation dialog and pull the "
 "CPU, RAM, and GPU sliders all the way to the right, and you can see that "
@@ -215,7 +139,7 @@ msgstr ""
 "START를 클릭하여 연산 세션 생성 다이얼로그를 열고 CPU, RAM, GPU 슬라이더를 우측 끝까지 당겨보면 자원 제약을 건 "
 "후의 값 이상으로 움직일 수 없음을 알 수 있습니다."
 
-#: ../../resource_limit/resource_limit.rst:107
+#: ../../resource_limit/resource_limit.rst:86
 msgid ""
 "In this way, it was confirmed that the development user can control the "
 "maximum amount of resources that can be allocated when creating a compute"
@@ -224,7 +148,7 @@ msgstr ""
 "이렇게 사용자의 키페어 기반으로 개발 사용자가 연산 세션 생성 시 할당할 수 있는 최대 자원량을 조절할 수 있음을 확인 할 수 "
 "있었습니다."
 
-#: ../../resource_limit/resource_limit.rst:112
+#: ../../resource_limit/resource_limit.rst:91
 msgid ""
 "Occasionally, the amount of resources displayed on the resource indicator"
 " may be out of sync due to a network connection problem or an error in "
@@ -260,37 +184,22 @@ msgstr ""
 #~ "and 1 respectively. Click the UPDATE "
 #~ "button to update the resource policy."
 #~ msgstr ""
-#~ "이제 다시 관리자 계정으로 접속한 후 Resource "
-#~ "Policies(자원 정책) 탭으로 이동합니다. default 정책의"
-#~ " Control 열에 있는 톱니바퀴 버튼을 클릭하여 정책"
-#~ " 편집 화면으로 들어옵니다. 자원 정책 편집 화면에서"
-#~ " 자원 정책 명을 제외한 모든 설정은 수정이 "
-#~ "가능합니다. 이는 자원 정책 명이 자원 정책 "
-#~ "리스트으로부터 각 자원 정책을 구분하는 고유 키이기 "
-#~ "때문입니다. 수치로 입력할 수 있는 모든 부분들은 "
-#~ "세션 생성/삭제 또는 vfolder의 갯수에 사용되는 최대"
-#~ " 값을 나타냅니다. CPU, RAM, fGPU 하단의 "
-#~ "Unlimited 체크박스를 해제하고 원하는 값으로 자원 "
-#~ "제약을 설정해봅니다. 이 때, 제약하는 자원의 양이 "
-#~ "하드웨어의 총 자원량보다 작게 설정을 합니다. 여기서는 "
-#~ "각각 2, 4, 1로 설정을 했습니다. UPDATE "
-#~ "버튼을 클릭하여 자원 정책을 수정합니다."
 
 #~ msgid ""
 #~ "About details in each option in "
 #~ "resource policy dialog, see the "
 #~ "description below."
-#~ msgstr "자원 정책 창의 각 옵션에 대한 자세한 내용은 아래 설명을 참조하시기 바랍니다."
+#~ msgstr ""
 
 #~ msgid "Resource Policy"
-#~ msgstr "자원 정책"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "CPU : The fundamental resource for "
 #~ "all kind calculation. Mostly useful at"
 #~ " handling single and complex calculations"
 #~ " sequentially."
-#~ msgstr "CPU : 모든 계산을 위한 기본이 되는 자원입니다. 대개 하나의 복잡한 계산을 순서대로 진행하는데 유용합니다."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "RAM : It loads codes to execute"
@@ -298,9 +207,6 @@ msgstr ""
 #~ "The bigger the size becomes, less "
 #~ "overhead occurs."
 #~ msgstr ""
-#~ "RAM : 머신러닝을 위한 계산을 실행하는 코드를 "
-#~ "가져오는데 사용됩니다. 사이즈가 클 수록 계산 외의 "
-#~ "작업에 사용되는 시간이 줄어듭니다."
 
 #~ msgid ""
 #~ "GPU : It does similar job as "
@@ -310,10 +216,6 @@ msgstr ""
 #~ " simpler calculations parallel meanwhile "
 #~ "CPU is for more general calculations."
 #~ msgstr ""
-#~ "GPU : CPU가 하는 작업과 비슷한 일을 "
-#~ "합니다. CPU와 GPU의 차이는 GPU는 단순한 여러개의"
-#~ " 계산을 병렬로 처리할 때 훨씬 빠르나, CPU는 "
-#~ "일반적인 계산을 하는 것에 특화되어 있는 것입니다."
 
 #~ msgid ""
 #~ "fGPU : Fractional GPU (fGPU) is "
@@ -323,45 +225,40 @@ msgstr ""
 #~ "minimum amount of fGPU required is "
 #~ "differed by each image."
 #~ msgstr ""
-#~ "fGPU : Fractional GPU (fGPU) 는 말"
-#~ " 그대로 하나의 GPU를 여러 조각으로 나누는 것인데,"
-#~ " 이는 GPU를 효율적으로 사용하기 위함입니다. 각 "
-#~ "이미지 별로 요구되는 fGPU 최소 양이 다른 것에"
-#~ " 주의하십시오."
 
 #~ msgid "Sessions"
-#~ msgstr "세션"
+#~ msgstr ""
 
 #~ msgid "Container Per Session : The independent unit for calculating."
-#~ msgstr "세션 당 컨테이너 갯수 : 계산을 위한 독립적인 단위를 뜻합니다."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "Idle timeout (sec.) : Configurable "
 #~ "period of time during which the "
 #~ "user can be inactive without any "
 #~ "impact on their session."
-#~ msgstr "유휴 제한 시간 (초) : 사용자가 세션에 영향을 주지 않고 비활성 상태일 수 있는 최대 시간입니다."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "Concurrent Jobs : It is about the"
 #~ " number of jobs can be done in"
 #~ " parallel."
-#~ msgstr "동시 작업 가능 갯수 : 병렬적으로 처리될 수 있는 작업의 최대 갯수를 말합니다."
+#~ msgstr ""
 
 #~ msgid "Folders"
-#~ msgstr "폴더"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "Allowed hosts : Allowed hosts for "
 #~ "accessing vfolders created under this "
 #~ "resource policy."
-#~ msgstr "허용된 호스트 : 자원 정책하에서 생성된 vfolder들에 대해 접근이 허가된 호스트를 말합니다."
+#~ msgstr ""
 
 #~ msgid "Capacity(GB) : the maximum size(GB) for folder that can be afforded."
-#~ msgstr "허용량(GB): 폴더가 가질 수 있는 최대 크기(GB)를 말합니다."
+#~ msgstr ""
 
 #~ msgid "Max. # : the maximum number of vfolders that can be created/invited."
-#~ msgstr "최대 (폴더) 갯수 : 생성 또는 공유 초대 받을 수 있는 vfolder의 최대 갯수입니다."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "Now log back into the administrator "

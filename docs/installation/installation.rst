@@ -45,10 +45,15 @@ After initial installation, we will provide following materials/services:
 * Installation report
 * First-time user/admin on-site tutorial (3-5 hours)
 
-Product maintenance and support information: For on-premises customers,
-maintenance periods and scopes vary greatly depending on the terms of the
-contract, so it is difficult to describe them all. Maintenance and support
-information must be specified in the contract at the time of the contract.
+Product maintenance and support information: The commercial contract includes a
+monthly/annual subscription fee for the Enterprise version by default. Initial
+user/administrator training (1-2 times) and wired/wireless customer support
+services are provided for about 2 weeks after initial installation, minor
+release updater support and customer support services through online channels
+are provided for 3-6 months. Maintenance and support services provided
+afterwards may have different details depending on the terms of the contract.
+Users of the open source version can also purchase an installation and support
+plan separately.
 
 Simple Backend.AI Server Management Guide
 -----------------------------------------
@@ -180,6 +185,15 @@ Specific options may vary depending on the configuration.
    docker ps | grep halfstack-db
    # Connect to the postgresql container via bash
    docker exec -it <postgresql-container-id> bash
+   # Disconnect all connection, for safety
+   psql -U postgres
+   postgres=# SELECT pg_terminate_backend(pg_stat_activity.pid)
+   postgres-# FROM pg_stat_activity
+   postgres-# WHERE pg_stat_activity.datname = 'backend'
+   postgres-# AND pid <> pg_backend_pid();
+   # Ensure previous data be cleaned (to prevent overwrite)
+   postgres=# DROP DATABASE backend;
+   postgres=# \q
    # Restore from data
    psql -U postgres < backup_db_data.sql
 

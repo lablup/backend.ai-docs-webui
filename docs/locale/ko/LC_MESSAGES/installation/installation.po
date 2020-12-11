@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-09 14:58+0900\n"
-"PO-Revision-Date: 2020-12-09 14:59+0900\n"
+"POT-Creation-Date: 2020-12-11 22:37+0900\n"
+"PO-Revision-Date: 2020-12-11 22:37+0900\n"
 "Last-Translator: \n"
 "Language: ko_KR\n"
 "Language-Team: \n"
@@ -157,20 +157,28 @@ msgstr "사용자/관리자 초기 방문 교육 (3-5 시간)"
 
 #: ../../installation/installation.rst:48
 msgid ""
-"Product maintenance and support information: For on-premises customers, "
-"maintenance periods and scopes vary greatly depending on the terms of the "
-"contract, so it is difficult to describe them all. Maintenance and support "
-"information must be specified in the contract at the time of the contract."
+"Product maintenance and support information: The commercial contract includes a "
+"monthly/annual subscription fee for the Enterprise version by default. Initial "
+"user/administrator training (1-2 times) and wired/wireless customer support "
+"services are provided for about 2 weeks after initial installation, minor "
+"release updater support and customer support services through online channels "
+"are provided for 3-6 months. Maintenance and support services provided "
+"afterwards may have different details depending on the terms of the contract. "
+"Users of the open source version can also purchase an installation and support "
+"plan separately."
 msgstr ""
-"제품의 유지보수 및 지원 정보: 온프레미스 고객의 경우 계약 조건에 따라 유지보수 기"
-"간 및 범위가 매우 다양하므로, 일률적으로 기술하기는 어려움. 계약 시점에 계약서에 "
-"유지보수 및 지원 정보를 명시하도록 함."
+"제품의 유지보수 및 지원 정보: 상용 계약에는 기본적으로 엔터프라이즈 버전의 월간/"
+"연간 구독 사용료가 포함됩니다. 최초 설치 후 약 2주 간 초기 사용자/관리자 교육(1-2"
+"회) 및 유무선 상의 고객 지원 서비스가 제공되며, 3-6개월 간 마이너 릴리즈 업데이"
+"터 지원 및 온라인 채널을 통한 고객 지원 서비스가 제공됩니다. 이후 제공되는 유지보"
+"수 및 지원 서비스는 계약 조건에 따라 세부 내용이 다를 수 있습니다. 오픈소스 무료 "
+"버전 사용자의 경우에도 유지보수 및 지원 플랜을 별도로 구입할 수 있습니다."
 
-#: ../../installation/installation.rst:54
+#: ../../installation/installation.rst:59
 msgid "Simple Backend.AI Server Management Guide"
 msgstr "간단한 Backend.AI 서버 관리 가이드"
 
-#: ../../installation/installation.rst:56
+#: ../../installation/installation.rst:61
 msgid ""
 "Backend.AI server daemons are installed by Lablup support team. If there are "
 "problems on the daemons or services, please contact with contact@lalbup.com."
@@ -178,7 +186,7 @@ msgstr ""
 "Backend.AI 서버 데몬은 래블업의 지원팀이 설치하게 됩니다. 만약 데몬이나 서비스에 "
 "문제가 발생했을 시에는 contact@lablup.com 으로 연락하십시오."
 
-#: ../../installation/installation.rst:59
+#: ../../installation/installation.rst:64
 msgid ""
 "Backend.AI is composed of many modules and daemons. Here, we briefly describe "
 "each services and provide basic maintenance guide in case of specific service "
@@ -190,11 +198,11 @@ msgstr ""
 "를 제공합니다. 관리 명령은 일반적으로 사용 가능하지만, 호스트 별 설치 상황에 따"
 "라 구체적인 사항은 달라질 수 있습니다."
 
-#: ../../installation/installation.rst:65
+#: ../../installation/installation.rst:70
 msgid "Manager"
 msgstr "Manager"
 
-#: ../../installation/installation.rst:67
+#: ../../installation/installation.rst:72
 msgid ""
 "Gateway server that accepts and handles every user requests. If the request is "
 "related with the compute session (container), Manager will delegate the request "
@@ -204,30 +212,30 @@ msgstr ""
 "이 연산 세션(컨테이너)과 관련 있다면, 해당 세션을 관리하는 Agent 또는 해당 컨테이"
 "너로 작업을 위임합니다."
 
-#: ../../installation/installation.rst:85
+#: ../../installation/installation.rst:90
 msgid "Agent"
 msgstr "Agent"
 
-#: ../../installation/installation.rst:87
+#: ../../installation/installation.rst:92
 msgid "Worker node. Manage the lifecycle of compute sessions (containers)."
 msgstr "연산 워커 노드입니다. 연산 세션(컨테이너)의 수명주기를 관리합니다."
 
-#: ../../installation/installation.rst:103
+#: ../../installation/installation.rst:108
 msgid "Console-Server"
 msgstr "Console-Server"
 
-#: ../../installation/installation.rst:105
+#: ../../installation/installation.rst:110
 msgid ""
 "Serves user web GUI Console and provides authentication by email and password."
 msgstr ""
 "사용자 웹 GUI 환경을 제공하고, 이메일/비밀번호 기반의 사용자 인증 또한 지원합니"
 "다."
 
-#: ../../installation/installation.rst:121
+#: ../../installation/installation.rst:126
 msgid "WSProxy"
 msgstr "WSProxy"
 
-#: ../../installation/installation.rst:123
+#: ../../installation/installation.rst:128
 msgid ""
 "Proxies the connection between user-created web apps (such as web Terminal and "
 "Jupyter Notebook) and Manager, which is then relayed to a specific compute "
@@ -236,15 +244,15 @@ msgstr ""
 "사용자가 띄운 웹기반 앱(터미널, Jupyter Notebook 등)과 매니저 사이의 통신을 중계"
 "하는 서비스입니다."
 
-#: ../../installation/installation.rst:142
+#: ../../installation/installation.rst:147
 msgid "PostgreSQL DB"
 msgstr "PostgreSQL DB"
 
-#: ../../installation/installation.rst:144
+#: ../../installation/installation.rst:149
 msgid "Database for Manager."
 msgstr "Manager가 사용하는 데이터베이스입니다."
 
-#: ../../installation/installation.rst:160
+#: ../../installation/installation.rst:165
 msgid ""
 "To back up the DB data, you can use the following command from the DB host. The "
 "specific command may vary depending on the configuration."
@@ -252,7 +260,7 @@ msgstr ""
 "DB를 백업하기 위해서는 다음과 같은 명령을 사용할 수 있습니다. 구체적인 명령은 설"
 "치 환경에 따라 다양할 수 있습니다."
 
-#: ../../installation/installation.rst:174
+#: ../../installation/installation.rst:179
 msgid ""
 "To restore the from the backup data, you can execute the following command. "
 "Specific options may vary depending on the configuration."
@@ -260,11 +268,11 @@ msgstr ""
 "백업 데이터를 통해 DB를 복원하려면 다음과 같은 명령을 실행할 수 있습니다. 구체적"
 "인 옵션을 설치 환경에 따라 다양할 수 있습니다."
 
-#: ../../installation/installation.rst:187
+#: ../../installation/installation.rst:201
 msgid "Redis"
 msgstr "Redis"
 
-#: ../../installation/installation.rst:189
+#: ../../installation/installation.rst:203
 msgid ""
 "Cache server which is used to collect per-session and per-agent usage statistics "
 "and relays heartbeat signal from Agent to Manager. It also keeps user's "
@@ -273,7 +281,7 @@ msgstr ""
 "캐시 서비스로, Agent와 연산 세션의 사용량 정보를 수집하고, Agent에서 Manager로 가"
 "는 heartbeat 신호를 중계합니다. 사용자의 로그인 인증 정보를 보관하기도 합니다."
 
-#: ../../installation/installation.rst:207
+#: ../../installation/installation.rst:221
 msgid ""
 "Usually, Redis data do not need backup since it contains temporary cached data "
 "only, such user's login session information, per-container live stat, and etc."
@@ -282,15 +290,15 @@ msgstr ""
 "컨테이너 별 실시간 사용량 등과 같은 일시적으로만 존재하면 되는 정보를 저장하고 있"
 "기 때문입니다."
 
-#: ../../installation/installation.rst:211
+#: ../../installation/installation.rst:225
 msgid "Etcd"
 msgstr "Etcd"
 
-#: ../../installation/installation.rst:213
+#: ../../installation/installation.rst:227
 msgid "Config server, which contains Backend.AI system-wide configuration."
 msgstr "설정 서버로, Backend.AI의 전역 설정값을 보관하고 있습니다."
 
-#: ../../installation/installation.rst:229
+#: ../../installation/installation.rst:243
 msgid ""
 "To back up the Etcd config data used by the Manager, go to the folder where the "
 "Manager is installed and use the following command."
@@ -298,7 +306,7 @@ msgstr ""
 "Manager에서 사용하는 Etcd 설정 데이터를 백업하려면 Manager가 설치된 폴더로 이동"
 "한 후 다음과 같은 명령을 사용하면 됩니다."
 
-#: ../../installation/installation.rst:237
+#: ../../installation/installation.rst:251
 msgid ""
 "To restore Etcd settings from the backup data, you can run a command like this."
 msgstr ""
@@ -323,3 +331,13 @@ msgstr ""
 
 #~ msgid "Daemon information"
 #~ msgstr "데몬 정보"
+
+#~ msgid ""
+#~ "Product maintenance and support information: For on-premises customers, "
+#~ "maintenance periods and scopes vary greatly depending on the terms of the "
+#~ "contract, so it is difficult to describe them all. Maintenance and support "
+#~ "information must be specified in the contract at the time of the contract."
+#~ msgstr ""
+#~ "제품의 유지보수 및 지원 정보: 온프레미스 고객의 경우 계약 조건에 따라 유지보"
+#~ "수 기간 및 범위가 매우 다양하므로, 일률적으로 기술하기는 어려움. 계약 시점에 "
+#~ "계약서에 유지보수 및 지원 정보를 명시하도록 함."
