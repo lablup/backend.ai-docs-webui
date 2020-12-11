@@ -106,8 +106,3 @@ If another user has shared their storage folder to you, it will be displayed
 here. If you accept the share request, you can view and access the shared folder
 in the Data & Storage folder. The access rights are determined by the shared
 user. Of course, you can also decline the sharing requests.
-
-.. image:: dashboard.png
-   :alt: Dashboard panels
-   :width: 400
-   :align: center

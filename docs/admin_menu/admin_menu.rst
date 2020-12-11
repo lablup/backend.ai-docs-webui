@@ -272,6 +272,21 @@ In this way, it was confirmed that the development user can control the maximum
 amount of resources that can be allocated when creating a compute session
 based on the user's key pair.
 
+You can also delete each of resource keypairs by clicking trash can icon
+in the Control panel. When you click the icon, the confirmation dialog will appears.
+click OKAY button to delete.
+
+.. image:: resource_policy_delete_dialog.png
+   :width: 350
+   :align: center
+
+.. note::
+   
+   If there's any user including inactive user follows the resource policy to be deleted,
+   It will throw an error. Please make sure that Before deleting the task, make sure that
+   no users who have selected that resource policy remain.
+
+
 .. note::
 
    In each of USERS, CREDENTIALS, RESOURCE POLICIES tabs, there is an icon

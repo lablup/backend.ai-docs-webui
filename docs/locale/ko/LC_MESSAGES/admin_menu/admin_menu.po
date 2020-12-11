@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console Essential Guide Enterprise R2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-11 01:58+0900\n"
+"POT-Creation-Date: 2020-12-11 14:18+0900\n"
 "PO-Revision-Date: 2020-12-08 13:07+0900\n"
 "Last-Translator: \n"
 "Language: ko\n"
@@ -284,7 +284,7 @@ msgid ""
 "left. If you look at the Resource Policy, you can also see that all "
 "resources can be used indefinitely (to the extent the hardware allows)."
 msgstr ""
-"현재 이 가이드에서 사용 중인 사용자 계정은 default 리소스 정책의 제한을 받고 있습니다. 좌측의 Credentials 탭에서"
+"현재 이 가이드에서 사용 중인 사용자 계정은 default 자원 정책의 제한을 받고 있습니다. 좌측의 Credentials 탭에서"
 " 확인할 수 있습니다. Resource Policy를 보면 역시 모든 자원을 (하드웨어가 허락하는 한도 내에서) 무한대로 활용할 수"
 " 있음을 확인할 수 있습니다."
 
@@ -327,7 +327,7 @@ msgstr ""
 "가능합니다. 이는 자원 정책 명이 자원 정책 리스트로 부터 각 자원 정책을 구분하는 고유 키이기 때문입니다. 수치로 입력할 수 있는"
 " 모든 부분들은 세션 생성/삭제 또는 vfolder의 갯수에 사용되는 최대 값을 나타냅니다. CPU, RAM, fGPU 하단의 "
 "Unlimited 체크박스를 해제하고 원하는 값으로 자원 제약을 설정해봅니다. 이 때,제약하는 자원의 양이 하드웨어의 총 자원량 "
-"보다 작게 설정합니다. 여기서는 각각 2,4,1 로 설정을 했습니다. UPDATE 버튼을 클릭하여 리소스 정책을 수정합니다."
+"보다 작게 설정합니다. 여기서는 각각 2,4,1 로 설정을 했습니다. UPDATE 버튼을 클릭하여 자원 정책을 수정합니다."
 
 #: ../../admin_menu/admin_menu.rst:213
 msgid ""
@@ -405,7 +405,8 @@ msgid ""
 "simultaneously. (max value: 100)"
 msgstr ""
 "Concurrent Jobs : 키페어를 통해 동시에 생성할 수 있는 최대 연산 세션의 개수입니다. 예를 들어, 이 값이 3으로 "
-"지정되어 있을 경우, 이 정책에 영향을 받는 사용자는 동시에 3개를 넘는 연산 세션을 생성할 수 없습니다. (최대 입력 값: 100)"
+"지정되어 있을 경우, 이 정책에 영향을 받는 사용자는 동시에 3개를 넘는 연산 세션을 생성할 수 없습니다. (최대 입력 값: "
+"100)"
 
 #: ../../admin_menu/admin_menu.rst:247
 msgid "Folders"
@@ -441,7 +442,7 @@ msgstr "Max. #: 생성 또는 공유 초대 받을 수 있는 저장 폴더의 �
 msgid ""
 "In the resource policy list, check that the Resources value of the "
 "default policy has been updated."
-msgstr "리소스 정책 리스트에서 default 정책의 Resources 값이 업데이트 된 것을 확인합니다."
+msgstr "자원 정책 리스트에서 default 정책의 Resources 값이 업데이트 된 것을 확인합니다."
 
 #: ../../admin_menu/admin_menu.rst:256
 msgid ""
@@ -471,7 +472,26 @@ msgstr ""
 "이렇게 사용자의 키페어 기반으로 개발 사용자가 연산 세션 생성시 할당할 수 있는 최대 자원량을 조절할 수 있음을 확인 할 수 "
 "있었습니다."
 
-#: ../../admin_menu/admin_menu.rst:277
+#: ../../admin_menu/admin_menu.rst:275
+msgid ""
+"You can also delete each of resource keypairs by clicking trash can icon "
+"in the Control panel. When you click the icon, the confirmation dialog "
+"will appears. click OKAY button to delete."
+msgstr ""
+" Control 열의 휴지통 아이콘을 눌러서 자원 정책을 삭제할 수도 있습니다. 아이콘을 클릭하면 삭제 확인"
+" 다이얼로그가 나타나게 됩니다. OKAY 버튼을 눌러서 삭제할 수 있습니다."
+
+#: ../../admin_menu/admin_menu.rst:285
+msgid ""
+"If there's any user including inactive user follows the resource policy "
+"to be deleted, It will throw an error. Please make sure that Before "
+"deleting the task, make sure that no users who have selected that "
+"resource policy remain."
+msgstr ""
+"비활성 사용자를 포함한 어떤 유저가 삭제할 자원 정책을 따르고 있다면, 삭제가 되지 않을 수 있습니다."
+"자원 정책을 삭제하기 위해서는 반드시 해당 자원 정책을 선택한 사용자가 남아 있지 않도록 하십시오."
+
+#: ../../admin_menu/admin_menu.rst:292
 msgid ""
 "In each of USERS, CREDENTIALS, RESOURCE POLICIES tabs, there is an icon "
 "(``...``) on the far right side of the tab header. Clicking this reveals "
@@ -482,20 +502,20 @@ msgid ""
 msgstr ""
 "USERS, CREDENTIALS, RESOURCE POLICIES 탭의 우측 끝부분에 ``…`` 모양의 아이콘이 있습니다. 이 "
 "버튼을 클릭하면 export CSV 메뉴가 뜨고, 다시 이 메뉴를 클릭하면 각 탭 자원 별 CSV export 다이얼로그가 뜹니다."
-" 필요한 경우 적당한 파일 이름을 쓰고 EXPORT CSV FILE 버튼을 클릭하면 사용자, 키페어, 리소스 정책의 리스트를 CSV"
+" 필요한 경우 적당한 파일 이름을 쓰고 EXPORT CSV FILE 버튼을 클릭하면 사용자, 키페어, 자원 정책의 리스트를 CSV"
 " 형태로 다운로드 할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:289
+#: ../../admin_menu/admin_menu.rst:304
 msgid "Server management"
 msgstr "서버 관리"
 
-#: ../../admin_menu/admin_menu.rst:291
+#: ../../admin_menu/admin_menu.rst:306
 msgid ""
 "Go to the Maintenance page and you will see some buttons to manage the "
 "server."
 msgstr "Maintenance 페이지로 이동하면 서버를 관리할 수 있는 몇 가지 버튼을 볼 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:293
+#: ../../admin_menu/admin_menu.rst:308
 msgid ""
 "RECALCULATE USAGE: Occasionally, due to unstable network connections or "
 "container management problem of Docker daemon, there may be a case where "
@@ -507,12 +527,13 @@ msgstr ""
 "Backend.AI에서 출력되는 자원 점유량이 일치하지 않는 경우가 있을 수 있습니다. 그 때 RECALCULATE USAGE "
 "버튼을 클릭하면 자원 점유량을 수동 보정할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:305
+#: ../../admin_menu/admin_menu.rst:320
 msgid "Information"
 msgstr "Information"
 
-#: ../../admin_menu/admin_menu.rst:307
+#: ../../admin_menu/admin_menu.rst:322
 msgid ""
 "Information page display various details about Backend.AI service, "
 "license information."
 msgstr "Information 페이지는 Backend.AI 서비스, 라이선스 정보 등과 같은 몇 가지 시스템 정보를 출력합니다."
+
