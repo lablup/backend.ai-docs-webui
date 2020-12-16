@@ -15,20 +15,19 @@ API Client libraries and auxiliary components for accessing Backend.AI server
 (hereinafter "Backend.AI Client") are distributed under the MIT License. Even if
 LGPL complies, commercial contracts with Lablup Co., Ltd. ("Lablup") are
 required depending on the conditions when performing profit activities using the
-Backend.AI server. Several additional plug-ins and management Hubs targeting
+Backend.AI server. Several additional plug-ins and management Hubs that apply to
 Backend.AI enterprise solutions are not open source, but commercial software.
 
 **Term Definition**
 
-- Hardware: Includes virtual machine and container environments where users have
-  the right to run and software on their own or leased physical computers.
+- Hardware: Includes physical computers or virtual machine and container environments that users own or lease and have rights to run software. 
 - Organization: Individuals, corporations, organizations, institutions
   (including non-profit and commerical organizations; however, subsidiaries that
   are separate corporations are not included)
 
 LGPL must be followed when users use and change Backend.AI Server (Manager /
 Agent / Common) or develop and distribute software that uses it. Below is an
-example of when there is no obligation under the LGPL at this time:
+example of when there is no obligation under the LGPL:
 
 #. In case of distributing software which imports it as a module (eg
    Python import) without changing the Backend.AI server.
