@@ -10,7 +10,7 @@ may refresh the Console by following methods.
 - Web-based Console: Refresh the browser page (use the shortcut provided by
   browsers such as Ctrl-R). Since the browser's cache may cause troubles
   sometimes, it is recommended to refresh the page bypassing the cache
-  (such as Shift-Ctrl-R, but the keys may different on each browser).
+  (such as Shift-Ctrl-R, but the keys may differ in each browser).
 - Console App: Press Ctrl-R shortcut to refresh the app.
 
 
@@ -25,22 +25,24 @@ you are not using a compute session, you should not quit the Console App while
 using SFTP. If you need to refresh the page, we recommend using the Ctrl-R
 shortcut.
 
-Also, if the Console App is closed and restarted, the SFTP service is not
+If the Console App is closed and restarted, the SFTP service is not
 automatically initiated for the existing compute session. You must explicitly
 start the SSH/SFTP service in the desired container to establish the SFTP
 connection.
 
 
-Inconsistency between allocated and actually using resources
+
+Inconsistency between the resources allocated to the session and the resources used by the session
 ------------------------------------------------------------
 
 .. note::
    This feature is only available for superadmins.
 
-Occasionally, unstable network connection and container management issues by the
-docker daemon may cause incorrect display of allocated resources. If this
+Occasionally, unstable network connection or container management issues by the
+docker daemon may cause mismatch between the resources allocated to the session and dispaly of the resources used by the session. If this
 problem occurs, you can go to the Maintenance page and click the RECALCULATE
 USAGE button to manually correct it.
+
 
 
 Image is not displayed after it is pushed to a docker registry
@@ -49,10 +51,10 @@ Image is not displayed after it is pushed to a docker registry
 .. note::
    This feature is only available for superadmins.
 
-If new image is pushed to one of Backend.AI docker registries, the image
+If a new image is pushed to one of the Backend.AI docker registries, the image
 metadata must be updated in Backend.AI to be used in creating a compute session.
 Metadata update can be performed by clicking the RESCAN IMAGES button on the
-Maintenance page. This will update metadata for every docker registries, if
+Maintenance page. This will update metadata for every docker registry, if
 there are multiple registries.
 
 If you want to update the metadata for a specific docker registry, you can go to
