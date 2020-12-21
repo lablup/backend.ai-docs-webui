@@ -8,6 +8,9 @@ listed in the Users tab. Domain admin can see only the users who belong to the d
 while superadmin can see all users' information. Only
 superadmin can create and deactivate a user.
 
+User ID (email) and Name (username) can be filtered by typing text in the
+search box on each column header.
+
 .. image:: admin_user_page.png
    :alt: User management page
 
@@ -17,8 +20,13 @@ Create and update users
 
 A user can be created by clicking the CREATE USER button. Note that the password
 must be longer or equal to 8 characters and at least 1 alphabet/special
-character/ number should be included.
+character/ number should be included. The maximum length allowed for E-Mail and Username is 64.
 
+.. note::
+
+   If a user with the same email or username already exists, it is not possible to
+   creat user account. Please try other email and username.
+   
 .. image:: create_user_dialog.png
    :width: 500
    :align: center
@@ -39,30 +47,45 @@ user belongs.
    :alt: Detailed information of a user
 
 Click the gear icon in the Controls column to update information of a user who
-already exists. User's name, password, activation state, etc. can be changed.
+already exists. User's name, password, activation state, etc. can be changed. User ID cannot be changed. 
 
 .. image:: user_update_dialog.png
    :width: 350
    :align: center
    :alt: User update dialog
 
+Each of the two items at the bottom of the dialog has the following functions.
 
-Deactivate user account
+* Active user?: Indicates the user's active status. Inactive users cannot log
+  in. You can toggle this option to change the user to active or inactive state.
+  Note that the inactive users are listed in the Inactive tab separately.
+* Require password change?: If the admin has chosen random passwords while
+  creating users in batches, this field can be set to ON to indicate that password change is required. 
+  This is a kind of descriptive flag and has no effect on actual use.
+
+Inactivate user account
 -----------------------
 
 Deleting user accounts is not allowed even for superadmins, to track usage
 statistics per user, metric retention, and accidental account loss. Instead,
-admins can deactivate user accounts to keep users from logging in. Click the
+admins can inactivate user accounts to keep users from logging in. Click the
 trash icon in the Controls column. A dialog asking confirmation appears, and
-you can deactivate the user by clicking the OKAY button.
+you can inactivate the user by clicking the OKAY button.
 
 .. image:: user_deactivate_confirmation.png
    :width: 600
    :align: center
    :alt: Deactivating user account
+ 
+To re-activate users, go to Users - Inactive tab, and edit the target user to
+turn on "Active user?" field.
 
-Deactivated users are not listed in Users tab.
+.. note:: 
 
+   Please note that inactivating the user changes all of credentials to be inactive,
+   but reactivating the user does not reactivate the inactivated credentials, since the user
+   account can have multiple keypairs, which brings it hard to decide which credential 
+   should be reactivated.
 
 
 Manage User's Keypairs
@@ -110,8 +133,12 @@ according to the user's pattern.
 Manage Resource Policy
 ----------------------
 
-Resource policies can be listed and modified in Resource Policies tab on the
-Users page. Resource policies allow you to set maximum allowed resources and/or
+In Backend.AI, admins can set a limit on the total amount of resources available
+for each user and group. Resource limits per group can only be set through the
+enterprise-dedicated administrator GUI Hub, but resource limits per user
+(precisely per user's keypair) can be set in the user GUI console.
+
+Resource policies allow you to set maximum allowed resources and/or
 other compute session related settings per keypair basis. If necessary, multiple
 resource policies can be created, for example, user / research purposes, and
 apply them separately to each keypair.
@@ -121,68 +148,111 @@ apply them separately to each keypair.
    Manager Hub, a UI for superadmin only. In the Console UI, you can only set
    resource policies based on keypairs. Manager Hub is a part of the enterprise
    version.
+   
+In Resource Policies tab on the Users page, the admin can check the list of currently registered resource policies. 
+In the figure below, there are a total of three policies (gardener, STUDENT, default). 
+The infinity (∞) marks for resources such as Cores, Ram, and fGPU in the Resources column means that no
+resource restrictions have been placed for those resources.
 
 .. image:: resource_policy_tab.png
    :alt: Resource policy page
 
-In the example image above, there is one resource policy named ``default``. You
-can change the resource policy by clicking the settings icon in the Control
-column. After changing the settings, click UPDATE to save.
+The user account currently used in this guide is under the default
+resource policy. This can be confirmed in the Credentials tab on the left. In the Resource Policy column, 
+you can also see that all resources can be used to the extent the hardware allows (∞).
+
+.. image:: credentials.png
+
+You can modify resouce policies by clicking the gear button in the Control column of default policy group. 
+In Update Resource Policy dialog, every option is
+changeable except Policy Name, which is the primary key for distinguishing the
+resource policies in the list. Uncheck the Unlimited checkbox at the bottom of CPU, RAM, fGPU, and set the resource limits
+to the desired values. Set the amount of allocated resource to be smaller than
+the total amount of hardware's. Here, CPU, RAM and fGPU are set to 2, 4 and 1, respectively. Click
+the UPDATE button to update the resource policy.
 
 .. image:: update_resource_policy.png
    :width: 400
    :align: center
    :alt: Update resource policy dialog
 
-The meaning of each field is as follows.
+About details of each option in resource policy dialog, see the description below.
 
-- CPU: The maximum number of CPU cores that a keypair can use. For example, if
-  set to 4, keypairs bound to the resource policy cannot assign more than 4
-  cores to the container. Note that the number of cores is limited based on the
-  sum of all containers created by the keypair. If one container allocates three
-  cores, a new container can only allocate one core. In addition, if you check
-  Unlimited, the keypair can allocate resources as much as the server permits.
-  This also applies to other resource settings.
-- RAM: Maximum memory.
-- GPU: The maximum number of physical GPUs that can be allocated. Used only when
-  the GPU provisioning mode of the Backend.AI server is set to "device".
-- fGPU: The maximum number of virtualized GPUs that can be allocated. Used only
-  when the GPU provisioning mode of the Backend.AI server is set to "shares".
-  The unit of fGPU is independent of the number of physical GPU devices, and is
-  determined by the streaming multiprocessor (SM) and GPU memory unit set by the
-  server.
-- Container per session: Maximum number of containers a session can have. This
-  is a setting which will be used to bundle multiple containers and use them as
-  a single session. The ability to bundle multiple containers is under
-  development and is currently not used.
-- Idle timeout: If a running session is not used for the time specified in the
-  idle timeout, the session is automatically garbage collected (terminated). You
-  can set the time interval here. For example, if set to 600, sessions which have not been used
-  for 10 minutes are automatically terminated. If set to 0 or checked
-  Unlimited, garbage collection is not performed for the session created by the
-  keypair.
-- Concurrent Jobs: The maximum number of sessions a user can create
-  concurrently. If set to 5, a keypair using that policy cannot create more
-  than 5 compute sessions.
-- Allowed hosts: Used to control the accessible storage and/or NFS hosts from a
-  session when multiple storage/NFS hosts are available. Even if a NFS is
-  mounted and can be used from Backend.AI, a user will not be able to use that
-  host unless it is specified here. However, the NFS host may be accessible in case
-  the host is configured to be accessible in the domain and/or group level.
-  Domain / group level settings are possible in Manager Hub.
-- Capacity: This is where you set the maximum available storage size. The disk
-  size limit is only available under certain circumstances and is currently not
-  supported. This feature is under active development, and will be supported in
-  the near future.
-- Max. #: The maximum number of storage folders that can be created.
+* Resource Policy
+   * CPU:  Specify the maximum amount of CPU cores. (max value: 512)
+   * RAM: Specify the maximum amount of memory in GB. It would be good practice
+     to set memory twice as large as the maximum value of GPU memory. (max value: 1024)
+   * GPU: Specify the maximum amount of physical GPUs. If fractional GPU is
+     enabled by the server, this setting has no effect. (max value: 64)
+   * fGPU: Fractional GPU (fGPU) is literally split a single GPU to multiple
+     partitions in order to use GPU efficiently. Notice that the minimum amount
+     of fGPU required is differed by each image. If fractional GPU is not
+     enabled by the server, this settings has no effect. (max value: 256)
+
+* Sessions
+   * Container Per Session: The maximum number of containers per session.
+     Currently, this value has no effect since the server only allows one
+     container per compute session. (max value: 100)
+   * Idle timeout (sec.): Configurable period of time during which the user can
+     leave their session untouched. If there is no activity at
+     all on a compute session for idle timeout, the session will be garbage
+     collected and destroyed automatically.(max value: 15552000 (approx. 180 days))
+   * Concurrent Jobs: Maximum number of concurrent compute session per keypair.
+     If this value is set to 3, for example, users bound to this resource policy
+     cannot create more than 3 compute sessions simultaneously. (max value: 100)
+
+* Folders
+   * Allowed hosts: Backend.AI supports many NFS mountpoint. This field limits
+     the accessibility to them. Even if a NFS named "data-1" is mounted on
+     Backend.AI, users cannot access it unless it is allowed by resource policy.
+   * Capacity (GB): the maximum size (GB) a storage folder can contain. This
+     feature is only effective for special type of storages/filesystems such as
+     FlashBlade. (max value: 1024)
+   * Max. #: the maximum number of storage folders that can be created/invited.
+     (max value: 50)
+
+In the resource policy list, check that the Resources value of the default
+policy has been updated.
+
+.. image:: update_check.png
+   :width: 400
+   :align: center
 
 You can create a new resource policy by clicking the CREATE POLICY button. Each
 setting value is the same as described above.
 
 To create a resource policy and associate it with a keypair, go to the
-Credentials tab of the Users page, click the settings button located in the
+Credentials tab of the Users page, click the gear button located in the
 Controls column of the desired keypair, and click the Select Policy field to
 choose it.
+
+You can also delete each of resource keypairs by clicking trash can icon
+in the Control panel. When you click the icon, the confirmation dialog will appears.
+click OKAY button to delete.
+
+.. image:: resource_policy_delete_dialog.png
+   :width: 350
+   :align: center
+
+.. note::
+   
+   If there's any users (including inactive users) following a resource policy to be deleted,
+   deletion may not be done. Before deleting a resource policy, please make sure that
+   no users remain under the resource policy.
+
+
+.. note::
+
+   In each of USERS, CREDENTIALS, RESOURCE POLICIES tabs, there is an icon
+   (``...``) on the right side of the tab header. Clicking this shows
+   export CSV menu, which again brings up a CSV export dialog for each tabs.
+   By giving an appropriate file name, if necessary, and clicking EXPORT CSV FILE
+   button, you can download the list of users, keypairs, and/or resource
+   policies.
+
+    .. image:: export_csv_user.png
+       :width: 400
+       :align: center
 
 
 Manage Images
