@@ -454,6 +454,24 @@ You can deactivate a resource policy by turning off Active Status.
 You can create a new resource policy by clicking the CREATE button.
 
 
+Download session lists 
+---------------------
+
+There's additional feature in Session page for admin. 
+On the right side of the OTHERS tab there is a menu marked with ``...``.
+When you click this menu, a sub-menu export CSV appears.
+
+.. image:: export_csv_menu.png
+
+If you click this menu, you can download the information of the comcpute sessions 
+created so far in CSV format. After the following dialog opens, enter an appropriate 
+file name (if necessary), click the EXPORT button and you will get the CSV file. Please note that a file name can have up to 255 characters.
+
+.. image:: export_session_dialog.png
+   :width: 350
+   :align: center
+
+
 System settings
 ---------------
 
