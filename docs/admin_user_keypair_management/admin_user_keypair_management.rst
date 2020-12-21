@@ -37,7 +37,7 @@ Check if the user is created.
 .. image:: check_if_user_created.png
    :alt: User management page
 
-Click the green button in the Controls column for more detailed user
+Click the green button in the Controls panel for more detailed user
 information. You can also check the domain and group information where the
 user belongs.
 
@@ -46,7 +46,7 @@ user belongs.
    :align: center
    :alt: Detailed information of a user
 
-Click the gear icon in the Controls column to update information of a user who
+Click the gear icon in the Controls panel to update information of a user who
 already exists. User's name, password, activation state, etc. can be changed. User ID cannot be changed. 
 
 .. image:: user_update_dialog.png
@@ -69,7 +69,7 @@ Inactivate user account
 Deleting user accounts is not allowed even for superadmins, to track usage
 statistics per user, metric retention, and accidental account loss. Instead,
 admins can inactivate user accounts to keep users from logging in. Click the
-trash icon in the Controls column. A dialog asking confirmation appears, and
+trash icon in the Controls panel. A dialog asking confirmation appears, and
 you can inactivate the user by clicking the OKAY button.
 
 .. image:: user_deactivate_confirmation.png
@@ -108,7 +108,7 @@ Inactive panel at the bottom.
 .. image:: credential_list_tab.png
    :alt: Credential list page
 
-Like in Users tab, you can use the buttons in the Controls column to view or
+Like in Users tab, you can use the buttons in the Controls panel to view or
 update keypair details. Click the blue trash button to disable that keypair, or
 click the red trash button to completely delete the keypair. However, if you
 have created a compute session using a keypair, you cannot delete it. If you
@@ -129,6 +129,33 @@ according to the user's pattern.
    :align: center
    :alt: Add keypair dialog
 
+Share group storage folders with group members
+-------------------------------------------------
+
+Backend.AI provides storage folders for groups, in addition to user's own storage folder. A group storage folder is a folder belonging to a specific group, not a
+specific user, and can be accessed by all users in that group.
+
+.. note::
+   Group folders can be created only by administrators. Normal users can only
+   access the contents of the group folder created by the administrator. 
+   Depending on the system settings, group folders may not be allowed. 
+
+First, log in with an admin account and create a group folder. After
+moving to the Data & Storage page, click NEW FOLDER to open the folder creation
+dialog. Enter the folder name, set the Type to Group, and select the group to share the folder. 
+Let's select the group to which User B belongs for
+this example to work. Permission is set to Read-Only..
+
+.. image:: group_folder_creation.png
+   :width: 450
+   :align: center
+
+After confirming that the folder has been created, log in with the User B's
+account and check that the group folder just created on the Data & Storage page
+is displayed without any invitation procedure. You can see that R (Read Only) is
+also displayed in the Permission panel.
+
+.. image:: group_folder_listed_in_B.png
 
 Manage Resource Policy
 ----------------------
@@ -151,19 +178,19 @@ apply them separately to each keypair.
    
 In Resource Policies tab on the Users page, the admin can check the list of currently registered resource policies. 
 In the figure below, there are a total of three policies (gardener, STUDENT, default). 
-The infinity (∞) marks for resources such as Cores, Ram, and fGPU in the Resources column means that no
+The infinity (∞) marks for resources such as Cores, Ram, and fGPU in the Resources panel means that no
 resource restrictions have been placed for those resources.
 
 .. image:: resource_policy_tab.png
    :alt: Resource policy page
 
 The user account currently used in this guide is under the default
-resource policy. This can be confirmed in the Credentials tab on the left. In the Resource Policy column, 
+resource policy. This can be confirmed in the Credentials tab on the left. In the Resource Policy panel, 
 you can also see that all resources can be used to the extent the hardware allows (∞).
 
 .. image:: credentials.png
 
-You can modify resouce policies by clicking the gear button in the Control column of default policy group. 
+You can modify resouce policies by clicking the gear button in the Control panel of default policy group. 
 In Update Resource Policy dialog, every option is
 changeable except Policy Name, which is the primary key for distinguishing the
 resource policies in the list. Uncheck the Unlimited checkbox at the bottom of CPU, RAM, fGPU, and set the resource limits
@@ -223,7 +250,7 @@ setting value is the same as described above.
 
 To create a resource policy and associate it with a keypair, go to the
 Credentials tab of the Users page, click the gear button located in the
-Controls column of the desired keypair, and click the Select Policy field to
+Controls panel of the desired keypair, and click the Select Policy field to
 choose it.
 
 You can also delete each of resource keypairs by clicking trash can icon
@@ -274,7 +301,7 @@ is not installed on any agent.
    :alt: Image list page
 
 You can change the minimum resource requirements for each image by clicking the
-settings icon in the Controls column. Each image has hardware and resource
+gear icon in the Controls panel. Each image has hardware and resource
 requirements for minimal operation. (For example, for GPU-only images, there
 must be a minimum allocated GPU.) The default value for the minimum resource
 amount is provided as embedded in the image's metadata. If an attempt is made to
@@ -361,7 +388,7 @@ of currently defined resource presets.
    :alt: Resource presets tab
 
 You can set resources such as CPU, RAM, fGPU, etc. to be provided by the
-resource preset by clicking the settings icon (cogwheel) in the Controls column.
+resource preset by clicking the gear icon (cogwheel) in the Controls panel.
 In the example below, the GPU field is disabled since the GPU provision mode of
 the Backend.AI server is set to "fractional". After setting the resources with
 the desired values, save it and check if the corresponding preset is displayed
@@ -411,8 +438,8 @@ possible in Scaling Group tab of the Resource page.
 .. image:: scaling_group_tab.png
    :alt: Resource group tab
 
-You can edit a resource group by clicking the settings icon in the Control
-column. In the Select scheduler field, you can choose the scheduling method for
+You can edit a resource group by clicking the gear icon in the Control
+panel. In the Select scheduler field, you can choose the scheduling method for
 creating a compute session. Currently, there are three types: FIFO, LIFO, and
 DRF. FIFO and LIFO are scheduling methods creating the first- or the
 last-enqueued compute session in the job queue. DRF stands for Dominant Resource
