@@ -2,11 +2,9 @@
 Overview
 ========
 
-Backend.AI is an open source cloud resource management platform. Backend.AI
-efficiently manages compute resources in a cloud or on-premises cluster,
-providing a virtualized compute environment to provide on-demand computation,
-anytime, anywhere. With GPU virtualization technique, Backend.AI helps
-scientists, DevOps, enterprise, and AI enthusiasts to scale up efficiently.
+Backend.AI is an open source cloud resource management platform, which makes it easy to utilize virtualized
+compute resource clusters in a cloud or on-premises environment. The container-based GPU virtualization technology of Backend.AI 
+supports the efficient use of GPUs by flexibly dividing one physical GPU, so that multiple users can use it at the same time. 
 
 Backend.AI offers a variety of performance-driven optimizations for machine
 learning and high-performance computing clusters, along with management and
@@ -15,11 +13,13 @@ administrators, and DevOps. The Enterprise Edition adds support for multi-domain
 management, a dedicated Hub app for superadmins, and the GPU virtualization
 plug-in.
 
-A GUI client package is also provided to easily take advantage of the features
+A GUI client package is provided to easily take advantage of the features
 supported by the Backend.AI server. Backend.AI Console is a GUI client in the
 form of a web service or stand-alone app. It provides a convenient graphical
 interface for accessing the Backend.AI server to utilize computing resources and
-manage its environment. Most tasks can be done with mouse clicks and brief
+manage its environment. Backend.AI provides pre-made images which enable immediate creation 
+of compute sessions without any need of installing separate programs. 
+Most tasks can be done with mouse clicks and brief
 typing, which achieves more intuitive use.
 
 
@@ -83,3 +83,112 @@ Key Concepts
   can use services such as Jupyter Notebook, Terminal, etc. in the web
   environment by making the wsproxy server as a separate web server
   so that the console app can see the web wsproxy.
+
+
+Backend.AI feature details
+--------------------------
+
++----------------------+-------------------------------------------------------+
+| Category             | Feature                                               |
++======================+=======================================================+
+| GPU support          | Container-level multi GPU                             |
++                      +-------------------------------------------------------+
+|                      | (Enterprise) Fractional GPU sharing & scaling         |
++                      +-------------------------------------------------------+
+|                      | Multiple CUDA library version support (8.0 to 11.1)   |
++----------------------+-------------------------------------------------------+
+| Scaling              | On-premise installation on both bare-metal / VM       |
++                      +-------------------------------------------------------+
+|                      | Hybrid cloud (on-premise + cloud)                     |
++                      +-------------------------------------------------------+
+|                      | Polycloud (multi-cloud federation)                    |
++----------------------+-------------------------------------------------------+
+| Scheduling           | Unified scheduling & monitoring with GUI admin        |
++                      +-------------------------------------------------------+
+|                      | Per-user (keypair) resource policy                    |
++                      +-------------------------------------------------------+
+|                      | (Enterprise) Per-group resource policy                |
++                      +-------------------------------------------------------+
+|                      | Availability-slot based scheduling                    |
++----------------------+-------------------------------------------------------+
+| Cluster partitioning | Resource groups by H/W spec and usage                 |
++                      +-------------------------------------------------------+
+|                      | (Enterprise) Access control of users to               |
+|                      | resource group                                        |
++                      +-------------------------------------------------------+
+|                      | (Enterprise) Access control of group to               |
+|                      | resource group                                        |
++----------------------+-------------------------------------------------------+
+| Security             | Sandboxing via hypervisor/container                   |
++                      +-------------------------------------------------------+
+|                      | Access logs for each user                             |
++                      +-------------------------------------------------------+
+|                      | Per session (container) logs                          |
++----------------------+-------------------------------------------------------+
+| UI / UX              | GUI web interface                                     |
++                      +-------------------------------------------------------+
+|                      | (Enterprise) Admin GUI web interface                  |
++----------------------+-------------------------------------------------------+
+| Data management      | EFS, NFS, SMB and distributed file system             |
+|                      | (CephFS, GlusterFS, HDFS, etc)                        |
++                      +-------------------------------------------------------+
+|                      | (Enterprise) Dedicated flash-storage integration:     |
+|                      | PureStorage FlashBlade                                |
++                      +-------------------------------------------------------+
+|                      | Access control to data by user/group                  |
++----------------------+-------------------------------------------------------+
+| Developer support    | Universal programming languages (Python, C/C++, etc)  |
++                      +-------------------------------------------------------+
+|                      | Interactive web apps (Terminal, Jupyter, VSCode, etc) |
++----------------------+-------------------------------------------------------+
+| For data scientists  | NGC (NVIDIA GPU CLoud) image integration              |
++                      +-------------------------------------------------------+
+|                      | Popular ML libraries: TensorFlow, PyTorch, etc        |
++                      +-------------------------------------------------------+
+|                      | Concurrent user of multiple versions of libraries     |
++                      +-------------------------------------------------------+
+|                      | Periodic update of ML libraries                       |
++----------------------+-------------------------------------------------------+
+| Customer support     | On-site installation (bare-metal / VM)                |
++                      +-------------------------------------------------------+
+|                      | Configuration support (on-premise + cloud)            |
++                      +-------------------------------------------------------+
+|                      | Admin/user training                                   |
++                      +-------------------------------------------------------+
+|                      | Support for updating to latest version                |
++                      +-------------------------------------------------------+
+|                      | Priority development and escalation                   |
++                      +-------------------------------------------------------+
+|                      | Custmoized container image / kernel or kernel         |
+|                      | repository                                            |
++----------------------+-------------------------------------------------------+
+
+
+Guide for accessible menu by user role
+--------------------------------------
+
+.. note::
+
+   * pages with ``*`` mark are in Administration menu.
+   * Features for Admin-only is listed in :ref:`admin menu <admin-menu>`.
+
++----------------+------+-------+
+| page \\ role   | user | admin |
++================+======+=======+
+| Summary        |   O  |   O   |
++----------------+------+-------+
+| Sessions       |   O  |   O   |
++----------------+------+-------+
+| Data & Storage |   O  |   O   |
++----------------+------+-------+
+| Statistics     |   O  |   O   |
++----------------+------+-------+
+| Users*         |   X  |   O   |
++----------------+------+-------+
+| Maintenance*   |   X  |   O   |
++----------------+------+-------+
+| Information*   |   X  |   O   |
++----------------+------+-------+
+| UserSettings   |   O  |   O   |
++----------------+------+-------+
+
