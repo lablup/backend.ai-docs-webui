@@ -34,5 +34,6 @@ The latest versions of this document can be found from sites below:
    user_settings/user_settings
    admin_user_keypair_management/admin_user_keypair_management
    trouble_shooting/trouble_shooting
+   appendix/appendix
    license_agreement/license_agreement
    references/references
