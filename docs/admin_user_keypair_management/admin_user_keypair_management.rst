@@ -181,7 +181,7 @@ In the figure below, there are a total of three policies (gardener, STUDENT, def
 The infinity (∞) marks for resources such as Cores, Ram, and fGPU in the Resources panel means that no
 resource restrictions have been placed for those resources.
 
-.. image:: resource_policy_tab.png
+.. image:: resource_policy_page.png
    :alt: Resource policy page
 
 The user account currently used in this guide is under the default
