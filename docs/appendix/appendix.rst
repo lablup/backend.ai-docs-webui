@@ -187,8 +187,9 @@ and then automatically process the requests when resources become available.
    :width: 700
    :align: center
 
+
 Multi-version Machine Learning Container Support
-================================================
+-------------------------------------------------
 
 .. note:: Objectives
 
