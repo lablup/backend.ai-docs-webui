@@ -6,52 +6,114 @@ The user settings page is accessed by clicking the gear icon at the bottom
 of the left sidebar or by selecting the Preferences menu that appears after
 clicking the person icon at the top right. Users can change the preferred Console Environment 
 from the language setting, SSH keypair management, editing user config script, and even to using
-Beta Features.
+Beta features.
 
 
-Language Setting
-----------------
+GENERAL tab
+-----------
 
-Click Language Dropdown to check supported languages.
+.. image:: user_settings_page.png
 
-.. note::
-   Currently, only Korean and English are supported.
+Desktop Notification
+^^^^^^^^^^^^^^^^^^^^
+
+Enables or disables the desktop notification feature. If the browser and
+operating system support it, various  messages that appear in the GUI console
+will also appear in the desktop notification panel. If disabled from the
+operating system during the first run, the desktop message may not be displayed
+even if the option is turned on here. Regardless of the value of this option,
+the notification inside the GUI console still works.
+
+Use Compact Sidebar by default
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+When this option is on, the left sidebar will be shown in a compact form (narrower width).
+Change of the option is applied when the browser is refreshed. If you want to immediately change the
+type of the sidebar without refreshing the page, click the leftmost icon at the
+top of the sidebar.
+
+Language
+^^^^^^^^
+
+Set the language displayed on the UI. Currently, English and Korean are
+supported. However, there may be some UI items that do not update their language
+before the page is refreshed.
+
+* OS Default: Use the operating system's default language.
+* English: Set English as the default language.
+* Korean: Set Korean as the default language.
 
 
-Change SSH Keypair
-------------------
+SSH Keypair Management
+^^^^^^^^^^^^^^^^^^^^^^
 
-If you are using the GUI console app, you can create SSH/SFTP connection
-directly to the container. You can query or create a SSH keypair, which is used
-for SSH/SFTP connection. Clicking the button next to the SSH keypair Management
-in Preferences panel brings up a dialog. Current public key is displayed, if
-exists, and new public key and private key can be created by clicking GENERATE
-button. This will generate a new SSH keypair and save it into the database.
+When using the GUI console app, you can create SSH/SFTP connection
+directly to the compute session. Once you signed up Backend.AI, a public keypair is provided.  
+If you click the button on the right to the SSH Keypair Management section, the following dialog appears. 
+Click the copy button on the right to copy the existing SSH public key. 
+You can update SSH keypair by clicking GENERATE button
+at the bottom of the dialog. SSH public/private keys are randomly
+generated and stored as user information. Please note that the secret key cannot
+be checked again unless it is saved manually immediately after creation.
 
-.. image:: refresh_ssh_keypair_dialog.png
-   :width: 500
+.. image:: ssh_keypair_dialog.png
+   :width: 400
    :align: center
-   :alt: Change password dialog
 
 .. note::
-   The web-based console does not yet support SSH/SFTP connections.
+   SSH/SFTP connection is available only with the Backend.AI GUI desktop app and is not supported on a web browser.
 
 .. note::
    Backend.AI uses SSH keypair based on OpenSSH. On Windows, you may convert
    this into PPK key.
 
+Automatic Update Check
+^^^^^^^^^^^^^^^^^^^^^^
 
-Edit Shell Environment
-----------------------
+A notification window pops up when a new version of the GUI console is detected.
+It works only in an environment where Internet access is available.
 
-Existing shell scripts can be applied to new sessions.
-You can copy the shell script and save it to your favorite shell script run command.
-Shell editing feature also supports setting ``.Renviron`` file used in the R language.
+Auto logout
+^^^^^^^^^^^
+
+Log out automatically when all Backend.AI console pages are closed except for pages created to run apps in session (e.g. jupyter notebook, web terminal, etc.).
+
+EDIT USER CONFIG SCRIPT
+^^^^^^^^^^^^^^^^^^^^^^^
+
+You can write scripts to mount and run automatically when creating a compute
+session. Currently, three files can be edited by the user: ``.bashrc``,
+``.zshrc``, and ``.Renviron``. The scripts are saved for each user and can be
+used when certain automation tasks are required at the start of a compute
+session. For example, you can modify the ``.bashrc`` script to register desired
+alias or specify that certain files are always downloaded to a specific
+location.
+
+Use the drop-down menu at the top to select the type of script you want to write
+and then write the content. You can save the script by
+clicking the SAVE or SAVE AND CLOSE button. Click the DELETE button to delete
+the script.
 
 .. image:: edit_user_config_script.png
    :width: 500
    :align: center
-   :alt: Edit Shell Environment dialog
+
+
+LOGS tab
+--------
+
+Displays detailed information of various logs recorded on the client side. You
+can visit this page to find out more about the errors occurred.
+You can refresh or delete the logs by using the trash button at the top right.
+
+.. image:: user_log.png
 
 .. note::
-   Only ``.zshrc``, ``.bashrc`` and ``.Renviron`` are editable for now.
+   If you only have one page logged in, clicking the REFRESH button may not seem
+   to work properly. Logs pages are collection of requests to the server and
+   responses from the server. If current page is the log page, then it will
+   not send any requests to the server except refreshing the page explicitly.
+   To check logs are being stacked properly, please open another page and click
+   REFRESH button.
+
+
