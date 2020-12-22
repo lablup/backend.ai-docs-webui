@@ -1,6 +1,9 @@
 ================================================
-GPU Virtualization and Fractional GPU Allocation
+Appendix
 ================================================
+
+GPU Virtualization and Fractional GPU Allocation
+------------------------------------------------
 
 .. note:: Objectives
 
