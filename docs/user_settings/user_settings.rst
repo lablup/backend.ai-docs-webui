@@ -1,12 +1,12 @@
 ====================
-User Settings & Logs
+User Settings
 ====================
 
-User Setting and Logs tab allow users to change the preferred Console Environment.
-From the language setting, SSH keypair management, editing user config script, and even to using
-Beta Features are available by just a few clicks of each button. Every message from server
-will be logged in Logs. You can see how the miscellaneous error occurred in the Logs tab.
-
+The user settings page is accessed by clicking the gear icon at the bottom
+of the left sidebar or by selecting the Preferences menu that appears after
+clicking the person icon at the top right. Users can change the preferred Console Environment 
+from the language setting, SSH keypair management, editing user config script, and even to using
+Beta Features.
 
 
 Language Setting
