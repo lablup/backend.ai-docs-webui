@@ -169,8 +169,8 @@ Guide for accessible menu by user role
 
 .. note::
 
-   * pages with ``*`` mark are in Administration menu.
-   * Features for Admin-only is listed in :ref:`admin menu <admin-menu>`.
+   * Pages with ``*`` mark are in Administration menu.
+   * Features only for admin are listed in :ref:`admin menu <admin-menu>`.
 
 +----------------+------+-------+
 | page \\ role   | user | admin |
