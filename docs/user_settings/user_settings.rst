@@ -48,7 +48,7 @@ SSH Keypair Management
 ^^^^^^^^^^^^^^^^^^^^^^
 
 When using the GUI console app, you can create SSH/SFTP connection
-directly to the compute session. Once you signed up Backend.AI, a public keypair is provided.  
+directly to the compute session. Once you signed up for Backend.AI, a public keypair is provided.  
 If you click the button on the right to the SSH Keypair Management section, the following dialog appears. 
 Click the copy button on the right to copy the existing SSH public key. 
 You can update SSH keypair by clicking GENERATE button
