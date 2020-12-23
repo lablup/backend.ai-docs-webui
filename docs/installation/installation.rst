@@ -16,72 +16,70 @@ With the web-based GUI console, users do not need to install a
 platform-dependent desktop applications and just need the latest versions of
 browsers such as Chrome. 
 
+* Recommended browser: the latest version of Chrome (at least version > 80)
+* Requirement: any machine that runs Web Browser (2 cores, 4 GiB memory)
+
 .. note::
    We do not support MicroSoft Internet Explorer since it
    is deprecated and does not follow web standard and support up-to-date brower
    features.
-
-* Recommended browser: latest Chrome (at least version 80)
-* Requirement: any machine that runs Web Browser (2 cores, 4 GiB memory)
-
-For Backend.AI daemons/services, following hardware spec should be met. For
+   
+For Backend.AI Server daemons/services, following hardware specification should be met. For
 optimal performance, just double the amount of each resources.
 
 * Manager: 2 cores, 4 GiB memory
-* Agent: 4 cores, 32 GiB memory, NVIDIA GPU for GPU workload, > 512 GiB SSD
+* Agent: 4 cores, 32 GiB memory, NVIDIA GPU (for GPU workload), > 512 GiB SSD
 * Console-Server: 2 cores, 4 GiB memory
 * WSProxy: 2 cores, 4 GiB memory
 * PostgreSQL DB: 2 cores, 4 GiB memory
-* Redis: 1 cores, 2 GiB memory
-* Etcd: 1 cores, 2 GiB memory
+* Redis: 1 core, 2 GiB memory
+* Etcd: 1 core, 2 GiB memory
 
-The main host dependent packages that must be pre-installed before installing
+The essential host dependent packages that must be pre-installed before installing
 each service are:
 
 * GUI console: Operating system that can run the latest browsers (Windows, Mac
   OS, Ubuntu, etc.)
-* Manager: Python (>=3.8), pyenv/pyenv-virtualenv (>=1.2)
-* Agent: docker (>=19.03), CUDA/CUDA Toolkit (>=8, recommend 11),
-  nvidia-docker v2, Python (>=3.8), pyenv/pyenv-virtualenv (>=1.2)
-* Console-Server: Python (>=3.8), pyenv/pyenv-virtualenv (>=1.2)
-* WSProxy: docker (>=19.03), docker-compose (>=1.24)
-* PostgreSQL DB: docker (>=19.03), docker-compose (>=1.24)
-* Redis: docker (>=19.03), docker-compose (>=1.24)
-* Etcd: docker (>=19.03), docker-compose (>=1.24)
+* Manager: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)
+* Agent: docker (≥19.03), CUDA/CUDA Toolkit (≥8, 11 recommend),
+  nvidia-docker v2, Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)
+* Console-Server: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)
+* WSProxy: docker (≥19.03), docker-compose (≥1.24)
+* PostgreSQL DB: docker (≥19.03), docker-compose (≥1.24)
+* Redis: docker (≥19.03), docker-compose (≥1.24)
+* Etcd: docker (≥19.03), docker-compose (≥1.24)
 
-After initial installation, we will provide following materials/services:
+For Enterprise version, Backend.AI server daemons are installed by Lablup support team and following materials/services are provided after initial installation:
 
 * DVD 1 (includes Backend.AI packages)
 * User GUI Guide manual
-* Admin GUI Guide manual (for Enterprise version)
+* Admin GUI Guide manual
 * Installation report
 * First-time user/admin on-site tutorial (3-5 hours)
 
-Product maintenance and support information: The commercial contract includes a
+Product maintenance and support information: the commercial contract includes a
 monthly/annual subscription fee for the Enterprise version by default. Initial
 user/administrator training (1-2 times) and wired/wireless customer support
 services are provided for about 2 weeks after initial installation, minor
 release updater support and customer support services through online channels
 are provided for 3-6 months. Maintenance and support services provided
 afterwards may have different details depending on the terms of the contract.
+
 Users of the open source version can also purchase an installation and support
 plan separately.
 
 Simple Backend.AI Server Management Guide
 -----------------------------------------
 
-Backend.AI server daemons are installed by Lablup support team. If there are
-problems on the daemons or services, please contact with contact@lalbup.com.
-
 Backend.AI is composed of many modules and daemons. Here, we briefly describe
 each services and provide basic maintenance guide in case of specific service
-failure. Note that the maintenance operations provided here are just generally
+failure. Note that the maintenance operations provided here are generally
 applicable, but may differ depending on the host-specific installation details.
 
 Manager
 ^^^^^^^
 
-Gateway server that accepts and handles every user requests. If the request is
+Gateway server that accepts and handles every user request. If the request is
 related with the compute session (container), Manager will delegate the request
 to Agent and/or containers in each Agent.
 
@@ -101,7 +99,7 @@ to Agent and/or containers in each Agent.
 Agent
 ^^^^^
 
-Worker node. Manage the lifecycle of compute sessions (containers).
+Worker node which manages the lifecycle of compute sessions (containers).
 
 .. code-block:: shell
 
@@ -119,7 +117,7 @@ Worker node. Manage the lifecycle of compute sessions (containers).
 Console-Server
 ^^^^^^^^^^^^^^
 
-Serves user web GUI Console and provides authentication by email and password.
+Serves user GUI Console and provides authentication by email and password.
 
 .. code-block:: shell
 
@@ -174,8 +172,8 @@ Database for Manager.
    # see logs
    docker-compose -f docker-compose.hs.postgres.yaml -p <project> logs
 
-To back up the DB data, you can use the following command from the DB host. The
-specific command may vary depending on the configuration.
+To back up the DB data, you can use the following commands from the DB host. The
+specific commands may vary depending on the configuration.
 
 .. code-block:: shell
 
@@ -188,7 +186,7 @@ specific command may vary depending on the configuration.
    # Exit container
    exit
 
-To restore the from the backup data, you can execute the following command.
+To restore the DB from the backup data, you can execute the following commands.
 Specific options may vary depending on the configuration.
 
 .. code-block:: shell
