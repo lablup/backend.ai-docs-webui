@@ -208,7 +208,7 @@ Web terminal
 ------------
 
 Return to the Session list page. This time, let's launch the terminal. Click the
-terminal icon (the second button) to use the container's ttyd daemon. A terminal
+terminal icon (the second button in the Control panel) to use the container's ttyd daemon. A terminal
 will appear in a new window, and you can issue shell commands by accessing
 inside the computational session as shown in the following figure. If you are
 familiar with using commands, you can easily issue various Linux commands. You
