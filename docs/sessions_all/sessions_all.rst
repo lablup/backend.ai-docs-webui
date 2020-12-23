@@ -10,7 +10,7 @@ the Sessions page.
 Start a new session
 -------------------
 
-After logging in with a user account, click Sessions on the left menu to visit the Sessions page. 
+After logging in with a user account, click Sessions on the left sidebar to visit the Sessions page. 
 Sessions page lets you start new sessions or use and manage existing running sessions. 
 
 .. image:: sessions_page.png
