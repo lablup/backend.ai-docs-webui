@@ -2,70 +2,107 @@
 Summary Page
 ============
 
-The Summary page allows you to view resource and session usage information.
-There are also shortcut links to frequently used features.
+On the Summary page, users can check resource status and session usage, and
+there are shortcut links to frequently used functions.
 
 
-Monitoring resource usage
--------------------------
+Topbar
+------
 
-In the Start menu, you can see the total amount of resources you can allocate
-and how much you are currently using. You can check the CPU, RAM, GPU occupancy
-status, the number of sessions currently running, etc. Also, you can click the +
-START button to create a session immediately (see the Sessions page for how to
-create a session).
+.. image:: topbar_usermenu.png
+   :alt: Topbar usermenu
 
-A user can belong to one or more groups. If you want to change between the groups you are in, click the Project button on the top right corner to select the
-group you want. When the group is changed, the total amount of available
-resources is changed according to the resource usage policy set in the group,
-and the amount of resources currently used is updated with the amount of
-resources occupied by sessions running in the group. The groups to which the user
-belongs is set up by the administrator. If you want to change the group, you
-should contact the administrator in charge.
+In the middle of the top bar is a drop-down menu to select the user's current
+project (group). If a user belongs to multiple projects, the user can change it from
+here. Each project may have different resource policies, therefore changing the project
+also changes the available resource policies. If there are not many users, there
+may be only one default project.
 
-A user can be set up to use multiple resource groups by an administrator.
-Resource groups are administrator functions that allow to set up worker
-nodes that can be accessed by user, group, or domain. For example, if you group
-multiple V100 GPU servers into one resource group, group multiple P100 GPU
-servers into another resource group, and make specific users accessible only to
-the P100 resource group, then the users can use only the resources on the P100 servers,
-not on the V100 GPU servers. You can select a resource group to which
-you have access by clicking Resource Group within the Start Menu. Each time a
-resource group is changed, the amount of available resources is changed
-accordingly. Resource group policies are set up by administrators. If you want
-to use a particular resource, you should contact your administrator.
+Click the person icon on the right side of the top bar to see the user menu.
+Each menu item has the following functions.
 
-.. image:: scaling_group.png
-   :width: 600
+* About Backend.AI: Displays information such as version of Backend.AI Console,
+  license type, etc.
+* Change User Info: Change user name and password
+* Preferences: Go to user settings page
+* Logs / Errors: Go to the log page. You can check the log and error history
+  recorded on the client side.
+* Logout: Log out. Users can also logout by clicking the icon on the far right
+  of the top bar.
+
+If you click Change User Info, the following dialog appears.
+
+.. image:: change_user_info.png
+   :width: 350
    :align: center
-   :alt: Example of resource groups (scaling groups) and projects configuration
 
-In the Project section at the bottom, you can see the total usage within your
-group and your usage within that group.
+Each item has the following meaning.
 
-The Resource Statistics panel shows the total number of sessions currently
-running by the user. Other session-related information will be displayed
-depending on the user's permission.
+* Full Name: User's name (up to 64 characters)
+* Original password: Original password. Click the right view icon to see the
+  input contents.
+* New password: New password (8 characters or more containing at least 1
+  alphabet, number, and symbol). Click the right view icon to see the input
+  contents. Ensure this is the same as the Original password.
 
-.. image:: summary_page.png
-   :alt: Summary page
+Enter the desired value and click the UPDATE button to update the user
+information.
 
 
-Change password
----------------
+Summary panel
+-------------
 
-You can change the password by clicking the Change Password menu of the settings
-button in the upper right corner. Enter the current password in the Original
-password field and the new password in the New password and New password (again)
-fields, then press the UPDATE button. At this time, the
-password should follow the rules below:
+.. image:: dashboard.png
+   :alt: Dashboard panels
 
-- 8 letters or more
-- One or more alphabets
-- One or more special characters
-- One or more numbers
+Various convenience panels are located under the top bar.
 
-.. image:: change_password_dialog.png
-   :width: 300
-   :align: center
-   :alt: Change password dialog
+Start Menu
+^^^^^^^^^^
+
+You can start a compute session by clicking on the START button. It is the same
+as the feature on the Sessions page, and is a shortcut button that helps you
+create a compute session immediately after logging in for the first time.
+
+Below the START button are shortcut links to the Data & Storage, Users, and
+Maintenance pages. Among these, the link to the Users and Maintenance page is
+only visible when logged in with an admin account.
+
+Resource Statistics
+^^^^^^^^^^^^^^^^^^^
+
+It shows the total amount of resources the user can allocate and the amount of
+resources currently allocated. You can check the user's CPU, memory, and GPU
+resource occupancy and quota respectively. Also, on the Sessions slider, you can
+see how many compute sessions the user can create simultaneously and how many
+compute sessions are currently running.
+
+You can change the resource group by clicking the Resource Group field at the
+top. Resource group is a concept that can group multiple Agent nodes as a single
+resource unit. If you have many agent nodes, you can configure settings such as
+assigning them to a specific project for each resource group. When there is only
+one agent node, it is normal to see only one resource group. If you change the
+resource group, the amount of resources may change depending on the amount of
+resources held by that resource group (agents belong to it).
+
+System Resources
+^^^^^^^^^^^^^^^^
+
+It shows the number of Agent worker nodes connected to the Backend.AI system and
+the total number of compute sessions currently created. You can also check the
+CPU, memory, and GPU utilization of the agent node. If you are logged in as a
+normal user, only the number of compute sessions you have created is displayed.
+
+Announcement
+^^^^^^^^^^^^
+
+Announcements will be displayed here. Announcements can be made through a
+separate admin console.
+
+Invitation
+^^^^^^^^^^
+
+If another user has shared their storage folder to you, it will be displayed
+here. If you accept the share request, you can view and access the shared folder
+in the Data & Storage folder. The access rights are determined by the shared
+user. Of course, you can also decline the sharing requests.
