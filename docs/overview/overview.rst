@@ -74,7 +74,7 @@ Key Concepts
   etc.) running within the compute session. You do not need to know the
   container's address and port number directly, but you can use the provided CLI
   client or GUI console to directly access the desired daemon of the session.
-- Console App: A GUI client that is served as a web or stand-alone app.
+- (GUI) Console: A GUI client that is served as a web or stand-alone app.
   You can use the service after logging in by specifying the address of the
   Backend.AI server and entering the user account information.
 - Local wsproxy: Proxy server built into the console app. Local wsproxy converts general HTTP requests between the server and console app to websocket and delivers the messages. If the console app loses its connection to wsproxy or the wsproxy server is dead, it will not be possible to access services such as Jupyter Notebook and Terminal.
