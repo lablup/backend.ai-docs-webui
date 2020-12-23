@@ -79,7 +79,7 @@ by re-mounting it when creating another compute session. For the information on 
 to mount a folder and run a compute session, see
 :ref:`Mounting Folders to a Compute Session <session-with-mounts>`.
 
-Notice that a new compute session is created in the Running tab. 
+Now a new compute session is created in the RUNNING tab. 
 
 .. image:: session_created.png
 
@@ -97,6 +97,8 @@ and used resources, session starting time, etc.
    Compute session list may not be displayed normally due to intermittent
    network connection problems, and etc. This can be solved by refreshing the
    browser page.
+
+.. image:: resource_stat_and_session_list.png
 
 The resource statistics are displayed at the top of the screen. You can check the
 amount of resources currently used and the total amount of resources
