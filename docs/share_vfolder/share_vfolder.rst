@@ -1,5 +1,5 @@
 ========================================================
-Data Sharing and Access Control by Shared Storage Folder
+Sharing Storage Folders and Access Control
 ========================================================
 
 You may need to share the contents of storage folders with other users or group
@@ -30,7 +30,7 @@ account.
 
 .. image:: no_test_vfolder_in_B.png
 
-Back to User A's account and click the share icon (third icon) in the Control column on the
+Back to User A's account and click the share icon (third icon) in the Control panel on the
 right of the ``test`` folder. Enter User B's email in the email input field and
 click the SHARE button to send a sharing invitation. No actual email is sent,
 and invitations are generated through the Backend.AI database. In the case of
@@ -53,13 +53,13 @@ Go to the Data & Storage page and check that the ``test`` folder is displayed in
 the list. If you don't see it on the list, try refreshing your browser page.
 Since you have accepted the invitation, you can now view the contents of User
 A's ``test`` folder in User B account. Compared to the other folders created by
-User B, the ``test`` folder has no management icon in the Control column. You
-can also see only the R (read-only) mark displayed in the Permission column.
+User B, the ``test`` folder has no management icon in the Control panel. You
+can also see only the R (read-only) mark displayed in the Permission panel.
 
 .. image:: test_vfolder_listed_in_B.png
 
 Let's navigate inside the ``test`` folder by clicking the folder icon in the
-Control column of ``test``. You can check the ``hello.txt`` and ``myfolder``
+Control panel of ``test``. You can check the ``hello.txt`` and ``myfolder``
 that you checked in the User A's account again. Let's create a compute session
 by mounting this storge folder with the User B's account.
 
@@ -96,7 +96,7 @@ your Backend.AI email account.
 Adjust permission for shared folders
 ------------------------------------
 
-If you click the fourth person icon in the Control column, you can see a list of
+If you click the fourth person icon in the Control panel, you can see a list of
 users who have shared the folder. Click Select permission to set the sharing
 permission.
 
