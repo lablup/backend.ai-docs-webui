@@ -1,3 +1,5 @@
+.. _admin-menus:
+
 ===========
 Admin Menus
 ===========
