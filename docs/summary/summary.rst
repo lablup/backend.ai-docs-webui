@@ -105,4 +105,4 @@ Invitation
 If another user has shared their storage folder to you, it will be displayed
 here. If you accept the share request, you can view and access the shared folder
 in the Data & Storage folder. The access rights are determined by the user who has sent the share request.
-Of course, you can also decline the sharing requests.
+Of course, you can decline the sharing requests.
