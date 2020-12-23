@@ -1,0 +1,704 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Console
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Console User Guide 20.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-23 17:40+0900\n"
+"PO-Revision-Date: 2020-12-23 17:40+0900\n"
+"Last-Translator: \n"
+"Language: ko_KR\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#: ../../sessions_all/sessions_all.rst:3
+msgid "Compute Sessions"
+msgstr "연산 세션"
+
+#: ../../sessions_all/sessions_all.rst:5
+msgid ""
+"The most visited pages in the Backend.AI GUI Console would be the Sessions and "
+"Storage pages. On the Sessions page, you can view, create, and use container-"
+"based compute sessions, and on the Storage page, you can create a storage "
+"folder to keep important data. Here, you will learn how to query and create "
+"container-based compute sessions and utilize various web applications on the "
+"Sessions page."
+msgstr ""
+"Backend.AI GUI Console 에서 가장 많이 방문하게 될 페이지는 Sessions 와 Storage "
+"페이지입니다. Sessions 페이지에서는 컨테이너 기반의 연산 세션을 조회하거나 생성 "
+"및 사용할 수 있고, Storage 페이지에서는 데이터를 보관하는 저장 폴더를 생성할 수 "
+"있습니다. 여기서는 Sessions 페이지에서 컨테이너 기반의 연산 세션을 생성하고 각"
+"종 웹 애플리케이션을 활용하는 방법을 알아봅니다."
+
+#: ../../sessions_all/sessions_all.rst:14
+msgid "Querying compute sessions"
+msgstr "연산 세션 조회하기"
+
+#: ../../sessions_all/sessions_all.rst:16
+msgid ""
+"To see the list of compute sessions, click Sessions in the left sidebar. In the "
+"Running tab on the right, you can check the information on the currently "
+"running sessions. Click the Finished tab to see the list of terminated "
+"sessions.  In the OTHERS tab you can query for compute sessions with errors.  "
+"For each session, you can check information such as ID, created date, used "
+"time, allocated resources, resource usage, and etc."
+msgstr ""
+"연산 세션을 조회하려면 왼쪽 사이드바의 Sessions 를 클릭합니다. 우측 내용의 "
+"Running 탭 에는 현재 실행되고 있는 세션의 정보를 확인할 수 있습니다. Finished 탭"
+"을 클릭하면 과거에 실행되었다가 종료된 세션의 정보를 볼 수 있습니다. OTHERS 탭에"
+"서는 에러가 발생한 세션 정보를 조회할 수 있습니다. 각 세션 별로 ID, 시작일, 사용"
+"시간, 자원 설정, 사용량 등의 정보를 확인할 수 있습니다."
+
+#: ../../sessions_all/sessions_all.rst:27
+msgid ""
+"As a superadmin, you can see the information of all sessions currently running "
+"(or ended) in the cluster. On the other hand, users can see their sessions only."
+msgstr ""
+"수퍼어드민의 경우 현재 클러스터에서 실행 중인 (또는 종료된) 모든 세션 정보를 확"
+"인할 수 있고, 사용자의 경우에는 자신이 사용한 세션만 조회 가능합니다."
+
+#: ../../sessions_all/sessions_all.rst:30
+msgid ""
+"The resource indicator is displayed at the top of the screen. You can check the "
+"amount of resources currently used and the total amount of resources that can "
+"be allocated. The display bar is divided into two parts: the upper and the "
+"lower. The upper part shows the resource allocation status in the current "
+"scaling group, and the lower part shows the allocation status of total "
+"accessible resources."
+msgstr ""
+"화면 상단에는 리소스 표시부가 출력됩니다. 현재 사용자가 할당받아 사용하고 있는 "
+"자원의 양과 할당 가능한 총 자원의 양을 확인할 수 있습니다. 위, 아래 두 부분으로 "
+"나누어 표시바가 출력되는데, 위쪽은 스케일링 그룹을 고려한 자원 할당 상태를, 아래"
+"쪽은 접근 가능한 전체 자원의 할당 상태를 표시합니다."
+
+#: ../../sessions_all/sessions_all.rst:37
+msgid "Upper: Allocated and available resources within the current scaling group"
+msgstr "위쪽 표시바: 현재 스케일링 그룹 내에서의 할당량과 총 할당 가능량"
+
+#: ../../sessions_all/sessions_all.rst:39
+msgid ""
+"(Resources allocated by the user in the current scaling group) / (Total "
+"resources allocatable by the user in the current scaling group)"
+msgstr ""
+"(현재 스케일링 그룹 내에서 사용자가 할당한 자원의 양) / (현재 스케일링 그룹 내"
+"에 서 사용자 할당 가능한 자원의 총합)"
+
+#: ../../sessions_all/sessions_all.rst:42
+msgid "Lower: Total allocated and available resources"
+msgstr "아래쪽 표시바: 전체 할당량과 총 할당 가능량"
+
+#: ../../sessions_all/sessions_all.rst:44
+msgid ""
+"(Resources allocated by the user) / (Resources allocated by the user + Total "
+"resources allocatable by the user in the current scaling group)"
+msgstr ""
+"(사용자가 할당한 총 자원 양) / (사용자가 할당한 총 자원 양 + 현재 스케일링 그룹 "
+"내에서 사용자가 할당 가능한 자원의 총합)"
+
+#: ../../sessions_all/sessions_all.rst:48
+msgid ""
+"If the GPU resource is marked as FGPU, this means that the server is serving "
+"the GPU resources in a virtualized form. Backend.AI supports GPU virtualization "
+"technology that a single physical GPU can be divided and shared by multiple "
+"users for better utilization. Therefore, if you want to execute a task that "
+"does not require a large amount of GPU computation, you can create a compute "
+"session by allocating only a portion of a GPU. The amount of GPU resources that "
+"1 FGPU actually allocates may vary from system to system depending on the "
+"administrator's setting. For example, if administrator has set to split one "
+"physical GPU into five pieces, 5 FGPU means 1 physical GPU, or 1 FGPU means 0.2 "
+"physical GPU. At this configuration, if you create a compute session by "
+"allocating 1 FGPU, you can utilize SM (streaming multiprocessor) and GPU memory "
+"corresponding to 0.2 physical GPU for the session."
+msgstr ""
+"만약 GPU 자원이 FGPU 로 표시되어 있다면, 이는 서버가 GPU 자원을 가상화된 형태로 "
+"제공하고 있다는 것을 의미합니다. Backend.AI 는 하나의 물리 GPU 를 여러 개로 분할"
+"해서 여러 사용자가 나누어 사용할 수 있는 가상화 기술을 지원하고 있습니다. 따라"
+"서, GPU 연산 소요가 크지 않은 작업을 수행하고자 할 경우에는 GPU 의 일부만 할당하"
+"여 연산 세션을 생성 할 수 있습니다. 1 FGPU 가 실제로 할당하는 GPU 자원의 양은 관"
+"리자 설정에 따라 시스템 별로 다양할 수 있습니다. 예를 들어, 관리자가 하나의 GPU "
+"를 다섯 조각으로 분할 설정한 경우, 5 FGPU 가 1 물리 GPU, 또는 1 FGPU 가 0.2 물"
+"리 GPU 를 뜻합니다. 이 때 1 FGPU 를 설정하여 연산 세션을 생성하면, 그 세션에서"
+"는 0.2 물리 GPU 에 해당하는 SM(streaming multiprocessor) 과 GPU 메모리를 활용할 "
+"수 있습니다."
+
+#: ../../sessions_all/sessions_all.rst:64
+msgid "Start a new session"
+msgstr "새로운 세션 시작하기"
+
+#: ../../sessions_all/sessions_all.rst:66
+msgid ""
+"In addition to see the list of compute sessions, Sessions tab lets you start "
+"new sessions or use and manage already running sessions. After logging in with "
+"a user account, click Sessions on the left menu to visit the Sessions page."
+msgstr ""
+"Sessions 탭에서는 연산 세션을 조회하는 것뿐만 아니라 새로운 세션을 시작하거나 실"
+"행 중인 세션을 사용 및 관리할 수도 있습니다. 사용자 계정으로 로그인 후 좌측 메뉴"
+"의 Sessions 를 클릭하여 Sessions 페이지로 이동합니다."
+
+#: ../../sessions_all/sessions_all.rst:72
+msgid ""
+"Click the START button to start a new compute session. The following setup "
+"dialog will appear. You can specify the language environment (Environments, "
+"Version) and resources you want to allocate. Set the CPU and memory as shown in "
+"the following figure and click the LAUNCH button."
+msgstr ""
+"새로운 연산 세션을 시작하려면 START 버튼을 클릭하세요. 다음과 같은 설정 창이 뜨"
+"는데, 사용하려는 언어 환경 (Environments, Version) 과 자원을 설정할 수 있습니"
+"다. 다음 그림과 같이 CPU, 메모리 자원을 설정하고 LAUNCH 버튼을 클릭합니다."
+
+#: ../../sessions_all/sessions_all.rst:81
+msgid "If you need more detailed settings, refer to the meaning of each items."
+msgstr "보다 상세한 설정이 필요한 경우, 다음 각 항목의 의미를 참조하세요."
+
+#: ../../sessions_all/sessions_all.rst:83
+msgid ""
+"Environment: Specify the default environment for compute sessions such as "
+"TensorFlow, PyTorch, C++, and etc. When you select a TensorFlow environment, "
+"your compute session will automatically include the TensorFlow library. If you "
+"select another environment, the corresponding environment is installed by "
+"default."
+msgstr ""
+"Environment: TensorFlow, PyTorch, C++ 등과 같은 연산 세션의 기본 환경을 지정 합"
+"니다. TensorFlow 환경을 선택하면 연산 세션이 TensorFlow 라이브러리를 자동으 로 "
+"포함하게 됩니다. 다른 환경을 선택하면 그에 해당하는 환경이 기본으로 설치됩니다."
+
+#: ../../sessions_all/sessions_all.rst:88
+msgid ""
+"Version: Select the version of the environment. For example, for TensorFlow "
+"environment, you can select different versions such as 1.15, 2.3, etc."
+msgstr ""
+"Version: 환경의 버전을 선택합니다. 예를 들어, TensorFlow 환경에는 1.15, 2.3 등"
+"과 같은 버전을 구분해서 선택할 수 있습니다."
+
+#: ../../sessions_all/sessions_all.rst:90
+msgid ""
+"Resource Group: Specify the resource group in which to create the compute "
+"session. If there are multiple resource groups, you can select the desired "
+"value, but if there is only one resource group, it cannot be changed."
+msgstr ""
+"Resource Group: 연산 세션을 생성할 리소스 그룹을 지정합니다. 리소스 그룹이 여러 "
+"개 있을 경우, 원하는 값을 선택할 수 있으나, 하나의 리소스 그룹만 있는 경우에는 "
+"변경할 수 업습니다."
+
+#: ../../sessions_all/sessions_all.rst:93
+msgid ""
+"Session name (optional): Specifies the name of the compute session to be "
+"created. If specified, this name appears in Session Info, making it easy to "
+"distinguish from other compute sessions. If not specified, a randomly-generated "
+"name is used. You can set the session name up to 4 to 64 characters only with "
+"alphabetical character or numbers, and no spaces are allowed."
+msgstr ""
+"Session name (optional): 생성할 연산 세션의 이름을 지정합니다. 지정하면 Session "
+"Info 에 이 이름이 나타나므로 연산 세션의 구분이 용이합니다. 지정하지 않으면 임의"
+"의 이름을 사용합니다. 세션 이름은 알파벳 또는 숫자로만 4-64 자 까지 설정 가능하"
+"며, 공백은 허용되지 않습니다."
+
+#: ../../sessions_all/sessions_all.rst:99
+msgid ""
+"Folder to mount: Specifies the data folder to be mounted in the compute "
+"session. When a compute session is deleted, by default all data is deleted "
+"altogether, but the data stored in the folder mounted here is not deleted."
+msgstr ""
+"Folder to mount: 연산 세션에 마운트 할 데이터 폴더를 지정합니다. 연산 세션이 삭"
+"제되면 기본적으로 모든 데이터가 함께 삭제되지만, 여기서 마운트 한 폴더에 저장된 "
+"데이터는 삭제되지 않습니다."
+
+#: ../../sessions_all/sessions_all.rst:102
+msgid ""
+"Resource allocation: This is a template that has predefined resources to be "
+"allocated to the compute session. You can save and use frequently used resource "
+"settings in advance. Resource templates can be managed in a dedicated admin hub."
+msgstr ""
+"Resource allocation: 연산 세션에 할당할 자원을 사전 정의해 둔 템플릿입니다. 자"
+"주 사용하는 자원 설정을 미리 저장해두고 사용할 수 있습니다. 자원 템플릿은 관리"
+"자 전용 Hub 에서 관리할 수 있습니다."
+
+#: ../../sessions_all/sessions_all.rst:106
+msgid ""
+"CPU: The number of CPU cores to allocate to the compute session. The maximum "
+"value depends on the resource policy applied to the user."
+msgstr ""
+"CPU: 연산 세션에 할당할 CPU 코어의 수. 최대값은 사용자에게 적용되는 자원 정책에 "
+"따라 달라집니다."
+
+#: ../../sessions_all/sessions_all.rst:108
+msgid ""
+"RAM: The amount of memory (GB) to allocate for the compute session. The maximum "
+"value depends on the resource policy applied to the user."
+msgstr ""
+"RAM: 연산 세션에 할당할 메모리의 용량 (GB). 최대값은 사용자에게 적용되는 자원 정"
+"책에 따라 달라집니다."
+
+#: ../../sessions_all/sessions_all.rst:110
+msgid ""
+"Shared Memory: The amount of shared memory (GB) to allocate for the compute "
+"session. It can only be set up to 2 GB, and cannot be greater than the amount "
+"specified in RAM."
+msgstr ""
+"Shared Memory: 연산 세션에 할당할 공유 메모리의 용량 (GB). 최대 2 GB 까지만 설정"
+"할 수 있으며, RAM 에 지정된 양보다 클 수 없습니다."
+
+#: ../../sessions_all/sessions_all.rst:113
+msgid ""
+"GPU: The unit of GPU to allocate to the compute session. The maximum value "
+"depends on the resource policy applied to the user."
+msgstr ""
+"GPU: 연산 세션에 할당할 GPU 단위. 최대값은 사용자에게 적용되는 자원 정책에 따라 "
+"달라집니다."
+
+#: ../../sessions_all/sessions_all.rst:115
+msgid ""
+"Sessions: The number of compute sessions to be created with the specified "
+"settings. You can specify when you need to create the same computational "
+"sessions at once."
+msgstr ""
+"Sessions: 지정된 설정으로 생성할 연산 세션의 수. 동일한 연산 세션을 한꺼번에 생"
+"성할 필요가 있을 때 지정할 수 있습니다."
+
+#: ../../sessions_all/sessions_all.rst:119
+msgid ""
+"If no mount folder is specified in \"Folders to mount\", a warning dialog may "
+"appear indicating that no storage folder is mounted. It is recommended that one "
+"or more storage folders to be mounted because terminating compute session by "
+"default deletes all the data inside the session. If you specify a mount folder "
+"and save your data in that folder, you can keep the data even if the compute "
+"session is terminated. Data preserved in the storage folder can also be reused "
+"by re-mounting it when creating another compute session. You can ignore the "
+"alarm and create a session. However, it's a good idea to mount a folder if "
+"you're working on a job that requires you to keep data. For information on how "
+"to mount a folder and run a compute session, see :ref:`Related Content <session-"
+"with-mounts>`."
+msgstr ""
+"이 때, “Folder to mount”에 아무 마운트 폴더도 지정하지 않은 경우 다음과 같은 알"
+"람 다 이얼로그가 뜰 수 있습니다. 연산 세션을 삭제하면 기본적으로 세션 내의 모든 "
+"데이터도 같이 삭제되므로 저장 폴더를 하나 이상 마운트 하는 것을 권장한다는 내용"
+"입니다. 마운트 폴더를 지정한 후 그 폴더에 데이터를 보관하면 연산 세션이 삭제되더"
+"라도 데이터를 계속 보존할 수 있습니다. 저장 폴더에 보존된 데이터는 다른 세션을 "
+"생성할 때 다시 마운트 하여 데이터를 재사용할 수도 있습니다. 알람을 무시하고 연"
+"산 세션을 생성해도 상관없습니다. 하지만, 세션 내에서 데이터를 보관해야 할 필요"
+"가 있는 작업을 하는 경우라면 꼭 폴더를 마운트 하는 것이 좋습니다. 폴더를 마운트 "
+"하여 연산 세션을 실행하는 법에 관해서는 :ref:`관련 내용 <session-with-mounts>`"
+"을 참고 하십시오."
+
+#: ../../sessions_all/sessions_all.rst:136
+msgid "Notice that a new compute session is created in the Running tab."
+msgstr "Running 탭에서 새로운 연산 세션이 생성되는 것을 확인합시다."
+
+#: ../../sessions_all/sessions_all.rst:140
+msgid ""
+"You can check information such as ID, start date, usage time, resource setting, "
+"and resource usage for each session. In particular, check the allocated "
+"resources in the Configuration column. Note that the amounts of resources you "
+"specified in creating the compute session are displayed."
+msgstr ""
+"각 세션 별 ID, 시작일, 사용시간, 자원 설정, 사용량 등의 정보를 확인할 수 있습니"
+"다. 특히 Configuration 열의 자원 할당량을 확인 하십시오. 연산 세션을 생성할 때 "
+"지정한 자원량이 출력되는 것을 확인할 수 있습니다."
+
+#: ../../sessions_all/sessions_all.rst:146
+msgid ""
+"Superadmins can query all compute session information currently running (or "
+"terminated) in the cluster, and users can view only the sessions they have "
+"created."
+msgstr ""
+"수퍼어드민의 경우 현재 클러스터에서 실행 중인 (또는 종료된) 모든 세션 정보를 확"
+"인할 수 있고, 일반 사용자의 경우에는 자신이 사용한 세션만 조회 가능합니다."
+
+#: ../../sessions_all/sessions_all.rst:151
+msgid ""
+"Compute session list may not be displayed normally due to intermittent network "
+"connection problems, and etc. This can be solved by refreshing the browser page."
+msgstr ""
+"간헐적인 네트워크 접속 불량 등의 문제로 세션 리스트가 정상적으로 표시되지 않는 "
+"경우가 발생할 수 있습니다. 이 때는 브라우저 페이지를 갱신해서 해결할 수 있습니"
+"다."
+
+#: ../../sessions_all/sessions_all.rst:157
+msgid "Using Jupyter Notebook"
+msgstr "Jupyter Notebook 사용하기"
+
+#: ../../sessions_all/sessions_all.rst:159
+msgid ""
+"Let's look at how to use and manage compute sessions that are already running. "
+"If you look at the Control column of the session list, there are several icons. "
+"When you click the first icon, the app launcher appears as shown in the figure "
+"below, and several app services supported by the session appear."
+msgstr ""
+"이미 실행 중인 연산 세션을 사용하고 관리하는 법에 관해 살펴보겠습니다. 세션 리스"
+"트의 Control 열을 보면 몇 가지 아이콘이 있습니다. 제일 첫 아이콘을 클릭하면 다"
+"음 그림과 같이 앱 런처가 뜨면서 해당 세션이 지원하는 몇 가지 앱 서비스가 뜨게 됩"
+"니다."
+
+#: ../../sessions_all/sessions_all.rst:169
+msgid ""
+"There are two check options under the app icons. Check each item and open the "
+"app to reflect the following features:"
+msgstr ""
+"앱 아이콘 아래에는 두 가지 체크 옵션이 있습니다. 각 항목을 체크하고 앱을 띄우면 "
+"다음과 같은 기능이 반영됩니다:"
+
+#: ../../sessions_all/sessions_all.rst:172
+msgid ""
+"Open app to public: Open the app to the public. Basically, web services such as "
+"Terminal and Jupyter Notebook services here are not accessible by other users, "
+"even if the user knows the service URL, since they are considered "
+"unauthenticated. However, if you check this item anyone who knows the URL (and "
+"port number) of the service can access and use it. Of course, the user must "
+"have a network path to access the service."
+msgstr ""
+"Open app to public: 띄워진 앱을 외부로 공개합니다. 기본적으로 Terminal, Jupyter "
+"Notebook 등의 웹 서비스는 다른 사람이 주소를 알더라도 미인증 사용자 로 간주되어 "
+"접근할 수 없습니다. 하지만, 이 옵션에 체크하고 앱을 띄우면 서비스의 주소와 포트 "
+"번호를 아는 누구나 해당 앱에 접근하고 사용할 수 있게 됩니다. 물론, 해당 서비스"
+"에 접근할 수 있는 네트워크 경로는 확보가 되어 있어야 합니다."
+
+#: ../../sessions_all/sessions_all.rst:178
+msgid ""
+"Try preferred port: When the web service is opened, a specific port is assigned "
+"from the port pool created in advance by Backend.AI. Users can use the service "
+"only when they connect to the port along with the IP address or domain name. If "
+"you check this item and enter the port number, the entered port number will be "
+"tried. However, there is no guarantee that the desired port will always be "
+"assigned. The port may not exist at all in the port pool, or another service "
+"may already be using the port. In this case, the port number is randomly "
+"assigned."
+msgstr ""
+"Try preferred port: 웹 서비스가 뜰 때 Backend.AI 가 사전에 생성해 둔 포트 풀 "
+"(pool) 에서 특정 포트를 하나 할당받게 됩니다. 사용자는 IP 주소 또는 도메인 이름"
+"과 함께 해당 포트로 접속을 해야 서비스를 사용할 수 있습니다. 이 항목에 체크하고 "
+"포트 번호를 입력하면 입력한 포트 번호를 우선적으로 할당 시도하게 됩니다. 하지"
+"만, 항상 원 하는 포트를 할당받는다는 보장은 없습니다. 포트 풀에 해당 포트가 아"
+"예 없을 수도 있고, 다른 서비스가 이미 해당 포트를 할당받아 사용하고 있을 수도 있"
+"습니다. 이런 경우에는 임의로 포트 번호를 할당합니다."
+
+#: ../../sessions_all/sessions_all.rst:187
+msgid "Depending on the system configuration, these options may not appear."
+msgstr "시스템 설정에 따라, 이 옵션들은 보이지 않을 수도 있습니다."
+
+#: ../../sessions_all/sessions_all.rst:189
+msgid "Let's click on Jupyter Notebook."
+msgstr "Jupyter Notebook 을 클릭해봅시다."
+
+#: ../../sessions_all/sessions_all.rst:193
+msgid ""
+"A new window pops up and you can see that Jupyter Notebook is running. This "
+"notebook was created inside a running compute session and can be used easily "
+"with the click of a button without any other settings. Also, there is no need "
+"for a separate package installation process because the language environment "
+"and library provided by the computation session can be used as it is. For "
+"detailed instructions on how to use Jupyter Notebook, please refer to the "
+"official documentation."
+msgstr ""
+"새로운 창이 뜨면서 Jupyter Notebook 이 실행되는 것을 확인할 수 있습니다. 이 "
+"Notebook 은 실행 중인 연산 세션 내부에서 생성된 것으로, 별다른 설정 없이 버튼 클"
+"릭만으로 손쉽게 사 용할 수 있습니다. 또한, 연산 세션이 기본적으로 제공하는 언어 "
+"환경 및 라이브러리를 그대로 활용할 수 있어 별도의 패키지 설치 과정이 필요 없습니"
+"다. 자세한 Jupyter Notebook 사용 법은 공식 문서 등을 참고하시기 바랍니다."
+
+#: ../../sessions_all/sessions_all.rst:201
+msgid ""
+"In the notebook's file explorer, the ``id_container file`` contains a private "
+"SSH key. If necessary, you can download it and use it for SSH / SFTP access to "
+"the container."
+msgstr ""
+"Notebook 의 파일 탐색기에서 ``id_container`` 파일은 private SSH key 를 담고 있습"
+"니다. 필요할 경우 다운로드 하여 컨테이너로의 SSH/SFTP 접속에 이용할 수 있습니다."
+
+#: ../../sessions_all/sessions_all.rst:205
+msgid ""
+"Click the NEW button on the top right and select the Notebook for Backend.AI, "
+"then the ipynb window appears where you can enter your own code."
+msgstr ""
+"우측 상단의 NEW 버튼을 클릭한 후 Backend.AI 용 Notebook 을 선택하면 새로운 코드"
+"를 입력할 수 있는 ipynb 창이 뜹니다."
+
+#: ../../sessions_all/sessions_all.rst:212
+msgid ""
+"In this window, you can enter and execute any code you want by using the "
+"environment that session provides. The code is executed on one of the Backend."
+"AI nodes where the compute session is actually created, and there is no need to "
+"configure a separate environment on the local machine."
+msgstr ""
+"이 창에서 세션 환경에 맞는 코드를 입력하고 실행해볼 수 있습니다. 코드는 Backend."
+"AI 서버를 구성하는 노드 중 연산 세션이 실제로 생성된 노드에서 실행이 되며, 로컬 "
+"머신에는 별도 환경을 구성할 필요가 없습니다."
+
+#: ../../sessions_all/sessions_all.rst:219
+msgid ""
+"When you close the window, you can notice that the ``Untitled.ipynb`` file is "
+"created in the Notebook File Explorer. Note that the files created here are "
+"deleted when you terminate the session. The way to preserve those files even "
+"after the session is terminated is described in the Storage/Folders section."
+msgstr ""
+"창을 닫으면 Notebook 파일 탐색기에 방금 작업한 ``Untitled.ipynb`` 파일이 생성되"
+"어 있는 것을 확인할 수 있습니다. 여기 생성된 파일은 세션을 삭제할 경우 같이 삭제"
+"되는 것에 주의 하십시오. 생성된 파일을 세션이 사라지더라도 보존하는 방법은 폴더 "
+"섹션에서 설명합니다."
+
+#: ../../sessions_all/sessions_all.rst:226
+msgid ""
+"Like this, after creating a compute session, you can use web apps such as "
+"Jupyter Notebook, and in Jupyter Notebook, you can run Python code that checks "
+"resource constraints right away without installing a separate packages."
+msgstr ""
+"이처럼 연산 세션을 생성한 후 Jupyter Notebook 등과 같은 웹 앱을 사용할 수 있으"
+"며, Jupyter Notebook 에서는 별도의 설치를 하지 않고 바로 자원 제약 상황을 확인하"
+"는 Python 코드를 실행할 수 있었습니다."
+
+#: ../../sessions_all/sessions_all.rst:232
+msgid "Web terminal"
+msgstr "웹 터미널 활용"
+
+#: ../../sessions_all/sessions_all.rst:234
+msgid ""
+"Return to the Session list page. This time, let's launch the terminal. Click "
+"the terminal icon (the second button) to use the container's ttyd daemon. A "
+"terminal will appear in a new window, and you can issue shell commands by "
+"accessing inside the computational session as shown in the following figure. If "
+"you are familiar with using commands, you can easily issue various Linux "
+"commands. You can see that the Untitled.ipynb file automatically generated in "
+"Jupyter Notebook is viewed through the ``ls`` command. This is proof that both "
+"apps are running in the same container environment."
+msgstr ""
+"다시 세션 리스트 페이지로 돌아옵니다. 이번에는 터미널을 띄워보도록 하겠습니다. "
+"플레이 버튼 우측의 터미널 아이콘을 누르면 해당 컨테이너의 터미널을 사용할 수 있"
+"습니다. 터미널 역시 새 창에서 뜨게 되며, 다음 그림처럼 연산 세션 내부에 접속해"
+"서 커맨드 명령을 내릴 수 있습니다. 커맨드 사용에 익숙한 분이라면 손쉽게 여러 가"
+"지 리눅스 명령을 내릴 수가 있습니다. Jupyter Notebook 에서 자동 생성된 "
+"``Untitled.ipynb`` 파일이 ``ls`` 명령을 통해 조회되는 것을 볼 수 있습니다. 두 앱"
+"이 같은 컨테이너 환경에서 돌아가고 있다는 증거입니다."
+
+#: ../../sessions_all/sessions_all.rst:247
+msgid ""
+"If you create a file here, you can immediately see it in the Jupyter Notebook "
+"you opened earlier as well. Conversely, changes made to files in Jupyter "
+"Notebook can also be checked right from the terminal. This is because they are "
+"using the same files in the same compute session."
+msgstr ""
+"만약 여기서 파일을 만들면 앞서 띄운 Jupyter Notebook 에서 즉시 그 파일을 확인할 "
+"수 있 습니다. 반대로, Jupyter Notebook 에서 편집한 파일의 변경 사항도 터미널에"
+"서 바로 확인할 수 있습니다. 같은 연산 세션을 사용하고 있기 때문입니다."
+
+#: ../../sessions_all/sessions_all.rst:252
+msgid ""
+"In addition to this, you can use web-based services such as TensorBoard, "
+"Jupyter Lab, etc., depending on the type of service provided by the compute "
+"session."
+msgstr ""
+"이 외에도 연산 세션이 제공하는 서비스의 종류에 따라 TensorBoard, Jupyter Lab 등"
+"과 같은 웹 기반 서비스를 이용할 수 있습니다."
+
+#: ../../sessions_all/sessions_all.rst:257
+msgid "Query compute session log"
+msgstr "연산 세션 로그 조회"
+
+#: ../../sessions_all/sessions_all.rst:259
+msgid ""
+"You can view the log of the compute session by clicking the last icon in the "
+"Control column of the running compute session."
+msgstr ""
+"돌아가고 있는 연산 세션의 Control 열의 마지막 아이콘을 클릭하면 연산 세션의 로그"
+"를 조회할 수 있습니다."
+
+#: ../../sessions_all/sessions_all.rst:268
+msgid "Delete a compute session"
+msgstr "연산 세션 삭제하기"
+
+#: ../../sessions_all/sessions_all.rst:270
+msgid ""
+"To terminate a specific session, simply click on the red power icon and click "
+"OKAY button in the dialog. Since the data in the folder inside the compute "
+"session is deleted as soon as the compute session ends, it is recommended that "
+"you move the data to the mounted folder or upload it to the folder from the "
+"beginning if you want to keep it."
+msgstr ""
+"특정 세션을 삭제하기 위해서는 빨간색 휴지통 아이콘을 누르면 됩니다. 연산 세션 내"
+"부 폴더의 데이터는 연산 세션이 종료되는 순간 같이 삭제되므로, 계속 유지해야 하"
+"는 데이터라면 마운트 한 폴더에 옮기거나 처음부터 폴더에 업로드하는 것을 권합니"
+"다."
+
+#: ../../sessions_all/sessions_all.rst:282
+msgid "Advanced Web Terminal Usage"
+msgstr "웹 터미널 고급 사용법"
+
+#: ../../sessions_all/sessions_all.rst:284
+msgid ""
+"The web-based terminal we used above internally embeds a utility called `tmux "
+"<https://github.com/tmux/tmux/wiki>`_. tmux is a terminal multiplexer that "
+"supports to open multiple shell windows within a single shell, so as to allow "
+"multiple programs to run in foreground simultaneously. If you want to take "
+"advantage of more powerful tmux features, you can refer to the official tmux "
+"documentation and other usage examples on the Internet."
+msgstr ""
+"위에서 사용 해보았던 웹 기반 터미널은 내부적으로 `tmux <https://github.com/tmux/"
+"tmux/wiki`_ 라는 유틸리티를 사용하고 있습니다. tmux 는 하나의 쉘 내에서 여러 개"
+"의 창을 띄워 다중 작업 할 수 있도록 지원하는 terminal multiplexer 로, 쉘이 닫히"
+"더라도 작업하던 내용을 보존할 수 있는 등 다양한 장점을 가지고 있습니다. 보다 강"
+"력한 터미널 기능을 활용하고 싶다면 tmux 공식 문서 및 기타 인터넷 상의 다양한 사"
+"용 예제를 참고하십시오."
+
+#: ../../sessions_all/sessions_all.rst:291
+msgid "Here we are introducing some simple but useful features."
+msgstr "여기서는 몇 가지 간단하지만 유용한 기능을 소개하겠습니다."
+
+#: ../../sessions_all/sessions_all.rst:294
+msgid "Copy terminal contents"
+msgstr "터미널 내용 복사하기"
+
+#: ../../sessions_all/sessions_all.rst:296
+msgid ""
+"tmux offers a number of useful features, but it's a bit confusing for first-"
+"time users. In particular, tmux has its own clipboard buffer, so when copying "
+"the contents of the terminal, you can suffer from the fact that it can be "
+"pasted only within tmux by default. Furthermore, it is difficult to expose user "
+"system's clipboard to tmux inside web browser, so when using tmux, the terminal "
+"contents cannot be copied and pasted to other programs of user's computer. The "
+"so-called ``Ctrl-C`` / ``Ctrl-V`` is not working."
+msgstr ""
+"tmux 는 다양한 장점을 가지고 있지만 처음 접하는 사용자라면 다소 혼란스러운 부분"
+"도 있습니 다. 특히, tmux 는 자체 클립보드 버퍼를 가지고 있어 터미널의 내용을 복"
+"사할 경우 기본적으로 tmux 내에서만 붙여넣을 수 있다는 부분에서 어려움을 겪을 수 "
+"있습니다. 여기에 웹 기반 터미 널에서는 사용자 시스템의 클립보드를 tmux 에 노출시"
+"키기 어렵다는 한계가 더해져서, tmux 쉘을 사용하고 있는 상태에서는 마우스 드래그"
+"를 통해 터미널 내용을 복사한 후 사용자 컴퓨터의 다른 프로그램에 붙여넣을 수가 없"
+"습니다. 소위 말하는 ``Ctrl-C`` / ``Ctrl-V`` 가 작동하지 않는 것입니다."
+
+#: ../../sessions_all/sessions_all.rst:304
+msgid ""
+"If you need to copy and paste the terminal contents to your system's clipboard, "
+"you can temporarily turn off tmux's mouse support. First, press ``Ctrl-B`` key "
+"to enter tmux control mode. Then type ``:set -g mouse off`` and press ``Enter`` "
+"(note that you have to type the first colon as well). You can check what you "
+"are typing in the status bar at the bottom of the screen. Then drag the desired "
+"text from the terminal with the mouse and press the ``Ctrl-C`` or ``Cmd-C`` (in "
+"Mac) to copy them to the clipboard of the user's computer."
+msgstr ""
+"만약 터미널 내용을 사용자 시스템의 클립보드로 복사하여 붙여넣기를 할 필요가 있"
+"을 때는 잠시 tmux 의 마우스 지원 설정을 끌 수 있습니다. 먼저 ``Ctrl-B`` 키를 눌"
+"러 tmux 의 제어 모드로 진입합니다. 그 후 ``:set -g mouse off`` 를 입력하고 엔터"
+"키를 누릅니다 (처음 콜론까지 입력해야 합니다). 입력하는 내용은 tmux 하단의 상태"
+"바에서 확인할 수 있습니다. 그 후 터미널에서 마우스로 원하는 텍스트를 드래그 하"
+"고 ``Ctrl-C`` 또는 ``Cmd-C`` 키를 누르면 사용자 컴퓨터의 클립보드에 해당 내용이 "
+"복사 됩니다."
+
+#: ../../sessions_all/sessions_all.rst:312
+msgid ""
+"With mouse support turned off, you cannot scroll through the mouse wheel to see "
+"the contents of the previous page from the terminal. In this case, you can turn "
+"on mouse support again. Press ``Ctrl-B``, and this time, type ``:set -g mouse "
+"on``. Now you can scroll mouse wheel to see the contents of the previous page."
+msgstr ""
+"마우스 지원을 끈 상태에서는 마우스 휠로 스크롤하여 터미널의 이전 페이지 내용을 "
+"확인할 수 없습니다. 이 때는 다시 마우스 지원을 켜면 됩니다. ``Ctrl-B`` 를 누른 "
+"후 이번에는 ``:set -g mouse on`` 을 입력해봅시다. 이제 마우스 휠을 스크롤하여 이"
+"전 페이지의 내용을 볼 수 있게 되었습니다."
+
+#: ../../sessions_all/sessions_all.rst:317
+msgid ""
+"If you remember ``:set -g mouse off`` or ``:set -g mouse on`` after ``Ctrl-B``, "
+"you can use the web terminal more conveniently."
+msgstr ""
+"이와 같이 ``Ctrl-B`` 후 ``:set -g mouse off`` 또는 ``:set -g mouse on`` 을 기억"
+"하면 조금 더 편리하게 웹 터미널을 활용할 수 있습니다."
+
+#: ../../sessions_all/sessions_all.rst:321
+msgid ""
+"``Ctrl-B`` is tmux's default control mode key. If you set another control key "
+"by modifying ``.tmux.conf`` in user home directory, you should press the set "
+"key combination instead of ``Ctrl-B``."
+msgstr ""
+"``Ctrl-B`` 키는 tmux 의 기본 제어 모드 키입니다. 만약 홈 디렉토리의 ``.tmux."
+"conf`` 를 수정하여 다른 제어 키를 설정한 경우에는, ``Ctrl-B`` 대신 설정된 키 조"
+"합을 눌러야 합니다."
+
+#: ../../sessions_all/sessions_all.rst:326
+msgid "Checking the terminal history using keyboard"
+msgstr "키보드를 이용해 터미널 이전 내용 확인하기"
+
+#: ../../sessions_all/sessions_all.rst:328
+msgid ""
+"There is also a way to copy the terminal contents and check the previous "
+"contents of the terminal simultaneously. It is to check the previous contents "
+"using the keyboard. Again, click ``Ctrl-B`` first, and then press the ``Page "
+"Up`` and/or ``Page Down`` keys. You can see that you navigate through the "
+"terminal's history with just keyboard. To exit search mode, just press the "
+"``q`` key. With this method, you can check the contents of the terminal history "
+"even when the mouse support is turned off to allow copy and paste."
+msgstr ""
+"터미널 내용 복사도 하면서 터미널의 이전 내용도 확인하고 싶은 경우에도 방법이 있"
+"습니다. 바로 키보드를 이용해서 이전 내용을 확인하는 것입니다. 이번에도 ``Ctrl-"
+"B`` 를 먼저 클릭 해준 뒤 ``Page Up`` 과 ``Page Down`` 키를 눌러 봅시다. 키보드 "
+"만으로 터미널의 이전 내용을 탐색할 수 있다는 것을 확인할 수 있습니다. 탐색 모드"
+"에서 빠져 나오려면 ``q`` 키를 눌러주면 됩니다. 이 방법을 이용하면 마우스 지원을 "
+"끈 상태에서도 터미널 이전 내용 확인이 가능합니다."
+
+#: ../../sessions_all/sessions_all.rst:337
+msgid "Spawn multiple shells"
+msgstr "여러 개의 쉘 띄우기"
+
+#: ../../sessions_all/sessions_all.rst:339
+msgid ""
+"The main advantage of tmux is that you can launch and use multiple shells in "
+"one terminal window. Since seeing is believing, let's press the ``Ctrl-B`` key "
+"and then the ``c``. You can see that the contents of the existing window "
+"disappeared and a new shell environment appeared. Then, did the previous window "
+"terminated? It's not like that. Let's press ``Ctrl-B`` and then ``w``. You can "
+"now see the list of shells currently open on tmux like following image. Here, "
+"the shell starting with ``0:`` is the shell environment you first saw, and the "
+"shell starting with ``1:`` is the one you just created. You can move between "
+"shells using the up/down keys. Place the cursor on the shell ``0:`` and press "
+"the Enter key to select it."
+msgstr ""
+"tmux 의 가장 큰 장점은 하나의 터미널 창에서 여러 개의 쉘을 띄우고 사용할 수 있다"
+"는 점입니 다. 백문이 불여일견이니 ``Ctrl-B`` 키를 누른 후 ``c`` 키를 이어서 눌러"
+"봅시다. 기존 창의 내용이 사라지고 새로운 쉘 환경이 뜬 것을 확인할 수 있습니다. "
+"그러면 기존 창은 사라진 것일까요? 그렇지 않습니다. ``Ctrl-B`` 누른 후 ``w`` 키"
+"를 눌러 봅시다. 다음과 같이 현재 tmux 상에서 열려 있는 쉘 리스트가 조회되는 것"
+"을 볼 수 있습니다. 여기서 ``0:`` 으로 시작하는 쉘이 처음 보던 쉘 환경이고, ``1:"
+"`` 로시작하는 쉘은 방금 새로 생성한 쉘입니다. 위/아래 방향 키를 이용해서 쉘 사이"
+"를 이동할 수 있습니다. ``0:`` 번 쉘에 커서를 가져다 두고 엔터 키를 눌러 선택 해"
+"보겠습니다."
+
+#: ../../sessions_all/sessions_all.rst:353
+msgid ""
+"You can see the shell environment you saw first appears. In this way, you can "
+"use multiple shell environments within a web terminal. To exit or terminate the "
+"current shell, just enter ``exit`` command or press ``Ctrl-B x`` key and then "
+"type ``y``."
+msgstr ""
+"처음 보았던 쉘 환경이 나타나는 것을 볼 수 있습니다. 이와 같은 방식으로 웹 터미"
+"널 내에서 여러 개의 쉘 환경을 띄워 두고 사용할 수 있습니다. 현재 쉘을 종료하려"
+"면 ``exit`` 명령을 입력하거나 ``Ctrl-B x`` 키를 누른 후 ``y`` 를 입력하면 됩니"
+"다."
+
+#: ../../sessions_all/sessions_all.rst:358
+msgid "In summary:"
+msgstr "정리하면 다음과 같습니다:"
+
+#: ../../sessions_all/sessions_all.rst:360
+msgid "``Ctrl-B c``: create a new tmux shell"
+msgstr "``Ctrl-B c``: 새로운 tmux 쉘 생성"
+
+#: ../../sessions_all/sessions_all.rst:361
+msgid "``Ctrl-B w``: query current tmux shells and move around among them"
+msgstr "``Ctrl-B w``: tmux 쉘 조회 및 이동/선택"
+
+#: ../../sessions_all/sessions_all.rst:362
+msgid "``exit`` or ``Ctrl-B x``: terminate the current shell"
+msgstr "``exit`` 또는 ``Ctrl-B x``: 현재 tmux 쉘 종료"
+
+#: ../../sessions_all/sessions_all.rst:364
+msgid ""
+"Combining the above commands allows you to perform various tasks simultaneously "
+"on multiple shells."
+msgstr ""
+"위 명령을 조합하여 여러 개의 쉘에서 동시에 다양한 작업을 수행할 수 있습니다."

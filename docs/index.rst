@@ -25,8 +25,7 @@ The latest versions of this document can be found from sites below:
    installation/installation
    login/login
    summary/summary
-   session_list/session_list
-   session_use/session_use
+   sessions_all/sessions_all
    vfolder/vfolder
    mount_vfolder/mount_vfolder
    share_vfolder/share_vfolder

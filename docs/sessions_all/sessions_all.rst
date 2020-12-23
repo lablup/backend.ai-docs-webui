@@ -1,37 +1,78 @@
-================================================
-CPU/Memory Allocation and Using Compute Sessions
-================================================
-
-.. note:: Objectives
-
-   * From the GUI environment, users can create a compute session by specifying
-     the amount of CPU and memory resources dynamically
-   * From the GUI, check the amount of CPU and memory resources of the session
-   * Using Jupyter Notebook and Terminal apps in container environment
-   * Check the allocated CPU and memory resources from inside the container by
-     referencing cgroup
+================
+Compute Sessions
+================
 
 The most visited pages in the Backend.AI GUI Console would be the Sessions and
 Storage pages. On the Sessions page, you can view, create, and use
 container-based compute sessions, and on the Storage page, you can create a
-storage folder to keep important data. Here, you will learn how to create
-container-based compute sessions and utilize various web applications on
+storage folder to keep important data. Here, you will learn how to query and
+create container-based compute sessions and utilize various web applications on
 the Sessions page.
+
+
+Querying compute sessions
+-------------------------
+
+To see the list of compute sessions, click Sessions in the left sidebar. In the
+Running tab on the right, you can check the information on the currently running
+sessions. Click the Finished tab to see the list of terminated sessions.  In the
+OTHERS tab you can query for compute sessions with errors.  For each session,
+you can check information such as ID, created date, used time, allocated
+resources, resource usage, and etc.
+
+.. image:: session_list.png
+   :align: center
+   :alt: Session list
+
+As a superadmin, you can see the information of all sessions currently running
+(or ended) in the cluster. On the other hand, users can see their sessions only.
+
+The resource indicator is displayed at the top of the screen. You can check the
+amount of resources currently used and the total amount of resources
+that can be allocated. The display bar is divided into two parts: the upper and
+the lower. The upper part shows the resource allocation status in the current
+scaling group, and the lower part shows the allocation status of total
+accessible resources.
+
+* Upper: Allocated and available resources within the current scaling group
+
+   - (Resources allocated by the user in the current scaling group) /
+     (Total resources allocatable by the user in the current scaling group)
+
+* Lower: Total allocated and available resources
+
+   - (Resources allocated by the user) / (Resources allocated by the user +
+     Total resources allocatable by the user in the current scaling group)
+
+.. note::
+   If the GPU resource is marked as FGPU, this means that the server is serving
+   the GPU resources in a virtualized form. Backend.AI supports GPU
+   virtualization technology that a single physical GPU can be divided and
+   shared by multiple users for better utilization. Therefore, if you want to
+   execute a task that does not require a large amount of GPU computation, you
+   can create a compute session by allocating only a portion of a GPU. The
+   amount of GPU resources that 1 FGPU actually allocates may vary from system
+   to system depending on the administrator's setting. For example, if
+   administrator has set to split one physical GPU into five pieces, 5 FGPU
+   means 1 physical GPU, or 1 FGPU means 0.2 physical GPU. At this
+   configuration, if you create a compute session by allocating 1 FGPU, you can
+   utilize SM (streaming multiprocessor) and GPU memory corresponding to 0.2
+   physical GPU for the session.
 
 
 Start a new session
 -------------------
 
-After logging in with a user account, click Sessions on the left menu to visit
-the Sessions page.
+In addition to see the list of compute sessions, Sessions tab lets you start new
+sessions or use and manage already running sessions. After logging in with a
+user account, click Sessions on the left menu to visit the Sessions page.
 
 .. image:: sessions_page.png
 
 Click the START button to start a new compute session. The following setup
 dialog will appear. You can specify the language environment (Environments,
 Version) and resources you want to allocate. Set the CPU and memory as shown in
-the following figure and click the LAUNCH button. The environment was chosen as
-TensorFlow 2.2.
+the following figure and click the LAUNCH button.
 
 .. image:: session_launch_dialog.png
    :width: 350
@@ -52,7 +93,7 @@ If you need more detailed settings, refer to the meaning of each items.
 * Session name (optional): Specifies the name of the compute session to be
   created. If specified, this name appears in Session Info, making it easy to
   distinguish from other compute sessions. If not specified, a
-  randomly-generated name is used. You can set the session name up to 4 to 
+  randomly-generated name is used. You can set the session name up to 4 to
   64 characters only with alphabetical character or numbers, and no spaces
   are allowed.
 * Folder to mount: Specifies the data folder to be mounted in the compute
@@ -75,12 +116,24 @@ If you need more detailed settings, refer to the meaning of each items.
   settings. You can specify when you need to create the same computational
   sessions at once.
 
-If no mount folder is specified in the Folder to mount input box, a warning
-dialog may appear indicating that the storage folder is not mounted. For now,
-ignore the warning and click the LAUNCH WITHOUT STORAGE FOLDER button to create
-a compute session. Let's see that a new compute session is created in the
-Running tab. In the FINISHED tab, you can see terminated compute sessions, and
-in the OTHERS tab you can query for compute sessions with errors.
+If no mount folder is specified in "Folders to mount", a warning dialog may
+appear indicating that no storage folder is mounted. It is recommended that one
+or more storage folders to be mounted because terminating compute session by
+default deletes all the data inside the session. If you specify a mount folder
+and save your data in that folder, you can keep the data even if the compute
+session is terminated. Data preserved in the storage folder can also be reused
+by re-mounting it when creating another compute session. You can ignore the
+alarm and create a session. However, it's a good idea to mount a folder if
+you're working on a job that requires you to keep data. For information on how
+to mount a folder and run a compute session, see
+:ref:`Related Content <session-with-mounts>`.
+
+.. image:: no_vfolder_notification_dialog.png
+   :width: 350
+   :align: center
+   :alt: Notification dialog when no storage folder is mounted to the session
+
+Notice that a new compute session is created in the Running tab.
 
 .. image:: session_created.png
 
@@ -90,7 +143,7 @@ resources in the Configuration column. Note that the amounts of resources you
 specified in creating the compute session are displayed.
 
 .. note::
-   Superadmins can view all compute session information currently running (or
+   Superadmins can query all compute session information currently running (or
    terminated) in the cluster, and users can view only the sessions they have
    created.
 
@@ -99,8 +152,9 @@ specified in creating the compute session are displayed.
    network connection problems, and etc. This can be solved by refreshing the
    browser page.
 
-Utilize Jupyter Notebook and check the resource quota from inside the container
--------------------------------------------------------------------------------
+
+Using Jupyter Notebook
+----------------------
 
 Let's look at how to use and manage compute sessions that are already running.
 If you look at the Control column of the session list, there are several icons.
@@ -111,19 +165,28 @@ below, and several app services supported by the session appear.
    :width: 400
    :align: center
 
-Let's click on Jupyter Notebook.
-
 .. note::
-   Try preferred port: When the web service is opened, a specific port is
-   assigned from the port pool created in advance by Backend.AI. Users can
-   use the service only when they connect to the port along with the IP
-   address or domain name. If you check this item and enter the port number,
-   the entered port number will be tried.
-   However, there is no guarantee that the desired port will always be assigned.
-   The port may not exist at all in the port pool, or another service may
-   already be using the port.In this case, the port number is randomly assigned.
-   Do not open the app by checking this option unless you have a clear usage
-   purpose and know what it means.
+   There are two check options under the app icons. Check each item and open the
+   app to reflect the following features:
+
+   * Open app to public: Open the app to the public. Basically, web services
+     such as Terminal and Jupyter Notebook services here are not accessible by
+     other users, even if the user knows the service URL, since they are
+     considered unauthenticated. However, if you check this item anyone who
+     knows the URL (and port number) of the service can access and use it. Of
+     course, the user must have a network path to access the service.
+   * Try preferred port: When the web service is opened, a specific port is
+     assigned from the port pool created in advance by Backend.AI. Users can use
+     the service only when they connect to the port along with the IP address or
+     domain name. If you check this item and enter the port number, the entered
+     port number will be tried. However, there is no guarantee that the desired
+     port will always be assigned. The port may not exist at all in the port
+     pool, or another service may already be using the port. In this case, the
+     port number is randomly assigned.
+
+  Depending on the system configuration, these options may not appear.
+
+Let's click on Jupyter Notebook.
 
 .. image:: jupyter_app.png
 
@@ -135,6 +198,10 @@ library provided by the computation session can be used as it is. For detailed
 instructions on how to use Jupyter Notebook, please refer to the official
 documentation.
 
+In the notebook's file explorer, the ``id_container file`` contains a private
+SSH key. If necessary, you can download it and use it for SSH / SFTP access to
+the container.
+
 Click the NEW button on the top right and select the Notebook for Backend.AI,
 then the ipynb window appears where you can enter your own code.
 
@@ -143,21 +210,18 @@ then the ipynb window appears where you can enter your own code.
    :align: center
 
 In this window, you can enter and execute any code you want by using the
-environment that session provides. The code execution happens on one of the
+environment that session provides. The code is executed on one of the
 Backend.AI nodes where the compute session is actually created, and there is no
-need to configure a separate environment on the local machine. Enter the
-following code and click the Run button or type ``Ctrl-Enter`` to run the code.
-It is a Python code that reads and prints the resource quota under
-``/sys/fs/cgroup/``.
+need to configure a separate environment on the local machine.
 
 .. image:: notebook_code_execution.png
 
-Since Python is already installed in the TensorFlow 2.2 environment, the code
-will run without any configuration. Make sure that the amount of core and memory
-you specified when you first created the compute session is displayed.
+When you close the window, you can notice that the ``Untitled.ipynb`` file is
+created in the Notebook File Explorer. Note that the files created here are
+deleted when you terminate the session. The way to preserve those files even
+after the session is terminated is described in the Storage/Folders section.
 
-.. note::
-   The amount of memory may vary slightly depending on the calculation method.
+.. image:: untitled_ipynb_created.png
 
 Like this, after creating a compute session, you can use web apps such as
 Jupyter Notebook, and in Jupyter Notebook, you can run Python code that checks
@@ -167,29 +231,26 @@ resource constraints right away without installing a separate packages.
 Web terminal
 ------------
 
-If you close the Jupyter Notebook app and open the app launcher screen of the
-math session again, you will see the Console app present. Let's click.
+Return to the Session list page. This time, let's launch the terminal. Click the
+terminal icon (the second button) to use the container's ttyd daemon. A terminal
+will appear in a new window, and you can issue shell commands by accessing
+inside the computational session as shown in the following figure. If you are
+familiar with using commands, you can easily issue various Linux commands. You
+can see that the Untitled.ipynb file automatically generated in Jupyter Notebook
+is viewed through the ``ls`` command. This is proof that both apps are running
+in the same container environment.
 
 .. image:: session_terminal.png
    :width: 500
    :align: center
 
-A terminal will also appear in a new window, and you can issue shell commands by
-accessing inside the computational session as shown in the following figure. If
-you are familiar with using commands, you can easily issue various Linux
-commands. You can see that the Untitled.ipynb file automatically generated in
-Jupyter Notebook is viewed through the ``ls`` command. This is proof that both
-apps are running in the same container environment.
+If you create a file here, you can immediately see it in the Jupyter Notebook
+you opened earlier as well. Conversely, changes made to files in Jupyter
+Notebook can also be checked right from the terminal. This is because they are
+using the same files in the same compute session.
 
 In addition to this, you can use web-based services such as TensorBoard, Jupyter
 Lab, etc., depending on the type of service provided by the compute session.
-
-To delete a specific session, simply click on the red power icon and click OKAY
-button in the dialog.
-
-.. image:: session_destroy_dialog.png
-   :width: 400
-   :align: center
 
 
 Query compute session log
@@ -206,10 +267,99 @@ Control column of the running compute session.
 Delete a compute session
 ------------------------
 
-You can delete a compute session by clicking the trash can icon in the Control
-column of the running session. If you click OKAY button in the dialog box, the
-compute session will be deleted after a while.
+To terminate a specific session, simply click on the red power icon and click
+OKAY button in the dialog. Since the data in the folder inside the compute
+session is deleted as soon as the compute session ends, it is recommended that
+you move the data to the mounted folder or upload it to the folder from the
+beginning if you want to keep it.
 
-.. image:: destroy_dialog.png
-   :width: 500
+.. image:: session_destroy_dialog.png
+   :width: 400
    :align: center
+
+
+Advanced Web Terminal Usage
+---------------------------
+
+The web-based terminal we used above internally embeds a utility called
+`tmux <https://github.com/tmux/tmux/wiki>`_. tmux is a terminal multiplexer that
+supports to open multiple shell windows within a single shell, so as to allow
+multiple programs to run in foreground simultaneously. If you want to take
+advantage of more powerful tmux features, you can refer to the official tmux
+documentation and other usage examples on the Internet.
+
+Here we are introducing some simple but useful features.
+
+Copy terminal contents
+~~~~~~~~~~~~~~~~~~~~~~
+
+tmux offers a number of useful features, but it's a bit confusing for first-time
+users. In particular, tmux has its own clipboard buffer, so when copying the
+contents of the terminal, you can suffer from the fact that it can be pasted
+only within tmux by default. Furthermore, it is difficult to expose user
+system's clipboard to tmux inside web browser, so when using tmux, the terminal
+contents cannot be copied and pasted to other programs of user's computer. The
+so-called ``Ctrl-C`` / ``Ctrl-V`` is not working.
+
+If you need to copy and paste the terminal contents to your system's clipboard,
+you can temporarily turn off tmux's mouse support. First, press ``Ctrl-B`` key
+to enter tmux control mode. Then type ``:set -g mouse off`` and press ``Enter``
+(note that you have to type the first colon as well). You can check what you are
+typing in the status bar at the bottom of the screen. Then drag the desired text
+from the terminal with the mouse and press the ``Ctrl-C`` or ``Cmd-C`` (in Mac)
+to copy them to the clipboard of the user's computer.
+
+With mouse support turned off, you cannot scroll through the mouse wheel to see
+the contents of the previous page from the terminal. In this case, you can turn
+on mouse support again. Press ``Ctrl-B``, and this time, type ``:set -g mouse
+on``. Now you can scroll mouse wheel to see the contents of the previous page.
+
+If you remember ``:set -g mouse off`` or ``:set -g mouse on`` after ``Ctrl-B``,
+you can use the web terminal more conveniently.
+
+.. note::
+   ``Ctrl-B`` is tmux's default control mode key. If you set another control key
+   by modifying ``.tmux.conf`` in user home directory, you should press the set
+   key combination instead of ``Ctrl-B``.
+
+Checking the terminal history using keyboard
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+There is also a way to copy the terminal contents and check the previous
+contents of the terminal simultaneously. It is to check the previous contents
+using the keyboard. Again, click ``Ctrl-B`` first, and then press the ``Page
+Up`` and/or ``Page Down`` keys. You can see that you navigate through the
+terminal's history with just keyboard. To exit search mode, just press the ``q``
+key. With this method, you can check the contents of the terminal history even
+when the mouse support is turned off to allow copy and paste.
+
+Spawn multiple shells
+~~~~~~~~~~~~~~~~~~~~~
+
+The main advantage of tmux is that you can launch and use multiple shells in one
+terminal window. Since seeing is believing, let's press the ``Ctrl-B`` key and
+then the ``c``. You can see that the contents of the existing window disappeared
+and a new shell environment appeared. Then, did the previous window terminated?
+It's not like that. Let's press ``Ctrl-B`` and then ``w``. You can now see the
+list of shells currently open on tmux like following image. Here, the shell
+starting with ``0:`` is the shell environment you first saw, and the shell
+starting with ``1:`` is the one you just created. You can move between shells
+using the up/down keys. Place the cursor on the shell ``0:`` and press the Enter
+key to select it.
+
+.. image:: tmux_multi_session_pane.png
+   :alt: tmux's multiple session management
+
+You can see the shell environment you saw first appears. In this way, you can
+use multiple shell environments within a web terminal. To exit or terminate the
+current shell, just enter ``exit`` command or press ``Ctrl-B x`` key and then
+type ``y``.
+
+In summary:
+
+- ``Ctrl-B c``: create a new tmux shell
+- ``Ctrl-B w``: query current tmux shells and move around among them
+- ``exit`` or ``Ctrl-B x``: terminate the current shell
+
+Combining the above commands allows you to perform various tasks simultaneously
+on multiple shells.
