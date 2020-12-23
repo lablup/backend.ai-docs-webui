@@ -87,3 +87,27 @@ administrator.
    reasons. If the access restriction continues on more than 20 minutes, please contact
    your system administrator.
    
+
+Sidebar Menus
+--------------------
+
+There are three buttons at the top of the left sidebar.
+
+The leftmost button changes the size of the sidebar. Click to make the sidebar
+narrower. Click again to bring the sidebar back to its original width.
+
+.. image:: ui_menu.png
+
+The middle button is the event notification button. Events that need to be
+recorded during Console operation are displayed here.
+
+The rightmost button is the background task button. When background tasks are
+running, such as creating a compute session, you can check the jobs here.  When
+the background task is finished, it usually disappears as well.
+
+There is a question mark icon at the lower left corner of the sidebar. Click
+this icon to access the web version of this guide document.
+
+.. image:: question_icon.png
+   :width: 300
+   :align: center
