@@ -5,17 +5,20 @@ Handling Folders
 Backend.AI supports dedicated storage to preserve user's files. Since the files
 and directories of a compute session are deleted upon session termination, it is
 recommended to save them in a storage folder. List of storage folders can be
-found by selecting the Storage on the left sidebar.
+found by selecting the Data & Storage page on the sidebar. You can see the information
+such as the folder name and ID, the NFS host name where the folder is located
+(Location), and folder access rights (Permission).
+
 
 .. image:: vfolder_list.png
    :alt: Folder list in Storage page
 
-There are two types of storage folders. User type folders can be created by
-normal users, and you can check that ther is one user icon in the Type column.
+There are two types of storage folders. User folders can be created by
+normal users, and you can see that there is one user icon in the Type panel.
 On the other hand, Group folders can be recognized by an icon with multiple
-users in the column. Group folders are created by domain admins, and normal
-users can only see group folders which are created in a group where user
-belongs.
+users in the panel. Group folders are created by domain admins, and normal
+users can only see group folders created for the group in which the users
+belong.
 
 
 Create storage folder
@@ -35,7 +38,23 @@ CREATE button.
    :align: center
    :alt: Folder creation dialog
 
+The meaning of each fields that can be selected in the creation dialog is as
+follows.
 
+* Folder name: The name of the folder. You can enter up to 64 characters.
+* Host: NFS host to create folder. You can choose one if you have multiple NFS
+  hosts.
+* Type: Determines the type of folder to be created. It can be set as User or
+  Group. The User folder is a folder that users can create and use alone
+  and the Group folder is a folder created by admin and shared by users in the group.
+* Usage Mode: You can set the purpose of the folder. There are three types of mode:
+  General, Data, and Model. It is classified for the development of exclusive functions
+  for Data & Model Stores in the future and currently there is no
+  difference in UI depending on the purpose.
+* Group: Designates the group to which the folder belongs when creating a new group folder. 
+  Group folders must belong to a group. However, it does not play any
+  role when creating a user folder.
+  
 Explore folder
 --------------
 
@@ -60,6 +79,9 @@ You can create a new directory on the current path with the NEW FOLDER button
 (in the file explorer), or upload a local file with the UPLOAD FILES button. All
 of these file operations can also be performed using the above-described method
 of mounting folders into a compute session.
+
+The maximum length of file or directory inside a folder may depends on the host
+file system. But, it usually cannot exceed 255 characters.
 
 To close file explorer, click the X button in the upper right.
 
