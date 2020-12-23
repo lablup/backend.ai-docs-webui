@@ -131,6 +131,8 @@ according to the user's pattern.
    :align: center
    :alt: Add keypair dialog
 
+.. _sharing-a-group-storage:
+
 Share group storage folders with group members
 -------------------------------------------------
 
