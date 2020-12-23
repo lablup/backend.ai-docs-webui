@@ -20,7 +20,7 @@ be sent to verify that the email is yours. If the verification email is sent, yo
 will need to read the email and click the link inside to pass verification
 before you can log in with your account.
 
-.. image:: signup_dialog.png
+.. image:: signup_dialog.PNG
    :width: 350
    :align: center
    :alt: Signup dialog
