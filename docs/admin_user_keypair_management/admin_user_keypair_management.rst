@@ -4,7 +4,7 @@ Admin Menus
 
 When you log in with an admin account, you will see an additional Administration
 menu in the bottom left sidebar. User information registered in Backend.AI is
-listed in the Users tab. Domain admin can see only the users who belong to the domain, 
+listed in the Users tab. Domain admin can see only the users who belong to the domain,
 while superadmin can see all users' information. Only
 superadmin can create and deactivate a user.
 
@@ -16,7 +16,7 @@ search box on each column header.
 
 
 Create and update users
-----------------------
+-----------------------
 
 A user can be created by clicking the CREATE USER button. Note that the password
 must be longer or equal to 8 characters and at least 1 alphabet/special
@@ -26,7 +26,7 @@ character/ number should be included. The maximum length allowed for E-Mail and 
 
    If a user with the same email or username already exists, it is not possible to
    creat user account. Please try other email and username.
-   
+
 .. image:: create_user_dialog.png
    :width: 500
    :align: center
@@ -47,7 +47,7 @@ user belongs.
    :alt: Detailed information of a user
 
 Click the gear icon in the Controls panel to update information of a user who
-already exists. User's name, password, activation state, etc. can be changed. User ID cannot be changed. 
+already exists. User's name, password, activation state, etc. can be changed. User ID cannot be changed.
 
 .. image:: user_update_dialog.png
    :width: 350
@@ -60,7 +60,7 @@ Each of the two items at the bottom of the dialog has the following functions.
   in. You can toggle this option to change the user to active or inactive state.
   Note that the inactive users are listed in the Inactive tab separately.
 * Require password change?: If the admin has chosen random passwords while
-  creating users in batches, this field can be set to ON to indicate that password change is required. 
+  creating users in batches, this field can be set to ON to indicate that password change is required.
   This is a kind of descriptive flag and has no effect on actual use.
 
 Inactivate user account
@@ -76,15 +76,15 @@ you can inactivate the user by clicking the OKAY button.
    :width: 600
    :align: center
    :alt: Deactivating user account
- 
+
 To re-activate users, go to Users - Inactive tab, and edit the target user to
 turn on "Active user?" field.
 
-.. note:: 
+.. note::
 
    Please note that inactivating the user changes all of credentials to be inactive,
    but reactivating the user does not reactivate the inactivated credentials, since the user
-   account can have multiple keypairs, which brings it hard to decide which credential 
+   account can have multiple keypairs, which brings it hard to decide which credential
    should be reactivated.
 
 
@@ -137,12 +137,12 @@ specific user, and can be accessed by all users in that group.
 
 .. note::
    Group folders can be created only by administrators. Normal users can only
-   access the contents of the group folder created by the administrator. 
-   Depending on the system settings, group folders may not be allowed. 
+   access the contents of the group folder created by the administrator.
+   Depending on the system settings, group folders may not be allowed.
 
 First, log in with an admin account and create a group folder. After
 moving to the Data & Storage page, click NEW FOLDER to open the folder creation
-dialog. Enter the folder name, set the Type to Group, and select the group to share the folder. 
+dialog. Enter the folder name, set the Type to Group, and select the group to share the folder.
 Let's select the group to which User B belongs for
 this example to work. Permission is set to Read-Only..
 
@@ -175,9 +175,9 @@ apply them separately to each keypair.
    Manager Hub, a UI for superadmin only. In the Console UI, you can only set
    resource policies based on keypairs. Manager Hub is a part of the enterprise
    version.
-   
-In Resource Policies tab on the Users page, the admin can check the list of currently registered resource policies. 
-In the figure below, there are a total of three policies (gardener, STUDENT, default). 
+
+In Resource Policies tab on the Users page, the admin can check the list of currently registered resource policies.
+In the figure below, there are a total of three policies (gardener, STUDENT, default).
 The infinity (∞) marks for resources such as Cores, Ram, and fGPU in the Resources panel means that no
 resource restrictions have been placed for those resources.
 
@@ -185,12 +185,12 @@ resource restrictions have been placed for those resources.
    :alt: Resource policy page
 
 The user account currently used in this guide is under the default
-resource policy. This can be confirmed in the Credentials tab on the left. In the Resource Policy panel, 
+resource policy. This can be confirmed in the Credentials tab on the left. In the Resource Policy panel,
 you can also see that all resources can be used to the extent the hardware allows (∞).
 
 .. image:: credentials.png
 
-You can modify resouce policies by clicking the gear button in the Control panel of default policy group. 
+You can modify resouce policies by clicking the gear button in the Control panel of default policy group.
 In Update Resource Policy dialog, every option is
 changeable except Policy Name, which is the primary key for distinguishing the
 resource policies in the list. Uncheck the Unlimited checkbox at the bottom of CPU, RAM, fGPU, and set the resource limits
@@ -262,7 +262,7 @@ click OKAY button to delete.
    :align: center
 
 .. note::
-   
+
    If there's any users (including inactive users) following a resource policy to be deleted,
    deletion may not be done. Before deleting a resource policy, please make sure that
    no users remain under the resource policy.
@@ -454,17 +454,17 @@ You can deactivate a resource policy by turning off Active Status.
 You can create a new resource policy by clicking the CREATE button.
 
 
-Download session lists 
----------------------
+Download session lists
+-------0--------------
 
-There's additional feature in Session page for admin. 
+There's additional feature in Session page for admin.
 On the right side of the OTHERS tab there is a menu marked with ``...``.
 When you click this menu, a sub-menu export CSV appears.
 
 .. image:: export_csv_menu.png
 
-If you click this menu, you can download the information of the comcpute sessions 
-created so far in CSV format. After the following dialog opens, enter an appropriate 
+If you click this menu, you can download the information of the comcpute sessions
+created so far in CSV format. After the following dialog opens, enter an appropriate
 file name (if necessary), click the EXPORT button and you will get the CSV file. Please note that a file name can have up to 255 characters.
 
 .. image:: export_session_dialog.png

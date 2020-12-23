@@ -95,7 +95,7 @@ Resource Monitoring and Automated Job Scheduling
 
 
 Resource monitoring through GUI
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Backend.AI GUI Console supports resource monitoring through GUI. After logging
 in with a user account, create a compute session. Resource allocation is set as

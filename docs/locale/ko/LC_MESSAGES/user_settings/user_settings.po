@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-31 02:49+0900\n"
+"POT-Creation-Date: 2020-12-23 13:53+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,58 +19,98 @@ msgstr ""
 "Generated-By: Babel 2.8.0\n"
 
 #: ../../user_settings/user_settings.rst:3
-msgid "User Settings & Logs"
+#, fuzzy
+msgid "User Settings"
 msgstr "설정 및 로그"
 
 #: ../../user_settings/user_settings.rst:5
-#, fuzzy
 msgid ""
-"User Setting and Logs tab allow users to change the preferred Console "
-"Environment. From the language setting, SSH keypair management, editing "
-"user config script, and even to using Beta Features are available by just"
-" a few clicks of each button. Every message from server will be logged in"
-" Logs. You can see how the miscellaneous error occurred in the Logs tab."
+"The user settings page is accessed by clicking the gear icon at the "
+"bottom of the left sidebar or by selecting the Preferences menu that "
+"appears after clicking the person icon at the top right. Users can change"
+" the preferred Console Environment from the language setting, SSH keypair"
+" management, editing user config script, and even to using Beta features."
 msgstr ""
-"설정 및 로그 탭에서는 사용자가 선호하는 콘솔 환경에 맞게 변경할 수 있습니다. 언어 설정부터 SSH 키페어 관리, 사용자 설정 "
-"스크립트 수정과 베타 기능 사용까지 각 기능의 버튼을 몇 번 클릭하는 것만으로도 가능합니다. 서버로부터 오는 모든 메시지는 로그 "
-"페이지에 저장됩니다. 에러가 발생하였을 때, 어떻게 발생하였는지 로그 탭에서 확인하실 수 있습니다."
 
 #: ../../user_settings/user_settings.rst:13
-msgid "Language Setting"
-msgstr "언어 설정"
-
-#: ../../user_settings/user_settings.rst:15
-msgid "Click Language Dropdown to check supported languages."
-msgstr "언어 드롭다운 메뉴를 클릭해서 지원하는 언어를 확인할 수 있습니다."
+msgid "GENERAL tab"
+msgstr ""
 
 #: ../../user_settings/user_settings.rst:18
-msgid "Currently, only Korean and English are supported."
-msgstr "현재는 한국어와 영어만 지원됩니다."
-
-#: ../../user_settings/user_settings.rst:22
-msgid "Change SSH Keypair"
-msgstr "SSH 키페어 변경"
-
-#: ../../user_settings/user_settings.rst:24
-msgid ""
-"If you are using the GUI console app, you can create SSH/SFTP connection "
-"directly to the container. You can query or create a SSH keypair, which "
-"is used for SSH/SFTP connection. Clicking the button next to the SSH "
-"keypair Management in Preferences panel brings up a dialog. Current "
-"public key is displayed, if exists, and new public key and private key "
-"can be created by clicking GENERATE button. This will generate a new SSH "
-"keypair and save it into the database."
+msgid "Desktop Notification"
 msgstr ""
-"앱 형태의 GUI 콘솔을 사용하는 경우 컨테이너로 직접 SSH/SFTP 접속을 할 수 있습니다. (주의: 웹 기반 콘솔에서는 아직 "
-"SSH/SFTP 접속을 지원하지 않습니다.) 이 때 사용되는 SSH keypair를 조회하거나 새로 생성할 수 있습니다. 설정 "
-"패널의 SSH 키페어 관리 옆(private key는 조회되지 않습니다), 생성 버튼을 클릭하여 새로운 public key,  "
-"private key를 생성하고 데이터베이스에 저장할 수 있습니다."
 
-#: ../../user_settings/user_settings.rst:37
-msgid "The web-based console does not yet support SSH/SFTP connections."
-msgstr "웹기반 콘솔은 아직 SSH/SFTP 연결을 지원하지 않습니다."
+#: ../../user_settings/user_settings.rst:20
+msgid ""
+"Enables or disables the desktop notification feature. If the browser and "
+"operating system support it, various  messages that appear in the GUI "
+"console will also appear in the desktop notification panel. If disabled "
+"from the operating system during the first run, the desktop message may "
+"not be displayed even if the option is turned on here. Regardless of the "
+"value of this option, the notification inside the GUI console still "
+"works."
+msgstr ""
 
-#: ../../user_settings/user_settings.rst:40
+#: ../../user_settings/user_settings.rst:28
+msgid "Use Compact Sidebar by default"
+msgstr ""
+
+#: ../../user_settings/user_settings.rst:30
+msgid ""
+"When this option is on, the left sidebar will be shown in a compact form "
+"(narrower width). Change of the option is applied when the browser is "
+"refreshed. If you want to immediately change the type of the sidebar "
+"without refreshing the page, click the leftmost icon at the top of the "
+"sidebar."
+msgstr ""
+
+#: ../../user_settings/user_settings.rst:36
+msgid "Language"
+msgstr ""
+
+#: ../../user_settings/user_settings.rst:38
+msgid ""
+"Set the language displayed on the UI. Currently, English and Korean are "
+"supported. However, there may be some UI items that do not update their "
+"language before the page is refreshed."
+msgstr ""
+
+#: ../../user_settings/user_settings.rst:42
+msgid "OS Default: Use the operating system's default language."
+msgstr ""
+
+#: ../../user_settings/user_settings.rst:43
+msgid "English: Set English as the default language."
+msgstr ""
+
+#: ../../user_settings/user_settings.rst:44
+msgid "Korean: Set Korean as the default language."
+msgstr ""
+
+#: ../../user_settings/user_settings.rst:48
+msgid "SSH Keypair Management"
+msgstr ""
+
+#: ../../user_settings/user_settings.rst:50
+msgid ""
+"When using the GUI console app, you can create SSH/SFTP connection "
+"directly to the compute session. Once you signed up for Backend.AI, a "
+"public keypair is provided. If you click the button on the right to the "
+"SSH Keypair Management section, the following dialog appears. Click the "
+"copy button on the right to copy the existing SSH public key. You can "
+"update SSH keypair by clicking GENERATE button at the bottom of the "
+"dialog. SSH public/private keys are randomly generated and stored as user"
+" information. Please note that the secret key cannot be checked again "
+"unless it is saved manually immediately after creation."
+msgstr ""
+
+#: ../../user_settings/user_settings.rst:64
+msgid ""
+"SSH/SFTP connection is available only with the Backend.AI GUI desktop app"
+" and is not supported on a web browser."
+msgstr ""
+
+#: ../../user_settings/user_settings.rst:67
 msgid ""
 "Backend.AI uses SSH keypair based on OpenSSH. On Windows, you may convert"
 " this into PPK key."
@@ -78,21 +118,153 @@ msgstr ""
 "Backend.AI는 OpenSSH에 기반한 SSH keypair를 사용합니다. 윈도우즈에서는 PPK 기반 키로 변환해야 할 수 "
 "있습니다."
 
-#: ../../user_settings/user_settings.rst:45
-msgid "Edit Shell Environment"
-msgstr "쉘 환경 수정"
-
-#: ../../user_settings/user_settings.rst:47
-msgid ""
-"Existing shell scripts can be applied to new sessions. You can copy the "
-"shell script and save it to your favorite shell script run command. Shell"
-" editing feature also supports setting ``.Renviron`` file used in the R "
-"language."
+#: ../../user_settings/user_settings.rst:71
+msgid "Automatic Update Check"
 msgstr ""
-"기존에 사용중인 쉘 스크립트를 새로운 세션에 적용할 수 있습니다. 쉘 스크립트를 복사해서 선호하는쉘스크립트 실행 커맨드에 저장할 수"
-" 있습니다. 쉘 수정 기능은 R 언어에서 사용되는 ``.Renviron`` 파일 또한 지원합니다. "
 
-#: ../../user_settings/user_settings.rst:57
-msgid "Only ``.zshrc``, ``.bashrc`` and ``.Renviron`` are editable for now."
-msgstr "``.zshrc``, ``.bashrc`` 와 ``.Renviron`` 파일만 현재 수정가능합니다."
+#: ../../user_settings/user_settings.rst:73
+msgid ""
+"A notification window pops up when a new version of the GUI console is "
+"detected. It works only in an environment where Internet access is "
+"available."
+msgstr ""
+
+#: ../../user_settings/user_settings.rst:77
+msgid "Auto logout"
+msgstr ""
+
+#: ../../user_settings/user_settings.rst:79
+msgid ""
+"Log out automatically when all Backend.AI console pages are closed except"
+" for pages created to run apps in session (e.g. jupyter notebook, web "
+"terminal, etc.)."
+msgstr ""
+
+#: ../../user_settings/user_settings.rst:82
+msgid "EDIT USER CONFIG SCRIPT"
+msgstr ""
+
+#: ../../user_settings/user_settings.rst:84
+msgid ""
+"You can write scripts to mount and run automatically when creating a "
+"compute session. Currently, three files can be edited by the user: "
+"``.bashrc``, ``.zshrc``, and ``.Renviron``. The scripts are saved for "
+"each user and can be used when certain automation tasks are required at "
+"the start of a compute session. For example, you can modify the "
+"``.bashrc`` script to register desired alias or specify that certain "
+"files are always downloaded to a specific location."
+msgstr ""
+
+#: ../../user_settings/user_settings.rst:92
+msgid ""
+"Use the drop-down menu at the top to select the type of script you want "
+"to write and then write the content. You can save the script by clicking "
+"the SAVE or SAVE AND CLOSE button. Click the DELETE button to delete the "
+"script."
+msgstr ""
+
+#: ../../user_settings/user_settings.rst:103
+msgid "LOGS tab"
+msgstr ""
+
+#: ../../user_settings/user_settings.rst:105
+msgid ""
+"Displays detailed information of various logs recorded on the client "
+"side. You can visit this page to find out more about the errors occurred."
+" You can refresh or delete the logs by using the trash button at the top "
+"right."
+msgstr ""
+
+#: ../../user_settings/user_settings.rst:112
+msgid ""
+"If you only have one page logged in, clicking the REFRESH button may not "
+"seem to work properly. Logs pages are collection of requests to the "
+"server and responses from the server. If current page is the log page, "
+"then it will not send any requests to the server except refreshing the "
+"page explicitly. To check logs are being stacked properly, please open "
+"another page and click REFRESH button."
+msgstr ""
+
+#~ msgid ""
+#~ "User Setting and Logs tab allow "
+#~ "users to change the preferred Console"
+#~ " Environment. From the language setting,"
+#~ " SSH keypair management, editing user "
+#~ "config script, and even to using "
+#~ "Beta Features are available by just "
+#~ "a few clicks of each button. Every"
+#~ " message from server will be logged"
+#~ " in Logs. You can see how the"
+#~ " miscellaneous error occurred in the "
+#~ "Logs tab."
+#~ msgstr ""
+#~ "설정 및 로그 탭에서는 사용자가 선호하는 콘솔 "
+#~ "환경에 맞게 변경할 수 있습니다. 언어 설정부터 "
+#~ "SSH 키페어 관리, 사용자 설정 스크립트 수정과 "
+#~ "베타 기능 사용까지 각 기능의 버튼을 몇 번 "
+#~ "클릭하는 것만으로도 가능합니다. 서버로부터 오는 모든 메시지는"
+#~ " 로그 페이지에 저장됩니다. 에러가 발생하였을 때, "
+#~ "어떻게 발생하였는지 로그 탭에서 확인하실 수 있습니다."
+
+#~ msgid "Language Setting"
+#~ msgstr "언어 설정"
+
+#~ msgid "Click Language Dropdown to check supported languages."
+#~ msgstr "언어 드롭다운 메뉴를 클릭해서 지원하는 언어를 확인할 수 있습니다."
+
+#~ msgid "Currently, only Korean and English are supported."
+#~ msgstr "현재는 한국어와 영어만 지원됩니다."
+
+#~ msgid "Change SSH Keypair"
+#~ msgstr "SSH 키페어 변경"
+
+#~ msgid ""
+#~ "If you are using the GUI console"
+#~ " app, you can create SSH/SFTP "
+#~ "connection directly to the container. "
+#~ "You can query or create a SSH "
+#~ "keypair, which is used for SSH/SFTP "
+#~ "connection. Clicking the button next to"
+#~ " the SSH keypair Management in "
+#~ "Preferences panel brings up a dialog."
+#~ " Current public key is displayed, if"
+#~ " exists, and new public key and "
+#~ "private key can be created by "
+#~ "clicking GENERATE button. This will "
+#~ "generate a new SSH keypair and "
+#~ "save it into the database."
+#~ msgstr ""
+#~ "앱 형태의 GUI 콘솔을 사용하는 경우 컨테이너로 "
+#~ "직접 SSH/SFTP 접속을 할 수 있습니다. (주의: "
+#~ "웹 기반 콘솔에서는 아직 SSH/SFTP 접속을 지원하지"
+#~ " 않습니다.) 이 때 사용되는 SSH keypair를 "
+#~ "조회하거나 새로 생성할 수 있습니다. 설정 패널의 "
+#~ "SSH 키페어 관리 옆(private key는 조회되지 "
+#~ "않습니다), 생성 버튼을 클릭하여 새로운 public key,"
+#~ "  private key를 생성하고 데이터베이스에 저장할 수 "
+#~ "있습니다."
+
+#~ msgid "The web-based console does not yet support SSH/SFTP connections."
+#~ msgstr "웹기반 콘솔은 아직 SSH/SFTP 연결을 지원하지 않습니다."
+
+#~ msgid "Edit Shell Environment"
+#~ msgstr "쉘 환경 수정"
+
+#~ msgid ""
+#~ "Existing shell scripts can be applied"
+#~ " to new sessions. You can copy "
+#~ "the shell script and save it to"
+#~ " your favorite shell script run "
+#~ "command. Shell editing feature also "
+#~ "supports setting ``.Renviron`` file used "
+#~ "in the R language."
+#~ msgstr ""
+#~ "기존에 사용중인 쉘 스크립트를 새로운 세션에 적용할 "
+#~ "수 있습니다. 쉘 스크립트를 복사해서 선호하는쉘스크립트 실행"
+#~ " 커맨드에 저장할 수 있습니다. 쉘 수정 기능은 "
+#~ "R 언어에서 사용되는 ``.Renviron`` 파일 또한 "
+#~ "지원합니다. "
+
+#~ msgid "Only ``.zshrc``, ``.bashrc`` and ``.Renviron`` are editable for now."
+#~ msgstr "``.zshrc``, ``.bashrc`` 와 ``.Renviron`` 파일만 현재 수정가능합니다."
 
