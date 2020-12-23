@@ -10,7 +10,7 @@ Backend.AI supports SSH/SFTP connection to the created compute sessions
    on web-based console service.
 
 
-SSH/SFTP connection to a compute session (Linux/Mac)
+For Linux / Mac
 ----------------------------------------------------
 
 First, create a compute session, then click the app icon (first button) in
@@ -79,7 +79,7 @@ each FTP client manual for details.
    
 
 
-SSH/SFTP connection to a compute session (Windows / FileZilla)
+For Windows / FileZilla
 --------------------------------------------------------------
 
 Backend.AI Console app supports OpenSSH-based public key connection (RSA2048).
