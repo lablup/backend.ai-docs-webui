@@ -1,7 +1,7 @@
 .. _session-with-mounts:
 
 =============================================
-Create a Compute Session with Mounted Folders
+Mounting Folders to a Compute Session
 =============================================
 
 When you start a compute session, the user has access to the ``/home/work/``
