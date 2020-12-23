@@ -24,6 +24,10 @@ browsers such as Chrome.
    is deprecated and does not follow web standard and support up-to-date brower
    features.
    
+
+Backend.AI Server Installation Guide
+-----------------------------------------
+
 For Backend.AI Server daemons/services, following hardware specification should be met. For
 optimal performance, just double the amount of each resources.
 
@@ -68,7 +72,7 @@ afterwards may have different details depending on the terms of the contract.
 Users of the open source version can also purchase an installation and support
 plan separately.
 
-Simple Backend.AI Server Management Guide
+Backend.AI Server Management Guide
 -----------------------------------------
 
 Backend.AI is composed of many modules and daemons. Here, we briefly describe
