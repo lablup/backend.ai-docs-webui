@@ -1,5 +1,5 @@
 ================
-Handling Folders
+Handling Data & Storage Folders
 ================
 
 Backend.AI supports dedicated storage to preserve user's files. Since the files
