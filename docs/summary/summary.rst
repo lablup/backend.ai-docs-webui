@@ -62,23 +62,23 @@ Start Menu
 
 You can start a compute session by clicking on the START button. It is the same
 as the feature on the Sessions page, and is a shortcut button that helps you
-create a compute session immediately after logging in for the first time.
+create a compute session immediately after logging in.
 
-Below the START button are shortcut links to the Data & Storage, Users, and
-Maintenance pages. Among these, the link to the Users and Maintenance page is
-only visible when logged in with an admin account.
+Below the START button are shortcut links to the Data & Storage (Upload files), Users, and
+Maintenance pages. Among these, the links to the Users and to Maintenance pages are
+only available for the admin account.
 
 Resource Statistics
 ^^^^^^^^^^^^^^^^^^^
 
 It shows the total amount of resources the user can allocate and the amount of
 resources currently allocated. You can check the user's CPU, memory, and GPU
-resource occupancy and quota respectively. Also, on the Sessions slider, you can
-see how many compute sessions the user can create simultaneously and how many
+resource occupancy and quota respectively. Also on the Sessions slider, you can
+see the maximum number of compute sessions you can create simultaneously and how many
 compute sessions are currently running.
 
 You can change the resource group by clicking the Resource Group field at the
-top. Resource group is a concept that can group multiple Agent nodes as a single
+top. Resource group is a concept to group multiple Agent nodes as a single
 resource unit. If you have many agent nodes, you can configure settings such as
 assigning them to a specific project for each resource group. When there is only
 one agent node, it is normal to see only one resource group. If you change the
