@@ -1,6 +1,6 @@
-================
+=======================
 FAQs & Trouble Shooting
-================
+=======================
 
 If you use the GUI Console for a long time, you may experience connection
 problems to Jupyter and/or terminal service, or compute session list not
@@ -15,7 +15,7 @@ may refresh the Console by following methods.
 
 
 Session list is not displayed correctly
--------------------------------------
+---------------------------------------
 
 Due to intermittent network problems and/or other various reasons, session list
 may not be displayed correctly. Most of the time, this problem will disappear just by
@@ -34,7 +34,7 @@ How to install apt packages?
 Inside a compute session, users cannot access root account and perform operations
 that require sudo privilege for security reasons. Therefore, it is not allowed to install packages with apt or yum since they require sudo.
 Alternatively, users may install packages by
-`brew <https://docs.brew.sh/Homebrew-on-Linux>`.
+`brew <https://docs.brew.sh/Homebrew-on-Linux>`_.
 
 To install and use ``brew`` from the compute session, follow the commands below:
 
@@ -58,7 +58,7 @@ compute session, those installed packages can be kept after compute session is
 destroyed and then reused for the next compute session.
 
 How to install packages with pip?
-----------------------------
+---------------------------------
 
 Like ``brew``, it is possible to install the packages under ``~/.local`` by
 providing ``--user`` option when using ``pip``.
@@ -68,7 +68,7 @@ providing ``--user`` option when using ``pip``.
    $ pip install --user aiohttp
 
 I have created a compute session, but cannot launch Jupyter Notebook
-------------------------------------------------------------------
+--------------------------------------------------------------------
 
 There may be a problem on connecting WSProxy service. Try to stop and restart
 the service by referencing the guide on start/stop/restart WSProxy service.
@@ -103,7 +103,7 @@ Controls column of the desired registry. Be careful not to delete the registry
 by clicking the trash icon.
 
 Page layout is broken
---------------------
+---------------------
 
 Backend.AI Console utilizes the latest modern JavaScript and/or browser features.
 Please use the LATEST versions of moder browsers (such as Chrome).
@@ -207,7 +207,7 @@ the corresponding container or something like that.
    docker-compose -f docker-compose.hs.etcd.yaml -p <project> restart
 
 Start/stop/restart WSProxy
----------------------------
+--------------------------
 
 SSH into WSProxy node, and run either of following command. Note that <project>
 should be manually written if it was provided when launching the service. It can
