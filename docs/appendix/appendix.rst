@@ -5,15 +5,6 @@ Appendix
 GPU Virtualization and Fractional GPU Allocation
 ------------------------------------------------
 
-.. note:: Objectives
-
-   * From the GUI environment, the fGPU (fractional GPU) resource option can be
-     dynamically given when creating a compute session
-   * Check the allocated fGPU resource of a compute session from the GUI and
-     make sure it is created with the amount requested
-   * Open the web terminal app on the GUI and check the GPU is partially
-     allocated at the container level by the ``nvidia-smi`` command
-
 Backend.AI supports GPU virtualization technology which allows single physical
 GPU can be divided and shared by multiple users simultaneously. Therefore, if
 you want to execute a task that does not require much GPU computation
@@ -82,17 +73,6 @@ left earlier to query the GPU usage history recognized inside the container.
 
 Resource Monitoring and Automated Job Scheduling
 ------------------------------------------------
-
-.. note:: Objectives
-
-   * Confirm that the change in resource usage status is displayed on the GUI
-     after creating a compute session.
-   * When creating a compute session by setting resources more than the allowed
-     amounts, the scheduler keeps the request on the job queue and marks it as
-     in the PENDING state.
-   * Check that the PENDING session is automatically scheduled and converted to
-     the RUNNING state just after resources are available.
-
 
 Resource monitoring through GUI
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -190,11 +170,6 @@ and then automatically process the requests when resources become available.
 
 Multi-version Machine Learning Container Support
 -------------------------------------------------
-
-.. note:: Objectives
-
-   * Use of images such as TensorFlow and PyTorch without user's installation
-   * Support multiple versions of major ML libraries
 
 Backend.AI provides variaous pre-built ML and HPC kernel images. Therefore,
 users can immediately utilize major libraries and packages without having to

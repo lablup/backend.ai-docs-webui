@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-27 15:44+0900\n"
-"PO-Revision-Date: 2020-03-27 15:45+0900\n"
+"POT-Creation-Date: 2020-12-23 13:53+0900\n"
+"PO-Revision-Date: 2020-12-23 18:18+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko\n"
 "Language-Team: Lablup\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #: ../../license_agreement/license_agreement.rst:3
 msgid "Terms of License Agreement"
@@ -47,8 +47,8 @@ msgid ""
 "License. Even if LGPL complies, commercial contracts with Lablup Co., Ltd. "
 "(\"Lablup\") are required depending on the conditions when performing profit "
 "activities using the Backend.AI server. Several additional plug-ins and "
-"management Hubs targeting Backend.AI enterprise solutions are not open source, "
-"but commercial software."
+"management Hubs that apply to Backend.AI enterprise solutions are not open "
+"source, but commercial software."
 msgstr ""
 "Backend.AI의 서버 컴포넌트들(이하 “Backend.AI 서버”)은 GNU Lesser General "
 "Public License v3.0(이하 “LGPL”)으로 배포되며, Backend.AI 서버에 접속하기 위한 "
@@ -64,13 +64,13 @@ msgstr "**용어 정의**"
 
 #: ../../license_agreement/license_agreement.rst:23
 msgid ""
-"Hardware: Includes virtual machine and container environments where users have "
-"the right to run and software on their own or leased physical computers."
+"Hardware: Includes physical computers, virtual machine and container "
+"environments that users own or lease and have rights to run software."
 msgstr ""
 "하드웨어 : 사용자가 자기 소유 또는 임대한 물리적 컴퓨터와 소프트웨어 실행 권한"
 "을 가지는 가상머신 및 컨테이너 환경을 포함합니다."
 
-#: ../../license_agreement/license_agreement.rst:25
+#: ../../license_agreement/license_agreement.rst:24
 msgid ""
 "Organization: Individuals, corporations, organizations, institutions (including "
 "non-profit and commerical organizations; however, subsidiaries that are "
@@ -79,46 +79,38 @@ msgstr ""
 "조직 : 개인, 법인, 단체, 기관 (비영리·영리 모두 포함; 단, 별도 법인인 자회사는 "
 "포함하지 않습니다)"
 
-#: ../../license_agreement/license_agreement.rst:29
+#: ../../license_agreement/license_agreement.rst:28
 msgid ""
 "LGPL must be followed when users use and change Backend.AI Server (Manager / "
-"Agent / Common) or develop and distribute software that uses it. Below is an "
-"example of when there is no obligation under the LGPL at this time:"
+"Agent / Common) or develop and distribute software that uses it. However, in "
+"the case of distributing software which import Backend.AI server as a module "
+"without changing it (e.g. Python import), it is regarded as a dynamic link and "
+"code disclosure under the LGPL is exempted. When Backend.AI server is installed "
+"on the hardware and used by the general public through the network, there is no "
+"obligation under the LGPL."
 msgstr ""
-"사용자가 Backend.AI Server (Manager / Agent / Common) 를 사용 및 변경하거나 이"
-"를 이용하는 소프트웨어를 개발 및 배포하는 경우 LGPL을 따라야 합니다. 아래는 이"
-"때 LGPL에 따른 의무가 없는 경우에 대한 예시입니다:"
+"사용자가 Backend.AI Server(Manager / Agent / Common)를 사용 및 변경하거나 이를 "
+"이용하는 소프트웨어를 개발 및 배포하는 경우 LGPL 을 따라야 합니다. 하지만, 배포"
+"하는 소프트웨어가 Backend.AI 서버를 변경하지 않고 모듈 형태(Python import 등)로 "
+"불러서 사용하는 경우에는, 동적 링크를 사용하는 것으로 보아 LGPL에 따른 코드 공"
+"개 의무가 없다고 간주합니다. Backend.AI 서버를 하드웨어에 설치하여 일반 공중이 "
+"네트워크를 통해 사용하는 경우에는 LGPL 에 따른 의무가 없습니다."
 
-#: ../../license_agreement/license_agreement.rst:33
-msgid ""
-"In case of distributing software which imports it as a module (eg Python "
-"import) without changing the Backend.AI server."
-msgstr ""
-"Backend.AI 서버를 변경하지 않고 모듈로 불러와서(예: Python import) 사용한 소프트"
-"웨어를 배포하는 경우."
-
-#: ../../license_agreement/license_agreement.rst:35
-msgid ""
-"When Backend.AI server is installed on the hardware and used by the general "
-"public over the network."
-msgstr ""
-"Backend.AI 서버를 하드웨어에 설치하여 일반 공중이 네트워크를 통해 사용하는 경우."
-
-#: ../../license_agreement/license_agreement.rst:38
+#: ../../license_agreement/license_agreement.rst:31
 msgid ""
 "The correct interpretation of all other cases is subject to the LGPL original "
 "text and court judgment."
 msgstr ""
 "이 외의 모든 경우에 대한 정확한 해석은 LGPL 원문과 법원의 판단을 따릅니다."
 
-#: ../../license_agreement/license_agreement.rst:41
+#: ../../license_agreement/license_agreement.rst:34
 msgid ""
 "Apart from LGPL compliance, commercial contracts must be made with Lablup in "
 "the following cases:"
 msgstr ""
 "LGPL 준수와 별개로, 다음과 같은 경우에는 래블업과 상용 계약을 맺어야 합니다:"
 
-#: ../../license_agreement/license_agreement.rst:44
+#: ../../license_agreement/license_agreement.rst:37
 msgid ""
 "When software that works only after installing the Backend.AI server is sold to "
 "customers outside the organization."
@@ -126,13 +118,13 @@ msgstr ""
 "Backend.AI 서버를 설치해야만 동작하는 소프트웨어를 조직 외부 고객에게 판매하는 "
 "경우."
 
-#: ../../license_agreement/license_agreement.rst:46
+#: ../../license_agreement/license_agreement.rst:39
 msgid ""
-"When selling hardware including Backend.AI server to customers outside the "
+"When hardware including Backend.AI server is sold to customers outside the "
 "organization."
 msgstr "Backend.AI 서버를 포함한 하드웨어를 조직 외부 고객에게 판매하는 경우."
 
-#: ../../license_agreement/license_agreement.rst:48
+#: ../../license_agreement/license_agreement.rst:41
 msgid ""
 "When the Backend.AI server is installed on the hardware and the usage fee is "
 "received from a customer outside the organization that uses it."
@@ -140,29 +132,30 @@ msgstr ""
 "Backend.AI 서버를 하드웨어에 설치하고 이를 사용하는 조직 외부 고객으로부터 사용"
 "료를 받는 경우."
 
-#: ../../license_agreement/license_agreement.rst:51
+#: ../../license_agreement/license_agreement.rst:44
 msgid "In other cases, you can use the Backend.AI server for free."
 msgstr "그 외의 경우에는 Backend.AI 서버를 무료로 사용할 수 있습니다."
 
-#: ../../license_agreement/license_agreement.rst:53
+#: ../../license_agreement/license_agreement.rst:46
 msgid "**Interpretation Example**"
 msgstr "**해석 예시**"
 
-#: ../../license_agreement/license_agreement.rst:55
+#: ../../license_agreement/license_agreement.rst:48
 msgid ""
 "If you distribute Backend.AI server with modifications to outside the "
 "organization, you must disclose the code and apply LGPL the same way. There is "
-"no obligation to disclose the code if it is used internally only."
+"no obligation to disclose the code if it is olny used internally."
 msgstr ""
 "Backend.AI 서버를 변경하여 조직 외부로 배포한다면 코드를 공개하고 반드시 LGPL을 "
 "똑같이 적용해야 합니다. 조직 내부적으로만 사용한다면 코드를 공개할 의무가 없습니"
 "다."
 
-#: ../../license_agreement/license_agreement.rst:58
-msgid "Software using Backend.AI server as an essential library"
+#: ../../license_agreement/license_agreement.rst:51
+msgid ""
+"When distributing software that uses Backend.AI server as an essential library,"
 msgstr "Backend.AI 서버를 필수 라이브러리로 사용한 소프트웨어를"
 
-#: ../../license_agreement/license_agreement.rst:60
+#: ../../license_agreement/license_agreement.rst:53
 msgid ""
 "Free distribution: The software does not have to be (L)GPL, and a separate "
 "contract with Lablup is not required."
@@ -170,7 +163,7 @@ msgstr ""
 "무료 배포하는 경우: 해당 소프트웨어는 (L)GPL이 아니어도 되고, 래블업과의 별도 계"
 "약도 필요하지 않습니다."
 
-#: ../../license_agreement/license_agreement.rst:62
+#: ../../license_agreement/license_agreement.rst:55
 msgid ""
 "Paid distribution: The software does not need to be (L)GPL, but a commercial "
 "contract with Lablup is required."
@@ -178,31 +171,32 @@ msgstr ""
 "유료 배포하는 경우: 해당 소프트웨어는 (L)GPL이 아니어도 되지만, 래블업과의 상용 "
 "계약이 필요합니다."
 
-#: ../../license_agreement/license_agreement.rst:65
+#: ../../license_agreement/license_agreement.rst:58
 msgid ""
-"Backend.AI server is installed on the hardware and it is distributed to the "
-"public"
-msgstr "Backend.AI 서버를 하드웨어에 설치하고 이를 네트워크를 통해 일반 공중이"
+"When Backend.AI server is installed on the hardware and it is used by the "
+"public through network,"
+msgstr ""
+"Backend.AI 서버를 하드웨어에 설치하여 일반 공중이 네트워크를 통해 사용하는 경우."
 
-#: ../../license_agreement/license_agreement.rst:68
-#: ../../license_agreement/license_agreement.rst:73
+#: ../../license_agreement/license_agreement.rst:60
+#: ../../license_agreement/license_agreement.rst:65
 msgid "Free distribution: No separate contract with Lablup is required."
 msgstr "무료로 사용하게 하는 경우: 래블업과의 별도 계약이 필요하지 않습니다."
 
-#: ../../license_agreement/license_agreement.rst:69
-#: ../../license_agreement/license_agreement.rst:74
+#: ../../license_agreement/license_agreement.rst:61
+#: ../../license_agreement/license_agreement.rst:66
 msgid "Paid distribution: A commercial contract with Lablup is required."
 msgstr "유료로 사용하게 하는 경우: 래블업과의 상용 계약이 필요합니다."
 
-#: ../../license_agreement/license_agreement.rst:71
-msgid "Backend.AI server installed hardware"
-msgstr "Backend.AI 서버를 설치한 하드웨어를"
+#: ../../license_agreement/license_agreement.rst:63
+msgid "When distributing hardware in which Backend.AI server is installed,"
+msgstr "Backend.AI 서버가 설치된 하드웨어를 배포하는 경우,"
 
-#: ../../license_agreement/license_agreement.rst:76
+#: ../../license_agreement/license_agreement.rst:68
 msgid ""
 "Commercial contracts include monthly / annual subscription fees for the "
 "enterprise version by default, but details may vary depending on individual "
-"contracts.  Users of the open-source version can also purchase maintenance and "
+"contracts. Users of the open-source version can also purchase maintenance and "
 "support plans separately."
 msgstr ""
 "상용 계약에는 기본적으로 엔터프라이즈 버전의 월간/연간 구독 사용료가 포함되지"
@@ -217,3 +211,27 @@ msgstr ""
 #~ "Backend.AI 서버를 설치한 하드웨어를 - 무료 제공하는 경우: 래블업과의 별도 계"
 #~ "약이 필요하지 않습니다. - 유료 판매하는 경우: 래블업과의 상용 계약이 필요합니"
 #~ "다."
+
+#~ msgid ""
+#~ "LGPL must be followed when users use and change Backend.AI Server (Manager / "
+#~ "Agent / Common) or develop and distribute software that uses it. Below is an "
+#~ "example of when there is no obligation under the LGPL at this time:"
+#~ msgstr ""
+#~ "사용자가 Backend.AI Server (Manager / Agent / Common) 를 사용 및 변경하거나 "
+#~ "이를 이용하는 소프트웨어를 개발 및 배포하는 경우 LGPL을 따라야 합니다. 아래"
+#~ "는 이때 LGPL에 따른 의무가 없는 경우에 대한 예시입니다:"
+
+#~ msgid ""
+#~ "In case of distributing software which imports it as a module (eg Python "
+#~ "import) without changing the Backend.AI server."
+#~ msgstr ""
+#~ "Backend.AI 서버를 변경하지 않고 모듈로 불러와서(예: Python import) 사용한 소"
+#~ "프트웨어를 배포하는 경우."
+
+#~ msgid ""
+#~ "Backend.AI server is installed on the hardware and it is distributed to the "
+#~ "public"
+#~ msgstr "Backend.AI 서버를 하드웨어에 설치하고 이를 네트워크를 통해 일반 공중이"
+
+#~ msgid "Backend.AI server installed hardware"
+#~ msgstr "Backend.AI 서버를 설치한 하드웨어를"
