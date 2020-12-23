@@ -43,9 +43,9 @@ multiple users, you can also click the + button to enter additional emails.
    :align: center
 
 Back to User B's account and go to the Summary page. At the bottom of the
-page, you can see the invitation arrived. If you don't
-see the invitation, go to another page once and then come back to the Summary
-page again. Click the ACCEPT button to accept the invitation.
+page, you can see the invitation arrived. Click the ACCEPT button to accept the invitation.
+If you don't see the invitation, go to another page once and then come back to the Summary
+page again. 
 
 .. image:: invitation_accept.png
 
@@ -77,39 +77,44 @@ folder if it has been shared including write access.
    :width: 450
    :align: center
 
+If you click the folder icon in the Control panel, you may notice that UPLOAD FILES button and
+NEW FOLDER button disappears and READ-ONLY FOLDER message is shown on that
+spot. Also modify icon and delete icon in the Action panel are also disabled since the
+folder is read-only. User B can create a file in the ``test`` folder if it has
+been shared including write access.
+
+.. image:: file_operations_on_shared_test_folder.png
+   :width: 450
+   :align: center
+   
 This way, you can share your personal storage folders with other users based on
 your Backend.AI email account.
 
-
-Sharing a group storage folder with group members
--------------------------------------------------
-
-In addition to user's storage folders, Backend.AI provides storage folders for
-groups. A group storage folder is a folder belonging to a specific group, not a
-specific user, and can be accessed by all users belonging to that group.
-
 .. note::
-   Group folders can only be created by administrators. Normal users can only
-   access the contents of the group folders created by the administrator. Also,
-   there may be cases where the group folder is not allowed depending on the system
-   settings.
+   Backend.AI also provides sharing group folder to group members.
+   To See the detail, go to :ref:`sharing a group storage folder with group members <sharing-a-group-storage>`.
+   
 
-First, log in with an administrator account and create a group folder. After
-moving to the Data & Storage page, click NEW FOLDER to open the folder creation
-dialog. Enter the folder name, set the Type to Group, and select the target
-group. The target group should be set to the group to which User B belongs for
-this example to work.  Permission is set to Read-Only again.
+Adjust permission for shared folders
+------------------------------------
 
-.. image:: group_folder_creation.png
-   :width: 450
+If you click the fourth person icon in the Control column, you can see a list of
+users who have shared the folder. Click Select permission to set the sharing
+permission.
+
+* View: The invited user has read-only access to the folder.
+* Edit: The invited user has read and write access to the folder. The user
+  cannot delete folders or files.
+* Edit+Delete: The invited user has full access to the folder and can delete
+  files or folders.
+* Kick out user: Retrieves the user's invitation. The user cannot view or
+  use the folder any more.
+
+.. image:: modify_perm.png
+   :width: 500
    :align: center
 
-After confirming that the folder has been created, log in with the user B's
-account and check that the group folder just created on the Data & Storage page
-is displayed without an invitation procedure. You can see that R (Read Only) is
-also displayed in the Permission column.
-
-.. image:: group_folder_listed_in_B.png
-
-In this way, Backend.AI provides invitation for user's folders and group folders
-to help you share data and models in a flexible way.
+.. note::
+   Renaming folder itself is available only for the owner, even if the user has granted
+   Edit or Edit+Delete permission. Please note that Edit permission does not provide
+   renaming folder.
