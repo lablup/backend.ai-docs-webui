@@ -455,7 +455,7 @@ You can create a new resource policy by clicking the CREATE button.
 
 
 Download session lists
--------0--------------
+----------------------
 
 There's additional feature in Session page for admin.
 On the right side of the OTHERS tab there is a menu marked with ``...``.
