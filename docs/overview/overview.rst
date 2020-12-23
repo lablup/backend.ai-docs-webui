@@ -164,7 +164,7 @@ Backend.AI feature details
 +----------------------+-------------------------------------------------------+
 
 
-Guide for accessible menu by user role
+Accessible menu by user role
 --------------------------------------
 
 .. note::
