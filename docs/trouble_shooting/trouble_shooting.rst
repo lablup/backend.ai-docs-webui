@@ -99,7 +99,7 @@ there are multiple registries.
 
 If you want to update the metadata for a specific docker registry, you can go to
 the Registries tab in Environments page.  Just click the refresh button in the
-Controls column of the desired registry. Be careful not to delete the registry
+Controls panel of the desired registry. Be careful not to delete the registry
 by clicking the trash icon.
 
 Page layout is broken
