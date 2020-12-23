@@ -58,15 +58,15 @@ follows.
 Explore folder
 --------------
 
-You can click the folder icon in the Control column to bring up a file explorer
+You can click the folder icon in the Control panel to bring up a file explorer
 where you can view the contents of that folder.
 
 .. image:: vfolder_item_with_controls.png
    :alt: Controls in folder item
 
 You can see that directories and files inside the folder will be listed, if
-exists. Click a directory name in the Name column to move to the directory.  You
-can click the download button or delete button in the Actions column to download
+exists. Click a directory name in the Name panel to move to the directory.  You
+can click the download button or delete button in the Actions panel to download
 it or delete it entirely from the directory. You can rename a file/directory as
 well. For more detailed file operations, you can mount this folder when creating
 a compute session, and then use a service like Terminal or Jupyter Notebook to
@@ -90,7 +90,7 @@ Rename folder
 -------------
 
 If you have permission to rename the storage folder, you can rename it by
-clicking the edit icon in the Control column. When you click the icon button, a
+clicking the edit icon in the Control panel. When you click the icon button, a
 rename dialog will appear. Write new folder name and then click RENAME button.
 
 
@@ -98,7 +98,7 @@ Delete folder
 -------------
 
 If you have permission to delete the storage folder, you can delete it by
-clicking the trash can icon in the Control column. When you click the Delete
+clicking the trash can icon in the Control panel. When you click the Delete
 button, a confirm dialog appears. To prevent accidental deletion, you have to
 enter the name of the folder to be deleted, explicitly.
 
