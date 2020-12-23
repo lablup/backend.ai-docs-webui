@@ -3,46 +3,113 @@ Compute Sessions
 ================
 
 The most visited pages in the Backend.AI GUI Console would be the Sessions and
-Storage pages. On the Sessions page, you can view, create, and use
-container-based compute sessions, and on the Storage page, you can create a
-storage folder to keep important data. Here, you will learn how to query and
+Data & Storage pages. Here, you will learn how to query and
 create container-based compute sessions and utilize various web applications on
 the Sessions page.
 
+Start a new session
+-------------------
 
-Querying compute sessions
--------------------------
+After logging in with a user account, click Sessions on the left menu to visit the Sessions page. 
+Sessions page lets you start new sessions or use and manage existing running sessions. 
 
-To see the list of compute sessions, click Sessions in the left sidebar. In the
-Running tab on the right, you can check the information on the currently running
-sessions. Click the Finished tab to see the list of terminated sessions.  In the
-OTHERS tab you can query for compute sessions with errors.  For each session,
-you can check information such as ID, created date, used time, allocated
-resources, resource usage, and etc.
+.. image:: sessions_page.png
 
-.. image:: session_list.png
+Click the START button to start a new compute session. The following setup
+dialog will appear. You can specify the language environment (Environments and
+Version) and the amount of resources you want to allocate. Set the CPU and memory as shown in
+the following figure and click the LAUNCH button.
+
+.. image:: session_launch_dialog.png
+   :width: 350
    :align: center
-   :alt: Session list
 
-As a superadmin, you can see the information of all sessions currently running
-(or ended) in the cluster. On the other hand, users can see their sessions only.
+If you need more detailed settings, refer to the meaning of each items.
 
-The resource indicator is displayed at the top of the screen. You can check the
+* Environments: Specify the default environment for compute sessions such as
+  TensorFlow, PyTorch, C++, etc. When you select a TensorFlow environment,
+  your compute session will automatically include the TensorFlow library.
+  If you select another environment, the corresponding environment is installed
+  by default.
+* Version: Selects the version of the environment. For TensorFlow
+  environment, for example, you can select different versions such as 1.15, 2.3, etc.
+* Resource Group: Specifies the resource group in which to create the compute
+  session. If there are multiple resource groups, you can select the desired
+  one, but if there is only one resource group, it cannot be changed.
+* Session name (optional): Specifies the name of the compute session to be
+  created. If specified, this name appears in Session Info, making it easy to
+  distinguish it from other compute sessions. If not specified, a
+  randomly-generated name is assigned. You can set the session name up to 4 to
+  64 characters only with alphabetical characters or numbers and no spaces
+  are allowed.
+* Folder to mount: Specifies the data folders to be mounted in the compute
+  session. When a compute session is deleted, all data is deleted
+  altogether by default, but the data stored in the folder mounted here is not deleted.
+* Resource allocation: This is a template that has predefined resources to be
+  allocated to the compute session. You can save and use frequently used
+  resource settings in advance. Resource templates can be managed in a dedicated
+  admin hub.
+* CPU: The number of CPU cores to allocate to the compute session. The maximum
+  value depends on the resource policy applied to the user.
+* RAM: The amount of memory (GB) to allocate to the compute session. The
+  maximum value depends on the resource policy applied to the user.
+* Shared Memory: The amount of shared memory (GB) to allocate to the
+  compute session. It can be set up to 2 GB and cannot be greater than the
+  amount specified in RAM.
+* GPU: The unit of GPU to allocate to the compute session. The maximum value
+  depends on the resource policy applied to the user.
+* Sessions: The number of compute sessions to be created with the specified
+  settings. You can specify this value when you need to create the same computational
+  sessions at once.
+
+If no folder is specified in "Folders to mount", a warning dialog may
+appear indicating that no storage folder is mounted. 
+
+.. image:: no_vfolder_notification_dialog.png
+   :width: 350
+   :align: center
+   :alt: Notification dialog when no storage folder is mounted to the session
+
+You may ignore the warning, but it is recommended to mount 
+at least one storage folder because terminating a compute session by
+default deletes all the data inside the session. If you specify a folder to mount
+and save your data in that folder, you can keep the data even if the compute
+session is terminated. Data preserved in the storage folder can also be reused
+by re-mounting it when creating another compute session. For the information on how
+to mount a folder and run a compute session, see
+:ref:`Mounting Folders to a Compute Session <session-with-mounts>`.
+
+Notice that a new compute session is created in the Running tab. 
+
+.. image:: session_created.png
+
+In the RUNNING tab, you can check the information on the currently running
+sessions. FINISHED tab shows the list of terminated sessions and OTHERS tab shows the compute sessions with errors. 
+For each session, you can check the information such as session environments, the amount of allocated
+and used resources, session starting time, etc.
+
+.. note::
+   Superadmins can query all compute session information currently running (or
+   terminated) in the cluster, and users can view only the sessions they have
+   created.
+
+.. note::
+   Compute session list may not be displayed normally due to intermittent
+   network connection problems, and etc. This can be solved by refreshing the
+   browser page.
+
+The resource statistics are displayed at the top of the screen. You can check the
 amount of resources currently used and the total amount of resources
-that can be allocated. The display bar is divided into two parts: the upper and
-the lower. The upper part shows the resource allocation status in the current
-scaling group, and the lower part shows the allocation status of total
+that can be allocated. The display bars are divided into upper and
+lower parts. The upper part shows the resource allocation status in the current
+scaling group and the lower part shows the allocation status of total
 accessible resources.
 
-* Upper: Allocated and available resources within the current scaling group
+* Upper: (Resources allocated by the user in the current scaling group) /
+  (Total resources allocatable by the user in the current scaling group)
 
-   - (Resources allocated by the user in the current scaling group) /
-     (Total resources allocatable by the user in the current scaling group)
-
-* Lower: Total allocated and available resources
-
-   - (Resources allocated by the user) / (Resources allocated by the user +
-     Total resources allocatable by the user in the current scaling group)
+* Lower: (Resources allocated by the user) / (Resources allocated by the user +
+  Total resources allocatable by the user in the current scaling group)
 
 .. note::
    If the GPU resource is marked as FGPU, this means that the server is serving
@@ -58,100 +125,7 @@ accessible resources.
    configuration, if you create a compute session by allocating 1 FGPU, you can
    utilize SM (streaming multiprocessor) and GPU memory corresponding to 0.2
    physical GPU for the session.
-
-
-Start a new session
--------------------
-
-In addition to see the list of compute sessions, Sessions tab lets you start new
-sessions or use and manage already running sessions. After logging in with a
-user account, click Sessions on the left menu to visit the Sessions page.
-
-.. image:: sessions_page.png
-
-Click the START button to start a new compute session. The following setup
-dialog will appear. You can specify the language environment (Environments,
-Version) and resources you want to allocate. Set the CPU and memory as shown in
-the following figure and click the LAUNCH button.
-
-.. image:: session_launch_dialog.png
-   :width: 350
-   :align: center
-
-If you need more detailed settings, refer to the meaning of each items.
-
-* Environment: Specify the default environment for compute sessions such as
-  TensorFlow, PyTorch, C++, and etc. When you select a TensorFlow environment,
-  your compute session will automatically include the TensorFlow library.
-  If you select another environment, the corresponding environment is installed
-  by default.
-* Version: Select the version of the environment. For example, for TensorFlow
-  environment, you can select different versions such as 1.15, 2.3, etc.
-* Resource Group: Specify the resource group in which to create the compute
-  session. If there are multiple resource groups, you can select the desired
-  value, but if there is only one resource group, it cannot be changed.
-* Session name (optional): Specifies the name of the compute session to be
-  created. If specified, this name appears in Session Info, making it easy to
-  distinguish from other compute sessions. If not specified, a
-  randomly-generated name is used. You can set the session name up to 4 to
-  64 characters only with alphabetical character or numbers, and no spaces
-  are allowed.
-* Folder to mount: Specifies the data folder to be mounted in the compute
-  session. When a compute session is deleted, by default all data is deleted
-  altogether, but the data stored in the folder mounted here is not deleted.
-* Resource allocation: This is a template that has predefined resources to be
-  allocated to the compute session. You can save and use frequently used
-  resource settings in advance. Resource templates can be managed in a dedicated
-  admin hub.
-* CPU: The number of CPU cores to allocate to the compute session. The maximum
-  value depends on the resource policy applied to the user.
-* RAM: The amount of memory (GB) to allocate for the compute session. The
-  maximum value depends on the resource policy applied to the user.
-* Shared Memory: The amount of shared memory (GB) to allocate for the
-  compute session. It can only be set up to 2 GB, and cannot be greater than the
-  amount specified in RAM.
-* GPU: The unit of GPU to allocate to the compute session. The maximum value
-  depends on the resource policy applied to the user.
-* Sessions: The number of compute sessions to be created with the specified
-  settings. You can specify when you need to create the same computational
-  sessions at once.
-
-If no mount folder is specified in "Folders to mount", a warning dialog may
-appear indicating that no storage folder is mounted. It is recommended that one
-or more storage folders to be mounted because terminating compute session by
-default deletes all the data inside the session. If you specify a mount folder
-and save your data in that folder, you can keep the data even if the compute
-session is terminated. Data preserved in the storage folder can also be reused
-by re-mounting it when creating another compute session. You can ignore the
-alarm and create a session. However, it's a good idea to mount a folder if
-you're working on a job that requires you to keep data. For information on how
-to mount a folder and run a compute session, see
-:ref:`Related Content <session-with-mounts>`.
-
-.. image:: no_vfolder_notification_dialog.png
-   :width: 350
-   :align: center
-   :alt: Notification dialog when no storage folder is mounted to the session
-
-Notice that a new compute session is created in the Running tab.
-
-.. image:: session_created.png
-
-You can check information such as ID, start date, usage time, resource setting,
-and resource usage for each session. In particular, check the allocated
-resources in the Configuration column. Note that the amounts of resources you
-specified in creating the compute session are displayed.
-
-.. note::
-   Superadmins can query all compute session information currently running (or
-   terminated) in the cluster, and users can view only the sessions they have
-   created.
-
-.. note::
-   Compute session list may not be displayed normally due to intermittent
-   network connection problems, and etc. This can be solved by refreshing the
-   browser page.
-
+   
 
 Using Jupyter Notebook
 ----------------------
