@@ -83,9 +83,7 @@ spot. Also modify icon and delete icon in the Action panel are also disabled sin
 folder is read-only. User B can create a file in the ``test`` folder if it has
 been shared including write access.
 
-.. image:: file_operations_on_shared_test_folder.png
-   :width: 450
-   :align: center
+.. image:: test_vfolder_explorer_B.png
    
 This way, you can share your personal storage folders with other users based on
 your Backend.AI email account.
