@@ -1,5 +1,5 @@
 ==========================================
-SSH/SFTP Connect to a Compute Session 
+SSH/SFTP Connection to a Compute Session 
 ==========================================
 
 Backend.AI supports SSH/SFTP connection to the created compute sessions
