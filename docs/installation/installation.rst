@@ -20,7 +20,7 @@ browsers such as Chrome.
    features.
 
 The stand-alone GUI console app can be downloaded from following address:
-https://github.com/lablup/backend.ai-console/
+https://github.com/lablup/backend.ai-console/releases
 
 .. note::
    In the case of an app, depending on the security setting of the
