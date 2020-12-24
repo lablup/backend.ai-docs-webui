@@ -20,6 +20,18 @@ users in the panel. Group folders are created by domain admins, and normal
 users can only see group folders created for the group in which the users
 belong.
 
+Storage Status on top of the folder list shows the following information: 
+
+* Created: The number of folders that the user created.
+* Invited: The number of folers that the user was invited to share.
+* Capacity: The maximum number of folders that the user can create afterwards. 
+  This value depends on the resource policy applied to the user and cannot be changed 
+  without changing the resource policy. Folders that were not created by the user (eg. folders invited to share, or group folders) are not counted. 
+
+Check marks on the Owner panel in the folder list indicate the user created folders. 
+
+.. image:: folder_status.png 
+   :alt: Storage status in Storage page
 
 Create storage folder
 ---------------------
@@ -54,7 +66,7 @@ follows.
 * Group: Designates the group to which the folder belongs when creating a new group folder. 
   Group folders must belong to a group. However, it does not play any
   role when creating a user folder.
-  
+
 Explore folder
 --------------
 
