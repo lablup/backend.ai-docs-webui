@@ -54,7 +54,7 @@ compute session termination.
 
 .. _using-automount-folder:
 
-Configuring a compute session environment using an automount folder
+Configure a compute session environment using an automount folder
 -------------------------------------------------------------------
 
 Sometimes you need a new program or library that is not pre-installed in a
