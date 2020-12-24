@@ -170,7 +170,7 @@ with the click of a button without any other settings. Also, there is no need
 for a separate package installation process because the language environment and
 library provided by the computation session can be used as it is. For detailed
 instructions on how to use Jupyter Notebook, please refer to 'the official
-documentation <https://jupyter-notebook.readthedocs.io/en/stable/>'.
+documentation <https://jupyter-notebook.readthedocs.io/en/stable/>'_.
 
 In the notebook's file explorer, the ``id_container file`` contains a private
 SSH key. If necessary, you can download it and use it for SSH / SFTP access to
