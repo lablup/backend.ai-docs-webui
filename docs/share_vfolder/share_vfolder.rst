@@ -7,7 +7,7 @@ members to collaborate. For this purpose, Backend.AI provides flexible folder
 sharing feature.
 
 
-Sharing user's storage folders with other users
+Share storage folders with other users
 -----------------------------------------------
 
 Let's learn how to share your personal Storage folder with other users. First,
