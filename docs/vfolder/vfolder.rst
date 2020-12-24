@@ -30,7 +30,7 @@ Storage Status on top of the folder list shows the following information:
 
 Check marks on the Owner panel in the folder list indicate the user created folders. 
 
-.. image:: folder_status.png 
+.. image:: vfolder_status.png 
    :alt: Storage status in Storage page
 
 Create storage folder
