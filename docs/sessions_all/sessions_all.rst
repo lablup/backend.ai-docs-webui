@@ -129,38 +129,36 @@ accessible resources.
    physical GPU for the session.
    
 
-Using Jupyter Notebook
+Use Jupyter Notebook
 ----------------------
 
 Let's look at how to use and manage compute sessions that are already running.
-If you look at the Control column of the session list, there are several icons.
-When you click the first icon, the app launcher appears as shown in the figure
-below, and several app services supported by the session appear.
+If you look at the Control panel of the session list, there are several icons.
+When you click the first icon, the app launcher pops up and shows the available app services as below.
 
 .. image:: app_launch_dialog.png
    :width: 400
    :align: center
 
 .. note::
-   There are two check options under the app icons. Check each item and open the
-   app to reflect the following features:
+   There are two check options under the app icons. Opening the app with each item checked
+   applies the following features, respectively:
 
    * Open app to public: Open the app to the public. Basically, web services
-     such as Terminal and Jupyter Notebook services here are not accessible by
+     such as Terminal and Jupyter Notebook services are not accessible by
      other users, even if the user knows the service URL, since they are
-     considered unauthenticated. However, if you check this item anyone who
-     knows the URL (and port number) of the service can access and use it. Of
+     considered unauthenticated. However, checking this option makes it possible
+     for anyone who knows the service URL (and port number) to access and use it. Of
      course, the user must have a network path to access the service.
-   * Try preferred port: When the web service is opened, a specific port is
-     assigned from the port pool created in advance by Backend.AI. Users can use
-     the service only when they connect to the port along with the IP address or
-     domain name. If you check this item and enter the port number, the entered
-     port number will be tried. However, there is no guarantee that the desired
-     port will always be assigned. The port may not exist at all in the port
-     pool, or another service may already be using the port. In this case, the
+   * Try preferred port: Without this option checked, a port number for the web service is randomly
+     assigned from the port pool prepared in advance by Backend.AI. 
+     If you check this item and enter a specific port number, the entered
+     port number will be tried first. However, there is no guarantee that the desired
+     port will always be assigned because the port may not exist at all in the port
+     pool or another service may already be using the port. In this case, the
      port number is randomly assigned.
 
-  Depending on the system configuration, these options may not appear.
+  Depending on the system configuration, these options may not be shown.
 
 Let's click on Jupyter Notebook.
 
@@ -171,14 +169,14 @@ notebook was created inside a running compute session and can be used easily
 with the click of a button without any other settings. Also, there is no need
 for a separate package installation process because the language environment and
 library provided by the computation session can be used as it is. For detailed
-instructions on how to use Jupyter Notebook, please refer to the official
-documentation.
+instructions on how to use Jupyter Notebook, please refer to 'the official
+documentation <https://jupyter-notebook.readthedocs.io/en/stable/>'.
 
 In the notebook's file explorer, the ``id_container file`` contains a private
 SSH key. If necessary, you can download it and use it for SSH / SFTP access to
 the container.
 
-Click the NEW button on the top right and select the Notebook for Backend.AI,
+Click the NEW button at the top right and select the Notebook for Backend.AI,
 then the ipynb window appears where you can enter your own code.
 
 .. image:: backendai_notebook_menu.png
@@ -187,33 +185,29 @@ then the ipynb window appears where you can enter your own code.
 
 In this window, you can enter and execute any code you want by using the
 environment that session provides. The code is executed on one of the
-Backend.AI nodes where the compute session is actually created, and there is no
+Backend.AI nodes where the compute session is actually created and there is no
 need to configure a separate environment on the local machine.
 
 .. image:: notebook_code_execution.png
 
-When you close the window, you can notice that the ``Untitled.ipynb`` file is
-created in the Notebook File Explorer. Note that the files created here are
+When you close the window, you can find that the ``Untitled.ipynb`` file is
+created in the notebook file explorer. Note that the files created here are
 deleted when you terminate the session. The way to preserve those files even
-after the session is terminated is described in the Storage/Folders section.
+after the session is terminated is described in the Data & Storage Folders section.
 
 .. image:: untitled_ipynb_created.png
 
-Like this, after creating a compute session, you can use web apps such as
-Jupyter Notebook, and in Jupyter Notebook, you can run Python code that checks
-resource constraints right away without installing a separate packages.
 
-
-Web terminal
+Use web terminal
 ------------
 
 Return to the Session list page. This time, let's launch the terminal. Click the
 terminal icon (the second button in the Control panel) to use the container's ttyd daemon. A terminal
-will appear in a new window, and you can issue shell commands by accessing
-inside the computational session as shown in the following figure. If you are
-familiar with using commands, you can easily issue various Linux commands. You
-can see that the Untitled.ipynb file automatically generated in Jupyter Notebook
-is viewed through the ``ls`` command. This is proof that both apps are running
+will appear in a new window and you can run shell commands to access
+the computational session as shown in the following figure. If you are
+familiar with using commands, you can easily run various Linux commands. You
+may notice that the Untitled.ipynb file automatically generated in Jupyter Notebook
+is listed with the ``ls`` command. This shows that both apps are running
 in the same container environment.
 
 .. image:: session_terminal.png
@@ -226,14 +220,14 @@ Notebook can also be checked right from the terminal. This is because they are
 using the same files in the same compute session.
 
 In addition to this, you can use web-based services such as TensorBoard, Jupyter
-Lab, etc., depending on the type of service provided by the compute session.
+Lab, etc., depending on the type of environments provided by the compute session.
 
 
 Query compute session log
 -------------------------
 
 You can view the log of the compute session by clicking the last icon in the
-Control column of the running compute session.
+Control panel of the running compute session.
 
 .. image:: session_log.png
    :width: 500
@@ -245,9 +239,8 @@ Delete a compute session
 
 To terminate a specific session, simply click on the red power icon and click
 OKAY button in the dialog. Since the data in the folder inside the compute
-session is deleted as soon as the compute session ends, it is recommended that
-you move the data to the mounted folder or upload it to the folder from the
-beginning if you want to keep it.
+session is deleted as soon as the compute session ends, it is recommended to move the data 
+to the mounted folder or upload it to the mounted folder from the beginning if you want to keep it.
 
 .. image:: session_destroy_dialog.png
    :width: 400
