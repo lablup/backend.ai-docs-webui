@@ -2,7 +2,7 @@
 Appendix
 ================================================
 
-GPU Virtualization and Fractional GPU Allocation
+GPU virtualization and fractional GPU allocation
 ------------------------------------------------
 
 Backend.AI supports GPU virtualization technology which allows single physical
@@ -17,38 +17,37 @@ session, the session can utilize the streaming multiprocessor (SM) and GPU
 memory equivalent to 0.2 physical GPU.
 
 In this section, we will create a compute session by allocating a portion of
-the GPU, and then check whether the GPU recognized inside the compute
-container is really corresponds to the partial physics GPU.
+the GPU and then check whether the GPU recognized inside the compute
+container really corresponds to the partial physics GPU.
 
-First, let's check information such as the type of physical GPU installed in the
+First, let's check the type of physical GPU installed in the
 host node and the amount of memory. The GPU node used in this guide is equipped
 with a GPU with 8 GB of memory as in the following figure. And through the
 administrator settings, 1 fGPU is set to an amount equivalent to 0.5 physical
-GPUs (or 1 physical GPU is 2 fGPU).
+GPU (or 1 physical GPU is 2 fGPU).
 
 .. image:: host_gpu.png
    :width: 600
    :align: center
 
 Now let's go to the Sessions page and create a compute session by allocating 0.5
-fGPUs as follows:
+fGPU as follows:
 
 .. image:: session_launch_dialog_with_gpu.png
    :width: 350
    :align: center
 
-In the Configuration column of the calculation session list, you can see that
+In the Configuration panel of the session list, you can see that
 0.5 fGPU is allocated.
 
 .. image:: session_list_with_gpu.png
 
-Now, let's connect directly to the inside of the container and check if the GPU
-memory (~2 GB) equivalent to 0.5 units is really allocated. Let's bring up a web
+Now, let's connect directly to the container and check if the allocated GPU
+memory is really equivalent to 0.5 units (~2 GB). Let's bring up a web
 terminal. When the terminal comes up, run the ``nvidia-smi`` command. As you can
 see in the following figure, you can see that about 2 GB of GPU memory is
-allocated. This is not possible by a way like PCI passthrough, showing that the
-physical GPU is actually divided into quarters and allocated inside the
-container for this compute session.
+allocated. This shows that the physical GPU is actually divided into quarters and allocated inside the
+container for this compute session, which is not possible by a way like PCI passthrough.
 
 .. image:: nvidia_smi_inside_container.png
    :width: 600
@@ -60,69 +59,18 @@ Let's open up a Jupyter Notebook and run a simple ML training code.
 
 While training is in progress, connect to the shell of the GPU host node and
 execute the ``nvidia-smi`` command. You can see that there is one GPU attached
-process, and this process is occupying about 25% of the resources of the
+to the process and this process is occupying about 25% of the resources of the
 physical GPU. (GPU occupancy can vary greatly depending on training code and GPU
-model)
+model.)
 
 .. image:: host_nvidia_smi.png
    :width: 600
    :align: center
 
-Alternatively, you can run the ``nvidia-smi`` command from the web terminal you
-left earlier to query the GPU usage history recognized inside the container.
+Alternatively, you can run the ``nvidia-smi`` command from the web terminal to query the GPU usage history inside the container.
 
-Resource Monitoring and Automated Job Scheduling
+Automated job scheduling
 ------------------------------------------------
-
-Resource monitoring through GUI
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Backend.AI GUI Console supports resource monitoring through GUI. After logging
-in with a user account, create a compute session. Resource allocation is set as
-shown in the following figure.
-
-.. image:: session_launch_dialog.png
-   :width: 350
-   :align: center
-
-After creating a compute session by clicking the LAUNCH button, you can see that
-the amount of resources allocated by CPU, RAM, and FGPU in the upper resource
-indicator increases. You can check the amount of resources currently used and
-the total amount of resources that can be allocated. The display bar is divided
-into two parts: the upper and the lower. he upper part shows the resource
-allocation status in the current scaling group, and the lower part shows the
-allocation status of total accessible resources.
-
-* Upper: Allocated and available resources within the current scaling group
-
-  - (Resources allocated by the user in the current scaling group) / (Total
-    resources allocatable by the user in the current scaling group)
-
-* Lower: Total allocated and available resources
-
-  - (Resources allocated by the user) / (Resources allocated by the user + Total
-    resources allocatable by the user in the current scaling group)
-
-.. image:: resource_indicator_after_creation.png
-   :align: center
-
-Next, let's delete the compute session we just created. End the session by pressing
-the red power button in the Control column.
-
-.. image:: destroy_kernel.png
-   :width: 500
-   :align: center
-
-After the compute session disappears from the list, you can see that the CPU,
-RAM, and FGPU of the resource indicator decrease by the exact amount of
-resources.
-
-.. image:: resource_indicator_after_destroy.png
-   :align: center
-
-
-Job scheduler
-^^^^^^^^^^^^^^^^^^^
 
 Backend.AI server has a built-in self-developed task scheduler. It automatically
 checks the available resources of all worker nodes and delegates the request to
