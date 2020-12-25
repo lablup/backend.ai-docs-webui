@@ -77,27 +77,27 @@ checks the available resources of all worker nodes and delegates the request to
 create a compute session to the worker that meets the user's resource request.
 In addition, when resources are insufficient, the user's request to create a
 compute session is registered as a PENDING state in the job queue. Later, when
-the resource becomes available again, the PENDING request is activated to
-perform compute session creation.
+the resources become available again, the pended request is resumed to
+create a compute session.
 
-You can also check the operation of the job scheduler in a simple way from the
-user GUI console. Currently, our GPU host can allocate up to 2 fGPUs of
-resources. Now let's create 3 compute sessions at the same time requesting
-allocation of resources equal to 1 fGPU. At the bottom of the session launch
+You can check the operation of the job scheduler in a simple way from the
+user GUI console. When the GPU host can allocate up to 2 fGPUs, 
+let's create 3 compute sessions at the same time requesting
+allocation of 1 fGPU, respectivley. In the Custom allocation section of the session launch
 dialog, there are GPU and Sessions sliders. If you specify a value greater than
-1 in Sessions, when the LAUNCH button is clicked, the number of sessions will be
+1 in Sessions and click the LAUNCH button, the number of sessions will be
 requested at the same time. Let's set the GPU and Sessions to 1 and 3,
-respectively. In a situation where only 2 fGPUs exists, 3 sessions requesting a
-total of 3 fGPU resources are created.
+respectively. This is the situation that 3 sessions requesting a
+total of 3 fGPUs are created when only 2 fGPUs exist.
 
 .. image:: session_launch_dialog_3_sessions.png
    :width: 350
    :align: center
 
-Wait for a while and you will see three compute sessions being listed. At this
-time, if you look closely at the Status column, you can see that two of the
+Wait for a while and you will see three compute sessions being listed. 
+If you look closely at the Status panel, you can see that two of the
 three compute sessions are in RUNNING state, but the other compute session
-remains in the PENDING state. This PENDING session is only registered in the
+remains in PENDING state. This PENDING session is only registered in the
 job queue and has not actually been allocated a container due to insufficient
 GPU resources.
 
@@ -105,23 +105,23 @@ GPU resources.
    :width: 700
    :align: center
 
-Now let's destroy one of the two sessions in the RUNNING state. Then you can see
-that the compute session in the PENDING state will soon be allocated resources
-by the job scheduler and converted to the RUNNING state. In this way, the job
-scheduler utilizes the job queue to hold the user's compute session requests,
-and then automatically process the requests when resources become available.
+Now let's destroy one of the two sessions in RUNNING state. Then you can see
+that the compute session in PENDING state is allocated resources
+by the job scheduler and converted to RUNNING state soon. In this way, the job
+scheduler utilizes the job queue to hold the user's compute session requests
+and automatically process the requests when resources become available.
 
 .. image:: pending_to_running.png
    :width: 700
    :align: center
 
 
-Multi-version Machine Learning Container Support
+Multi-version machine learning container support
 -------------------------------------------------
 
 Backend.AI provides variaous pre-built ML and HPC kernel images. Therefore,
 users can immediately utilize major libraries and packages without having to
-install packages themselves. Here, we'll walk through an example that takes
+install packages by themselves. Here, we'll walk through an example that takes
 advantage of multiple versions of the multiple ML library immediately.
 
 Go to the Sessions page and open the session launch dialog. There may be various
@@ -131,28 +131,28 @@ kernel images depending on the installation settings.
    :width: 350
    :align: center
 
-Here, we selected the TensorFlow 2.2 environment and created a session.
+Here, let's select the TensorFlow 2.2 environment and created a session.
 
 .. image:: session_launch_dialog_tf22.png
    :width: 350
    :align: center
 
 Open the web terminal of the created session and run the following Python
-command. You can see that TensorFlow 2.2 version is actually installed.
+command. You can see that TensorFlow 2.2 version is installed.
 
 .. image:: tf22_version_print.png
    :width: 450
    :align: center
 
-This time, we select the TensorFlow 1.13 environment to create a compute
-session. (If resources are insufficient, previous sessions are deleted)
+This time, let's select the TensorFlow 1.13 environment to create a compute
+session. If resources are insufficient, delete the previous session.
 
 .. image:: session_launch_dialog_tf113.png
    :width: 350
    :align: center
 
 Open the web terminal of the created session and run the same Python command as
-before. You can see that TensorFlow 1.13(.1) version is actually installed.
+before. You can see that TensorFlow 1.13(.1) version is installed.
 
 .. image:: tf113_version_print.png
    :width: 450
@@ -165,15 +165,14 @@ Finally, create a compute session using PyTorch version 1.5.
    :align: center
 
 Open the web terminal of the created session and run the following Python
-command. You can see that PyTorch 1.5 version is actually installed.
+command. You can see that PyTorch 1.5 version is installed.
 
 .. image:: pytorch15_version_print.png
    :width: 450
    :align: center
 
 Like this, you can utilize various versions of major libraries such as
-TensorFlow and PyTorch through Backend.AI without unnecessary installation
-effort.
+TensorFlow and PyTorch through Backend.AI without unnecessary effort to install them.
 
 
 Backend.AI Server Installation Guide
