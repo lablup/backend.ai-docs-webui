@@ -266,9 +266,9 @@ tmux offers a number of useful features, but it's a bit confusing for first-time
 users. In particular, tmux has its own clipboard buffer, so when copying the
 contents of the terminal, you can suffer from the fact that it can be pasted
 only within tmux by default. Furthermore, it is difficult to expose user
-system's clipboard to tmux inside web browser, so when using tmux, the terminal
+system's clipboard to tmux inside web browser, so the terminal
 contents cannot be copied and pasted to other programs of user's computer. The
-so-called ``Ctrl-C`` / ``Ctrl-V`` is not working.
+so-called ``Ctrl-C`` / ``Ctrl-V`` is not working with tmux.
 
 If you need to copy and paste the terminal contents to your system's clipboard,
 you can temporarily turn off tmux's mouse support. First, press ``Ctrl-B`` key
@@ -307,9 +307,9 @@ Spawn multiple shells
 
 The main advantage of tmux is that you can launch and use multiple shells in one
 terminal window. Since seeing is believing, let's press the ``Ctrl-B`` key and
-then the ``c``. You can see that the contents of the existing window disappeared
-and a new shell environment appeared. Then, did the previous window terminated?
-It's not like that. Let's press ``Ctrl-B`` and then ``w``. You can now see the
+then the ``c``. You can see that the contents of the existing window disappears
+and a new shell environment appears. But the previous window is not terminated.
+Let's press ``Ctrl-B`` and then ``w``. You can now see the
 list of shells currently open on tmux like following image. Here, the shell
 starting with ``0:`` is the shell environment you first saw, and the shell
 starting with ``1:`` is the one you just created. You can move between shells
@@ -319,7 +319,7 @@ key to select it.
 .. image:: tmux_multi_session_pane.png
    :alt: tmux's multiple session management
 
-You can see the shell environment you saw first appears. In this way, you can
+You can see the first shell environment appears. In this way, you can
 use multiple shell environments within a web terminal. To exit or terminate the
 current shell, just enter ``exit`` command or press ``Ctrl-B x`` key and then
 type ``y``.
