@@ -169,8 +169,8 @@ notebook was created inside a running compute session and can be used easily
 with the click of a button without any other settings. Also, there is no need
 for a separate package installation process because the language environment and
 library provided by the computation session can be used as it is. For detailed
-instructions on how to use Jupyter Notebook, please refer to 'the official
-documentation <https://jupyter-notebook.readthedocs.io/en/stable/>'_.
+instructions on how to use Jupyter Notebook, please refer to the official
+documentation.
 
 In the notebook's file explorer, the ``id_container file`` contains a private
 SSH key. If necessary, you can download it and use it for SSH / SFTP access to
@@ -247,10 +247,10 @@ to the mounted folder or upload it to the mounted folder from the beginning if y
    :align: center
 
 
-Advanced Web Terminal Usage
+Advanced web terminal usage
 ---------------------------
 
-The web-based terminal we used above internally embeds a utility called
+The web-based terminal internally embeds a utility called
 `tmux <https://github.com/tmux/tmux/wiki>`_. tmux is a terminal multiplexer that
 supports to open multiple shell windows within a single shell, so as to allow
 multiple programs to run in foreground simultaneously. If you want to take
@@ -291,7 +291,7 @@ you can use the web terminal more conveniently.
    by modifying ``.tmux.conf`` in user home directory, you should press the set
    key combination instead of ``Ctrl-B``.
 
-Checking the terminal history using keyboard
+Check the terminal history using keyboard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There is also a way to copy the terminal contents and check the previous
