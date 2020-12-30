@@ -16,7 +16,7 @@ accuracy or completeness of the information contained in this manual.
 Please contact us if you believe there are errors in this document that are
 different from the facts. We will review it as soon as possible.
 
-The product in this manual may subect to change without notice due to continuous
+The product in this manual may subject to change without notice due to continuous
 development by open source community and Lablup Inc.
 
 All product and company names mentioned herein may be trademarks of their
