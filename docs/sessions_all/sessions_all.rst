@@ -10,8 +10,8 @@ the Sessions page.
 Start a new session
 -------------------
 
-After logging in with a user account, click Sessions on the left sidebar to visit the Sessions page. 
-Sessions page lets you start new sessions or use and manage existing running sessions. 
+After logging in with a user account, click Sessions on the left sidebar to visit the Sessions page.
+Sessions page lets you start new sessions or use and manage existing running sessions.
 
 .. image:: sessions_page.png
 
@@ -63,14 +63,14 @@ If you need more detailed settings, refer to the meaning of each items.
   sessions at once.
 
 If no folder is specified in "Folders to mount", a warning dialog may
-appear indicating that no storage folder is mounted. 
+appear indicating that no storage folder is mounted.
 
 .. image:: no_vfolder_notification_dialog.png
    :width: 350
    :align: center
    :alt: Notification dialog when no storage folder is mounted to the session
 
-You may ignore the warning, but it is recommended to mount 
+You may ignore the warning, but it is recommended to mount
 at least one storage folder because terminating a compute session by
 default deletes all the data inside the session. If you specify a folder to mount
 and save your data in that folder, you can keep the data even if the compute
@@ -79,12 +79,12 @@ by re-mounting it when creating another compute session. For the information on 
 to mount a folder and run a compute session, see
 :ref:`Mounting Folders to a Compute Session <session-with-mounts>`.
 
-Now a new compute session is created in the RUNNING tab. 
+Now a new compute session is created in the RUNNING tab.
 
 .. image:: session_created.png
 
 In the RUNNING tab, you can check the information on the currently running
-sessions. FINISHED tab shows the list of terminated sessions and OTHERS tab shows the compute sessions with errors. 
+sessions. FINISHED tab shows the list of terminated sessions and OTHERS tab shows the compute sessions with errors.
 For each session, you can check the information such as session environments, the amount of allocated
 and used resources, session starting time, etc.
 
@@ -127,7 +127,7 @@ accessible resources.
    configuration, if you create a compute session by allocating 1 FGPU, you can
    utilize SM (streaming multiprocessor) and GPU memory corresponding to 0.2
    physical GPU for the session.
-   
+
 
 Use Jupyter Notebook
 ----------------------
@@ -151,7 +151,7 @@ When you click the first icon, the app launcher pops up and shows the available 
      for anyone who knows the service URL (and port number) to access and use it. Of
      course, the user must have a network path to access the service.
    * Try preferred port: Without this option checked, a port number for the web service is randomly
-     assigned from the port pool prepared in advance by Backend.AI. 
+     assigned from the port pool prepared in advance by Backend.AI.
      If you check this item and enter a specific port number, the entered
      port number will be tried first. However, there is no guarantee that the desired
      port will always be assigned because the port may not exist at all in the port
@@ -199,7 +199,7 @@ after the session is terminated is described in the Data & Storage Folders secti
 
 
 Use web terminal
-------------
+----------------
 
 Return to the Session list page. This time, let's launch the terminal. Click the
 terminal icon (the second button in the Control panel) to use the container's ttyd daemon. A terminal
@@ -239,7 +239,7 @@ Delete a compute session
 
 To terminate a specific session, simply click on the red power icon and click
 OKAY button in the dialog. Since the data in the folder inside the compute
-session is deleted as soon as the compute session ends, it is recommended to move the data 
+session is deleted as soon as the compute session ends, it is recommended to move the data
 to the mounted folder or upload it to the mounted folder from the beginning if you want to keep it.
 
 .. image:: session_destroy_dialog.png

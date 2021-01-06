@@ -1,6 +1,6 @@
-================
+===============================
 Handling Data & Storage Folders
-================
+===============================
 
 Backend.AI supports dedicated storage to preserve user's files. Since the files
 and directories of a compute session are deleted upon session termination, it is
@@ -20,17 +20,17 @@ users in the panel. Group folders are created by domain admins, and normal
 users can only see group folders created for the group in which the users
 belong.
 
-Storage Status on top of the folder list shows the following information: 
+Storage Status on top of the folder list shows the following information:
 
 * Created: The number of folders that the user created.
 * Invited: The number of folers that the user was invited to share.
-* Capacity: The maximum number of folders that the user can create afterwards. 
-  This value depends on the resource policy applied to the user and cannot be changed 
-  without changing the resource policy. Folders that were not created by the user (eg. folders invited to share, or group folders) are not counted. 
+* Capacity: The maximum number of folders that the user can create afterwards.
+  This value depends on the resource policy applied to the user and cannot be changed
+  without changing the resource policy. Folders that were not created by the user (eg. folders invited to share, or group folders) are not counted.
 
-Check marks on the Owner panel in the folder list indicate the user created folders. 
+Check marks on the Owner panel in the folder list indicate the user created folders.
 
-.. image:: vfolder_status.png 
+.. image:: vfolder_status.png
    :alt: Storage status in Storage page
 
 Create storage folder
@@ -63,7 +63,7 @@ follows.
   General, Data, and Model. It is classified for the development of exclusive functions
   for Data & Model Stores in the future and currently there is no
   difference in UI depending on the purpose.
-* Group: Designates the group to which the folder belongs when creating a new group folder. 
+* Group: Designates the group to which the folder belongs when creating a new group folder.
   Group folders must belong to a group. However, it does not play any
   role when creating a user folder.
 
