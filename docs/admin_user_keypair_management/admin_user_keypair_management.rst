@@ -1,4 +1,4 @@
-.. _admin-menus:
+.. _admin-menu:
 
 ===========
 Admin Menus
