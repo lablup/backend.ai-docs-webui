@@ -109,8 +109,8 @@ latex_elements = {
 
         \setmainhangulfont{NanumSquare}
         \setsanshangulfont{NanumSquare}
-        \setmainfont{Montserrat}
-        \setsansfont{Montserrat}
+        \setmainfont{Ubuntu}
+        \setsansfont{Ubuntu}
         \setmonofont{JetBrains Mono}
 
         \setcounter{chapter}{-1}
