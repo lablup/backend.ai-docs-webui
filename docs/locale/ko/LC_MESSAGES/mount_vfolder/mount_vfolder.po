@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-31 02:49+0900\n"
-"PO-Revision-Date: 2020-12-23 20:26+0900\n"
+"POT-Creation-Date: 2021-01-21 10:40+0900\n"
+"PO-Revision-Date: 2021-01-21 11:08+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko\n"
 "Language-Team: Lablup\n"
@@ -21,8 +21,8 @@ msgstr ""
 "X-Generator: Poedit 2.4.2\n"
 
 #: ../../mount_vfolder/mount_vfolder.rst:5
-msgid "Create a Compute Session with Mounted Folders"
-msgstr "폴더를 마운트 하여 연산 세션 생성"
+msgid "Mounting Folders to a Compute Session"
+msgstr "연산 세션에 폴더 마운트"
 
 #: ../../mount_vfolder/mount_vfolder.rst:7
 msgid ""
@@ -108,7 +108,7 @@ msgstr ""
 "을 수행하면 연산 세션이 종료된 이후에도 데이터를 보존할 수 있습니다."
 
 #: ../../mount_vfolder/mount_vfolder.rst:58
-msgid "Configuring a compute session environment using an automount folder"
+msgid "Configure a compute session environment using an automount folder"
 msgstr "자동 마운트 폴더를 이용하여 연산 세션 환경 구성하기"
 
 #: ../../mount_vfolder/mount_vfolder.rst:60
@@ -232,3 +232,6 @@ msgstr ""
 #~ "없이 보존하려면 별도의 호스트 폴더를 컨테이너에 마운트 한 뒤 마운트 된 폴더 "
 #~ "내에 파일을 생성해야 합니다. Backend.AI에서는 Storage 폴더 연산 세션 생성 "
 #~ "시 마운트 할 수 있는 기능을 제공하고 있습니다."
+
+#~ msgid "Create a Compute Session with Mounted Folders"
+#~ msgstr "폴더를 마운트 하여 연산 세션 생성"
