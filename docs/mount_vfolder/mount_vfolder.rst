@@ -1,11 +1,11 @@
-.. _session-with-mounts:
+.. _session-mounts:
 
 =============================================
 Mounting Folders to a Compute Session
 =============================================
 
 When you start a compute session, the user has access to the ``/home/work/``
-directory, and the normal directores and files created under ``/home/work/``
+directory, and the normal directories and files created under ``/home/work/``
 will disappear when the compute session is terminated. This is because compute
 sessions are dynamically created and deleted based on the container. To preserve
 the data inside the container independent of the life cycle of the container, a

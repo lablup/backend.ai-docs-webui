@@ -26,13 +26,14 @@ The latest versions of this document can be found from sites below:
    login/login
    summary/summary
    sessions_all/sessions_all
+   import_run/import_run
    vfolder/vfolder
    mount_vfolder/mount_vfolder
    share_vfolder/share_vfolder
    statistics/statistics
    sftp_to_container/sftp_to_container
    user_settings/user_settings
-   admin_user_keypair_management/admin_user_keypair_management
+   admin_menu/admin_menu
    trouble_shooting/trouble_shooting
    appendix/appendix
    license_agreement/license_agreement

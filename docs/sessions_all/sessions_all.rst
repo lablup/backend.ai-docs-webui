@@ -76,8 +76,7 @@ default deletes all the data inside the session. If you specify a folder to moun
 and save your data in that folder, you can keep the data even if the compute
 session is terminated. Data preserved in the storage folder can also be reused
 by re-mounting it when creating another compute session. For the information on how
-to mount a folder and run a compute session, see
-:ref:`Mounting Folders to a Compute Session <session-with-mounts>`.
+to mount a folder and run a compute session, see :ref:`Mounting Folders to a Compute Session<session-mounts>`.
 
 Now a new compute session is created in the RUNNING tab.
 
