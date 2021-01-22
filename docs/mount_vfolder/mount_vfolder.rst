@@ -1,4 +1,4 @@
-.. _session-with-mounts:
+.. _session-mounts:
 
 =============================================
 Mounting Folders to a Compute Session

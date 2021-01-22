@@ -287,7 +287,7 @@ click OKAY button to delete.
 
 
 Manage Images
--------------
+--------------
 
 Admins can manage images, which are used in creating a compute session, in the
 Images tab of the Environments page. In the tab, meta information of all images
@@ -439,6 +439,7 @@ that there's no disconnection or termination occurred.
 .. image:: terminated_agent_list.png
    :alt: Terminated agent node list
 
+.. _scheduling-methods:
 
 Manage resource group
 ---------------------
@@ -456,8 +457,6 @@ possible in Scaling Group tab of the Resource page.
 
 .. image:: scaling_group_tab.png
    :alt: Resource group tab
-
-.. _scheduling_methods:
 
 You can edit a resource group by clicking the gear icon in the Control
 panel. In the Select scheduler field, you can choose the scheduling method for
@@ -505,6 +504,7 @@ System settings
 In the System Settings page, you can see main settings of Backend.AI server.
 Currently, it provides several controls which can change and list settings.
 
+
 You can change image auto install and update rule by selecting one option from
 ``Digest``, ``Tag``, ``None``. ``Digest`` is kind of checksum for the image which
 verifies integrity of the image and also enhances  efficiency in downloading images
@@ -518,8 +518,9 @@ guarantee the Integrity of the image.
 .. image:: system_setting_about_image.png
    :alt: System setting about image
 
-You can also choose job scheduler. Currently, there are three types: ``FIFO``, ``LIFO``, and
-``DRF``. Each method of the scheduling is exactly same as :ref:`scheduling methods<scheduling_methods>` above.
+You can also choose job scheduler. Currently, there are three types: ``FIFO``, ``LIFO``,
+and ``DRF``. Each method of the scheduling is exactly same as
+:ref:`scheduling methods<scheduling-methods>` above.
 
 .. image:: system_setting_about_scaling_plugins.png
    :alt: System setting about scaling and plugins
@@ -555,9 +556,9 @@ Go to the Maintenance page and you will see some buttons to manage the server.
 Detailed Information
 ---------------------
 
-In Information page, you can see several detailed informations and status of each feature.
+In Information page, you can see several detailed information and status of each feature.
 To see Manager version and API version, check the Core panel. To see whether each component
-for Backend.ai is compatible or not, check the Component panel.
+for Backend.AI is compatible or not, check the Component panel.
 
 .. note::
 
