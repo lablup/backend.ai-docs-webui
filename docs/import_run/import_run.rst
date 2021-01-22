@@ -2,8 +2,8 @@
 Import & Run notebooks and github repository
 =============================================
 
-Backend.ai supports executing Jupyter notebook files and importing github repository 
-on the fly. You don't need to create download into your local storage and re-upload
+Backend.AI supports executing Jupyter notebook files and importing github repository 
+on the fly. You don't need to create or download into your local storage and re-upload
 it. The only thing you have to do is input a valid URL you want to execute or import,
 and click the button on the right side.
 
