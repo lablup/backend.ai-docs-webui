@@ -294,8 +294,7 @@ Images tab of the Environments page. In the tab, meta information of all images
 currently in the Backend.AI server is displayed. You can check information such
 as registry, namespace, image name, image's based OS, digest, and minimum
 resources required for each image. For images downloaded to one or more agent
-nodes, a check mark is displayed on the left. An unchecked image means that it
-is not installed on any agent.
+nodes, There will be a ``installed`` tag in each Status column.
 
 .. note::
    The feature to install images by selecting specific agents is currently
@@ -330,11 +329,11 @@ Manager docker registry
 -----------------------
 
 You can click on the Registries tab in Environments page to see the information
-of the docker registry that are currently connected. ``index.docker.io`` is
-registered by default, and it is a registry provided by Docker.
+of the docker registry that are currently connected. ``cr.backend.ai`` is
+registered by default, and it is a registry provided by Harbor.
 
 .. note::
-   In the offline environment, the default Docker registry is not accessible, so
+   In the offline environment, the default registry is not accessible, so
    click the trash icon on the right to delete it.
 
 Click the refresh icon in Controls to update image metadata for Backend.AI from
@@ -405,6 +404,15 @@ would not be shown.
    :align: center
    :alt: Modify resource preset dialog
 
+Also you can create resource preset by Clicking CREATE PRESETS button in the right top
+of the Resource Presets tab. You cannot create the same resource preset name that 
+already exists, since it is the key value for distinguishing each resource preset.
+
+.. image:: create_resource_preset_dialog.png
+   :width: 350
+   :align: center
+   :alt: Create resource preset dialog
+
 
 Query agent nodes
 -----------------
@@ -417,9 +425,16 @@ not provide the function to manipulate agent nodes.
 .. image:: agent_list.png
    :alt: Agent node list
 
+Also You can see exact usage about the resources in the agent worker node
+by Click note icon in the Control panel.
+
+.. image:: detailed_agent_node_usage_information.png
+   :alt: Detailed agent node usage information
+
 On Terminated tab, you can check the information of the agents that has been
 connected once and then terminated or disconnected. It can be used as a
-reference for node management.
+reference for node management. If the list is empty, then It means 
+that there's no disconnection or termination occurred.
 
 .. image:: terminated_agent_list.png
    :alt: Terminated agent node list
@@ -442,20 +457,27 @@ possible in Scaling Group tab of the Resource page.
 .. image:: scaling_group_tab.png
    :alt: Resource group tab
 
+.. _scheduling_methods:
+
 You can edit a resource group by clicking the gear icon in the Control
 panel. In the Select scheduler field, you can choose the scheduling method for
-creating a compute session. Currently, there are three types: FIFO, LIFO, and
-DRF. FIFO and LIFO are scheduling methods creating the first- or the
-last-enqueued compute session in the job queue. DRF stands for Dominant Resource
+creating a compute session. Currently, there are three types: ``FIFO``, ``LIFO``, and
+``DRF``. ``FIFO`` and ``LIFO`` are scheduling methods creating the first- or the
+last-enqueued compute session in the job queue. ``DRF`` stands for Dominant Resource
 Fairness, and it aims to provide resources as fair as possible for each user.
 You can deactivate a resource policy by turning off Active Status.
 
 .. image:: modify_resource_group.png
-   :width: 350
-   :align: center
    :alt: Modify resource group dialog
 
 You can create a new resource policy by clicking the CREATE button.
+Likewise other creating options, you cannot create a resource policy with the name
+that already exists, since name is the key value.
+
+.. image:: create_resource_group.png
+   :width: 350
+   :align: center
+   :alt: Create resource group dialog
 
 
 Download session lists
@@ -469,7 +491,8 @@ When you click this menu, a sub-menu export CSV appears.
 
 If you click this menu, you can download the information of the comcpute sessions
 created so far in CSV format. After the following dialog opens, enter an appropriate
-file name (if necessary), click the EXPORT button and you will get the CSV file. Please note that a file name can have up to 255 characters.
+file name (if necessary), click the EXPORT button and you will get the CSV file.
+Please note that a file name can have up to 255 characters.
 
 .. image:: export_session_dialog.png
    :width: 350
@@ -481,6 +504,25 @@ System settings
 
 In the System Settings page, you can see main settings of Backend.AI server.
 Currently, it provides several controls which can change and list settings.
+
+You can change image auto install and update rule by selecting one option from
+``Digest``, ``Tag``, ``None``. ``Digest`` is kind of checksum for the image which
+verifies integrity of the image and also enhances  efficiency in downloading images
+by reusing duplicated layers. ``Tag`` is only for developing option since it does not
+guarantee the Integrity of the image.
+
+
+.. warning::
+   Don't change rule selection unless you completely understand the meaning of each rule.
+
+.. image:: system_setting_about_image.png
+   :alt: System setting about image
+
+You can also choose job scheduler. Currently, there are three types: ``FIFO``, ``LIFO``, and
+``DRF``. Each method of the scheduling is exactly same as :ref:`scheduling methods<scheduling_methods>` above.
+
+.. image:: system_setting_about_scaling_plugins.png
+   :alt: System setting about scaling and plugins
 
 .. note::
    We will continue to add broader range of setting controls.
@@ -508,3 +550,23 @@ Go to the Maintenance page and you will see some buttons to manage the server.
 .. note::
    We will continue to add other settings needed for management, such as
    removing unused images or registering periodic maintenance schedules.
+
+
+Detailed Information
+---------------------
+
+In Information page, you can see several detailed informations and status of each feature.
+To see Manager version and API version, check the Core panel. To see whether each component
+for Backend.ai is compatible or not, check the Component panel.
+
+.. note::
+
+   This page is only for showing current information.
+
+.. image:: information_page.png
+   :align: center
+   :alt: Information page
+
+.. image:: information_page_2.png
+   :align: center
+   :alt: Information page 2
