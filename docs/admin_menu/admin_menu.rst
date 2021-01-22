@@ -287,14 +287,14 @@ click OKAY button to delete.
 
 
 Manage Images
---------------
+-------------
 
 Admins can manage images, which are used in creating a compute session, in the
 Images tab of the Environments page. In the tab, meta information of all images
 currently in the Backend.AI server is displayed. You can check information such
 as registry, namespace, image name, image's based OS, digest, and minimum
 resources required for each image. For images downloaded to one or more agent
-nodes, There will be a ``installed`` tag in each Status column.
+nodes, there will be a ``installed`` tag in each Status column.
 
 .. note::
    The feature to install images by selecting specific agents is currently
@@ -351,12 +351,6 @@ must have a name prefixed with Registry Hostname. Username and Password are
 optional and can be filled in if you set separate authentication settings in the
 registry.
 
-.. note::
-   In the case of ``index.docker.io``, the Hostname and Registry URL are
-   different, because Docker internally handles an exception for the default
-   registry. If it is not the default registry, you must match the Hostname and
-   Registry URL to properly connect.
-
 .. image:: add_registry_dialog.png
    :width: 350
    :align: center
@@ -405,7 +399,7 @@ would not be shown.
    :alt: Modify resource preset dialog
 
 Also you can create resource preset by Clicking CREATE PRESETS button in the right top
-of the Resource Presets tab. You cannot create the same resource preset name that 
+of the Resource Presets tab. You cannot create the same resource preset name that
 already exists, since it is the key value for distinguishing each resource preset.
 
 .. image:: create_resource_preset_dialog.png
@@ -433,7 +427,7 @@ by Click note icon in the Control panel.
 
 On Terminated tab, you can check the information of the agents that has been
 connected once and then terminated or disconnected. It can be used as a
-reference for node management. If the list is empty, then It means 
+reference for node management. If the list is empty, then It means
 that there's no disconnection or termination occurred.
 
 .. image:: terminated_agent_list.png
