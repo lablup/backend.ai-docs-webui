@@ -60,10 +60,10 @@ msgstr ""
 
 #: ../../summary/summary.rst:24
 msgid ""
-"About Backend.AI: Displays information such as version of Backend.AI Webui, "
+"About Backend.AI: Displays information such as version of Backend.AI Web-UI, "
 "license type, etc."
 msgstr ""
-"About Backend.AI: Backend.AI Webui의 버전, 라이선스 종류 등과 같은 정보를 표시 "
+"About Backend.AI: Backend.AI Web-UI의 버전, 라이선스 종류 등과 같은 정보를 표시 "
 "합니다."
 
 #: ../../summary/summary.rst:26

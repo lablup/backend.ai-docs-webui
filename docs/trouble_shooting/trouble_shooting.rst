@@ -2,16 +2,16 @@
 FAQs & Trouble Shooting
 =======================
 
-If you use the Webui for a long time, you may experience connection
+If you use the Web-UI for a long time, you may experience connection
 problems to Jupyter and/or terminal service, or compute session list not
-updating. Those problems often disappear when you refresh the Webui page. You
-may refresh the Webui by following methods.
+updating. Those problems often disappear when you refresh the Web-UI page. You
+may refresh the Web-UI by following methods.
 
-- Web-based Webui: Refresh the browser page (use the shortcut provided by
+- Web-based Web-UI: Refresh the browser page (use the shortcut provided by
   browsers such as Ctrl-R). Since the browser's cache may cause troubles
   sometimes, it is recommended to refresh the page bypassing the cache
   (such as Shift-Ctrl-R, but the keys may differ in each browser).
-- Webui App: Press Ctrl-R shortcut to refresh the app.
+- Web-UI App: Press Ctrl-R shortcut to refresh the app.
 
 
 Session list is not displayed correctly
@@ -105,21 +105,21 @@ by clicking the trash icon.
 Page layout is broken
 ---------------------
 
-Backend.AI Webui utilizes the latest modern JavaScript and/or browser features.
+Backend.AI Web-UI utilizes the latest modern JavaScript and/or browser features.
 Please use the LATEST versions of moder browsers (such as Chrome).
 
 SFTP disconnection
 ------------------
 
-When Webui App launches SFTP connection, it uses a local proxy server which is
-embeded in the App. If you exit the Webui App during the file transfer with
+When Web-UI App launches SFTP connection, it uses a local proxy server which is
+embeded in the App. If you exit the Web-UI App during the file transfer with
 SFTP protocol, the transfer will immediately fail because the connection
 established through the local proxy server is disconnected.  Therefore, even if
-you are not using a compute session, you should not quit the Webui App while
+you are not using a compute session, you should not quit the Web-UI App while
 using SFTP. If you need to refresh the page, we recommend using the Ctrl-R
 shortcut.
 
-If the Webui App is closed and restarted, the SFTP service is not
+If the Web-UI App is closed and restarted, the SFTP service is not
 automatically initiated for the existing compute session. You must explicitly
 start the SSH/SFTP service in the desired container to establish the SFTP
 connection.

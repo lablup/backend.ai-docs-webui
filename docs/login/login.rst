@@ -5,7 +5,7 @@ Signup and Login
 Signup
 ------
 
-When you launch the Webui, login dialog appears. If you haven't signed up
+When you launch the Web-UI, login dialog appears. If you haven't signed up
 yet, press the SIGN UP button.
 
 .. image:: login_dialog.png
@@ -99,7 +99,7 @@ narrower. Click again to bring the sidebar back to its original width.
 .. image:: ui_menu.png
 
 The middle button is the event notification button. Events that need to be
-recorded during Webui operation are displayed here.
+recorded during Web-UI operation are displayed here.
 
 The rightmost button is the background task button. When background tasks are
 running, such as creating a compute session, you can check the jobs here.  When

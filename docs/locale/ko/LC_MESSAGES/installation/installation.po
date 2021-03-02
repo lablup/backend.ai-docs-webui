@@ -26,22 +26,22 @@ msgstr "설치"
 
 #: ../../installation/installation.rst:5
 msgid ""
-"The Webui can be used in two forms. It can be used as a web service by "
+"The Web-UI can be used in two forms. It can be used as a web service by "
 "connecting to a separate web address prepared by the admins, or as an app "
 "provided as a stand-alone executable file that does not require separate "
 "installation."
 msgstr ""
-"Webui는 두 가지 형태로 사용할 수 있습니다. 관리자가 설치한 별도의 웹 주소로 접"
+"Web-UI는 두 가지 형태로 사용할 수 있습니다. 관리자가 설치한 별도의 웹 주소로 접"
 "속하여 웹 서비스 형태로 이용할 수 있고, 별도 설치가 필요 없는 standalone 실행파"
 "일로 제공되는 앱 형태로 이용할 수도 있습니다."
 
 #: ../../installation/installation.rst:10
 msgid ""
-"With the web-based Webui, users do not need to install a platform-dependent "
+"With the web-based Web-UI, users do not need to install a platform-dependent "
 "desktop applications and just need the latest versions of browsers such as "
 "Chrome."
 msgstr ""
-"Webui는 관리자가 제공하는 별도의 웹 주소로 접속하여 웹 서비스 형태로 이용할 수 "
+"Web-UI는 관리자가 제공하는 별도의 웹 주소로 접속하여 웹 서비스 형태로 이용할 수 "
 "있습니다. 사용자는 플랫폼 의존적인 데스크톱 앱을 따로 설치할 필요가 없으며, "
 "Chrome 등과 같은 최신 브라우저만 있으면 설치하면 됩니다."
 
@@ -63,10 +63,10 @@ msgstr ""
 
 #: ../../installation/installation.rst:22
 msgid ""
-"The stand-alone Webui app can be downloaded from following address: https://"
+"The stand-alone Web-UI app can be downloaded from following address: https://"
 "github.com/lablup/backend.ai-webui/releases"
 msgstr ""
-"단독 앱 형태의 Webui는 다음 주소에서 다운로드할 수 있습니다: https://github."
+"단독 앱 형태의 Web-UI는 다음 주소에서 다운로드할 수 있습니다: https://github."
 "com/lablup/backend.ai-webui/releases"
 
 #: ../../installation/installation.rst:26

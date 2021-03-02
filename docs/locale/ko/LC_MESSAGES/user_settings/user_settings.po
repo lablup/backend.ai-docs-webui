@@ -48,17 +48,17 @@ msgstr ""
 #: ../../user_settings/user_settings.rst:20
 msgid ""
 "Enables or disables the desktop notification feature. If the browser and "
-"operating system support it, various  messages that appear in the Webui "
+"operating system support it, various  messages that appear in the Web-UI "
 "will also appear in the desktop notification panel. If disabled from the "
 "operating system during the first run, the desktop message may not be "
 "displayed even if the option is turned on here. Regardless of the value "
-"of this option, the notification inside the Webui still works."
+"of this option, the notification inside the Web-UI still works."
 msgstr ""
 "데스크톱 알림 기능을 사용 여부를 설정 합니다. 브라우저 및 운영체제가 지원"
-"하는 경우, Webui에서 뜨는 각종 하단 메시지가 데스크톱 알림 패널에도 같이 "
+"하는 경우, Web-UI에서 뜨는 각종 하단 메시지가 데스크톱 알림 패널에도 같이 "
 "뜨게 됩니다. 첫 실행 시 운영 체제 단에서 비활성화 한 경우, 여기서 옵션을 "
 "켜더라도 데스크톱 메시지가 출력되지 않을 수 있습니다. 이 옵션 설정과 관계"
-"없이, Webui 내부의 알림 기능은 그대로 동작합니다."
+"없이, Web-UI 내부의 알림 기능은 그대로 동작합니다."
 
 #: ../../user_settings/user_settings.rst:28
 msgid "Use Compact Sidebar by default"
@@ -109,7 +109,7 @@ msgstr ""
 
 #: ../../user_settings/user_settings.rst:50
 msgid ""
-"When using the Webui app, you can create SSH/SFTP connection directly to "
+"When using the Web-UI app, you can create SSH/SFTP connection directly to "
 "the compute session. Once you signed up for Backend.AI, a public keypair "
 "is provided. If you click the button on the right to the SSH Keypair "
 "Management section, the following dialog appears. Click the copy button "
@@ -150,11 +150,11 @@ msgstr ""
 
 #: ../../user_settings/user_settings.rst:74
 msgid ""
-"A notification window pops up when a new version of the Webui is "
+"A notification window pops up when a new version of the Web-UI is "
 "detected. It works only in an environment where Internet access is "
 "available."
 msgstr ""
-"Webui의 새 버전이 검색될 경우 알림 창을 띄웁니다. 인터넷 접속이 가능한 환"
+"Web-UI의 새 버전이 검색될 경우 알림 창을 띄웁니다. 인터넷 접속이 가능한 환"
 "경에서만 동작합니다."
 
 #: ../../user_settings/user_settings.rst:78
@@ -163,11 +163,11 @@ msgstr ""
 
 #: ../../user_settings/user_settings.rst:80
 msgid ""
-"Log out automatically when all Backend.AI Webui pages are closed except "
+"Log out automatically when all Backend.AI Web-UI pages are closed except "
 "for pages created to run apps in session (e.g. jupyter notebook, web "
 "terminal, etc.)."
 msgstr ""
-"세션 내 앱을 실행하기 위해 생성된 페이지를 제외한 모든 Backend.AI Webui "
+"세션 내 앱을 실행하기 위해 생성된 페이지를 제외한 모든 Backend.AI Web-UI "
 "페이지가 닫힐 경우 자동으로 로그아웃 됩니다. (Jupyter Notebook, Web "
 "Terminal 등의 앱 접속은 제외)"
 

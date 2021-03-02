@@ -18,11 +18,11 @@ Desktop Notification
 ^^^^^^^^^^^^^^^^^^^^
 
 Enables or disables the desktop notification feature. If the browser and
-operating system support it, various  messages that appear in the Webui
+operating system support it, various  messages that appear in the Web-UI
 will also appear in the desktop notification panel. If disabled from the
 operating system during the first run, the desktop message may not be displayed
 even if the option is turned on here. Regardless of the value of this option,
-the notification inside the Webui still works.
+the notification inside the Web-UI still works.
 
 Use Compact Sidebar by default
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -47,7 +47,7 @@ before the page is refreshed.
 SSH Keypair Management
 ^^^^^^^^^^^^^^^^^^^^^^
 
-When using the Webui app, you can create SSH/SFTP connection directly to the
+When using the Web-UI app, you can create SSH/SFTP connection directly to the
 compute session. Once you signed up for Backend.AI, a public keypair is
 provided. If you click the button on the right to the SSH Keypair Management
 section, the following dialog appears. Click the copy button on the right to
@@ -71,13 +71,13 @@ creation.
 Automatic Update Check
 ^^^^^^^^^^^^^^^^^^^^^^
 
-A notification window pops up when a new version of the Webui is detected.
+A notification window pops up when a new version of the Web-UI is detected.
 It works only in an environment where Internet access is available.
 
 Auto logout
 ^^^^^^^^^^^
 
-Log out automatically when all Backend.AI Webui pages are closed except for
+Log out automatically when all Backend.AI Web-UI pages are closed except for
 pages created to run apps in session (e.g. jupyter notebook, web terminal,
 etc.).
 

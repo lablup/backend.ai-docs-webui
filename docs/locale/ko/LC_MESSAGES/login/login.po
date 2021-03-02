@@ -30,10 +30,10 @@ msgstr "가입"
 
 #: ../../login/login.rst:8
 msgid ""
-"When you launch the Webui, login dialog appears. If you haven't signed up "
+"When you launch the Web-UI, login dialog appears. If you haven't signed up "
 "yet, press the SIGN UP button."
 msgstr ""
-"Webui를 실행하면 다음과 같은 로그인 대화창이 뜹니다. 아직 가입을 하지 않은 경"
+"Web-UI를 실행하면 다음과 같은 로그인 대화창이 뜹니다. 아직 가입을 하지 않은 경"
 "우에는 SIGN UP 버튼을 눌러주세요."
 
 #: ../../login/login.rst:16
@@ -172,9 +172,9 @@ msgstr ""
 #: ../../login/login.rst:101
 msgid ""
 "The middle button is the event notification button. Events that need to be "
-"recorded during Webui operation are displayed here."
+"recorded during Web-UI operation are displayed here."
 msgstr ""
-"중간의 버튼은 이벤트 알림 버튼입니다. Webui 동작 중 기록해둘 필요가 있는 이벤"
+"중간의 버튼은 이벤트 알림 버튼입니다. Web-UI 동작 중 기록해둘 필요가 있는 이벤"
 "트 내역이 여기에 표시 됩니다."
 
 #: ../../login/login.rst:104

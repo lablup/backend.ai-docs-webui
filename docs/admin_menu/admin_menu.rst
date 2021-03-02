@@ -168,7 +168,7 @@ Manage Resource Policy
 In Backend.AI, admins can set a limit on the total amount of resources available
 for each user and group. Resource limits per group can only be set through the
 enterprise-dedicated administrator GUI Control-Panel, but resource limits per user
-(precisely per user's keypair) can be set in the user Webui.
+(precisely per user's keypair) can be set in the user Web-UI.
 
 Resource policies allow you to set maximum allowed resources and/or
 other compute session related settings per keypair basis. If necessary, multiple
@@ -177,7 +177,7 @@ apply them separately to each keypair.
 
 .. note::
    To set resource policies at the domain and group level, you have to use
-   admin Control-Panel, a UI for superadmin only. In the Webui, you can only set
+   admin Control-Panel, a UI for superadmin only. In the Web-UI, you can only set
    resource policies based on keypairs. Control-Panel is a part of the
    enterprise version.
 
@@ -416,7 +416,7 @@ Query agent nodes
 
 Superadmins can view the list of agent worker nodes, currently connected to
 Backend.AI, by visiting the Resources page. You can check agent node's IP,
-connecting time, actual resources currently in use, etc. The Webui does
+connecting time, actual resources currently in use, etc. The Web-UI does
 not provide the function to manipulate agent nodes.
 
 .. image:: agent_list.png

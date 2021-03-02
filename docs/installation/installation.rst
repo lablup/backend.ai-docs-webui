@@ -2,12 +2,12 @@
 Installation
 ============
 
-The Webui can be used in two forms. It can be used as a web service by
+The Web-UI can be used in two forms. It can be used as a web service by
 connecting to a separate web address prepared by the admins, or as an
 app provided as a stand-alone executable file that does not require separate
 installation.
 
-With the web-based Webui, users do not need to install a
+With the web-based Web-UI, users do not need to install a
 platform-dependent desktop applications and just need the latest versions of
 browsers such as Chrome.
 
@@ -19,7 +19,7 @@ browsers such as Chrome.
    is deprecated and does not follow web standard and support up-to-date brower
    features.
 
-The stand-alone Webui app can be downloaded from following address:
+The stand-alone Web-UI app can be downloaded from following address:
 https://github.com/lablup/backend.ai-webui/releases
 
 .. note::

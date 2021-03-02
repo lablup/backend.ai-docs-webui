@@ -7,7 +7,7 @@ Backend.AI supports SSH/SFTP connection to the created compute sessions
 
 .. note::
    SSH/SFTP connection is supported only on desktop apps, and not yet supported
-   on web-based Webui service.
+   on web-based Web-UI service.
 
 
 For Linux / Mac
@@ -15,13 +15,13 @@ For Linux / Mac
 
 First, create a compute session, then click the app icon (first button) in
 Control, followed by SSH / SFTP icon. Then, a daemon that allows SSH/SFTP access
-from inside the container will be initiated, and the Webui app interacts with
+from inside the container will be initiated, and the Web-UI app interacts with
 the daemon through a local proxy service.
 
 .. warning::
    You cannot establish a SSH/SFTP connection to the session until you click
-   the SSH/SFTP icon. When you close the Webui app and launch it again, the
-   connection between the local proxy and the Webui app is initialized, so the
+   the SSH/SFTP icon. When you close the Web-UI app and launch it again, the
+   connection between the local proxy and the Web-UI app is initialized, so the
    SSH/SFTP icon must be clicked again.
 
 Next, a dialog containing SSH/SFTP connection information will be pop up.
@@ -81,7 +81,7 @@ each FTP client manual for details.
 For Windows / FileZilla
 --------------------------------------------------------------
 
-Backend.AI Webui app supports OpenSSH-based public key connection (RSA2048).
+Backend.AI Web-UI app supports OpenSSH-based public key connection (RSA2048).
 To access with a client such as PuTTY on Windows, a private key must be
 converted into a ``ppk`` file through a program such as PuTTYgen. You can refer
 to the following link for the conversion method:
