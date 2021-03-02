@@ -136,8 +136,9 @@ according to the user's pattern.
 Share group storage folders with group members
 -------------------------------------------------
 
-Backend.AI provides storage folders for groups, in addition to user's own storage folder. A group storage folder is a folder belonging to a specific group, not a
-specific user, and can be accessed by all users in that group.
+Backend.AI provides storage folders for groups, in addition to user's own
+storage folder. A group storage folder is a folder belonging to a specific
+group, not a specific user, and can be accessed by all users in that group.
 
 .. note::
    Group folders can be created only by administrators. Normal users can only
@@ -166,8 +167,8 @@ Manage Resource Policy
 
 In Backend.AI, admins can set a limit on the total amount of resources available
 for each user and group. Resource limits per group can only be set through the
-enterprise-dedicated administrator GUI Hub, but resource limits per user
-(precisely per user's keypair) can be set in the user GUI console.
+enterprise-dedicated administrator GUI Control-Panel, but resource limits per user
+(precisely per user's keypair) can be set in the user Web-UI.
 
 Resource policies allow you to set maximum allowed resources and/or
 other compute session related settings per keypair basis. If necessary, multiple
@@ -176,13 +177,14 @@ apply them separately to each keypair.
 
 .. note::
    To set resource policies at the domain and group level, you have to use
-   Manager Hub, a UI for superadmin only. In the Console UI, you can only set
-   resource policies based on keypairs. Manager Hub is a part of the enterprise
-   version.
+   admin Control-Panel, a UI for superadmin only. In the Web-UI, you can only set
+   resource policies based on keypairs. Control-Panel is a part of the
+   enterprise version.
 
-In Resource Policies tab on the Users page, the admin can check the list of currently registered resource policies.
-In the figure below, there are a total of three policies (gardener, STUDENT, default).
-The infinity (∞) marks for resources such as Cores, Ram, and fGPU in the Resources panel means that no
+In Resource Policies tab on the Users page, the admin can check the list of
+currently registered resource policies.  In the figure below, there are a total
+of three policies (gardener, STUDENT, default).  The infinity (∞) marks for
+resources such as Cores, Ram, and fGPU in the Resources panel means that no
 resource restrictions have been placed for those resources.
 
 .. image:: resource_policy_page.png
@@ -361,7 +363,7 @@ images in the registry, immediately. Just as you had to register the allowed hos
 to use the storage host, you must register the registry in the allowed docker
 registries field at the domain or group level, after registering the registry,
 so that users in the domain or group can access the registry image. Allowed
-docker registries can be registered using the Manager Hub with domain and group
+docker registries can be registered using the Control-Panel with domain and group
 management. The function to set the allowed docker registries in the keypair's
 resource policy is not provided yet.
 
@@ -398,9 +400,10 @@ would not be shown.
    :align: center
    :alt: Modify resource preset dialog
 
-Also you can create resource preset by Clicking CREATE PRESETS button in the right top
-of the Resource Presets tab. You cannot create the same resource preset name that
-already exists, since it is the key value for distinguishing each resource preset.
+Also you can create resource preset by Clicking CREATE PRESETS button in the
+right top of the Resource Presets tab. You cannot create the same resource
+preset name that already exists, since it is the key value for distinguishing
+each resource preset.
 
 .. image:: create_resource_preset_dialog.png
    :width: 350
@@ -413,7 +416,7 @@ Query agent nodes
 
 Superadmins can view the list of agent worker nodes, currently connected to
 Backend.AI, by visiting the Resources page. You can check agent node's IP,
-connecting time, actual resources currently in use, etc. The Console does
+connecting time, actual resources currently in use, etc. The Web-UI does
 not provide the function to manipulate agent nodes.
 
 .. image:: agent_list.png

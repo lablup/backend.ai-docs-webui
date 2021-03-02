@@ -15,18 +15,25 @@ API Client libraries and auxiliary components for accessing Backend.AI server
 (hereinafter "Backend.AI Client") are distributed under the MIT License. Even if
 LGPL complies, commercial contracts with Lablup Co., Ltd. ("Lablup") are
 required depending on the conditions when performing profit activities using the
-Backend.AI server. Several additional plug-ins and management Hubs that apply to
-Backend.AI enterprise solutions are not open source, but commercial software.
+Backend.AI server. Several additional plug-ins and admin's GUI Control-Panel
+that apply to Backend.AI enterprise solutions are not open source, but
+commercial software.
 
 **Term Definition**
 
-- Hardware: Includes physical computers, virtual machine and container environments that users own or lease and have rights to run software. 
+- Hardware: Includes physical computers, virtual machine and container
+  environments that users own or lease and have rights to run software.
 - Organization: Individuals, corporations, organizations, institutions
   (including non-profit and commerical organizations; however, subsidiaries that
   are separate corporations are not included)
 
 LGPL must be followed when users use and change Backend.AI Server (Manager /
-Agent / Common) or develop and distribute software that uses it. However, in the case of distributing software which import Backend.AI server as a module without changing it (e.g. Python import), it is regarded as a dynamic link and code disclosure under the LGPL is exempted. When Backend.AI server is installed on the hardware and used by the general public through the network, there is no obligation under the LGPL.
+Agent / Common) or develop and distribute software that uses it. However, in the
+case of distributing software which import Backend.AI server as a module without
+changing it (e.g. Python import), it is regarded as a dynamic link and code
+disclosure under the LGPL is exempted. When Backend.AI server is installed on
+the hardware and used by the general public through the network, there is no
+obligation under the LGPL.
 
 The correct interpretation of all other cases is subject to the LGPL original
 text and court judgment.
@@ -55,7 +62,8 @@ In other cases, you can use the Backend.AI server for free.
   - Paid distribution: The software does not need to be (L)GPL, but a commercial
     contract with Lablup is required.
 
-- When Backend.AI server is installed on the hardware and it is used by the public through network,
+- When Backend.AI server is installed on the hardware and it is used by the
+  public through network,
 
   - Free distribution: No separate contract with Lablup is required.
   - Paid distribution: A commercial contract with Lablup is required.
