@@ -145,3 +145,157 @@ For more detailed information on the usage of Automount folders, refer to
 
 .. image:: vfolder_automount_folders.png
    :alt: Automount folders
+
+
+Using Filebrowser
+-----------------
+
+Backend.AI provides filebrowser from ``20.09``. filebrowser is an useful application when uploading
+one or more folders.
+
+Currently, filebrowser is one of the applications that can be executed via session.
+Please check your Backend.AI status suits to the following requirements.
+
+- capable of creating at least one or more sessions
+
+- minimum 1 core of CPU and 0.5 GB of RAM
+
+- Image that supports filebrowser has been installed
+
+You can access filebrowser in two ways.
+
+- Execute filebrowser in each Vfolder explorer
+
+- Create a session with filebrowser supporting image
+
+
+Execute filebrowser in each Vfolder explorer
+============================================
+
+To execute filebrowser, you need to open folder explorer first.
+Click the folder icon in Controls panel of the Vfolder.
+
+.. image:: first_step_to_access_filebrowser.png
+   :alt: First step to access filebrowser
+
+.. warning::
+   Filebrowser is not available in Vfolder with read-only permission.
+
+Click EXECUTE FILEBROWSER button in the right-top of the folder explorer.
+
+.. image:: folderexplorer_with_filebrowser.png
+   :alt: Folder explorer with filebrowser
+
+You can see the file browser is opened in a new window.
+
+.. image:: filebrowser_with_new_window.png
+   :alt: Filebrowser with new window
+
+Vfolder becomes the ``root`` directory when the filebrowser is launched.
+You can see the session is running in the session page.
+
+.. image:: filebrowser_in_session_page.png
+   :alt: Filebrowser in session page
+
+.. note::
+   If you close the filebrowser window by accident and try to reopen the filebrowser,
+   just go to sessions page and click the filebrowser application of the running session
+   with filebrowser image. 
+   
+   .. image:: app_dialog_with_filebrowser.png
+      :align: center
+
+   |
+   | When you click EXECUTE FILEBROWSER button again, It will create another session.
+
+
+Create a session with filebrowser image
+=======================================
+
+You can create a session with filebrowser supported images.
+When creating a session for using a filebrowser, following resource allocation
+is highly recommended.
+
+- CPU : 1 core
+
+- RAM : 0.5 GB
+
+
+Also, you need to mount at least one or more Vfolders to access them.
+If you don't mount Vfolders you can still use filebrowser, but every uploaded file or folders
+by filebrowser application will be gone after the session is terminated.
+
+.. note::
+   the ``root`` directory of filebrowser that created by session page is ``/home/work``.
+   Therefore, you need to access to mounted Vfolder first to upload or download any file or folder.
+
+
+In filebrowser, It provides more than folder explorer supports,
+such as uploading folder and moving files, folders.
+
+Upload folder using filebrowser
+===============================
+
+Filebrowser supports uploading one or more folders while maintaining the structure
+of each directory. Click UPLOAD button in the right top of the window, and click Folder button.
+Then, folder explorer will appear and you can upload any folder you want.
+
+.. image:: filebrowser_upload.png
+   :align: center
+
+Let's upload folder with the following structure.
+
+.. code-block:: shell
+
+   foo
+   +-- test
+   |    +-- test2.txt
+   +-- test.txt
+
+
+You can see the folder just uploaded successfully.
+
+.. image:: filebrowser_upload_finished.png
+
+Also, you can upload files and folders by drag and drop mode.
+
+
+Moving files or folders to another directory
+============================================
+
+Moving files or folders in Vfolder is also available in filebrowser.
+You can move files or folders following steps below.
+
+1. Select folders or files
+
+.. image:: select_folders.png
+   :align: center
+
+2. Click the arrow icon in the right top of filebrowser
+
+.. image:: click_arrow_icon.png
+   :width: 400
+   :align: center
+
+3. Select the destination
+
+.. image:: select_the_destination.png
+   :width: 400
+   :align: center
+
+4. Click MOVE button
+
+
+You can see that moving operation is successfully finished.
+
+.. image:: moving_operation_in_filebrowser_finished.png
+   :align: center
+
+.. note::
+   If any file or folders are already exists in the destination, numbering such as (1) or (2)... will be appended.
+
+
+.. note::
+   Filebrowser is provided via application in a session as for now,
+   We are planning to update filebrowser so that it can run independently
+   without creating a session.
