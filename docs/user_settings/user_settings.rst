@@ -1,12 +1,12 @@
-====================
+=============
 User Settings
-====================
+=============
 
-The user settings page is accessed by clicking the gear icon at the bottom
-of the left sidebar or by selecting the Preferences menu that appears after
-clicking the person icon at the top right. Users can change the preferred Console Environment 
-from the language setting, SSH keypair management, editing user config script, and even to using
-Beta features.
+The user settings page is accessed by clicking the gear icon at the bottom of
+the left sidebar or by selecting the Preferences menu that appears after
+clicking the person icon at the top right. Users can change the preferred
+Environment from the language setting, SSH keypair management, editing user
+config script, and even to using Beta features.
 
 
 GENERAL tab
@@ -18,19 +18,19 @@ Desktop Notification
 ^^^^^^^^^^^^^^^^^^^^
 
 Enables or disables the desktop notification feature. If the browser and
-operating system support it, various  messages that appear in the GUI console
+operating system support it, various  messages that appear in the Web-UI
 will also appear in the desktop notification panel. If disabled from the
 operating system during the first run, the desktop message may not be displayed
 even if the option is turned on here. Regardless of the value of this option,
-the notification inside the GUI console still works.
+the notification inside the Web-UI still works.
 
 Use Compact Sidebar by default
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When this option is on, the left sidebar will be shown in a compact form (narrower width).
-Change of the option is applied when the browser is refreshed. If you want to immediately change the
-type of the sidebar without refreshing the page, click the leftmost icon at the
-top of the sidebar.
+When this option is on, the left sidebar will be shown in a compact form
+(narrower width).  Change of the option is applied when the browser is
+refreshed. If you want to immediately change the type of the sidebar without
+refreshing the page, click the leftmost icon at the top of the sidebar.
 
 Language
 ^^^^^^^^
@@ -47,14 +47,15 @@ before the page is refreshed.
 SSH Keypair Management
 ^^^^^^^^^^^^^^^^^^^^^^
 
-When using the GUI console app, you can create SSH/SFTP connection
-directly to the compute session. Once you signed up for Backend.AI, a public keypair is provided.  
-If you click the button on the right to the SSH Keypair Management section, the following dialog appears. 
-Click the copy button on the right to copy the existing SSH public key. 
-You can update SSH keypair by clicking GENERATE button
-at the bottom of the dialog. SSH public/private keys are randomly
-generated and stored as user information. Please note that the secret key cannot
-be checked again unless it is saved manually immediately after creation.
+When using the Web-UI app, you can create SSH/SFTP connection directly to the
+compute session. Once you signed up for Backend.AI, a public keypair is
+provided. If you click the button on the right to the SSH Keypair Management
+section, the following dialog appears. Click the copy button on the right to
+copy the existing SSH public key. You can update SSH keypair by clicking
+GENERATE button at the bottom of the dialog. SSH public/private keys are
+randomly generated and stored as user information. Please note that the secret
+key cannot be checked again unless it is saved manually immediately after
+creation.
 
 .. image:: ssh_keypair_dialog.png
    :width: 400
@@ -70,13 +71,15 @@ be checked again unless it is saved manually immediately after creation.
 Automatic Update Check
 ^^^^^^^^^^^^^^^^^^^^^^
 
-A notification window pops up when a new version of the GUI console is detected.
+A notification window pops up when a new version of the Web-UI is detected.
 It works only in an environment where Internet access is available.
 
 Auto logout
 ^^^^^^^^^^^
 
-Log out automatically when all Backend.AI console pages are closed except for pages created to run apps in session (e.g. jupyter notebook, web terminal, etc.).
+Log out automatically when all Backend.AI Web-UI pages are closed except for
+pages created to run apps in session (e.g. jupyter notebook, web terminal,
+etc.).
 
 EDIT USER CONFIG SCRIPT
 ^^^^^^^^^^^^^^^^^^^^^^^

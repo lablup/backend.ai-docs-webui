@@ -8,15 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-23 13:53+0900\n"
-"PO-Revision-Date: 2020-12-23 15:07+0900\n"
+"POT-Creation-Date: 2021-03-02 18:11+0900\n"
+"PO-Revision-Date: 2021-03-02 20:43+0900\n"
+"Last-Translator: \n"
+"Language: ko\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: ko\n"
 "X-Generator: Poedit 2.4.2\n"
 
 #: ../../overview/overview.rst:3
@@ -32,83 +33,81 @@ msgid ""
 "physical GPU, so that multiple users can use it at the same time."
 msgstr ""
 "Backend.AI 는 오픈소스 클라우드 리소스 관리 플랫폼입니다. Backend.AI 는 클라우"
-"드 또는 온-프레미스 클러스터 환경에서 연산 자원을 효율적으로 관리하며 언제 어"
-"디서나 on-demand 로 계산에 필요한 가상화된 연산 환경을 제공합니다. 또한, "
-"Backend.AI 의 컨테이너 기반 GPU 분할 가상화 기술을 통해 하나의 물리 GPU 를 유"
-"연하게 나누어 여러 사용자가 동시에 사용할 수 있도록 지원하고 있어, GPU 의 효율"
-"적인 활용을 돕습니다."
+"드 또는 온-프레미스 클러스터 환경에서 연산 자원을 효율적으로 관리하며 언제 어디"
+"서나 on-demand 로 계산에 필요한 가상화된 연산 환경을 제공합니다. 또한, Backend."
+"AI 의 컨테이너 기반 GPU 분할 가상화 기술을 통해 하나의 물리 GPU 를 유연하게 나"
+"누어 여러 사용자가 동시에 사용할 수 있도록 지원하고 있어, GPU 의 효율적인 활용"
+"을 돕습니다."
 
-#: ../../overview/overview.rst:9
+#: ../../overview/overview.rst:11
 msgid ""
 "Backend.AI offers a variety of performance-driven optimizations for machine "
 "learning and high-performance computing clusters, along with management and "
 "research features to support a diverse users, including researchers, "
 "administrators, and DevOps. The Enterprise Edition adds support for multi-"
-"domain management, a dedicated Hub app for superadmins, and the GPU "
+"domain management, a dedicated Control-Panel for superadmins, and the GPU "
 "virtualization plug-in."
 msgstr ""
 "Backend.AI는 머신러닝 및 고성능 컴퓨팅 클러스터에 적합한 성능 향상 위주의 다양"
-"한 최적화들과 함께, 연구원, 관리자 및 데브옵스등 다양한 사용자 층을 지원하는 "
-"관리 기능 및 연구 편의 기능을 제공하고 있습니다. 엔터프라이즈 버전은 멀티 도메"
-"인 관리 및 슈퍼어드민 전용 허브 앱, GPU 분할 가상화 플러그인 기능을 추가적으"
-"로 지원합니다."
+"한 최적화들과 함께, 연구원, 관리자 및 데브옵스등 다양한 사용자 층을 지원하는 관"
+"리 기능 및 연구 편의 기능을 제공하고 있습니다. 엔터프라이즈 버전은 멀티 도메인 "
+"관리 및 슈퍼어드민 전용 Control-Panel 앱, GPU 분할 가상화 플러그인 기능을 추가"
+"적으로 지원합니다."
 
-#: ../../overview/overview.rst:16
+#: ../../overview/overview.rst:18
 msgid ""
 "A GUI client package is provided to easily take advantage of the features "
-"supported by the Backend.AI server. Backend.AI Console is a GUI client in the "
+"supported by the Backend.AI server. Backend.AI Web-UI is a GUI client in the "
 "form of a web service or stand-alone app. It provides a convenient graphical "
 "interface for accessing the Backend.AI server to utilize computing resources "
 "and manage its environment. Backend.AI provides pre-made images which enable "
-"immediate creation of compute sessions without any need of installing "
-"separate programs. Most tasks can be done with mouse clicks and brief typing, "
-"which achieves more intuitive use."
+"immediate creation of compute sessions without any need of installing separate "
+"programs.  Most tasks can be done with mouse clicks and brief typing, which "
+"achieves more intuitive use."
 msgstr ""
-"Backend.AI 서버가 지원하는 기능을 손쉽게 활용할 수 있도록 GUI 클라이언트 패키"
-"지도 함께 제공하고 있습니다. Backend.AI Console 은 웹 또는 앱 형태의 GUI 클라"
-"이언트로, Backend.AI 서버에 접속하여 연산 자원을 활용하고 자신의 환경을 관리"
-"할 수 있는 편리한 그래픽 인터페이스를 제공합니다. 대부분의 작업을 마우스 클릭"
-"과 짧은 타이핑으로 할 수 있어 보다 직관적으로 사용할 수 있습니다."
+"Backend.AI 서버가 지원하는 기능을 손쉽게 활용할 수 있도록 GUI 클라이언트 패키지"
+"도 함께 제공하고 있습니다. Backend.AI Web-UI는 웹 또는 앱 형태의 GUI 클라이언트"
+"로, Backend.AI 서버에 접속하여 연산 자원을 활용하고 자신의 환경을 관리할 수 있"
+"는 편리한 그래픽 인터페이스를 제공합니다. 대부분의 작업을 마우스 클릭과 짧은 타"
+"이핑으로 할 수 있어 보다 직관적으로 사용할 수 있습니다."
 
-#: ../../overview/overview.rst:27
+#: ../../overview/overview.rst:29
 msgid "Key Concepts"
 msgstr "주요 개념"
 
-#: ../../overview/overview.rst:32
+#: ../../overview/overview.rst:34
 msgid ""
-"User: The user is a person who connects to Backend.AI and performs work. "
-"Users are divided into normal users, domain admins, and superadmins according "
-"to their privileges. While ordinary users can only perform tasks related to "
-"their computing sessions, domain admins have the authority to perform tasks "
-"within a domain, and superadmins perform almost all tasks throughout the "
-"system. A user belongs to one domain and can belong to multiple groups within "
-"a domain."
+"User: The user is a person who connects to Backend.AI and performs work. Users "
+"are divided into normal users, domain admins, and superadmins according to "
+"their privileges. While ordinary users can only perform tasks related to their "
+"computing sessions, domain admins have the authority to perform tasks within a "
+"domain, and superadmins perform almost all tasks throughout the system. A user "
+"belongs to one domain and can belong to multiple groups within a domain."
 msgstr ""
 "사용자: 사용자는 Backend.AI에 접속하여 작업을 수행하는 주체입니다. 사용자는 가"
 "지는 권한에 따라 일반 사용자, 도메인 어드민(domain admin), 수퍼 어드민"
 "(superadmin)으로 구분됩니다. 일반 사용자는 자신의 연산 세션과 관련된 작업만을 "
-"수행할 수 있는 데 반해, 도메인 어드민은 한 도메인 내에 속하는 작업을 수행할 "
-"수 있는 권한을 가지고 있으며, 수퍼 어드민은 시스템 전체에 걸쳐 거의 대부분의 "
-"작업을 수행할 수 있습니다. 사용자는 하나의 도메인에 속하게 되며, 도메인 내의 "
-"여러 그룹에 동시 속할 수 있습니다."
+"수행할 수 있는 데 반해, 도메인 어드민은 한 도메인 내에 속하는 작업을 수행할 수 "
+"있는 권한을 가지고 있으며, 수퍼 어드민은 시스템 전체에 걸쳐 거의 대부분의 작업"
+"을 수행할 수 있습니다. 사용자는 하나의 도메인에 속하게 되며, 도메인 내의 여러 "
+"그룹에 동시 속할 수 있습니다."
 
-#: ../../overview/overview.rst:39
+#: ../../overview/overview.rst:41
 msgid ""
-"Compute session, container: An isolated virtual environment in which your "
-"code runs. It looks like a real Linux server with full user rights, and you "
-"can't see other user's session even if it's running on the same server as "
-"your session. Backend.AI implements this virtual environment through a "
-"technology called containers. You can only create compute sessions within the "
-"domain and groups to which you belong."
+"Compute session, container: An isolated virtual environment in which your code "
+"runs. It looks like a real Linux server with full user rights, and you can't "
+"see other user's session even if it's running on the same server as your "
+"session. Backend.AI implements this virtual environment through a technology "
+"called containers. You can only create compute sessions within the domain and "
+"groups to which you belong."
 msgstr ""
 "연산 세션, 컨테이너: 자신의 연산 코드가 실행되는 격리된 가상 환경입니다. 자신"
 "이 온전한 사용자 권한을 가진 실제 리눅스 서버처럼 보이며, 물리적으로는 다른 사"
 "용자의 코드와 같은 서버에서 실행되더라도 다른 사용자를 서로 볼 수 없습니다. "
 "Backend.AI는 이러한 가상 환경을 컨테이너(container)라는 기술을 통해 구현합니"
-"다. 사용자는 자신이 속한 도메인과 그룹 내에서만 연산 세션을 생성할 수 있습니"
-"다."
+"다. 사용자는 자신이 속한 도메인과 그룹 내에서만 연산 세션을 생성할 수 있습니다."
 
-#: ../../overview/overview.rst:45
+#: ../../overview/overview.rst:47
 msgid ""
 "Domain: This is the top layer for authority and resource control supported by "
 "Backend.AI. For companies or organizations, you can view domains as an "
@@ -124,32 +123,32 @@ msgstr ""
 "사나 조직의 경우, 도메인을 하나의 계열사로 보고 도메인 별 (또는 계열사 별) 권"
 "한 및 자원 정책 등을 설정할 수 있습니다. 사용자는 반드시 하나의 도메인에 속하"
 "며, 자신의 도메인에서만 세션을 생성하거나 관련 정보를 확인할 수 있습니다. 도메"
-"인에는 하나 이상의 도메인 관리자가 있을 수 있으며, 도메인 관리자는 도메인 내"
-"의 정책을 설정하거나 세션을 관리할 수 있습니다. 예를 들어, 도메인 내에서 사용"
-"할 수 있는 총 자원량을 설정할 경우, 도메인 내 사용자가 생성한 모든 컨테이너의 "
-"자원은 설정된 양보다 클 수 없습니다."
+"인에는 하나 이상의 도메인 관리자가 있을 수 있으며, 도메인 관리자는 도메인 내의 "
+"정책을 설정하거나 세션을 관리할 수 있습니다. 예를 들어, 도메인 내에서 사용할 "
+"수 있는 총 자원량을 설정할 경우, 도메인 내 사용자가 생성한 모든 컨테이너의 자원"
+"은 설정된 양보다 클 수 없습니다."
 
-#: ../../overview/overview.rst:54
+#: ../../overview/overview.rst:56
 msgid ""
 "Groups: A hierarchy belonging to a domain. Multiple groups can exist in one "
 "domain. You can think of a group as a project unit. A user can belong to "
 "multiple groups (or projects) at the same time within a domain. Compute "
 "sessions must belong to one group, and users can only create sessions within "
-"their own groups. Domain admins can set policies or manage sessions for "
-"groups within the domain. For example, if you set the total amount of "
-"resources available within a group, the resources in all containers created "
-"by users in the group cannot be greater than the amount set."
+"their own groups. Domain admins can set policies or manage sessions for groups "
+"within the domain. For example, if you set the total amount of resources "
+"available within a group, the resources in all containers created by users in "
+"the group cannot be greater than the amount set."
 msgstr ""
 "그룹: 도메인 하위에 속하는 계층으로, 한 도메인에는 여러 개의 그룹이 존재할 수 "
 "있습니다. 그룹은 하나의 프로젝트 단위라고 생각할 수 있습니다. 사용자는 한 도메"
-"인 내에 존재하는 여러 개의 그룹(또는 프로젝트)에 동시에 속할 수 있습니다. 연"
-"산 세션은 반드시 하나의 그룹에 속해야 하며, 사용자는 자신이 속한 그룹 내에서"
-"만 세션을 생성할 수 있습니다. 도메인 관리자는 도메인 내에 속한 그룹의 정책을 "
-"설정하거나 세션을 관리할 수 있습니다. 예를 들어, 그룹 내에서 사용할 수 있는 "
-"총 자원량을 설정할 경우, 그룹 내 사용자가 생성한 모든 컨테이너의 자원은 설정"
-"된 양보다 클 수 없습니다."
+"인 내에 존재하는 여러 개의 그룹(또는 프로젝트)에 동시에 속할 수 있습니다. 연산 "
+"세션은 반드시 하나의 그룹에 속해야 하며, 사용자는 자신이 속한 그룹 내에서만 세"
+"션을 생성할 수 있습니다. 도메인 관리자는 도메인 내에 속한 그룹의 정책을 설정하"
+"거나 세션을 관리할 수 있습니다. 예를 들어, 그룹 내에서 사용할 수 있는 총 자원량"
+"을 설정할 경우, 그룹 내 사용자가 생성한 모든 컨테이너의 자원은 설정된 양보다 "
+"클 수 없습니다."
 
-#: ../../overview/overview.rst:62
+#: ../../overview/overview.rst:64
 msgid ""
 "Image: Each container has a pre-installed language-specific runtime and "
 "various computational frameworks. The state of such snapshots before they are "
@@ -157,330 +156,327 @@ msgid ""
 "cluster admin or create your own image with the software you want to use and "
 "ask the admin to register it."
 msgstr ""
-"이미지: 각 컨테이너에는 미리 설치된 언어별 런타임과 각종 연산 프레임워크들이 "
-"설치되어 있는데, 실행되기 전의 그러한 스냅샷 상태를 이미지(image)라고 합니다. "
-"사용자는 클러스터 관리자가 제공하는 이미지를 골라서 실행하거나, 자신이 추가로 "
-"사용하고 싶은 소프트웨어가 설치된 이미지를 직접 만들거나 관리자에게 생성 또는 "
-"등록을 요청할 수 있습니다."
+"이미지: 각 컨테이너에는 미리 설치된 언어별 런타임과 각종 연산 프레임워크들이 설"
+"치되어 있는데, 실행되기 전의 그러한 스냅샷 상태를 이미지(image)라고 합니다. 사"
+"용자는 클러스터 관리자가 제공하는 이미지를 골라서 실행하거나, 자신이 추가로 사"
+"용하고 싶은 소프트웨어가 설치된 이미지를 직접 만들거나 관리자에게 생성 또는 등"
+"록을 요청할 수 있습니다."
 
-#: ../../overview/overview.rst:67
+#: ../../overview/overview.rst:69
 msgid ""
 "Virtual Folder (vfolder): A \"cloud\" folder that is always accessible and "
 "mountable in a container on a per-user basis, regardless of which node the "
-"container runs on. After creating your own virtual folder, you can upload "
-"your own program code, data, etc. in advance and mount the folder when you "
-"run the compute session to read from and write to it as if it is on your "
-"local disk."
+"container runs on. After creating your own virtual folder, you can upload your "
+"own program code, data, etc. in advance and mount the folder when you run the "
+"compute session to read from and write to it as if it is on your local disk."
 msgstr ""
 "Virtual Folder (vfolder; 가상 폴더): 사용자 별로 자신의 컨테이너가 어느 노드에"
-"서 실행 되든 관계없이 항상 접근 및 컨테이너에 탑재 가능한 \"클라우드\" 폴더입"
-"니다. 자신만의 가상 폴더를 생성한 후 미리 자신의 프로그램 코드, 데이터 등을 업"
-"로드해두고 연산 세션 실행 시 탑재하여 로컬 디스크에 있는 파일인 것처럼 읽고 "
-"쓸 수 있으며, 다른 사용자와의 공유도 가능합니다."
+"서 실행 되든 관계없이 항상 접근 및 컨테이너에 탑재 가능한 \"클라우드\" 폴더입니"
+"다. 자신만의 가상 폴더를 생성한 후 미리 자신의 프로그램 코드, 데이터 등을 업로"
+"드해두고 연산 세션 실행 시 탑재하여 로컬 디스크에 있는 파일인 것처럼 읽고 쓸 "
+"수 있으며, 다른 사용자와의 공유도 가능합니다."
 
-#: ../../overview/overview.rst:72
+#: ../../overview/overview.rst:74
 msgid ""
-"Application service, service port: A feature that allows you to access "
-"various user applications (eg DIGITS, Jupyter Notebook, shell terminal, "
-"TensorBoard, etc.) running within the compute session. You do not need to "
-"know the container's address and port number directly, but you can use the "
-"provided CLI client or GUI console to directly access the desired daemon of "
-"the session."
+"Application service, service port: A feature that allows you to access various "
+"user applications (eg DIGITS, Jupyter Notebook, shell terminal, TensorBoard, "
+"etc.) running within the compute session. You do not need to know the "
+"container's address and port number directly, but you can use the provided CLI "
+"client or GUI Web-UI to directly access the desired daemon of the session."
 msgstr ""
 "애플리케이션 서비스, 서비스 포트(service port): 연산 세션 내에서 실행되는 다양"
-"한 사용자 애플리케이션(예: DIGITS, Jupyter Notebook, shell 터미널, "
-"TensorBoard 등)에 접속할 수 있게 해주는 기능입니다. 사용자는 컨테이너의 주소 "
-"및 포트 번호를 직접 알 필요 없이, 제공되는 CLI client 또는 GUI console을 이용"
-"하여 원하는 세션의 데몬에 바로 접속할 수 있습니다."
+"한 사용자 애플리케이션(예: DIGITS, Jupyter Notebook, shell 터미널, TensorBoard "
+"등)에 접속할 수 있게 해주는 기능입니다. 사용자는 컨테이너의 주소 및 포트 번호"
+"를 직접 알 필요 없이, 제공되는 CLI client 또는 Web-UI를 이용하여 원하는 세션의 "
+"데몬에 바로 접속할 수 있습니다."
 
-#: ../../overview/overview.rst:77
+#: ../../overview/overview.rst:79
 msgid ""
-"(GUI) Console: A GUI client that is served as a web or stand-alone app. You "
-"can use the service after logging in by specifying the address of the Backend."
-"AI server and entering the user account information."
+"Web-UI: A GUI client that is served as a web or stand-alone app. You can use "
+"the service after logging in by specifying the address of the Backend.AI "
+"server and entering the user account information."
 msgstr ""
-"(GUI) 콘솔: 웹 (web) 형태로 서비스 되는 GUI 클라이언트. Backend.AI 서버의 주"
-"소 를 지정하고 사용자 계정 정보를 입력해 로그인 한 후 서비스를 사용할 수 있습"
-"니다."
+"Web-UI: 웹 (web) 형태로 서비스 되는 GUI 클라이언트. Backend.AI 서버의 주소 를 "
+"지정하고 사용자 계정 정보를 입력해 로그인 한 후 서비스를 사용할 수 있습니다."
 
-#: ../../overview/overview.rst:80
+#: ../../overview/overview.rst:82
 msgid ""
-"Local wsproxy: Proxy server built into the console app. Local wsproxy "
-"converts general HTTP requests between the server and console app to "
-"websocket and delivers the messages. If the console app loses its connection "
-"to wsproxy or the wsproxy server is dead, it will not be possible to access "
-"services such as Jupyter Notebook and Terminal."
+"Local wsproxy: Proxy server built into the Web-UI app. Local wsproxy converts "
+"general HTTP requests between the server and Web-UI app to websocket and "
+"delivers the messages. If the Web-UI app loses its connection to wsproxy or "
+"the wsproxy server is dead, it will not be possible to access services such as "
+"Jupyter Notebook and Terminal."
 msgstr ""
-"로컬 wsproxy: 콘솔 앱에서 내장하고 있는 프록시 서버. 콘솔 앱에서 사용 가능한 "
-"Jupyter Notebook, Terminal 등의 서비스는 websocket 을 통해 서버와 통신하는 "
-"데, 콘솔 앱과 주고받는 일반적인 HTTP 요청을 websocket 형태로 변환하여 메시지"
-"를 전달해 주는 역할을 합니다. 콘솔 앱과 wsproxy 와의 연결이 끊기거나 wsproxy "
-"서버가 죽은 경우 Notebook, Terminal 등의 서비스 접속이 불가능합니다."
+"로컬 wsproxy: Web-UI 앱에서 내장하고 있는 프록시 서버. 콘솔 앱에서 사용 가능한 "
+"Jupyter Notebook, Terminal 등의 서비스는 websocket 을 통해 서버와 통신하는 데, "
+"Web-UI 앱과 주고받는 일반적인 HTTP 요청을 websocket 형태로 변환하여 메시지를 전"
+"달해 주는 역할을 합니다. Web-UI 앱과 wsproxy 와의 연결이 끊기거나 wsproxy 서버"
+"가 죽은 경우 Notebook, Terminal 등의 서비스 접속이 불가능합니다."
 
-#: ../../overview/overview.rst:81
+#: ../../overview/overview.rst:87
 msgid ""
-"Web wsproxy: In the case of the console app provided in a web, the built-in "
-"server cannot be used due to the nature of the browser. In this case, you can "
-"use services such as Jupyter Notebook, Terminal, etc. in the web environment "
-"by making the wsproxy server as a separate web server so that the console app "
-"can see the web wsproxy."
+"Web wsproxy: In the case of the Web-UI provided in a web, the built-in server "
+"cannot be used due to the nature of the browser. In this case, you can use "
+"services such as Jupyter Notebook, Terminal, etc. in the web environment by "
+"making the wsproxy server as a separate web server so that the Web-UI app can "
+"see the web wsproxy."
 msgstr ""
-"웹 wsproxy: 웹 형태로 제공되는 콘솔 앱의 경우 브라우저의 특성상 별도 내장 서버"
-"를 운영할 수 없습니다. 이 경우 wsproxy 서버를 별도의 웹 서버도 독립 운영하여 "
-"콘솔 앱에서 웹 wsproxy를 바라보게 만듦으로써 Jupyter Notebook, Terminal 등과 "
+"웹 wsproxy: 웹 형태로 제공되는 Web-UI의 경우 브라우저의 특성상 별도 내장 서버"
+"를 운영할 수 없습니다. 이 경우 wsproxy 서버를 별도의 웹 서버로 독립 운영하여 "
+"Web-UI 앱에서 웹 wsproxy를 바라보게 만듦으로써 Jupyter Notebook, Terminal 등과 "
 "같은 서비스를 웹 환경에서도 사용할 수 있습니다."
 
-#: ../../overview/overview.rst:89
+#: ../../overview/overview.rst:95
 msgid "Backend.AI feature details"
 msgstr "Backend.AI 기능 상세"
 
-#: ../../overview/overview.rst:92
+#: ../../overview/overview.rst:98
 msgid "Category"
 msgstr "분류"
 
-#: ../../overview/overview.rst:92
+#: ../../overview/overview.rst:98
 msgid "Feature"
 msgstr "기능"
 
-#: ../../overview/overview.rst:94
+#: ../../overview/overview.rst:100
 msgid "GPU support"
 msgstr "GPU 지원"
 
-#: ../../overview/overview.rst:94
+#: ../../overview/overview.rst:100
 msgid "Container-level multi GPU"
 msgstr "컨테이너 수준의 멀티 GPU"
 
-#: ../../overview/overview.rst:96
+#: ../../overview/overview.rst:102
 msgid "(Enterprise) Fractional GPU sharing & scaling"
 msgstr "(엔터프라이즈) GPU 분할 공유"
 
-#: ../../overview/overview.rst:98
+#: ../../overview/overview.rst:104
 msgid "Multiple CUDA library version support (8.0 to 11.1)"
 msgstr "다양한 CUDA 라이브러리 버전 지원 (8.0-11.1)"
 
-#: ../../overview/overview.rst:100
+#: ../../overview/overview.rst:106
 msgid "Scaling"
 msgstr "스케일링"
 
-#: ../../overview/overview.rst:100
+#: ../../overview/overview.rst:106
 msgid "On-premise installation on both bare-metal / VM"
 msgstr "온프레미스 설치 (베어메탈 또는 VM 등)"
 
-#: ../../overview/overview.rst:102
+#: ../../overview/overview.rst:108
 msgid "Hybrid cloud (on-premise + cloud)"
 msgstr "하이브리드 클라우드 (온프레미스 + 클라우드)"
 
-#: ../../overview/overview.rst:104
+#: ../../overview/overview.rst:110
 msgid "Polycloud (multi-cloud federation)"
 msgstr "폴리 클라우드 (여러 클라우드 서비스 연합)"
 
-#: ../../overview/overview.rst:106
+#: ../../overview/overview.rst:112
 msgid "Scheduling"
 msgstr "스케줄링"
 
-#: ../../overview/overview.rst:106
+#: ../../overview/overview.rst:112
 msgid "Unified scheduling & monitoring with GUI admin"
 msgstr "통합 스케줄링 및 GUI 어드민 모니터링"
 
-#: ../../overview/overview.rst:108
+#: ../../overview/overview.rst:114
 msgid "Per-user (keypair) resource policy"
 msgstr "사용자 (키페어) 별 자원 정책"
 
-#: ../../overview/overview.rst:110
+#: ../../overview/overview.rst:116
 msgid "(Enterprise) Per-group resource policy"
 msgstr "(엔터프라이즈) 그룹 별 자원 정책"
 
-#: ../../overview/overview.rst:112
+#: ../../overview/overview.rst:118
 msgid "Availability-slot based scheduling"
 msgstr "가용 슬롯 기반의 스케줄링"
 
-#: ../../overview/overview.rst:114
+#: ../../overview/overview.rst:120
 msgid "Cluster partitioning"
 msgstr "클러스터 묶음"
 
-#: ../../overview/overview.rst:114
+#: ../../overview/overview.rst:120
 msgid "Resource groups by H/W spec and usage"
 msgstr "하드웨어 스펙과 사용 형태에 따른 리소스 그룹"
 
-#: ../../overview/overview.rst:116
+#: ../../overview/overview.rst:122
 msgid "(Enterprise) Access control of users to resource group"
 msgstr "(엔터프라이즈) 사용자 리소스 그룹 배치"
 
-#: ../../overview/overview.rst:119
+#: ../../overview/overview.rst:125
 msgid "(Enterprise) Access control of group to resource group"
 msgstr "(엔터프라이즈) 사용자 그룹 리소스 그룹 배치"
 
-#: ../../overview/overview.rst:122
+#: ../../overview/overview.rst:128
 msgid "Security"
 msgstr "보안"
 
-#: ../../overview/overview.rst:122
+#: ../../overview/overview.rst:128
 msgid "Sandboxing via hypervisor/container"
 msgstr "하이퍼바이저/컨테이너를 통한 샌드박싱"
 
-#: ../../overview/overview.rst:124
+#: ../../overview/overview.rst:130
 msgid "Access logs for each user"
 msgstr "사용자 요청 별 접근 로그"
 
-#: ../../overview/overview.rst:126
+#: ../../overview/overview.rst:132
 msgid "Per session (container) logs"
 msgstr "연산 세션 별 로그"
 
-#: ../../overview/overview.rst:128
+#: ../../overview/overview.rst:134
 msgid "UI / UX"
 msgstr ""
 
-#: ../../overview/overview.rst:128
+#: ../../overview/overview.rst:134
 msgid "GUI web interface"
 msgstr "GUI 웹 인터페이스"
 
-#: ../../overview/overview.rst:130
+#: ../../overview/overview.rst:136
 msgid "(Enterprise) Admin GUI web interface"
 msgstr "(엔터프라이즈) 어드민 GUI 웹 인터페이스"
 
-#: ../../overview/overview.rst:132
+#: ../../overview/overview.rst:138
 msgid "Data management"
 msgstr "데이터 관리"
 
-#: ../../overview/overview.rst:132
+#: ../../overview/overview.rst:138
 msgid "EFS, NFS, SMB and distributed file system (CephFS, GlusterFS, HDFS, etc)"
 msgstr "EFS, NFS, SMB 및 분산 파일 시스템 (CephFS, GlusterFS, HDFS 등)"
 
-#: ../../overview/overview.rst:135
+#: ../../overview/overview.rst:141
 msgid "(Enterprise) Dedicated flash-storage integration: PureStorage FlashBlade"
 msgstr "(엔터프라이즈) 플래시 저장소 통합: PureStorage FlashBlade"
 
-#: ../../overview/overview.rst:138
+#: ../../overview/overview.rst:144
 msgid "Access control to data by user/group"
 msgstr "사용자/그룹 별 데이터 접근 제어"
 
-#: ../../overview/overview.rst:140
+#: ../../overview/overview.rst:146
 msgid "Developer support"
 msgstr "개발 지원"
 
-#: ../../overview/overview.rst:140
+#: ../../overview/overview.rst:146
 msgid "Universal programming languages (Python, C/C++, etc)"
 msgstr "범용 프로그래밍 언어 (Python, C/C++ 등)"
 
-#: ../../overview/overview.rst:142
+#: ../../overview/overview.rst:148
 msgid "Interactive web apps (Terminal, Jupyter, VSCode, etc)"
 msgstr "대화형 웹 앱 (터미널, Jupyter, VSCode 등)"
 
-#: ../../overview/overview.rst:144
+#: ../../overview/overview.rst:150
 msgid "For data scientists"
 msgstr "데이터 과학자 지원"
 
-#: ../../overview/overview.rst:144
+#: ../../overview/overview.rst:150
 msgid "NGC (NVIDIA GPU CLoud) image integration"
 msgstr "NGC (NVIDIA GPU Cloud) 이미지 통합"
 
-#: ../../overview/overview.rst:146
+#: ../../overview/overview.rst:152
 msgid "Popular ML libraries: TensorFlow, PyTorch, etc"
 msgstr "유명 ML 라이브러리: TensorFlow, PyTorch 등"
 
-#: ../../overview/overview.rst:148
+#: ../../overview/overview.rst:154
 msgid "Concurrent user of multiple versions of libraries"
 msgstr "여러 버전의 라이브러리 동시 사용"
 
-#: ../../overview/overview.rst:150
+#: ../../overview/overview.rst:156
 msgid "Periodic update of ML libraries"
 msgstr "주기적인 ML 라이브러리 업데이트"
 
-#: ../../overview/overview.rst:152
+#: ../../overview/overview.rst:158
 msgid "Customer support"
 msgstr "고객 지원"
 
-#: ../../overview/overview.rst:152
+#: ../../overview/overview.rst:158
 msgid "On-site installation (bare-metal / VM)"
 msgstr "방문 설치 (베어메탈 / VM 등)"
 
-#: ../../overview/overview.rst:154
+#: ../../overview/overview.rst:160
 msgid "Configuration support (on-premise + cloud)"
 msgstr "설정 지원 (온프레미스 + 클라우드)"
 
-#: ../../overview/overview.rst:156
+#: ../../overview/overview.rst:162
 msgid "Admin/user training"
 msgstr "어드민/사용자 교육"
 
-#: ../../overview/overview.rst:158
+#: ../../overview/overview.rst:164
 msgid "Support for updating to latest version"
 msgstr "최신 버전 업데이트 지원"
 
-#: ../../overview/overview.rst:160
+#: ../../overview/overview.rst:166
 msgid "Priority development and escalation"
 msgstr "기술 개발 요청 우선 반영"
 
-#: ../../overview/overview.rst:162
+#: ../../overview/overview.rst:168
 msgid "Custmoized container image / kernel or kernel repository"
 msgstr "커스텀 컨테이너 이미지 및 이미지 레지스트리"
 
-#: ../../overview/overview.rst:168
+#: ../../overview/overview.rst:174
 msgid "Accessible menu by user role"
 msgstr "사용자 역할 별 접근 가능한 메뉴 안내"
 
-#: ../../overview/overview.rst:172
+#: ../../overview/overview.rst:178
 msgid "Pages with ``*`` mark are in Administration menu."
 msgstr "``*`` 표시가 붙은 페이지는 관리자용 메뉴입니다."
 
-#: ../../overview/overview.rst:173
+#: ../../overview/overview.rst:179
 msgid "Features only for admin are listed in :ref:`admin menu <admin-menu>`."
 msgstr ""
 "관리자 전용 기능은 :ref:`어드민 전용 메뉴 <admin-menu>` 에서 확인할 수 있습니"
 "다."
 
-#: ../../overview/overview.rst:176
+#: ../../overview/overview.rst:182
 msgid "page \\\\ role"
 msgstr "페이지 \\\\ 역할"
 
-#: ../../overview/overview.rst:176
+#: ../../overview/overview.rst:182
 msgid "user"
 msgstr "일반 사용자"
 
-#: ../../overview/overview.rst:176
+#: ../../overview/overview.rst:182
 msgid "admin"
 msgstr "어드민"
 
-#: ../../overview/overview.rst:178
+#: ../../overview/overview.rst:184
 msgid "Summary"
 msgstr "요약 (Summary)"
 
-#: ../../overview/overview.rst:178 ../../overview/overview.rst:180
-#: ../../overview/overview.rst:182 ../../overview/overview.rst:184
-#: ../../overview/overview.rst:186 ../../overview/overview.rst:188
-#: ../../overview/overview.rst:190 ../../overview/overview.rst:192
+#: ../../overview/overview.rst:184 ../../overview/overview.rst:186
+#: ../../overview/overview.rst:188 ../../overview/overview.rst:190
+#: ../../overview/overview.rst:192 ../../overview/overview.rst:194
+#: ../../overview/overview.rst:196 ../../overview/overview.rst:198
 msgid "O"
 msgstr ""
 
-#: ../../overview/overview.rst:180
+#: ../../overview/overview.rst:186
 msgid "Sessions"
 msgstr "세션 (Sessions)"
 
-#: ../../overview/overview.rst:182
+#: ../../overview/overview.rst:188
 msgid "Data & Storage"
 msgstr "데이터 & 폴더 (Data & Storage)"
 
-#: ../../overview/overview.rst:184
+#: ../../overview/overview.rst:190
 msgid "Statistics"
 msgstr "통계 (Statistics)"
 
-#: ../../overview/overview.rst:186
+#: ../../overview/overview.rst:192
 msgid "Users*"
 msgstr "사용자 (Users)*"
 
-#: ../../overview/overview.rst:186 ../../overview/overview.rst:188
-#: ../../overview/overview.rst:190
+#: ../../overview/overview.rst:192 ../../overview/overview.rst:194
+#: ../../overview/overview.rst:196
 msgid "X"
 msgstr ""
 
-#: ../../overview/overview.rst:188
+#: ../../overview/overview.rst:194
 msgid "Maintenance*"
 msgstr "관리 (Maintenance)*"
 
-#: ../../overview/overview.rst:190
+#: ../../overview/overview.rst:196
 msgid "Information*"
 msgstr "정보 (Information)*"
 
-#: ../../overview/overview.rst:192
+#: ../../overview/overview.rst:198
 msgid "UserSettings"
 msgstr "사용자 설정 (UserSettings)"
 
@@ -491,23 +487,23 @@ msgstr "사용자 설정 (UserSettings)"
 #~ "requests to and from the console app into websocket to deliver messages."
 #~ msgstr ""
 #~ "로컬 wsproxy: 콘솔 앱에서 내장하고 있는 프록시 서버. 콘솔 앱에서 사용 가능"
-#~ "한 Jupyter Notebook, Terminal 등의 서비스는 websocket을 통해 서버와 통신하"
-#~ "는데, 콘솔 앱과 주고받는 일반적인 HTTP 요청을 websocket 형태로 변환하여 메"
-#~ "시지를 전달해 주는 역할을 합니다."
+#~ "한 Jupyter Notebook, Terminal 등의 서비스는 websocket을 통해 서버와 통신하는"
+#~ "데, 콘솔 앱과 주고받는 일반적인 HTTP 요청을 websocket 형태로 변환하여 메시지"
+#~ "를 전달해 주는 역할을 합니다."
 
 #~ msgid ""
-#~ "Backend.AI is an open source cloud resource management platform. Backend."
-#~ "AI efficiently manages compute resources in a cloud or on-premises "
-#~ "cluster, providing a virtualized compute environment to provide on-demand "
+#~ "Backend.AI is an open source cloud resource management platform. Backend.AI "
+#~ "efficiently manages compute resources in a cloud or on-premises cluster, "
+#~ "providing a virtualized compute environment to provide on-demand "
 #~ "computation, anytime, anywhere. With GPU virtualization technique, Backend."
 #~ "AI helps scientists, DevOps, enterprise, and AI enthusiasts to scale up "
 #~ "efficiently."
 #~ msgstr ""
-#~ "Backend.AI는 오픈소스 클라우드 리소스 관리 플랫폼입니다. Backend.AI는 클라"
-#~ "우드 또는 온-프레미스 클러스터 환경에서 연산 자원을 효율적으로 관리하며 언"
-#~ "제 어디서나 on-demand로 계산에 필요한 가상화된 연산 환경을 제공합니다. GPU "
-#~ "분할 가상화를 제공하여, 과학자, 데브옵스, 기업 및 AI 애호가들이 효율적으로 "
-#~ "규모를 확장할 수 있게 돕습니다."
+#~ "Backend.AI는 오픈소스 클라우드 리소스 관리 플랫폼입니다. Backend.AI는 클라우"
+#~ "드 또는 온-프레미스 클러스터 환경에서 연산 자원을 효율적으로 관리하며 언제 "
+#~ "어디서나 on-demand로 계산에 필요한 가상화된 연산 환경을 제공합니다. GPU 분"
+#~ "할 가상화를 제공하여, 과학자, 데브옵스, 기업 및 AI 애호가들이 효율적으로 규"
+#~ "모를 확장할 수 있게 돕습니다."
 
 #~ msgid ""
 #~ "A GUI client package is also provided to easily take advantage of the "
@@ -518,7 +514,19 @@ msgstr "사용자 설정 (UserSettings)"
 #~ "done with mouse clicks and brief typing, which achieves more intuitive use."
 #~ msgstr ""
 #~ "Backend.AI 서버가 지원하는 기능을 손쉽게 활용할 수 있도록 GUI 클라이언트 패"
-#~ "키지도 함께 제공하고 있습니다. Backend.AI Console은 웹 또는 앱 형태의 GUI "
-#~ "클라이언트로, Backend.AI 서버에 접속하여 연산 자원을 활용하고 자신의 환경"
-#~ "을 관리할 수 있는 편리한 그래픽 인터페이스를 제공합니다. 대부분의 작업을 마"
-#~ "우스 클릭과 짧은 타이핑으로 할 수 있어 보다 직관적으로 사용할 수 있습니다."
+#~ "키지도 함께 제공하고 있습니다. Backend.AI Console은 웹 또는 앱 형태의 GUI 클"
+#~ "라이언트로, Backend.AI 서버에 접속하여 연산 자원을 활용하고 자신의 환경을 관"
+#~ "리할 수 있는 편리한 그래픽 인터페이스를 제공합니다. 대부분의 작업을 마우스 "
+#~ "클릭과 짧은 타이핑으로 할 수 있어 보다 직관적으로 사용할 수 있습니다."
+
+#~ msgid ""
+#~ "Web wsproxy: In the case of the console app provided in a web, the built-in "
+#~ "server cannot be used due to the nature of the browser. In this case, you "
+#~ "can use services such as Jupyter Notebook, Terminal, etc. in the web "
+#~ "environment by making the wsproxy server as a separate web server so that "
+#~ "the console app can see the web wsproxy."
+#~ msgstr ""
+#~ "웹 wsproxy: 웹 형태로 제공되는 콘솔 앱의 경우 브라우저의 특성상 별도 내장 서"
+#~ "버를 운영할 수 없습니다. 이 경우 wsproxy 서버를 별도의 웹 서버도 독립 운영하"
+#~ "여 콘솔 앱에서 웹 wsproxy를 바라보게 만듦으로써 Jupyter Notebook, Terminal "
+#~ "등과 같은 서비스를 웹 환경에서도 사용할 수 있습니다."

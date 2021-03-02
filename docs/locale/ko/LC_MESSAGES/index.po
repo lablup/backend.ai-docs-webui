@@ -8,49 +8,53 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-01 16:34+0900\n"
-"PO-Revision-Date: 2020-04-01 16:35+0900\n"
+"POT-Creation-Date: 2021-03-02 18:11+0900\n"
+"PO-Revision-Date: 2021-03-02 18:12+0900\n"
+"Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
+"Language: ko\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
-"Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
-"Language-Team: \n"
-"Language: ko\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #: ../../index.rst:19
 msgid "Table of Contents"
 msgstr "목차"
 
 #: ../../index.rst:7
-msgid "Backend.AI GUI Console User Guide"
-msgstr "Backend.AI GUI Console 사용자 가이드"
+msgid "Backend.AI Web-UI User Guide"
+msgstr ""
 
 #: ../../index.rst:9
-msgid "User's guide for the Backend.AI GUI Console."
-msgstr "Backend.AI GUI Console의 사용자 가이드입니다."
+msgid "User's guide for the Backend.AI Web-UI."
+msgstr "Backend.AI Web-UI의 사용자 가이드입니다."
 
 #: ../../index.rst:11
 msgid ""
-"Backend.AI GUI Console is a web or app that provides easy-to-use GUI "
-"interface to work with the Backend.AI server."
+"Backend.AI Web-UI is a web or app that provides easy-to-use GUI interface "
+"to work with the Backend.AI server."
 msgstr ""
-"Backend.AI GUI Console은 웹 또는 앱 형태의 GUI 클라이언트로, Backend.AI "
-"서버에 접속하여 연산 자원을 활용하고 자신의 환경을 관리할 수 있는 편리한 "
-"그래픽 인터페이스를 제공합니다."
+"Backend.AI Web-UI는 웹 또는 앱 형태의 GUI 클라이언트로, Backend.AI 서버에 "
+"접속하여 연산 자원을 활용하고 자신의 환경을 관리할 수 있는 편리한 그래픽 "
+"인터페이스를 제공합니다."
 
 #: ../../index.rst:14
 msgid "The latest versions of this document can be found from sites below:"
 msgstr "이 문서의 최신 버전은 아래 사이트에서 볼 수 있습니다:"
 
 #: ../../index.rst:16
-msgid "https://console.docs.backend.ai/en/stable (English)"
-msgstr "https://console.docs.backend.ai/en/stable (영문)"
+msgid "https://webui.docs.backend.ai/en/stable (English)"
+msgstr "https://webui.docs.backend.ai/en/stable (영문)"
 
 #: ../../index.rst:17
-msgid "https://console.docs.backend.ai/ko/stable (Korean)"
-msgstr "https://console.docs.backend.ai/ko/stable (한글)"
+msgid "https://webui.docs.backend.ai/ko/stable (Korean)"
+msgstr "https://webui.docs.backend.ai/ko/stable (한글)"
 
 #~ msgid "Indices and Tables"
 #~ msgstr "색인 및 테이블"
+
+#~ msgid "Backend.AI GUI Console User Guide"
+#~ msgstr "Backend.AI GUI Console 사용자 가이드"
