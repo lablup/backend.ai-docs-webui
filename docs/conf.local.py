@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Backend.AI Webui User Guide'
+project = 'Backend.AI Web-UI User Guide'
 copyright = '2020, Lablup Inc.'
 author = 'Lablup Inc.'
 version = '20.09'
@@ -122,7 +122,7 @@ latex_elements = {
             \centering
             \vspace*{15mm}  %% * is used to give space from top
             \sphinxlogo
-            \textbf{\Huge Backend.AI Webui\\User's Guide}\par
+            \textbf{\Huge Backend.AI Web-UI\\User's Guide}\par
             {\LARGE (\version)}\par
             \vspace{25mm}
             \textbf{\LARGE \@author}\par
@@ -139,7 +139,7 @@ latex_elements = {
 latex_documents = [
     (master_doc,
      'backendaiwebuiuserguide.tex',
-     'Backend.AI Webui User\'s Guide',
+     'Backend.AI Web-UI User\'s Guide',
      author, 'manual'),
 ]
 
