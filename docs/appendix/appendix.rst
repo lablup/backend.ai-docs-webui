@@ -81,7 +81,7 @@ the resources become available again, the pended request is resumed to
 create a compute session.
 
 You can check the operation of the job scheduler in a simple way from the
-user GUI console. When the GPU host can allocate up to 2 fGPUs, 
+user Webui. When the GPU host can allocate up to 2 fGPUs,
 let's create 3 compute sessions at the same time requesting
 allocation of 1 fGPU, respectivley. In the Custom allocation section of the session launch
 dialog, there are GPU and Sessions sliders. If you specify a value greater than
@@ -94,7 +94,7 @@ total of 3 fGPUs are created when only 2 fGPUs exist.
    :width: 350
    :align: center
 
-Wait for a while and you will see three compute sessions being listed. 
+Wait for a while and you will see three compute sessions being listed.
 If you look closely at the Status panel, you can see that two of the
 three compute sessions are in RUNNING state, but the other compute session
 remains in PENDING state. This PENDING session is only registered in the
@@ -183,7 +183,7 @@ optimal performance, just double the amount of each resources.
 
 * Manager: 2 cores, 4 GiB memory
 * Agent: 4 cores, 32 GiB memory, NVIDIA GPU (for GPU workload), > 512 GiB SSD
-* Console-Server: 2 cores, 4 GiB memory
+* Webserver: 2 cores, 4 GiB memory
 * WSProxy: 2 cores, 4 GiB memory
 * PostgreSQL DB: 2 cores, 4 GiB memory
 * Redis: 1 core, 2 GiB memory
@@ -192,12 +192,12 @@ optimal performance, just double the amount of each resources.
 The essential host dependent packages that must be pre-installed before installing
 each service are:
 
-* GUI console: Operating system that can run the latest browsers (Windows, Mac
+* Webui: Operating system that can run the latest browsers (Windows, Mac
   OS, Ubuntu, etc.)
 * Manager: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)
 * Agent: docker (≥19.03), CUDA/CUDA Toolkit (≥8, 11 recommend),
   nvidia-docker v2, Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)
-* Console-Server: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)
+* Webserver: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)
 * WSProxy: docker (≥19.03), docker-compose (≥1.24)
 * PostgreSQL DB: docker (≥19.03), docker-compose (≥1.24)
 * Redis: docker (≥19.03), docker-compose (≥1.24)
@@ -268,23 +268,23 @@ Worker node which manages the lifecycle of compute sessions (containers).
    # see logs
    sudo journalctl --output cat -u backendai-agent
 
-Console-Server
-^^^^^^^^^^^^^^
+Webserver
+^^^^^^^^^
 
-Serves user GUI Console and provides authentication by email and password.
+Serves user Webui and provides authentication by email and password.
 
 .. code-block:: shell
 
    # check status
-   sudo systemctl status backendai-console-server
+   sudo systemctl status backendai-webserver
    # start service
-   sudo systemctl start backendai-console-server
+   sudo systemctl start backendai-webserver
    # stop service
-   sudo systemctl stop backendai-console-server
+   sudo systemctl stop backendai-webserver
    # restart service
-   sudo systemctl restart backendai-console-server
+   sudo systemctl restart backendai-webserver
    # see logs
-   sudo journalctl --output cat -u backendai-console-server
+   sudo journalctl --output cat -u backendai-webserver
 
 WSProxy
 ^^^^^^^

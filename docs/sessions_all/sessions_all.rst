@@ -2,7 +2,7 @@
 Compute Sessions
 ================
 
-The most visited pages in the Backend.AI GUI Console would be the Sessions and
+The most visited pages in the Backend.AI Webui would be the Sessions and
 Data & Storage pages. Here, you will learn how to query and
 create container-based compute sessions and utilize various web applications on
 the Sessions page.
@@ -48,7 +48,7 @@ If you need more detailed settings, refer to the meaning of each items.
 * Resource allocation: This is a template that has predefined resources to be
   allocated to the compute session. You can save and use frequently used
   resource settings in advance. Resource templates can be managed in a dedicated
-  admin hub.
+  admin Control-Panel.
 * CPU: The number of CPU cores to allocate to the compute session. The maximum
   value depends on the resource policy applied to the user.
 * RAM: The amount of memory (GB) to allocate to the compute session. The

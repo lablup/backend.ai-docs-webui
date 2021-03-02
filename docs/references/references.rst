@@ -8,5 +8,5 @@ References
 
 The latest versions of this document can be found from sites below:
 
-- https://console.docs.backend.ai/en/stable (English)
-- https://console.docs.backend.ai/ko/stable (Korean)
+- https://webui.docs.backend.ai/en/stable (English)
+- https://webui.docs.backend.ai/ko/stable (Korean)

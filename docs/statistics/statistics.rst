@@ -3,7 +3,7 @@ Statistics Page
 ===============
 
 On the Statistics page, you can check simple statistics related to the use of
-compute sessions via a graph. You can check the statistics for a day or a week by selecting the usage period 
+compute sessions via a graph. You can check the statistics for a day or a week by selecting the usage period
 from the select period menu on the upper left. Displayed items are as follows.
 
 * Sessions: The number of compute sessions created.
@@ -18,4 +18,4 @@ longer than a week.
 
 .. image:: usage_panel.png
 
-More detailed statistics are shown in the admin-only hub.
+More detailed statistics are shown in the admin-only Control-Panel.

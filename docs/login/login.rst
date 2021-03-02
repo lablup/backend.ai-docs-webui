@@ -5,7 +5,7 @@ Signup and Login
 Signup
 ------
 
-When you launch the GUI console, login dialog appears. If you haven't signed up
+When you launch the Webui, login dialog appears. If you haven't signed up
 yet, press the SIGN UP button.
 
 .. image:: login_dialog.png
@@ -34,18 +34,18 @@ before you can log in with your account.
    To prevent malicious users from guessing user's password, password should be longer
    than 8 characters with at least one alphabet(s), number(s), and special
    character(s).
-   
+
 Login
 -----
 
 Enter your ID and password and press the LOGIN button. In API ENDPOINT, the URL
-of Backend.AI Console Server, which relays the request to the Manager, should be
+of Backend.AI Webserver, which relays the request to the Manager, should be
 entered.
 
 .. note::
-   Depending on the installation and setup environment of the Console Server,
+   Depending on the installation and setup environment of the Webserver,
    the endpoint might be pinned and not configurable.
-   
+
 .. note::
    Backend.AI keeps the user's password securely through a one-way hash. BCrypt,
    the default password hash of BSD, is used, so even the server admins cannot
@@ -86,7 +86,7 @@ administrator.
    to the endpoint is temporarily restricted for 20 minutes for security
    reasons. If the access restriction continues on more than 20 minutes, please contact
    your system administrator.
-   
+
 
 Sidebar Menus
 --------------------
@@ -99,7 +99,7 @@ narrower. Click again to bring the sidebar back to its original width.
 .. image:: ui_menu.png
 
 The middle button is the event notification button. Events that need to be
-recorded during Console operation are displayed here.
+recorded during Webui operation are displayed here.
 
 The rightmost button is the background task button. When background tasks are
 running, such as creating a compute session, you can check the jobs here.  When

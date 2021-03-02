@@ -21,7 +21,7 @@ may be only one default project.
 Click the person icon on the right side of the top bar to see the user menu.
 Each menu item has the following functions.
 
-* About Backend.AI: Displays information such as version of Backend.AI Console,
+* About Backend.AI: Displays information such as version of Backend.AI Webui,
   license type, etc.
 * Change User Info: Change user name and password
 * Preferences: Go to user settings page
@@ -97,7 +97,7 @@ Announcement
 ^^^^^^^^^^^^
 
 Announcements will be displayed here. Announcements can be made through a
-separate admin console.
+separate admin UI (Control-Panel).
 
 Invitation
 ^^^^^^^^^^
