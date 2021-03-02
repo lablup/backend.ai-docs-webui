@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-21 10:40+0900\n"
-"PO-Revision-Date: 2021-01-21 10:53+0900\n"
+"POT-Creation-Date: 2021-03-02 18:11+0900\n"
+"PO-Revision-Date: 2021-03-02 18:31+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko_KR\n"
 "Language-Team: Lablup\n"
@@ -60,10 +60,10 @@ msgstr ""
 
 #: ../../summary/summary.rst:24
 msgid ""
-"About Backend.AI: Displays information such as version of Backend.AI Console, "
+"About Backend.AI: Displays information such as version of Backend.AI Webui, "
 "license type, etc."
 msgstr ""
-"About Backend.AI: Backend.AI 콘솔의 버전, 라이선스 종류 등과 같은 정보를 표시 "
+"About Backend.AI: Backend.AI Webui의 버전, 라이선스 종류 등과 같은 정보를 표시 "
 "합니다."
 
 #: ../../summary/summary.rst:26
@@ -219,10 +219,10 @@ msgstr ""
 #: ../../summary/summary.rst:99
 msgid ""
 "Announcements will be displayed here. Announcements can be made through a "
-"separate admin console."
+"separate admin UI (Control-Panel)."
 msgstr ""
-"공지사항이 있을 경우 여기에 표시됩니다. 공지사항은 별도의 관리자 콘솔을 통해서 "
-"작성 가능 합니다."
+"공지사항이 있을 경우 여기에 표시됩니다. 공지사항은 별도의 관리자 Control-Panel "
+"GUI를 통해서 작성 가능 합니다."
 
 #: ../../summary/summary.rst:103
 msgid "Invitation"
