@@ -147,103 +147,107 @@ For more detailed information on the usage of Automount folders, refer to
    :alt: Automount folders
 
 
-Using Filebrowser
+Using FileBrowser
 -----------------
 
-Backend.AI provides filebrowser from ``20.09``. filebrowser is an useful application when uploading
-one or more folders.
+Backend.AI supports `FileBrowser <https://filebrowser.org>`_ from version
+20.09. FileBrowser is a program that helps you manage files on a remote server
+through a web browser. This is especially useful when uploading a directory from
+the user's local machine.
 
-Currently, filebrowser is one of the applications that can be executed via session.
-Please check your Backend.AI status suits to the following requirements.
+Currently, Backend.AI provides a FileBrowser as an application of a compute
+session. Therefore, the following conditions are required to launch it.
 
-- capable of creating at least one or more sessions
+* User can create at least one compute session
+* User can allocated at least 1 core of CPU and 512 MB of memory
+* Image that supports FileBrowser has been installed
 
-- minimum 1 core of CPU and 0.5 GB of RAM
+You can access FileBrowser in two ways.
 
-- Image that supports filebrowser has been installed
-
-You can access filebrowser in two ways.
-
-- Execute filebrowser in each Vfolder explorer
-
-- Create a session with filebrowser supporting image
+* Execute FileBrowser from file explorere dialog of a data folder in Data &
+  Stroage page
+* Launch a compute session directly from a FileBrowser image on Sessions page
 
 
-Execute filebrowser in each Vfolder explorer
-============================================
+Execute FileBrowser from folder explorer dialog in Data & Storage page
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To execute filebrowser, you need to open folder explorer first.
-Click the folder icon in Controls panel of the Vfolder.
+Go to the Data & Storage page and open the file explorer dialog of target
+data folder. Click the folder icon in the Control column to the right of the
+data folder to open the file explorer.
 
 .. image:: first_step_to_access_filebrowser.png
-   :alt: First step to access filebrowser
+   :alt: first step to access FileBrowser
 
 .. warning::
-   Filebrowser is not available in Vfolder with read-only permission.
+   You cannot launch FileBrowser from read-only data folders if .
 
-Click EXECUTE FILEBROWSER button in the right-top of the folder explorer.
+Click EXECUTE FILEBROWSER button in the upper-right corner of the explorer.
 
 .. image:: folderexplorer_with_filebrowser.png
-   :alt: Folder explorer with filebrowser
+   :alt: Folder explorer with FileBrowser
 
-You can see the file browser is opened in a new window.
+You can see the FileBrowser is opened in a new window. You can also see that the
+data folder you opened the explorer dialog becomes the root directory. From the
+FileBrowser window, you can freely upload, modify, and delete any directories
+and files.
 
 .. image:: filebrowser_with_new_window.png
-   :alt: Filebrowser with new window
+   :alt: FileBrowser with new window
 
-Vfolder becomes the ``root`` directory when the filebrowser is launched.
-You can see the session is running in the session page.
+When user clicks EXECUTE FILEBROWSER, Backend.AI automatically creates a
+dedicated compute session for the app. So, in the Sessions page, you should see
+FileBrowser compute session. It is user's reponsibility to delete this compute
+session.
 
 .. image:: filebrowser_in_session_page.png
-   :alt: Filebrowser in session page
+   :alt: FileBrowser in session page
 
 .. note::
-   If you close the filebrowser window by accident and try to reopen the filebrowser,
-   just go to sessions page and click the filebrowser application of the running session
-   with filebrowser image. 
-   
-   .. image:: app_dialog_with_filebrowser.png
+   If you accidentally close the FileBrowser window and want to reopen it, just
+   go to Sessions page and click the FileBrowser application icon of the
+   FileBrowser compute session.
+
+   .. image:: app_dialog_with_FileBrowser.png
       :align: center
 
    |
-   | When you click EXECUTE FILEBROWSER button again, It will create another session.
+   | When you click EXECUTE FILEBROWSER button again in the data folder
+       explorer, a new compute session will be created and a total of two
+       FileBrowser sessions
+       will appear.
 
+Create a compute session with FileBrowser image
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Create a session with filebrowser image
-=======================================
-
-You can create a session with filebrowser supported images.
-When creating a session for using a filebrowser, following resource allocation
-is highly recommended.
-
-- CPU : 1 core
-
-- RAM : 0.5 GB
-
-
-Also, you need to mount at least one or more Vfolders to access them.
-If you don't mount Vfolders you can still use filebrowser, but every uploaded file or folders
-by filebrowser application will be gone after the session is terminated.
+You can directly create a compute session with FileBrowser supported images.
+You need to mount at least one or more data folders to access them. You can use
+FileBrowser without a problem even if you do not mount any data folder, but
+every uploaded/updated files will be lost after the session is terminated.
 
 .. note::
-   the ``root`` directory of filebrowser that created by session page is ``/home/work``.
-   Therefore, you need to access to mounted Vfolder first to upload or download any file or folder.
+   The root directory of FileBrowser will be ``/home/work``. Therefore, you
+   can access any mounted data folders for the compute session.
 
+Basic usage examples of FileBrowser
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In filebrowser, It provides more than folder explorer supports,
-such as uploading folder and moving files, folders.
+Here, we present some basic usage examples of FileBrowser in Backend.AI. Most
+of the FileBrowser operations are intuitive, but if you need more detailed
+guide, please refer to the
+`FileBrowser documentation <https://filebrowser.org>`_.
 
-Upload folder using filebrowser
-===============================
+**Upload local directory using FileBrowser**
 
-Filebrowser supports uploading one or more folders while maintaining the structure
-of each directory. Click UPLOAD button in the right top of the window, and click Folder button.
-Then, folder explorer will appear and you can upload any folder you want.
+FileBrowser supports uploading one or more local directories while maintaining
+the tree structure. Click the upload button in the upper right corner of the
+window, and click Folder button. Then, local file explorer dialog will appear
+and you can select any directory you want to upload.
 
 .. image:: filebrowser_upload.png
    :align: center
 
-Let's upload folder with the following structure.
+Let's upload a directory with the following structure.
 
 .. code-block:: shell
 
@@ -252,26 +256,24 @@ Let's upload folder with the following structure.
    |    +-- test2.txt
    +-- test.txt
 
+After selecting ``foo`` directory, you can see the directory just uploaded
+successfully.
 
-You can see the folder just uploaded successfully.
+.. image:: FileBrowser_upload_finished.png
 
-.. image:: filebrowser_upload_finished.png
+You can also upload local files and directories by drag and drop.
 
-Also, you can upload files and folders by drag and drop mode.
+**Move files or directories to another directory**
 
+Moving files or directories in data folder is also possible from FileBrowser.
+You can move files or directories by following steps below.
 
-Moving files or folders to another directory
-============================================
-
-Moving files or folders in Vfolder is also available in filebrowser.
-You can move files or folders following steps below.
-
-1. Select folders or files
+1. Select directories or files from FileBrowser.
 
 .. image:: select_folders.png
    :align: center
 
-2. Click the arrow icon in the right top of filebrowser
+2. Click the arrow icon in the upper right corner of FileBrowser
 
 .. image:: click_arrow_icon.png
    :width: 400
@@ -285,17 +287,12 @@ You can move files or folders following steps below.
 
 4. Click MOVE button
 
-
-You can see that moving operation is successfully finished.
+You will see that moving operation is successfully finished.
 
 .. image:: moving_operation_in_filebrowser_finished.png
    :align: center
 
 .. note::
-   If any file or folders are already exists in the destination, numbering such as (1) or (2)... will be appended.
-
-
-.. note::
-   Filebrowser is provided via application in a session as for now,
-   We are planning to update filebrowser so that it can run independently
+   FileBrowser is provided via application inside a compute session currently.
+   We are planning to update FileBrowser so that it can run independently
    without creating a session.
