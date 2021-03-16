@@ -75,9 +75,9 @@ container information.
 * ``BACKENDAI_CLUSTER_ROLE``: Type of current container (ex. ``main``)
 * ``BACKENDAI_CLUSTER_SIZE``: Total number of containers belonging to the
   current cluster session (ex. ``4``)
-* ``BACKENDAI_KERNEL_ID'': ID of the current container
+* ``BACKENDAI_KERNEL_ID``: ID of the current container
   (ex. ``3614fdf3-0e04-...``)
-* ``BACKENdAI_SESSION_ID``: ID of the cluster session to which the current
+* ``BACKENDAI_SESSION_ID``: ID of the cluster session to which the current
   container belongs (ex. ``3614fdf3-0e04-...``). The main container's
   ``BACKENDAI_KERNEL_ID`` is the same as ``BACKENDAI_SESSION_ID``.
 

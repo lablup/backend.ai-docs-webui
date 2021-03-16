@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 20.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-16 20:53+0900\n"
-"PO-Revision-Date: 2021-03-16 20:56+0900\n"
+"POT-Creation-Date: 2021-03-16 21:05+0900\n"
+"PO-Revision-Date: 2021-03-16 21:05+0900\n"
 "Last-Translator: \n"
 "Language: ko_KR\n"
 "Language-Team: \n"
@@ -92,27 +92,27 @@ msgstr ""
 "모든 구성 컨테이너는 연산 세션 생성 시 지정한 데이터 폴더를 동일하게 마운트 "
 "합니다."
 
-#: ../../cluster_session/cluster_session.rst:41
+#: ../../cluster_session/cluster_session.rst:35
 msgid "All containers under a cluster session are tied to a private network."
 msgstr "모든 구성 컨테이너는 사설 네트워크로 묶입니다."
 
-#: ../../cluster_session/cluster_session.rst:36
+#: ../../cluster_session/cluster_session.rst:37
 msgid "The name of the main container is ``main1``."
 msgstr "메인 컨테이너의 이름은 ``main1`` 이 됩니다."
 
-#: ../../cluster_session/cluster_session.rst:37
+#: ../../cluster_session/cluster_session.rst:38
 msgid ""
 "Sub-containers are named as ``sub1``, ``sub2``, ... in the increasing order."
 msgstr ""
 "서브 컨테이너의 이름은 ``sub1``, ``sub2``, … 와 같은 순서로 지어집니다."
 
-#: ../../cluster_session/cluster_session.rst:39
+#: ../../cluster_session/cluster_session.rst:40
 msgid ""
 "There is no firewall between the containers that make up a cluster session."
 msgstr ""
 "한 클러스터 세션을 구성하는 컨테이너 사이에는 별도의 방화벽이 없습니다."
 
-#: ../../cluster_session/cluster_session.rst:40
+#: ../../cluster_session/cluster_session.rst:41
 msgid ""
 "Users can directly connect to the main container, and sub-containers can "
 "only be connected from the main container."
@@ -120,11 +120,11 @@ msgstr ""
 "사용자는 메인 컨테이너에 직접 접속할 수 있으며, 서브 컨테이너는 메인 컨테이"
 "너에 먼저 접속한 후 메인 컨테이너 내에서 접속할 수 있습니다."
 
-#: ../../cluster_session/cluster_session.rst:51
+#: ../../cluster_session/cluster_session.rst:44
 msgid "There are two modes/types of cluster session."
 msgstr "두 가지 모드/형태의 클러스터 세션이 있습니다."
 
-#: ../../cluster_session/cluster_session.rst:44
+#: ../../cluster_session/cluster_session.rst:46
 msgid ""
 "Single node cluster session: A cluster session composed of two or more "
 "containers on one, same agent node. In the figure above, this is session Z, "
@@ -134,7 +134,7 @@ msgstr ""
 "구성한 클러스터 세션입니다. 위 그림에서는 session Z가 이에 해당하며 로컬 브"
 "릿지 네트워크로 묶입니다."
 
-#: ../../cluster_session/cluster_session.rst:47
+#: ../../cluster_session/cluster_session.rst:49
 msgid ""
 "Multi-node cluster session: A cluster session composed of two or more "
 "containers on different Agent nodes. In the picture above, this is session "
@@ -144,7 +144,7 @@ msgstr ""
 "해서 구성한 클러스터 세션입니다. 위 그림에서는 session X가 이에 해당하며, 오"
 "버레이 네트워크로 묶입니다."
 
-#: ../../cluster_session/cluster_session.rst:50
+#: ../../cluster_session/cluster_session.rst:52
 msgid ""
 "A compute session with only one container is classified as normal compute "
 "session, not a cluster session. In the figure above, this is session Y."
@@ -152,11 +152,11 @@ msgstr ""
 "하나의 컨테이너를 가지는 연산 세션은 클러스터 세션이 아닌 일반 연산 세션으"
 "로 분류합니다. 위 그림에서는 session Y가 이에 해당합니다."
 
-#: ../../cluster_session/cluster_session.rst:61
+#: ../../cluster_session/cluster_session.rst:55
 msgid "A single node cluster session is created in the following cases."
 msgstr "다음과 같은 경우에는 단일 노드 클러스터 세션이 생성됩니다."
 
-#: ../../cluster_session/cluster_session.rst:54
+#: ../../cluster_session/cluster_session.rst:57
 msgid ""
 "When \"Single Node\" is selected for Cluster mode field when creating a "
 "compute session. If there is no single agent with enough resources to "
@@ -167,7 +167,7 @@ msgstr ""
 "를 동시에 생성할 수 있는 자원을 가진 단일 Agent가 없으면, 해당 세션 생성 작"
 "업은 대기(``PENDING``) 상태로 머무르게 됩니다."
 
-#: ../../cluster_session/cluster_session.rst:58
+#: ../../cluster_session/cluster_session.rst:61
 msgid ""
 "“Multi Node” is selected for Cluster mode, but there is a single agent with "
 "enough resources that can create all containers at the same time, then, all "
@@ -179,7 +179,7 @@ msgstr ""
 "테이너를 배치합니다. 이는 가능한 외부 네트워크를 배제하여 연산 세션을 구성하"
 "여 네트워크 지연시간을 줄기 위함입니다."
 
-#: ../../cluster_session/cluster_session.rst:63
+#: ../../cluster_session/cluster_session.rst:66
 msgid ""
 "Each container in a cluster session has the following environment "
 "variables. You can refer to it to check the cluster configuration and "
@@ -188,13 +188,13 @@ msgstr ""
 "클러스터 세션의 각 컨테이너에는 다음과 같은 환경 변수가 지정됩니다. 클러스"
 "터 및 현재 접속된 컨테이너 정보를 확인하기 위해서 참고할 수 있습니다."
 
-#: ../../cluster_session/cluster_session.rst:67
+#: ../../cluster_session/cluster_session.rst:70
 msgid ""
 "``BACKENDAI_CLUSTER_HOST``: the name of the current container (ex. "
 "``main1``)"
 msgstr "``BACKENDAI_CLUSTER_HOST``: 현재 컨테이너의 이름 (ex. ``main1``)"
 
-#: ../../cluster_session/cluster_session.rst:68
+#: ../../cluster_session/cluster_session.rst:71
 msgid ""
 "``BACKENDAI_CLUSTER_HOSTS``: Names of all containers belonging to the "
 "current cluster session (ex. ``main1,sub1,sub2``)"
@@ -202,23 +202,23 @@ msgstr ""
 "``BACKENDAI_CLUSTER_HOSTS``: 현재 클러스터 세션에 속한 모든 컨테이너의 이름 "
 "(ex. ``main1,sub1,sub2``)"
 
-#: ../../cluster_session/cluster_session.rst:70
+#: ../../cluster_session/cluster_session.rst:73
 msgid ""
 "``BACKENDAI_CLUSTER_IDX``: numeric index of the current container (ex. "
 "``1``)"
 msgstr "``BACKENDAI_CLUSTER_IDX``: 현재 컨테이너의 숫자 인덱스 (ex. ``1``)"
 
-#: ../../cluster_session/cluster_session.rst:71
+#: ../../cluster_session/cluster_session.rst:74
 msgid ""
 "``BACKENDAI_CLUSTER_MODE``: Cluster session mode/type (ex. ``single-node``)"
 msgstr ""
 "``BACKENDAI_CLUSTER_MODE``: 클러스터 세션의 모드/형태 (ex. ``single-node``)"
 
-#: ../../cluster_session/cluster_session.rst:72
+#: ../../cluster_session/cluster_session.rst:75
 msgid "``BACKENDAI_CLUSTER_ROLE``: Type of current container (ex. ``main``)"
 msgstr "``BACKENDAI_CLUSTER_ROLE``: 현재 컨테이너의 종류 (ex. ``main``)"
 
-#: ../../cluster_session/cluster_session.rst:73
+#: ../../cluster_session/cluster_session.rst:76
 msgid ""
 "``BACKENDAI_CLUSTER_SIZE``: Total number of containers belonging to the "
 "current cluster session (ex. ``4``)"
@@ -226,15 +226,15 @@ msgstr ""
 "``BACKENDAI_CLUSTER_SIZE``: 현재 클러스터 세션에 속한 컨테이너의 총 수 (ex. "
 "``4``)"
 
-#: ../../cluster_session/cluster_session.rst:75
+#: ../../cluster_session/cluster_session.rst:78
 msgid ""
-"``BACKENDAI_KERNEL_ID'': ID of the current container (ex. "
+"``BACKENDAI_KERNEL_ID``: ID of the current container (ex. "
 "``3614fdf3-0e04-...``)"
 msgstr "``BACKENDAI_KERNEL_ID``: 현재 컨테이너의 ID (ex. ``3614fdf3-0e04-…``)"
 
-#: ../../cluster_session/cluster_session.rst:77
+#: ../../cluster_session/cluster_session.rst:80
 msgid ""
-"``BACKENdAI_SESSION_ID``: ID of the cluster session to which the current "
+"``BACKENDAI_SESSION_ID``: ID of the cluster session to which the current "
 "container belongs (ex. ``3614fdf3-0e04-...``). The main container's "
 "``BACKENDAI_KERNEL_ID`` is the same as ``BACKENDAI_SESSION_ID``."
 msgstr ""
@@ -242,11 +242,11 @@ msgstr ""
 "``3614fdf3-0e04-…``). 메인 컨테이너의 ``BACKENDAI_KERNEL_ID`` 는 "
 "``BACKENDAI_SESSION_ID`` 와 같습니다."
 
-#: ../../cluster_session/cluster_session.rst:83
+#: ../../cluster_session/cluster_session.rst:86
 msgid "Use of Backend.AI cluster compute session"
 msgstr "Backend.AI 클러스터 연산 세션의 사용"
 
-#: ../../cluster_session/cluster_session.rst:85
+#: ../../cluster_session/cluster_session.rst:88
 msgid ""
 "In this section, we will take a look at how to actually create and use "
 "cluster compute sessions through the user GUI."
@@ -254,7 +254,7 @@ msgstr ""
 "이번 절에서는 실제로 사용자 GUI를 통해 클러스터 연산 세션을 생성하고 사용하"
 "는 법에 관해 알아보겠습니다."
 
-#: ../../cluster_session/cluster_session.rst:88
+#: ../../cluster_session/cluster_session.rst:91
 msgid ""
 "In the Sessions page, open the session creation dialog and set it in the "
 "same way as creating a normal compute session. The amount of resources set "
@@ -275,7 +275,7 @@ msgstr ""
 "(N은 클러스터 크기). 데이터 보존을 위해 데이터 폴더를 마운트 하는 것도 잊지 "
 "마십시오."
 
-#: ../../cluster_session/cluster_session.rst:102
+#: ../../cluster_session/cluster_session.rst:105
 msgid ""
 "In the \"Cluster mode\" field at the bottom, you can choose what type of "
 "cluster you want to create."
@@ -283,11 +283,11 @@ msgstr ""
 "아래쪽에 있는 “Cluster mode” 필드에서 원하는 클러스터 생성 형태를 결정할 수 "
 "있습니다."
 
-#: ../../cluster_session/cluster_session.rst:105
+#: ../../cluster_session/cluster_session.rst:108
 msgid "Single Node: All containers are created on one Agent node."
 msgstr "Single Node: 모든 구성 컨테이너는 하나의 Agent 노드에 생성 됩니다."
 
-#: ../../cluster_session/cluster_session.rst:106
+#: ../../cluster_session/cluster_session.rst:109
 msgid ""
 "Multi Node: Containers are created across multiple Agent nodes within a "
 "resource group. However, if all containers can be created in one agent "
@@ -299,7 +299,7 @@ msgstr ""
 "는, 하나의 Agent 노드에 우선 생성합니다. 이는 컨테이너 간 통신 과정에서 네트"
 "워크 지연 시간을 최대한 줄이기 위함입니다."
 
-#: ../../cluster_session/cluster_session.rst:111
+#: ../../cluster_session/cluster_session.rst:114
 msgid ""
 "Set the \"Cluster size\" below it. If set to 3, a total of three containers "
 "will be created including the main container. These three containers are "
@@ -309,7 +309,7 @@ msgstr ""
 "를 포함해서 총 세 개의 컨테이너가 생성됩니다. 이 세 개의 컨테이너는 사설 네"
 "트워크로 묶여 하나의 연산 세션을 구성합니다."
 
-#: ../../cluster_session/cluster_session.rst:115
+#: ../../cluster_session/cluster_session.rst:118
 msgid ""
 "Click the LAUNCH button to send a request to create a compute session, and "
 "wait for a while to get a cluster session. In the Session Info column, make "
@@ -320,7 +320,7 @@ msgstr ""
 "세션이 생성됩니다. Session Info 열에서 구성 컨테이너의 숫자를 표시하는 "
 "“Single-node” 또는 “Multi-node” 태그가 있는지 확인 하십시오."
 
-#: ../../cluster_session/cluster_session.rst:123
+#: ../../cluster_session/cluster_session.rst:126
 msgid ""
 "Let's open the terminal app in the compute session we just have created. If "
 "you look up the environment variables, you can see that the "
@@ -332,7 +332,7 @@ msgstr ""
 "절에서 설명한 ``BACKENDAI_CLUSTER_*`` 변수가 설정된 것을 확인할 수 있습니"
 "다. 각 환경 변수의 의미와 값을 위 설명과 대조해 보십시오."
 
-#: ../../cluster_session/cluster_session.rst:131
+#: ../../cluster_session/cluster_session.rst:134
 msgid ""
 "You can also SSH into the ``sub1`` container. No separate SSH setting is "
 "required, just issue the command ``ssh sub1`` and you are done. You can see "
@@ -343,7 +343,7 @@ msgstr ""
 "sub1`` 이라는 명령만 내리면 끝입니다. ``work@`` 뒤의 호스트 이름이 변한 것"
 "을 볼 수 있습니다. sub1 컨테이너의 쉘로 접속한 것입니다."
 
-#: ../../cluster_session/cluster_session.rst:139
+#: ../../cluster_session/cluster_session.rst:142
 msgid ""
 "In this way, Backend.AI makes it easy to create cluster computing sessions. "
 "In order to execute distributed learning and calculation through a cluster "
