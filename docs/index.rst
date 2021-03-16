@@ -26,7 +26,7 @@ The latest versions of this document can be found from sites below:
    login/login
    summary/summary
    sessions_all/sessions_all
-   multicontainer_session/multicontainer_session
+   cluster_session/cluster_session
    import_run/import_run
    vfolder/vfolder
    mount_vfolder/mount_vfolder
