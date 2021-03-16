@@ -54,8 +54,8 @@ If you need more detailed settings, refer to the meaning of each items.
 * RAM: The amount of memory (GB) to allocate to the compute session. The
   maximum value depends on the resource policy applied to the user.
 * Shared Memory: The amount of shared memory (GB) to allocate to the
-  compute session. It can be set up to 2 GB and cannot be greater than the
-  amount specified in RAM.
+  compute session. It can be set up to 2 GB by default (can be configured by
+  admins)and cannot be greater than the amount specified in RAM.
 * GPU: The unit of GPU to allocate to the compute session. The maximum value
   depends on the resource policy applied to the user.
 * Sessions: The number of compute sessions to be created with the specified

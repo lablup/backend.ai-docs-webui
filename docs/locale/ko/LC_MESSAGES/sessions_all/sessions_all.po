@@ -149,11 +149,11 @@ msgstr ""
 #: ../../sessions_all/sessions_all.rst:56
 msgid ""
 "Shared Memory: The amount of shared memory (GB) to allocate to the compute "
-"session. It can be set up to 2 GB and cannot be greater than the amount "
-"specified in RAM."
+"session. It can be set up to 2 GB by default (can be configured by admins)and "
+"cannot be greater than the amount specified in RAM."
 msgstr ""
 "Shared Memory: 연산 세션에 할당할 공유 메모리의 용량 (GB). 최대 2 GB 까지만 설정"
-"할 수 있으며, RAM 에 지정된 양보다 클 수 없습니다."
+"할 수 있으며 (관리자가 설정 가능합니다), RAM 에 지정된 양보다 클 수 없습니다."
 
 #: ../../sessions_all/sessions_all.rst:59
 msgid ""
