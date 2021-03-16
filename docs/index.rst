@@ -26,7 +26,6 @@ The latest versions of this document can be found from sites below:
    login/login
    summary/summary
    sessions_all/sessions_all
-   cluster_session/cluster_session
    import_run/import_run
    vfolder/vfolder
    mount_vfolder/mount_vfolder
@@ -34,6 +33,7 @@ The latest versions of this document can be found from sites below:
    statistics/statistics
    sftp_to_container/sftp_to_container
    user_settings/user_settings
+   cluster_session/cluster_session
    admin_menu/admin_menu
    trouble_shooting/trouble_shooting
    appendix/appendix
