@@ -131,30 +131,29 @@ kernel images depending on the installation settings.
    :width: 350
    :align: center
 
-Here, let's select the TensorFlow 2.2 environment and created a session.
+Here, let's select the TensorFlow 2.3 environment and created a session.
 
-.. image:: session_launch_dialog_tf22.png
+.. image:: session_launch_dialog_tf23.png
    :width: 350
    :align: center
 
 Open the web terminal of the created session and run the following Python
-command. You can see that TensorFlow 2.2 version is installed.
+command. You can see that TensorFlow 2.3 version is installed.
 
-.. image:: tf22_version_print.png
-   :width: 450
+.. image:: tf23_version_print.png
    :align: center
 
-This time, let's select the TensorFlow 1.13 environment to create a compute
+This time, let's select the TensorFlow 1.15 environment to create a compute
 session. If resources are insufficient, delete the previous session.
 
-.. image:: session_launch_dialog_tf113.png
+.. image:: session_launch_dialog_tf115.png
    :width: 350
    :align: center
 
 Open the web terminal of the created session and run the same Python command as
-before. You can see that TensorFlow 1.13(.1) version is installed.
+before. You can see that TensorFlow 1.15(.4) version is installed.
 
-.. image:: tf113_version_print.png
+.. image:: tf115_version_print.png
    :width: 450
    :align: center
 
