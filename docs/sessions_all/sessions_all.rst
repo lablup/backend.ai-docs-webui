@@ -45,6 +45,7 @@ If you need more detailed settings, refer to the meaning of each items.
 * Folder to mount: Specifies the data folders to be mounted in the compute
   session. When a compute session is deleted, all data is deleted
   altogether by default, but the data stored in the folder mounted here is not deleted.
+* Set Environment Variable: Provides customized environment variable before creating a session.
 * Resource allocation: This is a template that has predefined resources to be
   allocated to the compute session. You can save and use frequently used
   resource settings in advance. Resource templates can be managed in a dedicated
@@ -61,6 +62,54 @@ If you need more detailed settings, refer to the meaning of each items.
 * Sessions: The number of compute sessions to be created with the specified
   settings. You can specify this value when you need to create the same computational
   sessions at once.
+
+
+How to add environment variable before creating a session
+---------------------------------------------------------
+
+To give more convenient workspace for users, Backend.AI supports environment variable setting 
+in session launching. In this feature, you can add any envs such as ``PATH`` by filling out 
+variable name and value in environment configuration dialog.
+
+Add Environment variable
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+To add environment variable, simply click CONFIG button.
+
+.. image:: env-config-start.png
+   :width: 350
+   :align: center
+   :alt: Env Configuration Button
+
+and then, environment configuration dialog appears.
+
+In this dialog, you can add,update and delete written env variables.
+To see more information about how it works, please click 'i' button at the header of the dialog.
+
+.. image:: env-config-dialog-info.png
+   :align: center
+   :alt: Env Configuration info
+
+You can input variable name and value in the same line of the input fields.
+Then, click save button. It will be applied in the session.
+
+.. warning::
+   If you close the dialog without click saving variables or If you didn't fill out 
+   the variable and value, then those input values will not be applied into the session as env.
+   Please remind that every variable and value that is not empty will be applied to session by 
+   clicking SAVE button.
+
+   .. image:: env-config-dialog-closing-confirmation.png
+      :width: 350
+      :align: center
+      :alt: Env config dialog closing confirmation
+
+To Add more environment variables, yon can click ``+`` button in the right side of the first row of input field.
+Also, you can remove the variable by clicking ``-`` button of the row that you want to get rid of.
+
+If you want to delete the whole variables and value, please click DELETE ALL button at the bottom of the dialog.
+
+
 
 If no folder is specified in "Folders to mount", a warning dialog may
 appear indicating that no storage folder is mounted.
