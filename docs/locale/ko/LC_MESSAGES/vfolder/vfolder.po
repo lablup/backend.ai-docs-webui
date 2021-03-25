@@ -487,15 +487,15 @@ msgstr "파일 브라우저에서 원하는 디렉토리나 파일을 선택하�
 
 #: ../../vfolder/vfolder.rst:276
 msgid "Click the arrow icon in the upper right corner of FileBrowser"
-msgstr "파일 브라우저 창 우측 상단의 화살표 아이콘을 클릭합니"
+msgstr "파일 브라우저 창 우측 상단의 화살표 아이콘을 클릭합니다."
 
 #: ../../vfolder/vfolder.rst:282
 msgid "Select the destination"
-msgstr "이동할 경로를 선택합니다"
+msgstr "이동할 경로를 선택합니다."
 
 #: ../../vfolder/vfolder.rst:288
 msgid "Click MOVE button"
-msgstr "MOVE 버튼을 클릭합니다"
+msgstr "MOVE 버튼을 클릭합니다."
 
 #: ../../vfolder/vfolder.rst:290
 msgid "You will see that moving operation is successfully finished."
