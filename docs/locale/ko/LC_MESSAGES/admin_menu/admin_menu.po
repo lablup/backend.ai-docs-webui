@@ -267,7 +267,7 @@ msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:166
 msgid "Manage Resource Policy"
-msgstr "리소스 정책 관리"
+msgstr "자원 정책 관리"
 
 #: ../../admin_menu/admin_menu.rst:168
 msgid ""
@@ -288,8 +288,8 @@ msgid ""
 "multiple resource policies can be created, for example, user / research "
 "purposes, and apply them separately to each keypair."
 msgstr ""
-"리소스 정책을 통해 키페어 별로 자원 사용 및 기타 세션 사용 관련 정책을 설정할 수 있습니다. 필요에 따라 사용자용/연구용 등 "
-"목적으로 여러 가지 리소스 정책을 설정하여 키페어에 분리 적용할 수 있습니다."
+"자원 정책을 통해 키페어 별로 자원 사용 및 기타 세션 사용 관련 정책을 설정할 수 있습니다. 필요에 따라 사용자용/연구용 등 "
+"목적으로 여러 가지 자원 정책을 설정하여 키페어에 분리 적용할 수 있습니다."
 
 #: ../../admin_menu/admin_menu.rst:179
 msgid ""
@@ -461,7 +461,7 @@ msgstr "자원 정책 리스트에서 default 정책의 Resources 값이 업데�
 msgid ""
 "You can create a new resource policy by clicking the CREATE POLICY "
 "button. Each setting value is the same as described above."
-msgstr "CREATE POLICY 버튼을 클릭하여 새로운 리소스 정책을 생성할 수도 있습니다. 각 설정값의 위미는 상기 설명과 동일합니다."
+msgstr "CREATE POLICY 버튼을 클릭하여 새로운 자원 정책을 생성할 수도 있습니다. 각 설정값의 위미는 상기 설명과 동일합니다."
 
 #: ../../admin_menu/admin_menu.rst:257
 msgid ""
@@ -470,7 +470,7 @@ msgid ""
 "Controls panel of the desired keypair, and click the Select Policy field "
 "to choose it."
 msgstr ""
-"리소스 정책을 생성한 후 키페어에 연결하기 위해서는 Users 페이지의 Credentials 탭으로 가서 원하는 키페어의 "
+"자원 정책을 생성한 후 키페어에 연결하기 위해서는 Users 페이지의 Credentials 탭으로 가서 원하는 키페어의 "
 "Controls 열에 위치한 톱니바퀴 설정 버튼을 누른 후 Select Policy 필드를 클릭하여 선택하면 됩니다."
 
 #: ../../admin_menu/admin_menu.rst:262
@@ -622,7 +622,7 @@ msgstr ""
 "Storage 폴더 사용을 위해 allowed hosts를 등록해야 했던 것처럼, 레지스트리 등록 후 도메인 또는 그룹 수준에서 "
 "allowed docker registries 필드에 해당 레지스트리를 등록해야 도메인 또는 그룹 소속 사용자가 레지스트리 이미지에"
 " 접근할 수 있습니다. Allowed docker registries 등록은 도메인과 그룹 관리 기능이 있는 Control-"
-"Panel을 이용해서 할 수 있습니다. 키페어의 리소스 정책에서 allowed docker registries를 설정하는 기능은 "
+"Panel을 이용해서 할 수 있습니다. 키페어의 자원 정책에서 allowed docker registries를 설정하는 기능은 "
 "아직 제공하지 않고 있습니다."
 
 #: ../../admin_menu/admin_menu.rst:372
@@ -635,7 +635,7 @@ msgid ""
 "allocation panel when creating a compute session. Superadmin can manage "
 "these resource presets."
 msgstr ""
-"연산 세션을 생성할 때 Resource allocation 패널에서 다음과 같은 사전 정의된 리소스 프리셋이 출력 됩니다. "
+"연산 세션을 생성할 때 Resource allocation 패널에서 다음과 같은 사전 정의된 자원 프리셋이 출력 됩니다. "
 "Super admin에게는 이 자원 프리셋을 설정할 수 있는 기능을 제공합니다."
 
 #: ../../admin_menu/admin_menu.rst:383
@@ -643,7 +643,7 @@ msgid ""
 "Go to the Resource Presets tab on the Environment page. You can check the"
 " list of currently defined resource presets."
 msgstr ""
-"Environment 페이지의 Resource Presets 탭으로 이동합니다. 현재 정의되어 있는 리소스 프리셋의 리스트를 확인할"
+"Environment 페이지의 Resource Presets 탭으로 이동합니다. 현재 정의되어 있는 자원 프리셋의 리스트를 확인할"
 " 수 있습니다."
 
 #: ../../admin_menu/admin_menu.rst:389
@@ -685,7 +685,7 @@ msgid ""
 "does not provide the function to manipulate agent nodes."
 msgstr ""
 "Superadmin의 경우 Resources 페이지의 Connected 탭에서는 현재 Backend.AI에 연결된 agent 워커 "
-"노드를 조회할 수 있습니다. 노드의 IP와 연결된 시간, 현재 사용중인 실제 리소스 등을 조회할 수 있습니다. Web-UI 앱에서는"
+"노드를 조회할 수 있습니다. 노드의 IP와 연결된 시간, 현재 사용중인 실제 자원 등을 조회할 수 있습니다. Web-UI 앱에서는"
 " 별도로 agent 노드를 조작하는 기능은 제공하지 않습니다."
 
 #: ../../admin_menu/admin_menu.rst:425
@@ -717,7 +717,7 @@ msgid ""
 "remaining two P100 agents into another resource group."
 msgstr ""
 "Agent는 자원 그룹이라는 단위로 묶일 수 있습니다. 예를 들어, V100 GPU를 탑재한 agent가 3대, P100 GPU를"
-" 탑재한 agent가 2대 있는데, 사용자에게 두 GPU 자원을 별도로 노출하고 싶을 경우 V100 agent 3대를 하나의 리소스"
+" 탑재한 agent가 2대 있는데, 사용자에게 두 GPU 자원을 별도로 노출하고 싶을 경우 V100 agent 3대를 하나의 자원"
 " 그룹으로 묶고, 나머지 P100 agent 2대를 다른 자원 그룹으로 묶어서 관리할 수 있습니다."
 
 #: ../../admin_menu/admin_menu.rst:450
@@ -746,7 +746,7 @@ msgstr ""
 "생성 스케줄링 방식을 선택할 수 있는데, 현재 지원하는 방식은 FIFO, LIFO, DRF 세 가지 입니다. FIFO 와 LIFO "
 "는 가장 처음 또는 가장 마지막에 작업 큐에 들어 온 연산 세션을 먼저 생성하는 방식으로 스케줄링 방식이고, DRF 는 "
 "Dominant Resource Fairness 의 약자로 사용자 별로 최대한 공평하게 자원 할당이 가능하도록 조절하여 스케줄링 "
-"하는 방식입니다. Active Status 를 꺼서 해당 리소스 정책을 비활성화 할 수 있습니다."
+"하는 방식입니다. Active Status 를 꺼서 해당 자원 정책을 비활성화 할 수 있습니다."
 
 #: ../../admin_menu/admin_menu.rst:469
 msgid ""
@@ -754,12 +754,12 @@ msgid ""
 "Likewise other creating options, you cannot create a resource policy with"
 " the name that already exists, since name is the key value."
 msgstr ""
-"CREATE 버튼을 클릭하여 새로운 리소스 정책을 생성할 수 있습니다.다른 생성하기 기능과 마찬가지로, 자원 정책 이름은 키 값이기"
+"CREATE 버튼을 클릭하여 새로운 자원 정책을 생성할 수 있습니다.다른 생성하기 기능과 마찬가지로, 자원 정책 이름은 키 값이기"
 " 때문에, 이미 존재하는 자원 정책 이름과 동일한 이름을 갖는 자원 정책 생성은 불가능합니다."
 
 #: ../../admin_menu/admin_menu.rst:480
 msgid "Download session lists"
-msgstr "세션 리소스 다운로드"
+msgstr "세션 자원 다운로드"
 
 #: ../../admin_menu/admin_menu.rst:482
 msgid ""
