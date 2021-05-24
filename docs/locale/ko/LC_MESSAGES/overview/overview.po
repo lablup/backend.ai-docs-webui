@@ -32,7 +32,7 @@ msgid ""
 "Backend.AI supports the efficient use of GPUs by flexibly dividing one "
 "physical GPU, so that multiple users can use it at the same time."
 msgstr ""
-"Backend.AI 는 오픈소스 클라우드 리소스 관리 플랫폼입니다. Backend.AI 는 클라우"
+"Backend.AI 는 오픈소스 클라우드 자원 관리 플랫폼입니다. Backend.AI 는 클라우"
 "드 또는 온-프레미스 클러스터 환경에서 연산 자원을 효율적으로 관리하며 언제 어디"
 "서나 on-demand 로 계산에 필요한 가상화된 연산 환경을 제공합니다. 또한, Backend."
 "AI 의 컨테이너 기반 GPU 분할 가상화 기술을 통해 하나의 물리 GPU 를 유연하게 나"
@@ -296,15 +296,15 @@ msgstr "클러스터 묶음"
 
 #: ../../overview/overview.rst:120
 msgid "Resource groups by H/W spec and usage"
-msgstr "하드웨어 스펙과 사용 형태에 따른 리소스 그룹"
+msgstr "하드웨어 스펙과 사용 형태에 따른 자원 그룹"
 
 #: ../../overview/overview.rst:122
 msgid "(Enterprise) Access control of users to resource group"
-msgstr "(엔터프라이즈) 사용자 리소스 그룹 배치"
+msgstr "(엔터프라이즈) 사용자 자원 그룹 배치"
 
 #: ../../overview/overview.rst:125
 msgid "(Enterprise) Access control of group to resource group"
-msgstr "(엔터프라이즈) 사용자 그룹 리소스 그룹 배치"
+msgstr "(엔터프라이즈) 사용자 그룹 자원 그룹 배치"
 
 #: ../../overview/overview.rst:128
 msgid "Security"
@@ -499,7 +499,7 @@ msgstr "사용자 설정 (UserSettings)"
 #~ "AI helps scientists, DevOps, enterprise, and AI enthusiasts to scale up "
 #~ "efficiently."
 #~ msgstr ""
-#~ "Backend.AI는 오픈소스 클라우드 리소스 관리 플랫폼입니다. Backend.AI는 클라우"
+#~ "Backend.AI는 오픈소스 클라우드 자원 관리 플랫폼입니다. Backend.AI는 클라우"
 #~ "드 또는 온-프레미스 클러스터 환경에서 연산 자원을 효율적으로 관리하며 언제 "
 #~ "어디서나 on-demand로 계산에 필요한 가상화된 연산 환경을 제공합니다. GPU 분"
 #~ "할 가상화를 제공하여, 과학자, 데브옵스, 기업 및 AI 애호가들이 효율적으로 규"

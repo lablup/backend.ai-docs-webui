@@ -515,12 +515,27 @@ guarantee the Integrity of the image.
 .. image:: system_setting_about_image.png
    :alt: System setting about image
 
-You can also choose job scheduler. Currently, there are three types: ``FIFO``, ``LIFO``,
-and ``DRF``. Each method of the scheduling is exactly same as
-:ref:`scheduling methods<scheduling-methods>` above.
+You can also change settings for scaling and plugins.
 
 .. image:: system_setting_about_scaling_plugins.png
    :alt: System setting about scaling and plugins
+
+You can edit the configuration per job scheduler by clicking the config button. 
+The values in the scheduler setting are the defaults to use when there is no scheduler 
+setting in each :ref:`resource group<scheduling-methods>`. If there is a resource 
+group-specific setting, this value will be ignored. 
+
+Currently supported scheduling methods include ``FIFO``, ``LIFO``, and ``DRF``. 
+Each method of scheduling is exactly the same as the :ref:`scheduling methods<scheduling-methods>` above. 
+Scheduler options include session creation retries. Session creation retries refers to the number 
+of retries to create a session if it fails. If the session cannot be created within the trials, 
+the request will be ignored and Backend.AI will process the next request. Currently, changes are 
+only possible when the scheduler is FIFO.
+
+.. image:: system_setting_dialog_scheduler_settings.png
+   :width: 350
+   :align: center
+   :alt: System setting dialog scheduler settings
 
 .. note::
    We will continue to add broader range of setting controls.
