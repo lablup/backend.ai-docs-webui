@@ -706,7 +706,7 @@ msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:442
 msgid "Manage resource group"
-msgstr "리소스 그룹 관리"
+msgstr "자원 그룹 관리"
 
 #: ../../admin_menu/admin_menu.rst:444
 msgid ""
@@ -716,9 +716,9 @@ msgid ""
 " you can group three V100 agents into one resource group, and the "
 "remaining two P100 agents into another resource group."
 msgstr ""
-"Agent는 리소스 그룹이라는 단위로 묶일 수 있습니다. 예를 들어, V100 GPU를 탑재한 agent가 3대, P100 GPU를"
+"Agent는 자원 그룹이라는 단위로 묶일 수 있습니다. 예를 들어, V100 GPU를 탑재한 agent가 3대, P100 GPU를"
 " 탑재한 agent가 2대 있는데, 사용자에게 두 GPU 자원을 별도로 노출하고 싶을 경우 V100 agent 3대를 하나의 리소스"
-" 그룹으로 묶고, 나머지 P100 agent 2대를 다른 리소스 그룹으로 묶어서 관리할 수 있습니다."
+" 그룹으로 묶고, 나머지 P100 agent 2대를 다른 자원 그룹으로 묶어서 관리할 수 있습니다."
 
 #: ../../admin_menu/admin_menu.rst:450
 msgid ""
@@ -727,8 +727,8 @@ msgid ""
 "the installation location and restart the agent daemon. Management of the"
 " resource groups is possible in Scaling Group tab of the Resource page."
 msgstr ""
-"리소스 그룹에 특정 agent를 추가하는 작업은 현재 UI 상에서 처리되지 않으며, agent 설치 폴더의 설정 파일 옵션을 수정한"
-" 뒤 agent를 재시작 하는 방식으로 가능합니다. 리소스 그룹은 Resources 페이지의 Scaling Group 탭에서 조회할"
+"자원 그룹에 특정 agent를 추가하는 작업은 현재 UI 상에서 처리되지 않으며, agent 설치 폴더의 설정 파일 옵션을 수정한"
+" 뒤 agent를 재시작 하는 방식으로 가능합니다. 자원 그룹은 Resources 페이지의 Scaling Group 탭에서 조회할"
 " 수 있습니다."
 
 #: ../../admin_menu/admin_menu.rst:458
@@ -742,7 +742,7 @@ msgid ""
 "provide resources as fair as possible for each user. You can deactivate a"
 " resource policy by turning off Active Status."
 msgstr ""
-"Control 열에서 설정 아이콘을 클릭하여 리소스 그룹을 편집할 수 있습니다. Select scheduler 필드에서 연산 세션 "
+"Control 열에서 설정 아이콘을 클릭하여 자원 그룹을 편집할 수 있습니다. Select scheduler 필드에서 연산 세션 "
 "생성 스케줄링 방식을 선택할 수 있는데, 현재 지원하는 방식은 FIFO, LIFO, DRF 세 가지 입니다. FIFO 와 LIFO "
 "는 가장 처음 또는 가장 마지막에 작업 큐에 들어 온 연산 세션을 먼저 생성하는 방식으로 스케줄링 방식이고, DRF 는 "
 "Dominant Resource Fairness 의 약자로 사용자 별로 최대한 공평하게 자원 할당이 가능하도록 조절하여 스케줄링 "

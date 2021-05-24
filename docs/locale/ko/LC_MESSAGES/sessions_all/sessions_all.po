@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 20.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-25 16:51+0900\n"
+"POT-Creation-Date: 2021-05-24 11:37+0900\n"
 "PO-Revision-Date: 2021-03-02 18:29+0900\n"
 "Last-Translator: \n"
 "Language: ko_KR\n"
@@ -92,8 +92,8 @@ msgid ""
 "the desired one, but if there is only one resource group, it cannot be "
 "changed."
 msgstr ""
-"Resource Group: 연산 세션을 생성 할 리소스 그룹을 지정합니다. 리소스 그룹이 여러 개인 경우 원하는 그룹을 선택할 수"
-" 있지만 리소스 그룹이 하나만있는 경우 변경할 수 없습니다."
+"Resource Group: 연산 세션을 생성 할 자원 그룹을 지정합니다. 자원 그룹이 여러 개인 경우 원하는 그룹을 선택할 수"
+" 있지만 자원 그룹이 하나만있는 경우 변경할 수 없습니다."
 
 #: ../../sessions_all/sessions_all.rst:39
 msgid ""
@@ -122,8 +122,7 @@ msgstr ""
 msgid ""
 "Set Environment Variable: Provides customized environment variable before"
 " creating a session."
-msgstr ""
-"Set Environment Variable: 세션 생성하기전 사용자가 환경 변수를 설정할 수 있는 인터페이스를 제공합니다."
+msgstr "Set Environment Variable: 세션 생성하기전 사용자가 환경 변수를 설정할 수 있는 인터페이스를 제공합니다."
 
 #: ../../sessions_all/sessions_all.rst:49
 msgid ""
@@ -169,79 +168,7 @@ msgid ""
 "computational sessions at once."
 msgstr "Sessions: 지정된 설정으로 생성할 연산 세션의 수. 동일한 연산 세션을 한꺼번에 생성할 필요가 있을 때 지정할 수 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:68
-msgid "How to add environment variable before creating a session"
-msgstr "세션 생성하기 전에 환경 변수를 추가하는 방법"
-
-#: ../../sessions_all/sessions_all.rst:70
-msgid ""
-"To give more convenient workspace for users, Backend.AI supports "
-"environment variable setting in session launching. In this feature, you "
-"can add any envs such as ``PATH`` by filling out variable name and value "
-"in environment configuration dialog."
-msgstr ""
-"Backend.AI에서는 사용자에게 더 편리한 환경을 제공하기 위해, 세션 시작 화면에서 세션에 추가될 환경 변수 추가 기능을 "
-"지원합니다. 이 기능에서 여러분은 ``PATH`` 를 비롯한 모든 환경 변수를 환경변수 설정 다이얼로그에서 환경 변수명과 환경 변수 "
-"값을 입력해서 추가할 수 있습니다."
-
-#: ../../sessions_all/sessions_all.rst:75
-msgid "Add Environment variable"
-msgstr "환경 변수 추가하기"
-
-#: ../../sessions_all/sessions_all.rst:77
-msgid "To add environment variable, simply click CONFIG button."
-msgstr "환경 변수를 추가하려면, CONFIG 버튼을 클릭해주세요."
-
-#: ../../sessions_all/sessions_all.rst:84
-msgid "and then, environment configuration dialog appears."
-msgstr "그러면 환경변수 설정 다이얼로그가 띄워집니다."
-
-#: ../../sessions_all/sessions_all.rst:86
-msgid ""
-"In this dialog, you can add,update and delete written env variables. To "
-"see more information about how it works, please click 'i' button at the "
-"header of the dialog."
-msgstr ""
-"이 다이얼로그에서 여러분은 환경 변수를 추가하거나, 작성한 환경 변수를 갱신하거나, 삭제할 수 있습니다. 어떤 방식으로 동작하는 지"
-" 더 자세히 알고 싶으실 경우 다이얼로그 헤더 부분에 있는 'i' 버튼을 클릭해주세요."
-
-#: ../../sessions_all/sessions_all.rst:93
-msgid ""
-"You can input variable name and value in the same line of the input "
-"fields. Then, click save button. It will be applied in the session."
-msgstr "환경 변수 명과 값을 같은 행의 입력 필드에 작성한 뒤, SAVE 버튼을 클릭해주세요. 저장된 값은 세션에 반영됩니다."
-
-#: ../../sessions_all/sessions_all.rst:97
-msgid ""
-"If you close the dialog without click saving variables or If you didn't "
-"fill out the variable and value, then those input values will not be "
-"applied into the session as env. Please remind that every variable and "
-"value that is not empty will be applied to session by clicking SAVE "
-"button."
-msgstr ""
-"환경 변수에 대해 저장하지 않은 채 다이얼로그를 닫거나, 환경 변수명 또는 환경 변수 값 중 빈 값이 있을 경우, 세션에 환경 "
-"변수로써 적용되지 않습니다. 환경 변수 명과 환경 변수 값 모두 빈 값이 아니고, SAVE 버튼을 클릭해야먄 저장되는 것을 반드시 "
-"참고해두시기 바랍니다."
-
-#: ../../sessions_all/sessions_all.rst:107
-msgid ""
-"To Add more environment variables, yon can click ``+`` button in the "
-"right side of the first row of input field. Also, you can remove the "
-"variable by clicking ``-`` button of the row that you want to get rid of."
-msgstr ""
-"더 많은 환경 변수를 추가하고 싶을 경우, 입력 필드 첫번째 행의 오른쪽에 있는  ``+`` 버튼을 "
-"클릭하면 됩니다. 또한 환경 변수를 지우고 싶을 경우, 역시 지우고자 하는 행의 ``-`` 버튼을 "
-"클릭하면 됩니다."
-
-#: ../../sessions_all/sessions_all.rst:110
-msgid ""
-"If you want to delete the whole variables and value, please click DELETE "
-"ALL button at the bottom of the dialog."
-msgstr ""
-"만약 작성된 환경 변수 명과 환경 변수 값을 모두 지우고자 할 경우, 다이얼로그 하단에 있는 DELETE ALL 버튼을 클릭해서 "
-"모두 삭제할 수 있습니다."
-
-#: ../../sessions_all/sessions_all.rst:114
+#: ../../sessions_all/sessions_all.rst:66
 msgid ""
 "If no folder is specified in \"Folders to mount\", a warning dialog may "
 "appear indicating that no storage folder is mounted."
@@ -249,7 +176,7 @@ msgstr ""
 "“Folders to mount”에 지정된 폴더가 없으면 저장 폴더가 마운트되지 않았음을 알리는 경고 대화 상자가 나타날 수 "
 "있습니다."
 
-#: ../../sessions_all/sessions_all.rst:122
+#: ../../sessions_all/sessions_all.rst:74
 msgid ""
 "You may ignore the warning, but it is recommended to mount at least one "
 "storage folder because terminating a compute session by default deletes "
@@ -266,11 +193,11 @@ msgstr ""
 "마운트하고 연산 세션을 실행하는 방법에 대한 정보는 :ref:`컴퓨팅 세션에 폴더 마운트<session-mounts>` 를 "
 "참조하십시오."
 
-#: ../../sessions_all/sessions_all.rst:130
+#: ../../sessions_all/sessions_all.rst:82
 msgid "Now a new compute session is created in the RUNNING tab."
 msgstr "Running 탭에서 새로운 연산 세션이 생성되는 것을 확인합시다."
 
-#: ../../sessions_all/sessions_all.rst:134
+#: ../../sessions_all/sessions_all.rst:86
 msgid ""
 "In the RUNNING tab, you can check the information on the currently "
 "running sessions. FINISHED tab shows the list of terminated sessions and "
@@ -282,7 +209,7 @@ msgstr ""
 "OTHERS 탭에는 오류가있는 컴퓨팅 세션이 표시됩니다. 세션별로 세션 환경, 할당 및 사용 자원량, 세션 시작 시간 등의 정보를 "
 "확인할 수 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:140
+#: ../../sessions_all/sessions_all.rst:92
 msgid ""
 "Superadmins can query all compute session information currently running "
 "(or terminated) in the cluster, and users can view only the sessions they"
@@ -291,7 +218,7 @@ msgstr ""
 "수퍼어드민의 경우 현재 클러스터에서 실행 중인 (또는 종료된) 모든 세션 정보를 확인할 수 있고, 일반 사용자의 경우에는 자신이 "
 "사용한 세션만 조회 가능합니다."
 
-#: ../../sessions_all/sessions_all.rst:145
+#: ../../sessions_all/sessions_all.rst:97
 msgid ""
 "Compute session list may not be displayed normally due to intermittent "
 "network connection problems, and etc. This can be solved by refreshing "
@@ -300,7 +227,7 @@ msgstr ""
 "간헐적인 네트워크 접속 불량 등의 문제로 세션 리스트가 정상적으로 표시되지 않는 경우가 발생할 수 있습니다. 이 때는 브라우저 "
 "페이지를 갱신해서 해결할 수 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:151
+#: ../../sessions_all/sessions_all.rst:103
 msgid ""
 "The resource statistics are displayed at the top of the screen. You can "
 "check the amount of resources currently used and the total amount of "
@@ -313,20 +240,20 @@ msgstr ""
 "상단과 하단으로 나뉩니다. 상단은 현재 스케일링 그룹의 자원 할당 상태를 나타내고 하단은 접근 가능한 총 자원의 할당 상태를 "
 "나타냅니다."
 
-#: ../../sessions_all/sessions_all.rst:158
+#: ../../sessions_all/sessions_all.rst:110
 msgid ""
 "Upper: (Resources allocated by the user in the current scaling group) / "
 "(Total resources allocatable by the user in the current scaling group)"
 msgstr "(현재 스케일링 그룹 내에서 사용자가 할당한 자원의 양) / (현재 스케일링 그룹 내에 서 사용자 할당 가능한 자원의 총합)"
 
-#: ../../sessions_all/sessions_all.rst:161
+#: ../../sessions_all/sessions_all.rst:113
 msgid ""
 "Lower: (Resources allocated by the user) / (Resources allocated by the "
 "user + Total resources allocatable by the user in the current scaling "
 "group)"
 msgstr "(사용자가 할당한 총 자원 양) / (사용자가 할당한 총 자원 양 + 현재 스케일링 그룹 내에서 사용자가 할당 가능한 자원의 총합)"
 
-#: ../../sessions_all/sessions_all.rst:165
+#: ../../sessions_all/sessions_all.rst:117
 msgid ""
 "If the GPU resource is marked as FGPU, this means that the server is "
 "serving the GPU resources in a virtualized form. Backend.AI supports GPU "
@@ -350,11 +277,11 @@ msgstr ""
 "GPU 를 뜻합니다. 이 때 1 FGPU 를 설정하여 연산 세션을 생성하면, 그 세션에서는 0.2 물리 GPU 에 해당하는 "
 "SM(streaming multiprocessor) 과 GPU 메모리를 활용할 수 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:181
+#: ../../sessions_all/sessions_all.rst:133
 msgid "Use Jupyter Notebook"
 msgstr "Jupyter Notebook 사용하기"
 
-#: ../../sessions_all/sessions_all.rst:183
+#: ../../sessions_all/sessions_all.rst:135
 msgid ""
 "Let's look at how to use and manage compute sessions that are already "
 "running. If you look at the Control panel of the session list, there are "
@@ -364,13 +291,13 @@ msgstr ""
 "이미 실행 중인 연산 세션을 사용하고 관리하는 법에 관해 살펴보겠습니다. 세션 리스트의 Control 열을 보면 몇 가지 아이콘이 "
 "있습니다. 제일 첫 아이콘을 클릭하면 다음 그림과 같이 앱 런처가 뜨면서 해당 세션이 지원하는 몇 가지 앱 서비스가 뜨게 됩니다."
 
-#: ../../sessions_all/sessions_all.rst:192
+#: ../../sessions_all/sessions_all.rst:144
 msgid ""
 "There are two check options under the app icons. Opening the app with "
 "each item checked applies the following features, respectively:"
 msgstr "앱 아이콘 아래에는 두 가지 체크 옵션이 있습니다. 각 항목을 체크하고 앱을 띄우면 다음과 같은 기능이 반영됩니다:"
 
-#: ../../sessions_all/sessions_all.rst:195
+#: ../../sessions_all/sessions_all.rst:147
 msgid ""
 "Open app to public: Open the app to the public. Basically, web services "
 "such as Terminal and Jupyter Notebook services are not accessible by "
@@ -385,7 +312,7 @@ msgstr ""
 "서비스 URL(및 포트 번호)을 아는 사람이 접근하고 사용할 수 있습니다. 물론 사용자가 서비스에 접근하려면 네트워크 경로가 "
 "있어야합니다."
 
-#: ../../sessions_all/sessions_all.rst:201
+#: ../../sessions_all/sessions_all.rst:153
 msgid ""
 "Try preferred port: Without this option checked, a port number for the "
 "web service is randomly assigned from the port pool prepared in advance "
@@ -400,15 +327,15 @@ msgstr ""
 " 풀에 존재하지 않거나 다른 서비스가 이미 포트를 사용 중일 수 있기 때문에 원하는 포트가 항상 할당된다는 보장은 없습니다. 이 "
 "경우 포트 번호는 임의로 할당됩니다."
 
-#: ../../sessions_all/sessions_all.rst:209
+#: ../../sessions_all/sessions_all.rst:161
 msgid "Depending on the system configuration, these options may not be shown."
 msgstr "시스템 설정에 따라, 이 옵션들은 보이지 않을 수도 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:211
+#: ../../sessions_all/sessions_all.rst:163
 msgid "Let's click on Jupyter Notebook."
 msgstr "Jupyter Notebook 을 클릭해봅시다."
 
-#: ../../sessions_all/sessions_all.rst:215
+#: ../../sessions_all/sessions_all.rst:167
 msgid ""
 "A new window pops up and you can see that Jupyter Notebook is running. "
 "This notebook was created inside a running compute session and can be "
@@ -423,7 +350,7 @@ msgstr ""
 "제공하는 언어 환경 및 라이브러리를 그대로 활용할 수 있어 별도의 패키지 설치 과정이 필요 없습니다. 자세한 Jupyter "
 "Notebook 사용 법은 공식 문서 등을 참고하시기 바랍니다."
 
-#: ../../sessions_all/sessions_all.rst:223
+#: ../../sessions_all/sessions_all.rst:175
 msgid ""
 "In the notebook's file explorer, the ``id_container file`` contains a "
 "private SSH key. If necessary, you can download it and use it for SSH / "
@@ -432,7 +359,7 @@ msgstr ""
 "Notebook 의 파일 탐색기에서 ``id_container`` 파일은 private SSH key 를 담고 있습니다. 필요할 "
 "경우 다운로드 하여 컨테이너로의 SSH/SFTP 접속에 이용할 수 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:227
+#: ../../sessions_all/sessions_all.rst:179
 msgid ""
 "Click the NEW button at the top right and select the Notebook for "
 "Backend.AI, then the ipynb window appears where you can enter your own "
@@ -441,7 +368,7 @@ msgstr ""
 "우측 상단의 NEW 버튼을 클릭한 후 Backend.AI 용 Notebook 을 선택하면 새로운 코드를 입력할 수 있는 ipynb "
 "창이 뜹니다."
 
-#: ../../sessions_all/sessions_all.rst:234
+#: ../../sessions_all/sessions_all.rst:186
 msgid ""
 "In this window, you can enter and execute any code you want by using the "
 "environment that session provides. The code is executed on one of the "
@@ -451,7 +378,7 @@ msgstr ""
 "이 창에서 세션 환경에 맞는 코드를 입력하고 실행해볼 수 있습니다. 코드는 Backend.AI 서버를 구성하는 노드 중 연산 세션이"
 " 실제로 생성된 노드에서 실행이 되며, 로컬 머신에는 별도 환경을 구성할 필요가 없습니다."
 
-#: ../../sessions_all/sessions_all.rst:241
+#: ../../sessions_all/sessions_all.rst:193
 msgid ""
 "When you close the window, you can find that the ``Untitled.ipynb`` file "
 "is created in the notebook file explorer. Note that the files created "
@@ -463,11 +390,11 @@ msgstr ""
 "있습니다. 여기 생성된 파일은 세션을 삭제할 경우 같이 삭제되는 것에 주의 하십시오. 생성된 파일을 세션이 사라지더라도 보존하는 "
 "방법은 폴더 섹션에서 설명합니다."
 
-#: ../../sessions_all/sessions_all.rst:250
+#: ../../sessions_all/sessions_all.rst:202
 msgid "Use web terminal"
 msgstr "웹 터미널 활용"
 
-#: ../../sessions_all/sessions_all.rst:252
+#: ../../sessions_all/sessions_all.rst:204
 msgid ""
 "Return to the Session list page. This time, let's launch the terminal. "
 "Click the terminal icon (the second button in the Control panel) to use "
@@ -485,7 +412,7 @@ msgstr ""
 "Untitled.ipynb 파일이``ls ‘’명령과 함께 나열되는 것을 볼 수 있습니다. 이는 두 앱이 동일한 컨테이너 환경에서 "
 "실행되고 있음을 보여줍니다."
 
-#: ../../sessions_all/sessions_all.rst:265
+#: ../../sessions_all/sessions_all.rst:217
 msgid ""
 "If you create a file here, you can immediately see it in the Jupyter "
 "Notebook you opened earlier as well. Conversely, changes made to files in"
@@ -496,7 +423,7 @@ msgstr ""
 "Jupyter Notebook 에서 편집한 파일의 변경 사항도 터미널에서 바로 확인할 수 있습니다. 같은 연산 세션을 사용하고 있기"
 " 때문입니다."
 
-#: ../../sessions_all/sessions_all.rst:270
+#: ../../sessions_all/sessions_all.rst:222
 msgid ""
 "In addition to this, you can use web-based services such as TensorBoard, "
 "Jupyter Lab, etc., depending on the type of environments provided by the "
@@ -505,21 +432,21 @@ msgstr ""
 "이 외에도 연산 세션이 제공하는 서비스의 종류에 따라 TensorBoard, Jupyter Lab 등과 같은 웹 기반 서비스를 "
 "이용할 수 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:275
+#: ../../sessions_all/sessions_all.rst:227
 msgid "Query compute session log"
 msgstr "연산 세션 로그 조회"
 
-#: ../../sessions_all/sessions_all.rst:277
+#: ../../sessions_all/sessions_all.rst:229
 msgid ""
 "You can view the log of the compute session by clicking the last icon in "
 "the Control panel of the running compute session."
 msgstr "돌아가고 있는 연산 세션의 Control 열의 마지막 아이콘을 클릭하면 연산 세션의 로그를 조회할 수 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:286
+#: ../../sessions_all/sessions_all.rst:238
 msgid "Delete a compute session"
 msgstr "연산 세션 삭제하기"
 
-#: ../../sessions_all/sessions_all.rst:288
+#: ../../sessions_all/sessions_all.rst:240
 msgid ""
 "To terminate a specific session, simply click on the red power icon and "
 "click OKAY button in the dialog. Since the data in the folder inside the "
@@ -530,11 +457,78 @@ msgstr ""
 "특정 세션을 삭제하기 위해서는 빨간색 휴지통 아이콘을 누르면 됩니다. 연산 세션 내부 폴더의 데이터는 연산 세션이 종료되는 순간 "
 "같이 삭제되므로, 계속 유지해야 하는 데이터라면 마운트 한 폴더에 옮기거나 처음부터 폴더에 업로드하는 것을 권합니다."
 
-#: ../../sessions_all/sessions_all.rst:299
+#: ../../sessions_all/sessions_all.rst:251
+msgid "How to add environment variable before creating a session"
+msgstr "세션 생성하기 전에 환경 변수를 추가하는 방법"
+
+#: ../../sessions_all/sessions_all.rst:253
+msgid ""
+"To give more convenient workspace for users, Backend.AI supports "
+"environment variable setting in session launching. In this feature, you "
+"can add any envs such as ``PATH`` by filling out variable name and value "
+"in environment configuration dialog."
+msgstr ""
+"Backend.AI에서는 사용자에게 더 편리한 환경을 제공하기 위해, 세션 시작 화면에서 세션에 추가될 환경 변수 추가 기능을 "
+"지원합니다. 이 기능에서 여러분은 ``PATH`` 를 비롯한 모든 환경 변수를 환경변수 설정 다이얼로그에서 환경 변수명과 환경 변수"
+" 값을 입력해서 추가할 수 있습니다."
+
+#: ../../sessions_all/sessions_all.rst:257
+msgid "To add environment variable, simply click CONFIG button."
+msgstr "환경 변수를 추가하려면, CONFIG 버튼을 클릭해주세요."
+
+#: ../../sessions_all/sessions_all.rst:264
+msgid "and then, environment configuration dialog appears."
+msgstr "그러면 환경변수 설정 다이얼로그가 띄워집니다."
+
+#: ../../sessions_all/sessions_all.rst:266
+msgid ""
+"In this dialog, you can add,update and delete written env variables. To "
+"see more information about how it works, please click 'i' button at the "
+"header of the dialog."
+msgstr ""
+"이 다이얼로그에서 여러분은 환경 변수를 추가하거나, 작성한 환경 변수를 갱신하거나, 삭제할 수 있습니다. 어떤 방식으로 동작하는 지"
+" 더 자세히 알고 싶으실 경우 다이얼로그 헤더 부분에 있는 'i' 버튼을 클릭해주세요."
+
+#: ../../sessions_all/sessions_all.rst:273
+msgid ""
+"You can input variable name and value in the same line of the input "
+"fields. Then, click save button. It will be applied in the session."
+msgstr "환경 변수 명과 값을 같은 행의 입력 필드에 작성한 뒤, SAVE 버튼을 클릭해주세요. 저장된 값은 세션에 반영됩니다."
+
+#: ../../sessions_all/sessions_all.rst:277
+msgid ""
+"If you close the dialog without click saving variables or If you didn't "
+"fill out the variable and value, then those input values will not be "
+"applied into the session as env. Please remind that every variable and "
+"value that is not empty will be applied to session by clicking SAVE "
+"button."
+msgstr ""
+"환경 변수에 대해 저장하지 않은 채 다이얼로그를 닫거나, 환경 변수명 또는 환경 변수 값 중 빈 값이 있을 경우, 세션에 환경 "
+"변수로써 적용되지 않습니다. 환경 변수 명과 환경 변수 값 모두 빈 값이 아니고, SAVE 버튼을 클릭해야먄 저장되는 것을 반드시 "
+"참고해두시기 바랍니다."
+
+#: ../../sessions_all/sessions_all.rst:287
+msgid ""
+"To Add more environment variables, yon can click ``+`` button in the "
+"right side of the first row of input field. Also, you can remove the "
+"variable by clicking ``-`` button of the row that you want to get rid of."
+msgstr ""
+"더 많은 환경 변수를 추가하고 싶을 경우, 입력 필드 첫번째 행의 오른쪽에 있는  ``+`` 버튼을 클릭하면 됩니다. 또한 환경 "
+"변수를 지우고 싶을 경우, 역시 지우고자 하는 행의 ``-`` 버튼을 클릭하면 됩니다."
+
+#: ../../sessions_all/sessions_all.rst:290
+msgid ""
+"If you want to delete the whole variables and value, please click DELETE "
+"ALL button at the bottom of the dialog."
+msgstr ""
+"만약 작성된 환경 변수 명과 환경 변수 값을 모두 지우고자 할 경우, 다이얼로그 하단에 있는 DELETE ALL 버튼을 클릭해서 "
+"모두 삭제할 수 있습니다."
+
+#: ../../sessions_all/sessions_all.rst:294
 msgid "Advanced web terminal usage"
 msgstr "웹 터미널 고급 사용법"
 
-#: ../../sessions_all/sessions_all.rst:301
+#: ../../sessions_all/sessions_all.rst:296
 msgid ""
 "The web-based terminal internally embeds a utility called `tmux "
 "<https://github.com/tmux/tmux/wiki>`_. tmux is a terminal multiplexer "
@@ -548,15 +542,15 @@ msgstr ""
 "terminal multiplexer 로, 쉘이 닫히더라도 작업하던 내용을 보존할 수 있는 등 다양한 장점을 가지고 있습니다. 보다"
 " 강력한 터미널 기능을 활용하고 싶다면 tmux 공식 문서 및 기타 인터넷 상의 다양한 사용 예제를 참고하십시오."
 
-#: ../../sessions_all/sessions_all.rst:308
+#: ../../sessions_all/sessions_all.rst:303
 msgid "Here we are introducing some simple but useful features."
 msgstr "여기서는 몇 가지 간단하지만 유용한 기능을 소개하겠습니다."
 
-#: ../../sessions_all/sessions_all.rst:311
+#: ../../sessions_all/sessions_all.rst:306
 msgid "Copy terminal contents"
 msgstr "터미널 내용 복사하기"
 
-#: ../../sessions_all/sessions_all.rst:313
+#: ../../sessions_all/sessions_all.rst:308
 msgid ""
 "tmux offers a number of useful features, but it's a bit confusing for "
 "first-time users. In particular, tmux has its own clipboard buffer, so "
@@ -573,7 +567,7 @@ msgstr ""
 "쉘을 사용하고 있는 상태에서는 마우스 드래그를 통해 터미널 내용을 복사한 후 사용자 컴퓨터의 다른 프로그램에 붙여넣을 수가 "
 "없습니다. 소위 말하는 ``Ctrl-C`` / ``Ctrl-V`` 가 작동하지 않는 것입니다."
 
-#: ../../sessions_all/sessions_all.rst:321
+#: ../../sessions_all/sessions_all.rst:316
 msgid ""
 "If you need to copy and paste the terminal contents to your system's "
 "clipboard, you can temporarily turn off tmux's mouse support. First, "
@@ -590,7 +584,7 @@ msgstr ""
 " 그 후 터미널에서 마우스로 원하는 텍스트를 드래그 하고 ``Ctrl-C`` 또는 ``Cmd-C`` 키를 누르면 사용자 컴퓨터의 "
 "클립보드에 해당 내용이 복사 됩니다."
 
-#: ../../sessions_all/sessions_all.rst:329
+#: ../../sessions_all/sessions_all.rst:324
 msgid ""
 "With mouse support turned off, you cannot scroll through the mouse wheel "
 "to see the contents of the previous page from the terminal. In this case,"
@@ -602,7 +596,7 @@ msgstr ""
 "켜면 됩니다. ``Ctrl-B`` 를 누른 후 이번에는 ``:set -g mouse on`` 을 입력해봅시다. 이제 마우스 휠을 "
 "스크롤하여 이전 페이지의 내용을 볼 수 있게 되었습니다."
 
-#: ../../sessions_all/sessions_all.rst:334
+#: ../../sessions_all/sessions_all.rst:329
 msgid ""
 "If you remember ``:set -g mouse off`` or ``:set -g mouse on`` after "
 "``Ctrl-B``, you can use the web terminal more conveniently."
@@ -610,7 +604,7 @@ msgstr ""
 "이와 같이 ``Ctrl-B`` 후 ``:set -g mouse off`` 또는 ``:set -g mouse on`` 을 기억하면 "
 "조금 더 편리하게 웹 터미널을 활용할 수 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:338
+#: ../../sessions_all/sessions_all.rst:333
 msgid ""
 "``Ctrl-B`` is tmux's default control mode key. If you set another control"
 " key by modifying ``.tmux.conf`` in user home directory, you should press"
@@ -619,11 +613,11 @@ msgstr ""
 "``Ctrl-B`` 키는 tmux 의 기본 제어 모드 키입니다. 만약 홈 디렉토리의 ``.tmux.conf`` 를 수정하여 다른 "
 "제어 키를 설정한 경우에는, ``Ctrl-B`` 대신 설정된 키 조합을 눌러야 합니다."
 
-#: ../../sessions_all/sessions_all.rst:343
+#: ../../sessions_all/sessions_all.rst:338
 msgid "Check the terminal history using keyboard"
 msgstr "키보드를 이용해 터미널 이전 내용 확인하기"
 
-#: ../../sessions_all/sessions_all.rst:345
+#: ../../sessions_all/sessions_all.rst:340
 msgid ""
 "There is also a way to copy the terminal contents and check the previous "
 "contents of the terminal simultaneously. It is to check the previous "
@@ -639,11 +633,11 @@ msgstr ""
 " 봅시다. 키보드 만으로 터미널의 이전 내용을 탐색할 수 있다는 것을 확인할 수 있습니다. 탐색 모드에서 빠져 나오려면 ``q`` "
 "키를 눌러주면 됩니다. 이 방법을 이용하면 마우스 지원을 끈 상태에서도 터미널 이전 내용 확인이 가능합니다."
 
-#: ../../sessions_all/sessions_all.rst:354
+#: ../../sessions_all/sessions_all.rst:349
 msgid "Spawn multiple shells"
 msgstr "여러 개의 쉘 띄우기"
 
-#: ../../sessions_all/sessions_all.rst:356
+#: ../../sessions_all/sessions_all.rst:351
 msgid ""
 "The main advantage of tmux is that you can launch and use multiple shells"
 " in one terminal window. Since seeing is believing, let's press the "
@@ -663,7 +657,7 @@ msgstr ""
 "처음 보던 쉘 환경이고, ``1:`` 로시작하는 쉘은 방금 새로 생성한 쉘입니다. 위/아래 방향 키를 이용해서 쉘 사이를 이동할 수"
 " 있습니다. ``0:`` 번 쉘에 커서를 가져다 두고 엔터 키를 눌러 선택 해보겠습니다."
 
-#: ../../sessions_all/sessions_all.rst:370
+#: ../../sessions_all/sessions_all.rst:365
 msgid ""
 "You can see the first shell environment appears. In this way, you can use"
 " multiple shell environments within a web terminal. To exit or terminate "
@@ -673,23 +667,23 @@ msgstr ""
 "첫 번째 쉘 환경이 나타나는 것을 볼 수 있습니다. 이러한 방식으로 웹 터미널 내에서 여러 쉘 환경을 사용할 수 있습니다. 현재 "
 "쉘을 종료하려면 ``exit`` 명령을 입력하거나 ``Ctrl-B x`` 키를 누른 다음 ``y`` 를 입력하십시오."
 
-#: ../../sessions_all/sessions_all.rst:375
+#: ../../sessions_all/sessions_all.rst:370
 msgid "In summary:"
 msgstr "정리하면 다음과 같습니다:"
 
-#: ../../sessions_all/sessions_all.rst:377
+#: ../../sessions_all/sessions_all.rst:372
 msgid "``Ctrl-B c``: create a new tmux shell"
 msgstr "``Ctrl-B c``: 새로운 tmux 쉘 생성"
 
-#: ../../sessions_all/sessions_all.rst:378
+#: ../../sessions_all/sessions_all.rst:373
 msgid "``Ctrl-B w``: query current tmux shells and move around among them"
 msgstr "``Ctrl-B w``: tmux 쉘 조회 및 이동/선택"
 
-#: ../../sessions_all/sessions_all.rst:379
+#: ../../sessions_all/sessions_all.rst:374
 msgid "``exit`` or ``Ctrl-B x``: terminate the current shell"
 msgstr "``exit`` 또는 ``Ctrl-B x``: 현재 tmux 쉘 종료"
 
-#: ../../sessions_all/sessions_all.rst:381
+#: ../../sessions_all/sessions_all.rst:376
 msgid ""
 "Combining the above commands allows you to perform various tasks "
 "simultaneously on multiple shells."
@@ -826,8 +820,8 @@ msgstr "위 명령을 조합하여 여러 개의 쉘에서 동시에 다양한 �
 #~ "only one resource group, it cannot "
 #~ "be changed."
 #~ msgstr ""
-#~ "Resource Group: 연산 세션을 생성할 리소스 그룹을"
-#~ " 지정합니다. 리소스 그룹이 여러 개 있을 경우, "
+#~ "Resource Group: 연산 세션을 생성할 자원 그룹을"
+#~ " 지정합니다. 자원 그룹이 여러 개 있을 경우, "
 #~ "원하는 값을 선택할 수 있으나, 하나의 리소스 "
 #~ "그룹만 있는 경우에는 변경할 수 업습니다."
 
@@ -1019,4 +1013,7 @@ msgstr "위 명령을 조합하여 여러 개의 쉘에서 동시에 다양한 �
 #~ "row that you want to get rid "
 #~ "of."
 #~ msgstr ""
+
+#~ msgid "Add Environment variable"
+#~ msgstr "환경 변수 추가하기"
 
