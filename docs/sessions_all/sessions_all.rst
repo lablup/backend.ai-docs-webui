@@ -177,7 +177,9 @@ Use Jupyter Notebook
 
 Let's look at how to use and manage compute sessions that are already running.
 If you look at the Control panel of the session list, there are several icons.
-When you click the first icon, the app launcher pops up and shows the available app services as below.
+When you click the first icon, the app launcher pops up and shows the available
+app services as below. The app launcher dialog also opens automatically just
+after the compute session is created.
 
 .. image:: app_launch_dialog.png
    :width: 400
@@ -245,17 +247,15 @@ Use web terminal
 ----------------
 
 Return to the Session list page. This time, let's launch the terminal. Click the
-terminal icon (the second button in the Control panel) to use the container's ttyd daemon. A terminal
-will appear in a new window and you can run shell commands to access
-the computational session as shown in the following figure. If you are
-familiar with using commands, you can easily run various Linux commands. You
-may notice that the Untitled.ipynb file automatically generated in Jupyter Notebook
-is listed with the ``ls`` command. This shows that both apps are running
-in the same container environment.
+terminal icon (the second button in the Control panel) to use the container's
+ttyd app. A terminal will appear in a new window and you can run shell commands
+to access the computational session as shown in the following figure. If you are
+familiar with using commands, you can easily run various Linux commands. You may
+notice that the ``Untitled.ipynb`` file automatically generated in Jupyter Notebook
+is listed with the ``ls`` command. This shows that both apps are running in the
+same container environment.
 
 .. image:: session_terminal.png
-   :width: 500
-   :align: center
 
 If you create a file here, you can immediately see it in the Jupyter Notebook
 you opened earlier as well. Conversely, changes made to files in Jupyter
@@ -273,8 +273,6 @@ You can view the log of the compute session by clicking the last icon in the
 Control panel of the running compute session.
 
 .. image:: session_log.png
-   :width: 500
-   :align: center
 
 
 Delete a compute session
@@ -282,8 +280,9 @@ Delete a compute session
 
 To terminate a specific session, simply click on the red power icon and click
 OKAY button in the dialog. Since the data in the folder inside the compute
-session is deleted as soon as the compute session ends, it is recommended to move the data
-to the mounted folder or upload it to the mounted folder from the beginning if you want to keep it.
+session is deleted as soon as the compute session ends, it is recommended to
+move the data to the mounted folder or upload it to the mounted folder from the
+beginning if you want to keep it.
 
 .. image:: session_destroy_dialog.png
    :width: 400
