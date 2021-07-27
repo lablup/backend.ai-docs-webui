@@ -14,11 +14,12 @@ created within the mounted folder. Backend.AI provides a function to mount
 storage folders when creating a compute session.
 
 Let's go to the Sessions page and click the START button to create a new compute
-session. In the session creation dialog, click Folders to mount to see a list of
-storage folders that a user can mount. By clicking
-the folder you want to mount, you can mount it. You can also mount multiple folders simultaneously
-by clicking multiple items. In this example, we will mount two folders,
-``user1-ml-test`` and ``user2-vfolder``, and then create a compute session.
+session. In the Folders to mount panel in the session creation dialog, you can
+see a list of storage folders that can be mount. By clicking the folder you
+want to mount, you can mount it. You can also mount multiple folders
+simultaneously by clicking multiple items. In this example, we will mount two
+folders, ``user1-ml-test`` and ``user2-vfolder``, and then create a compute
+session.
 
 .. image:: create_session_with_folders.png
    :width: 350
@@ -27,9 +28,18 @@ by clicking multiple items. In this example, we will mount two folders,
 
 Now, open the terminal by clicking the terminal icon in the created session. If
 you run ``ls`` command in the terminal, you can see that the ``user1-ml-test``
-and ``user2-vfolder`` folders are mounted under the home directory. Let's create
-a ``test_file`` under ``user2-vfolder`` to see if the file can be preserved
-after the compute session is terminated. The contents of this file will be "file inside user2-vfolder".
+and ``user2-vfolder`` folders are mounted under the home directory.
+
+.. note::
+   The selected folder will be mounted with its name under ``/home/work/``
+   inside the compute session. For example, if a folder's name is ``test``, it
+   is mounted on ``/home/work/test``. If you want to change the name of the
+   folder under ``/home/work/``, fill in Alias. In this case, it is mounted with
+   the name written in Alias.
+
+Let's create a ``test_file`` under ``user2-vfolder`` to see if the file can be
+preserved after the compute session is terminated. The contents of this file
+will be "file inside user2-vfolder".
 
 .. image:: mounted_folders_in_terminal.png
    :alt: Mounted folders in terminal
@@ -66,16 +76,15 @@ folder<automount-folder>`.
 **Install Python packages via pip**
 
 Creating a folder named ``.local`` allows a user to install Python user packages
-in that folder. This is because installing a package with the ``–-user`` option
-appended to ``pip`` installs the package in the ``.local`` folder under the
-user's home folder (note that automount folder is mounted under user's home
-folder). So, if you want to install and keep the Python package ``tqdm``
-regardless of the type of computing environment, you can issue the following
-command in your terminal:
+in that folder. This is because ``pip`` by default installs the packages in the
+``.local`` folder under the user's home folder (note that automount folder is
+mounted under user's home folder). So, if you want to install and keep the
+Python package ``tqdm`` regardless of the type of computing environment, you can
+issue the following command in your terminal:
 
 .. code-block:: shell
 
-   pip install --user tqdm
+   pip install tqdm
 
 After that, when a new compute session is created, the ``.local`` folder where
 the ``tqdm`` package is installed is automatically mounted, so you can use the

@@ -209,6 +209,7 @@ session.
    FileBrowser compute session.
 
    .. image:: app_dialog_with_FileBrowser.png
+      :width: 400
       :align: center
 
    |
