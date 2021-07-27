@@ -20,8 +20,8 @@
 project = 'Backend.AI Web-UI User Guide'
 copyright = '2020, Lablup Inc.'
 author = 'Lablup Inc.'
-version = '20.09'
-release = '20.09'
+version = '21.03'
+release = '21.03'
 
 # -- General configuration ---------------------------------------------------
 

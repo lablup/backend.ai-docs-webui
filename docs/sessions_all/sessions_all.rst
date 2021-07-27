@@ -15,69 +15,112 @@ Sessions page lets you start new sessions or use and manage existing running ses
 
 .. image:: sessions_page.png
 
-Click the START button to start a new compute session. The following setup
-dialog will appear. You can specify the language environment (Environments and
-Version) and the amount of resources you want to allocate. Set the CPU and memory as shown in
-the following figure and click the LAUNCH button.
+Click the START button to start a new compute session. The following
+wizard-style dialog will appear.
 
-.. image:: session_launch_dialog.png
+.. image:: session_launch_dialog_1.png
    :width: 350
    :align: center
 
-If you need more detailed settings, refer to the meaning of each items.
+First, you need to choose the language Environment and Version you want to
+create.  The rest items are optional. For a detailed description of each item,
+please refer to the following.
 
-* Environments: Specify the default environment for compute sessions such as
-  TensorFlow, PyTorch, C++, etc. When you select a TensorFlow environment,
-  your compute session will automatically include the TensorFlow library.
-  If you select another environment, the corresponding environment is installed
-  by default.
-* Version: Selects the version of the environment. For TensorFlow
-  environment, for example, you can select different versions such as 1.15, 2.3, etc.
-* Resource Group: Specifies the resource group in which to create the compute
-  session. If there are multiple resource groups, you can select the desired
-  one, but if there is only one resource group, it cannot be changed.
-* Session name (optional): Specifies the name of the compute session to be
-  created. If specified, this name appears in Session Info, making it easy to
-  distinguish it from other compute sessions. If not specified, a
-  randomly-generated name is assigned. You can set the session name up to 4 to
-  64 characters only with alphabetical characters or numbers and no spaces
-  are allowed.
-* Folder to mount: Specifies the data folders to be mounted in the compute
-  session. When a compute session is deleted, all data is deleted
-  altogether by default, but the data stored in the folder mounted here is not deleted.
-* Set Environment Variable: Provides customized environment variable before creating a session.
-* Resource allocation: This is a template that has predefined resources to be
-  allocated to the compute session. You can save and use frequently used
-  resource settings in advance. Resource templates can be managed in a dedicated
-  admin Control-Panel.
+* Environments: You can choose the base environment for compute sessions such as
+  TensorFlow, PyTorch, C++, etc. When you select TensorFlow, your compute
+  session will automatically include the TensorFlow library. If you choose
+  another environment, the corresponding packages will be installed by default.
+* Version: Selects the version of the environment. For example, you can select
+  different versions, such as 1.15, 2.3, etc., for the TensorFlow environment.
+* Session name: You can specify the name of the compute session to be
+  created. If set, this name appears in Session Info, so it is easy to
+  distinguish among multiple computation sessions. If not specified, a random
+  word is assigned automatically. Session names only accept alphanumeric
+  characters between 4 and 64 without spaces.
+* Set Environment Variable: Provides an interface for users to set environment
+  variables in a compute session. See the section
+  :ref:`How to add environment variables before session creation<set-environment-variables>`
+  on how to use.
+
+Click the right arrow button at the bottom to advance to the next page. You can
+also launch a compute session directly by clicking the CONFIRM AND LAUNCH
+button. In this case, the settings on the other pages will all use the default
+values.
+
+.. image:: session_launch_dialog_2.png
+   :width: 350
+   :align: center
+
+Here, you can specify the data folders to mount in the compute session. When a
+compute session is destroyed, all data is deleted altogether by default, but the
+data stored in the mounted folders will survive. Data in those folders can also
+be reused by mounting it when creating another compute session. For the
+information on how to mount a folder and run a compute session, see
+:ref:`Mounting Folders to a Compute Session<session-mounts>`. Here, we will pass
+by without mounting any folder. Click the right arrow button.
+
+.. image:: session_launch_dialog_3.png
+   :width: 350
+   :align: center
+
+This page allows you to set the resources to be allocated for the new compute
+session.
+
+* Resource Group: Specifies the resource group in which to create a compute
+  session. A resource group is a unit that groups host servers that each user
+  can access. Usually, servers in a resource group would have the same type of
+  GPU resources. Administrators can classify servers by any criteria, group them
+  into one or more resource groups, and configure which resource groups a user
+  can use. Users can launch a compute session only on servers in resource groups
+  allowed by the administrator. If you are allowed multiple resource groups, you
+  can select any group you want, but you cannot change it if you have only one.
+* Resource allocation: These templates have pre-defined resource sets, such as
+  CPU, memory, and GPU, to be allocated to a compute session. Administrators can
+  define frequently used resource settings in advance.
+
+If you want to allocate every resource by yourself, click Custom allocation.
+The following advanced resource panel opens, and you can set each resource as
+you wish within the allowed resource limits.
+
+.. image:: session_launch_dialog_3-custom-alloc.png
+   :width: 350
+   :align: center
+
+The meaning of each item is as follows, and you can check it by clicking the
+Information (I) button on the right as well.
+
 * CPU: The number of CPU cores to allocate to the compute session. The maximum
   value depends on the resource policy applied to the user.
 * RAM: The amount of memory (GB) to allocate to the compute session. The
   maximum value depends on the resource policy applied to the user.
-* Shared Memory: The amount of shared memory (GB) to allocate to the
-  compute session. It can be set up to 2 GB by default (can be configured by
-  admins)and cannot be greater than the amount specified in RAM.
+* Shared Memory: The amount of shared memory in GB to allocate for the compute
+  session. Shared memory will use some part of the memory set in RAM. Therefore,
+  it cannot be greater than the amount specified in RAM.
 * GPU: The unit of GPU to allocate to the compute session. The maximum value
   depends on the resource policy applied to the user.
 * Sessions: The number of compute sessions to be created with the specified
-  settings. You can specify this value when you need to create the same computational
-  sessions at once.
+  settings. You can specify this value when you need to create the same
+  compute sessions at once.
 
-If no folder is specified in "Folders to mount", a warning dialog may
-appear indicating that no storage folder is mounted.
+If you are done with the resource setting, click the right arrow button to
+proceed to the next page.
+
+.. image:: session_launch_dialog_4.png
+   :width: 350
+   :align: center
+
+Now, we have reached the last page. You can view information such as allocated
+resources, mount information, environment variables set on the previous pages,
+etc. After confirming the settings, click the LAUNCH button. If there is a
+setting you want to change, you can return to the previous page by clicking the
+left arrow button.
 
 .. image:: no_vfolder_notification_dialog.png
    :width: 350
    :align: center
-   :alt: Notification dialog when no storage folder is mounted to the session
 
-You may ignore the warning, but it is recommended to mount
-at least one storage folder because terminating a compute session by
-default deletes all the data inside the session. If you specify a folder to mount
-and save your data in that folder, you can keep the data even if the compute
-session is terminated. Data preserved in the storage folder can also be reused
-by re-mounting it when creating another compute session. For the information on how
-to mount a folder and run a compute session, see :ref:`Mounting Folders to a Compute Session<session-mounts>`.
+A warning dialog appears, stating that there are no mounted folders. Ignore the
+warning for now and click the LAUNCH button to proceed.
 
 Now a new compute session is created in the RUNNING tab.
 
@@ -134,7 +177,9 @@ Use Jupyter Notebook
 
 Let's look at how to use and manage compute sessions that are already running.
 If you look at the Control panel of the session list, there are several icons.
-When you click the first icon, the app launcher pops up and shows the available app services as below.
+When you click the first icon, the app launcher pops up and shows the available
+app services as below. The app launcher dialog also opens automatically just
+after the compute session is created.
 
 .. image:: app_launch_dialog.png
    :width: 400
@@ -202,17 +247,15 @@ Use web terminal
 ----------------
 
 Return to the Session list page. This time, let's launch the terminal. Click the
-terminal icon (the second button in the Control panel) to use the container's ttyd daemon. A terminal
-will appear in a new window and you can run shell commands to access
-the computational session as shown in the following figure. If you are
-familiar with using commands, you can easily run various Linux commands. You
-may notice that the Untitled.ipynb file automatically generated in Jupyter Notebook
-is listed with the ``ls`` command. This shows that both apps are running
-in the same container environment.
+terminal icon (the second button in the Control panel) to use the container's
+ttyd app. A terminal will appear in a new window and you can run shell commands
+to access the computational session as shown in the following figure. If you are
+familiar with using commands, you can easily run various Linux commands. You may
+notice that the ``Untitled.ipynb`` file automatically generated in Jupyter Notebook
+is listed with the ``ls`` command. This shows that both apps are running in the
+same container environment.
 
 .. image:: session_terminal.png
-   :width: 500
-   :align: center
 
 If you create a file here, you can immediately see it in the Jupyter Notebook
 you opened earlier as well. Conversely, changes made to files in Jupyter
@@ -230,8 +273,6 @@ You can view the log of the compute session by clicking the last icon in the
 Control panel of the running compute session.
 
 .. image:: session_log.png
-   :width: 500
-   :align: center
 
 
 Delete a compute session
@@ -239,13 +280,16 @@ Delete a compute session
 
 To terminate a specific session, simply click on the red power icon and click
 OKAY button in the dialog. Since the data in the folder inside the compute
-session is deleted as soon as the compute session ends, it is recommended to move the data
-to the mounted folder or upload it to the mounted folder from the beginning if you want to keep it.
+session is deleted as soon as the compute session ends, it is recommended to
+move the data to the mounted folder or upload it to the mounted folder from the
+beginning if you want to keep it.
 
 .. image:: session_destroy_dialog.png
    :width: 400
    :align: center
 
+
+.. _set-environment-variables:
 
 How to add environment variable before creating a session
 ---------------------------------------------------------
