@@ -50,8 +50,8 @@ compute session and you are welcomed by the container's shell environment.
    $ ssh -o StrictHostKeyChecking=no \
    >     -o UserKnownHostsFile=/dev/null \
    >     -i ~/.ssh/id_container \
-   >     work@localhost -p 10000
-   Warning: Permanently added '[127.0.0.1]:10000' (RSA) to the list of known hosts.
+   >     work@localhost -p 52468
+   Warning: Permanently added '[127.0.0.1]:52468' (RSA) to the list of known hosts.
    f310e8dbce83:~$
 
 Connecting by SFTP would almost be the same. After running the SFTP client and
