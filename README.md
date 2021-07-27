@@ -53,7 +53,7 @@ Now, `.po` files are generated in `locale/ko/LC_MESSAGES/`. Translate messages
 with them. For eaiser `.po` translation, you may use GUI apps like
 [POEDIT](https://poedit.net/).
 
-Note that Korean a character should not be followed by two backticks(\``)
+Note that a Korean character should not be followed by two backticks(\``)
 **WITHOUT A SPACE**, since that will raise compilation errors.
 
 After translation, run following to build translated html document. To build a
