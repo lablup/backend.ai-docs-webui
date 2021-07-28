@@ -37,13 +37,13 @@ Key Concepts
   their computing sessions, domain admins have the authority to perform
   tasks within a domain, and superadmins perform almost all tasks throughout the
   system. A user belongs to one domain and can belong to
-  multiple groups within a domain.
+  multiple projects within a domain.
 - Compute session, container: An isolated virtual environment in which your
   code runs. It looks like a real Linux server with full user rights,
   and you can't see other user's session even if it's running on the same
   server as your session. Backend.AI implements this virtual environment through
   a technology called containers. You can only create compute sessions within
-  the domain and groups to which you belong.
+  the domain and projects to which you belong.
 - Domain: This is the top layer for authority and resource control supported by
   Backend.AI. For companies or organizations, you can view domains as an
   affiliate and set up per-domain (or per-affiliate) permissions and resource
@@ -53,14 +53,14 @@ Key Concepts
   sessions. For example, if you set the total amount of resources available in a
   domain, the resources of all containers created by users in the domain cannot
   be greater than the amount set.
-- Groups: A hierarchy belonging to a domain. Multiple groups can exist in one
-  domain. You can think of a group as a project unit. A user can belong to
-  multiple groups (or projects) at the same time within a domain. Compute
-  sessions must belong to one group, and users can only create sessions within
-  their own groups. Domain admins can set policies or manage sessions for
-  groups within the domain. For example, if you set the total amount of
-  resources available within a group, the resources in all containers created by
-  users in the group cannot be greater than the amount set.
+- Projects: A hierarchy belonging to a domain. Multiple projects can exist in one
+  domain. You can think of a project as a project working unit. A user can belong to
+  multiple projects at the same time within a domain. Compute
+  sessions must belong to one project, and users can only create sessions within
+  their own projects. Domain admins can set policies or manage sessions for
+  projects within the domain. For example, if you set the total amount of
+  resources available within a project, the resources in all containers created by
+  users in the project cannot be greater than the amount set.
 - Image: Each container has a pre-installed language-specific runtime and
   various computational frameworks. The state of such snapshots before they are
   executed is called an image. You can choose to run an image provided by the
@@ -113,7 +113,7 @@ Backend.AI feature details
 +                      +-------------------------------------------------------+
 |                      | Per-user (keypair) resource policy                    |
 +                      +-------------------------------------------------------+
-|                      | (Enterprise) Per-group resource policy                |
+|                      | (Enterprise) Per-project resource policy                |
 +                      +-------------------------------------------------------+
 |                      | Availability-slot based scheduling                    |
 +----------------------+-------------------------------------------------------+
@@ -122,7 +122,7 @@ Backend.AI feature details
 |                      | (Enterprise) Access control of users to               |
 |                      | resource group                                        |
 +                      +-------------------------------------------------------+
-|                      | (Enterprise) Access control of group to               |
+|                      | (Enterprise) Access control of project to               |
 |                      | resource group                                        |
 +----------------------+-------------------------------------------------------+
 | Security             | Sandboxing via hypervisor/container                   |
@@ -141,7 +141,7 @@ Backend.AI feature details
 |                      | (Enterprise) Dedicated flash-storage integration:     |
 |                      | PureStorage FlashBlade                                |
 +                      +-------------------------------------------------------+
-|                      | Access control to data by user/group                  |
+|                      | Access control to data by user/project
 +----------------------+-------------------------------------------------------+
 | Developer support    | Universal programming languages (Python, C/C++, etc)  |
 +                      +-------------------------------------------------------+

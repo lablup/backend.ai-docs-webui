@@ -13,7 +13,7 @@ Topbar
    :alt: Topbar usermenu
 
 In the middle of the top bar is a drop-down menu to select the user's current
-project (group). If a user belongs to multiple projects, the user can change it from
+project. If a user belongs to multiple projects, the user can change it from
 here. Each project may have different resource policies, therefore changing the project
 also changes the available resource policies. If there are not many users, there
 may be only one default project.

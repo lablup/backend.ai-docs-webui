@@ -82,7 +82,7 @@ msgid ""
 "their privileges. While ordinary users can only perform tasks related to their "
 "computing sessions, domain admins have the authority to perform tasks within a "
 "domain, and superadmins perform almost all tasks throughout the system. A user "
-"belongs to one domain and can belong to multiple groups within a domain."
+"belongs to one domain and can belong to multiple projects within a domain."
 msgstr ""
 "사용자: 사용자는 Backend.AI에 접속하여 작업을 수행하는 주체입니다. 사용자는 가"
 "지는 권한에 따라 일반 사용자, 도메인 어드민(domain admin), 수퍼 어드민"
@@ -90,7 +90,7 @@ msgstr ""
 "수행할 수 있는 데 반해, 도메인 어드민은 한 도메인 내에 속하는 작업을 수행할 수 "
 "있는 권한을 가지고 있으며, 수퍼 어드민은 시스템 전체에 걸쳐 거의 대부분의 작업"
 "을 수행할 수 있습니다. 사용자는 하나의 도메인에 속하게 되며, 도메인 내의 여러 "
-"그룹에 동시 속할 수 있습니다."
+"프로젝트에 동시 속할 수 있습니다."
 
 #: ../../overview/overview.rst:41
 msgid ""
@@ -99,13 +99,13 @@ msgid ""
 "see other user's session even if it's running on the same server as your "
 "session. Backend.AI implements this virtual environment through a technology "
 "called containers. You can only create compute sessions within the domain and "
-"groups to which you belong."
+"projects to which you belong."
 msgstr ""
 "연산 세션, 컨테이너: 자신의 연산 코드가 실행되는 격리된 가상 환경입니다. 자신"
 "이 온전한 사용자 권한을 가진 실제 리눅스 서버처럼 보이며, 물리적으로는 다른 사"
 "용자의 코드와 같은 서버에서 실행되더라도 다른 사용자를 서로 볼 수 없습니다. "
 "Backend.AI는 이러한 가상 환경을 컨테이너(container)라는 기술을 통해 구현합니"
-"다. 사용자는 자신이 속한 도메인과 그룹 내에서만 연산 세션을 생성할 수 있습니다."
+"다. 사용자는 자신이 속한 도메인과 프로젝트 내에서만 연산 세션을 생성할 수 있습니다."
 
 #: ../../overview/overview.rst:47
 msgid ""
@@ -130,22 +130,22 @@ msgstr ""
 
 #: ../../overview/overview.rst:56
 msgid ""
-"Groups: A hierarchy belonging to a domain. Multiple groups can exist in one "
-"domain. You can think of a group as a project unit. A user can belong to "
-"multiple groups (or projects) at the same time within a domain. Compute "
-"sessions must belong to one group, and users can only create sessions within "
-"their own groups. Domain admins can set policies or manage sessions for groups "
+"Projects: A hierarchy belonging to a domain. Multiple projects can exist in one "
+"domain. You can think of a project as a project working unit. A user can belong to "
+"multiple projects at the same time within a domain. Compute "
+"sessions must belong to one project, and users can only create sessions within "
+"their own projects. Domain admins can set policies or manage sessions for projects "
 "within the domain. For example, if you set the total amount of resources "
-"available within a group, the resources in all containers created by users in "
-"the group cannot be greater than the amount set."
+"available within a project, the resources in all containers created by users in "
+"the project cannot be greater than the amount set."
 msgstr ""
-"그룹: 도메인 하위에 속하는 계층으로, 한 도메인에는 여러 개의 그룹이 존재할 수 "
-"있습니다. 그룹은 하나의 프로젝트 단위라고 생각할 수 있습니다. 사용자는 한 도메"
-"인 내에 존재하는 여러 개의 그룹(또는 프로젝트)에 동시에 속할 수 있습니다. 연산 "
-"세션은 반드시 하나의 그룹에 속해야 하며, 사용자는 자신이 속한 그룹 내에서만 세"
-"션을 생성할 수 있습니다. 도메인 관리자는 도메인 내에 속한 그룹의 정책을 설정하"
-"거나 세션을 관리할 수 있습니다. 예를 들어, 그룹 내에서 사용할 수 있는 총 자원량"
-"을 설정할 경우, 그룹 내 사용자가 생성한 모든 컨테이너의 자원은 설정된 양보다 "
+"프로젝트: 도메인 하위에 속하는 계층으로, 한 도메인에는 여러 개의 프로젝트가 존재할 수 "
+"있습니다. 프로젝트는 하나의 작업 프로젝트 단위라고 생각할 수도 있습니다. 사용자는 한 도메"
+"인 내에 존재하는 여러 개의 프로젝트에 동시에 속할 수 있습니다. 연산 "
+"세션은 반드시 하나의 프로젝트에 속해야 하며, 사용자는 자신이 속한 프로젝트 내에서만 세"
+"션을 생성할 수 있습니다. 도메인 관리자는 도메인 내에 속한 프로젝트의 정책을 설정하"
+"거나 세션을 관리할 수 있습니다. 예를 들어, 프로젝트 내에서 사용할 수 있는 총 자원량"
+"을 설정할 경우, 프로젝트 내 사용자가 생성한 모든 컨테이너의 자원은 설정된 양보다 "
 "클 수 없습니다."
 
 #: ../../overview/overview.rst:64
@@ -283,8 +283,8 @@ msgid "Per-user (keypair) resource policy"
 msgstr "사용자 (키페어) 별 자원 정책"
 
 #: ../../overview/overview.rst:116
-msgid "(Enterprise) Per-group resource policy"
-msgstr "(엔터프라이즈) 그룹 별 자원 정책"
+msgid "(Enterprise) Per-project resource policy"
+msgstr "(엔터프라이즈) 프로젝트 별 자원 정책"
 
 #: ../../overview/overview.rst:118
 msgid "Availability-slot based scheduling"
@@ -303,8 +303,8 @@ msgid "(Enterprise) Access control of users to resource group"
 msgstr "(엔터프라이즈) 사용자 자원 그룹 배치"
 
 #: ../../overview/overview.rst:125
-msgid "(Enterprise) Access control of group to resource group"
-msgstr "(엔터프라이즈) 사용자 그룹 자원 그룹 배치"
+msgid "(Enterprise) Access control of project to resource group"
+msgstr "(엔터프라이즈) 사용자 프로젝트 자원 그룹 배치"
 
 #: ../../overview/overview.rst:128
 msgid "Security"
@@ -347,8 +347,8 @@ msgid "(Enterprise) Dedicated flash-storage integration: PureStorage FlashBlade"
 msgstr "(엔터프라이즈) 플래시 저장소 통합: PureStorage FlashBlade"
 
 #: ../../overview/overview.rst:144
-msgid "Access control to data by user/group"
-msgstr "사용자/그룹 별 데이터 접근 제어"
+msgid "Access control to data by user/project"
+msgstr "사용자/프로젝트 별 데이터 접근 제어"
 
 #: ../../overview/overview.rst:146
 msgid "Developer support"

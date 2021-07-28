@@ -15,9 +15,9 @@ such as the folder name and ID, the NFS host name where the folder is located
 
 There are two types of storage folders. User folders can be created by
 normal users, and you can see that there is one user icon in the Type panel.
-On the other hand, Group folders can be recognized by an icon with multiple
-users in the panel. Group folders are created by domain admins, and normal
-users can only see group folders created for the group in which the users
+On the other hand, Project folders can be recognized by an icon with multiple
+users in the panel. Project folders are created by domain admins, and normal
+users can only see project folders created for the project in which the users
 belong.
 
 Storage Status on top of the folder list shows the following information:
@@ -26,7 +26,7 @@ Storage Status on top of the folder list shows the following information:
 * Invited: The number of folers that the user was invited to share.
 * Capacity: The maximum number of folders that the user can create afterwards.
   This value depends on the resource policy applied to the user and cannot be changed
-  without changing the resource policy. Folders that were not created by the user (eg. folders invited to share, or group folders) are not counted.
+  without changing the resource policy. Folders that were not created by the user (eg. folders invited to share, or project folders) are not counted.
 
 Check marks on the Owner panel in the folder list indicate the user created folders.
 
@@ -38,10 +38,10 @@ Create storage folder
 
 You can create a storage folder with the desired name by clicking the NEW FOLDER
 button. Enter the name of the folder to be created in Folder name, and select
-one of User / Group for Type. (Depending on the server settings, only one of
-User or Group may be selectable.) When creating a group folder, the Group field
-must be set. The group folder will be bound to the group specified in the Group
-field, and only users belonging to the group can mount and use the group folder.
+one of User / Project for Type. (Depending on the server settings, only one of
+User or Project may be selectable.) When creating a project folder, the Project field
+must be set. The project folder will be bound to the project specified in the Project
+field, and only users belonging to the project can mount and use the project folder.
 After setting the values as desired, you can create a folder by clicking the
 CREATE button.
 
@@ -57,14 +57,14 @@ follows.
 * Host: NFS host to create folder. You can choose one if you have multiple NFS
   hosts.
 * Type: Determines the type of folder to be created. It can be set as User or
-  Group. The User folder is a folder that users can create and use alone
-  and the Group folder is a folder created by admin and shared by users in the group.
+  Project. The User folder is a folder that users can create and use alone
+  and the Project folder is a folder created by admin and shared by users in the project.
 * Usage Mode: You can set the purpose of the folder. There are three types of mode:
   General, Data, and Model. It is classified for the development of exclusive functions
   for Data & Model Stores in the future and currently there is no
   difference in UI depending on the purpose.
-* Group: Designates the group to which the folder belongs when creating a new group folder.
-  Group folders must belong to a group. However, it does not play any
+* Project: Designates the project to which the folder belongs when creating a new project folder.
+  Project folders must belong to a project. However, it does not play any
   role when creating a user folder.
 
 Explore folder

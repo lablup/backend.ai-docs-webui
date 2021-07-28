@@ -362,9 +362,9 @@ registry.
 Even if you created a registry and update meta information, users cannot use the
 images in the registry, immediately. Just as you had to register the allowed hosts
 to use the storage host, you must register the registry in the allowed docker
-registries field at the domain or group level, after registering the registry,
-so that users in the domain or group can access the registry image. Allowed
-docker registries can be registered using the Control-Panel with domain and group
+registries field at the domain or project level, after registering the registry,
+so that users in the domain or project can access the registry image. Allowed
+docker registries can be registered using the Control-Panel with domain and project
 management. The function to set the allowed docker registries in the keypair's
 resource policy is not provided yet.
 
