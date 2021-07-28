@@ -113,7 +113,7 @@ Backend.AI feature details
 +                      +-------------------------------------------------------+
 |                      | Per-user (keypair) resource policy                    |
 +                      +-------------------------------------------------------+
-|                      | (Enterprise) Per-project resource policy                |
+|                      | (Enterprise) Per-project resource policy              |
 +                      +-------------------------------------------------------+
 |                      | Availability-slot based scheduling                    |
 +----------------------+-------------------------------------------------------+
@@ -122,7 +122,7 @@ Backend.AI feature details
 |                      | (Enterprise) Access control of users to               |
 |                      | resource group                                        |
 +                      +-------------------------------------------------------+
-|                      | (Enterprise) Access control of project to               |
+|                      | (Enterprise) Access control of project to             |
 |                      | resource group                                        |
 +----------------------+-------------------------------------------------------+
 | Security             | Sandboxing via hypervisor/container                   |
@@ -141,7 +141,7 @@ Backend.AI feature details
 |                      | (Enterprise) Dedicated flash-storage integration:     |
 |                      | PureStorage FlashBlade                                |
 +                      +-------------------------------------------------------+
-|                      | Access control to data by user/project
+|                      | Access control to data by user/project                |
 +----------------------+-------------------------------------------------------+
 | Developer support    | Universal programming languages (Python, C/C++, etc)  |
 +                      +-------------------------------------------------------+

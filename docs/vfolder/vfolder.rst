@@ -66,6 +66,9 @@ follows.
 * Project: Designates the project to which the folder belongs when creating a new project folder.
   Project folders must belong to a project. However, it does not play any
   role when creating a user folder.
+* Permission: Set permission of a project folder for project members. If this is
+  set to "Read-Only", project members cannot write to this folder inside their
+  compute session.
 
 Explore folder
 --------------
