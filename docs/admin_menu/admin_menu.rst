@@ -480,6 +480,11 @@ that already exists, since name is the key value.
 Storages
 --------
 
+On STORAGES tab, you can see what kind of mount volumes (usually NFS) exist.
+
+.. image:: storage_list.png
+
+
 Download session lists
 ----------------------
 
