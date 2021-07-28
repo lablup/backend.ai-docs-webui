@@ -16,6 +16,44 @@
 }
 
 @font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Regular.ttf")
+}
+@font-face {
+  font-family: "Ubuntu Italic";
+  src: url("../fonts/Ubuntu-Italic.ttf")
+}
+@font-face {
+  font-family: "Ubuntu Light";
+  src: url("../fonts/Ubuntu-Light.ttf");
+}
+@font-face {
+  font-family: "Ubuntu Light Italic";
+  src: url("../fonts/Ubuntu-LightItalic.ttf");
+}
+@font-face {
+  font-family: "Ubuntu Light Italic";
+  src: url("../fonts/Ubuntu-LightItalic.ttf");
+}
+@font-face {
+  font-family: "Ubuntu Medium";
+  src: url("../fonts/Ubuntu-Medium.ttf")
+}
+@font-face {
+  font-family: "Ubuntu Medium Italic";
+  src: url("../fonts/Ubuntu-MediumItalic.ttf");
+}
+@font-face {
+  font-family: "Ubuntu Bold";
+  src: url("../fonts/Ubuntu-Bold.ttf")
+}
+@font-face {
+  font-family: "Ubuntu Bold Italic";
+  src: url("../fonts/Ubuntu-BoldItalic.ttf");
+}
+
+
+@font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.ttf")
 }
@@ -114,7 +152,7 @@
 }
 
 body {
-  font-family: "Montserrat", "Nanum Square";
+  font-family: "Ubuntu", "Nanum Square";
 }
 
 code,
