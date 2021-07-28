@@ -56,10 +56,7 @@ with them. For eaiser `.po` translation, you may use GUI apps like
 Note that a Korean character should not be followed by two backticks(\``)
 **WITHOUT A SPACE**, since that will raise compilation errors.
 
-After translation, run following to build translated html document. To build a
-pdf document, just replace `html` to `latexpdf`. Note that your local machine
-should be prepared with latex generation environment, such as MacTex, to make
-pdf file.
+After translation, run following to build translated html document.
 
 ```console
 make -e SPHINXOPTS="-D language='ko'" html
@@ -70,6 +67,26 @@ To see the local html documents:
 ```console
 open _build/html/index.html
 ```
+
+## Build PDF document
+
+To build a pdf document, just replace `html` to `latexpdf`. Note, however, that
+your local machine should be prepared with latex generation environment, such as
+MacTex, to make pdf file. The following is a brief preparation steps in Mac:
+
+
+* Install MacTex.
+* Register the path to `texbin`: `export PATH="$PATH:/Library/Tex/texbin"`.
+* Install fonts on the mac for PDF generation. Fonts can be found at `docs/_static/fonts`.
+
+If prepration is done, execute the following command to generate a pdf document.
+
+```console
+cd docs
+./build_local_pdf_kr.sh
+```
+
+The generated PDF is located under `_build/latexpdf/`.
 
 
 ## References for newcomers
