@@ -2,7 +2,7 @@
 Sharing Storage Folders and Access Control
 ========================================================
 
-You may need to share the contents of storage folders with other users or group
+You may need to share the contents of storage folders with other users or project
 members to collaborate. For this purpose, Backend.AI provides flexible folder
 sharing feature.
 
@@ -45,7 +45,7 @@ multiple users, you can also click the + button to enter additional emails.
 Back to User B's account and go to the Summary page. At the bottom of the
 page, you can see the invitation arrived. Click the ACCEPT button to accept the invitation.
 If you don't see the invitation, go to another page once and then come back to the Summary
-page again. 
+page again.
 
 .. image:: invitation_accept.png
 
@@ -84,14 +84,14 @@ folder is read-only. User B can create a file in the ``test`` folder if it has
 been shared including write access.
 
 .. image:: test_vfolder_explorer_B.png
-   
+
 This way, you can share your personal storage folders with other users based on
 your Backend.AI email account.
 
 .. note::
-   Backend.AI also provides sharing group folder to group members.
-   To See the detail, go to :ref:`sharing a group storage folder with group members <sharing-a-group-storage>`.
-   
+   Backend.AI also provides sharing project folder to project members.
+   To See the detail, go to :ref:`sharing a project storage folder with project members <sharing-a-group-storage>`.
+
 
 Adjust permission for shared folders
 ------------------------------------

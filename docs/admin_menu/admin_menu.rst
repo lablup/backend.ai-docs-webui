@@ -40,7 +40,7 @@ Check if the user is created.
    :alt: User management page
 
 Click the green button in the Controls panel for more detailed user
-information. You can also check the domain and group information where the
+information. You can also check the domain and project information where the
 user belongs.
 
 .. image:: user_detail_dialog.png
@@ -133,30 +133,30 @@ according to the user's pattern.
 
 .. _sharing-a-group-storage:
 
-Share group storage folders with group members
--------------------------------------------------
+Share project storage folders with project members
+--------------------------------------------------
 
-Backend.AI provides storage folders for groups, in addition to user's own
-storage folder. A group storage folder is a folder belonging to a specific
-group, not a specific user, and can be accessed by all users in that group.
+Backend.AI provides storage folders for projects, in addition to user's own
+storage folder. A project storage folder is a folder belonging to a specific
+project, not a specific user, and can be accessed by all users in that project.
 
 .. note::
-   Group folders can be created only by administrators. Normal users can only
-   access the contents of the group folder created by the administrator.
-   Depending on the system settings, group folders may not be allowed.
+   Project folders can be created only by administrators. Normal users can only
+   access the contents of the project folder created by the administrator.
+   Depending on the system settings, project folders may not be allowed.
 
-First, log in with an admin account and create a group folder. After
-moving to the Data & Storage page, click NEW FOLDER to open the folder creation
-dialog. Enter the folder name, set the Type to Group, and select the group to share the folder.
-Let's select the group to which User B belongs for
-this example to work. Permission is set to Read-Only..
+First, log in with an admin account and create a project folder. After moving to
+the Data & Storage page, click NEW FOLDER to open the folder creation dialog.
+Enter the folder name, set the Type to Project, and select the project to share
+the folder.  Let's select the project to which User B belongs for this example
+to work. Permission is set to Read-Only.
 
 .. image:: group_folder_creation.png
-   :width: 450
+   :width: 400
    :align: center
 
 After confirming that the folder has been created, log in with the User B's
-account and check that the group folder just created on the Data & Storage page
+account and check that the project folder just created on the Data & Storage page
 is displayed without any invitation procedure. You can see that R (Read Only) is
 also displayed in the Permission panel.
 
@@ -166,7 +166,7 @@ Manage Resource Policy
 ----------------------
 
 In Backend.AI, admins can set a limit on the total amount of resources available
-for each user and group. Resource limits per group can only be set through the
+for each user and project. Resource limits per project can only be set through the
 enterprise-dedicated administrator GUI Control-Panel, but resource limits per user
 (precisely per user's keypair) can be set in the user Web-UI.
 
@@ -176,7 +176,7 @@ resource policies can be created, for example, user / research purposes, and
 apply them separately to each keypair.
 
 .. note::
-   To set resource policies at the domain and group level, you have to use
+   To set resource policies at the domain and project level, you have to use
    admin Control-Panel, a UI for superadmin only. In the Web-UI, you can only set
    resource policies based on keypairs. Control-Panel is a part of the
    enterprise version.
@@ -224,12 +224,13 @@ About details of each option in resource policy dialog, see the description belo
 
 * Sessions
    * Container Per Session: The maximum number of containers per session.
-     Currently, this value has no effect since the server only allows one
-     container per compute session. (max value: 100)
+     To make a user to create a cluster session, this value should be greater than 1.
+     (max value: 100)
    * Idle timeout (sec.): Configurable period of time during which the user can
-     leave their session untouched. If there is no activity at
-     all on a compute session for idle timeout, the session will be garbage
-     collected and destroyed automatically.(max value: 15552000 (approx. 180 days))
+     leave their session untouched. If there is no activity at all on a
+     compute session for idle timeout, the session will be garbage collected
+     and destroyed automatically. The criteria of the "idleness" can be
+     various and set by the administrators. (max value: 15552000 (approx. 180 days))
    * Concurrent Jobs: Maximum number of concurrent compute session per keypair.
      If this value is set to 3, for example, users bound to this resource policy
      cannot create more than 3 compute sessions simultaneously. (max value: 100)
@@ -450,7 +451,7 @@ another resource group.
 Adding a specific agent to a specific resource group is not currently handled in
 the UI, and it can be done by editing agent config file from the installation
 location and restart the agent daemon. Management of the resource groups is
-possible in Scaling Group tab of the Resource page.
+possible in Resource Group tab of the Resource page.
 
 .. image:: scaling_group_tab.png
    :alt: Resource group tab
@@ -476,6 +477,14 @@ that already exists, since name is the key value.
    :alt: Create resource group dialog
 
 
+Storages
+--------
+
+On STORAGES tab, you can see what kind of mount volumes (usually NFS) exist.
+
+.. image:: storage_list.png
+
+
 Download session lists
 ----------------------
 
@@ -498,7 +507,7 @@ Please note that a file name can have up to 255 characters.
 System settings
 ---------------
 
-In the System Settings page, you can see main settings of Backend.AI server.
+In the Configuration page, you can see main settings of Backend.AI server.
 Currently, it provides several controls which can change and list settings.
 
 
@@ -520,16 +529,16 @@ You can also change settings for scaling and plugins.
 .. image:: system_setting_about_scaling_plugins.png
    :alt: System setting about scaling and plugins
 
-You can edit the configuration per job scheduler by clicking the config button. 
-The values in the scheduler setting are the defaults to use when there is no scheduler 
-setting in each :ref:`resource group<scheduling-methods>`. If there is a resource 
-group-specific setting, this value will be ignored. 
+You can edit the configuration per job scheduler by clicking the config button.
+The values in the scheduler setting are the defaults to use when there is no scheduler
+setting in each :ref:`resource group<scheduling-methods>`. If there is a resource
+group-specific setting, this value will be ignored.
 
-Currently supported scheduling methods include ``FIFO``, ``LIFO``, and ``DRF``. 
-Each method of scheduling is exactly the same as the :ref:`scheduling methods<scheduling-methods>` above. 
-Scheduler options include session creation retries. Session creation retries refers to the number 
-of retries to create a session if it fails. If the session cannot be created within the trials, 
-the request will be ignored and Backend.AI will process the next request. Currently, changes are 
+Currently supported scheduling methods include ``FIFO``, ``LIFO``, and ``DRF``.
+Each method of scheduling is exactly the same as the :ref:`scheduling methods<scheduling-methods>` above.
+Scheduler options include session creation retries. Session creation retries refers to the number
+of retries to create a session if it fails. If the session cannot be created within the trials,
+the request will be ignored and Backend.AI will process the next request. Currently, changes are
 only possible when the scheduler is FIFO.
 
 .. image:: system_setting_dialog_scheduler_settings.png
