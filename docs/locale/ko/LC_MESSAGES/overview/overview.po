@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-28 10:21+0900\n"
+"POT-Creation-Date: 2021-10-15 11:55+0900\n"
 "PO-Revision-Date: 2021-03-02 20:43+0900\n"
 "Last-Translator: \n"
 "Language: ko\n"
@@ -214,6 +214,186 @@ msgstr ""
 #: ../../overview/overview.rst:95
 msgid "Backend.AI feature details"
 msgstr "Backend.AI 기능 상세"
+
+#: ../../overview/overview.rst:98
+msgid "Category"
+msgstr ""
+
+#: ../../overview/overview.rst:98
+msgid "Feature"
+msgstr ""
+
+#: ../../overview/overview.rst:100
+msgid "GPU support"
+msgstr ""
+
+#: ../../overview/overview.rst:100
+msgid "Container-level multi GPU"
+msgstr ""
+
+#: ../../overview/overview.rst:102
+msgid "(Enterprise) Fractional GPU sharing & scaling"
+msgstr ""
+
+#: ../../overview/overview.rst:104
+msgid "Multiple CUDA library version support (8.0 to 11.1)"
+msgstr ""
+
+#: ../../overview/overview.rst:106
+msgid "Scaling"
+msgstr ""
+
+#: ../../overview/overview.rst:106
+msgid "On-premise installation on both bare-metal / VM"
+msgstr ""
+
+#: ../../overview/overview.rst:108
+msgid "Hybrid cloud (on-premise + cloud)"
+msgstr ""
+
+#: ../../overview/overview.rst:110
+msgid "Polycloud (multi-cloud federation)"
+msgstr ""
+
+#: ../../overview/overview.rst:112
+msgid "Scheduling"
+msgstr ""
+
+#: ../../overview/overview.rst:112
+msgid "Unified scheduling & monitoring with GUI admin"
+msgstr ""
+
+#: ../../overview/overview.rst:114
+msgid "Per-user (keypair) resource policy"
+msgstr ""
+
+#: ../../overview/overview.rst:116
+msgid "(Enterprise) Per-project resource policy"
+msgstr ""
+
+#: ../../overview/overview.rst:118
+msgid "Availability-slot based scheduling"
+msgstr ""
+
+#: ../../overview/overview.rst:120
+msgid "Cluster partitioning"
+msgstr ""
+
+#: ../../overview/overview.rst:120
+msgid "Resource groups by H/W spec and usage"
+msgstr ""
+
+#: ../../overview/overview.rst:122
+msgid "(Enterprise) Access control of users to resource group"
+msgstr ""
+
+#: ../../overview/overview.rst:125
+msgid "(Enterprise) Access control of project to resource group"
+msgstr ""
+
+#: ../../overview/overview.rst:128
+msgid "Security"
+msgstr ""
+
+#: ../../overview/overview.rst:128
+msgid "Sandboxing via hypervisor/container"
+msgstr ""
+
+#: ../../overview/overview.rst:130
+msgid "Access logs for each user"
+msgstr ""
+
+#: ../../overview/overview.rst:132
+msgid "Per session (container) logs"
+msgstr ""
+
+#: ../../overview/overview.rst:134
+msgid "UI / UX"
+msgstr ""
+
+#: ../../overview/overview.rst:134
+msgid "GUI web interface"
+msgstr ""
+
+#: ../../overview/overview.rst:136
+msgid "(Enterprise) Admin GUI web interface"
+msgstr ""
+
+#: ../../overview/overview.rst:138
+msgid "Data management"
+msgstr ""
+
+#: ../../overview/overview.rst:138
+msgid "EFS, NFS, SMB and distributed file system (CephFS, GlusterFS, HDFS, etc)"
+msgstr ""
+
+#: ../../overview/overview.rst:141
+msgid "(Enterprise) Dedicated flash-storage integration: PureStorage FlashBlade"
+msgstr ""
+
+#: ../../overview/overview.rst:144
+msgid "Access control to data by user/project"
+msgstr ""
+
+#: ../../overview/overview.rst:146
+msgid "Developer support"
+msgstr ""
+
+#: ../../overview/overview.rst:146
+msgid "Universal programming languages (Python, C/C++, etc)"
+msgstr ""
+
+#: ../../overview/overview.rst:148
+msgid "Interactive web apps (Terminal, Jupyter, VSCode, etc)"
+msgstr ""
+
+#: ../../overview/overview.rst:150
+msgid "For data scientists"
+msgstr ""
+
+#: ../../overview/overview.rst:150
+msgid "NGC (NVIDIA GPU CLoud) image integration"
+msgstr ""
+
+#: ../../overview/overview.rst:152
+msgid "Popular ML libraries: TensorFlow, PyTorch, etc"
+msgstr ""
+
+#: ../../overview/overview.rst:154
+msgid "Concurrent user of multiple versions of libraries"
+msgstr ""
+
+#: ../../overview/overview.rst:156
+msgid "Periodic update of ML libraries"
+msgstr ""
+
+#: ../../overview/overview.rst:158
+msgid "Customer support"
+msgstr ""
+
+#: ../../overview/overview.rst:158
+msgid "On-site installation (bare-metal / VM)"
+msgstr ""
+
+#: ../../overview/overview.rst:160
+msgid "Configuration support (on-premise + cloud)"
+msgstr ""
+
+#: ../../overview/overview.rst:162
+msgid "Admin/user training"
+msgstr ""
+
+#: ../../overview/overview.rst:164
+msgid "Support for updating to latest version"
+msgstr ""
+
+#: ../../overview/overview.rst:166
+msgid "Priority development and escalation"
+msgstr ""
+
+#: ../../overview/overview.rst:168
+msgid "Custmoized container image / kernel or kernel repository"
+msgstr ""
 
 #: ../../overview/overview.rst:174
 msgid "Accessible menu by user role"
