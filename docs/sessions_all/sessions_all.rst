@@ -22,10 +22,21 @@ wizard-style dialog will appear.
    :width: 350
    :align: center
 
-First, you need to choose the language Environment and Version you want to
+First, you need to choose the type of session, interactive or batch.
+Then, you need to choose the language Environment and Version you want to
 create.  The rest items are optional. For a detailed description of each item,
 please refer to the following.
 
+.. _session-naming-rule:
+
+* Session type: Interactive session tries to allocate requested resources 
+  immediately and lasts its status until user terminates or its lifetime ends. 
+  Batch session on the other hand, requires certain commands to execute and supports 
+  the scheduled time to run. If commands end, then sessions in batch type terminate.
+
+  .. image:: session_type_batch.png
+     :width: 350
+     :align: center
 * Environments: You can choose the base environment for compute sessions such as
   TensorFlow, PyTorch, C++, etc. When you select TensorFlow, your compute
   session will automatically include the TensorFlow library. If you choose
@@ -102,6 +113,9 @@ Information (I) button on the right as well.
   settings. You can specify this value when you need to create the same
   compute sessions at once.
 
+Backend.AI provides configuring values related to HPC Optimizations. For more information,
+See the section :ref:`Optimizing Accelerated Computing<optimizing-accelerated-computing>`.
+
 If you are done with the resource setting, click the right arrow button to
 proceed to the next page.
 
@@ -109,9 +123,10 @@ proceed to the next page.
    :width: 350
    :align: center
 
-Now, we have reached the last page. You can view information such as allocated
-resources, mount information, environment variables set on the previous pages,
-etc. After confirming the settings, click the LAUNCH button. If there is a
+Now, we have reached the last page. You can view information of session(s) to create,
+such as environment itself, allocated resources, mount information, 
+environment variables set on the previous pages, etc. 
+After confirming the settings, click the LAUNCH button. If there is a
 setting you want to change, you can return to the previous page by clicking the
 left arrow button.
 
@@ -127,7 +142,10 @@ Now a new compute session is created in the RUNNING tab.
 .. image:: session_created.png
 
 In the RUNNING tab, you can check the information on the currently running
-sessions. FINISHED tab shows the list of terminated sessions and OTHERS tab shows the compute sessions with errors.
+sessions. It includes both interactive and batch sessions.
+BATCH tab and INTERACTIVE tab show only sessions corresponding to each type, 
+but only for sessions not in terminated status.
+FINISHED tab shows the list of terminated sessions and OTHERS tab shows the compute sessions with errors.
 For each session, you can check the information such as session environments, the amount of allocated
 and used resources, session starting time, etc.
 
@@ -140,6 +158,16 @@ and used resources, session starting time, etc.
    Compute session list may not be displayed normally due to intermittent
    network connection problems, and etc. This can be solved by refreshing the
    browser page.
+
+.. image:: session_list_status.png
+
+.. image:: session_status_detail_information.png
+   :align: center
+
+Backend.AI provides detailed information for all sessions in ``PENDING``, ``TERMINATED`` or ``CANCELLED`` status.
+When it comes to checking session whether runnable or not, the scheduler checks several conditions to fulfill.
+Sessions in ``PENDING`` status mean that one or more predicate checks failed.
+You can see detailed information by clicking the question mark icon right next to the status of each session.
 
 .. image:: resource_stat_and_session_list.png
 
@@ -164,9 +192,10 @@ accessible resources.
    execute a task that does not require a large amount of GPU computation, you
    can create a compute session by allocating only a portion of a GPU. The
    amount of GPU resources that 1 FGPU actually allocates may vary from system
-   to system depending on the administrator's setting. For example, if
-   administrator has set to split one physical GPU into five pieces, 5 FGPU
-   means 1 physical GPU, or 1 FGPU means 0.2 physical GPU. At this
+   to system depending on the administrator's setting.   
+
+   For example, if administrator has set to split one physical GPU into five pieces, 
+   5 FGPU means 1 physical GPU, or 1 FGPU means 0.2 physical GPU. At this
    configuration, if you create a compute session by allocating 1 FGPU, you can
    utilize SM (streaming multiprocessor) and GPU memory corresponding to 0.2
    physical GPU for the session.
@@ -202,8 +231,8 @@ after the compute session is created.
      port will always be assigned because the port may not exist at all in the port
      pool or another service may already be using the port. In this case, the
      port number is randomly assigned.
-
-  Depending on the system configuration, these options may not be shown.
+   
+   Depending on the system configuration, these options may not be shown.
 
 Let's click on Jupyter Notebook.
 
@@ -275,6 +304,15 @@ Control panel of the running compute session.
 .. image:: session_log.png
 
 
+Rename running session
+----------------------
+
+You can change the name of session in `RUNNING` status. 
+Despite renaming the session name, :ref:`the authoring rule<session-naming-rule>` is the same.
+
+.. image:: session_renaming.png
+
+
 Delete a compute session
 ------------------------
 
@@ -332,6 +370,24 @@ To Add more environment variables, yon can click ``+`` button in the right side 
 Also, you can remove the variable by clicking ``-`` button of the row that you want to get rid of.
 
 If you want to delete the whole variables and value, please click DELETE ALL button at the bottom of the dialog.
+
+
+.. _optimizing-accelerated-computing:
+
+Optimizing Accelerated Computing
+--------------------------------
+
+Backend.AI provides configuration UI for internal control variable in ``nthreads-var``. 
+Backend.AI sets this value equal to the number of CPU cores by default, 
+which has the effect of accelerating typical high-performance computing workloads.
+Nevertheless, for some multi-thread workloads, multiple processes using OpenMP are used at same time,
+resulting in an abnormally large number of threads and significant performance degradation.
+To resolve this issue, setting the number of threads to 1 or 2 would work.
+
+.. image:: session_hpc_optimization.png
+   :width: 350
+   :align: center
+   :alt: Session HPC Optimization
 
 
 Advanced web terminal usage
