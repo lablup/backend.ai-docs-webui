@@ -58,9 +58,14 @@ already exists. User's name, password, activation state, etc. can be changed. Us
 
 Each of the two items at the bottom of the dialog has the following functions.
 
-* Active user?: Indicates the user's active status. Inactive users cannot log
-  in. You can toggle this option to change the user to active or inactive state.
-  Note that the inactive users are listed in the Inactive tab separately.
+* User Status: Indicates the user's active status. Inactive users cannot log
+  in. Before Verification needs approval from admin. You can choose this option 
+  to change the status of user. Note that the inactive users are listed in the 
+  Inactive tab separately.
+
+  .. image:: active_user_selection.png
+     :width: 350
+     :align: center
 * Require password change?: If the admin has chosen random passwords while
   creating users in batches, this field can be set to ON to indicate that password change is required.
   This is a kind of descriptive flag and has no effect on actual use.
@@ -82,7 +87,7 @@ you can inactivate the user by clicking the OKAY button.
 To re-activate users, go to Users - Inactive tab, and edit the target user to
 turn on "Active user?" field.
 
-.. note::
+.. warning::
 
    Please note that inactivating the user changes all of credentials to be inactive,
    but reactivating the user does not reactivate the inactivated credentials, since the user
@@ -234,6 +239,11 @@ About details of each option in resource policy dialog, see the description belo
    * Concurrent Jobs: Maximum number of concurrent compute session per keypair.
      If this value is set to 3, for example, users bound to this resource policy
      cannot create more than 3 compute sessions simultaneously. (max value: 100)
+   * Session Lifetime (sec.): Despite the status of session, It limits the maximum 
+     time of session from reserved time. Compare to Idle timeout, It doesn't consider 
+     utilization of session in ``RUNNING`` status. For now, time calculation starts from 
+     enqueued time. the criteria may be changed when actual time of compute session occupies 
+     would be calculable.
 
 * Folders
    * Allowed hosts: Backend.AI supports many NFS mountpoint. This field limits
@@ -243,7 +253,7 @@ About details of each option in resource policy dialog, see the description belo
      feature is only effective for special type of storages/filesystems such as
      FlashBlade. (max value: 1024)
    * Max. #: the maximum number of storage folders that can be created/invited.
-     (max value: 50)
+     (max value: 100)
 
 In the resource policy list, check that the Resources value of the default
 policy has been updated.
@@ -359,6 +369,9 @@ registry.
    :align: center
    :alt: Add registry dialog
 
+You can also modify existing registry details. Except of the hostname of registry name,
+you can change any value such as registry URL or the type of registry, etc.
+
 Even if you created a registry and update meta information, users cannot use the
 images in the registry, immediately. Just as you had to register the allowed hosts
 to use the storage host, you must register the registry in the allowed docker
@@ -412,13 +425,16 @@ each resource preset.
    :alt: Create resource preset dialog
 
 
-Query agent nodes
------------------
+Manage agent nodes
+------------------
 
 Superadmins can view the list of agent worker nodes, currently connected to
 Backend.AI, by visiting the Resources page. You can check agent node's IP,
 connecting time, actual resources currently in use, etc. The Web-UI does
 not provide the function to manipulate agent nodes.
+
+Query agent nodes
+~~~~~~~~~~~~~~~~~
 
 .. image:: agent_list.png
    :alt: Agent node list
@@ -427,6 +443,8 @@ Also You can see exact usage about the resources in the agent worker node
 by Click note icon in the Control panel.
 
 .. image:: detailed_agent_node_usage_information.png
+   :width: 350
+   :align: center
    :alt: Detailed agent node usage information
 
 On Terminated tab, you can check the information of the agents that has been
@@ -436,6 +454,18 @@ that there's no disconnection or termination occurred.
 
 .. image:: terminated_agent_list.png
    :alt: Terminated agent node list
+
+Set schedulable status of agent nodes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In some cases, you may want to remove certain agents from scheduling without halting 
+agent service itself. In that case, setting disabling schedulable status
+would be helpful. Once It's disabled, scheduler will try to create containers in other agent nodes.
+
+.. image:: agent_settings.png
+   :width: 350
+   :align: center
+   :alt: Agent settings
 
 .. _scheduling-methods:
 
@@ -465,7 +495,33 @@ Fairness, and it aims to provide resources as fair as possible for each user.
 You can deactivate a resource policy by turning off Active Status.
 
 .. image:: modify_resource_group.png
+   :width: 350
+   :align: center
    :alt: Modify resource group dialog
+
+For better efficiency and scalability in accessing agents, you also can set 
+wsproxy address to connect directly to containers in agents.
+Backend.AI supports global scheduler configurations by default, Administrators can set 
+those configurations in resource group respectively. Once It's been set, It will overrides 
+current setting in global scheduler. Otherwise It follows default settings.
+For a detailed description of each item, please refer to the following.
+
+* Allowed session types: 
+  Since user can choose the type of session, resource group can allow certain type of session.
+  You can allow both type, or allow interactive or batch only.
+* Pending timeout: 
+  This value is for auto-cancelling pending sessions to avoid starvation of certain sessions. 
+  If the value is set to zero(0), scheduler will not cancel pending session until user terminates.
+* The number of retries to skip pending session: 
+  It restricts the number of attempts to schedule in scheduler which avoids Head-of-line(HoL) 
+  blocking problem. If session creation failed with in trials, the request will be ignored 
+  and scheduler proceeds next request.
+
+
+.. image:: modify_resource_group_scheduler_options.png
+   :width: 350
+   :align: center
+   :alt: Modify resource group scheduler options
 
 You can create a new resource policy by clicking the CREATE button.
 Likewise other creating options, you cannot create a resource policy with the name
@@ -529,6 +585,21 @@ You can also change settings for scaling and plugins.
 .. image:: system_setting_about_scaling_plugins.png
    :alt: System setting about scaling and plugins
 
+Since Backend.AI supports cluster session from 20.09, when it comes to running multi-node cluster session,
+It dynamically creates an overlay network. Administrators can set the value of Maximum transmission unit(MTU) 
+used in overlay network on their demand.
+
+
+.. image:: overlay_network_setting_dialog.png
+   :width: 350
+   :align: center
+   :alt: Overlay network setting dialog
+
+.. seealso::
+   For more information about Backend.AI Cluster session, please refer to 
+   :ref:`Backend.AI Cluster Compute Session<backendai-cluster-compute-session>` section.
+
+
 You can edit the configuration per job scheduler by clicking the config button.
 The values in the scheduler setting are the defaults to use when there is no scheduler
 setting in each :ref:`resource group<scheduling-methods>`. If there is a resource
@@ -548,6 +619,10 @@ only possible when the scheduler is FIFO.
 
 .. note::
    We will continue to add broader range of setting controls.
+
+.. note::
+   System settings are default settings. If resource group has certain value, 
+   then it overrides configured value in system settings.
 
 
 Server management

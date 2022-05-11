@@ -2,6 +2,8 @@
 Backend.AI Cluster Compute Session
 ==================================
 
+.. _backendai-cluster-compute-session:
+
 .. note::
    Cluster compute session feature is supported from Backend.AI server 20.09 or
    higher.
