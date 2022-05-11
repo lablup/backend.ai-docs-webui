@@ -24,15 +24,18 @@ wizard-style dialog will appear.
 
 First, you need to choose the type of session, interactive or batch.
 Then, you need to choose the language Environment and Version you want to
-create.  The rest items are optional. For a detailed description of each item,
+create. The rest items are optional. For a detailed description of each item,
 please refer to the following.
+
 
 .. _session-naming-rule:
 
 * Session type: Interactive session tries to allocate requested resources 
   immediately and lasts its status until user terminates or its lifetime ends. 
-  Batch session on the other hand, requires certain commands to execute and supports 
-  the scheduled time to run. If commands end, then sessions in batch type terminate.
+  Batch session on the other hand, offers an explicit build step required for 
+  multi-module programs or compiled programming languages. It also provides 
+  specifying a scheduled time in executing session, which is useful for running 
+  automated model training.
 
   .. image:: session_type_batch.png
      :width: 350
@@ -307,10 +310,11 @@ Control panel of the running compute session.
 Rename running session
 ----------------------
 
-You can change the name of session in `RUNNING` status. 
+You can change the name of session in ``RUNNING`` status. 
 Despite renaming the session name, :ref:`the authoring rule<session-naming-rule>` is the same.
 
 .. image:: session_renaming.png
+
 
 
 Delete a compute session
