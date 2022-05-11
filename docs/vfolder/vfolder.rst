@@ -33,6 +33,12 @@ Check marks on the Owner panel in the folder list indicate the user created fold
 .. image:: vfolder_status.png
    :alt: Storage status in Storage page
 
+.. tip::
+   If there's many vfolder on the list, you can use input fields on the top row.
+   Currently we provide two filters, vfolder name and the name of storage host.
+   
+
+
 Create storage folder
 ---------------------
 
@@ -106,7 +112,12 @@ Rename folder
 
 If you have permission to rename the storage folder, you can rename it by
 clicking the edit icon in the Control panel. When you click the icon button, a
-rename dialog will appear. Write new folder name and then click RENAME button.
+rename dialog will appear. Write new folder name and then click UPDATE button.
+
+.. image::vfolder_rename_dialog.png
+   :width: 400
+   :align: center
+   :alt: Folder rename dialog
 
 
 Delete folder
@@ -183,7 +194,8 @@ data folder to open the file explorer.
    :alt: first step to access FileBrowser
 
 .. warning::
-   You cannot launch FileBrowser from read-only data folders if .
+   You cannot launch FileBrowser from read-only data folders since FileBrowser 
+   requires write permissions.
 
 Click EXECUTE FILEBROWSER button in the upper-right corner of the explorer.
 
@@ -211,7 +223,7 @@ session.
    go to Sessions page and click the FileBrowser application icon of the
    FileBrowser compute session.
 
-   .. image:: app_dialog_with_FileBrowser.png
+   .. image:: app_dialog_with_filebrowser.png
       :width: 400
       :align: center
 
@@ -263,7 +275,7 @@ Let's upload a directory with the following structure.
 After selecting ``foo`` directory, you can see the directory just uploaded
 successfully.
 
-.. image:: FileBrowser_upload_finished.png
+.. image:: filebrowser_upload_finished.png
 
 You can also upload local files and directories by drag and drop.
 
@@ -300,3 +312,28 @@ You will see that moving operation is successfully finished.
    FileBrowser is provided via application inside a compute session currently.
    We are planning to update FileBrowser so that it can run independently
    without creating a session.
+
+
+Setting quota on XFS
+--------------------
+
+Backend.AI provides quota adjustment UI for Vfolder if storage file systems 
+that supports directory based quota.
+
+.. image:: xfs_quota_setting.png
+   :width: 400
+   :align: center
+   :alt: XFS quota setting
+
+.. note::
+   In order to set quota on vfolder, make sure storage host is XFS. 
+   If you want to apply XFS on your own server and use them in Backend.AI cluster, 
+   Please refer to `XFS Filesystem Backends Guide in Backend.AI Storage Proxy 
+   <https://github.com/lablup/backend.ai-storage-proxy#xfs>`_.
+
+You also can see the current usage and capacity of vfolder in information dialog. 
+
+.. image:: vfolder_information_storage_host_xfs.png
+   :width: 400
+   :align: center
+   :alt: Vfolder information storage host xfs
