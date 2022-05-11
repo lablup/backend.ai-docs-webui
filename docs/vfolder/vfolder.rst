@@ -34,7 +34,7 @@ Check marks on the Owner panel in the folder list indicate the user created fold
    :alt: Storage status in Storage page
 
 .. tip::
-   If there's many vfolder on the list, you can use input fields on the top row.
+   If there's many vfolders on the list, you can use input fields on the top row.
    Currently we provide two filters, vfolder name and the name of storage host.
    
 
@@ -114,7 +114,7 @@ If you have permission to rename the storage folder, you can rename it by
 clicking the edit icon in the Control panel. When you click the icon button, a
 rename dialog will appear. Write new folder name and then click UPDATE button.
 
-.. image::vfolder_rename_dialog.png
+.. image:: vfolder_rename_dialog.png
    :width: 400
    :align: center
    :alt: Folder rename dialog
