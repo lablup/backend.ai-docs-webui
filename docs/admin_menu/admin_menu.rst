@@ -84,8 +84,8 @@ you can inactivate the user by clicking the OKAY button.
    :align: center
    :alt: Deactivating user account
 
-To re-activate users, go to Users - Inactive tab, and edit the target user to
-turn on "Active user?" field.
+To re-activate users, go to Users - Inactive tab, and select status of 
+the target user to ``Active``.
 
 .. warning::
 
@@ -239,7 +239,7 @@ About details of each option in resource policy dialog, see the description belo
    * Concurrent Jobs: Maximum number of concurrent compute session per keypair.
      If this value is set to 3, for example, users bound to this resource policy
      cannot create more than 3 compute sessions simultaneously. (max value: 100)
-   * Session Lifetime (sec.): Despite the status of session, It limits the maximum 
+   * Session Lifetime (sec.): Regardless of the status of session, It limits the maximum 
      time of session from reserved time. Compare to Idle timeout, It doesn't consider 
      utilization of session in ``RUNNING`` status. For now, time calculation starts from 
      enqueued time. the criteria may be changed when actual time of compute session occupies 
