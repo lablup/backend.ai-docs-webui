@@ -26,6 +26,11 @@ session.
    :align: center
    :alt: Launch a compute session with storage folders
 
+.. note::
+   Every Vfolder in folders to mount list is visible if its storage host is added to 
+   allowed hosts. Only administrator can change allowed hosts.
+   In the image above, the user have an access to ``local:volume1``.
+
 Now, open the terminal by clicking the terminal icon in the created session. If
 you run ``ls`` command in the terminal, you can see that the ``user1-ml-test``
 and ``user2-vfolder`` folders are mounted under the home directory.
