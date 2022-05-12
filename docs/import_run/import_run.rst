@@ -34,6 +34,10 @@ the notebook after setting the environments and resource allocation as needed.
    see the running notebook window. Also, if there's not enough resources to execute the session,
    imported Jupyter notebook will not run.
 
+.. note::
+   For now, session in Batch mode only allows terminal app. If you want to execute Jupyter notebook 
+   immediately, please select the type of session to ``INTERACTIVE``, not ``BATCH``.
+
 .. image:: session_launcher_in_importing_notebook.png
    :width: 350
    :align: center
