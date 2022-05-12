@@ -42,7 +42,15 @@ before the page is refreshed.
 * OS Default: Use the operating system's default language.
 * English: Set English as the default language.
 * Korean: Set Korean as the default language.
+* Russian: Set Russian as the default language.
+* French: Set French as the default language.
+* Mongolian: Set Mongolian as the default language.
+* Indonesian: Set Indonesian as the default language.
 
+.. note::
+   Some of language translation are remained ``__NOT_TRANSLATED__``. 
+   Since Backend.AI WebUI is open source, anyone who willing to make it better 
+   can contribute to those translation of the above sentences.
 
 SSH Keypair Management
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -100,6 +108,21 @@ the script.
 .. image:: edit_user_config_script.png
    :width: 500
    :align: center
+
+EDIT BOOTSTRAP SCRIPT
+^^^^^^^^^^^^^^^^^^^^^^^
+
+If you want to execute script that executed only once just after compute session started,
+you can add script in here.
+
+.. image:: edit_bootstrap_script.png
+   :width: 500
+   :align: center
+
+.. warning::
+   Although requested resources for session is ready, the status will not change to ``RUNNING`` 
+   until bootstrap script ends. If script execution takes some time, please execute in terminal app 
+   instead of running in bootstrap script.
 
 
 LOGS tab
