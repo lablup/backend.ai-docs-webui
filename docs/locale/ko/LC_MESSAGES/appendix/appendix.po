@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 20.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-25 15:04+0900\n"
+"POT-Creation-Date: 2022-05-12 23:58+0900\n"
 "PO-Revision-Date: 2021-03-02 18:13+0900\n"
 "Last-Translator: \n"
 "Language: ko_KR\n"
@@ -61,13 +61,13 @@ msgstr ""
 msgid ""
 "First, let's check the type of physical GPU installed in the host node "
 "and the amount of memory. The GPU node used in this guide is equipped "
-"with a GPU with 8 GB of memory as in the following figure. And through "
-"the administrator settings, 1 fGPU is set to an amount equivalent to 0.5 "
-"physical GPU (or 1 physical GPU is 2 fGPU)."
+"with a GPU with 32 GB of memory as in the following figure. And through "
+"the administrator settings, 0.5 fGPU is set to an amount equivalent to "
+"0.5 physical GPU (or 1 physical GPU is 1 fGPU)."
 msgstr ""
 "먼저 호스트 노드에 장착되어 있는 물리 GPU 의 종류와 메모리 용량 등의 정보를 확인 해보겠습니다. 이 가이드를 작성하면서 사용한"
-" GPU 노드에는 다음과 같이 8 GB 메모리의 GPU 가 장착되어 있습니다. 그리고 관리자 설정을 통해 1 fGPU 를 0.5 "
-"개의 물리 GPU(또는 1 개의 물리 GPU 가 2 fGPU) 에 해당하는 양으로 설정하였습니다."
+" GPU 노드에는 다음과 같이 32 GB 메모리의 GPU 가 장착되어 있습니다. 그리고 관리자 설정을 통해 0.5 fGPU 를 "
+"0.5 개의 물리 GPU(또는 1 개의 물리 GPU 가 1 fGPU) 에 해당하는 양으로 설정하였습니다."
 
 #: ../../appendix/appendix.rst:33
 msgid ""
@@ -84,17 +84,17 @@ msgstr "연산 세션 리스트의 Configuration 열에서 0.5 의 fGPU 가 할�
 #: ../../appendix/appendix.rst:45
 msgid ""
 "Now, let's connect directly to the container and check if the allocated "
-"GPU memory is really equivalent to 0.5 units (~2 GB). Let's bring up a "
+"GPU memory is really equivalent to 0.5 units (~16 GB). Let's bring up a "
 "web terminal. When the terminal comes up, run the ``nvidia-smi`` command."
-" As you can see in the following figure, you can see that about 2 GB of "
+" As you can see in the following figure, you can see that about 16 GB of "
 "GPU memory is allocated. This shows that the physical GPU is actually "
 "divided into quarters and allocated inside the container for this compute"
 " session, which is not possible by a way like PCI passthrough."
 msgstr ""
-"이제 컨테이너에 직접 연결하여 할당 된 GPU 메모리가 실제로 0.5 단위 (~ 2GB)와 동일한지 확인하겠습니다. 웹 터미널을 "
-"띄웁니다. 터미널이 나타나면``nvidia-smi`` 명령을 실행합니다. 다음 그림에서 볼 수 있듯이 약 2GB의 GPU 메모리가 "
-"할당 되었음을 알 수 있습니다. 이는 물리적 GPU가 실제로 네 부분으로 나뉘어 이 연산 세션에 할당되었음을 보여줍니다. 이는 "
-"PCI 패스스루(passthrough0와 같은 방식으로는 불가능합니다."
+"이제 컨테이너에 직접 연결하여 할당 된 GPU 메모리가 실제로 0.5 단위 (~ 16 GB)와 동일한지 확인하겠습니다. 웹 터미널을"
+" 띄웁니다. 터미널이 나타나면 ``nvidia-smi`` 명령을 실행합니다. 다음 그림에서 볼 수 있듯이 약 16GB의 GPU "
+"메모리가 할당 되었음을 알 수 있습니다. 이는 물리적 GPU가 실제로 네 부분으로 나뉘어 이 연산 세션에 할당되었음을 보여줍니다. "
+"이는 PCI 패스스루(passthrough)와 같은 방식으로는 불가능합니다."
 
 #: ../../appendix/appendix.rst:56
 msgid "Let's open up a Jupyter Notebook and run a simple ML training code."
@@ -105,12 +105,12 @@ msgstr "이번에는 Jupyter Notebook 을 띄워서 간단한 ML 학습 코드�
 msgid ""
 "While training is in progress, connect to the shell of the GPU host node "
 "and execute the ``nvidia-smi`` command. You can see that there is one GPU"
-" attached to the process and this process is occupying about 25% of the "
+" attached to the process and this process is occupying about 16% of the "
 "resources of the physical GPU. (GPU occupancy can vary greatly depending "
 "on training code and GPU model.)"
 msgstr ""
 "학습이 진행되는 동안 GPU 호스트 노드의 쉘로 접속해서 ``nvidia-smi`` 명령을 실행합니다. 다음과 같이 하나의 GPU "
-"사용 프로세스가 있고 이 프로세스는 물리 GPU의 약 25% 에 해당 하는 자원을 점유중임을 알 수 있습니다. (GPU 점유량은 "
+"사용 프로세스가 있고 이 프로세스는 물리 GPU의 약 16% 에 해당 하는 자원을 점유중임을 알 수 있습니다. (GPU 점유량은 "
 "학습 코드와 GPU 모델에 따라 크게 다를 수 있습니다.)"
 
 #: ../../appendix/appendix.rst:70
@@ -144,20 +144,21 @@ msgstr ""
 #: ../../appendix/appendix.rst:83
 msgid ""
 "You can check the operation of the job scheduler in a simple way from the"
-" user Web-UI. When the GPU host can allocate up to 2 fGPUs, let's create "
-"3 compute sessions at the same time requesting allocation of 1 fGPU, "
+" user Web-UI. When the GPU host can allocate up to 1 fGPUs, let's create "
+"3 compute sessions at the same time requesting allocation of 0.4 fGPU, "
 "respectivley. In the Custom allocation section of the session launch "
 "dialog, there are GPU and Sessions sliders. If you specify a value "
 "greater than 1 in Sessions and click the LAUNCH button, the number of "
 "sessions will be requested at the same time. Let's set the GPU and "
-"Sessions to 1 and 3, respectively. This is the situation that 3 sessions "
-"requesting a total of 3 fGPUs are created when only 2 fGPUs exist."
+"Sessions to 0.4 and 3, respectively. This is the situation that 3 "
+"sessions requesting a total of 1.2 fGPUs are created when only 1 fGPUs "
+"exist."
 msgstr ""
-"사용자 Web-UI에서 간단한 방법으로 작업 스케줄러의 작동을 확인할 수 있습니다. GPU 호스트가 최대 2 단위의 fGPU를 할당"
-" 할 수있는 경우 1 단위의 fGPU 할당을 요청하는 3 개의 연산 세션을 동시에 생성해 보겠습니다. 세션 시작 대화 상자의 사용자"
-" 지정 할당 패널에는 GPU 및 세션 슬라이더가 있습니다. Sessions에서 1보다 큰 값을 지정하고 LAUNCH 버튼을 클릭하면"
-" 여러 개의 세션이 동시에 생성됩니다. GPU와 Sessions을 각각 1과 3으로 설정하겠습니다. 이는 fGPU가 2 단위밖에 "
-"없는 상황에서 총 3 단위의 fGPU를 요청하는 상황입니다."
+"사용자 Web-UI에서 간단한 방법으로 작업 스케줄러의 작동을 확인할 수 있습니다. GPU 호스트가 최대 1 단위의 fGPU를 할당"
+" 할 수있는 경우 0.4 단위의 fGPU 할당을 요청하는 3 개의 연산 세션을 동시에 생성해 보겠습니다. 세션 시작 대화 상자의 "
+"사용자 지정 할당 패널에는 GPU 및 세션 슬라이더가 있습니다. Sessions에서 1보다 큰 값을 지정하고 LAUNCH 버튼을 "
+"클릭하면  여러 개의 세션이 동시에 생성됩니다. GPU와 Sessions을 각각 0.4 와 3으로 설정하겠습니다. 이는 fGPU가"
+" 1 단위밖에 없는 상황에서 총 1.2 단위의 fGPU를 요청하는 상황입니다."
 
 #: ../../appendix/appendix.rst:97
 msgid ""
@@ -205,28 +206,30 @@ msgstr ""
 msgid ""
 "Go to the Sessions page and open the session launch dialog. There may be "
 "various kernel images depending on the installation settings."
-msgstr "Sessions 페이지로 이동하여 연산 세션 생성 다이얼로그를 엽니다. Backend.AI에서는 설치 환경에 따른 다양한 커널 이미지를 제공합니다."
+msgstr ""
+"Sessions 페이지로 이동하여 연산 세션 생성 다이얼로그를 엽니다. Backend.AI에서는 설치 환경에 따른 다양한 커널 "
+"이미지를 제공합니다."
 
 #: ../../appendix/appendix.rst:134
-msgid "Here, let's select the TensorFlow 2.3 environment and created a session."
-msgstr "여기서는 TensorFlow 2.3 환경을 선택하고 세션을 생성해보았습니다."
+msgid "Here, let's select the TensorFlow 2.7 environment and created a session."
+msgstr "여기서는 TensorFlow 2.7 환경을 선택하고 세션을 생성해보았습니다."
 
 #: ../../appendix/appendix.rst:140
 msgid ""
 "Open the web terminal of the created session and run the following Python"
-" command. You can see that TensorFlow 2.3 version is installed."
+" command. You can see that TensorFlow 2.7 version is installed."
 msgstr ""
-"생성된 세션의 웹 터미널을 열고 다음 Python 명령을 실행합니다. TensorFlow 2.3 버전이 실제 설치되어 있음을 확인할"
+"생성된 세션의 웹 터미널을 열고 다음 Python 명령을 실행합니다. TensorFlow 2.7 버전이 실제 설치되어 있음을 확인할"
 " 수 있습니다."
 
-#: ../../appendix/appendix.rst:147
+#: ../../appendix/appendix.rst:146
 msgid ""
 "This time, let's select the TensorFlow 1.15 environment to create a "
 "compute session. If resources are insufficient, delete the previous "
 "session."
 msgstr "이번에는 TensorFlow 1.15 환경을 선택해서 연산 세션을 생성합니다. (자원이 부족한 경우 이전 세션은 삭제합니다)"
 
-#: ../../appendix/appendix.rst:154
+#: ../../appendix/appendix.rst:153
 msgid ""
 "Open the web terminal of the created session and run the same Python "
 "command as before. You can see that TensorFlow 1.15(.4) version is "
@@ -235,19 +238,19 @@ msgstr ""
 "생성된 세션의 웹 터미널을 열고 이전과 동일한 Python 명령을 실행합니다. TensorFlow 1.15(.4) 버전이 실제 "
 "설치되어 있음을 확인할 수 있습니다."
 
-#: ../../appendix/appendix.rst:161
-msgid "Finally, create a compute session using PyTorch version 1.5."
-msgstr "마지막으로 PyTorch 1.5 버전을 이용해서 연산 세션을 생성합니다."
+#: ../../appendix/appendix.rst:160
+msgid "Finally, create a compute session using PyTorch version 1.9."
+msgstr "마지막으로 PyTorch 1.9 버전을 이용해서 연산 세션을 생성합니다."
 
-#: ../../appendix/appendix.rst:167
+#: ../../appendix/appendix.rst:166
 msgid ""
 "Open the web terminal of the created session and run the following Python"
-" command. You can see that PyTorch 1.5 version is installed."
+" command. You can see that PyTorch 1.9 version is installed."
 msgstr ""
-"생성된 세션의 웹 터미널을 열고 다음 Python 명령을 실행합니다. PyTorch 1.5 버전이 실제 설치되어 있음을 확인할 수 "
+"생성된 세션의 웹 터미널을 열고 다음 Python 명령을 실행합니다. PyTorch 1.9 버전이 실제 설치되어 있음을 확인할 수 "
 "있습니다."
 
-#: ../../appendix/appendix.rst:174
+#: ../../appendix/appendix.rst:173
 msgid ""
 "Like this, you can utilize various versions of major libraries such as "
 "TensorFlow and PyTorch through Backend.AI without unnecessary effort to "
@@ -256,11 +259,11 @@ msgstr ""
 "이처럼, Backend.AI 를 통해 TensorFlow, PyTorch 등 주요 라이브러리의 다양한 버전을 불필요한 설치 노력 "
 "없이 활용할 수 있습니다."
 
-#: ../../appendix/appendix.rst:179
+#: ../../appendix/appendix.rst:178
 msgid "Backend.AI Server Installation Guide"
 msgstr "Backend.AI 서버 설정 가이드"
 
-#: ../../appendix/appendix.rst:181
+#: ../../appendix/appendix.rst:180
 msgid ""
 "For Backend.AI Server daemons/services, following hardware specification "
 "should be met. For optimal performance, just double the amount of each "
@@ -269,79 +272,79 @@ msgstr ""
 "Backend.AI 데몬/서비스 구동을 위해서는 다음과 같은 하드웨어가 필요합니다. 최적 성능을 위해서는 아래 명기된 사양의 두 배"
 " 이상 필요합니다."
 
-#: ../../appendix/appendix.rst:184
+#: ../../appendix/appendix.rst:183
 msgid "Manager: 2 cores, 4 GiB memory"
 msgstr ""
 
-#: ../../appendix/appendix.rst:185
+#: ../../appendix/appendix.rst:184
 msgid ""
 "Agent: 4 cores, 32 GiB memory, NVIDIA GPU (for GPU workload), > 512 GiB "
 "SSD"
 msgstr ""
 
-#: ../../appendix/appendix.rst:186
+#: ../../appendix/appendix.rst:185
 msgid "Webserver: 2 cores, 4 GiB memory"
 msgstr ""
 
-#: ../../appendix/appendix.rst:187
+#: ../../appendix/appendix.rst:186
 msgid "WSProxy: 2 cores, 4 GiB memory"
 msgstr ""
 
-#: ../../appendix/appendix.rst:188
+#: ../../appendix/appendix.rst:187
 msgid "PostgreSQL DB: 2 cores, 4 GiB memory"
 msgstr ""
 
-#: ../../appendix/appendix.rst:189
+#: ../../appendix/appendix.rst:188
 msgid "Redis: 1 core, 2 GiB memory"
 msgstr ""
 
-#: ../../appendix/appendix.rst:190
+#: ../../appendix/appendix.rst:189
 msgid "Etcd: 1 core, 2 GiB memory"
 msgstr ""
 
-#: ../../appendix/appendix.rst:192
+#: ../../appendix/appendix.rst:191
 msgid ""
 "The essential host dependent packages that must be pre-installed before "
 "installing each service are:"
 msgstr "각 서비스를 설치하기 전에 사전에 설치되어야 할 주요 의존 호스트 패키지는 다음과 같습니다:"
 
-#: ../../appendix/appendix.rst:195
+#: ../../appendix/appendix.rst:194
 msgid ""
 "Web-UI: Operating system that can run the latest browsers (Windows, Mac "
 "OS, Ubuntu, etc.)"
 msgstr "Web-UI: 최신 브라우저를 구동할 수 있는 운영체제 (Windows, Mac OS, Ubuntu 등)"
 
-#: ../../appendix/appendix.rst:197
+#: ../../appendix/appendix.rst:196
 msgid "Manager: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)"
 msgstr ""
 
-#: ../../appendix/appendix.rst:198
+#: ../../appendix/appendix.rst:197
 msgid ""
 "Agent: docker (≥19.03), CUDA/CUDA Toolkit (≥8, 11 recommend), nvidia-"
 "docker v2, Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)"
 msgstr ""
 
-#: ../../appendix/appendix.rst:200
+#: ../../appendix/appendix.rst:199
 msgid "Webserver: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)"
 msgstr ""
 
-#: ../../appendix/appendix.rst:201
+#: ../../appendix/appendix.rst:200
 msgid "WSProxy: docker (≥19.03), docker-compose (≥1.24)"
 msgstr ""
 
-#: ../../appendix/appendix.rst:202
+#: ../../appendix/appendix.rst:201
 msgid "PostgreSQL DB: docker (≥19.03), docker-compose (≥1.24)"
 msgstr ""
 
-#: ../../appendix/appendix.rst:203
+#: ../../appendix/appendix.rst:202
 msgid "Redis: docker (≥19.03), docker-compose (≥1.24)"
 msgstr ""
 
-#: ../../appendix/appendix.rst:204
+#: ../../appendix/appendix.rst:203
 msgid "Etcd: docker (≥19.03), docker-compose (≥1.24)"
 msgstr ""
 
-#: ../../appendix/appendix.rst:206
+#: ../../appendix/appendix.rst:205
 msgid ""
 "For Enterprise version, Backend.AI server daemons are installed by Lablup"
 " support team and following materials/services are provided after initial"
@@ -689,4 +692,58 @@ msgstr "백업 데이터를 통해 Etcd 설정을 복원하려면 다음과 같�
 #~ "수 있습니다. 이 PENDING 세션은 작업 큐에 "
 #~ "등록만 되어 있고 GPU 자원 부족으로 인해 실제로"
 #~ " 컨테이너를 할당 받지는 못한 상태입니다."
+
+#~ msgid ""
+#~ "You can check the operation of the"
+#~ " job scheduler in a simple way "
+#~ "from the user Web-UI. When the "
+#~ "GPU host can allocate up to 2 "
+#~ "fGPUs, let's create 3 compute sessions"
+#~ " at the same time requesting "
+#~ "allocation of 1 fGPU, respectivley. In"
+#~ " the Custom allocation section of the"
+#~ " session launch dialog, there are GPU"
+#~ " and Sessions sliders. If you specify"
+#~ " a value greater than 1 in "
+#~ "Sessions and click the LAUNCH button,"
+#~ " the number of sessions will be "
+#~ "requested at the same time. Let's "
+#~ "set the GPU and Sessions to 1 "
+#~ "and 3, respectively. This is the "
+#~ "situation that 3 sessions requesting a"
+#~ " total of 3 fGPUs are created "
+#~ "when only 2 fGPUs exist."
+#~ msgstr ""
+#~ "사용자 Web-UI에서 간단한 방법으로 작업 스케줄러의 "
+#~ "작동을 확인할 수 있습니다. GPU 호스트가 최대 "
+#~ "2 단위의 fGPU를 할당 할 수있는 경우 1"
+#~ " 단위의 fGPU 할당을 요청하는 3 개의 연산 "
+#~ "세션을 동시에 생성해 보겠습니다. 세션 시작 대화 "
+#~ "상자의 사용자 지정 할당 패널에는 GPU 및 세션"
+#~ " 슬라이더가 있습니다. Sessions에서 1보다 큰 값을 "
+#~ "지정하고 LAUNCH 버튼을 클릭하면 여러 개의 세션이 "
+#~ "동시에 생성됩니다. GPU와 Sessions을 각각 1과 "
+#~ "3으로 설정하겠습니다. 이는 fGPU가 2 단위밖에 없는"
+#~ " 상황에서 총 3 단위의 fGPU를 요청하는 상황입니다."
+
+#~ msgid ""
+#~ "First, let's check the type of "
+#~ "physical GPU installed in the host "
+#~ "node and the amount of memory. The"
+#~ " GPU node used in this guide is"
+#~ " equipped with a GPU with 8 GB"
+#~ " of memory as in the following "
+#~ "figure. And through the administrator "
+#~ "settings, 1 fGPU is set to an "
+#~ "amount equivalent to 0.5 physical GPU"
+#~ " (or 1 physical GPU is 2 fGPU)."
+#~ msgstr ""
+#~ "먼저 호스트 노드에 장착되어 있는 물리 GPU 의"
+#~ " 종류와 메모리 용량 등의 정보를 확인 해보겠습니다."
+#~ " 이 가이드를 작성하면서 사용한 GPU 노드에는 다음과"
+#~ " 같이 8 GB 메모리의 GPU 가 장착되어 "
+#~ "있습니다. 그리고 관리자 설정을 통해 1 fGPU "
+#~ "를 0.5 개의 물리 GPU(또는 1 개의 물리"
+#~ " GPU 가 2 fGPU) 에 해당하는 양으로 "
+#~ "설정하였습니다."
 
