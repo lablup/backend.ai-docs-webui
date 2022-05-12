@@ -22,9 +22,9 @@ container really corresponds to the partial physics GPU.
 
 First, let's check the type of physical GPU installed in the
 host node and the amount of memory. The GPU node used in this guide is equipped
-with a GPU with 8 GB of memory as in the following figure. And through the
-administrator settings, 1 fGPU is set to an amount equivalent to 0.5 physical
-GPU (or 1 physical GPU is 2 fGPU).
+with a GPU with 32 GB of memory as in the following figure. And through the
+administrator settings, 0.5 fGPU is set to an amount equivalent to 0.5 physical
+GPU (or 1 physical GPU is 1 fGPU).
 
 .. image:: host_gpu.png
    :width: 600
@@ -43,9 +43,9 @@ In the Configuration panel of the session list, you can see that
 .. image:: session_list_with_gpu.png
 
 Now, let's connect directly to the container and check if the allocated GPU
-memory is really equivalent to 0.5 units (~2 GB). Let's bring up a web
+memory is really equivalent to 0.5 units (~16 GB). Let's bring up a web
 terminal. When the terminal comes up, run the ``nvidia-smi`` command. As you can
-see in the following figure, you can see that about 2 GB of GPU memory is
+see in the following figure, you can see that about 16 GB of GPU memory is
 allocated. This shows that the physical GPU is actually divided into quarters and allocated inside the
 container for this compute session, which is not possible by a way like PCI passthrough.
 
@@ -59,7 +59,7 @@ Let's open up a Jupyter Notebook and run a simple ML training code.
 
 While training is in progress, connect to the shell of the GPU host node and
 execute the ``nvidia-smi`` command. You can see that there is one GPU attached
-to the process and this process is occupying about 25% of the resources of the
+to the process and this process is occupying about 16% of the resources of the
 physical GPU. (GPU occupancy can vary greatly depending on training code and GPU
 model.)
 
@@ -81,14 +81,14 @@ the resources become available again, the pended request is resumed to
 create a compute session.
 
 You can check the operation of the job scheduler in a simple way from the
-user Web-UI. When the GPU host can allocate up to 2 fGPUs,
+user Web-UI. When the GPU host can allocate up to 1 fGPUs,
 let's create 3 compute sessions at the same time requesting
-allocation of 1 fGPU, respectivley. In the Custom allocation section of the session launch
+allocation of 0.4 fGPU, respectivley. In the Custom allocation section of the session launch
 dialog, there are GPU and Sessions sliders. If you specify a value greater than
 1 in Sessions and click the LAUNCH button, the number of sessions will be
-requested at the same time. Let's set the GPU and Sessions to 1 and 3,
+requested at the same time. Let's set the GPU and Sessions to 0.4 and 3,
 respectively. This is the situation that 3 sessions requesting a
-total of 3 fGPUs are created when only 2 fGPUs exist.
+total of 1.2 fGPUs are created when only 1 fGPUs exist.
 
 .. image:: session_launch_dialog_3_sessions.png
    :width: 350
@@ -131,16 +131,16 @@ kernel images depending on the installation settings.
    :width: 350
    :align: center
 
-Here, let's select the TensorFlow 2.3 environment and created a session.
+Here, let's select the TensorFlow 2.7 environment and created a session.
 
-.. image:: session_launch_dialog_tf23.png
+.. image:: session_launch_dialog_tf27.png
    :width: 350
    :align: center
 
 Open the web terminal of the created session and run the following Python
-command. You can see that TensorFlow 2.3 version is installed.
+command. You can see that TensorFlow 2.7 version is installed.
 
-.. image:: tf23_version_print.png
+.. image:: tf27_version_print.png
    :align: center
 
 This time, let's select the TensorFlow 1.15 environment to create a compute
@@ -157,16 +157,16 @@ before. You can see that TensorFlow 1.15(.4) version is installed.
    :width: 450
    :align: center
 
-Finally, create a compute session using PyTorch version 1.5.
+Finally, create a compute session using PyTorch version 1.9.
 
-.. image:: session_launch_dialog_pytorch15.png
+.. image:: session_launch_dialog_pytorch19.png
    :width: 350
    :align: center
 
 Open the web terminal of the created session and run the following Python
-command. You can see that PyTorch 1.5 version is installed.
+command. You can see that PyTorch 1.9 version is installed.
 
-.. image:: pytorch15_version_print.png
+.. image:: pytorch19_version_print.png
    :width: 450
    :align: center
 
@@ -202,7 +202,8 @@ each service are:
 * Redis: docker (≥19.03), docker-compose (≥1.24)
 * Etcd: docker (≥19.03), docker-compose (≥1.24)
 
-For Enterprise version, Backend.AI server daemons are installed by Lablup support team and following materials/services are provided after initial installation:
+For Enterprise version, Backend.AI server daemons are installed by Lablup support 
+team and following materials/services are provided after initial installation:
 
 * DVD 1 (includes Backend.AI packages)
 * User GUI Guide manual
