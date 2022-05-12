@@ -27,7 +27,7 @@ session.
    :alt: Launch a compute session with storage folders
 
 .. note::
-   Every Vfolder in folders to mount list is visible if its storage host is added to 
+   Every Vfolder in folder to mount list is visible if its storage host is added to 
    allowed hosts. Only administrator can change allowed hosts.
    In the image above, the user have an access to ``local:volume1``.
 
