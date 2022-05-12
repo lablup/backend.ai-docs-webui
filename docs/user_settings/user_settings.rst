@@ -35,8 +35,9 @@ refreshing the page, click the leftmost icon at the top of the sidebar.
 Language
 ^^^^^^^^
 
-Set the language displayed on the UI. Currently, English and Korean are
-supported. However, there may be some UI items that do not update their language
+Set the language displayed on the UI. Currently, Backend.AI supports more than 
+five languages including English and Korean. However, there may be some UI items 
+that do not update their language
 before the page is refreshed.
 
 * OS Default: Use the operating system's default language.
