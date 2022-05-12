@@ -23,14 +23,14 @@ Each menu item has the following functions.
 
 * About Backend.AI: Displays information such as version of Backend.AI Web-UI,
   license type, etc.
-* Change User Info: Change user name and password
+* My Account: Show keypair and Change user name and password
 * Preferences: Go to user settings page
 * Logs / Errors: Go to the log page. You can check the log and error history
   recorded on the client side.
 * Logout: Log out. Users can also logout by clicking the icon on the far right
   of the top bar.
 
-If you click Change User Info, the following dialog appears.
+If you click My Account, the following dialog appears.
 
 .. image:: change_user_info.png
    :width: 350
