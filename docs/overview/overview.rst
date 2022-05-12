@@ -138,8 +138,10 @@ Backend.AI feature details
 | Data management      | EFS, NFS, SMB and distributed file system             |
 |                      | (CephFS, GlusterFS, HDFS, etc)                        |
 +                      +-------------------------------------------------------+
-|                      | (Enterprise) Dedicated flash-storage integration:     |
-|                      | PureStorage FlashBlade                                |
+|                      | (Enterprise) Provide storage solution integration:    |
+|                      |                                                       |
+|                      | * PureStorage FlashBlade                              |
+|                      | * NetApp ONTAP & NetApp XCP                           |
 +                      +-------------------------------------------------------+
 |                      | Access control to data by user/project                |
 +----------------------+-------------------------------------------------------+
@@ -165,7 +167,7 @@ Backend.AI feature details
 +                      +-------------------------------------------------------+
 |                      | Priority development and escalation                   |
 +                      +-------------------------------------------------------+
-|                      | Custmoized container image / kernel or kernel         |
+|                      | Customized container image / kernel or kernel         |
 |                      | repository                                            |
 +----------------------+-------------------------------------------------------+
 
