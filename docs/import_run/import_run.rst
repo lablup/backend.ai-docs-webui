@@ -1,10 +1,10 @@
-=============================================
-Import & Run notebooks and github repository
-=============================================
+=====================================================
+Import & Run notebooks and web based Git repositories
+=====================================================
 
-Backend.AI supports executing Jupyter notebook files and importing github repository
-on the fly. You don't need to create or download into your local storage and re-upload
-it. The only thing you have to do is input a valid URL you want to execute or import,
+Backend.AI supports executing Jupyter notebook files and importing web based Git repositories 
+such as GitHub and GitLab on the fly. You don't need to create or download into your local storage 
+and re-upload it. The only thing you have to do is input a valid URL you want to execute or import,
 and click the button on the right side.
 
 Import and run Jupyter notebooks
@@ -50,7 +50,7 @@ Create executable Jupyter notebook button
 You can also create HTML or Markdown button about Jupyter notebook URL, too.
 Input a valid Jupyter notebook URL and click CREATE button. It will show code blocks that directly
 links to creating a session with notebook. You can see the badge code working by inserting it in
-the Github repositories or where it supports html or markdown.
+the GitHub repositories or where it supports html or markdown.
 
 .. note::
 
@@ -61,15 +61,17 @@ the Github repositories or where it supports html or markdown.
    :align: center
    :alt: Create a Jupyter notebook button
 
-Importing Github Repositories
+.. _importing-github-repositories:
+
+Importing GitHub Repositories
 -----------------------------
 
-Importing a Github repository is similar to import and running jupyter notebook.
+Importing a GitHub repository is similar to import and running jupyter notebook.
 All you have to do is to fill out with github repository URL and click GET TO
-FOLDER button.
+FOLDER button. If you can access to more than one storage host, you can select one from the list.
 
 .. image:: import_github_repository.png
-   :alt: Import Github repository
+   :alt: Import GitHub repository
 
 .. warning::
 
@@ -81,7 +83,18 @@ You can see the repository is successfully imported as a data folder with its
 name.
 
 .. image:: import_github_repository_result.png
-   :alt: Import Github repository result
+   :alt: Import GitHub repository result
+
+
+Importing GitLab Repositories
+-----------------------------
+
+From 22.03, Backend.AI support another web based Git repository, GitLab.
+It's almost same as :ref:`Importing GitHub Repositories<importing-github-repositories>` , 
+but in importing from GitLab repositories, you can specify the branch you want to import as Vfolder. 
+
+.. image:: import_gitlab_repository.png
+   :alt: Import GitLab repository
 
 .. note::
 
