@@ -138,7 +138,7 @@ Backend.AI feature details
 | Data management      | EFS, NFS, SMB and distributed file system             |
 |                      | (CephFS, GlusterFS, HDFS, etc)                        |
 +                      +-------------------------------------------------------+
-|                      | (Enterprise) Provide storage solution integration:    |
+|                      | (Enterprise) Storage solution integration:            |
 |                      |                                                       |
 |                      | * PureStorage FlashBlade                              |
 |                      | * NetApp ONTAP & NetApp XCP                           |

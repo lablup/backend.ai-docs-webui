@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-15 11:55+0900\n"
+"POT-Creation-Date: 2022-05-16 23:56+0900\n"
 "PO-Revision-Date: 2021-03-02 20:43+0900\n"
 "Last-Translator: \n"
 "Language: ko\n"
@@ -328,138 +328,146 @@ msgid "EFS, NFS, SMB and distributed file system (CephFS, GlusterFS, HDFS, etc)"
 msgstr ""
 
 #: ../../overview/overview.rst:141
-msgid "(Enterprise) Dedicated flash-storage integration: PureStorage FlashBlade"
+msgid "(Enterprise) Storage solution integration:"
+msgstr ""
+
+#: ../../overview/overview.rst:143
+msgid "PureStorage FlashBlade"
 msgstr ""
 
 #: ../../overview/overview.rst:144
+msgid "NetApp ONTAP & NetApp XCP"
+msgstr ""
+
+#: ../../overview/overview.rst:146
 msgid "Access control to data by user/project"
 msgstr ""
 
-#: ../../overview/overview.rst:146
+#: ../../overview/overview.rst:148
 msgid "Developer support"
 msgstr ""
 
-#: ../../overview/overview.rst:146
+#: ../../overview/overview.rst:148
 msgid "Universal programming languages (Python, C/C++, etc)"
 msgstr ""
 
-#: ../../overview/overview.rst:148
+#: ../../overview/overview.rst:150
 msgid "Interactive web apps (Terminal, Jupyter, VSCode, etc)"
 msgstr ""
 
-#: ../../overview/overview.rst:150
+#: ../../overview/overview.rst:152
 msgid "For data scientists"
 msgstr ""
 
-#: ../../overview/overview.rst:150
+#: ../../overview/overview.rst:152
 msgid "NGC (NVIDIA GPU CLoud) image integration"
 msgstr ""
 
-#: ../../overview/overview.rst:152
+#: ../../overview/overview.rst:154
 msgid "Popular ML libraries: TensorFlow, PyTorch, etc"
 msgstr ""
 
-#: ../../overview/overview.rst:154
+#: ../../overview/overview.rst:156
 msgid "Concurrent user of multiple versions of libraries"
 msgstr ""
 
-#: ../../overview/overview.rst:156
+#: ../../overview/overview.rst:158
 msgid "Periodic update of ML libraries"
 msgstr ""
 
-#: ../../overview/overview.rst:158
+#: ../../overview/overview.rst:160
 msgid "Customer support"
 msgstr ""
 
-#: ../../overview/overview.rst:158
+#: ../../overview/overview.rst:160
 msgid "On-site installation (bare-metal / VM)"
 msgstr ""
 
-#: ../../overview/overview.rst:160
+#: ../../overview/overview.rst:162
 msgid "Configuration support (on-premise + cloud)"
 msgstr ""
 
-#: ../../overview/overview.rst:162
+#: ../../overview/overview.rst:164
 msgid "Admin/user training"
 msgstr ""
 
-#: ../../overview/overview.rst:164
+#: ../../overview/overview.rst:166
 msgid "Support for updating to latest version"
 msgstr ""
 
-#: ../../overview/overview.rst:166
+#: ../../overview/overview.rst:168
 msgid "Priority development and escalation"
 msgstr ""
 
-#: ../../overview/overview.rst:168
-msgid "Custmoized container image / kernel or kernel repository"
+#: ../../overview/overview.rst:170
+msgid "Customized container image / kernel or kernel repository"
 msgstr ""
 
-#: ../../overview/overview.rst:174
+#: ../../overview/overview.rst:176
 msgid "Accessible menu by user role"
 msgstr "사용자 역할 별 접근 가능한 메뉴 안내"
 
-#: ../../overview/overview.rst:178
+#: ../../overview/overview.rst:180
 msgid "Pages with ``*`` mark are in Administration menu."
 msgstr "``*`` 표시가 붙은 페이지는 관리자용 메뉴입니다."
 
-#: ../../overview/overview.rst:179
+#: ../../overview/overview.rst:181
 msgid "Features only for admin are listed in :ref:`admin menu <admin-menu>`."
 msgstr "관리자 전용 기능은 :ref:`어드민 전용 메뉴 <admin-menu>` 에서 확인할 수 있습니다."
 
-#: ../../overview/overview.rst:182
+#: ../../overview/overview.rst:184
 msgid "page \\\\ role"
 msgstr "페이지 \\\\ 역할"
 
-#: ../../overview/overview.rst:182
+#: ../../overview/overview.rst:184
 msgid "user"
 msgstr "일반 사용자"
 
-#: ../../overview/overview.rst:182
+#: ../../overview/overview.rst:184
 msgid "admin"
 msgstr "어드민"
 
-#: ../../overview/overview.rst:184
+#: ../../overview/overview.rst:186
 msgid "Summary"
 msgstr "요약 (Summary)"
 
-#: ../../overview/overview.rst:184 ../../overview/overview.rst:186
-#: ../../overview/overview.rst:188 ../../overview/overview.rst:190
-#: ../../overview/overview.rst:192 ../../overview/overview.rst:194
-#: ../../overview/overview.rst:196 ../../overview/overview.rst:198
+#: ../../overview/overview.rst:186 ../../overview/overview.rst:188
+#: ../../overview/overview.rst:190 ../../overview/overview.rst:192
+#: ../../overview/overview.rst:194 ../../overview/overview.rst:196
+#: ../../overview/overview.rst:198 ../../overview/overview.rst:200
 msgid "O"
 msgstr ""
 
-#: ../../overview/overview.rst:186
+#: ../../overview/overview.rst:188
 msgid "Sessions"
 msgstr "세션 (Sessions)"
 
-#: ../../overview/overview.rst:188
+#: ../../overview/overview.rst:190
 msgid "Data & Storage"
 msgstr "데이터 & 폴더 (Data & Storage)"
 
-#: ../../overview/overview.rst:190
+#: ../../overview/overview.rst:192
 msgid "Statistics"
 msgstr "통계 (Statistics)"
 
-#: ../../overview/overview.rst:192
+#: ../../overview/overview.rst:194
 msgid "Users*"
 msgstr "사용자 (Users)*"
 
-#: ../../overview/overview.rst:192 ../../overview/overview.rst:194
-#: ../../overview/overview.rst:196
+#: ../../overview/overview.rst:194 ../../overview/overview.rst:196
+#: ../../overview/overview.rst:198
 msgid "X"
 msgstr ""
 
-#: ../../overview/overview.rst:194
+#: ../../overview/overview.rst:196
 msgid "Maintenance*"
 msgstr "관리 (Maintenance)*"
 
-#: ../../overview/overview.rst:196
+#: ../../overview/overview.rst:198
 msgid "Information*"
 msgstr "정보 (Information)*"
 
-#: ../../overview/overview.rst:198
+#: ../../overview/overview.rst:200
 msgid "UserSettings"
 msgstr "사용자 설정 (UserSettings)"
 
@@ -634,7 +642,7 @@ msgstr "사용자 설정 (UserSettings)"
 #~ msgid ""
 #~ "(Enterprise) Dedicated flash-storage "
 #~ "integration: PureStorage FlashBlade"
-#~ msgstr "(엔터프라이즈) 플래시 저장소 통합: PureStorage FlashBlade"
+#~ msgstr ""
 
 #~ msgid "Access control to data by user/project"
 #~ msgstr "사용자/프로젝트 별 데이터 접근 제어"
@@ -682,5 +690,5 @@ msgstr "사용자 설정 (UserSettings)"
 #~ msgstr "기술 개발 요청 우선 반영"
 
 #~ msgid "Custmoized container image / kernel or kernel repository"
-#~ msgstr "커스텀 컨테이너 이미지 및 이미지 레지스트리"
+#~ msgstr ""
 
