@@ -256,6 +256,10 @@ the tree structure. Click the upload button in the upper right corner of the
 window, and click Folder button. Then, local file explorer dialog will appear
 and you can select any directory you want to upload.
 
+.. note::
+   If you try to upload a file to a read-only folder, FileBrowser will raise a
+   server error.
+
 .. image:: filebrowser_upload.png
    :align: center
 
