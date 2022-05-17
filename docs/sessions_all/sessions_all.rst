@@ -30,7 +30,7 @@ please refer to the following.
 
 .. _session-naming-rule:
 
-* Session type: Determines the type of the session for the. "Interactive" and
+* Session type: Determines the type of the session. "Interactive" and
   "Batch" are the two session types currently available. The following are the
   primary distinctions between the two types:
 

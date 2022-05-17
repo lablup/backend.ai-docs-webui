@@ -71,11 +71,11 @@ msgstr ""
 
 #: ../../sessions_all/sessions_all.rst:33
 msgid ""
-"Session type: Determines the type of the session for the. \"Interactive\" and "
+"Session type: Determines the type of the session. \"Interactive\" and "
 "\"Batch\" are the two session types currently available. The following are the "
 "primary distinctions between the two types:"
 msgstr ""
-"세션의 형태를 결정합니다. 현재 가능한 세션 형태는 “Interactive” 와 “Batch” 두 가"
+"Session type: 세션의 형태를 결정합니다. 현재 가능한 세션 형태는 “Interactive” 와 “Batch” 두 가"
 "지가 있습니다. 두 형태의 주요한 차이점은 다음과 같습니다:"
 
 #: ../../sessions_all/sessions_all.rst:37
