@@ -25,8 +25,9 @@ Storage Status on top of the folder list shows the following information:
 * Created: The number of folders that the user created.
 * Invited: The number of folers that the user was invited to share.
 * Capacity: The maximum number of folders that the user can create afterwards.
-  This value depends on the resource policy applied to the user and cannot be changed
-  without changing the resource policy. Folders that were not created by the user (eg. folders invited to share, or project folders) are not counted.
+  This value depends on the resource policy applied to the user and cannot be
+  changed without changing the resource policy. Folders that were not created by
+  the user (eg. folders invited to share, or project folders) are not counted.
 
 Check marks on the Owner panel in the folder list indicate the user created folders.
 
@@ -34,9 +35,8 @@ Check marks on the Owner panel in the folder list indicate the user created fold
    :alt: Storage status in Storage page
 
 .. tip::
-   If there's many vfolders on the list, you can use input fields on the top row.
-   Currently we provide two filters, vfolder name and the name of storage host.
-   
+   If there are lots of folders in the list, you can filter the list by using the
+   search boxes on top of the list.
 
 
 Create storage folder
@@ -193,10 +193,6 @@ data folder to open the file explorer.
 .. image:: first_step_to_access_filebrowser.png
    :alt: first step to access FileBrowser
 
-.. warning::
-   You cannot launch FileBrowser from read-only data folders since FileBrowser 
-   requires write permissions.
-
 Click EXECUTE FILEBROWSER button in the upper-right corner of the explorer.
 
 .. image:: folderexplorer_with_filebrowser.png
@@ -317,21 +313,24 @@ You will see that moving operation is successfully finished.
 Setting quota on XFS
 --------------------
 
-Backend.AI provides quota adjustment UI for Vfolder if storage file systems 
-that supports directory based quota.
+If the underlying file system supports a per-directory or a per-project quota,
+such as XFS, Backend.AI can provide a per-folder quota. Administrators can set
+the quota limit through a resource policy, so if you want to increase the quota,
+contact the administrator. Within the policy limit, users can adjust the quota
+of their folders by clicking the setting icon for each data folder.
 
 .. image:: xfs_quota_setting.png
    :width: 400
    :align: center
    :alt: XFS quota setting
 
-.. note::
-   In order to set quota on vfolder, make sure storage host is XFS. 
-   If you want to apply XFS on your own server and use them in Backend.AI cluster, 
-   Please refer to `XFS Filesystem Backends Guide in Backend.AI Storage Proxy 
-   <https://github.com/lablup/backend.ai-storage-proxy#xfs>`_.
+For more information on the per-folder quota on XFS, please refer to the
+following docs:
 
-You also can see the current usage and capacity of vfolder in information dialog. 
+- `XFS Filesystem Backends Guide in Backend.AI Storage Proxy <https://github.com/lablup/backend.ai-storage-proxy#xfs>`_
+- `Per-folder quota for XFS <https://blog.lablup.com/posts/2022/01/21/xfs-directory-quota>`_
+
+You can also see the current usage and capacity of a data folder in information dialog.
 
 .. image:: vfolder_information_storage_host_xfs.png
    :width: 400

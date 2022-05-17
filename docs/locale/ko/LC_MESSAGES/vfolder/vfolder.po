@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web UI User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-12 02:12+0900\n"
-"PO-Revision-Date: 2021-07-28 10:23+0900\n"
+"POT-Creation-Date: 2022-05-17 15:04+0900\n"
+"PO-Revision-Date: 2022-05-17 15:03+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko\n"
 "Language-Team: Lablup\n"
@@ -75,20 +75,17 @@ msgstr ""
 "변경하지 않고 변경할 수 없습니다. 사용자가 생성하지 않은 폴더(예 : 공유하도록 초대 된 폴더 또는 프로젝트 폴더)는 계산에 "
 "포함되지 않습니다."
 
-#: ../../vfolder/vfolder.rst:31
+#: ../../vfolder/vfolder.rst:32
 msgid ""
 "Check marks on the Owner panel in the folder list indicate the user "
 "created folders."
 msgstr "폴더 목록의 소유자 패널에있는 확인 표시는 사용자가 만든 폴더를 나타냅니다."
 
-#: ../../vfolder/vfolder.rst:37
+#: ../../vfolder/vfolder.rst:38
 msgid ""
-"If there's many vfolders on the list, you can use input fields on the top"
-" row. Currently we provide two filters, vfolder name and the name of "
-"storage host."
-msgstr ""
-"다수의 폴더가 리스트에 있는 경우, 리스트 최상단의 필드를 활용할 수 있습니다. 현재 버전에서는 "
-"폴더명과 저장소 호스트명 두 가지 필터를 제공합니다."
+"If there are lots of folders in the list, you can filter the list by "
+"using the search boxes on top of the list."
+msgstr "많은 수의 폴더를 사용하고 있는 경우, 리스트 상단의 검색 상자를 이용하여 폴더 목록을 필터링할 수 있습니다."
 
 #: ../../vfolder/vfolder.rst:43
 msgid "Create storage folder"
@@ -350,21 +347,13 @@ msgstr ""
 "Data & Storage 페이지로 이동 후 원하는 데이터 폴더의 탐색기 창을 띄웁니다. 데이터 폴더 우측의 Control 열에서 "
 "폴더 아이콘을 클릭하여 파일 탐색기를 띄웁니다."
 
-#: ../../vfolder/vfolder.rst:197
-msgid ""
-"You cannot launch FileBrowser from read-only data folders since "
-"FileBrowser requires write permissions."
-msgstr ""
-"파일브라우저는 쓰기 권한을 필요로 하기 때문에 읽기 전용 폴더에서는 파일 브라우저를 띄울 수 없습니다."
-
-
-#: ../../vfolder/vfolder.rst:200
+#: ../../vfolder/vfolder.rst:196
 msgid ""
 "Click EXECUTE FILEBROWSER button in the upper-right corner of the "
 "explorer."
 msgstr "탐색기 우측 상단의 파일 브라우저 실행 버튼을 클릭해주세요."
 
-#: ../../vfolder/vfolder.rst:205
+#: ../../vfolder/vfolder.rst:201
 msgid ""
 "You can see the FileBrowser is opened in a new window. You can also see "
 "that the data folder you opened the explorer dialog becomes the root "
@@ -374,7 +363,7 @@ msgstr ""
 "파일 브라우저가 새 창에서 열린 것을 확인할 수 있습니다. 탐색기를 열었던 저장 폴더가 파일 브라우저의 루트 디렉토리가 되는 것도 "
 "알 수 있습니다. 파일 브라우저 창에서 디렉토리와 파일을 자유롭게 업로드하고 수정하고 삭제할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:213
+#: ../../vfolder/vfolder.rst:209
 msgid ""
 "When user clicks EXECUTE FILEBROWSER, Backend.AI automatically creates a "
 "dedicated compute session for the app. So, in the Sessions page, you "
@@ -385,7 +374,7 @@ msgstr ""
 "생성하게 됩니다. 따라서, Sesssions 페이지에서 파일 브라우저 연산 세션이 조회되는 것을 확인할 수 있습니다. 이 연산 "
 "세션을 삭제하는 것은 사용자의 몫입니다."
 
-#: ../../vfolder/vfolder.rst:222
+#: ../../vfolder/vfolder.rst:218
 msgid ""
 "If you accidentally close the FileBrowser window and want to reopen it, "
 "just go to Sessions page and click the FileBrowser application icon of "
@@ -403,11 +392,11 @@ msgstr ""
 "만약 탐색기에서 파일브라우저 실행 버튼을 다시 클릭하면 새로운 세션이 생성되어 총 두 개의 파일 브라우저 연산 세션이 나타나게 "
 "됩니다."
 
-#: ../../vfolder/vfolder.rst:237
+#: ../../vfolder/vfolder.rst:233
 msgid "Create a compute session with FileBrowser image"
 msgstr "파일 브라우저 이미지로 연산 세션 생성하기"
 
-#: ../../vfolder/vfolder.rst:239
+#: ../../vfolder/vfolder.rst:235
 msgid ""
 "You can directly create a compute session with FileBrowser supported "
 "images. You need to mount at least one or more data folders to access "
@@ -419,7 +408,7 @@ msgstr ""
 "폴더를 하나 이상 마운트 하십시오. 아무 데이터 폴더를 마운트 하지 않아도 파일 브라우저 사용에는 문제가 없지만, 연산 세션이 "
 "종료되면 연산 세션에서 작업한 모든 파일이 삭제됩니다."
 
-#: ../../vfolder/vfolder.rst:245
+#: ../../vfolder/vfolder.rst:241
 msgid ""
 "The root directory of FileBrowser will be ``/home/work``. Therefore, you "
 "can access any mounted data folders for the compute session."
@@ -427,11 +416,11 @@ msgstr ""
 "Sessions 페이지에서 생성한 파일브라우저의 root 디렉토리는 ``/home/work`` 입니다. 따라서, 연산 세션이 마운트"
 " 된 모든 데이터 폴더에 자유롭게 접근할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:249
+#: ../../vfolder/vfolder.rst:245
 msgid "Basic usage examples of FileBrowser"
 msgstr "파일 브라우저 기본 사용법"
 
-#: ../../vfolder/vfolder.rst:251
+#: ../../vfolder/vfolder.rst:247
 msgid ""
 "Here, we present some basic usage examples of FileBrowser in Backend.AI. "
 "Most of the FileBrowser operations are intuitive, but if you need more "
@@ -442,11 +431,11 @@ msgstr ""
 "직관적이지만, 보다 자세한 가이드가 필요하실 경우 `파일 브라우저 문서 <https://filebrowser.org>`_ 를 "
 "참조하십시오."
 
-#: ../../vfolder/vfolder.rst:256
+#: ../../vfolder/vfolder.rst:252
 msgid "**Upload local directory using FileBrowser**"
 msgstr "**파일 브라우저로 로컬 디렉토리 업로드 하기**"
 
-#: ../../vfolder/vfolder.rst:258
+#: ../../vfolder/vfolder.rst:254
 msgid ""
 "FileBrowser supports uploading one or more local directories while "
 "maintaining the tree structure. Click the upload button in the upper "
@@ -458,51 +447,51 @@ msgstr ""
 "업로드 버튼을 클릭한 후 Folder 버튼을 클릭하십시오. 로컬 파일 탐색창이 뜨는데, 여기서 업로드 하기 원하는 디렉토리를 "
 "선택하면 됩니다."
 
-#: ../../vfolder/vfolder.rst:266
+#: ../../vfolder/vfolder.rst:262
 msgid "Let's upload a directory with the following structure."
 msgstr "다음과 같은 구조를 가진 폴더를 업로드 해보겠습니다."
 
-#: ../../vfolder/vfolder.rst:275
+#: ../../vfolder/vfolder.rst:271
 msgid ""
 "After selecting ``foo`` directory, you can see the directory just "
 "uploaded successfully."
 msgstr "``foo`` 디렉토리를 선택한 후 폴더가 성공적으로 업로드 된 것을 확인할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:280
+#: ../../vfolder/vfolder.rst:276
 msgid "You can also upload local files and directories by drag and drop."
 msgstr "또한, 파일과 디렉토를 드래그 앤 드롭 하여 업로드할 수도 있습니다."
 
-#: ../../vfolder/vfolder.rst:282
+#: ../../vfolder/vfolder.rst:278
 msgid "**Move files or directories to another directory**"
 msgstr "**파일 또는 디렉토리를 다른 디렉토리로 옮기기**"
 
-#: ../../vfolder/vfolder.rst:284
+#: ../../vfolder/vfolder.rst:280
 msgid ""
 "Moving files or directories in data folder is also possible from "
 "FileBrowser. You can move files or directories by following steps below."
 msgstr "데이터 폴더 내 파일 또는 디렉토리를 옮기는 것도 가능합니다. 파일 또는 디렉토리의 위치를 변경하는 방법은 다음과 같습니다."
 
-#: ../../vfolder/vfolder.rst:287
+#: ../../vfolder/vfolder.rst:283
 msgid "Select directories or files from FileBrowser."
 msgstr "파일 브라우저에서 원하는 디렉토리나 파일을 선택하십시오."
 
-#: ../../vfolder/vfolder.rst:292
+#: ../../vfolder/vfolder.rst:288
 msgid "Click the arrow icon in the upper right corner of FileBrowser"
 msgstr "파일 브라우저 창 우측 상단의 화살표 아이콘을 클릭합니다."
 
-#: ../../vfolder/vfolder.rst:298
+#: ../../vfolder/vfolder.rst:294
 msgid "Select the destination"
 msgstr "이동할 경로를 선택합니다."
 
-#: ../../vfolder/vfolder.rst:304
+#: ../../vfolder/vfolder.rst:300
 msgid "Click MOVE button"
 msgstr "MOVE 버튼을 클릭합니다."
 
-#: ../../vfolder/vfolder.rst:306
+#: ../../vfolder/vfolder.rst:302
 msgid "You will see that moving operation is successfully finished."
 msgstr "옮기기 작업이 성공적으로 완료된 것을 확인할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:312
+#: ../../vfolder/vfolder.rst:308
 msgid ""
 "FileBrowser is provided via application inside a compute session "
 "currently. We are planning to update FileBrowser so that it can run "
@@ -511,34 +500,103 @@ msgstr ""
 "현재 파일 브라우저는 연산 세션 내 애플리케이션 형태로 제공되고 있습니다. 향후 세션을 생성하지 않고 파일브라우저를 독립적으로 "
 "실행할 수 있는 기능을 추가할 예정입니다."
 
-#: ../../vfolder/vfolder.rst:318
+#: ../../vfolder/vfolder.rst:314
 msgid "Setting quota on XFS"
 msgstr "XFS 에서 quota 설정하기"
 
-#: ../../vfolder/vfolder.rst:320
+#: ../../vfolder/vfolder.rst:316
 msgid ""
-"Backend.AI provides quota adjustment UI for Vfolder if storage file "
-"systems that supports directory based quota."
+"If the underlying file system supports a per-directory or a per-project "
+"quota, such as XFS, Backend.AI can provide a per-folder quota. "
+"Administrators can set the quota limit through a resource policy, so if "
+"you want to increase the quota, contact the administrator. Within the "
+"policy limit, users can adjust the quota of their folders by clicking the"
+" setting icon for each data folder."
 msgstr ""
-"Backend.AI 는 스토리지 파일 시스템이 디렉토리 기반의 quota 를 지원할 경우, quota 를 조절하는 "
-"사용자 인터페이스를 제공합니다. "
+"Backend.AI에서는 파일시스템 또는 스토리지 계층에서 디렉토리별 가용량 제한을 지원하는 경우 데이터 폴더별 가용량 제한 기능을"
+" 제공하고 있습니다. 폴더별 용량 제한은 관리자가 설정할 수 있으며, 더 큰 가용량이 필요한 경우에는 관리자에게 문의해야 합니다. "
+"관리자가 설정한 가용량 내에서는 사용자가 각 폴더별 설정 아이콘을 클릭하여 가용량을 변경할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:329
+#: ../../vfolder/vfolder.rst:327
 msgid ""
-"In order to set quota on vfolder, make sure storage host is XFS. If you "
-"want to apply XFS on your own server and use them in Backend.AI cluster, "
-"Please refer to `XFS Filesystem Backends Guide in Backend.AI Storage "
-"Proxy <https://github.com/lablup/backend.ai-storage-proxy#xfs>`_."
+"For more information on the per-folder quota on XFS, please refer to the "
+"following docs:"
+msgstr "XFS 상 폴더별 용량 제한 기능에 관한 보다 자세한 정보는 다음 문서에서 확인할 수 있습니다:"
+
+#: ../../vfolder/vfolder.rst:330
+msgid ""
+"`XFS Filesystem Backends Guide in Backend.AI Storage Proxy "
+"<https://github.com/lablup/backend.ai-storage-proxy#xfs>`_"
 msgstr ""
-"Vfolder 에 quota를 설정하기 위해서는, 스토리지 호스트가 XFS인지 확인하십시오. "
-"XFS 를 직접 서버에 적용하고, Backend.AI 클러스터에서 사용하고자 할 경우, `"
-"Backend.AI Storage Proxy 에서 제공하는 XFS Filesystem Backends Guide "
-"<https://github.com/lablup/backend.ai-storage-proxy#xfs>`_ 를 "
-"참고하십시오."
 
-#: ../../vfolder/vfolder.rst:334
+#: ../../vfolder/vfolder.rst:331
 msgid ""
-"You also can see the current usage and capacity of vfolder in information"
+"`Per-folder quota for XFS <https://blog.lablup.com/posts/2022/01/21/xfs-"
+"directory-quota>`_"
+msgstr ""
+
+#: ../../vfolder/vfolder.rst:333
+msgid ""
+"You can also see the current usage and capacity of a data folder in information"
 " dialog."
-msgstr ""
-"또한 information 다이얼로그에서 Vfolder의 현재 사용량과 전체 용량도 확인할 수 있습니다."
+msgstr "또한, 정보 다이얼로그에서 데이터 폴더의 현재 사용량과 전체 용량도 확인할 수 있습니다."
+
+#~ msgid ""
+#~ "You cannot launch FileBrowser from "
+#~ "read-only data folders since FileBrowser"
+#~ " requires write permissions."
+#~ msgstr "파일브라우저는 쓰기 권한을 필요로 하기 때문에 읽기 전용 폴더에서는 파일 브라우저를 띄울 수 없습니다."
+
+#~ msgid ""
+#~ "Backend.AI provides quota adjustment UI "
+#~ "for Vfolder if storage file systems "
+#~ "that supports directory based quota."
+#~ msgstr ""
+#~ "Backend.AI 는 스토리지 파일 시스템이 디렉토리 기반의"
+#~ " quota 를 지원할 경우, quota 를 조절하는"
+#~ " 사용자 인터페이스를 제공합니다. "
+
+#~ msgid ""
+#~ "In order to set quota on vfolder,"
+#~ " make sure storage host is XFS. "
+#~ "If you want to apply XFS on "
+#~ "your own server and use them in"
+#~ " Backend.AI cluster, Please refer to "
+#~ "`XFS Filesystem Backends Guide in "
+#~ "Backend.AI Storage Proxy "
+#~ "<https://github.com/lablup/backend.ai-storage-"
+#~ "proxy#xfs>`_."
+#~ msgstr ""
+#~ "Vfolder 에 quota를 설정하기 위해서는, 스토리지 "
+#~ "호스트가 XFS인지 확인하십시오. XFS 를 직접 서버에"
+#~ " 적용하고, Backend.AI 클러스터에서 사용하고자 할 경우,"
+#~ " `Backend.AI Storage Proxy 에서 제공하는 "
+#~ "XFS Filesystem Backends Guide "
+#~ "<https://github.com/lablup/backend.ai-storage-proxy#xfs>`_"
+#~ " 를 참고하십시오."
+
+#~ msgid ""
+#~ "`XFS Filesystem Backends Guide in "
+#~ "Backend.AI Storage Proxy<https://github.com/lablup/backend"
+#~ ".ai-storage-proxy#xfs>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Per-folder quota for "
+#~ "XFS<https://blog.lablup.com/posts/2022/01/21/xfs-directory-"
+#~ "quota>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`XFS Filesystem Backends Guide in "
+#~ "Backend.AI Storage Proxy "
+#~ "<https://github.com/lablup/backend.ai-storage-"
+#~ "proxy#xfs>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Per-folder quota for XFS "
+#~ "<https://blog.lablup.com/posts/2022/01/21/xfs-directory-"
+#~ "quota>`_."
+#~ msgstr ""
+
