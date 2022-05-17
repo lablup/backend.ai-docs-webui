@@ -35,8 +35,8 @@ refreshing the page, click the leftmost icon at the top of the sidebar.
 Language
 ^^^^^^^^
 
-Set the language displayed on the UI. Currently, Backend.AI supports more than 
-five languages including English and Korean. However, there may be some UI items 
+Set the language displayed on the UI. Currently, Backend.AI supports more than
+five languages including English and Korean. However, there may be some UI items
 that do not update their language
 before the page is refreshed.
 
@@ -49,9 +49,10 @@ before the page is refreshed.
 * Indonesian: Set Indonesian as the default language.
 
 .. note::
-   Some of language translation are remained ``__NOT_TRANSLATED__``. 
-   Since Backend.AI WebUI is open source, anyone who willing to make it better 
-   can contribute to those translation of the above sentences.
+   Some of translated items may be marked as ``__NOT_TRANSLATED__``, which
+   indicates the item is not yet translated for that language. Since Backend.AI
+   WebUI is open sourced, anyone who willing to make the translation better
+   can contribute: https://github.com/lablup/backend.ai-webui.
 
 SSH Keypair Management
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -113,17 +114,19 @@ the script.
 EDIT BOOTSTRAP SCRIPT
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-If you want to execute script that executed only once just after compute session started,
-you can add script in here.
+If you want to execute a one-time script just after your compute sessions
+started, write down the contents here.
 
 .. image:: edit_bootstrap_script.png
    :width: 500
    :align: center
 
 .. warning::
-   Although requested resources for session is ready, the status will not change to ``RUNNING`` 
-   until bootstrap script ends. If script execution takes some time, please execute in terminal app 
-   instead of running in bootstrap script.
+   The compute session will be at the ``PREPARING`` status until the bootstrap
+   script finishes its execution. Since a user cannot use the session until it
+   is ``RUNNING``, if the script contains a long-running tasks, it might be
+   better to remove them out of the bootstrap script and run them in a terminal
+   app.
 
 
 LOGS tab
