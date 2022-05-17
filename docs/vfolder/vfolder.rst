@@ -25,13 +25,19 @@ Storage Status on top of the folder list shows the following information:
 * Created: The number of folders that the user created.
 * Invited: The number of folers that the user was invited to share.
 * Capacity: The maximum number of folders that the user can create afterwards.
-  This value depends on the resource policy applied to the user and cannot be changed
-  without changing the resource policy. Folders that were not created by the user (eg. folders invited to share, or project folders) are not counted.
+  This value depends on the resource policy applied to the user and cannot be
+  changed without changing the resource policy. Folders that were not created by
+  the user (eg. folders invited to share, or project folders) are not counted.
 
 Check marks on the Owner panel in the folder list indicate the user created folders.
 
 .. image:: vfolder_status.png
    :alt: Storage status in Storage page
+
+.. tip::
+   If there are lots of folders in the list, you can filter the list by using the
+   search boxes on top of the list.
+
 
 Create storage folder
 ---------------------
@@ -106,7 +112,12 @@ Rename folder
 
 If you have permission to rename the storage folder, you can rename it by
 clicking the edit icon in the Control panel. When you click the icon button, a
-rename dialog will appear. Write new folder name and then click RENAME button.
+rename dialog will appear. Write new folder name and then click UPDATE button.
+
+.. image:: vfolder_rename_dialog.png
+   :width: 400
+   :align: center
+   :alt: Folder rename dialog
 
 
 Delete folder
@@ -182,9 +193,6 @@ data folder to open the file explorer.
 .. image:: first_step_to_access_filebrowser.png
    :alt: first step to access FileBrowser
 
-.. warning::
-   You cannot launch FileBrowser from read-only data folders if .
-
 Click EXECUTE FILEBROWSER button in the upper-right corner of the explorer.
 
 .. image:: folderexplorer_with_filebrowser.png
@@ -211,7 +219,7 @@ session.
    go to Sessions page and click the FileBrowser application icon of the
    FileBrowser compute session.
 
-   .. image:: app_dialog_with_FileBrowser.png
+   .. image:: app_dialog_with_filebrowser.png
       :width: 400
       :align: center
 
@@ -248,6 +256,10 @@ the tree structure. Click the upload button in the upper right corner of the
 window, and click Folder button. Then, local file explorer dialog will appear
 and you can select any directory you want to upload.
 
+.. note::
+   If you try to upload a file to a read-only folder, FileBrowser will raise a
+   server error.
+
 .. image:: filebrowser_upload.png
    :align: center
 
@@ -263,7 +275,7 @@ Let's upload a directory with the following structure.
 After selecting ``foo`` directory, you can see the directory just uploaded
 successfully.
 
-.. image:: FileBrowser_upload_finished.png
+.. image:: filebrowser_upload_finished.png
 
 You can also upload local files and directories by drag and drop.
 
@@ -300,3 +312,31 @@ You will see that moving operation is successfully finished.
    FileBrowser is provided via application inside a compute session currently.
    We are planning to update FileBrowser so that it can run independently
    without creating a session.
+
+
+Setting quota on XFS
+--------------------
+
+If the underlying file system supports a per-directory or a per-project quota,
+such as XFS, Backend.AI can provide a per-folder quota. Administrators can set
+the quota limit through a resource policy, so if you want to increase the quota,
+contact the administrator. Within the policy limit, users can adjust the quota
+of their folders by clicking the setting icon for each data folder.
+
+.. image:: xfs_quota_setting.png
+   :width: 400
+   :align: center
+   :alt: XFS quota setting
+
+For more information on the per-folder quota on XFS, please refer to the
+following docs:
+
+- `XFS Filesystem Backends Guide in Backend.AI Storage Proxy <https://github.com/lablup/backend.ai-storage-proxy#xfs>`_
+- `Per-folder quota for XFS <https://blog.lablup.com/posts/2022/01/21/xfs-directory-quota>`_
+
+You can also see the current usage and capacity of a data folder in information dialog.
+
+.. image:: vfolder_information_storage_host_xfs.png
+   :width: 400
+   :align: center
+   :alt: Vfolder information storage host xfs

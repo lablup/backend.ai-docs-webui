@@ -58,12 +58,19 @@ already exists. User's name, password, activation state, etc. can be changed. Us
 
 Each of the two items at the bottom of the dialog has the following functions.
 
-* Active user?: Indicates the user's active status. Inactive users cannot log
-  in. You can toggle this option to change the user to active or inactive state.
-  Note that the inactive users are listed in the Inactive tab separately.
+* User Status: Indicates the user's status. Inactive users cannot log
+  in. Before Verification is a status indicates that a user needs an additional
+  step to activate the account such as email verification or an approval from an
+  admin. Note that the inactive users are listed in the Inactive tab separately.
+
+  .. image:: active_user_selection.png
+     :width: 350
+     :align: center
 * Require password change?: If the admin has chosen random passwords while
-  creating users in batches, this field can be set to ON to indicate that password change is required.
-  This is a kind of descriptive flag and has no effect on actual use.
+  creating users in batches, this field can be set to ON to indicate that
+  password change is required. The users will see the top bar that notify user
+  to update their password, but this is a kind of descriptive flag which has no
+  effect on actual use.
 
 Inactivate user account
 -----------------------
@@ -79,10 +86,10 @@ you can inactivate the user by clicking the OKAY button.
    :align: center
    :alt: Deactivating user account
 
-To re-activate users, go to Users - Inactive tab, and edit the target user to
-turn on "Active user?" field.
+To re-activate users, go to Users - Inactive tab, and select the status of
+the target user to ``Active``.
 
-.. note::
+.. warning::
 
    Please note that inactivating the user changes all of credentials to be inactive,
    but reactivating the user does not reactivate the inactivated credentials, since the user
@@ -234,6 +241,11 @@ About details of each option in resource policy dialog, see the description belo
    * Concurrent Jobs: Maximum number of concurrent compute session per keypair.
      If this value is set to 3, for example, users bound to this resource policy
      cannot create more than 3 compute sessions simultaneously. (max value: 100)
+   * Session Lifetime (sec.): Limits the maximum lifetime of a compute session
+     from the reservation in the active status, including ``PENDING`` and
+     ``RUNNING`` statuses. After this time, the session will be force-terminated
+     even if it is fully utilized. This will be useful to prevent the session
+     from running indefinitely.
 
 * Folders
    * Allowed hosts: Backend.AI supports many NFS mountpoint. This field limits
@@ -243,7 +255,7 @@ About details of each option in resource policy dialog, see the description belo
      feature is only effective for special type of storages/filesystems such as
      FlashBlade. (max value: 1024)
    * Max. #: the maximum number of storage folders that can be created/invited.
-     (max value: 50)
+     (max value: 100)
 
 In the resource policy list, check that the Resources value of the default
 policy has been updated.
@@ -359,6 +371,9 @@ registry.
    :align: center
    :alt: Add registry dialog
 
+You can also update the information of an existing registry, except the
+hostname.
+
 Even if you created a registry and update meta information, users cannot use the
 images in the registry, immediately. Just as you had to register the allowed hosts
 to use the storage host, you must register the registry in the allowed docker
@@ -412,13 +427,16 @@ each resource preset.
    :alt: Create resource preset dialog
 
 
-Query agent nodes
------------------
+Manage agent nodes
+------------------
 
 Superadmins can view the list of agent worker nodes, currently connected to
 Backend.AI, by visiting the Resources page. You can check agent node's IP,
 connecting time, actual resources currently in use, etc. The Web-UI does
 not provide the function to manipulate agent nodes.
+
+Query agent nodes
+~~~~~~~~~~~~~~~~~
 
 .. image:: agent_list.png
    :alt: Agent node list
@@ -427,6 +445,8 @@ Also You can see exact usage about the resources in the agent worker node
 by Click note icon in the Control panel.
 
 .. image:: detailed_agent_node_usage_information.png
+   :width: 350
+   :align: center
    :alt: Detailed agent node usage information
 
 On Terminated tab, you can check the information of the agents that has been
@@ -436,6 +456,19 @@ that there's no disconnection or termination occurred.
 
 .. image:: terminated_agent_list.png
    :alt: Terminated agent node list
+
+Set schedulable status of agent nodes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You may want to prevent new compute sessions from being scheduled to an Agent
+service without stopping it. In this case, you can disable the Schedulable
+status of the Agent. Then, you can block the creation of a new session while
+preserving the existing sessions on the Agent.
+
+.. image:: agent_settings.png
+   :width: 350
+   :align: center
+   :alt: Agent settings
 
 .. _scheduling-methods:
 
@@ -449,7 +482,7 @@ V100 agents into one resource group, and the remaining two P100 agents into
 another resource group.
 
 Adding a specific agent to a specific resource group is not currently handled in
-the UI, and it can be done by editing agent config file from the installation
+the Web-UI, and it can be done by editing agent config file from the installation
 location and restart the agent daemon. Management of the resource groups is
 possible in Resource Group tab of the Resource page.
 
@@ -465,7 +498,40 @@ Fairness, and it aims to provide resources as fair as possible for each user.
 You can deactivate a resource policy by turning off Active Status.
 
 .. image:: modify_resource_group.png
+   :width: 350
+   :align: center
    :alt: Modify resource group dialog
+
+WSProxy Server Address sets the WSProxy address for the resource group's Agents
+to use. If you set a URL in this field, WSProxy will relay the traffic of an app
+like Jupyter directly to the compute session via Agent bypassing Manager (v2
+API). By enabling the v2 API, you can lower the Manager's burden when using app
+services. This also achieves the better efficiency and scalability in deploying
+the services. If a direct connection from WSProxy to the Agent node is not
+available, however, please leave this field blank to fall back to the v1 API,
+which relays the traffic through Manager in a traditional way.
+
+The resource group has further Scheduler Options. The details are described below.
+
+* Allowed session types:
+  Since user can choose the type of session, resource group can allow certain type of session.
+  You can allow both type, or allow interactive or batch only.
+* Pending timeout:
+  A compute session will be canceled if it stays ``PENDING`` status for longer
+  than the Pending timeout. When you wish to prevent a session from remaining
+  PENDING indefinitely, set this time. Set this value to zero (0) if you do not
+  want to apply the pending timeout feature.
+* The number of retries to skip pending session:
+  The number of retries the scheduler tries before skipping a PENDING session.
+  It can be configured to prevent the situation where one PENDING session blocks
+  the scheduling of the subsequent sessions indefinitely (Head-of-line blocking,
+  HOL). If no value is specified, the global value in Etcd will be used (``num
+  retries to skip``, default three times).
+
+.. image:: modify_resource_group_scheduler_options.png
+   :width: 350
+   :align: center
+   :alt: Modify resource group scheduler options
 
 You can create a new resource policy by clicking the CREATE button.
 Likewise other creating options, you cannot create a resource policy with the name
@@ -529,7 +595,22 @@ You can also change settings for scaling and plugins.
 .. image:: system_setting_about_scaling_plugins.png
    :alt: System setting about scaling and plugins
 
-You can edit the configuration per job scheduler by clicking the config button.
+When a user launches a multi-node cluster session, which is introduced at
+version 20.09, Backend.AI will dynamically create an overlay network to support
+private inter-node communication. Admins can set the value of the Maximum
+Transmission Unit (MTU) for the overlay network, if it is certain that the value
+will enhance the network speed.
+
+.. image:: overlay_network_setting_dialog.png
+   :width: 350
+   :align: center
+   :alt: Overlay network setting dialog
+
+.. seealso::
+   For more information about Backend.AI Cluster session, please refer to
+   :ref:`Backend.AI Cluster Compute Session<backendai-cluster-compute-session>` section.
+
+You can edit the configuration per job scheduler by clicking the Scheduler's config button.
 The values in the scheduler setting are the defaults to use when there is no scheduler
 setting in each :ref:`resource group<scheduling-methods>`. If there is a resource
 group-specific setting, this value will be ignored.
@@ -548,6 +629,10 @@ only possible when the scheduler is FIFO.
 
 .. note::
    We will continue to add broader range of setting controls.
+
+.. note::
+   System settings are default settings. If resource group has certain value,
+   then it overrides configured value in system settings.
 
 
 Server management

@@ -35,14 +35,24 @@ refreshing the page, click the leftmost icon at the top of the sidebar.
 Language
 ^^^^^^^^
 
-Set the language displayed on the UI. Currently, English and Korean are
-supported. However, there may be some UI items that do not update their language
+Set the language displayed on the UI. Currently, Backend.AI supports more than
+five languages including English and Korean. However, there may be some UI items
+that do not update their language
 before the page is refreshed.
 
 * OS Default: Use the operating system's default language.
 * English: Set English as the default language.
 * Korean: Set Korean as the default language.
+* Russian: Set Russian as the default language.
+* French: Set French as the default language.
+* Mongolian: Set Mongolian as the default language.
+* Indonesian: Set Indonesian as the default language.
 
+.. note::
+   Some of translated items may be marked as ``__NOT_TRANSLATED__``, which
+   indicates the item is not yet translated for that language. Since Backend.AI
+   WebUI is open sourced, anyone who willing to make the translation better
+   can contribute: https://github.com/lablup/backend.ai-webui.
 
 SSH Keypair Management
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -100,6 +110,23 @@ the script.
 .. image:: edit_user_config_script.png
    :width: 500
    :align: center
+
+EDIT BOOTSTRAP SCRIPT
+^^^^^^^^^^^^^^^^^^^^^^^
+
+If you want to execute a one-time script just after your compute sessions
+started, write down the contents here.
+
+.. image:: edit_bootstrap_script.png
+   :width: 500
+   :align: center
+
+.. warning::
+   The compute session will be at the ``PREPARING`` status until the bootstrap
+   script finishes its execution. Since a user cannot use the session until it
+   is ``RUNNING``, if the script contains a long-running tasks, it might be
+   better to remove them out of the bootstrap script and run them in a terminal
+   app.
 
 
 LOGS tab

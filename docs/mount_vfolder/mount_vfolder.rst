@@ -26,16 +26,24 @@ session.
    :align: center
    :alt: Launch a compute session with storage folders
 
+.. note::
+   Folders to mount only lists the data folders that the user can currently
+   mount. For example, project folders used by other projects are not exposed in
+   Folders to mount. The storage host for each folder is also displayed under
+   the folder's name.
+
 Now, open the terminal by clicking the terminal icon in the created session. If
 you run ``ls`` command in the terminal, you can see that the ``user1-ml-test``
 and ``user2-vfolder`` folders are mounted under the home directory.
 
 .. note::
-   The selected folder will be mounted with its name under ``/home/work/``
-   inside the compute session. For example, if a folder's name is ``test``, it
-   is mounted on ``/home/work/test``. If you want to change the name of the
-   folder under ``/home/work/``, fill in Alias. In this case, it is mounted with
-   the name written in Alias.
+   The selected folder, by default, will be mounted with its name under
+   ``/home/work/`` inside the compute session. For example, if a folder's name
+   is ``test``, it is mounted on ``/home/work/test``. In case you want to
+   customize the mount path, write the absolute path in the Path & Alias input
+   field. If you write ``/workspace`` in the input field for the ``test`` folder,
+   it will be mounted on ``/workspace`` inside the session. Writing a relative
+   path will mount the folder under ``/home/work/`` with the path.
 
 Let's create a ``test_file`` under ``user2-vfolder`` to see if the file can be
 preserved after the compute session is terminated. The contents of this file
