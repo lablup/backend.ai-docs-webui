@@ -51,8 +51,8 @@ Now, you can install packages by ``brew``:
 
    $ brew install hello
 
-``brew`` installs packages under ``~/.local``. So, if you create a storage
-folder named ``.local``, which will be automatically mounted when creating a
+``brew`` installs packages under ``~/.linuxbrew``. So, if you create a storage
+folder named ``.linuxbrew``, which will be automatically mounted when creating a
 compute session, those installed packages can be kept after compute session is
 destroyed and then reused for the next compute session.
 
