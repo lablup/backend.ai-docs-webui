@@ -127,3 +127,51 @@ with this SFTP connection.
 
 .. image:: filezilla_connection_established.png
    :alt: Filezilla connection established
+
+For Visual Studio Code
+--------------------------------------------------------------
+
+Prerequisite installed plugin - remote-ssh
+
+.. image:: vscode_install_remote_ssh.png
+   :alt: Install remote ssh plugin on Visual Studio Code
+
+
+
+For the first file, You click the 'Download ssh key' button and download file.
+
+.. image:: download_ssh_key.png
+   :alt: Download SSH Key
+
+
+
+Following the `.ssh/config` file, You can set the ssh config file.
+
+.. code-block::
+
+   Host vscode
+     HostName 127.0.0.1
+     Port 45175
+     User work
+     ForwardAgent yes
+     StrictHostKeyChecking no
+     IdentityFile ~/keyfile/id_container
+
+
+select `View` menu and `Command palett` submenu.
+
+  .. image:: vscode_view_commandpalett.png
+   :alt: View > command palett 
+
+Connect ssh 
+
+  .. image:: vscode_remote_ssh_connect.png
+   :alt: SSH connect
+
+show `.ssh/config` file's Host lists. you select to connect Host.
+
+  .. image:: vscode_remote_ssh_select_host.png
+   :alt: Select remote ssh select Host
+
+You can access remote Vscode using SSH connection.
+
