@@ -131,21 +131,36 @@ with this SFTP connection.
 For Visual Studio Code
 --------------------------------------------------------------
 
-Prerequisite installed plugin - remote-ssh
+Backend.AI supports to develop by Visual Studio Code using SSH/SFTP connection to the created compute sessions
+(containers). 
+IOnce connected to a server, you can interact with files and folders anywhere on the compute sessions(containers).
+In this section, we will learn how to do it.
+
+Prerequisite installed plugin - remote-development extension pack 
+
+Link: https://aka.ms/vscode-remote/download/extension
+
+For the first time, You should install Visual Studio Code and the Remote Development extension pack. 
+
+Below is the capture of install the Remote Development extension pack.
 
 .. image:: vscode_install_remote_ssh.png
    :alt: Install remote ssh plugin on Visual Studio Code
 
+After installed remote-development extension pack on Visual Studio Code, you should to set the ssh connection for the compute sesion(container).
 
-
-For the first file, You click the 'Download ssh key' button and download file.
+For the first file, You click the 'Download ssh key' button and download & save file to the suitable location.
+Also, get the Port information. It'll use the SSH config file.( eg. ``.ssh/config``)
 
 .. image:: download_ssh_key.png
    :alt: Download SSH Key
 
+And then, setting SSH config file.
 
+Following the ``.ssh/config`` file, You can set the ssh config file.
+``Host`` name can name it arbitrarily.
 
-Following the `.ssh/config` file, You can set the ssh config file.
+In this exmaple, The host name is `vscode`.
 
 .. code-block::
 
@@ -157,13 +172,13 @@ Following the `.ssh/config` file, You can set the ssh config file.
      StrictHostKeyChecking no
      IdentityFile ~/keyfile/id_container
 
-
-select `View` menu and `Command palett` submenu.
+After setting ssh config file, you select `View` menu and `Command palett` submenu on Visual Studio Code.
 
   .. image:: vscode_view_commandpalett.png
-   :alt: View > command palett 
+   :alt: View > comma
 
-Connect ssh 
+Visual Studio Code can automatically detect the type of server you are connecting host.
+Let's connect Host by ssh. 
 
   .. image:: vscode_remote_ssh_connect.png
    :alt: SSH connect
