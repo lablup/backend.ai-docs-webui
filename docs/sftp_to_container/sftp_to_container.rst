@@ -188,5 +188,16 @@ show `.ssh/config` file's Host lists. you select to connect Host.
   .. image:: vscode_remote_ssh_select_host.png
    :alt: Select remote ssh select Host
 
-You can access remote Vscode using SSH connection.
+If you select the host name on select box, You can access remote Vscode using SSH connection.
 
+After you are connected, you'll be in an empty window. You can always refer to the Status bar to see which host you are connected to.
+
+  .. image:: vscode_connect_finish.png
+   :alt: Finished remote ssh connection
+
+Clicking on the Status bar item will provide a list of remote commands while you are connected.
+
+You can then open any folder or workspace on the remote machine using File > Open... or File > Open Workspace... just as you would locally!
+
+  .. image:: vscode_connected_host_file_open.png
+   :alt: open remote host file directory
