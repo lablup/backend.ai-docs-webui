@@ -133,7 +133,7 @@ For Visual Studio Code
 
 Backend.AI supports to develop by Visual Studio Code using SSH/SFTP connection to the created compute sessions
 (containers). 
-IOnce connected to a server, you can interact with files and folders anywhere on the compute sessions(containers).
+Once connected to a server, you can interact with files and folders anywhere on the compute sessions(containers).
 In this section, we will learn how to do it.
 
 Prerequisite installed plugin - remote-development extension pack 
