@@ -127,3 +127,72 @@ with this SFTP connection.
 
 .. image:: filezilla_connection_established.png
    :alt: Filezilla connection established
+
+
+For Visual Studio Code
+--------------------------------------------------------------
+
+Backend.AI supports to develop with the local Visual Studio Code through SSH/SFTP
+connection to a compute session. Once connected, you can interact with files and
+folders anywhere on the compute session. In this section, we will learn how to
+do it.
+
+First, you should install Visual Studio Code and the Remote Development
+extension pack.
+
+Link: https://aka.ms/vscode-remote/download/extension
+
+.. image:: vscode_install_remote_ssh.png
+   :alt: Install remote ssh plugin on Visual Studio Code
+
+After installing the extension, you should configure the SSH connection for the
+compute sesion. In the SSH/SFTP connection dialog, click "DOWNLOAD SSH KEY" button
+to download the SSH private key (``id_container``) for the session. Also,
+remember the port number.
+
+.. image:: download_ssh_key.png
+   :alt: Download SSH Key
+
+And then, setting SSH config file. Edit the ``~/.ssh/config`` file (for Linux/Mac)
+or ``C:\Users\[user name]\.ssh\config`` (for Windows) and add the following block.
+For convenience, we set the hostname to ``vscode``. It can be changed to any alias.
+
+.. code-block::
+
+   Host vscode
+     HostName 127.0.0.1
+     Port 39447  # write down the port number that you remembered
+     User work
+     ForwardAgent yes
+     StrictHostKeyChecking no
+     IdentityFile path/to/downloaded/id_container
+
+Now in the Visual Studio Code, select the `Command Palette...` from `View` menu.
+
+  .. image:: vscode_view_commandpalett.png
+   :alt: View > comma
+
+Visual Studio Code can automatically detect the type of host you are connecting
+to. Let's choose `Remote-SSH: Connect to Host...`.
+
+  .. image:: vscode_remote_ssh_connect.png
+   :alt: SSH connect
+
+You will see the list of hosts in ``.ssh/config``. Please select the host to
+connect, in this case, ``vscode``.
+
+  .. image:: vscode_remote_ssh_select_host.png
+   :alt: Select remote ssh select Host
+
+Selecting the host name will lead you to access the remote compute session.
+After you are connected, you will see an empty window. You can always refer to
+the Status bar to see which host you are connected to.
+
+  .. image:: vscode_connect_finish.png
+   :alt: Finished remote ssh connection
+
+You can then open any folder or workspace on the remote host by accessing `File >
+Open...` or `File > Open Workspace...` menu just as you usually would do!
+
+  .. image:: vscode_connected_host_file_open.png
+   :alt: open remote host file directory
