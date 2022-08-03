@@ -7,7 +7,11 @@ Backend.AI supports SSH/SFTP connection to the created compute sessions
 
 .. note::
    SSH/SFTP connection is supported only on desktop apps, and not yet supported
-   on web-based Web-UI service.
+   on web-based Web-UI service. Destktop apps can be downloaded from
+   https://github.com/lablup/backend.ai-webui/releases. Be sure to download the
+   compatible version of the Web-UI. The Web-UI version can be checked by
+   clicking the "About Backend.AI" sub-menu from the preference menu on the
+   upper-right side of the GUI.
 
 
 For Linux / Mac
