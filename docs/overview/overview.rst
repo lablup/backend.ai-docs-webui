@@ -28,7 +28,7 @@ achieves more intuitive use.
 Key Concepts
 ------------
 
-.. image:: key_concepts.png
+.. image:: key_concepts_2209.png
    :alt: Diagram explaining key concepts
 
 - User: The user is a person who connects to Backend.AI and performs work.
