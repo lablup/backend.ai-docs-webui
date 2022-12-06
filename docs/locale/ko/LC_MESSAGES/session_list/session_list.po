@@ -24,7 +24,6 @@ msgid "Querying Compute Sessions"
 msgstr "연산 세션 조회하기"
 
 #: ../../session_list/session_list.rst:5
-#, fuzzy
 msgid ""
 "To see the list of compute sessions, click Sessions in the left sidebar. "
 "In the Running tab on the right, you can check the information on the "

@@ -4,7 +4,6 @@
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 20.03\n"

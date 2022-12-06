@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-16 23:56+0900\n"
+"POT-Creation-Date: 2022-12-07 02:43+0900\n"
 "PO-Revision-Date: 2021-03-02 20:43+0900\n"
 "Last-Translator: \n"
 "Language: ko\n"
@@ -236,7 +236,7 @@ msgid "(Enterprise) Fractional GPU sharing & scaling"
 msgstr ""
 
 #: ../../overview/overview.rst:104
-msgid "Multiple CUDA library version support (8.0 to 11.1)"
+msgid "Multiple CUDA library version support (8.0 to 11.5)"
 msgstr ""
 
 #: ../../overview/overview.rst:106
@@ -339,356 +339,166 @@ msgstr ""
 msgid "NetApp ONTAP & NetApp XCP"
 msgstr ""
 
+#: ../../overview/overview.rst:145
+msgid "Weka.io"
+msgstr ""
+
 #: ../../overview/overview.rst:146
-msgid "Access control to data by user/project"
+msgid "Dell EMC"
 msgstr ""
 
 #: ../../overview/overview.rst:148
-msgid "Developer support"
-msgstr ""
-
-#: ../../overview/overview.rst:148
-msgid "Universal programming languages (Python, C/C++, etc)"
+msgid "Fine-grained Access control to data by user/project"
 msgstr ""
 
 #: ../../overview/overview.rst:150
+msgid "Developer support"
+msgstr ""
+
+#: ../../overview/overview.rst:150
+msgid "Universal programming languages (Python, C/C++, etc)"
+msgstr ""
+
+#: ../../overview/overview.rst:152
 msgid "Interactive web apps (Terminal, Jupyter, VSCode, etc)"
 msgstr ""
 
-#: ../../overview/overview.rst:152
+#: ../../overview/overview.rst:154
 msgid "For data scientists"
 msgstr ""
 
-#: ../../overview/overview.rst:152
+#: ../../overview/overview.rst:154
 msgid "NGC (NVIDIA GPU CLoud) image integration"
 msgstr ""
 
-#: ../../overview/overview.rst:154
+#: ../../overview/overview.rst:156
 msgid "Popular ML libraries: TensorFlow, PyTorch, etc"
 msgstr ""
 
-#: ../../overview/overview.rst:156
+#: ../../overview/overview.rst:158
 msgid "Concurrent user of multiple versions of libraries"
 msgstr ""
 
-#: ../../overview/overview.rst:158
+#: ../../overview/overview.rst:160
 msgid "Periodic update of ML libraries"
 msgstr ""
 
-#: ../../overview/overview.rst:160
+#: ../../overview/overview.rst:162
 msgid "Customer support"
 msgstr ""
 
-#: ../../overview/overview.rst:160
+#: ../../overview/overview.rst:162
 msgid "On-site installation (bare-metal / VM)"
 msgstr ""
 
-#: ../../overview/overview.rst:162
+#: ../../overview/overview.rst:164
 msgid "Configuration support (on-premise + cloud)"
 msgstr ""
 
-#: ../../overview/overview.rst:164
+#: ../../overview/overview.rst:166
 msgid "Admin/user training"
 msgstr ""
 
-#: ../../overview/overview.rst:166
+#: ../../overview/overview.rst:168
 msgid "Support for updating to latest version"
 msgstr ""
 
-#: ../../overview/overview.rst:168
+#: ../../overview/overview.rst:170
 msgid "Priority development and escalation"
 msgstr ""
 
-#: ../../overview/overview.rst:170
+#: ../../overview/overview.rst:172
 msgid "Customized container image / kernel or kernel repository"
 msgstr ""
 
-#: ../../overview/overview.rst:176
+#: ../../overview/overview.rst:178
 msgid "Accessible menu by user role"
 msgstr "사용자 역할 별 접근 가능한 메뉴 안내"
 
-#: ../../overview/overview.rst:180
+#: ../../overview/overview.rst:182
 msgid "Pages with ``*`` mark are in Administration menu."
 msgstr "``*`` 표시가 붙은 페이지는 관리자용 메뉴입니다."
 
-#: ../../overview/overview.rst:181
+#: ../../overview/overview.rst:183
 msgid "Features only for admin are listed in :ref:`admin menu <admin-menu>`."
 msgstr "관리자 전용 기능은 :ref:`어드민 전용 메뉴 <admin-menu>` 에서 확인할 수 있습니다."
 
-#: ../../overview/overview.rst:184
+#: ../../overview/overview.rst:186
 msgid "page \\\\ role"
 msgstr "페이지 \\\\ 역할"
 
-#: ../../overview/overview.rst:184
+#: ../../overview/overview.rst:186
 msgid "user"
 msgstr "일반 사용자"
 
-#: ../../overview/overview.rst:184
+#: ../../overview/overview.rst:186
 msgid "admin"
 msgstr "어드민"
 
-#: ../../overview/overview.rst:186
+#: ../../overview/overview.rst:188
 msgid "Summary"
 msgstr "요약 (Summary)"
 
-#: ../../overview/overview.rst:186 ../../overview/overview.rst:188
-#: ../../overview/overview.rst:190 ../../overview/overview.rst:192
-#: ../../overview/overview.rst:194 ../../overview/overview.rst:196
-#: ../../overview/overview.rst:198 ../../overview/overview.rst:200
+#: ../../overview/overview.rst:188 ../../overview/overview.rst:190
+#: ../../overview/overview.rst:192 ../../overview/overview.rst:194
+#: ../../overview/overview.rst:196 ../../overview/overview.rst:198
+#: ../../overview/overview.rst:200 ../../overview/overview.rst:202
+#: ../../overview/overview.rst:204 ../../overview/overview.rst:206
+#: ../../overview/overview.rst:208 ../../overview/overview.rst:210
+#: ../../overview/overview.rst:212
 msgid "O"
 msgstr ""
 
-#: ../../overview/overview.rst:188
+#: ../../overview/overview.rst:190
 msgid "Sessions"
 msgstr "세션 (Sessions)"
 
-#: ../../overview/overview.rst:190
+#: ../../overview/overview.rst:192
+msgid "Import & run"
+msgstr ""
+
+#: ../../overview/overview.rst:194
 msgid "Data & Storage"
 msgstr "데이터 & 폴더 (Data & Storage)"
 
-#: ../../overview/overview.rst:192
+#: ../../overview/overview.rst:196
+msgid "Agent Summary"
+msgstr "자원 요약 (Agent Summary)"
+
+#: ../../overview/overview.rst:198
 msgid "Statistics"
 msgstr "통계 (Statistics)"
 
-#: ../../overview/overview.rst:194
+#: ../../overview/overview.rst:200
 msgid "Users*"
 msgstr "사용자 (Users)*"
 
-#: ../../overview/overview.rst:194 ../../overview/overview.rst:196
-#: ../../overview/overview.rst:198
+#: ../../overview/overview.rst:200 ../../overview/overview.rst:202
+#: ../../overview/overview.rst:204 ../../overview/overview.rst:206
+#: ../../overview/overview.rst:208 ../../overview/overview.rst:210
 msgid "X"
 msgstr ""
 
-#: ../../overview/overview.rst:196
+#: ../../overview/overview.rst:202
+msgid "Environments*"
+msgstr ""
+
+#: ../../overview/overview.rst:204
+msgid "Resources*"
+msgstr ""
+
+#: ../../overview/overview.rst:206
+msgid "Configurations*"
+msgstr "환경 설정 (Configurations)*"
+
+#: ../../overview/overview.rst:208
 msgid "Maintenance*"
 msgstr "관리 (Maintenance)*"
 
-#: ../../overview/overview.rst:198
+#: ../../overview/overview.rst:210
 msgid "Information*"
 msgstr "정보 (Information)*"
 
-#: ../../overview/overview.rst:200
+#: ../../overview/overview.rst:212
 msgid "UserSettings"
 msgstr "사용자 설정 (UserSettings)"
-
-#~ msgid ""
-#~ "Local wsproxy: Proxy server built into"
-#~ " the console app. Services such as"
-#~ " Jupyter Notebook and Terminal that "
-#~ "can be used in the console app "
-#~ "communicate with the server through "
-#~ "websocket, which converts general HTTP "
-#~ "requests to and from the console "
-#~ "app into websocket to deliver messages."
-#~ msgstr ""
-#~ "로컬 wsproxy: 콘솔 앱에서 내장하고 있는 프록시 "
-#~ "서버. 콘솔 앱에서 사용 가능한 Jupyter "
-#~ "Notebook, Terminal 등의 서비스는 websocket을 통해"
-#~ " 서버와 통신하는데, 콘솔 앱과 주고받는 일반적인 "
-#~ "HTTP 요청을 websocket 형태로 변환하여 메시지를 "
-#~ "전달해 주는 역할을 합니다."
-
-#~ msgid ""
-#~ "Backend.AI is an open source cloud "
-#~ "resource management platform. Backend.AI "
-#~ "efficiently manages compute resources in "
-#~ "a cloud or on-premises cluster, "
-#~ "providing a virtualized compute environment"
-#~ " to provide on-demand computation, "
-#~ "anytime, anywhere. With GPU virtualization "
-#~ "technique, Backend.AI helps scientists, "
-#~ "DevOps, enterprise, and AI enthusiasts "
-#~ "to scale up efficiently."
-#~ msgstr ""
-#~ "Backend.AI는 오픈소스 클라우드 자원 관리 플랫폼입니다. "
-#~ "Backend.AI는 클라우드 또는 온-프레미스 클러스터 환경에서 "
-#~ "연산 자원을 효율적으로 관리하며 언제 어디서나 on-"
-#~ "demand로 계산에 필요한 가상화된 연산 환경을 제공합니다."
-#~ " GPU 분할 가상화를 제공하여, 과학자, 데브옵스, "
-#~ "기업 및 AI 애호가들이 효율적으로 규모를 확장할 "
-#~ "수 있게 돕습니다."
-
-#~ msgid ""
-#~ "A GUI client package is also "
-#~ "provided to easily take advantage of "
-#~ "the features supported by the Backend.AI"
-#~ " server. Backend.AI Console is a GUI"
-#~ " client in the form of a web"
-#~ " service or stand-alone app. It "
-#~ "provides a convenient graphical interface "
-#~ "for accessing the Backend.AI server to"
-#~ " utilize computing resources and manage "
-#~ "its environment. Most tasks can be "
-#~ "done with mouse clicks and brief "
-#~ "typing, which achieves more intuitive "
-#~ "use."
-#~ msgstr ""
-#~ "Backend.AI 서버가 지원하는 기능을 손쉽게 활용할 수"
-#~ " 있도록 GUI 클라이언트 패키지도 함께 제공하고 "
-#~ "있습니다. Backend.AI Console은 웹 또는 앱 "
-#~ "형태의 GUI 클라이언트로, Backend.AI 서버에 접속하여 "
-#~ "연산 자원을 활용하고 자신의 환경을 관리할 수 있는"
-#~ " 편리한 그래픽 인터페이스를 제공합니다. 대부분의 작업을 "
-#~ "마우스 클릭과 짧은 타이핑으로 할 수 있어 보다"
-#~ " 직관적으로 사용할 수 있습니다."
-
-#~ msgid ""
-#~ "Web wsproxy: In the case of the"
-#~ " console app provided in a web, "
-#~ "the built-in server cannot be used"
-#~ " due to the nature of the "
-#~ "browser. In this case, you can use"
-#~ " services such as Jupyter Notebook, "
-#~ "Terminal, etc. in the web environment"
-#~ " by making the wsproxy server as "
-#~ "a separate web server so that the"
-#~ " console app can see the web "
-#~ "wsproxy."
-#~ msgstr ""
-#~ "웹 wsproxy: 웹 형태로 제공되는 콘솔 앱의 "
-#~ "경우 브라우저의 특성상 별도 내장 서버를 운영할 수"
-#~ " 없습니다. 이 경우 wsproxy 서버를 별도의 웹"
-#~ " 서버도 독립 운영하여 콘솔 앱에서 웹 wsproxy를"
-#~ " 바라보게 만듦으로써 Jupyter Notebook, Terminal "
-#~ "등과 같은 서비스를 웹 환경에서도 사용할 수 "
-#~ "있습니다."
-
-#~ msgid "Category"
-#~ msgstr "분류"
-
-#~ msgid "Feature"
-#~ msgstr "기능"
-
-#~ msgid "GPU support"
-#~ msgstr "GPU 지원"
-
-#~ msgid "Container-level multi GPU"
-#~ msgstr "컨테이너 수준의 멀티 GPU"
-
-#~ msgid "(Enterprise) Fractional GPU sharing & scaling"
-#~ msgstr "(엔터프라이즈) GPU 분할 공유"
-
-#~ msgid "Multiple CUDA library version support (8.0 to 11.1)"
-#~ msgstr "다양한 CUDA 라이브러리 버전 지원 (8.0-11.1)"
-
-#~ msgid "Scaling"
-#~ msgstr "스케일링"
-
-#~ msgid "On-premise installation on both bare-metal / VM"
-#~ msgstr "온프레미스 설치 (베어메탈 또는 VM 등)"
-
-#~ msgid "Hybrid cloud (on-premise + cloud)"
-#~ msgstr "하이브리드 클라우드 (온프레미스 + 클라우드)"
-
-#~ msgid "Polycloud (multi-cloud federation)"
-#~ msgstr "폴리 클라우드 (여러 클라우드 서비스 연합)"
-
-#~ msgid "Scheduling"
-#~ msgstr "스케줄링"
-
-#~ msgid "Unified scheduling & monitoring with GUI admin"
-#~ msgstr "통합 스케줄링 및 GUI 어드민 모니터링"
-
-#~ msgid "Per-user (keypair) resource policy"
-#~ msgstr "사용자 (키페어) 별 자원 정책"
-
-#~ msgid "(Enterprise) Per-project resource policy"
-#~ msgstr "(엔터프라이즈) 프로젝트 별 자원 정책"
-
-#~ msgid "Availability-slot based scheduling"
-#~ msgstr "가용 슬롯 기반의 스케줄링"
-
-#~ msgid "Cluster partitioning"
-#~ msgstr "클러스터 묶음"
-
-#~ msgid "Resource groups by H/W spec and usage"
-#~ msgstr "하드웨어 스펙과 사용 형태에 따른 자원 그룹"
-
-#~ msgid "(Enterprise) Access control of users to resource group"
-#~ msgstr "(엔터프라이즈) 사용자 자원 그룹 배치"
-
-#~ msgid "(Enterprise) Access control of project to resource group"
-#~ msgstr "(엔터프라이즈) 사용자 프로젝트 자원 그룹 배치"
-
-#~ msgid "Security"
-#~ msgstr "보안"
-
-#~ msgid "Sandboxing via hypervisor/container"
-#~ msgstr "하이퍼바이저/컨테이너를 통한 샌드박싱"
-
-#~ msgid "Access logs for each user"
-#~ msgstr "사용자 요청 별 접근 로그"
-
-#~ msgid "Per session (container) logs"
-#~ msgstr "연산 세션 별 로그"
-
-#~ msgid "UI / UX"
-#~ msgstr ""
-
-#~ msgid "GUI web interface"
-#~ msgstr "GUI 웹 인터페이스"
-
-#~ msgid "(Enterprise) Admin GUI web interface"
-#~ msgstr "(엔터프라이즈) 어드민 GUI 웹 인터페이스"
-
-#~ msgid "Data management"
-#~ msgstr "데이터 관리"
-
-#~ msgid ""
-#~ "EFS, NFS, SMB and distributed file "
-#~ "system (CephFS, GlusterFS, HDFS, etc)"
-#~ msgstr "EFS, NFS, SMB 및 분산 파일 시스템 (CephFS, GlusterFS, HDFS 등)"
-
-#~ msgid ""
-#~ "(Enterprise) Dedicated flash-storage "
-#~ "integration: PureStorage FlashBlade"
-#~ msgstr ""
-
-#~ msgid "Access control to data by user/project"
-#~ msgstr "사용자/프로젝트 별 데이터 접근 제어"
-
-#~ msgid "Developer support"
-#~ msgstr "개발 지원"
-
-#~ msgid "Universal programming languages (Python, C/C++, etc)"
-#~ msgstr "범용 프로그래밍 언어 (Python, C/C++ 등)"
-
-#~ msgid "Interactive web apps (Terminal, Jupyter, VSCode, etc)"
-#~ msgstr "대화형 웹 앱 (터미널, Jupyter, VSCode 등)"
-
-#~ msgid "For data scientists"
-#~ msgstr "데이터 과학자 지원"
-
-#~ msgid "NGC (NVIDIA GPU CLoud) image integration"
-#~ msgstr "NGC (NVIDIA GPU Cloud) 이미지 통합"
-
-#~ msgid "Popular ML libraries: TensorFlow, PyTorch, etc"
-#~ msgstr "유명 ML 라이브러리: TensorFlow, PyTorch 등"
-
-#~ msgid "Concurrent user of multiple versions of libraries"
-#~ msgstr "여러 버전의 라이브러리 동시 사용"
-
-#~ msgid "Periodic update of ML libraries"
-#~ msgstr "주기적인 ML 라이브러리 업데이트"
-
-#~ msgid "Customer support"
-#~ msgstr "고객 지원"
-
-#~ msgid "On-site installation (bare-metal / VM)"
-#~ msgstr "방문 설치 (베어메탈 / VM 등)"
-
-#~ msgid "Configuration support (on-premise + cloud)"
-#~ msgstr "설정 지원 (온프레미스 + 클라우드)"
-
-#~ msgid "Admin/user training"
-#~ msgstr "어드민/사용자 교육"
-
-#~ msgid "Support for updating to latest version"
-#~ msgstr "최신 버전 업데이트 지원"
-
-#~ msgid "Priority development and escalation"
-#~ msgstr "기술 개발 요청 우선 반영"
-
-#~ msgid "Custmoized container image / kernel or kernel repository"
-#~ msgstr ""
-
