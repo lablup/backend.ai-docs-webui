@@ -329,6 +329,9 @@ Control panel of the running compute session.
 
 .. image:: session_log.png
 
+.. note::
+   From 22.09, you can download session log by clicking download button on upper-right side of the dialog.
+   This feature is helpful for tracking artifacts.
 
 Rename running session
 ----------------------
