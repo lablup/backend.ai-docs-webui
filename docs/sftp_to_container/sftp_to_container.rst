@@ -1,3 +1,5 @@
+.. _ssh-sftp-container:
+
 ==========================================
 SSH/SFTP Connection to a Compute Session
 ==========================================
