@@ -404,6 +404,7 @@ If you want to delete the whole variables and value, please click DELETE ALL but
 
 Save container commit
 ---------------------
+
 From 22.09, Backend.AI now support container commit feature. Since one or more sessions correspond to spawned container when executed,
 container commit will save all information stored in sessions. When you click the download button in control pane of ``RUNNING`` session, 
 you can see the information of container, corresponds to the selected row(session).
@@ -413,7 +414,7 @@ you can see the information of container, corresponds to the selected row(sessio
    :align: center
    :alt: Container commit confirmation
 
-After clicking commit button in the dialog, Backend.AI internally requests docker to create contaienr commit as ``tar.gz`` to be stored into 
+After clicking commit button in the dialog, Backend.AI internally requests docker to create container commit as ``tar.gz`` to be stored into 
 specified path. Please note that It's not available to access directly in your local environment. Stored commit is saved to the agent node.
 
 .. image:: container_commit_ongoing.png
