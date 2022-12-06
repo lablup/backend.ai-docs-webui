@@ -418,7 +418,7 @@ specified path. Please note that It's not available to access directly in your l
   :alt: Container commit ongoing
 
 .. note::
-   During container commit progress, you may not be able to terminate the session to prevent unexpected error on container commit.
+   Currently, Backend.AI supports container commit when session is ``INTERACTIVE`` mode only. During container commit progress, you may not be able to terminate the session to prevent unexpected error on container commit.
    If you want to stop ongoing container commit, please check the session, and force-terminate the session.
 
 
