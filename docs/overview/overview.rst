@@ -28,7 +28,7 @@ achieves more intuitive use.
 Key Concepts
 ------------
 
-.. image:: key_concepts.png
+.. image:: key_concepts_2209.png
    :alt: Diagram explaining key concepts
 
 - User: The user is a person who connects to Backend.AI and performs work.
@@ -101,7 +101,7 @@ Backend.AI feature details
 +                      +-------------------------------------------------------+
 |                      | (Enterprise) Fractional GPU sharing & scaling         |
 +                      +-------------------------------------------------------+
-|                      | Multiple CUDA library version support (8.0 to 11.1)   |
+|                      | Multiple CUDA library version support (8.0 to 11.5)   |
 +----------------------+-------------------------------------------------------+
 | Scaling              | On-premise installation on both bare-metal / VM       |
 +                      +-------------------------------------------------------+
@@ -142,8 +142,10 @@ Backend.AI feature details
 |                      |                                                       |
 |                      | * PureStorage FlashBlade                              |
 |                      | * NetApp ONTAP & NetApp XCP                           |
+|                      | * Weka.io                                             |
+|                      | * Dell EMC                                            |
 +                      +-------------------------------------------------------+
-|                      | Access control to data by user/project                |
+|                      | Fine-grained Access control to data by user/project   |
 +----------------------+-------------------------------------------------------+
 | Developer support    | Universal programming languages (Python, C/C++, etc)  |
 +                      +-------------------------------------------------------+
@@ -180,23 +182,33 @@ Accessible menu by user role
    * Pages with ``*`` mark are in Administration menu.
    * Features only for admin are listed in :ref:`admin menu <admin-menu>`.
 
-+----------------+------+-------+
-| page \\ role   | user | admin |
-+================+======+=======+
-| Summary        |   O  |   O   |
-+----------------+------+-------+
-| Sessions       |   O  |   O   |
-+----------------+------+-------+
-| Data & Storage |   O  |   O   |
-+----------------+------+-------+
-| Statistics     |   O  |   O   |
-+----------------+------+-------+
-| Users*         |   X  |   O   |
-+----------------+------+-------+
-| Maintenance*   |   X  |   O   |
-+----------------+------+-------+
-| Information*   |   X  |   O   |
-+----------------+------+-------+
-| UserSettings   |   O  |   O   |
-+----------------+------+-------+
++-----------------+------+-------+
+| page \\ role    | user | admin |
++=================+======+=======+
+| Summary         |   O  |   O   |
++-----------------+------+-------+
+| Sessions        |   O  |   O   |
++-----------------+------+-------+
+| Import & run    |   O  |   O   |
++-----------------+------+-------+
+| Data & Storage  |   O  |   O   |
++-----------------+------+-------+
+| Agent Summary   |   O  |   O   |
++-----------------+------+-------+
+| Statistics      |   O  |   O   |
++-----------------+------+-------+
+| Users*          |   X  |   O   |
++-----------------+------+-------+
+| Environments*   |   X  |   O   |
++-----------------+------+-------+
+| Resources*      |   X  |   O   |
++-----------------+------+-------+
+| Configurations* |   X  |   O   |
++-----------------+------+-------+
+| Maintenance*    |   X  |   O   |
++-----------------+------+-------+
+| Information*    |   X  |   O   |
++-----------------+------+-------+
+| UserSettings    |   O  |   O   |
++-----------------+------+-------+
 

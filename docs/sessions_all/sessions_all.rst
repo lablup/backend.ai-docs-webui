@@ -329,6 +329,9 @@ Control panel of the running compute session.
 
 .. image:: session_log.png
 
+.. note::
+   From 22.09, you can download session log by clicking download button on upper-right side of the dialog.
+   This feature is helpful for tracking artifacts.
 
 Rename running session
 ----------------------
@@ -397,6 +400,30 @@ To Add more environment variables, yon can click ``+`` button in the right side 
 Also, you can remove the variable by clicking ``-`` button of the row that you want to get rid of.
 
 If you want to delete the whole variables and value, please click DELETE ALL button at the bottom of the dialog.
+
+
+Save container commit
+---------------------
+
+From 22.09, Backend.AI now support container commit feature. Since one or more sessions correspond to spawned container when executed,
+container commit will save all information stored in sessions. When you click the download button in control pane of ``RUNNING`` session, 
+you can see the information of container, corresponds to the selected row(session).
+
+.. image:: container_commit.png
+   :width: 350
+   :align: center
+   :alt: Container commit confirmation
+
+After clicking commit button in the dialog, Backend.AI internally requests docker to create container commit as ``tar.gz`` to be stored into 
+specified path. Please note that It's not available to access directly in your local environment. Stored commit is saved to the agent node.
+
+.. image:: container_commit_ongoing.png
+  :align: center
+  :alt: Container commit ongoing
+
+.. note::
+   Currently, Backend.AI supports container commit when session is ``INTERACTIVE`` mode only. During container commit progress, you may not be able to terminate the session to prevent unexpected error on container commit.
+   If you want to stop ongoing container commit, please check the session, and force-terminate the session.
 
 
 .. _optimizing-accelerated-computing:

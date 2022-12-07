@@ -23,11 +23,11 @@ Each menu item has the following functions.
 
 * About Backend.AI: Displays information such as version of Backend.AI Web-UI,
   license type, etc.
-* Change User Info: Change user name and password
+* My Account: Check/Update information of current login user
 * Preferences: Go to user settings page
 * Logs / Errors: Go to the log page. You can check the log and error history
   recorded on the client side.
-* Logout: Log out. Users can also logout by clicking the icon on the far right
+* Log Out: Log out. Users can also logout by clicking the icon on the far right
   of the top bar.
 
 If you click Change User Info, the following dialog appears.
@@ -39,6 +39,8 @@ If you click Change User Info, the following dialog appears.
 Each item has the following meaning.
 
 * Full Name: User's name (up to 64 characters)
+* Access Key: User's access key, pairs up with secret key below.
+* Secret Key: User's secret key
 * Original password: Original password. Click the right view icon to see the
   input contents.
 * New password: New password (8 characters or more containing at least 1
@@ -106,3 +108,18 @@ If another user has shared their storage folder to you, it will be displayed
 here. If you accept the share request, you can view and access the shared folder
 in the Data & Storage folder. The access rights are determined by the user who has sent the share request.
 Of course, you can decline the sharing requests.
+
+Download Backend.AI Web UI App
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Backend.AI WebUI supports desktop applications. 
+By using desktop app, you can use desktop app specific features, such as :ref:`SSH/SFTP connection to a Compute Session<ssh-sftp-container>` .
+For now Backend.AI WebUI provides desktop application with following OS:
+
+* Windows
+* Linux
+* Mac
+
+.. note::
+   When you click the button that match with your local environment (e.g. OS, Architecture), It will automatically downloads the same version of current webUI version.
+   If you want to download later or former version of WebUI as a desktop app, please visit `here <https://github.com/lablup/backend.ai-webui/releases?page=1>`_ and download the desired version(s).

@@ -1,8 +1,8 @@
 =======================
-FAQs & Trouble Shooting
+FAQs & Troubleshooting
 =======================
 
-User trouble shooting guide
+User troubleshooting guide
 ---------------------------
 
 Session list is not displayed correctly
@@ -100,7 +100,7 @@ start the SSH/SFTP service in the desired container to establish the SFTP
 connection.
 
 
-Admin trouble shooting guide
+Admin troubleshooting guide
 ----------------------------
 
 Users cannot launch apps like Jupyter Notebook
