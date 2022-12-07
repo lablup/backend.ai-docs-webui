@@ -66,7 +66,7 @@ msgid ""
 "window. If it succeeds, please clear your browser's cache and/or "
 "application data."
 msgstr ""
-"간혹 브라우저의 쿠키 문제 및 캐시된 데이터로 인해 로그인이 되지 않는 경우가 있습니다. 브 라우저의 시크릿 모드에서 로그인을 시도"
+"간혹 브라우저의 쿠키 문제 및 캐시된 데이터로 인해 로그인이 되지 않는 경우가 있습니다. 브라우저의 시크릿 모드에서 로그인을 시도"
 " 해보십시오. 만약 로그인이 된다면, 브라우저의 쿠키 및 애플리케이션 데이터를 삭제한 후 다시 로그인 해보시기 바랍니다."
 
 #: ../../trouble_shooting/trouble_shooting.rst:29

@@ -455,7 +455,7 @@ msgstr "세션 (Sessions)"
 
 #: ../../overview/overview.rst:192
 msgid "Import & run"
-msgstr ""
+msgstr "가져오기 및 실행하기(Import & Run)"
 
 #: ../../overview/overview.rst:194
 msgid "Data & Storage"
@@ -481,11 +481,11 @@ msgstr ""
 
 #: ../../overview/overview.rst:202
 msgid "Environments*"
-msgstr ""
+msgstr "실행 환경 (Environments)*"
 
 #: ../../overview/overview.rst:204
 msgid "Resources*"
-msgstr ""
+msgstr "자원 (Resources)*"
 
 #: ../../overview/overview.rst:206
 msgid "Configurations*"

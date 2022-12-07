@@ -122,7 +122,7 @@ msgid ""
 "building a pipeline of workloads."
 msgstr ""
 "자원이 할당되는 즉시 해당 스크립트를 실행하고, 스크립트가 종료되는 그 즉시 연산 세션을 자동으로 삭제합니다. 따라서, 실행할 "
-"코드가 사전에 정의되어 있거나 작업을 파이프라이닝 하는 경우에는, 연산 서버팜의 자원을 보다 효율적으로 활용할 수 있는 장점이 "
+"코드가 사전에 정의되어 있거나 작업을 파이프라이닝 하는 경우에는, 연산 서버 팜(server farm)의 자원을 보다 효율적으로 활용할 수 있는 장점이 "
 "있습니다."
 
 #: ../../sessions_all/sessions_all.rst:57
@@ -132,7 +132,7 @@ msgid ""
 " be PENDING due to the lack of resources, etc. Rather, it guarantees that"
 " the session WILL NOT run until the start time."
 msgstr ""
-"연산 세션 시작 시점을 지정할 수 있습니다. 다만, 시작 시점에 반드시 연산 세 션이 자원을 할당받을 수 있는 것은 아닙니다(자원 "
+"연산 세션 시작 시점을 지정할 수 있습니다. 다만, 시작 시점에 반드시 연산 세션이 자원을 할당받을 수 있는 것은 아닙니다(자원 "
 "부족 등의 이유로 PENDING 상태에 계속 머물 수 있습니다). 시작 시점 이전에는 자원이 있어도 연산 세션을 스케줄링 하지 않는"
 " 개념으로 이해하는 것이 정확합니다."
 
