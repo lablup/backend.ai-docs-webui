@@ -16,6 +16,11 @@ search box on each column header.
 .. image:: admin_user_page.png
    :alt: User management page
 
+.. note::
+
+   Depending on the plugin settings, the ``2FA Enabled`` column might be invisible. In that
+   case, please contact administrator of your system.
+
 
 Create and update users
 -----------------------
@@ -71,6 +76,10 @@ Each of the two items at the bottom of the dialog has the following functions.
   password change is required. The users will see the top bar that notify user
   to update their password, but this is a kind of descriptive flag which has no
   effect on actual use.
+* 2FA Enabled: A flag indicating whether the user uses two-factor authentication.
+  When using two-factor authentication, users are additionally required to enter an
+  OTP code when logging in. Administrators can only disable two-factor authentication
+  for other users.
 
 Inactivate user account
 -----------------------

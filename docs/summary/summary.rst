@@ -40,15 +40,51 @@ Each item has the following meaning.
 
 * Full Name: User's name (up to 64 characters)
 * Access Key: User's access key, pairs up with secret key below.
-* Secret Key: User's secret key
+* Secret Key: User's secret key.
 * Original password: Original password. Click the right view icon to see the
   input contents.
 * New password: New password (8 characters or more containing at least 1
   alphabet, number, and symbol). Click the right view icon to see the input
   contents. Ensure this is the same as the Original password.
+* 2FA Enabled: 2FA activation. The user needs to enter the OTP code when logging
+  in if it is checked.
+
+.. note::
+  Depending on the plugin settings, the ``2FA Enabled`` column might be invisible.
+  In that case, please contact administrator of your system.
 
 Enter the desired value and click the UPDATE button to update the user
 information.
+
+2FA Setup
+^^^^^^^^^
+If you activate the ``2FA Enabled`` switch, the following dialog appears.
+
+.. image:: 2fa_setup.png
+  :width: 350
+  :align: center
+
+Turn on the 2FA application you use and scan the QR code or manually enter the verification
+code. There are many 2FA-enabled applications, such as Google Authenticator, 2STP, 1Password,
+and Bitwarden.
+
+Then enter the 6-digit code from the item added to your 2FA application into the dialog above.
+2FA is activated when you press the CONFIRM button.
+
+When you log in later, if you enter an email and password, an additional field appears asking
+for the OTP code.
+
+.. image:: ask_otp_when_login.png
+  :align: center
+
+To log in, you must open the 2FA application and enter a 6-digit code in the One-time password field.
+
+.. image:: remove_2fa.png
+  :width: 350
+  :align: center
+
+If you want to disable 2FA, turn off the ``2FA Enabled`` switch and click the confirm button in the
+following dialog.
 
 
 Summary panel
