@@ -128,6 +128,16 @@ clicking the trash can icon in the Control panel. When you click the Delete
 button, a confirm dialog appears. To prevent accidental deletion, you have to
 enter the name of the folder to be deleted, explicitly.
 
+.. note::
+   When delete operation starts, It may take some time in order to delete the 
+   target folder completely from storage host. Meanwhile, in order to block 
+   unintended operation such as accessing any file/directory inside the folder 
+   on-delete status, we disable any accessing operations.
+
+   .. image:: vfolder_deleting.png
+      :width: 100%
+      :align: center
+
 .. image:: vfolder_delete_dialog.png
    :width: 400
    :align: center
