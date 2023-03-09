@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 22.09\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-09 14:18+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../quickstart.rst:2
+msgid "Quickstart"
+msgstr "빠른 시작"
+
+#: ../../quickstart.rst:4
+msgid ""
+"Welcome to Quickstart guide of Backend.AI WebUI. This tutorial will cover"
+" the essentials of using Backend.AI without any knowledge base."
+msgstr ""
+"Backend.AI WebUI를 사용하는 빠른시작 가이드입니다. 이 튜토리얼에서는 다른 지식기반이 없이도 "
+"Backend.AI 를 사용할 수 있도록 꼭 필요한 내용만을 다룹니다."
+
+#: ../../quickstart.rst:10
+msgid "Objectives"
+msgstr "목표"
+
+#: ../../quickstart.rst:13
+msgid "Part 1. Basic guide of using Backend.AI"
+msgstr "파트 1. Backend.AI 기초 사용 가이드"
+
+#: ../../quickstart.rst:14
+msgid ":ref:`How to create a virtual folder<create_storage_folder>`"
+msgstr ":ref:`가상 폴더 만드는 방법<create_storage_folder>` "
+
+#: ../../quickstart.rst:15
+msgid ":ref:`How to create a session<create_session>`"
+msgstr ":ref:`세션 생성하는 방법<create_session>` "
+
+#: ../../quickstart.rst:16
+msgid ":ref:`How to use a session<use_session>`"
+msgstr ":ref:`세션 사용하는 방법<use_session>` "
+
+#: ../../quickstart.rst:17
+msgid ":ref:`How to delete a session<delete_session>`"
+msgstr ":ref:`세션 종료하는 방법<delete_session>` "
+
+#: ../../quickstart.rst:20
+msgid "Part 2. Advanced guide of using Backend.AI"
+msgstr "파트 2. Backend.AI 고급 사용 가이드"
+
+#: ../../quickstart.rst:21
+msgid ":ref:`How to use terminal application with tmux<tmux_guide>`"
+msgstr ":ref:`tmux 를 사용한 terminal 사용법<tmux_guide>` "
+
+#: ../../quickstart.rst:22
+msgid ""
+":ref:`How to install extra pip package using automount virtual "
+"folder<install_pip_pkg>`"
+msgstr ":ref:`자동마운트되는 가상폴더를 사용해서 pip 패키지를 설치하는 방법<install_pip_pkg>` "
+
+#: ../../quickstart.rst:23
+msgid ":ref:`How to use SSH/sFTP using desktop application<ssh-sftp-container>`"
+msgstr ":ref:`데스크톱 애플리케이션으로 SSH/sFTP 을 사용하는 방법<ssh-sftp-container>` "
+
+#: ../../quickstart.rst:24
+msgid ":ref:`How to install apt packages<installing_apt_pkg>`"
+msgstr ":ref:`APT 패키지 설치하는 방법<installing_apt_pkg>` "
+
