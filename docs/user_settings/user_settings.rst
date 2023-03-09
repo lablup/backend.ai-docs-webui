@@ -65,7 +65,7 @@ copy the existing SSH public key. You can update SSH keypair by clicking
 GENERATE button at the bottom of the dialog. SSH public/private keys are
 randomly generated and stored as user information. Please note that the secret
 key cannot be checked again unless it is saved manually immediately after
-creation.
+creation.   
 
 .. image:: ssh_keypair_dialog.png
    :width: 400
@@ -77,6 +77,21 @@ creation.
 .. note::
    Backend.AI uses SSH keypair based on OpenSSH. On Windows, you may convert
    this into PPK key.
+
+From 22.09, Backend.AI WebUI supports adding your own ssh keypair in order to provide 
+flexibility such as accessing to a private repository. In order to add your own ssh keypair, click ``ENTER MANUALLY`` button. Then, you will see 
+two text area which corresponds to "public" and "private" key.   
+
+.. image:: add_ssh_keypair_manually_dialog.png
+   :width: 400
+   :align: center
+
+please enter the keys inside, and click ``SAVE`` button. Now you can access to backend.ai session using your own key. 
+
+.. image:: ssh_keypair_dialog_after.png
+   :width: 400
+   :align: center
+
 
 Automatic Update Check
 ^^^^^^^^^^^^^^^^^^^^^^

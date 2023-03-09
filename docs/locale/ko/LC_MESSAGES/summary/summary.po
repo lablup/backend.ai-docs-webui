@@ -212,7 +212,7 @@ msgstr ""
 
 #: ../../summary/summary.rst:109
 msgid "Resource Statistics"
-msgstr ""
+msgstr "자원 사용량"
 
 #: ../../summary/summary.rst:111
 msgid ""

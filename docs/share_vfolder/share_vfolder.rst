@@ -12,26 +12,26 @@ Share storage folders with other users
 
 Let's learn how to share your personal Storage folder with other users. First,
 log in to User A's account and go to the Data & Storage page. There are several
-folders, and we want to share a folder named ``test`` to User B.
+folders, and we want to share a folder named ``tests`` to User B.
 
 .. image:: list_of_vfolders_A.png
 
-Inside the ``test`` folder you can see files and directories like ``hello.txt``
+Inside the ``tests`` folder you can see files and directories like ``hello.txt``
 and ``myfolder``.
 
 .. image:: test_vfolder_explorer_A.png
 
-Confirm that the ``test`` folder is not listed when logging in with User B's
+Confirm that the ``tests`` folder is not listed when logging in with User B's
 account.
 
 .. warning::
-   If a folder named ``test`` already exists in User B's account, User A's
-   ``test`` folder cannot be shared with User B.
+   If a folder named ``tests`` already exists in User B's account, User A's
+   ``tests`` folder cannot be shared with User B.
 
 .. image:: no_test_vfolder_in_B.png
 
 Back to User A's account and click the share icon (third icon) in the Control panel on the
-right of the ``test`` folder. Enter User B's email in the email input field and
+right of the ``tests`` folder. Enter User B's email in the email input field and
 click the SHARE button to send a sharing invitation. No actual email is sent,
 and invitations are generated through the Backend.AI database. In the case of
 Permissions, if you check View, it is shared as read-only, and if you check Edit
@@ -49,17 +49,17 @@ page again.
 
 .. image:: invitation_accept.png
 
-Go to the Data & Storage page and check that the ``test`` folder is displayed in
+Go to the Data & Storage page and check that the ``tests`` folder is displayed in
 the list. If you don't see it on the list, try refreshing your browser page.
 Since you have accepted the invitation, you can now view the contents of User
-A's ``test`` folder in User B account. Compared to the other folders created by
-User B, the ``test`` folder has no management icon in the Control panel. You
+A's ``tests`` folder in User B account. Compared to the other folders created by
+User B, the ``tests`` folder has no management icon in the Control panel. You
 can also see only the R (read-only) mark displayed in the Permission panel.
 
 .. image:: test_vfolder_listed_in_B.png
 
-Let's navigate inside the ``test`` folder by clicking the folder icon in the
-Control panel of ``test``. You can check the ``hello.txt`` and ``myfolder``
+Let's navigate inside the ``tests`` folder by clicking the folder icon in the
+Control panel of ``tests``. You can check the ``hello.txt`` and ``myfolder``
 that you checked in the User A's account again. Let's create a compute session
 by mounting this storge folder with the User B's account.
 
@@ -67,10 +67,10 @@ by mounting this storge folder with the User B's account.
    :width: 350
    :align: center
 
-After creating a session, open the web terminal and check that the ``test``
-folder is mounted in the home folder. The contents of the ``test`` folder are
+After creating a session, open the web terminal and check that the ``tests``
+folder is mounted in the home folder. The contents of the ``tests`` folder are
 displayed, but attempts to create or delete files are not allowed. This is
-because User A shared it as read-only. User B can create a file in the ``test``
+because User A shared it as read-only. User B can create a file in the ``tests``
 folder if it has been shared including write access.
 
 .. image:: file_operations_on_shared_test_folder.png
@@ -80,7 +80,7 @@ folder if it has been shared including write access.
 If you click the folder icon in the Control panel, you may notice that UPLOAD FILES button and
 NEW FOLDER button disappears and READ-ONLY FOLDER message is shown on that
 spot. Also modify icon and delete icon in the Action panel are also disabled since the
-folder is read-only. User B can create a file in the ``test`` folder if it has
+folder is read-only. User B can create a file in the ``tests`` folder if it has
 been shared including write access.
 
 .. image:: test_vfolder_explorer_B.png
