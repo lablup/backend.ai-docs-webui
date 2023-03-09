@@ -7,6 +7,8 @@ Data & Storage pages. Here, you will learn how to query and
 create container-based compute sessions and utilize various web applications on
 the Sessions page.
 
+.. _create_session:
+
 Start a new session
 -------------------
 
@@ -226,6 +228,8 @@ accessible resources.
    utilize SM (streaming multiprocessor) and GPU memory corresponding to 0.2
    physical GPU for the session.
 
+.. _use_session:
+
 
 Use Jupyter Notebook
 ----------------------
@@ -343,6 +347,8 @@ The new session name should also follow the :ref:`the authoring rule<session-nam
 .. image:: session_renaming.png
 
 
+.. _delete_session:
+
 Delete a compute session
 ------------------------
 
@@ -405,8 +411,10 @@ If you want to delete the whole variables and value, please click DELETE ALL but
 Save container commit
 ---------------------
 
-From 22.09, Backend.AI now support container commit feature. Since one or more sessions correspond to spawned container when executed,
-container commit will save all information stored in sessions. When you click the download button in control pane of ``RUNNING`` session, 
+From 22.09, Backend.AI now support container commit feature.
+Since one or more sessions correspond to spawned container when executed,
+container commit will save all information stored in sessions. 
+When you click the download button in control pane of ``RUNNING`` session, 
 you can see the information of container, corresponds to the selected row(session).
 
 .. image:: container_commit.png
@@ -443,6 +451,8 @@ To resolve this issue, setting the number of threads to 1 or 2 would work.
    :align: center
    :alt: Session HPC Optimization
 
+
+.. _tmux_guide:
 
 Advanced web terminal usage
 ---------------------------
