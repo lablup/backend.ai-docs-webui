@@ -20,6 +20,7 @@ The latest versions of this document can be found from sites below:
    :maxdepth: 2
    :caption: Table of Contents
 
+   quickstart
    disclaimer
    overview/overview
    installation/installation

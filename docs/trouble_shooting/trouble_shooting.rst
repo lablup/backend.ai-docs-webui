@@ -25,6 +25,8 @@ If there are problems in recognizing authentication cookies, users may not be ab
 to login with private browser window. If it succeeds, please clear your
 browser's cache and/or application data.
 
+.. _installing_apt_pkg:
+
 How to install apt packages?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -55,6 +57,9 @@ Now, you can install packages by ``brew``:
 folder named ``.linuxbrew``, which will be automatically mounted when creating a
 compute session, those installed packages can be kept after compute session is
 destroyed and then reused for the next compute session.
+
+
+.. _install_pip_pkg:
 
 How to install packages with pip?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -39,6 +39,8 @@ Check marks on the Owner panel in the folder list indicate the user created fold
    search boxes on top of the list.
 
 
+.. _create_storage_folder:
+
 Create storage folder
 ---------------------
 
