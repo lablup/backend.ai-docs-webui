@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 22.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-09 14:18+0900\n"
+"POT-Creation-Date: 2023-03-09 14:40+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,15 +26,15 @@ msgid ""
 "Welcome to Quickstart guide of Backend.AI WebUI. This tutorial will cover"
 " the essentials of using Backend.AI without any knowledge base."
 msgstr ""
-"Backend.AI WebUI를 사용하는 빠른시작 가이드입니다. 이 튜토리얼에서는 다른 지식기반이 없이도 "
-"Backend.AI 를 사용할 수 있도록 꼭 필요한 내용만을 다룹니다."
+"Backend.AI WebUI를 사용하는 빠른시작 가이드입니다. 이 튜토리얼에서는 다른 지식기반이 없이도 Backend.AI 를 "
+"사용할 수 있도록 꼭 필요한 내용만을 다룹니다."
 
 #: ../../quickstart.rst:10
 msgid "Objectives"
 msgstr "목표"
 
 #: ../../quickstart.rst:13
-msgid "Part 1. Basic guide of using Backend.AI"
+msgid "Part 1. Basic guide to using Backend.AI"
 msgstr "파트 1. Backend.AI 기초 사용 가이드"
 
 #: ../../quickstart.rst:14
@@ -54,7 +54,7 @@ msgid ":ref:`How to delete a session<delete_session>`"
 msgstr ":ref:`세션 종료하는 방법<delete_session>` "
 
 #: ../../quickstart.rst:20
-msgid "Part 2. Advanced guide of using Backend.AI"
+msgid "Part 2. Advanced guide to using Backend.AI"
 msgstr "파트 2. Backend.AI 고급 사용 가이드"
 
 #: ../../quickstart.rst:21
