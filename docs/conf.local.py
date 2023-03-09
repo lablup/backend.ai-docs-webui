@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Backend.AI Web-UI User Guide'
-copyright = '2022, Lablup Inc.'
+copyright = '2023, Lablup Inc.'
 author = 'Lablup Inc.'
 version = '22.09'
 release = '22.09'
