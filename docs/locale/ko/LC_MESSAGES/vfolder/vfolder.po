@@ -71,8 +71,8 @@ msgid ""
 " were not created by the user (eg. folders invited to share, or project "
 "folders) are not counted."
 msgstr ""
-"Capacity: 사용자가 현재 만들 수있는 최대 폴더 수입니다. 이 값은 사용자에게 적용된 자원 정책에 따라 다르며 자원 정책을 "
-"변경하지 않고 변경할 수 없습니다. 사용자가 생성하지 않은 폴더(예 : 공유하도록 초대 된 폴더 또는 프로젝트 폴더)는 계산에 "
+"Capacity: 사용자가 현재 만들 수 있는 최대 폴더 수입니다. 이 값은 사용자에게 적용된 자원 정책에 따라 다르며 자원 정책을 "
+"변경하지 않고 변경할 수 없습니다. 사용자가 생성하지 않은 폴더(예 : 공유하도록 초대된 폴더 또는 프로젝트 폴더)는 계산에 "
 "포함되지 않습니다."
 
 #: ../../vfolder/vfolder.rst:32
@@ -113,7 +113,7 @@ msgstr ""
 msgid ""
 "The meaning of each fields that can be selected in the creation dialog is"
 " as follows."
-msgstr "생성 대화 상자에서 선택할 수있는 각 필드의 의미는 다음과 같습니다."
+msgstr "생성 대화 상자에서 선택할 수 있는 각 필드의 의미는 다음과 같습니다."
 
 #: ../../vfolder/vfolder.rst:62
 msgid "Folder name: The name of the folder. You can enter up to 64 characters."
@@ -133,7 +133,7 @@ msgid ""
 "users in the project."
 msgstr ""
 "Type: 생성 할 폴더 유형을 결정합니다. 사용자(User) 또는 프로젝트(Group)로 설정할 수 있습니다. 사용자 폴더는 "
-"사용자가 단독으로 생성하여 사용할 수있는 폴더이며 프로젝트 폴더는 관리자가 생성하고 프로젝트의 사용자가 공유하는 폴더입니다."
+"사용자가 단독으로 생성하여 사용할 수 있는 폴더이며 프로젝트 폴더는 관리자가 생성하고 프로젝트의 사용자가 공유하는 폴더입니다."
 
 #: ../../vfolder/vfolder.rst:68
 msgid ""
@@ -151,7 +151,7 @@ msgid ""
 " a new project folder. Project folders must belong to a project. However,"
 " it does not play any role when creating a user folder."
 msgstr ""
-"Project: 새 프로젝트 폴더를 만들 때 폴더가 속한 그룹을 지정합니다. 프로젝트 폴더는 프로젝트에 속해야합니다. 그러나 사용자"
+"Project: 새 프로젝트 폴더를 만들 때 폴더가 속한 그룹을 지정합니다. 프로젝트 폴더는 프로젝트에 속해야 합니다. 그러나 사용자"
 " 폴더를 생성할 때 어떤 역할도 하지 않습니다."
 
 #: ../../vfolder/vfolder.rst:75
@@ -203,7 +203,7 @@ msgid ""
 "The maximum length of file or directory inside a folder may depends on "
 "the host file system. But, it usually cannot exceed 255 characters."
 msgstr ""
-"폴더 내 파일 또는 디렉토리의 최대 길이는 호스트 파일 시스템에 따라 달라질 수 있습니다. 그러나 일반적으로 255자를 초과 할 수"
+"폴더 내 파일 또는 디렉토리의 최대 길이는 호스트 파일 시스템에 따라 달라질 수 있습니다. 그러나 일반적으로 255자를 초과할 수"
 " 없습니다."
 
 #: ../../vfolder/vfolder.rst:107

@@ -61,7 +61,7 @@ msgid ""
 " create. The rest items are optional. For a detailed description of each "
 "item, please refer to the following."
 msgstr ""
-"먼저, 세션 타입을 interactive 또는 batch 모드 중에서 고릅니다. 그 다음, 사용하려는 언어 "
+"먼저, 세션 타입을 interactive 또는 batch 모드 중에서 고릅니다. 그다음, 사용하려는 언어 "
 "환경(Environments)과 버전(Version)을 선택합니다. 나머지 항목은 필수가 아닙니다. 각 항목에 대한 자세한 설명은 "
 "다음을 참고 하십시오."
 
@@ -540,7 +540,7 @@ msgid ""
 " & Storage Folders section."
 msgstr ""
 "창을 닫으면 Notebook 파일 탐색기에 방금 작업한 ``Untitled.ipynb`` 파일이 생성되어 있는 것을 확인할 수 "
-"있습니다. 여기 생성된 파일은 세션을 삭제할 경우 같이 삭제되는 것에 주의 하십시오. 생성된 파일을 세션이 사라지더라도 보존하는 "
+"있습니다. 여기 생성된 파일은 세션을 삭제할 경우 같이 삭제되는 것에 주의하십시오. 생성된 파일을 세션이 사라지더라도 보존하는 "
 "방법은 폴더 섹션에서 설명합니다."
 
 #: ../../sessions_all/sessions_all.rst:302

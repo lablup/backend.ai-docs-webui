@@ -178,19 +178,19 @@ msgstr ""
 
 #: ../../share_vfolder/share_vfolder.rst:103
 msgid "View: The invited user has read-only access to the folder."
-msgstr "View: 초대 된 사용자는 폴더에 대한 읽기 전용 접근 권한을 갖습니다."
+msgstr "View: 초대된 사용자는 폴더에 대한 읽기 전용 접근 권한을 갖습니다."
 
 #: ../../share_vfolder/share_vfolder.rst:104
 msgid ""
 "Edit: The invited user has read and write access to the folder. The user "
 "cannot delete folders or files."
-msgstr "Edit: 초대 된 사용자에게 폴더에 대한 읽기 및 쓰기 권한이 있습니다. 사용자는 폴더 나 파일을 삭제할 수 없습니다."
+msgstr "Edit: 초대된 사용자에게 폴더에 대한 읽기 및 쓰기 권한이 있습니다. 사용자는 폴더나 파일을 삭제할 수 없습니다."
 
 #: ../../share_vfolder/share_vfolder.rst:106
 msgid ""
 "Edit+Delete: The invited user has full access to the folder and can "
 "delete files or folders."
-msgstr "Edit+Delete: 초대 된 사용자는 폴더에 대한 모든 접근 권한을 가지며 파일 또는 폴더를 삭제할 수 있습니다."
+msgstr "Edit+Delete: 초대된 사용자는 폴더에 대한 모든 접근 권한을 가지며 파일 또는 폴더를 삭제할 수 있습니다."
 
 #: ../../share_vfolder/share_vfolder.rst:108
 msgid ""
