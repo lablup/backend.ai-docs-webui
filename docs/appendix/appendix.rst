@@ -218,8 +218,8 @@ release updater support and customer support services through online channels
 are provided for 3-6 months. Maintenance and support services provided
 afterwards may have different details depending on the terms of the contract.
 
-Users of the open source version can also purchase an installation and support
-plan separately.
+.. Users of the open source version can also purchase an installation and support
+.. plan separately.
 
 Backend.AI Server Management Guide
 -----------------------------------------

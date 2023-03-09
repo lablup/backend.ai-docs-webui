@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 20.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-25 15:04+0900\n"
+"POT-Creation-Date: 2023-03-09 18:45+0900\n"
 "PO-Revision-Date: 2021-03-02 18:13+0900\n"
 "Last-Translator: \n"
 "Language: ko_KR\n"
@@ -205,7 +205,9 @@ msgstr ""
 msgid ""
 "Go to the Sessions page and open the session launch dialog. There may be "
 "various kernel images depending on the installation settings."
-msgstr "Sessions 페이지로 이동하여 연산 세션 생성 다이얼로그를 엽니다. Backend.AI에서는 설치 환경에 따른 다양한 커널 이미지를 제공합니다."
+msgstr ""
+"Sessions 페이지로 이동하여 연산 세션 생성 다이얼로그를 엽니다. Backend.AI에서는 설치 환경에 따른 다양한 커널 "
+"이미지를 제공합니다."
 
 #: ../../appendix/appendix.rst:134
 msgid "Here, let's select the TensorFlow 2.3 environment and created a session."
@@ -219,14 +221,14 @@ msgstr ""
 "생성된 세션의 웹 터미널을 열고 다음 Python 명령을 실행합니다. TensorFlow 2.3 버전이 실제 설치되어 있음을 확인할"
 " 수 있습니다."
 
-#: ../../appendix/appendix.rst:147
+#: ../../appendix/appendix.rst:146
 msgid ""
 "This time, let's select the TensorFlow 1.15 environment to create a "
 "compute session. If resources are insufficient, delete the previous "
 "session."
 msgstr "이번에는 TensorFlow 1.15 환경을 선택해서 연산 세션을 생성합니다. (자원이 부족한 경우 이전 세션은 삭제합니다)"
 
-#: ../../appendix/appendix.rst:154
+#: ../../appendix/appendix.rst:153
 msgid ""
 "Open the web terminal of the created session and run the same Python "
 "command as before. You can see that TensorFlow 1.15(.4) version is "
@@ -235,11 +237,11 @@ msgstr ""
 "생성된 세션의 웹 터미널을 열고 이전과 동일한 Python 명령을 실행합니다. TensorFlow 1.15(.4) 버전이 실제 "
 "설치되어 있음을 확인할 수 있습니다."
 
-#: ../../appendix/appendix.rst:161
+#: ../../appendix/appendix.rst:160
 msgid "Finally, create a compute session using PyTorch version 1.5."
 msgstr "마지막으로 PyTorch 1.5 버전을 이용해서 연산 세션을 생성합니다."
 
-#: ../../appendix/appendix.rst:167
+#: ../../appendix/appendix.rst:166
 msgid ""
 "Open the web terminal of the created session and run the following Python"
 " command. You can see that PyTorch 1.5 version is installed."
@@ -247,7 +249,7 @@ msgstr ""
 "생성된 세션의 웹 터미널을 열고 다음 Python 명령을 실행합니다. PyTorch 1.5 버전이 실제 설치되어 있음을 확인할 수 "
 "있습니다."
 
-#: ../../appendix/appendix.rst:174
+#: ../../appendix/appendix.rst:173
 msgid ""
 "Like this, you can utilize various versions of major libraries such as "
 "TensorFlow and PyTorch through Backend.AI without unnecessary effort to "
@@ -256,11 +258,11 @@ msgstr ""
 "이처럼, Backend.AI 를 통해 TensorFlow, PyTorch 등 주요 라이브러리의 다양한 버전을 불필요한 설치 노력 "
 "없이 활용할 수 있습니다."
 
-#: ../../appendix/appendix.rst:179
+#: ../../appendix/appendix.rst:178
 msgid "Backend.AI Server Installation Guide"
 msgstr "Backend.AI 서버 설정 가이드"
 
-#: ../../appendix/appendix.rst:181
+#: ../../appendix/appendix.rst:180
 msgid ""
 "For Backend.AI Server daemons/services, following hardware specification "
 "should be met. For optimal performance, just double the amount of each "
@@ -269,79 +271,79 @@ msgstr ""
 "Backend.AI 데몬/서비스 구동을 위해서는 다음과 같은 하드웨어가 필요합니다. 최적 성능을 위해서는 아래 명기된 사양의 두 배"
 " 이상 필요합니다."
 
-#: ../../appendix/appendix.rst:184
+#: ../../appendix/appendix.rst:183
 msgid "Manager: 2 cores, 4 GiB memory"
 msgstr ""
 
-#: ../../appendix/appendix.rst:185
+#: ../../appendix/appendix.rst:184
 msgid ""
 "Agent: 4 cores, 32 GiB memory, NVIDIA GPU (for GPU workload), > 512 GiB "
 "SSD"
 msgstr ""
 
-#: ../../appendix/appendix.rst:186
+#: ../../appendix/appendix.rst:185
 msgid "Webserver: 2 cores, 4 GiB memory"
 msgstr ""
 
-#: ../../appendix/appendix.rst:187
+#: ../../appendix/appendix.rst:186
 msgid "WSProxy: 2 cores, 4 GiB memory"
 msgstr ""
 
-#: ../../appendix/appendix.rst:188
+#: ../../appendix/appendix.rst:187
 msgid "PostgreSQL DB: 2 cores, 4 GiB memory"
 msgstr ""
 
-#: ../../appendix/appendix.rst:189
+#: ../../appendix/appendix.rst:188
 msgid "Redis: 1 core, 2 GiB memory"
 msgstr ""
 
-#: ../../appendix/appendix.rst:190
+#: ../../appendix/appendix.rst:189
 msgid "Etcd: 1 core, 2 GiB memory"
 msgstr ""
 
-#: ../../appendix/appendix.rst:192
+#: ../../appendix/appendix.rst:191
 msgid ""
 "The essential host dependent packages that must be pre-installed before "
 "installing each service are:"
 msgstr "각 서비스를 설치하기 전에 사전에 설치되어야 할 주요 의존 호스트 패키지는 다음과 같습니다:"
 
-#: ../../appendix/appendix.rst:195
+#: ../../appendix/appendix.rst:194
 msgid ""
 "Web-UI: Operating system that can run the latest browsers (Windows, Mac "
 "OS, Ubuntu, etc.)"
 msgstr "Web-UI: 최신 브라우저를 구동할 수 있는 운영체제 (Windows, Mac OS, Ubuntu 등)"
 
-#: ../../appendix/appendix.rst:197
+#: ../../appendix/appendix.rst:196
 msgid "Manager: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)"
 msgstr ""
 
-#: ../../appendix/appendix.rst:198
+#: ../../appendix/appendix.rst:197
 msgid ""
 "Agent: docker (≥19.03), CUDA/CUDA Toolkit (≥8, 11 recommend), nvidia-"
 "docker v2, Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)"
 msgstr ""
 
-#: ../../appendix/appendix.rst:200
+#: ../../appendix/appendix.rst:199
 msgid "Webserver: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)"
 msgstr ""
 
-#: ../../appendix/appendix.rst:201
+#: ../../appendix/appendix.rst:200
 msgid "WSProxy: docker (≥19.03), docker-compose (≥1.24)"
 msgstr ""
 
-#: ../../appendix/appendix.rst:202
+#: ../../appendix/appendix.rst:201
 msgid "PostgreSQL DB: docker (≥19.03), docker-compose (≥1.24)"
 msgstr ""
 
-#: ../../appendix/appendix.rst:203
+#: ../../appendix/appendix.rst:202
 msgid "Redis: docker (≥19.03), docker-compose (≥1.24)"
 msgstr ""
 
-#: ../../appendix/appendix.rst:204
+#: ../../appendix/appendix.rst:203
 msgid "Etcd: docker (≥19.03), docker-compose (≥1.24)"
 msgstr ""
 
-#: ../../appendix/appendix.rst:206
+#: ../../appendix/appendix.rst:205
 msgid ""
 "For Enterprise version, Backend.AI server daemons are installed by Lablup"
 " support team and following materials/services are provided after initial"
@@ -350,27 +352,27 @@ msgstr ""
 "엔터프라이즈 버전의 Backend.AI 서버 데몬은 래블업의 지원팀에서 설치합니다. 초기 설치 후 기본적으로 다음과 같은 자료 및 "
 "서비스가 제공됩니다:"
 
-#: ../../appendix/appendix.rst:208
+#: ../../appendix/appendix.rst:207
 msgid "DVD 1 (includes Backend.AI packages)"
 msgstr "DVD 1 장 (Backend.AI 패키지 포함)"
 
-#: ../../appendix/appendix.rst:209
+#: ../../appendix/appendix.rst:208
 msgid "User GUI Guide manual"
 msgstr "사용자 GUI 가이드 매뉴얼"
 
-#: ../../appendix/appendix.rst:210
+#: ../../appendix/appendix.rst:209
 msgid "Admin GUI Guide manual"
 msgstr "관리자 GUI 가이드 매뉴얼 (엔터프라이즈 고객 전용)"
 
-#: ../../appendix/appendix.rst:211
+#: ../../appendix/appendix.rst:210
 msgid "Installation report"
 msgstr "설치 리포트"
 
-#: ../../appendix/appendix.rst:212
+#: ../../appendix/appendix.rst:211
 msgid "First-time user/admin on-site tutorial (3-5 hours)"
 msgstr "사용자/관리자 초기 방문 교육 (3-5 시간)"
 
-#: ../../appendix/appendix.rst:214
+#: ../../appendix/appendix.rst:213
 msgid ""
 "Product maintenance and support information: the commercial contract "
 "includes a monthly/annual subscription fee for the Enterprise version by "
@@ -386,17 +388,11 @@ msgstr ""
 "업데이터 지원 및 온라인 채널을 통한 고객 지원 서비스가 제공됩니다. 이후 제공되는 유지보수 및 지원 서비스는 계약 조건에 따라 "
 "세부 내용이 다를 수 있습니다."
 
-#: ../../appendix/appendix.rst:222
-msgid ""
-"Users of the open source version can also purchase an installation and "
-"support plan separately."
-msgstr "오픈소스 무료 버전 사용자의 경우에도 유지보수 및 지원 플랜을 별도로 구입할 수 있습니다."
-
-#: ../../appendix/appendix.rst:226
+#: ../../appendix/appendix.rst:225
 msgid "Backend.AI Server Management Guide"
 msgstr "간단한 Backend.AI 서버 관리 가이드"
 
-#: ../../appendix/appendix.rst:228
+#: ../../appendix/appendix.rst:227
 msgid ""
 "Backend.AI is composed of many modules and daemons. Here, we briefly "
 "describe each services and provide basic maintenance guide in case of "
@@ -408,11 +404,11 @@ msgstr ""
 "발생하였을 때 사용할 수 있는 간단한 관리 가이드를 제공합니다. 관리 명령은 일반적으로 사용 가능하지만, 호스트 별 설치 상황에 "
 "따라 구체적인 사항은 달라질 수 있습니다."
 
-#: ../../appendix/appendix.rst:234
+#: ../../appendix/appendix.rst:233
 msgid "Manager"
 msgstr ""
 
-#: ../../appendix/appendix.rst:236
+#: ../../appendix/appendix.rst:235
 msgid ""
 "Gateway server that accepts and handles every user request. If the "
 "request is related with the compute session (container), Manager will "
@@ -421,48 +417,48 @@ msgstr ""
 "사용자로부터 오는 모든 요청을 받아 처리하는 게이트웨이 서버입니다. 사용자의 요청이 연산 세션(컨테이너)과 관련 있다면, 해당 "
 "세션을 관리하는 Agent 또는 해당 컨테이너로 작업을 위임합니다."
 
-#: ../../appendix/appendix.rst:254
+#: ../../appendix/appendix.rst:253
 msgid "Agent"
 msgstr ""
 
-#: ../../appendix/appendix.rst:256
+#: ../../appendix/appendix.rst:255
 msgid "Worker node which manages the lifecycle of compute sessions (containers)."
 msgstr "연산 워커 노드입니다. 연산 세션 (컨테이너) 의 수명주기를 관리합니다."
 
-#: ../../appendix/appendix.rst:272
+#: ../../appendix/appendix.rst:271
 msgid "Webserver"
 msgstr ""
 
-#: ../../appendix/appendix.rst:274
+#: ../../appendix/appendix.rst:273
 msgid "Serves user Web-UI and provides authentication by email and password."
 msgstr "사용자 웹 GUI 환경을 제공하고, 이메일/비밀번호 기반의 사용자 인증 또한 지원합니다."
 
-#: ../../appendix/appendix.rst:290
+#: ../../appendix/appendix.rst:289
 msgid "WSProxy"
 msgstr ""
 
-#: ../../appendix/appendix.rst:292
+#: ../../appendix/appendix.rst:291
 msgid ""
 "Proxies the connection between user-created web apps (such as web "
 "Terminal and Jupyter Notebook) and Manager, which is then relayed to a "
 "specific compute session (container)."
 msgstr "사용자가 띄운 웹기반 앱 (터미널, Jupyter Notebook 등) 과 매니저 사이의 통신을 중계하는 서비스입니다."
 
-#: ../../appendix/appendix.rst:311
+#: ../../appendix/appendix.rst:310
 msgid "PostgreSQL DB"
 msgstr ""
 
-#: ../../appendix/appendix.rst:313
+#: ../../appendix/appendix.rst:312
 msgid "Database for Manager."
 msgstr "Manager 가 사용하는 데이터베이스입니다."
 
-#: ../../appendix/appendix.rst:329
+#: ../../appendix/appendix.rst:328
 msgid ""
 "To back up the DB data, you can use the following commands from the DB "
 "host. The specific commands may vary depending on the configuration."
 msgstr "DB 를 백업하기 위해서는 다음과 같은 명령을 사용할 수 있습니다. 구체적인 명령은 설치 환경에 따라 다양할 수 있습니다."
 
-#: ../../appendix/appendix.rst:343
+#: ../../appendix/appendix.rst:342
 msgid ""
 "To restore the DB from the backup data, you can execute the following "
 "commands. Specific options may vary depending on the configuration."
@@ -470,11 +466,11 @@ msgstr ""
 "백업 데이터를 통해 DB 를 복원하려면 다음과 같은 명령을 실행할 수 있습니다. 구체적인 옵션은 설치 환경에 따라 다양할 수 "
 "있습니다."
 
-#: ../../appendix/appendix.rst:365
+#: ../../appendix/appendix.rst:364
 msgid "Redis"
 msgstr ""
 
-#: ../../appendix/appendix.rst:367
+#: ../../appendix/appendix.rst:366
 msgid ""
 "Cache server which is used to collect per-session and per-agent usage "
 "statistics and relays heartbeat signal from Agent to Manager. It also "
@@ -483,7 +479,7 @@ msgstr ""
 "캐시 서비스로, Agent 와 연산 세션의 사용량 정보를 수집하고, Agent 에서 Manager 로 가는 heartbeat 신호를"
 " 중계합니다. 사용자의 로그인 인증 정보를 보관하기도 합니다."
 
-#: ../../appendix/appendix.rst:385
+#: ../../appendix/appendix.rst:384
 msgid ""
 "Usually, Redis data do not need backup since it contains temporary cached"
 " data only, such user's login session information, per-container live "
@@ -492,15 +488,15 @@ msgstr ""
 "일반적으로, Redis 데이터를 백업할 필요가 없습니다. 사용자 로그인 세션 쿠키 정보, 컨테이너 별 실시간 사용량 등과 같은 "
 "일시적으로만 존재하면 되는 정보를 저장하고 있기 때문입니다."
 
-#: ../../appendix/appendix.rst:389
+#: ../../appendix/appendix.rst:388
 msgid "Etcd"
 msgstr ""
 
-#: ../../appendix/appendix.rst:391
+#: ../../appendix/appendix.rst:390
 msgid "Config server, which contains Backend.AI system-wide configuration."
 msgstr "설정 서버로, Backend.AI 의 전역 설정값을 보관하고 있습니다."
 
-#: ../../appendix/appendix.rst:407
+#: ../../appendix/appendix.rst:406
 msgid ""
 "To back up the Etcd config data used by the Manager, go to the folder "
 "where the Manager is installed and use the following command."
@@ -508,7 +504,7 @@ msgstr ""
 "Manager 에서 사용하는 Etcd 설정 데이터를 백업하려면 Manager 가 설치된 폴더로 이동한 후 다음과 같은 명령을 "
 "사용하면 됩니다."
 
-#: ../../appendix/appendix.rst:415
+#: ../../appendix/appendix.rst:414
 msgid ""
 "To restore Etcd settings from the backup data, you can run a command like"
 " this."
@@ -689,4 +685,10 @@ msgstr "백업 데이터를 통해 Etcd 설정을 복원하려면 다음과 같�
 #~ "수 있습니다. 이 PENDING 세션은 작업 큐에 "
 #~ "등록만 되어 있고 GPU 자원 부족으로 인해 실제로"
 #~ " 컨테이너를 할당 받지는 못한 상태입니다."
+
+#~ msgid ""
+#~ "Users of the open source version "
+#~ "can also purchase an installation and"
+#~ " support plan separately."
+#~ msgstr "오픈소스 무료 버전 사용자의 경우에도 유지보수 및 지원 플랜을 별도로 구입할 수 있습니다."
 

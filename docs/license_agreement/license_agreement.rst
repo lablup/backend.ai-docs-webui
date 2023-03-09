@@ -75,5 +75,7 @@ In other cases, you can use the Backend.AI server for free.
 
 Commercial contracts include monthly / annual subscription fees for the
 enterprise version by default, but details may vary depending on individual
-contracts. Users of the open-source version can also purchase maintenance and
-support plans separately.
+contracts.
+
+.. Users of the open-source version can also purchase maintenance and
+.. support plans separately.
