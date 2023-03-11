@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-03 23:40+0900\n"
-"PO-Revision-Date: 2022-08-03 23:42+0900\n"
+"POT-Creation-Date: 2023-03-11 10:23+0900\n"
+"PO-Revision-Date: 2023-03-11 10:25+0900\n"
 "Last-Translator: DaeHyun Sung <dhsung@lablup.com>\n"
 "Language-Team: Lablup\n"
 "Language: ko\n"
@@ -18,13 +18,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.8.0\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.1.1\n"
 
-#: ../../sftp_to_container/sftp_to_container.rst:3
+#: ../../sftp_to_container/sftp_to_container.rst:5
 msgid "SSH/SFTP Connection to a Compute Session"
 msgstr "연산 세션에 SSH/SFTP 접속하기 (Linux/Mac/Visual Studio Code)"
 
-#: ../../sftp_to_container/sftp_to_container.rst:5
+#: ../../sftp_to_container/sftp_to_container.rst:7
 msgid ""
 "Backend.AI supports SSH/SFTP connection to the created compute sessions "
 "(containers). In this section, we will learn how to do it."
@@ -32,26 +32,34 @@ msgstr ""
 "Backend.AI는 생성된 연산 세션(컨테이너)에 SSH/SFTP 접속을 지원하고 있습니다. 이"
 "번 절에서는 그 방법에 관해 알아봅니다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:9
+#: ../../sftp_to_container/sftp_to_container.rst:11
 msgid ""
-"SSH/SFTP connection is supported only on desktop apps, and not yet supported on "
-"web-based Web-UI service. Destktop apps can be downloaded from https://github."
-"com/lablup/backend.ai-webui/releases. Be sure to download the compatible version "
-"of the Web-UI. The Web-UI version can be checked by clicking the \"About Backend."
-"AI\" sub-menu from the preference menu on the upper-right side of the GUI."
+"SSH/SFTP connection is supported only on desktop apps, but not on web-based Web-"
+"UI. Desktop app can be downloaded a panel from the Summary page. Using this "
+"panel, the compatible version will be downloaded automatically."
 msgstr ""
-"SSH/SFTP 지원은 데스크탑 앱 Web-UI에서만 지원하며, 웹 기반 Web-UI에서는 아직 지원"
-"하지 않습니다. 데스크탑 앱은 https://github.com/lablup/backend.ai-webui/releases "
-"에서 다운로드 할 수 있습니다. Backend.AI 클러스터 서버 버전과 호환되는 Web-UI 앱"
-"을 받아야 최상의 호환성을 유지할 수 있습니다. Backend.AI 클러스터의 버전은 GUI 우"
-"측 상단에 있는 설정 아이콘을 클릭하면 나오는 “About Backend.AI” 메뉴를 클릭하여 "
-"확인할 수 있습니다."
+"SSH/SFTP 지원은 데스크탑 앱 Web-UI에서만 지원하며, 웹 기반 Web-UI에서는 지원하지 "
+"않습니다. 데스크탑 앱은 Summary 페이지의 별도 다운로드 패널에서 다운로드할 수 있"
+"습니다. 이 패널에서 다운로드 하는 경우에는 호환 버전을 자동으로 다운로드 합니다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:18
+#: ../../sftp_to_container/sftp_to_container.rst:19
+msgid ""
+"You can also download the app from https://github.com/lablup/backend.ai-webui/"
+"releases. Make sure to download the compatible version of the Web-UI in this "
+"case. You can check the Web-UI version by clicking on the \"About Backend.AI\" "
+"sub-menu located in the preference menu on the upper-right side of the GUI."
+msgstr ""
+"데스크탑 앱은 https://github.com/lablup/backend.ai-webui/releases 에서도 수동 다"
+"운로드 할 수 있습니다. 이 경우에는 Backend.AI 클러스터 서버 버전과 호환되는 Web-"
+"UI 앱을 받아야 최상의 호환성을 유지할 수 있습니다. Backend.AI 클러스터의 버전은 "
+"GUI 우측 상단에 있는 설정 아이콘을 클릭하면 나오는 “About Backend.AI” 메뉴를 클릭"
+"하여 확인할 수 있습니다."
+
+#: ../../sftp_to_container/sftp_to_container.rst:27
 msgid "For Linux / Mac"
 msgstr ""
 
-#: ../../sftp_to_container/sftp_to_container.rst:20
+#: ../../sftp_to_container/sftp_to_container.rst:29
 msgid ""
 "First, create a compute session, then click the app icon (first button) in "
 "Control, followed by SSH / SFTP icon. Then, a daemon that allows SSH/SFTP access "
@@ -63,7 +71,7 @@ msgstr ""
 "수 있도록 해주는 데몬(demon)이 뜨게 되고, 로컬 proxy를 통해 Web-UI 앱과 컨테이너 "
 "내부의 데몬이 연결됩니다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:26
+#: ../../sftp_to_container/sftp_to_container.rst:35
 msgid ""
 "You cannot establish a SSH/SFTP connection to the session until you click the "
 "SSH/SFTP icon. When you close the Web-UI app and launch it again, the connection "
@@ -74,7 +82,7 @@ msgstr ""
 "Web-UI 앱을 껐다가 다시 켜게 되면 로컬 proxy와 Web-UI 앱 사이의 연결이 초기화 되"
 "므로 SSH/SFTP 아이콘을 다시 한 번 클릭해주어야 합니다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:31
+#: ../../sftp_to_container/sftp_to_container.rst:40
 msgid ""
 "Next, a dialog containing SSH/SFTP connection information will be pop up. "
 "Remember the address (especially the assigned port) written in the SFTP URL and "
@@ -92,7 +100,7 @@ msgstr ""
 "된 SSH key는 세션이 새로 생성될 때마다 변할 수도 있는데, 이럴 경우 다시 다운로드 "
 "받아야 합니다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:43
+#: ../../sftp_to_container/sftp_to_container.rst:52
 msgid ""
 "To SSH connect to the compute session with the downloaded SSH private key, you "
 "run the following command in the shell environment. You should write the path to "
@@ -111,7 +119,7 @@ msgstr ""
 "는 계정으로 바꾸어 주어야 합니다. 정상적으로 명령을 내렸다면 연산 세션에 SSH 접속"
 "이 이루어지고 컨테이너 내부의 쉘 환경에 접속되는 것을 확인할 수 있습니다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:61
+#: ../../sftp_to_container/sftp_to_container.rst:70
 msgid ""
 "Connecting by SFTP would almost be the same. After running the SFTP client and "
 "setting public key-based connection method, simply specify ``id_container`` as "
@@ -123,7 +131,7 @@ msgstr ""
 "클라이언트 별로 사용 방법은 상이할 수 있으므로, 자세한 방법은 각 FTP 클라이언트 "
 "매뉴얼을 참고 하십시오."
 
-#: ../../sftp_to_container/sftp_to_container.rst:67
+#: ../../sftp_to_container/sftp_to_container.rst:76
 msgid ""
 "The SSH/SFTP connection port number is randomly assigned each time when a "
 "session is created. If you want to use a specific SSH/SFTP port number, you can "
@@ -143,7 +151,7 @@ msgstr ""
 "경우, 두 번째 SSH/SFTP 연결은 지정된 포트를 사용할 수 없으므로 (첫 번째 SSH/SFTP "
 "연결이 이미 점유) 임의의 포트 번호를 할당받게 됩니다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:78
+#: ../../sftp_to_container/sftp_to_container.rst:87
 msgid ""
 "If you want to use your own SSH keypair instead of ``id_container``, create a "
 "user-type folder named ``.ssh``. If you create ``authorized_keys`` file in that "
@@ -157,11 +165,11 @@ msgstr ""
 "``id_container`` 파일을 다운로드 할 필요없이 자신의 SSH private key를 통해 SSH/"
 "SFTP 접속할 수 있습니다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:86
+#: ../../sftp_to_container/sftp_to_container.rst:95
 msgid "For Windows / FileZilla"
 msgstr ""
 
-#: ../../sftp_to_container/sftp_to_container.rst:88
+#: ../../sftp_to_container/sftp_to_container.rst:97
 msgid ""
 "Backend.AI Web-UI app supports OpenSSH-based public key connection (RSA2048). To "
 "access with a client such as PuTTY on Windows, a private key must be converted "
@@ -177,7 +185,7 @@ msgstr ""
 "Howto. 보다 쉬운 설명을 위해 이번 절에서는 Windows에서 FileZilla 클라이언트를 통"
 "해 SFTP 접속하는 방법에 관해 알아보겠습니다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:95
+#: ../../sftp_to_container/sftp_to_container.rst:104
 msgid ""
 "Refer to the connection method on Linux/Mac, create a compute session, check the "
 "connection port and download ``id_container``. ``id_container`` is an OpenSSH-"
@@ -197,7 +205,7 @@ msgstr ""
 "PuTTYGen의 Save private key 버튼을 클릭하여 ``id_container.ppk`` 라는 이름으로 파"
 "일을 저장합시다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:107
+#: ../../sftp_to_container/sftp_to_container.rst:116
 msgid ""
 "After launching the FileZilla client, go to the Settings-Connection-SFTP and "
 "register the key file ``id_container.ppk`` (``id_container`` for clients "
@@ -207,7 +215,7 @@ msgstr ""
 "``id_container.ppk`` (OpenSSH를 지원하는 클라이언트의 경우 ``id_container``) 키 "
 "파일을 등록해 줍니다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:114
+#: ../../sftp_to_container/sftp_to_container.rst:123
 msgid ""
 "Open Site Manager, create a new site, and enter the connection information as "
 "follows."
@@ -215,7 +223,7 @@ msgstr ""
 "사이트 관리자를 열고 새 사이트를 하나 만든 후 다음과 같이 접속 정보를 적어 줍니"
 "다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:120
+#: ../../sftp_to_container/sftp_to_container.rst:129
 msgid ""
 "When connecting to a container for the first time, the following confirmation "
 "popup may appear. Click the OK button to save the host key."
@@ -223,7 +231,7 @@ msgstr ""
 "해당 컨테이너에 처음 접속하는 경우 다음과 같은 확인 창이 뜰 수 있습니다. 확인 버"
 "튼을 눌러 호스트 키를 저장합시다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:128
+#: ../../sftp_to_container/sftp_to_container.rst:137
 msgid ""
 "After a while, you can see that the connection is established as follows. You "
 "can now transfer large files to ``/home/work/`` or other mounted storage folder "
@@ -233,11 +241,11 @@ msgstr ""
 "``/home/work/`` 및 마운트 된 Storage 폴더에 대용량 파일을 전송하는 등의 작업을 수"
 "행할 수 있습니다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:137
+#: ../../sftp_to_container/sftp_to_container.rst:146
 msgid "For Visual Studio Code"
 msgstr ""
 
-#: ../../sftp_to_container/sftp_to_container.rst:139
+#: ../../sftp_to_container/sftp_to_container.rst:148
 msgid ""
 "Backend.AI supports to develop with the local Visual Studio Code through SSH/"
 "SFTP connection to a compute session. Once connected, you can interact with "
@@ -248,18 +256,18 @@ msgstr ""
 "개발할 수도 있습니다. 한번 연결을 하면, 연산 세션 상에 존재하는 모든 파일과 폴더"
 "를 활용하여 작업할 수 있습니다. 이번 절에서는 그 방법에 관해 알아봅니다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:144
+#: ../../sftp_to_container/sftp_to_container.rst:153
 msgid ""
 "First, you should install Visual Studio Code and the Remote Development "
 "extension pack."
 msgstr ""
 "우선, Visual Studio Code와 원격 개발(Remote Development) 확장팩을 설치해야합니다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:147
+#: ../../sftp_to_container/sftp_to_container.rst:156
 msgid "Link: https://aka.ms/vscode-remote/download/extension"
 msgstr "링크: https://aka.ms/vscode-remote/download/extension"
 
-#: ../../sftp_to_container/sftp_to_container.rst:152
+#: ../../sftp_to_container/sftp_to_container.rst:161
 msgid ""
 "After installing the extension, you should configure the SSH connection for the "
 "compute sesion. In the SSH/SFTP connection dialog, click \"DOWNLOAD SSH KEY\" "
@@ -270,7 +278,7 @@ msgstr ""
 "로그에서 “DOWNLOAD SSH KEY” 버튼을 클릭하여 연산 세션에 접속하기 위한 SSH 비밀키"
 "를 다운로드 합니다. 포트 번호도 기억해 두십시오."
 
-#: ../../sftp_to_container/sftp_to_container.rst:160
+#: ../../sftp_to_container/sftp_to_container.rst:169
 msgid ""
 "And then, setting SSH config file. Edit the ``~/.ssh/config`` file (for Linux/"
 "Mac) or ``C:\\Users\\[user name]\\.ssh\\config`` (for Windows) and add the "
@@ -282,12 +290,12 @@ msgstr ""
 "록을 추가합니다. 편의를 위해 호스트 이름을 ``vscode`` 로 설정했지만, 이는 원하는 "
 "대로 바꾸셔도 됩니다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:174
+#: ../../sftp_to_container/sftp_to_container.rst:183
 msgid ""
 "Now in the Visual Studio Code, select the `Command Palette...` from `View` menu."
 msgstr "이제 Visual Studio Code의 `View` - `Command Palette…` 메뉴를 선택합니다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:179
+#: ../../sftp_to_container/sftp_to_container.rst:188
 msgid ""
 "Visual Studio Code can automatically detect the type of host you are connecting "
 "to. Let's choose `Remote-SSH: Connect to Host...`."
@@ -295,7 +303,7 @@ msgstr ""
 "Visual Studio Code는 연결할 호스트의 타입을 자동으로 탐지합니다. `Remote-SSH: "
 "Connect to Host...` 를 선택해봅시다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:185
+#: ../../sftp_to_container/sftp_to_container.rst:194
 msgid ""
 "You will see the list of hosts in ``.ssh/config``. Please select the host to "
 "connect, in this case, ``vscode``."
@@ -303,7 +311,7 @@ msgstr ""
 "여기서는 ``.ssh/config`` 의 호스트 목록을 볼 수 있습니다. 연결할 호스트"
 "(``vscode``)를 선택합니다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:191
+#: ../../sftp_to_container/sftp_to_container.rst:200
 msgid ""
 "Selecting the host name will lead you to access the remote compute session. "
 "After you are connected, you will see an empty window. You can always refer to "
@@ -313,7 +321,7 @@ msgstr ""
 "수 있습니다. 연결이 된 후 빈 창이 표시됩니다. 상태 표시 줄을 참조하면 연결된 호스"
 "트를 확인할 수 있습니다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:198
+#: ../../sftp_to_container/sftp_to_container.rst:207
 msgid ""
 "You can then open any folder or workspace on the remote host by accessing `File "
 "> Open...` or `File > Open Workspace...` menu just as you usually would do!"
@@ -367,3 +375,18 @@ msgstr ""
 #~ msgstr ""
 #~ "SSH/SFTP 지원은 데스크탑 앱 Web-UI에서만 지원하며, 웹 기반 Web-UI에서는 아직 "
 #~ "지원하지 않습니다."
+
+#~ msgid ""
+#~ "SSH/SFTP connection is supported only on desktop apps, and not yet supported "
+#~ "on web-based Web-UI service. Destktop apps can be downloaded from https://"
+#~ "github.com/lablup/backend.ai-webui/releases. Be sure to download the "
+#~ "compatible version of the Web-UI. The Web-UI version can be checked by "
+#~ "clicking the \"About Backend.AI\" sub-menu from the preference menu on the "
+#~ "upper-right side of the GUI."
+#~ msgstr ""
+#~ "SSH/SFTP 지원은 데스크탑 앱 Web-UI에서만 지원하며, 웹 기반 Web-UI에서는 아직 "
+#~ "지원하지 않습니다. 데스크탑 앱은 https://github.com/lablup/backend.ai-webui/"
+#~ "releases 에서 다운로드 할 수 있습니다. Backend.AI 클러스터 서버 버전과 호환되"
+#~ "는 Web-UI 앱을 받아야 최상의 호환성을 유지할 수 있습니다. Backend.AI 클러스터"
+#~ "의 버전은 GUI 우측 상단에 있는 설정 아이콘을 클릭하면 나오는 “About Backend."
+#~ "AI” 메뉴를 클릭하여 확인할 수 있습니다."
