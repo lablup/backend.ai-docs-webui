@@ -498,6 +498,12 @@ you can use the web terminal more conveniently.
    by modifying ``.tmux.conf`` in user home directory, you should press the set
    key combination instead of ``Ctrl-B``.
 
+.. note::
+   In the Windows environment, refer to the following shortcuts.
+
+   * Copy: Hold down ``Shift``, right-click and drag
+   * Paste: Press ``Ctrl-Shift-V``
+
 Check the terminal history using keyboard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
