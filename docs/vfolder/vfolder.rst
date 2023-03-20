@@ -131,9 +131,9 @@ button, a confirm dialog appears. To prevent accidental deletion, you have to
 enter the name of the folder to be deleted, explicitly.
 
 .. note::
-   When delete operation starts, It may take some time in order to delete the 
-   target folder completely from storage host. Meanwhile, in order to block 
-   unintended operation such as accessing any file/directory inside the folder 
+   When delete operation starts, It may take some time in order to delete the
+   target folder completely from storage host. Meanwhile, in order to block
+   unintended operation such as accessing any file/directory inside the folder
    on-delete status, we disable any accessing operations.
 
    .. image:: vfolder_deleting.png

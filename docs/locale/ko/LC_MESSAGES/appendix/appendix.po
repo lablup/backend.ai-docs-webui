@@ -8,16 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 20.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-09 18:45+0900\n"
-"PO-Revision-Date: 2021-03-02 18:13+0900\n"
+"POT-Creation-Date: 2023-03-20 23:32+0900\n"
+"PO-Revision-Date: 2023-03-20 23:41+0900\n"
 "Last-Translator: \n"
-"Language: ko_KR\n"
 "Language-Team: \n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.8.0\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: ../../appendix/appendix.rst:3
 msgid "Appendix"
@@ -29,666 +30,707 @@ msgstr "GPU 가상화를 통한 컨테이너 별 GPU 분할 할당"
 
 #: ../../appendix/appendix.rst:8
 msgid ""
-"Backend.AI supports GPU virtualization technology which allows single "
-"physical GPU can be divided and shared by multiple users simultaneously. "
-"Therefore, if you want to execute a task that does not require much GPU "
-"computation capability, you can create a compute session by allocating a "
-"portion of the GPU. The amount of GPU resources that 1 fGPU actually "
-"allocates may vary from system to system depending on administrator "
-"settings. For example, if the administrator has set one physical GPU to "
-"be divided into five pieces, 5 fGPU means 1 physical GPU, or 1 fGPU means"
-" 0.2 physical GPU. If you set 1 fGPU when creating a compute session, the"
-" session can utilize the streaming multiprocessor (SM) and GPU memory "
-"equivalent to 0.2 physical GPU."
+"Backend.AI supports GPU virtualization technology which allows single physical "
+"GPU can be divided and shared by multiple users simultaneously. Therefore, if "
+"you want to execute a task that does not require much GPU computation "
+"capability, you can create a compute session by allocating a portion of the "
+"GPU. The amount of GPU resources that 1 fGPU actually allocates may vary from "
+"system to system depending on administrator settings. For example, if the "
+"administrator has set one physical GPU to be divided into five pieces, 5 fGPU "
+"means 1 physical GPU, or 1 fGPU means 0.2 physical GPU. If you set 1 fGPU when "
+"creating a compute session, the session can utilize the streaming "
+"multiprocessor (SM) and GPU memory equivalent to 0.2 physical GPU."
 msgstr ""
-"Backend.AI 는 하나의 물리 GPU 를 여러 개로 분할해서 여러 사용자가 나누어 사용할 수 있는 가상화 기술을 지원하고 "
-"있습니다. 따라서, GPU 연산 소요가 크지 않은 작업을 수행하고자 할 경우에는 GPU 의 일부만 할당하여 연산 세션을 생성할 수 "
-"있습니다. 1 fGPU 가 실제로 할당하는 GPU 자원의 양은 관리자 설정에 따라 시스템 별로 다양할 수 있습니다. 예를 들어, "
-"관리자가 하나의 GPU 를 다섯 조각으로 분할 설정한 경우, 5 fGPU 가 1 물리 GPU, 또는 1 fGPU 가 0.2 물리 "
-"GPU 를 뜻합니다. 이 때 1 fGPU 를 설정하여 연산 세션을 생성하면, 그 세션에서는 0.2 물리 GPU 에 해당하는 "
-"SM(streaming multiprocessor) 과 GPU 메모리를 활용할 수 있습니다."
+"Backend.AI 는 하나의 물리 GPU 를 여러 개로 분할해서 여러 사용자가 나누어 사용"
+"할 수 있는 가상화 기술을 지원하고 있습니다. 따라서, GPU 연산 소요가 크지 않은 "
+"작업을 수행하고자 할 경우에는 GPU 의 일부만 할당하여 연산 세션을 생성할 수 있습"
+"니다. 1 fGPU 가 실제로 할당하는 GPU 자원의 양은 관리자 설정에 따라 시스템 별로 "
+"다양할 수 있습니다. 예를 들어, 관리자가 하나의 GPU 를 다섯 조각으로 분할 설정"
+"한 경우, 5 fGPU 가 1 물리 GPU, 또는 1 fGPU 가 0.2 물리 GPU 를 뜻합니다. 이 때 "
+"1 fGPU 를 설정하여 연산 세션을 생성하면, 그 세션에서는 0.2 물리 GPU 에 해당하"
+"는 SM(streaming multiprocessor) 과 GPU 메모리를 활용할 수 있습니다."
 
 #: ../../appendix/appendix.rst:19
 msgid ""
-"In this section, we will create a compute session by allocating a portion"
-" of the GPU and then check whether the GPU recognized inside the compute "
-"container really corresponds to the partial physics GPU."
+"In this section, we will create a compute session by allocating a portion of "
+"the GPU and then check whether the GPU recognized inside the compute container "
+"really corresponds to the partial physics GPU."
 msgstr ""
-"이번에는 GPU 를 일부만 할당하여 연산 세션을 생성한 후 연산 컨테이너 내부에서 인식하는 GPU 가 정말 물리 GPU 의 "
-"일부분인지 확인 해보도록 하겠습니다."
+"이번에는 GPU 를 일부만 할당하여 연산 세션을 생성한 후 연산 컨테이너 내부에서 인"
+"식하는 GPU 가 정말 물리 GPU 의 일부분인지 확인 해보도록 하겠습니다."
 
 #: ../../appendix/appendix.rst:23
 msgid ""
-"First, let's check the type of physical GPU installed in the host node "
-"and the amount of memory. The GPU node used in this guide is equipped "
-"with a GPU with 8 GB of memory as in the following figure. And through "
-"the administrator settings, 1 fGPU is set to an amount equivalent to 0.5 "
-"physical GPU (or 1 physical GPU is 2 fGPU)."
+"First, let's check the type of physical GPU installed in the host node and the "
+"amount of memory. The GPU node used in this guide is equipped with a GPU with "
+"8 GB of memory as in the following figure. And through the administrator "
+"settings, 1 fGPU is set to an amount equivalent to 0.5 physical GPU (or 1 "
+"physical GPU is 2 fGPU)."
 msgstr ""
-"먼저 호스트 노드에 장착되어 있는 물리 GPU 의 종류와 메모리 용량 등의 정보를 확인 해보겠습니다. 이 가이드를 작성하면서 사용한"
-" GPU 노드에는 다음과 같이 8 GB 메모리의 GPU 가 장착되어 있습니다. 그리고 관리자 설정을 통해 1 fGPU 를 0.5 "
-"개의 물리 GPU(또는 1 개의 물리 GPU 가 2 fGPU) 에 해당하는 양으로 설정하였습니다."
+"먼저 호스트 노드에 장착되어 있는 물리 GPU 의 종류와 메모리 용량 등의 정보를 확"
+"인 해보겠습니다. 이 가이드를 작성하면서 사용한 GPU 노드에는 다음과 같이 8 GB 메"
+"모리의 GPU 가 장착되어 있습니다. 그리고 관리자 설정을 통해 1 fGPU 를 0.5 개의 "
+"물리 GPU(또는 1 개의 물리 GPU 가 2 fGPU) 에 해당하는 양으로 설정하였습니다."
 
 #: ../../appendix/appendix.rst:33
 msgid ""
-"Now let's go to the Sessions page and create a compute session by "
-"allocating 0.5 fGPU as follows:"
-msgstr "이제 Sessions 페이지로 이동하여 다음과 같이 0.5 개의 fGPU 를 할당하여 연산 세션을 생성 해봅시다:"
+"Now let's go to the Sessions page and create a compute session by allocating "
+"0.5 fGPU as follows:"
+msgstr ""
+"이제 Sessions 페이지로 이동하여 다음과 같이 0.5 개의 fGPU 를 할당하여 연산 세션"
+"을 생성 해봅시다:"
 
 #: ../../appendix/appendix.rst:40
 msgid ""
-"In the Configuration panel of the session list, you can see that 0.5 fGPU"
-" is allocated."
-msgstr "연산 세션 리스트의 Configuration 열에서 0.5 의 fGPU 가 할당된 것을 확인할 수 있습니다."
+"In the Configuration panel of the session list, you can see that 0.5 fGPU is "
+"allocated."
+msgstr ""
+"연산 세션 리스트의 Configuration 열에서 0.5 의 fGPU 가 할당된 것을 확인할 수 있"
+"습니다."
 
 #: ../../appendix/appendix.rst:45
 msgid ""
-"Now, let's connect directly to the container and check if the allocated "
-"GPU memory is really equivalent to 0.5 units (~2 GB). Let's bring up a "
-"web terminal. When the terminal comes up, run the ``nvidia-smi`` command."
-" As you can see in the following figure, you can see that about 2 GB of "
-"GPU memory is allocated. This shows that the physical GPU is actually "
-"divided into quarters and allocated inside the container for this compute"
-" session, which is not possible by a way like PCI passthrough."
+"Now, let's connect directly to the container and check if the allocated GPU "
+"memory is really equivalent to 0.5 units (~2 GB). Let's bring up a web "
+"terminal. When the terminal comes up, run the ``nvidia-smi`` command. As you "
+"can see in the following figure, you can see that about 2 GB of GPU memory is "
+"allocated. This shows that the physical GPU is actually divided into quarters "
+"and allocated inside the container for this compute session, which is not "
+"possible by a way like PCI passthrough."
 msgstr ""
-"이제 컨테이너에 직접 연결하여 할당 된 GPU 메모리가 실제로 0.5 단위 (~ 2GB)와 동일한지 확인하겠습니다. 웹 터미널을 "
-"띄웁니다. 터미널이 나타나면``nvidia-smi`` 명령을 실행합니다. 다음 그림에서 볼 수 있듯이 약 2GB의 GPU 메모리가 "
-"할당 되었음을 알 수 있습니다. 이는 물리적 GPU가 실제로 네 부분으로 나뉘어 이 연산 세션에 할당되었음을 보여줍니다. 이는 "
-"PCI 패스스루(passthrough0와 같은 방식으로는 불가능합니다."
+"이제 컨테이너에 직접 연결하여 할당 된 GPU 메모리가 실제로 0.5 단위 (~ 2GB)와 동"
+"일한지 확인하겠습니다. 웹 터미널을 띄웁니다. 터미널이 나타나면``nvidia-smi`` 명"
+"령을 실행합니다. 다음 그림에서 볼 수 있듯이 약 2GB의 GPU 메모리가 할당 되었음"
+"을 알 수 있습니다. 이는 물리적 GPU가 실제로 네 부분으로 나뉘어 이 연산 세션에 "
+"할당되었음을 보여줍니다. 이는 PCI 패스스루(passthrough0와 같은 방식으로는 불가"
+"능합니다."
 
 #: ../../appendix/appendix.rst:56
 msgid "Let's open up a Jupyter Notebook and run a simple ML training code."
-msgstr "이번에는 Jupyter Notebook 을 띄워서 간단한 ML 학습 코드를 실행해보겠습니다."
+msgstr ""
+"이번에는 Jupyter Notebook 을 띄워서 간단한 ML 학습 코드를 실행해보겠습니다."
 
 #: ../../appendix/appendix.rst:60
 #, python-format
 msgid ""
-"While training is in progress, connect to the shell of the GPU host node "
-"and execute the ``nvidia-smi`` command. You can see that there is one GPU"
-" attached to the process and this process is occupying about 25% of the "
-"resources of the physical GPU. (GPU occupancy can vary greatly depending "
-"on training code and GPU model.)"
+"While training is in progress, connect to the shell of the GPU host node and "
+"execute the ``nvidia-smi`` command. You can see that there is one GPU attached "
+"to the process and this process is occupying about 25% of the resources of the "
+"physical GPU. (GPU occupancy can vary greatly depending on training code and "
+"GPU model.)"
 msgstr ""
-"학습이 진행되는 동안 GPU 호스트 노드의 쉘로 접속해서 ``nvidia-smi`` 명령을 실행합니다. 다음과 같이 하나의 GPU "
-"사용 프로세스가 있고 이 프로세스는 물리 GPU의 약 25% 에 해당 하는 자원을 점유중임을 알 수 있습니다. (GPU 점유량은 "
-"학습 코드와 GPU 모델에 따라 크게 다를 수 있습니다.)"
+"학습이 진행되는 동안 GPU 호스트 노드의 쉘로 접속해서 ``nvidia-smi`` 명령을 실행"
+"합니다. 다음과 같이 하나의 GPU 사용 프로세스가 있고 이 프로세스는 물리 GPU의 "
+"약 25% 에 해당 하는 자원을 점유중임을 알 수 있습니다. (GPU 점유량은 학습 코드"
+"와 GPU 모델에 따라 크게 다를 수 있습니다.)"
 
 #: ../../appendix/appendix.rst:70
 msgid ""
-"Alternatively, you can run the ``nvidia-smi`` command from the web "
-"terminal to query the GPU usage history inside the container."
+"Alternatively, you can run the ``nvidia-smi`` command from the web terminal to "
+"query the GPU usage history inside the container."
 msgstr ""
-"또는, 아까 띄워둔 웹 터미널에서 ``nvidia-smi`` 명령을 내려 컨테이너 내부에서 인식하는 GPU 사용 내역을 조회해보는 "
-"것도 가능합니다."
+"또는, 아까 띄워둔 웹 터미널에서 ``nvidia-smi`` 명령을 내려 컨테이너 내부에서 인"
+"식하는 GPU 사용 내역을 조회해보는 것도 가능합니다."
 
-#: ../../appendix/appendix.rst:73
+#: ../../appendix/appendix.rst:74
 msgid "Automated job scheduling"
 msgstr "GUI 를 통한 자원 모니터링 및 스케줄링 자동화"
 
-#: ../../appendix/appendix.rst:75
+#: ../../appendix/appendix.rst:76
 msgid ""
 "Backend.AI server has a built-in self-developed task scheduler. It "
-"automatically checks the available resources of all worker nodes and "
-"delegates the request to create a compute session to the worker that "
-"meets the user's resource request. In addition, when resources are "
-"insufficient, the user's request to create a compute session is "
-"registered as a PENDING state in the job queue. Later, when the resources"
-" become available again, the pended request is resumed to create a "
-"compute session."
+"automatically checks the available resources of all worker nodes and delegates "
+"the request to create a compute session to the worker that meets the user's "
+"resource request. In addition, when resources are insufficient, the user's "
+"request to create a compute session is registered as a PENDING state in the "
+"job queue. Later, when the resources become available again, the pended "
+"request is resumed to create a compute session."
 msgstr ""
-"Backend.AI 서버는 자체 개발한 작업 스케줄러를 내장하고 있습니다. 자동으로 모든 워커 (worker) 노드의 자원 상태를 "
-"확인하여 사용자의 자원 요청에 맞는 워커로 연산 세션 생성 요청을 위임 합니다. 또한, 자원이 부족할 경우에는 일단 작업 큐에 "
-"사용자의 연산 세션 생성 요청을 대기 (pending) 시키고 나중에 자원이 다시 가용 상태가 되면 대기 요청을 활성화 해서 연산 "
-"세션 생성 작업을 수행하게 됩니다."
+"Backend.AI 서버는 자체 개발한 작업 스케줄러를 내장하고 있습니다. 자동으로 모든 "
+"워커 (worker) 노드의 자원 상태를 확인하여 사용자의 자원 요청에 맞는 워커로 연"
+"산 세션 생성 요청을 위임 합니다. 또한, 자원이 부족할 경우에는 일단 작업 큐에 사"
+"용자의 연산 세션 생성 요청을 대기 (pending) 시키고 나중에 자원이 다시 가용 상태"
+"가 되면 대기 요청을 활성화 해서 연산 세션 생성 작업을 수행하게 됩니다."
 
-#: ../../appendix/appendix.rst:83
+#: ../../appendix/appendix.rst:84
 msgid ""
-"You can check the operation of the job scheduler in a simple way from the"
-" user Web-UI. When the GPU host can allocate up to 2 fGPUs, let's create "
-"3 compute sessions at the same time requesting allocation of 1 fGPU, "
-"respectivley. In the Custom allocation section of the session launch "
-"dialog, there are GPU and Sessions sliders. If you specify a value "
-"greater than 1 in Sessions and click the LAUNCH button, the number of "
-"sessions will be requested at the same time. Let's set the GPU and "
-"Sessions to 1 and 3, respectively. This is the situation that 3 sessions "
-"requesting a total of 3 fGPUs are created when only 2 fGPUs exist."
+"You can check the operation of the job scheduler in a simple way from the user "
+"Web-UI. When the GPU host can allocate up to 2 fGPUs, let's create 3 compute "
+"sessions at the same time requesting allocation of 1 fGPU, respectivley. In "
+"the Custom allocation section of the session launch dialog, there are GPU and "
+"Sessions sliders. If you specify a value greater than 1 in Sessions and click "
+"the LAUNCH button, the number of sessions will be requested at the same time. "
+"Let's set the GPU and Sessions to 1 and 3, respectively. This is the situation "
+"that 3 sessions requesting a total of 3 fGPUs are created when only 2 fGPUs "
+"exist."
 msgstr ""
-"사용자 Web-UI에서 간단한 방법으로 작업 스케줄러의 작동을 확인할 수 있습니다. GPU 호스트가 최대 2 단위의 fGPU를 할당"
-" 할 수있는 경우 1 단위의 fGPU 할당을 요청하는 3 개의 연산 세션을 동시에 생성해 보겠습니다. 세션 시작 대화 상자의 사용자"
-" 지정 할당 패널에는 GPU 및 세션 슬라이더가 있습니다. Sessions에서 1보다 큰 값을 지정하고 LAUNCH 버튼을 클릭하면"
-" 여러 개의 세션이 동시에 생성됩니다. GPU와 Sessions을 각각 1과 3으로 설정하겠습니다. 이는 fGPU가 2 단위밖에 "
-"없는 상황에서 총 3 단위의 fGPU를 요청하는 상황입니다."
+"사용자 Web-UI에서 간단한 방법으로 작업 스케줄러의 작동을 확인할 수 있습니다. "
+"GPU 호스트가 최대 2 단위의 fGPU를 할당 할 수있는 경우 1 단위의 fGPU 할당을 요청"
+"하는 3 개의 연산 세션을 동시에 생성해 보겠습니다. 세션 시작 대화 상자의 사용자 "
+"지정 할당 패널에는 GPU 및 세션 슬라이더가 있습니다. Sessions에서 1보다 큰 값을 "
+"지정하고 LAUNCH 버튼을 클릭하면 여러 개의 세션이 동시에 생성됩니다. GPU와 "
+"Sessions을 각각 1과 3으로 설정하겠습니다. 이는 fGPU가 2 단위밖에 없는 상황에서 "
+"총 3 단위의 fGPU를 요청하는 상황입니다."
 
-#: ../../appendix/appendix.rst:97
+#: ../../appendix/appendix.rst:98
 msgid ""
-"Wait for a while and you will see three compute sessions being listed. If"
-" you look closely at the Status panel, you can see that two of the three "
-"compute sessions are in RUNNING state, but the other compute session "
-"remains in PENDING state. This PENDING session is only registered in the "
-"job queue and has not actually been allocated a container due to "
-"insufficient GPU resources."
+"Wait for a while and you will see three compute sessions being listed. If you "
+"look closely at the Status panel, you can see that two of the three compute "
+"sessions are in RUNNING state, but the other compute session remains in "
+"PENDING state. This PENDING session is only registered in the job queue and "
+"has not actually been allocated a container due to insufficient GPU resources."
 msgstr ""
-"잠시 기다리면 세 개의 연산 세션이 나타납니다. 상태 패널을 자세히 살펴보면 세 개의 연산 세션 중 두 개는 RUNNING 상태에 "
-"있지만 다른 연산 세션은 PENDING 상태로 남아 있음을 알 수 있습니다. 이 PENDING 세션은 작업 대기열에만 등록되며 "
-"GPU 자원 부족으로 인해 실제로 컨테이너 할당을 받지 못했습니다."
+"잠시 기다리면 세 개의 연산 세션이 나타납니다. 상태 패널을 자세히 살펴보면 세 개"
+"의 연산 세션 중 두 개는 RUNNING 상태에 있지만 다른 연산 세션은 PENDING 상태로 "
+"남아 있음을 알 수 있습니다. 이 PENDING 세션은 작업 대기열에만 등록되며 GPU 자"
+"원 부족으로 인해 실제로 컨테이너 할당을 받지 못했습니다."
 
-#: ../../appendix/appendix.rst:108
+#: ../../appendix/appendix.rst:109
 msgid ""
-"Now let's destroy one of the two sessions in RUNNING state. Then you can "
-"see that the compute session in PENDING state is allocated resources by "
-"the job scheduler and converted to RUNNING state soon. In this way, the "
-"job scheduler utilizes the job queue to hold the user's compute session "
-"requests and automatically process the requests when resources become "
-"available."
+"Now let's destroy one of the two sessions in RUNNING state. Then you can see "
+"that the compute session in PENDING state is allocated resources by the job "
+"scheduler and converted to RUNNING state soon. In this way, the job scheduler "
+"utilizes the job queue to hold the user's compute session requests and "
+"automatically process the requests when resources become available."
 msgstr ""
-"이제 RUNNING 상태의 세션 두 개 중 하나를 삭제 해보겠습니다. 그러면 PENDING 상태의 연산 세션은 곧 작업 스케줄러에 "
-"의해 자원을 할당 받고 RUNNING 상태로 변환되는 것을 볼 수 있습니다. 이처럼, 작업 스케줄러는 작업 큐를 활용해 사용자의 "
-"연산 세션 요청을 간직하고 있다가 자원이 가용해질 때 자동으로 요청을 처리하게 됩니다."
+"이제 RUNNING 상태의 세션 두 개 중 하나를 삭제 해보겠습니다. 그러면 PENDING 상태"
+"의 연산 세션은 곧 작업 스케줄러에 의해 자원을 할당 받고 RUNNING 상태로 변환되"
+"는 것을 볼 수 있습니다. 이처럼, 작업 스케줄러는 작업 큐를 활용해 사용자의 연산 "
+"세션 요청을 간직하고 있다가 자원이 가용해질 때 자동으로 요청을 처리하게 됩니다."
 
-#: ../../appendix/appendix.rst:120
+#: ../../appendix/appendix.rst:121
 msgid "Multi-version machine learning container support"
 msgstr "Multi-version 머신러닝 컨테이너 지원"
 
-#: ../../appendix/appendix.rst:122
+#: ../../appendix/appendix.rst:123
 msgid ""
-"Backend.AI provides variaous pre-built ML and HPC kernel images. "
-"Therefore, users can immediately utilize major libraries and packages "
-"without having to install packages by themselves. Here, we'll walk "
-"through an example that takes advantage of multiple versions of the "
-"multiple ML library immediately."
+"Backend.AI provides variaous pre-built ML and HPC kernel images. Therefore, "
+"users can immediately utilize major libraries and packages without having to "
+"install packages by themselves. Here, we'll walk through an example that takes "
+"advantage of multiple versions of the multiple ML library immediately."
 msgstr ""
-"Backend.AI 는 다양한 ML 및 HPC 커널 이미지를 사전 빌드하여 제공 합니다. 따라서, 사용 자는 스스로 패키지 설치를 "
-"굳이 하지 않더라도 주요 라이브러리 및 패키지를 즉시 활용할 수 있습니다. 여기서는 다종 ML 라이브러리의 여러 버전을 즉시 "
-"활용하는 예제를 진행합니다."
+"Backend.AI 는 다양한 ML 및 HPC 커널 이미지를 사전 빌드하여 제공 합니다. 따라"
+"서, 사용 자는 스스로 패키지 설치를 굳이 하지 않더라도 주요 라이브러리 및 패키지"
+"를 즉시 활용할 수 있습니다. 여기서는 다종 ML 라이브러리의 여러 버전을 즉시 활용"
+"하는 예제를 진행합니다."
 
-#: ../../appendix/appendix.rst:127
+#: ../../appendix/appendix.rst:128
 msgid ""
 "Go to the Sessions page and open the session launch dialog. There may be "
 "various kernel images depending on the installation settings."
 msgstr ""
-"Sessions 페이지로 이동하여 연산 세션 생성 다이얼로그를 엽니다. Backend.AI에서는 설치 환경에 따른 다양한 커널 "
-"이미지를 제공합니다."
+"Sessions 페이지로 이동하여 연산 세션 생성 다이얼로그를 엽니다. Backend.AI에서"
+"는 설치 환경에 따른 다양한 커널 이미지를 제공합니다."
 
-#: ../../appendix/appendix.rst:134
+#: ../../appendix/appendix.rst:135
 msgid "Here, let's select the TensorFlow 2.3 environment and created a session."
 msgstr "여기서는 TensorFlow 2.3 환경을 선택하고 세션을 생성해보았습니다."
 
-#: ../../appendix/appendix.rst:140
+#: ../../appendix/appendix.rst:141
 msgid ""
-"Open the web terminal of the created session and run the following Python"
-" command. You can see that TensorFlow 2.3 version is installed."
+"Open the web terminal of the created session and run the following Python "
+"command. You can see that TensorFlow 2.3 version is installed."
 msgstr ""
-"생성된 세션의 웹 터미널을 열고 다음 Python 명령을 실행합니다. TensorFlow 2.3 버전이 실제 설치되어 있음을 확인할"
-" 수 있습니다."
+"생성된 세션의 웹 터미널을 열고 다음 Python 명령을 실행합니다. TensorFlow 2.3 버"
+"전이 실제 설치되어 있음을 확인할 수 있습니다."
 
-#: ../../appendix/appendix.rst:146
+#: ../../appendix/appendix.rst:147
 msgid ""
-"This time, let's select the TensorFlow 1.15 environment to create a "
-"compute session. If resources are insufficient, delete the previous "
-"session."
-msgstr "이번에는 TensorFlow 1.15 환경을 선택해서 연산 세션을 생성합니다. (자원이 부족한 경우 이전 세션은 삭제합니다)"
-
-#: ../../appendix/appendix.rst:153
-msgid ""
-"Open the web terminal of the created session and run the same Python "
-"command as before. You can see that TensorFlow 1.15(.4) version is "
-"installed."
+"This time, let's select the TensorFlow 1.15 environment to create a compute "
+"session. If resources are insufficient, delete the previous session."
 msgstr ""
-"생성된 세션의 웹 터미널을 열고 이전과 동일한 Python 명령을 실행합니다. TensorFlow 1.15(.4) 버전이 실제 "
-"설치되어 있음을 확인할 수 있습니다."
+"이번에는 TensorFlow 1.15 환경을 선택해서 연산 세션을 생성합니다. (자원이 부족"
+"한 경우 이전 세션은 삭제합니다)"
 
-#: ../../appendix/appendix.rst:160
+#: ../../appendix/appendix.rst:154
+msgid ""
+"Open the web terminal of the created session and run the same Python command "
+"as before. You can see that TensorFlow 1.15(.4) version is installed."
+msgstr ""
+"생성된 세션의 웹 터미널을 열고 이전과 동일한 Python 명령을 실행합니다. "
+"TensorFlow 1.15(.4) 버전이 실제 설치되어 있음을 확인할 수 있습니다."
+
+#: ../../appendix/appendix.rst:161
 msgid "Finally, create a compute session using PyTorch version 1.5."
 msgstr "마지막으로 PyTorch 1.5 버전을 이용해서 연산 세션을 생성합니다."
 
-#: ../../appendix/appendix.rst:166
+#: ../../appendix/appendix.rst:167
 msgid ""
-"Open the web terminal of the created session and run the following Python"
-" command. You can see that PyTorch 1.5 version is installed."
+"Open the web terminal of the created session and run the following Python "
+"command. You can see that PyTorch 1.5 version is installed."
 msgstr ""
-"생성된 세션의 웹 터미널을 열고 다음 Python 명령을 실행합니다. PyTorch 1.5 버전이 실제 설치되어 있음을 확인할 수 "
-"있습니다."
+"생성된 세션의 웹 터미널을 열고 다음 Python 명령을 실행합니다. PyTorch 1.5 버전"
+"이 실제 설치되어 있음을 확인할 수 있습니다."
 
-#: ../../appendix/appendix.rst:173
+#: ../../appendix/appendix.rst:174
 msgid ""
 "Like this, you can utilize various versions of major libraries such as "
 "TensorFlow and PyTorch through Backend.AI without unnecessary effort to "
 "install them."
 msgstr ""
-"이처럼, Backend.AI 를 통해 TensorFlow, PyTorch 등 주요 라이브러리의 다양한 버전을 불필요한 설치 노력 "
-"없이 활용할 수 있습니다."
+"이처럼, Backend.AI 를 통해 TensorFlow, PyTorch 등 주요 라이브러리의 다양한 버전"
+"을 불필요한 설치 노력 없이 활용할 수 있습니다."
 
-#: ../../appendix/appendix.rst:178
+#: ../../appendix/appendix.rst:179
+msgid "Convert a compute session to a new private Docker image"
+msgstr "실행 중인 연산 세션을 새로운 사용자 이미지로 변환하는 방법"
+
+#: ../../appendix/appendix.rst:181
+msgid ""
+"If you want to convert a running compute session (container) to a new Docker "
+"image that you can use later to create a new compute session, you need to "
+"prepare your compute session environment and ask administrators to convert it."
+msgstr ""
+"실행 중인 연산 세션(컨테이너) 환경을 새로운 이미지로 변환하고 추후 연산 세션 생"
+"성시 사용하고자 하는 경우, 연산 세션 내 환경을 구성한 후 관리자에게 변환 요청"
+"을 할 수 있습니다."
+
+#: ../../appendix/appendix.rst:185
+msgid ""
+"First, prepare your compute session by installing the packages that you need "
+"and adjust the configurations as you like."
+msgstr ""
+"먼저, 연산 세션을 준비합니다. 필요한 패키지를 설치하거나 환경을 구성합니다."
+
+#: ../../appendix/appendix.rst:190
+msgid ""
+"If you want to install OS packages, for example via ``apt`` command, it "
+"usually requires the ``sudo`` privilege. Depending on the security policy of "
+"the institute, you may not be allowed to use ``sudo`` inside a container."
+msgstr ""
+"``apt`` 등과 같은 명령을 통해 OS 패키지를 설치하려면 ``sudo`` 권한이 필요합니"
+"다. 플랫폼 제공사의 보안 정책에 따라 연산 세션 내에서 ``sudo`` 사용이 허용되지 "
+"않을 수 있습니다."
+
+#: ../../appendix/appendix.rst:195
+msgid ""
+"It is recommended to use :ref:`automount folder<using-automount-folder>` to "
+"install :ref:`Python packages via pip<install_pip_pkg>`. However, if you want "
+"to add Python packages in a new image, you should install them with ``sudo pip "
+"install <package-name>`` to save them not in your home but in the system "
+"directory. The contents in your home directory, usually ``/home/work``, are "
+"not saved in converting a compute session to a new Docker image."
+msgstr ""
+":ref:`Python 패키지를 pip을 통해 설치하려는 경우<install_pip_pkg>`, :ref:`자동 "
+"마운트 폴더<using-automount-folder>` 사용을 권장 드립니다. 하지만, 새 이미지 자"
+"체에 Python 패키지를 추가하려면 ``sudo pip install <package-name>`` 과 같이 실"
+"행하여 패키지를 홈 디렉토리가 아닌 시스템 디렉토리에 설치하여야 합니다. 연산 세"
+"션 내 홈 디렉토리(일반적으로 ``/home/work``)는 호스트에서 마운트된 폴더이므로 "
+"신규 이미지로 변환할 때 내용이 포함되지 않습니다."
+
+#: ../../appendix/appendix.rst:203
+msgid ""
+"When your compute session is prepared, please ask an administrator to convert "
+"it to a new Docker image. You need to inform them the session name or ID and "
+"your email address in the platform."
+msgstr ""
+"연산 세션 환경이 준비되면 관리자에게 이미지로의 변환을 요청합니다. 관리자에게 "
+"플랫폼 내 사용자의 이메일과 변환하고자 하는 연산 세션의 이름 또는 ID를 전달해"
+"야 합니다."
+
+#: ../../appendix/appendix.rst:206
+msgid ""
+"The administrator will convert your compute session to a new Docker image and "
+"send you the full image name and tag."
+msgstr ""
+"관리자가 일정 주기로 연산 세션을 이미지로 변환한 후 이미지의 이름과 태그 정보"
+"를 전달할 것입니다."
+
+#: ../../appendix/appendix.rst:208
+msgid ""
+"You can manually enter the image name in the session launch dialog. The image "
+"is private and not be revealed to other users"
+msgstr ""
+"연산 세션 생성 다이얼로그에서 수동으로 이미지 이름을 입력한 후 연산 세션을 생성"
+"합니다. 변환된 이미지는 다른 사용자에게 노출되지 않습니다."
+
+#: ../../appendix/appendix.rst:215
+msgid "A new compute session will be created using the new Docker image."
+msgstr "새 이미지를 활용해 연산 세션이 정상적으로 실행되어야 합니다."
+
+#: ../../appendix/appendix.rst:219
 msgid "Backend.AI Server Installation Guide"
 msgstr "Backend.AI 서버 설정 가이드"
 
-#: ../../appendix/appendix.rst:180
+#: ../../appendix/appendix.rst:221
 msgid ""
 "For Backend.AI Server daemons/services, following hardware specification "
 "should be met. For optimal performance, just double the amount of each "
 "resources."
 msgstr ""
-"Backend.AI 데몬/서비스 구동을 위해서는 다음과 같은 하드웨어가 필요합니다. 최적 성능을 위해서는 아래 명기된 사양의 두 배"
-" 이상 필요합니다."
+"Backend.AI 데몬/서비스 구동을 위해서는 다음과 같은 하드웨어가 필요합니다. 최적 "
+"성능을 위해서는 아래 명기된 사양의 두 배 이상 필요합니다."
 
-#: ../../appendix/appendix.rst:183
+#: ../../appendix/appendix.rst:224
 msgid "Manager: 2 cores, 4 GiB memory"
 msgstr ""
 
-#: ../../appendix/appendix.rst:184
+#: ../../appendix/appendix.rst:225
 msgid ""
-"Agent: 4 cores, 32 GiB memory, NVIDIA GPU (for GPU workload), > 512 GiB "
-"SSD"
+"Agent: 4 cores, 32 GiB memory, NVIDIA GPU (for GPU workload), > 512 GiB SSD"
 msgstr ""
 
-#: ../../appendix/appendix.rst:185
+#: ../../appendix/appendix.rst:226
 msgid "Webserver: 2 cores, 4 GiB memory"
 msgstr ""
 
-#: ../../appendix/appendix.rst:186
+#: ../../appendix/appendix.rst:227
 msgid "WSProxy: 2 cores, 4 GiB memory"
 msgstr ""
 
-#: ../../appendix/appendix.rst:187
+#: ../../appendix/appendix.rst:228
 msgid "PostgreSQL DB: 2 cores, 4 GiB memory"
 msgstr ""
 
-#: ../../appendix/appendix.rst:188
+#: ../../appendix/appendix.rst:229
 msgid "Redis: 1 core, 2 GiB memory"
 msgstr ""
 
-#: ../../appendix/appendix.rst:189
+#: ../../appendix/appendix.rst:230
 msgid "Etcd: 1 core, 2 GiB memory"
 msgstr ""
 
-#: ../../appendix/appendix.rst:191
+#: ../../appendix/appendix.rst:232
 msgid ""
 "The essential host dependent packages that must be pre-installed before "
 "installing each service are:"
-msgstr "각 서비스를 설치하기 전에 사전에 설치되어야 할 주요 의존 호스트 패키지는 다음과 같습니다:"
-
-#: ../../appendix/appendix.rst:194
-msgid ""
-"Web-UI: Operating system that can run the latest browsers (Windows, Mac "
-"OS, Ubuntu, etc.)"
-msgstr "Web-UI: 최신 브라우저를 구동할 수 있는 운영체제 (Windows, Mac OS, Ubuntu 등)"
-
-#: ../../appendix/appendix.rst:196
-msgid "Manager: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)"
 msgstr ""
-
-#: ../../appendix/appendix.rst:197
-msgid ""
-"Agent: docker (≥19.03), CUDA/CUDA Toolkit (≥8, 11 recommend), nvidia-"
-"docker v2, Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)"
-msgstr ""
-
-#: ../../appendix/appendix.rst:199
-msgid "Webserver: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)"
-msgstr ""
-
-#: ../../appendix/appendix.rst:200
-msgid "WSProxy: docker (≥19.03), docker-compose (≥1.24)"
-msgstr ""
-
-#: ../../appendix/appendix.rst:201
-msgid "PostgreSQL DB: docker (≥19.03), docker-compose (≥1.24)"
-msgstr ""
-
-#: ../../appendix/appendix.rst:202
-msgid "Redis: docker (≥19.03), docker-compose (≥1.24)"
-msgstr ""
-
-#: ../../appendix/appendix.rst:203
-msgid "Etcd: docker (≥19.03), docker-compose (≥1.24)"
-msgstr ""
-
-#: ../../appendix/appendix.rst:205
-msgid ""
-"For Enterprise version, Backend.AI server daemons are installed by Lablup"
-" support team and following materials/services are provided after initial"
-" installation:"
-msgstr ""
-"엔터프라이즈 버전의 Backend.AI 서버 데몬은 래블업의 지원팀에서 설치합니다. 초기 설치 후 기본적으로 다음과 같은 자료 및 "
-"서비스가 제공됩니다:"
-
-#: ../../appendix/appendix.rst:207
-msgid "DVD 1 (includes Backend.AI packages)"
-msgstr "DVD 1 장 (Backend.AI 패키지 포함)"
-
-#: ../../appendix/appendix.rst:208
-msgid "User GUI Guide manual"
-msgstr "사용자 GUI 가이드 매뉴얼"
-
-#: ../../appendix/appendix.rst:209
-msgid "Admin GUI Guide manual"
-msgstr "관리자 GUI 가이드 매뉴얼 (엔터프라이즈 고객 전용)"
-
-#: ../../appendix/appendix.rst:210
-msgid "Installation report"
-msgstr "설치 리포트"
-
-#: ../../appendix/appendix.rst:211
-msgid "First-time user/admin on-site tutorial (3-5 hours)"
-msgstr "사용자/관리자 초기 방문 교육 (3-5 시간)"
-
-#: ../../appendix/appendix.rst:213
-msgid ""
-"Product maintenance and support information: the commercial contract "
-"includes a monthly/annual subscription fee for the Enterprise version by "
-"default. Initial user/administrator training (1-2 times) and "
-"wired/wireless customer support services are provided for about 2 weeks "
-"after initial installation, minor release updater support and customer "
-"support services through online channels are provided for 3-6 months. "
-"Maintenance and support services provided afterwards may have different "
-"details depending on the terms of the contract."
-msgstr ""
-"제품의 유지보수 및 지원 정보: 상용 계약에는 기본적으로 엔터프라이즈 버전의 월간/연간 구독 사용료가 포함됩니다. 최초 설치 후 약"
-" 2주 간 초기 사용자/관리자 교육 (1-2 회) 및 유무선 상의 고객 지원 서비스가 제공되며, 3-6 개월 간 마이너 릴리즈 "
-"업데이터 지원 및 온라인 채널을 통한 고객 지원 서비스가 제공됩니다. 이후 제공되는 유지보수 및 지원 서비스는 계약 조건에 따라 "
-"세부 내용이 다를 수 있습니다."
-
-#: ../../appendix/appendix.rst:225
-msgid "Backend.AI Server Management Guide"
-msgstr "간단한 Backend.AI 서버 관리 가이드"
-
-#: ../../appendix/appendix.rst:227
-msgid ""
-"Backend.AI is composed of many modules and daemons. Here, we briefly "
-"describe each services and provide basic maintenance guide in case of "
-"specific service failure. Note that the maintenance operations provided "
-"here are generally applicable, but may differ depending on the host-"
-"specific installation details."
-msgstr ""
-"Backend.AI 는 여러 개의 모듈과 데몬으로 구성되어 있습니다. 여기서는 각 서비스에 관한 짧은 설명과 서비스 별로 문제가 "
-"발생하였을 때 사용할 수 있는 간단한 관리 가이드를 제공합니다. 관리 명령은 일반적으로 사용 가능하지만, 호스트 별 설치 상황에 "
-"따라 구체적인 사항은 달라질 수 있습니다."
-
-#: ../../appendix/appendix.rst:233
-msgid "Manager"
-msgstr ""
+"각 서비스를 설치하기 전에 사전에 설치되어야 할 주요 의존 호스트 패키지는 다음"
+"과 같습니다:"
 
 #: ../../appendix/appendix.rst:235
 msgid ""
-"Gateway server that accepts and handles every user request. If the "
-"request is related with the compute session (container), Manager will "
-"delegate the request to Agent and/or containers in each Agent."
+"Web-UI: Operating system that can run the latest browsers (Windows, Mac OS, "
+"Ubuntu, etc.)"
 msgstr ""
-"사용자로부터 오는 모든 요청을 받아 처리하는 게이트웨이 서버입니다. 사용자의 요청이 연산 세션(컨테이너)과 관련 있다면, 해당 "
-"세션을 관리하는 Agent 또는 해당 컨테이너로 작업을 위임합니다."
+"Web-UI: 최신 브라우저를 구동할 수 있는 운영체제 (Windows, Mac OS, Ubuntu 등)"
 
-#: ../../appendix/appendix.rst:253
+#: ../../appendix/appendix.rst:237
+msgid "Manager: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)"
+msgstr ""
+
+#: ../../appendix/appendix.rst:238
+msgid ""
+"Agent: docker (≥19.03), CUDA/CUDA Toolkit (≥8, 11 recommend), nvidia-docker "
+"v2, Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)"
+msgstr ""
+
+#: ../../appendix/appendix.rst:240
+msgid "Webserver: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)"
+msgstr ""
+
+#: ../../appendix/appendix.rst:241
+msgid "WSProxy: docker (≥19.03), docker-compose (≥1.24)"
+msgstr ""
+
+#: ../../appendix/appendix.rst:242
+msgid "PostgreSQL DB: docker (≥19.03), docker-compose (≥1.24)"
+msgstr ""
+
+#: ../../appendix/appendix.rst:243
+msgid "Redis: docker (≥19.03), docker-compose (≥1.24)"
+msgstr ""
+
+#: ../../appendix/appendix.rst:244
+msgid "Etcd: docker (≥19.03), docker-compose (≥1.24)"
+msgstr ""
+
+#: ../../appendix/appendix.rst:246
+msgid ""
+"For Enterprise version, Backend.AI server daemons are installed by Lablup "
+"support team and following materials/services are provided after initial "
+"installation:"
+msgstr ""
+"엔터프라이즈 버전의 Backend.AI 서버 데몬은 래블업의 지원팀에서 설치합니다. 초"
+"기 설치 후 기본적으로 다음과 같은 자료 및 서비스가 제공됩니다:"
+
+#: ../../appendix/appendix.rst:248
+msgid "DVD 1 (includes Backend.AI packages)"
+msgstr "DVD 1 장 (Backend.AI 패키지 포함)"
+
+#: ../../appendix/appendix.rst:249
+msgid "User GUI Guide manual"
+msgstr "사용자 GUI 가이드 매뉴얼"
+
+#: ../../appendix/appendix.rst:250
+msgid "Admin GUI Guide manual"
+msgstr "관리자 GUI 가이드 매뉴얼 (엔터프라이즈 고객 전용)"
+
+#: ../../appendix/appendix.rst:251
+msgid "Installation report"
+msgstr "설치 리포트"
+
+#: ../../appendix/appendix.rst:252
+msgid "First-time user/admin on-site tutorial (3-5 hours)"
+msgstr "사용자/관리자 초기 방문 교육 (3-5 시간)"
+
+#: ../../appendix/appendix.rst:254
+msgid ""
+"Product maintenance and support information: the commercial contract includes "
+"a monthly/annual subscription fee for the Enterprise version by default. "
+"Initial user/administrator training (1-2 times) and wired/wireless customer "
+"support services are provided for about 2 weeks after initial installation, "
+"minor release updater support and customer support services through online "
+"channels are provided for 3-6 months. Maintenance and support services "
+"provided afterwards may have different details depending on the terms of the "
+"contract."
+msgstr ""
+"제품의 유지보수 및 지원 정보: 상용 계약에는 기본적으로 엔터프라이즈 버전의 월"
+"간/연간 구독 사용료가 포함됩니다. 최초 설치 후 약 2주 간 초기 사용자/관리자 교"
+"육 (1-2 회) 및 유무선 상의 고객 지원 서비스가 제공되며, 3-6 개월 간 마이너 릴리"
+"즈 업데이터 지원 및 온라인 채널을 통한 고객 지원 서비스가 제공됩니다. 이후 제공"
+"되는 유지보수 및 지원 서비스는 계약 조건에 따라 세부 내용이 다를 수 있습니다."
+
+#: ../../appendix/appendix.rst:266
+msgid "Backend.AI Server Management Guide"
+msgstr "간단한 Backend.AI 서버 관리 가이드"
+
+#: ../../appendix/appendix.rst:268
+msgid ""
+"Backend.AI is composed of many modules and daemons. Here, we briefly describe "
+"each services and provide basic maintenance guide in case of specific service "
+"failure. Note that the maintenance operations provided here are generally "
+"applicable, but may differ depending on the host-specific installation details."
+msgstr ""
+"Backend.AI 는 여러 개의 모듈과 데몬으로 구성되어 있습니다. 여기서는 각 서비스"
+"에 관한 짧은 설명과 서비스 별로 문제가 발생하였을 때 사용할 수 있는 간단한 관"
+"리 가이드를 제공합니다. 관리 명령은 일반적으로 사용 가능하지만, 호스트 별 설치 "
+"상황에 따라 구체적인 사항은 달라질 수 있습니다."
+
+#: ../../appendix/appendix.rst:274
+msgid "Manager"
+msgstr ""
+
+#: ../../appendix/appendix.rst:276
+msgid ""
+"Gateway server that accepts and handles every user request. If the request is "
+"related with the compute session (container), Manager will delegate the "
+"request to Agent and/or containers in each Agent."
+msgstr ""
+"사용자로부터 오는 모든 요청을 받아 처리하는 게이트웨이 서버입니다. 사용자의 요"
+"청이 연산 세션(컨테이너)과 관련 있다면, 해당 세션을 관리하는 Agent 또는 해당 컨"
+"테이너로 작업을 위임합니다."
+
+#: ../../appendix/appendix.rst:294
 msgid "Agent"
 msgstr ""
 
-#: ../../appendix/appendix.rst:255
+#: ../../appendix/appendix.rst:296
 msgid "Worker node which manages the lifecycle of compute sessions (containers)."
 msgstr "연산 워커 노드입니다. 연산 세션 (컨테이너) 의 수명주기를 관리합니다."
 
-#: ../../appendix/appendix.rst:271
+#: ../../appendix/appendix.rst:312
 msgid "Webserver"
 msgstr ""
 
-#: ../../appendix/appendix.rst:273
+#: ../../appendix/appendix.rst:314
 msgid "Serves user Web-UI and provides authentication by email and password."
-msgstr "사용자 웹 GUI 환경을 제공하고, 이메일/비밀번호 기반의 사용자 인증 또한 지원합니다."
+msgstr ""
+"사용자 웹 GUI 환경을 제공하고, 이메일/비밀번호 기반의 사용자 인증 또한 지원합니"
+"다."
 
-#: ../../appendix/appendix.rst:289
+#: ../../appendix/appendix.rst:330
 msgid "WSProxy"
 msgstr ""
 
-#: ../../appendix/appendix.rst:291
+#: ../../appendix/appendix.rst:332
 msgid ""
-"Proxies the connection between user-created web apps (such as web "
-"Terminal and Jupyter Notebook) and Manager, which is then relayed to a "
-"specific compute session (container)."
-msgstr "사용자가 띄운 웹기반 앱 (터미널, Jupyter Notebook 등) 과 매니저 사이의 통신을 중계하는 서비스입니다."
+"Proxies the connection between user-created web apps (such as web Terminal and "
+"Jupyter Notebook) and Manager, which is then relayed to a specific compute "
+"session (container)."
+msgstr ""
+"사용자가 띄운 웹기반 앱 (터미널, Jupyter Notebook 등) 과 매니저 사이의 통신을 "
+"중계하는 서비스입니다."
 
-#: ../../appendix/appendix.rst:310
+#: ../../appendix/appendix.rst:351
 msgid "PostgreSQL DB"
 msgstr ""
 
-#: ../../appendix/appendix.rst:312
+#: ../../appendix/appendix.rst:353
 msgid "Database for Manager."
 msgstr "Manager 가 사용하는 데이터베이스입니다."
 
-#: ../../appendix/appendix.rst:328
+#: ../../appendix/appendix.rst:369
 msgid ""
-"To back up the DB data, you can use the following commands from the DB "
-"host. The specific commands may vary depending on the configuration."
-msgstr "DB 를 백업하기 위해서는 다음과 같은 명령을 사용할 수 있습니다. 구체적인 명령은 설치 환경에 따라 다양할 수 있습니다."
+"To back up the DB data, you can use the following commands from the DB host. "
+"The specific commands may vary depending on the configuration."
+msgstr ""
+"DB 를 백업하기 위해서는 다음과 같은 명령을 사용할 수 있습니다. 구체적인 명령은 "
+"설치 환경에 따라 다양할 수 있습니다."
 
-#: ../../appendix/appendix.rst:342
+#: ../../appendix/appendix.rst:383
 msgid ""
 "To restore the DB from the backup data, you can execute the following "
 "commands. Specific options may vary depending on the configuration."
 msgstr ""
-"백업 데이터를 통해 DB 를 복원하려면 다음과 같은 명령을 실행할 수 있습니다. 구체적인 옵션은 설치 환경에 따라 다양할 수 "
-"있습니다."
+"백업 데이터를 통해 DB 를 복원하려면 다음과 같은 명령을 실행할 수 있습니다. 구체"
+"적인 옵션은 설치 환경에 따라 다양할 수 있습니다."
 
-#: ../../appendix/appendix.rst:364
+#: ../../appendix/appendix.rst:405
 msgid "Redis"
 msgstr ""
 
-#: ../../appendix/appendix.rst:366
+#: ../../appendix/appendix.rst:407
 msgid ""
 "Cache server which is used to collect per-session and per-agent usage "
-"statistics and relays heartbeat signal from Agent to Manager. It also "
-"keeps user's authentication information."
+"statistics and relays heartbeat signal from Agent to Manager. It also keeps "
+"user's authentication information."
 msgstr ""
-"캐시 서비스로, Agent 와 연산 세션의 사용량 정보를 수집하고, Agent 에서 Manager 로 가는 heartbeat 신호를"
-" 중계합니다. 사용자의 로그인 인증 정보를 보관하기도 합니다."
+"캐시 서비스로, Agent 와 연산 세션의 사용량 정보를 수집하고, Agent 에서 Manager "
+"로 가는 heartbeat 신호를 중계합니다. 사용자의 로그인 인증 정보를 보관하기도 합"
+"니다."
 
-#: ../../appendix/appendix.rst:384
+#: ../../appendix/appendix.rst:425
 msgid ""
-"Usually, Redis data do not need backup since it contains temporary cached"
-" data only, such user's login session information, per-container live "
-"stat, and etc."
+"Usually, Redis data do not need backup since it contains temporary cached data "
+"only, such user's login session information, per-container live stat, and etc."
 msgstr ""
-"일반적으로, Redis 데이터를 백업할 필요가 없습니다. 사용자 로그인 세션 쿠키 정보, 컨테이너 별 실시간 사용량 등과 같은 "
-"일시적으로만 존재하면 되는 정보를 저장하고 있기 때문입니다."
+"일반적으로, Redis 데이터를 백업할 필요가 없습니다. 사용자 로그인 세션 쿠키 정"
+"보, 컨테이너 별 실시간 사용량 등과 같은 일시적으로만 존재하면 되는 정보를 저장"
+"하고 있기 때문입니다."
 
-#: ../../appendix/appendix.rst:388
+#: ../../appendix/appendix.rst:429
 msgid "Etcd"
 msgstr ""
 
-#: ../../appendix/appendix.rst:390
+#: ../../appendix/appendix.rst:431
 msgid "Config server, which contains Backend.AI system-wide configuration."
 msgstr "설정 서버로, Backend.AI 의 전역 설정값을 보관하고 있습니다."
 
-#: ../../appendix/appendix.rst:406
+#: ../../appendix/appendix.rst:447
 msgid ""
-"To back up the Etcd config data used by the Manager, go to the folder "
-"where the Manager is installed and use the following command."
+"To back up the Etcd config data used by the Manager, go to the folder where "
+"the Manager is installed and use the following command."
 msgstr ""
-"Manager 에서 사용하는 Etcd 설정 데이터를 백업하려면 Manager 가 설치된 폴더로 이동한 후 다음과 같은 명령을 "
-"사용하면 됩니다."
+"Manager 에서 사용하는 Etcd 설정 데이터를 백업하려면 Manager 가 설치된 폴더로 이"
+"동한 후 다음과 같은 명령을 사용하면 됩니다."
 
-#: ../../appendix/appendix.rst:414
+#: ../../appendix/appendix.rst:455
 msgid ""
-"To restore Etcd settings from the backup data, you can run a command like"
-" this."
-msgstr "백업 데이터를 통해 Etcd 설정을 복원하려면 다음과 같은 명령을 실행할 수 있습니다."
+"To restore Etcd settings from the backup data, you can run a command like this."
+msgstr ""
+"백업 데이터를 통해 Etcd 설정을 복원하려면 다음과 같은 명령을 실행할 수 있습니"
+"다."
 
 #~ msgid ""
-#~ "Now, let's connect directly to the "
-#~ "inside of the container and check "
-#~ "if the GPU memory (~2 GB) "
-#~ "equivalent to 0.5 units is really "
-#~ "allocated. Let's bring up a web "
-#~ "terminal. When the terminal comes up,"
-#~ " run the ``nvidia-smi`` command. As"
-#~ " you can see in the following "
-#~ "figure, you can see that about 2"
-#~ " GB of GPU memory is allocated. "
-#~ "This is not possible by a way "
-#~ "like PCI passthrough, showing that the"
-#~ " physical GPU is actually divided "
-#~ "into quarters and allocated inside the"
-#~ " container for this compute session."
+#~ "Now, let's connect directly to the inside of the container and check if the "
+#~ "GPU memory (~2 GB) equivalent to 0.5 units is really allocated. Let's bring "
+#~ "up a web terminal. When the terminal comes up, run the ``nvidia-smi`` "
+#~ "command. As you can see in the following figure, you can see that about 2 "
+#~ "GB of GPU memory is allocated. This is not possible by a way like PCI "
+#~ "passthrough, showing that the physical GPU is actually divided into "
+#~ "quarters and allocated inside the container for this compute session."
 #~ msgstr ""
-#~ "이제 컨테이너 내부에 직접 접속하여 정말로 0.5 "
-#~ "유닛에 해당하는 GPU 메모리 (~2 GB) 가 "
-#~ "할당 되었는지 확인해보겠습니다. 웹 터미널을 띄워 봅시다."
-#~ " 터미널이 뜨면 ``nvidia-smi`` 명령을 실행합니다."
-#~ " 다음 그림에서 확인할 수 있는 것처럼 약 2"
-#~ " GB 에 해당하는 GPU 메모리가 할당된 것을 "
-#~ "확인할 수 있습니다. 이는 PCI passthrough 같은"
-#~ " 방식으로는 불가능한 것으로, 물리 GPU 가 실제로"
-#~ " 1/4 로 분할되어 이 연산 세션의 컨테이너 "
-#~ "내부에 할당된 것을 보여줍니다."
+#~ "이제 컨테이너 내부에 직접 접속하여 정말로 0.5 유닛에 해당하는 GPU 메모리 "
+#~ "(~2 GB) 가 할당 되었는지 확인해보겠습니다. 웹 터미널을 띄워 봅시다. 터미널"
+#~ "이 뜨면 ``nvidia-smi`` 명령을 실행합니다. 다음 그림에서 확인할 수 있는 것처"
+#~ "럼 약 2 GB 에 해당하는 GPU 메모리가 할당된 것을 확인할 수 있습니다. 이는 "
+#~ "PCI passthrough 같은 방식으로는 불가능한 것으로, 물리 GPU 가 실제로 1/4 로 "
+#~ "분할되어 이 연산 세션의 컨테이너 내부에 할당된 것을 보여줍니다."
 
 #~ msgid "Resource monitoring through GUI"
 #~ msgstr "GUI 를 통한 자원 모니터링"
 
 #~ msgid ""
-#~ "Backend.AI GUI Console supports resource "
-#~ "monitoring through GUI. After logging in"
-#~ " with a user account, create a "
-#~ "compute session. Resource allocation is "
-#~ "set as shown in the following "
-#~ "figure."
+#~ "Backend.AI GUI Console supports resource monitoring through GUI. After "
+#~ "logging in with a user account, create a compute session. Resource "
+#~ "allocation is set as shown in the following figure."
 #~ msgstr ""
-#~ "Backend.AI GUI Console 은 GUI 를 통한"
-#~ " 자원 모니터링을 지원합니다. 사용자 계정으로 로그인 한"
-#~ " 후 연산 세션을 생성합니다. 자원 할당은 다음 "
-#~ "그림과 같이 해보겠습니다."
+#~ "Backend.AI GUI Console 은 GUI 를 통한 자원 모니터링을 지원합니다. 사용자 계"
+#~ "정으로 로그인 한 후 연산 세션을 생성합니다. 자원 할당은 다음 그림과 같이 해"
+#~ "보겠습니다."
 
 #~ msgid ""
-#~ "After creating a compute session by "
-#~ "clicking the LAUNCH button, you can "
-#~ "see that the amount of resources "
-#~ "allocated by CPU, RAM, and FGPU in"
-#~ " the upper resource indicator increases."
-#~ " You can check the amount of "
-#~ "resources currently used and the total"
-#~ " amount of resources that can be "
-#~ "allocated. The display bar is divided"
-#~ " into two parts: the upper and "
-#~ "the lower. he upper part shows the"
-#~ " resource allocation status in the "
-#~ "current scaling group, and the lower "
-#~ "part shows the allocation status of "
-#~ "total accessible resources."
+#~ "After creating a compute session by clicking the LAUNCH button, you can see "
+#~ "that the amount of resources allocated by CPU, RAM, and FGPU in the upper "
+#~ "resource indicator increases. You can check the amount of resources "
+#~ "currently used and the total amount of resources that can be allocated. The "
+#~ "display bar is divided into two parts: the upper and the lower. he upper "
+#~ "part shows the resource allocation status in the current scaling group, and "
+#~ "the lower part shows the allocation status of total accessible resources."
 #~ msgstr ""
-#~ "LAUNCH 버튼을 클릭하여 연산 세션을 생성하면 상단의"
-#~ " 자원 인디케이터에 CPU, RAM, FGPU 의 양이"
-#~ " 변화되는 것을 볼 수 있습니다. 현재 할당해서 "
-#~ "사용하고 있는 지원의 양과 할당 가능한 총 자원의"
-#~ " 양을 볼 수 있습니다. 자원 인디케이터는 위, "
-#~ "아래 두 부분으로 나누어져 있습니다. 윗 부분은 "
-#~ "현재 자원 그룹 내의 지원 할당 상태를 보여주고,"
-#~ " 아랫 부분은 접근 가능한 총 자원 상태를 "
-#~ "나타냅니다."
+#~ "LAUNCH 버튼을 클릭하여 연산 세션을 생성하면 상단의 자원 인디케이터에 CPU, "
+#~ "RAM, FGPU 의 양이 변화되는 것을 볼 수 있습니다. 현재 할당해서 사용하고 있는 "
+#~ "지원의 양과 할당 가능한 총 자원의 양을 볼 수 있습니다. 자원 인디케이터는 "
+#~ "위, 아래 두 부분으로 나누어져 있습니다. 윗 부분은 현재 자원 그룹 내의 지원 "
+#~ "할당 상태를 보여주고, 아랫 부분은 접근 가능한 총 자원 상태를 나타냅니다."
 
 #~ msgid ""
-#~ "Upper: Allocated and available resources "
-#~ "within the current scaling group"
+#~ "Upper: Allocated and available resources within the current scaling group"
 #~ msgstr "위쪽 표시바: 현재 스케일링 그룹 내에서의 할당량과 총 할당 가능량"
 
 #~ msgid ""
-#~ "(Resources allocated by the user in "
-#~ "the current scaling group) / (Total "
-#~ "resources allocatable by the user in "
-#~ "the current scaling group)"
-#~ msgstr "(현재 스케일링 그룹 내에서 사용자가 할당한 자원의 양) / (현재 스케일링 그룹 내에 서 사용자 할당 가능한 자원의 총합)"
+#~ "(Resources allocated by the user in the current scaling group) / (Total "
+#~ "resources allocatable by the user in the current scaling group)"
+#~ msgstr ""
+#~ "(현재 스케일링 그룹 내에서 사용자가 할당한 자원의 양) / (현재 스케일링 그룹 "
+#~ "내에 서 사용자 할당 가능한 자원의 총합)"
 
 #~ msgid "Lower: Total allocated and available resources"
 #~ msgstr "아래쪽 표시바: 전체 할당량과 총 할당 가능량"
 
 #~ msgid ""
-#~ "(Resources allocated by the user) / "
-#~ "(Resources allocated by the user + "
-#~ "Total resources allocatable by the user"
-#~ " in the current scaling group)"
+#~ "(Resources allocated by the user) / (Resources allocated by the user + "
+#~ "Total resources allocatable by the user in the current scaling group)"
 #~ msgstr ""
-#~ "(사용자가 할당한 총 자원 양) / (사용자가 "
-#~ "할당한 총 자원 양 + 현재 스케일링 그룹 "
-#~ "내에서 사용자가 할당 가능한 자원의 총합)"
+#~ "(사용자가 할당한 총 자원 양) / (사용자가 할당한 총 자원 양 + 현재 스케일링 "
+#~ "그룹 내에서 사용자가 할당 가능한 자원의 총합)"
 
 #~ msgid ""
-#~ "Next, let's delete the compute session"
-#~ " we just created. End the session "
-#~ "by pressing the red power button "
-#~ "in the Control column."
-#~ msgstr "이번에는 생성한 연산 세션을 삭제해보겠습니다. Control 열의 붉은 전원 버튼을 눌러 세션을 종료 하십시오."
+#~ "Next, let's delete the compute session we just created. End the session by "
+#~ "pressing the red power button in the Control column."
+#~ msgstr ""
+#~ "이번에는 생성한 연산 세션을 삭제해보겠습니다. Control 열의 붉은 전원 버튼을 "
+#~ "눌러 세션을 종료 하십시오."
 
 #~ msgid ""
-#~ "After the compute session disappears "
-#~ "from the list, you can see that"
-#~ " the CPU, RAM, and FGPU of the"
-#~ " resource indicator decrease by the "
-#~ "exact amount of resources."
+#~ "After the compute session disappears from the list, you can see that the "
+#~ "CPU, RAM, and FGPU of the resource indicator decrease by the exact amount "
+#~ "of resources."
 #~ msgstr ""
-#~ "연산 세션이 리스트에서 사라지고 곧 이어 자원 "
-#~ "인디케이터의 CPU, RAM, FGPU 가 해당 자원 "
-#~ "만큼 감소하는 것을 확인할 수 있습니다."
+#~ "연산 세션이 리스트에서 사라지고 곧 이어 자원 인디케이터의 CPU, RAM, FGPU 가 "
+#~ "해당 자원 만큼 감소하는 것을 확인할 수 있습니다."
 
 #~ msgid "Job scheduler"
 #~ msgstr "작업 스케줄러"
 
 #~ msgid ""
-#~ "You can also check the operation "
-#~ "of the job scheduler in a simple"
-#~ " way from the user GUI console. "
-#~ "Currently, our GPU host can allocate "
-#~ "up to 2 fGPUs of resources. Now"
-#~ " let's create 3 compute sessions at"
-#~ " the same time requesting allocation "
-#~ "of resources equal to 1 fGPU. At"
-#~ " the bottom of the session launch "
-#~ "dialog, there are GPU and Sessions "
-#~ "sliders. If you specify a value "
-#~ "greater than 1 in Sessions, when "
-#~ "the LAUNCH button is clicked, the "
-#~ "number of sessions will be requested "
-#~ "at the same time. Let's set the"
-#~ " GPU and Sessions to 1 and 3,"
-#~ " respectively. In a situation where "
-#~ "only 2 fGPUs exists, 3 sessions "
-#~ "requesting a total of 3 fGPU "
-#~ "resources are created."
+#~ "You can also check the operation of the job scheduler in a simple way from "
+#~ "the user GUI console. Currently, our GPU host can allocate up to 2 fGPUs of "
+#~ "resources. Now let's create 3 compute sessions at the same time requesting "
+#~ "allocation of resources equal to 1 fGPU. At the bottom of the session "
+#~ "launch dialog, there are GPU and Sessions sliders. If you specify a value "
+#~ "greater than 1 in Sessions, when the LAUNCH button is clicked, the number "
+#~ "of sessions will be requested at the same time. Let's set the GPU and "
+#~ "Sessions to 1 and 3, respectively. In a situation where only 2 fGPUs "
+#~ "exists, 3 sessions requesting a total of 3 fGPU resources are created."
 #~ msgstr ""
-#~ "사용자 GUI 콘솔에서도 간단한 방법으로 작업 스케줄러의"
-#~ " 동작을 확인해볼 수 있습니다. 현재 테스트 GPU"
-#~ " 호스트에는 최대 2 fGPU 만큼의 자원이 할당 "
-#~ "가능합니다. 이제 1 fGPU 만큼의 자원 할당을 "
-#~ "요청하는 연산 세션 3 개를 동시에 생성해 "
-#~ "보겠습니다. 연산 세션 생성 다이얼로그 하단을 보면 "
-#~ "GPU 와 Sessions 슬라이더가 있습니다. Sessions "
-#~ "에 값을 1 보다 크게 지정하면 LAUNCH 버튼을"
-#~ " 클릭했을 때 해당 갯수만큼의 세션을 동시에 생성 "
-#~ "요청하게 됩니다. GPU 와 Sessions 를 각각 "
-#~ "1, 3 으로 설정해보겠습니다. 2 fGPU 만 "
-#~ "존재하는 상황에서 총 3 fGPU 자원를 요청하는 "
-#~ "세션이 3 개 생성되는 것입니다."
+#~ "사용자 GUI 콘솔에서도 간단한 방법으로 작업 스케줄러의 동작을 확인해볼 수 있"
+#~ "습니다. 현재 테스트 GPU 호스트에는 최대 2 fGPU 만큼의 자원이 할당 가능합니"
+#~ "다. 이제 1 fGPU 만큼의 자원 할당을 요청하는 연산 세션 3 개를 동시에 생성해 "
+#~ "보겠습니다. 연산 세션 생성 다이얼로그 하단을 보면 GPU 와 Sessions 슬라이더"
+#~ "가 있습니다. Sessions 에 값을 1 보다 크게 지정하면 LAUNCH 버튼을 클릭했을 "
+#~ "때 해당 갯수만큼의 세션을 동시에 생성 요청하게 됩니다. GPU 와 Sessions 를 각"
+#~ "각 1, 3 으로 설정해보겠습니다. 2 fGPU 만 존재하는 상황에서 총 3 fGPU 자원를 "
+#~ "요청하는 세션이 3 개 생성되는 것입니다."
 
 #~ msgid ""
-#~ "Wait for a while and you will "
-#~ "see three compute sessions being listed."
-#~ " At this time, if you look "
-#~ "closely at the Status column, you "
-#~ "can see that two of the three "
-#~ "compute sessions are in RUNNING state,"
-#~ " but the other compute session "
-#~ "remains in the PENDING state. This "
-#~ "PENDING session is only registered in"
-#~ " the job queue and has not "
-#~ "actually been allocated a container due"
-#~ " to insufficient GPU resources."
+#~ "Wait for a while and you will see three compute sessions being listed. At "
+#~ "this time, if you look closely at the Status column, you can see that two "
+#~ "of the three compute sessions are in RUNNING state, but the other compute "
+#~ "session remains in the PENDING state. This PENDING session is only "
+#~ "registered in the job queue and has not actually been allocated a container "
+#~ "due to insufficient GPU resources."
 #~ msgstr ""
-#~ "잠시 기다리면 세 개의 연산 세션이 조회되는 것을"
-#~ " 알 수 있습니다. 이 때, Status 열을 "
-#~ "자세히 보면 세 개 중 두 개 연산 "
-#~ "세션의 상태는 RUNNING 이지만, 다른 하나의 연산 "
-#~ "세션은 PENDING 상태에 머물러 있는 것을 확인할 "
-#~ "수 있습니다. 이 PENDING 세션은 작업 큐에 "
-#~ "등록만 되어 있고 GPU 자원 부족으로 인해 실제로"
-#~ " 컨테이너를 할당 받지는 못한 상태입니다."
+#~ "잠시 기다리면 세 개의 연산 세션이 조회되는 것을 알 수 있습니다. 이 때, "
+#~ "Status 열을 자세히 보면 세 개 중 두 개 연산 세션의 상태는 RUNNING 이지만, 다"
+#~ "른 하나의 연산 세션은 PENDING 상태에 머물러 있는 것을 확인할 수 있습니다. "
+#~ "이 PENDING 세션은 작업 큐에 등록만 되어 있고 GPU 자원 부족으로 인해 실제로 "
+#~ "컨테이너를 할당 받지는 못한 상태입니다."
 
 #~ msgid ""
-#~ "Users of the open source version "
-#~ "can also purchase an installation and"
-#~ " support plan separately."
-#~ msgstr "오픈소스 무료 버전 사용자의 경우에도 유지보수 및 지원 플랜을 별도로 구입할 수 있습니다."
-
+#~ "Users of the open source version can also purchase an installation and "
+#~ "support plan separately."
+#~ msgstr ""
+#~ "오픈소스 무료 버전 사용자의 경우에도 유지보수 및 지원 플랜을 별도로 구입할 "
+#~ "수 있습니다."
