@@ -69,6 +69,7 @@ model.)
 
 Alternatively, you can run the ``nvidia-smi`` command from the web terminal to query the GPU usage history inside the container.
 
+
 Automated job scheduling
 ------------------------------------------------
 
@@ -172,6 +173,46 @@ command. You can see that PyTorch 1.5 version is installed.
 
 Like this, you can utilize various versions of major libraries such as
 TensorFlow and PyTorch through Backend.AI without unnecessary effort to install them.
+
+
+Convert a compute session to a new private Docker image
+-------------------------------------------------------
+
+If you want to convert a running compute session (container) to a new Docker image
+that you can use later to create a new compute session, you need to prepare your
+compute session environment and ask administrators to convert it.
+
+- First, prepare your compute session by installing the packages that you need
+  and adjust the configurations as you like.
+
+  .. note::
+
+     If you want to install OS packages, for example via ``apt`` command, it
+     usually requires the ``sudo`` privilege. Depending on the security policy
+     of the institute, you may not be allowed to use ``sudo`` inside a
+     container.
+
+     It is recommended to use :ref:`automount folder<using-automount-folder>` to
+     install :ref:`Python packages via pip<install_pip_pkg>`. However, if you
+     want to add Python packages in a new image, you should install them with
+     ``sudo pip install <package-name>`` to save them not in your home but in
+     the system directory. The contents in your home directory, usually
+     ``/home/work``, are not saved in converting a compute session to a new
+     Docker image.
+
+- When your compute session is prepared, please ask an administrator to convert
+  it to a new Docker image. You need to inform them the session name or ID and
+  your email address in the platform.
+- The administrator will convert your compute session to a new Docker image and
+  send you the full image name and tag.
+- You can manually enter the image name in the session launch dialog. The image
+  is private and not be revealed to other users
+
+  .. image:: session-creation-by-specifying-image-name.png
+     :width: 400
+     :align: center
+
+- A new compute session will be created using the new Docker image.
 
 
 Backend.AI Server Installation Guide
