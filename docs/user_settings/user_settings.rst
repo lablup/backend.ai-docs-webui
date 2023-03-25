@@ -65,7 +65,7 @@ copy the existing SSH public key. You can update SSH keypair by clicking
 GENERATE button at the bottom of the dialog. SSH public/private keys are
 randomly generated and stored as user information. Please note that the secret
 key cannot be checked again unless it is saved manually immediately after
-creation.   
+creation.
 
 .. image:: ssh_keypair_dialog.png
    :width: 400
@@ -78,15 +78,15 @@ creation.
    Backend.AI uses SSH keypair based on OpenSSH. On Windows, you may convert
    this into PPK key.
 
-From 22.09, Backend.AI WebUI supports adding your own ssh keypair in order to provide 
-flexibility such as accessing to a private repository. In order to add your own ssh keypair, click ``ENTER MANUALLY`` button. Then, you will see 
-two text area which corresponds to "public" and "private" key.   
+From 22.09, Backend.AI WebUI supports adding your own ssh keypair in order to provide
+flexibility such as accessing to a private repository. In order to add your own ssh keypair, click ``ENTER MANUALLY`` button. Then, you will see
+two text area which corresponds to "public" and "private" key.
 
 .. image:: add_ssh_keypair_manually_dialog.png
    :width: 400
    :align: center
 
-please enter the keys inside, and click ``SAVE`` button. Now you can access to backend.ai session using your own key. 
+please enter the keys inside, and click ``SAVE`` button. Now you can access to backend.ai session using your own key.
 
 .. image:: ssh_keypair_dialog_after.png
    :width: 400
@@ -109,13 +109,12 @@ etc.).
 EDIT USER CONFIG SCRIPT
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-You can write scripts to mount and run automatically when creating a compute
-session. Currently, three files can be edited by the user: ``.bashrc``,
-``.zshrc``, and ``.Renviron``. The scripts are saved for each user and can be
-used when certain automation tasks are required at the start of a compute
-session. For example, you can modify the ``.bashrc`` script to register desired
-alias or specify that certain files are always downloaded to a specific
-location.
+You can write some config scripts to replace the default ones in a compute
+session. Files like ``.bashrc``, ``.tmux.conf.local``, ``.vimrc``, etc. can be
+customized. The scripts are saved for each user and can be used when certain
+automation tasks are required. For example, you can modify the ``.bashrc``
+script to register your command aliases or specify that certain files are always
+downloaded to a specific location.
 
 Use the drop-down menu at the top to select the type of script you want to write
 and then write the content. You can save the script by
