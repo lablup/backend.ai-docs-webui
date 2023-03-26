@@ -123,13 +123,13 @@ on the configuration), so we recommend to use `Homebrew on Linux
 Homebrew can be configured as follows:
 
 - Create ``.linuxbrew`` folder in Data & Storage page.
-- Create a compute session (``.linuxbrew`` folder is automatically mounted).
-- Install Homebrew in the compute session.
+- Create a compute session (``.linuxbrew`` folder is automatically mounted at
+  ``/home/linuxbrew/.linuxbrew``).
+- Install Homebrew in the compute session, if not yet installed.
 
    .. code-block:: shell
 
       $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-      $ export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
 
 - Homebrew packages can be installed like:
 
@@ -137,9 +137,9 @@ Homebrew can be configured as follows:
 
       $ brew install hello
       $ hello
+      Hello, world!
 
 ``brew`` installs packages under ``/home/linuxbrew/.linuxbrew`` which is
-automatically symlinked to ``/home/work/.linuxbrew``. So, if you create a data
-folder named ``.linuxbrew``, which will be automatically mounted when creating a
-compute session, those installed packages can be kept after the compute session
-is destroyed and then reused for the next compute session.
+automatically mounted when ``.linuxbrew`` folder exists. So, if you create a
+automount folder named ``.linuxbrew``, Homebrew packages can be kept after the
+compute session is destroyed and then reused for the next compute session.

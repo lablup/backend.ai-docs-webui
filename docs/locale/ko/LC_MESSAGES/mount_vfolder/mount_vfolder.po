@@ -217,19 +217,23 @@ msgstr ""
 
 #: ../../mount_vfolder/mount_vfolder.rst:123
 msgid "Homebrew can be configured as follows:"
-msgstr " Homebrew는 다음과 같이 구성할 수 있습니다."
+msgstr "Homebrew는 다음과 같이 구성할 수 있습니다."
 
 #: ../../mount_vfolder/mount_vfolder.rst:125
 msgid "Create ``.linuxbrew`` folder in Data & Storage page."
 msgstr "Data & Storage 페이지에서 ``.linuxbrew`` 폴더 생성."
 
 #: ../../mount_vfolder/mount_vfolder.rst:126
-msgid "Create a compute session (``.linuxbrew`` folder is automatically mounted)."
-msgstr "연산 세션을 생성(``.linuxbrew`` 폴더가 자동으로 마운트)."
+msgid ""
+"Create a compute session (``.linuxbrew`` folder is automatically "
+"mounted at ``/home/linuxbrew/.linuxbrew``)."
+msgstr ""
+"연산 세션을 생성(``.linuxbrew`` 폴더가 자동으로 ``/home/linuxbrew/.linuxbrew`` "
+"위치에 마운트)."
 
 #: ../../mount_vfolder/mount_vfolder.rst:127
-msgid "Install Homebrew in the compute session."
-msgstr "연산 세션 내에서 Homebrew 설치."
+msgid "Install Homebrew in the compute session, if not yet installed."
+msgstr "연산 세션 내에서 Homebrew 설치(아직 설치하지 않은 경우)."
 
 #: ../../mount_vfolder/mount_vfolder.rst:134
 msgid "Homebrew packages can be installed like:"
@@ -238,16 +242,15 @@ msgstr "Homebrew 패키지는 다음과 같이설치할 수 있습니다:"
 #: ../../mount_vfolder/mount_vfolder.rst:141
 msgid ""
 "``brew`` installs packages under ``/home/linuxbrew/.linuxbrew`` which is "
-"automatically symlinked to ``/home/work/.linuxbrew``. So, if you create a data "
-"folder named ``.linuxbrew``, which will be automatically mounted when creating "
-"a compute session, those installed packages can be kept after the compute "
-"session is destroyed and then reused for the next compute session."
+"automatically mounted when ``.linuxbrew`` folder exists. So, if you "
+"create a automount folder named ``.linuxbrew``, Homebrew packages can "
+"be kept after the compute session is destroyed and then reused for "
+"the next compute session."
 msgstr ""
-"brew 는 패키지를 ``/home/linuxbrew/.linuxbrew`` 디렉토리 하위에 설치합니다. 이 "
-"디렉토리는 연산 세션 생성 시 자동으로 ``/home/work/.linuxbrew`` 에 심볼릭 링크"
-"로 연결됩니다. 따라서, ``.linuxbrew`` 라는 데이터 폴더를 생성해두면 연산 세션을 "
-"삭제하고 새로운 연산 세션을 생성하더라도 기존에 설치했던 패키지를 다시 사용할 "
-"수 있습니다."
+"``brew`` 는 패키지를 ``/home/linuxbrew/.linuxbrew`` 디렉토리 하위에 설치하는데, "
+"``.linuxbrew`` 라는 데이터 폴더가 있다면 연산 세션 생성 시 자동으로 그 위치에 마운트합니다. "
+"따라서, ``.linuxbrew`` 라는 자동 마운트 폴더를 생성해두면 연산 세션을 삭제하고 새로운 "
+"연산 세션을 생성하더라도 기존에 설치했던 Homebrew 패키지를 다시 사용할 수 있습니다."
 
 #~ msgid ""
 #~ "Every Vfolder in folder to mount list is visible if its storage host is "
