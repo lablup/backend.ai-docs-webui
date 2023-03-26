@@ -81,7 +81,10 @@ environment regardless of the type of compute session by using the Storage
 folder, which persists independent of session lifecycle, and the :ref:`automount
 folder<automount-folder>`.
 
-**Install Python packages via pip**
+.. _using-pip-with-automountfolder:
+
+Install Python packages via pip
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Creating a folder named ``.local`` allows a user to install Python user packages
 in that folder. This is because ``pip`` by default installs the packages in the
@@ -106,32 +109,37 @@ the ``tqdm`` package is installed is automatically mounted, so you can use the
    because the user's ``pip`` package is installed in the path specified in the
    ``PYTHONPATH``.
 
-**Install packages via Homebrew**
+.. _using-linuxbrew-with-automountfolder:
 
-Package managers like Ubuntu's ``apt`` or CentOS's ``yum`` usually require
-``sudo`` permissions. For security, ``sudo`` and ``root`` accesses are blocked
-by default in Backend.AI's compute session (it may be allowed depending on the
-configuration), so we recommend to use `Homebrew on Linux
+Install packages via Homebrew
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Package managers like Ubuntu ``apt`` or CentOS ``yum`` usually require the
+``root`` permission. For security reasons, ``sudo`` and ``root`` accesses are
+blocked by default in Backend.AI's compute session (it may be allowed depending
+on the configuration), so we recommend to use `Homebrew on Linux
 <https://docs.brew.sh/Homebrew-on-Linux>`_ which does not require ``sudo``.
-Homebrew can be installed and used in the following ways:
 
-- Create ``.linuxbrew`` folder in Data & Storage page
-- Create a compute session (``.linuxbrew`` folder is automatically mounted)
-- Install Homebrew on Linux
+Homebrew can be configured as follows:
 
-.. code-block:: shell
+- Create ``.linuxbrew`` folder in Data & Storage page.
+- Create a compute session (``.linuxbrew`` folder is automatically mounted at
+  ``/home/linuxbrew/.linuxbrew``).
+- Install Homebrew in the compute session, if not yet installed.
 
-   sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
-   export PATH=/home/work/.linuxbrew/bin:$PATH
-   brew
+   .. code-block:: shell
 
-- Install package
+      $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-.. code-block:: shell
+- Homebrew packages can be installed like:
 
-   brew install fortune
-   fortune
+   .. code-block:: shell
 
-You can manage various settings using the automount folder in the same way as
-above. More details can be found on the `Backend.AI wiki
-<https://github.com/lablup/backend.ai/blob/master/docs/install/install-user-programs.rst>`_.
+      $ brew install hello
+      $ hello
+      Hello, world!
+
+``brew`` installs packages under ``/home/linuxbrew/.linuxbrew`` which is
+automatically mounted when ``.linuxbrew`` folder exists. So, if you create a
+automount folder named ``.linuxbrew``, Homebrew packages can be kept after the
+compute session is destroyed and then reused for the next compute session.
