@@ -362,6 +362,48 @@ beginning if you want to keep it.
    :width: 400
    :align: center
 
+Idle Checks
+-----------
+
+Backend.AI supports three types of inactivity (idleness) criterion for automatic garbage
+collection of compute sessions: Max Session Lifetime, Network Idle Timeout, and Utilization
+Checker.
+
+Idle checkers(inactivity criterion) will be displayed in the idle checks column of the session list.
+
+.. image:: idle_checks_column.png
+
+The meaning of idle checkers is as follows, and can also be viewed by clicking the info icon in the
+idle checks column.
+
+* Max Session Lifetime: Force-terminate sessions after this time from creation. It prevents the
+  session from running infinitely.
+* Network Idle Timeout: Force-terminate sessions that do not exchange data with the user (browser
+  or web app) after this time. Traffic between the user and the compute session continuously occurs
+  when the user interacts with an app, like terminal or Jupyter, by keyboard input, Jupyter cell
+  creation, etc. Jupyter cell creation, etc. If there is no interaction for a certain period, the
+  condition of garbage collection will be met. Even if there is a process executing a job in the
+  compute session, it is subject to termination if there is no user interaction.
+* Utilization Checker: Force-terminate sessions based only on the utilization of resources allocated
+  to them.
+
+  - Grace Period: Utilization idle checker will be activated after this initial grace time. During 
+    this time, sessions are not terminated even if utilization is low.
+  - Utilization Threshold: Threshold criteria of each compute resource. When one or more resource of
+    a compute session does not exceed the configured threshold criteria for a certain time, the session
+    will be garbage collected (terminated). For example, if you set 1% of CUDA utilization threshold,
+    compute sessions that show less than 1% CUDA GPU utilization, for a certain duration of time, will
+    be destroyed. Resources with empty values are excluded from the garbage collection criteria.
+
+In case of the utilization checker, if you hover your mouse over the Utilization Checker, a tooltip
+that display the utilization and threshold will appear. The closer the utilization is to the threshold
+(the lower the usage), the more the font color changes in the order of red, yellow, and black.
+
+.. image:: utilization_checker.png
+
+.. note::
+   Depending on the environment settings, idle checkers and resource types of utilization checker's
+   tooltip may be different.
 
 .. _set-environment-variables:
 
