@@ -359,19 +359,21 @@ move the data to the mounted folder or upload it to the mounted folder from the
 beginning if you want to keep it.
 
 .. image:: session_destroy_dialog.png
-   :width: 400
+   :width: 500
    :align: center
 
-Idle Checks
------------
+Idleness Checks
+---------------
 
-Backend.AI supports three types of inactivity (idleness) criterion for automatic garbage
+Backend.AI supports three types of inactivity (idleness) criteria for automatic garbage
 collection of compute sessions: Max Session Lifetime, Network Idle Timeout, and Utilization
 Checker.
 
 Idle checkers(inactivity criterion) will be displayed in the idle checks column of the session list.
 
 .. image:: idle_checks_column.png
+   :width: 200
+   :align: center
 
 The meaning of idle checkers is as follows, and can also be viewed by clicking the info icon in the
 idle checks column.
@@ -387,7 +389,7 @@ idle checks column.
 * Utilization Checker: Force-terminate sessions based only on the utilization of resources allocated
   to them.
 
-  - Grace Period: Utilization idle checker will be activated after this initial grace time. During 
+  - Grace Period: Utilization idle checker will be activated after this initial grace time. During
     this time, sessions are not terminated even if utilization is low.
   - Utilization Threshold: Threshold criteria of each compute resource. When one or more resource of
     a compute session does not exceed the configured threshold criteria for a certain time, the session
@@ -395,15 +397,18 @@ idle checks column.
     compute sessions that show less than 1% CUDA GPU utilization, for a certain duration of time, will
     be destroyed. Resources with empty values are excluded from the garbage collection criteria.
 
-In case of the utilization checker, if you hover your mouse over the Utilization Checker, a tooltip
-that display the utilization and threshold will appear. The closer the utilization is to the threshold
-(the lower the usage), the more the font color changes in the order of red, yellow, and black.
+If you hover your mouse over the Utilization Checker, a tooltip displays the
+utilization and threshold will appear. As the current utilization approaches to the
+threshold (towards lower usage), the font color changes to yellow, and then red.
 
 .. image:: utilization_checker.png
+   :width: 250
+   :align: center
 
 .. note::
-   Depending on the environment settings, idle checkers and resource types of utilization checker's
-   tooltip may be different.
+   Depending on the environment settings, idle checkers and resource types of
+   utilization checker's tooltip may be different.
+
 
 .. _set-environment-variables:
 
@@ -453,27 +458,33 @@ If you want to delete the whole variables and value, please click DELETE ALL but
 Save container commit
 ---------------------
 
-From 22.09, Backend.AI now support container commit feature.
-Since one or more sessions correspond to spawned container when executed,
-container commit will save all information stored in sessions.
-When you click the download button in control pane of ``RUNNING`` session,
-you can see the information of container, corresponds to the selected row(session).
+From 22.09, Backend.AI supports container commit feature. Commiting a
+``RUNNING`` session will save the current state of the main container as a new
+image. Clicking the commit button in the control pane of ``RUNNING`` session
+will display a dialog to show the information of the session. After checking the
+information, you can click the confirmation button to convert the container to
+a new image.
 
 .. image:: container_commit.png
    :width: 350
    :align: center
    :alt: Container commit confirmation
 
-After clicking commit button in the dialog, Backend.AI internally requests docker to create container commit as ``tar.gz`` to be stored into
-specified path. Please note that It's not available to access directly in your local environment. Stored commit is saved to the agent node.
+After clicking commit button in the dialog, Backend.AI internally requests
+Docker to create a new image as ``tar.gz`` to be stored into a specific
+host path. Please note that it's not available to access directly in your local
+environment. Users need to contact the administrator to get the image file.
 
 .. image:: container_commit_ongoing.png
   :align: center
   :alt: Container commit ongoing
 
 .. note::
-   Currently, Backend.AI supports container commit when session is ``INTERACTIVE`` mode only. During container commit progress, you may not be able to terminate the session to prevent unexpected error on container commit.
-   If you want to stop ongoing container commit, please check the session, and force-terminate the session.
+   Currently, Backend.AI supports container commit when session is
+   ``INTERACTIVE`` mode only. During container commit process, you may not be
+   able to terminate the session to prevent unexpected error. If you want to
+   stop the ongoing process, please check the session, and force-terminate
+   the session.
 
 
 .. _optimizing-accelerated-computing:
