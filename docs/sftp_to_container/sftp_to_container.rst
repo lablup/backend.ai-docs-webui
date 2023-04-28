@@ -7,21 +7,22 @@ SSH/SFTP Connection to a Compute Session
 Backend.AI supports SSH/SFTP connection to the created compute sessions
 (containers). In this section, we will learn how to do it.
 
-.. note::
-   SSH/SFTP connection is supported only on desktop apps, but not on web-based
-   Web-UI. Desktop app can be downloaded a panel from the Summary page. Using
-   this panel, the compatible version will be downloaded automatically.
+.. .. note::
+..    SSH/SFTP connection is supported only on desktop apps, but not on web-based
+..    Web-UI. Desktop app can be downloaded a panel from the Summary page. Using
+..    this panel, the compatible version will be downloaded automatically.
 
-   .. image:: app_download_panel.png
-      :width: 350
-      :align: center
+..    .. image:: app_download_panel.png
+..       :width: 350
+..       :align: center
 
-   You can also download the app from
-   https://github.com/lablup/backend.ai-webui/releases. Make sure to download
-   the compatible version of the Web-UI in this case. You can check the Web-UI
-   version by clicking on the "About Backend.AI" sub-menu located in the
-   preference menu on the upper-right side of the GUI.
+..    You can also download the app from
+..    https://github.com/lablup/backend.ai-webui/releases. Make sure to download
+..    the compatible version of the Web-UI in this case. You can check the Web-UI
+..    version by clicking on the "About Backend.AI" sub-menu located in the
+..    preference menu on the upper-right side of the GUI.
 
+.. _sftp_connection_for_linux_and_mac:
 
 For Linux / Mac
 ----------------------------------------------------
@@ -89,6 +90,13 @@ each FTP client manual for details.
    that folder and append it with the contents of your SSH public key, you can
    connect by SSH/SFTP through your own SSH private key without having to
    download the ``id_container`` after creating a compute session.
+
+.. note::
+   If you receive the following warning message, try again after changing the
+   permission of the ``id_container`` to 600. (``chmod 600 <id_container path>``) 
+
+   .. image:: bad_permissions.png
+      :alt: Permissions Warning Message
 
 
 For Windows / FileZilla
@@ -174,7 +182,7 @@ For convenience, we set the hostname to ``vscode``. It can be changed to any ali
 
    Host vscode
      HostName 127.0.0.1
-     Port 39447  # write down the port number that you remembered
+     Port 30732  # write down the port number that you remembered
      User work
      ForwardAgent yes
      StrictHostKeyChecking no
