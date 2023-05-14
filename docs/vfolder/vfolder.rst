@@ -95,7 +95,7 @@ well. For more detailed file operations, you can mount this folder when creating
 a compute session, and then use a service like Terminal or Jupyter Notebook to
 do it.
 
-.. image:: vfolder_explorer.png
+.. image:: folderexplorer_with_filebrowser.png
    :alt: File explorer of a storage folder
 
 You can create a new directory on the current path with the NEW FOLDER button
@@ -199,8 +199,7 @@ Execute FileBrowser from folder explorer dialog in Data & Storage page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Go to the Data & Storage page and open the file explorer dialog of target
-data folder. Click the folder icon in the Control column to the right of the
-data folder to open the file explorer.
+data folder. Click the folder icon or the folder name to open the file explorer.
 
 .. image:: first_step_to_access_filebrowser.png
    :alt: first step to access FileBrowser
@@ -324,6 +323,47 @@ You will see that moving operation is successfully finished.
    FileBrowser is provided via application inside a compute session currently.
    We are planning to update FileBrowser so that it can run independently
    without creating a session.
+
+Using SFTP Server
+-----------------
+
+From 22.09, Backend.AI supports SSH / SFTP file upload from both desktop app and
+web-based Web-UI. The SFTP server allows you to upload files quickly through reliable
+data streams.
+
+.. note::
+   Depending on the system settings, running SFTP server from the file dialog may not
+   be allowed.
+
+Execute SFTP server from folder explorer dialog in Data & Storage page
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Go to the Data & Storage page and open the file explorer dialog of target data folder.
+Click the folder icon or the folder name to open the file explorer.
+
+Click RUN SFTP SERVER button in the upper-right corner of the explorer.
+
+.. image:: folderexplorer_with_filebrowser.png
+   :alt: Folder explorer with SFTP Server
+
+You can see the SSH / SFTP connection dialog. And a new SFTP session will be created
+automatically. (This session will not affect resource occupancy.)
+
+.. image:: SSH_SFTP_connection.png
+   :height: 500
+   :align: center
+   :alt: SSH / SFTP connection dialog
+
+For the SSH connection, click "DOWNLOAD SSH KEY" button to download the SSH private key
+(``id_container``). Also, remember the host and port number. Then, you can connect to SFTP server
+using the Connection Example code written in the dialog, or you can connect to SSH / SFTP
+by referring to the following :ref:`link<sftp_connection_for_linux_and_mac>`.
+
+.. note::
+   If you upload your SSH keypair, the ``id_container`` will be set with your
+   own SSH private key. So, you don't need to download it every time you
+   want to connect via SSH to your container. Please refer to
+   :ref:`manageing user's SSH keypair<user-ssh-keypair-management>`.
 
 
 Setting quota on XFS
