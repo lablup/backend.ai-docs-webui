@@ -351,10 +351,11 @@ automatically. (This session will not affect resource occupancy.)
 
 .. image:: SSH_SFTP_connection.png
    :height: 500
+   :align: center
    :alt: SSH / SFTP connection dialog
 
 For the SSH connection, click "DOWNLOAD SSH KEY" button to download the SSH private key
-(``id_container``). Also, remember the port number. Then, you can connect to SFTP server
+(``id_container``). Also, remember the host and port number. Then, you can connect to SFTP server
 using the Connection Example code written in the dialog, or you can connect to SSH / SFTP
 by referring to the following :ref:`link<sftp_connection_for_linux_and_mac>`.
 
