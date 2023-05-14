@@ -54,6 +54,8 @@ before the page is refreshed.
    WebUI is open sourced, anyone who willing to make the translation better
    can contribute: https://github.com/lablup/backend.ai-webui.
 
+.. _user-ssh-keypair-management:
+
 SSH Keypair Management
 ^^^^^^^^^^^^^^^^^^^^^^
 

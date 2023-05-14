@@ -359,6 +359,11 @@ For the SSH connection, click "DOWNLOAD SSH KEY" button to download the SSH priv
 using the Connection Example code written in the dialog, or you can connect to SSH / SFTP
 by referring to the following :ref:`link<sftp_connection_for_linux_and_mac>`.
 
+.. note::
+   If you upload your SSH keypair, the ``id_container`` will be set with your
+   own SSH private key. So, you don't need to download it every time you
+   want to connect via SSH to your container. Please refer to
+   :ref:`manageing user's SSH keypair<user-ssh-keypair-management>`.
 
 
 Setting quota on XFS
