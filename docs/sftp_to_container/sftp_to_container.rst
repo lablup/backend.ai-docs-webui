@@ -7,20 +7,24 @@ SSH/SFTP Connection to a Compute Session
 Backend.AI supports SSH/SFTP connection to the created compute sessions
 (containers). In this section, we will learn how to do it.
 
-.. .. note::
-..    SSH/SFTP connection is supported only on desktop apps, but not on web-based
-..    Web-UI. Desktop app can be downloaded a panel from the Summary page. Using
-..    this panel, the compatible version will be downloaded automatically.
+.. note::
+   SSH/SFTP connection is supported through Desktop apps in general. 
+   Desktop app can be downloaded a panel from the Summary page. Using
+   this panel, the compatible version will be downloaded automatically.   
+   Although from 23.03 version we also support SSH/SFTP connection via 
+   web browser environment, but It's only used for mass uploading files.   
+   Therefore, If you want to use SSH/SFTP connection such as model-serving or etc,
+   using desktop app is highly recommended.
 
-..    .. image:: app_download_panel.png
-..       :width: 350
-..       :align: center
+   .. image:: app_download_panel.png
+      :width: 350
+      :align: center
 
-..    You can also download the app from
-..    https://github.com/lablup/backend.ai-webui/releases. Make sure to download
-..    the compatible version of the Web-UI in this case. You can check the Web-UI
-..    version by clicking on the "About Backend.AI" sub-menu located in the
-..    preference menu on the upper-right side of the GUI.
+   You can also download the app from
+   https://github.com/lablup/backend.ai-webui/releases. Make sure to download
+   the compatible version of the Web-UI in this case. You can check the Web-UI
+   version by clicking on the "About Backend.AI" sub-menu located in the
+   preference menu on the upper-right side of the GUI.
 
 .. _sftp_connection_for_linux_and_mac:
 
