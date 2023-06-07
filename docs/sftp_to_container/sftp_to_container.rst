@@ -8,8 +8,9 @@ Backend.AI supports SSH/SFTP connection to the created compute sessions
 (containers). In this section, we will learn how to do it.
 
 .. note::
-   SSH/SFTP connection is supported only on desktop apps, but not on web-based
-   Web-UI. Desktop app can be downloaded a panel from the Summary page. Using
+   SSH/SFTP connection feature is supported through a WebUI Desktop application. 
+   Currently web-based WebUI does not support this feature due to limitations of file system
+   access on browser-level. Desktop app can be downloaded a panel from the Summary page. Using
    this panel, the compatible version will be downloaded automatically.
 
    .. image:: app_download_panel.png
