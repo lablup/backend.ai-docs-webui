@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-12 22:39+0900\n"
+"POT-Creation-Date: 2023-03-06 17:26+0900\n"
 "PO-Revision-Date: 2021-03-02 18:31+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko_KR\n"
@@ -61,8 +61,8 @@ msgid ""
 msgstr "About Backend.AI: Backend.AI Web-UI의 버전, 라이선스 종류 등과 같은 정보를 표시 합니다."
 
 #: ../../summary/summary.rst:26
-msgid "My Account: Show keypair and Change user name and password"
-msgstr "My Account: 키페어를 보여주고, 사용자의 이름과 비밀번호를 변경합니다."
+msgid "My Account: Check/Update information of current login user"
+msgstr "사용자 정보 변경: 현재 로그인된 사용자 정보를 확인/변경합니다."
 
 #: ../../summary/summary.rst:27
 msgid "Preferences: Go to user settings page"
@@ -76,7 +76,7 @@ msgstr "Logs / Erros: 로그 페이지로 이동합니다. 클라이언트 측�
 
 #: ../../summary/summary.rst:30
 msgid ""
-"Logout: Log out. Users can also logout by clicking the icon on the far "
+"Log Out: Log out. Users can also logout by clicking the icon on the far "
 "right of the top bar."
 msgstr "Logout: 로그아웃 합니다. 로그아웃은 상단 바의 가장 우측의 아이콘을 클릭해도 할 수 있습니다."
 
@@ -90,15 +90,23 @@ msgstr "각 항목은 다음과 같은 의미를 가집니다."
 
 #: ../../summary/summary.rst:41
 msgid "Full Name: User's name (up to 64 characters)"
-msgstr "Full Name: 사용자의 이름 (최대 64 자)"
+msgstr "Full Name: 사용자의 이름 (최대 64 자)."
 
 #: ../../summary/summary.rst:42
+msgid "Access Key: User's access key, pairs up with secret key below."
+msgstr "접근 키: 사용자의 접근 키로, 아래 비밀 키와 쌍을 이룹니다."
+
+#: ../../summary/summary.rst:43
+msgid "Secret Key: User's secret key."
+msgstr "비밀 키: 사용자의 비밀 키."
+
+#: ../../summary/summary.rst:44
 msgid ""
 "Original password: Original password. Click the right view icon to see "
 "the input contents."
-msgstr "Original password: 원래 비밀번호. 우측 보기 아이콘을 클릭하면 입력 내용을 볼 수 있음."
+msgstr "Original password: 원래 비밀번호. 우측 보기 아이콘을 클릭하면 입력 내용을 볼 수 있습니다."
 
-#: ../../summary/summary.rst:44
+#: ../../summary/summary.rst:46
 msgid ""
 "New password: New password (8 characters or more containing at least 1 "
 "alphabet, number, and symbol). Click the right view icon to see the input"
@@ -106,27 +114,85 @@ msgid ""
 msgstr ""
 "New password: 새로운 비밀번호 (영문자, 숫자, 기호가 1 개 이상 포함 된 8 글자 이상).\n"
 "\n"
-"우측 보기 아이콘을 클릭하면 입력 내용을 볼 수 있음. Original password 에 입력한 값과 같아야 합니다."
+"우측 보기 아이콘을 클릭하면 입력 내용을 볼 수 있으며, Original password 에 입력한 값과 같아야 합니다."
 
-#: ../../summary/summary.rst:48
+#: ../../summary/summary.rst:49
+msgid ""
+"2FA Enabled: 2FA activation. The user needs to enter the OTP code when "
+"logging in if it is checked."
+msgstr ""
+"2FA Enabled: 이중 인증(2FA) 사용 여부. 이중 인증이 활성화 되어 있으면 로그인 시 OTP 코드를 반드시 입력해야 "
+"합니다."
+
+#: ../../summary/summary.rst:53
+msgid ""
+"Depending on the plugin settings, the ``2FA Enabled`` column might be "
+"invisible. In that case, please contact administrator of your system."
+msgstr "플러그인 설정에 따라 ``2FA Enabled`` 열은 보이지 않을 수도 있습니다. 이 경우, 시스템 관리자에게 문의하세요."
+
+#: ../../summary/summary.rst:56
 msgid ""
 "Enter the desired value and click the UPDATE button to update the user "
 "information."
 msgstr "원하는 값을 입력하고 UPDATE 버튼을 클릭하면 사용자 정보를 갱신할 수 있습니다."
 
-#: ../../summary/summary.rst:53
+#: ../../summary/summary.rst:60
+msgid "2FA Setup"
+msgstr "이중 인증 설정"
+
+#: ../../summary/summary.rst:61
+msgid "If you activate the ``2FA Enabled`` switch, the following dialog appears."
+msgstr "``2FA Enabled`` 스위치를 켜면 다음과 같은 다이얼로그가 나옵니다."
+
+#: ../../summary/summary.rst:67
+msgid ""
+"Turn on the 2FA application you use and scan the QR code or manually "
+"enter the verification code. There are many 2FA-enabled applications, "
+"such as Google Authenticator, 2STP, 1Password, and Bitwarden."
+msgstr ""
+"사용자가 사용하는 이중 인증 애플리케이션을 켜고 QR 코드 스캔 혹은 인증 코드를 직접 입력합니다. 이중 인증 지원 애플리케이션은 "
+"Google Authenticator, 2STP, 1Password, Bitwarden 등이 있습니다."
+
+#: ../../summary/summary.rst:71
+msgid ""
+"Then enter the 6-digit code from the item added to your 2FA application "
+"into the dialog above. 2FA is activated when you press the CONFIRM "
+"button."
+msgstr ""
+"이중 인증 애플리케이션에 추가된 항목의 6자리 코드를 위 다이얼로그에 입력합니다. CONFIRM 버튼을 누르면 이중 인증 활성화가 "
+"완료됩니다."
+
+#: ../../summary/summary.rst:74
+msgid ""
+"When you log in later, if you enter an email and password, an additional "
+"field appears asking for the OTP code."
+msgstr "이후 해당 사용자가 로그인할 때 이메일과 비밀번호를 입력하면 OTP 코드를 묻는 추가 필드가 나타납니다."
+
+#: ../../summary/summary.rst:80
+msgid ""
+"To log in, you must open the 2FA application and enter a 6-digit code in "
+"the One-time password field."
+msgstr "이중 인증 애플리케이션을 열고 One-time password 필드에 6자리 코드를 입력해야 로그인이 가능합니다."
+
+#: ../../summary/summary.rst:82
+msgid ""
+"If you want to disable 2FA, turn off the ``2FA Enabled`` switch and click"
+" the confirm button in the following dialog."
+msgstr "이중 인중을 비활성화하고 싶다면, ``2FA Enabled`` 스위치를 끄고 위와 같은 다이얼로그에서 CONFIRM 버튼을 누르세요."
+
+#: ../../summary/summary.rst:90
 msgid "Summary panel"
 msgstr "Summary 패널"
 
-#: ../../summary/summary.rst:58
+#: ../../summary/summary.rst:95
 msgid "Various convenience panels are located under the top bar."
 msgstr "상단 바 아래에는 각종 편의 패널이 위치합니다."
 
-#: ../../summary/summary.rst:61
+#: ../../summary/summary.rst:98
 msgid "Start Menu"
-msgstr ""
+msgstr "시작"
 
-#: ../../summary/summary.rst:63
+#: ../../summary/summary.rst:100
 msgid ""
 "You can start a compute session by clicking on the START button. It is "
 "the same as the feature on the Sessions page, and is a shortcut button "
@@ -135,7 +201,7 @@ msgstr ""
 "START 버튼을 클릭하여 연산 세션을 시작할 수 있습니다. Sessions 페이지에 있는 연산 세션 생성 기능과 동일하며, 처음 "
 "로그인 하자마자 바로 연산 세션을 생성할 수 있도록 돕는 단축 버튼입니다."
 
-#: ../../summary/summary.rst:67
+#: ../../summary/summary.rst:104
 msgid ""
 "Below the START button are shortcut links to the Data & Storage (Upload "
 "files), Users, and Maintenance pages. Among these, the links to the Users"
@@ -144,11 +210,11 @@ msgstr ""
 "START 버튼 하단에는 Data & Storage, Users, Maintenance 페이지로 이동할 수 있는 단 축 링크가 "
 "있습니다. 이 중 Users, Maintenance 페이지로 이동하는 링크는 관리자 계정으로 로그인 했을 때만 보입니다."
 
-#: ../../summary/summary.rst:72
+#: ../../summary/summary.rst:109
 msgid "Resource Statistics"
-msgstr ""
+msgstr "자원 사용량"
 
-#: ../../summary/summary.rst:74
+#: ../../summary/summary.rst:111
 msgid ""
 "It shows the total amount of resources the user can allocate and the "
 "amount of resources currently allocated. You can check the user's CPU, "
@@ -161,7 +227,7 @@ msgstr ""
 "점유량 및 할당량을 각각 확인할 수 있습니다. 또한, Sessions 슬라이더에서 사용자가 동시에 생성 가능한 연산 세션의 수 및 "
 "현재 작동 중인 연산 세션의 수를 확인할 수 있습니다."
 
-#: ../../summary/summary.rst:80
+#: ../../summary/summary.rst:117
 msgid ""
 "You can change the resource group by clicking the Resource Group field at"
 " the top. Resource group is a concept to group multiple Agent nodes as a "
@@ -177,11 +243,11 @@ msgstr ""
 "경우, 각 자원 그룹 별로 특정 사용자 그룹에 독접 할당하는 등의 설정이 가능합니다. Agent 노드가 한 대인 경우에는 하나의 "
 "자원 그룹만 보이는 것이 보통입니다. 자원 그룹을 변경하면, 해당 자원의 자원 보유량에 따라 자원량이 변할 수 있습니다."
 
-#: ../../summary/summary.rst:89
+#: ../../summary/summary.rst:126
 msgid "System Resources"
-msgstr ""
+msgstr "시스템 자원"
 
-#: ../../summary/summary.rst:91
+#: ../../summary/summary.rst:128
 msgid ""
 "It shows the number of Agent worker nodes connected to the Backend.AI "
 "system and the total number of compute sessions currently created. You "
@@ -193,21 +259,21 @@ msgstr ""
 "노드의 CPU, 메모리, GPU 실제 사용량 (utilization) 도 확인할 수 있습니다. 일반 사용자로 로그인 한 경우에는 "
 "자신이 생성한 연산 세션의 숫자만 표시됩니다."
 
-#: ../../summary/summary.rst:97
+#: ../../summary/summary.rst:134
 msgid "Announcement"
-msgstr ""
+msgstr "공지"
 
-#: ../../summary/summary.rst:99
+#: ../../summary/summary.rst:136
 msgid ""
 "Announcements will be displayed here. Announcements can be made through a"
 " separate admin UI (Control-Panel)."
 msgstr "공지사항이 있을 경우 여기에 표시됩니다. 공지사항은 별도의 관리자 Control-Panel GUI를 통해서 작성 가능 합니다."
 
-#: ../../summary/summary.rst:103
+#: ../../summary/summary.rst:140
 msgid "Invitation"
-msgstr ""
+msgstr "초대"
 
-#: ../../summary/summary.rst:105
+#: ../../summary/summary.rst:142
 msgid ""
 "If another user has shared their storage folder to you, it will be "
 "displayed here. If you accept the share request, you can view and access "
@@ -218,4 +284,45 @@ msgstr ""
 "다른 사용자가 저장 폴더를 공유한 경우 여기에 표시됩니다. 공유 요청을 수락하면 Data & Storage 폴더에서 공유 받은 "
 "폴더를 조회하고 접근할 수 있습니다. 접근 권한은 공유한 사용자가 지정한 설정에 따릅니다. 물론, 공유 요청을 거절할 수도 "
 "있습니다."
+
+#: ../../summary/summary.rst:148
+msgid "Download Backend.AI Web UI App"
+msgstr "Backend.AI WebUI 앱 다운로드"
+
+#: ../../summary/summary.rst:150
+msgid ""
+"Backend.AI WebUI supports desktop applications. By using desktop app, you"
+" can use desktop app specific features, such as :ref:`SSH/SFTP connection"
+" to a Compute Session<ssh-sftp-container>` . For now Backend.AI WebUI "
+"provides desktop application with following OS:"
+msgstr ""
+"Backend.AI WebUI 는 데스크톱 앱도 지원합니다. 데스크톱 앱을 사용하면, 데스크톱 앱 전용 기능을 사용할 수 있는데, "
+"그 예로 :ref:`연산 세션에 SSH/SFTP 접속하기<ssh-sftp-container>` 가 있습니다. Backend.AI "
+"WebUI 에서는 아래 운영체제에서 실행가능한 데스크톱 앱을 지원합니다. "
+
+#: ../../summary/summary.rst:154
+msgid "Windows"
+msgstr ""
+
+#: ../../summary/summary.rst:155
+msgid "Linux"
+msgstr ""
+
+#: ../../summary/summary.rst:156
+msgid "Mac"
+msgstr ""
+
+#: ../../summary/summary.rst:159
+msgid ""
+"When you click the button that match with your local environment (e.g. "
+"OS, Architecture), It will automatically downloads the same version of "
+"current webUI version. If you want to download later or former version of"
+" WebUI as a desktop app, please visit `here "
+"<https://github.com/lablup/backend.ai-webui/releases?page=1>`_ and "
+"download the desired version(s)."
+msgstr ""
+"여러분의 실행 환경 (e.g. 운영체제, 아키텍쳐)과 일치하는 버튼을 클릭하면, 현재 WebUI 버전과 일치하는 데스크톱 앱을 "
+"다운로드하게 됩니다. 만일 더 최신 또는 이전 버전의 WebUI 를 데스크톱 앱으로 받고자 할 경우 `여기 "
+"<https://github.com/lablup/backend.ai-webui/releases?page=1>`_ 를 방문해서 원하는"
+" 버전을 다운로드 받을 수 있습니다."
 

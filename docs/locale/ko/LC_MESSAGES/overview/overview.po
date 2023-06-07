@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-12 22:39+0900\n"
+"POT-Creation-Date: 2022-12-07 02:43+0900\n"
 "PO-Revision-Date: 2021-03-02 20:43+0900\n"
 "Last-Translator: \n"
 "Language: ko\n"
@@ -236,7 +236,7 @@ msgid "(Enterprise) Fractional GPU sharing & scaling"
 msgstr ""
 
 #: ../../overview/overview.rst:104
-msgid "Multiple CUDA library version support (8.0 to 11.1)"
+msgid "Multiple CUDA library version support (8.0 to 11.5)"
 msgstr ""
 
 #: ../../overview/overview.rst:106
@@ -328,7 +328,7 @@ msgid "EFS, NFS, SMB and distributed file system (CephFS, GlusterFS, HDFS, etc)"
 msgstr ""
 
 #: ../../overview/overview.rst:141
-msgid "(Enterprise) Provide storage solution integration:"
+msgid "(Enterprise) Storage solution integration:"
 msgstr ""
 
 #: ../../overview/overview.rst:143
@@ -339,134 +339,166 @@ msgstr ""
 msgid "NetApp ONTAP & NetApp XCP"
 msgstr ""
 
+#: ../../overview/overview.rst:145
+msgid "Weka.io"
+msgstr ""
+
 #: ../../overview/overview.rst:146
-msgid "Access control to data by user/project"
+msgid "Dell EMC"
 msgstr ""
 
 #: ../../overview/overview.rst:148
-msgid "Developer support"
-msgstr ""
-
-#: ../../overview/overview.rst:148
-msgid "Universal programming languages (Python, C/C++, etc)"
+msgid "Fine-grained Access control to data by user/project"
 msgstr ""
 
 #: ../../overview/overview.rst:150
+msgid "Developer support"
+msgstr ""
+
+#: ../../overview/overview.rst:150
+msgid "Universal programming languages (Python, C/C++, etc)"
+msgstr ""
+
+#: ../../overview/overview.rst:152
 msgid "Interactive web apps (Terminal, Jupyter, VSCode, etc)"
 msgstr ""
 
-#: ../../overview/overview.rst:152
+#: ../../overview/overview.rst:154
 msgid "For data scientists"
 msgstr ""
 
-#: ../../overview/overview.rst:152
+#: ../../overview/overview.rst:154
 msgid "NGC (NVIDIA GPU CLoud) image integration"
 msgstr ""
 
-#: ../../overview/overview.rst:154
+#: ../../overview/overview.rst:156
 msgid "Popular ML libraries: TensorFlow, PyTorch, etc"
 msgstr ""
 
-#: ../../overview/overview.rst:156
+#: ../../overview/overview.rst:158
 msgid "Concurrent user of multiple versions of libraries"
 msgstr ""
 
-#: ../../overview/overview.rst:158
+#: ../../overview/overview.rst:160
 msgid "Periodic update of ML libraries"
 msgstr ""
 
-#: ../../overview/overview.rst:160
+#: ../../overview/overview.rst:162
 msgid "Customer support"
 msgstr ""
 
-#: ../../overview/overview.rst:160
+#: ../../overview/overview.rst:162
 msgid "On-site installation (bare-metal / VM)"
 msgstr ""
 
-#: ../../overview/overview.rst:162
+#: ../../overview/overview.rst:164
 msgid "Configuration support (on-premise + cloud)"
 msgstr ""
 
-#: ../../overview/overview.rst:164
+#: ../../overview/overview.rst:166
 msgid "Admin/user training"
 msgstr ""
 
-#: ../../overview/overview.rst:166
+#: ../../overview/overview.rst:168
 msgid "Support for updating to latest version"
 msgstr ""
 
-#: ../../overview/overview.rst:168
+#: ../../overview/overview.rst:170
 msgid "Priority development and escalation"
 msgstr ""
 
-#: ../../overview/overview.rst:170
+#: ../../overview/overview.rst:172
 msgid "Customized container image / kernel or kernel repository"
 msgstr ""
 
-#: ../../overview/overview.rst:176
+#: ../../overview/overview.rst:178
 msgid "Accessible menu by user role"
 msgstr "사용자 역할 별 접근 가능한 메뉴 안내"
 
-#: ../../overview/overview.rst:180
+#: ../../overview/overview.rst:182
 msgid "Pages with ``*`` mark are in Administration menu."
 msgstr "``*`` 표시가 붙은 페이지는 관리자용 메뉴입니다."
 
-#: ../../overview/overview.rst:181
+#: ../../overview/overview.rst:183
 msgid "Features only for admin are listed in :ref:`admin menu <admin-menu>`."
 msgstr "관리자 전용 기능은 :ref:`어드민 전용 메뉴 <admin-menu>` 에서 확인할 수 있습니다."
 
-#: ../../overview/overview.rst:184
+#: ../../overview/overview.rst:186
 msgid "page \\\\ role"
 msgstr "페이지 \\\\ 역할"
 
-#: ../../overview/overview.rst:184
+#: ../../overview/overview.rst:186
 msgid "user"
 msgstr "일반 사용자"
 
-#: ../../overview/overview.rst:184
+#: ../../overview/overview.rst:186
 msgid "admin"
 msgstr "어드민"
 
-#: ../../overview/overview.rst:186
+#: ../../overview/overview.rst:188
 msgid "Summary"
 msgstr "요약 (Summary)"
 
-#: ../../overview/overview.rst:186 ../../overview/overview.rst:188
-#: ../../overview/overview.rst:190 ../../overview/overview.rst:192
-#: ../../overview/overview.rst:194 ../../overview/overview.rst:196
-#: ../../overview/overview.rst:198 ../../overview/overview.rst:200
+#: ../../overview/overview.rst:188 ../../overview/overview.rst:190
+#: ../../overview/overview.rst:192 ../../overview/overview.rst:194
+#: ../../overview/overview.rst:196 ../../overview/overview.rst:198
+#: ../../overview/overview.rst:200 ../../overview/overview.rst:202
+#: ../../overview/overview.rst:204 ../../overview/overview.rst:206
+#: ../../overview/overview.rst:208 ../../overview/overview.rst:210
+#: ../../overview/overview.rst:212
 msgid "O"
 msgstr ""
 
-#: ../../overview/overview.rst:188
+#: ../../overview/overview.rst:190
 msgid "Sessions"
 msgstr "세션 (Sessions)"
 
-#: ../../overview/overview.rst:190
+#: ../../overview/overview.rst:192
+msgid "Import & run"
+msgstr "가져오기 및 실행하기(Import & Run)"
+
+#: ../../overview/overview.rst:194
 msgid "Data & Storage"
 msgstr "데이터 & 폴더 (Data & Storage)"
 
-#: ../../overview/overview.rst:192
+#: ../../overview/overview.rst:196
+msgid "Agent Summary"
+msgstr "자원 요약 (Agent Summary)"
+
+#: ../../overview/overview.rst:198
 msgid "Statistics"
 msgstr "통계 (Statistics)"
 
-#: ../../overview/overview.rst:194
+#: ../../overview/overview.rst:200
 msgid "Users*"
 msgstr "사용자 (Users)*"
 
-#: ../../overview/overview.rst:194 ../../overview/overview.rst:196
-#: ../../overview/overview.rst:198
+#: ../../overview/overview.rst:200 ../../overview/overview.rst:202
+#: ../../overview/overview.rst:204 ../../overview/overview.rst:206
+#: ../../overview/overview.rst:208 ../../overview/overview.rst:210
 msgid "X"
 msgstr ""
 
-#: ../../overview/overview.rst:196
+#: ../../overview/overview.rst:202
+msgid "Environments*"
+msgstr "실행 환경 (Environments)*"
+
+#: ../../overview/overview.rst:204
+msgid "Resources*"
+msgstr "자원 (Resources)*"
+
+#: ../../overview/overview.rst:206
+msgid "Configurations*"
+msgstr "환경 설정 (Configurations)*"
+
+#: ../../overview/overview.rst:208
 msgid "Maintenance*"
 msgstr "관리 (Maintenance)*"
 
-#: ../../overview/overview.rst:198
+#: ../../overview/overview.rst:210
 msgid "Information*"
 msgstr "정보 (Information)*"
 
-#: ../../overview/overview.rst:200
+#: ../../overview/overview.rst:212
 msgid "UserSettings"
 msgstr "사용자 설정 (UserSettings)"

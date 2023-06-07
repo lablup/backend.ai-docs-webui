@@ -25,8 +25,9 @@ Storage Status on top of the folder list shows the following information:
 * Created: The number of folders that the user created.
 * Invited: The number of folers that the user was invited to share.
 * Capacity: The maximum number of folders that the user can create afterwards.
-  This value depends on the resource policy applied to the user and cannot be changed
-  without changing the resource policy. Folders that were not created by the user (eg. folders invited to share, or project folders) are not counted.
+  This value depends on the resource policy applied to the user and cannot be
+  changed without changing the resource policy. Folders that were not created by
+  the user (eg. folders invited to share, or project folders) are not counted.
 
 Check marks on the Owner panel in the folder list indicate the user created folders.
 
@@ -34,10 +35,11 @@ Check marks on the Owner panel in the folder list indicate the user created fold
    :alt: Storage status in Storage page
 
 .. tip::
-   If there's many vfolders on the list, you can use input fields on the top row.
-   Currently we provide two filters, vfolder name and the name of storage host.
-   
+   If there are lots of folders in the list, you can filter the list by using the
+   search boxes on top of the list.
 
+
+.. _create_storage_folder:
 
 Create storage folder
 ---------------------
@@ -93,7 +95,7 @@ well. For more detailed file operations, you can mount this folder when creating
 a compute session, and then use a service like Terminal or Jupyter Notebook to
 do it.
 
-.. image:: vfolder_explorer.png
+.. image:: folderexplorer_with_filebrowser.png
    :alt: File explorer of a storage folder
 
 You can create a new directory on the current path with the NEW FOLDER button
@@ -127,6 +129,16 @@ If you have permission to delete the storage folder, you can delete it by
 clicking the trash can icon in the Control panel. When you click the Delete
 button, a confirm dialog appears. To prevent accidental deletion, you have to
 enter the name of the folder to be deleted, explicitly.
+
+.. note::
+   When delete operation starts, It may take some time in order to delete the
+   target folder completely from storage host. Meanwhile, in order to block
+   unintended operation such as accessing any file/directory inside the folder
+   on-delete status, we disable any accessing operations.
+
+   .. image:: vfolder_deleting.png
+      :width: 100%
+      :align: center
 
 .. image:: vfolder_delete_dialog.png
    :width: 400
@@ -187,15 +199,10 @@ Execute FileBrowser from folder explorer dialog in Data & Storage page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Go to the Data & Storage page and open the file explorer dialog of target
-data folder. Click the folder icon in the Control column to the right of the
-data folder to open the file explorer.
+data folder. Click the folder icon or the folder name to open the file explorer.
 
 .. image:: first_step_to_access_filebrowser.png
    :alt: first step to access FileBrowser
-
-.. warning::
-   You cannot launch FileBrowser from read-only data folders since FileBrowser 
-   requires write permissions.
 
 Click EXECUTE FILEBROWSER button in the upper-right corner of the explorer.
 
@@ -260,6 +267,10 @@ the tree structure. Click the upload button in the upper right corner of the
 window, and click Folder button. Then, local file explorer dialog will appear
 and you can select any directory you want to upload.
 
+.. note::
+   If you try to upload a file to a read-only folder, FileBrowser will raise a
+   server error.
+
 .. image:: filebrowser_upload.png
    :align: center
 
@@ -313,25 +324,69 @@ You will see that moving operation is successfully finished.
    We are planning to update FileBrowser so that it can run independently
    without creating a session.
 
+Using SFTP Server
+-----------------
+
+From 22.09, Backend.AI supports SSH / SFTP file upload from both desktop app and
+web-based Web-UI. The SFTP server allows you to upload files quickly through reliable
+data streams.
+
+.. note::
+   Depending on the system settings, running SFTP server from the file dialog may not
+   be allowed.
+
+Execute SFTP server from folder explorer dialog in Data & Storage page
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Go to the Data & Storage page and open the file explorer dialog of target data folder.
+Click the folder icon or the folder name to open the file explorer.
+
+Click RUN SFTP SERVER button in the upper-right corner of the explorer.
+
+.. image:: folderexplorer_with_filebrowser.png
+   :alt: Folder explorer with SFTP Server
+
+You can see the SSH / SFTP connection dialog. And a new SFTP session will be created
+automatically. (This session will not affect resource occupancy.)
+
+.. image:: SSH_SFTP_connection.png
+   :height: 500
+   :align: center
+   :alt: SSH / SFTP connection dialog
+
+For the SSH connection, click "DOWNLOAD SSH KEY" button to download the SSH private key
+(``id_container``). Also, remember the host and port number. Then, you can connect to SFTP server
+using the Connection Example code written in the dialog, or you can connect to SSH / SFTP
+by referring to the following :ref:`link<sftp_connection_for_linux_and_mac>`.
+
+.. note::
+   If you upload your SSH keypair, the ``id_container`` will be set with your
+   own SSH private key. So, you don't need to download it every time you
+   want to connect via SSH to your container. Please refer to
+   :ref:`manageing user's SSH keypair<user-ssh-keypair-management>`.
+
 
 Setting quota on XFS
 --------------------
 
-Backend.AI provides quota adjustment UI for Vfolder if storage file systems 
-that supports directory based quota.
+If the underlying file system supports a per-directory or a per-project quota,
+such as XFS, Backend.AI can provide a per-folder quota. Administrators can set
+the quota limit through a resource policy, so if you want to increase the quota,
+contact the administrator. Within the policy limit, users can adjust the quota
+of their folders by clicking the setting icon for each data folder.
 
 .. image:: xfs_quota_setting.png
    :width: 400
    :align: center
    :alt: XFS quota setting
 
-.. note::
-   In order to set quota on vfolder, make sure storage host is XFS. 
-   If you want to apply XFS on your own server and use them in Backend.AI cluster, 
-   Please refer to `XFS Filesystem Backends Guide in Backend.AI Storage Proxy 
-   <https://github.com/lablup/backend.ai-storage-proxy#xfs>`_.
+For more information on the per-folder quota on XFS, please refer to the
+following docs:
 
-You also can see the current usage and capacity of vfolder in information dialog. 
+- `XFS Filesystem Backends Guide in Backend.AI Storage Proxy <https://github.com/lablup/backend.ai-storage-proxy#xfs>`_
+- `Per-folder quota for XFS <https://blog.lablup.com/posts/2022/01/21/xfs-directory-quota>`_
+
+You can also see the current usage and capacity of a data folder in information dialog.
 
 .. image:: vfolder_information_storage_host_xfs.png
    :width: 400

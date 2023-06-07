@@ -7,6 +7,8 @@ Data & Storage pages. Here, you will learn how to query and
 create container-based compute sessions and utilize various web applications on
 the Sessions page.
 
+.. _create_session:
+
 Start a new session
 -------------------
 
@@ -30,12 +32,34 @@ please refer to the following.
 
 .. _session-naming-rule:
 
-* Session type: Interactive session tries to allocate requested resources 
-  immediately and lasts its status until user terminates or its lifetime ends. 
-  Batch session on the other hand, offers an explicit build step required for 
-  multi-module programs or compiled programming languages. It also provides 
-  specifying a scheduled time in executing session, which is useful for running 
-  automated model training.
+* Session type: Determines the type of the session. "Interactive" and
+  "Batch" are the two session types currently available. The following are the
+  primary distinctions between the two types:
+
+  - Interactive compute session
+
+    - This type has been supported from the initial version of Backend.AI.
+    - The compute session is used in a way that the user interacts with after
+      creating a session without specifying a pre-defined execution script or
+      command.
+    - The session is not terminated automatically unless user explicitly destroys
+      the session or session garbage collectors are set by the admin.
+
+  - Batch compute session
+
+    - This type of session is supported via GUI from Backend.AI 22.03 (CLI has
+      supported the batch-type session before the 22.03).
+    - Pre-define the script that will be executed when a compute session is
+      ready.
+    - Executes the script as soon as the compute session is ready, and then
+      automatically terminates the session as soon as the execution finishes.
+      So, it will more efficiently and flexibly utilize the server farm's
+      resources if a user can write the execution script in advance or is
+      building a pipeline of workloads.
+    - You can set the start time of a batch-type compute session. However, it
+      does not guarantee the session will be created at that time. It may still
+      be PENDING due to the lack of resources, etc. Rather, it guarantees that
+      the session WILL NOT run until the start time.
 
   .. image:: session_type_batch.png
      :width: 350
@@ -127,8 +151,8 @@ proceed to the next page.
    :align: center
 
 Now, we have reached the last page. You can view information of session(s) to create,
-such as environment itself, allocated resources, mount information, 
-environment variables set on the previous pages, etc. 
+such as environment itself, allocated resources, mount information,
+environment variables set on the previous pages, etc.
 After confirming the settings, click the LAUNCH button. If there is a
 setting you want to change, you can return to the previous page by clicking the
 left arrow button.
@@ -146,7 +170,7 @@ Now a new compute session is created in the RUNNING tab.
 
 In the RUNNING tab, you can check the information on the currently running
 sessions. It includes both interactive and batch sessions.
-BATCH tab and INTERACTIVE tab show only sessions corresponding to each type, 
+BATCH tab and INTERACTIVE tab show only sessions corresponding to each type,
 but only for sessions not in terminated status.
 FINISHED tab shows the list of terminated sessions and OTHERS tab shows the compute sessions with errors.
 For each session, you can check the information such as session environments, the amount of allocated
@@ -167,10 +191,11 @@ and used resources, session starting time, etc.
 .. image:: session_status_detail_information.png
    :align: center
 
-Backend.AI provides detailed information for all sessions in ``PENDING``, ``TERMINATED`` or ``CANCELLED`` status.
-When it comes to checking session whether runnable or not, the scheduler checks several conditions to fulfill.
-Sessions in ``PENDING`` status mean that one or more predicate checks failed.
-You can see detailed information by clicking the question mark icon right next to the status of each session.
+Backend.AI provides detailed status information for ``PENDING``, ``TERMINATED``,
+or ``CANCELLED`` sessions. In the case of ``PENDING`` sessions, in particular,
+you can check why the session is not scheduled and stuck in the ``PENDING``
+status. You can see the details by clicking the question mark icon right next
+to the status of each session.
 
 .. image:: resource_stat_and_session_list.png
 
@@ -195,13 +220,15 @@ accessible resources.
    execute a task that does not require a large amount of GPU computation, you
    can create a compute session by allocating only a portion of a GPU. The
    amount of GPU resources that 1 FGPU actually allocates may vary from system
-   to system depending on the administrator's setting.   
+   to system depending on the administrator's setting.
 
-   For example, if administrator has set to split one physical GPU into five pieces, 
+   For example, if administrator has set to split one physical GPU into five pieces,
    5 FGPU means 1 physical GPU, or 1 FGPU means 0.2 physical GPU. At this
    configuration, if you create a compute session by allocating 1 FGPU, you can
    utilize SM (streaming multiprocessor) and GPU memory corresponding to 0.2
    physical GPU for the session.
+
+.. _use_session:
 
 
 Use Jupyter Notebook
@@ -234,7 +261,6 @@ after the compute session is created.
      port will always be assigned because the port may not exist at all in the port
      pool or another service may already be using the port. In this case, the
      port number is randomly assigned.
-   
    Depending on the system configuration, these options may not be shown.
 
 Let's click on Jupyter Notebook.
@@ -306,6 +332,21 @@ Control panel of the running compute session.
 
 .. image:: session_log.png
 
+.. note::
+   From 22.09, you can download session log by clicking download button on upper-right side of the dialog.
+   This feature is helpful for tracking artifacts.
+
+Rename running session
+----------------------
+
+You can change the name of an active session. Just click the edit icon in the
+session information column. Write down the new name and click the confirm button.
+The new session name should also follow the :ref:`the authoring rule<session-naming-rule>`.
+
+.. image:: session_renaming.png
+
+
+.. _delete_session:
 
 Rename running session
 ----------------------
@@ -327,8 +368,55 @@ move the data to the mounted folder or upload it to the mounted folder from the
 beginning if you want to keep it.
 
 .. image:: session_destroy_dialog.png
-   :width: 400
+   :width: 500
    :align: center
+
+Idleness Checks
+---------------
+
+Backend.AI supports three types of inactivity (idleness) criteria for automatic garbage
+collection of compute sessions: Max Session Lifetime, Network Idle Timeout, and Utilization
+Checker.
+
+Idle checkers(inactivity criterion) will be displayed in the idle checks column of the session list.
+
+.. image:: idle_checks_column.png
+   :width: 200
+   :align: center
+
+The meaning of idle checkers is as follows, and can also be viewed by clicking the info icon in the
+idle checks column.
+
+* Max Session Lifetime: Force-terminate sessions after this time from creation. It prevents the
+  session from running infinitely.
+* Network Idle Timeout: Force-terminate sessions that do not exchange data with the user (browser
+  or web app) after this time. Traffic between the user and the compute session continuously occurs
+  when the user interacts with an app, like terminal or Jupyter, by keyboard input, Jupyter cell
+  creation, etc. Jupyter cell creation, etc. If there is no interaction for a certain period, the
+  condition of garbage collection will be met. Even if there is a process executing a job in the
+  compute session, it is subject to termination if there is no user interaction.
+* Utilization Checker: Force-terminate sessions based only on the utilization of resources allocated
+  to them.
+
+  - Grace Period: Utilization idle checker will be activated after this initial grace time. During
+    this time, sessions are not terminated even if utilization is low.
+  - Utilization Threshold: Threshold criteria of each compute resource. When one or more resource of
+    a compute session does not exceed the configured threshold criteria for a certain time, the session
+    will be garbage collected (terminated). For example, if you set 1% of CUDA utilization threshold,
+    compute sessions that show less than 1% CUDA GPU utilization, for a certain duration of time, will
+    be destroyed. Resources with empty values are excluded from the garbage collection criteria.
+
+If you hover your mouse over the Utilization Checker, a tooltip displays the
+utilization and threshold will appear. As the current utilization approaches to the
+threshold (towards lower usage), the font color changes to yellow, and then red.
+
+.. image:: utilization_checker.png
+   :width: 250
+   :align: center
+
+.. note::
+   Depending on the environment settings, idle checkers and resource types of
+   utilization checker's tooltip may be different.
 
 
 .. _set-environment-variables:
@@ -376,13 +464,45 @@ Also, you can remove the variable by clicking ``-`` button of the row that you w
 If you want to delete the whole variables and value, please click DELETE ALL button at the bottom of the dialog.
 
 
+Save container commit
+---------------------
+
+From 22.09, Backend.AI supports container commit feature. Commiting a
+``RUNNING`` session will save the current state of the main container as a new
+image. Clicking the commit button in the control pane of ``RUNNING`` session
+will display a dialog to show the information of the session. After checking the
+information, you can click the confirmation button to convert the container to
+a new image.
+
+.. image:: container_commit.png
+   :width: 350
+   :align: center
+   :alt: Container commit confirmation
+
+After clicking commit button in the dialog, Backend.AI internally requests
+Docker to create a new image as ``tar.gz`` to be stored into a specific
+host path. Please note that it's not available to access directly in your local
+environment. Users need to contact the administrator to get the image file.
+
+.. image:: container_commit_ongoing.png
+  :align: center
+  :alt: Container commit ongoing
+
+.. note::
+   Currently, Backend.AI supports container commit when session is
+   ``INTERACTIVE`` mode only. During container commit process, you may not be
+   able to terminate the session to prevent unexpected error. If you want to
+   stop the ongoing process, please check the session, and force-terminate
+   the session.
+
+
 .. _optimizing-accelerated-computing:
 
 Optimizing Accelerated Computing
 --------------------------------
 
-Backend.AI provides configuration UI for internal control variable in ``nthreads-var``. 
-Backend.AI sets this value equal to the number of CPU cores by default, 
+Backend.AI provides configuration UI for internal control variable in ``nthreads-var``.
+Backend.AI sets this value equal to the number of session's CPU cores by default,
 which has the effect of accelerating typical high-performance computing workloads.
 Nevertheless, for some multi-thread workloads, multiple processes using OpenMP are used at same time,
 resulting in an abnormally large number of threads and significant performance degradation.
@@ -393,6 +513,8 @@ To resolve this issue, setting the number of threads to 1 or 2 would work.
    :align: center
    :alt: Session HPC Optimization
 
+
+.. _tmux_guide:
 
 Advanced web terminal usage
 ---------------------------
@@ -437,6 +559,12 @@ you can use the web terminal more conveniently.
    ``Ctrl-B`` is tmux's default control mode key. If you set another control key
    by modifying ``.tmux.conf`` in user home directory, you should press the set
    key combination instead of ``Ctrl-B``.
+
+.. note::
+   In the Windows environment, refer to the following shortcuts.
+
+   * Copy: Hold down ``Shift``, right-click and drag
+   * Paste: Press ``Ctrl-Shift-V``
 
 Check the terminal history using keyboard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,8 +1,8 @@
 =======================
-FAQs & Trouble Shooting
+FAQs & Troubleshooting
 =======================
 
-User trouble shooting guide
+User troubleshooting guide
 ---------------------------
 
 Session list is not displayed correctly
@@ -25,36 +25,22 @@ If there are problems in recognizing authentication cookies, users may not be ab
 to login with private browser window. If it succeeds, please clear your
 browser's cache and/or application data.
 
+.. _installing_apt_pkg:
+
 How to install apt packages?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Inside a compute session, users cannot access root account and perform
-operations that require sudo privilege for security reasons. Therefore, it is
-not allowed to install packages with apt or yum since they require sudo. If it
-is really required, you can request to admins to allow sudo permission.
+Inside a compute session, users cannot access ``root`` account and perform
+operations that require ``sudo`` privilege for security reasons. Therefore, it
+is not allowed to install packages with ``apt`` or ``yum`` since they require
+``sudo``. If it is really required, you can request to admins to allow ``sudo``
+permission.
 
-Alternatively, users may install packages by
-`brew <https://docs.brew.sh/Homebrew-on-Linux>`_.
-To install and use ``brew`` from the compute session, follow the commands below:
+Alternatively, users may use Homebrew to install OS packages. Please refer to
+the :ref:`guide on using Homebrew with automount
+folder<using-linuxbrew-with-automountfolder>`.
 
-.. code-block:: shell
-
-   $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-   $ test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
-   $ test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-   $ test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
-   $ echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
-
-Now, you can install packages by ``brew``:
-
-.. code-block:: shell
-
-   $ brew install hello
-
-``brew`` installs packages under ``~/.local``. So, if you create a storage
-folder named ``.local``, which will be automatically mounted when creating a
-compute session, those installed packages can be kept after compute session is
-destroyed and then reused for the next compute session.
+.. _install_pip_pkg:
 
 How to install packages with pip?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -67,6 +53,9 @@ reus them for the next compute session. Just install the packages with pip like:
 .. code-block:: shell
 
    $ pip install aiohttp
+
+For more information, please refer to the :ref:`guide on installing Python
+packages with automount folder<using-pip-with-automountfolder>`.
 
 I have created a compute session, but cannot launch Jupyter Notebook
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -100,7 +89,7 @@ start the SSH/SFTP service in the desired container to establish the SFTP
 connection.
 
 
-Admin trouble shooting guide
+Admin troubleshooting guide
 ----------------------------
 
 Users cannot launch apps like Jupyter Notebook
