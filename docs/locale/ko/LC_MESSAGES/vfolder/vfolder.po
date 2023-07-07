@@ -60,7 +60,7 @@ msgid "Created: The number of folders that the user created."
 msgstr "Created: 사용자가 생성 한 폴더 수입니다."
 
 #: ../../vfolder/vfolder.rst:26
-msgid "Invited: The number of folers that the user was invited to share."
+msgid "Invited: The number of folders that the user was invited to share."
 msgstr "Invited: 다른 사용자가 초대를 통해 공유한 폴더 수입니다."
 
 #: ../../vfolder/vfolder.rst:27

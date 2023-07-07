@@ -23,7 +23,7 @@ belong.
 Storage Status on top of the folder list shows the following information:
 
 * Created: The number of folders that the user created.
-* Invited: The number of folers that the user was invited to share.
+* Invited: The number of folders that the user was invited to share.
 * Capacity: The maximum number of folders that the user can create afterwards.
   This value depends on the resource policy applied to the user and cannot be
   changed without changing the resource policy. Folders that were not created by
