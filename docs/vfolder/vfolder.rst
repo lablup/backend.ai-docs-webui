@@ -354,6 +354,15 @@ automatically. (This session will not affect resource occupancy.)
    :align: center
    :alt: SSH / SFTP connection dialog
 
+.. note::
+   We provide a detailed information about using large file upload via ssh/sftp connection.
+   For more information, please click the ``Read more`` text link to see all the details of execution.
+
+   .. image:: SSH_SFTP_connection_expanded.png
+      :height: 400
+      :align: center
+      :alt: SSH / SFTP connection dialog expanded
+
 For the SSH connection, click "DOWNLOAD SSH KEY" button to download the SSH private key
 (``id_container``). Also, remember the host and port number. Then, you can connect to SFTP server
 using the Connection Example code written in the dialog, or you can connect to SSH / SFTP
@@ -363,7 +372,7 @@ by referring to the following :ref:`link<sftp_connection_for_linux_and_mac>`.
    If you upload your SSH keypair, the ``id_container`` will be set with your
    own SSH private key. So, you don't need to download it every time you
    want to connect via SSH to your container. Please refer to
-   :ref:`manageing user's SSH keypair<user-ssh-keypair-management>`.
+   :ref:`managing user's SSH keypair<user-ssh-keypair-management>`.
 
 
 Setting quota on XFS
