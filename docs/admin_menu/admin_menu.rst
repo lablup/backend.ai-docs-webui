@@ -556,7 +556,7 @@ Storages
 --------
 
 On STORAGES tab, you can see what kind of mount volumes (usually NFS) exist.
-From 23.03 version, We provide per-user/per-project quota setting on stoarge that supports quota management.
+From 23.03 version, We provide per-user/per-project quota setting on storage that supports quota management.
 By using this feature, admin can easily manage and monitor the exact amount of storage usage for each user and project based folder.
 
 .. image:: storage_list.png
