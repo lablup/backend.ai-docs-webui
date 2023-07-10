@@ -575,15 +575,15 @@ And then, click gear icon in control column.
 Quota Setting Panel
 ~~~~~~~~~~~~~~~~~~~~
 
-In Quota setting page, There are two panels that represent the corresponding items for each panel's title.
+In Quota setting page, there are two panels that represent the corresponding items for each panel's title.
 
 .. image:: quota_setting_page.png
 
 * Resource
    * Usage: Shows the actual amount usage of the selected storage. 
    * Endpoint: Represents the mount point of the selected storage.
-   * Backend Type: the type of storage.
-   * Capabilities: the supported feature of the selected storage.
+   * Backend Type: The type of storage.
+   * Capabilities: The supported feature of the selected storage.
 
 * Quota Settings
    * For User: Configure per-user quota setting here.
