@@ -638,8 +638,9 @@ which depends on the quota type(user / project).
 
 .. note::
    
-   When user/project doesn't have default value mapped to each uuid, 
-   then ``max_vfolder_size`` value will be the default value of each user/project.
+   If there's no config per user/project, then corresponding values in the user/project resource policy will be set as 
+   a default value. For example, If no hard limit value for quota is set, ``max_vfolder_size`` value in the resource policy 
+   is used as the default value.
 
 
 
