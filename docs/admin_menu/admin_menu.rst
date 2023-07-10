@@ -460,7 +460,7 @@ by Click note icon in the Control panel.
 
 On Terminated tab, you can check the information of the agents that has been
 connected once and then terminated or disconnected. It can be used as a
-reference for node management. If the list is empty, then It means
+reference for node management. If the list is empty, then it means
 that there's no disconnection or termination occurred.
 
 .. image:: terminated_agent_list.png
@@ -596,7 +596,7 @@ In Quota setting page, There are two panels that represent the corresponding ite
 Set User Quota
 ~~~~~~~~~~~~~~~
 
-In Backend.AI, there are two type of vfolders created by user and admin(project). In this section,
+In Backend.AI, there are two types of vfolders created by user and admin(project). In this section,
 we would like to show how to check current quota setting per-user and how to configure it.   
 First, Make sure the active tab of quota settings panel is ``For User``. Then, Select user you desire to 
 check and edit the quota. You can see the quota id that corresponds to user's id and the configuration already set 
@@ -604,8 +604,7 @@ in the table, if you already set the quota.
 
 .. image:: per_user_quota.png
 
-Of course, you want to edit the quota, Simply clicking ``Edit`` button in 
-Control column will do. After Clicking ``Edit`` button, you may see the small modal that enables configuring quota setting. 
+Of course, if you want to edit the quota, you can simply click the Edit button in the control column. After Clicking ``Edit`` button, you may see the small modal that enables configuring quota setting. 
 After input the exact amount, don't forget to Click ``OK`` button, unless the changes will not be applied.
 
 .. image:: quota_settings_panel.png
@@ -614,8 +613,7 @@ After input the exact amount, don't forget to Click ``OK`` button, unless the ch
 Set Project Quota
 ~~~~~~~~~~~~~~~~~~
 
-Setting quota on project-folder are similar to setting user quota. The difference between setting project quota and user quota is 
-that to confirm and setting the project quota requires one more procedure, which is selecting the domain that project is dependent.
+Setting a quota on project-folder is similar to setting a user quota. The difference between setting project quota and user quota is to confirm setting the project quota requires one more procedure, which is selecting the domain that the project is dependent on. The rest are the same.
 The rest of things are same.
 As in the picture below, you need to first select the domain, and then select the project.
 
@@ -631,10 +629,18 @@ Unset Quota
 We also provides the feature to unset the quota. Please remind that after removing the quota setting, quota will automatically follows 
 user or project default quota, which cannot be set in WebUI. If you want to change the default quota setting, you may need to access to admin-only page.   
 By Clicking ``Unset`` button in control column, the small snackbar message will show up and confirm whether you really want to delete the current quota setting. 
-If you click ``OK`` button in the snackbar message, then It will delete the quota setting and automatically reset the quota follows to corresponding quota, 
+If you click ``OK`` button in the snackbar message, then it will delete the quota setting and automatically reset the quota follows to corresponding quota, 
 which depends on the quota type(user / project).
 
 .. image:: unset_quota.png
+
+
+.. note::
+   
+   When user/project doesn't have default value mapped to each uuid, 
+   then ``max_vfolder_size`` value will be the default value of each user/project.
+
+
 
 
 Download session lists
