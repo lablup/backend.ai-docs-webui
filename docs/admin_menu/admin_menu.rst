@@ -613,8 +613,9 @@ After input the exact amount, don't forget to Click ``OK`` button, unless the ch
 Set Project Quota
 ~~~~~~~~~~~~~~~~~~
 
-Setting a quota on project-folder is similar to setting a user quota. The difference between setting project quota and user quota is to confirm setting the project quota requires one more procedure, which is selecting the domain that the project is dependent on. The rest are the same.
-The rest of things are same.
+Setting a quota on project-folder is similar to setting a user quota. The difference between setting 
+project quota and user quota is to confirm setting the project quota requires one more procedure, 
+which is selecting the domain that the project is dependent on. The rest are the same.
 As in the picture below, you need to first select the domain, and then select the project.
 
 .. image:: per_project_quota.png
