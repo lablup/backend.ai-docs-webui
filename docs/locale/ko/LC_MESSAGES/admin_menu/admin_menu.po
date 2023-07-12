@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 20.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-06 13:09+0900\n"
+"POT-Creation-Date: 2023-07-12 11:23+0900\n"
 "PO-Revision-Date: 2022-05-17 22:53+0900\n"
 "Last-Translator: \n"
 "Language: ko\n"
@@ -47,8 +47,8 @@ msgid ""
 "Depending on the plugin settings, the ``2FA Enabled`` column might be "
 "invisible. In that case, please contact administrator of your system."
 msgstr ""
-"플러그인 설정에 따라 ``이중 인증 사용(2FA Enabled)`` 열이 안보일 수 있습니다. 이 경우에는 시스템 관리자에게 "
-"문의 하십시오."
+"플러그인 설정에 따라 ``이중 인증 사용(2FA Enabled)`` 열이 안보일 수 있습니다. 이 경우에는 시스템 관리자에게 문의 "
+"하십시오."
 
 #: ../../admin_menu/admin_menu.rst:26
 msgid "Create and update users"
@@ -379,7 +379,7 @@ msgid "Resource Policy"
 msgstr "자원 정책"
 
 #: ../../admin_menu/admin_menu.rst:231
-msgid "CPU:  Specify the maximum amount of CPU cores. (max value: 512)"
+msgid "CPU: Specify the maximum amount of CPU cores. (max value: 512)"
 msgstr "CPU : CPU 코어 최대 할당 가능량을 설정합니다. (최대 입력 값: 512)"
 
 #: ../../admin_menu/admin_menu.rst:232
@@ -746,7 +746,7 @@ msgstr "또한 agent 워커 노드의 자원에 대한 정확한 사용량을 Co
 msgid ""
 "On Terminated tab, you can check the information of the agents that has "
 "been connected once and then terminated or disconnected. It can be used "
-"as a reference for node management. If the list is empty, then It means "
+"as a reference for node management. If the list is empty, then it means "
 "that there's no disconnection or termination occurred."
 msgstr ""
 "Terminated 탭으로 이동하면 한 번 연결되었다가 종료되거나 연결이 끊긴 에이전트의 정보를 확인할 수 있습니다. 노드 관리에 "
@@ -887,14 +887,185 @@ msgstr "저장소"
 #: ../../admin_menu/admin_menu.rst:558
 msgid ""
 "On STORAGES tab, you can see what kind of mount volumes (usually NFS) "
-"exist."
-msgstr "STORAGES 탭에서는 시스템에 마운트 된 볼륨을 조회할 수 있습니다. 주로 NFS라고 생각하시면 됩니다."
+"exist. From 23.03 version, We provide per-user/per-project quota setting "
+"on storage that supports quota management. By using this feature, admin "
+"can easily manage and monitor the exact amount of storage usage for each "
+"user and project based folder."
+msgstr ""
+"STORAGES 탭에서는 시스템에 마운트 된 볼륨을 조회할 수 있습니다. 주로 NFS라고 생각하시면 됩니다. "
+"23.03 버전부터는 쿼타 관리를 지원하는 스토리지에 대해 사용자별/프로젝트별 쿼타 설정이 가능합니다. "
+"이 기능을 사용함으로서, 관리자는 좀더 손쉽게 사용자와 프로젝트용 폴더가 스토리지 내에서 얼마만큼 "
+"공간을 차지하고 있는지 확인하고 관리할 수 있습니다."
 
 #: ../../admin_menu/admin_menu.rst:564
+msgid ""
+"In order to set quota, you need to first access to storages tab in "
+"resource page. And then, click gear icon in control column."
+msgstr ""
+""
+"쿼타를 설정하기 위해서는, 자원 페이지의 저장소(스토리지) 탭에 먼저 접근해야 합니다. "
+"그리고, 컨트롤 컬럼의 톱니바퀴 아이콘을 클릭합니다. "
+
+#: ../../admin_menu/admin_menu.rst:568
+msgid ""
+"Please remind that quota setting is only available in storage that "
+"provides quota setting (e.g. XFS, CephFS, NetApp, Purestorage, etc.). "
+"Although you can see the usage of storage in quota setting page "
+"regardless of storage, you cannot configure the quota which doesn't "
+"support quota configuration internally."
+msgstr ""
+"쿼타 설정은 해당 기능을 제공하는 저장소 (예: XFS, CephFS, NetApp, Purestorage, 등)에 한해서만 "
+"가능합니다. 저장소의 쿼타 설정 기능 제공 유무에 관계없이, 쿼타 설정 페이지는 제공하나, "
+"내부적으로 쿼타 설정을 지원하지 않는 저장소에 대해서는 쿼타 설정이 불가능합니다."
+
+#: ../../admin_menu/admin_menu.rst:576
+msgid "Quota Setting Panel"
+msgstr "쿼타 설정 패널"
+
+#: ../../admin_menu/admin_menu.rst:578
+msgid ""
+"In Quota setting page, there are two panels that represent the "
+"corresponding items for each panel's title."
+msgstr ""
+"쿼타 설정 페이지에는 각 패널의 제목에 대응하는 두 개의 패널이 있습니다."
+
+#: ../../admin_menu/admin_menu.rst:586
+msgid "Overview panel"
+msgstr "스토리지 정보 패널"
+
+#: ../../admin_menu/admin_menu.rst:583
+msgid "Usage: Shows the actual amount usage of the selected storage."
+msgstr "사용량: 선택된 저장소에서의 실제 사용량"
+
+#: ../../admin_menu/admin_menu.rst:584
+msgid "Endpoint: Represents the mount point of the selected storage."
+msgstr "엔드포인트: 선택된 저장소가 스토리지 노드에 마운트된 경로"
+
+#: ../../admin_menu/admin_menu.rst:585
+msgid "Backend Type: The type of storage."
+msgstr "백엔드 타입: 저장소의 타입"
+
+#: ../../admin_menu/admin_menu.rst:586
+msgid "Capabilities: The supported feature of the selected storage."
+msgstr "지원 기능: 선택된 저장소에서 지원하는 기능"
+
+#: ../../admin_menu/admin_menu.rst:594
+msgid "Quota Settings"
+msgstr "시스템 설정 조회"
+
+#: ../../admin_menu/admin_menu.rst:589
+msgid "For User: Configure per-user quota setting here."
+msgstr "사용자 대상: 사용자별로 쿼타를 설정합니다."
+
+#: ../../admin_menu/admin_menu.rst:590
+msgid "For Project: Configure per-project quota(project-folder) setting here."
+msgstr "프로젝트 대상: 프로젝트 별로 쿼타(프로젝트-폴더) 를 설정합니다."
+
+#: ../../admin_menu/admin_menu.rst:591
+msgid "ID: Corresponds to user or project id."
+msgstr "ID: 사용자 나 프로젝트 ID에 대응합니다."
+
+#: ../../admin_menu/admin_menu.rst:592
+msgid "Hard Limit (GB): Currently set hard limit quota for selected quota."
+msgstr "Hard Limit (GB): 선택된 쿼타에서 현재 설정된 Hard Limit 쿼타를 표시합니다."
+
+#: ../../admin_menu/admin_menu.rst:593
+msgid ""
+"Control: Provides editing the hard limit or even deleting the quota "
+"setting."
+msgstr "설정: Hard limit 과 같은 설정값을 수정하거나, 쿼타 설정 값을 삭제하는 기능을 제공합니다."
+
+#: ../../admin_menu/admin_menu.rst:597
+msgid "Set User Quota"
+msgstr "사용자 쿼타 설정하기"
+
+#: ../../admin_menu/admin_menu.rst:599
+msgid ""
+"In Backend.AI, there are two types of vfolders created by user and "
+"admin(project). In this section, we would like to show how to check "
+"current quota setting per-user and how to configure it. First, make sure "
+"the active tab of quota settings panel is ``For User``. Then, select user"
+" you desire to check and edit the quota. You can see the quota id that "
+"corresponds to user's id and the configuration already set in the table, "
+"if you already set the quota."
+msgstr ""
+"Backend.AI에서는 사용자와 프로젝트 관리자에 의해 생성되는 두 가지 타입의 폴더가 있습니다. "
+"이 섹션에서는, 사용자 별로 현재 쿼타 설정 값을 확인하고, 어떻게 값을 설정하는 지 다룹니다. "
+"우선, 쿼타 설정 패널의 활성화된 탭이 ``For User``인지 확인해주세요. 그 다음, 쿼타를 수정하고 확인할 "
+"대상인 사용자를 선택해주세요. 만일 쿼타가 이미 설정되어 있다면, 사용자 ID와 동일한 쿼타 ID 값이 "
+"테이블에 표시되어 있는 것을 확인하실 수 있습니다."
+
+#: ../../admin_menu/admin_menu.rst:607
+msgid ""
+"Of course, if you want to edit the quota, you can simply click the Edit "
+"button in the control column. After Clicking ``Edit`` button, you may see"
+" the small modal that enables configuring quota setting. After input the "
+"exact amount, don't forget to Click ``OK`` button, unless the changes "
+"will not be applied."
+msgstr ""
+"물론, 쿼타를 수정하려고 할 경우, 컨트롤 컬럼의 수정 버튼을 선택하기만 하면 됩니다. ``Edit`` 버튼을 "
+"클릭하고 나면, 쿼타를 설정하는 작은 모달 창이 뜬 것을 확인하실 수 있습니다. 설정할 값을 정확히 입력 후, "
+"반드시 ``OK`` 버튼을 클릭해주세요. 그렇지 않으면 변경 내역은 반영되지 않습니다. " 
+
+#: ../../admin_menu/admin_menu.rst:614
+msgid "Set Project Quota"
+msgstr "프로젝트 쿼타 설정하기"
+
+#: ../../admin_menu/admin_menu.rst:616
+msgid ""
+"Setting a quota on project-folder is similar to setting a user quota. The"
+" difference between setting project quota and user quota is to confirm "
+"setting the project quota requires one more procedure, which is selecting"
+" the domain that the project is dependent on. The rest are the same. As "
+"in the picture below, you need to first select the domain, and then "
+"select the project."
+msgstr ""
+"프로젝트 폴더에 대해 쿼타를 설정하는 것은 사용자 쿼타 설정과 유사합니다. 프로젝트별로 적용되는 쿼타와 "
+"사용자별로 적용되는 쿼타의 차이점은, 프로젝트별로 적용되는 쿼타에서는 프로젝트가 소속되어 있는 도메인을 "
+"우선 선택하는 과정이 추가되었다는 것입니다. 그 이후 과정은 동일합니다. 하단 그림에서 볼 수 있듯이, "
+"우선 도메인을 선택하고, 적용할 프로젝트를 선택하면 됩니다."
+
+#: ../../admin_menu/admin_menu.rst:628
+msgid "Unset Quota"
+msgstr "쿼타 해제하기"
+
+#: ../../admin_menu/admin_menu.rst:630
+msgid ""
+"We also provides the feature to unset the quota. Please remind that after"
+" removing the quota setting, quota will automatically follows user or "
+"project default quota, which cannot be set in WebUI. If you want to "
+"change the default quota setting, you may need to access to admin-only "
+"page. By Clicking ``Unset`` button in control column, the small snackbar "
+"message will show up and confirm whether you really want to delete the "
+"current quota setting. If you click ``OK`` button in the snackbar "
+"message, then it will delete the quota setting and automatically reset "
+"the quota follows to corresponding quota, which depends on the quota "
+"type(user / project)."
+msgstr ""
+"쿼타를 해제하는 기능도 제공합니다. 쿼타 설정 값을 삭제한 뒤에는, 해당 프로젝트/사용자에 적용된 쿼타는 "
+"사용자 또는 프로젝트에서 기본적으로 적용된 쿼타를 따라가게 됩니다. 이 값은 WebUI에서 따로 설정하는 "
+"사용자 인터페이스를 지원하지 않습니다. 기본 쿼타 설정값을 변경하려면, 관리자 전용 페이지에 접근해서 "
+"해당 값을 변경해야 합니다. "
+"컨트롤 컬럼에 있는 ``Unset`` 버튼을 클릭하면, 작은 스낵바 메시지 창이 뜨고, 현재 쿼타 세팅을 정말로 "
+"삭제할 것인지 확인하게 됩니다. 여기서 ``OK`` 버튼을 클릭하게 되면, 쿼타 설정값이 삭제되고, 자동으로 "
+"쿼타 설정 값은 쿼타의 타입(사용자 / 프로젝트)에 대응하는 값으로 적용되게 됩니다."
+
+#: ../../admin_menu/admin_menu.rst:641
+msgid ""
+"If there's no config per user/project, then corresponding values in the "
+"user/project resource policy will be set as a default value. For example,"
+" If no hard limit value for quota is set, ``max_vfolder_size`` value in "
+"the resource policy is used as the default value."
+msgstr ""
+"만일 사용자 별/프로젝트 별 설정 값이 없을 경우, 사용자/프로젝트 별 자원 정책 내 대응하는 값들이 "
+"기본 값으로 설정되게 됩니다. 예를 들어 쿼타에서 hard limit 값이 설정되어 있지 않다면, 자원 정책 내"
+" ``max_vfolder_size``　값이 기본 값으로 쓰이게 됩니다."
+
+#: ../../admin_menu/admin_menu.rst:649
 msgid "Download session lists"
 msgstr "세션 자원 다운로드"
 
-#: ../../admin_menu/admin_menu.rst:566
+#: ../../admin_menu/admin_menu.rst:651
 msgid ""
 "There's additional feature in Session page for admin. On the right side "
 "of the OTHERS tab there is a menu marked with ``...``. When you click "
@@ -903,7 +1074,7 @@ msgstr ""
 "세션 페이지에는 관리자를 위한 추가 기능이 있습니다. OTHERS 탭 우측을 보면 ``…`` 으로 표시된 메뉴가 있습니다. 이 "
 "메뉴를 클릭하면 export CSV 라는 하위 메뉴가 나옵니다."
 
-#: ../../admin_menu/admin_menu.rst:572
+#: ../../admin_menu/admin_menu.rst:657
 msgid ""
 "If you click this menu, you can download the information of the comcpute "
 "sessions created so far in CSV format. After the following dialog opens, "
@@ -915,11 +1086,11 @@ msgstr ""
 "후, (필요한 경우) 적당한 파일 이름을 입력하고 EXPORT 버튼을 클릭하십시오. 파일 이름은 최대 255 자까지만 입력 가능한 "
 "점에 유의하십시오. 곧 CSV 파일 하나가 다운로드 될 것입니다."
 
-#: ../../admin_menu/admin_menu.rst:583
+#: ../../admin_menu/admin_menu.rst:668
 msgid "System settings"
 msgstr "시스템 설정 조회"
 
-#: ../../admin_menu/admin_menu.rst:585
+#: ../../admin_menu/admin_menu.rst:670
 msgid ""
 "In the Configuration page, you can see main settings of Backend.AI "
 "server. Currently, it provides several controls which can change and list"
@@ -928,7 +1099,7 @@ msgstr ""
 "Configuration 페이지에서 Backend.AI에 설정된 주요 설정값을 조회할 수 있습니다. 현재는 몇가지 변경 기능 및 "
 "설정 조회 기능을 제공하고 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:589
+#: ../../admin_menu/admin_menu.rst:674
 msgid ""
 "You can change image auto install and update rule by selecting one option"
 " from ``Digest``, ``Tag``, ``None``. ``Digest`` is kind of checksum for "
@@ -942,17 +1113,17 @@ msgstr ""
 "다운로드의 효율성을 높이는데에 사용됩니다. ``Tag`` 는 개발용 옵션에만 사용할 수 있는데, 태그는 이미지의 무결성을 보장하지 "
 "않기 때문입니다."
 
-#: ../../admin_menu/admin_menu.rst:597
+#: ../../admin_menu/admin_menu.rst:682
 msgid ""
 "Don't change rule selection unless you completely understand the meaning "
 "of each rule."
 msgstr "각 규칙에 대해 완전히 이해하고 있지 않는 한 선택된 규칙을 변경하지 마십시오."
 
-#: ../../admin_menu/admin_menu.rst:602
+#: ../../admin_menu/admin_menu.rst:687
 msgid "You can also change settings for scaling and plugins."
 msgstr "스케일링과 플러그인에 대한 설정도 변경할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:607
+#: ../../admin_menu/admin_menu.rst:692
 msgid ""
 "When a user launches a multi-node cluster session, which is introduced at"
 " version 20.09, Backend.AI will dynamically create an overlay network to "
@@ -965,7 +1136,7 @@ msgstr ""
 "Maximum Transmission Unit (MTU) 값을 설정할 수 있습니다. 다만, 이 값이 네트워크 성능을 향상시키는 것이"
 " 확실할 때만 설정하십시오."
 
-#: ../../admin_menu/admin_menu.rst:619
+#: ../../admin_menu/admin_menu.rst:704
 msgid ""
 "For more information about Backend.AI Cluster session, please refer to "
 ":ref:`Backend.AI Cluster Compute Session<backendai-cluster-compute-"
@@ -974,7 +1145,7 @@ msgstr ""
 "Backend.AI 클러스터 세션에 대해 더 자세한 정보를 확인하시려면, :ref:`Backend.AI 클러스터 연산 세션"
 "<backendai-cluster-compute-session>` 섹션을 참고하십시오."
 
-#: ../../admin_menu/admin_menu.rst:622
+#: ../../admin_menu/admin_menu.rst:707
 msgid ""
 "You can edit the configuration per job scheduler by clicking the "
 "Scheduler's config button. The values in the scheduler setting are the "
@@ -986,7 +1157,7 @@ msgstr ""
 "그룹<scheduling-methods>` 의 스케줄러 설정 값이 없을 때 사용하는 기본 값을 의미합니다. 자원 그룹에 설정한 값이"
 " 있을 경우, 이 값은 무시됩니다."
 
-#: ../../admin_menu/admin_menu.rst:627
+#: ../../admin_menu/admin_menu.rst:712
 msgid ""
 "Currently supported scheduling methods include ``FIFO``, ``LIFO``, and "
 "``DRF``. Each method of scheduling is exactly the same as the "
@@ -1002,27 +1173,27 @@ msgstr ""
 " 재시도 횟수란 세션 생성이 실패한 경우 세션 생성을 재시도 하는 횟수를 말합니다. 만약 지정한 횟수 안에 세션 생성을 하지 못하는"
 " 경우 해당 요청을 무시하고 다음 요청을 처리합니다. 현재는 스케줄러가 FIFO일 때만 가능합니다."
 
-#: ../../admin_menu/admin_menu.rst:640
+#: ../../admin_menu/admin_menu.rst:725
 msgid "We will continue to add broader range of setting controls."
 msgstr "향후 CLI에서 지원하는 다양한 설정 변경 기능을 GUI에도 계속 추가할 예정입니다."
 
-#: ../../admin_menu/admin_menu.rst:643
+#: ../../admin_menu/admin_menu.rst:728
 msgid ""
 "System settings are default settings. If resource group has certain "
 "value, then it overrides configured value in system settings."
 msgstr "시스템 설정 값은 기본 설정입니다. 자원 그룹에서 특정 값이 설정된 경우, 시스템 설정 값이 아닌 자원 그룹 설정 값을 적용합니다."
 
-#: ../../admin_menu/admin_menu.rst:648
+#: ../../admin_menu/admin_menu.rst:733
 msgid "Server management"
 msgstr "서버 관리 메뉴"
 
-#: ../../admin_menu/admin_menu.rst:650
+#: ../../admin_menu/admin_menu.rst:735
 msgid ""
 "Go to the Maintenance page and you will see some buttons to manage the "
 "server."
 msgstr "Maintenance 페이지로 이동하면 서버를 관리할 수 있는 몇 가지 버튼을 볼 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:652
+#: ../../admin_menu/admin_menu.rst:737
 msgid ""
 "RECALCULATE USAGE: Occasionally, due to unstable network connections or "
 "container management problem of Docker daemon, there may be a case where "
@@ -1034,7 +1205,7 @@ msgstr ""
 "Backend.AI에서 출력되는 자원 점유량이 일치하지 않는 경우가 있을 수 있습니다. 그 때 RECALCULATE USAGE "
 "버튼을 클릭하면 자원 점유량을 수동 보정할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:657
+#: ../../admin_menu/admin_menu.rst:742
 msgid ""
 "RESCAN IMAGES: Update image meta information from all registered Docker "
 "registries. It can be used when a new image is pushed to a Backend.AI-"
@@ -1043,17 +1214,17 @@ msgstr ""
 "RESCAN IMAGES: 등록된 모든 도커 레지스트리에서 이미지 메타 정보를 받고 업데이트 합니다. Backend.AI에서 사용 "
 "가능한 이미지를 레지스트리에 새로 등록한 경우 사용할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:667
+#: ../../admin_menu/admin_menu.rst:752
 msgid ""
 "We will continue to add other settings needed for management, such as "
 "removing unused images or registering periodic maintenance schedules."
 msgstr "사용하지 않는 이미지를 제거하거나, 주기적 관리 일정 등록 등 기타 관리에 필요한 설정이 계속 추가될 예정입니다."
 
-#: ../../admin_menu/admin_menu.rst:672
+#: ../../admin_menu/admin_menu.rst:757
 msgid "Detailed Information"
 msgstr "상세 정보"
 
-#: ../../admin_menu/admin_menu.rst:674
+#: ../../admin_menu/admin_menu.rst:759
 msgid ""
 "In Information page, you can see several detailed information and status "
 "of each feature. To see Manager version and API version, check the Core "
@@ -1064,7 +1235,7 @@ msgstr ""
 "Core 패널을 확인하십시오. Backend.AI를 구성하는 각 컴포넌트의 호환 가능 여부를 보려면 Component 패널을 "
 "확인하십시오."
 
-#: ../../admin_menu/admin_menu.rst:680
+#: ../../admin_menu/admin_menu.rst:765
 msgid "This page is only for showing current information."
 msgstr "이 페이지는 현재 정보를 보여주기 위한 것입니다."
 
@@ -1192,4 +1363,10 @@ msgstr "이 페이지는 현재 정보를 보여주기 위한 것입니다."
 #~ "시, 동적으로 오버레이 네트워크를 생성하게 됩니다. 관리자"
 #~ " 계정에서는 필요에 따라 오버레이 네트워크에서 사용되는 "
 #~ "최대 전송 유닛(MTU) 값을 설정할 수 있습니다."
+
+#~ msgid ""
+#~ "On STORAGES tab, you can see what"
+#~ " kind of mount volumes (usually NFS)"
+#~ " exist."
+#~ msgstr "STORAGES 탭에서는 시스템에 마운트 된 볼륨을 조회할 수 있습니다. 주로 NFS라고 생각하시면 됩니다."
 
