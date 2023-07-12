@@ -894,7 +894,7 @@ msgid ""
 msgstr ""
 "STORAGES 탭에서는 시스템에 마운트 된 볼륨을 조회할 수 있습니다. 주로 NFS라고 생각하시면 됩니다. "
 "23.03 버전부터는 쿼타 관리를 지원하는 스토리지에 대해 사용자별/프로젝트별 쿼타 설정이 가능합니다. "
-"이 기능을 사용함으로서, 관리자는 좀더 손쉽게 사용자와 프로젝트용 폴더가 스토리지 내에서 얼마만큼 "
+"이 기능을 사용함으로써, 관리자는 좀 더 손쉽게 사용자와 프로젝트용 폴더가 스토리지 내에서 얼마만큼 "
 "공간을 차지하고 있는지 확인하고 관리할 수 있습니다."
 
 #: ../../admin_menu/admin_menu.rst:564
@@ -915,8 +915,8 @@ msgid ""
 "support quota configuration internally."
 msgstr ""
 "쿼타 설정은 해당 기능을 제공하는 저장소 (예: XFS, CephFS, NetApp, Purestorage, 등)에 한해서만 "
-"가능합니다. 저장소의 쿼타 설정 기능 제공 유무에 관계없이, 쿼타 설정 페이지는 제공하나, "
-"내부적으로 쿼타 설정을 지원하지 않는 저장소에 대해서는 쿼타 설정이 불가능합니다."
+"가능합니다. 저장소의 쿼타 설정 기능 제공 여부에 관계없이, 쿼타 설정 페이지는 제공하나, "
+"내부적으로 쿼타 설정을 지원하지 않는 저장소에 대해서는 쿼타 설정할 수 없습니다."
 
 #: ../../admin_menu/admin_menu.rst:576
 msgid "Quota Setting Panel"
@@ -959,11 +959,11 @@ msgstr "사용자 대상: 사용자별로 쿼타를 설정합니다."
 
 #: ../../admin_menu/admin_menu.rst:590
 msgid "For Project: Configure per-project quota(project-folder) setting here."
-msgstr "프로젝트 대상: 프로젝트 별로 쿼타(프로젝트-폴더) 를 설정합니다."
+msgstr "프로젝트 대상: 프로젝트별로 쿼타(프로젝트-폴더) 를 설정합니다."
 
 #: ../../admin_menu/admin_menu.rst:591
 msgid "ID: Corresponds to user or project id."
-msgstr "ID: 사용자 나 프로젝트 ID에 대응합니다."
+msgstr "ID: 사용자나 프로젝트 ID에 대응합니다."
 
 #: ../../admin_menu/admin_menu.rst:592
 msgid "Hard Limit (GB): Currently set hard limit quota for selected quota."
@@ -973,7 +973,7 @@ msgstr "Hard Limit (GB): 선택된 쿼타에서 현재 설정된 Hard Limit 쿼�
 msgid ""
 "Control: Provides editing the hard limit or even deleting the quota "
 "setting."
-msgstr "설정: Hard limit 과 같은 설정값을 수정하거나, 쿼타 설정 값을 삭제하는 기능을 제공합니다."
+msgstr "설정: Hard limit 과 같은 설정값을 수정하거나, 쿼타 설정값을 삭제하는 기능을 제공합니다."
 
 #: ../../admin_menu/admin_menu.rst:597
 msgid "Set User Quota"
@@ -990,10 +990,10 @@ msgid ""
 "if you already set the quota."
 msgstr ""
 "Backend.AI에서는 사용자와 프로젝트 관리자에 의해 생성되는 두 가지 타입의 폴더가 있습니다. "
-"이 섹션에서는, 사용자 별로 현재 쿼타 설정 값을 확인하고, 어떻게 값을 설정하는 지 다룹니다. "
-"우선, 쿼타 설정 패널의 활성화된 탭이 ``For User``인지 확인해주세요. 그 다음, 쿼타를 수정하고 확인할 "
+"이 섹션에서는, 사용자별로 현재 쿼타 설정값을 확인하고, 어떻게 값을 설정하는지 다룹니다. "
+"우선, 쿼타 설정 패널의 활성화된 탭이 ``For User`` 인지 확인해주세요. 그 다음, 쿼타를 수정하고 확인할 "
 "대상인 사용자를 선택해주세요. 만일 쿼타가 이미 설정되어 있다면, 사용자 ID와 동일한 쿼타 ID 값이 "
-"테이블에 표시되어 있는 것을 확인하실 수 있습니다."
+"테이블에 표시된 것을 확인하실 수 있습니다."
 
 #: ../../admin_menu/admin_menu.rst:607
 msgid ""
@@ -1005,7 +1005,7 @@ msgid ""
 msgstr ""
 "물론, 쿼타를 수정하려고 할 경우, 컨트롤 컬럼의 수정 버튼을 선택하기만 하면 됩니다. ``Edit`` 버튼을 "
 "클릭하고 나면, 쿼타를 설정하는 작은 모달 창이 뜬 것을 확인하실 수 있습니다. 설정할 값을 정확히 입력 후, "
-"반드시 ``OK`` 버튼을 클릭해주세요. 그렇지 않으면 변경 내역은 반영되지 않습니다. " 
+"반드시 ``OK`` 버튼을 클릭해주세요. 그렇지 않으면 변경 내용은 반영되지 않습니다. "
 
 #: ../../admin_menu/admin_menu.rst:614
 msgid "Set Project Quota"
@@ -1042,13 +1042,13 @@ msgid ""
 "the quota follows to corresponding quota, which depends on the quota "
 "type(user / project)."
 msgstr ""
-"쿼타를 해제하는 기능도 제공합니다. 쿼타 설정 값을 삭제한 뒤에는, 해당 프로젝트/사용자에 적용된 쿼타는 "
+"쿼타를 해제하는 기능도 제공합니다. 쿼타 설정값을 삭제한 뒤에는, 해당 프로젝트/사용자에 적용된 쿼타는 "
 "사용자 또는 프로젝트에서 기본적으로 적용된 쿼타를 따라가게 됩니다. 이 값은 WebUI에서 따로 설정하는 "
 "사용자 인터페이스를 지원하지 않습니다. 기본 쿼타 설정값을 변경하려면, 관리자 전용 페이지에 접근해서 "
 "해당 값을 변경해야 합니다. "
 "컨트롤 컬럼에 있는 ``Unset`` 버튼을 클릭하면, 작은 스낵바 메시지 창이 뜨고, 현재 쿼타 세팅을 정말로 "
 "삭제할 것인지 확인하게 됩니다. 여기서 ``OK`` 버튼을 클릭하게 되면, 쿼타 설정값이 삭제되고, 자동으로 "
-"쿼타 설정 값은 쿼타의 타입(사용자 / 프로젝트)에 대응하는 값으로 적용되게 됩니다."
+"쿼타 설정값은 쿼타의 타입(사용자 / 프로젝트)에 대응하는 값으로 적용되게 됩니다."
 
 #: ../../admin_menu/admin_menu.rst:641
 msgid ""
@@ -1057,7 +1057,7 @@ msgid ""
 " If no hard limit value for quota is set, ``max_vfolder_size`` value in "
 "the resource policy is used as the default value."
 msgstr ""
-"만일 사용자 별/프로젝트 별 설정 값이 없을 경우, 사용자/프로젝트 별 자원 정책 내 대응하는 값들이 "
+"만일 사용자 별/프로젝트 별 설정값이 없을 경우, 사용자/프로젝트 별 자원 정책 내 대응하는 값들이 "
 "기본 값으로 설정되게 됩니다. 예를 들어 쿼타에서 hard limit 값이 설정되어 있지 않다면, 자원 정책 내"
 " ``max_vfolder_size``　값이 기본 값으로 쓰이게 됩니다."
 
@@ -1153,8 +1153,8 @@ msgid ""
 " group<scheduling-methods>`. If there is a resource group-specific "
 "setting, this value will be ignored."
 msgstr ""
-"Scheduler의 설정(CONFIG) 버튼을 누르면 스케줄러 별 설정을 할 수 있습니다. 스케줄러 별 설정 값은 :ref:`자원 "
-"그룹<scheduling-methods>` 의 스케줄러 설정 값이 없을 때 사용하는 기본 값을 의미합니다. 자원 그룹에 설정한 값이"
+"Scheduler의 설정(CONFIG) 버튼을 누르면 스케줄러 별 설정을 할 수 있습니다. 스케줄러 별 설정값은 :ref:`자원 "
+"그룹<scheduling-methods>` 의 스케줄러 설정값이 없을 때 사용하는 기본 값을 의미합니다. 자원 그룹에 설정한 값이"
 " 있을 경우, 이 값은 무시됩니다."
 
 #: ../../admin_menu/admin_menu.rst:712
@@ -1181,7 +1181,7 @@ msgstr "향후 CLI에서 지원하는 다양한 설정 변경 기능을 GUI에�
 msgid ""
 "System settings are default settings. If resource group has certain "
 "value, then it overrides configured value in system settings."
-msgstr "시스템 설정 값은 기본 설정입니다. 자원 그룹에서 특정 값이 설정된 경우, 시스템 설정 값이 아닌 자원 그룹 설정 값을 적용합니다."
+msgstr "시스템 설정값은 기본 설정입니다. 자원 그룹에서 특정 값이 설정된 경우, 시스템 설정값이 아닌 자원 그룹 설정값을 적용합니다."
 
 #: ../../admin_menu/admin_menu.rst:733
 msgid "Server management"
@@ -1310,12 +1310,12 @@ msgstr "이 페이지는 현재 정보를 보여주기 위한 것입니다."
 #~ "agent에 접근하는 데 있어 더 나은 효율성과 "
 #~ "확장성을 얻기 위해 wsproxy 주소를 설정하여 agent"
 #~ " 내 컨테이너에 직접 연결할 수도 있습니다. "
-#~ "Backend.AI는 전역 스케쥴러 설정 값을 기본적으로 "
+#~ "Backend.AI는 전역 스케쥴러 설정값을 기본적으로 "
 #~ "사용하고 있는데, 관리자 계정의 경우 이런 각각의 "
 #~ "자원 그룹에서 이러한 설정들을 다르게 적용할 수 "
 #~ "있습니다. 한 번 설정되면, 전역 스케쥴러에 설정되었던 "
 #~ "값들보다 자원 그룹 별 설정된 값이 우선됩니다. "
-#~ "그렇지 않은 경우, 기본 설정 값을 따릅니다. 각"
+#~ "그렇지 않은 경우, 기본 설정값을 따릅니다. 각"
 #~ " 항목에 대해 더 자세한 설명은 아래를 참고해주십시오."
 
 #~ msgid ""
