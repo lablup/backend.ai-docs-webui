@@ -1059,7 +1059,7 @@ msgid ""
 msgstr ""
 "만일 사용자 별/프로젝트 별 설정값이 없을 경우, 사용자/프로젝트 별 자원 정책 내 대응하는 값들이 "
 "기본 값으로 설정되게 됩니다. 예를 들어 쿼타에서 hard limit 값이 설정되어 있지 않다면, 자원 정책 내"
-" ``max_vfolder_size``　값이 기본 값으로 쓰이게 됩니다."
+" ``max_vfolder_size`` 값이 기본 값으로 쓰이게 됩니다."
 
 #: ../../admin_menu/admin_menu.rst:649
 msgid "Download session lists"
