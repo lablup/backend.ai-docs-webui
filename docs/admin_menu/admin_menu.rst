@@ -579,8 +579,8 @@ In Quota setting page, there are two panels that represent the corresponding ite
 
 .. image:: quota_setting_page.png
 
-* Resource
-   * Usage: Shows the actual amount usage of the selected storage. 
+* Overview panel
+   * Usage: Shows the actual amount usage of the selected storage.
    * Endpoint: Represents the mount point of the selected storage.
    * Backend Type: The type of storage.
    * Capabilities: The supported feature of the selected storage.
@@ -594,11 +594,11 @@ In Quota setting page, there are two panels that represent the corresponding ite
 
 
 Set User Quota
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
 In Backend.AI, there are two types of vfolders created by user and admin(project). In this section,
 we would like to show how to check current quota setting per-user and how to configure it.   
-First, Make sure the active tab of quota settings panel is ``For User``. Then, Select user you desire to 
+First, make sure the active tab of quota settings panel is ``For User``. Then, select user you desire to 
 check and edit the quota. You can see the quota id that corresponds to user's id and the configuration already set 
 in the table, if you already set the quota.   
 
