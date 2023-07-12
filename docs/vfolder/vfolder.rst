@@ -23,7 +23,7 @@ belong.
 Storage Status on top of the folder list shows the following information:
 
 * Created: The number of folders that the user created.
-* Invited: The number of folers that the user was invited to share.
+* Invited: The number of folders that the user was invited to share.
 * Capacity: The maximum number of folders that the user can create afterwards.
   This value depends on the resource policy applied to the user and cannot be
   changed without changing the resource policy. Folders that were not created by
@@ -354,6 +354,15 @@ automatically. (This session will not affect resource occupancy.)
    :align: center
    :alt: SSH / SFTP connection dialog
 
+.. note::
+   We provide a detailed information about using large file upload via ssh/sftp connection.
+   For more information, please click the ``Read more`` text link to see all the details of execution.
+
+   .. image:: SSH_SFTP_connection_expanded.png
+      :height: 400
+      :align: center
+      :alt: SSH / SFTP connection dialog expanded
+
 For the SSH connection, click "DOWNLOAD SSH KEY" button to download the SSH private key
 (``id_container``). Also, remember the host and port number. Then, you can connect to SFTP server
 using the Connection Example code written in the dialog, or you can connect to SSH / SFTP
@@ -363,32 +372,32 @@ by referring to the following :ref:`link<sftp_connection_for_linux_and_mac>`.
    If you upload your SSH keypair, the ``id_container`` will be set with your
    own SSH private key. So, you don't need to download it every time you
    want to connect via SSH to your container. Please refer to
-   :ref:`manageing user's SSH keypair<user-ssh-keypair-management>`.
+   :ref:`managing user's SSH keypair<user-ssh-keypair-management>`.
 
 
-Setting quota on XFS
---------------------
+.. Setting quota on XFS
+.. --------------------
 
-If the underlying file system supports a per-directory or a per-project quota,
-such as XFS, Backend.AI can provide a per-folder quota. Administrators can set
-the quota limit through a resource policy, so if you want to increase the quota,
-contact the administrator. Within the policy limit, users can adjust the quota
-of their folders by clicking the setting icon for each data folder.
+.. If the underlying file system supports a per-directory or a per-project quota,
+.. such as XFS, Backend.AI can provide a per-folder quota. Administrators can set
+.. the quota limit through a resource policy, so if you want to increase the quota,
+.. contact the administrator. Within the policy limit, users can adjust the quota
+.. of their folders by clicking the setting icon for each data folder.
 
-.. image:: xfs_quota_setting.png
-   :width: 400
-   :align: center
-   :alt: XFS quota setting
+.. .. image:: xfs_quota_setting.png
+..    :width: 400
+..    :align: center
+..    :alt: XFS quota setting
 
-For more information on the per-folder quota on XFS, please refer to the
-following docs:
+.. For more information on the per-folder quota on XFS, please refer to the
+.. following docs:
 
-- `XFS Filesystem Backends Guide in Backend.AI Storage Proxy <https://github.com/lablup/backend.ai-storage-proxy#xfs>`_
-- `Per-folder quota for XFS <https://blog.lablup.com/posts/2022/01/21/xfs-directory-quota>`_
+.. - `XFS Filesystem Backends Guide in Backend.AI Storage Proxy <https://github.com/lablup/backend.ai-storage-proxy#xfs>`_
+.. - `Per-folder quota for XFS <https://blog.lablup.com/posts/2022/01/21/xfs-directory-quota>`_
 
-You can also see the current usage and capacity of a data folder in information dialog.
+.. You can also see the current usage and capacity of a data folder in information dialog.
 
-.. image:: vfolder_information_storage_host_xfs.png
-   :width: 400
-   :align: center
-   :alt: Vfolder information storage host xfs
+.. .. image:: vfolder_information_storage_host_xfs.png
+..    :width: 400
+..    :align: center
+..    :alt: Vfolder information storage host xfs

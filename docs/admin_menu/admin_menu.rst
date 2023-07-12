@@ -228,7 +228,7 @@ the UPDATE button to update the resource policy.
 About details of each option in resource policy dialog, see the description below.
 
 * Resource Policy
-   * CPU:  Specify the maximum amount of CPU cores. (max value: 512)
+   * CPU: Specify the maximum amount of CPU cores. (max value: 512)
    * RAM: Specify the maximum amount of memory in GB. It would be good practice
      to set memory twice as large as the maximum value of GPU memory. (max value: 1024)
    * GPU: Specify the maximum amount of physical GPUs. If fractional GPU is
@@ -460,7 +460,7 @@ by Click note icon in the Control panel.
 
 On Terminated tab, you can check the information of the agents that has been
 connected once and then terminated or disconnected. It can be used as a
-reference for node management. If the list is empty, then It means
+reference for node management. If the list is empty, then it means
 that there's no disconnection or termination occurred.
 
 .. image:: terminated_agent_list.png
@@ -556,8 +556,93 @@ Storages
 --------
 
 On STORAGES tab, you can see what kind of mount volumes (usually NFS) exist.
+From 23.03 version, We provide per-user/per-project quota setting on storage that supports quota management.
+By using this feature, admin can easily manage and monitor the exact amount of storage usage for each user and project based folder.
 
 .. image:: storage_list.png
+
+In order to set quota, you need to first access to storages tab in resource page.
+And then, click gear icon in control column.
+
+.. note:: 
+   Please remind that quota setting is only available in storage that provides quota setting 
+   (e.g. XFS, CephFS, NetApp, Purestorage, etc.). Although you can see the usage of storage 
+   in quota setting page regardless of storage, you cannot configure the quota which doesn't 
+   support quota configuration internally.
+   
+   .. image:: no_support_quota_setting.png
+
+Quota Setting Panel
+~~~~~~~~~~~~~~~~~~~~
+
+In Quota setting page, there are two panels that represent the corresponding items for each panel's title.
+
+.. image:: quota_setting_page.png
+
+* Overview panel
+   * Usage: Shows the actual amount usage of the selected storage.
+   * Endpoint: Represents the mount point of the selected storage.
+   * Backend Type: The type of storage.
+   * Capabilities: The supported feature of the selected storage.
+
+* Quota Settings
+   * For User: Configure per-user quota setting here.
+   * For Project: Configure per-project quota(project-folder) setting here.
+   * ID: Corresponds to user or project id.
+   * Hard Limit (GB): Currently set hard limit quota for selected quota.
+   * Control: Provides editing the hard limit or even deleting the quota setting.
+
+
+Set User Quota
+~~~~~~~~~~~~~~~~
+
+In Backend.AI, there are two types of vfolders created by user and admin(project). In this section,
+we would like to show how to check current quota setting per-user and how to configure it.   
+First, make sure the active tab of quota settings panel is ``For User``. Then, select user you desire to 
+check and edit the quota. You can see the quota id that corresponds to user's id and the configuration already set 
+in the table, if you already set the quota.   
+
+.. image:: per_user_quota.png
+
+Of course, if you want to edit the quota, you can simply click the Edit button in the control column. After Clicking ``Edit`` button, you may see the small modal that enables configuring quota setting. 
+After input the exact amount, don't forget to Click ``OK`` button, unless the changes will not be applied.
+
+.. image:: quota_settings_panel.png
+
+
+Set Project Quota
+~~~~~~~~~~~~~~~~~~
+
+Setting a quota on project-folder is similar to setting a user quota. The difference between setting 
+project quota and user quota is to confirm setting the project quota requires one more procedure, 
+which is selecting the domain that the project is dependent on. The rest are the same.
+As in the picture below, you need to first select the domain, and then select the project.
+
+.. image:: per_project_quota.png
+
+
+.. image:: per_project_quota_2.png
+
+
+Unset Quota
+~~~~~~~~~~~~
+
+We also provides the feature to unset the quota. Please remind that after removing the quota setting, quota will automatically follows 
+user or project default quota, which cannot be set in WebUI. If you want to change the default quota setting, you may need to access to admin-only page.   
+By Clicking ``Unset`` button in control column, the small snackbar message will show up and confirm whether you really want to delete the current quota setting. 
+If you click ``OK`` button in the snackbar message, then it will delete the quota setting and automatically reset the quota follows to corresponding quota, 
+which depends on the quota type(user / project).
+
+.. image:: unset_quota.png
+
+
+.. note::
+   
+   If there's no config per user/project, then corresponding values in the user/project resource policy will be set as 
+   a default value. For example, If no hard limit value for quota is set, ``max_vfolder_size`` value in the resource policy 
+   is used as the default value.
+
+
 
 
 Download session lists
