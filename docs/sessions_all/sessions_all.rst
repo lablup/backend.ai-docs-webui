@@ -79,6 +79,9 @@ please refer to the following.
   variables in a compute session. See the section
   :ref:`How to add environment variables before session creation<set-environment-variables>`
   on how to use.
+* Set Preopen Ports: Provides an interface for users to set preopen ports in a
+  compute session. See the section :ref:`How to add preopen ports before session creation
+  <set-preopen-ports>` on how to use.
 
 Click the right arrow button at the bottom to advance to the next page. You can
 also launch a compute session directly by clicking the CONFIRM AND LAUNCH
@@ -152,7 +155,7 @@ proceed to the next page.
 
 Now, we have reached the last page. You can view information of session(s) to create,
 such as environment itself, allocated resources, mount information,
-environment variables set on the previous pages, etc.
+environment variables set on the previous pages, preopen ports, etc.
 After confirming the settings, click the LAUNCH button. If there is a
 setting you want to change, you can return to the previous page by clicking the
 left arrow button.
@@ -419,7 +422,7 @@ To give more convenient workspace for users, Backend.AI supports environment var
 in session launching. In this feature, you can add any envs such as ``PATH`` by filling out
 variable name and value in environment configuration dialog.
 
-To add environment variable, simply click CONFIG button.
+To add environment variable, simply click setting icon button of the Environment Variable.
 
 .. image:: env-config-start.png
    :width: 350
@@ -454,6 +457,41 @@ Also, you can remove the variable by clicking ``-`` button of the row that you w
 
 If you want to delete the whole variables and value, please click DELETE ALL button at the bottom of the dialog.
 
+.. _set-preopen-ports:
+
+How to add preopen ports before creating a session
+--------------------------------------------------
+
+Backend.AI supports preopen ports setting at container startup. When using this feature, there is no need to build
+separate images when you want to expose the serving port.
+
+To add preopen ports, simply click the setting icon button of the Preopen Ports.
+
+.. image:: preopen-ports-config.png
+   :width: 350
+   :align: center
+   :alt: Preopen Ports Configuration
+
+and then, preopen ports configuration dialog appears.
+
+In this dialog, you can add, update and delete written preopen ports. To see more detail information, please click
+'i' button at the header of the dialog.
+
+.. image:: preopen-ports-config-dialog-info.png
+   :align: center
+   :alt: Preopen Ports Configuration info
+
+You can input between 1024 ~ 65535 port numbers to the input fields. Then, click the save button. You can check the
+configured preopen ports in the session app launcher.
+
+.. image:: session_app_launcher.png
+   :width: 400
+   :align: center
+
+.. note::
+   The preopen ports are **internal ports within the container**. Therefore, unlike other apps, when you click on the
+   preopen ports in the session app launcher, you will see a blank page. Please bind a server to the respective port
+   before using it.
 
 Save container commit
 ---------------------
