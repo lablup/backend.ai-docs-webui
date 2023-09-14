@@ -247,9 +247,12 @@ after the compute session is created.
    :width: 400
    :align: center
 
+.. _open-app-to-public:
+
 .. note::
    There are two check options under the app icons. Opening the app with each item checked
    applies the following features, respectively:
+
 
    * Open app to public: Open the app to the public. Basically, web services
      such as Terminal and Jupyter Notebook services are not accessible by
