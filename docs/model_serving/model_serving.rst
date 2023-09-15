@@ -66,19 +66,19 @@ To use the Model Service, you need to follow the steps below:
 Creating a Model Definition File
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   Note: The model definition file must be named model-definition.yml or
-   model-definition.yaml to align with the current version.
+   .. note:: 
+      The model definition file must be named ``model-definition.yml`` or
+      ``model-definition.yaml`` to align with the current version.
 
 The model definition file contains the configuration information
-required by the `Backend.AI <http://backend.ai/>`__ system to
-automatically start, initialize, and scale the inference session. It is
-stored in the model type folder independently from the container image
-that contains the inference service engine. This allows the engine to
-serve different models based on specific requirements and eliminates the
-need to build and deploy a new container image every time the model
-changes. By loading the model definition and model data from the network
-storage, the deployment process can be simplified and optimized during
-automatic scaling.
+required by the Backend.AI system to automatically start, initialize,
+and scale the inference session. It is stored in the model type folder 
+independently from the container image that contains the inference 
+service engine. This allows the engine to serve different models based on 
+specific requirements and eliminates the need to build and deploy a new
+container image every time the model changes. By loading the model 
+definition and model data from the network storage, the deployment
+process can be simplified and optimized during automatic scaling.
 
 The model definition file follows the following format:
 
@@ -96,11 +96,13 @@ The model definition file follows the following format:
            max_retries: 10
 
 Key-Value Descriptions for Model Definition File
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   Note: Values marked as required in the notes must be included in the
-   model definition file. Other items are optional and can be
-   omitted.Items with a / slash indicate descriptions for subkeys under
-   the key preceding the slash.
+   .. note:: 
+      Values marked as required in the notes must be included in the
+      model definition file. Other items are optional and can be
+      omitted.Items with a ``/`` slash indicate descriptions for sub-keys under
+      the key preceding the slash.
 
 +--------------------------------------+-----------------------+-------------------+
 | **Key**                              | **Description**       | **Note**          |
@@ -310,7 +312,7 @@ Generating Tokens
 ~~~~~~~~~~~~~~~~~
 
 Once the model service is successfully executed, the status will be set
-to HEALTHY. In this case, you can click on the corresponding endpoint
+to ``HEALTHY``. In this case, you can click on the corresponding endpoint
 name in the Model Service tab to view detailed information about the
 model service. From there, you can check the service endpoint in the
 routing information of the model service. If the “Open to Public” option
@@ -331,6 +333,16 @@ Key           Value
 Content-Type  application/json
 Authorization BackendAI
 ============= ================
+
+Here's the simple command using ``curl`` command whether to check sending any requests 
+to model serving endpoint working properly or not.
+
+.. code:: console
+
+   $ export API_TOKEN="<token>"
+   $ curl -H "Content-Type: application/json" -X GET \
+   $ -H "Authorization: BackendAI $API_TOKEN" \
+   $ <model-service-endpoint>
 
 Accessing the Model Service Endpoint for End Users
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
