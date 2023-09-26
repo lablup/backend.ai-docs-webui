@@ -39,11 +39,11 @@ modifying the compute session for training in the following way:
 1. Add pre-opened ports during session creation to map the running
    server port inside the session for model serving. (For instructions
    on how to use preopen ports, refer to
-   this :ref:`Set Preopen Ports <set-preopen-ports>`.)
+   this :ref:`Set Preopen Ports <set_preopen_ports>`.)
 2. Check “Open app to public” to allow the service mapped to the
    pre-opened port to be publicly accessible. (For detailed information
    about “Open app to public,” refer to
-   this :ref:`Open app to public <open-app-to-public>`.)
+   this :ref:`Open app to public <open_app_to_public>`.)
 
 However, there are certain limitations in version 23.03:
 
@@ -109,7 +109,7 @@ Key-Value Descriptions for Model Definition File
    .. note:: 
       Values marked as required in the notes must be included in the
       model definition file. Other items are optional and can be
-      omitted.Items with a ``/`` slash indicate descriptions for sub-keys under
+      omitted.Items with a ``/`` slash indicate descriptions for sub-keys under
       the key preceding the slash.
 
 +--------------------------------------+-----------------------+-------------------+
@@ -139,7 +139,7 @@ Key-Value Descriptions for Model Definition File
 |                                      | | description for     | | may be added in |
 |                                      | | service action      | | the future      | 
 +--------------------------------------+-----------------------+-------------------+
-| ``service/pre_start_actions/args/*`` | | Please refer to     | ``-``             |
+| ``service/pre_start_actions/args/*`` | | Please refer to the | ``-``             |
 |                                      | | description for     |                   |
 |                                      | | service action      |                   |
 +--------------------------------------+-----------------------+-------------------+
@@ -200,7 +200,7 @@ Description for service action supported in Backend.AI Model serving
 | ``run_command``    | | args/command: Specify the command to      | | The result of       |
 |                    | | executed as an array.                     | | executing a command,|
 |                    | | e.g. python3 -m http.server, 8080 ->      | | including any errors|
-|                    | | [["python3", "-m", "http.server", "8080"]]| | , will be returned  |
+|                    | | ["python3", "-m", "http.server", "8080"]  | | , will be returned  |
 |                    | |                                           | | in following format:|
 |                    | |                                           | | - out: Output of the|
 |                    | |                                           | | command execution   |
@@ -345,6 +345,10 @@ follows:
       overwrite the file in the saved location. Then, click the refresh
       button to ensure that the routing of the model service is set
       correctly.
+
+      .. image:: refresh-button.png
+         :align: center
+         :alt: Refresh button
 
 Generating Tokens
 ~~~~~~~~~~~~~~~~~
