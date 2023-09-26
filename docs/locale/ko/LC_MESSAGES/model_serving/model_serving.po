@@ -296,7 +296,9 @@ msgstr "``service/pre_start_actions``"
 
 #: ../../model_serving/model_serving.rst
 msgid "preceding commands"
-msgstr "``start_command``항목 내"
+msgstr ""
+""
+"``start_command`` 항목 내"
 
 #: ../../model_serving/model_serving.rst
 msgid "or actions to be"
@@ -304,11 +306,11 @@ msgstr "실행할 명령어/액션을"
 
 #: ../../model_serving/model_serving.rst
 msgid "executed before the"
-msgstr "정리해두는 항목입니다."
+msgstr "정리해두는"
 
 #: ../../model_serving/model_serving.rst
 msgid "``start_command``"
-msgstr "``start_command``"
+msgstr "항목입니다."
 
 #: ../../model_serving/model_serving.rst:138
 msgid "``service/pre_start_actions/action``"
