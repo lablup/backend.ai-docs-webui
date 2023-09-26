@@ -1,0 +1,1000 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 23.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-26 14:44+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../model_serving/model_serving.rst:3
+msgid "Model Serving"
+msgstr "모델 서빙"
+
+#: ../../model_serving/model_serving.rst:6
+msgid "Model Service"
+msgstr "모델 서비스"
+
+#: ../../model_serving/model_serving.rst:9
+msgid ""
+"This feature is supported in Enterprise version only. For more "
+"information, please contact `here <http://backend.ai/>`__ ."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:12
+msgid ""
+"Backend.AI not only facilitates the construction of development "
+"environments and resource management during the model training phase, but"
+" also supports the model service feature from version 23.09 onwards. This"
+" feature allows end-users (such as AI-based mobile apps and web service "
+"backends) to make inference API calls when they want to deploy the "
+"completed model as an inference service."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:24
+msgid ""
+"The Model Service extends the functionality of the existing training "
+"compute sessions, enabling automated maintenance, scaling, and permanent "
+"port and endpoint address mapping for production services. Developers or "
+"administrators only need to specify the scaling parameters required for "
+"the Model Service, without the need to manually create or delete compute "
+"sessions."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:32
+msgid "Configuring and limitations of model service in version 23.03 and earlier"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:34
+msgid ""
+"Although the model serving-specific feature is officially supported from "
+"version 23.09, you can still use model service in earlier versions."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:37
+msgid ""
+"For example, in version 23.03, you can configure a model service by "
+"modifying the compute session for training in the following way:"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:40
+msgid ""
+"Add pre-opened ports during session creation to map the running server "
+"port inside the session for model serving. (For instructions on how to "
+"use preopen ports, refer to this :ref:`Set Preopen Ports <set-preopen-"
+"ports>`.)"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:44
+msgid ""
+"Check “Open app to public” to allow the service mapped to the pre-opened "
+"port to be publicly accessible. (For detailed information about “Open app"
+" to public,” refer to this :ref:`Open app to public <open-app-to-"
+"public>`.)"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:49
+msgid "However, there are certain limitations in version 23.03:"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:51
+msgid ""
+"Sessions do not automatically recover if they are terminated due to "
+"external factors such as idle timeout or system errors."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:53
+msgid "The app port changes every time a session is restarted."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:54
+msgid "If sessions are repeatedly restarted, the idle ports may be exhausted."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:57
+msgid ""
+"The official Model Service feature in version 23.09 resolves these "
+"limitations. Therefore, starting from version 23.09, it is recommended to"
+" create/manage Model Services through the model serving menu whenever "
+"possible. The use of pre-opened ports is recommended only for development"
+" and testing purposes."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:64
+msgid "Guide to Steps for Using Model Service"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:66
+msgid "To use the Model Service, you need to follow the steps below:"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:68
+msgid "Create a model definition file."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:69
+msgid "Upload the model definition file to the model type folder."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:70
+msgid "Create/modify the Model Service."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:71
+msgid "(If the Model Service is not public) Obtain a token."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:72
+msgid ""
+"(For end users) Access the endpoint corresponding to the Model Service to"
+" verify the service."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:76
+msgid "Creating a Model Definition File"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:79
+msgid ""
+"The model definition file must be named ``model-definition.yml`` or "
+"``model-definition.yaml`` to align with the current version."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:82
+msgid ""
+"The model definition file contains the configuration information required"
+" by the Backend.AI system to automatically start, initialize, and scale "
+"the inference session. It is stored in the model type folder "
+"independently from the container image that contains the inference "
+"service engine. This allows the engine to serve different models based on"
+" specific requirements and eliminates the need to build and deploy a new "
+"container image every time the model changes. By loading the model "
+"definition and model data from the network storage, the deployment "
+"process can be simplified and optimized during automatic scaling."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:92
+msgid "The model definition file follows the following format:"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:108
+msgid "Key-Value Descriptions for Model Definition File"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:111
+msgid ""
+"Values marked as required in the notes must be included in the model "
+"definition file. Other items are optional and can be omitted.Items with a"
+" ``/`` slash indicate descriptions for sub-keys under the key preceding "
+"the slash."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:117
+msgid "**Key**"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:117
+msgid "**Description**"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:117
+msgid "**Note**"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:119
+msgid "``name``"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "Defines the name"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "of the model."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:119
+#: ../../model_serving/model_serving.rst:122
+#: ../../model_serving/model_serving.rst:147
+#: ../../model_serving/model_serving.rst:152
+msgid "Required"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:122
+msgid "``model_path``"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "Addresses the path"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "of where model is"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "defined."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:123
+msgid "Starts from ``/models``"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:126
+msgid "``service``"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "Item for organizing"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "information about"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "the files to be"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "served (includes"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "command scripts and"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "code)"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:126
+#: ../../model_serving/model_serving.rst:133
+#: ../../model_serving/model_serving.rst:143
+#: ../../model_serving/model_serving.rst:165
+#: ../../model_serving/model_serving.rst:213
+#: ../../model_serving/model_serving.rst:216
+msgid "``-``"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:133
+msgid "``service/pre_start_actions``"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "preceding commands"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "or actions to be"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "executed before the"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "``start_command``"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:139
+msgid "``service/pre_start_actions/action``"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "Please refer to the"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "description for"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "service action"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "Useful actions"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "may be added in"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "the future"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:143
+msgid "``service/pre_start_actions/args/*``"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "Please refer to"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:147
+msgid "``service/start_command``"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "Specify the command"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "to be executed as"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "an array of strings"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "in model serving."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:152
+msgid "``service/port``"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "Specify the ports to"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "be opened in"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "accordance with the"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "commands executed"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "during model serving"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "at the container."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:159
+msgid "``health_check/path``"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "Specify the path for"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "verifying that"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "the service is"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "running properly"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "This is the path"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "that follows the"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "endpoint"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:165
+msgid "``health_check/max_retries``"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "Specify the number"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "of retries to be"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "made if there is no"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "response after a"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "request is sent to"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "the service during"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "model serving."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:176
+msgid "Description for service action supported in Backend.AI Model serving"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:179
+msgid "**Action name**"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:179
+msgid "**Supported key name / description**"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:179
+msgid "**Notes**"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:181
+msgid "``write_file``"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "- arg/filename: Specify the file name"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "- body: Specify the content to be"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "added to the file."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "- mode: Specify the file's access"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "permissions."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "- append: Set whether to overwrite or"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "append content to the file"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "as ``True`` or ``False``."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "This is an action"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "to create a file"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "with the given"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "file name and"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "append control to it"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "the default access"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "permission is"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "``644``."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:190
+msgid "``write_tempfile``"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "This is an action to"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "create a file with"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "a temporary file"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "name (``.py``) and"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "append content to"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "it. If no value is"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "specified for the"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "mode, the default"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "access permission is"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:201
+msgid "``run_command``"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "args/command: Specify the command to"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "executed as an array."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "e.g. python3 -m http.server, 8080 ->"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "[[\"python3\", \"-m\", \"http.server\", \"8080\"]]"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "The result of"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "executing a command,"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "including any errors"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid ", will be returned"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "in following format:"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "- out: Output of the"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "command execution"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "- err: Error msg if"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "an error occurs"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "during command"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "execution"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:213
+msgid "``mkdir``"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "args/path: Specify the path to create a"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "directory"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:216
+msgid "``log``"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "- args/message: Specify the message to be"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "displayed in the logs."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "- debug: Set to ``True`` if it is in"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "debug mode, otherwise, set to"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst
+msgid "``False``."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:226
+msgid "Uploading Model Definition File to Model Type Folder"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:228
+msgid ""
+"To upload the model definition file (``model-definition.yml``) to the "
+"model type folder, you need to create a virtual folder. When creating the"
+" virtual folder, select the ``model`` type instead of the default "
+"``general`` type. Refer to the section on creating a storage folder in "
+"the Data & Folders page for instructions on how to create a folder."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:239
+msgid ""
+"After creating the folder, select the “Model” tab in the Data & Folders "
+"page, click on the recently created model type folder icon to open the "
+"folder explorer, and upload the model definition file."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:248
+msgid "Creating/Modifying Model Service"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:250
+msgid ""
+"Once the model definition file is uploaded to the virtual folder of the "
+"model type, you are ready to create the model service."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:253
+msgid ""
+"Click the “Start Service” button on the Model Serving page. This will "
+"bring up a modal where you can enter the required settings for creating "
+"the service."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:262
+msgid ""
+"First, provide a service name and select a resource group. Then, select "
+"the virtual folder of the model type to be used for the model service."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:265
+msgid "For detailed explanations of each item, please refer to the following:"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:267
+msgid ""
+"Open To Public: This option allows access to the model service without "
+"any separate token on the server where the service is to be hosted. By "
+"default, it is disabled."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:270
+msgid ""
+"Desired Routing Count: The model service can be serviced by multiple "
+"servers. This setting determines how many routing sessions to create for "
+"the current service. The value specified here will be used as the basis "
+"for creating the sessions."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:274
+msgid ""
+"Environment / Version: You can configure the execution environment for "
+"the dedicated server of the model service. Currently, even if the service"
+" has multiple routings, it will be executed in a single environment only."
+" (Support for multiple execution environments will be added in a future "
+"update)"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:279
+msgid ""
+"CPU: The number of CPU cores allocated to the routing for running the "
+"model service."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:281
+msgid ""
+"RAM: The amount of memory allocated to the routing for running the model "
+"service (in GiB)."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:283
+msgid "GPU: The GPU allocation for the routing for running the model service."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:285
+msgid ""
+"Shared Memory: The amount of shared memory allocated to the routing for "
+"running the model service (in GiB). It should be smaller than the "
+"allocated memory."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:291
+msgid "Modifying Model Service"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:293
+msgid ""
+"In the current version, only changing the desired session count of the "
+"model service is supported, rather than modifying all the configuration "
+"values of the service. Click on the wrench icon in the Control tab to "
+"open a modal where you can change the desired session count. After "
+"modifying the value, click the confirm button. The routing count will be "
+"adjusted accordingly."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:310
+msgid "Terminating Model Service"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:312
+msgid ""
+"The model service periodically runs a scheduler to adjust the routing "
+"count to match the desired session count. However, this puts a burden on "
+"the Backend.AI scheduler. Therefore, it is recommended to terminate the "
+"model service if it is no longer needed. To terminate the model service, "
+"click on the trash icon in the Control tab. A modal will appear asking "
+"for confirmation to terminate the model service. Clicking ``OK`` will "
+"terminate the model service. The terminated model service will be removed"
+" from the list of model services."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:327
+msgid "Handling Failed Model Service Creation"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:329
+msgid ""
+"If the status of the model service remains ``UNHEALTHY``, it indicates "
+"that the model service cannot be executed properly."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:332
+msgid ""
+"The common reasons for creation failure and their solutions are as "
+"follows:"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:335
+msgid ""
+"Insufficient allocated resources for the routing when creating the model "
+"service"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:338
+msgid ""
+"Solution: Terminate the problematic service and recreate it with an "
+"allocation of more sufficient resources than the previous settings."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:342
+msgid "Incorrect format of the model definition file (``model-definition.yml``)"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:344
+msgid ""
+"Solution: Verify the format of the model definition file (link) and if "
+"any key-value pairs are incorrect, modify them and overwrite the file in "
+"the saved location. Then, click the refresh button to ensure that the "
+"routing of the model service is set correctly."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:351
+msgid "Generating Tokens"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:353
+msgid ""
+"Once the model service is successfully executed, the status will be set "
+"to ``HEALTHY``. In this case, you can click on the corresponding endpoint"
+" name in the Model Service tab to view detailed information about the "
+"model service. From there, you can check the service endpoint in the "
+"routing information of the model service. If the “Open to Public” option "
+"is enabled when the service is created, the endpoint will be publicly "
+"accessible without any separate token, and end users can access it. "
+"However, if it is disabled, you can issue a token as described below to "
+"verify that the service is running properly."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:367
+msgid ""
+"Click the token creation button located to the right of the generated "
+"token list in the routing information. In the modal that appears for "
+"token creation, enter the expiration date. The issued token will be added"
+" to the list of generated tokens. Click the copy icon in the token item "
+"to copy the token, and add it as the value of the following key."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:379
+msgid "Key"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:379
+msgid "Value"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:381
+msgid "Content-Type"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:381
+msgid "application/json"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:382
+msgid "Authorization"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:382
+msgid "BackendAI"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:391
+msgid "Accessing the Model Service Endpoint for End Users"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:393
+msgid ""
+"To complete the model serving, you need to share information with the "
+"actual end users so that they can access the server where the model "
+"service is running. If the Open to Public option is enabled when the "
+"service is created, you can share the service endpoint value from the "
+"routing information page. If the service was created with the option "
+"disabled, you can share the service endpoint value along with the token "
+"previously generated."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:401
+msgid ""
+"Here's the simple command using ``curl`` command whether to check sending"
+" any requests to model serving endpoint working properly or not."
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:412
+msgid ""
+"By default, end users must be on a network that can access the endpoint. "
+"If the service was created in a closed network, only end users who have "
+"access within that closed network can access the service."
+msgstr ""
+
+#~ msgid ""
+#~ "Note: The model definition file must "
+#~ "be named model-definition.yml or "
+#~ "model-definition.yaml to align with the "
+#~ "current version."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The model definition file contains the"
+#~ " configuration information required by the"
+#~ " `Backend.AI <http://backend.ai/>`__ system to"
+#~ " automatically start, initialize, and scale"
+#~ " the inference session. It is stored"
+#~ " in the model type folder "
+#~ "independently from the container image "
+#~ "that contains the inference service "
+#~ "engine. This allows the engine to "
+#~ "serve different models based on specific"
+#~ " requirements and eliminates the need "
+#~ "to build and deploy a new "
+#~ "container image every time the model "
+#~ "changes. By loading the model definition"
+#~ " and model data from the network "
+#~ "storage, the deployment process can be"
+#~ " simplified and optimized during automatic"
+#~ " scaling."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note: Values marked as required in "
+#~ "the notes must be included in the"
+#~ " model definition file. Other items "
+#~ "are optional and can be omitted.Items"
+#~ " with a / slash indicate descriptions"
+#~ " for subkeys under the key preceding"
+#~ " the slash."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To upload the model definition file "
+#~ "(``model-definition.yml``) to the model "
+#~ "type folder, you need to create a"
+#~ " virtual folder. When creating the "
+#~ "virtual folder, select the ``model`` "
+#~ "type instead of the default ``regular``"
+#~ " type. Refer to the section on "
+#~ "creating a storage folder in the "
+#~ "Data & Folders page for instructions "
+#~ "on how to create a folder. After"
+#~ " creating the folder, select the "
+#~ "“Model” tab in the Data & Folders"
+#~ " page, click on the recently created"
+#~ " model type folder icon to open "
+#~ "the folder explorer, and upload the "
+#~ "model definition file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The model service periodically runs a"
+#~ " scheduler to adjust the routing "
+#~ "count to match the desired session "
+#~ "count. However, this puts a burden "
+#~ "on the Backend.AI scheduler. Therefore, "
+#~ "it is recommended to terminate the "
+#~ "model service if it is no longer"
+#~ " needed. To terminate the model "
+#~ "service, click on the trash icon "
+#~ "in the Control tab. A modal will"
+#~ " appear asking for confirmation to "
+#~ "terminate the model service. Clicking "
+#~ "“confirm” will terminate the model "
+#~ "service. The terminated model service "
+#~ "will be removed from the list of"
+#~ " model services."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once the model service is successfully"
+#~ " executed, the status will be set "
+#~ "to HEALTHY. In this case, you can"
+#~ " click on the corresponding endpoint "
+#~ "name in the Model Service tab to"
+#~ " view detailed information about the "
+#~ "model service. From there, you can "
+#~ "check the service endpoint in the "
+#~ "routing information of the model "
+#~ "service. If the “Open to Public” "
+#~ "option is enabled when the service "
+#~ "is created, the endpoint will be "
+#~ "publicly accessible without any separate "
+#~ "token, and end users can access "
+#~ "it. However, if it is disabled, "
+#~ "you can issue a token as described"
+#~ " below to verify that the service "
+#~ "is running properly."
+#~ msgstr ""
+

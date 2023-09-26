@@ -5,12 +5,20 @@ Model Serving
 Model Service
 -------------
 
+.. note::
+   This feature is supported in Enterprise version only.
+
 Backend.AI not only facilitates the construction of development environments 
 and resource management during the model training phase, but also supports 
 the model service feature from version 23.09 onwards. This feature allows 
-end-users (such as AI-based mobile apps and web service backends) to make 
+end-users (such as AI-based mobile apps and web service backends) to make
 inference API calls when they want to deploy the completed model as an 
 inference service.
+
+.. image:: model-serving-diagram.png
+   :width: 500
+   :align: center
+   :alt: Model serving diagram
 
 The Model Service extends the functionality of the existing training
 compute sessions, enabling automated maintenance, scaling, and permanent
@@ -219,11 +227,21 @@ Uploading Model Definition File to Model Type Folder
 To upload the model definition file (``model-definition.yml``) to the
 model type folder, you need to create a virtual folder. When creating
 the virtual folder, select the ``model`` type instead of the default
-``regular`` type. Refer to the section on creating a storage folder in
+``general`` type. Refer to the section on creating a storage folder in
 the Data & Folders page for instructions on how to create a folder.
+
+.. image:: model-type-folder-creation.png
+   :width: 500
+   :align: center
+   :alt: Model type folder creation
+
 After creating the folder, select the “Model” tab in the Data & Folders
 page, click on the recently created model type folder icon to open the
 folder explorer, and upload the model definition file.
+
+.. image:: model-definition-file-upload.png
+   :align: center
+   :alt: Model definition file upload
 
 Creating/Modifying Model Service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -234,6 +252,11 @@ model type, you are ready to create the model service.
 Click the “Start Service” button on the Model Serving page. This will
 bring up a modal where you can enter the required settings for creating
 the service.
+
+.. image:: service-launcher.png
+   :width: 500
+   :align: center
+   :alt: Service launcher
 
 First, provide a service name and select a resource group. Then, select
 the virtual folder of the model type to be used for the model service.
@@ -262,6 +285,7 @@ For detailed explanations of each item, please refer to the following:
    for running the model service (in GiB). It should be smaller than the
    allocated memory.
 
+
 Modifying Model Service
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -272,6 +296,15 @@ open a modal where you can change the desired session count. After
 modifying the value, click the confirm button. The routing count will be
 adjusted accordingly.
 
+.. image:: edit-model-service-dialog.png
+   :width: 500
+   :align: center
+   :alt: Edit model service dialog
+
+.. image:: routings-count-changed.png
+   :align: center
+   :alt: Edit model service dialog
+
 Terminating Model Service
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -280,9 +313,14 @@ count to match the desired session count. However, this puts a burden on
 the Backend.AI scheduler. Therefore, it is recommended to terminate the 
 model service if it is no longer needed. To terminate the model service, 
 click on the trash icon in the Control tab. A modal will appear asking 
-for confirmation to terminate the model service. Clicking “confirm” 
+for confirmation to terminate the model service. Clicking ``OK`` 
 will terminate the model service. The terminated model service will be 
 removed from the list of model services.
+
+.. image:: terminate-model-service-dialog.png
+   :width: 500
+   :align: center
+   :alt: Terminate model service dialog
 
 Handling Failed Model Service Creation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -321,11 +359,20 @@ accessible without any separate token, and end users can access it.
 However, if it is disabled, you can issue a token as described below to
 verify that the service is running properly.
 
+.. image:: routing-page.png
+   :align: center
+   :alt: Routing page
+
 Click the token creation button located to the right of the generated
 token list in the routing information. In the modal that appears for
 token creation, enter the expiration date. The issued token will be
 added to the list of generated tokens. Click the copy icon in the token
 item to copy the token, and add it as the value of the following key.
+
+.. image:: edit-model-service-dialog.png
+   :width: 500
+   :align: center
+   :alt: Edit model service dialog
 
 ============= ================
 Key           Value
@@ -334,15 +381,10 @@ Content-Type  application/json
 Authorization BackendAI
 ============= ================
 
-Here's the simple command using ``curl`` command whether to check sending any requests 
-to model serving endpoint working properly or not.
-
-.. code:: console
-
-   $ export API_TOKEN="<token>"
-   $ curl -H "Content-Type: application/json" -X GET \
-   $ -H "Authorization: BackendAI $API_TOKEN" \
-   $ <model-service-endpoint>
+.. image:: token-generation-dialog.png
+   :width: 500
+   :align: center
+   :alt: Token generation dialog
 
 Accessing the Model Service Endpoint for End Users
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -354,6 +396,16 @@ service is created, you can share the service endpoint value from the
 routing information page. If the service was created with the option
 disabled, you can share the service endpoint value along with the token
 previously generated.
+
+Here's the simple command using ``curl`` command whether to check sending any requests 
+to model serving endpoint working properly or not.
+
+.. code:: console
+
+   $ export API_TOKEN="<token>"
+   $ curl -H "Content-Type: application/json" -X GET \
+   $ -H "Authorization: BackendAI $API_TOKEN" \
+   $ <model-service-endpoint>
 
 .. warning:: 
    By default, end users must be on a network that can access the
