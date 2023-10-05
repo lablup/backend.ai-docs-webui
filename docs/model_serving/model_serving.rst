@@ -117,12 +117,18 @@ Key-Value Descriptions for Model Definition File
 
 - ``name`` (Required): Defines the name of the model.
 - ``model_path`` (Required): Addresses the path of where model is defined.
-- ``service``: Item for organizing information about the files to be served (includes command scripts and code).
+- ``service``: Item for organizing information about the files to be served   
+  (includes command scripts and code).
+
    - ``pre_start_actions`` : Item for organizing preceding commands or actions to be executed before the ``start_command``.
+
       - ``action``: Further information and description is in :ref:`here <prestart_actions>`.
       - ``args/*``: Further information and description is in :ref:`here <prestart_actions>`.
       - ``start_command`` (Required): Specify the ports to be opened in accordance with the commands executed during model serving at the container.
-- ``health_check``: Item for checking whether service is running without any error according to defined period.
+  
+- ``health_check``: Item for checking whether service is running without   
+  any error according to defined period.
+
    - ``path``: Specify the path for verifying that the service is running properly in model serving.
    - ``max_retries``: Specify the number of retries to be made if there is no response after a request is sent to the service during model serving. 
 
@@ -132,19 +138,32 @@ Description for service action supported in Backend.AI Model serving
 
 .. _prestart_actions:
 
-- ``write_file``: This is an action to create a file with the given file name and append control to it. the default access permission is ``644``.
+- ``write_file``: This is an action to create a file with the given   
+  file name and append control to it. the default access permission is ``644``.
+
    - ``arg/filename``: Specify the file name
    - ``body``: Specify the content to be added to the file.
    - ``mode``: Specify the file's access permissions.
    - ``append``: Set whether to overwrite or append content to the file as ``True`` or ``False`` .
-- ``write_tempfile``: This is an action to create a file with a temporary file name (``.py``) and append content to it. If no value is specified for the mode, the default access permission is ``644``.
+
+- ``write_tempfile``: This is an action to create a file with   
+  a temporary file name (``.py``) and append content to it. If no value is specified for the mode, the default access permission is ``644``.
+
    - ``body``: Specify the content to be added to the file.
-   - ``mode``: Specify the file's access permissions. 
-- ``run_command``: The result of executing a command, including any errors, will be returned in following format ( ``out``: Output of the command execution, ``err``: Error message if an error occurs during command execution)
+   - ``mode``: Specify the file's access permissions.
+
+- ``run_command``: The result of executing a command,   
+  including any errors, will be returned in following format 
+  ( ``out``: Output of the command execution, ``err``: Error message if an error occurs during command execution)
+
    - ``args/command``: Specify the command to executed as an array. (e.g. ``python3 -m http.server 8080`` command goes to ["python3", "-m", "http.server", "8080"] )
+
 - ``mkdir``: This is an action to create a directory by input path
-   - ``args/path``: Specify the path to create a directory 
+
+   - ``args/path``: Specify the path to create a directory
+
 - ``log``: This is an action to print out log by input message
+
    - ``args/message``: Specify the message to be displayed in the logs.
    -  ``debug``: Set to ``True`` if it is in debug mode, otherwise set to ``False``.
 
