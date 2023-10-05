@@ -290,7 +290,7 @@ msgstr "``mode``: 파일의 접근권한을 적습니다."
 msgid ""
 "``append``: Set whether to overwrite or append content to the file as "
 "``True`` or ``False`` ."
-msgstr "``append``: 파일에 내용 덮어쓰기/덧붙이기 설정을 ``True``/``False``로 적습니다."
+msgstr "``append``: 파일에 내용 덮어쓰기/덧붙이기 설정을 ``True`` / ``False`` 로 적습니다."
 
 #: ../../model_serving/model_serving.rst:153
 msgid ""
