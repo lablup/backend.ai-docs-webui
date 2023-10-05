@@ -194,7 +194,7 @@ msgstr "모델 정의 파일에 대한 키-값 설명"
 
 #: ../../model_serving/model_serving.rst:116
 msgid "Fields without \"(Required)\" mark is optional"
-msgstr " \"(필수)\" 항목이 기재되어 있지 않은 항목은 선택 입력입니다. "
+msgstr "“(필수)” 항목이 기재되어 있지 않은 항목은 선택 입력입니다. "
 
 #: ../../model_serving/model_serving.rst:118
 msgid "``name`` (Required): Defines the name of the model."
