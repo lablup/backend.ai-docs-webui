@@ -124,8 +124,10 @@ Key-Value Descriptions for Model Definition File
 
       - ``action``: Further information and description is in :ref:`here <prestart_actions>`.
       - ``args/*``: Further information and description is in :ref:`here <prestart_actions>`.
-      - ``start_command`` (Required): Specify the ports to be opened in accordance with the commands executed during model serving at the container.
-  
+
+   - ``start_command`` (Required): Specify the command to be executed in model serving.
+   - ``port`` (Required): Specify the ports to be opened in accordance with the commands executed during model serving at the container.
+
 - ``health_check``: Item for checking whether service is running without   
   any error according to defined period.
 

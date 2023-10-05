@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 23.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-05 13:58+0900\n"
+"POT-Creation-Date: 2023-10-05 14:38+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -204,7 +204,7 @@ msgstr "``name`` (필수): 모델 명을 정의합니다."
 msgid "``model_path`` (Required): Addresses the path of where model is defined."
 msgstr "``model_path`` (필수) : 모델이 정의된 경로를 지정합니다."
 
-#: ../../model_serving/model_serving.rst:123
+#: ../../model_serving/model_serving.rst:120
 msgid ""
 "``service``: Item for organizing information about the files to be served"
 " (includes command scripts and code)."
@@ -218,48 +218,53 @@ msgstr ""
 "``pre_start_actions``: ``start_command`` 항목 내 명령어 이전에 실행되어야 할 명령어 또는 액션을 "
 "정리해두는 항목입니다."
 
-#: ../../model_serving/model_serving.rst:122
+#: ../../model_serving/model_serving.rst:125
 msgid ""
 "``action``: Further information and description is in :ref:`here "
 "<prestart_actions>`."
 msgstr "``action``: :ref:`서비스 액션 안내<prestart_actions>` 참고"
 
-#: ../../model_serving/model_serving.rst:123
+#: ../../model_serving/model_serving.rst:126
 msgid ""
 "``args/*``: Further information and description is in :ref:`here "
 "<prestart_actions>`."
 msgstr "``args/*``: :ref:`서비스 액션 안내<prestart_actions>` 참고"
 
-#: ../../model_serving/model_serving.rst:124
-msgid ""
-"``start_command`` (Required): Specify the ports to be opened in "
-"accordance with the commands executed during model serving at the "
-"container."
-msgstr "``start_command`` (필수): 모델 서빙시 실행할 명령어를 문자열 배열로 지정합니다."
-
 #: ../../model_serving/model_serving.rst:128
+msgid ""
+"``start_command`` (Required): Specify the command to be executed in model"
+" serving."
+msgstr "``start_command`` (필수): 모델 서빙시 실행할 명령어를 지정합니다."
+
+#: ../../model_serving/model_serving.rst:129
+msgid ""
+"``port`` (Required): Specify the ports to be opened in accordance with "
+"the commands executed during model serving at the container."
+msgstr "``port`` (필수): 모델 서빙시 실행할 명령어에 대응해 컨테이너 기준 열어둘 포트를 지정합니다."
+
+#: ../../model_serving/model_serving.rst:131
 msgid ""
 "``health_check``: Item for checking whether service is running without "
 "any error according to defined period."
 msgstr "``health_check``: 서비스가 지정된 기간마다 에러 없이 실행되고 있는지 확인하는 항목입니다."
 
-#: ../../model_serving/model_serving.rst:126
+#: ../../model_serving/model_serving.rst:134
 msgid ""
 "``path``: Specify the path for verifying that the service is running "
 "properly in model serving."
 msgstr "``path``: 모델 서빙시 서비스가 제대로 실행되고 있는지를 확인하는 경로를 지정합니다."
 
-#: ../../model_serving/model_serving.rst:127
+#: ../../model_serving/model_serving.rst:135
 msgid ""
 "``max_retries``: Specify the number of retries to be made if there is no "
 "response after a request is sent to the service during model serving."
 msgstr "``max_retries``: 모델 서빙시 서비스에 요청이 간 뒤, 응답이 오지 않았을 때 재시도를 몇 번 할 것인지 지정합니다."
 
-#: ../../model_serving/model_serving.rst:131
+#: ../../model_serving/model_serving.rst:139
 msgid "Description for service action supported in Backend.AI Model serving"
 msgstr "Backend.AI 모델 서빙에서 지원하는 서비스 액션 안내"
 
-#: ../../model_serving/model_serving.rst:138
+#: ../../model_serving/model_serving.rst:143
 msgid ""
 "``write_file``: This is an action to create a file with the given file "
 "name and append control to it. the default access permission is ``644``."
@@ -267,27 +272,27 @@ msgstr ""
 "``write_file`` : 입력받은 파일 명으로 파일을 생성, 내용을 추가하는 액션입니다. ``mode`` 값에 아무것도 적지 "
 "않을 경우 기본 접근 권한은 ``644`` 입니다."
 
-#: ../../model_serving/model_serving.rst:136
+#: ../../model_serving/model_serving.rst:146
 msgid "``arg/filename``: Specify the file name"
 msgstr "``arg/filename``: 파일명을 적습니다."
 
-#: ../../model_serving/model_serving.rst:137
-#: ../../model_serving/model_serving.rst:141
+#: ../../model_serving/model_serving.rst:147
+#: ../../model_serving/model_serving.rst:154
 msgid "``body``: Specify the content to be added to the file."
 msgstr "``body``: 파일에 추가할 내용을 적습니다."
 
-#: ../../model_serving/model_serving.rst:138
-#: ../../model_serving/model_serving.rst:142
+#: ../../model_serving/model_serving.rst:148
+#: ../../model_serving/model_serving.rst:155
 msgid "``mode``: Specify the file's access permissions."
 msgstr "``mode``: 파일의 접근권한을 적습니다."
 
-#: ../../model_serving/model_serving.rst:139
+#: ../../model_serving/model_serving.rst:149
 msgid ""
 "``append``: Set whether to overwrite or append content to the file as "
 "``True`` or ``False`` ."
 msgstr "``append``: 파일에 내용 덮어쓰기/덧붙이기 설정을 ``True``/``False``로 적습니다."
 
-#: ../../model_serving/model_serving.rst:141
+#: ../../model_serving/model_serving.rst:151
 msgid ""
 "``write_tempfile``: This is an action to create a file with a temporary "
 "file name (``.py``) and append content to it. If no value is specified "
@@ -296,7 +301,7 @@ msgstr ""
 "``write_tempfile``: 임시파일명(확장자는 ``.py``)을 갖는 파일을 생성, 내용을 추가하는 액션입니다. "
 "``mode`` 값에 아무것도 적지 않을 경우 기본 접근 권한은 ``644`` 입니다."
 
-#: ../../model_serving/model_serving.rst:143
+#: ../../model_serving/model_serving.rst:157
 msgid ""
 "``run_command``: The result of executing a command, including any errors,"
 " will be returned in following format ( ``out``: Output of the command "
@@ -306,7 +311,7 @@ msgstr ""
 "``run_command``: 명령어를 실행한 결과(오류포함)를 아래와 같은 형태로 반환하게 됩니다.(``out``: 명령어 실행 "
 "결과, ``err``: 명령어 실행 중 오류 발생시 출력되는 오류 메시지)"
 
-#: ../../model_serving/model_serving.rst:144
+#: ../../model_serving/model_serving.rst:161
 msgid ""
 "``args/command``: Specify the command to executed as an array. (e.g. "
 "``python3 -m http.server 8080`` command goes to [\"python3\", \"-m\", "
@@ -315,33 +320,33 @@ msgstr ""
 "``args/command``: 실행할 명령어를 배열형태로 적습니다. (e.g. ``python3 -m http.server "
 "8080`` 명령어는 [\"python3\", \"-m\", \"http.server\", \"8080\"])"
 
-#: ../../model_serving/model_serving.rst:145
+#: ../../model_serving/model_serving.rst:163
 msgid "``mkdir``: This is an action to create a directory by input path"
 msgstr "``mkdir``: 입력한 경로에 따라 디렉토리를 생성하는 액션입니다."
 
-#: ../../model_serving/model_serving.rst:146
+#: ../../model_serving/model_serving.rst:165
 msgid "``args/path``: Specify the path to create a directory"
 msgstr ""
 
-#: ../../model_serving/model_serving.rst:149
+#: ../../model_serving/model_serving.rst:167
 msgid "``log``: This is an action to print out log by input message"
 msgstr "``log``: 입력한 메시지에 따라 로그를 출력하는 액션입니다."
 
-#: ../../model_serving/model_serving.rst:148
+#: ../../model_serving/model_serving.rst:169
 msgid "``args/message``: Specify the message to be displayed in the logs."
 msgstr "``args/message``: 로그에 표시할 메시지를 적습니다."
 
-#: ../../model_serving/model_serving.rst:149
+#: ../../model_serving/model_serving.rst:170
 msgid ""
 "``debug``: Set to ``True`` if it is in debug mode, otherwise set to "
 "``False``."
 msgstr "``debug``: 디버그 모드인 경우 ``True``, 아닌 경우 ``False`` 로 적습니다."
 
-#: ../../model_serving/model_serving.rst:152
+#: ../../model_serving/model_serving.rst:173
 msgid "Uploading Model Definition File to Model Type Folder"
 msgstr "모델 정의 파일을 모델 타입 폴더에 업로드하기"
 
-#: ../../model_serving/model_serving.rst:154
+#: ../../model_serving/model_serving.rst:175
 msgid ""
 "To upload the model definition file (``model-definition.yml``) to the "
 "model type folder, you need to create a virtual folder. When creating the"
@@ -354,7 +359,7 @@ msgstr ""
 "합니다. 이 때, 가상폴더 생성시 타입은 ``일반`` 이 아닌 ``모델`` 타입으로 선택하여 생성합니다. 생성하는 방법은 데이터 &"
 " 폴더 활용하기의 :ref:`Storage 폴더 생성<create_storage_folder>` 부분을 참고하십시오."
 
-#: ../../model_serving/model_serving.rst:166
+#: ../../model_serving/model_serving.rst:187
 msgid ""
 "After creating the folder, select the “Model” tab in the Data & Folders "
 "page, click on the recently created model type folder icon to open the "
@@ -363,34 +368,34 @@ msgstr ""
 "폴더를 생성한 뒤, 데이터 & 폴더 페이지에서 모델 탭을 선택, 방금 생성한 모델 타입 폴더 아이콘을 클릭하여 폴더 탐색기를 "
 "엽니다. 이후 모델 정의 파일을 업로드 합니다. "
 
-#: ../../model_serving/model_serving.rst:175
+#: ../../model_serving/model_serving.rst:196
 msgid "Creating/Modifying Model Service"
 msgstr "모델 서비스 생성하기/수정하기"
 
-#: ../../model_serving/model_serving.rst:177
+#: ../../model_serving/model_serving.rst:198
 msgid ""
 "Once the model definition file is uploaded to the virtual folder of the "
 "model type, you are ready to create the model service."
 msgstr "모델 정의 파일까지 모델 타입의 가상 폴더에 업로드가 완료되었으면 본격적으로 모델 서비스를 생성할 준비가 되었다고 할 수 있습니다."
 
-#: ../../model_serving/model_serving.rst:180
+#: ../../model_serving/model_serving.rst:201
 msgid ""
 "Click the “Start Service” button on the Model Serving page. This will "
 "bring up a modal where you can enter the required settings for creating "
 "the service."
 msgstr "모델 서빙 페이지에서 \"서비스 시작하기\" 버튼을 클릭해주세요. 이후 서비스 생성에 필요한 설정을 입력하는 모달이 뜨게 됩니다."
 
-#: ../../model_serving/model_serving.rst:189
+#: ../../model_serving/model_serving.rst:210
 msgid ""
 "First, provide a service name and select a resource group. Then, select "
 "the virtual folder of the model type to be used for the model service."
 msgstr "우선 서비스 이름과 자원 그룹을 선택합니다. 그리고 모델 서비스에 사용할 모델 타입의 가상 폴더를 선택합니다. "
 
-#: ../../model_serving/model_serving.rst:192
+#: ../../model_serving/model_serving.rst:213
 msgid "For detailed explanations of each item, please refer to the following:"
 msgstr "각 항목에 대한 자세한 설명은 다음을 참고 하십시오."
 
-#: ../../model_serving/model_serving.rst:194
+#: ../../model_serving/model_serving.rst:215
 msgid ""
 "Open To Public: This option allows access to the model service without "
 "any separate token on the server where the service is to be hosted. By "
@@ -399,7 +404,7 @@ msgstr ""
 "Open To Public: 모델 서비스 생성후 서비스하고자 하는 서버에 별도의 토큰이 없이도 접근할 수 있도록 하는 옵션입니다. "
 "기본은 비활성화되어 있습니다. "
 
-#: ../../model_serving/model_serving.rst:197
+#: ../../model_serving/model_serving.rst:218
 msgid ""
 "Desired Routing Count: The model service can be serviced by multiple "
 "servers. This setting determines how many routing sessions to create for "
@@ -409,7 +414,7 @@ msgstr ""
 "Desired Routing Count: 모델 서비스에서 서비스하고자 하는 서버가 여러 개가 될 수 있습니다. 이때 라우팅, 현재 "
 "기준으로 서비스하려는 세션을 몇 개까지 만들어야 할지 설정하는데, 이 값을 기준으로 하게 됩니다."
 
-#: ../../model_serving/model_serving.rst:201
+#: ../../model_serving/model_serving.rst:222
 msgid ""
 "Environment / Version: You can configure the execution environment for "
 "the dedicated server of the model service. Currently, even if the service"
@@ -420,34 +425,34 @@ msgstr ""
 "Environment / Version: 모델 서비스에서 서비스 전용 서버의 실행 환경을 설정할 수 있습니다. 현재는 서비스 내 "
 "라우팅이 여러 개여도 단일 실행환경으로만 실행되도록 지원*합니다. (추후 업데이트 예정*)"
 
-#: ../../model_serving/model_serving.rst:206
+#: ../../model_serving/model_serving.rst:227
 msgid ""
 "CPU: The number of CPU cores allocated to the routing for running the "
 "model service."
 msgstr "CPU: 모델 서비스를 실행하는 라우팅, 즉 연산 세션에 할당할 CPU코어의 수."
 
-#: ../../model_serving/model_serving.rst:208
+#: ../../model_serving/model_serving.rst:229
 msgid ""
 "RAM: The amount of memory allocated to the routing for running the model "
 "service (in GiB)."
 msgstr "RAM: 연산 세션에 할당할 메모리의 용량(GiB)"
 
-#: ../../model_serving/model_serving.rst:210
+#: ../../model_serving/model_serving.rst:231
 msgid "GPU: The GPU allocation for the routing for running the model service."
 msgstr "GPU: 연산 세션에 할당할 GPU 단위"
 
-#: ../../model_serving/model_serving.rst:212
+#: ../../model_serving/model_serving.rst:233
 msgid ""
 "Shared Memory: The amount of shared memory allocated to the routing for "
 "running the model service (in GiB). It should be smaller than the "
 "allocated memory."
 msgstr "Shared Memory: 연산 세션에 할당할 공유 메모리의 용량(GiB). 연산 세션에 할당할 메모리의 용량보다는 작아야 함"
 
-#: ../../model_serving/model_serving.rst:218
+#: ../../model_serving/model_serving.rst:239
 msgid "Modifying Model Service"
 msgstr "모델 서비스 수정하기"
 
-#: ../../model_serving/model_serving.rst:220
+#: ../../model_serving/model_serving.rst:241
 msgid ""
 "In the current version, only changing the desired session count of the "
 "model service is supported, rather than modifying all the configuration "
@@ -460,11 +465,11 @@ msgstr ""
 "원하는 세션 수 값을 변경할 수 있는 모달이 뜨게 됩니다. 이 값을 수정하고 확인 버튼을 클릭하게 되면, 변경된 개수에 대응하도록 "
 "라우팅 수가 변경됩니다."
 
-#: ../../model_serving/model_serving.rst:237
+#: ../../model_serving/model_serving.rst:258
 msgid "Terminating Model Service"
 msgstr "모델 서비스 종료하기"
 
-#: ../../model_serving/model_serving.rst:239
+#: ../../model_serving/model_serving.rst:260
 msgid ""
 "The model service periodically runs a scheduler to adjust the routing "
 "count to match the desired session count. However, this puts a burden on "
@@ -481,11 +486,11 @@ msgstr ""
 " 이후 모델 서비스를 종료하는 것이 맞는지 확인하는 모달이 뜨게 됩니다. 확인을 누를 경우 모델 서비스는 종료됩니다. 종료된 모델 "
 "서비스의 경우 모델 서비스 목록에서 제거됩니다."
 
-#: ../../model_serving/model_serving.rst:254
+#: ../../model_serving/model_serving.rst:275
 msgid "Handling Failed Model Service Creation"
 msgstr "모델 서비스 생성에 실패한 경우"
 
-#: ../../model_serving/model_serving.rst:256
+#: ../../model_serving/model_serving.rst:277
 msgid ""
 "If the status of the model service remains ``UNHEALTHY``, it indicates "
 "that the model service cannot be executed properly."
@@ -493,29 +498,29 @@ msgstr ""
 "만일 모델 서비스의 상태가 ``UNHEALTHY`` 로 되어 있는 경우, 모델 서비스를 정상적으로 실행할 수 없는 상태라고 볼 수 "
 "있습니다. "
 
-#: ../../model_serving/model_serving.rst:259
+#: ../../model_serving/model_serving.rst:280
 msgid ""
 "The common reasons for creation failure and their solutions are as "
 "follows:"
 msgstr "생성이 안 되는 이유 및 해결법은 대개 다음과 같습니다 :"
 
-#: ../../model_serving/model_serving.rst:262
+#: ../../model_serving/model_serving.rst:283
 msgid ""
 "Insufficient allocated resources for the routing when creating the model "
 "service"
 msgstr "모델 서비스 생성 시 너무 적은 양의 자원을 라우팅에 할당한 경우"
 
-#: ../../model_serving/model_serving.rst:265
+#: ../../model_serving/model_serving.rst:286
 msgid ""
 "Solution: Terminate the problematic service and recreate it with an "
 "allocation of more sufficient resources than the previous settings."
 msgstr "해결법: 해당 서비스를 우선 종료하고, 이전 설정보다 많은, 충분한 양의 자원을 할당하도록 설정하여 서비스를 재생성합니다."
 
-#: ../../model_serving/model_serving.rst:269
+#: ../../model_serving/model_serving.rst:290
 msgid "Incorrect format of the model definition file (``model-definition.yml``)"
 msgstr "모델 정의 파일(``model-definition.yml``) 의 형식이 잘못된 경우"
 
-#: ../../model_serving/model_serving.rst:271
+#: ../../model_serving/model_serving.rst:292
 msgid ""
 "Solution: Verify the format of the model definition file (link) and if "
 "any key-value pairs are incorrect, modify them and overwrite the file in "
@@ -525,11 +530,11 @@ msgstr ""
 "해결법: 모델 정의 파일 형식(링크)을 확인하고, 키-값이 잘못된 경우, 수정하여 저장된 경로에 업로드해 덮어쓰기 합니다. 이후 "
 "아래와 같이 새로고침 버튼을 클릭하여 모델 서비스의 라우팅이 정상적으로 될 수 있도록 합니다."
 
-#: ../../model_serving/model_serving.rst:282
+#: ../../model_serving/model_serving.rst:303
 msgid "Generating Tokens"
 msgstr "토큰 발급하기"
 
-#: ../../model_serving/model_serving.rst:284
+#: ../../model_serving/model_serving.rst:305
 msgid ""
 "Once the model service is successfully executed, the status will be set "
 "to ``HEALTHY``. In this case, you can click on the corresponding endpoint"
@@ -547,7 +552,7 @@ msgstr ""
 "엔드포인트가 공개되어 별도의 토큰이 없이도 최종 엔드유저가 엔드포인트에 접근할 수 있습니다. 하지만 비활성화 된 경우는 다음과 같이"
 " 토큰을 발급하여 토큰을 아래와 같은 형태로 추가해서 서비스가 정상적으로 실행되고 있는지 확인할 수 있습니다."
 
-#: ../../model_serving/model_serving.rst:298
+#: ../../model_serving/model_serving.rst:319
 msgid ""
 "Click the token creation button located to the right of the generated "
 "token list in the routing information. In the modal that appears for "
@@ -557,7 +562,7 @@ msgstr ""
 "입력합니다. 이후 발급되는 토큰은 생성된 토큰 목록에 추가됩니다. 토큰 항목의 복사 아이콘을 클릭하여 토큰을 복사하고, 아래와 같은"
 " 키 값으로 추가하면 됩니다."
 
-#: ../../model_serving/model_serving.rst:307
+#: ../../model_serving/model_serving.rst:328
 msgid ""
 "The issued token will be added to the list of generated tokens. Click the"
 " copy icon in the token item to copy the token, and add it as the value "
@@ -567,35 +572,35 @@ msgstr ""
 "입력합니다. 이후 발급되는 토큰은 생성된 토큰 목록에 추가됩니다. 토큰 항목의 복사 아이콘을 클릭하여 토큰을 복사하고, 아래와 같은"
 " 키의 값으로 추가하면 됩니다."
 
-#: ../../model_serving/model_serving.rst:315
+#: ../../model_serving/model_serving.rst:336
 msgid "Key"
 msgstr "키"
 
-#: ../../model_serving/model_serving.rst:315
+#: ../../model_serving/model_serving.rst:336
 msgid "Value"
 msgstr "값"
 
-#: ../../model_serving/model_serving.rst:317
+#: ../../model_serving/model_serving.rst:338
 msgid "Content-Type"
 msgstr "Content-Type"
 
-#: ../../model_serving/model_serving.rst:317
+#: ../../model_serving/model_serving.rst:338
 msgid "application/json"
 msgstr "application/json"
 
-#: ../../model_serving/model_serving.rst:318
+#: ../../model_serving/model_serving.rst:339
 msgid "Authorization"
 msgstr "Authorization"
 
-#: ../../model_serving/model_serving.rst:318
+#: ../../model_serving/model_serving.rst:339
 msgid "BackendAI"
 msgstr "BackendAI"
 
-#: ../../model_serving/model_serving.rst:322
+#: ../../model_serving/model_serving.rst:343
 msgid "Accessing the Model Service Endpoint for End Users"
 msgstr "(엔드유저 전용) 모델 서비스에 대응하는 엔드포인트에 접속하여 서비스 확인하기"
 
-#: ../../model_serving/model_serving.rst:324
+#: ../../model_serving/model_serving.rst:345
 msgid ""
 "To complete the model serving, you need to share information with the "
 "actual end users so that they can access the server where the model "
@@ -609,13 +614,13 @@ msgstr ""
 " 때 서비스 생성시 Open to Public 값이 활성화한 경우라면 라우팅 정보 페이지의 서비스 엔드포인트 값을 공유하면 됩니다."
 " 만일 비활성화 한 채로 서비스를 생성한 경우라면 서비스 엔드포인트 값과 앞서 생성한 토큰 값을 공유하면 됩니다."
 
-#: ../../model_serving/model_serving.rst:332
+#: ../../model_serving/model_serving.rst:353
 msgid ""
 "Here's the simple command using ``curl`` command whether to check sending"
 " any requests to model serving endpoint working properly or not."
 msgstr "``curl`` 명령어를 사용해서 모델 서빙 엔드포인트에 보내는 요청이 제대로 동작하는 지 아닌지 확인할 수 있습니다."
 
-#: ../../model_serving/model_serving.rst:343
+#: ../../model_serving/model_serving.rst:364
 msgid ""
 "By default, end users must be on a network that can access the endpoint. "
 "If the service was created in a closed network, only end users who have "
