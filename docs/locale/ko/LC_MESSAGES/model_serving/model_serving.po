@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 23.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-05 14:38+0900\n"
+"POT-Creation-Date: 2023-10-05 16:33+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -290,7 +290,7 @@ msgstr "``mode``: 파일의 접근권한을 적습니다."
 msgid ""
 "``append``: Set whether to overwrite or append content to the file as "
 "``True`` or ``False`` ."
-msgstr "``append``: 파일에 내용 덮어쓰기/덧붙이기 설정을 ``True``/``False``로 적습니다."
+msgstr "``append``: 파일에 내용 덮어쓰기/덧붙이기 설정을 ``True``/``False`` 로 적습니다."
 
 #: ../../model_serving/model_serving.rst:151
 msgid ""
@@ -520,21 +520,23 @@ msgstr "해결법: 해당 서비스를 우선 종료하고, 이전 설정보다 
 msgid "Incorrect format of the model definition file (``model-definition.yml``)"
 msgstr "모델 정의 파일(``model-definition.yml``) 의 형식이 잘못된 경우"
 
-#: ../../model_serving/model_serving.rst:292
+#: ../../model_serving/model_serving.rst:297
 msgid ""
 "Solution: Verify the format of the model definition file (link) and if "
 "any key-value pairs are incorrect, modify them and overwrite the file in "
-"the saved location. Then, click the refresh button to ensure that the "
+"the saved location. Then, click ``Clear error and Retry`` button to "
+"remove all the error stacked in routes info table and ensure that the "
 "routing of the model service is set correctly."
 msgstr ""
 "해결법: 모델 정의 파일 형식(링크)을 확인하고, 키-값이 잘못된 경우, 수정하여 저장된 경로에 업로드해 덮어쓰기 합니다. 이후 "
-"아래와 같이 새로고침 버튼을 클릭하여 모델 서비스의 라우팅이 정상적으로 될 수 있도록 합니다."
+"아래와 같이 ``오류 지우고 재시도`` 버튼을 클릭하여 라우트 정보에 쌓인 에러를 모두 삭제하고, 재시작해 "
+"모델 서비스의 라우팅이 정상적으로 동작할 수 있도록 합니다."
 
-#: ../../model_serving/model_serving.rst:303
+#: ../../model_serving/model_serving.rst:309
 msgid "Generating Tokens"
 msgstr "토큰 발급하기"
 
-#: ../../model_serving/model_serving.rst:305
+#: ../../model_serving/model_serving.rst:311
 msgid ""
 "Once the model service is successfully executed, the status will be set "
 "to ``HEALTHY``. In this case, you can click on the corresponding endpoint"
@@ -552,7 +554,7 @@ msgstr ""
 "엔드포인트가 공개되어 별도의 토큰이 없이도 최종 엔드유저가 엔드포인트에 접근할 수 있습니다. 하지만 비활성화 된 경우는 다음과 같이"
 " 토큰을 발급하여 토큰을 아래와 같은 형태로 추가해서 서비스가 정상적으로 실행되고 있는지 확인할 수 있습니다."
 
-#: ../../model_serving/model_serving.rst:319
+#: ../../model_serving/model_serving.rst:325
 msgid ""
 "Click the token creation button located to the right of the generated "
 "token list in the routing information. In the modal that appears for "
@@ -562,7 +564,7 @@ msgstr ""
 "입력합니다. 이후 발급되는 토큰은 생성된 토큰 목록에 추가됩니다. 토큰 항목의 복사 아이콘을 클릭하여 토큰을 복사하고, 아래와 같은"
 " 키 값으로 추가하면 됩니다."
 
-#: ../../model_serving/model_serving.rst:328
+#: ../../model_serving/model_serving.rst:334
 msgid ""
 "The issued token will be added to the list of generated tokens. Click the"
 " copy icon in the token item to copy the token, and add it as the value "
@@ -572,35 +574,35 @@ msgstr ""
 "입력합니다. 이후 발급되는 토큰은 생성된 토큰 목록에 추가됩니다. 토큰 항목의 복사 아이콘을 클릭하여 토큰을 복사하고, 아래와 같은"
 " 키의 값으로 추가하면 됩니다."
 
-#: ../../model_serving/model_serving.rst:336
+#: ../../model_serving/model_serving.rst:342
 msgid "Key"
 msgstr "키"
 
-#: ../../model_serving/model_serving.rst:336
+#: ../../model_serving/model_serving.rst:342
 msgid "Value"
 msgstr "값"
 
-#: ../../model_serving/model_serving.rst:338
+#: ../../model_serving/model_serving.rst:344
 msgid "Content-Type"
 msgstr "Content-Type"
 
-#: ../../model_serving/model_serving.rst:338
+#: ../../model_serving/model_serving.rst:344
 msgid "application/json"
 msgstr "application/json"
 
-#: ../../model_serving/model_serving.rst:339
+#: ../../model_serving/model_serving.rst:345
 msgid "Authorization"
 msgstr "Authorization"
 
-#: ../../model_serving/model_serving.rst:339
+#: ../../model_serving/model_serving.rst:345
 msgid "BackendAI"
 msgstr "BackendAI"
 
-#: ../../model_serving/model_serving.rst:343
+#: ../../model_serving/model_serving.rst:349
 msgid "Accessing the Model Service Endpoint for End Users"
 msgstr "(엔드유저 전용) 모델 서비스에 대응하는 엔드포인트에 접속하여 서비스 확인하기"
 
-#: ../../model_serving/model_serving.rst:345
+#: ../../model_serving/model_serving.rst:351
 msgid ""
 "To complete the model serving, you need to share information with the "
 "actual end users so that they can access the server where the model "
@@ -614,13 +616,13 @@ msgstr ""
 " 때 서비스 생성시 Open to Public 값이 활성화한 경우라면 라우팅 정보 페이지의 서비스 엔드포인트 값을 공유하면 됩니다."
 " 만일 비활성화 한 채로 서비스를 생성한 경우라면 서비스 엔드포인트 값과 앞서 생성한 토큰 값을 공유하면 됩니다."
 
-#: ../../model_serving/model_serving.rst:353
+#: ../../model_serving/model_serving.rst:359
 msgid ""
 "Here's the simple command using ``curl`` command whether to check sending"
 " any requests to model serving endpoint working properly or not."
 msgstr "``curl`` 명령어를 사용해서 모델 서빙 엔드포인트에 보내는 요청이 제대로 동작하는 지 아닌지 확인할 수 있습니다."
 
-#: ../../model_serving/model_serving.rst:364
+#: ../../model_serving/model_serving.rst:370
 msgid ""
 "By default, end users must be on a network that can access the endpoint. "
 "If the service was created in a closed network, only end users who have "

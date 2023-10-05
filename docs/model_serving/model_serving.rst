@@ -289,11 +289,16 @@ follows:
 
 -  Incorrect format of the model definition file (``model-definition.yml``)
 
+   .. image:: serving-route-error.png
+      :width: 500
+      :align: center
+      :alt: Serving route error
+
    -  Solution: Verify the format of the model definition file (link)
       and if any key-value pairs are incorrect, modify them and
-      overwrite the file in the saved location. Then, click the refresh
-      button to ensure that the routing of the model service is set
-      correctly.
+      overwrite the file in the saved location. Then, click ``Clear error and Retry`` 
+      button to remove all the error stacked in routes info table and ensure 
+      that the routing of the model service is set correctly.
 
       .. image:: refresh-button.png
          :align: center
