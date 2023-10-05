@@ -227,8 +227,9 @@ Uploading Model Definition File to Model Type Folder
 To upload the model definition file (``model-definition.yml``) to the
 model type folder, you need to create a virtual folder. When creating
 the virtual folder, select the ``model`` type instead of the default
-``general`` type. Refer to the section on creating a storage folder in
-the Data & Folders page for instructions on how to create a folder.
+``general`` type. Refer to the section on :ref:`creating a storage 
+folder<create_storage_folder>` in the Data & Folders page for
+instructions on how to create a folder.
 
 .. image:: model-type-folder-creation.png
    :width: 500
