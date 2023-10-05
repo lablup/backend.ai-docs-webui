@@ -136,7 +136,7 @@ Description for service action supported in Backend.AI Model serving
    - ``arg/filename``: Specify the file name
    - ``body``: Specify the content to be added to the file.
    - ``mode``: Specify the file's access permissions.
-   - ``append``: Set whether to overwrite or append content to the file as ``True`` or ``False``.
+   - ``append``: Set whether to overwrite or append content to the file as ``True`` or ``False`` .
 - ``write_tempfile``: This is an action to create a file with a temporary file name (``.py``) and append content to it. If no value is specified for the mode, the default access permission is ``644``.
    - ``body``: Specify the content to be added to the file.
    - ``mode``: Specify the file's access permissions. 
@@ -297,14 +297,19 @@ verify that the service is running properly.
 
 Click the token creation button located to the right of the generated
 token list in the routing information. In the modal that appears for
-token creation, enter the expiration date. The issued token will be
-added to the list of generated tokens. Click the copy icon in the token
-item to copy the token, and add it as the value of the following key.
+token creation, enter the expiration date. 
 
-.. image:: edit-model-service-dialog.png
+.. image:: token-generation-dialog.png
    :width: 500
    :align: center
-   :alt: Edit model service dialog
+   :alt: Token generation dialog
+
+The issued token will be added to the list of generated tokens. Click the copy icon in the token
+item to copy the token, and add it as the value of the following key.
+
+.. image:: generated-token-copy.png
+   :align: center
+   :alt: Generated token copy
 
 ============= ================
 Key           Value
@@ -312,11 +317,6 @@ Key           Value
 Content-Type  application/json
 Authorization BackendAI
 ============= ================
-
-.. image:: token-generation-dialog.png
-   :width: 500
-   :align: center
-   :alt: Token generation dialog
 
 Accessing the Model Service Endpoint for End Users
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
