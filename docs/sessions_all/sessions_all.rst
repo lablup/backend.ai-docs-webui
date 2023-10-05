@@ -81,7 +81,7 @@ please refer to the following.
   on how to use.
 * Set Preopen Ports: Provides an interface for users to set preopen ports in a
   compute session. See the section :ref:`How to add preopen ports before session creation
-  <set-preopen-ports>` on how to use.
+  <set_preopen_ports>` on how to use.
 
 Click the right arrow button at the bottom to advance to the next page. You can
 also launch a compute session directly by clicking the CONFIRM AND LAUNCH
@@ -246,6 +246,8 @@ after the compute session is created.
 .. image:: app_launch_dialog.png
    :width: 400
    :align: center
+
+.. _open_app_to_public:
 
 .. note::
    There are two check options under the app icons. Opening the app with each item checked
@@ -457,7 +459,7 @@ Also, you can remove the variable by clicking ``-`` button of the row that you w
 
 If you want to delete the whole variables and value, please click DELETE ALL button at the bottom of the dialog.
 
-.. _set-preopen-ports:
+.. _set_preopen_ports:
 
 How to add preopen ports before creating a session
 --------------------------------------------------
