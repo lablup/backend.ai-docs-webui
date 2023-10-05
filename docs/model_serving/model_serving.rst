@@ -99,15 +99,8 @@ The model definition file follows the following format:
             - action: run_command
             args:
                command: ["echo", "Hello, World!"]
-         start_command: 
-            - "python3"
-            - "-m"
-            - "http.server"
-            - "8080"
+         start_command: ["python3", "-m", "http.server", "8080"]
          port: 8080
-         health_check:
-           path: /
-           max_retries: 10
 
 .. _model_definition_guide:
 
@@ -130,11 +123,11 @@ Key-Value Descriptions for Model Definition File
    - ``start_command`` (Required): Specify the command to be executed in model serving.
    - ``port`` (Required): Specify the ports to be opened in accordance with the commands executed during model serving at the container.
 
-- ``health_check``: Item for checking whether service is running without   
-  any error according to defined period.
+   - ``health_check``: Item for checking whether service is running without   
+     any error according to defined period.
 
-   - ``path``: Specify the path for verifying that the service is running properly in model serving.
-   - ``max_retries``: Specify the number of retries to be made if there is no response after a request is sent to the service during model serving. 
+     - ``path``: Specify the path for verifying that the service is running properly in model serving.
+     - ``max_retries``: Specify the number of retries to be made if there is no response after a request is sent to the service during model serving. 
 
 
 Description for service action supported in Backend.AI Model serving
