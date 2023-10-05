@@ -194,7 +194,7 @@ msgstr "모델 정의 파일에 대한 키-값 설명"
 
 #: ../../model_serving/model_serving.rst:116
 msgid "Fields without \"(Required)\" mark is optional"
-msgstr "“(필수)” 항목이 기재되어 있지 않은 항목은 선택 입력입니다. "
+msgstr "“(필수)” 항목이 기재되어 있지 않은 항목은 선택 입력입니다."
 
 #: ../../model_serving/model_serving.rst:118
 msgid "``name`` (Required): Defines the name of the model."
@@ -202,13 +202,13 @@ msgstr "``name`` (필수): 모델 명을 정의합니다."
 
 #: ../../model_serving/model_serving.rst:119
 msgid "``model_path`` (Required): Addresses the path of where model is defined."
-msgstr "``model_path`` (필수) : 모델이 정의된 경로를 지정합니다."
+msgstr "``model_path`` (필수): 모델이 정의된 경로를 지정합니다."
 
 #: ../../model_serving/model_serving.rst:120
 msgid ""
 "``service``: Item for organizing information about the files to be served"
 " (includes command scripts and code)."
-msgstr "``service``: 서비스할 파일(명령어 스크립트, 코드 포함)에 대한 정보를 정리해두는 항목입니다. "
+msgstr "``service``: 서비스할 파일(명령어 스크립트, 코드 포함)에 대한 정보를 정리해두는 항목입니다."
 
 #: ../../model_serving/model_serving.rst:123
 msgid ""
@@ -269,7 +269,7 @@ msgid ""
 "``write_file``: This is an action to create a file with the given file "
 "name and append control to it. the default access permission is ``644``."
 msgstr ""
-"``write_file`` : 입력받은 파일 명으로 파일을 생성, 내용을 추가하는 액션입니다. ``mode`` 값에 아무것도 적지 "
+"``write_file``: 입력받은 파일 명으로 파일을 생성, 내용을 추가하는 액션입니다. ``mode`` 값에 아무것도 적지 "
 "않을 경우 기본 접근 권한은 ``644`` 입니다."
 
 #: ../../model_serving/model_serving.rst:146
@@ -290,7 +290,7 @@ msgstr "``mode``: 파일의 접근권한을 적습니다."
 msgid ""
 "``append``: Set whether to overwrite or append content to the file as "
 "``True`` or ``False`` ."
-msgstr "``append``: 파일에 내용 덮어쓰기/덧붙이기 설정을 ``True``/``False``로 적습니다."
+msgstr "``append``: 파일에 내용 덮어쓰기/덧붙이기 설정을 ``True``/ ``False`` 로 적습니다."
 
 #: ../../model_serving/model_serving.rst:151
 msgid ""
@@ -318,7 +318,7 @@ msgid ""
 "\"http.server\", \"8080\"] )"
 msgstr ""
 "``args/command``: 실행할 명령어를 배열형태로 적습니다. (e.g. ``python3 -m http.server "
-"8080`` 명령어는 [\"python3\", \"-m\", \"http.server\", \"8080\"])"
+"8080`` 명령어는 [”python3“, ”-m“, ”http.server“, ”8080“])"
 
 #: ../../model_serving/model_serving.rst:163
 msgid "``mkdir``: This is an action to create a directory by input path"
@@ -326,7 +326,7 @@ msgstr "``mkdir``: 입력한 경로에 따라 디렉토리를 생성하는 액�
 
 #: ../../model_serving/model_serving.rst:165
 msgid "``args/path``: Specify the path to create a directory"
-msgstr ""
+msgstr "``args/path``: 디렉토리를 만들 경로를 지정합니다."
 
 #: ../../model_serving/model_serving.rst:167
 msgid "``log``: This is an action to print out log by input message"
@@ -628,4 +628,3 @@ msgid ""
 msgstr ""
 "기본적으로 엔드 유저는 엔드포인트에 접근이 가능한 네트워크 망에 있어야 합니다. 만일 폐쇄망에서 서비스를 생성한 경우, 폐쇄망 내 "
 "접근이 가능한 엔드 유저만 접근이 가능합니다."
-
