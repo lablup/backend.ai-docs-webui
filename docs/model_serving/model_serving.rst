@@ -95,12 +95,17 @@ The model definition file follows the following format:
      - name: "simple-http-server"
        model_path: "/models"
        service:
-         pre_start_actions:
-            - action: run_command
-            args:
-               command: ["echo", "Hello, World!"]
-         start_command: ["python3", "-m", "http.server", "8080"]
-         port: 8080
+         start_command:
+           - python
+           - -m
+           - http.server
+           - --directory
+           - /home/work
+           - "8000"
+         port: 8000
+         health_check:
+           path: /
+           max_retries: 5
 
 .. _model_definition_guide:
 
