@@ -37,13 +37,12 @@ For example, in version 23.03, you can configure a model service by
 modifying the compute session for training in the following way:
 
 1. Add pre-opened ports during session creation to map the running
-   server port inside the session for model serving. (For instructions
-   on how to use preopen ports, refer to
-   this :ref:`Set Preopen Ports <set_preopen_ports>`.)
+   server port inside the session for model serving. 
+   (For instructions on how to use preopen ports, refer to this :ref:`Set Preopen Ports <set_preopen_ports>`.)
+
 2. Check “Open app to public” to allow the service mapped to the
-   pre-opened port to be publicly accessible. (For detailed information
-   about “Open app to public,” refer to
-   this :ref:`Open app to public <open_app_to_public>`.)
+   pre-opened port to be publicly accessible. 
+   (For detailed information about “Open app to public,” refer to this :ref:`Open app to public <open_app_to_public>`.)
 
 However, there are certain limitations in version 23.03:
 
@@ -97,7 +96,14 @@ The model definition file follows the following format:
        model_path: "/models"
        service:
          pre_start_actions:
-         start_command: ["python3", "-m", "http.server", "8080"]
+            - action: run_command
+            args:
+               command: ["echo", "Hello, World!"]
+         start_command: 
+            - "python3"
+            - "-m"
+            - "http.server"
+            - "8080"
          port: 8080
          health_check:
            path: /
@@ -107,119 +113,40 @@ Key-Value Descriptions for Model Definition File
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
    .. note:: 
-      Values marked as required in the notes must be included in the
-      model definition file. Other items are optional and can be
-      omitted.Items with a ``/`` slash indicate descriptions for sub-keys under
-      the key preceding the slash.
+      Fields without "(Required)" mark is optional
 
-+--------------------------------------+-----------------------+-------------------+
-| **Key**                              | **Description**       | **Note**          |
-+======================================+=======================+===================+
-| ``name``                             | | Defines the name    | Required          |
-|                                      | | of the model.       |                   |
-+--------------------------------------+-----------------------+-------------------+
-| ``model_path``                       | | Addresses the path  | - Required        |
-|                                      | | of where model is   | - Starts from     |
-|                                      | | defined.            |   ``/models``     |
-+--------------------------------------+-----------------------+-------------------+
-| ``service``                          | | Item for organizing | ``-``             |
-|                                      | | information about   |                   |
-|                                      | | the files to be     |                   |
-|                                      | | served (includes    |                   |
-|                                      | | command scripts and |                   |
-|                                      | | code)               |                   |
-+--------------------------------------+-----------------------+-------------------+
-| ``service/pre_start_actions``        | | Item for organizing | ``-``             |
-|                                      | | preceding commands  |                   |
-|                                      | | or actions to be    |                   |
-|                                      | | executed before the |                   |
-|                                      | | ``start_command``   |                   |
-+--------------------------------------+-----------------------+-------------------+
-| ``service/pre_start_actions/action`` | | Please refer to the | | Useful actions  |
-|                                      | | description for     | | may be added in |
-|                                      | | service action      | | the future      | 
-+--------------------------------------+-----------------------+-------------------+
-| ``service/pre_start_actions/args/*`` | | Please refer to the | ``-``             |
-|                                      | | description for     |                   |
-|                                      | | service action      |                   |
-+--------------------------------------+-----------------------+-------------------+
-| ``service/start_command``            | | Specify the command | Required          |
-|                                      | | to be executed as   |                   | 
-|                                      | | an array of strings |                   |
-|                                      | | in model serving.   |                   |
-+--------------------------------------+-----------------------+-------------------+
-| ``service/port``                     | | Specify the ports to| Required          |
-|                                      | | be opened in        |                   |
-|                                      | | accordance with the |                   |
-|                                      | | commands executed   |                   |
-|                                      | | during model serving|                   |
-|                                      | | at the container.   |                   |
-+--------------------------------------+-----------------------+-------------------+
-| ``health_check/path``                | | Specify the path for| | This is the path|
-|                                      | | verifying that      | | that follows the|
-|                                      | | the service is      | | endpoint        |
-|                                      | | running properly    |                   |
-|                                      | | in model serving.   |                   |
-+--------------------------------------+-----------------------+-------------------+
-| ``health_check/max_retries``         | | Specify the number  | ``-``             |
-|                                      | | of retries to be    |                   |
-|                                      | | made if there is no |                   |
-|                                      | | response after a    |                   |
-|                                      | | request is sent to  |                   |
-|                                      | | the service during  |                   |
-|                                      | | model serving.      |                   |
-+--------------------------------------+-----------------------+-------------------+
+- ``name`` (Required): Defines the name of the model.
+- ``model_path`` (Required): Addresses the path of where model is defined.
+- ``service``: Item for organizing information about the files to be served (includes command scripts and code).
+   - ``pre_start_actions`` : Item for organizing preceding commands or actions to be executed before the ``start_command``.
+      - ``action``: Further information and description is in :ref:`here <prestart_actions>`.
+      - ``args/*``: Further information and description is in :ref:`here <prestart_actions>`.
+      - ``start_command`` (Required): Specify the ports to be opened in accordance with the commands executed during model serving at the container.
+- ``health_check``: Item for checking whether service is running without any error according to defined period.
+   - ``path``: Specify the path for verifying that the service is running properly in model serving.
+   - ``max_retries``: Specify the number of retries to be made if there is no response after a request is sent to the service during model serving. 
 
 
 Description for service action supported in Backend.AI Model serving
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-+--------------------+---------------------------------------------+-----------------------+
-| **Action name**    | **Supported key name / description**        | **Notes**             |
-+====================+=============================================+=======================+
-| ``write_file``     | | - arg/filename: Specify the file name     | | This is an action   |
-|                    | | - body: Specify the content to be         | | to create a file    |
-|                    | |         added to the file.                | | with the given      |
-|                    | | - mode: Specify the file's access         | | file name and       |
-|                    | |         permissions.                      | | append control to it|
-|                    | | - append: Set whether to overwrite or     | | the default access  |
-|                    | |           append content to the file      | | permission is       |
-|                    | |           as ``True`` or ``False``.       | | ``644``.            |
-+--------------------+---------------------------------------------+-----------------------+
-| ``write_tempfile`` | | - body: Specify the content to be         | | This is an action to|
-|                    | |         added to the file.                | | create a file with  |
-|                    | | - mode: Specify the file's access         | | a temporary file    |
-|                    | |         permissions.                      | | name (``.py``) and  |
-|                    | |                                           | | append content to   |
-|                    | |                                           | | it. If no value is  |
-|                    | |                                           | | specified for the   |
-|                    | |                                           | | mode, the default   |
-|                    | |                                           | | access permission is|
-|                    | |                                           | | ``644``.            |
-+--------------------+---------------------------------------------+-----------------------+
-| ``run_command``    | | args/command: Specify the command to      | | The result of       |
-|                    | | executed as an array.                     | | executing a command,|
-|                    | | e.g. python3 -m http.server, 8080 ->      | | including any errors|
-|                    | | ["python3", "-m", "http.server", "8080"]  | | , will be returned  |
-|                    | |                                           | | in following format:|
-|                    | |                                           | | - out: Output of the|
-|                    | |                                           | | command execution   |
-|                    | |                                           | | - err: Error msg if |
-|                    | |                                           | | an error occurs     |
-|                    | |                                           | | during command      |
-|                    | |                                           | | execution           |
-+--------------------+---------------------------------------------+-----------------------+
-| ``mkdir``          | | args/path: Specify the path to create a   | ``-``                 |
-|                    | | directory                                 |                       |
-+--------------------+---------------------------------------------+-----------------------+
-| ``log``            | | - args/message: Specify the message to be | ``-``                 |
-|                    | |                 displayed in the logs.    |                       |
-|                    | | - debug: Set to ``True`` if it is in      |                       |
-|                    | |          debug mode, otherwise, set to    |                       |
-|                    | |          ``False``.                       |                       |
-+--------------------+---------------------------------------------+-----------------------+
+.. _prestart_actions:
 
-
+- ``write_file``: This is an action to create a file with the given file name and append control to it. the default access permission is ``644``.
+   - ``arg/filename``: Specify the file name
+   - ``body``: Specify the content to be added to the file.
+   - ``mode``: Specify the file's access permissions.
+   - ``append``: Set whether to overwrite or append content to the file as ``True`` or ``False``.
+- ``write_tempfile``: This is an action to create a file with a temporary file name (``.py``) and append content to it. If no value is specified for the mode, the default access permission is ``644``.
+   - ``body``: Specify the content to be added to the file.
+   - ``mode``: Specify the file's access permissions. 
+- ``run_command``: The result of executing a command, including any errors, will be returned in following format ( ``out``: Output of the command execution, ``err``: Error message if an error occurs during command execution)
+   - ``args/command``: Specify the command to executed as an array. (e.g. ``python3 -m http.server 8080`` command goes to ["python3", "-m", "http.server", "8080"] )
+- ``mkdir``: This is an action to create a directory by input path
+   - ``args/path``: Specify the path to create a directory 
+- ``log``: This is an action to print out log by input message
+   - ``args/message``: Specify the message to be displayed in the logs.
+   -  ``debug``: Set to ``True`` if it is in debug mode, otherwise set to ``False``.
 
 Uploading Model Definition File to Model Type Folder
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
