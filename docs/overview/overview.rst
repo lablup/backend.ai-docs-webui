@@ -185,30 +185,32 @@ Accessible menu by user role
 +-----------------+------+-------+
 | page \\ role    | user | admin |
 +=================+======+=======+
-| Summary         |   O  |   O   |
+| Summary         | O    | O     |
 +-----------------+------+-------+
-| Sessions        |   O  |   O   |
+| Sessions        | O    | O     |
 +-----------------+------+-------+
-| Import & run    |   O  |   O   |
+| Serving         | O    | O     |
 +-----------------+------+-------+
-| Data & Storage  |   O  |   O   |
+| Import & run    | O    | O     |
 +-----------------+------+-------+
-| Agent Summary   |   O  |   O   |
+| Data & Storage  | O    | O     |
 +-----------------+------+-------+
-| Statistics      |   O  |   O   |
+| Agent Summary   | O    | O     |
 +-----------------+------+-------+
-| Users*          |   X  |   O   |
+| Statistics      | O    | O     |
 +-----------------+------+-------+
-| Environments*   |   X  |   O   |
+| Users*          | X    | O     |
 +-----------------+------+-------+
-| Resources*      |   X  |   O   |
+| Environments*   | X    | O     |
 +-----------------+------+-------+
-| Configurations* |   X  |   O   |
+| Resources*      | X    | O     |
 +-----------------+------+-------+
-| Maintenance*    |   X  |   O   |
+| Configurations* | X    | O     |
 +-----------------+------+-------+
-| Information*    |   X  |   O   |
+| Maintenance*    | X    | O     |
 +-----------------+------+-------+
-| UserSettings    |   O  |   O   |
+| Information*    | X    | O     |
++-----------------+------+-------+
+| UserSettings    | O    | O     |
 +-----------------+------+-------+
 

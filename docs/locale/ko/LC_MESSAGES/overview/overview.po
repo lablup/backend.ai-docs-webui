@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-07 02:43+0900\n"
+"POT-Creation-Date: 2023-10-06 17:30+0900\n"
 "PO-Revision-Date: 2021-03-02 20:43+0900\n"
 "Last-Translator: \n"
 "Language: ko\n"
@@ -445,7 +445,7 @@ msgstr "요약 (Summary)"
 #: ../../overview/overview.rst:200 ../../overview/overview.rst:202
 #: ../../overview/overview.rst:204 ../../overview/overview.rst:206
 #: ../../overview/overview.rst:208 ../../overview/overview.rst:210
-#: ../../overview/overview.rst:212
+#: ../../overview/overview.rst:212 ../../overview/overview.rst:214
 msgid "O"
 msgstr ""
 
@@ -454,51 +454,56 @@ msgid "Sessions"
 msgstr "세션 (Sessions)"
 
 #: ../../overview/overview.rst:192
+msgid "Serving"
+msgstr "모델 서빙 (Serving)"
+
+#: ../../overview/overview.rst:194
 msgid "Import & run"
 msgstr "가져오기 및 실행하기(Import & Run)"
 
-#: ../../overview/overview.rst:194
+#: ../../overview/overview.rst:196
 msgid "Data & Storage"
 msgstr "데이터 & 폴더 (Data & Storage)"
 
-#: ../../overview/overview.rst:196
+#: ../../overview/overview.rst:198
 msgid "Agent Summary"
 msgstr "자원 요약 (Agent Summary)"
 
-#: ../../overview/overview.rst:198
+#: ../../overview/overview.rst:200
 msgid "Statistics"
 msgstr "통계 (Statistics)"
 
-#: ../../overview/overview.rst:200
+#: ../../overview/overview.rst:202
 msgid "Users*"
 msgstr "사용자 (Users)*"
 
-#: ../../overview/overview.rst:200 ../../overview/overview.rst:202
-#: ../../overview/overview.rst:204 ../../overview/overview.rst:206
-#: ../../overview/overview.rst:208 ../../overview/overview.rst:210
+#: ../../overview/overview.rst:202 ../../overview/overview.rst:204
+#: ../../overview/overview.rst:206 ../../overview/overview.rst:208
+#: ../../overview/overview.rst:210 ../../overview/overview.rst:212
 msgid "X"
 msgstr ""
 
-#: ../../overview/overview.rst:202
+#: ../../overview/overview.rst:204
 msgid "Environments*"
 msgstr "실행 환경 (Environments)*"
 
-#: ../../overview/overview.rst:204
+#: ../../overview/overview.rst:206
 msgid "Resources*"
 msgstr "자원 (Resources)*"
 
-#: ../../overview/overview.rst:206
+#: ../../overview/overview.rst:208
 msgid "Configurations*"
 msgstr "환경 설정 (Configurations)*"
 
-#: ../../overview/overview.rst:208
+#: ../../overview/overview.rst:210
 msgid "Maintenance*"
 msgstr "관리 (Maintenance)*"
 
-#: ../../overview/overview.rst:210
+#: ../../overview/overview.rst:212
 msgid "Information*"
 msgstr "정보 (Information)*"
 
-#: ../../overview/overview.rst:212
+#: ../../overview/overview.rst:214
 msgid "UserSettings"
 msgstr "사용자 설정 (UserSettings)"
+
