@@ -77,6 +77,8 @@ def setup(app):
 # -- Options for LaTeX output ------------------------------------------------
 latex_engine = 'xelatex'
 latex_use_xindy = False
+# resizing it with includegraphics doesn't work properly.
+# just resize it manually instead.
 latex_logo = '_static/backendai_logo.png'
 latex_additional_files = ['_static/lablup_logo.png']
 latex_elements = {
