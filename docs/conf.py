@@ -20,8 +20,8 @@
 project = 'Backend.AI Web-UI User Guide'
 copyright = '2023, Lablup Inc.'
 author = 'Lablup Inc.'
-version = '23.03'
-release = '23.03.0'
+version = '23.09'
+release = '23.09'
 
 # -- General configuration ---------------------------------------------------
 
@@ -75,6 +75,8 @@ def setup(app):
 
 
 # -- Options for LaTeX output ------------------------------------------------
+latex_engine = 'xelatex'
+latex_use_xindy = False
 latex_logo = '_static/backendai_logo.png'
 latex_additional_files = ['_static/lablup_logo.png']
 latex_elements = {
@@ -102,12 +104,14 @@ latex_elements = {
     ),
     'fontpkg': '',
     'preamble': r'''
-        \usepackage[utf8x]{inputenc}
         \usepackage{kotex}
         \usepackage{setspace}
-        \usepackage{charter}
-        \usepackage[defaultsans]{lato}
-        \usepackage{inconsolata}
+
+        \setmainhangulfont{NanumSquare}
+        \setsanshangulfont{NanumSquare}
+        \setmainfont{Ubuntu}
+        \setsansfont{Ubuntu}
+        \setmonofont{JetBrains Mono}
 
         \setcounter{chapter}{-1}
         \doublespacing
