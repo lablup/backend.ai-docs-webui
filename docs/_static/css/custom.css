@@ -152,11 +152,13 @@
 }
 
 body {
-  font-family: "Ubuntu", "Nanum Square";
+  /* font-family: "Ubuntu", "Nanum Square"; */
+  font-family: "Pretendard", sans-serif;
 }
 
 code,
 pre,
 .pre {
-  font-family: "JetBrains Mono";
+  /* font-family: "JetBrains Mono"; */
+  font-family: "Pretendard", sans-serif;
 }

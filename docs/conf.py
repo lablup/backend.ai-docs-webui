@@ -52,7 +52,7 @@ templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'tango'
+# pygments_style = 'tango'
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -72,6 +72,12 @@ html_css_files = ['css/custom.css']
 
 def setup(app):
     app.add_css_file('css/custom.css')
+
+html_style = 'css/customTheme.css'
+
+html_js_files = [
+    'js/custom.js',
+]
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -109,11 +115,11 @@ latex_elements = {
         \usepackage{kotex}
         \usepackage{setspace}
 
-        \setmainhangulfont{NanumSquare}
-        \setsanshangulfont{NanumSquare}
-        \setmainfont{Ubuntu}
-        \setsansfont{Ubuntu}
-        \setmonofont{JetBrains Mono}
+        \setmainhangulfont{Pretendard}
+        \setsanshangulfont{Pretendard}
+        \setmainfont{Pretendard}
+        \setsansfont{Pretendard}
+        \setmonofont{Pretendard}
 
         \setcounter{chapter}{-1}
         \doublespacing
