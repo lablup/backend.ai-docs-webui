@@ -380,31 +380,45 @@ Idle checkers(inactivity criterion) will be displayed in the idle checks column 
    :width: 200
    :align: center
 
-The meaning of idle checkers is as follows, and can also be viewed by clicking the info icon in the
-idle checks column.
+The meaning of idle checkers are as follows, and more detailed explanations can be
+found by clicking the information (i) icon in the idle checks column.
 
-* Max Session Lifetime: Force-terminate sessions after this time from creation. It prevents the
-  session from running infinitely.
+* Max Session Lifetime: Force-terminate sessions after this time from creation.
+  This measure prevents sessions from running indefinitely.
 * Network Idle Timeout: Force-terminate sessions that do not exchange data with the user (browser
   or web app) after this time. Traffic between the user and the compute session continuously occurs
   when the user interacts with an app, like terminal or Jupyter, by keyboard input, Jupyter cell
   creation, etc. Jupyter cell creation, etc. If there is no interaction for a certain period, the
   condition of garbage collection will be met. Even if there is a process executing a job in the
   compute session, it is subject to termination if there is no user interaction.
-* Utilization Checker: Force-terminate sessions based only on the utilization of resources allocated
-  to them.
+* Utilization Checker: Resources allocated to a compute session are reclaimed
+  based on the utilization of those resources. The decision to delete is based on
+  the following two factors:
 
-  - Grace Period: Utilization idle checker will be activated after this initial grace time. During
-    this time, sessions are not terminated even if utilization is low.
-  - Utilization Threshold: Threshold criteria of each compute resource. When one or more resource of
-    a compute session does not exceed the configured threshold criteria for a certain time, the session
-    will be garbage collected (terminated). For example, if you set 1% of CUDA utilization threshold,
-    compute sessions that show less than 1% CUDA GPU utilization, for a certain duration of time, will
-    be destroyed. Resources with empty values are excluded from the garbage collection criteria.
+  - Grace Period: The time during which the utilization idle checker is
+    inactive. Even with low usage, the compute session won't be terminated during
+    this period. However, once the grace period is over, if the average
+    utilization remain below the threshold during the set idle timeout period,
+    the system can terminate the session at any time. The grace period is
+    merely a guaranteed duration during which termination does not occur. This
+    measure is primarily for efficient management of low-usage GPU resources.
+  - Utilization Threshold: If the resource utilization of a compute session does
+    not exceed the set threshold for a certain duration (idle timeout), that
+    session will be automatically terminated. For example, if the accelerator
+    utilization threshold is set to 1%, and a compute session shows a
+    utilization of less than 1% over the idle itmeout, it becomes a target for
+    termination. Resources with empty values are excluded from the garbage
+    collection criteria.
 
-If you hover your mouse over the Utilization Checker, a tooltip displays the
-utilization and threshold will appear. As the current utilization approaches to the
-threshold (towards lower usage), the font color changes to yellow, and then red.
+   .. note::
+      After the grace period, sessions can be terminated anytime if utilization
+      remains low. Briefly using the resources does not extend the grace period.
+      Only the average utilization over the last idle timeout is considered.
+
+Hovering your mouse over the Utilization Checker will display a tooltip with the
+utilization and threshold values. The text color changes to yellow and then red
+as the current utilization approaches the threshold (indicating low resource
+utilization).
 
 .. image:: utilization_checker.png
    :width: 250
