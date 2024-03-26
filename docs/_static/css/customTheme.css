@@ -7565,3 +7565,8 @@ span.linenos.special { color: #767676; background-color: #ffffc0; padding-left: 
 .highlight .vi { color: #767676 } /* Name.Variable.Instance */
 .highlight .vm { color: #767676 } /* Name.Variable.Magic */
 .highlight .il { color: #0000cf; font-weight: bold } /* Literal.Number.Integer.Long */
+
+/* DO NOT REMOVE THIS - customizing ads comment in ethical ads */
+.ethical-rtd .ethical-sidebar, a {
+  font-size: small;
+}
