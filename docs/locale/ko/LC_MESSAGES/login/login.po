@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-27 11:26+0900\n"
+"POT-Creation-Date: 2024-03-27 13:30+0900\n"
 "PO-Revision-Date: 2021-03-02 18:31+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko\n"
@@ -135,7 +135,7 @@ msgid ""
 "If the access restriction continues on more than 20 minutes, please "
 "contact your system administrator."
 msgstr ""
-"로그인 실패가 10 회 이상 발생하면 보안상의 이유로 로그인 시도가 20 분 간 제 한됩니다. 만약 20 분 후에도 로그인 제한이 "
+"로그인 실패가 10 회 이상 발생하면 보안상의 이유로 로그인 시도가 20 분 간 제한됩니다. 만약 20 분 후에도 로그인 제한이 "
 "계속 유지되는 경우에는 시스템 관리자에게 문의 하십시오."
 
 #: ../../login/login.rst:92
@@ -143,21 +143,44 @@ msgid "Sidebar Menus"
 msgstr "사이드바의 메뉴"
 
 #: ../../login/login.rst:94
-msgid "There are three buttons at the top of the left sidebar."
-msgstr "좌측 사이드바의 위쪽에는 세 가지 버튼이 위치하고 있습니다."
-
-#: ../../login/login.rst:96
 msgid ""
-"The leftmost button changes the size of the sidebar. Click to make the "
-"sidebar narrower. Click again to bring the sidebar back to its original "
-"width."
+"Change the size of the sidebar via the buttons on the right side of the "
+"sidebar. Click it to significantly reduce the width of the sidebar, "
+"giving you a wider view of its contents. Clicking it again will return "
+"the sidebar to its original width."
 msgstr ""
-"가장 왼쪽의 버튼은 사이드바의 크기를 변경합니다. 클릭하면 사이드바의 폭이 크게 줄어들면서 내용을 보다 넓게 볼 수 있습니다. 다시"
-" 한 번 클릭하면 사이드바의 폭이 다시 원래대로 돌아옵 니다."
+"사이드바의 우측에 위치한 버튼을 통하여 사이드바의 크기를 변경합니다. "
+"클릭하면 사이드바의 폭이 크게 줄어들면서 내용을 보다 넓게 볼 수 있습니다. "
+"다시 한 번 클릭하면 사이드바의 폭이 다시 원래대로 돌아옵니다."
 
-#: ../../login/login.rst:103
+#: ../../login/login.rst:104
 msgid "Header Events"
+msgstr "헤더 이벤트"
+
+#: ../../login/login.rst:105
+msgid ""
+"The bell shape button is the event notification button. Events that need "
+"to be recorded during Web-UI operation are displayed here. When "
+"background tasks are running, such as creating a compute session, you can"
+" check the jobs here. When the background task is finished."
 msgstr ""
+"종 모양의 버튼은 이벤트 알림 버튼입니다. Web-UI 동작 중 기록해둘 필요가 있는 이벤트 내역이 여기에 표시 됩니다. "
+"연산 세션을 생성 중에 있는 등 백그라운드 작업이 돌아가고 있을 때 여기에서 그 내역을 확인할 수 있습니다."
+
+#: ../../login/login.rst:114
+msgid ""
+"You can change the theme mode of the Web-UI via the dark mode icon on the"
+" right side of the header."
+msgstr ""
+"헤더의 우측에 있는 다크모드 아이콘을 통하여 Web-UI 의 테마를 변경할 수 있습니다."
+
+#: ../../login/login.rst:122
+msgid ""
+"There is a question mark icon at the lower right side of the header. "
+"Click this icon to access the web version of this guide document."
+msgstr ""
+"헤더의 우측에는 물음표 아이콘이 있습니다. "
+"이 아이콘을 클릭하면 본 가이드 문서의 웹 버전에 접속할 수 있습니다."
 
 #~ msgid ""
 #~ "After entering the e-mail, press the "
@@ -234,4 +257,33 @@ msgstr ""
 #~ "the web version of this guide "
 #~ "document."
 #~ msgstr "사이드바 좌측 하단부를 보면 물음표 아이콘이 있습니다. 이 아이콘을 클릭하면 본 가이드 문서의 웹 버전에 접속할 수 있습니다."
+
+#~ msgid ""
+#~ "The bell shape button is the event"
+#~ " notification button. Events that need "
+#~ "to be recorded during Web-UI "
+#~ "operation are displayed here."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When background tasks are running, such"
+#~ " as creating a compute session, you"
+#~ " can check the jobs here. When "
+#~ "the background task is finished."
+#~ msgstr ""
+
+#~ msgid "There are three buttons at the top of the left sidebar."
+#~ msgstr "좌측 사이드바의 위쪽에는 세 가지 버튼이 위치하고 있습니다."
+
+#~ msgid ""
+#~ "The leftmost button changes the size "
+#~ "of the sidebar. Click to make the"
+#~ " sidebar narrower. Click again to "
+#~ "bring the sidebar back to its "
+#~ "original width."
+#~ msgstr ""
+#~ "가장 왼쪽의 버튼은 사이드바의 크기를 변경합니다. 클릭하면"
+#~ " 사이드바의 폭이 크게 줄어들면서 내용을 보다 넓게"
+#~ " 볼 수 있습니다. 다시 한 번 클릭하면 "
+#~ "사이드바의 폭이 다시 원래대로 돌아옵 니다."
 
