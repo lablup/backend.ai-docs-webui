@@ -62,8 +62,8 @@ please refer to the following.
       the session WILL NOT run until the start time.
 
   .. image:: session_type_batch.png
-     :width: 350
      :align: center
+     
 * Environments: You can choose the base environment for compute sessions such as
   TensorFlow, PyTorch, C++, etc. When you select TensorFlow, your compute
   session will automatically include the TensorFlow library. If you choose
