@@ -17,11 +17,11 @@
 
 @font-face {
   font-family: "Ubuntu";
-  src: url("../fonts/Ubuntu-Regular.ttf")
+  src: url("../fonts/Ubuntu-Regular.ttf");
 }
 @font-face {
   font-family: "Ubuntu Italic";
-  src: url("../fonts/Ubuntu-Italic.ttf")
+  src: url("../fonts/Ubuntu-Italic.ttf");
 }
 @font-face {
   font-family: "Ubuntu Light";
@@ -37,7 +37,7 @@
 }
 @font-face {
   font-family: "Ubuntu Medium";
-  src: url("../fonts/Ubuntu-Medium.ttf")
+  src: url("../fonts/Ubuntu-Medium.ttf");
 }
 @font-face {
   font-family: "Ubuntu Medium Italic";
@@ -45,21 +45,20 @@
 }
 @font-face {
   font-family: "Ubuntu Bold";
-  src: url("../fonts/Ubuntu-Bold.ttf")
+  src: url("../fonts/Ubuntu-Bold.ttf");
 }
 @font-face {
   font-family: "Ubuntu Bold Italic";
   src: url("../fonts/Ubuntu-BoldItalic.ttf");
 }
 
-
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.ttf")
+  src: url("../fonts/Montserrat-Regular.ttf");
 }
 @font-face {
   font-family: "Montserrat Italic";
-  src: url("../fonts/Montserrat-Italic.ttf")
+  src: url("../fonts/Montserrat-Italic.ttf");
 }
 @font-face {
   font-family: "Montserrat Thin";
