@@ -46,9 +46,7 @@ Each item has the following meaning.
 * New password: New password (8 characters or more containing at least 1
   alphabet, number, and symbol). Click the right view icon to see the input
   contents. Ensure this is the same as the Original password.
-* 2FA Enabled: 2FA activation. The user needs to enter the OTP code when logging
-
-  in if it is checked.
+* 2FA Enabled: 2FA activation. The user needs to enter the OTP code when logging in if it is checked.
 
 .. note::
   Depending on the plugin settings, the ``2FA Enabled`` column might be invisible.
