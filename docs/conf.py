@@ -29,7 +29,7 @@ release = '23.09'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'recommonmark'
+	"myst_parser"
 ]
 
 # The file extensions of source files.

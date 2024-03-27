@@ -10,11 +10,11 @@ homepage = "https://github.com/lablup/backend.ai-docs-console"
 keywords = ['backend.ai', 'documentation', 'console']
 
 [tool.poetry.dependencies]
-python = "^3.7"  # Compatible python versions must be declared here
-sphinx = "^3.0.4"
-recommonmark = "^0.6.0"
-sphinx_rtd_theme = "^0.4.3"
-sphinx-intl = "^2.0.1"
+python = "^3.9"  # Compatible python versions must be declared here
+sphinx = "^7.2.6"
+myst-parser = "^2.0.0"
+sphinx_rtd_theme = "^2.0.0"
+sphinx-intl = "^2.1.0"
 
 [tool.poetry.dev-dependencies]
 # pytest = "^4.6"
