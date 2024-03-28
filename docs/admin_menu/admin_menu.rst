@@ -10,7 +10,7 @@ listed in the Users tab. Domain admin can see only the users who belong to the d
 while superadmin can see all users' information. Only
 superadmin can create and deactivate a user.
 
-User ID (email) and Name (username) can be filtered by typing text in the
+User ID (email), Name (username), and Main Access Key can be filtered by typing text in the
 search box on each column header.
 
 .. image:: admin_user_page.png
@@ -61,7 +61,7 @@ already exists. User's name, password, activation state, etc. can be changed. Us
    :align: center
    :alt: User update dialog
 
-Each of the two items at the bottom of the dialog has the following functions.
+Each of the three items at the bottom of the dialog has the following functions.
 
 * User Status: Indicates the user's status. Inactive users cannot log
   in. Before Verification is a status indicates that a user needs an additional
@@ -76,6 +76,10 @@ Each of the two items at the bottom of the dialog has the following functions.
   password change is required. The users will see the top bar that notify user
   to update their password, but this is a kind of descriptive flag which has no
   effect on actual use.
+* Enable sudo session: Allow the user to use sudo in the compute session.
+  This is useful when the user needs to install packages or run commands that
+  require root privileges. However, it is not recommended to enable this option
+  for all users, as it may cause security issues.
 * 2FA Enabled: A flag indicating whether the user uses two-factor authentication.
   When using two-factor authentication, users are additionally required to enter an
   OTP code when logging in. Administrators can only disable two-factor authentication
@@ -524,13 +528,13 @@ The resource group has further Scheduler Options. The details are described belo
 
 * Allowed session types:
   Since user can choose the type of session, resource group can allow certain type of session.
-  You can allow both type, or allow interactive or batch only.
+  You should allow at lest one session types. The allowed session types are Interactive, Batch, and Inference.
 * Pending timeout:
   A compute session will be canceled if it stays ``PENDING`` status for longer
   than the Pending timeout. When you wish to prevent a session from remaining
   PENDING indefinitely, set this time. Set this value to zero (0) if you do not
   want to apply the pending timeout feature.
-* The number of retries to skip pending session:
+* The number of retries to skip pending session: 
   The number of retries the scheduler tries before skipping a PENDING session.
   It can be configured to prevent the situation where one PENDING session blocks
   the scheduling of the subsequent sessions indefinitely (Head-of-line blocking,
@@ -649,7 +653,7 @@ Download session lists
 ----------------------
 
 There's additional feature in Session page for admin.
-On the right side of the OTHERS tab there is a menu marked with ``...``.
+On the right side of the FINISHED tab there is a menu marked with ``...``.
 When you click this menu, a sub-menu export CSV appears.
 
 .. image:: export_csv_menu.png
