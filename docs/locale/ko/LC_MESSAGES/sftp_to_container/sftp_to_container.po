@@ -98,6 +98,11 @@ msgstr ""
 "``/home/work/`` 하위에 위치하고 있는 ``id_container`` 파일을 다운로드 할 수도 있습니다. 자동 생성된 "
 "SSH key는 세션이 새로 생성될 때마다 변할 수도 있는데, 이럴 경우 다시 다운로드 받아야 합니다."
 
+#: ../../sftp_to_container/sftp_to_container.rst:-1
+#, fuzzy
+msgid "Starting SSH/SFTP daemon inside a compute session (container)"
+msgstr "연산 세션에 SSH/SFTP 접속하기 (Linux/Mac/Visual Studio Code)"
+
 #: ../../sftp_to_container/sftp_to_container.rst:54
 msgid ""
 "To SSH connect to the compute session with the downloaded SSH private "
@@ -173,10 +178,6 @@ msgstr ""
 msgid "Permissions Warning Message"
 msgstr ""
 
-#: ../../sftp_to_container/sftp_to_container.rst
-msgid "Permissions Warning Message"
-msgstr ""
-
 #: ../../sftp_to_container/sftp_to_container.rst:105
 msgid "For Windows / FileZilla"
 msgstr "Windows / FileZilla 사용 환경"
@@ -220,10 +221,6 @@ msgstr ""
 msgid "SSH key conversion with PuttyGen"
 msgstr ""
 
-#: ../../sftp_to_container/sftp_to_container.rst:-1
-msgid "SSH key conversion with PuttyGen"
-msgstr ""
-
 #: ../../sftp_to_container/sftp_to_container.rst:126
 msgid ""
 "After launching the FileZilla client, go to the Settings-Connection-SFTP "
@@ -238,10 +235,6 @@ msgstr ""
 msgid "Filezilla settings to connect to compute session"
 msgstr "연산 세션에 SSH/SFTP 접속하기 (Linux/Mac/Visual Studio Code)"
 
-#: ../../sftp_to_container/sftp_to_container.rst:-1
-msgid "Filezilla settings to connect to compute session"
-msgstr "연산 세션 접속을 위한 Filezilla 설정"
-
 #: ../../sftp_to_container/sftp_to_container.rst:133
 msgid ""
 "Open Site Manager, create a new site, and enter the connection "
@@ -252,19 +245,11 @@ msgstr "사이트 관리자를 열고 새 사이트를 하나 만든 후 다음�
 msgid "Filezilla site setting"
 msgstr ""
 
-#: ../../sftp_to_container/sftp_to_container.rst:-1
-msgid "Filezilla site setting"
-msgstr "Filezilla 사이트 설정"
-
 #: ../../sftp_to_container/sftp_to_container.rst:139
 msgid ""
 "When connecting to a container for the first time, the following "
 "confirmation popup may appear. Click the OK button to save the host key."
 msgstr "해당 컨테이너에 처음 접속하는 경우 다음과 같은 확인 창이 뜰 수 있습니다. 확인 버튼을 눌러 호스트 키를 저장합시다."
-
-#: ../../sftp_to_container/sftp_to_container.rst:-1
-msgid "Unknown Host Key dialog"
-msgstr ""
 
 #: ../../sftp_to_container/sftp_to_container.rst:-1
 msgid "Unknown Host Key dialog"
@@ -278,10 +263,6 @@ msgid ""
 msgstr ""
 "잠시 기다린 후 다음과 같이 접속이 되는 것을 확인할 수 있습니다. SFTP 접속을 통해 ``/home/work/`` 및 마운트 된"
 " Storage 폴더에 대용량 파일을 전송하는 등의 작업을 수행할 수 있습니다."
-
-#: ../../sftp_to_container/sftp_to_container.rst:-1
-msgid "Filezilla connection established"
-msgstr ""
 
 #: ../../sftp_to_container/sftp_to_container.rst:-1
 msgid "Filezilla connection established"
@@ -316,10 +297,6 @@ msgstr "링크: https://aka.ms/vscode-remote/download/extension"
 msgid "Install remote ssh plugin on Visual Studio Code"
 msgstr ""
 
-#: ../../sftp_to_container/sftp_to_container.rst:-1
-msgid "Install remote ssh plugin on Visual Studio Code"
-msgstr ""
-
 #: ../../sftp_to_container/sftp_to_container.rst:171
 msgid ""
 "After installing the extension, you should configure the SSH connection "
@@ -329,10 +306,6 @@ msgid ""
 msgstr ""
 "확장팩 설치 후 연산 세션 접속을 위한 SSH 연결 설정을 진행합니다. SSH/SFTP 다이얼로그에서 “DOWNLOAD SSH "
 "KEY” 버튼을 클릭하여 연산 세션에 접속하기 위한 SSH 비밀키를 다운로드 합니다. 포트 번호도 기억해 두십시오."
-
-#: ../../sftp_to_container/sftp_to_container.rst:-1
-msgid "Download SSH Key"
-msgstr ""
 
 #: ../../sftp_to_container/sftp_to_container.rst:-1
 msgid "Download SSH Key"
@@ -355,10 +328,6 @@ msgid ""
 "`View` menu."
 msgstr "이제 Visual Studio Code의 `View` - `Command Palette…` 메뉴를 선택합니다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:194
-msgid "View > comma"
-msgstr ""
-
 #: ../../sftp_to_container/sftp_to_container.rst:197
 msgid "View > comma"
 msgstr ""
@@ -371,10 +340,6 @@ msgstr ""
 "Visual Studio Code는 연결할 호스트의 타입을 자동으로 탐지합니다. `Remote-SSH: Connect to "
 "Host...` 를 선택해봅시다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:200
-msgid "SSH connect"
-msgstr ""
-
 #: ../../sftp_to_container/sftp_to_container.rst:203
 msgid "SSH connect"
 msgstr ""
@@ -384,10 +349,6 @@ msgid ""
 "You will see the list of hosts in ``.ssh/config``. Please select the host"
 " to connect, in this case, ``vscode``."
 msgstr "여기서는 ``.ssh/config`` 의 호스트 목록을 볼 수 있습니다. 연결할 호스트(``vscode``)를 선택합니다."
-
-#: ../../sftp_to_container/sftp_to_container.rst:206
-msgid "Select remote ssh select Host"
-msgstr ""
 
 #: ../../sftp_to_container/sftp_to_container.rst:209
 msgid "Select remote ssh select Host"
@@ -402,10 +363,6 @@ msgstr ""
 "연결이 된 후 빈 창이 표시됩니다. 상태 표시 줄을 참조하면 연결된 호스트를 확인할 수 있습니다. 연결이 된 후 빈 창이 "
 "표시됩니다. 상태 표시 줄을 참조하면 연결된 호스트를 확인할 수 있습니다."
 
-#: ../../sftp_to_container/sftp_to_container.rst:213
-msgid "Finished remote ssh connection"
-msgstr ""
-
 #: ../../sftp_to_container/sftp_to_container.rst:216
 msgid "Finished remote ssh connection"
 msgstr ""
@@ -418,10 +375,6 @@ msgid ""
 msgstr ""
 "로컬에서와 마찬가지로 `파일 > 열기...` 또는 `파일 > 워크스페이스 열기...` 메뉴를 통해 원격 호스트에서 폴더나 "
 "워크스페이스를 열 수 있습니다!"
-
-#: ../../sftp_to_container/sftp_to_container.rst:219
-msgid "open remote host file directory"
-msgstr ""
 
 #: ../../sftp_to_container/sftp_to_container.rst:222
 msgid "open remote host file directory"
@@ -666,3 +619,4 @@ msgid ""
 "When all the tasks are completed, press ``Ctrl-C`` on the first terminal "
 "to cancel the local proxy service."
 msgstr "모든 작업이 끝난 경우에는 첫 번째 터미널에서 ``Ctrl-C`` 를 눌러 로컬 프록시 서비스를 종료합니다."
+

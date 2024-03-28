@@ -2,11 +2,14 @@
 User Settings
 =============
 
-The user settings page is accessed by clicking the gear icon at the bottom of
-the left sidebar or by selecting the Preferences menu that appears after
-clicking the person icon at the top right. Users can change the preferred
-Environment from the language setting, SSH keypair management, editing user
-config script, and even to using Beta features.
+The user settings page is accessed by selecting the Preferences menu that 
+appears after clicking the person icon at the top right. Users can change
+the preferred Environment from the language setting, SSH keypair management,
+editing user config script, and even to using Beta features.
+
+.. image:: preferences.png
+   :align: center
+   :width: 300
 
 
 GENERAL tab
@@ -30,7 +33,7 @@ Use Compact Sidebar by default
 When this option is on, the left sidebar will be shown in a compact form
 (narrower width).  Change of the option is applied when the browser is
 refreshed. If you want to immediately change the type of the sidebar without
-refreshing the page, click the leftmost icon at the top of the sidebar.
+refreshing the page, click the leftmost icon at the top of the header.
 
 Language
 ^^^^^^^^
@@ -43,10 +46,24 @@ before the page is refreshed.
 * OS Default: Use the operating system's default language.
 * English: Set English as the default language.
 * Korean: Set Korean as the default language.
-* Russian: Set Russian as the default language.
+* Brazilian Portuguese: Set Brazilian Portuguese as the default language.
+* Chinese (Simplified): Set Chinese (Simplified) as the default language.
+* Chinese (Traditional): Set Chinese (Traditional) as the default language.
 * French: Set French as the default language.
-* Mongolian: Set Mongolian as the default language.
+* Finnish: Set Finnish as the default language.
+* German: Set German as the default language.
+* Greek: Set Greek as the default language.
 * Indonesian: Set Indonesian as the default language.
+* Italian: Set Italian as the default language.
+* Japanese: Set Japanese as the default language.
+* Mongolian: Set Mongolian as the default language.
+* Polish: Set Polish as the default language.
+* Portuguese: Set Portuguese as the default language.
+* Russian: Set Russian as the default language.
+* Spanish: Set Spanish as the default language.
+* Turkish: Set Turkish as the default language.
+* Vietnamese: Set Vietnamese as the default language.
+  
 
 .. note::
    Some of translated items may be marked as ``__NOT_TRANSLATED__``, which
@@ -150,7 +167,8 @@ LOGS tab
 
 Displays detailed information of various logs recorded on the client side. You
 can visit this page to find out more about the errors occurred.
-You can refresh or delete the logs by using the trash button at the top right.
+You can search, filter the error logs, refresh and clear the logs by clicking the
+Clear Logs button at the top right.
 
 .. image:: user_log.png
 
@@ -162,4 +180,9 @@ You can refresh or delete the logs by using the trash button at the top right.
    To check logs are being stacked properly, please open another page and click
    REFRESH button.
 
+If you want to hide or show the certain columns, click the gear icon at the bottom
+right of the table. Then you can see below dialog to select the columns you want to see.
 
+.. image:: logs_table_setting.png
+   :width: 500
+   :align: center
