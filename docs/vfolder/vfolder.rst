@@ -20,19 +20,23 @@ users in the panel. Project folders are created by domain admins, and normal
 users can only see project folders created for the project in which the users
 belong.
 
+.. image:: vfolder_status.png
+   :alt: Storage status in Storage page
+
 Storage Status on top of the folder list shows the following information:
 
 * Created: The number of folders that the user created.
-* Invited: The number of folders that the user was invited to share.
-* Capacity: The maximum number of folders that the user can create afterwards.
+* Limit: The maximum number of folders that the user can create afterwards.
   This value depends on the resource policy applied to the user and cannot be
   changed without changing the resource policy. Folders that were not created by
   the user (eg. folders invited to share, or project folders) are not counted.
+* Project Folder: The number of project folders that the user created.
+* Invited: The number of folders that the user was invited to share.
+
+.. image:: owner_panel.png
+   :alt: Owner panel in Storage page
 
 Check marks on the Owner panel in the folder list indicate the user created folders.
-
-.. image:: vfolder_status.png
-   :alt: Storage status in Storage page
 
 .. tip::
    If there are lots of folders in the list, you can filter the list by using the
