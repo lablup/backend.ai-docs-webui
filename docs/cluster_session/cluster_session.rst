@@ -132,6 +132,8 @@ of each environment variable with the description above.
 
 .. image::
    terminal_on_main_container.png
+   :width: 500
+   :align: center
 
 You can also SSH into the ``sub1`` container. No separate SSH setting is
 required, just issue the command ``ssh sub1`` and you are done. You can see the
@@ -140,6 +142,8 @@ is displayed.
 
 .. image::
    terminal_on_sub1_container.png
+   :width: 500
+   :align: center
 
 In this way, Backend.AI makes it easy to create cluster computing sessions. In
 order to execute distributed learning and calculation through a cluster
