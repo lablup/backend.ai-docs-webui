@@ -576,6 +576,8 @@ And then, click gear icon in control column.
    
    .. image:: no_support_quota_setting.png
 
+.. _quota-setting-panel:
+
 Quota Setting Panel
 ~~~~~~~~~~~~~~~~~~~~
 

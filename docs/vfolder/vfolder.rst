@@ -25,18 +25,28 @@ belong.
 
 Storage Status on top of the folder list shows the following information:
 
-* Created: The number of folders that the user created.
-* Limit: The maximum number of folders that the user can create afterwards.
-  This value depends on the resource policy applied to the user and cannot be
-  changed without changing the resource policy. Folders that were not created by
-  the user (eg. folders invited to share, or project folders) are not counted.
-* Project Folder: The number of project folders that the user created.
-* Invited: The number of folders that the user was invited to share.
+* Number of folders
+    * Created: The number of folders that the user created. 
+    * Limit: The maximum number of folders that the user can create afterwards.
+      This value depends on the resource policy applied to the user and cannot be
+      changed without changing the resource policy. Folders that were not created by
+      the user (eg. folders invited to share, or project folders) are not counted.
+    * Project Folder: The number of project folders that the user created.
+    * Invited: The number of folders that the user was invited to share.
+* Quota per storage volume
+    * Host: The name of the storage host.
+    * Project: Current project folder usage / current project folder quota scope.
+    * User: Current user folder usage / current user folder quota scope.
+
+.. note:: 
+   Please remind that quota is only available in storage that provides quota setting 
+   (e.g. XFS, CephFS, NetApp, Purestorage, etc.). For the quota setting, please refer
+   to the :ref:`Quota Setting Panel<quota-setting-panel>` section.
+
+Check marks on the Owner panel in the folder list indicate the user created folders.
 
 .. image:: owner_panel.png
    :alt: Owner panel in Storage page
-
-Check marks on the Owner panel in the folder list indicate the user created folders.
 
 .. tip::
    If there are lots of folders in the list, you can filter the list by using the
@@ -67,7 +77,8 @@ follows.
 
 * Folder name: The name of the folder. You can enter up to 64 characters.
 * Host: NFS host to create folder. You can choose one if you have multiple NFS
-  hosts.
+  hosts. You can check whether the selected host has enough capacity remaining through 
+  the indicator.
 * Type: Determines the type of folder to be created. It can be set as User or
   Project. The User folder is a folder that users can create and use alone
   and the Project folder is a folder created by admin and shared by users in the project.
@@ -154,10 +165,17 @@ are mounted under the user's default working directory, ``/home/work/``, and the
 files stored in the mounted directory will not be deleted when the compute session
 is terminated. (However, if you delete the folder itself, it will be gone).
 
+Pipeline folders
+----------------
+
+This tab shows the list of folders that are automatically created when executing a
+pipeline in FastTrack. When a pipeline is created, a new folder is created and mounted
+under ``/pipeline`` for each instance of work (computing session).
+
 
 .. _automount-folder:
 
-Automount folder
+Automount folders
 ----------------
 
 Data & Storage page has an Automount Folders tab. Click this tab to see a
@@ -176,6 +194,13 @@ For more detailed information on the usage of Automount folders, refer to
 .. image:: vfolder_automount_folders.png
    :alt: Automount folders
 
+Model folders
+-------------
+
+From the 24.03, Backend.AI supports a new feature called 'Model Store'.
+The newly added \"Models\" tab offers users a unified model store interface, enabling
+easy management and access to various machine learning and deep learning models.
+The features and usage of the \"Models\" tab will be updated in the 24.03 documentation.
 
 Using FileBrowser
 -----------------
