@@ -46,15 +46,9 @@ msgid "The latest versions of this document can be found from sites below:"
 msgstr "이 문서의 최신 버전은 아래 사이트에서 볼 수 있습니다:"
 
 #: ../../index.rst:16
-msgid "https://webui.docs.backend.ai/en/stable (English)"
-msgstr "https://webui.docs.backend.ai/en/stable (영문)"
+msgid "https://webui.docs.backend.ai/en/latest (English)"
+msgstr "https://webui.docs.backend.ai/en/latest (영문)"
 
 #: ../../index.rst:17
-msgid "https://webui.docs.backend.ai/ko/stable (Korean)"
-msgstr "https://webui.docs.backend.ai/ko/stable (한글)"
-
-#~ msgid "Indices and Tables"
-#~ msgstr "색인 및 테이블"
-
-#~ msgid "Backend.AI GUI Console User Guide"
-#~ msgstr "Backend.AI GUI Console 사용자 가이드"
+msgid "https://webui.docs.backend.ai/ko/latest (Korean)"
+msgstr "https://webui.docs.backend.ai/ko/latest (한글)"
