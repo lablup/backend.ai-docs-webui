@@ -34,7 +34,7 @@ Now let's go to the Sessions page and create a compute session by allocating 0.5
 fGPU as follows:
 
 .. image:: session_launch_dialog_with_gpu.png
-   :width: 350
+   :width: 600
    :align: center
 
 In the Configuration panel of the session list, you can see that
@@ -84,15 +84,15 @@ create a compute session.
 You can check the operation of the job scheduler in a simple way from the
 user Web-UI. When the GPU host can allocate up to 2 fGPUs,
 let's create 3 compute sessions at the same time requesting
-allocation of 1 fGPU, respectivley. In the Custom allocation section of the session launch
+allocation of 1 fGPU, respectively. In the Custom allocation section of the session launch
 dialog, there are GPU and Sessions sliders. If you specify a value greater than
 1 in Sessions and click the LAUNCH button, the number of sessions will be
 requested at the same time. Let's set the GPU and Sessions to 1 and 3,
 respectively. This is the situation that 3 sessions requesting a
 total of 3 fGPUs are created when only 2 fGPUs exist.
 
-.. image:: session_launch_dialog_3_sessions.png
-   :width: 350
+.. image:: session_launch_dialog_2_sessions.png
+   :width: 600
    :align: center
 
 Wait for a while and you will see three compute sessions being listed.
@@ -129,13 +129,13 @@ Go to the Sessions page and open the session launch dialog. There may be various
 kernel images depending on the installation settings.
 
 .. image:: various_kernel_images.png
-   :width: 350
+   :width: 600
    :align: center
 
 Here, let's select the TensorFlow 2.3 environment and created a session.
 
 .. image:: session_launch_dialog_tf23.png
-   :width: 350
+   :width: 600
    :align: center
 
 Open the web terminal of the created session and run the following Python
@@ -148,27 +148,25 @@ This time, let's select the TensorFlow 1.15 environment to create a compute
 session. If resources are insufficient, delete the previous session.
 
 .. image:: session_launch_dialog_tf115.png
-   :width: 350
+   :width: 600
    :align: center
 
 Open the web terminal of the created session and run the same Python command as
 before. You can see that TensorFlow 1.15(.4) version is installed.
 
 .. image:: tf115_version_print.png
-   :width: 450
    :align: center
 
-Finally, create a compute session using PyTorch version 1.5.
+Finally, create a compute session using PyTorch version 1.7.
 
-.. image:: session_launch_dialog_pytorch15.png
-   :width: 350
+.. image:: session_launch_dialog_pytorch17.png
+   :width: 600
    :align: center
 
 Open the web terminal of the created session and run the following Python
-command. You can see that PyTorch 1.5 version is installed.
+command. You can see that PyTorch 1.8 version is installed.
 
-.. image:: pytorch15_version_print.png
-   :width: 450
+.. image:: pytorch17_version_print.png
    :align: center
 
 Like this, you can utilize various versions of major libraries such as
@@ -262,199 +260,17 @@ afterwards may have different details depending on the terms of the contract.
 .. Users of the open source version can also purchase an installation and support
 .. plan separately.
 
-Backend.AI Server Management Guide
------------------------------------------
+Integration examples
+--------------------
 
-Backend.AI is composed of many modules and daemons. Here, we briefly describe
-each services and provide basic maintenance guide in case of specific service
-failure. Note that the maintenance operations provided here are generally
-applicable, but may differ depending on the host-specific installation details.
+In this section, we would like to introduce several common examples of applications,
+toolkits, and machine learning tools that can be utilized on the Backend.AI platform. 
+Here, we will provide explanations of the basic usage of each tool and how to set them 
+up in the Backend.AI environment, along with simple examples. We hope this will help 
+you choose and utilize the tools you need for your projects.   
 
-Manager
-^^^^^^^
-
-Gateway server that accepts and handles every user request. If the request is
-related with the compute session (container), Manager will delegate the request
-to Agent and/or containers in each Agent.
-
-.. code-block:: shell
-
-   # check status
-   sudo systemctl status backendai-manager
-   # start service
-   sudo systemctl start backendai-manager
-   # stop service
-   sudo systemctl stop backendai-manager
-   # restart service
-   sudo systemctl restart backendai-manager
-   # see logs
-   sudo journalctl --output cat -u backendai-manager
-
-Agent
-^^^^^
-
-Worker node which manages the lifecycle of compute sessions (containers).
-
-.. code-block:: shell
-
-   # check status
-   sudo systemctl status backendai-agent
-   # start service
-   sudo systemctl start backendai-agent
-   # stop service
-   sudo systemctl stop backendai-agent
-   # restart service
-   sudo systemctl restart backendai-agent
-   # see logs
-   sudo journalctl --output cat -u backendai-agent
-
-Webserver
-^^^^^^^^^
-
-Serves user Web-UI and provides authentication by email and password.
-
-.. code-block:: shell
-
-   # check status
-   sudo systemctl status backendai-webserver
-   # start service
-   sudo systemctl start backendai-webserver
-   # stop service
-   sudo systemctl stop backendai-webserver
-   # restart service
-   sudo systemctl restart backendai-webserver
-   # see logs
-   sudo journalctl --output cat -u backendai-webserver
-
-WSProxy
-^^^^^^^
-
-Proxies the connection between user-created web apps (such as web Terminal and
-Jupyter Notebook) and Manager, which is then relayed to a specific compute
-session (container).
-
-.. code-block:: shell
-
-   cd /home/lablup/halfstack
-   # check status
-   docker-compose -f docker-compose.wsproxy-simple.yaml -p <project> ps
-   # start service
-   docker-compose -f docker-compose.wsproxy-simple.yaml -p <project> up -d
-   # stop service
-   docker-compose -f docker-compose.wsproxy-simple.yaml -p <project> down
-   # restart service
-   docker-compose -f docker-compose.wsproxy-simple.yaml -p <project> restart
-   # see logs
-   docker-compose -f docker-compose.wsproxy-simple.yaml -p <project> logs
-
-PostgreSQL DB
-^^^^^^^^^^^^^
-
-Database for Manager.
-
-.. code-block:: shell
-
-   cd /home/lablup/halfstack
-   # check status
-   docker-compose -f docker-compose.hs.postgres.yaml -p <project> ps
-   # start service
-   docker-compose -f docker-compose.hs.postgres.yaml -p <project> up -d
-   # stop service
-   docker-compose -f docker-compose.hs.postgres.yaml -p <project> down
-   # restart service
-   docker-compose -f docker-compose.hs.postgres.yaml -p <project> restart
-   # see logs
-   docker-compose -f docker-compose.hs.postgres.yaml -p <project> logs
-
-To back up the DB data, you can use the following commands from the DB host. The
-specific commands may vary depending on the configuration.
-
-.. code-block:: shell
-
-   # query postgresql container's ID
-   docker ps | grep halfstack-db
-   # Connect to the postgresql container via bash
-   docker exec -it <postgresql-container-id> bash
-   # Backup DB data. PGPASSWORD may vary depending on the system configuration
-   PGPASSWORD=develove pg_dumpall -U postgres > /var/lib/postgresql/backup_db_data.sql
-   # Exit container
-   exit
-
-To restore the DB from the backup data, you can execute the following commands.
-Specific options may vary depending on the configuration.
-
-.. code-block:: shell
-
-   # query postgresql container's ID
-   docker ps | grep halfstack-db
-   # Connect to the postgresql container via bash
-   docker exec -it <postgresql-container-id> bash
-   # Disconnect all connection, for safety
-   psql -U postgres
-   postgres=# SELECT pg_terminate_backend(pg_stat_activity.pid)
-   postgres-# FROM pg_stat_activity
-   postgres-# WHERE pg_stat_activity.datname = 'backend'
-   postgres-# AND pid <> pg_backend_pid();
-   # Ensure previous data be cleaned (to prevent overwrite)
-   postgres=# DROP DATABASE backend;
-   postgres=# \q
-   # Restore from data
-   psql -U postgres < backup_db_data.sql
-
-Redis
-^^^^^
-
-Cache server which is used to collect per-session and per-agent usage
-statistics and relays heartbeat signal from Agent to Manager. It also keeps
-user's authentication information.
-
-.. code-block:: shell
-
-   cd /home/lablup/halfstack
-   # check status
-   docker-compose -f docker-compose.hs.redis.yaml -p <project> ps
-   # start service
-   docker-compose -f docker-compose.hs.redis.yaml -p <project> up -d
-   # stop service
-   docker-compose -f docker-compose.hs.redis.yaml -p <project> down
-   # restart service
-   docker-compose -f docker-compose.hs.redis.yaml -p <project> restart
-   # see logs
-   docker-compose -f docker-compose.hs.redis.yaml -p <project> logs
-
-Usually, Redis data do not need backup since it contains temporary cached data
-only, such user's login session information, per-container live stat, and etc.
-
-Etcd
-^^^^^
-
-Config server, which contains Backend.AI system-wide configuration.
-
-.. code-block:: shell
-
-   cd /home/lablup/halfstack
-   # check status
-   docker-compose -f docker-compose.hs.etcd.yaml -p <project> ps
-   # start service
-   docker-compose -f docker-compose.hs.etcd.yaml -p <project> up -d
-   # stop service
-   docker-compose -f docker-compose.hs.etcd.yaml -p <project> down
-   # restart service
-   docker-compose -f docker-compose.hs.etcd.yaml -p <project> restart
-   # see logs
-   docker-compose -f docker-compose.hs.etcd.yaml -p <project> logs
-
-To back up the Etcd config data used by the Manager, go to the folder where the
-Manager is installed and use the following command.
-
-.. code-block:: shell
-
-   cd /home/lablup/manager  # paths may vary
-   backend.ai mgr etcd get --prefix '' > etcd_backup.json
-
-To restore Etcd settings from the backup data, you can run a command like this.
-
-.. code-block:: shell
-
-   cd /home/lablup/manager  # paths may vary
-   backend.ai mgr etcd put-json '' etcd_backup.json
+Please note that the content covered in this guide is based on specific versions 
+of the programs, so the usage may vary in future updates. Therefore, please use this 
+document for reference and also check the latest official documentation for any changes.   
+Now, let's take a look at the powerful tools available for use on Backend.AI one by one. 
+We hope this section will serve as a useful guide for your research and development.
