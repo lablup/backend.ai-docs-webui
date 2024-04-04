@@ -176,7 +176,7 @@ under ``/pipeline`` for each instance of work (computing session).
 .. _automount-folder:
 
 Automount folders
-----------------
+-----------------
 
 Data & Storage page has an Automount Folders tab. Click this tab to see a
 list of folders whose names prefixed with a dot (.). When you create a folder,
