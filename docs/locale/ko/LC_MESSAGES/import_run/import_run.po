@@ -60,7 +60,6 @@ msgstr ""
 "이외의 URL을 입력해주십시오."
 
 #: ../../import_run/import_run.rst:-1
-#, fuzzy
 msgid "Import & Run Jupyter notebook"
 msgstr "Jupyter notebook 파일 가져오기 및 실행"
 
@@ -89,9 +88,8 @@ msgstr ""
 " 경우, 불러온 Jupyter notebook 파일은 실행되지 않습니다."
 
 #: ../../import_run/import_run.rst:-1
-#, fuzzy
 msgid "Session Launcher In Importing Jupyter notebook"
-msgstr "Jupyter notebook 파일 가져오기 및 실행"
+msgstr ""
 
 #: ../../import_run/import_run.rst:42
 msgid ""
@@ -100,9 +98,8 @@ msgid ""
 msgstr "세션 페이지에서 불러오기 작업이 성공적으로 완료된 것을 확인할 수 있습니다."
 
 #: ../../import_run/import_run.rst:-1
-#, fuzzy
 msgid "Session page with imported Jupyter notebook"
-msgstr "Jupyter notebook 파일 가져오기 및 실행"
+msgstr ""
 
 #: ../../import_run/import_run.rst:48
 msgid "Create executable Jupyter notebook button"
@@ -128,7 +125,6 @@ msgid ""
 msgstr "버튼 클릭 전 반드시 로그인이 되어있어야 합니다. 아닐 경우 실행 전 반드시 로그인이 필요합니다."
 
 #: ../../import_run/import_run.rst:-1
-#, fuzzy
 msgid "Create a Jupyter notebook button"
 msgstr "Jupyter notebook을 바로 실행할 수 있는 버튼 생성하기"
 
@@ -148,7 +144,6 @@ msgstr ""
 "목록에서 하나를 선택하십시오."
 
 #: ../../import_run/import_run.rst:-1
-#, fuzzy
 msgid "Import GitHub repository"
 msgstr "GitHub 저장소 불러오기"
 
@@ -169,9 +164,8 @@ msgid ""
 msgstr "저장소가 하나의 폴더로써 성공적으로 불러와진 것을 확인할 수 있습니다."
 
 #: ../../import_run/import_run.rst:-1
-#, fuzzy
 msgid "Import GitHub repository result"
-msgstr "GitHub 저장소 불러오기"
+msgstr "GitHub 저장소 불러오기 결과"
 
 #: ../../import_run/import_run.rst:90
 msgid "Importing GitLab Repositories"
@@ -188,7 +182,6 @@ msgstr ""
 " 이름을 명시적으로 지정해야 합니다."
 
 #: ../../import_run/import_run.rst:-1
-#, fuzzy
 msgid "Import GitLab repository"
 msgstr "GitLab 저장소 불러오기"
 

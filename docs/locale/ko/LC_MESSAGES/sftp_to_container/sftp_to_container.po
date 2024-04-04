@@ -99,9 +99,8 @@ msgstr ""
 "SSH key는 세션이 새로 생성될 때마다 변할 수도 있는데, 이럴 경우 다시 다운로드 받아야 합니다."
 
 #: ../../sftp_to_container/sftp_to_container.rst:-1
-#, fuzzy
 msgid "Starting SSH/SFTP daemon inside a compute session (container)"
-msgstr "연산 세션에 SSH/SFTP 접속하기 (Linux/Mac/Visual Studio Code)"
+msgstr "SSH/SFTP 데몬을 연산 세션(컨테이너) 내부에서 시작하기"
 
 #: ../../sftp_to_container/sftp_to_container.rst:54
 msgid ""
@@ -231,9 +230,8 @@ msgstr ""
 "(OpenSSH를 지원하는 클라이언트의 경우 ``id_container``) 키 파일을 등록해 줍니다."
 
 #: ../../sftp_to_container/sftp_to_container.rst:-1
-#, fuzzy
 msgid "Filezilla settings to connect to compute session"
-msgstr "연산 세션에 SSH/SFTP 접속하기 (Linux/Mac/Visual Studio Code)"
+msgstr "연산 세션에 접속하기 위한 Filezilla 설정"
 
 #: ../../sftp_to_container/sftp_to_container.rst:133
 msgid ""

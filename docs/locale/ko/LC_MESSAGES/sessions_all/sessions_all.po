@@ -861,9 +861,8 @@ msgid ""
 msgstr "사전 개방 포트를 추가하려면, Preopen Ports의 설정 아이콘 버튼을 클릭해주세요."
 
 #: ../../sessions_all/sessions_all.rst:-1
-#, fuzzy
 msgid "Preopen Ports Configuration"
-msgstr "그러면 사전 개방 포트 설정 다이얼로그가 띄워집니다."
+msgstr "사전 개방 포트 설정"
 
 #: ../../sessions_all/sessions_all.rst:491
 msgid "and then, preopen ports configuration dialog appears."
@@ -879,9 +878,8 @@ msgstr ""
 " 싶으실 경우 다이얼로그 헤더 부분에 있는 'i' 버튼을 클릭해주세요."
 
 #: ../../sessions_all/sessions_all.rst:-1
-#, fuzzy
 msgid "Preopen Ports Configuration info"
-msgstr "그러면 사전 개방 포트 설정 다이얼로그가 띄워집니다."
+msgstr "사전 개방 포트 설정 정보"
 
 #: ../../sessions_all/sessions_all.rst:500
 msgid ""
@@ -921,9 +919,8 @@ msgstr ""
 " 컨테이너가 새로운 이미지로 변환됩니다."
 
 #: ../../sessions_all/sessions_all.rst:-1
-#, fuzzy
 msgid "Container commit confirmation"
-msgstr "컨테이너 커밋 저장하기"
+msgstr "컨테이너 커밋 확인"
 
 #: ../../sessions_all/sessions_all.rst:527
 msgid ""
@@ -938,9 +935,8 @@ msgstr ""
 "파일을 얻기 위해서는 관리자에게 연락을 해야 합니다."
 
 #: ../../sessions_all/sessions_all.rst:-1
-#, fuzzy
 msgid "Container commit ongoing"
-msgstr "컨테이너 커밋 저장하기"
+msgstr "컨테이너 커밋 진행중"
 
 #: ../../sessions_all/sessions_all.rst:537
 msgid ""

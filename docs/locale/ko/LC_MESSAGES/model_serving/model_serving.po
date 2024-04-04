@@ -43,9 +43,8 @@ msgstr ""
 " 수 있게 하는 모델 서비스* 기능을 23.09 버전부터 정식 지원합니다."
 
 #: ../../model_serving/model_serving.rst:-1
-#, fuzzy
 msgid "Model serving diagram"
-msgstr "모델 서빙"
+msgstr "모델 서빙 다이어그램"
 
 #: ../../model_serving/model_serving.rst:23
 msgid ""
@@ -378,9 +377,8 @@ msgstr ""
 "엽니다. 이후 모델 정의 파일을 업로드 합니다. "
 
 #: ../../model_serving/model_serving.rst:-1
-#, fuzzy
 msgid "Model definition file upload"
-msgstr "모델 정의 파일 생성하기"
+msgstr "모델 정의 파일 업로드"
 
 #: ../../model_serving/model_serving.rst:196
 msgid "Creating/Modifying Model Service"
@@ -514,9 +512,8 @@ msgstr ""
 "원하는 필드를 수정하고 확인 버튼을 클릭하게 되면, 변경 사항이 적용됩니다. "
 
 #: ../../model_serving/model_serving.rst:-1
-#, fuzzy
 msgid "Edit model service dialog"
-msgstr "모델 서비스"
+msgstr "모델 서비스 수정하기"
 
 #: ../../model_serving/model_serving.rst:272
 msgid "Terminating Model Service"
@@ -540,7 +537,6 @@ msgstr ""
 "서비스의 경우 모델 서비스 목록에서 제거됩니다."
 
 #: ../../model_serving/model_serving.rst:-1
-#, fuzzy
 msgid "Terminate model service dialog"
 msgstr "모델 서비스 종료하기"
 
@@ -650,9 +646,8 @@ msgstr ""
 " 키의 값으로 추가하면 됩니다."
 
 #: ../../model_serving/model_serving.rst:-1
-#, fuzzy
 msgid "Generated token copy"
-msgstr "토큰 발급하기"
+msgstr "생성된 토큰 복사하기"
 
 #: ../../model_serving/model_serving.rst:354
 msgid "Key"
