@@ -10,7 +10,9 @@ Topbar
 ------
 
 .. image:: topbar_usermenu.png
-   :alt: Topbar usermenu
+    :width: 600
+    :align: center
+    :alt: Topbar usermenu
 
 In the middle of the top bar is a drop-down menu to select the user's current
 project. If a user belongs to multiple projects, the user can change it from
@@ -30,24 +32,21 @@ Each menu item has the following functions.
 * Log Out: Log out. Users can also logout by clicking the icon on the far right
   of the top bar.
 
-If you click Change User Info, the following dialog appears.
+If you click My Account, the following dialog appears.
 
-.. image:: change_user_info.png
-   :width: 350
-   :align: center
+.. image:: my_account_information.png
+  :width: 350
+  :align: center
 
 Each item has the following meaning.
 
 * Full Name: User's name (up to 64 characters)
-* Access Key: User's access key, pairs up with secret key below.
-* Secret Key: User's secret key.
 * Original password: Original password. Click the right view icon to see the
   input contents.
 * New password: New password (8 characters or more containing at least 1
   alphabet, number, and symbol). Click the right view icon to see the input
   contents. Ensure this is the same as the Original password.
-* 2FA Enabled: 2FA activation. The user needs to enter the OTP code when logging
-  in if it is checked.
+* 2FA Enabled: 2FA activation. The user needs to enter the OTP code when logging in if it is checked.
 
 .. note::
   Depending on the plugin settings, the ``2FA Enabled`` column might be invisible.
@@ -75,6 +74,7 @@ When you log in later, if you enter an email and password, an additional field a
 for the OTP code.
 
 .. image:: ask_otp_when_login.png
+  :width: 350
   :align: center
 
 To log in, you must open the 2FA application and enter a 6-digit code in the One-time password field.

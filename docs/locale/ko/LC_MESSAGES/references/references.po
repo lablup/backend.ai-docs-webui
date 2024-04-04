@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-02 18:11+0900\n"
+"POT-Creation-Date: 2024-04-04 17:39+0900\n"
 "PO-Revision-Date: 2021-03-02 18:15+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko\n"
@@ -17,8 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
-"X-Generator: Poedit 2.4.2\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../references/references.rst:3
 msgid "References"
@@ -26,26 +25,20 @@ msgstr "참고 자료"
 
 #: ../../references/references.rst:5
 msgid "Online API Manual: https://docs.backend.ai"
-msgstr "온라인 API 매뉴얼 : https://docs.backend.ai"
+msgstr "온라인 API 매뉴얼 : https://docs.backend.ai/ko/latest"
 
 #: ../../references/references.rst:6
-msgid "Online Client SDK Manual: https://docs.client-py.backend.ai"
-msgstr "온라인 Client SDK 매뉴얼 : https://docs.client-py.backend.ai"
+msgid "Online Client SDK Manual: https://docs.backend.ai/en/latest/client"
+msgstr "온라인 Client SDK 매뉴얼 : https://docs.backend.ai/ko/latest/client"
 
-#: ../../references/references.rst:9
+#: ../../references/references.rst:8
 msgid "The latest versions of this document can be found from sites below:"
 msgstr "이 문서의 최신 버전은 아래 사이트에서 볼 수 있습니다:"
 
+#: ../../references/references.rst:10
+msgid "https://webui.docs.backend.ai/en/latest (English)"
+msgstr "https://webui.docs.backend.ai/en/latest (영문)"
+
 #: ../../references/references.rst:11
-msgid "https://webui.docs.backend.ai/en/stable (English)"
-msgstr "https://webui.docs.backend.ai/en/stable (영문)"
-
-#: ../../references/references.rst:12
-msgid "https://webui.docs.backend.ai/ko/stable (Korean)"
-msgstr "https://webui.docs.backend.ai/ko/stable (한글)"
-
-#~ msgid "**References**"
-#~ msgstr "**참고 자료**"
-
-#~ msgid "**Online version of this document**"
-#~ msgstr "**이 문서의 온라인 버전**"
+msgid "https://webui.docs.backend.ai/ko/latest (Korean)"
+msgstr "https://webui.docs.backend.ai/ko/latest (한글)"

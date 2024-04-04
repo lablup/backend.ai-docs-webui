@@ -24,11 +24,11 @@ and ``myfolder``.
 Confirm that the ``tests`` folder is not listed when logging in with User B's
 account.
 
+.. image:: no_test_vfolder_in_B.png
+
 .. warning::
    If a folder named ``tests`` already exists in User B's account, User A's
    ``tests`` folder cannot be shared with User B.
-
-.. image:: no_test_vfolder_in_B.png
 
 Back to User A's account and click the share icon (third icon) in the Control panel on the
 right of the ``tests`` folder. Enter User B's email in the email input field and
@@ -48,6 +48,8 @@ If you don't see the invitation, go to another page once and then come back to t
 page again.
 
 .. image:: invitation_accept.png
+   :width: 350
+   :align: center
 
 Go to the Data & Storage page and check that the ``tests`` folder is displayed in
 the list. If you don't see it on the list, try refreshing your browser page.

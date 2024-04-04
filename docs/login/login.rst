@@ -89,25 +89,35 @@ administrator.
 
 
 Sidebar Menus
---------------------
+-------------------- 
 
-There are three buttons at the top of the left sidebar.
+Change the size of the sidebar via the buttons on the right side of the sidebar. 
+Click it to significantly reduce the width of the sidebar, giving you a wider view of its contents. 
+Clicking it again will return the sidebar to its original width.
 
-The leftmost button changes the size of the sidebar. Click to make the sidebar
-narrower. Click again to bring the sidebar back to its original width.
 
 .. image:: ui_menu.png
-
-The middle button is the event notification button. Events that need to be
-recorded during Web-UI operation are displayed here.
-
-The rightmost button is the background task button. When background tasks are
-running, such as creating a compute session, you can check the jobs here.  When
-the background task is finished, it usually disappears as well.
-
-There is a question mark icon at the lower left corner of the sidebar. Click
-this icon to access the web version of this guide document.
-
-.. image:: question_icon.png
-   :width: 300
    :align: center
+   :width: 600
+
+Header Events
+----------------
+The bell shape button is the event notification button. 
+Events that need to be recorded during Web-UI operation are displayed here. 
+When background tasks are running, such as creating a compute session, 
+you can check the jobs here. When the background task is finished. 
+
+.. image:: notification.png
+   :align: center
+   :width: 600
+
+You can change the theme mode of the Web-UI via the dark mode icon on the 
+right side of the header. 
+
+.. image:: theme_mode.png
+   :align: center
+   :width: 800
+
+
+There is a question mark icon at the lower right side of the header. 
+Click this icon to access the web version of this guide document.

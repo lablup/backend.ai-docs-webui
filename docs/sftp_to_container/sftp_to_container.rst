@@ -56,17 +56,18 @@ run the following command in the shell environment. You should write the
 path to the downloaded ``id_container`` file after ``-i`` option and the
 assigned port number after ``-p`` option. The user inside the compute session is
 usually set to ``work``, but if your session uses other account, the ``work``
-part in ``work@localhost`` should be changed to the actual session account.  If
+part in ``work@127.0.0.1`` should be changed to the actual session account.  If
 you run the command correctly, you can see that SSH connection is made to the
 compute session and you are welcomed by the container's shell environment.
 
 .. code-block:: shell
 
-   $ ssh -o StrictHostKeyChecking=no \
+   $ ssh 
+   >     -i ~/.ssh/id_container -P 30722 \
+   >     -o StrictHostKeyChecking=no \
    >     -o UserKnownHostsFile=/dev/null \
-   >     -i ~/.ssh/id_container \
-   >     work@localhost -p 52468
-   Warning: Permanently added '[127.0.0.1]:52468' (RSA) to the list of known hosts.
+   >     work@127.0.0.1
+   Warning: Permanently added '[127.0.0.1]:30722' (RSA) to the list of known hosts.
    f310e8dbce83:~$
 
 Connecting by SFTP would almost be the same. After running the SFTP client and
@@ -174,6 +175,8 @@ remember the port number.
 
 .. image:: download_ssh_key.png
    :alt: Download SSH Key
+   :align: center
+   :width: 500
 
 And then, setting SSH config file. Edit the ``~/.ssh/config`` file (for Linux/Mac)
 or ``C:\Users\[user name]\.ssh\config`` (for Windows) and add the following block.
@@ -183,7 +186,7 @@ For convenience, we set the hostname to ``vscode``. It can be changed to any ali
 
    Host vscode
      HostName 127.0.0.1
-     Port 30732  # write down the port number that you remembered
+     Port 30722  # write down the port number that you remembered
      User work
      ForwardAgent yes
      StrictHostKeyChecking no
@@ -243,7 +246,10 @@ image from the Docker Hub with the following command:
 
 .. code-block:: bash
 
-   $ docker pull lablup/backend.ai-client:22.09.18
+   $ docker pull lablup/backend.ai-client
+   $
+   $ # If you want to use the specific version, you can pull the image with the following command:
+   $ docker pull lablup/backend.ai-client:<version>
 
 The version of Backend.AI server can be found in "About Backend.AI" menu that
 appears when you click on the person icon on the top right corner of the Web UI.
@@ -256,7 +262,7 @@ Run the Docker image with the following command:
 
 .. code-block:: bash
 
-   $ docker run --rm -it lablup/backend.ai-client:22.09.18 bash
+   $ docker run --rm -it lablup/backend.ai-client bash
 
 Check if ``backend.ai`` command is available in the container. If it is
 available, the help message will be displayed.
@@ -287,8 +293,8 @@ from the following page and unzip it.
   extract it as follows:
 
   .. code-block:: bash
-
-     $ wget https://github.com/indygreg/python-build-standalone/releases/download/20230116/cpython-3.10.9+20230116-x86_64-unknown-linux-gnu-pgo-full.tar.zst
+  
+     $ wget https://github.com/indygreg/python-build-standalone/releases/download/20240224/cpython-3.11.8+20240224-x86_64-unknown-linux-gnu-pgo-full.tar.zst
      $ tar -I unzstd -xvf *.tar.zst
 
 After unarchiving the binary, ``python`` directory will be created under the
@@ -298,7 +304,7 @@ the following command.
 .. code-block:: bash
 
    $ ./python/install/bin/python3 -V
-   Python 3.10.9
+   Python 3.11.8
 
 To avoid affecting other Python environments on the system, it is recommended to
 create a separate Python virtual environment. When you run the following
@@ -319,19 +325,19 @@ you run the ``pip list`` command.
    (.venv) $ pip list
    Package    Version
    ---------- -------
-   pip        21.3.1
-   setuptools 59.4.0
+   pip        24.0
+   setuptools 65.5.0
 
 Now, install the Backend.AI Client package. Install the client package according
-to the server version. Here, we assume that the version is 22.09. If an
+to the server version. Here, we assume that the version is 23.09. If an
 installation-related error occurs with the ``netifaces`` package, you may need to
 lower the versions of ``pip`` and ``setuptools``. Check if the ``backend.ai``
 command is available.
 
 .. code-block:: bash
 
-   (.venv) $ pip install -U pip==22.0.4 && pip install -U setuptools==58.1.0
-   (.venv) $ pip install -U backend.ai-client~=22.09
+   (.venv) $ pip install -U pip==24.0 && pip install -U setuptools==65.5.0
+   (.venv) $ pip install -U backend.ai-client~=23.09
    (.venv) $ backend.ai
 
 Setting up server connection for CLI

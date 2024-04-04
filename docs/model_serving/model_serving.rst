@@ -202,12 +202,12 @@ Click the “Start Service” button on the Model Serving page. This will
 bring up a modal where you can enter the required settings for creating
 the service.
 
-.. image:: service-launcher.png
+.. image:: service-launcher1.png
    :width: 500
    :align: center
    :alt: Service launcher
 
-First, provide a service name and select a resource group. Then, select
+First, provide a service name and select
 the virtual folder of the model type to be used for the model service.
 
 For detailed explanations of each item, please refer to the following:
@@ -219,6 +219,15 @@ For detailed explanations of each item, please refer to the following:
    servers. This setting determines how many routing sessions to create
    for the current service. The value specified here will be used as the
    basis for creating the sessions.
+
+.. image:: service-launcher2.png
+   :width: 500
+   :align: center
+   :alt: Service launcher
+
+Then select a resource group. The resource group is a collection of
+resources that can be allocated to the model service.
+
 -  Environment / Version: You can configure the execution environment
    for the dedicated server of the model service. Currently, even if the
    service has multiple routings, it will be executed in a single
@@ -233,22 +242,27 @@ For detailed explanations of each item, please refer to the following:
 -  Shared Memory: The amount of shared memory allocated to the routing
    for running the model service (in GiB). It should be smaller than the
    allocated memory.
+-  AI Accelerator: The amount of AI accelerator (GPUs or NPUs). 
+   If manual image setting is allowed by configuration, users could select
+   any AI accelerator on demand according to resource group.
 
+.. image:: cluster_mode.png
+   :width: 500
+   :align: center
+
+-  Single Node : When running a session, the managed node and worker nodes are 
+   placed on a single physical node or virtual machine.
+-  Multi Node : When running a session, one managed node and one or more worker 
+   nodes are split across multiple physical nodes or virtual machines.
 
 Modifying Model Service
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-In the current version, only changing the desired session count of the
-model service is supported, rather than modifying all the configuration
-values of the service. Click on the wrench icon in the Control tab to
-open a modal where you can change the desired session count. After
-modifying the value, click the confirm button. The routing count will be
-adjusted accordingly.
-
-.. image:: edit-model-service-dialog.png
-   :width: 500
-   :align: center
-   :alt: Edit model service dialog
+Click on the wrench icon in the Control tab to open a modal where you can change 
+the model service. The format is identical to the model service start modal, with 
+previously entered fields already filled in. You can optionally modify only the 
+fields you wish to change. After modifying the fields, click the confirm button. 
+The changes will be adjusted accordingly.
 
 .. image:: routings-count-changed.png
    :align: center

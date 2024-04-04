@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 20.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-17 11:23+0900\n"
+"POT-Creation-Date: 2024-03-27 17:45+0900\n"
 "PO-Revision-Date: 2022-05-17 11:22+0900\n"
 "Last-Translator: \n"
 "Language: ko\n"
 "Language-Team: \n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../import_run/import_run.rst:3
 msgid "Import & Run notebooks and web based Git repositories"
@@ -59,6 +59,10 @@ msgstr ""
 "로컬 주소의 Jupyte notebook 파일을 불러와서 실행할 경우 실행이 되지 않습니다. localhost로 시작되는 주소 "
 "이외의 URL을 입력해주십시오."
 
+#: ../../import_run/import_run.rst:-1
+msgid "Import & Run Jupyter notebook"
+msgstr "Jupyter notebook 파일 가져오기 및 실행"
+
 #: ../../import_run/import_run.rst:26
 msgid ""
 "After clicking the button, the dialog appears. This is a session launcher"
@@ -83,11 +87,19 @@ msgstr ""
 "노트북 실행 화면을 즉시 확인하려면 실행 전 반드시 팝업 차단을 해제해 주시기 바랍니다. 또한 세션을 생성하기에 충분한 자원이 없을"
 " 경우, 불러온 Jupyter notebook 파일은 실행되지 않습니다."
 
+#: ../../import_run/import_run.rst:-1
+msgid "Session Launcher In Importing Jupyter notebook"
+msgstr ""
+
 #: ../../import_run/import_run.rst:42
 msgid ""
 "You can see the importing operation is successfully completed in Sessions"
 " page."
 msgstr "세션 페이지에서 불러오기 작업이 성공적으로 완료된 것을 확인할 수 있습니다."
+
+#: ../../import_run/import_run.rst:-1
+msgid "Session page with imported Jupyter notebook"
+msgstr ""
 
 #: ../../import_run/import_run.rst:48
 msgid "Create executable Jupyter notebook button"
@@ -112,6 +124,10 @@ msgid ""
 "have to login first."
 msgstr "버튼 클릭 전 반드시 로그인이 되어있어야 합니다. 아닐 경우 실행 전 반드시 로그인이 필요합니다."
 
+#: ../../import_run/import_run.rst:-1
+msgid "Create a Jupyter notebook button"
+msgstr "Jupyter notebook을 바로 실행할 수 있는 버튼 생성하기"
+
 #: ../../import_run/import_run.rst:67
 msgid "Importing GitHub Repositories"
 msgstr "GitHub 저장소 불러오기"
@@ -123,9 +139,13 @@ msgid ""
 "and click GET TO FOLDER button. If you can access to more than one "
 "storage host, you can select one from the list."
 msgstr ""
-"GitHub 저장소 불러오기는 Jupyter notebook 불러오기 및 실행하기와 비슷합니다. GitHub 저장소의 URL을 입력 "
-"필드에 적은 뒤 GET TO FOLDER 버튼을 클릭하면 됩니다. 하나 이상의 스토리지 호스트를 사용하는 경우에는 "
-"Host 목록에서 하나를 선택하십시오."
+"GitHub 저장소 불러오기는 Jupyter notebook 불러오기 및 실행하기와 비슷합니다. GitHub 저장소의 URL을 입력"
+" 필드에 적은 뒤 GET TO FOLDER 버튼을 클릭하면 됩니다. 하나 이상의 스토리지 호스트를 사용하는 경우에는 Host "
+"목록에서 하나를 선택하십시오."
+
+#: ../../import_run/import_run.rst:-1
+msgid "Import GitHub repository"
+msgstr "GitHub 저장소 불러오기"
 
 #: ../../import_run/import_run.rst:78
 msgid ""
@@ -143,19 +163,27 @@ msgid ""
 " its name."
 msgstr "저장소가 하나의 폴더로써 성공적으로 불러와진 것을 확인할 수 있습니다."
 
+#: ../../import_run/import_run.rst:-1
+msgid "Import GitHub repository result"
+msgstr "GitHub 저장소 불러오기 결과"
+
 #: ../../import_run/import_run.rst:90
 msgid "Importing GitLab Repositories"
 msgstr "GitLab 저장소 불러오기"
 
 #: ../../import_run/import_run.rst:92
 msgid ""
-"From 22.03, Backend.AI supports importing from GitLab. It's almost the same "
-"as :ref:`Importing GitHub Repositories<importing-github-repositories>`, "
-"but you need to explicitly set the branch name to import."
+"From 22.03, Backend.AI supports importing from GitLab. It's almost the "
+"same as :ref:`Importing GitHub Repositories<importing-github-"
+"repositories>`, but you need to explicitly set the branch name to import."
 msgstr ""
 "Backend.AI 22.03 버전부터 GitLab 저장소 불러오기를 지원합니다. :ref:`GitHub 저장소 불러오기"
 "<importing-github-repositories>` 와 거의 같은 방법으로 불러올 수 있지만, GitLab의 경우에는 브랜치"
 " 이름을 명시적으로 지정해야 합니다."
+
+#: ../../import_run/import_run.rst:-1
+msgid "Import GitLab repository"
+msgstr "GitLab 저장소 불러오기"
 
 #: ../../import_run/import_run.rst:101
 msgid ""

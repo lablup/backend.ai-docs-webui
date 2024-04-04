@@ -13,8 +13,8 @@ to work with the Backend.AI server.
 
 The latest versions of this document can be found from sites below:
 
-- https://webui.docs.backend.ai/en/stable (English)
-- https://webui.docs.backend.ai/ko/stable (Korean)
+- https://webui.docs.backend.ai/en/latest (English)
+- https://webui.docs.backend.ai/ko/latest (Korean)
 
 .. toctree::
    :maxdepth: 2
