@@ -57,9 +57,8 @@ msgstr ""
 "test`` 와 ``user2-vfolder`` 두 개의 폴더를 마운트한 후 세션을 생성 하겠습니다."
 
 #: ../../mount_vfolder/mount_vfolder.rst:-1
-#, fuzzy
 msgid "Launch a compute session with storage folders"
-msgstr "자동 마운트 폴더를 이용하여 연산 세션 환경 구성하기"
+msgstr "스토리지 폴더를 마운트 하여 연산 세션 시작"
 
 #: ../../mount_vfolder/mount_vfolder.rst:30
 msgid ""

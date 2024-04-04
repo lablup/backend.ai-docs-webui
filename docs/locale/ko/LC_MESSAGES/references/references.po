@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-03 11:47+0900\n"
+"POT-Creation-Date: 2024-04-04 17:39+0900\n"
 "PO-Revision-Date: 2021-03-02 18:15+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko\n"
@@ -25,7 +25,11 @@ msgstr "참고 자료"
 
 #: ../../references/references.rst:5
 msgid "Online API Manual: https://docs.backend.ai"
-msgstr "온라인 API 매뉴얼 : https://docs.backend.ai"
+msgstr "온라인 API 매뉴얼 : https://docs.backend.ai/ko/latest"
+
+#: ../../references/references.rst:6
+msgid "Online Client SDK Manual: https://docs.backend.ai/en/latest/client"
+msgstr "온라인 Client SDK 매뉴얼 : https://docs.backend.ai/ko/latest/client"
 
 #: ../../references/references.rst:8
 msgid "The latest versions of this document can be found from sites below:"

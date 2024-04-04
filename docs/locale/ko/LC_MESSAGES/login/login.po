@@ -53,9 +53,8 @@ msgstr ""
 "계정으로 로그인 할 수 있습니다."
 
 #: ../../login/login.rst:-1
-#, fuzzy
 msgid "Signup dialog"
-msgstr "가입 및 로그인"
+msgstr "가입하기 다이얼로그"
 
 #: ../../login/login.rst:29
 msgid ""
