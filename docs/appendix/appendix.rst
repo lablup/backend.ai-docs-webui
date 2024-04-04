@@ -291,6 +291,7 @@ local environment.
 First, launch terminal app "console". and execute the command below, It will start mlflow tracking UI server.
 
    .. code-block:: shell
+
       $ mlflow ui --host 0.0.0.0
 
 Then, Click "MLFlow UI" app in app launcher dialog.
@@ -312,7 +313,7 @@ Let's start tracking experiments from simple example.
       $ wget https://raw.githubusercontent.com/mlflow/mlflow/master/examples/sklearn_elasticnet_diabetes/linux/train_diabetes.py
       $ python train_diabetes.py
 
-After executing python code, you may see the experiments result in mlflow.
+After executing python code, you may see the experiments result in MLFlow.
 
 .. image:: mlflow_first_execution.png
    :align: center

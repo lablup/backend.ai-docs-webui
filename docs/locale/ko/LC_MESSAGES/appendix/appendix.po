@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 20.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-04 17:39+0900\n"
+"POT-Creation-Date: 2024-04-04 19:47+0900\n"
 "PO-Revision-Date: 2023-03-20 23:41+0900\n"
 "Last-Translator: \n"
 "Language: ko_KR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../appendix/appendix.rst:3
 msgid "Appendix"
@@ -154,10 +154,10 @@ msgid ""
 "requesting a total of 3 fGPUs are created when only 2 fGPUs exist."
 msgstr ""
 "사용자 Web-UI에서 간단한 방법으로 작업 스케줄러의 작동을 확인할 수 있습니다. GPU 호스트가 최대 2 단위의 fGPU를 할당"
-" 할 수 있는 경우, 1 단위의 fGPU 할당을 요청하는 3 개의 연산 세션을 동시에 생성해 보겠습니다. 세션 시작 대화 상자의 사용자"
-" 지정 할당 패널에는 GPU 및 세션 슬라이더가 있습니다. Sessions에서 1보다 큰 값을 지정하고 LAUNCH 버튼을 클릭하면"
-" 여러 개의 세션이 동시에 생성됩니다. GPU와 Sessions을 각각 1과 3으로 설정하겠습니다. 이는 fGPU가 2 단위밖에 "
-"없는 상황에서 총 3 단위의 fGPU를 요청하는 상황입니다."
+" 할 수 있는 경우, 1 단위의 fGPU 할당을 요청하는 3 개의 연산 세션을 동시에 생성해 보겠습니다. 세션 시작 대화 상자의 "
+"사용자 지정 할당 패널에는 GPU 및 세션 슬라이더가 있습니다. Sessions에서 1보다 큰 값을 지정하고 LAUNCH 버튼을 "
+"클릭하면 여러 개의 세션이 동시에 생성됩니다. GPU와 Sessions을 각각 1과 3으로 설정하겠습니다. 이는 fGPU가 2 "
+"단위밖에 없는 상황에서 총 3 단위의 fGPU를 요청하는 상황입니다."
 
 #: ../../appendix/appendix.rst:98
 msgid ""
@@ -474,9 +474,9 @@ msgid ""
 "environment, along with simple examples. We hope this will help you "
 "choose and utilize the tools you need for your projects."
 msgstr ""
-"이번 섹션에서는 Backend.AI 플랫폼에서 활용할 수 있는 여러 일반적인 응용 프로그램, 툴킷 및 머신러닝 도구의 예제를 소개하고자 "
-"합니다. 각 도구의 기본 사용법과 Backend.AI 환경에서 설정하는 방법, 그리고 간단한 예제를 알려드리겠습니다. 이를 통해 프로젝트에 "
-"필요한 도구를 선택하고 활용하는 데 도움이 되기를 바랍니다."
+"이번 섹션에서는 Backend.AI 플랫폼에서 활용할 수 있는 여러 일반적인 응용 프로그램, 툴킷 및 머신러닝 도구의 예제를 "
+"소개하고자 합니다. 각 도구의 기본 사용법과 Backend.AI 환경에서 설정하는 방법, 그리고 간단한 예제를 알려드리겠습니다. "
+"이를 통해 프로젝트에 필요한 도구를 선택하고 활용하는 데 도움이 되기를 바랍니다."
 
 #: ../../appendix/appendix.rst:272
 msgid ""
@@ -489,5 +489,69 @@ msgid ""
 "development."
 msgstr ""
 "이 가이드에서 다루는 내용은 특정 버전의 프로그램을 기반으로 하고 있으므로, 향후 업데이트에 따라 사용법이 달라질 수 있습니다. "
-"따라서, 이 문서는 참고하시되, 변경 사항을 확인하기 위해서는 최신 공식 문서를 참조하시기를 바랍니다. 이제 Backend.AI에서 사용할 수 있는 "
-"강력한 도구들을 하나씩 살펴보겠습니다. 이 섹션이 여러분의 연구 및 개발에 유용한 가이드가 되기를 바랍니다."
+"따라서, 이 문서는 참고하시되, 변경 사항을 확인하기 위해서는 최신 공식 문서를 참조하시기를 바랍니다. 이제 Backend.AI에서"
+" 사용할 수 있는 강력한 도구들을 하나씩 살펴보겠습니다. 이 섹션이 여러분의 연구 및 개발에 유용한 가이드가 되기를 바랍니다."
+
+#: ../../appendix/appendix.rst:279
+msgid "Using MLFlow"
+msgstr "MLFlow 사용하기"
+
+#: ../../appendix/appendix.rst:281
+msgid ""
+"There are many executable images in Backend.AI supports MLFlow and MLFlow"
+" UI as built-in app. But in order to execute it, you may need extra "
+"procedures. By following instructions below, you will be able to track "
+"parameters and result at Backend.AI as if you are using it on your local "
+"environment."
+msgstr ""
+"Backend.AI 에서 제공하는 대부분의 이미지는 MLFlow 와 MLFlow UI 를 빌트인 앱으로 지원합니다.하지만 실행하기 "
+"위해서는 기존 앱과 다르게 몇가지 추가 작업이 필요합니다. 아래의 설명을 따라하면, 로컬 환경에서 MLFlow를 사용하셨던 것처럼 "
+"Backend.AI 에서도 파라미터와 결과 값을 추적하실 수 있습니다. "
+
+#: ../../appendix/appendix.rst:287
+msgid ""
+"In this section, we will regard you already created session and about to "
+"execute an app in the session. If you don't have any experience in "
+"creating session and executing app inside, please have a look through "
+":ref:`How to create a session<create_session>` section."
+msgstr ""
+"이 섹션에서는, 세션을 이미 성공적으로 생성하고, 세션 내 앱을 실행할 수 있는 상태라고 가정합니다. 만약 세션을 생성하고 세션 "
+"내에서 앱을 실행하는 방법을 모르신다면, :ref`세션 생성하기 세션<create_session>` 을 반드시 먼저 보고 오시기 "
+"바랍니다."
+
+#: ../../appendix/appendix.rst:291
+msgid ""
+"First, launch terminal app \"console\". and execute the command below, It"
+" will start mlflow tracking UI server."
+msgstr "우선, 콘솔 앱을 먼저 실행한 뒤, 아래의 명령어를 입력하면 mlflow UI 서버가 실행됩니다."
+
+#: ../../appendix/appendix.rst:296
+msgid "Then, Click \"MLFlow UI\" app in app launcher dialog."
+msgstr "그 다음, 앱 런처 다이얼로그에서 MLFlow UI 앱을 클릭합니다."
+
+#: ../../appendix/appendix.rst:302
+msgid "After few moment, you will see a new page for MLFlow UI."
+msgstr "잠시 뒤, MLFlow UI 가 새 창에 띄워집니다."
+
+#: ../../appendix/appendix.rst:307
+msgid ""
+"By using MLFlow, you can track experiments, such as metrics and "
+"parameters every time you run. Let's start tracking experiments from "
+"simple example."
+msgstr ""
+"MLFlow 를 사용함으로써, 매번 학습할 때마다 메트릭이나 파라미터 값과 같은 실험 결과를 추적할 수 있습니다. 아주 간단한 "
+"예제로 실험 결과를 확인해봅시다."
+
+#: ../../appendix/appendix.rst:315
+#, fuzzy
+msgid "After executing python code, you may see the experiments result in MLFlow."
+msgstr "Python 코드를 실행하면, MLFlow 에서 결과값을 확인할 수 있습니다."
+
+#: ../../appendix/appendix.rst:320
+msgid "You can also set hyperparameter by giving arguments with code execution."
+msgstr "코드 실행시 인자값을 주어 하이퍼파라미터를 직접 설정할 수도 있습니다."
+
+#: ../../appendix/appendix.rst:326
+msgid "After a few training, you can compare trained models with results."
+msgstr "몇번의 학습이 끝나면, 모델 학습 결과 값들을 서로 비교해볼 수 있습니다."
+
