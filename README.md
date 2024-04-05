@@ -1,4 +1,4 @@
-# backend.ai-docs-console
+# backend.ai-docs-webui
 
 User's guide for Backend.AI GUI Console.
 
