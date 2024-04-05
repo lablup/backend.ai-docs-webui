@@ -512,12 +512,14 @@ configured preopen ports in the session app launcher.
 Save container commit
 ---------------------
 
-From 22.09, Backend.AI supports container commit feature. Commiting a
-``RUNNING`` session will save the current state of the main container as a new
-image. Clicking the commit button in the control pane of ``RUNNING`` session
-will display a dialog to show the information of the session. After checking the
-information, you can click the confirmation button to convert the container to
-a new image.
+Backend.AI supports \"container commit\" feature from 22.09 and \"convert session to image\" feature from 24.03. 
+Commiting a ``RUNNING`` session will save the current state of the main container as a new image. Clicking the commit
+button in the control pane of ``RUNNING`` session will display a dialog to show the information of the session. After
+checking the information, you can click the confirmation button to convert the container to a new image.
+
+If you want to commit ongoing session to image, check the checkbox of ``Convert Session to Image`` in the dialog and
+fill out the session name. Then, click the commit button.
+
 
 .. image:: container_commit.png
    :width: 350
@@ -540,6 +542,23 @@ environment. Users need to contact the administrator to get the image file.
    stop the ongoing process, please check the session, and force-terminate
    the session.
 
+
+Utilizing converted images of ongoing sessions
+----------------------------------------------
+
+Converting an ongoing session into an image allows you to select this image from the environments in the session launcher
+when creating a new session. This image is not exposed to other users and is useful for continuing to use the current session
+state as is. The converted image is tagged with ``Customized<session name>``.
+
+.. image:: select_customized_image.png
+   :align: center
+   :alt: Select customized image
+
+To manually enter the environment name for future session creation, please use it by pressing the copy icon.
+
+.. image:: copy_customized_image.png
+   :align: center
+   :alt: Copy customized image
 
 .. _optimizing-accelerated-computing:
 
