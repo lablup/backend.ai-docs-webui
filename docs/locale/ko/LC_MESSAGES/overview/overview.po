@@ -328,9 +328,8 @@ msgid "(Enterprise) Access control of users to"
 msgstr ""
 
 #: ../../overview/overview.rst
-#, fuzzy
 msgid "resource group"
-msgstr "자원 (Resources)*"
+msgstr "자원 그룹 (Resource group)*"
 
 #: ../../overview/overview.rst
 msgid "(Enterprise) Access control of project to"
