@@ -22,7 +22,6 @@ folders, ``user1-ml-test`` and ``user2-vfolder``, and then create a compute
 session.
 
 .. image:: create_session_with_folders.png
-   :width: 350
    :align: center
    :alt: Launch a compute session with storage folders
 

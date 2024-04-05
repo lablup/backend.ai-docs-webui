@@ -101,7 +101,6 @@ size). Also, don't forget to mount the data folder for data safekeeping.
 
 .. image::
    session_launch_dialog.png
-   :width: 400
    :align: center
 
 In the "Cluster mode" field at the bottom, you can choose what type of cluster

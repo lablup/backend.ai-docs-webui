@@ -17,18 +17,17 @@ Sessions page lets you start new sessions or use and manage existing running ses
 
 .. image:: sessions_page.png
 
-Click the START button to start a new compute session. The following
-wizard-style dialog will appear.
+.. TODO: Please change the link to 23.09. not stable.
+Click the START button to start a new compute session. From version 24.03, Backend.AI offers an improved 
+version of the session launcher (NEO). If you want to use the previous dialog-style session launcher, press
+the Classic button in the notification and create your session. For instructions on how to use it, please 
+refer to the following `link <https://webui.docs.backend.ai/en/23.09_a/sessions_all/sessions_all.html>`_.
 
-.. image:: session_launch_dialog_1.png
-   :width: 350
+.. image:: launch_session_1.png
    :align: center
 
-First, you need to choose the type of session, interactive or batch.
-Then, you need to choose the language Environment and Version you want to
-create. The rest items are optional. For a detailed description of each item,
-please refer to the following.
-
+In the first page, you need to choose the type of session, interactive or batch.
+And you can set the session name, which is optional.
 
 .. _session-naming-rule:
 
@@ -61,7 +60,24 @@ please refer to the following.
       be PENDING due to the lack of resources, etc. Rather, it guarantees that
       the session WILL NOT run until the start time.
 
-  .. image:: session_type_batch.png
+    .. image:: session_type_batch.png
+       :align: center
+
+* Session name: You can specify the name of the compute session to be
+  created. If set, this name appears in Session Info, so it is easy to
+  distinguish among multiple computation sessions. If not specified, a random
+  word is assigned automatically. Session names only accept alphanumeric
+  characters between 4 and 64 without spaces.
+
+Click the Next button below, or the Environments & Resource allocation on the right
+to proceed to the next page. If you want to create a session without any further
+settings, press the Skip to review button. button. In this case, the settings on the
+other pages will all use the default values.
+
+For detailed explanations of each item that can be set on the second page, please
+refer to the following.
+
+  .. image:: launch_session_2.png
      :align: center
      
 * Environments: You can choose the base environment for compute sessions such as
@@ -70,43 +86,13 @@ please refer to the following.
   another environment, the corresponding packages will be installed by default.
 * Version: Selects the version of the environment. For example, you can select
   different versions, such as 1.15, 2.3, etc., for the TensorFlow environment.
-* Session name: You can specify the name of the compute session to be
-  created. If set, this name appears in Session Info, so it is easy to
-  distinguish among multiple computation sessions. If not specified, a random
-  word is assigned automatically. Session names only accept alphanumeric
-  characters between 4 and 64 without spaces.
+* Image Name: You can specify the name of the image to be used for the
+  compute session. Depending on your environment settings, this configurations
+  may not be available.
 * Set Environment Variable: Provides an interface for users to set environment
   variables in a compute session. See the section
   :ref:`How to add environment variables before session creation<set-environment-variables>`
   on how to use.
-* Set Preopen Ports: Provides an interface for users to set preopen ports in a
-  compute session. See the section :ref:`How to add preopen ports before session creation
-  <set_preopen_ports>` on how to use.
-
-Click the right arrow button at the bottom to advance to the next page. You can
-also launch a compute session directly by clicking the CONFIRM AND LAUNCH
-button. In this case, the settings on the other pages will all use the default
-values.
-
-.. image:: session_launch_dialog_2.png
-   :width: 350
-   :align: center
-
-Here, you can specify the data folders to mount in the compute session. When a
-compute session is destroyed, all data is deleted altogether by default, but the
-data stored in the mounted folders will survive. Data in those folders can also
-be reused by mounting it when creating another compute session. For the
-information on how to mount a folder and run a compute session, see
-:ref:`Mounting Folders to a Compute Session<session-mounts>`. Here, we will pass
-by without mounting any folder. Click the right arrow button.
-
-.. image:: session_launch_dialog_3.png
-   :width: 350
-   :align: center
-
-This page allows you to set the resources to be allocated for the new compute
-session.
-
 * Resource Group: Specifies the resource group in which to create a compute
   session. A resource group is a unit that groups host servers that each user
   can access. Usually, servers in a resource group would have the same type of
@@ -115,57 +101,97 @@ session.
   can use. Users can launch a compute session only on servers in resource groups
   allowed by the administrator. If you are allowed multiple resource groups, you
   can select any group you want, but you cannot change it if you have only one.
-* Resource allocation: These templates have pre-defined resource sets, such as
+* Resource Presets: These templates have pre-defined resource sets, such as
   CPU, memory, and GPU, to be allocated to a compute session. Administrators can
-  define frequently used resource settings in advance.
+  define frequently used resource settings in advance. By adjusting the numerical
+  input or sliding the slider, you can allocate the desired amount of resources.
 
-If you want to allocate every resource by yourself, click Custom allocation.
-The following advanced resource panel opens, and you can set each resource as
-you wish within the allowed resource limits.
+  .. image:: resource_presets.png
+     :align: center
 
-.. image:: session_launch_dialog_3-custom-alloc.png
-   :width: 350
+  The meaning of each item is as follows, and you can check it by clicking the
+  Help (?) button as well.
+
+  * CPU: The CPU performs basic arithmetic, logic, controlling, and input/output
+    (I/O) operations specified by the instructions. For high performance computing
+    workloads, many CPUs are helpful, but the program code must be written to use
+    multiple CPUs.
+  * Memory: Computer memory is a temporary storage area. It holds the data and
+    instructions that the Central Processing Unit (CPU) needs. When using a GPU in
+    a machine learning workload, you must allocate at least twice the memory of the
+    GPU to memory. Otherwise, the GPU's idle time will increase, resulting in a
+    performance penalty.
+  * Shared Memory: The amount of shared memory in GB to allocate for the compute
+    session. Shared memory will use some part of the memory set in RAM. Therefore,
+    it cannot be greater than the amount specified in RAM.
+  * AI Accelerator: AI accelerators (GPUs or NPUs) are well-suited for the
+    matrix/vector computations involved in machine learning. AI accelerators speed
+    up training / inference algorithms by orders of magnitude, reducing running
+    times from weeks to days.
+  * Sessions: A session is a unit of computational environment that is created
+    according to a specified environment and resources. If this value is set to a
+    value greater than 1, multiple sessions corresponding to the resource set above
+    are created. If there are not enough resources available, requests to create
+    sessions that cannot be created are put on the waiting queue.
+  * Cluster mode: Backend.AI supports cluster mode, which allows you to create
+    multiple compute sessions at once. For more information, see the section
+    :ref:`Overview of Backend.AI cluster compute session<backendai-cluster-compute-session>`.
+  
+* High-Performance Computing Optimizations: Backend.AI provides configuring values
+  related to HPC Optimizations. For more information, See the section
+  :ref:`Optimizing Accelerated Computing<optimizing-accelerated-computing>`.
+
+Click the Next button below, or the Data & Storage on the right to proceed to the
+next page.
+
+.. image:: launch_session_3.png
    :align: center
 
-The meaning of each item is as follows, and you can check it by clicking the
-Information (I) button on the right as well.
+Here, you can specify the data folders to mount in the compute session. When a
+compute session is destroyed, all data is deleted altogether by default, but the
+data stored in the mounted folders will survive. Data in those folders can also
+be reused by mounting it when creating another compute session. For the
+information on how to mount a folder and run a compute session, see
+:ref:`Mounting Folders to a Compute Session<session-mounts>`. Here, we will pass
+by without mounting any folder. Let's move on to the next page.
 
-* CPU: The number of CPU cores to allocate to the compute session. The maximum
-  value depends on the resource policy applied to the user.
-* RAM: The amount of memory (GB) to allocate to the compute session. The
-  maximum value depends on the resource policy applied to the user.
-* Shared Memory: The amount of shared memory in GB to allocate for the compute
-  session. Shared memory will use some part of the memory set in RAM. Therefore,
-  it cannot be greater than the amount specified in RAM.
-* GPU: The unit of GPU to allocate to the compute session. The maximum value
-  depends on the resource policy applied to the user.
-* Sessions: The number of compute sessions to be created with the specified
-  settings. You can specify this value when you need to create the same
-  compute sessions at once.
+.. image:: launch_session_4.png
+   :align: center
 
-Backend.AI provides configuring values related to HPC Optimizations. For more information,
-See the section :ref:`Optimizing Accelerated Computing<optimizing-accelerated-computing>`.
 
-If you are done with the resource setting, click the right arrow button to
-proceed to the next page.
+On the fourth page, you can set Network configurations such as Preopen Ports.
 
-.. image:: session_launch_dialog_4.png
-   :width: 350
+* Set Preopen Ports: Provides an interface for users to set preopen ports in a 
+  compute session. See the section :ref:`How to add preopen ports before session creation
+  <set_preopen_ports>` on how to use.
+
+If you are done with the network setting, click the Next button below, or the
+Confirm and Launch on the right to proceed to the last page.
+
+.. image:: launch_session_5.png
    :align: center
 
 Now, we have reached the last page. You can view information of session(s) to create,
 such as environment itself, allocated resources, mount information,
 environment variables set on the previous pages, preopen ports, etc.
-After confirming the settings, click the LAUNCH button. If there is a
-setting you want to change, you can return to the previous page by clicking the
-left arrow button.
+After confirming the settings, click the Launch button. If there's anything you'd like
+to change, you can return to the previous page by clicking the Previous button, or click
+the Edit button located at the top right of each card to go directly to the relevant page.
+
+If there is an issue with the settings, an error will be displayed as follows. Please
+click Edit to correct the settings.
+
+.. image:: launch_session_error_card.png
+   :width: 350
+   :align: center
+
+A warning dialog appears, stating that there are no mounted folders. Ignore the
+warning for now and click the Start button to proceed.
 
 .. image:: no_vfolder_notification_dialog.png
    :width: 350
    :align: center
 
-A warning dialog appears, stating that there are no mounted folders. Ignore the
-warning for now and click the LAUNCH button to proceed.
 
 Now a new compute session is created in the RUNNING tab.
 
@@ -438,40 +464,14 @@ To give more convenient workspace for users, Backend.AI supports environment var
 in session launching. In this feature, you can add any envs such as ``PATH`` by filling out
 variable name and value in environment configuration dialog.
 
-To add environment variable, simply click setting icon button of the Environment Variable.
+To add environment variable, simply click + Add environment variables button of the Variable.
+Also, you can remove the variable by clicking ``-`` button of the row that you want to get rid of.
 
 .. image:: env-config-start.png
-   :width: 350
    :align: center
    :alt: Env Configuration Button
 
-and then, environment configuration dialog appears.
-
-In this dialog, you can add,update and delete written env variables.
-To see more information about how it works, please click 'i' button at the header of the dialog.
-
-.. image:: env-config-dialog-info.png
-   :align: center
-   :alt: Env Configuration info
-
 You can input variable name and value in the same line of the input fields.
-Then, click save button. It will be applied in the session.
-
-.. warning::
-   If you close the dialog without click saving variables or If you didn't fill out
-   the variable and value, then those input values will not be applied into the session as env.
-   Please remind that every variable and value that is not empty will be applied to session by
-   clicking SAVE button.
-
-   .. image:: env-config-dialog-closing-confirmation.png
-      :width: 350
-      :align: center
-      :alt: Env config dialog closing confirmation
-
-To Add more environment variables, yon can click ``+`` button in the right side of the first row of input field.
-Also, you can remove the variable by clicking ``-`` button of the row that you want to get rid of.
-
-If you want to delete the whole variables and value, please click DELETE ALL button at the bottom of the dialog.
 
 .. _set_preopen_ports:
 
@@ -481,21 +481,14 @@ How to add preopen ports before creating a session
 Backend.AI supports preopen ports setting at container startup. When using this feature, there is no need to build
 separate images when you want to expose the serving port.
 
-To add preopen ports, simply click the setting icon button of the Preopen Ports.
+To add preopen ports, simply enter multiple values separated by either a comma (,) or a space.
 
 .. image:: preopen-ports-config.png
-   :width: 350
    :align: center
    :alt: Preopen Ports Configuration
 
-and then, preopen ports configuration dialog appears.
-
-In this dialog, you can add, update and delete written preopen ports. To see more detail information, please click
-'i' button at the header of the dialog.
-
-.. image:: preopen-ports-config-dialog-info.png
-   :align: center
-   :alt: Preopen Ports Configuration info
+In the forth page of session creation page, you can add, update and delete written preopen ports. To see more detail
+information, please click Help (?) button.
 
 You can input between 1024 ~ 65535 port numbers to the input fields. Then, click the save button. You can check the
 configured preopen ports in the session app launcher.
@@ -531,10 +524,6 @@ Docker to create a new image as ``tar.gz`` to be stored into a specific
 host path. Please note that it's not available to access directly in your local
 environment. Users need to contact the administrator to get the image file.
 
-.. image:: container_commit_ongoing.png
-  :align: center
-  :alt: Container commit ongoing
-
 .. note::
    Currently, Backend.AI supports container commit when session is
    ``INTERACTIVE`` mode only. During container commit process, you may not be
@@ -554,7 +543,7 @@ state as is. The converted image is tagged with ``Customized<session name>``.
    :align: center
    :alt: Select customized image
 
-To manually enter the environment name for future session creation, please use it by pressing the copy icon.
+To manually enter the environment name for future session creation, please click the copy icon.
 
 .. image:: copy_customized_image.png
    :align: center
@@ -573,7 +562,6 @@ resulting in an abnormally large number of threads and significant performance d
 To resolve this issue, setting the number of threads to 1 or 2 would work.
 
 .. image:: session_hpc_optimization.png
-   :width: 350
    :align: center
    :alt: Session HPC Optimization
 
