@@ -20,5 +20,5 @@ Part 2. Advanced guide to using Backend.AI
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 - :ref:`How to use terminal application with tmux<tmux_guide>`
 - :ref:`How to install extra pip package using automount virtual folder<install_pip_pkg>`
-- :ref:`How to use SSH/sFTP using desktop application<ssh-sftp-container>`
+- :ref:`How to use SSH/sFTP <ssh-sftp-container>`
 - :ref:`How to install apt packages<installing_apt_pkg>`

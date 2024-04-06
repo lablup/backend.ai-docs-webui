@@ -7,21 +7,36 @@ SSH/SFTP Connection to a Compute Session
 Backend.AI supports SSH/SFTP connection to the created compute sessions
 (containers). In this section, we will learn how to do it.
 
-.. note::
-   SSH/SFTP connection feature is supported through a WebUI Desktop application. 
-   Currently web-based WebUI does not support this feature due to limitations of file system
-   access on browser-level. Desktop app can be downloaded a panel from the Summary page. Using
-   this panel, the compatible version will be downloaded automatically.
+   .. note::
+      From 24.03 SSH/SFTP connection feature is available in both Web browser and WebUI Desktop application.
+      When the version is 23.09 or lower version, you need to use WebUI Desktop app. Desktop app can be downloaded 
+      a panel from the Summary page. Using this panel, the compatible version will be downloaded automatically.
 
-   .. image:: app_download_panel.png
-      :width: 350
-      :align: center
+      .. image:: app_download_panel.png
+         :width: 350
+         :align: center
 
-   You can also download the app from
-   https://github.com/lablup/backend.ai-webui/releases. Make sure to download
-   the compatible version of the Web-UI in this case. You can check the Web-UI
-   version by clicking on the "About Backend.AI" sub-menu located in the
-   preference menu on the upper-right side of the GUI.
+      You can also download the app from
+      https://github.com/lablup/backend.ai-webui/releases. Make sure to download
+      the compatible version of the Web-UI in this case. You can check the Web-UI
+      version by clicking on the "About Backend.AI" sub-menu located in the
+      preference menu on the upper-right side of the GUI.
+
+.. .. note::
+..    SSH/SFTP connection feature is supported through a WebUI Desktop application. 
+..    Currently web-based WebUI does not support this feature due to limitations of file system
+..    access on browser-level. Desktop app can be downloaded a panel from the Summary page. Using
+..    this panel, the compatible version will be downloaded automatically.
+
+..    .. image:: app_download_panel.png
+..       :width: 350
+..       :align: center
+
+..    You can also download the app from
+..    https://github.com/lablup/backend.ai-webui/releases. Make sure to download
+..    the compatible version of the Web-UI in this case. You can check the Web-UI
+..    version by clicking on the "About Backend.AI" sub-menu located in the
+..    preference menu on the upper-right side of the GUI.
 
 .. _sftp_connection_for_linux_and_mac:
 
