@@ -18,6 +18,7 @@ Sessions page lets you start new sessions or use and manage existing running ses
 .. image:: sessions_page.png
 
 .. TODO: Please change the link to 23.09. not stable.
+
 Click the START button to start a new compute session. From version 24.03, Backend.AI offers an improved 
 version of the session launcher (NEO). If you want to use the previous dialog-style session launcher, press
 the Classic button in the notification and create your session. For instructions on how to use it, please 
