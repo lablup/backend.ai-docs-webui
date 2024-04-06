@@ -507,27 +507,33 @@ Save container commit
 ---------------------
 
 Backend.AI supports \"container commit\" feature from 22.09 and \"convert session to image\" feature from 24.03. 
-Commiting a ``RUNNING`` session will save the current state of the main container as a new image. Clicking the commit
+Committing a ``RUNNING`` session will save the current state of the main container as a new image. Clicking the commit
 button in the control pane of ``RUNNING`` session will display a dialog to show the information of the session. After
 checking the information, you can click the confirmation button to convert the container to a new image.
-
-If you want to commit ongoing session to image, check the checkbox of ``Convert Session to Image`` in the dialog and
-fill out the session name. Then, click the commit button.
-
 
 .. image:: container_commit.png
    :width: 350
    :align: center
    :alt: Container commit confirmation
 
-After clicking commit button in the dialog, Backend.AI internally requests
+After clicking ``COMMIT`` button in the dialog, Backend.AI internally requests
 Docker to create a new image as ``tar.gz`` to be stored into a specific
 host path. Please note that it's not available to access directly in your local
 environment. Users need to contact the administrator to get the image file.
 
+If you want to commit ongoing session to image, check the checkbox of ``Convert Session to Image`` 
+in the dialog and fill out the session name. The session name must be 4 to 32 characters, 
+containing alphanumeric letters or hyphen(``-``) or underscore(``_``) only. 
+After filling out session name in the input field, click the ``PUSH SESSION TO CUSTOMIZED IMAGE`` button.
+
+.. image:: push_session_to_customized_image.png
+   :width: 350
+   :align: center
+   :alt: Push session to customized image
+
 .. note::
-   Currently, Backend.AI supports container commit when session is
-   ``INTERACTIVE`` mode only. During container commit process, you may not be
+   Currently, Backend.AI supports container commit and converting session to image feature
+   when session is ``INTERACTIVE`` mode only. During container commit process, you may not be
    able to terminate the session to prevent unexpected error. If you want to
    stop the ongoing process, please check the session, and force-terminate
    the session.
