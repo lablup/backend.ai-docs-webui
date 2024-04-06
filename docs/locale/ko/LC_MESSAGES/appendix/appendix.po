@@ -516,7 +516,7 @@ msgid ""
 ":ref:`How to create a session<create_session>` section."
 msgstr ""
 "이 섹션에서는, 세션을 이미 성공적으로 생성하고, 세션 내 앱을 실행할 수 있는 상태라고 가정합니다. 만약 세션을 생성하고 세션 "
-"내에서 앱을 실행하는 방법을 모르신다면, :ref`세션 생성하기 세션<create_session>` 을 반드시 먼저 보고 오시기 "
+"내에서 앱을 실행하는 방법을 모르신다면, :ref:`세션 생성하기<create_session>` 를 반드시 먼저 보고 오시기 "
 "바랍니다."
 
 #: ../../appendix/appendix.rst:291
