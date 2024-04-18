@@ -521,10 +521,14 @@ Docker to create a new image as ``tar.gz`` to be stored into a specific
 host path. Please note that it's not available to access directly in your local
 environment. Users need to contact the administrator to get the image file.
 
+.. _session-commit:
+
 If you want to commit ongoing session to image, check the checkbox of ``Convert Session to Image`` 
 in the dialog and fill out the session name. The session name must be 4 to 32 characters, 
 containing alphanumeric letters or hyphen(``-``) or underscore(``_``) only. 
 After filling out session name in the input field, click the ``PUSH SESSION TO CUSTOMIZED IMAGE`` button.
+The customized image created in this way can be used in future session creations.
+
 
 .. image:: push_session_to_customized_image.png
    :width: 350
@@ -537,6 +541,11 @@ After filling out session name in the input field, click the ``PUSH SESSION TO C
    able to terminate the session to prevent unexpected error. If you want to
    stop the ongoing process, please check the session, and force-terminate
    the session.
+
+.. note::
+   The number of times you can ``Convert Session to Image`` may be limited by the user resource
+   policy. In this case, try :ref:`removing the existing customized image<delete-customized-image>`
+   and retry, or contact the administrator.
 
 
 Utilizing converted images of ongoing sessions

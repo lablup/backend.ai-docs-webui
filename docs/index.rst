@@ -32,6 +32,7 @@ The latest versions of this document can be found from sites below:
    vfolder/vfolder
    mount_vfolder/mount_vfolder
    share_vfolder/share_vfolder
+   my_environments/my_environments
    agent_summary/agent_summary
    statistics/statistics
    sftp_to_container/sftp_to_container
