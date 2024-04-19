@@ -962,11 +962,11 @@ msgstr ""
 "진행 중인 세션을 이미지로 커밋하려면, 다이얼로그에서 ``Convert Session to Image`` 체크박스를 체크하고 세션 "
 "이름을 입력합니다. 세션 이름은 알파벳 또는 숫자, 또는 하이픈(``-``) 이나 언더바(``_``)로 구성할 수 있으며, 최소 "
 "4글자에서 32자까지만 입력해야 합니다. 세션 이름을 입력한 뒤에는 ``PUSH SESSION TO CUSTOMIZED "
-"IMAGE`` 버튼을클릭합니다. 이렇게 만들어진 커스텀 이미지는 추후 세션 생성 시 사용할 수 있습니다."
+"IMAGE`` 버튼을클릭합니다. 이렇게 만들어진 사용자 정의 이미지는 추후 세션 생성 시 사용할 수 있습니다."
 
 #: ../../sessions_all/sessions_all.rst:-1
 msgid "Push session to customized image"
-msgstr "커스텀 이미지를 세션으로 푸시"
+msgstr "사용자 정의 이미지를 세션으로 푸시"
 
 #: ../../sessions_all/sessions_all.rst:539
 msgid ""
@@ -1008,7 +1008,7 @@ msgstr ""
 
 #: ../../sessions_all/sessions_all.rst:-1
 msgid "Select customized image"
-msgstr "커스텀 이미지 선택"
+msgstr "사용자 정의 이미지 선택"
 
 #: ../../sessions_all/sessions_all.rst:562
 msgid ""
@@ -1018,7 +1018,7 @@ msgstr "향후 세션 생성을 위해 환경 이름을 수동으로 입력하�
 
 #: ../../sessions_all/sessions_all.rst:-1
 msgid "Copy customized image"
-msgstr "커스텀 이미지 복사"
+msgstr "사용자 정의 이미지 복사"
 
 #: ../../sessions_all/sessions_all.rst:571
 msgid "Optimizing Accelerated Computing"

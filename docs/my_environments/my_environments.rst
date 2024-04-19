@@ -6,9 +6,9 @@ From 24.03, a new \"My Environments\" page for users has been introduced.
 This page displays contents such as a list of images created by the user's
 :ref:`session commits<session-commit>`.
 
-On the Images tab of the My Environments page, user can manage customized
-images used in creating compute sessions. This tab displays meta information
-of images converted from computation sessions to images. User can view details
+On the Images tab of the My Environments page, users can manage customized
+images used in creating compute sessions. This tab displays metadata information
+of images converted from computational sessions to images. User can view details
 such as the registry, architecture, namespace, language, version, base,
 constraint, digest, and other information for each image.
 
