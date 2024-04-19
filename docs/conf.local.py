@@ -18,10 +18,10 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Backend.AI Web-UI User Guide'
-copyright = '2023, Lablup Inc.'
+copyright = '2024, Lablup Inc.'
 author = 'Lablup Inc.'
-version = '23.09'
-release = '23.09'
+version = '24.03'
+release = '24.03'
 
 # -- General configuration ---------------------------------------------------
 
