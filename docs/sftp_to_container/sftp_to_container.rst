@@ -184,28 +184,24 @@ Link: https://aka.ms/vscode-remote/download/extension
    :alt: Install remote ssh plugin on Visual Studio Code
 
 After installing the extension, you should configure the SSH connection for the
-compute sesion. In the SSH/SFTP connection dialog, click "DOWNLOAD SSH KEY" button
-to download the SSH private key (``id_container``) for the session. Also,
-remember the port number.
+compute session. In the VSCode Remote Connection dialog, click the copy icon button
+to download the Visual Studio Code remote SSH password. Also, remember the port number.
 
 .. image:: download_ssh_key.png
    :alt: Download SSH Key
    :align: center
    :width: 500
 
-And then, setting SSH config file. Edit the ``~/.ssh/config`` file (for Linux/Mac)
+Then, set the SSH config file. Edit the ``~/.ssh/config`` file (for Linux/Mac)
 or ``C:\Users\[user name]\.ssh\config`` (for Windows) and add the following block.
-For convenience, we set the hostname to ``vscode``. It can be changed to any alias.
 
 .. code-block::
 
-   Host vscode
-     HostName 127.0.0.1
-     Port 30722  # write down the port number that you remembered
      User work
-     ForwardAgent yes
-     StrictHostKeyChecking no
-     IdentityFile path/to/downloaded/id_container
+     Host 127.0.0.1
+     Port 50545  # write down the port number that you remembered
+      StrictHostKeyChecking no
+      UserKnownHostsFile /dev/null
 
 Now in the Visual Studio Code, select the `Command Palette...` from `View` menu.
 
