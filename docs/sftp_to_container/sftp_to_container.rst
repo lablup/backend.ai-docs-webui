@@ -185,7 +185,7 @@ Link: https://aka.ms/vscode-remote/download/extension
 
 After installing the extension, you should configure the SSH connection for the
 compute session. In the VSCode Remote Connection dialog, click the copy icon button
-to download the Visual Studio Code remote SSH password. Also, remember the port number.
+to copy the Visual Studio Code remote SSH password. Also, remember the port number.
 
 .. image:: download_ssh_key.png
    :alt: Download SSH Key
@@ -200,8 +200,9 @@ For convenience, we set the hostname to ``bai-vscode``. It can be changed to any
 
    Host bai-vscode
       User work
-      Host 127.0.0.1
-      Port 49335 # write down the port number that you remembered
+      Hostname 127.0.0.1
+      # write down the port number that you remembered
+      Port 49335
       StrictHostKeyChecking no
       UserKnownHostsFile /dev/null
 
