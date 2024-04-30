@@ -194,12 +194,14 @@ to download the Visual Studio Code remote SSH password. Also, remember the port 
 
 Then, set the SSH config file. Edit the ``~/.ssh/config`` file (for Linux/Mac)
 or ``C:\Users\[user name]\.ssh\config`` (for Windows) and add the following block.
+For convenience, we set the hostname to ``bai-vscode``. It can be changed to any alias.
 
 .. code-block::
 
-     User work
-     Host 127.0.0.1
-     Port 50545  # write down the port number that you remembered
+   Host bai-vscode
+      User work
+      Host 127.0.0.1
+      Port 49335 # write down the port number that you remembered
       StrictHostKeyChecking no
       UserKnownHostsFile /dev/null
 
