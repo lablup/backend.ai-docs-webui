@@ -527,7 +527,9 @@ If you want to commit ongoing session to image, check the checkbox of ``Convert 
 in the dialog and fill out the session name. The session name must be 4 to 32 characters, 
 containing alphanumeric letters or hyphen(``-``) or underscore(``_``) only. 
 After filling out session name in the input field, click the ``PUSH SESSION TO CUSTOMIZED IMAGE`` button.
-The customized image created in this way can be used in future session creations.
+The customized image created in this way can be used in future session creations. However, directories
+mounted to the container for image commits are considered external resources and are not included in
+the final image.
 
 
 .. image:: push_session_to_customized_image.png
