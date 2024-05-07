@@ -149,6 +149,42 @@
   font-family: "JetBrains Mono Bold Italic";
   src: url("../fonts/JetBrainsMono-Bold-Italic.ttf");
 }
+@font-face {
+  font-family: "Pretendard";
+  src: url("../fonts/Pretendard-Regular.ttf");
+}
+@font-face {
+  font-family: "Pretendard Thin";
+  src: url("../fonts/Pretendard-Thin.ttf");
+}
+@font-face {
+  font-family: "Pretendard Extra Light";
+  src: url("../fonts/Pretendard-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "Pretendard Light";
+  src: url("../fonts/Pretendard-Light.ttf");
+}
+@font-face {
+  font-family: "Pretendard Medium";
+  src: url("../fonts/Pretendard-Medium.ttf");
+}
+@font-face {
+  font-family: "Pretendard Semi Bold";
+  src: url("../fonts/Pretendard-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Pretendard Bold";
+  src: url("../fonts/Pretendard-Bold.ttf");
+}
+@font-face {
+  font-family: "Pretendard Extra Bold";
+  src: url("../fonts/Pretendard-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Pretendard Black";
+  src: url("../fonts/Pretendard-Black.ttf");
+}
 
 body {
   /* font-family: "Ubuntu", "Nanum Square"; */
