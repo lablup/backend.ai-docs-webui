@@ -118,7 +118,7 @@ latex_elements = {
         \setsanshangulfont{Pretendard}
         \setmainfont{Pretendard}
         \setsansfont{Pretendard}
-        \setmonofont{Pretendard}
+        \setmonofont{JetBrains Mono}
 
         \setcounter{chapter}{-1}
         \doublespacing
