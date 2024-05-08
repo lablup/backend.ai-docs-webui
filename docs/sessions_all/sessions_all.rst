@@ -529,7 +529,7 @@ containing alphanumeric letters or hyphen(``-``) or underscore(``_``) only.
 After filling out session name in the input field, click the ``PUSH SESSION TO CUSTOMIZED IMAGE`` button.
 The customized image created in this way can be used in future session creations. However, directories
 mounted to the container for image commits are considered external resources and are not included in
-the final image.
+the final image. Remember that ``/home/work`` is a mount folder (scratch directory), so it is not included.
 
 
 .. image:: push_session_to_customized_image.png
