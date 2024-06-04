@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web UI User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-29 23:09+0900\n"
+"POT-Creation-Date: 2024-06-05 13:55+0900\n"
 "PO-Revision-Date: 2023-08-07 16:17+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko\n"
@@ -116,8 +116,8 @@ msgid ""
 "setting, please refer to the :ref:`Quota Setting Panel<quota-setting-"
 "panel>` section."
 msgstr ""
-"쿼타(가용량)는 쿼타 설정을 제공하는 스토리지에서만 사용할 수 있습니다(XFS, CephFS, NetApp, Purestorage 등). 가용량 설정에 "
-"대해서는 :ref:`쿼타 설정 패널<quota-setting-panel>` 섹션을 참고하십시오."
+"쿼타(가용량)는 쿼타 설정을 제공하는 스토리지에서만 사용할 수 있습니다(XFS, CephFS, NetApp, Purestorage "
+"등). 가용량 설정에 대해서는 :ref:`쿼타 설정 패널<quota-setting-panel>` 섹션을 참고하십시오."
 
 #: ../../vfolder/vfolder.rst:46
 msgid ""
@@ -177,8 +177,8 @@ msgid ""
 "NFS hosts. You can check whether the selected host has enough capacity "
 "remaining through the indicator."
 msgstr ""
-"Host: 폴더를 만들 NFS 호스트입니다. NFS 호스트가 여러 개인 경우 하나를 선택할 수 있습니다."
-"선택한 호스트가 충분한 용량을 가지고 있는지 여부는 표시기를 통해 확인할 수 있습니다."
+"Host: 폴더를 만들 NFS 호스트입니다. NFS 호스트가 여러 개인 경우 하나를 선택할 수 있습니다.선택한 호스트가 충분한 "
+"용량을 가지고 있는지 여부는 표시기를 통해 확인할 수 있습니다."
 
 #: ../../vfolder/vfolder.rst:82
 msgid ""
@@ -299,44 +299,58 @@ msgstr "폴더 삭제하기"
 #: ../../vfolder/vfolder.rst:143
 msgid ""
 "If you have permission to delete the storage folder, you can delete it by"
-" clicking the trash can icon in the Control panel. When you click the "
-"Delete button, a confirm dialog appears. To prevent accidental deletion, "
-"you have to enter the name of the folder to be deleted, explicitly."
+"clicking the 'trash can' icon in the control column. By clicking the icon, "
+"the system will automatically move the folder to 'trash can' with following notification, "
 msgstr ""
-"저장소 폴더 삭제 권한이 있는 경우 제어판에서 휴지통 아이콘을 클릭하여 삭제할 수 있습니다. 삭제 버튼을 클릭하면 확인 대화 상자가"
-" 나타납니다. 실수로 삭제되는 것을 방지하기 위해 삭제할 폴더의 이름을 명시적으로 입력해야합니다."
+"Storage 폴더를 삭제할 수 있는 권한을 가지고 있는 경우, 'Control' 열의 휴지통 아이콘을 눌러 폴더를 삭제할 수 있습니다. "
+"휴지통 버튼을 클릭하면 안내 메시지가 나타나며 자동으로 폴더가 휴지통으로 이동하고, "
+#: ../../vfolder/vfolder.rst:-1
+msgid "Folder delete notification modal"
+msgstr ""
 
-#: ../../vfolder/vfolder.rst:149
-msgid ""
-"When delete operation starts, It may take some time in order to delete "
-"the target folder completely from storage host. Meanwhile, in order to "
-"block unintended operation such as accessing any file/directory inside "
-"the folder on-delete status, we disable any accessing operations."
+#: ../../vfolder/vfolder.rst:152
+msgid "and the folder status appearing in the 'status' column will be changed to ``delete-pending``. "
+msgstr "'status' 열에 나타나는 폴더 상태가 'delete-pending'으로 바뀌게 됩니다."
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "Trash bin table"
 msgstr ""
-"삭제 작업이 시작되고 나서도, 실제 저장된 공간에서 대상 폴더를 삭제하는 데 시간이 다소 소요될 수 있습니다. 삭제중인 상태의 "
-"폴더에 접근하려 하는 것과 같은 의도치 않은 작업을 막기 위해, 폴더에 접근할 수 있는 액션은 모두 비활성화됩니다. "
+
+#: ../../vfolder/vfolder.rst:159
+msgid ""
+"In this status, you can restore the folder by clicking restore button in Control pane. "
+"If you want to permanently delete the folder, please click 'red trash can' icon in the same column. "
+"A confirmation modal will pop up with an input field saying 'Type folder name to delete'. "
+"Make sure you type the exact folder name correctly into the field, and click the red "
+"``DELETE FOREVER`` button to permanently delete the folder."
+
+msgstr ""
+"'delete-pending' 상태에서는 Control 열의 '복원' 아이콘을 클릭해 폴더를 복원할 수도 있습니다. "
+"폴더를 완전히 삭제하려면, 같은 열에 존재하는 빨간색 휴지통 아이콘을 클릭합니다. 'Delete Forever?' 모달이 나타나면 "
+"'Type folder name to delete' 라고 적힌 입력 필드에 삭제하려는 폴더 이름을 정확하게 입력한 후, "
+"빨간색 'DELETE FOREVER' 버튼을 클릭하여 폴더를 완전히 삭제할 수 있습니다."
 
 #: ../../vfolder/vfolder.rst:-1
 msgid "Folder deletion dialog"
 msgstr ""
 
-#: ../../vfolder/vfolder.rst:163
+#: ../../vfolder/vfolder.rst:170
 msgid ""
-"The folders created here can be mounted when creating a compute session. "
-"Folders are mounted under the user's default working directory, "
-"``/home/work/``, and the files stored in the mounted directory will not "
-"be deleted when the compute session is terminated. (However, if you "
-"delete the folder itself, it will be gone)."
-msgstr ""
-"여기서 생성한 폴더는 연산 세션을 만들 때 마운트 할 수 있습니다. 폴더는 사용자의 기본 작업 폴더인 ``/home/work/`` "
-"폴더 아래에 마운트 되며, 이 폴더에 저장한 파일은 연산 세션이 종료되어도 사라지지 않습니다(단, 폴더 자체를 삭제하면 사라지게 "
-"됩니다)."
+"The folders created here can be mounted when creating a compute session. Folders are mounted "
+"under the user's default working directory, ``/home/work/``, and the file stored in the mounted "
+"directory will not be deleted when the compute session is terminated. "
+"(If you delete the folder, the file will also be deleted.)"
 
-#: ../../vfolder/vfolder.rst:169
+msgstr ""
+"여기에서 생성한 폴더는 연산 세션을 만들 때 마운트 할 수 있습니다. "
+"폴더는 사용자의 기본 작업 폴더인 ``/home/work/`` 아래 마운트되며, "
+"이 폴더에 저장한 파일은 연산 세션이 종료되어도 사라지지 않습니다. (단, 폴더 자체를 삭제하면 사라지게 됩니다.) "
+
+#: ../../vfolder/vfolder.rst:176
 msgid "Pipeline folders"
 msgstr "파이프라인 폴더"
 
-#: ../../vfolder/vfolder.rst:171
+#: ../../vfolder/vfolder.rst:178
 msgid ""
 "This tab shows the list of folders that are automatically created when "
 "executing a pipeline in FastTrack. When a pipeline is created, a new "
@@ -346,11 +360,11 @@ msgstr ""
 "이 탭은 FastTrack에서 파이프라인을 실행할 때 자동으로 생성되는 폴더 목록을 보여줍니다. 파이프라인을 만들면 각 태스크 "
 "인스턴스(연산 세션)에 대응되는 컨테이너의 ``/pipeline`` 위치에 새 폴더가 생성되고 마운트됩니다."
 
-#: ../../vfolder/vfolder.rst:-1 ../../vfolder/vfolder.rst:179
+#: ../../vfolder/vfolder.rst:-1 ../../vfolder/vfolder.rst:186
 msgid "Automount folders"
 msgstr "자동 마운트 폴더"
 
-#: ../../vfolder/vfolder.rst:181
+#: ../../vfolder/vfolder.rst:188
 msgid ""
 "Data & Storage page has an Automount Folders tab. Click this tab to see a"
 " list of folders whose names prefixed with a dot (.). When you create a "
@@ -369,7 +383,7 @@ msgstr ""
 "디렉토리에 마운트 되는 특수한 폴더입니다. 이를 이용하여, ``.local``, ``.linuxbrew``, ``.pyenv`` "
 "등과 같은 Storage 폴더를 생성해서 사용하면 연산 세션에 관계없이 늘 일정한 사용자 패키지 또는 환경을 구성할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:191
+#: ../../vfolder/vfolder.rst:198
 msgid ""
 "For more detailed information on the usage of Automount folders, refer to"
 " :ref:`examples of using automount folders<using-automount-folder>`."
@@ -377,11 +391,11 @@ msgstr ""
 "Automount Folders 사용에 관한 보다 자세한 내용은 :ref:`자동 마운트 폴더 사용 예제<using-"
 "automount-folder>` 섹션을 참고하십시오."
 
-#: ../../vfolder/vfolder.rst:198
+#: ../../vfolder/vfolder.rst:205
 msgid "Model folders"
 msgstr "모델 폴더"
 
-#: ../../vfolder/vfolder.rst:200
+#: ../../vfolder/vfolder.rst:207
 msgid ""
 "From the 24.03, Backend.AI supports a new feature called 'Model Store'. "
 "The newly added \\\"Models\\\" tab offers users a unified model store "
@@ -389,17 +403,15 @@ msgid ""
 "learning and deep learning models. The features and usage of the "
 "\\\"Models\\\" tab will be updated in the 24.03 documentation."
 msgstr ""
-"Backend.AI는 24.03 버전 이후 'Model Store' 기능을 제공합니다. 새롭게 추가된 "
-"“Model“ 탭은 사용자에게 통합된 모델 저장소 인터페이스를 제공하여 다양한 머신 "
-"러닝 및 딥러닝 모델을 쉽게 관리하고 액세스할 수 있도록 합니다. “Model” 탭의 "
-"기능과 사용법은 24.03 문서에서 업데이트될 예정입니다."
+"Backend.AI는 24.03 버전 이후 'Model Store' 기능을 제공합니다. 새롭게 추가된 “Model“ 탭은 사용자에게"
+" 통합된 모델 저장소 인터페이스를 제공하여 다양한 머신 러닝 및 딥러닝 모델을 쉽게 관리하고 액세스할 수 있도록 합니다. "
+"“Model” 탭의 기능과 사용법은 24.03 문서에서 업데이트될 예정입니다."
 
-
-#: ../../vfolder/vfolder.rst:206
+#: ../../vfolder/vfolder.rst:213
 msgid "Using FileBrowser"
 msgstr "파일 브라우저 사용하기"
 
-#: ../../vfolder/vfolder.rst:208
+#: ../../vfolder/vfolder.rst:215
 msgid ""
 "Backend.AI supports `FileBrowser <https://filebrowser.org>`_ from version"
 " 20.09. FileBrowser is a program that helps you manage files on a remote "
@@ -410,7 +422,7 @@ msgstr ""
 "파일 브라우저는 웹 브라우저를 통해 원격 서버에 있는 파일 관리를 도와주는 프로그램입니다. 특히 사용자의 로컬 머신에 있는 "
 "디렉토리를 업로드 할 때에도 유용하게 사용할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:213
+#: ../../vfolder/vfolder.rst:220
 msgid ""
 "Currently, Backend.AI provides a FileBrowser as an application of a "
 "compute session. Therefore, the following conditions are required to "
@@ -419,39 +431,39 @@ msgstr ""
 "현재 Backend.AI에서는 파일 브라우저를 연산 세션 내에서 실행되는 어플리케이션 형태로 제공합니다. 따라서, 다음과 같은 최소"
 " 조건이 필요합니다."
 
-#: ../../vfolder/vfolder.rst:216
+#: ../../vfolder/vfolder.rst:223
 msgid "User can create at least one compute session"
 msgstr "최소 1개 이상의 세션 생성 가능"
 
-#: ../../vfolder/vfolder.rst:217
+#: ../../vfolder/vfolder.rst:224
 msgid "User can allocated at least 1 core of CPU and 512 MB of memory"
 msgstr "최소 CPU 1 core, RAM 0.5 GB 이상의 여유 자원"
 
-#: ../../vfolder/vfolder.rst:218
+#: ../../vfolder/vfolder.rst:225
 msgid "Image that supports FileBrowser has been installed"
 msgstr "파일 브라우저를 지원하는 이미지가 설치되어 있음"
 
-#: ../../vfolder/vfolder.rst:220
+#: ../../vfolder/vfolder.rst:227
 msgid "You can access FileBrowser in two ways."
 msgstr "파일 브라우저는 두 가지 방법으로 사용할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:222
+#: ../../vfolder/vfolder.rst:229
 msgid ""
 "Execute FileBrowser from file explorere dialog of a data folder in Data &"
 " Stroage page"
 msgstr "Data & Storage 메뉴 내 폴더 탐색기 창에서 실행"
 
-#: ../../vfolder/vfolder.rst:224
+#: ../../vfolder/vfolder.rst:231
 msgid ""
 "Launch a compute session directly from a FileBrowser image on Sessions "
 "page"
 msgstr "Sessions 페이지에서 파일 브라우저 이미지로 연산 세션 직접 생성"
 
-#: ../../vfolder/vfolder.rst:228
+#: ../../vfolder/vfolder.rst:235
 msgid "Execute FileBrowser from folder explorer dialog in Data & Storage page"
 msgstr "Data & Storage 페이지의 폴더 탐색기에서 파일 브라우저 실행"
 
-#: ../../vfolder/vfolder.rst:230 ../../vfolder/vfolder.rst:370
+#: ../../vfolder/vfolder.rst:237 ../../vfolder/vfolder.rst:377
 msgid ""
 "Go to the Data & Storage page and open the file explorer dialog of target"
 " data folder. Click the folder icon or the folder name to open the file "
@@ -464,7 +476,7 @@ msgstr ""
 msgid "first step to access FileBrowser"
 msgstr ""
 
-#: ../../vfolder/vfolder.rst:236
+#: ../../vfolder/vfolder.rst:243
 msgid ""
 "Click EXECUTE FILEBROWSER button in the upper-right corner of the "
 "explorer."
@@ -474,7 +486,7 @@ msgstr "탐색기 우측 상단의 파일 브라우저 실행 버튼을 클릭�
 msgid "Folder explorer with FileBrowser"
 msgstr ""
 
-#: ../../vfolder/vfolder.rst:241
+#: ../../vfolder/vfolder.rst:248
 msgid ""
 "You can see the FileBrowser is opened in a new window. You can also see "
 "that the data folder you opened the explorer dialog becomes the root "
@@ -488,7 +500,7 @@ msgstr ""
 msgid "FileBrowser with new window"
 msgstr ""
 
-#: ../../vfolder/vfolder.rst:249
+#: ../../vfolder/vfolder.rst:256
 msgid ""
 "When user clicks EXECUTE FILEBROWSER, Backend.AI automatically creates a "
 "dedicated compute session for the app. So, in the Sessions page, you "
@@ -503,7 +515,7 @@ msgstr ""
 msgid "FileBrowser in session page"
 msgstr ""
 
-#: ../../vfolder/vfolder.rst:258
+#: ../../vfolder/vfolder.rst:265
 msgid ""
 "If you accidentally close the FileBrowser window and want to reopen it, "
 "just go to Sessions page and click the FileBrowser application icon of "
@@ -521,11 +533,11 @@ msgstr ""
 "만약 탐색기에서 파일브라우저 실행 버튼을 다시 클릭하면 새로운 세션이 생성되어 총 두 개의 파일 브라우저 연산 세션이 나타나게 "
 "됩니다."
 
-#: ../../vfolder/vfolder.rst:273
+#: ../../vfolder/vfolder.rst:280
 msgid "Create a compute session with FileBrowser image"
 msgstr "파일 브라우저 이미지로 연산 세션 생성하기"
 
-#: ../../vfolder/vfolder.rst:275
+#: ../../vfolder/vfolder.rst:282
 msgid ""
 "You can directly create a compute session with FileBrowser supported "
 "images. You need to mount at least one or more data folders to access "
@@ -537,7 +549,7 @@ msgstr ""
 "폴더를 하나 이상 마운트 하십시오. 아무 데이터 폴더를 마운트 하지 않아도 파일 브라우저 사용에는 문제가 없지만, 연산 세션이 "
 "종료되면 연산 세션에서 작업한 모든 파일이 삭제됩니다."
 
-#: ../../vfolder/vfolder.rst:281
+#: ../../vfolder/vfolder.rst:288
 msgid ""
 "The root directory of FileBrowser will be ``/home/work``. Therefore, you "
 "can access any mounted data folders for the compute session."
@@ -545,11 +557,11 @@ msgstr ""
 "Sessions 페이지에서 생성한 파일브라우저의 root 디렉토리는 ``/home/work`` 입니다. 따라서, 연산 세션이 "
 "마운트된 모든 데이터 폴더에 자유롭게 접근할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:285
+#: ../../vfolder/vfolder.rst:292
 msgid "Basic usage examples of FileBrowser"
 msgstr "파일 브라우저 기본 사용법"
 
-#: ../../vfolder/vfolder.rst:287
+#: ../../vfolder/vfolder.rst:294
 msgid ""
 "Here, we present some basic usage examples of FileBrowser in Backend.AI. "
 "Most of the FileBrowser operations are intuitive, but if you need more "
@@ -560,11 +572,11 @@ msgstr ""
 "직관적이지만, 보다 자세한 가이드가 필요하실 경우 `파일 브라우저 문서 <https://filebrowser.org>`_ 를 "
 "참조하십시오."
 
-#: ../../vfolder/vfolder.rst:292
+#: ../../vfolder/vfolder.rst:299
 msgid "**Upload local directory using FileBrowser**"
 msgstr "**파일 브라우저로 로컬 디렉토리 업로드 하기**"
 
-#: ../../vfolder/vfolder.rst:294
+#: ../../vfolder/vfolder.rst:301
 msgid ""
 "FileBrowser supports uploading one or more local directories while "
 "maintaining the tree structure. Click the upload button in the upper "
@@ -576,57 +588,57 @@ msgstr ""
 "업로드 버튼을 클릭한 후 Folder 버튼을 클릭하십시오. 로컬 파일 탐색창이 뜨는데, 여기서 업로드 하기 원하는 디렉토리를 "
 "선택하면 됩니다."
 
-#: ../../vfolder/vfolder.rst:300
+#: ../../vfolder/vfolder.rst:307
 msgid ""
 "If you try to upload a file to a read-only folder, FileBrowser will raise"
 " a server error."
 msgstr "읽기 전용 폴더에 파일을 업로드 하는 경우, FileBrowser가 서버 에러를 띄우게 됩니다."
 
-#: ../../vfolder/vfolder.rst:306
+#: ../../vfolder/vfolder.rst:313
 msgid "Let's upload a directory with the following structure."
 msgstr "다음과 같은 구조를 가진 폴더를 업로드 해보겠습니다."
 
-#: ../../vfolder/vfolder.rst:315
+#: ../../vfolder/vfolder.rst:322
 msgid ""
 "After selecting ``foo`` directory, you can see the directory just "
 "uploaded successfully."
 msgstr "``foo`` 디렉토리를 선택한 후 폴더가 성공적으로 업로드 된 것을 확인할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:320
+#: ../../vfolder/vfolder.rst:327
 msgid "You can also upload local files and directories by drag and drop."
 msgstr "또한, 파일과 디렉토를 드래그 앤 드롭 하여 업로드할 수도 있습니다."
 
-#: ../../vfolder/vfolder.rst:322
+#: ../../vfolder/vfolder.rst:329
 msgid "**Move files or directories to another directory**"
 msgstr "**파일 또는 디렉토리를 다른 디렉토리로 옮기기**"
 
-#: ../../vfolder/vfolder.rst:324
+#: ../../vfolder/vfolder.rst:331
 msgid ""
 "Moving files or directories in data folder is also possible from "
 "FileBrowser. You can move files or directories by following steps below."
 msgstr "데이터 폴더 내 파일 또는 디렉토리를 옮기는 것도 가능합니다. 파일 또는 디렉토리의 위치를 변경하는 방법은 다음과 같습니다."
 
-#: ../../vfolder/vfolder.rst:327
+#: ../../vfolder/vfolder.rst:334
 msgid "Select directories or files from FileBrowser."
 msgstr "파일 브라우저에서 원하는 디렉토리나 파일을 선택하십시오."
 
-#: ../../vfolder/vfolder.rst:332
+#: ../../vfolder/vfolder.rst:339
 msgid "Click the arrow icon in the upper right corner of FileBrowser"
 msgstr "파일 브라우저 창 우측 상단의 화살표 아이콘을 클릭합니다."
 
-#: ../../vfolder/vfolder.rst:338
+#: ../../vfolder/vfolder.rst:345
 msgid "Select the destination"
 msgstr "이동할 경로를 선택합니다."
 
-#: ../../vfolder/vfolder.rst:344
+#: ../../vfolder/vfolder.rst:351
 msgid "Click MOVE button"
 msgstr "MOVE 버튼을 클릭합니다."
 
-#: ../../vfolder/vfolder.rst:346
+#: ../../vfolder/vfolder.rst:353
 msgid "You will see that moving operation is successfully finished."
 msgstr "옮기기 작업이 성공적으로 완료된 것을 확인할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:352
+#: ../../vfolder/vfolder.rst:359
 msgid ""
 "FileBrowser is provided via application inside a compute session "
 "currently. We are planning to update FileBrowser so that it can run "
@@ -635,11 +647,11 @@ msgstr ""
 "현재 파일 브라우저는 연산 세션 내 애플리케이션 형태로 제공되고 있습니다. 향후 세션을 생성하지 않고 파일브라우저를 독립적으로 "
 "실행할 수 있는 기능을 추가할 예정입니다."
 
-#: ../../vfolder/vfolder.rst:357
+#: ../../vfolder/vfolder.rst:364
 msgid "Using SFTP Server"
 msgstr "SFTP 서버 사용"
 
-#: ../../vfolder/vfolder.rst:359
+#: ../../vfolder/vfolder.rst:366
 msgid ""
 "From 22.09, Backend.AI supports SSH / SFTP file upload from both desktop "
 "app and web-based Web-UI. The SFTP server allows you to upload files "
@@ -648,17 +660,17 @@ msgstr ""
 "Backend.AI 22.09 버전부터 데스크탑 앱 및 웹 기반 Web-UI 환경에서 SSH / SFTP 프로토콜을 통해 파일을 "
 "업로드 할 수 있는 방법을 제공합니다. SFTP 서버를 사용하여 안정적으로 빠르게 파일을 업로드할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:364
+#: ../../vfolder/vfolder.rst:371
 msgid ""
 "Depending on the system settings, running SFTP server from the file "
 "dialog may not be allowed."
 msgstr "설정에 따라, SFTP 서버 실행하기가 허용되지 않을 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:368
+#: ../../vfolder/vfolder.rst:375
 msgid "Execute SFTP server from folder explorer dialog in Data & Storage page"
 msgstr "Data & Storage 페이지의 폴더 탐색기에서 파일 브라우저 실행"
 
-#: ../../vfolder/vfolder.rst:373
+#: ../../vfolder/vfolder.rst:380
 msgid "Click RUN SFTP SERVER button in the upper-right corner of the explorer."
 msgstr "탐색기 우측 상단의 SFTP 서버 사용 버튼을 클릭해주세요."
 
@@ -666,7 +678,7 @@ msgstr "탐색기 우측 상단의 SFTP 서버 사용 버튼을 클릭해주세�
 msgid "Folder explorer with SFTP Server"
 msgstr ""
 
-#: ../../vfolder/vfolder.rst:378
+#: ../../vfolder/vfolder.rst:385
 msgid ""
 "You can see the SSH / SFTP connection dialog. And a new SFTP session will"
 " be created automatically. (This session will not affect resource "
@@ -679,7 +691,7 @@ msgstr ""
 msgid "SSH / SFTP connection dialog"
 msgstr ""
 
-#: ../../vfolder/vfolder.rst:387
+#: ../../vfolder/vfolder.rst:394
 msgid ""
 "We provide a detailed information about using large file upload via "
 "ssh/sftp connection. For more information, please click the ``Read more``"
@@ -692,7 +704,7 @@ msgstr ""
 msgid "SSH / SFTP connection dialog expanded"
 msgstr ""
 
-#: ../../vfolder/vfolder.rst:395
+#: ../../vfolder/vfolder.rst:402
 msgid ""
 "For the connection, click \"DOWNLOAD SSH KEY\" button to download the SSH"
 " private key (``id_container``). Also, remember the host and port number."
@@ -707,7 +719,7 @@ msgstr ""
 "있습니다. :ref:`link<sftp_connection_for_linux_and_mac>` 파일을 보존하려면 데이터 폴더로 "
 "복사하십시오. 또한, 일정 시간 동안 파일 전송이 없는 경우에는 세션이 삭제될 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:403
+#: ../../vfolder/vfolder.rst:410
 msgid ""
 "If you upload your SSH keypair, the ``id_container`` will be set with "
 "your own SSH private key. So, you don't need to download it every time "

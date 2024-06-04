@@ -141,29 +141,36 @@ Delete folder
 -------------
 
 If you have permission to delete the storage folder, you can delete it by
-clicking the trash can icon in the Control panel. When you click the Delete
-button, a confirm dialog appears. To prevent accidental deletion, you have to
-enter the name of the folder to be deleted, explicitly.
+clicking the 'trash can' icon in the control column. By clicking the icon, 
+the system will automatically move the folder to 'trash can' with following notification, 
 
-.. note::
-   When delete operation starts, It may take some time in order to delete the
-   target folder completely from storage host. Meanwhile, in order to block
-   unintended operation such as accessing any file/directory inside the folder
-   on-delete status, we disable any accessing operations.
+.. image:: delete_notification.png
+   :width: 400
+   :align: center
+   :alt: Folder delete notification modal
 
-   .. image:: vfolder_deleting.png
-      :width: 100%
-      :align: center
+and the folder status appearing in the 'status' column will be changed to ``delete-pending``. 
+
+.. image:: trash_bin_table.png
+   :width: 800
+   :align: center
+   :alt: Trash bin table
+
+In this status, you can restore the folder by
+clicking restore button in Control pane. If you want to permanently delete the folder, 
+please click 'red trash can' icon in the same column. A confirmation modal will pop up with 
+an input field saying 'Type folder name to delete'. Make sure you type the exact folder name correctly 
+into the field, and click the red ``DELETE FOREVER`` button to permanently delete the folder.
 
 .. image:: vfolder_delete_dialog.png
    :width: 400
    :align: center
    :alt: Folder deletion dialog
 
-The folders created here can be mounted when creating a compute session. Folders
-are mounted under the user's default working directory, ``/home/work/``, and the
-files stored in the mounted directory will not be deleted when the compute session
-is terminated. (However, if you delete the folder itself, it will be gone).
+The folders created here can be mounted when creating a compute session. Folders are mounted 
+under the user's default working directory, ``/home/work/``, and the file stored in the mounted 
+directory will not be deleted when the compute session is terminated. 
+(If you delete the folder, the file will also be deleted.)
 
 Pipeline folders
 ----------------
