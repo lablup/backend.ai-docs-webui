@@ -73,9 +73,10 @@ To use the Model Service, you need to follow the steps below:
 Creating a Model Definition File
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   .. note:: 
-      The model definition file must be named ``model-definition.yml`` or
-      ``model-definition.yaml`` to align with the current version.
+   .. note::
+      From 24.03, you can configure model definition file name. But if you don't
+      input any other input field in model definition file path, then the system will 
+      regard it as ``model-definition.yml`` or ``model-definition.yaml``
 
 The model definition file contains the configuration information
 required by the Backend.AI system to automatically start, initialize,
@@ -192,8 +193,8 @@ folder explorer, and upload the model definition file.
    :align: center
    :alt: Model definition file upload
 
-Creating/Modifying Model Service
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Creating/Validating Model Service
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Once the model definition file is uploaded to the virtual folder of the
 model type, you are ready to create the model service.
@@ -203,25 +204,32 @@ bring up a modal where you can enter the required settings for creating
 the service.
 
 .. image:: service-launcher1.png
-   :width: 500
+   :width: 700
    :align: center
    :alt: Service launcher
 
-First, provide a service name and select
-the virtual folder of the model type to be used for the model service.
-
-For detailed explanations of each item, please refer to the following:
+First, provide a service name. For detailed explanations of each item, please refer to the following:
 
 -  Open To Public: This option allows access to the model service
    without any separate token on the server where the service is to be
    hosted. By default, it is disabled.
+-  Model Storage To Mount: This is model folder to mount, which contains 
+   model definition file inside the directory
+-  Model Destination For Model Folder: This option allows aliasing path of 
+   model storage path to session corresponding to routing, which represents 
+   the service. default value is ``/models``.
+-  Model Definition File Path: You can also set model definition file as you
+   uploaded in model storage path. default value is ``model-definition.yaml``.
+-  Additional Mounts: Likewise session, service provides additional mounts. 
+   Notice that only you can mount general/data usage mode folder, not additional 
+   model folder.
 -  Desired Routing Count: The model service can be serviced by multiple
    servers. This setting determines how many routing sessions to create
    for the current service. The value specified here will be used as the
    basis for creating the sessions.
 
 .. image:: service-launcher2.png
-   :width: 500
+   :width: 700
    :align: center
    :alt: Service launcher
 
@@ -247,13 +255,27 @@ resources that can be allocated to the model service.
    any AI accelerator on demand according to resource group.
 
 .. image:: cluster_mode.png
-   :width: 500
+   :width: 700
    :align: center
 
 -  Single Node : When running a session, the managed node and worker nodes are 
    placed on a single physical node or virtual machine.
 -  Multi Node : When running a session, one managed node and one or more worker 
    nodes are split across multiple physical nodes or virtual machines.
+
+Before creating model service, Backend.AI supports validation feature to check 
+whether execution is available or not(due to any errors during execution.) By 
+clicking ``Validate`` button in bottom-left of service launcher, a new popup for 
+listening validation event will pops up. in the popup modal, you can check the status 
+by container log. when result is set to ``Finished``, then validation check is finished.
+
+.. image:: model-validation-dialog.png
+   :width: 700
+   :align: center
+
+.. note:: 
+   The result ``Finished`` doesn't guarantee that the execution is successfully done. 
+   Instead, please check the container log. 
 
 Modifying Model Service
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -264,7 +286,7 @@ previously entered fields already filled in. You can optionally modify only the
 fields you wish to change. After modifying the fields, click the confirm button. 
 The changes will be adjusted accordingly.
 
-.. image:: routings-count-changed.png
+.. image:: edit-service-launcher.png
    :align: center
    :alt: Edit model service dialog
 
