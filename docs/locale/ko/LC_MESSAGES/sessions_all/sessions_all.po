@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 20.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 11:24+0900\n"
+"POT-Creation-Date: 2024-06-04 18:16+0900\n"
 "PO-Revision-Date: 2024-03-05 16:00+0900\n"
 "Last-Translator: \n"
 "Language: ko_KR\n"
@@ -881,6 +881,7 @@ msgid ""
 "To add preopen ports, simply enter multiple values separated by either a "
 "comma (,) or a space."
 msgstr ""
+"사전 개방 포트를 추가하려면 쉼표(,)나 공백으로 구분하여 여러 값을 입력할 수 있습니다."
 
 #: ../../sessions_all/sessions_all.rst:-1
 msgid "Preopen Ports Configuration"
@@ -915,77 +916,57 @@ msgstr ""
 "페이지가 뜹니다. 해당 포트에 서버를 먼저 바인드 한 후 사용해주세요."
 
 #: ../../sessions_all/sessions_all.rst:507
-msgid "Save container commit"
-msgstr "컨테이너 커밋 저장하기"
+msgid "Save session commit"
+msgstr "세션 커밋 저장하기"
 
-#: ../../sessions_all/sessions_all.rst:509
+#: ../../sessions_all/sessions_all.rst:511
 msgid ""
-"Backend.AI supports \\\"container commit\\\" feature from 22.09 and "
-"\\\"convert session to image\\\" feature from 24.03. Committing a "
-"``RUNNING`` session will save the current state of the main container as "
-"a new image. Clicking the commit button in the control pane of "
-"``RUNNING`` session will display a dialog to show the information of the "
-"session. After checking the information, you can click the confirmation "
-"button to convert the container to a new image."
+"Backend.AI supports \\\"Convert Session to Image\\\" feature from 24.03. "
+"Committing a ``RUNNING`` session will save the current state of the "
+"session as a new image. Clicking the commit button in the control column "
+"of ``RUNNING`` session will display a dialog to show the information of "
+"the session. After entering the session name, you can convert the session"
+" to a new image. The session name must be 4 to 32 characters long and can"
+" only contain alphanumeric letters, hyphens (``-``), or underscores "
+"(``_``)."
 msgstr ""
-"Backend.AI는 22.09 버전부터 “컨테이너 커밋 기능“을 지원하고, 24.03 버전부터 “세션을 이미지로 변환하는 기능“을"
-" 지원합니다. ``RUNNING`` 상태에 있는 연산 세션을 커밋하면 현재 컨테이너의 상태를 새로운 이미지로 저장할 수 있습니다. "
-"``RUNNING`` 상태에 있는 연산 세션의 ``RUNNING`` 세션의 제어 열에 있는 커밋 버튼을 클릭하면 세션의 정보를 "
-"보여주는 다이얼로그가 나타납니다. 정보를 확인한 후 확인 버튼을 클릭하면 컨테이너가 새로운 이미지로 변환됩니다."
-
-#: ../../sessions_all/sessions_all.rst:-1
-msgid "Container commit confirmation"
-msgstr "컨테이너 커밋 확인"
-
-#: ../../sessions_all/sessions_all.rst:519
-msgid ""
-"After clicking ``COMMIT`` button in the dialog, Backend.AI internally "
-"requests Docker to create a new image as ``tar.gz`` to be stored into a "
-"specific host path. Please note that it's not available to access "
-"directly in your local environment. Users need to contact the "
-"administrator to get the image file."
-msgstr ""
-"다이얼로그의 커밋 버튼을 클릭하게 되면, Backend.AI 에서는 내부적으로 도커에 ``tar.gz`` 형식으로 새 이미지를 "
-"저장하게 됩니다. 새 이미지는 호스트 상의 특정 디렉토리에 저장되므로, 사용자의 로컬 환경에서 직접 접근할 수는 없습니다. 이미지 "
-"파일을 얻기 위해서는 관리자에게 연락을 해야 합니다."
-
-#: ../../sessions_all/sessions_all.rst:526
-msgid ""
-"If you want to commit ongoing session to image, check the checkbox of "
-"``Convert Session to Image`` in the dialog and fill out the session name."
-" The session name must be 4 to 32 characters, containing alphanumeric "
-"letters or hyphen(``-``) or underscore(``_``) only. After filling out "
-"session name in the input field, click the ``PUSH SESSION TO CUSTOMIZED "
-"IMAGE`` button. The customized image created in this way can be used in "
-"future session creations. However, directories mounted to the container "
-"for image commits are considered external resources and are not included "
-"in the final image. Remember that ``/home/work`` is a mount folder "
-"(scratch directory), so it is not included."
-msgstr ""
-"진행 중인 세션을 이미지로 커밋하려면, 다이얼로그에서 ``Convert Session to Image`` 체크박스를 체크하고 세션 "
-"이름을 입력합니다. 세션 이름은 알파벳 또는 숫자, 또는 하이픈(``-``) 이나 언더바(``_``)로 구성할 수 있으며, 최소 "
-"4글자에서 32자까지만 입력해야 합니다. 세션 이름을 입력한 뒤에는 ``PUSH SESSION TO CUSTOMIZED "
-"IMAGE`` 버튼을클릭합니다. 이렇게 만들어진 사용자 정의 이미지는 추후 세션 생성 시 사용할 수 있습니다. 단, 이미지 커밋을 "
-"위해 컨테이너에 마운트된 디렉토리는 외부 리소스로 간주되며 최종 이미지에 포함되지 않습니다. ``/home/work`` 도 마운트된 "
-"폴더 (임시 디렉토리)이기 때문에 포함되지 않습니다."
+"Backend.AI는 24.03 버전부터 “세션을 이미지로 변환하는 기능“을 지원합니다. ``RUNNING`` 세션을 커밋하면 "
+"세션의 현재 상태가 새 이미지로 저장됩니다. ``RUNNING`` 세션의 제어 열에 있는 커밋 버튼을 클릭하면 세션 정보를 보여주는"
+" 다이얼로그가 표시됩니다. 세션 이름을 입력한 후 새 이미지로 세션을 변환할 수 있습니다. 세션 이름은 4자에서 32자까지의 알파벳"
+" 문자, 하이픈(``-``), 밑줄(``_``)만 포함해야 합니다."
 
 #: ../../sessions_all/sessions_all.rst:-1
 msgid "Push session to customized image"
 msgstr "사용자 정의 이미지를 세션으로 푸시"
 
-#: ../../sessions_all/sessions_all.rst:541
+#: ../../sessions_all/sessions_all.rst:522
 msgid ""
-"Currently, Backend.AI supports container commit and converting session to"
-" image feature when session is ``INTERACTIVE`` mode only. During "
-"container commit process, you may not be able to terminate the session to"
-" prevent unexpected error. If you want to stop the ongoing process, "
-"please check the session, and force-terminate the session."
+"After filling out session name in the input field, click the ``PUSH "
+"SESSION TO CUSTOMIZED IMAGE`` button. The customized image created in "
+"this way can be used in future session creations. However, directories "
+"mounted to the container for image commits are considered external "
+"resources and are not included in the final image. Remember that "
+"``/home/work`` is a mount folder (scratch directory), so it is not "
+"included."
 msgstr ""
-"현재 Backend.AI 는 세션이 ``INTERACTIVE`` 모드일 때에만 컨테이너 커밋과 세션을 이미지로 변환하는 기능을 "
-"지원합니다. 또한 컨테이너 커밋 과정 동안에는 세션을 종료할 수 없는데, 이는 컨테이너 커밋 과정 중 예기치 못한 실행 에러를 "
-"방지하기 위함입니다. 진행중인 컨테이너 커밋 작업을 중지하려면, 세션을 선택한 다음 강제 종료해주시기 바랍니다. "
+"입력 필드에 세션 이름을 작성한 후 “PUSH SESSION TO CUSTOMIZED IMAGE“ 버튼을 클릭하세요. 이 방법으로 "
+"생성된 사용자 정의 이미지는 향후 세션 생성에서 사용할 수 있습니다. 그러나 이미지 커밋을 위해 컨테이너에 마운트된 디렉토리는 외부"
+" 리소스로 간주되어 최종 이미지에 포함되지 않습니다. ``/home/work`` 디렉토리가 마운트된 폴더(스크래치 디렉토리)임을 "
+"기억해주세요."
 
-#: ../../sessions_all/sessions_all.rst:548
+#: ../../sessions_all/sessions_all.rst:528
+msgid ""
+"Currently, Backend.AI supports the \"Convert Session to Image\" feature "
+"only when the session is in ``INTERACTIVE`` mode. During the committing "
+"process, you may not be able to terminate the session to prevent "
+"unexpected errors. If you want to stop the ongoing process, please check "
+"the session and force-terminate the session."
+msgstr ""
+"현재 Backend.AI는 세션이 ``INTERACTIVE`` 모드일 때만 “세션을 이미지로 변환“ 기능을 지원합니다. 커밋 프로세스 중에 "
+"예기치 않은 오류를 방지하기 위해 세션을 종료할 수 없을 수 있습니다. 진행 중인 프로세스를 중지하려면 세션을 확인하고 "
+"강제로 종료하세요."
+
+#: ../../sessions_all/sessions_all.rst:534
 msgid ""
 "The number of times you can ``Convert Session to Image`` may be limited "
 "by the user resource policy. In this case, try :ref:`removing the "
@@ -996,11 +977,11 @@ msgstr ""
 ":ref:`기존 사용자 정의 이미지를 제거<delete-customized-image>` 한 후 다시 시도하거나 관리자에게 "
 "문의하세요."
 
-#: ../../sessions_all/sessions_all.rst:554
+#: ../../sessions_all/sessions_all.rst:540
 msgid "Utilizing converted images of ongoing sessions"
 msgstr "진행 중인 세션의 변환된 이미지 활용"
 
-#: ../../sessions_all/sessions_all.rst:556
+#: ../../sessions_all/sessions_all.rst:542
 msgid ""
 "Converting an ongoing session into an image allows you to select this "
 "image from the environments in the session launcher when creating a new "
@@ -1016,7 +997,7 @@ msgstr ""
 msgid "Select customized image"
 msgstr "사용자 정의 이미지 선택"
 
-#: ../../sessions_all/sessions_all.rst:564
+#: ../../sessions_all/sessions_all.rst:550
 msgid ""
 "To manually enter the environment name for future session creation, "
 "please click the copy icon."
@@ -1026,11 +1007,11 @@ msgstr "향후 세션 생성을 위해 환경 이름을 수동으로 입력하�
 msgid "Copy customized image"
 msgstr "사용자 정의 이미지 복사"
 
-#: ../../sessions_all/sessions_all.rst:573
+#: ../../sessions_all/sessions_all.rst:559
 msgid "Optimizing Accelerated Computing"
 msgstr "가속 컴퓨팅 최적화하기"
 
-#: ../../sessions_all/sessions_all.rst:575
+#: ../../sessions_all/sessions_all.rst:561
 msgid ""
 "Backend.AI provides configuration UI for internal control variable in "
 "``nthreads-var``. Backend.AI sets this value equal to the number of "
@@ -1050,11 +1031,11 @@ msgstr ""
 msgid "Session HPC Optimization"
 msgstr ""
 
-#: ../../sessions_all/sessions_all.rst:590
+#: ../../sessions_all/sessions_all.rst:576
 msgid "Advanced web terminal usage"
 msgstr "웹 터미널 고급 사용법"
 
-#: ../../sessions_all/sessions_all.rst:592
+#: ../../sessions_all/sessions_all.rst:578
 msgid ""
 "The web-based terminal internally embeds a utility called `tmux "
 "<https://github.com/tmux/tmux/wiki>`_. tmux is a terminal multiplexer "
@@ -1068,15 +1049,15 @@ msgstr ""
 "terminal multiplexer 로, 쉘이 닫히더라도 작업하던 내용을 보존할 수 있는 등 다양한 장점을 가지고 있습니다. 보다"
 " 강력한 터미널 기능을 활용하고 싶다면 tmux 공식 문서 및 기타 인터넷 상의 다양한 사용 예제를 참고하십시오."
 
-#: ../../sessions_all/sessions_all.rst:599
+#: ../../sessions_all/sessions_all.rst:585
 msgid "Here we are introducing some simple but useful features."
 msgstr "여기서는 몇 가지 간단하지만 유용한 기능을 소개하겠습니다."
 
-#: ../../sessions_all/sessions_all.rst:602
+#: ../../sessions_all/sessions_all.rst:588
 msgid "Copy terminal contents"
 msgstr "터미널 내용 복사하기"
 
-#: ../../sessions_all/sessions_all.rst:604
+#: ../../sessions_all/sessions_all.rst:590
 msgid ""
 "tmux offers a number of useful features, but it's a bit confusing for "
 "first-time users. In particular, tmux has its own clipboard buffer, so "
@@ -1093,7 +1074,7 @@ msgstr ""
 "쉘을 사용하고 있는 상태에서는 마우스 드래그를 통해 터미널 내용을 복사한 후 사용자 컴퓨터의 다른 프로그램에 붙여넣을 수가 "
 "없습니다. 소위 말하는 ``Ctrl-C`` / ``Ctrl-V`` 가 작동하지 않는 것입니다."
 
-#: ../../sessions_all/sessions_all.rst:612
+#: ../../sessions_all/sessions_all.rst:598
 msgid ""
 "If you need to copy and paste the terminal contents to your system's "
 "clipboard, you can temporarily turn off tmux's mouse support. First, "
@@ -1110,7 +1091,7 @@ msgstr ""
 " 그 후 터미널에서 마우스로 원하는 텍스트를 드래그 하고 ``Ctrl-C`` 또는 ``Cmd-C`` 키를 누르면 사용자 컴퓨터의 "
 "클립보드에 해당 내용이 복사 됩니다."
 
-#: ../../sessions_all/sessions_all.rst:620
+#: ../../sessions_all/sessions_all.rst:606
 msgid ""
 "With mouse support turned off, you cannot scroll through the mouse wheel "
 "to see the contents of the previous page from the terminal. In this case,"
@@ -1122,7 +1103,7 @@ msgstr ""
 "켜면 됩니다. ``Ctrl-B`` 를 누른 후 이번에는 ``:set -g mouse on`` 을 입력해봅시다. 이제 마우스 휠을 "
 "스크롤하여 이전 페이지의 내용을 볼 수 있게 되었습니다."
 
-#: ../../sessions_all/sessions_all.rst:625
+#: ../../sessions_all/sessions_all.rst:611
 msgid ""
 "If you remember ``:set -g mouse off`` or ``:set -g mouse on`` after "
 "``Ctrl-B``, you can use the web terminal more conveniently."
@@ -1130,7 +1111,7 @@ msgstr ""
 "이와 같이 ``Ctrl-B`` 후 ``:set -g mouse off`` 또는 ``:set -g mouse on`` 을 기억하면 "
 "조금 더 편리하게 웹 터미널을 활용할 수 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:629
+#: ../../sessions_all/sessions_all.rst:615
 msgid ""
 "``Ctrl-B`` is tmux's default control mode key. If you set another control"
 " key by modifying ``.tmux.conf`` in user home directory, you should press"
@@ -1139,23 +1120,23 @@ msgstr ""
 "``Ctrl-B`` 키는 tmux 의 기본 제어 모드 키입니다. 만약 홈 디렉토리의 ``.tmux.conf`` 를 수정하여 다른 "
 "제어 키를 설정한 경우에는, ``Ctrl-B`` 대신 설정된 키 조합을 눌러야 합니다."
 
-#: ../../sessions_all/sessions_all.rst:634
+#: ../../sessions_all/sessions_all.rst:620
 msgid "In the Windows environment, refer to the following shortcuts."
 msgstr "윈도우즈 환경에서는 다음 단축키를 참고하세요."
 
-#: ../../sessions_all/sessions_all.rst:636
+#: ../../sessions_all/sessions_all.rst:622
 msgid "Copy: Hold down ``Shift``, right-click and drag"
 msgstr "복사: ``Shift`` 키를 누른 상태에서 마우스 우클릭해서 드래그"
 
-#: ../../sessions_all/sessions_all.rst:637
+#: ../../sessions_all/sessions_all.rst:623
 msgid "Paste: Press ``Ctrl-Shift-V``"
 msgstr "불여넣기: ``Ctrl-Shift-V`` 키를 누름"
 
-#: ../../sessions_all/sessions_all.rst:640
+#: ../../sessions_all/sessions_all.rst:626
 msgid "Check the terminal history using keyboard"
 msgstr "키보드를 이용해 터미널 이전 내용 확인하기"
 
-#: ../../sessions_all/sessions_all.rst:642
+#: ../../sessions_all/sessions_all.rst:628
 msgid ""
 "There is also a way to copy the terminal contents and check the previous "
 "contents of the terminal simultaneously. It is to check the previous "
@@ -1171,11 +1152,11 @@ msgstr ""
 " 봅시다. 키보드 만으로 터미널의 이전 내용을 탐색할 수 있다는 것을 확인할 수 있습니다. 탐색 모드에서 빠져 나오려면 ``q`` "
 "키를 눌러주면 됩니다. 이 방법을 이용하면 마우스 지원을 끈 상태에서도 터미널 이전 내용 확인이 가능합니다."
 
-#: ../../sessions_all/sessions_all.rst:651
+#: ../../sessions_all/sessions_all.rst:637
 msgid "Spawn multiple shells"
 msgstr "여러 개의 쉘 띄우기"
 
-#: ../../sessions_all/sessions_all.rst:653
+#: ../../sessions_all/sessions_all.rst:639
 msgid ""
 "The main advantage of tmux is that you can launch and use multiple shells"
 " in one terminal window. Since seeing is believing, let's press the "
@@ -1199,7 +1180,7 @@ msgstr ""
 msgid "tmux's multiple session management"
 msgstr ""
 
-#: ../../sessions_all/sessions_all.rst:667
+#: ../../sessions_all/sessions_all.rst:653
 msgid ""
 "You can see the first shell environment appears. In this way, you can use"
 " multiple shell environments within a web terminal. To exit or terminate "
@@ -1209,25 +1190,24 @@ msgstr ""
 "첫 번째 쉘 환경이 나타나는 것을 볼 수 있습니다. 이러한 방식으로 웹 터미널 내에서 여러 쉘 환경을 사용할 수 있습니다. 현재 "
 "쉘을 종료하려면 ``exit`` 명령을 입력하거나 ``Ctrl-B x`` 키를 누른 다음 ``y`` 를 입력하십시오."
 
-#: ../../sessions_all/sessions_all.rst:672
+#: ../../sessions_all/sessions_all.rst:658
 msgid "In summary:"
 msgstr "정리하면 다음과 같습니다:"
 
-#: ../../sessions_all/sessions_all.rst:674
+#: ../../sessions_all/sessions_all.rst:660
 msgid "``Ctrl-B c``: create a new tmux shell"
 msgstr "``Ctrl-B c``: 새로운 tmux 쉘 생성"
 
-#: ../../sessions_all/sessions_all.rst:675
+#: ../../sessions_all/sessions_all.rst:661
 msgid "``Ctrl-B w``: query current tmux shells and move around among them"
 msgstr "``Ctrl-B w``: tmux 쉘 조회 및 이동/선택"
 
-#: ../../sessions_all/sessions_all.rst:676
+#: ../../sessions_all/sessions_all.rst:662
 msgid "``exit`` or ``Ctrl-B x``: terminate the current shell"
 msgstr "``exit`` 또는 ``Ctrl-B x``: 현재 tmux 쉘 종료"
 
-#: ../../sessions_all/sessions_all.rst:678
+#: ../../sessions_all/sessions_all.rst:664
 msgid ""
 "Combining the above commands allows you to perform various tasks "
 "simultaneously on multiple shells."
 msgstr "위 명령을 조합하여 여러 개의 쉘에서 동시에 다양한 작업을 수행할 수 있습니다."
-
