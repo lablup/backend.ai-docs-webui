@@ -141,19 +141,26 @@ Delete folder
 -------------
 
 If you have permission to delete the storage folder, you can delete it by
-clicking the trash can icon in the Control panel. When you click the Delete
-button, a confirm dialog appears. To prevent accidental deletion, you have to
-enter the name of the folder to be deleted, explicitly.
+clicking the trash can icon in the Control pane.By clicking the icon, 
+it will automatically move the folder to trash bin with notification, 
 
-.. note::
-   When delete operation starts, It may take some time in order to delete the
-   target folder completely from storage host. Meanwhile, in order to block
-   unintended operation such as accessing any file/directory inside the folder
-   on-delete status, we disable any accessing operations.
+.. image:: delete_notification.png
+   :width: 400
+   :align: center
+   :alt: Folder delete notification modal
 
-   .. image:: vfolder_deleting.png
-      :width: 100%
-      :align: center
+and status is  changed to ``delete-pending`` status. 
+
+.. image:: trash_bin_table.png
+   :width: 800
+   :align: center
+   :alt: Trash bin table
+
+In this status, you can restore the folder by
+clicking restore button in Control pane. If you want to delete the folder forever, 
+then please click red trash bin icon button. A confirmation modal will pop up with 
+input field to make sure you want to delete this folder completely. After typing the 
+name of folder correctly, click ``DELETE FOREVER`` button to remove
 
 .. image:: vfolder_delete_dialog.png
    :width: 400
