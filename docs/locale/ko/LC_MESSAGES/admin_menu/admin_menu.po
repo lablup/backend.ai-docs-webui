@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 20.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-28 21:22+0900\n"
+"POT-Creation-Date: 2024-06-04 16:54+0900\n"
 "PO-Revision-Date: 2022-05-17 22:53+0900\n"
 "Last-Translator: \n"
 "Language: ko\n"
@@ -149,9 +149,9 @@ msgid ""
 "that require root privileges. However, it is not recommended to enable "
 "this option for all users, as it may cause security issues."
 msgstr ""
-"Enable sudo session: 사용자가 연산 세션에서 sudo 를 사용할 수 있도록 허용합니다. 이는 사용자가 패키지를 설치하거나 "
-"루트 권한이 필요한 명령을 실행할 때 유용합니다. 그러나 모든 사용자에게 이 옵션을 활성화 하는 것은 보안 문제를 일으킬 수 있기 때문에"
-" 권장되지 않습니다."
+"Enable sudo session: 사용자가 연산 세션에서 sudo 를 사용할 수 있도록 허용합니다. 이는 사용자가 패키지를 "
+"설치하거나 루트 권한이 필요한 명령을 실행할 때 유용합니다. 그러나 모든 사용자에게 이 옵션을 활성화 하는 것은 보안 문제를 일으킬"
+" 수 있기 때문에 권장되지 않습니다."
 
 #: ../../admin_menu/admin_menu.rst:83
 msgid ""
@@ -280,11 +280,23 @@ msgstr ""
 msgid "Add keypair dialog"
 msgstr ""
 
-#: ../../admin_menu/admin_menu.rst:157
+#: ../../admin_menu/admin_menu.rst:156
+msgid ""
+"In each of USERS, CREDENTIALS tabs, there is an icon (``...``) on the "
+"right side of the tab header. Clicking this shows export CSV menu, which "
+"again brings up a CSV export dialog for each tabs. By giving an "
+"appropriate file name, if necessary, and clicking EXPORT CSV FILE button,"
+" you can download the list of users, keypairs."
+msgstr ""
+"USERS, CREDENTIALS 탭의 우측 끝부분에 ⋯ 모양의 아이콘이 있습니다. 이 버튼을 클릭하면 export CSV 메뉴가 "
+"뜨고, 다시 이 메뉴를 클릭하면 각 탭 자원 별 CSV export 다이얼로그가 뜹니다. 필요한 경우 적당한 파일 이름을 쓰고 "
+"EXPORT CSV FILE 버튼을 클릭하면 사용자, 키페어 리스트를 CSV 형태로 다운로드 할 수 있습니다."
+
+#: ../../admin_menu/admin_menu.rst:168
 msgid "Share project storage folders with project members"
 msgstr "프로젝트 Storage 폴더를 다른 사용자와 공유하기"
 
-#: ../../admin_menu/admin_menu.rst:159
+#: ../../admin_menu/admin_menu.rst:170
 msgid ""
 "Backend.AI provides storage folders for projects, in addition to user's "
 "own storage folder. A project storage folder is a folder belonging to a "
@@ -294,7 +306,7 @@ msgstr ""
 "Backend.AI 는 개인용 Storage 폴더 외에 프로젝트 전용 Storage 폴더를 제공합니다. 프로젝트 Storage "
 "폴더는 특정 사용자가 아닌 특정 프로젝트에 속하는 폴더이며, 해당 프로젝트에 속한 모든 사용자가 접근할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:164
+#: ../../admin_menu/admin_menu.rst:175
 msgid ""
 "Project folders can be created only by administrators. Normal users can "
 "only access the contents of the project folder created by the "
@@ -304,7 +316,7 @@ msgstr ""
 "프로젝트 폴더는 오직 관리자만 생성할 수 있습니다. 일반 사용자는 관리자가 생성한 프로젝트 폴더 내용을 공유해서 접근할 수 있을 "
 "뿐입니다. 또한, 시스템 설정에 따라 프로젝트 폴더 생성이 허용되지 않는 경우도 있을 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:168
+#: ../../admin_menu/admin_menu.rst:179
 msgid ""
 "First, log in with an admin account and create a project folder. After "
 "moving to the Data & Storage page, click NEW FOLDER to open the folder "
@@ -318,7 +330,7 @@ msgstr ""
 "Project  선택합니다. 이 때, 목표 프로젝트 사용자 B 가 속한 프로젝트로 설정합니다. Permission 은 Read-"
 "Only 로 설정하였습니다."
 
-#: ../../admin_menu/admin_menu.rst:178
+#: ../../admin_menu/admin_menu.rst:189
 msgid ""
 "After confirming that the folder has been created, log in with the User "
 "B's account and check that the project folder just created on the Data & "
@@ -328,142 +340,126 @@ msgstr ""
 "폴더가 생성된 것을 확인한 후 사용자 B 계정으로 로그인 하여 Data & Storage 페이지에 방금 생성한 프로젝트 폴더가 "
 "별도의 초대 절차 없이 조회되는 것을 확인합니다. Permission 열에는 역시 R(읽기전용)이 표시된 것을 확인할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:186
+#: ../../admin_menu/admin_menu.rst:197
 msgid "Manage Resource Policy"
 msgstr "자원 정책 관리"
 
-#: ../../admin_menu/admin_menu.rst:188
-msgid ""
-"In Backend.AI, admins can set a limit on the total amount of resources "
-"available for each user and project. Resource limits per project can only"
-" be set through the enterprise-dedicated administrator GUI Control-Panel,"
-" but resource limits per user (precisely per user's keypair) can be set "
-"in the user Web-UI."
-msgstr ""
-"Backend.AI 에는 사용자 및 프로젝트 별로 총 사용 가능한 자원의 제한을 설정할 수 있습니다. 프로젝트 별 자원 제한은 "
-"엔터프라이즈 전용 관리자 GUI Control-Panel을 통해서만 가능하나, 사용자 별 (정확하게는 사용자의 키페어 별) 자원 "
-"제한은 사용자 Web-UI 에서도 설정할 수 있습니다."
+#: ../../admin_menu/admin_menu.rst:200
+msgid "Keypair Resource Policy"
+msgstr "키페어 자원 정책"
 
-#: ../../admin_menu/admin_menu.rst:193
+#: ../../admin_menu/admin_menu.rst:202
 msgid ""
-"Resource policies allow you to set maximum allowed resources and/or other"
-" compute session related settings per keypair basis. If necessary, "
-"multiple resource policies can be created, for example, user / research "
-"purposes, and apply them separately to each keypair."
+"In Backend.AI, administrators can set limits on the total amount of "
+"resources available for each keypair, user and project. Resource policies"
+" enable you to define the maximum allowed resources and other compute "
+"session-related settings. If needed, multiple resource policies can be "
+"created, such as for user or research purposes, and applied individually."
 msgstr ""
-"자원 정책을 통해 키페어 별로 자원 사용 및 기타 세션 사용 관련 정책을 설정할 수 있습니다. 필요에 따라 사용자용/연구용 등 "
-"목적으로 여러 가지 자원 정책을 설정하여 키페어에 분리 적용할 수 있습니다."
+"Backend.AI에서 관리자는 각 키페어, 사용자 및 프로젝트에 대해 사용 가능한 자원의 총량에 대한 제한을 설정할 수 있습니다."
+" 자원 정책을 사용하면 최대 허용 자원 및 기타 계산 세션 관련 설정을 정의할 수 있습니다. 필요한 경우 사용자 또는 연구 목적과 "
+"같이 여러 자원 정책을 만들고 개별적으로 적용할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:199
+#: ../../admin_menu/admin_menu.rst:208
 msgid ""
-"To set resource policies at the domain and project level, you have to use"
-" admin Control-Panel, a UI for superadmin only. In the Web-UI, you can "
-"only set resource policies based on keypairs. Control-Panel is a part of "
-"the enterprise version."
+"On the Resource Policy page, administrators can view the list of "
+"currently registered resource policies. You can check the list of "
+"resource policies set for keypairs, users, and projects on the Resource "
+"Policy page. Let's begin by examining the resource policies for keypairs."
+" In the figure below, there are three policies in total (gardener, "
+"student, default). The infinity symbol (∞) indicates that no resource "
+"restrictions have been applied to those resources."
 msgstr ""
-"도메인과 프로젝트 수준에서 리소스 정책을 설정하려면, 관리자 전용 UI인 Control-Panel을 사용해야 합니다. Web-"
-"UI에서는 키페어 수준의 리소스 정책만 설정 가능합니다. Control-Panel은 엔터프라이즈 전용 서비스입니다."
-
-#: ../../admin_menu/admin_menu.rst:204
-msgid ""
-"In Resource Policies tab on the Users page, the admin can check the list "
-"of currently registered resource policies.  In the figure below, there "
-"are a total of three policies (gardener, STUDENT, default).  The infinity"
-" (∞) marks for resources such as Cores, Ram, and fGPU in the Resources "
-"panel means that no resource restrictions have been placed for those "
-"resources."
-msgstr ""
-"자원 제한 상태를 확인하기 위해 관리자 계정으로 사용자 Web-UI 에 로그인 합니다. 관리자로 로그인 하면 좌측 메뉴 아래쪽에 "
-"관리자 전용 메뉴가 더 보입니다. 이 중 Users 를 클릭하여 사용자 관리 페이지로 이동한 뒤 Resource Policies "
-"탭을 클릭합니다. 현재 설정되 어 있는 자원 정책의 리스트를 확인할 수 있습니다. 하단 그림에는 총세 개의 정책이 있습니다 "
-"(gardener, STUDENT, default). default 정책의 Resources 열을 보면 Cores, RAM, "
-"fGPU 등의 자원이 무한대 (∞) 로 표기된 것을 확인할 수 있습니다. 무한대 표시는 별도의 자원 제약이 이루어지지 않은 상태를 "
-"뜻합니다."
+"자원 정책 페이지에서 관리자는 현재 등록된 자원 정책 목록을 확인할 수 있습니다. 자원 정책 페이지에서는 키페어, 사용자 및 "
+"프로젝트에 설정된 자원 정책 목록을 확인할 수 있습니다. 먼저 키페어에 대한 자원 정책을 살펴봅시다. 아래 그림에서는 총 세 가지 "
+"정책 (gardener, student, default)이 있습니다. 무한대 기호 (∞)는 해당 리소스에 제한이 없음을 나타냅니다."
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Resource policy page"
 msgstr "자원 정책"
 
-#: ../../admin_menu/admin_menu.rst:213
+#: ../../admin_menu/admin_menu.rst:218
 msgid ""
-"The user account currently used in this guide is under the default "
-"resource policy. This can be confirmed in the Credentials tab on the "
-"left. In the Resource Policy panel, you can also see that all resources "
-"can be used to the extent the hardware allows (∞)."
+"The user account being used in this guide is currently assigned to the "
+"default resource policy. This can be verified in the Credentials tab on "
+"the Users page. In the Resource Policy panel, you can also observe that "
+"all resources can be utilized up to the hardware limit (∞)."
 msgstr ""
-"현재 이 가이드에서 사용 중인 사용자 계정은 default 자원 정책의 제한을 받고 있습니다. 좌 측의 Credentials 탭에서"
-" 확인할 수 있습니다. Resource Policy 를 보면 역시 모든 자원을 (하드웨어가 허락하는 한도 내에서) 무한대로 활용할 "
-"수 있음을 확인할 수 있습니다."
+"이 가이드에서 사용 중인 사용자 계정은 현재 default 자원 정책에 할당되어 있습니다. 이 정보는 사용자 페이지의 자격 증명 "
+"탭에서 확인할 수 있습니다. 자원 정책 패널에서는 모든 자원이 하드웨어 한도까지 사용 가능함을 확인할 수 있습니다 (∞)."
 
-#: ../../admin_menu/admin_menu.rst:219
+#: ../../admin_menu/admin_menu.rst:225
 msgid ""
-"You can modify resouce policies by clicking the gear button in the "
-"Control panel of default policy group. In Update Resource Policy dialog, "
-"every option is changeable except Policy Name, which is the primary key "
-"for distinguishing the resource policies in the list. Uncheck the "
-"Unlimited checkbox at the bottom of CPU, RAM, fGPU, and set the resource "
-"limits to the desired values. Set the amount of allocated resource to be "
-"smaller than the total amount of hardware's. Here, CPU, RAM and fGPU are "
-"set to 2, 4 and 1, respectively. Click the UPDATE button to update the "
-"resource policy."
+"To modify resource policies, click the gear icon in the Control column of"
+" the default policy group. In the Update Resource Policy dialog, every "
+"option is editable except for Policy Name, which serves as the primary "
+"key for distinguishing resource policies in the list. Uncheck the "
+"Unlimited checkbox at the bottom of CPU, RAM, and fGPU, and set the "
+"resource limits to the desired values. Ensure that the allocated "
+"resources are less than the total hardware capacity. In this case, set "
+"CPU, RAM, and fGPU to 2, 4, and 1 respectively. Click the OK button to "
+"apply the updated resource policy."
 msgstr ""
-"자원 정책 편집 화면에서 자원 정책 명을 제외한 모든 설정은 수정이 가능합니다. 이는 자원 정책 명이 자원 정책 리스트로 부터 각 "
-"자원 정책을 구분하는 고유 키이기 때문입니다. 수치로 입력할 수 있는 모든 부분들은 세션 생성/삭제 또는 vfolder 의 갯수에 "
-"사용되는 최대 값을 나타냅니다. CPU, RAM, fGPU 하단의 Unlimited 체크박스를 해제하고 원하는 값으로 자원 제약을 "
-"설정해봅니다. 이 때,제약하는 자원의 양이 하드웨어의 총 자원량 보다 작게 설정합니다. 여기서는 각각 2, 4, 1 로 설정을 "
-"했습니다. UPDATE 버튼을 클릭하여 자원 정책을 수정합니다."
+"자원 정책을 수정하려면 기본 정책 그룹의 제어 열에 있는 기어 아이콘을 클릭합니다. 자원 정책 업데이트 다이얼로그에서 정책 이름을 "
+"제외한 모든 옵션이 편집 가능하며, 이는 목록에서 자원 정책을 구별하는 주요 키 역할을 합니다. 여기에선 CPU, RAM 및 "
+"fGPU 하단의 무제한 확인란을 해제하고 원하는 값으로 리소스 제한을 설정하겠습니다. 할당된 리소스는 총 하드웨어 용량보다 작아야 "
+"합니다. 이 경우 CPU, RAM 및 fGPU를 각각 2, 4, 1로 설정하겠습니다. 업데이트된 자원 정책을 적용하려면 OK 버튼을"
+" 클릭합니다."
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Update resource policy dialog"
 msgstr "자원 정책 수정 다이얼로그"
 
-#: ../../admin_menu/admin_menu.rst:232
+#: ../../admin_menu/admin_menu.rst:239
 msgid ""
 "About details of each option in resource policy dialog, see the "
 "description below."
 msgstr "자원 정책 창의 각 옵션에 대한 자세한 내용은 아래 설명을 참조하시기 바랍니다."
 
-#: ../../admin_menu/admin_menu.rst:243
+#: ../../admin_menu/admin_menu.rst:250
 msgid "Resource Policy"
 msgstr "자원 정책"
 
-#: ../../admin_menu/admin_menu.rst:235
+#: ../../admin_menu/admin_menu.rst:242
 msgid "CPU: Specify the maximum amount of CPU cores. (max value: 512)"
 msgstr "CPU : CPU 코어 최대 할당 가능량을 설정합니다. (최대 입력 값: 512)"
 
-#: ../../admin_menu/admin_menu.rst:236
+#: ../../admin_menu/admin_menu.rst:243
 msgid ""
-"RAM: Specify the maximum amount of memory in GB. It would be good "
+"Memory: Specify the maximum amount of memory in GB. It would be good "
 "practice to set memory twice as large as the maximum value of GPU memory."
 " (max value: 1024)"
 msgstr ""
-"RAM : GB 단위로 최대 할당 가능한 메모리 양을 설정합니다. 최대 할당 가능한 GPU 메모리 양의 두 배 이상으로 설정하는 "
-"것을 권장합니다. (최대 입력 값: 1024)"
+"Memory : GB 단위로 최대 할당 가능한 메모리 양을 설정합니다. 최대 할당 가능한 GPU 메모리 양의 두 배 이상으로 "
+"설정하는 것을 권장합니다. (최대 입력 값: 1024)"
 
-#: ../../admin_menu/admin_menu.rst:238
+#: ../../admin_menu/admin_menu.rst:245
 msgid ""
-"GPU: Specify the maximum amount of physical GPUs. If fractional GPU is "
-"enabled by the server, this setting has no effect. (max value: 64)"
+"CUDA-capable GPU: Specify the maximum amount of physical GPUs. If "
+"fractional GPU is enabled by the server, this setting has no effect. (max"
+" value: 64)"
 msgstr ""
-"GPU : 할당 가능한 최대 물리 GPU 개수를 설정합니다. 서버에서 GPU 분할 가상화 기능이 켜져 있는 경우에는 (대부분의 "
-"엔터프라이즈 사이트에는 켜져 있습니다) 아무런 효과가 없습니다. (최대 입력 값: 64)"
+"CUDA-capable GPU : 할당 가능한 최대 물리 GPU 개수를 설정합니다. 서버에서 GPU 분할 가상화 기능이 켜져 있는 "
+"경우에는 (대부분의 엔터프라이즈 사이트에는 켜져 있습니다) 아무런 효과가 없습니다. (최대 입력 값: 64)"
 
-#: ../../admin_menu/admin_menu.rst:240
+#: ../../admin_menu/admin_menu.rst:247
 msgid ""
-"fGPU: Fractional GPU (fGPU) is literally split a single GPU to multiple "
-"partitions in order to use GPU efficiently. Notice that the minimum "
-"amount of fGPU required is differed by each image. If fractional GPU is "
-"not enabled by the server, this settings has no effect. (max value: 256)"
+"CUDA-capable GPU (fractional): Fractional GPU (fGPU) is literally split a"
+" single GPU to multiple partitions in order to use GPU efficiently. "
+"Notice that the minimum amount of fGPU required is differed by each "
+"image. If fractional GPU is not enabled by the server, this settings has "
+"no effect. (max value: 256)"
 msgstr ""
-"fGPU : Backend.AI 의 Fractional GPU (fGPU) 기능이 켜져 있으면, 물리 GPU 를 분할하여 여러 "
-"사용자 세션에 나눠어 배치하고 효율적으로 사용할 수 있습니다. 할당 가능한 최대 분할 GPU 양은 여기서 설정합니다. 만약 서버에 "
-"GPU 분할 가상화 기능이 꺼져 있다면 이 항목은 효과가 없습니다. (최대 입력 값: 256)"
+"CUDA-capable GPU (fractional) : Backend.AI 의 Fractional GPU (fGPU) 기능이 켜져"
+" 있으면, 물리 GPU 를 분할하여 여러 사용자 세션에 나눠어 배치하고 효율적으로 사용할 수 있습니다. 할당 가능한 최대 분할 "
+"GPU 양은 여기서 설정합니다. 만약 서버에 GPU 분할 가상화 기능이 꺼져 있다면 이 항목은 효과가 없습니다. (최대 입력 값: "
+"256)"
 
-#: ../../admin_menu/admin_menu.rst:261
+#: ../../admin_menu/admin_menu.rst:268
 msgid "Sessions"
 msgstr "연산 세션"
 
-#: ../../admin_menu/admin_menu.rst:246
+#: ../../admin_menu/admin_menu.rst:253
 msgid ""
 "Container Per Session: The maximum number of containers per session. To "
 "make a user to create a cluster session, this value should be greater "
@@ -472,7 +468,30 @@ msgstr ""
 "Container Per Session : 한 세션이 가질 수 있는 최대 컨테이너의 수. 사용자가 클러스터 세션을 생성할 수 있게 "
 "하라면, 이 값이 1보다 커야 합니다. (최대 입력 값: 100)"
 
-#: ../../admin_menu/admin_menu.rst:249
+#: ../../admin_menu/admin_menu.rst:256
+msgid ""
+"Session Lifetime (sec.): Limits the maximum lifetime of a compute session"
+" from the reservation in the active status, including ``PENDING`` and "
+"``RUNNING`` statuses. After this time, the session will be force-"
+"terminated even if it is fully utilized. This will be useful to prevent "
+"the session from running indefinitely."
+msgstr ""
+"Session Lifetime (sec.): 세션이 예약 시간 이후 활성 상태로 존재할 수 있는 최대 시간을 제한합니다. 이 때, "
+"활성 상태는 ``PENDING`` 및 ``RUNNING`` 상태를 포함합니다. 예약 후 설정된 시간이 지나면 세션은 지속적으로 "
+"사용중이라 할지라도 강제로 종료됩니다. 연산 세션이 무한히 실행되는 것을 방지하고자 할 때 유용하게 사용할 수 있습니다."
+
+#: ../../admin_menu/admin_menu.rst:261
+msgid ""
+"Concurrent Jobs: Maximum number of concurrent compute session per "
+"keypair. If this value is set to 3, for example, users bound to this "
+"resource policy cannot create more than 3 compute sessions "
+"simultaneously. (max value: 100)"
+msgstr ""
+"Concurrent Jobs: 키페어를 통해 동시에 생성할 수 있는 최대 연산 세션의 개수입니다. 예를 들어, 이 값이 3 으로 "
+"지정되어 있을 경우, 이 정책에 영향을 받는 사용자는 동시에 3 개를 넘는 연산 세션을 생성할 수 없습니다. (최대 입력 값: "
+"100)"
+
+#: ../../admin_menu/admin_menu.rst:264
 msgid ""
 "Idle timeout (sec.): Configurable period of time during which the user "
 "can leave their session untouched. If there is no activity at all on a "
@@ -485,34 +504,11 @@ msgstr ""
 "동안 연산 세션에 아무런 활동이 감지되지 않으면, 해당 세션은 자동으로 삭제 됩니다. 활동을 측정하는 기준은 다양하며 관리자가 "
 "설정할 수 있습니다. (최대 입력 값: 15552000(초) (약 180 일))"
 
-#: ../../admin_menu/admin_menu.rst:254
-msgid ""
-"Concurrent Jobs: Maximum number of concurrent compute session per "
-"keypair. If this value is set to 3, for example, users bound to this "
-"resource policy cannot create more than 3 compute sessions "
-"simultaneously. (max value: 100)"
-msgstr ""
-"Concurrent Jobs: 키페어를 통해 동시에 생성할 수 있는 최대 연산 세션의 개수입니다. 예를 들어, 이 값이 3 으로 "
-"지정되어 있을 경우, 이 정책에 영향을 받는 사용자는 동시에 3 개를 넘는 연산 세션을 생성할 수 없습니다. (최대 입력 값: "
-"100)"
-
-#: ../../admin_menu/admin_menu.rst:257
-msgid ""
-"Session Lifetime (sec.): Limits the maximum lifetime of a compute session"
-" from the reservation in the active status, including ``PENDING`` and "
-"``RUNNING`` statuses. After this time, the session will be force-"
-"terminated even if it is fully utilized. This will be useful to prevent "
-"the session from running indefinitely."
-msgstr ""
-"Session Lifetime (sec.): 세션이 예약 시간 이후 활성 상태로 존재할 수 있는 최대 시간을 제한합니다. 이 때, "
-"활성 상태는 ``PENDING`` 및 ``RUNNING`` 상태를 포함합니다. 예약 후 설정된 시간이 지나면 세션은 지속적으로 "
-"사용중이라 할지라도 강제로 종료됩니다. 연산 세션이 무한히 실행되는 것을 방지하고자 할 때 유용하게 사용할 수 있습니다."
-
-#: ../../admin_menu/admin_menu.rst:271
+#: ../../admin_menu/admin_menu.rst:275
 msgid "Folders"
 msgstr "폴더"
 
-#: ../../admin_menu/admin_menu.rst:264
+#: ../../admin_menu/admin_menu.rst:271
 msgid ""
 "Allowed hosts: Backend.AI supports many NFS mountpoint. This field limits"
 " the accessibility to them. Even if a NFS named \"data-1\" is mounted on "
@@ -523,53 +519,46 @@ msgstr ""
 "접근할 수 있는 마운트 위치를 지정할 수 있 습니다. 예를 들어, “data-1” 이라는 NFS 가 Backend.AI 에서 "
 "인식되어 있는 상태일지라도, Allowed hosts 정책으로 허용되지 않은 경우 사용자는 해당 NFS 에 접근할 수 없습니다."
 
-#: ../../admin_menu/admin_menu.rst:267
+#: ../../admin_menu/admin_menu.rst:274
 msgid ""
-"Capacity (GB): the maximum size (GB) a storage folder can contain. This "
-"feature is only effective for special type of storages/filesystems such "
-"as FlashBlade. (max value: 1024)"
+"(Deprecated since 23.09.4) Max. #: the maximum number of storage folders "
+"that can be created/invited. (max value: 100)."
 msgstr ""
-"Capacity(GB) : 하나의 저장 폴더가 가질 수 있는 최대 파일 크기입니다. 이 항목은 FlashBlade 등과 같은 특별한"
-" 저장소나 파일시스템에서만 작동합니다.(최대 입력 값: 1024)"
+"(23.09.4 이후로 사용 중단) Max. #: 생성 또는 공유 초대 받을 수 있는 저장 폴더의 최대 개수입니다. (최대 입력 "
+"값: 50)"
 
-#: ../../admin_menu/admin_menu.rst:270
+#: ../../admin_menu/admin_menu.rst:277
 msgid ""
-"Max. #: the maximum number of storage folders that can be "
-"created/invited. (max value: 100)"
-msgstr "Max. #: 생성 또는 공유 초대 받을 수 있는 저장 폴더의 최대 개수입니다. (최대 입력 값: 50)"
+"In the keypair resource policy list, check that the Resources value of "
+"the default policy has been updated."
+msgstr "키페어 자원 정책 리스트에서 default 정책의 Resources 값이 업데이트 된 것을 확인합니다."
 
-#: ../../admin_menu/admin_menu.rst:273
+#: ../../admin_menu/admin_menu.rst:284
 msgid ""
-"In the resource policy list, check that the Resources value of the "
-"default policy has been updated."
-msgstr "자원 정책 리스트에서 default 정책의 Resources 값이 업데이트 된 것을 확인합니다."
+"You can create a new resource policy by clicking the Create button. Each "
+"setting value is the same as described above."
+msgstr "Create 버튼을 클릭하여 새로운 자원 정책을 생성할 수도 있습니다. 각 설정값의 위미는 상기 설명과 동일합니다."
 
-#: ../../admin_menu/admin_menu.rst:280
-msgid ""
-"You can create a new resource policy by clicking the CREATE POLICY "
-"button. Each setting value is the same as described above."
-msgstr "CREATE POLICY 버튼을 클릭하여 새로운 자원 정책을 생성할 수도 있습니다. 각 설정값의 위미는 상기 설명과 동일합니다."
-
-#: ../../admin_menu/admin_menu.rst:283
+#: ../../admin_menu/admin_menu.rst:287
 msgid ""
 "To create a resource policy and associate it with a keypair, go to the "
 "Credentials tab of the Users page, click the gear button located in the "
-"Controls panel of the desired keypair, and click the Select Policy field "
-"to choose it."
+"Controls column of the desired keypair, and click the Select Policy field"
+" to choose it."
 msgstr ""
-"자원 정책을 생성한 후 키페어에 연결하기 위해서는 Users 페이지의 Credentials 탭으로 가서 원하는 키페어의 "
+"키페어 자원 정책을 생성한 후 키페어에 연결하기 위해서는 Users 페이지의 Credentials 탭으로 가서 원하는 키페어의 "
 "Controls 열에 위치한 톱니바퀴 설정 버튼을 누른 후 Select Policy 필드를 클릭하여 선택하면 됩니다."
 
-#: ../../admin_menu/admin_menu.rst:288
+#: ../../admin_menu/admin_menu.rst:292
 msgid ""
 "You can also delete each of resource keypairs by clicking trash can icon "
-"in the Control panel. When you click the icon, the confirmation dialog "
-"will appears. click OKAY button to delete."
+"in the Control column. When you click the icon, the confirmation popup "
+"will appears. click Delete button to delete."
 msgstr ""
-"Control 열의 휴지통 아이콘을 눌러서 자원 정책을 삭제할 수도 있습니다. 아이콘을 클릭하면 삭제 확인 다이얼로그가 나타나게 "
-"됩니다. OKAY 버튼을 눌러서 삭제할 수 있습니다."
+"Control 열의 휴지통 아이콘을 클릭하여 각 리소스 키페어를 삭제할 수 있습니다. 아이콘을 클릭하면 확인 팝업이 나타납니다. "
+"삭제하려면 Delete 버튼을 클릭하세요."
 
-#: ../../admin_menu/admin_menu.rst:298
+#: ../../admin_menu/admin_menu.rst:302
 msgid ""
 "If there's any users (including inactive users) following a resource "
 "policy to be deleted, deletion may not be done. Before deleting a "
@@ -579,25 +568,213 @@ msgstr ""
 "비활성 사용자를 포함한 어떤 유저가 삭제할 자원 정책을 따르고 있다면, 삭제가 되지 않을 수 있습니다. 자원 정책을 삭제하기 "
 "위해서는 반드시 해당 자원 정책을 선택한 사용자가 남아 있지 않도록 하십시오."
 
-#: ../../admin_menu/admin_menu.rst:305
+#: ../../admin_menu/admin_menu.rst:306
 msgid ""
-"In each of USERS, CREDENTIALS, RESOURCE POLICIES tabs, there is an icon "
-"(``...``) on the right side of the tab header. Clicking this shows export"
-" CSV menu, which again brings up a CSV export dialog for each tabs. By "
-"giving an appropriate file name, if necessary, and clicking EXPORT CSV "
-"FILE button, you can download the list of users, keypairs, and/or "
-"resource policies."
+"If you want to hide or show specific columns, click the gear icon at the "
+"bottom right of the table. This will bring up a dialog where you can "
+"select the columns you want to display."
 msgstr ""
-"USERS, CREDENTIALS, RESOURCE POLICIES 탭의 우측 끝부분에 ⋯ 모양의 아이콘이 있습니다. 이 버튼을 "
-"클릭하면 export CSV 메뉴가 뜨고, 다시 이 메뉴를 클릭하면 각 탭 자원 별 CSV export 다이얼로그가 뜹니다. 필요한"
-" 경우 적당한 파일 이름을 쓰고 EXPORT CSV FILE 버튼을 클릭하면 사용자, 키페어, 자원 정책의 리스트를 CSV 형태로 "
-"다운로드 할 수 있습니다."
+"특정 열을 숨기거나 보고 싶다면 테이블 우측 하단의 기어 아이콘을 클릭합니다. 그러면 아래 다이얼로그가 표시되어 보고 싶은 열을 "
+"선택할 수 있습니다."
+
+#: ../../admin_menu/admin_menu.rst:-1
+msgid "Keypair resource policy table settings"
+msgstr "키페어 자원 정책 수정 다이얼로그"
+
+#: ../../admin_menu/admin_menu.rst:316
+msgid "User Resource Policy"
+msgstr "사용자 자원 정책"
 
 #: ../../admin_menu/admin_menu.rst:318
+msgid ""
+"Starting from version 24.03, Backend.AI supports user resource policy "
+"management. While each user can have multiple keypairs, a user can only "
+"have one user resource policy. In the user resource policy page, you can "
+"set restrictions on various settings related to folders such as Max "
+"Folder Count and Max Folder Size, as well as individual resource limits "
+"like Max Session Count Per Model Session and Max Customized Image Count."
+msgstr ""
+"24.03 버전부터 Backend.AI는 사용자 자원 정책 관리를 지원합니다. 각 사용자는 여러 키페어를 가질 수 있지만 사용자 당"
+" 사용자 자원 정책은 하나만 가질 수 있습니다. 사용자 자원 정책 페이지에서는 Max Folder Count 및 Max Folder"
+" Size와 같은 폴더 관련 다양한 설정에 제한을 정할 수 있으며, Max Session Count Per Model Session"
+" 및 Max Customized Image Count와 같은 개별 리소스 제한도 설정할 수 있습니다."
+
+#: ../../admin_menu/admin_menu.rst:-1
+msgid "User resource policy list"
+msgstr "사용자 자원 정책 리스트"
+
+#: ../../admin_menu/admin_menu.rst:327
+msgid "To create a new user resource policy, click the Create button."
+msgstr "테이블 오른쪽 위에 있는 Create 버튼을 클릭하여 새로운 사용자 자원 정책을 생성할 수 있습니다."
+
+#: ../../admin_menu/admin_menu.rst:-1
+msgid "Create user resource policy dialog"
+msgstr "사용자 자원 정책 수정 다이얼로그"
+
+#: ../../admin_menu/admin_menu.rst:334
+msgid "Name: The name of the user resource policy."
+msgstr "Name: 사용자 자원 정책의 이름입니다."
+
+#: ../../admin_menu/admin_menu.rst:335
+msgid ""
+"Max Folder Count: The maximum number of folders that the user can create."
+" If the user's folder count exceeds this value, the user cannot create a "
+"new folder. If set to Unlimited, it is displayed as \"∞\"."
+msgstr ""
+"Max Folder Count: 사용자가 생성할 수 있는 최대 폴더 수입니다. 사용자의 폴더 수가 이 값을 초과하면 새 폴더를 "
+"생성할 수 없습니다. 무제한으로 설정된 경우에는 “∞“로 표시됩니다."
+
+#: ../../admin_menu/admin_menu.rst:338
+msgid ""
+"Max Folder Size: The maximum size of the user's storage space. If the "
+"user's storage space exceeds this value, the user cannot create a new "
+"data folder. If set to Unlimited, it is displayed as \"∞\"."
+msgstr ""
+"Max Folder Size: 사용자의 저장 공간의 최대 크기입니다. 사용자의 저장 공간이 이 값을 초과하면 사용자는 새 데이터 "
+"폴더를 만들 수 없습니다. 무제한으로 설정된 경우에는 “∞“로 표시됩니다."
+
+#: ../../admin_menu/admin_menu.rst:341
+msgid ""
+"Max Session Count Per Model Session: The maximum number of available "
+"sessions per model service created by a user. Increasing this value can "
+"put a heavy load on the session scheduler and potentially lead to system "
+"downtime, so please exercise caution when adjusting this setting."
+msgstr ""
+"Max Session Count Per Model Session: 각 사용자가 생성한 모델 서비스 당 사용 가능한 세션의 최대 "
+"수입니다. 이 값을 증가시키면 세션 스케줄러에 부하가 가해질 수 있고, 잠재적으로 시스템 다운타임으로 이어질 수 있으니 이 설정을 "
+"조정할 때 주의하시기 바랍니다."
+
+#: ../../admin_menu/admin_menu.rst:345
+msgid ""
+"Max Customized Image Count: The maximum number of customized images that "
+"the user can create. If the user's customized image count exceeds this "
+"value, the user cannot create a new customized image. If you want to know"
+" more about customized images, please refer to the :ref:`My Environments"
+"<my-environments>` section."
+msgstr ""
+"Max Customized Image Count: 사용자가 생성할 수 있는 최대 사용자 정의 이미지 수입니다. 사용자의 사용자 정의"
+" 이미지 수가 이 값을 초과하면 사용자는 새로운 사용자 정의 이미지를 만들 수 없습니다. 사용자 정의 이미지에 대해 더 알고 "
+"싶다면, :ref:`나의 실행 환경<my-environments>` 섹션을 참조해주세요."
+
+#: ../../admin_menu/admin_menu.rst:349
+msgid "ID: The ID of the user resource policy."
+msgstr "ID: 사용자 자원 정책의 ID입니다."
+
+#: ../../admin_menu/admin_menu.rst:350
+msgid "Created At: The date and time when the user resource policy was created."
+msgstr "Created At: 사용자 자원 정책이 생성된 날짜와 시간입니다."
+
+#: ../../admin_menu/admin_menu.rst:353
+msgid ""
+"To update, click the gear icon button in the control column. To delete, "
+"click the trash can icon button."
+msgstr "업데이트하려면 제어 열의 기어 아이콘 버튼을 클릭합니다. 삭제하려면 휴지통 아이콘 버튼을 클릭하세요."
+
+#: ../../admin_menu/admin_menu.rst:358
+msgid ""
+"Changing a resource policy can affect all users that use that user "
+"resource policy, so use it with care."
+msgstr "자원 정책을 변경하면 해당 사용자 자원 정책을 사용하는 모든 사용자에게 영향을 줄 수 있으므로 주의해서 사용하시길 바랍니다."
+
+#: ../../admin_menu/admin_menu.rst:361
+msgid ""
+"Similar to keypair resource policy, you can select and display only the "
+"columns you want by clicking the gear icon button at the bottom right of "
+"the table."
+msgstr "키페어 자원 정책과 마찬가지로, 원하는 열만 선택하여 표시하려면 테이블 오른쪽 하단의 기어 아이콘 버튼을 클릭하세요."
+
+#: ../../admin_menu/admin_menu.rst:366
+msgid "Project Resource Policy"
+msgstr "프로젝트 자원 정책"
+
+#: ../../admin_menu/admin_menu.rst:368
+msgid ""
+"Starting from version 24.03, Backend.AI supports project resource policy "
+"management. Project resource policies manage storage space (quota) and "
+"folder-related limitations for projects."
+msgstr ""
+"24.03 버전부터 Backend.AI는 프로젝트 자원 정책 관리를 지원합니다. 프로젝트 자원 정책은 프로젝트의 저장 공간(할당량)"
+" 및 폴더 관련 제한 사항을 관리합니다."
+
+#: ../../admin_menu/admin_menu.rst:371
+msgid ""
+"When clicking the Project tab of the Resource Policy page, you can see "
+"the list of project resource policy."
+msgstr "Resource Policy 페이지의 Project 탭을 클릭하면 프로젝트 자원 정책 목록을 볼 수 있습니다."
+
+#: ../../admin_menu/admin_menu.rst:-1
+msgid "Project resource policy list"
+msgstr "프로젝트 자원 정책 수정 다이얼로그"
+
+#: ../../admin_menu/admin_menu.rst:377
+msgid ""
+"To create a new project resource policy, click the Create button at the "
+"top right of the table."
+msgstr "테이블 오른쪽 위에 있는 Create 버튼을 클릭하여 새로운 프로젝트 자원 정책을 생성할 수 있습니다."
+
+#: ../../admin_menu/admin_menu.rst:-1
+msgid "Create project resource policy dialog"
+msgstr "프로젝트 자원 정책 수정 다이얼로그"
+
+#: ../../admin_menu/admin_menu.rst:384
+msgid "Name: The name of the project resource policy."
+msgstr "Name: 프로젝트 자원 정책의 이름입니다."
+
+#: ../../admin_menu/admin_menu.rst:385
+msgid ""
+"Max Folder Count: The maximum number of project folders that an "
+"administrator can create. If the project folder count exceeds this value,"
+" the administrator will not be able to create a new project folder. If "
+"set to Unlimited, it will be displayed as \"∞\"."
+msgstr ""
+"Max Folder Count: 관리자가 생성할 수 있는 프로젝트 폴더의 최대 수입니다. 프로젝트 폴더 수가 이 값을 초과하면 "
+"관리자는 새 프로젝트 폴더를 생성할 수 없습니다. 무제한으로 설정된 경우에는 “∞“로 표시됩니다."
+
+#: ../../admin_menu/admin_menu.rst:388
+msgid ""
+"Max Folder Size: The maximum size of the project's storage space. If the "
+"project's storage space exceeds this value, the administrator cannot "
+"create a new project folder. If set to Unlimited, it is displayed as "
+"\"∞\"."
+msgstr ""
+"Max Folder Size: 프로젝트의 저장 공간의 최대 크기입니다. 프로젝트의 저장 공간이 이 값을 초과하면 관리자는 새 "
+"프로젝트 폴더를 만들 수 없습니다. 무제한으로 설정된 경우에는 “∞“로 표시됩니다."
+
+#: ../../admin_menu/admin_menu.rst:392
+msgid ""
+"The meaning of each field is similar to the user resource policy. The "
+"difference is that the project resource policy is applied to the project "
+"folders, while the user resource policy is applied to the user folders."
+msgstr ""
+"각 필드의 의미는 사용자 자원 정책과 유사합니다. 차이점은 프로젝트 자원 정책이 프로젝트 폴더에 적용되는 반면 사용자 자원 정책은 "
+"사용자 폴더에 적용된다는 것입니다."
+
+#: ../../admin_menu/admin_menu.rst:396
+msgid ""
+"If you want to make changes, click the gear icon button in the control "
+"column. Resource policy names cannot be edited. Deletion can be done by "
+"clicking the trash can icon button."
+msgstr ""
+"변경을 원하면 제어 열의 기어 아이콘 버튼을 클릭하세요. 자원 정책 이름은 편집할 수 없습니다. 삭제는 휴지통 아이콘 버튼을 "
+"클릭하여 수행할 수 있습니다."
+
+#: ../../admin_menu/admin_menu.rst:400
+msgid ""
+"Changing a resource policy can affect all projects that use that project "
+"resource policy, so use it with care."
+msgstr "자원 정책을 변경하면 해당 프로젝트 자원 정책을 사용하는 모든 프로젝트에 영향을 줄 수 있으므로 주의해서 사용하시길 바랍니다."
+
+#: ../../admin_menu/admin_menu.rst:403
+msgid ""
+"You can select and display only the columns you want by clicking the gear"
+" icon button at the bottom right of the table."
+msgstr "원하는 열만 선택하여 표시하려면 테이블 오른쪽 하단의 기어 아이콘 버튼을 클릭하세요."
+
+#: ../../admin_menu/admin_menu.rst:407
 msgid "Manage Images"
 msgstr "이미지 관리"
 
-#: ../../admin_menu/admin_menu.rst:320
+#: ../../admin_menu/admin_menu.rst:409
 msgid ""
 "Admins can manage images, which are used in creating a compute session, "
 "in the Images tab of the Environments page. In the tab, meta information "
@@ -612,7 +789,7 @@ msgstr ""
 " 이름, 이미지의 기반 OS, Digest, 요구되는 최소 자원 등의 정보를 확인할 수 있습니다. 관리되고 있는 agent 노드 중"
 " 하나 이상에 다운로드 되어 있는 이미지의 경우 ``installed`` 태그가 각 이미지의 Status 컬럼에 표시됩니다."
 
-#: ../../admin_menu/admin_menu.rst:328
+#: ../../admin_menu/admin_menu.rst:417
 msgid ""
 "The feature to install images by selecting specific agents is currently "
 "under development."
@@ -622,7 +799,7 @@ msgstr "특정 agent를 선택하여 이미지를 설치하는 기능은 현재 
 msgid "Image list page"
 msgstr ""
 
-#: ../../admin_menu/admin_menu.rst:334
+#: ../../admin_menu/admin_menu.rst:423
 msgid ""
 "You can change the minimum resource requirements for each image by "
 "clicking the gear icon in the Controls panel. Each image has hardware and"
@@ -639,7 +816,7 @@ msgstr ""
 " 기본값은 이미지의 메타데이터에 포함된 채로 제공됩니다. 각 이미지마다 지정 된 자원의 양보다 작은 자원으로 세션을 생성하려고 할 "
 "경우, 해당 요청은 자동으로 이미지 최소 자원 요구량으로 조정된 후 생성이 진행됩니다."
 
-#: ../../admin_menu/admin_menu.rst:344
+#: ../../admin_menu/admin_menu.rst:433
 msgid ""
 "Don't change the minimum resource requirements to an amount less than the"
 " predefined value! The minimum resource requirements included in the "
@@ -654,11 +831,11 @@ msgstr ""
 msgid "Update image resource setting"
 msgstr "이미지 자원 설정 업데이트"
 
-#: ../../admin_menu/admin_menu.rst:357
+#: ../../admin_menu/admin_menu.rst:446
 msgid "Manager docker registry"
 msgstr "도커 레지스트리 관리"
 
-#: ../../admin_menu/admin_menu.rst:359
+#: ../../admin_menu/admin_menu.rst:448
 msgid ""
 "You can click on the Registries tab in Environments page to see the "
 "information of the docker registry that are currently connected. "
@@ -668,13 +845,13 @@ msgstr ""
 "Environments의 Registries 탭을 클릭하여 현재 연결되어 있는 도커 레지스트리의 정보를 확인할 수 있습니다. "
 "``cr.backend.ai`` 는 Harbor에서 서비스 하는 레지스트리로 기본적으로 등록되어 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:364
+#: ../../admin_menu/admin_menu.rst:453
 msgid ""
 "In the offline environment, the default registry is not accessible, so "
 "click the trash icon on the right to delete it."
 msgstr "오프라인 환경일 경우 기본 도커 레지스트리에 접근이 불가능하므로, 우측 휴지통 아이콘을 클릭하여 삭제하면 됩니다."
 
-#: ../../admin_menu/admin_menu.rst:367
+#: ../../admin_menu/admin_menu.rst:456
 msgid ""
 "Click the refresh icon in Controls to update image metadata for "
 "Backend.AI from the connected registry. Image information which does not "
@@ -689,7 +866,7 @@ msgstr ""
 msgid "Registries page"
 msgstr ""
 
-#: ../../admin_menu/admin_menu.rst:374
+#: ../../admin_menu/admin_menu.rst:463
 msgid ""
 "You can add your own private docker registry by clicking the ADD REGISTRY"
 " button. Note that Registry Hostname and Registry URL address must be set"
@@ -709,13 +886,13 @@ msgstr ""
 msgid "Add registry dialog"
 msgstr ""
 
-#: ../../admin_menu/admin_menu.rst:387
+#: ../../admin_menu/admin_menu.rst:476
 msgid ""
 "You can also update the information of an existing registry, except the "
 "hostname."
 msgstr "Registry Hostname을 제외하고 이미 존재하는 레지스트리 정보를 수정할 수도 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:390
+#: ../../admin_menu/admin_menu.rst:479
 msgid ""
 "Even if you created a registry and update meta information, users cannot "
 "use the images in the registry, immediately. Just as you had to register "
@@ -734,11 +911,11 @@ msgstr ""
 "Control-Panel을 이용해서 할 수 있습니다. 키페어의 자원 정책에서 allowed docker registries를 "
 "설정하는 기능은 아직 제공하지 않고 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:401
+#: ../../admin_menu/admin_menu.rst:490
 msgid "Manage resource preset"
 msgstr "자원 프리셋 설정"
 
-#: ../../admin_menu/admin_menu.rst:403
+#: ../../admin_menu/admin_menu.rst:492
 msgid ""
 "The following predefined resource presets are displayed in the Resource "
 "allocation panel when creating a compute session. Superadmin can manage "
@@ -751,7 +928,7 @@ msgstr ""
 msgid "Resource presets in compute session launch dialog"
 msgstr ""
 
-#: ../../admin_menu/admin_menu.rst:412
+#: ../../admin_menu/admin_menu.rst:501
 msgid ""
 "Go to the Resource Presets tab on the Environment page. You can check the"
 " list of currently defined resource presets."
@@ -763,7 +940,7 @@ msgstr ""
 msgid "Resource presets tab"
 msgstr "자원 프리셋 탭"
 
-#: ../../admin_menu/admin_menu.rst:418
+#: ../../admin_menu/admin_menu.rst:507
 msgid ""
 "You can set resources such as CPU, RAM, fGPU, etc. to be provided by the "
 "resource preset by clicking the gear icon (cogwheel) in the Controls "
@@ -783,7 +960,7 @@ msgstr ""
 msgid "Modify resource preset dialog"
 msgstr "자원 프리셋 수정 다이얼로그"
 
-#: ../../admin_menu/admin_menu.rst:432
+#: ../../admin_menu/admin_menu.rst:521
 msgid ""
 "Also you can create resource preset by Clicking CREATE PRESETS button in "
 "the right top of the Resource Presets tab. You cannot create the same "
@@ -798,11 +975,11 @@ msgstr ""
 msgid "Create resource preset dialog"
 msgstr "자원 프리셋 생성 다이얼로그"
 
-#: ../../admin_menu/admin_menu.rst:444
+#: ../../admin_menu/admin_menu.rst:533
 msgid "Manage agent nodes"
 msgstr "Agent 노드 관리"
 
-#: ../../admin_menu/admin_menu.rst:446
+#: ../../admin_menu/admin_menu.rst:535
 msgid ""
 "Superadmins can view the list of agent worker nodes, currently connected "
 "to Backend.AI, by visiting the Resources page. You can check agent node's"
@@ -813,7 +990,7 @@ msgstr ""
 "노드를 조회할 수 있습니다. 노드의 IP와 연결된 시간, 현재 사용중인 실제 자원 등을 조회할 수 있습니다. Web-UI 앱에서는 "
 "별도로 agent 노드를 조작하는 기능은 제공하지 않습니다."
 
-#: ../../admin_menu/admin_menu.rst:452
+#: ../../admin_menu/admin_menu.rst:541
 msgid "Query agent nodes"
 msgstr "Agent 노드 조회"
 
@@ -821,7 +998,7 @@ msgstr "Agent 노드 조회"
 msgid "Agent node list"
 msgstr "Agent 노드 목록"
 
-#: ../../admin_menu/admin_menu.rst:457
+#: ../../admin_menu/admin_menu.rst:546
 msgid ""
 "Also You can see exact usage about the resources in the agent worker node"
 " by Click note icon in the Control panel."
@@ -831,7 +1008,7 @@ msgstr "또한 agent 워커 노드의 자원에 대한 정확한 사용량을 Co
 msgid "Detailed agent node usage information"
 msgstr "Agent 노드 사용 상세 정보"
 
-#: ../../admin_menu/admin_menu.rst:465
+#: ../../admin_menu/admin_menu.rst:554
 msgid ""
 "On Terminated tab, you can check the information of the agents that has "
 "been connected once and then terminated or disconnected. It can be used "
@@ -845,11 +1022,11 @@ msgstr ""
 msgid "Terminated agent node list"
 msgstr "종료된 Agent 노드 목록"
 
-#: ../../admin_menu/admin_menu.rst:474
+#: ../../admin_menu/admin_menu.rst:563
 msgid "Set schedulable status of agent nodes"
 msgstr "Agent 노드의 스케줄링 가능 상태 설정하기"
 
-#: ../../admin_menu/admin_menu.rst:476
+#: ../../admin_menu/admin_menu.rst:565
 msgid ""
 "You may want to prevent new compute sessions from being scheduled to an "
 "Agent service without stopping it. In this case, you can disable the "
@@ -864,11 +1041,11 @@ msgstr ""
 msgid "Agent settings"
 msgstr "Agent 설정"
 
-#: ../../admin_menu/admin_menu.rst:489
+#: ../../admin_menu/admin_menu.rst:578
 msgid "Manage resource group"
 msgstr "자원 그룹 관리"
 
-#: ../../admin_menu/admin_menu.rst:491
+#: ../../admin_menu/admin_menu.rst:580
 msgid ""
 "Agents can be grouped into units called resource (scaling) groups. For "
 "example, let's say there are 3 agents with V100 GPUs and 2 agents with "
@@ -880,7 +1057,7 @@ msgstr ""
 "탑재한 agent가 2대 있는데, 사용자에게 두 GPU 자원을 별도로 노출하고 싶을 경우 V100 agent 3대를 하나의 자원 "
 "그룹으로 묶고, 나머지 P100 agent 2대를 다른 자원 그룹으로 묶어서 관리할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:497
+#: ../../admin_menu/admin_menu.rst:586
 msgid ""
 "Adding a specific agent to a specific resource group is not currently "
 "handled in the Web-UI, and it can be done by editing agent config file "
@@ -896,7 +1073,7 @@ msgstr ""
 msgid "Resource group tab"
 msgstr "자원 그룹 탭"
 
-#: ../../admin_menu/admin_menu.rst:505
+#: ../../admin_menu/admin_menu.rst:594
 msgid ""
 "You can edit a resource group by clicking the gear icon in the Control "
 "panel. In the Select scheduler field, you can choose the scheduling "
@@ -917,7 +1094,7 @@ msgstr ""
 msgid "Modify resource group dialog"
 msgstr "자원 그룹 수정 다이얼로그"
 
-#: ../../admin_menu/admin_menu.rst:518
+#: ../../admin_menu/admin_menu.rst:607
 msgid ""
 "WSProxy Server Address sets the WSProxy address for the resource group's "
 "Agents to use. If you set a URL in this field, WSProxy will relay the "
@@ -936,13 +1113,13 @@ msgstr ""
 "Agent 가 설치된 노드로 직접적인 네트워크 연결이 불가능한 경우에는, 이 필드를 빈 값으로 설정하여 Manager 를 거쳐 "
 "컨테이너로 트래픽을 중계하는 v1 API 를 사용할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:527
+#: ../../admin_menu/admin_menu.rst:616
 msgid ""
 "The resource group has further Scheduler Options. The details are "
 "described below."
 msgstr "리소스 그룹에서 스케줄러 관련 옵션(Scheduler Options)을 추가 설정할 수도 있습니다. 각 항목은 다음 의미를 가집니다."
 
-#: ../../admin_menu/admin_menu.rst:529
+#: ../../admin_menu/admin_menu.rst:618
 msgid ""
 "Allowed session types: Since user can choose the type of session, "
 "resource group can allow certain type of session. You should allow at "
@@ -950,9 +1127,10 @@ msgid ""
 " and Inference."
 msgstr ""
 "Allowed session types: 사용자가 세션 타입을 설정할 수 있기 때문에, 자원 그룹에서도 특정 타입의 세션만 허용할 "
-"수 있습니다. 하나 이상의 세션 타입을 허용해야 합니다. 허용되는 세션 타입은 Interactive, Batch, Inference 입니다."
+"수 있습니다. 하나 이상의 세션 타입을 허용해야 합니다. 허용되는 세션 타입은 Interactive, Batch, Inference"
+" 입니다."
 
-#: ../../admin_menu/admin_menu.rst:532
+#: ../../admin_menu/admin_menu.rst:621
 msgid ""
 "Pending timeout: A compute session will be canceled if it stays "
 "``PENDING`` status for longer than the Pending timeout. When you wish to "
@@ -964,7 +1142,7 @@ msgstr ""
 "취소합니다. 무한히 PENDING 상태에 머무르는 세션을 방지하고자 할 때 기준 시간을 설정합니다. 0을 설정하면 Pending "
 "timeout을 적용하지 않습니다."
 
-#: ../../admin_menu/admin_menu.rst:537
+#: ../../admin_menu/admin_menu.rst:626
 msgid ""
 "The number of retries to skip pending session: The number of retries the "
 "scheduler tries before skipping a PENDING session. It can be configured "
@@ -973,16 +1151,16 @@ msgid ""
 "no value is specified, the global value in Etcd will be used (``num "
 "retries to skip``, default three times)."
 msgstr ""
-"The number of retries to skip pending session: PENDING 세션을 건너뛸 때까지의 스케줄러 재시도 횟수입니다. "
-"한 PENDING 세션이 그 뒤에 요 청된 세션의 스케줄링을 무한히 막는 경우(Head-of-line blocking, HOL)를 방지하 기 위해 "
-"설정할 수 있습니다. 따로 설정하지 않는 경우에는 Etcd 에 설정된 글로벌 값 (num_retries_to_skip, 기본 3 회)을 사용하게 "
-"됩니다."
+"The number of retries to skip pending session: PENDING 세션을 건너뛸 때까지의 스케줄러 "
+"재시도 횟수입니다. 한 PENDING 세션이 그 뒤에 요 청된 세션의 스케줄링을 무한히 막는 경우(Head-of-line "
+"blocking, HOL)를 방지하 기 위해 설정할 수 있습니다. 따로 설정하지 않는 경우에는 Etcd 에 설정된 글로벌 값 "
+"(num_retries_to_skip, 기본 3 회)을 사용하게 됩니다."
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Modify resource group scheduler options"
 msgstr ""
 
-#: ../../admin_menu/admin_menu.rst:549
+#: ../../admin_menu/admin_menu.rst:638
 msgid ""
 "You can create a new resource policy by clicking the CREATE button. "
 "Likewise other creating options, you cannot create a resource policy with"
@@ -995,11 +1173,11 @@ msgstr ""
 msgid "Create resource group dialog"
 msgstr "자원 그룹 생성 다이얼로그"
 
-#: ../../admin_menu/admin_menu.rst:560
+#: ../../admin_menu/admin_menu.rst:649
 msgid "Storages"
 msgstr "저장소"
 
-#: ../../admin_menu/admin_menu.rst:562
+#: ../../admin_menu/admin_menu.rst:651
 msgid ""
 "On STORAGES tab, you can see what kind of mount volumes (usually NFS) "
 "exist. From 23.03 version, We provide per-user/per-project quota setting "
@@ -1011,7 +1189,7 @@ msgstr ""
 "쿼타 관리를 지원하는 스토리지에 대해 사용자별/프로젝트별 쿼타 설정이 가능합니다. 이 기능을 사용함으로써, 관리자는 좀 더 손쉽게 "
 "사용자와 프로젝트용 폴더가 스토리지 내에서 얼마만큼 공간을 차지하고 있는지 확인하고 관리할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:568
+#: ../../admin_menu/admin_menu.rst:657
 msgid ""
 "In order to set quota, you need to first access to storages tab in "
 "resource page. And then, click gear icon in control column."
@@ -1019,7 +1197,7 @@ msgstr ""
 "쿼타를 설정하기 위해서는, 자원 페이지의 저장소(스토리지) 탭에 먼저 접근해야 합니다. 그리고, 컨트롤 컬럼의 톱니바퀴 아이콘을 "
 "클릭합니다. "
 
-#: ../../admin_menu/admin_menu.rst:572
+#: ../../admin_menu/admin_menu.rst:661
 msgid ""
 "Please remind that quota setting is only available in storage that "
 "provides quota setting (e.g. XFS, CephFS, NetApp, Purestorage, etc.). "
@@ -1031,67 +1209,67 @@ msgstr ""
 "가능합니다. 저장소의 쿼타 설정 기능 제공 여부에 관계없이, 쿼타 설정 페이지는 제공하나, 내부적으로 쿼타 설정을 지원하지 않는 "
 "저장소에 대해서는 쿼타 설정할 수 없습니다."
 
-#: ../../admin_menu/admin_menu.rst:580
+#: ../../admin_menu/admin_menu.rst:671
 msgid "Quota Setting Panel"
 msgstr "쿼타 설정 패널"
 
-#: ../../admin_menu/admin_menu.rst:582
+#: ../../admin_menu/admin_menu.rst:673
 msgid ""
 "In Quota setting page, there are two panels that represent the "
 "corresponding items for each panel's title."
 msgstr "쿼타 설정 페이지에는 각 패널의 제목에 대응하는 두 개의 패널이 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:590
+#: ../../admin_menu/admin_menu.rst:681
 msgid "Overview panel"
 msgstr "스토리지 정보 패널"
 
-#: ../../admin_menu/admin_menu.rst:587
+#: ../../admin_menu/admin_menu.rst:678
 msgid "Usage: Shows the actual amount usage of the selected storage."
 msgstr "사용량: 선택된 저장소에서의 실제 사용량"
 
-#: ../../admin_menu/admin_menu.rst:588
+#: ../../admin_menu/admin_menu.rst:679
 msgid "Endpoint: Represents the mount point of the selected storage."
 msgstr "엔드포인트: 선택된 저장소가 스토리지 노드에 마운트된 경로"
 
-#: ../../admin_menu/admin_menu.rst:589
+#: ../../admin_menu/admin_menu.rst:680
 msgid "Backend Type: The type of storage."
 msgstr "백엔드 타입: 저장소의 타입"
 
-#: ../../admin_menu/admin_menu.rst:590
+#: ../../admin_menu/admin_menu.rst:681
 msgid "Capabilities: The supported feature of the selected storage."
 msgstr "지원 기능: 선택된 저장소에서 지원하는 기능"
 
-#: ../../admin_menu/admin_menu.rst:598
+#: ../../admin_menu/admin_menu.rst:689
 msgid "Quota Settings"
 msgstr "시스템 설정 조회"
 
-#: ../../admin_menu/admin_menu.rst:593
+#: ../../admin_menu/admin_menu.rst:684
 msgid "For User: Configure per-user quota setting here."
 msgstr "사용자 대상: 사용자별로 쿼타를 설정합니다."
 
-#: ../../admin_menu/admin_menu.rst:594
+#: ../../admin_menu/admin_menu.rst:685
 msgid "For Project: Configure per-project quota(project-folder) setting here."
 msgstr "프로젝트 대상: 프로젝트별로 쿼타(프로젝트-폴더) 를 설정합니다."
 
-#: ../../admin_menu/admin_menu.rst:595
+#: ../../admin_menu/admin_menu.rst:686
 msgid "ID: Corresponds to user or project id."
 msgstr "ID: 사용자나 프로젝트 ID에 대응합니다."
 
-#: ../../admin_menu/admin_menu.rst:596
+#: ../../admin_menu/admin_menu.rst:687
 msgid "Hard Limit (GB): Currently set hard limit quota for selected quota."
 msgstr "Hard Limit (GB): 선택된 쿼타에서 현재 설정된 Hard Limit 쿼타를 표시합니다."
 
-#: ../../admin_menu/admin_menu.rst:597
+#: ../../admin_menu/admin_menu.rst:688
 msgid ""
 "Control: Provides editing the hard limit or even deleting the quota "
 "setting."
 msgstr "설정: Hard limit 과 같은 설정값을 수정하거나, 쿼타 설정값을 삭제하는 기능을 제공합니다."
 
-#: ../../admin_menu/admin_menu.rst:601
+#: ../../admin_menu/admin_menu.rst:692
 msgid "Set User Quota"
 msgstr "사용자 쿼타 설정하기"
 
-#: ../../admin_menu/admin_menu.rst:603
+#: ../../admin_menu/admin_menu.rst:694
 msgid ""
 "In Backend.AI, there are two types of vfolders created by user and "
 "admin(project). In this section, we would like to show how to check "
@@ -1106,7 +1284,7 @@ msgstr ""
 "확인해주세요. 그 다음, 쿼타를 수정하고 확인할 대상인 사용자를 선택해주세요. 만일 쿼타가 이미 설정되어 있다면, 사용자 ID와 "
 "동일한 쿼타 ID 값이 테이블에 표시된 것을 확인하실 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:611
+#: ../../admin_menu/admin_menu.rst:702
 msgid ""
 "Of course, if you want to edit the quota, you can simply click the Edit "
 "button in the control column. After Clicking ``Edit`` button, you may see"
@@ -1118,11 +1296,11 @@ msgstr ""
 "쿼타를 설정하는 작은 모달 창이 뜬 것을 확인하실 수 있습니다. 설정할 값을 정확히 입력 후, 반드시 ``OK`` 버튼을 "
 "클릭해주세요. 그렇지 않으면 변경 내용은 반영되지 않습니다. "
 
-#: ../../admin_menu/admin_menu.rst:618
+#: ../../admin_menu/admin_menu.rst:709
 msgid "Set Project Quota"
 msgstr "프로젝트 쿼타 설정하기"
 
-#: ../../admin_menu/admin_menu.rst:620
+#: ../../admin_menu/admin_menu.rst:711
 msgid ""
 "Setting a quota on project-folder is similar to setting a user quota. The"
 " difference between setting project quota and user quota is to confirm "
@@ -1135,11 +1313,11 @@ msgstr ""
 "차이점은, 프로젝트별로 적용되는 쿼타에서는 프로젝트가 소속되어 있는 도메인을 우선 선택하는 과정이 추가되었다는 것입니다. 그 이후 "
 "과정은 동일합니다. 하단 그림에서 볼 수 있듯이, 우선 도메인을 선택하고, 적용할 프로젝트를 선택하면 됩니다."
 
-#: ../../admin_menu/admin_menu.rst:632
+#: ../../admin_menu/admin_menu.rst:723
 msgid "Unset Quota"
 msgstr "쿼타 해제하기"
 
-#: ../../admin_menu/admin_menu.rst:634
+#: ../../admin_menu/admin_menu.rst:725
 msgid ""
 "We also provides the feature to unset the quota. Please remind that after"
 " removing the quota setting, quota will automatically follows user or "
@@ -1159,7 +1337,7 @@ msgstr ""
 "클릭하게 되면, 쿼타 설정값이 삭제되고, 자동으로 쿼타 설정값은 쿼타의 타입(사용자 / 프로젝트)에 대응하는 값으로 적용되게 "
 "됩니다."
 
-#: ../../admin_menu/admin_menu.rst:645
+#: ../../admin_menu/admin_menu.rst:736
 msgid ""
 "If there's no config per user/project, then corresponding values in the "
 "user/project resource policy will be set as a default value. For example,"
@@ -1170,11 +1348,11 @@ msgstr ""
 "예를 들어 쿼타에서 hard limit 값이 설정되어 있지 않다면, 자원 정책 내 ``max_vfolder_size`` 값이 기본 "
 "값으로 쓰이게 됩니다."
 
-#: ../../admin_menu/admin_menu.rst:653
+#: ../../admin_menu/admin_menu.rst:744
 msgid "Download session lists"
 msgstr "세션 자원 다운로드"
 
-#: ../../admin_menu/admin_menu.rst:655
+#: ../../admin_menu/admin_menu.rst:746
 msgid ""
 "There's additional feature in Session page for admin. On the right side "
 "of the FINISHED tab there is a menu marked with ``...``. When you click "
@@ -1183,7 +1361,7 @@ msgstr ""
 "세션 페이지에는 관리자를 위한 추가 기능이 있습니다. FINISHED 탭 우측을 보면 ``…`` 으로 표시된 메뉴가 있습니다. 이 "
 "메뉴를 클릭하면 export CSV 라는 하위 메뉴가 나옵니다."
 
-#: ../../admin_menu/admin_menu.rst:661
+#: ../../admin_menu/admin_menu.rst:752
 msgid ""
 "If you click this menu, you can download the information of the comcpute "
 "sessions created so far in CSV format. After the following dialog opens, "
@@ -1195,11 +1373,11 @@ msgstr ""
 "후, (필요한 경우) 적당한 파일 이름을 입력하고 EXPORT 버튼을 클릭하십시오. 파일 이름은 최대 255 자까지만 입력 가능한 "
 "점에 유의하십시오. 곧 CSV 파일 하나가 다운로드 될 것입니다."
 
-#: ../../admin_menu/admin_menu.rst:672
+#: ../../admin_menu/admin_menu.rst:763
 msgid "System settings"
 msgstr "시스템 설정 조회"
 
-#: ../../admin_menu/admin_menu.rst:674
+#: ../../admin_menu/admin_menu.rst:765
 msgid ""
 "In the Configuration page, you can see main settings of Backend.AI "
 "server. Currently, it provides several controls which can change and list"
@@ -1208,7 +1386,7 @@ msgstr ""
 "Configuration 페이지에서 Backend.AI에 설정된 주요 설정값을 조회할 수 있습니다. 현재는 몇가지 변경 기능 및 "
 "설정 조회 기능을 제공하고 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:678
+#: ../../admin_menu/admin_menu.rst:769
 msgid ""
 "You can change image auto install and update rule by selecting one option"
 " from ``Digest``, ``Tag``, ``None``. ``Digest`` is kind of checksum for "
@@ -1222,7 +1400,7 @@ msgstr ""
 "다운로드의 효율성을 높이는데에 사용됩니다. ``Tag`` 는 개발용 옵션에만 사용할 수 있는데, 태그는 이미지의 무결성을 보장하지 "
 "않기 때문입니다."
 
-#: ../../admin_menu/admin_menu.rst:686
+#: ../../admin_menu/admin_menu.rst:777
 msgid ""
 "Don't change rule selection unless you completely understand the meaning "
 "of each rule."
@@ -1232,7 +1410,7 @@ msgstr "각 규칙에 대해 완전히 이해하고 있지 않는 한 선택된 
 msgid "System setting about image"
 msgstr "이미지 내 자원 제한 값 수정"
 
-#: ../../admin_menu/admin_menu.rst:691
+#: ../../admin_menu/admin_menu.rst:782
 msgid "You can also change settings for scaling and plugins."
 msgstr "스케일링과 플러그인에 대한 설정도 변경할 수 있습니다."
 
@@ -1240,7 +1418,7 @@ msgstr "스케일링과 플러그인에 대한 설정도 변경할 수 있습니
 msgid "System setting about scaling and plugins"
 msgstr "스케일링 및 플러그인 시스템 설정"
 
-#: ../../admin_menu/admin_menu.rst:696
+#: ../../admin_menu/admin_menu.rst:787
 msgid ""
 "When a user launches a multi-node cluster session, which is introduced at"
 " version 20.09, Backend.AI will dynamically create an overlay network to "
@@ -1257,7 +1435,7 @@ msgstr ""
 msgid "Overlay network setting dialog"
 msgstr ""
 
-#: ../../admin_menu/admin_menu.rst:708
+#: ../../admin_menu/admin_menu.rst:799
 msgid ""
 "For more information about Backend.AI Cluster session, please refer to "
 ":ref:`Backend.AI Cluster Compute Session<backendai-cluster-compute-"
@@ -1266,7 +1444,7 @@ msgstr ""
 "Backend.AI 클러스터 세션에 대해 더 자세한 정보를 확인하시려면, :ref:`Backend.AI 클러스터 연산 세션"
 "<backendai-cluster-compute-session>` 섹션을 참고하십시오."
 
-#: ../../admin_menu/admin_menu.rst:711
+#: ../../admin_menu/admin_menu.rst:802
 msgid ""
 "You can edit the configuration per job scheduler by clicking the "
 "Scheduler's config button. The values in the scheduler setting are the "
@@ -1278,7 +1456,7 @@ msgstr ""
 "그룹<scheduling-methods>` 의 스케줄러 설정값이 없을 때 사용하는 기본 값을 의미합니다. 자원 그룹에 설정한 값이 "
 "있을 경우, 이 값은 무시됩니다."
 
-#: ../../admin_menu/admin_menu.rst:716
+#: ../../admin_menu/admin_menu.rst:807
 msgid ""
 "Currently supported scheduling methods include ``FIFO``, ``LIFO``, and "
 "``DRF``. Each method of scheduling is exactly the same as the "
@@ -1298,27 +1476,27 @@ msgstr ""
 msgid "System setting dialog scheduler settings"
 msgstr ""
 
-#: ../../admin_menu/admin_menu.rst:729
+#: ../../admin_menu/admin_menu.rst:820
 msgid "We will continue to add broader range of setting controls."
 msgstr "향후 CLI에서 지원하는 다양한 설정 변경 기능을 GUI에도 계속 추가할 예정입니다."
 
-#: ../../admin_menu/admin_menu.rst:732
+#: ../../admin_menu/admin_menu.rst:823
 msgid ""
 "System settings are default settings. If resource group has certain "
 "value, then it overrides configured value in system settings."
 msgstr "시스템 설정값은 기본 설정입니다. 자원 그룹에서 특정 값이 설정된 경우, 시스템 설정값이 아닌 자원 그룹 설정값을 적용합니다."
 
-#: ../../admin_menu/admin_menu.rst:737
+#: ../../admin_menu/admin_menu.rst:828
 msgid "Server management"
 msgstr "서버 관리 메뉴"
 
-#: ../../admin_menu/admin_menu.rst:739
+#: ../../admin_menu/admin_menu.rst:830
 msgid ""
 "Go to the Maintenance page and you will see some buttons to manage the "
 "server."
 msgstr "Maintenance 페이지로 이동하면 서버를 관리할 수 있는 몇 가지 버튼을 볼 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:741
+#: ../../admin_menu/admin_menu.rst:832
 msgid ""
 "RECALCULATE USAGE: Occasionally, due to unstable network connections or "
 "container management problem of Docker daemon, there may be a case where "
@@ -1330,7 +1508,7 @@ msgstr ""
 "Backend.AI에서 출력되는 자원 점유량이 일치하지 않는 경우가 있을 수 있습니다. 그 때 RECALCULATE USAGE "
 "버튼을 클릭하면 자원 점유량을 수동 보정할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:746
+#: ../../admin_menu/admin_menu.rst:837
 msgid ""
 "RESCAN IMAGES: Update image meta information from all registered Docker "
 "registries. It can be used when a new image is pushed to a Backend.AI-"
@@ -1343,17 +1521,17 @@ msgstr ""
 msgid "Maintenance page"
 msgstr ""
 
-#: ../../admin_menu/admin_menu.rst:756
+#: ../../admin_menu/admin_menu.rst:847
 msgid ""
 "We will continue to add other settings needed for management, such as "
 "removing unused images or registering periodic maintenance schedules."
 msgstr "사용하지 않는 이미지를 제거하거나, 주기적 관리 일정 등록 등 기타 관리에 필요한 설정이 계속 추가될 예정입니다."
 
-#: ../../admin_menu/admin_menu.rst:761
+#: ../../admin_menu/admin_menu.rst:852
 msgid "Detailed Information"
 msgstr "상세 정보"
 
-#: ../../admin_menu/admin_menu.rst:763
+#: ../../admin_menu/admin_menu.rst:854
 msgid ""
 "In Information page, you can see several detailed information and status "
 "of each feature. To see Manager version and API version, check the Core "
@@ -1364,7 +1542,7 @@ msgstr ""
 "Core 패널을 확인하십시오. Backend.AI를 구성하는 각 컴포넌트의 호환 가능 여부를 보려면 Component 패널을 "
 "확인하십시오."
 
-#: ../../admin_menu/admin_menu.rst:769
+#: ../../admin_menu/admin_menu.rst:860
 msgid "This page is only for showing current information."
 msgstr "이 페이지는 현재 정보를 보여주기 위한 것입니다."
 
@@ -1375,3 +1553,56 @@ msgstr "정보 페이지"
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Information page 2"
 msgstr "정보 페이지 2"
+
+#~ msgid ""
+#~ "In Backend.AI, admins can set a "
+#~ "limit on the total amount of "
+#~ "resources available for each user and"
+#~ " project. Resource limits per project "
+#~ "can only be set through the "
+#~ "enterprise-dedicated administrator GUI "
+#~ "Control-Panel, but resource limits per "
+#~ "user (precisely per user's keypair) can"
+#~ " be set in the user Web-UI."
+#~ msgstr ""
+#~ "Backend.AI 에는 사용자 및 프로젝트 별로 총 "
+#~ "사용 가능한 자원의 제한을 설정할 수 있습니다. "
+#~ "프로젝트 별 자원 제한은 엔터프라이즈 전용 관리자 "
+#~ "GUI Control-Panel을 통해서만 가능하나, 사용자 "
+#~ "별 (정확하게는 사용자의 키페어 별) 자원 제한은 "
+#~ "사용자 Web-UI 에서도 설정할 수 있습니다."
+
+#~ msgid ""
+#~ "To set resource policies at the "
+#~ "domain and project level, you have "
+#~ "to use admin Control-Panel, a UI"
+#~ " for superadmin only. In the Web-"
+#~ "UI, you can only set resource "
+#~ "policies based on keypairs. Control-"
+#~ "Panel is a part of the enterprise"
+#~ " version."
+#~ msgstr ""
+#~ "도메인과 프로젝트 수준에서 자원 정책을 설정하려면, 관리자"
+#~ " 전용 UI인 Control-Panel을 사용해야 합니다. "
+#~ "Web-UI에서는 키페어 수준의 자원 정책만 설정 "
+#~ "가능합니다. Control-Panel은 엔터프라이즈 전용 서비스입니다."
+
+#~ msgid ""
+#~ "Capacity (GB): the maximum size (GB) "
+#~ "a storage folder can contain. This "
+#~ "feature is only effective for special"
+#~ " type of storages/filesystems such as "
+#~ "FlashBlade. (max value: 1024)"
+#~ msgstr ""
+#~ "Capacity(GB) : 하나의 저장 폴더가 가질 수 "
+#~ "있는 최대 파일 크기입니다. 이 항목은 FlashBlade"
+#~ " 등과 같은 특별한 저장소나 파일시스템에서만 작동합니다.(최대"
+#~ " 입력 값: 1024)"
+
+#~ msgid ""
+#~ "To create a new user resource "
+#~ "policy, click the Create button. The "
+#~ "meaning of each field is as "
+#~ "follows."
+#~ msgstr "Create 버튼을 클릭하여 새로운 사용자 자원 정책을 생성할 수도 있습니다. 각 설정값의 의미는 다음과 같습니다."
+

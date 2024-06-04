@@ -151,6 +151,17 @@ according to the user's pattern.
    :align: center
    :alt: Add keypair dialog
 
+.. note::
+
+   In each of USERS, CREDENTIALS tabs, there is an icon (``...``) on the right side of the tab
+   header. Clicking this shows export CSV menu, which again brings up a CSV export dialog for
+   each tabs. By giving an appropriate file name, if necessary, and clicking EXPORT CSV FILE
+   button, you can download the list of users, keypairs.
+
+    .. image:: export_csv_user.png
+       :width: 400
+       :align: center
+
 .. _sharing-a-group-storage:
 
 Share project storage folders with project members
@@ -185,44 +196,40 @@ also displayed in the Permission panel.
 Manage Resource Policy
 ----------------------
 
-In Backend.AI, admins can set a limit on the total amount of resources available
-for each user and project. Resource limits per project can only be set through the
-enterprise-dedicated administrator GUI Control-Panel, but resource limits per user
-(precisely per user's keypair) can be set in the user Web-UI.
+Keypair Resource Policy
+~~~~~~~~~~~~~~~~~~~~~~~
 
-Resource policies allow you to set maximum allowed resources and/or
-other compute session related settings per keypair basis. If necessary, multiple
-resource policies can be created, for example, user / research purposes, and
-apply them separately to each keypair.
+In Backend.AI, administrators can set limits on the total amount of resources
+available for each keypair, user and project. Resource policies enable you to
+define the maximum allowed resources and other compute session-related settings.
+If needed, multiple resource policies can be created, such as for user or
+research purposes, and applied individually.
 
-.. note::
-   To set resource policies at the domain and project level, you have to use
-   admin Control-Panel, a UI for superadmin only. In the Web-UI, you can only set
-   resource policies based on keypairs. Control-Panel is a part of the
-   enterprise version.
-
-In Resource Policies tab on the Users page, the admin can check the list of
-currently registered resource policies.  In the figure below, there are a total
-of three policies (gardener, STUDENT, default).  The infinity (∞) marks for
-resources such as Cores, Ram, and fGPU in the Resources panel means that no
-resource restrictions have been placed for those resources.
+On the Resource Policy page, administrators can view the list of currently
+registered resource policies. You can check the list of resource policies set
+for keypairs, users, and projects on the Resource Policy page. Let's begin by
+examining the resource policies for keypairs. In the figure below, there are
+three policies in total (gardener, student, default). The infinity symbol (∞)
+indicates that no resource restrictions have been applied to those resources.
 
 .. image:: resource_policy_page.png
    :alt: Resource policy page
 
-The user account currently used in this guide is under the default
-resource policy. This can be confirmed in the Credentials tab on the left. In the Resource Policy panel,
-you can also see that all resources can be used to the extent the hardware allows (∞).
+The user account being used in this guide is currently assigned to the default
+resource policy. This can be verified in the Credentials tab on the Users page.
+In the Resource Policy panel, you can also observe that all resources can be
+utilized up to the hardware limit (∞).
 
 .. image:: credentials.png
 
-You can modify resouce policies by clicking the gear button in the Control panel of default policy group.
-In Update Resource Policy dialog, every option is
-changeable except Policy Name, which is the primary key for distinguishing the
-resource policies in the list. Uncheck the Unlimited checkbox at the bottom of CPU, RAM, fGPU, and set the resource limits
-to the desired values. Set the amount of allocated resource to be smaller than
-the total amount of hardware's. Here, CPU, RAM and fGPU are set to 2, 4 and 1, respectively. Click
-the UPDATE button to update the resource policy.
+To modify resource policies, click the gear icon in the Control column of the
+default policy group. In the Update Resource Policy dialog, every option is
+editable except for Policy Name, which serves as the primary key for
+distinguishing resource policies in the list. Uncheck the Unlimited checkbox
+at the bottom of CPU, RAM, and fGPU, and set the resource limits to the desired
+values. Ensure that the allocated resources are less than the total hardware
+capacity. In this case, set CPU, RAM, and fGPU to 2, 4, and 1 respectively.
+Click the OK button to apply the updated resource policy.
 
 .. image:: update_resource_policy.png
    :width: 400
@@ -233,61 +240,58 @@ About details of each option in resource policy dialog, see the description belo
 
 * Resource Policy
    * CPU: Specify the maximum amount of CPU cores. (max value: 512)
-   * RAM: Specify the maximum amount of memory in GB. It would be good practice
+   * Memory: Specify the maximum amount of memory in GB. It would be good practice
      to set memory twice as large as the maximum value of GPU memory. (max value: 1024)
-   * GPU: Specify the maximum amount of physical GPUs. If fractional GPU is
-     enabled by the server, this setting has no effect. (max value: 64)
-   * fGPU: Fractional GPU (fGPU) is literally split a single GPU to multiple
-     partitions in order to use GPU efficiently. Notice that the minimum amount
-     of fGPU required is differed by each image. If fractional GPU is not
-     enabled by the server, this settings has no effect. (max value: 256)
+   * CUDA-capable GPU: Specify the maximum amount of physical GPUs. If fractional GPU
+     is enabled by the server, this setting has no effect. (max value: 64)
+   * CUDA-capable GPU (fractional): Fractional GPU (fGPU) is literally split a single
+     GPU to multiple partitions in order to use GPU efficiently. Notice that the minimum
+     amount of fGPU required is differed by each image. If fractional GPU is not enabled
+     by the server, this settings has no effect. (max value: 256)
 
 * Sessions
    * Container Per Session: The maximum number of containers per session.
      To make a user to create a cluster session, this value should be greater than 1.
      (max value: 100)
-   * Idle timeout (sec.): Configurable period of time during which the user can
-     leave their session untouched. If there is no activity at all on a
-     compute session for idle timeout, the session will be garbage collected
-     and destroyed automatically. The criteria of the "idleness" can be
-     various and set by the administrators. (max value: 15552000 (approx. 180 days))
-   * Concurrent Jobs: Maximum number of concurrent compute session per keypair.
-     If this value is set to 3, for example, users bound to this resource policy
-     cannot create more than 3 compute sessions simultaneously. (max value: 100)
    * Session Lifetime (sec.): Limits the maximum lifetime of a compute session
      from the reservation in the active status, including ``PENDING`` and
      ``RUNNING`` statuses. After this time, the session will be force-terminated
      even if it is fully utilized. This will be useful to prevent the session
      from running indefinitely.
+   * Concurrent Jobs: Maximum number of concurrent compute session per keypair.
+     If this value is set to 3, for example, users bound to this resource policy
+     cannot create more than 3 compute sessions simultaneously. (max value: 100)
+   * Idle timeout (sec.): Configurable period of time during which the user can
+     leave their session untouched. If there is no activity at all on a
+     compute session for idle timeout, the session will be garbage collected
+     and destroyed automatically. The criteria of the "idleness" can be
+     various and set by the administrators. (max value: 15552000 (approx. 180 days))
 
 * Folders
    * Allowed hosts: Backend.AI supports many NFS mountpoint. This field limits
      the accessibility to them. Even if a NFS named "data-1" is mounted on
      Backend.AI, users cannot access it unless it is allowed by resource policy.
-   * Capacity (GB): the maximum size (GB) a storage folder can contain. This
-     feature is only effective for special type of storages/filesystems such as
-     FlashBlade. (max value: 1024)
-   * Max. #: the maximum number of storage folders that can be created/invited.
-     (max value: 100)
+   * (Deprecated since 23.09.4) Max. #: the maximum number of storage folders that
+     can be created/invited. (max value: 100).
 
-In the resource policy list, check that the Resources value of the default
+In the keypair resource policy list, check that the Resources value of the default
 policy has been updated.
 
 .. image:: update_check.png
    :width: 400
    :align: center
 
-You can create a new resource policy by clicking the CREATE POLICY button. Each
-setting value is the same as described above.
+You can create a new resource policy by clicking the Create button. Each setting
+value is the same as described above.
 
 To create a resource policy and associate it with a keypair, go to the
 Credentials tab of the Users page, click the gear button located in the
-Controls panel of the desired keypair, and click the Select Policy field to
+Controls column of the desired keypair, and click the Select Policy field to
 choose it.
 
 You can also delete each of resource keypairs by clicking trash can icon
-in the Control panel. When you click the icon, the confirmation dialog will appears.
-click OKAY button to delete.
+in the Control column. When you click the icon, the confirmation popup will appears.
+click Delete button to delete.
 
 .. image:: resource_policy_delete_dialog.png
    :width: 350
@@ -299,20 +303,105 @@ click OKAY button to delete.
    deletion may not be done. Before deleting a resource policy, please make sure that
    no users remain under the resource policy.
 
+If you want to hide or show specific columns, click the gear icon at the bottom right of the
+table. This will bring up a dialog where you can select the columns you want to display.
+
+.. image:: keypair_resource_policy_table_setting.png
+   :width: 350
+   :align: center
+   :alt: Keypair resource policy table settings
+
+
+User Resource Policy
+~~~~~~~~~~~~~~~~~~~~
+
+Starting from version 24.03, Backend.AI supports user resource policy management. While each
+user can have multiple keypairs, a user can only have one user resource policy. In the user
+resource policy page, you can set restrictions on various settings related to folders such as
+Max Folder Count and Max Folder Size, as well as individual resource limits like Max Session
+Count Per Model Session and Max Customized Image Count.
+
+.. image:: user_resource_policy_list.png
+   :alt: User resource policy list
+
+To create a new user resource policy, click the Create button.
+
+.. image:: create_user_resource_policy.png
+   :width: 350
+   :align: center
+   :alt: Create user resource policy dialog
+
+- Name: The name of the user resource policy.
+- Max Folder Count: The maximum number of folders that the user can create.
+  If the user's folder count exceeds this value, the user cannot create a new folder.
+  If set to Unlimited, it is displayed as "∞".
+- Max Folder Size: The maximum size of the user's storage space. If the
+  user's storage space exceeds this value, the user cannot create a new data
+  folder. If set to Unlimited, it is displayed as "∞".
+- Max Session Count Per Model Session: The maximum number of available sessions per model
+  service created by a user. Increasing this value can put a heavy load on the session
+  scheduler and potentially lead to system downtime, so please exercise caution when
+  adjusting this setting.
+- Max Customized Image Count: The maximum number of customized images that the
+  user can create. If the user's customized image count exceeds this value, the
+  user cannot create a new customized image. If you want to know more about customized 
+  images, please refer to the :ref:`My Environments<my-environments>` section.
+- ID: The ID of the user resource policy.
+- Created At: The date and time when the user resource policy was created.
+
+
+To update, click the gear icon button in the control column. To delete, click the trash can
+icon button.
 
 .. note::
 
-   In each of USERS, CREDENTIALS, RESOURCE POLICIES tabs, there is an icon
-   (``...``) on the right side of the tab header. Clicking this shows
-   export CSV menu, which again brings up a CSV export dialog for each tabs.
-   By giving an appropriate file name, if necessary, and clicking EXPORT CSV FILE
-   button, you can download the list of users, keypairs, and/or resource
-   policies.
+   Changing a resource policy can affect all users that use that user resource policy, so use
+   it with care.
 
-    .. image:: export_csv_user.png
-       :width: 400
-       :align: center
+Similar to keypair resource policy, you can select and display only the columns you want by
+clicking the gear icon button at the bottom right of the table.
 
+
+Project Resource Policy
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Starting from version 24.03, Backend.AI supports project resource policy management. Project
+resource policies manage storage space (quota) and folder-related limitations for projects.
+
+When clicking the Project tab of the Resource Policy page, you can see the list of project
+resource policy.
+
+.. image:: project_resource_policy_list.png
+   :alt: Project resource policy list
+
+To create a new project resource policy, click the Create button at the top right of the table.
+
+.. image:: create_project_resource_policy.png
+   :width: 350
+   :align: center
+   :alt: Create project resource policy dialog
+
+- Name: The name of the project resource policy.
+- Max Folder Count: The maximum number of project folders that an administrator can create.
+  If the project folder count exceeds this value, the administrator will not be able to create
+  a new project folder. If set to Unlimited, it will be displayed as "∞".
+- Max Folder Size: The maximum size of the project's storage space. If the project's storage
+  space exceeds this value, the administrator cannot create a new project folder. If set to
+  Unlimited, it is displayed as "∞".
+
+The meaning of each field is similar to the user resource policy. The difference is that the
+project resource policy is applied to the project folders, while the user resource policy is
+applied to the user folders.
+
+If you want to make changes, click the gear icon button in the control column. Resource policy
+names cannot be edited. Deletion can be done by clicking the trash can icon button.
+
+.. note::
+   Changing a resource policy can affect all projects that use that project resource policy,
+   so use it with care.
+
+You can select and display only the columns you want by clicking the gear icon button at the
+bottom right of the table.
 
 Manage Images
 -------------

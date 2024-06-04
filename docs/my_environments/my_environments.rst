@@ -1,3 +1,5 @@
+.. _my-environments:
+
 ===============
 My Environments
 ===============
