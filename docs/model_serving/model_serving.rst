@@ -258,9 +258,9 @@ resources that can be allocated to the model service.
    :width: 700
    :align: center
 
--  Single Node : When running a session, the managed node and worker nodes are 
+-  Single Node:When running a session, the managed node and worker nodes are 
    placed on a single physical node or virtual machine.
--  Multi Node : When running a session, one managed node and one or more worker 
+-  Multi Node: When running a session, one managed node and one or more worker 
    nodes are split across multiple physical nodes or virtual machines.
 
 Before creating model service, Backend.AI supports validation feature to check 
