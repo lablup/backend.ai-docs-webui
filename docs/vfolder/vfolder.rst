@@ -141,7 +141,7 @@ Delete folder
 -------------
 
 If you have permission to delete the storage folder, you can delete it by
-clicking the trash can icon in the Control pane.By clicking the icon, 
+clicking the trash can icon in the Control pane. By clicking the icon, 
 it will automatically move the folder to trash bin with notification, 
 
 .. image:: delete_notification.png
@@ -160,7 +160,7 @@ In this status, you can restore the folder by
 clicking restore button in Control pane. If you want to delete the folder forever, 
 then please click red trash bin icon button. A confirmation modal will pop up with 
 input field to make sure you want to delete this folder completely. After typing the 
-name of folder correctly, click ``DELETE FOREVER`` button to remove
+name of folder correctly, click ``DELETE FOREVER`` button to remove.
 
 .. image:: vfolder_delete_dialog.png
    :width: 400
