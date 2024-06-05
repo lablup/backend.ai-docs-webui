@@ -214,12 +214,12 @@ First, provide a service name. For detailed explanations of each item, please re
    without any separate token on the server where the service is to be
    hosted. By default, it is disabled.
 -  Model Storage To Mount: This is model folder to mount, which contains 
-   model definition file inside the directory
+   model definition file inside the directory.
 -  Model Destination For Model Folder: This option allows aliasing path of 
    model storage path to session corresponding to routing, which represents 
    the service. default value is ``/models``.
 -  Model Definition File Path: You can also set model definition file as you
-   uploaded in model storage path. default value is ``model-definition.yaml``.
+   uploaded in model storage path. The default value is ``model-definition.yaml``.
 -  Additional Mounts: Likewise session, service provides additional mounts. 
    Notice that only you can mount general/data usage mode folder, not additional 
    model folder.
@@ -264,10 +264,13 @@ resources that can be allocated to the model service.
    nodes are split across multiple physical nodes or virtual machines.
 
 Before creating model service, Backend.AI supports validation feature to check 
-whether execution is available or not(due to any errors during execution.) By 
-clicking ``Validate`` button in bottom-left of service launcher, a new popup for 
-listening validation event will pops up. in the popup modal, you can check the status 
-by container log. when result is set to ``Finished``, then validation check is finished.
+whether execution is available or not(due to any errors during execution.) 
+By clicking the ``Validate`` button at the bottom-left of the service launcher, 
+a new popup for listening to validation events will pop up. In the popup modal, 
+you can check the status through the container log. When the result is set to 
+``Finished``, then the validation check is finished.
+
+
 
 .. image:: model-validation-dialog.png
    :width: 700
