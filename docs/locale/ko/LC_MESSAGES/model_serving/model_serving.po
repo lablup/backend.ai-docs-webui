@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 23.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-12 12:32+0900\n"
+"POT-Creation-Date: 2024-06-12 14:35+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,8 +43,8 @@ msgstr ""
 " 수 있게 하는 모델 서비스* 기능을 23.09 버전부터 정식 지원합니다."
 
 #: ../../model_serving/model_serving.rst:-1
-msgid "모델 서빙"
-msgstr ""
+msgid "Model serving diagram"
+msgstr "모델 서빙 다이어그램"
 
 #: ../../model_serving/model_serving.rst:23
 msgid ""
@@ -388,8 +388,8 @@ msgstr ""
 "엽니다. 이후 모델 정의 파일을 업로드 합니다. "
 
 #: ../../model_serving/model_serving.rst:-1
-msgid "모델 정의 파일 생성하기"
-msgstr ""
+msgid "Model definition file upload"
+msgstr "모델 정의 파일 생성하기"
 
 #: ../../model_serving/model_serving.rst:197
 msgid "Creating/Validating Model Service"
@@ -399,14 +399,14 @@ msgstr "모델 서비스 생성하기/유효성 검사하기"
 msgid ""
 "Once the model definition file is uploaded to the virtual folder of the "
 "model type, you are ready to create the model service."
-msgstr "모델 정의 파일까지 모델 타입의 가상 폴더에 업로드가 완료되었으면 본격적으로 모델 서비스를 생성할 준비가 되었다고 할 수 있습니다."
+msgstr "모델 정의 파일까지 모델 타입의 가상 폴더에 모두 업로드하였다면, 본격적으로 모델 서비스를 생성할 준비가 된 것입니다."
 
 #: ../../model_serving/model_serving.rst:202
 msgid ""
 "Click the “Start Service” button on the Model Serving page. This will "
 "bring up a modal where you can enter the required settings for creating "
 "the service."
-msgstr "모델 서빙 페이지에서 \"서비스 시작하기\" 버튼을 클릭해주세요. 이후 서비스 생성에 필요한 설정을 입력하는 모달이 뜨게 됩니다."
+msgstr "모델 서빙 페이지에서 \"서비스 시작하기\" 버튼을 클릭하면, 서비스 생성에 필요한 설정을 입력하는 모달이 나타납니다."
 
 #: ../../model_serving/model_serving.rst:-1
 msgid "Service launcher"
@@ -416,7 +416,7 @@ msgstr "서비스 런쳐"
 msgid ""
 "First, provide a service name. For detailed explanations of each item, "
 "please refer to the following:"
-msgstr "먼저, 서비스 이름을 입력합니다. 각 항목에 대한 자세한 설명은 다음을 참고 하십시오."
+msgstr "먼저, 서비스 이름을 입력합니다. 각 항목에 대한 자세한 설명은 아래 내용을 참고 하십시오."
 
 #: ../../model_serving/model_serving.rst:213
 msgid ""
@@ -424,8 +424,8 @@ msgid ""
 "any separate token on the server where the service is to be hosted. By "
 "default, it is disabled."
 msgstr ""
-"Open To Public: 모델 서비스 생성후 서비스하고자 하는 서버에 별도의 토큰이 없이도 접근할 수 있도록 하는 옵션. 기본 "
-"설정은 비활성화 되어있음."
+"Open To Public: 모델 서비스 생성 후 서비스하고자 하는 서버에 별도의 토큰이 없이도 접근할 수 있도록 하는 옵션. "
+"기본적으로 비활성화 되어있음."
 
 #: ../../model_serving/model_serving.rst:216
 msgid ""
@@ -454,21 +454,23 @@ msgstr ""
 #: ../../model_serving/model_serving.rst:223
 msgid ""
 "Additional Mounts: Likewise session, service provides additional mounts. "
-"Notice that only you can mount general/data usage mode folder, not "
-"additional model folder."
+"Please make sure that only you can mount general/data usage mode folder, "
+"not additional model folder."
 msgstr ""
 "Additional Mounts: 세션과 마찬가지로, 서비스에 폴더를 추가로 마운트할 수 있음.단, 모델 폴더는 추가 마운트가 "
 "불가능하고, 일반/데이터 사용 모드의 폴더만 마운트할 수 있음."
 
 #: ../../model_serving/model_serving.rst:226
 msgid ""
-"Desired Routing Count: The model service can be serviced by multiple "
-"servers. This setting determines how many routing sessions to create for "
-"the current service. The value specified here will be used as the basis "
-"for creating the sessions."
+"Desired Routing Count: This setting serves as the basis for determining "
+"the number of routing sessions to maintain for the current service. If "
+"you change the value of this setting, the manager can create a new "
+"replica session or terminate a running session by referring to the number"
+" of existing replica sessions."
 msgstr ""
-"Desired Routing Count: 모델 서비스에서 서비스하고자 하는 서버는 여러개가 될 수 있는 데, 이 때 라우팅, 현재 "
-"기준으로 서비스하려는 세션을 몇 개까지 만들어야 할 지 설정할 때에, 이 값을 기준으로 하게 됨."
+"Desired Routing Count: 해당 설정은 현재 서비스에 대해 유지할 라우팅 세션 수를 결정하는 기준이 됨. 만약 해당 "
+"설정의 값을 변경하면, 매니저가 기존에 실행되고 있는 Replica 세션의 개수를 참조하여 새로운 Replica 세션을 생성하거나,"
+" 실행중인 세션을 종료할 수 있음."
 
 #: ../../model_serving/model_serving.rst:236
 msgid ""
@@ -519,7 +521,7 @@ msgstr ""
 "AI Accelerator: AI 가속기 (GPUs 또는 NPUs)의 용량으로 설정에 의해 수동 이미지 설정이 허용된 경우, 선택한"
 " 자원 그룹에 따라 AI 가속기를 선택하게 됨."
 
-#: ../../model_serving/model_serving.rst:286
+#: ../../model_serving/model_serving.rst:261
 msgid ""
 "Single Node: When running a session, the managed node and worker nodes "
 "are placed on a single physical node or virtual machine."
@@ -609,8 +611,8 @@ msgstr ""
 "에러를 모두 삭제하고, 재시작해 모델 서비스의 라우팅이 정상적으로 동작할 수 있도록 합니다."
 
 #: ../../model_serving/model_serving.rst
-msgid "새로고침 버튼"
-msgstr ""
+msgid "Refresh button"
+msgstr "새로고침 버튼"
 
 #: ../../model_serving/model_serving.rst:316
 msgid "Generating Tokens"
@@ -635,8 +637,8 @@ msgstr ""
 " 토큰을 발급하여 토큰을 아래와 같은 형태로 추가해서 서비스가 정상적으로 실행되고 있는지 확인할 수 있습니다."
 
 #: ../../model_serving/model_serving.rst:-1
-msgid "라우팅 페이지"
-msgstr ""
+msgid "Routing page"
+msgstr "라우팅 페이지"
 
 #: ../../model_serving/model_serving.rst:332
 msgid ""
@@ -649,8 +651,8 @@ msgstr ""
 " 키 값으로 추가하면 됩니다."
 
 #: ../../model_serving/model_serving.rst:-1
-msgid "토큰 생성 다이얼로그"
-msgstr ""
+msgid "Token generation dialog"
+msgstr "토큰 생성 다이얼로그"
 
 #: ../../model_serving/model_serving.rst:341
 msgid ""
@@ -663,8 +665,8 @@ msgstr ""
 " 키의 값으로 추가하면 됩니다."
 
 #: ../../model_serving/model_serving.rst:-1
-msgid "토큰 발급하기"
-msgstr ""
+msgid "Generated token copy"
+msgstr "토큰 발급하기"
 
 #: ../../model_serving/model_serving.rst:349
 msgid "Key"
@@ -741,8 +743,8 @@ msgstr ""
 "변경 사항이 적용됩니다. "
 
 #: ../../model_serving/model_serving.rst:-1
-msgid "모델 서비스"
-msgstr ""
+msgid "Edit model service dialog"
+msgstr "모델 서비스"
 
 #: ../../model_serving/model_serving.rst:396
 msgid "Terminating Model Service"
@@ -766,5 +768,5 @@ msgstr ""
 "서비스의 경우 모델 서비스 목록에서 제거됩니다."
 
 #: ../../model_serving/model_serving.rst:-1
-msgid "모델 서비스 종료하기"
-msgstr ""
+msgid "Terminate model service dialog"
+msgstr "모델 서비스 종료하기"

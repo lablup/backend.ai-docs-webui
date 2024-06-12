@@ -221,12 +221,12 @@ First, provide a service name. For detailed explanations of each item, please re
 -  Model Definition File Path: You can also set model definition file as you
    uploaded in model storage path. The default value is ``model-definition.yaml``.
 -  Additional Mounts: Likewise session, service provides additional mounts. 
-   Notice that only you can mount general/data usage mode folder, not additional 
+   Please make sure that only you can mount general/data usage mode folder, not additional 
    model folder.
--  Desired Routing Count: The model service can be serviced by multiple
-   servers. This setting determines how many routing sessions to create
-   for the current service. The value specified here will be used as the
-   basis for creating the sessions.
+-  Desired Routing Count: This setting serves as the basis for determining the number 
+   of routing sessions to maintain for the current service. If you change the value of this 
+   setting, the manager can create a new replica session or terminate a running session 
+   by referring to the number of existing replica sessions.
 
 .. image:: service-launcher2.png
    :width: 700
