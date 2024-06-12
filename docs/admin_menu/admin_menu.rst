@@ -53,7 +53,7 @@ user belongs.
    :align: center
    :alt: Detailed information of a user
 
-Click the gear icon in the Controls panel to update information of a user who
+Click the 'Setting (Gear)' in the Controls panel to update information of a user who
 already exists. User's name, password, activation state, etc. can be changed. User ID cannot be changed.
 
 .. image:: user_update_dialog.png
@@ -222,7 +222,7 @@ utilized up to the hardware limit (∞).
 
 .. image:: credentials.png
 
-To modify resource policies, click the gear icon in the Control column of the
+To modify resource policies, click the 'Setting (Gear)' in the Control column of the
 default policy group. In the Update Resource Policy dialog, every option is
 editable except for Policy Name, which serves as the primary key for
 distinguishing resource policies in the list. Uncheck the Unlimited checkbox
@@ -291,7 +291,7 @@ choose it.
 
 You can also delete each of resource keypairs by clicking trash can icon
 in the Control column. When you click the icon, the confirmation popup will appears.
-click Delete button to delete.
+Click 'Delete' button to erase."
 
 .. image:: resource_policy_delete_dialog.png
    :width: 350
@@ -303,7 +303,7 @@ click Delete button to delete.
    deletion may not be done. Before deleting a resource policy, please make sure that
    no users remain under the resource policy.
 
-If you want to hide or show specific columns, click the gear icon at the bottom right of the
+If you want to hide or show specific columns, click the 'Setting (Gear)' at the bottom right of the
 table. This will bring up a dialog where you can select the columns you want to display.
 
 .. image:: keypair_resource_policy_table_setting.png
@@ -317,7 +317,7 @@ User Resource Policy
 
 Starting from version 24.03, Backend.AI supports user resource policy management. While each
 user can have multiple keypairs, a user can only have one user resource policy. In the user
-resource policy page, you can set restrictions on various settings related to folders such as
+resource policy page, users can set restrictions on various settings related to folders such as
 Max Folder Count and Max Folder Size, as well as individual resource limits like Max Session
 Count Per Model Session and Max Customized Image Count.
 
@@ -333,33 +333,33 @@ To create a new user resource policy, click the Create button.
 
 - Name: The name of the user resource policy.
 - Max Folder Count: The maximum number of folders that the user can create.
-  If the user's folder count exceeds this value, the user cannot create a new folder.
+  If the user's folder count exceeds this value, user cannot create a new folder.
   If set to Unlimited, it is displayed as "∞".
-- Max Folder Size: The maximum size of the user's storage space. If the
-  user's storage space exceeds this value, the user cannot create a new data
+- Max Folder Size: The maximum size of the user's storage space. If
+  user's storage space exceeds this value, user cannot create a new data
   folder. If set to Unlimited, it is displayed as "∞".
 - Max Session Count Per Model Session: The maximum number of available sessions per model
   service created by a user. Increasing this value can put a heavy load on the session
-  scheduler and potentially lead to system downtime, so please exercise caution when
+  scheduler and potentially lead to system downtime, so please caution when
   adjusting this setting.
-- Max Customized Image Count: The maximum number of customized images that the
-  user can create. If the user's customized image count exceeds this value, the
+- Max Customized Image Count: The maximum number of customized images that
+  user can create. If user's customized image count exceeds this value,
   user cannot create a new customized image. If you want to know more about customized 
   images, please refer to the :ref:`My Environments<my-environments>` section.
 - ID: The ID of the user resource policy.
 - Created At: The date and time when the user resource policy was created.
 
 
-To update, click the gear icon button in the control column. To delete, click the trash can
-icon button.
+To update, click the 'Setting (Gear)' button in the control column. To delete, click the trash can
+button.
 
 .. note::
 
-   Changing a resource policy can affect all users that use that user resource policy, so use
-   it with care.
+   Changing a resource policy may affect all users who use that policy, so use
+   it with caution.
 
-Similar to keypair resource policy, you can select and display only the columns you want by
-clicking the gear icon button at the bottom right of the table.
+Similar to keypair resource policy, users can select and display only columns users want by
+clicking the 'Setting (Gear)' button at the bottom right of the table.
 
 
 Project Resource Policy
@@ -374,7 +374,7 @@ resource policy.
 .. image:: project_resource_policy_list.png
    :alt: Project resource policy list
 
-To create a new project resource policy, click the Create button at the top right of the table.
+To create a new project resource policy, click the 'Create' button at the top right of the table.
 
 .. image:: create_project_resource_policy.png
    :width: 350
@@ -393,14 +393,14 @@ The meaning of each field is similar to the user resource policy. The difference
 project resource policy is applied to the project folders, while the user resource policy is
 applied to the user folders.
 
-If you want to make changes, click the gear icon button in the control column. Resource policy
+If you want to make changes, click the 'Setting (Gear)' button in the control column. Resource policy
 names cannot be edited. Deletion can be done by clicking the trash can icon button.
 
 .. note::
-   Changing a resource policy can affect all projects that use that project resource policy,
-   so use it with care.
+   Changing a resource policy may affect all users who use that policy,
+   so use it with caution.
 
-You can select and display only the columns you want by clicking the gear icon button at the
+You can select and display only the columns you want by clicking the 'Setting (Gear)' button at the
 bottom right of the table.
 
 Manage Images
@@ -421,7 +421,7 @@ nodes, there will be a ``installed`` tag in each Status column.
    :alt: Image list page
 
 You can change the minimum resource requirements for each image by clicking the
-gear icon in the Controls panel. Each image has hardware and resource
+'Setting (Gear)' in the Controls panel. Each image has hardware and resource
 requirements for minimal operation. (For example, for GPU-only images, there
 must be a minimum allocated GPU.) The default value for the minimum resource
 amount is provided as embedded in the image's metadata. If an attempt is made to
@@ -505,7 +505,7 @@ of currently defined resource presets.
    :alt: Resource presets tab
 
 You can set resources such as CPU, RAM, fGPU, etc. to be provided by the
-resource preset by clicking the gear icon (cogwheel) in the Controls panel.
+resource preset by clicking the 'Setting (Gear)' (cogwheel) in the Controls panel.
 In the example below, the GPU field is disabled since the GPU provision mode of
 the Backend.AI server is set to "fractional". After setting the resources with
 the desired values, save it and check if the corresponding preset is displayed
@@ -591,7 +591,7 @@ possible in Resource Group tab of the Resource page.
 .. image:: scaling_group_tab.png
    :alt: Resource group tab
 
-You can edit a resource group by clicking the gear icon in the Control
+You can edit a resource group by clicking the 'Setting (Gear)' in the Control
 panel. In the Select scheduler field, you can choose the scheduling method for
 creating a compute session. Currently, there are three types: ``FIFO``, ``LIFO``, and
 ``DRF``. ``FIFO`` and ``LIFO`` are scheduling methods creating the first- or the
@@ -655,7 +655,7 @@ By using this feature, admin can easily manage and monitor the exact amount of s
 .. image:: storage_list.png
 
 In order to set quota, you need to first access to storages tab in resource page.
-And then, click gear icon in control column.
+And then, click 'Setting (Gear)' in control column.
 
 .. note:: 
    Please remind that quota setting is only available in storage that provides quota setting 
