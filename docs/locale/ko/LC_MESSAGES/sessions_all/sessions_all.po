@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 20.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-08 11:24+0900\n"
+"POT-Creation-Date: 2024-06-12 12:32+0900\n"
 "PO-Revision-Date: 2024-03-05 16:00+0900\n"
 "Last-Translator: \n"
 "Language: ko_KR\n"
@@ -855,7 +855,7 @@ msgstr ""
 
 #: ../../sessions_all/sessions_all.rst:-1
 msgid "Env Configuration Button"
-msgstr "환경 설정 버튼"
+msgstr ""
 
 #: ../../sessions_all/sessions_all.rst:475
 msgid ""
@@ -884,7 +884,7 @@ msgstr ""
 
 #: ../../sessions_all/sessions_all.rst:-1
 msgid "Preopen Ports Configuration"
-msgstr "사전 개방 포트 설정"
+msgstr ""
 
 #: ../../sessions_all/sessions_all.rst:491
 msgid ""
@@ -934,8 +934,8 @@ msgstr ""
 "보여주는 다이얼로그가 나타납니다. 정보를 확인한 후 확인 버튼을 클릭하면 컨테이너가 새로운 이미지로 변환됩니다."
 
 #: ../../sessions_all/sessions_all.rst:-1
-msgid "Container commit confirmation"
-msgstr "컨테이너 커밋 확인"
+msgid "컨테이너 커밋 저장하기"
+msgstr ""
 
 #: ../../sessions_all/sessions_all.rst:519
 msgid ""
@@ -966,12 +966,12 @@ msgstr ""
 "이름을 입력합니다. 세션 이름은 알파벳 또는 숫자, 또는 하이픈(``-``) 이나 언더바(``_``)로 구성할 수 있으며, 최소 "
 "4글자에서 32자까지만 입력해야 합니다. 세션 이름을 입력한 뒤에는 ``PUSH SESSION TO CUSTOMIZED "
 "IMAGE`` 버튼을클릭합니다. 이렇게 만들어진 사용자 정의 이미지는 추후 세션 생성 시 사용할 수 있습니다. 단, 이미지 커밋을 "
-"위해 컨테이너에 마운트된 디렉토리는 외부 리소스로 간주되며 최종 이미지에 포함되지 않습니다. ``/home/work`` 도 마운트된 "
-"폴더 (임시 디렉토리)이기 때문에 포함되지 않습니다."
+"위해 컨테이너에 마운트된 디렉토리는 외부 리소스로 간주되며 최종 이미지에 포함되지 않습니다. ``/home/work`` 도 마운트된"
+" 폴더 (임시 디렉토리)이기 때문에 포함되지 않습니다."
 
 #: ../../sessions_all/sessions_all.rst:-1
-msgid "Push session to customized image"
-msgstr "사용자 정의 이미지를 세션으로 푸시"
+msgid "세션을 사용자 정의 이미지로 만들기"
+msgstr ""
 
 #: ../../sessions_all/sessions_all.rst:541
 msgid ""
@@ -1013,8 +1013,8 @@ msgstr ""
 "``Customized<session name>`` 태그가 붙습니다."
 
 #: ../../sessions_all/sessions_all.rst:-1
-msgid "Select customized image"
-msgstr "사용자 정의 이미지 선택"
+msgid "사용자 정의 이미지 선택하기"
+msgstr ""
 
 #: ../../sessions_all/sessions_all.rst:564
 msgid ""
@@ -1023,8 +1023,8 @@ msgid ""
 msgstr "향후 세션 생성을 위해 환경 이름을 수동으로 입력하려면, 복사 아이콘을 누릅니다."
 
 #: ../../sessions_all/sessions_all.rst:-1
-msgid "Copy customized image"
-msgstr "사용자 정의 이미지 복사"
+msgid "사용자 정의 이미지 복사하기"
+msgstr ""
 
 #: ../../sessions_all/sessions_all.rst:573
 msgid "Optimizing Accelerated Computing"
@@ -1047,7 +1047,7 @@ msgstr ""
 "생성되고, 현저한 성능 저하가 발생할 수 있습니다. 이러한 문제를 해결하려면, 스레드 값을 1 또는 2로 조정하십시오."
 
 #: ../../sessions_all/sessions_all.rst:-1
-msgid "Session HPC Optimization"
+msgid "세션 HPC 최적화하기"
 msgstr ""
 
 #: ../../sessions_all/sessions_all.rst:590
@@ -1230,4 +1230,19 @@ msgid ""
 "Combining the above commands allows you to perform various tasks "
 "simultaneously on multiple shells."
 msgstr "위 명령을 조합하여 여러 개의 쉘에서 동시에 다양한 작업을 수행할 수 있습니다."
+
+#~ msgid "Container commit confirmation"
+#~ msgstr "컨테이너 커밋 저장하기"
+
+#~ msgid "Push session to customized image"
+#~ msgstr "세션을 사용자 정의 이미지로 만들기"
+
+#~ msgid "Select customized image"
+#~ msgstr "사용자 정의 이미지 선택하기"
+
+#~ msgid "Copy customized image"
+#~ msgstr "사용자 정의 이미지 복사하기"
+
+#~ msgid "Session HPC Optimization"
+#~ msgstr "세션 HPC 최적화하기"
 

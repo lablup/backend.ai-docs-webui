@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-27 17:45+0900\n"
+"POT-Creation-Date: 2024-06-12 12:32+0900\n"
 "PO-Revision-Date: 2023-03-25 23:38+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko\n"
@@ -57,10 +57,10 @@ msgstr ""
 "test`` 와 ``user2-vfolder`` 두 개의 폴더를 마운트한 후 세션을 생성 하겠습니다."
 
 #: ../../mount_vfolder/mount_vfolder.rst:-1
-msgid "Launch a compute session with storage folders"
-msgstr "스토리지 폴더를 마운트 하여 연산 세션 시작"
+msgid "자동 마운트 폴더를 이용하여 연산 세션 환경 구성하기"
+msgstr ""
 
-#: ../../mount_vfolder/mount_vfolder.rst:30
+#: ../../mount_vfolder/mount_vfolder.rst:29
 msgid ""
 "Folders to mount only lists the data folders that the user can currently "
 "mount. For example, project folders used by other projects are not "
@@ -70,7 +70,7 @@ msgstr ""
 "Folders to mount 패널에는 현재 사용자가 마운트 가능한 데이터 폴더만 출력됩니다. 예를 들어, 다른 프로젝트에 속한 "
 "프로젝트 폴더는 표시되지 않습니다. 각 폴더 이름 아래에서 해당 폴더가 속한 스토리지 호스트도 확인할 수 있습니다."
 
-#: ../../mount_vfolder/mount_vfolder.rst:35
+#: ../../mount_vfolder/mount_vfolder.rst:34
 msgid ""
 "Now, open the terminal by clicking the terminal icon in the created "
 "session. If you run ``ls`` command in the terminal, you can see that the "
@@ -80,7 +80,7 @@ msgstr ""
 "생성된 세션에서 터미널 아이콘을 클릭해 터미널 창을 띄워 봅시다. 터미널에서 ``ls`` 명령을 내려보면 ``user1-ml-"
 "test`` 폴더와 ``user2-vfolder`` 폴더가 홈 디렉토리 하위에 마운트 되어 보이는 것을 알 수 있습니다."
 
-#: ../../mount_vfolder/mount_vfolder.rst:40
+#: ../../mount_vfolder/mount_vfolder.rst:39
 msgid ""
 "The selected folder, by default, will be mounted with its name under "
 "``/home/work/`` inside the compute session. For example, if a folder's "
@@ -97,7 +97,7 @@ msgstr ""
 "``/workspace`` 로 입력한 경우, ``test`` 폴더가 연산 세션 내의 ``/workspace`` 경로에 마운트 "
 "됩니다. 상대 경로를 입력하면 ``/home/work/`` 아래에 마운트 됩니다."
 
-#: ../../mount_vfolder/mount_vfolder.rst:48
+#: ../../mount_vfolder/mount_vfolder.rst:47
 msgid ""
 "Let's create a ``test_file`` under ``user2-vfolder`` to see if the file "
 "can be preserved after the compute session is terminated. The contents of"
@@ -110,7 +110,7 @@ msgstr ""
 msgid "Mounted folders in terminal"
 msgstr ""
 
-#: ../../mount_vfolder/mount_vfolder.rst:55
+#: ../../mount_vfolder/mount_vfolder.rst:54
 msgid ""
 "If you run ``ls`` command against ``user2-vfolder``, you can see that the"
 " file was created successfully. Also note the contents of the file with "
@@ -119,7 +119,7 @@ msgstr ""
 "``user2-vfolder`` 를 대상으로 ``ls`` 명령을 실행해보면 파일이 잘 생성된 것을 확인할 수 있습니다. "
 "``cat`` 명령으로 파일 내용도 확인해 보았습니다."
 
-#: ../../mount_vfolder/mount_vfolder.rst:59
+#: ../../mount_vfolder/mount_vfolder.rst:58
 msgid ""
 "Now delete the compute session and go to the Storage page. Locate the "
 "``user2-vfolder folder``, open a file explorer and check that the file "
@@ -135,7 +135,7 @@ msgstr ""
 msgid "Download icon in the folder explorer"
 msgstr ""
 
-#: ../../mount_vfolder/mount_vfolder.rst:68
+#: ../../mount_vfolder/mount_vfolder.rst:67
 msgid ""
 "Like this, when creating a compute session, you can mount storage folders"
 " and perform any file operations on those mounted folders to save data "
@@ -144,11 +144,11 @@ msgstr ""
 "이처럼 연산 세션을 생성할 때 폴더 마운트를 하고, 마운트 된 폴더에서 파일 작업을 수행하면 연산 세션이 종료된 이후에도 데이터를 "
 "보존할 수 있습니다."
 
-#: ../../mount_vfolder/mount_vfolder.rst:76
+#: ../../mount_vfolder/mount_vfolder.rst:75
 msgid "Configure a compute session environment using an automount folder"
 msgstr "자동 마운트 폴더를 이용하여 연산 세션 환경 구성하기"
 
-#: ../../mount_vfolder/mount_vfolder.rst:78
+#: ../../mount_vfolder/mount_vfolder.rst:77
 msgid ""
 "Sometimes you need a new program or library that is not pre-installed in "
 "a compute session. In that case, you can install packages and configure a"
@@ -160,11 +160,11 @@ msgstr ""
 "관계없는 Storage 폴더 특성과 :ref:`자동 마운트 폴더<automount-folder>` 를 이용해서 패키지를 설치하고, "
 "연산 세션의 종류에 상관없이 일정한 환경을 구성할 수 있습니다."
 
-#: ../../mount_vfolder/mount_vfolder.rst:87
+#: ../../mount_vfolder/mount_vfolder.rst:86
 msgid "Install Python packages via pip"
 msgstr "pip을 통한 파이썬 패키지 설치"
 
-#: ../../mount_vfolder/mount_vfolder.rst:89
+#: ../../mount_vfolder/mount_vfolder.rst:88
 msgid ""
 "Creating a folder named ``.local`` allows a user to install Python user "
 "packages in that folder. This is because ``pip`` by default installs the "
@@ -179,7 +179,7 @@ msgstr ""
 "사용자 홈폴더 하위에 마운트 됩니다). 따라서, 만약 ``tqdm`` 이라는 파이썬 패키지를 연산 환경과 상관없이 항상 설치되어 "
 "있는 상태를 유지하려면 터미널에서 다음과 같은 명령을 내릴 수 있습니다:"
 
-#: ../../mount_vfolder/mount_vfolder.rst:100
+#: ../../mount_vfolder/mount_vfolder.rst:99
 msgid ""
 "After that, when a new compute session is created, the ``.local`` folder "
 "where the ``tqdm`` package is installed is automatically mounted, so you "
@@ -188,7 +188,7 @@ msgstr ""
 "이후, 연산 세션을 새로 생성하게 되면 ``tqdm`` 패키지가 설키된 ``.local`` 폴더가 자동으로 마운트 되므로, "
 "``tqdm`` 패키지를 다시 설치하지 않고 사용할 수 있습니다."
 
-#: ../../mount_vfolder/mount_vfolder.rst:106
+#: ../../mount_vfolder/mount_vfolder.rst:105
 msgid ""
 "If you spawn multiple sessions that use different Python versions, there "
 "may be compatibility issues with the packages. This can be circumvented "
@@ -200,11 +200,11 @@ msgstr ""
 "``.bashrc`` 편집기능을 통해 ``PYTHONPATH`` 를 분기하는 방식으로 적용할 수 있습니다. "
 "``PYTHONPATH`` 환경 변수에 지정된 경로에 사용자 ``pip`` 패키지가 설치되기 때문입니다."
 
-#: ../../mount_vfolder/mount_vfolder.rst:115
+#: ../../mount_vfolder/mount_vfolder.rst:114
 msgid "Install packages via Homebrew"
 msgstr "Homebrew를 통해 패키지 설치"
 
-#: ../../mount_vfolder/mount_vfolder.rst:117
+#: ../../mount_vfolder/mount_vfolder.rst:116
 msgid ""
 "Package managers like Ubuntu ``apt`` or CentOS ``yum`` usually require "
 "the ``root`` permission. For security reasons, ``sudo`` and ``root`` "
@@ -218,29 +218,29 @@ msgstr ""
 "(설정에 따라 접근을 허용할 수도 있습니다), 패키지 설치를 위해 ``sudo`` 접근이 필요하지 않은 `Homebrew on "
 "Linux <https://docs.brew.sh/Homebrew-on-Linux>`_ 사용을 권장하고 있습니다."
 
-#: ../../mount_vfolder/mount_vfolder.rst:123
+#: ../../mount_vfolder/mount_vfolder.rst:122
 msgid "Homebrew can be configured as follows:"
 msgstr "Homebrew는 다음과 같이 구성할 수 있습니다."
 
-#: ../../mount_vfolder/mount_vfolder.rst:125
+#: ../../mount_vfolder/mount_vfolder.rst:124
 msgid "Create ``.linuxbrew`` folder in Data & Storage page."
 msgstr "Data & Storage 페이지에서 ``.linuxbrew`` 폴더 생성."
 
-#: ../../mount_vfolder/mount_vfolder.rst:126
+#: ../../mount_vfolder/mount_vfolder.rst:125
 msgid ""
 "Create a compute session (``.linuxbrew`` folder is automatically mounted "
 "at ``/home/linuxbrew/.linuxbrew``)."
 msgstr "연산 세션을 생성(``.linuxbrew`` 폴더가 자동으로 ``/home/linuxbrew/.linuxbrew`` 위치에 마운트)."
 
-#: ../../mount_vfolder/mount_vfolder.rst:128
+#: ../../mount_vfolder/mount_vfolder.rst:127
 msgid "Install Homebrew in the compute session, if not yet installed."
 msgstr "연산 세션 내에서 Homebrew 설치(아직 설치하지 않은 경우)."
 
-#: ../../mount_vfolder/mount_vfolder.rst:134
+#: ../../mount_vfolder/mount_vfolder.rst:133
 msgid "Homebrew packages can be installed like:"
 msgstr "Homebrew 패키지는 다음과 같이설치할 수 있습니다:"
 
-#: ../../mount_vfolder/mount_vfolder.rst:142
+#: ../../mount_vfolder/mount_vfolder.rst:141
 msgid ""
 "``brew`` installs packages under ``/home/linuxbrew/.linuxbrew`` which is "
 "automatically mounted when ``.linuxbrew`` folder exists. So, if you "
@@ -253,61 +253,6 @@ msgstr ""
 "``.linuxbrew`` 라는 자동 마운트 폴더를 생성해두면 연산 세션을 삭제하고 새로운 연산 세션을 생성하더라도 기존에 설치했던"
 " Homebrew 패키지를 다시 사용할 수 있습니다."
 
-#~ msgid ""
-#~ "Every Vfolder in folder to mount "
-#~ "list is visible if its storage "
-#~ "host is added to allowed hosts. "
-#~ "Only administrator can change allowed "
-#~ "hosts. In the image above, the "
-#~ "user have an access to "
-#~ "``local:volume1``."
-#~ msgstr ""
-#~ "folder to mount 리스트에 있는 모든 "
-#~ "Vfolder는 허용된 스토리지 호스트에 추가된 경우에만 "
-#~ "보여지게 됩니다. 오직 관리자만 허용된 스토리지 호스트 "
-#~ "변경이 가능합니다. 위의 이미지에서 사용자는 "
-#~ "``local:volume1`` 하위의 Vfolder에 접근이 가능한 "
-#~ "것을 확인할 수 있습니다. "
-
-#~ msgid ""
-#~ "The selected folder will be mounted "
-#~ "with its name under ``/home/work/`` "
-#~ "inside the compute session. For example,"
-#~ " if a folder's name is ``test``, "
-#~ "it is mounted on ``/home/work/test``. If"
-#~ " you want to change the name of"
-#~ " the folder under ``/home/work/``, fill "
-#~ "in Alias. In this case, it is "
-#~ "mounted with the name written in "
-#~ "Alias."
-#~ msgstr ""
-#~ "선택한 폴더는 연산 세션 내의 ``/home/work/`` "
-#~ "하위에 폴더의 이름으로 마운트 됩니다. 예를 들어, "
-#~ "폴더의 이름이 ``test`` 일 경우, "
-#~ "``/home/work/test`` 에 마운트 됩니다. 만약, 연산"
-#~ " 세션 내에 마운트 되는 폴더의 이름을 변경하고 "
-#~ "싶다면 Alias를 입력하면 됩니다. 이 경우 "
-#~ "``/home/work/`` 하위에 Alias에 기록한 이름으로 마운트"
-#~ " 됩니다."
-
-#~ msgid "Install Homebrew on Linux"
-#~ msgstr "Homebrew on Linux 설치"
-
-#~ msgid "Install package"
-#~ msgstr "패키지 설치"
-
-#~ msgid ""
-#~ "You can manage various settings using"
-#~ " the automount folder in the same "
-#~ "way as above. More details can be"
-#~ " found on the `Backend.AI wiki "
-#~ "<https://github.com/lablup/backend.ai/blob/master/docs/install"
-#~ "/install-user-programs.rst>`_."
-#~ msgstr ""
-#~ "위와 같은 방식으로 자동 마운트 폴더를 이용하여 "
-#~ "다양한 설정 관리가 가능합니다. 보다 자세한 사항은 "
-#~ "`Backend.AI 위키 "
-#~ "<https://github.com/lablup/backend.ai/blob/master/docs/install"
-#~ "/install-user-programs.rst>`_ 에서 확인할 수 "
-#~ "있습니다."
+#~ msgid "Launch a compute session with storage folders"
+#~ msgstr "자동 마운트 폴더를 이용하여 연산 세션 환경 구성하기"
 

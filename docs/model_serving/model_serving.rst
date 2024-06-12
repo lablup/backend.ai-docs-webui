@@ -65,10 +65,12 @@ To use the Model Service, you need to follow the steps below:
 
 1. Create a model definition file.
 2. Upload the model definition file to the model type folder.
-3. Create/modify the Model Service.
+3. Create/Validate the Model Service.
 4. (If the Model Service is not public) Obtain a token.
 5. (For end users) Access the endpoint corresponding to the Model
    Service to verify the service.
+6. (If needed) Modify the Model Service.
+7. (If needed) Terminate the Model Service.
 
 Creating a Model Definition File
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -76,7 +78,7 @@ Creating a Model Definition File
    .. note::
       From 24.03, you can configure model definition file name. But if you don't
       input any other input field in model definition file path, then the system will 
-      regard it as ``model-definition.yml`` or ``model-definition.yaml``
+      regard it as ``model-definition.yml`` or ``model-definition.yaml``.
 
 The model definition file contains the configuration information
 required by the Backend.AI system to automatically start, initialize,
@@ -110,8 +112,7 @@ The model definition file follows the following format:
 
 .. _model_definition_guide:
 
-Key-Value Descriptions for Model Definition File
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Key-Value Descriptions for Model Definition File**
 
    .. note:: 
       Fields without "(Required)" mark is optional
@@ -136,8 +137,7 @@ Key-Value Descriptions for Model Definition File
      - ``max_retries``: Specify the number of retries to be made if there is no response after a request is sent to the service during model serving. 
 
 
-Description for service action supported in Backend.AI Model serving
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Description for service action supported in Backend.AI Model serving**
 
 .. _prestart_actions:
 
@@ -258,13 +258,13 @@ resources that can be allocated to the model service.
    :width: 700
    :align: center
 
--  Single Node:When running a session, the managed node and worker nodes are 
+-  Single Node: When running a session, the managed node and worker nodes are 
    placed on a single physical node or virtual machine.
 -  Multi Node: When running a session, one managed node and one or more worker 
    nodes are split across multiple physical nodes or virtual machines.
 
 Before creating model service, Backend.AI supports validation feature to check 
-whether execution is available or not(due to any errors during execution.) 
+whether execution is available or not(due to any errors during execution).
 By clicking the ``Validate`` button at the bottom-left of the service launcher, 
 a new popup for listening to validation events will pop up. In the popup modal, 
 you can check the status through the container log. When the result is set to 
@@ -280,38 +280,8 @@ you can check the status through the container log. When the result is set to
    The result ``Finished`` doesn't guarantee that the execution is successfully done. 
    Instead, please check the container log. 
 
-Modifying Model Service
-~~~~~~~~~~~~~~~~~~~~~~~
 
-Click on the wrench icon in the Control tab to open a modal where you can change 
-the model service. The format is identical to the model service start modal, with 
-previously entered fields already filled in. You can optionally modify only the 
-fields you wish to change. After modifying the fields, click the confirm button. 
-The changes will be adjusted accordingly.
-
-.. image:: edit-service-launcher.png
-   :align: center
-   :alt: Edit model service dialog
-
-Terminating Model Service
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The model service periodically runs a scheduler to adjust the routing
-count to match the desired session count. However, this puts a burden on
-the Backend.AI scheduler. Therefore, it is recommended to terminate the 
-model service if it is no longer needed. To terminate the model service, 
-click on the trash icon in the Control tab. A modal will appear asking 
-for confirmation to terminate the model service. Clicking ``OK`` 
-will terminate the model service. The terminated model service will be 
-removed from the list of model services.
-
-.. image:: terminate-model-service-dialog.png
-   :width: 500
-   :align: center
-   :alt: Terminate model service dialog
-
-Handling Failed Model Service Creation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Handling Failed Model Service Creation**
 
 If the status of the model service remains ``UNHEALTHY``, it indicates
 that the model service cannot be executed properly.
@@ -408,3 +378,33 @@ to model serving endpoint working properly or not.
    endpoint. If the service was created in a closed network, only end
    users who have access within that closed network can access the
    service.
+
+Modifying Model Service
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Click on the wrench icon in the Control tab to open a modal where you can change 
+the model service. The format is identical to the model service start modal, with 
+previously entered fields already filled in. You can optionally modify only the 
+fields you wish to change. After modifying the fields, click the confirm button. 
+The changes will be adjusted accordingly.
+
+.. image:: edit-service-launcher.png
+   :align: center
+   :alt: Edit model service dialog
+
+Terminating Model Service
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The model service periodically runs a scheduler to adjust the routing
+count to match the desired session count. However, this puts a burden on
+the Backend.AI scheduler. Therefore, it is recommended to terminate the 
+model service if it is no longer needed. To terminate the model service, 
+click on the trash icon in the Control tab. A modal will appear asking 
+for confirmation to terminate the model service. Clicking ``OK`` 
+will terminate the model service. The terminated model service will be 
+removed from the list of model services.
+
+.. image:: terminate-model-service-dialog.png
+   :width: 500
+   :align: center
+   :alt: Terminate model service dialog
