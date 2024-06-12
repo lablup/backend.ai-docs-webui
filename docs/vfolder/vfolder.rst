@@ -222,7 +222,7 @@ session. Therefore, the following conditions are required to launch it.
 
 * User can create at least one compute session
 * User can allocated at least 1 core of CPU and 512 MB of memory
-* Image that supports FileBrowser has been installed
+* Image that supports FileBrowser must be installed
 
 You can access FileBrowser in two ways.
 
