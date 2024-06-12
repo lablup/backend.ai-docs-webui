@@ -519,7 +519,7 @@ msgstr ""
 "AI Accelerator: AI 가속기 (GPUs 또는 NPUs)의 용량으로 설정에 의해 수동 이미지 설정이 허용된 경우, 선택한"
 " 자원 그룹에 따라 AI 가속기를 선택하게 됨."
 
-#: ../../model_serving/model_serving.rst:261
+#: ../../model_serving/model_serving.rst:286
 msgid ""
 "Single Node: When running a session, the managed node and worker nodes "
 "are placed on a single physical node or virtual machine."
