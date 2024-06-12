@@ -441,7 +441,7 @@ msgstr ""
 
 #: ../../vfolder/vfolder.rst:223
 msgid "User can create at least one compute session"
-msgstr "최소 1개 이상의 세션 생성"
+msgstr "최소 1개 이상의 세션을 생성 할 수 있음"
 
 #: ../../vfolder/vfolder.rst:224
 msgid "User can allocated at least 1 core of CPU and 512 MB of memory"
