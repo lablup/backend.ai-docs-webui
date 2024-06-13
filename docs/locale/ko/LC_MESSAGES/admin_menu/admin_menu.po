@@ -45,8 +45,8 @@ msgstr ""
 "수도 있습니다."
 
 #: ../../admin_menu/admin_menu.rst:-1
-msgid "User management page"
-msgstr "사용자 관리 메뉴"
+msgid "서버 관리 메뉴"
+msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:21
 msgid ""
@@ -96,8 +96,8 @@ msgstr ""
 "Project 정보 또한 확인할 수 있습니다."
 
 #: ../../admin_menu/admin_menu.rst:-1
-msgid "Detailed information of a user"
-msgstr "사용자 상세 정보"
+msgid "상세 정보"
+msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:56
 msgid ""
@@ -183,8 +183,8 @@ msgstr ""
 "수 있습니다."
 
 #: ../../admin_menu/admin_menu.rst:-1
-msgid "Deactivating user account"
-msgstr "사용자 계정 비활성화"
+msgid "사용자 계정 비활성화"
+msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:102
 msgid ""
@@ -407,8 +407,8 @@ msgstr ""
 "적용하려면 OK 버튼을 클릭합니다."
 
 #: ../../admin_menu/admin_menu.rst:-1
-msgid "Update resource policy dialog"
-msgstr "자원 정책 수정 다이얼로그"
+msgid "자원 정책 관리"
+msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:239
 msgid ""
@@ -717,7 +717,7 @@ msgstr "프로젝트 자원 정책 수정 다이얼로그"
 
 #: ../../admin_menu/admin_menu.rst:384
 msgid "Name: The name of the project resource policy."
-msgstr "Name: 프로젝트 자원 정책의 이름입니다."
+msgstr "Name: 프로젝트 자원 정책의 이름."
 
 #: ../../admin_menu/admin_menu.rst:385
 msgid ""
@@ -821,8 +821,8 @@ msgstr ""
 "결정된 값입니다. 변경하려는 최소 자원량에 대하여 정말 잘 알고 있지 않은 경우 기본값으로 남겨두시기 바랍니다."
 
 #: ../../admin_menu/admin_menu.rst:-1
-msgid "Update image resource setting"
-msgstr "이미지 자원 설정 업데이트"
+msgid "자원 프리셋 설정"
+msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:446
 msgid "Manager docker registry"
@@ -988,8 +988,8 @@ msgid "Query agent nodes"
 msgstr "Agent 노드 조회"
 
 #: ../../admin_menu/admin_menu.rst:-1
-msgid "Agent node list"
-msgstr "Agent 노드 목록"
+msgid "Agent 노드 조회"
+msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:546
 msgid ""
@@ -1012,8 +1012,8 @@ msgstr ""
 "참고 자료로 활용할 수 있습니다."
 
 #: ../../admin_menu/admin_menu.rst:-1
-msgid "Terminated agent node list"
-msgstr "종료된 Agent 노드 목록"
+msgid "Agent 노드 관리"
+msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:563
 msgid "Set schedulable status of agent nodes"
@@ -1031,8 +1031,8 @@ msgstr ""
 "세션 생성만 차단할 수 있습니다."
 
 #: ../../admin_menu/admin_menu.rst:-1
-msgid "Agent settings"
-msgstr "Agent 설정"
+msgid "시스템 설정 조회"
+msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:578
 msgid "Manage resource group"
@@ -1063,8 +1063,8 @@ msgstr ""
 "수 있습니다."
 
 #: ../../admin_menu/admin_menu.rst:-1
-msgid "Resource group tab"
-msgstr "자원 그룹 탭"
+msgid "자원 그룹 관리"
+msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:594
 msgid ""
@@ -1407,8 +1407,8 @@ msgid "You can also change settings for scaling and plugins."
 msgstr "스케일링과 플러그인에 대한 설정도 변경할 수 있습니다."
 
 #: ../../admin_menu/admin_menu.rst:-1
-msgid "System setting about scaling and plugins"
-msgstr "스케일링 및 플러그인 시스템 설정"
+msgid "스케일링과 플러그인에 대한 설정도 변경할 수 있습니다."
+msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:787
 msgid ""
@@ -1537,10 +1537,6 @@ msgstr ""
 #: ../../admin_menu/admin_menu.rst:860
 msgid "This page is only for showing current information."
 msgstr "이 페이지는 현재 정보를 보여주기 위한 것입니다."
-
-#: ../../admin_menu/admin_menu.rst:-1
-msgid "Information page"
-msgstr "정보 페이지"
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Information page 2"

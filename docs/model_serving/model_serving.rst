@@ -40,9 +40,9 @@ modifying the compute session for training in the following way:
    server port inside the session for model serving. 
    (For instructions on how to use preopen ports, refer to this :ref:`Set Preopen Ports <set_preopen_ports>`.)
 
-2. Check “Open app to public” to allow the service mapped to the
+2. Check 'Open app to public' to allow the service mapped to the
    pre-opened port to be publicly accessible. 
-   (For detailed information about “Open app to public,” refer to this :ref:`Open app to public <open_app_to_public>`.)
+   (For detailed information about "Open app to public," refer to this :ref:`Open app to public <open_app_to_public>`.)
 
 However, there are certain limitations in version 23.03:
 
@@ -65,17 +65,20 @@ To use the Model Service, you need to follow the steps below:
 
 1. Create a model definition file.
 2. Upload the model definition file to the model type folder.
-3. Create/modify the Model Service.
+3. Create/Validate the Model Service.
 4. (If the Model Service is not public) Obtain a token.
 5. (For end users) Access the endpoint corresponding to the Model
    Service to verify the service.
+6. (If needed) Modify the Model Service.
+7. (If needed) Terminate the Model Service.
 
 Creating a Model Definition File
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   .. note:: 
-      The model definition file must be named ``model-definition.yml`` or
-      ``model-definition.yaml`` to align with the current version.
+   .. note::
+      From 24.03, you can configure model definition file name. But if you don't
+      input any other input field in model definition file path, then the system will 
+      regard it as ``model-definition.yml`` or ``model-definition.yaml``.
 
 The model definition file contains the configuration information
 required by the Backend.AI system to automatically start, initialize,
@@ -109,8 +112,7 @@ The model definition file follows the following format:
 
 .. _model_definition_guide:
 
-Key-Value Descriptions for Model Definition File
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Key-Value Descriptions for Model Definition File**
 
    .. note:: 
       Fields without "(Required)" mark is optional
@@ -135,8 +137,7 @@ Key-Value Descriptions for Model Definition File
      - ``max_retries``: Specify the number of retries to be made if there is no response after a request is sent to the service during model serving. 
 
 
-Description for service action supported in Backend.AI Model serving
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Description for service action supported in Backend.AI Model serving**
 
 .. _prestart_actions:
 
@@ -184,7 +185,7 @@ instructions on how to create a folder.
    :align: center
    :alt: Model type folder creation
 
-After creating the folder, select the “Model” tab in the Data & Folders
+After creating the folder, select the 'MODELS' tab in the Data & Folders
 page, click on the recently created model type folder icon to open the
 folder explorer, and upload the model definition file.
 
@@ -192,36 +193,43 @@ folder explorer, and upload the model definition file.
    :align: center
    :alt: Model definition file upload
 
-Creating/Modifying Model Service
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Creating/Validating Model Service
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Once the model definition file is uploaded to the virtual folder of the
 model type, you are ready to create the model service.
 
-Click the “Start Service” button on the Model Serving page. This will
+Click the 'Start Service' button on the Model Serving page. This will
 bring up a modal where you can enter the required settings for creating
 the service.
 
 .. image:: service-launcher1.png
-   :width: 500
+   :width: 700
    :align: center
    :alt: Service launcher
 
-First, provide a service name and select
-the virtual folder of the model type to be used for the model service.
-
-For detailed explanations of each item, please refer to the following:
+First, provide a service name. For detailed explanations of each item, please refer to the following:
 
 -  Open To Public: This option allows access to the model service
    without any separate token on the server where the service is to be
    hosted. By default, it is disabled.
--  Desired Routing Count: The model service can be serviced by multiple
-   servers. This setting determines how many routing sessions to create
-   for the current service. The value specified here will be used as the
-   basis for creating the sessions.
+-  Model Storage To Mount: This is model folder to mount, which contains 
+   model definition file inside the directory.
+-  Model Destination For Model Folder: This option allows aliasing path of 
+   model storage path to session corresponding to routing, which represents 
+   the service. default value is ``/models``.
+-  Model Definition File Path: You can also set model definition file as you
+   uploaded in model storage path. The default value is ``model-definition.yaml``.
+-  Additional Mounts: Likewise session, service provides additional mounts. 
+   Please make sure that only you can mount general/data usage mode folder, not additional 
+   model folder.
+-  Desired Routing Count: This setting serves as the basis for determining the number 
+   of routing sessions to maintain for the current service. If you change the value of this 
+   setting, the manager can create a new replica session or terminate a running session 
+   by referring to the number of existing replica sessions.
 
 .. image:: service-launcher2.png
-   :width: 500
+   :width: 700
    :align: center
    :alt: Service launcher
 
@@ -247,46 +255,33 @@ resources that can be allocated to the model service.
    any AI accelerator on demand according to resource group.
 
 .. image:: cluster_mode.png
-   :width: 500
+   :width: 700
    :align: center
 
--  Single Node : When running a session, the managed node and worker nodes are 
+-  Single Node: When running a session, the managed node and worker nodes are 
    placed on a single physical node or virtual machine.
--  Multi Node : When running a session, one managed node and one or more worker 
+-  Multi Node: When running a session, one managed node and one or more worker 
    nodes are split across multiple physical nodes or virtual machines.
 
-Modifying Model Service
-~~~~~~~~~~~~~~~~~~~~~~~
+Before creating model service, Backend.AI supports validation feature to check 
+whether execution is available or not(due to any errors during execution).
+By clicking the 'Validate' button at the bottom-left of the service launcher, 
+a new popup for listening to validation events will pop up. In the popup modal, 
+you can check the status through the container log. When the result is set to 
+``Finished``, then the validation check is finished.
 
-Click on the wrench icon in the Control tab to open a modal where you can change 
-the model service. The format is identical to the model service start modal, with 
-previously entered fields already filled in. You can optionally modify only the 
-fields you wish to change. After modifying the fields, click the confirm button. 
-The changes will be adjusted accordingly.
 
-.. image:: routings-count-changed.png
+
+.. image:: model-validation-dialog.png
+   :width: 700
    :align: center
-   :alt: Edit model service dialog
 
-Terminating Model Service
-~~~~~~~~~~~~~~~~~~~~~~~~~
+.. note:: 
+   The result ``Finished`` doesn't guarantee that the execution is successfully done. 
+   Instead, please check the container log. 
 
-The model service periodically runs a scheduler to adjust the routing
-count to match the desired session count. However, this puts a burden on
-the Backend.AI scheduler. Therefore, it is recommended to terminate the 
-model service if it is no longer needed. To terminate the model service, 
-click on the trash icon in the Control tab. A modal will appear asking 
-for confirmation to terminate the model service. Clicking ``OK`` 
-will terminate the model service. The terminated model service will be 
-removed from the list of model services.
 
-.. image:: terminate-model-service-dialog.png
-   :width: 500
-   :align: center
-   :alt: Terminate model service dialog
-
-Handling Failed Model Service Creation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Handling Failed Model Service Creation**
 
 If the status of the model service remains ``UNHEALTHY``, it indicates
 that the model service cannot be executed properly.
@@ -310,7 +305,7 @@ follows:
 
    -  Solution: Verify :ref:`the format of the model definition file <model_definition_guide>` and 
       if any key-value pairs are incorrect, modify them and overwrite the file in the saved location. 
-      Then, click ``Clear error and Retry`` button to remove all the error stacked in routes info 
+      Then, click 'Clear error and Retry' button to remove all the error stacked in routes info 
       table and ensure that the routing of the model service is set correctly.
 
       .. image:: refresh-button.png
@@ -324,7 +319,7 @@ Once the model service is successfully executed, the status will be set
 to ``HEALTHY``. In this case, you can click on the corresponding endpoint
 name in the Model Service tab to view detailed information about the
 model service. From there, you can check the service endpoint in the
-routing information of the model service. If the “Open to Public” option
+routing information of the model service. If the 'Open to Public' option
 is enabled when the service is created, the endpoint will be publicly
 accessible without any separate token, and end users can access it.
 However, if it is disabled, you can issue a token as described below to
@@ -334,7 +329,7 @@ verify that the service is running properly.
    :align: center
    :alt: Routing page
 
-Click the token creation button located to the right of the generated
+Click the 'Generate Token' button located to the right of the generated
 token list in the routing information. In the modal that appears for
 token creation, enter the expiration date. 
 
@@ -343,7 +338,7 @@ token creation, enter the expiration date.
    :align: center
    :alt: Token generation dialog
 
-The issued token will be added to the list of generated tokens. Click the copy icon in the token
+The issued token will be added to the list of generated tokens. Click the 'copy' button in the token
 item to copy the token, and add it as the value of the following key.
 
 .. image:: generated-token-copy.png
@@ -383,3 +378,33 @@ to model serving endpoint working properly or not.
    endpoint. If the service was created in a closed network, only end
    users who have access within that closed network can access the
    service.
+
+Modifying Model Service
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Click on the wrench icon in the Control tab to open a modal where you can change 
+the model service. The format is identical to the model service start modal, with 
+previously entered fields already filled in. You can optionally modify only the 
+fields you wish to change. After modifying the fields, click the 'confirm' button. 
+The changes will be adjusted accordingly.
+
+.. image:: edit-service-launcher.png
+   :align: center
+   :alt: Edit model service dialog
+
+Terminating Model Service
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The model service periodically runs a scheduler to adjust the routing
+count to match the desired session count. However, this puts a burden on
+the Backend.AI scheduler. Therefore, it is recommended to terminate the 
+model service if it is no longer needed. To terminate the model service, 
+click on the 'trash' button in the Control column. A modal will appear asking 
+for confirmation to terminate the model service. Clicking ``OK`` 
+will terminate the model service. The terminated model service will be 
+removed from the list of model services.
+
+.. image:: terminate-model-service-dialog.png
+   :width: 500
+   :align: center
+   :alt: Terminate model service dialog
