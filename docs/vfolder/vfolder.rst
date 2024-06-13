@@ -14,9 +14,9 @@ such as the folder name and ID, the NFS host name where the folder is located
    :alt: Folder list in Storage page
 
 There are two types of storage folders. User folders can be created by
-normal users, and you can see that there is one user icon in the Type panel.
-On the other hand, Project folders can be recognized by an icon with multiple
-users in the panel. Project folders are created by domain admins, and normal
+normal users, and you can see that there is one user button in the Type column.
+On the other hand, Project folders can be recognized by an button with multiple
+users in the column. Project folders are created by domain admins, and normal
 users can only see project folders created for the project in which the users
 belong.
 
@@ -43,7 +43,7 @@ Storage Status on top of the folder list shows the following information:
    (e.g. XFS, CephFS, NetApp, Purestorage, etc.). For the quota setting, please refer
    to the :ref:`Quota Setting Panel<quota-setting-panel>` section.
 
-Check marks on the Owner panel in the folder list indicate the user created folders.
+Check marks on the Owner column in the folder list indicate the user created folders.
 
 .. image:: owner_panel.png
    :alt: Owner panel in Storage page
@@ -58,14 +58,14 @@ Check marks on the Owner panel in the folder list indicate the user created fold
 Create storage folder
 ---------------------
 
-You can create a storage folder with the desired name by clicking the NEW FOLDER
+You can create a storage folder with the desired name by clicking the 'NEW FOLDER'
 button. Enter the name of the folder to be created in Folder name, and select
 one of User / Project for Type. (Depending on the server settings, only one of
 User or Project may be selectable.) When creating a project folder, the Project field
 must be set. The project folder will be bound to the project specified in the Project
 field, and only users belonging to the project can mount and use the project folder.
 After setting the values as desired, you can create a folder by clicking the
-CREATE button.
+'CREATE' button.
 
 .. image:: vfolder_create_dialog.png
    :width: 400
@@ -96,15 +96,15 @@ follows.
 Explore folder
 --------------
 
-You can click the folder icon in the Control panel to bring up a file explorer
+You can click the folder button in the Control column to bring up a file explorer
 where you can view the contents of that folder.
 
 .. image:: vfolder_item_with_controls.png
    :alt: Controls in folder item
 
 You can see that directories and files inside the folder will be listed, if
-exists. Click a directory name in the Name panel to move to the directory.  You
-can click the download button or delete button in the Actions panel to download
+exists. Click a directory name in the Name column to move to the directory.  You
+can click the download button or delete button in the Actions column to download
 it or delete it entirely from the directory. You can rename a file/directory as
 well. For more detailed file operations, you can mount this folder when creating
 a compute session, and then use a service like Terminal or Jupyter Notebook to
@@ -113,8 +113,8 @@ do it.
 .. image:: folderexplorer_with_filebrowser.png
    :alt: File explorer of a storage folder
 
-You can create a new directory on the current path with the NEW FOLDER button
-(in the file explorer), or upload a local file with the UPLOAD FILES button. All
+You can create a new directory on the current path with the 'NEW FOLDER' button
+(in the file explorer), or upload a local file with the 'UPLOAD FILES' button. All
 of these file operations can also be performed using the above-described method
 of mounting folders into a compute session.
 
@@ -128,8 +128,8 @@ Rename folder
 -------------
 
 If you have permission to rename the storage folder, you can rename it by
-clicking the edit icon in the Control panel. When you click the icon button, a
-rename dialog will appear. Write new folder name and then click UPDATE button.
+clicking the edit button in the Control column. When you click the button, a
+rename dialog will appear. Write new folder name and then click 'UPDATE' button.
 
 .. image:: vfolder_rename_dialog.png
    :width: 400
@@ -141,26 +141,25 @@ Delete folder
 -------------
 
 If you have permission to delete the storage folder, you can delete it by
-clicking the 'trash can' icon in the control column. By clicking the icon, 
-the system will automatically move the folder to 'trash can' with following notification, 
+clicking the 'trash can' button in the control column. By clicking the button, 
+the system will automatically move the folder to trash can with following notification, 
 
 .. image:: delete_notification.png
    :width: 400
    :align: center
    :alt: Folder delete notification modal
 
-and the folder status appearing in the 'status' column will be changed to ``delete-pending``. 
+and the folder status appearing in the status column will be changed to ``delete-pending``. 
 
 .. image:: trash_bin_table.png
    :width: 800
    :align: center
    :alt: Trash bin table
 
-In this status, you can restore the folder by
-clicking restore button in Control pane. If you want to permanently delete the folder, 
-please click 'red trash can' icon in the same column. A confirmation modal will pop up with 
-an input field saying 'Type folder name to delete'. Make sure you type the exact folder name correctly 
-into the field, and click the red ``DELETE FOREVER`` button to permanently delete the folder.
+In this status, you can restore the folder by clicking restore button in Control column. If you want to permanently delete the folder, 
+please click 'red trash can' button in the same column. A confirmation modal will pop up with 
+an input field saying ``Type folder name to delete``. Make sure you type the exact folder name correctly 
+into the field, and click the red 'DELETE FOREVER' button to permanently delete the folder.
 
 .. image:: vfolder_delete_dialog.png
    :width: 400
@@ -186,8 +185,8 @@ Automount folders
 -----------------
 
 Data & Storage page has an Automount Folders tab. Click this tab to see a
-list of folders whose names prefixed with a dot (.). When you create a folder,
-if you specify a name that starts with a dot (.), it is added to the Automount
+list of folders whose names prefixed with a dot (``.``). When you create a folder,
+if you specify a name that starts with a dot (``.``), it is added to the Automount
 Folders tab, not the Folders tab. Automount Folders are special folders that are
 automatically mounted in your home directory even if you do not mount them
 manually when creating a compute session. By using this feature, creating and
@@ -205,9 +204,9 @@ Model folders
 -------------
 
 From the 24.03, Backend.AI supports a new feature called 'Model Store'.
-The newly added \"Models\" tab offers users a unified model store interface, enabling
+The newly added "Models" tab offers users a unified model store interface, enabling
 easy management and access to various machine learning and deep learning models.
-The features and usage of the \"Models\" tab will be updated in the 24.03 documentation.
+The features and usage of the "Models" tab will be updated in the 24.03 documentation.
 
 Using FileBrowser
 -----------------
@@ -220,27 +219,27 @@ the user's local machine.
 Currently, Backend.AI provides a FileBrowser as an application of a compute
 session. Therefore, the following conditions are required to launch it.
 
-* User can create at least one compute session
-* User can allocated at least 1 core of CPU and 512 MB of memory
-* Image that supports FileBrowser must be installed
+* User can create at least one compute session.
+* User can allocated at least 1 core of CPU and 512 MB of memory.
+* Image that supports FileBrowser must be installed.
 
 You can access FileBrowser in two ways.
 
-* Execute FileBrowser from file explorere dialog of a data folder in Data &
-  Stroage page
-* Launch a compute session directly from a FileBrowser image on Sessions page
+* Execute FileBrowser from file explorer dialog of a data folder in Data &
+  Storage page.
+* Launch a compute session directly from a FileBrowser image on Sessions page.
 
 
 Execute FileBrowser from folder explorer dialog in Data & Storage page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Go to the Data & Storage page and open the file explorer dialog of target
-data folder. Click the folder icon or the folder name to open the file explorer.
+data folder. Click the folder button or the folder name to open the file explorer.
 
 .. image:: first_step_to_access_filebrowser.png
    :alt: first step to access FileBrowser
 
-Click EXECUTE FILEBROWSER button in the upper-right corner of the explorer.
+Click 'EXECUTE FILEBROWSER' button in the upper-right corner of the explorer.
 
 .. image:: folderexplorer_with_filebrowser.png
    :alt: Folder explorer with FileBrowser
@@ -253,9 +252,9 @@ and files.
 .. image:: filebrowser_with_new_window.png
    :alt: FileBrowser with new window
 
-When user clicks EXECUTE FILEBROWSER, Backend.AI automatically creates a
+When user clicks 'EXECUTE FILEBROWSER' button, Backend.AI automatically creates a
 dedicated compute session for the app. So, in the Sessions page, you should see
-FileBrowser compute session. It is user's reponsibility to delete this compute
+FileBrowser compute session. It is user's responsibility to delete this compute
 session.
 
 .. image:: filebrowser_in_session_page.png
@@ -263,7 +262,7 @@ session.
 
 .. note::
    If you accidentally close the FileBrowser window and want to reopen it, just
-   go to Sessions page and click the FileBrowser application icon of the
+   go to Sessions page and click the FileBrowser application button of the
    FileBrowser compute session.
 
    .. image:: app_dialog_with_filebrowser.png
@@ -271,10 +270,9 @@ session.
       :align: center
 
    |
-   | When you click EXECUTE FILEBROWSER button again in the data folder
+   | When you click 'EXECUTE FILEBROWSER' button again in the data folder
        explorer, a new compute session will be created and a total of two
-       FileBrowser sessions
-       will appear.
+       FileBrowser sessions will appear.
 
 Create a compute session with FileBrowser image
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -316,7 +314,7 @@ Let's upload a directory with the following structure.
 
    foo
    +-- test
-   |    +-- test2.txt
+   |   +-- test2.txt
    +-- test.txt
 
 After selecting ``foo`` directory, you can see the directory just uploaded
@@ -336,7 +334,7 @@ You can move files or directories by following steps below.
 .. image:: select_folders.png
    :align: center
 
-2. Click the arrow icon in the upper right corner of FileBrowser
+2. Click the 'arrow' button in the upper right corner of FileBrowser
 
 .. image:: click_arrow_icon.png
    :width: 400
@@ -348,7 +346,7 @@ You can move files or directories by following steps below.
    :width: 400
    :align: center
 
-4. Click MOVE button
+4. Click 'MOVE' button
 
 You will see that moving operation is successfully finished.
 
@@ -375,9 +373,9 @@ Execute SFTP server from folder explorer dialog in Data & Storage page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Go to the Data & Storage page and open the file explorer dialog of target data folder.
-Click the folder icon or the folder name to open the file explorer.
+Click the folder button or the folder name to open the file explorer.
 
-Click RUN SFTP SERVER button in the upper-right corner of the explorer.
+Click 'RUN SFTP SERVER' button in the upper-right corner of the explorer.
 
 .. image:: folderexplorer_with_filebrowser.png
    :alt: Folder explorer with SFTP Server
@@ -392,18 +390,18 @@ automatically. (This session will not affect resource occupancy.)
 
 .. note::
    We provide a detailed information about using large file upload via ssh/sftp connection.
-   For more information, please click the ``Read more`` text link to see all the details of execution.
+   For more information, please click the 'Read more' text link to see all the details of execution.
 
    .. image:: SSH_SFTP_connection_expanded.png
       :height: 400
       :align: center
       :alt: SSH / SFTP connection dialog expanded
 
-For the connection, click "DOWNLOAD SSH KEY" button to download the SSH private key
+For the connection, click 'DOWNLOAD SSH KEY' button to download the SSH private key
 (``id_container``). Also, remember the host and port number. Then, you can copy your
 files to the session using the Connection Example code written in the dialog, or
 referring to the following guide: :ref:`link<sftp_connection_for_linux_and_mac>`.
-To perserve the files, you need to transfer the files to the data folder. Also,
+To preserve the files, you need to transfer the files to the data folder. Also,
 the session will be terminated when there is no transfer for some time.
 
 .. note::
@@ -420,7 +418,7 @@ the session will be terminated when there is no transfer for some time.
 .. such as XFS, Backend.AI can provide a per-folder quota. Administrators can set
 .. the quota limit through a resource policy, so if you want to increase the quota,
 .. contact the administrator. Within the policy limit, users can adjust the quota
-.. of their folders by clicking the setting icon for each data folder.
+.. of their folders by clicking the setting button for each data folder.
 
 .. .. image:: xfs_quota_setting.png
 ..    :width: 400
