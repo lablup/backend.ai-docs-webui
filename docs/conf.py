@@ -78,6 +78,11 @@ html_js_files = [
     "js/custom.js",
 ]
 
+# excludes smartquotes
+smartquotes_excludes = {
+    'languages': ['en', 'ko']
+}
+
 
 # -- Options for LaTeX output ------------------------------------------------
 latex_engine = "xelatex"

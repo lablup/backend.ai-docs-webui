@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 20.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-27 17:45+0900\n"
+"POT-Creation-Date: 2024-06-12 12:32+0900\n"
 "PO-Revision-Date: 2022-05-17 11:22+0900\n"
 "Last-Translator: \n"
 "Language: ko\n"
@@ -60,8 +60,8 @@ msgstr ""
 "이외의 URL을 입력해주십시오."
 
 #: ../../import_run/import_run.rst:-1
-msgid "Import & Run Jupyter notebook"
-msgstr "Jupyter notebook 파일 가져오기 및 실행"
+msgid "Jupyter notebook 파일 가져오기 및 실행"
+msgstr ""
 
 #: ../../import_run/import_run.rst:26
 msgid ""
@@ -125,8 +125,8 @@ msgid ""
 msgstr "버튼 클릭 전 반드시 로그인이 되어있어야 합니다. 아닐 경우 실행 전 반드시 로그인이 필요합니다."
 
 #: ../../import_run/import_run.rst:-1
-msgid "Create a Jupyter notebook button"
-msgstr "Jupyter notebook을 바로 실행할 수 있는 버튼 생성하기"
+msgid "Jupyter notebook을 바로 실행할 수 있는 버튼 생성하기"
+msgstr ""
 
 #: ../../import_run/import_run.rst:67
 msgid "Importing GitHub Repositories"
@@ -144,8 +144,8 @@ msgstr ""
 "목록에서 하나를 선택하십시오."
 
 #: ../../import_run/import_run.rst:-1
-msgid "Import GitHub repository"
-msgstr "GitHub 저장소 불러오기"
+msgid "GitHub 저장소 불러오기"
+msgstr ""
 
 #: ../../import_run/import_run.rst:78
 msgid ""
@@ -163,10 +163,6 @@ msgid ""
 " its name."
 msgstr "저장소가 하나의 폴더로써 성공적으로 불러와진 것을 확인할 수 있습니다."
 
-#: ../../import_run/import_run.rst:-1
-msgid "Import GitHub repository result"
-msgstr "GitHub 저장소 불러오기 결과"
-
 #: ../../import_run/import_run.rst:90
 msgid "Importing GitLab Repositories"
 msgstr "GitLab 저장소 불러오기"
@@ -182,8 +178,8 @@ msgstr ""
 " 이름을 명시적으로 지정해야 합니다."
 
 #: ../../import_run/import_run.rst:-1
-msgid "Import GitLab repository"
-msgstr "GitLab 저장소 불러오기"
+msgid "GitLab 저장소 불러오기"
+msgstr ""
 
 #: ../../import_run/import_run.rst:101
 msgid ""
@@ -193,32 +189,18 @@ msgstr ""
 "이미 동일한 이름의 데이터 폴더가 존재할 경우, 시스템에서는 자동으로 불러오는 저장소 명 뒤에 ``_`` (밑줄)과 번호를 추가하게"
 " 됩니다."
 
-#~ msgid ""
-#~ "From 22.03, Backend.AI support another "
-#~ "web based Git repository, GitLab. It's"
-#~ " almost same as :ref:`Importing GitHub "
-#~ "Repositories<importing-github-repositories>` , "
-#~ "but in importing from GitLab "
-#~ "repositories, you can specify the branch"
-#~ " you want to import as Vfolder."
-#~ msgstr ""
-#~ "Backend.AI 는 22.03 버전부터 또 다른 웹 "
-#~ "기반 Git 저장소인 GitLab 저장소 불러오기를 "
-#~ "지원합니다. :ref:`GitHub 저장소 불러오기<importing-"
-#~ "github-repositories>` 와 거의 같은 방법으로 "
-#~ "저장소를 불러올 수 있지만, GitLab 저장소를 불러올"
-#~ " 때에는 VFolder로 불러오려는 브랜치를 지정할 수 "
-#~ "있습니다."
+#~ msgid "Import & Run Jupyter notebook"
+#~ msgstr "Jupyter notebook 파일 가져오기 및 실행"
 
-#~ msgid ""
-#~ "For now, session in Batch mode "
-#~ "only allows terminal app. If you "
-#~ "want to execute Jupyter notebook "
-#~ "immediately, please select the type of"
-#~ " session to ``INTERACTIVE``, not ``BATCH``."
-#~ msgstr ""
-#~ "현재 Batch 모드 세션에서는 터미널 앱 실행만 "
-#~ "지원합니다. Jupyter notebook 을 즉시 실행하려면, "
-#~ "세션 타입을 ``BATCH`` 가 아닌 ``INTERACTIVE``"
-#~ " 로 선택해주세요."
+#~ msgid "Create a Jupyter notebook button"
+#~ msgstr "Jupyter notebook을 바로 실행할 수 있는 버튼 생성하기"
+
+#~ msgid "Import GitHub repository"
+#~ msgstr "GitHub 저장소 불러오기"
+
+#~ msgid "Import GitHub repository result"
+#~ msgstr "GitHub 저장소 불러오기"
+
+#~ msgid "Import GitLab repository"
+#~ msgstr "GitLab 저장소 불러오기"
 

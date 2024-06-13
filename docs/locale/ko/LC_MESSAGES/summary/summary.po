@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-27 17:45+0900\n"
+"POT-Creation-Date: 2024-06-12 12:32+0900\n"
 "PO-Revision-Date: 2021-03-02 18:31+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko_KR\n"
@@ -36,8 +36,8 @@ msgid "Topbar"
 msgstr "상단 바"
 
 #: ../../summary/summary.rst:-1
-msgid "Topbar usermenu"
-msgstr "상단 바 사용자 메뉴"
+msgid "상단 바 사용자 메뉴"
+msgstr ""
 
 #: ../../summary/summary.rst:17
 msgid ""
@@ -181,7 +181,7 @@ msgid "Summary panel"
 msgstr "Summary 패널"
 
 #: ../../summary/summary.rst:-1
-msgid "Dashboard panels"
+msgid "Dashboard 패널"
 msgstr "Dashboard 패널"
 
 #: ../../summary/summary.rst:96
@@ -331,4 +331,7 @@ msgstr ""
 
 #~ msgid "Secret Key: User's secret key."
 #~ msgstr "비밀 키: 사용자의 비밀 키."
+
+#~ msgid "Topbar usermenu"
+#~ msgstr "상단 바 사용자 메뉴"
 
