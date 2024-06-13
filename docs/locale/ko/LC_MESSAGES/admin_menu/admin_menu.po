@@ -717,7 +717,7 @@ msgstr "프로젝트 자원 정책 수정 다이얼로그"
 
 #: ../../admin_menu/admin_menu.rst:384
 msgid "Name: The name of the project resource policy."
-msgstr "Name: 프로젝트 자원 정책의 이름입니다."
+msgstr "Name: 프로젝트 자원 정책의 이름."
 
 #: ../../admin_menu/admin_menu.rst:385
 msgid ""
