@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 23.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-12 14:35+0900\n"
+"POT-Creation-Date: 2024-06-13 12:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgstr ""
 
 #: ../../model_serving/model_serving.rst:-1
 msgid "Model serving diagram"
-msgstr "모델 서빙 다이어그램"
+msgstr "모델 서빙"
 
 #: ../../model_serving/model_serving.rst:23
 msgid ""
@@ -89,9 +89,9 @@ msgstr ""
 
 #: ../../model_serving/model_serving.rst:43
 msgid ""
-"Check “Open app to public” to allow the service mapped to the pre-opened "
-"port to be publicly accessible. (For detailed information about “Open app"
-" to public,” refer to this :ref:`Open app to public "
+"Check 'Open app to public' to allow the service mapped to the pre-opened "
+"port to be publicly accessible. (For detailed information about \"Open "
+"app to public,\" refer to this :ref:`Open app to public "
 "<open_app_to_public>`.)"
 msgstr ""
 "``Open app to public`` 체크하여 사전 개방된 포트에 매핑된 서비스를 외부로 공개하도록 설정(Open app to "
@@ -205,11 +205,11 @@ msgstr "모델 정의 파일은 다음과 같은 형식을 따릅니다:"
 
 #: ../../model_serving/model_serving.rst:115
 msgid "**Key-Value Descriptions for Model Definition File**"
-msgstr "모델 정의 파일에 대한 키-값 설명"
+msgstr "**모델 정의 파일에 대한 키-값 설명**"
 
 #: ../../model_serving/model_serving.rst:118
 msgid "Fields without \"(Required)\" mark is optional"
-msgstr "“(필수)” 항목이 기재되어 있지 않은 항목은 선택 입력입니다."
+msgstr "\"(필수)\" 항목이 기재되어 있지 않은 항목은 선택 입력입니다."
 
 #: ../../model_serving/model_serving.rst:120
 msgid "``name`` (Required): Defines the name of the model."
@@ -277,7 +277,7 @@ msgstr "``max_retries``: 모델 서빙시 서비스에 요청이 간 뒤, 응답
 
 #: ../../model_serving/model_serving.rst:140
 msgid "**Description for service action supported in Backend.AI Model serving**"
-msgstr "Backend.AI 모델 서빙에서 지원하는 서비스 액션 안내"
+msgstr "**Backend.AI 모델 서빙에서 지원하는 서비스 액션 안내**"
 
 #: ../../model_serving/model_serving.rst:144
 msgid ""
@@ -333,7 +333,7 @@ msgid ""
 "\"http.server\", \"8080\"] )"
 msgstr ""
 "``args/command``: 실행할 명령어를 배열형태로 적습니다. (e.g. ``python3 -m http.server "
-"8080`` 명령어는 [”python3“, ”-m“, ”http.server“, ”8080“])"
+"8080`` 명령어는 [\"python3\", \"-m\", \"http.server\", \"8080\"])"
 
 #: ../../model_serving/model_serving.rst:164
 msgid "``mkdir``: This is an action to create a directory by input path"
@@ -380,12 +380,12 @@ msgstr ""
 
 #: ../../model_serving/model_serving.rst:188
 msgid ""
-"After creating the folder, select the “Model” tab in the Data & Folders "
+"After creating the folder, select the 'MODELS' tab in the Data & Folders "
 "page, click on the recently created model type folder icon to open the "
 "folder explorer, and upload the model definition file."
 msgstr ""
-"폴더를 생성한 뒤, 데이터 & 폴더 페이지에서 모델 탭을 선택, 방금 생성한 모델 타입 폴더 아이콘을 클릭하여 폴더 탐색기를 "
-"엽니다. 이후 모델 정의 파일을 업로드 합니다. "
+"폴더를 생성한 뒤, 데이터 & 폴더 페이지에서 'MODELS' 탭을 선택, 방금 생성한 모델 타입 폴더 아이콘을 클릭하여 폴더 "
+"탐색기를 엽니다. 이후 모델 정의 파일을 업로드 합니다. "
 
 #: ../../model_serving/model_serving.rst:-1
 msgid "Model definition file upload"
@@ -403,14 +403,14 @@ msgstr "모델 정의 파일까지 모델 타입의 가상 폴더에 모두 업�
 
 #: ../../model_serving/model_serving.rst:202
 msgid ""
-"Click the “Start Service” button on the Model Serving page. This will "
+"Click the 'Start Service' button on the Model Serving page. This will "
 "bring up a modal where you can enter the required settings for creating "
 "the service."
-msgstr "모델 서빙 페이지에서 \"서비스 시작하기\" 버튼을 클릭하면, 서비스 생성에 필요한 설정을 입력하는 모달이 나타납니다."
+msgstr "모델 서빙 페이지에서 'Start Service' 버튼을 클릭하면, 서비스 생성에 필요한 설정을 입력하는 모달이 나타납니다."
 
 #: ../../model_serving/model_serving.rst:-1
 msgid "Service launcher"
-msgstr "서비스 런쳐"
+msgstr ""
 
 #: ../../model_serving/model_serving.rst:211
 msgid ""
@@ -540,11 +540,11 @@ msgstr ""
 msgid ""
 "Before creating model service, Backend.AI supports validation feature to "
 "check whether execution is available or not(due to any errors during "
-"execution). By clicking the ``Validate`` button at the bottom-left of the"
-" service launcher, a new popup for listening to validation events will "
-"pop up. In the popup modal, you can check the status through the "
-"container log. When the result is set to ``Finished``, then the "
-"validation check is finished."
+"execution). By clicking the 'Validate' button at the bottom-left of the "
+"service launcher, a new popup for listening to validation events will pop"
+" up. In the popup modal, you can check the status through the container "
+"log. When the result is set to ``Finished``, then the validation check is"
+" finished."
 msgstr ""
 "모델 서비스를 생성하지 전, Backend.AI에서는 성공적으로 실행이 가능한지 아닌지(실행중 발생하는 어떤 에러로 인해 실행이 "
 "불가능한 경우) 를 체크하는 유효성 검사를 지원합니다. 서비스 런쳐의 좌측 하단에 위치한 ``Validate`` 버튼을 클릭하면 "
@@ -561,7 +561,7 @@ msgstr ""
 
 #: ../../model_serving/model_serving.rst:284
 msgid "**Handling Failed Model Service Creation**"
-msgstr "모델 서비스 생성에 실패한 경우"
+msgstr "**모델 서비스 생성에 실패한 경우**"
 
 #: ../../model_serving/model_serving.rst:286
 msgid ""
@@ -602,9 +602,9 @@ msgid ""
 "Solution: Verify :ref:`the format of the model definition file "
 "<model_definition_guide>` and if any key-value pairs are incorrect, "
 "modify them and overwrite the file in the saved location. Then, click "
-"``Clear error and Retry`` button to remove all the error stacked in "
-"routes info table and ensure that the routing of the model service is set"
-" correctly."
+"'Clear error and Retry' button to remove all the error stacked in routes "
+"info table and ensure that the routing of the model service is set "
+"correctly."
 msgstr ""
 "해결법: :ref:`모델 정의 파일 형식 <model_definition_guide>` 을 확인하고, 키-값이 잘못된 경우, "
 "수정하여 저장된 경로에 업로드해 덮어쓰기합니다. 이후 아래와 같이 ``오류 지우고 재시도`` 버튼을 클릭하여 라우트 정보에 쌓인 "
@@ -624,45 +624,43 @@ msgid ""
 "to ``HEALTHY``. In this case, you can click on the corresponding endpoint"
 " name in the Model Service tab to view detailed information about the "
 "model service. From there, you can check the service endpoint in the "
-"routing information of the model service. If the “Open to Public” option "
-"is enabled when the service is created, the endpoint will be publicly "
-"accessible without any separate token, and end users can access it. "
-"However, if it is disabled, you can issue a token as described below to "
-"verify that the service is running properly."
+"routing information of the model service. If the 'Open to Public' "
+"option is enabled when the service is created, the endpoint will be "
+"publicly accessible without any separate token, and end users can access "
+"it. However, if it is disabled, you can issue a token as described below "
+"to verify that the service is running properly."
 msgstr ""
 "모델 서비스를 성공적으로 실행한 경우, 상태는 ``HEALTHY`` 에 속하게 됩니다. 이 경우 모델 서비스 탭에서 해당하는 "
 "엔드포인트 명을 클릭해 모델 서비스의 상세 정보를 확인할 수 있습니다. 이후 모델 서비스의 라우팅 정보에서 서비스 엔드포인트를 "
-"확인할 수 있는데, 이 엔드포인트는 서비스 생성시 외부에 공개할 수 있는 \"Open to Public\" 값이 활성화 된 경우, "
-"엔드포인트가 공개되어 별도의 토큰이 없이도 최종 엔드유저가 엔드포인트에 접근할 수 있습니다. 하지만 비활성화 된 경우는 다음과 같이"
-" 토큰을 발급하여 토큰을 아래와 같은 형태로 추가해서 서비스가 정상적으로 실행되고 있는지 확인할 수 있습니다."
+"확인할 수 있는데, 이 엔드포인트는 서비스 생성시 외부에 공개할 수 있는 'Open to Public' 값이 활성화 된 경우, "
+"엔드포인트가 공개되어 별도의 토큰이 없이도 최종 엔드유저가 엔드포인트에 접근할 수 있습니다. 하지만 비활성화 된 경우는 토큰 발급 "
+"후 토큰을 아래와 같은 형태로 추가해서 서비스가 정상적으로 실행되고 있는지 확인할 수 있습니다."
 
 #: ../../model_serving/model_serving.rst:-1
 msgid "Routing page"
-msgstr "라우팅 페이지"
+msgstr ""
 
 #: ../../model_serving/model_serving.rst:332
 msgid ""
-"Click the token creation button located to the right of the generated "
+"Click the 'Generate Token' button located to the right of the generated "
 "token list in the routing information. In the modal that appears for "
 "token creation, enter the expiration date."
 msgstr ""
-"라우팅 정보의 생성된 토큰 목록 우측에 있는 토큰 생성 버튼을 클릭합니다. 이후 토큰 생성을 위한 모달이 뜨면, 만료일을 "
-"입력합니다. 이후 발급되는 토큰은 생성된 토큰 목록에 추가됩니다. 토큰 항목의 복사 아이콘을 클릭하여 토큰을 복사하고, 아래와 같은"
-" 키 값으로 추가하면 됩니다."
+"라우팅 정보의 생성된 토큰 목록 우측에 있는 'Generate Token' 버튼을 클릭합니다. 이후 토큰 생성을 위한 모달이 뜨면,"
+" 만료일을 입력합니다."
 
 #: ../../model_serving/model_serving.rst:-1
 msgid "Token generation dialog"
-msgstr "토큰 생성 다이얼로그"
+msgstr ""
 
 #: ../../model_serving/model_serving.rst:341
 msgid ""
 "The issued token will be added to the list of generated tokens. Click the"
-" copy icon in the token item to copy the token, and add it as the value "
-"of the following key."
+" 'copy' button in the token item to copy the token, and add it as the "
+"value of the following key."
 msgstr ""
-"라우팅 정보의 생성된 토큰 목록 우측에 있는 토큰 생성 버튼을 클릭합니다. 이후 토큰 생성을 위한 모달이 뜨면, 만료일을 "
-"입력합니다. 이후 발급되는 토큰은 생성된 토큰 목록에 추가됩니다. 토큰 항목의 복사 아이콘을 클릭하여 토큰을 복사하고, 아래와 같은"
-" 키의 값으로 추가하면 됩니다."
+"이후 발급되는 토큰은 생성된 토큰 목록에 추가됩니다. 토큰 항목의 '복사' 버튼을 클릭하여 토큰을 복사하고, 아래와 같은 키의 "
+"값으로 추가하면 됩니다."
 
 #: ../../model_serving/model_serving.rst:-1
 msgid "Generated token copy"
@@ -735,12 +733,12 @@ msgid ""
 " change the model service. The format is identical to the model service "
 "start modal, with previously entered fields already filled in. You can "
 "optionally modify only the fields you wish to change. After modifying the"
-" fields, click the confirm button. The changes will be adjusted "
+" fields, click the 'confirm' button. The changes will be adjusted "
 "accordingly."
 msgstr ""
-"제어 탭에서 톱니바퀴 아이콘을 클릭하면 원하는 세션 수 값을 변경할 수 있는 모달이 뜨게 됩니다. 수정 모달은 모델 서비스를 "
-"시작하는 모달과 형태가 동일하며, 이전에 입력했던 필드들이 적용되어 있습니다. 원하는 필드를 수정하고 확인 버튼을 클릭하게 되면, "
-"변경 사항이 적용됩니다. "
+"제어 탭에서 설정 아이콘을 클릭하면 원하는 세션 수 값을 변경할 수 있는 모달이 뜨게 됩니다. 수정 모달은 모델 서비스를 시작하는 "
+"모달과 형태가 동일하며, 이전에 입력했던 필드들이 적용되어 있습니다. 원하는 필드를 수정하고 확인 버튼을 클릭하게 되면, 변경 "
+"사항이 적용됩니다. "
 
 #: ../../model_serving/model_serving.rst:-1
 msgid "Edit model service dialog"
@@ -756,10 +754,10 @@ msgid ""
 "count to match the desired session count. However, this puts a burden on "
 "the Backend.AI scheduler. Therefore, it is recommended to terminate the "
 "model service if it is no longer needed. To terminate the model service, "
-"click on the trash icon in the Control tab. A modal will appear asking "
-"for confirmation to terminate the model service. Clicking ``OK`` will "
-"terminate the model service. The terminated model service will be removed"
-" from the list of model services."
+"click on the 'trash' button in the Control column. A modal will appear "
+"asking for confirmation to terminate the model service. Clicking ``OK`` "
+"will terminate the model service. The terminated model service will be "
+"removed from the list of model services."
 msgstr ""
 "모델 서비스는 주기적으로 스케줄러를 실행하여, 원하는 세션 수와 실제 대응하는 라우팅 수가 원하는 세션 수에 맞춰지도록 "
 "스케줄링합니다. 다만, 이 경우 Backend.AI 스케줄러에 부하가 가는 것은 불가피 합니다. 따라서 모델 서비스를 더 이상 "
@@ -770,3 +768,4 @@ msgstr ""
 #: ../../model_serving/model_serving.rst:-1
 msgid "Terminate model service dialog"
 msgstr "모델 서비스 종료하기"
+

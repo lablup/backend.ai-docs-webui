@@ -40,9 +40,9 @@ modifying the compute session for training in the following way:
    server port inside the session for model serving. 
    (For instructions on how to use preopen ports, refer to this :ref:`Set Preopen Ports <set_preopen_ports>`.)
 
-2. Check “Open app to public” to allow the service mapped to the
+2. Check 'Open app to public' to allow the service mapped to the
    pre-opened port to be publicly accessible. 
-   (For detailed information about “Open app to public,” refer to this :ref:`Open app to public <open_app_to_public>`.)
+   (For detailed information about "Open app to public," refer to this :ref:`Open app to public <open_app_to_public>`.)
 
 However, there are certain limitations in version 23.03:
 
@@ -185,7 +185,7 @@ instructions on how to create a folder.
    :align: center
    :alt: Model type folder creation
 
-After creating the folder, select the “Model” tab in the Data & Folders
+After creating the folder, select the 'MODELS' tab in the Data & Folders
 page, click on the recently created model type folder icon to open the
 folder explorer, and upload the model definition file.
 
@@ -199,7 +199,7 @@ Creating/Validating Model Service
 Once the model definition file is uploaded to the virtual folder of the
 model type, you are ready to create the model service.
 
-Click the “Start Service” button on the Model Serving page. This will
+Click the 'Start Service' button on the Model Serving page. This will
 bring up a modal where you can enter the required settings for creating
 the service.
 
@@ -265,7 +265,7 @@ resources that can be allocated to the model service.
 
 Before creating model service, Backend.AI supports validation feature to check 
 whether execution is available or not(due to any errors during execution).
-By clicking the ``Validate`` button at the bottom-left of the service launcher, 
+By clicking the 'Validate' button at the bottom-left of the service launcher, 
 a new popup for listening to validation events will pop up. In the popup modal, 
 you can check the status through the container log. When the result is set to 
 ``Finished``, then the validation check is finished.
@@ -305,7 +305,7 @@ follows:
 
    -  Solution: Verify :ref:`the format of the model definition file <model_definition_guide>` and 
       if any key-value pairs are incorrect, modify them and overwrite the file in the saved location. 
-      Then, click ``Clear error and Retry`` button to remove all the error stacked in routes info 
+      Then, click 'Clear error and Retry' button to remove all the error stacked in routes info 
       table and ensure that the routing of the model service is set correctly.
 
       .. image:: refresh-button.png
@@ -319,7 +319,7 @@ Once the model service is successfully executed, the status will be set
 to ``HEALTHY``. In this case, you can click on the corresponding endpoint
 name in the Model Service tab to view detailed information about the
 model service. From there, you can check the service endpoint in the
-routing information of the model service. If the “Open to Public” option
+routing information of the model service. If the 'Open to Public' option
 is enabled when the service is created, the endpoint will be publicly
 accessible without any separate token, and end users can access it.
 However, if it is disabled, you can issue a token as described below to
@@ -329,7 +329,7 @@ verify that the service is running properly.
    :align: center
    :alt: Routing page
 
-Click the token creation button located to the right of the generated
+Click the 'Generate Token' button located to the right of the generated
 token list in the routing information. In the modal that appears for
 token creation, enter the expiration date. 
 
@@ -338,7 +338,7 @@ token creation, enter the expiration date.
    :align: center
    :alt: Token generation dialog
 
-The issued token will be added to the list of generated tokens. Click the copy icon in the token
+The issued token will be added to the list of generated tokens. Click the 'copy' button in the token
 item to copy the token, and add it as the value of the following key.
 
 .. image:: generated-token-copy.png
@@ -385,7 +385,7 @@ Modifying Model Service
 Click on the wrench icon in the Control tab to open a modal where you can change 
 the model service. The format is identical to the model service start modal, with 
 previously entered fields already filled in. You can optionally modify only the 
-fields you wish to change. After modifying the fields, click the confirm button. 
+fields you wish to change. After modifying the fields, click the 'confirm' button. 
 The changes will be adjusted accordingly.
 
 .. image:: edit-service-launcher.png
@@ -399,7 +399,7 @@ The model service periodically runs a scheduler to adjust the routing
 count to match the desired session count. However, this puts a burden on
 the Backend.AI scheduler. Therefore, it is recommended to terminate the 
 model service if it is no longer needed. To terminate the model service, 
-click on the trash icon in the Control tab. A modal will appear asking 
+click on the 'trash' button in the Control column. A modal will appear asking 
 for confirmation to terminate the model service. Clicking ``OK`` 
 will terminate the model service. The terminated model service will be 
 removed from the list of model services.
