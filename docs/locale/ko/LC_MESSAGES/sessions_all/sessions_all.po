@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 20.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-04 18:16+0900\n"
+"POT-Creation-Date: 2024-06-14 14:17+0900\n"
 "PO-Revision-Date: 2024-03-05 16:00+0900\n"
 "Last-Translator: \n"
 "Language: ko_KR\n"
@@ -880,8 +880,7 @@ msgstr ""
 msgid ""
 "To add preopen ports, simply enter multiple values separated by either a "
 "comma (,) or a space."
-msgstr ""
-"사전 개방 포트를 추가하려면 쉼표(,)나 공백으로 구분하여 여러 값을 입력할 수 있습니다."
+msgstr "사전 개방 포트를 추가하려면 쉼표(,)나 공백으로 구분하여 여러 값을 입력할 수 있습니다."
 
 #: ../../sessions_all/sessions_all.rst:-1
 msgid "Preopen Ports Configuration"
@@ -889,37 +888,37 @@ msgstr ""
 
 #: ../../sessions_all/sessions_all.rst:491
 msgid ""
-"In the forth page of session creation page, you can add, update and "
+"In the forth page of session creation page, users can add, update and "
 "delete written preopen ports. To see more detail information, please "
 "click Help (?) button."
 msgstr ""
-"이 다이얼로그에서 여러분은 사전 개방 포트를 추가하거나, 작성한 사전 개방 포트를 갱신하거나, 삭제할 수 있습니다. 더 자세히 알고"
-" 싶으실 경우 다이얼로그 헤더 부분에 있는 도움말 (?) 버튼을 클릭해주세요."
+"해당 다이얼로그에서 사전 개방 포트를 추가하거나, 작성한 사전 개방 포트를 갱신, 삭제할 수 있습니다. 더욱 자세한 설명이 필요한 "
+"경우, 다이얼로그 헤더 부분에 있는 도움말 (?) 버튼을 클릭해주세요."
 
 #: ../../sessions_all/sessions_all.rst:494
 msgid ""
-"You can input between 1024 ~ 65535 port numbers to the input fields. "
-"Then, click the save button. You can check the configured preopen ports "
-"in the session app launcher."
+"Users can put port numbers in between 1024 ~ 65535, to the input fields. "
+"Then, click the save button. Users can check the configured preopen ports"
+" in the session app launcher."
 msgstr ""
-"입력란에 1024 ~ 65535 사이의 포트값을 입력한 뒤, SAVE 버튼을 클릭하세요. 설정된 사전 개방 포트값은 세션 앱 "
-"런처에서 확인할 수 있습니다."
+"입력란에 1024 ~ 65535 사이의 포트값을 입력한 뒤, SAVE 버튼을 클릭하세요. 설정된 사전 개방 포트값은 세션 앱 런처에서 "
+"확인할 수 있습니다."
 
 #: ../../sessions_all/sessions_all.rst:502
 msgid ""
-"The preopen ports are **internal ports within the container**. Therefore,"
-" unlike other apps, when you click on the preopen ports in the session "
-"app launcher, you will see a blank page. Please bind a server to the "
-"respective port before using it."
+"The preopen ports are **the internal ports within the container**. "
+"Therefore, unlike other apps, when users click the preopen ports in the "
+"session app launcher, a blank page will appear. Please bind a server to "
+"the respective port before use."
 msgstr ""
-"사전 개방 포트는 **컨테이너 내부 포트입니다**. 따라서, 다른 앱들과 달리 세션 앱 런처에서 사전 개방 포트를 클릭하면 빈 "
-"페이지가 뜹니다. 해당 포트에 서버를 먼저 바인드 한 후 사용해주세요."
+"사전 개방 포트는 **컨테이너 내부 포트** 입니다. 따라서, 다른 앱들과 달리 세션 앱 런처에서 사전 개방 포트를 클릭하면 빈 "
+"페이지가 나타납니다."
 
-#: ../../sessions_all/sessions_all.rst:507
+#: ../../sessions_all/sessions_all.rst:509
 msgid "Save session commit"
 msgstr "세션 커밋 저장하기"
 
-#: ../../sessions_all/sessions_all.rst:511
+#: ../../sessions_all/sessions_all.rst:513
 msgid ""
 "Backend.AI supports \\\"Convert Session to Image\\\" feature from 24.03. "
 "Committing a ``RUNNING`` session will save the current state of the "
@@ -939,49 +938,48 @@ msgstr ""
 msgid "Push session to customized image"
 msgstr "사용자 정의 이미지를 세션으로 푸시"
 
-#: ../../sessions_all/sessions_all.rst:522
+#: ../../sessions_all/sessions_all.rst:524
 msgid ""
-"After filling out session name in the input field, click the ``PUSH "
-"SESSION TO CUSTOMIZED IMAGE`` button. The customized image created in "
-"this way can be used in future session creations. However, directories "
+"After filling out session name in the input field, click the 'PUSH "
+"SESSION TO CUSTOMIZED IMAGE' button. The customized image created in this"
+" way can be used in future session creations. However, directories "
 "mounted to the container for image commits are considered external "
 "resources and are not included in the final image. Remember that "
 "``/home/work`` is a mount folder (scratch directory), so it is not "
 "included."
 msgstr ""
-"입력 필드에 세션 이름을 작성한 후 “PUSH SESSION TO CUSTOMIZED IMAGE“ 버튼을 클릭하세요. 이 방법으로 "
+"입력 필드에 세션 이름을 작성한 후 'PUSH SESSION TO CUSTOMIZED IMAGE' 버튼을 클릭하세요. 이 방법으로 "
 "생성된 사용자 정의 이미지는 향후 세션 생성에서 사용할 수 있습니다. 그러나 이미지 커밋을 위해 컨테이너에 마운트된 디렉토리는 외부"
 " 리소스로 간주되어 최종 이미지에 포함되지 않습니다. ``/home/work`` 디렉토리가 마운트된 폴더(스크래치 디렉토리)임을 "
 "기억해주세요."
 
-#: ../../sessions_all/sessions_all.rst:528
+#: ../../sessions_all/sessions_all.rst:530
 msgid ""
-"Currently, Backend.AI supports the \"Convert Session to Image\" feature "
-"only when the session is in ``INTERACTIVE`` mode. During the committing "
-"process, you may not be able to terminate the session to prevent "
-"unexpected errors. If you want to stop the ongoing process, please check "
-"the session and force-terminate the session."
+"Currently, Backend.AI supports \"Convert Session to Image\" only when the"
+" session is in ``INTERACTIVE`` mode. To prevent unexpected error, users "
+"may not be able to terminate the session during committing process. To "
+"stop the ongoing process, check the session, and force-terminate it."
 msgstr ""
-"현재 Backend.AI는 세션이 ``INTERACTIVE`` 모드일 때만 “세션을 이미지로 변환“ 기능을 지원합니다. 커밋 프로세스 중에 "
-"예기치 않은 오류를 방지하기 위해 세션을 종료할 수 없을 수 있습니다. 진행 중인 프로세스를 중지하려면 세션을 확인하고 "
-"강제로 종료하세요."
+"현재 Backend.AI는 세션이 ``INTERACTIVE`` 모드일 때만 “세션을 이미지로 변환“ 기능을 지원합니다. 커밋 프로세스 중에 예기치 "
+"않은 오류를 방지하기 위해, 세션 종료를 명령하더라도 실제로는 종료되지 않을 수 있습니다. 진행 중인 프로세스를 중지하려면 세션을 "
+"확인하고 강제로 종료하세요."
 
-#: ../../sessions_all/sessions_all.rst:534
+#: ../../sessions_all/sessions_all.rst:535
 msgid ""
-"The number of times you can ``Convert Session to Image`` may be limited "
-"by the user resource policy. In this case, try :ref:`removing the "
-"existing customized image<delete-customized-image>` and retry, or contact"
-" the administrator."
+"The number of times to \"Convert Session to Image\" may be limited by the"
+" user resource policy. In this case, :ref:`remove the existing customized"
+" image<delete-customized-image>` and try again. If this does not resolves"
+" the problem, please contact the administrator."
 msgstr ""
-"사용자 자원 정책에 의해 ``Convert Session to Image`` 작업 횟수가 제한될 수 있습니다. 이 경우, "
+"사용자 자원 정책에 의해 “세션을 이미지로 변환“ 작업 횟수가 제한될 수 있습니다. 이 경우, "
 ":ref:`기존 사용자 정의 이미지를 제거<delete-customized-image>` 한 후 다시 시도하거나 관리자에게 "
 "문의하세요."
 
-#: ../../sessions_all/sessions_all.rst:540
+#: ../../sessions_all/sessions_all.rst:541
 msgid "Utilizing converted images of ongoing sessions"
 msgstr "진행 중인 세션의 변환된 이미지 활용"
 
-#: ../../sessions_all/sessions_all.rst:542
+#: ../../sessions_all/sessions_all.rst:543
 msgid ""
 "Converting an ongoing session into an image allows you to select this "
 "image from the environments in the session launcher when creating a new "
@@ -994,24 +992,24 @@ msgstr ""
 "``Customized<session name>`` 태그가 붙습니다."
 
 #: ../../sessions_all/sessions_all.rst:-1
-msgid "사용자 정의 이미지 선택하기"
-msgstr ""
+msgid "Select customized image"
+msgstr "사용자 정의 이미지 선택"
 
-#: ../../sessions_all/sessions_all.rst:550
+#: ../../sessions_all/sessions_all.rst:551
 msgid ""
 "To manually enter the environment name for future session creation, "
 "please click the copy icon."
 msgstr "향후 세션 생성을 위해 환경 이름을 수동으로 입력하려면, 복사 아이콘을 누릅니다."
 
 #: ../../sessions_all/sessions_all.rst:-1
-msgid "사용자 정의 이미지 복사하기"
-msgstr ""
+msgid "Copy customized image"
+msgstr "사용자 정의 이미지 복사"
 
-#: ../../sessions_all/sessions_all.rst:559
+#: ../../sessions_all/sessions_all.rst:560
 msgid "Optimizing Accelerated Computing"
 msgstr "가속 컴퓨팅 최적화하기"
 
-#: ../../sessions_all/sessions_all.rst:561
+#: ../../sessions_all/sessions_all.rst:562
 msgid ""
 "Backend.AI provides configuration UI for internal control variable in "
 "``nthreads-var``. Backend.AI sets this value equal to the number of "
@@ -1028,14 +1026,14 @@ msgstr ""
 "생성되고, 현저한 성능 저하가 발생할 수 있습니다. 이러한 문제를 해결하려면, 스레드 값을 1 또는 2로 조정하십시오."
 
 #: ../../sessions_all/sessions_all.rst:-1
-msgid "세션 HPC 최적화하기"
-msgstr ""
+msgid "Session HPC Optimization"
+msgstr "세션 HPC 최적화"
 
-#: ../../sessions_all/sessions_all.rst:576
+#: ../../sessions_all/sessions_all.rst:577
 msgid "Advanced web terminal usage"
 msgstr "웹 터미널 고급 사용법"
 
-#: ../../sessions_all/sessions_all.rst:578
+#: ../../sessions_all/sessions_all.rst:579
 msgid ""
 "The web-based terminal internally embeds a utility called `tmux "
 "<https://github.com/tmux/tmux/wiki>`_. tmux is a terminal multiplexer "
@@ -1049,15 +1047,15 @@ msgstr ""
 "terminal multiplexer 로, 쉘이 닫히더라도 작업하던 내용을 보존할 수 있는 등 다양한 장점을 가지고 있습니다. 보다"
 " 강력한 터미널 기능을 활용하고 싶다면 tmux 공식 문서 및 기타 인터넷 상의 다양한 사용 예제를 참고하십시오."
 
-#: ../../sessions_all/sessions_all.rst:585
+#: ../../sessions_all/sessions_all.rst:586
 msgid "Here we are introducing some simple but useful features."
 msgstr "여기서는 몇 가지 간단하지만 유용한 기능을 소개하겠습니다."
 
-#: ../../sessions_all/sessions_all.rst:588
+#: ../../sessions_all/sessions_all.rst:589
 msgid "Copy terminal contents"
 msgstr "터미널 내용 복사하기"
 
-#: ../../sessions_all/sessions_all.rst:590
+#: ../../sessions_all/sessions_all.rst:591
 msgid ""
 "tmux offers a number of useful features, but it's a bit confusing for "
 "first-time users. In particular, tmux has its own clipboard buffer, so "
@@ -1074,7 +1072,7 @@ msgstr ""
 "쉘을 사용하고 있는 상태에서는 마우스 드래그를 통해 터미널 내용을 복사한 후 사용자 컴퓨터의 다른 프로그램에 붙여넣을 수가 "
 "없습니다. 소위 말하는 ``Ctrl-C`` / ``Ctrl-V`` 가 작동하지 않는 것입니다."
 
-#: ../../sessions_all/sessions_all.rst:598
+#: ../../sessions_all/sessions_all.rst:599
 msgid ""
 "If you need to copy and paste the terminal contents to your system's "
 "clipboard, you can temporarily turn off tmux's mouse support. First, "
@@ -1091,7 +1089,7 @@ msgstr ""
 " 그 후 터미널에서 마우스로 원하는 텍스트를 드래그 하고 ``Ctrl-C`` 또는 ``Cmd-C`` 키를 누르면 사용자 컴퓨터의 "
 "클립보드에 해당 내용이 복사 됩니다."
 
-#: ../../sessions_all/sessions_all.rst:606
+#: ../../sessions_all/sessions_all.rst:607
 msgid ""
 "With mouse support turned off, you cannot scroll through the mouse wheel "
 "to see the contents of the previous page from the terminal. In this case,"
@@ -1103,7 +1101,7 @@ msgstr ""
 "켜면 됩니다. ``Ctrl-B`` 를 누른 후 이번에는 ``:set -g mouse on`` 을 입력해봅시다. 이제 마우스 휠을 "
 "스크롤하여 이전 페이지의 내용을 볼 수 있게 되었습니다."
 
-#: ../../sessions_all/sessions_all.rst:611
+#: ../../sessions_all/sessions_all.rst:612
 msgid ""
 "If you remember ``:set -g mouse off`` or ``:set -g mouse on`` after "
 "``Ctrl-B``, you can use the web terminal more conveniently."
@@ -1111,7 +1109,7 @@ msgstr ""
 "이와 같이 ``Ctrl-B`` 후 ``:set -g mouse off`` 또는 ``:set -g mouse on`` 을 기억하면 "
 "조금 더 편리하게 웹 터미널을 활용할 수 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:615
+#: ../../sessions_all/sessions_all.rst:616
 msgid ""
 "``Ctrl-B`` is tmux's default control mode key. If you set another control"
 " key by modifying ``.tmux.conf`` in user home directory, you should press"
@@ -1120,23 +1118,23 @@ msgstr ""
 "``Ctrl-B`` 키는 tmux 의 기본 제어 모드 키입니다. 만약 홈 디렉토리의 ``.tmux.conf`` 를 수정하여 다른 "
 "제어 키를 설정한 경우에는, ``Ctrl-B`` 대신 설정된 키 조합을 눌러야 합니다."
 
-#: ../../sessions_all/sessions_all.rst:620
+#: ../../sessions_all/sessions_all.rst:621
 msgid "In the Windows environment, refer to the following shortcuts."
 msgstr "윈도우즈 환경에서는 다음 단축키를 참고하세요."
 
-#: ../../sessions_all/sessions_all.rst:622
+#: ../../sessions_all/sessions_all.rst:623
 msgid "Copy: Hold down ``Shift``, right-click and drag"
 msgstr "복사: ``Shift`` 키를 누른 상태에서 마우스 우클릭해서 드래그"
 
-#: ../../sessions_all/sessions_all.rst:623
+#: ../../sessions_all/sessions_all.rst:624
 msgid "Paste: Press ``Ctrl-Shift-V``"
 msgstr "불여넣기: ``Ctrl-Shift-V`` 키를 누름"
 
-#: ../../sessions_all/sessions_all.rst:626
+#: ../../sessions_all/sessions_all.rst:627
 msgid "Check the terminal history using keyboard"
 msgstr "키보드를 이용해 터미널 이전 내용 확인하기"
 
-#: ../../sessions_all/sessions_all.rst:628
+#: ../../sessions_all/sessions_all.rst:629
 msgid ""
 "There is also a way to copy the terminal contents and check the previous "
 "contents of the terminal simultaneously. It is to check the previous "
@@ -1152,11 +1150,11 @@ msgstr ""
 " 봅시다. 키보드 만으로 터미널의 이전 내용을 탐색할 수 있다는 것을 확인할 수 있습니다. 탐색 모드에서 빠져 나오려면 ``q`` "
 "키를 눌러주면 됩니다. 이 방법을 이용하면 마우스 지원을 끈 상태에서도 터미널 이전 내용 확인이 가능합니다."
 
-#: ../../sessions_all/sessions_all.rst:637
+#: ../../sessions_all/sessions_all.rst:638
 msgid "Spawn multiple shells"
 msgstr "여러 개의 쉘 띄우기"
 
-#: ../../sessions_all/sessions_all.rst:639
+#: ../../sessions_all/sessions_all.rst:640
 msgid ""
 "The main advantage of tmux is that you can launch and use multiple shells"
 " in one terminal window. Since seeing is believing, let's press the "
@@ -1180,7 +1178,7 @@ msgstr ""
 msgid "tmux's multiple session management"
 msgstr ""
 
-#: ../../sessions_all/sessions_all.rst:653
+#: ../../sessions_all/sessions_all.rst:654
 msgid ""
 "You can see the first shell environment appears. In this way, you can use"
 " multiple shell environments within a web terminal. To exit or terminate "
@@ -1190,23 +1188,23 @@ msgstr ""
 "첫 번째 쉘 환경이 나타나는 것을 볼 수 있습니다. 이러한 방식으로 웹 터미널 내에서 여러 쉘 환경을 사용할 수 있습니다. 현재 "
 "쉘을 종료하려면 ``exit`` 명령을 입력하거나 ``Ctrl-B x`` 키를 누른 다음 ``y`` 를 입력하십시오."
 
-#: ../../sessions_all/sessions_all.rst:658
+#: ../../sessions_all/sessions_all.rst:659
 msgid "In summary:"
 msgstr "정리하면 다음과 같습니다:"
 
-#: ../../sessions_all/sessions_all.rst:660
+#: ../../sessions_all/sessions_all.rst:661
 msgid "``Ctrl-B c``: create a new tmux shell"
 msgstr "``Ctrl-B c``: 새로운 tmux 쉘 생성"
 
-#: ../../sessions_all/sessions_all.rst:661
+#: ../../sessions_all/sessions_all.rst:662
 msgid "``Ctrl-B w``: query current tmux shells and move around among them"
 msgstr "``Ctrl-B w``: tmux 쉘 조회 및 이동/선택"
 
-#: ../../sessions_all/sessions_all.rst:662
+#: ../../sessions_all/sessions_all.rst:663
 msgid "``exit`` or ``Ctrl-B x``: terminate the current shell"
 msgstr "``exit`` 또는 ``Ctrl-B x``: 현재 tmux 쉘 종료"
 
-#: ../../sessions_all/sessions_all.rst:664
+#: ../../sessions_all/sessions_all.rst:665
 msgid ""
 "Combining the above commands allows you to perform various tasks "
 "simultaneously on multiple shells."
