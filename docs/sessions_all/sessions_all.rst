@@ -488,66 +488,52 @@ To add preopen ports, simply enter multiple values separated by either a comma (
    :align: center
    :alt: Preopen Ports Configuration
 
-In the forth page of session creation page, you can add, update and delete written preopen ports. To see more detail
+In the forth page of session creation page, users can add, update and delete written preopen ports. To see more detail
 information, please click Help (?) button.
 
-You can input between 1024 ~ 65535 port numbers to the input fields. Then, click the save button. You can check the
-configured preopen ports in the session app launcher.
+Users can put port numbers in between 1024 ~ 65535, to the input fields. Then, click the save button. Users can check
+the configured preopen ports in the session app launcher.
 
 .. image:: session_app_launcher.png
    :width: 400
    :align: center
 
 .. note::
-   The preopen ports are **internal ports within the container**. Therefore, unlike other apps, when you click on the
-   preopen ports in the session app launcher, you will see a blank page. Please bind a server to the respective port
-   before using it.
+   The preopen ports are **the internal ports within the container**. Therefore, unlike other apps, when users click the
+   preopen ports in the session app launcher, a blank page will appear. Please bind a server to the respective port
+   before use.
 
-Save container commit
----------------------
 
-Backend.AI supports \"container commit\" feature from 22.09 and \"convert session to image\" feature from 24.03. 
-Committing a ``RUNNING`` session will save the current state of the main container as a new image. Clicking the commit
-button in the control pane of ``RUNNING`` session will display a dialog to show the information of the session. After
-checking the information, you can click the confirmation button to convert the container to a new image.
-
-.. image:: container_commit.png
-   :width: 350
-   :align: center
-   :alt: Container commit confirmation
-
-After clicking ``COMMIT`` button in the dialog, Backend.AI internally requests
-Docker to create a new image as ``tar.gz`` to be stored into a specific
-host path. Please note that it's not available to access directly in your local
-environment. Users need to contact the administrator to get the image file.
+Save session commit
+-------------------
 
 .. _session-commit:
 
-If you want to commit ongoing session to image, check the checkbox of ``Convert Session to Image`` 
-in the dialog and fill out the session name. The session name must be 4 to 32 characters, 
-containing alphanumeric letters or hyphen(``-``) or underscore(``_``) only. 
-After filling out session name in the input field, click the ``PUSH SESSION TO CUSTOMIZED IMAGE`` button.
-The customized image created in this way can be used in future session creations. However, directories
-mounted to the container for image commits are considered external resources and are not included in
-the final image. Remember that ``/home/work`` is a mount folder (scratch directory), so it is not included.
-
+Backend.AI supports \"Convert Session to Image\" feature from 24.03. Committing a ``RUNNING`` session will save the 
+current state of the session as a new image. Clicking the commit button in the control column of ``RUNNING`` session will
+display a dialog to show the information of the session. After entering the session name, you can convert the session to 
+a new image. The session name must be 4 to 32 characters long and can only contain alphanumeric letters, hyphens (``-``),
+or underscores (``_``).
 
 .. image:: push_session_to_customized_image.png
    :width: 350
    :align: center
    :alt: Push session to customized image
 
-.. note::
-   Currently, Backend.AI supports container commit and converting session to image feature
-   when session is ``INTERACTIVE`` mode only. During container commit process, you may not be
-   able to terminate the session to prevent unexpected error. If you want to
-   stop the ongoing process, please check the session, and force-terminate
-   the session.
+After filling out session name in the input field, click the 'PUSH SESSION TO CUSTOMIZED IMAGE' button.
+The customized image created in this way can be used in future session creations. However, directories
+mounted to the container for image commits are considered external resources and are not included in
+the final image. Remember that ``/home/work`` is a mount folder (scratch directory), so it is not included.
 
 .. note::
-   The number of times you can ``Convert Session to Image`` may be limited by the user resource
-   policy. In this case, try :ref:`removing the existing customized image<delete-customized-image>`
-   and retry, or contact the administrator.
+   Currently, Backend.AI supports "Convert Session to Image" only when the session is in ``INTERACTIVE`` mode.
+   To prevent unexpected error, users may not be able to terminate the session during committing process.
+   To stop the ongoing process, check the session, and force-terminate it.
+
+.. note::
+   The number of times to "Convert Session to Image" may be limited by the user resource policy. In this case,
+   :ref:`remove the existing customized image<delete-customized-image>` and try again. If this does not resolves
+   the problem, please contact the administrator.
 
 
 Utilizing converted images of ongoing sessions
