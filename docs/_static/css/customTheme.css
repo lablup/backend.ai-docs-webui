@@ -6107,7 +6107,7 @@ code {
   white-space: nowrap;
   max-width: 100%;
   background: #fff;
-  border: 1px solid #e1e4e5;
+  border: none;
   /* padding: 0 5px; */
   /* font-family: SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,Courier,monospace; */
   color: #e74c3c;
@@ -7828,6 +7828,10 @@ div.rst-other-versions small a {
   font-family: Pretendard, sans-serif !important;
 }
 
+code .pre {
+  font-family: monospace !important;
+}
+
 .rst-content div.highlight span.linenos {
   display: inline-block;
   padding-left: 0;
@@ -8586,8 +8590,8 @@ html.writer-html5 .rst-content table.docutils th > p {
 
 .rst-content code,
 .rst-content tt {
-  color: #000;
-  font-family: Pretendard sans-serif;
+  color: #1f2328;
+  font-family: monospace;
   padding: 2px 4px;
 }
 
@@ -8603,14 +8607,13 @@ html.writer-html5 .rst-content table.docutils th > p {
 .rst-content tt.literal {
   font-size: 85%;
   vertical-align: baseline;
-  font-weight: 600;
   padding: 2px 6px;
-  color: #ff9d00;
-  border: 1px solid var(--gray-2, #ccc);
+  color: #1f2328;
   border-radius: 4px;
   background: var(--gray-1, #f3f3f3);
   white-space: normal;
   line-height: 160%;
+  border: none;
 }
 
 .rst-content code.xref,
@@ -8618,7 +8621,7 @@ html.writer-html5 .rst-content table.docutils th > p {
 a .rst-content code,
 a .rst-content tt {
   font-weight: 700;
-  color: #404040;
+  color: #1f2328;
   overflow-wrap: normal;
 }
 
