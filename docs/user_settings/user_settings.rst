@@ -17,6 +17,10 @@ GENERAL tab
 
 .. image:: user_settings_page.png
 
+There are lots of preference menu in GENERAL tab. you can search it by search field on top of the section,
+or you may just filter that you changed by clicking `Display Only Changes`. If you want to rollback the changes to before,
+click Reset button on the right top of the section.
+
 Desktop Notification
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -61,6 +65,7 @@ before the page is refreshed.
 * Portuguese: Set Portuguese as the default language.
 * Russian: Set Russian as the default language.
 * Spanish: Set Spanish as the default language.
+* Thai: Set Thai as the default language.
 * Turkish: Set Turkish as the default language.
 * Vietnamese: Set Vietnamese as the default language.
   
@@ -125,6 +130,35 @@ Log out automatically when all Backend.AI Web-UI pages are closed except for
 pages created to run apps in session (e.g. jupyter notebook, web terminal,
 etc.).
 
+My Keypair information
+^^^^^^^^^^^^^^^^^^^^^^
+
+Every user has at least one or more keypairs. you can see access and secret keypair by clicking 
+Config button below. Remember that main access keypair is only one.
+
+.. image:: my_keypair_information.png
+   :width: 700
+   :align: center
+   :alt: My Keypair Information
+
+
+EDIT BOOTSTRAP SCRIPT
+^^^^^^^^^^^^^^^^^^^^^^^
+
+If you want to execute a one-time script just after your compute sessions
+started, write down the contents here.
+
+.. image:: edit_bootstrap_script.png
+   :width: 700
+   :align: center
+
+.. warning::
+   The compute session will be at the ``PREPARING`` status until the bootstrap
+   script finishes its execution. Since a user cannot use the session until it
+   is ``RUNNING``, if the script contains a long-running tasks, it might be
+   better to remove them out of the bootstrap script and run them in a terminal
+   app.
+
 EDIT USER CONFIG SCRIPT
 ^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -141,26 +175,8 @@ clicking the SAVE or SAVE AND CLOSE button. Click the DELETE button to delete
 the script.
 
 .. image:: edit_user_config_script.png
-   :width: 500
+   :width: 700
    :align: center
-
-EDIT BOOTSTRAP SCRIPT
-^^^^^^^^^^^^^^^^^^^^^^^
-
-If you want to execute a one-time script just after your compute sessions
-started, write down the contents here.
-
-.. image:: edit_bootstrap_script.png
-   :width: 500
-   :align: center
-
-.. warning::
-   The compute session will be at the ``PREPARING`` status until the bootstrap
-   script finishes its execution. Since a user cannot use the session until it
-   is ``RUNNING``, if the script contains a long-running tasks, it might be
-   better to remove them out of the bootstrap script and run them in a terminal
-   app.
-
 
 LOGS tab
 --------
