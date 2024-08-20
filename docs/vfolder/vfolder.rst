@@ -140,16 +140,16 @@ rename dialog will appear. Write new folder name and then click 'UPDATE' button.
 Delete folder
 -------------
 
-If you have permission to delete the storage folder, you can delete it by
-clicking the 'trash can' button in the control column. By clicking the button, 
-the system will automatically move the folder to trash can with following notification, 
+If you have permission to delete the storage folder, you can send the folder to the 'trash can' 
+tab by clicking the 'trash can' button. Clicking the 'trash can' button in the Control column 
+will open the following modal.
 
-.. image:: delete_notification.png
+.. image:: move_to_trash.png
    :width: 400
    :align: center
    :alt: Folder delete notification modal
 
-and the folder status appearing in the status column will be changed to ``delete-pending``. 
+Pressing the 'MOVE TO TRASH' button will change the folder's status to ``delete-pending``.
 
 .. image:: trash_bin_table.png
    :width: 800
@@ -200,13 +200,35 @@ For more detailed information on the usage of Automount folders, refer to
 .. image:: vfolder_automount_folders.png
    :alt: Automount folders
 
-Model folders
--------------
+Models
+------
+In the 'Models' tab, you can easily serve models. You can store desired data, such as
+input data for model serving and model training data, in the model folder. To quickly
+start the service, click the 'Model serving' button in the control column. Let's try
+pressing the 'Model serving' button in the 'model_folder' folder.
 
+.. image:: hover_model_serving.png
+   :alt: Hover model serving
+
+As shown in 'Model Storage To Mount', the 'model_folder' folder is automatically mounted
+to enable starting a new service.
+
+.. image:: start_new_service_with_mounted_folder.png
+   :alt: Start new service with mounted folder
+
+If you want to learn more about model serving, please refer to :ref:`this link<model-serving>`.
+
+
+Model store
+-----------
 From the 24.03, Backend.AI supports a new feature called 'Model Store'.
-The newly added "Models" tab offers users a unified model store interface, enabling
-easy management and access to various machine learning and deep learning models.
-The features and usage of the "Models" tab will be updated in the 24.03 documentation.
+The model store refers to a storage space and service that stores, manages, searches, and utilizes
+various machine learning and deep learning models. 
+
+.. image:: model_store.png
+   :alt: Model store
+
+
 
 Using FileBrowser
 -----------------
