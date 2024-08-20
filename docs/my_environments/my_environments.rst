@@ -22,6 +22,13 @@ After deletion, you will not be able to create a new session using that image.
 .. image:: my_environments.png
   :alt: My Environments
 
+You can also copy the my environment image and create session with manual image. 
+Click 'Copy' button in the control column, and go to sessions page and create a session. 
+Fill the input of manual image by pasting the image that you copied.
+
+.. image:: copy_image_name_manual.png
+   :alt: Copy image name manual
+
 If you want to hide or show the certain columns, click the gear icon at the
 bottom right of the table. Then you can see below dialog to select the columns
 you want to see.
