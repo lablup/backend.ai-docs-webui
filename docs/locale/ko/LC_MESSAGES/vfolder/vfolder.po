@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web UI User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-13 11:23+0900\n"
+"POT-Creation-Date: 2024-08-20 18:06+0900\n"
 "PO-Revision-Date: 2023-08-07 16:17+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko\n"
@@ -38,7 +38,7 @@ msgstr ""
 "Storage 탭을 선택하면 조회할 수 있습니다."
 
 #: ../../vfolder/vfolder.rst:-1
-msgid "저장소 페이지의 폴더 목록"
+msgid "Folder list in Storage page"
 msgstr ""
 
 #: ../../vfolder/vfolder.rst:16
@@ -56,7 +56,7 @@ msgstr ""
 "사용만 할 수 있습니다."
 
 #: ../../vfolder/vfolder.rst:-1
-msgid "저장소 페이지에서의 저장소 상태"
+msgid "Storage status in Storage page"
 msgstr ""
 
 #: ../../vfolder/vfolder.rst:26
@@ -141,23 +141,23 @@ msgstr "Storage 폴더 생성"
 #: ../../vfolder/vfolder.rst:61
 msgid ""
 "You can create a storage folder with the desired name by clicking the "
-"'NEW FOLDER' button. Enter the name of the folder to be created in "
-"Folder name, and select one of User / Project for Type. (Depending on the"
-" server settings, only one of User or Project may be selectable.) When "
+"'NEW FOLDER' button. Enter the name of the folder to be created in Folder"
+" name, and select one of User / Project for Type. (Depending on the "
+"server settings, only one of User or Project may be selectable.) When "
 "creating a project folder, the Project field must be set. The project "
 "folder will be bound to the project specified in the Project field, and "
 "only users belonging to the project can mount and use the project folder."
 " After setting the values as desired, you can create a folder by clicking"
 " the 'CREATE' button."
 msgstr ""
-"'NEW FOLDER' 버튼을 눌러서 폴더를 원하는 이름으로 생성할 수 있습니다. Folder name에 생성할 폴더의 "
-"이름을 입력하고, Type은 User/Project 중 하나를 선택합니다. (서버 설정에 따라 User, Project 중 하나만 "
-"선택 가능할 수 있습니다.) 프로젝트 폴더를 생성할 경우 Project 필드를 설정해 주어야 합니다. 프로젝트 폴더는 Project"
-" 필드에 지정된 프로젝트 전용이 되며, 해당 프로젝트에 속해있는 사용자만 그 프로젝트 폴더를 마운트해서 사용할 수 있습니다. 원하는"
-" 대로 값을 설정한 후 CREATE 버튼을 클릭하여 폴더를 생성할 수 있습니다."
+"'NEW FOLDER' 버튼을 눌러서 폴더를 원하는 이름으로 생성할 수 있습니다. Folder name에 생성할 폴더의 이름을 "
+"입력하고, Type은 User/Project 중 하나를 선택합니다. (서버 설정에 따라 User, Project 중 하나만 선택 "
+"가능할 수 있습니다.) 프로젝트 폴더를 생성할 경우 Project 필드를 설정해 주어야 합니다. 프로젝트 폴더는 Project "
+"필드에 지정된 프로젝트 전용이 되며, 해당 프로젝트에 속해있는 사용자만 그 프로젝트 폴더를 마운트해서 사용할 수 있습니다. 원하는 "
+"대로 값을 설정한 후 CREATE 버튼을 클릭하여 폴더를 생성할 수 있습니다."
 
 #: ../../vfolder/vfolder.rst:-1
-msgid "폴더 생성 다이얼로그"
+msgid "Folder creation dialog"
 msgstr ""
 
 #: ../../vfolder/vfolder.rst:75
@@ -211,11 +211,11 @@ msgstr ""
 #: ../../vfolder/vfolder.rst:92
 msgid ""
 "Permission: Set permission of a project folder for project members. If "
-"this is set to "Read-Only", project members cannot write to this "
-"folder inside their compute session."
+"this is set to \"Read-Only\", project members cannot write to this folder"
+" inside their compute session."
 msgstr ""
-"Permission: 프로젝트 폴더의 권한을 설정함. "Read-Only"로 설정된 경우, 프로젝트 멤버가 이 폴더에 "
-"쓰기 작업을 수행할 수 없습니다."
+"Permission: 프로젝트 폴더의 권한을 설정함. \"Read-Only\"로 설정된 경우, 프로젝트 멤버가 이 폴더에 쓰기 "
+"작업을 수행할 수 없습니다."
 
 #: ../../vfolder/vfolder.rst:97
 msgid "Explore folder"
@@ -228,7 +228,7 @@ msgid ""
 msgstr "Control 열의 폴더 버튼을 클릭하여 해당 폴더의 내용을 조회할 수 있는 파일 탐색기를 띄울 수 있습니다."
 
 #: ../../vfolder/vfolder.rst:-1
-msgid "폴더 아이템에 대한 제어"
+msgid "Controls in folder item"
 msgstr ""
 
 #: ../../vfolder/vfolder.rst:105
@@ -252,15 +252,13 @@ msgstr ""
 
 #: ../../vfolder/vfolder.rst:116
 msgid ""
-"You can create a new directory on the current path with the 'NEW "
-"FOLDER' button (in the file explorer), or upload a local file with the "
-"'UPLOAD FILES' button. All of these file operations can also be "
-"performed using the above-described method of mounting folders into a "
-"compute session."
+"You can create a new directory on the current path with the 'NEW FOLDER' "
+"button (in the file explorer), or upload a local file with the 'UPLOAD "
+"FILES' button. All of these file operations can also be performed using "
+"the above-described method of mounting folders into a compute session."
 msgstr ""
-"'NEW FOLDER' 버튼으로 현재 경로 상에 새로운 폴더를 생성할 수 있으며, 'UPLOAD FILES' 버튼으로"
-" 현재 경로에 로컬 파일을 업로드 할 수도 있습니다. 이런 파일 작업은 앞서 설명한 연산 세션 마운트 방식으로도 모두 수행 "
-"가능합니다."
+"'NEW FOLDER' 버튼으로 현재 경로 상에 새로운 폴더를 생성할 수 있으며, 'UPLOAD FILES' 버튼으로 현재 경로에 "
+"로컬 파일을 업로드 할 수도 있습니다. 이런 파일 작업은 앞서 설명한 연산 세션 마운트 방식으로도 모두 수행 가능합니다."
 
 #: ../../vfolder/vfolder.rst:121
 msgid ""
@@ -290,7 +288,7 @@ msgstr ""
 "'UPDATE' 버튼을 클릭하십시오."
 
 #: ../../vfolder/vfolder.rst:-1
-msgid "폴더 이름 변경 다이얼로그"
+msgid "Folder rename dialog"
 msgstr ""
 
 #: ../../vfolder/vfolder.rst:141
@@ -300,12 +298,12 @@ msgstr "폴더 삭제하기"
 #: ../../vfolder/vfolder.rst:143
 msgid ""
 "If you have permission to delete the storage folder, you can delete it by"
-" clicking the 'trash can' button in the control column. By clicking "
-"the button, the system will automatically move the folder to trash can "
-"with following notification,"
+" clicking the 'trash can' button in the control column. By clicking the "
+"button, the system will automatically move the folder to trash can with "
+"following notification,"
 msgstr ""
-"Storage 폴더를 삭제할 수 있는 권한을 가지고 있는 경우, Control 열의 '휴지통' 아이콘을 눌러 폴더를 삭제할 "
-"수 있습니다. 휴지통 버튼을 클릭하면 안내 메시지가 나타나며 자동으로 폴더가 휴지통으로 이동하고, "
+"Storage 폴더를 삭제할 수 있는 권한을 가지고 있는 경우, Control 열의 '휴지통' 아이콘을 눌러 폴더를 삭제할 수 "
+"있습니다. 휴지통 버튼을 클릭하면 안내 메시지가 나타나며 자동으로 폴더가 휴지통으로 이동하고, "
 
 #: ../../vfolder/vfolder.rst:-1
 msgid "Folder delete notification modal"
@@ -325,18 +323,18 @@ msgstr ""
 msgid ""
 "In this status, you can restore the folder by clicking restore button in "
 "Control column. If you want to permanently delete the folder, please "
-"click 'red trash can' button in the same column. A confirmation modal"
-" will pop up with an input field saying ``Type folder name to delete``. "
+"click 'red trash can' button in the same column. A confirmation modal "
+"will pop up with an input field saying ``Type folder name to delete``. "
 "Make sure you type the exact folder name correctly into the field, and "
 "click the red 'DELETE FOREVER' button to permanently delete the folder."
 msgstr ""
-"'delete-pending' 상태에서는 Control 열의 '복원' 버튼을 클릭해 폴더를 복원할 수 있습니다. 폴더를 "
-"완전히 삭제하려면, 같은 열에 존재하는 빨간색 '휴지통' 버튼을 클릭합니다. 'Delete Forever?' 모달이 "
-"나타나면 'Type folder name to delete' 라고 적힌 입력 필드에 삭제하려는 폴더 이름을 정확하게 입력한 "
-"후, 빨간색 'DELETE FOREVER' 버튼을 클릭하여 폴더를 완전히 삭제할 수 있습니다."
+"'delete-pending' 상태에서는 Control 열의 '복원' 버튼을 클릭해 폴더를 복원할 수 있습니다. 폴더를 완전히 "
+"삭제하려면, 같은 열에 존재하는 빨간색 '휴지통' 버튼을 클릭합니다. 'Delete Forever?' 모달이 나타나면 'Type "
+"folder name to delete' 라고 적힌 입력 필드에 삭제하려는 폴더 이름을 정확하게 입력한 후, 빨간색 'DELETE "
+"FOREVER' 버튼을 클릭하여 폴더를 완전히 삭제할 수 있습니다."
 
 #: ../../vfolder/vfolder.rst:-1
-msgid "폴더 삭제 다이얼로그"
+msgid "Folder deletion dialog"
 msgstr ""
 
 #: ../../vfolder/vfolder.rst:169
@@ -365,7 +363,7 @@ msgstr ""
 "이 탭은 FastTrack에서 파이프라인을 실행할 때 자동으로 생성되는 폴더 목록을 보여줍니다. 파이프라인을 만들면 각 태스크 "
 "인스턴스(연산 세션)에 대응되는 컨테이너의 ``/pipeline`` 위치에 새 폴더가 생성되고 마운트됩니다."
 
-#: ../../vfolder/vfolder.rst:185
+#: ../../vfolder/vfolder.rst:-1 ../../vfolder/vfolder.rst:185
 msgid "Automount folders"
 msgstr "자동 마운트 폴더"
 
@@ -397,10 +395,6 @@ msgstr ""
 "Automount Folders 사용에 관한 보다 자세한 내용은 :ref:`자동 마운트 폴더 사용 예제<using-"
 "automount-folder>` 섹션을 참고하십시오."
 
-#: ../../vfolder/vfolder.rst:-1
-msgid "자동 마운트 폴더"
-msgstr ""
-
 #: ../../vfolder/vfolder.rst:204
 msgid "Model folders"
 msgstr "모델 폴더"
@@ -408,10 +402,10 @@ msgstr "모델 폴더"
 #: ../../vfolder/vfolder.rst:206
 msgid ""
 "From the 24.03, Backend.AI supports a new feature called 'Model Store'. "
-"The newly added "Models" tab offers users a unified model store "
+"The newly added \"Models\" tab offers users a unified model store "
 "interface, enabling easy management and access to various machine "
 "learning and deep learning models. The features and usage of the "
-""Models" tab will be updated in the 24.03 documentation."
+"\"Models\" tab will be updated in the 24.03 documentation."
 msgstr ""
 "Backend.AI는 24.03 버전 이후 'Model Store' 기능을 제공합니다. 새롭게 추가된 “Model“ 탭은 사용자에게"
 " 통합된 모델 저장소 인터페이스를 제공하여 다양한 머신 러닝 및 딥러닝 모델을 쉽게 관리하고 액세스할 수 있도록 합니다. "
@@ -483,7 +477,7 @@ msgstr ""
 "파일 탐색기를 띄웁니다."
 
 #: ../../vfolder/vfolder.rst:-1
-msgid "파일 브라우저를 접근하는 방법"
+msgid "first step to access FileBrowser"
 msgstr ""
 
 #: ../../vfolder/vfolder.rst:242
@@ -493,7 +487,7 @@ msgid ""
 msgstr "탐색기 우측 상단의 'EXECUTE FILEBROWSER' 버튼을 클릭해주세요."
 
 #: ../../vfolder/vfolder.rst:-1
-msgid "파일 브라우저와 폴더 탐색기"
+msgid "Folder explorer with FileBrowser"
 msgstr ""
 
 #: ../../vfolder/vfolder.rst:247
@@ -507,22 +501,22 @@ msgstr ""
 "알 수 있습니다. 파일 브라우저 창에서 디렉토리와 파일을 자유롭게 업로드하고 수정하고 삭제할 수 있습니다."
 
 #: ../../vfolder/vfolder.rst:-1
-msgid "새 창에서 파일 브라우저 열기"
+msgid "FileBrowser with new window"
 msgstr ""
 
 #: ../../vfolder/vfolder.rst:255
 msgid ""
-"When user clicks 'EXECUTE FILEBROWSER' button, Backend.AI "
-"automatically creates a dedicated compute session for the app. So, in the"
-" Sessions page, you should see FileBrowser compute session. It is user's "
+"When user clicks 'EXECUTE FILEBROWSER' button, Backend.AI automatically "
+"creates a dedicated compute session for the app. So, in the Sessions "
+"page, you should see FileBrowser compute session. It is user's "
 "responsibility to delete this compute session."
 msgstr ""
-"사용자가 'EXECUTE FILEBROWSER' 버튼을 클릭하면, Backend.AI는 자동으로 파일 브라우저 전용 연산 "
-"세션을 하나 생성하게 됩니다. 따라서, Sessions 페이지에서 파일 브라우저 연산 세션이 조회되는 것을 확인할 수 있습니다. 이"
-" 연산 세션을 삭제하는 것은 사용자의 몫입니다."
+"사용자가 'EXECUTE FILEBROWSER' 버튼을 클릭하면, Backend.AI는 자동으로 파일 브라우저 전용 연산 세션을 "
+"하나 생성하게 됩니다. 따라서, Sessions 페이지에서 파일 브라우저 연산 세션이 조회되는 것을 확인할 수 있습니다. 이 연산 "
+"세션을 삭제하는 것은 사용자의 몫입니다."
 
 #: ../../vfolder/vfolder.rst:-1
-msgid "세션 페이지의 파일 브라우저"
+msgid "FileBrowser in session page"
 msgstr ""
 
 #: ../../vfolder/vfolder.rst:264
@@ -540,8 +534,8 @@ msgid ""
 "explorer, a new compute session will be created and a total of two "
 "FileBrowser sessions will appear."
 msgstr ""
-"만약 탐색기에서 'EXECUTE FILEBROWSER' 버튼을 다시 클릭하면 새로운 세션이 생성되어 총 두 개의 파일 "
-"브라우저 연산 세션이 나타나게 됩니다."
+"만약 탐색기에서 'EXECUTE FILEBROWSER' 버튼을 다시 클릭하면 새로운 세션이 생성되어 총 두 개의 파일 브라우저 연산"
+" 세션이 나타나게 됩니다."
 
 #: ../../vfolder/vfolder.rst:278
 msgid "Create a compute session with FileBrowser image"
@@ -681,13 +675,11 @@ msgid "Execute SFTP server from folder explorer dialog in Data & Storage page"
 msgstr "Data & Storage 페이지의 폴더 탐색기에서 파일 브라우저 실행"
 
 #: ../../vfolder/vfolder.rst:378
-msgid ""
-"Click 'RUN SFTP SERVER' button in the upper-right corner of the "
-"explorer."
+msgid "Click 'RUN SFTP SERVER' button in the upper-right corner of the explorer."
 msgstr "탐색기 우측 상단의 'RUN SFTP SERVER' 버튼을 클릭해주세요."
 
 #: ../../vfolder/vfolder.rst:-1
-msgid "SFTP 서버와 폴더 탐색기"
+msgid "Folder explorer with SFTP Server"
 msgstr ""
 
 #: ../../vfolder/vfolder.rst:383
@@ -700,36 +692,36 @@ msgstr ""
 "주지 않습니다.)"
 
 #: ../../vfolder/vfolder.rst:-1
-msgid "SSH / SFTP 연결 다이얼로그"
+msgid "SSH / SFTP connection dialog"
 msgstr ""
 
 #: ../../vfolder/vfolder.rst:392
 msgid ""
 "We provide a detailed information about using large file upload via "
-"ssh/sftp connection. For more information, please click the 'Read "
-"more' text link to see all the details of execution."
+"ssh/sftp connection. For more information, please click the 'Read more' "
+"text link to see all the details of execution."
 msgstr ""
 "대용량 파일 업로드를 SSH/SFTP 연결을 통해 수행하는 방법을 상세히 제공하고 있습니다. 자세한 정보를 확인하시려면, '더 "
 "알아보기' 텍스트 링크를 클릭하여 실행에 대한 상세 정보를 확인해주시기 바랍니다."
 
 #: ../../vfolder/vfolder.rst
-msgid "확장된 SSH / SFTP 연결 다이얼로그"
+msgid "SSH / SFTP connection dialog expanded"
 msgstr ""
 
 #: ../../vfolder/vfolder.rst:400
 msgid ""
-"For the connection, click 'DOWNLOAD SSH KEY' button to download the "
-"SSH private key (``id_container``). Also, remember the host and port "
-"number. Then, you can copy your files to the session using the Connection"
-" Example code written in the dialog, or referring to the following guide:"
-" :ref:`link<sftp_connection_for_linux_and_mac>`. To preserve the files, "
+"For the connection, click 'DOWNLOAD SSH KEY' button to download the SSH "
+"private key (``id_container``). Also, remember the host and port number. "
+"Then, you can copy your files to the session using the Connection Example"
+" code written in the dialog, or referring to the following guide: "
+":ref:`link<sftp_connection_for_linux_and_mac>`. To preserve the files, "
 "you need to transfer the files to the data folder. Also, the session will"
 " be terminated when there is no transfer for some time."
 msgstr ""
-"연결을 위해 'DOWNLOAD SSH KEY' 버튼을 클릭하여 SSH 비밀키(``id_container``)를 다운로드 "
-"합니다. 접속 주소와 포트 번호도 기억해 두십시오. 다이얼로그에 적힌 접속 예제 코드를 참고하거나, 다음 링크 를 참고하여 세션으로"
-" 파일을 전송할 수 있습니다. :ref:`link<sftp_connection_for_linux_and_mac>` 파일을 보존하려면"
-" 데이터 폴더로 복사하십시오. 또한, 일정 시간 동안 파일 전송이 없는 경우에는 세션이 삭제될 수 있습니다."
+"연결을 위해 'DOWNLOAD SSH KEY' 버튼을 클릭하여 SSH 비밀키(``id_container``)를 다운로드 합니다. "
+"접속 주소와 포트 번호도 기억해 두십시오. 다이얼로그에 적힌 접속 예제 코드를 참고하거나, 다음 링크 를 참고하여 세션으로 파일을 "
+"전송할 수 있습니다. :ref:`link<sftp_connection_for_linux_and_mac>` 파일을 보존하려면 데이터 "
+"폴더로 복사하십시오. 또한, 일정 시간 동안 파일 전송이 없는 경우에는 세션이 삭제될 수 있습니다."
 
 #: ../../vfolder/vfolder.rst:408
 msgid ""
@@ -741,4 +733,3 @@ msgstr ""
 "미리 사용자 SSH 키페어를 업로드 해두면 ``id_container`` 의 내용이 업로드한 SSH 사설키로 채워집니다. 따라서, "
 "연산 세션에 SSH 접속을 할 때마다 파일을 다운로드 할 필요가 없습니다. :ref:`사용자의 SSH 키페어 관리하기<user-"
 "ssh-keypair-management>` 부분을 참고하십시오."
-

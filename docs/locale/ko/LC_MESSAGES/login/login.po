@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-12 12:32+0900\n"
+"POT-Creation-Date: 2024-06-13 11:09+0900\n"
 "PO-Revision-Date: 2021-03-02 18:31+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko\n"
@@ -53,8 +53,8 @@ msgstr ""
 "계정으로 로그인 할 수 있습니다."
 
 #: ../../login/login.rst:-1
-msgid "가입 및 로그인"
-msgstr ""
+msgid "Signup dialog"
+msgstr "가입 및 로그인"
 
 #: ../../login/login.rst:29
 msgid ""
@@ -192,4 +192,7 @@ msgstr "헤더의 우측에는 물음표 아이콘이 있습니다. 이 아이�
 
 #~ msgid "Signup dialog"
 #~ msgstr "가입 및 로그인"
+
+#~ msgid "가입 및 로그인"
+#~ msgstr ""
 

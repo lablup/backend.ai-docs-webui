@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-12 12:32+0900\n"
+"POT-Creation-Date: 2024-06-13 11:09+0900\n"
 "PO-Revision-Date: 2023-03-20 19:09+0900\n"
 "Last-Translator: DaeHyun Sung <dhsung@lablup.com>\n"
 "Language: ko\n"
@@ -99,8 +99,8 @@ msgstr ""
 "SSH key는 세션이 새로 생성될 때마다 변할 수도 있는데, 이럴 경우 다시 다운로드 받아야 합니다."
 
 #: ../../sftp_to_container/sftp_to_container.rst:-1
-msgid "연산 세션에 SSH/SFTP 접속하기 (Linux/Mac/Visual Studio Code)"
-msgstr ""
+msgid "Starting SSH/SFTP daemon inside a compute session (container)"
+msgstr "연산 세션에 SSH/SFTP 접속하기 (Linux/Mac/Visual Studio Code)"
 
 #: ../../sftp_to_container/sftp_to_container.rst:69
 msgid ""
@@ -228,6 +228,10 @@ msgid ""
 msgstr ""
 "이제 FileZilla 클라이언트 앱을 실행한 후 설정-연결-SFTP 페이지로 들어가 생성한 ``id_container.ppk`` "
 "(OpenSSH를 지원하는 클라이언트의 경우 ``id_container``) 키 파일을 등록해 줍니다."
+
+#: ../../sftp_to_container/sftp_to_container.rst:-1
+msgid "Filezilla settings to connect to compute session"
+msgstr ""
 
 #: ../../sftp_to_container/sftp_to_container.rst:148
 msgid ""
@@ -613,10 +617,4 @@ msgid ""
 "When all the tasks are completed, press ``Ctrl-C`` on the first terminal "
 "to cancel the local proxy service."
 msgstr "모든 작업이 끝난 경우에는 첫 번째 터미널에서 ``Ctrl-C`` 를 눌러 로컬 프록시 서비스를 종료합니다."
-
-#~ msgid "Starting SSH/SFTP daemon inside a compute session (container)"
-#~ msgstr "연산 세션에 SSH/SFTP 접속하기 (Linux/Mac/Visual Studio Code)"
-
-#~ msgid "Filezilla settings to connect to compute session"
-#~ msgstr "연산 세션에 SSH/SFTP 접속하기 (Linux/Mac/Visual Studio Code)"
 
