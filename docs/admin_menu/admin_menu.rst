@@ -427,7 +427,7 @@ must be a minimum allocated GPU.) The default value for the minimum resource
 amount is provided as embedded in the image's metadata. If an attempt is made to
 create a compute session with a resource that is less than the amount of
 resources specified in each image, the request is automatically adjusted to the
-minimum resource requirements for the image and then generated, not canceled.
+minimum resource requirements for the image and then generated, not cancelled. 
 
 .. warning::
    Don't change the minimum resource requirements to an amount less than the
@@ -437,9 +437,28 @@ minimum resource requirements for the image and then generated, not canceled.
    it in the default.
 
 .. image:: update_image_resource_setting.png
-   :width: 350
+   :width: 500
    :align: center
    :alt: Update image resource setting
+
+Also you can add/modify supported apps per image by clicking 'Apps' icon button in the Controls column.
+After clicking the icon button, You will see the name of app and corresponding port number accordingly.
+
+.. image:: manage_app_dialog.png
+   :width: 500
+   :align: center
+   :alt: Manage app dialog
+
+In this modal, you can add supported custom apps by clicking add button below. If you want to delete the app, then
+simply click 'red trash can' button at right side of each row.
+
+.. note::
+   You need to reinstall the image after changing the managed app in the image.
+
+   .. image:: confirmation_dialog_for_manage_app_change_in_image.png
+      :width: 300
+      :align: center
+      :alt: Confirmation dialog for manage app change in image
 
 
 Manager docker registry
