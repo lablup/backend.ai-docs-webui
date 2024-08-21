@@ -5,7 +5,7 @@ Admin Menus
 ===========
 
 Logging in with an admin account will reveal an extra Administration menu on the bottom left of the sidebar. 
-User information registered in Backend.AI is listed in the Users tab. Domain admin can see only the users who belong to the domain, 
+User information registered is listed in the Users tab. Domain admin can see only the users who belong to the domain, 
 while superadmin can see all users' information. Only superadmin can create and deactivate a user.
 
 User ID (email), Name (username), and Main Access Key can be filtered by typing text in the 
@@ -112,7 +112,7 @@ Manage User's Keypairs
 ----------------------
 
 Each user account usually have one or more keypairs. A keypair is used for API
-authentication to the Backend.AI server, after user logs in. Login requires
+authentication to the server, after user logs in. Login requires
 authentication via user email and password, but every request the user sends to
 the server is authenticated based on the keypair.
 
@@ -138,7 +138,7 @@ can also explicitly enter the access key and secret key by clicking the Advanced
 panel.
 
 The Rate Limit field is where you specify the maximum number of requests that
-can be sent to the Backend.AI server in 15 minutes. For example, if set to 1000,
+can be sent to the server in 15 minutes. For example, if set to 1000,
 and the keypair sends more than 1000 API requests in 15 minutes, and the server
 throws an error and does not accept the request. It is recommended to use the
 default value and increase it when the API request frequency goes up high
@@ -165,7 +165,7 @@ according to the user's pattern.
 Share project storage folders with project members
 --------------------------------------------------
 
-Backend.AI provides storage folders for projects, in addition to user's own
+Storage folders for projects are provided, in addition to user's own
 storage folder. A project storage folder is a folder belonging to a specific
 project, not a specific user, and can be accessed by all users in that project.
 
@@ -281,7 +281,7 @@ Manage Resource Policy
 Keypair Resource Policy
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-In Backend.AI, administrators have the ability to set limits on the total resources available for each keypair, user, and project.
+Administrators have the ability to set limits on the total resources available for each keypair, user, and project.
 Resource policies enable you to define the maximum allowed resources and other compute session-related settings.
 Additionally, it is possible to create multiple resource policies for different needs, 
 such as user or research requirements, and apply them on an individual basis. 
@@ -348,9 +348,9 @@ About details of each option in resource policy dialog, see the description belo
      various and set by the administrators. (max value: 15552000 (approx. 180 days))
 
 * Folders
-   * Allowed hosts: Backend.AI supports many NFS mountpoint. This field limits
-     the accessibility to them. Even if a NFS named "data-1" is mounted on
-     Backend.AI, users cannot access it unless it is allowed by resource policy.
+   * Allowed hosts: Many NFS mountpoints are supported. This field limits
+     the accessibility to them. Even if a NFS named "data-1" is mounted, 
+     users cannot access it unless it is allowed by resource policy.
    * (Deprecated since 23.09.4) Max. #: the maximum number of storage folders that
      can be created/invited. (max value: 100).
 
@@ -395,7 +395,7 @@ table. This will bring up a dialog where you can select the columns you want to 
 User Resource Policy
 ~~~~~~~~~~~~~~~~~~~~
 
-Starting from version 24.03, Backend.AI supports user resource policy management. While each
+Starting from version 24.03, user resource policy management is available. While each
 user can have multiple keypairs, a user can only have one user resource policy. In the user
 resource policy page, users can set restrictions on various settings related to folders such as
 Max Folder Count and Max Folder Size, as well as individual resource limits like Max Session
@@ -445,7 +445,7 @@ clicking the 'Setting (Gear)' button at the bottom right of the table.
 Project Resource Policy
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Starting from version 24.03, Backend.AI supports project resource policy management. Project
+Starting from version 24.03, project resource policy management is available. Project
 resource policies manage storage space (quota) and folder-related limitations for projects.
 
 When clicking the Project tab of the Resource Policy page, you can see the list of project
@@ -498,7 +498,7 @@ Manage Images
 
 Admins can manage images, which are used in creating a compute session, in the
 Images tab of the Environments page. In the tab, meta information of all images
-currently in the Backend.AI server is displayed. You can check information such
+currently in the server is displayed. You can check information such
 as registry, namespace, image name, image's based OS, digest, and minimum
 resources required for each image. For images downloaded to one or more agent
 nodes, there will be a ``installed`` tag in each Status column.
@@ -561,9 +561,9 @@ registered by default, and it is a registry provided by Harbor.
    In the offline environment, the default registry is not accessible, so
    click the trash icon on the right to delete it.
 
-Click the refresh icon in Controls to update image metadata for Backend.AI from
+Click the refresh icon in Controls to update image metadata for the platform from
 the connected registry. Image information which does not have labels for
-Backend.AI among the images stored in the registry is not updated.
+the platform among the images stored in the registry is not updated.
 
 .. image:: image_registries_page.png
    :alt: Registries page
@@ -615,7 +615,7 @@ of currently defined resource presets.
 You can set resources such as CPU, RAM, fGPU, etc. to be provided by the
 resource preset by clicking the 'Setting (Gear)' (cogwheel) in the Controls panel.
 In the example below, the GPU field is disabled since the GPU provision mode of
-the Backend.AI server is set to "fractional". After setting the resources with
+the  server is set to "fractional". After setting the resources with
 the desired values, save it and check if the corresponding preset is displayed
 when creating a compute session. If available resources are less
 than the amount of resources defined in the preset, the corresponding preset
@@ -641,7 +641,7 @@ Manage agent nodes
 ------------------
 
 Superadmins can view the list of agent worker nodes, currently connected to
-Backend.AI, by visiting the Resources page. You can check agent node's IP,
+the platform, by visiting the Resources page. You can check agent node's IP,
 connecting time, actual resources currently in use, etc. The Web-UI does
 not provide the function to manipulate agent nodes.
 
@@ -799,7 +799,7 @@ In Quota setting page, there are two panels that represent the corresponding ite
 Set User Quota
 ~~~~~~~~~~~~~~~~
 
-In Backend.AI, there are two types of vfolders created by user and admin(project). In this section,
+There are two types of vfolders created by user and admin(project). In this section,
 we would like to show how to check current quota setting per-user and how to configure it.   
 First, make sure the active tab of quota settings panel is ``For User``. Then, select user you desire to 
 check and edit the quota. You can see the quota id that corresponds to user's id and the configuration already set 
@@ -870,7 +870,7 @@ Please note that a file name can have up to 255 characters.
 System settings
 ---------------
 
-In the Configuration page, you can see main settings of Backend.AI server.
+In the Configuration page, you can see main settings of the server.
 Currently, it provides several controls which can change and list settings.
 
 
@@ -893,7 +893,7 @@ You can also change settings for scaling and plugins.
    :alt: System setting about scaling and plugins
 
 When a user launches a multi-node cluster session, which is introduced at
-version 20.09, Backend.AI will dynamically create an overlay network to support
+version 20.09, It will dynamically create an overlay network to support
 private inter-node communication. Admins can set the value of the Maximum
 Transmission Unit (MTU) for the overlay network, if it is certain that the value
 will enhance the network speed.
@@ -904,8 +904,8 @@ will enhance the network speed.
    :alt: Overlay network setting dialog
 
 .. seealso::
-   For more information about Backend.AI Cluster session, please refer to
-   :ref:`Backend.AI Cluster Compute Session<backendai-cluster-compute-session>` section.
+   For more information about Cluster session, please refer to
+   :ref:`Cluster Compute Session<backendai-cluster-compute-session>` section.
 
 You can edit the configuration per job scheduler by clicking the Scheduler's config button.
 The values in the scheduler setting are the defaults to use when there is no scheduler
@@ -916,7 +916,7 @@ Currently supported scheduling methods include ``FIFO``, ``LIFO``, and ``DRF``.
 Each method of scheduling is exactly the same as the :ref:`scheduling methods<scheduling-methods>` above.
 Scheduler options include session creation retries. Session creation retries refers to the number
 of retries to create a session if it fails. If the session cannot be created within the trials,
-the request will be ignored and Backend.AI will process the next request. Currently, changes are
+the request will be ignored and It will process the next request. Currently, changes are
 only possible when the scheduler is FIFO.
 
 .. image:: system_setting_dialog_scheduler_settings.png
@@ -939,12 +939,12 @@ Go to the Maintenance page and you will see some buttons to manage the server.
 
 - RECALCULATE USAGE: Occasionally, due to unstable network connections or
   container management problem of Docker daemon, there may be a case where the
-  resource occupied by Backend.AI does not match the resource actually used by
+  resource occupied by It does not match the resource actually used by
   the container. In this case, click the RECALCULATE USAGE button to manually
   correct the resource occupancy.
 - RESCAN IMAGES: Update image meta information from all registered Docker
   registries. It can be used when a new image is pushed to a
-  Backend.AI-connected docker registry.
+  server-connected docker registry.
 
 .. image:: maintenance_page.png
    :width: 500
@@ -961,7 +961,7 @@ Detailed Information
 
 In Information page, you can see several detailed information and status of each feature.
 To see Manager version and API version, check the Core panel. To see whether each component
-for Backend.AI is compatible or not, check the Component panel.
+is compatible or not, check the Component panel.
 
 .. note::
 

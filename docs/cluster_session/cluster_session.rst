@@ -1,17 +1,17 @@
 ==================================
-Backend.AI Cluster Compute Session
+Cluster Compute Session
 ==================================
 
 .. _backendai-cluster-compute-session:
 
 .. note::
-   Cluster compute session feature is supported from Backend.AI server 20.09 or
+   Cluster compute session feature is supported from the server 20.09 or
    higher.
 
-Overview of Backend.AI cluster compute session
+Overview of cluster compute session
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Backend.AI supports cluster compute session to support distributed computing /
+cluster compute session is supported to support distributed computing /
 training tasks. A cluster session consists of multiple containers, each of which
 is created across multiple Agent nodes. Containers under a cluster session are
 automatically connected each other through a dynamically-created private
@@ -20,7 +20,7 @@ given, making it simple to execute networking tasks such as SSH connection. All
 the necessary secret keys and various settings for SSH connection between
 containers are automatically generated.
 
-For detailed about Backend.AI cluster session, refer to the following.
+For detailed about cluster session, refer to the following.
 
 .. image::
    overview_cluster_session.png
@@ -84,8 +84,8 @@ container information.
   ``BACKENDAI_KERNEL_ID`` is the same as ``BACKENDAI_SESSION_ID``.
 
 
-Use of Backend.AI cluster compute session
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Use of cluster compute session
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In this section, we will take a look at how to actually create and use cluster
 compute sessions through the user GUI.
@@ -145,12 +145,12 @@ is displayed.
    :width: 500
    :align: center
 
-In this way, Backend.AI makes it easy to create cluster computing sessions. In
+In this way, It makes it easy to create cluster computing sessions. In
 order to execute distributed learning and calculation through a cluster
 calculation session, a distributed learning module provided by ML libraries such
 as TensorFlow/PyTorch, or additional supporting software such as Horovod, NNI,
 MLFlow, etc. is required, and code in a way that can utilize the software. Must
-be written carefully. Backend.AI provides a kernel image containing the software
+be written carefully. It provides a kernel image containing the software
 required for distributed learning, so you can use that image to create a nice
 distributed learning algorithm.
 

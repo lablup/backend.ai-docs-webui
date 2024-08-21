@@ -3,13 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Backend.AI Web-UI User Guide
+KT Cloud Web-UI User Guide
 =================================
 
-User's guide for the Backend.AI Web-UI.
+User's guide for the KT Cloud Web-UI.
 
-Backend.AI Web-UI is a web or app that provides easy-to-use GUI interface
-to work with the Backend.AI server.
+KT Cloud Web-UI is a web or app that provides easy-to-use GUI interface
+to work with the server.
 
 The latest versions of this document can be found from sites below:
 
@@ -21,9 +21,6 @@ The latest versions of this document can be found from sites below:
    :caption: Table of Contents
 
    quickstart
-   disclaimer
-   overview/overview
-   installation/installation
    login/login
    summary/summary
    sessions_all/sessions_all
@@ -41,5 +38,3 @@ The latest versions of this document can be found from sites below:
    admin_menu/admin_menu
    trouble_shooting/trouble_shooting
    appendix/appendix
-   license_agreement/license_agreement
-   references/references
