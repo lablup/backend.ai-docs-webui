@@ -539,7 +539,7 @@ Once you click the icon, the name of the app and its corresponding port number w
    :align: center
    :alt: Manage app dialog
 
-In this interface, you can add supported custom applications by clicking the 'Add' button below. To delete an application, simply click the 'red trash can' icon on the right side of each row. 
+In this interface, you can add supported custom applications by clicking the 'Add' button below. To delete an application, simply click the 'red trash can' button on the right side of each row. 
 
 .. note::
    You need to reinstall the image after changing the managed app.
