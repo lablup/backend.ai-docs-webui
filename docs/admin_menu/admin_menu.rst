@@ -4,13 +4,11 @@
 Admin Menus
 ===========
 
-When you log in with an admin account, you will see an additional Administration
-menu in the bottom left sidebar. User information registered in Backend.AI is
-listed in the Users tab. Domain admin can see only the users who belong to the domain,
-while superadmin can see all users' information. Only
-superadmin can create and deactivate a user.
+Logging in with an admin account will reveal an extra Administration menu on the bottom left of the sidebar. 
+User information registered in Backend.AI is listed in the Users tab. Domain admin can see only the users who belong to the domain, 
+while superadmin can see all users' information. Only superadmin can create and deactivate a user.
 
-User ID (email), Name (username), and Main Access Key can be filtered by typing text in the
+User ID (email), Name (username), and Main Access Key can be filtered by typing text in the 
 search box on each column header.
 
 .. image:: admin_user_page.png
@@ -18,7 +16,7 @@ search box on each column header.
 
 .. note::
 
-   Depending on the plugin settings, the ``2FA Enabled`` column might be invisible. In that
+   Depending on the plugin settings, the ``2FA Enabled`` column might be invisible. In that 
    case, please contact administrator of your system.
 
 
@@ -200,11 +198,11 @@ All of the Model cards in model store are managed by project admin.
 After uploading model store with model-definition file, any user in the project 
 can access to model card and clone it if needed.
 
-Let's add model cards from Hugging Face.
+Following method is to add model cards from the Hugging Face.
 
 .. note::
-   You need to get an access to Hugging Face model you want to clone before creating a model card.
-   For more information please refer `Gated models <https://huggingface.co/docs/hub/models-gated>`_ .
+   Before creating a model card, getting an access to the specific model on Hugging Face is needed.
+   For more information, please refer to `Gated models <https://huggingface.co/docs/hub/models-gated>`_ .
 
 First, Set the project to 'model-store'.
 
@@ -213,8 +211,8 @@ First, Set the project to 'model-store'.
    :alt: Select project to model store
    :align: center
 
-Click 'Add' button in the right side. Input the folder name, 
-and set the rest of folder configuration like this:
+Click the 'Add' button on the right side. Enter the folder name, 
+and set the rest of folder configuration as shown below:
 
    - Type: project
    - Project: 'model-store'
@@ -227,10 +225,10 @@ and set the rest of folder configuration like this:
    :alt: Model store folder
    :align: center
 
-After creating the folder, you need to set and upload model-definition.yaml file 
-to the folder that you just created. Here's the example of the model-definition file. 
+After creating the folder, you need to set and upload the model-definition.yaml file 
+to the folder that you've just created. Following is the example of the model-definition file. 
 If you want to know how to write model-definition file, 
-please refer :ref:`Model definition guide <model_definition_guide>` section.
+please refer to :ref:`Model definition guide <model_definition_guide>` section.
 
 .. code:: yaml
 
@@ -259,7 +257,7 @@ please refer :ref:`Model definition guide <model_definition_guide>` section.
    model_path: /models
    name: Meta-Llama-3-8B-Instruct
 
-After uploading the model-definition file, you can see the model-card has been added to model store section.
+Once the model-definition file is uploaded, the model card will appear in the model store section.
 
 .. image:: model_card_added.png
    :alt: Model card added
@@ -270,8 +268,8 @@ After uploading the model-definition file, you can see the model-card has been a
    you can mount the model folder to session creation and download file to there by referring 
    `Downloading models <https://huggingface.co/docs/hub/models-downloading>`_ .
 
-If you click the model card that you just created, you will see the details of model-definition file you just uploaded. 
-Now everyone in the project can access to the model card and clone it.
+Clicking on the model card you've just created will display the details of the model-definition file you uploaded. 
+Now, every member of the project can access the model card and clone it.
 
 .. image:: model_card_detail.png
    :alt: Model card detail
@@ -283,16 +281,14 @@ Manage Resource Policy
 Keypair Resource Policy
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-In Backend.AI, administrators can set limits on the total amount of resources
-available for each keypair, user and project. Resource policies enable you to
-define the maximum allowed resources and other compute session-related settings.
-If needed, multiple resource policies can be created, such as for user or
-research purposes, and applied individually.
+In Backend.AI, administrators have the ability to set limits on the total resources available for each keypair, user, and project.
+Resource policies enable you to define the maximum allowed resources and other compute session-related settings.
+Additionally, it is possible to create multiple resource policies for different needs, 
+such as user or research requirements, and apply them on an individual basis. 
 
-On the Resource Policy page, administrators can view the list of currently
-registered resource policies. You can check the list of resource policies set
-for keypairs, users, and projects on the Resource Policy page. Let's begin by
-examining the resource policies for keypairs. In the figure below, there are
+The Resource Policy page allows administrators to view a list of all registered resource policies. 
+Administrators can review the resource policies established for keypairs, users, and projects directly on this page.  
+Let's begin by examining the resource policies for keypairs. In the figure below, there are
 three policies in total (gardener, student, default). The infinity symbol (∞)
 indicates that no resource restrictions have been applied to those resources.
 
@@ -490,8 +486,7 @@ bottom right of the table.
 Exporting current resource policy as CSV
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you want to save the current resource policy as a file, then click 'Tools' menu in left top of each tab.
-By clicking the menu, you can see the download file dialog.
+To save the current resource policy as a file, click on the 'Tools' menu located at the top left of each tab. Once you click the menu, download dialog will appear. 
 
 .. image:: keypair_export.png
    :width: 350
@@ -536,19 +531,18 @@ minimum resource requirements for the image and then generated, not cancelled.
    :align: center
    :alt: Update image resource setting
 
-Also you can add/modify supported apps per image by clicking 'Apps' icon button in the Controls column.
-After clicking the icon button, You will see the name of app and corresponding port number accordingly.
+Additionally, you can add or modify the supported apps for each image by clicking the 'Apps' icon located in the Controls column.
+Once you click the icon, the name of the app and its corresponding port number will be displayed accordingly.
 
 .. image:: manage_app_dialog.png
    :width: 500
    :align: center
    :alt: Manage app dialog
 
-In this modal, you can add supported custom apps by clicking add button below. If you want to delete the app, then
-simply click 'red trash can' button at right side of each row.
+In this interface, you can add supported custom applications by clicking the 'Add' button below. To delete an application, simply click the 'red trash can' button on the right side of each row. 
 
 .. note::
-   You need to reinstall the image after changing the managed app in the image.
+   You need to reinstall the image after changing the managed app.
 
    .. image:: confirmation_dialog_for_manage_app_change_in_image.png
       :width: 300

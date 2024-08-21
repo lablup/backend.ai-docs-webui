@@ -202,10 +202,12 @@ For more detailed information on the usage of Automount folders, refer to
 
 Models
 ------
-In the 'Models' tab, you can easily serve models. You can store desired data, such as
-input data for model serving and model training data, in the model folder. To quickly
-start the service, click the 'Model serving' button in the control column. Let's try
-pressing the 'Model serving' button in the 'model_folder' folder.
+'Models' 
+The Models tab facilitates straightforward model serving. 
+You can store the necessary data, including input data for model serving and training data, in the model folder. 
+To initiate the service, click on the 'Model serving' button located in the control column. 
+
+Following method is to serve model by pressing the 'Model serving' button in the 'model_folder' directory.
 
 .. image:: hover_model_serving.png
    :alt: Hover model serving
@@ -222,19 +224,18 @@ If you want to learn more about model serving, please refer to :ref:`this link<m
 Model store
 -----------
 From the 24.03, You can easily clone models from shared via project.
-The model store refers to a storage space and service that stores, manages, searches, and utilizes
-various machine learning and deep learning models.
+The model store refers to a storage space and service that stores, manages, searches, and utilizes various machine learning and deep learning models.
 
 .. image:: model_store.png
    :alt: Model store
 
 
-As you can see in the model store section, there are several model cards that you can access, 
-which are maintained by project admin. For each model card may contain tags that represents 
-the characteristics of model itself. Let's clone one from the model cards so that you can 
-try pre-trained models right away. Click one of the model cards and you will see the modal 
-that describes what is all about the model. If you want to clone the current model card 
-to your folder, then click 'Clone to a folder' button on the right top of the modal.
+As you can see in the model store section, there are several model cards that you can access, which are maintained by project admin. 
+Each model card may contain tags that represent the characteristics of the model itself. 
+Following method is to clone one from the model cards to try pre-trained models.
+
+Click one of the model cards and you will see the modal that describes what is all about the model. 
+If you want to clone the current model card to your folder, click 'Clone to a folder' button on the right top of the modal.
 
 .. note::
    Only project admin can edit model cards in model store. If you want to add your own model card and share it to others, 
@@ -243,8 +244,8 @@ to your folder, then click 'Clone to a folder' button on the right top of the mo
 .. image:: model_card_description.png
    :alt: Model card description
 
-After clicking the button, you will see another modal that configures model card cloning.
-Input the folder name and set the permission as is (if you want to use it by yourself), 
+After clicking the button, another modal will appear which configures model card cloning.
+Enter the folder name and set the permission as is (if you want to use it by yourself), 
 and Click 'Clone' button below. 
 
 .. image:: model_card_clone_dialog.png
