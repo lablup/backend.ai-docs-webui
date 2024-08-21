@@ -153,3 +153,15 @@ MLFlow, etc. is required, and code in a way that can utilize the software. Must
 be written carefully. Backend.AI provides a kernel image containing the software
 required for distributed learning, so you can use that image to create a nice
 distributed learning algorithm.
+
+See logs per container
+^^^^^^^^^^^^^^^^^^^^^^^
+
+From 24.03, You can check each log of container in logs modal. It will help you 
+to understand what's going on not only in ``main`` container but also ``sub`` containers.
+
+.. image::
+   log_modal_per_container.png
+   :width: 700
+   :align: center
+   :alt: Log modal per container

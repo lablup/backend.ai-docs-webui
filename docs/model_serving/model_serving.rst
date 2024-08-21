@@ -1,3 +1,5 @@
+.. _model-serving:
+
 =============
 Model Serving
 =============
@@ -200,7 +202,7 @@ Once the model definition file is uploaded to the virtual folder of the
 model type, you are ready to create the model service.
 
 Click the 'Start Service' button on the Model Serving page. This will
-bring up a modal where you can enter the required settings for creating
+bring up a page where you can enter the required settings for creating
 the service.
 
 .. image:: service-launcher1.png
@@ -215,6 +217,18 @@ First, provide a service name. For detailed explanations of each item, please re
    hosted. By default, it is disabled.
 -  Model Storage To Mount: This is model folder to mount, which contains 
    model definition file inside the directory.
+-  Inference Runtime Variant: This categorizes the type of models into four: ``vLLM``, ``NVIDIA NIM``, ``Predefined Image Command``, ``Custom``.
+
+   .. image:: service-launcher-runtime-variant.png
+      :width: 700
+      :align: center
+      :alt: Runtime Variant 
+
+   For example, When you select ``vLLM`` or ``NVIDIA NIM`` or ``Predefined Image Command`` as a runtime variant of model service, 
+   then you don't need to set ``model-definition`` file in your model folder to mount. You may need to set extra environment variable instead.
+   For more information, please take a look at 
+   `Model Variant: Easily Serving Various Model Services <https://www.backend.ai/blog/2024-07-10-various-ways-of-model-serving>`_.
+
 -  Model Destination For Model Folder: This option allows aliasing path of 
    model storage path to session corresponding to routing, which represents 
    the service. default value is ``/models``.
@@ -241,18 +255,8 @@ resources that can be allocated to the model service.
    service has multiple routings, it will be executed in a single
    environment only. (Support for multiple execution environments will
    be added in a future update)
--  CPU: The number of CPU cores allocated to the routing for running the
-   model service.
--  RAM: The amount of memory allocated to the routing for running the
-   model service (in GiB).
--  GPU: The GPU allocation for the routing for running the model
-   service.
--  Shared Memory: The amount of shared memory allocated to the routing
-   for running the model service (in GiB). It should be smaller than the
-   allocated memory.
--  AI Accelerator: The amount of AI accelerator (GPUs or NPUs). 
-   If manual image setting is allowed by configuration, users could select
-   any AI accelerator on demand according to resource group.
+-  Resource Presets: You can select the amount of resources that you want to allocate in model service. 
+   Resource contains CPU, RAM, and AI accelerator, as known as GPU.
 
 .. image:: cluster_mode.png
    :width: 700
@@ -262,6 +266,9 @@ resources that can be allocated to the model service.
    placed on a single physical node or virtual machine.
 -  Multi Node: When running a session, one managed node and one or more worker 
    nodes are split across multiple physical nodes or virtual machines.
+-  Variable: In this section, you can set environment variable when starting a model service.
+   It is useful when you trying to create a model service using runtime variant. some runtime variant needs 
+   certain environment variable setting before execution.
 
 Before creating model service, Backend.AI supports validation feature to check 
 whether execution is available or not(due to any errors during execution).

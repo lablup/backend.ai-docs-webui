@@ -193,6 +193,90 @@ also displayed in the Permission panel.
 
 .. image:: group_folder_listed_in_B.png
 
+Manage Models cards
+-------------------
+
+All of the Model cards in model store are managed by project admin. 
+After uploading model store with model-definition file, any user in the project 
+can access to model card and clone it if needed.
+
+Let's add model cards from Hugging Face.
+
+.. note::
+   You need to get an access to Hugging Face model you want to clone before creating a model card.
+   For more information please refer `Gated models <https://huggingface.co/docs/hub/models-gated>`_ .
+
+First, Set the project to 'model-store'.
+
+.. image:: select_project_to_model_store.png
+   :width: 350
+   :alt: Select project to model store
+   :align: center
+
+Click 'Add' button in the right side. Input the folder name, 
+and set the rest of folder configuration like this:
+
+   - Type: project
+   - Project: 'model-store'
+   - Usage Mode: Model
+   - Permission: Read-Write
+   - Cloneable: True
+
+.. image:: model_store_folder.png
+   :width: 500
+   :alt: Model store folder
+   :align: center
+
+After creating the folder, you need to set and upload model-definition.yaml file 
+to the folder that you just created. Here's the example of the model-definition file. 
+If you want to know how to write model-definition file, 
+please refer :ref:`Model definition guide <model_definition_guide>` section.
+
+.. code:: yaml
+
+   models:
+   - metadata:
+      architecture: LlamaForCausalLM
+      author: meta-llama
+      category: huggingface
+      created_at: '2024-04-17 09:35:12'
+      description: Meta's Llama 3 by AI@Meta are dialogue-optimized, safe large language
+         models in 8B and 70B sizes.
+      framework:
+      - transformers
+      label:
+      - facebook
+      - meta
+      - pytorch
+      - llama
+      - llama-3
+      license: llama3
+      min_resource:
+         cuda.shares: 2.4305981636047362
+      modified_at: '2024-05-29 12:27:16'
+      task: text-generation
+      title: meta-llama/Meta-Llama-3-8B-Instruct
+   model_path: /models
+   name: Meta-Llama-3-8B-Instruct
+
+After uploading the model-definition file, you can see the model-card has been added to model store section.
+
+.. image:: model_card_added.png
+   :alt: Model card added
+   :align: center
+
+.. note::
+   You need to download model manually after setting model-definition file. For downloading the model file to folder, 
+   you can mount the model folder to session creation and download file to there by referring 
+   `Downloading models <https://huggingface.co/docs/hub/models-downloading>`_ .
+
+If you click the model card that you just created, you will see the details of model-definition file you just uploaded. 
+Now everyone in the project can access to the model card and clone it.
+
+.. image:: model_card_detail.png
+   :alt: Model card detail
+   :align: center
+
 Manage Resource Policy
 ----------------------
 
@@ -403,6 +487,17 @@ names cannot be edited. Deletion can be done by clicking the trash can icon butt
 You can select and display only the columns you want by clicking the 'Setting (Gear)' button at the
 bottom right of the table.
 
+Exporting current resource policy as CSV
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you want to save the current resource policy as a file, then click 'Tools' menu in left top of each tab.
+By clicking the menu, you can see the download file dialog.
+
+.. image:: keypair_export.png
+   :width: 350
+   :align: center
+   :alt: Keypair export 
+
 Manage Images
 -------------
 
@@ -427,7 +522,7 @@ must be a minimum allocated GPU.) The default value for the minimum resource
 amount is provided as embedded in the image's metadata. If an attempt is made to
 create a compute session with a resource that is less than the amount of
 resources specified in each image, the request is automatically adjusted to the
-minimum resource requirements for the image and then generated, not canceled.
+minimum resource requirements for the image and then generated, not cancelled. 
 
 .. warning::
    Don't change the minimum resource requirements to an amount less than the
@@ -437,9 +532,28 @@ minimum resource requirements for the image and then generated, not canceled.
    it in the default.
 
 .. image:: update_image_resource_setting.png
-   :width: 350
+   :width: 500
    :align: center
    :alt: Update image resource setting
+
+Also you can add/modify supported apps per image by clicking 'Apps' icon button in the Controls column.
+After clicking the icon button, You will see the name of app and corresponding port number accordingly.
+
+.. image:: manage_app_dialog.png
+   :width: 500
+   :align: center
+   :alt: Manage app dialog
+
+In this modal, you can add supported custom apps by clicking add button below. If you want to delete the app, then
+simply click 'red trash can' button at right side of each row.
+
+.. note::
+   You need to reinstall the image after changing the managed app in the image.
+
+   .. image:: confirmation_dialog_for_manage_app_change_in_image.png
+      :width: 300
+      :align: center
+      :alt: Confirmation dialog for manage app change in image
 
 
 Manager docker registry

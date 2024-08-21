@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 20.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-12 12:32+0900\n"
+"POT-Creation-Date: 2024-06-13 11:09+0900\n"
 "PO-Revision-Date: 2022-05-17 11:22+0900\n"
 "Last-Translator: \n"
 "Language: ko\n"
@@ -56,12 +56,12 @@ msgid ""
 " It will be regarded as invalid. You have to input URL which is not "
 "starting from localhost."
 msgstr ""
-"로컬 주소의 Jupyte notebook 파일을 불러와서 실행할 경우 실행이 되지 않습니다. localhost로 시작되는 주소 "
+"로컬 주소의 Jupyter notebook 파일을 불러와서 실행할 경우 실행이 되지 않습니다. localhost로 시작되는 주소 "
 "이외의 URL을 입력해주십시오."
 
 #: ../../import_run/import_run.rst:-1
-msgid "Jupyter notebook 파일 가져오기 및 실행"
-msgstr ""
+msgid "Import & Run Jupyter notebook"
+msgstr "Jupyter notebook 파일 가져오기 및 실행"
 
 #: ../../import_run/import_run.rst:26
 msgid ""
@@ -125,8 +125,8 @@ msgid ""
 msgstr "버튼 클릭 전 반드시 로그인이 되어있어야 합니다. 아닐 경우 실행 전 반드시 로그인이 필요합니다."
 
 #: ../../import_run/import_run.rst:-1
-msgid "Jupyter notebook을 바로 실행할 수 있는 버튼 생성하기"
-msgstr ""
+msgid "Create a Jupyter notebook button"
+msgstr "Jupyter notebook을 바로 실행할 수 있는 버튼 생성하기"
 
 #: ../../import_run/import_run.rst:67
 msgid "Importing GitHub Repositories"
@@ -144,8 +144,8 @@ msgstr ""
 "목록에서 하나를 선택하십시오."
 
 #: ../../import_run/import_run.rst:-1
-msgid "GitHub 저장소 불러오기"
-msgstr ""
+msgid "Import GitHub repository"
+msgstr "GitHub 저장소 불러오기"
 
 #: ../../import_run/import_run.rst:78
 msgid ""
@@ -163,6 +163,10 @@ msgid ""
 " its name."
 msgstr "저장소가 하나의 폴더로써 성공적으로 불러와진 것을 확인할 수 있습니다."
 
+#: ../../import_run/import_run.rst:-1
+msgid "Import GitHub repository result"
+msgstr "GitHub 저장소 불러오기"
+
 #: ../../import_run/import_run.rst:90
 msgid "Importing GitLab Repositories"
 msgstr "GitLab 저장소 불러오기"
@@ -178,8 +182,8 @@ msgstr ""
 " 이름을 명시적으로 지정해야 합니다."
 
 #: ../../import_run/import_run.rst:-1
-msgid "GitLab 저장소 불러오기"
-msgstr ""
+msgid "Import GitLab repository"
+msgstr "GitLab 저장소 불러오기"
 
 #: ../../import_run/import_run.rst:101
 msgid ""
@@ -188,19 +192,3 @@ msgid ""
 msgstr ""
 "이미 동일한 이름의 데이터 폴더가 존재할 경우, 시스템에서는 자동으로 불러오는 저장소 명 뒤에 ``_`` (밑줄)과 번호를 추가하게"
 " 됩니다."
-
-#~ msgid "Import & Run Jupyter notebook"
-#~ msgstr "Jupyter notebook 파일 가져오기 및 실행"
-
-#~ msgid "Create a Jupyter notebook button"
-#~ msgstr "Jupyter notebook을 바로 실행할 수 있는 버튼 생성하기"
-
-#~ msgid "Import GitHub repository"
-#~ msgstr "GitHub 저장소 불러오기"
-
-#~ msgid "Import GitHub repository result"
-#~ msgstr "GitHub 저장소 불러오기"
-
-#~ msgid "Import GitLab repository"
-#~ msgstr "GitLab 저장소 불러오기"
-
