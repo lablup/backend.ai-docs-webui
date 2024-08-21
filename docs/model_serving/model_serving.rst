@@ -224,8 +224,8 @@ First, provide a service name. For detailed explanations of each item, please re
       :align: center
       :alt: Runtime Variant 
 
-   For example, When you select ``vLLM`` or ``NVIDIA NIM`` or ``Predefined Image Command`` as a runtime variant of model service, 
-   then you don't need to set ``model-definition`` file in your model folder to mount. You may need to set extra environment variable instead.
+   For example, if you choose ``vLLM`` or ``NVIDIA NIM`` or ``Predefined Image Command`` as a runtime variant of model service, 
+    there's no need to configure a ``model-definition`` file in your model folder to mount. Instead, you might have to set an additional environment variable. 
    For more information, please take a look at 
    `Model Variant: Easily Serving Various Model Services <https://www.backend.ai/blog/2024-07-10-various-ways-of-model-serving>`_.
 
@@ -255,7 +255,7 @@ resources that can be allocated to the model service.
    service has multiple routings, it will be executed in a single
    environment only. (Support for multiple execution environments will
    be added in a future update)
--  Resource Presets: You can select the amount of resources that you want to allocate in model service. 
+-  Resource Presets: Allows you to select the amount of resources to allocate from the model service. 
    Resource contains CPU, RAM, and AI accelerator, as known as GPU.
 
 .. image:: cluster_mode.png
