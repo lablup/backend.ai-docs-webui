@@ -3,12 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-KT Cloud Web-UI User Guide
+KT Web-UI User Guide
 =================================
 
-User's guide for the KT Cloud Web-UI.
+User's guide for the KT Web-UI.
 
-KT Cloud Web-UI is a web or app that provides easy-to-use GUI interface
+KT Web-UI is a web or app that provides easy-to-use GUI interface
 to work with the server.
 
 The latest versions of this document can be found from sites below:

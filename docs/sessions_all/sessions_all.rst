@@ -138,7 +138,7 @@ refer to the following.
     multiple compute sessions at once. For more information, see the section
     :ref:`Overview of cluster compute session<backendai-cluster-compute-session>`.
   
-* High-Performance Computing Optimizations: KT Cloud provides configuring values
+* High-Performance Computing Optimizations: KT provides configuring values
   related to HPC Optimizations. For more information, See the section
   :ref:`Optimizing Accelerated Computing<optimizing-accelerated-computing>`.
 
@@ -221,7 +221,7 @@ and used resources, session starting time, etc.
 .. image:: session_status_detail_information.png
    :align: center
 
-KT Cloud provides detailed status information for ``PENDING``, ``TERMINATED``,
+KT provides detailed status information for ``PENDING``, ``TERMINATED``,
 or ``CANCELLED`` sessions. In the case of ``PENDING`` sessions, in particular,
 you can check why the session is not scheduled and stuck in the ``PENDING``
 status. You can see the details by clicking the question mark icon right next
@@ -312,7 +312,7 @@ In the notebook's file explorer, the ``id_container file`` contains a private
 SSH key. If necessary, you can download it and use it for SSH / SFTP access to
 the container.
 
-Click the NEW button at the top right and select the Notebook for KT Cloud,
+Click the NEW button at the top right and select the Notebook for KT,
 then the ipynb window appears where you can enter your own code.
 
 .. image:: backendai_notebook_menu.png
@@ -397,7 +397,7 @@ beginning if you want to keep it.
 Idleness Checks
 ---------------
 
-KT Cloud supports three types of inactivity (idleness) criteria for automatic garbage
+KT supports three types of inactivity (idleness) criteria for automatic garbage
 collection of compute sessions: Max Session Lifetime, Network Idle Timeout, and Utilization
 Checker.
 
@@ -461,7 +461,7 @@ utilization).
 How to add environment variable before creating a session
 ---------------------------------------------------------
 
-To give more convenient workspace for users, KT Cloud supports environment variable setting
+To give more convenient workspace for users, KT supports environment variable setting
 in session launching. In this feature, you can add any envs such as ``PATH`` by filling out
 variable name and value in environment configuration dialog.
 
@@ -479,7 +479,7 @@ You can input variable name and value in the same line of the input fields.
 How to add preopen ports before creating a session
 --------------------------------------------------
 
-KT Cloud supports preopen ports setting at container startup. When using this feature, there is no need to build
+KT supports preopen ports setting at container startup. When using this feature, there is no need to build
 separate images when you want to expose the serving port.
 
 To add preopen ports, simply enter multiple values separated by either a comma (,) or a space.
@@ -509,7 +509,7 @@ Save session commit
 
 .. _session-commit:
 
-KT Cloud supports \"Convert Session to Image\" feature from 24.03. Committing a ``RUNNING`` session will save the 
+KT supports \"Convert Session to Image\" feature from 24.03. Committing a ``RUNNING`` session will save the 
 current state of the session as a new image. Clicking the commit button in the control column of ``RUNNING`` session will
 display a dialog to show the information of the session. After entering the session name, you can convert the session to 
 a new image. The session name must be 4 to 32 characters long and can only contain alphanumeric letters, hyphens (``-``),
@@ -526,7 +526,7 @@ mounted to the container for image commits are considered external resources and
 the final image. Remember that ``/home/work`` is a mount folder (scratch directory), so it is not included.
 
 .. note::
-   Currently, KT Cloud supports "Convert Session to Image" only when the session is in ``INTERACTIVE`` mode.
+   Currently, KT supports "Convert Session to Image" only when the session is in ``INTERACTIVE`` mode.
    To prevent unexpected error, users may not be able to terminate the session during committing process.
    To stop the ongoing process, check the session, and force-terminate it.
 
@@ -558,8 +558,8 @@ To manually enter the environment name for future session creation, please click
 Optimizing Accelerated Computing
 --------------------------------
 
-KT Cloud provides configuration UI for internal control variable in ``nthreads-var``.
-KT Cloud sets this value equal to the number of session's CPU cores by default,
+KT provides configuration UI for internal control variable in ``nthreads-var``.
+KT sets this value equal to the number of session's CPU cores by default,
 which has the effect of accelerating typical high-performance computing workloads.
 Nevertheless, for some multi-thread workloads, multiple processes using OpenMP are used at same time,
 resulting in an abnormally large number of threads and significant performance degradation.
