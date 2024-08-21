@@ -167,9 +167,8 @@ msgid "Spanish: Set Spanish as the default language."
 msgstr "Spanish: 스페인어를 기본 언어로 설정합니다."
 
 #: ../../user_settings/user_settings.rst:68
-#, fuzzy
 msgid "Thai: Set Thai as the default language."
-msgstr "Turkish: 터키어를 기본 언어로 설정합니다."
+msgstr "That: 태국어를 기본 언어로 설정합니다."
 
 #: ../../user_settings/user_settings.rst:69
 msgid "Turkish: Set Turkish as the default language."

@@ -217,7 +217,7 @@ First, provide a service name. For detailed explanations of each item, please re
    hosted. By default, it is disabled.
 -  Model Storage To Mount: This is model folder to mount, which contains 
    model definition file inside the directory.
--  Inference Runtime Variant: This categorizes the type of models into four; ``vLLM``, ``NVIDIA NIM``, ``Predefined Image Command``, ``Custom``.
+-  Inference Runtime Variant: This categorizes the type of models into four: ``vLLM``, ``NVIDIA NIM``, ``Predefined Image Command``, ``Custom``.
 
    .. image:: service-launcher-runtime-variant.png
       :width: 700
@@ -226,7 +226,8 @@ First, provide a service name. For detailed explanations of each item, please re
 
    For example, When you select ``vLLM`` or ``NVIDIA NIM`` or ``Predefined Image Command`` as a runtime variant of model service, 
    then you don't need to set ``model-definition`` file in your model folder to mount. You may need to set extra environment variable instead.
-   For more information, please take a look at `Model Variant: Easily Serving Various Model Services <https://www.backend.ai/blog/2024-07-10-various-ways-of-model-serving>`_.
+   For more information, please take a look at 
+   `Model Variant: Easily Serving Various Model Services <https://www.backend.ai/blog/2024-07-10-various-ways-of-model-serving>`_.
 
 -  Model Destination For Model Folder: This option allows aliasing path of 
    model storage path to session corresponding to routing, which represents 

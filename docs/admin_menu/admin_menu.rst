@@ -204,7 +204,7 @@ Let's add model cards from Hugging Face.
 
 .. note::
    You need to get an access to Hugging Face model you want to clone before creating a model card.
-   For more information please refer `Gated models<https://huggingface.co/docs/hub/models-gated>_` .
+   For more information please refer `Gated models <https://huggingface.co/docs/hub/models-gated>`_ .
 
 First, Set the project to 'model-store'.
 
@@ -215,11 +215,12 @@ First, Set the project to 'model-store'.
 
 Click 'Add' button in the right side. Input the folder name, 
 and set the rest of folder configuration like this:
-- Type: project
-- Project: 'model-store'
-- Usage Mode: Model
-- Permission: Read-Write
-- Cloneable: True
+
+   - Type: project
+   - Project: 'model-store'
+   - Usage Mode: Model
+   - Permission: Read-Write
+   - Cloneable: True
 
 .. image:: model_store_folder.png
    :width: 500
@@ -267,7 +268,7 @@ After uploading the model-definition file, you can see the model-card has been a
 .. note::
    You need to download model manually after setting model-definition file. For downloading the model file to folder, 
    you can mount the model folder to session creation and download file to there by referring 
-   `Downloading models<https://huggingface.co/docs/hub/models-downloading>_` .
+   `Downloading models <https://huggingface.co/docs/hub/models-downloading>`_ .
 
 If you click the model card that you just created, you will see the details of model-definition file you just uploaded. 
 Now everyone in the project can access to the model card and clone it.

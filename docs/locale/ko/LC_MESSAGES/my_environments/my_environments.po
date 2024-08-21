@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 23.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-20 18:06+0900\n"
+"POT-Creation-Date: 2024-08-21 04:06+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ko\n"
@@ -56,6 +56,20 @@ msgstr ""
 "없습니다."
 
 #: ../../my_environments/my_environments.rst:25
+msgid ""
+"You can also copy the my environment image and create session with manual"
+" image. Click 'Copy' button in the control column, and go to sessions "
+"page and create a session. Fill the input of manual image by pasting the "
+"image that you copied."
+msgstr ""
+"사용자 정의 이미지를 복사해서 세션을 생성할 수도 있습니다. 제어 열의 'Copy' 버튼을 클릭한 뒤, "
+"세션 페이지로 이동해서 세션을 생성합니다. 방금 복사한 이미지를 직접 입력하는 이미지의 입력으로 붙여넣기 하면 됩니다."
+
+#: ../../my_environments/my_environments.rst:-1
+msgid "Copy image name manual"
+msgstr ""
+
+#: ../../my_environments/my_environments.rst:32
 msgid ""
 "If you want to hide or show the certain columns, click the gear icon at "
 "the bottom right of the table. Then you can see below dialog to select "
