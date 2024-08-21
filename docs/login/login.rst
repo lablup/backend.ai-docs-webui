@@ -119,5 +119,5 @@ right side of the header.
    :width: 800
 
 
-There is a question mark icon at the lower right side of the header. 
-Click this icon to access the web version of this guide document.
+.. There is a question mark icon at the lower right side of the header. 
+.. Click this icon to access the web version of this guide document.

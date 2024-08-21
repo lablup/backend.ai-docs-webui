@@ -2,7 +2,7 @@
 Handling Data & Storage Folders
 ===============================
 
-Backend.AI supports dedicated storage to preserve user's files. Since the files
+Dedicated storage is available to preserve user's files. Since the files
 and directories of a compute session are deleted upon session termination, it is
 recommended to save them in a storage folder. List of storage folders can be
 found by selecting the Data & Storage page on the sidebar. You can see the information
@@ -271,12 +271,12 @@ If you want to use pre-trained model that you cloned from, then please refer to
 Using FileBrowser
 -----------------
 
-Backend.AI supports `FileBrowser <https://filebrowser.org>`_ from version
+`FileBrowser <https://filebrowser.org>`_ is provided from version
 20.09. FileBrowser is a program that helps you manage files on a remote server
 through a web browser. This is especially useful when uploading a directory from
 the user's local machine.
 
-Currently, Backend.AI provides a FileBrowser as an application of a compute
+Currently, FileBrowser is provided as an application of a compute
 session. Therefore, the following conditions are required to launch it.
 
 * User can create at least one compute session.
@@ -312,7 +312,7 @@ and files.
 .. image:: filebrowser_with_new_window.png
    :alt: FileBrowser with new window
 
-When user clicks 'EXECUTE FILEBROWSER' button, Backend.AI automatically creates a
+When user clicks 'EXECUTE FILEBROWSER' button, It automatically creates a
 dedicated compute session for the app. So, in the Sessions page, you should see
 FileBrowser compute session. It is user's responsibility to delete this compute
 session.
@@ -349,7 +349,7 @@ every uploaded/updated files will be lost after the session is terminated.
 Basic usage examples of FileBrowser
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Here, we present some basic usage examples of FileBrowser in Backend.AI. Most
+Here, we present some basic usage examples of FileBrowser in the platform. Most
 of the FileBrowser operations are intuitive, but if you need more detailed
 guide, please refer to the
 `FileBrowser documentation <https://filebrowser.org>`_.
@@ -421,7 +421,7 @@ You will see that moving operation is successfully finished.
 Using SFTP Server
 -----------------
 
-From 22.09, Backend.AI supports SSH / SFTP file upload from both desktop app and
+From 22.09, It supports SSH / SFTP file upload from both desktop app and
 web-based Web-UI. The SFTP server allows you to upload files quickly through reliable
 data streams.
 

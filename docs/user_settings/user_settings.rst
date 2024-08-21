@@ -42,7 +42,7 @@ refreshing the page, click the leftmost icon at the top of the header.
 Language
 ^^^^^^^^
 
-Set the language displayed on the UI. Currently, Backend.AI supports more than
+Set the language displayed on the UI. Currently, It supports more than
 five languages including English and Korean. However, there may be some UI items
 that do not update their language
 before the page is refreshed.
@@ -68,13 +68,6 @@ before the page is refreshed.
 * Thai: Set Thai as the default language.
 * Turkish: Set Turkish as the default language.
 * Vietnamese: Set Vietnamese as the default language.
-  
-
-.. note::
-   Some of translated items may be marked as ``__NOT_TRANSLATED__``, which
-   indicates the item is not yet translated for that language. Since Backend.AI
-   WebUI is open sourced, anyone who willing to make the translation better
-   can contribute: https://github.com/lablup/backend.ai-webui.
 
 .. _user-ssh-keypair-management:
 
@@ -82,27 +75,26 @@ SSH Keypair Management
 ^^^^^^^^^^^^^^^^^^^^^^
 
 When using the Web-UI app, you can create SSH/SFTP connection directly to the
-compute session. Once you signed up for Backend.AI, a public keypair is
-provided. If you click the button on the right to the SSH Keypair Management
-section, the following dialog appears. Click the copy button on the right to
-copy the existing SSH public key. You can update SSH keypair by clicking
-GENERATE button at the bottom of the dialog. SSH public/private keys are
-randomly generated and stored as user information. Please note that the secret
-key cannot be checked again unless it is saved manually immediately after
-creation.
+compute session. Once you signed up, a public keypair is provided. If you 
+click the button on the right to the SSH Keypair Management section, the 
+following dialog appears. Click the copy button on the right to copy the 
+existing SSH public key. You can update SSH keypair by clicking GENERATE button 
+at the bottom of the dialog. SSH public/private keys are randomly generated and 
+stored as user information. Please note that the secret key cannot be checked 
+again unless it is saved manually immediately after creation.
 
 .. image:: ssh_keypair_dialog.png
    :width: 400
    :align: center
 
 .. note::
-   SSH/SFTP connection is available only with the Backend.AI GUI desktop app and is not supported on a web browser.
+   SSH/SFTP connection is available only with the GUI desktop app and is not supported on a web browser.
 
 .. note::
-   Backend.AI uses SSH keypair based on OpenSSH. On Windows, you may convert
+   the platform uses SSH keypair based on OpenSSH. On Windows, you may convert
    this into PPK key.
 
-From 22.09, Backend.AI WebUI supports adding your own ssh keypair in order to provide
+From 22.09, WebUI supports adding your own ssh keypair in order to provide
 flexibility such as accessing to a private repository. In order to add your own ssh keypair, click ``ENTER MANUALLY`` button. Then, you will see
 two text area which corresponds to "public" and "private" key.
 
@@ -110,7 +102,7 @@ two text area which corresponds to "public" and "private" key.
    :width: 400
    :align: center
 
-please enter the keys inside, and click ``SAVE`` button. Now you can access to backend.ai session using your own key.
+please enter the keys inside, and click ``SAVE`` button. Now you can access to compute session using your own key.
 
 .. image:: ssh_keypair_dialog_after.png
    :width: 400
@@ -126,7 +118,7 @@ It works only in an environment where Internet access is available.
 Auto logout
 ^^^^^^^^^^^
 
-Log out automatically when all Backend.AI Web-UI pages are closed except for
+Log out automatically when all Web-UI pages are closed except for
 pages created to run apps in session (e.g. jupyter notebook, web terminal,
 etc.).
 
