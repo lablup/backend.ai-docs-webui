@@ -1,0 +1,1361 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-23 23:02+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../sessions_all/sessions_all.rst:3
+msgid "Compute Sessions"
+msgstr "เซสชันการคอมพิวเตอร์"
+
+#: ../../sessions_all/sessions_all.rst:5
+msgid ""
+"The most visited pages in the Backend.AI Web-UI would be the Sessions and "
+"Data & Storage pages. Here, you will learn how to query and create "
+"container-based compute sessions and utilize various web applications on the"
+" Sessions page."
+msgstr ""
+"หน้าที่มีการเข้าชมมากที่สุดใน Backend.AI Web-UI "
+"จะเป็นหน้าการประชุมและหน้าข้อมูล & การจัดเก็บ "
+"ที่นี่คุณจะได้เรียนรู้วิธีการเรียกค้นและสร้างเซสชันการประมวลผลที่ใช้คอนเทนเนอร์"
+" และใช้แอปพลิเคชันเว็บต่างๆ บนหน้าการประชุม"
+
+#: ../../sessions_all/sessions_all.rst:13
+msgid "Start a new session"
+msgstr "เริ่มเซสชันใหม่"
+
+#: ../../sessions_all/sessions_all.rst:15
+msgid ""
+"After logging in with a user account, click Sessions on the left sidebar to "
+"visit the Sessions page. Sessions page lets you start new sessions or use "
+"and manage existing running sessions."
+msgstr ""
+"หลังจากเข้าสู่ระบบด้วยบัญชีผู้ใช้งาน ให้คลิกที่ Sessions "
+"ในแถบด้านซ้ายเพื่อไปที่หน้าทางเข้า "
+"หน้าทางเข้าช่วยให้คุณเริ่มต้นเซสชันใหม่หรือใช้และจัดการเซสชันที่กำลังทำงานอยู่แล้ว"
+
+#: ../../sessions_all/sessions_all.rst:22
+msgid ""
+"Click the START button to start a new compute session. From version 24.03, "
+"Backend.AI offers an improved version of the session launcher (NEO). If you "
+"want to use the previous dialog-style session launcher, press the Classic "
+"button in the notification and create your session. For instructions on how "
+"to use it, please refer to the following `link "
+"<https://webui.docs.backend.ai/en/23.09_a/sessions_all/sessions_all.html>`_."
+msgstr ""
+"คลิกปุ่ม START เพื่อเริ่มเซสชันการคำนวณใหม่ จากเวอร์ชัน 24.03 เป็นต้นไป "
+"Backend.AI เสนอโหมดการเริ่มเซสชันที่ปรับปรุง (NEO) "
+"หากคุณต้องการใช้การเริ่มเซสชันแบบกล่องโต้ตอบก่อนหน้า ให้กดปุ่ม Classic "
+"ในการแจ้งเตือนและสร้างเซสชันของคุณ สำหรับคำแนะนำในการใช้งาน โปรดดูที่ `ลิงก์"
+" "
+"<https://webui.docs.backend.ai/en/23.09_a/sessions_all/sessions_all.html>`_."
+
+#: ../../sessions_all/sessions_all.rst:30
+msgid ""
+"In the first page, you need to choose the type of session, interactive or "
+"batch. And you can set the session name, which is optional."
+msgstr ""
+"ในหน้าก่อนหน้า คุณต้องเลือกประเภทของเซสชันว่าเป็นแบบโต้ตอบหรือแบบชุด "
+"และคุณสามารถตั้งชื่อเซสชันได้ ซึ่งเป็นทางเลือกเพิ่มเติม"
+
+#: ../../sessions_all/sessions_all.rst:35
+msgid ""
+"Session type: Determines the type of the session. \"Interactive\" and "
+"\"Batch\" are the two session types currently available. The following are "
+"the primary distinctions between the two types:"
+msgstr ""
+"ประเภทเซสชัน: กำหนดประเภทของเซสชัน \"แบบโต้ตอบ\" และ \"แบบชุด\" "
+"เป็นสองประเภทเซสชันที่มีอยู่ในปัจจุบัน "
+"รายละเอียดต่อไปนี้คือความแตกต่างหลักระหว่างสองประเภทนี้:"
+
+#: ../../sessions_all/sessions_all.rst:39
+msgid "Interactive compute session"
+msgstr "ช่วงการคำนวณแบบโต้ตอบ"
+
+#: ../../sessions_all/sessions_all.rst:41
+msgid "This type has been supported from the initial version of Backend.AI."
+msgstr "ประเภทนี้ได้รับการสนับสนุนตั้งแต่เวอร์ชันแรกของ Backend.AI."
+
+#: ../../sessions_all/sessions_all.rst:42
+msgid ""
+"The compute session is used in a way that the user interacts with after "
+"creating a session without specifying a pre-defined execution script or "
+"command."
+msgstr ""
+"เซสชันการคอมพิวเตอร์ถูกใช้งานในลักษณะที่ผู้ใช้มีปฏิสัมพันธ์หลังจากสร้างเซสชันโดยไม่ต้องระบุสคริปต์หรือคำสั่งการดำเนินการที่กำหนดไว้ล่วงหน้า"
+
+#: ../../sessions_all/sessions_all.rst:45
+msgid ""
+"The session is not terminated automatically unless user explicitly destroys "
+"the session or session garbage collectors are set by the admin."
+msgstr ""
+"เซสชันจะไม่ถูกยกเลิกโดยอัตโนมัติ "
+"เว้นแต่ผู้ใช้จะทำการทำลายเซสชันอย่างชัดเจนหรือผู้ดูแลระบบตั้งค่าโปรแกรมทำความสะอาดเซสชัน"
+
+#: ../../sessions_all/sessions_all.rst:48
+msgid "Batch compute session"
+msgstr "เซสชันการคำนวณแบบชุด"
+
+#: ../../sessions_all/sessions_all.rst:50
+msgid ""
+"This type of session is supported via GUI from Backend.AI 22.03 (CLI has "
+"supported the batch-type session before the 22.03)."
+msgstr ""
+"ประเภทเซสชันนี้ได้รับการสนับสนุนผ่าน GUI ตั้งแต่ Backend.AI 22.03 (CLI "
+"ได้สนับสนุนเซสชันประเภทแบตช์ก่อนหน้า 22.03)"
+
+#: ../../sessions_all/sessions_all.rst:52
+msgid ""
+"Pre-define the script that will be executed when a compute session is ready."
+msgstr ""
+"กำหนดสคริปต์ล่วงหน้าที่จะถูกดำเนินการเมื่อเซสชันการคอมพิวเตอร์พร้อมใช้งาน"
+
+#: ../../sessions_all/sessions_all.rst:54
+msgid ""
+"Executes the script as soon as the compute session is ready, and then "
+"automatically terminates the session as soon as the execution finishes. So, "
+"it will more efficiently and flexibly utilize the server farm's resources if"
+" a user can write the execution script in advance or is building a pipeline "
+"of workloads."
+msgstr ""
+"ดำเนินการสคริปต์ทันทีที่เซสชันการคอมพิวเตอร์พร้อมใช้งาน "
+"และจากนั้นจะสิ้นสุดเซสชันโดยอัตโนมัติเมื่อการดำเนินการเสร็จสิ้น "
+"ดังนั้นมันจะใช้ทรัพยากรของฟาร์มเซิร์ฟเวอร์ได้อย่างมีประสิทธิภาพและยืดหยุ่นมากขึ้นหากผู้ใช้สามารถเขียนสคริปต์การดำเนินการล่วงหน้าหรือกำลังสร้างท่อสายงานของงานที่โหลด."
+
+#: ../../sessions_all/sessions_all.rst:59
+msgid ""
+"You can set the start time of a batch-type compute session. However, it does"
+" not guarantee the session will be created at that time. It may still be "
+"PENDING due to the lack of resources, etc. Rather, it guarantees that the "
+"session WILL NOT run until the start time."
+msgstr ""
+"คุณสามารถตั้งเวลาเริ่มต้นของเซสชันการคำนวณแบบแบตช์ได้ "
+"อย่างไรก็ตามไม่มีการรับประกันว่าเซสชันจะถูกสร้างขึ้นในเวลานั้น "
+"อาจยังคงอยู่ในสถานะ PENDING เนื่องจากขาดแคลนทรัพยากร เป็นต้น "
+"อย่างไรก็ตามมีการรับประกันว่าเซสชันจะไม่ทำงานจนกว่าจะถึงเวลาเริ่มต้น"
+
+#: ../../sessions_all/sessions_all.rst:67
+msgid ""
+"Session name: You can specify the name of the compute session to be created."
+" If set, this name appears in Session Info, so it is easy to distinguish "
+"among multiple computation sessions. If not specified, a random word is "
+"assigned automatically. Session names only accept alphanumeric characters "
+"between 4 and 64 without spaces."
+msgstr ""
+"ชื่อเซสชัน: คุณสามารถกำหนดชื่อของเซสชันการคอมพิวเตอร์ที่จะสร้างขึ้น หากกำหนด"
+" ชื่อนี้จะแสดงในข้อมูลเซสชัน "
+"ดังนั้นจึงง่ายต่อการแยกแยะระหว่างเซสชันการคอมพิวเตอร์หลาย ๆ เซสชัน "
+"หากไม่ระบุ จะมีการกำหนดคำสุ่มโดยอัตโนมัติ "
+"ชื่อเซสชันจะยอมรับเฉพาะตัวอักษรที่เป็นตัวเลขและตัวอักษรระหว่าง 4 ถึง 64 "
+"โดยไม่มีช่องว่าง"
+
+#: ../../sessions_all/sessions_all.rst:73
+msgid ""
+"Click the Next button below, or the Environments & Resource allocation on "
+"the right to proceed to the next page. If you want to create a session "
+"without any further settings, press the Skip to review button. button. In "
+"this case, the settings on the other pages will all use the default values."
+msgstr ""
+"คลิกปุ่มถัดไปด้านล่าง หรือหน้า Environments & Resource allocation "
+"ด้านขวาเพื่อต่อไปยังหน้าถัดไป "
+"หากคุณต้องการสร้างเซสชันโดยไม่ต้องตั้งค่าเพิ่มเติมใด ๆ "
+"ให้กดปุ่มข้ามไปตรวจสอบ ในกรณีนี้การตั้งค่าบนหน้าต่าง ๆ อื่น ๆ "
+"จะใช้ค่าเริ่มต้นทั้งหมด"
+
+#: ../../sessions_all/sessions_all.rst:78
+msgid ""
+"For detailed explanations of each item that can be set on the second page, "
+"please refer to the following."
+msgstr ""
+"สำหรับคำอธิบายรายละเอียดของแต่ละรายการที่สามารถตั้งค่าได้ในหน้าที่สอง "
+"โปรดดูที่ด้านล่างนี้"
+
+#: ../../sessions_all/sessions_all.rst:84
+msgid ""
+"Environments: You can choose the base environment for compute sessions such "
+"as TensorFlow, PyTorch, C++, etc. When you select TensorFlow, your compute "
+"session will automatically include the TensorFlow library. If you choose "
+"another environment, the corresponding packages will be installed by "
+"default."
+msgstr ""
+"สภาพแวดล้อม: คุณสามารถเลือกสภาพแวดล้อมพื้นฐานสำหรับเซสชันการคอมพิวเตอร์ เช่น"
+" TensorFlow, PyTorch, C++, ฯลฯ เมื่อคุณเลือก TensorFlow "
+"เซสชันการคอมพิวเตอร์ของคุณจะรวมไลบรารี TensorFlow โดยอัตโนมัติ "
+"หากคุณเลือกสภาพแวดล้อมอื่น แพ็กเกจที่เกี่ยวข้องจะถูกติดตั้งโดยอัตโนมัติ"
+
+#: ../../sessions_all/sessions_all.rst:88
+msgid ""
+"Version: Selects the version of the environment. For example, you can select"
+" different versions, such as 1.15, 2.3, etc., for the TensorFlow "
+"environment."
+msgstr ""
+"เวอร์ชัน: เลือกเวอร์ชันของสภาพแวดล้อม ตัวอย่างเช่น "
+"คุณสามารถเลือกเวอร์ชันที่แตกต่างกัน เช่น 1.15, 2.3 เป็นต้น สำหรับสภาพแวดล้อม"
+" TensorFlow"
+
+#: ../../sessions_all/sessions_all.rst:90
+msgid ""
+"Image Name: You can specify the name of the image to be used for the compute"
+" session. Depending on your environment settings, this configurations may "
+"not be available."
+msgstr ""
+"ชื่อภาพ: คุณสามารถระบุชื่อภาพที่จะใช้สำหรับเซสชันการคอมพิวเตอร์ได้ "
+"ขึ้นอยู่กับการตั้งค่าสภาพแวดล้อมของคุณ การตั้งค่านี้อาจไม่พร้อมใช้งาน"
+
+#: ../../sessions_all/sessions_all.rst:93
+msgid ""
+"Set Environment Variable: Provides an interface for users to set environment"
+" variables in a compute session. See the section :ref:`How to add "
+"environment variables before session creation<set-environment-variables>` on"
+" how to use."
+msgstr ""
+"ตั้งค่าตัวแปรสิ่งแวดล้อม: "
+"ให้ส่วนติดต่อสำหรับผู้ใช้ในการตั้งค่าตัวแปรสิ่งแวดล้อมในเซสชันการประมวลผล "
+"ดูที่ส่วน :ref:`วิธีการเพิ่มตัวแปรสิ่งแวดล้อมก่อนการสร้างเซสชัน<set-"
+"environment-variables>` ในการใช้งาน"
+
+#: ../../sessions_all/sessions_all.rst:97
+msgid ""
+"Resource Group: Specifies the resource group in which to create a compute "
+"session. A resource group is a unit that groups host servers that each user "
+"can access. Usually, servers in a resource group would have the same type of"
+" GPU resources. Administrators can classify servers by any criteria, group "
+"them into one or more resource groups, and configure which resource groups a"
+" user can use. Users can launch a compute session only on servers in "
+"resource groups allowed by the administrator. If you are allowed multiple "
+"resource groups, you can select any group you want, but you cannot change it"
+" if you have only one."
+msgstr ""
+"กลุ่มทรัพยากร: ระบุกลุ่มทรัพยากรที่ใช้ในการสร้างเซสชั่นการคอมพิวเตอร์ "
+"กลุ่มทรัพยากรเป็นหน่วยที่รวมเซิร์ฟเวอร์โฮสต์ที่ผู้ใช้แต่ละคนสามารถเข้าถึงได้"
+" โดยทั่วไปแล้วเซิร์ฟเวอร์ในกลุ่มทรัพยากรจะมีประเภทของทรัพยากร GPU "
+"ที่เหมือนกัน ผู้ดูแลระบบสามารถจัดประเภทเซิร์ฟเวอร์ตามเกณฑ์ใด ๆ ก็ได้ "
+"แบ่งกลุ่มเป็นหนึ่งหรือมากกว่ากลุ่มทรัพยากร "
+"และกำหนดว่ากลุ่มทรัพยากรใดที่ผู้ใช้สามารถใช้ได้ "
+"ผู้ใช้สามารถเริ่มเซสชั่นการคอมพิวเตอร์ได้เฉพาะบนเซิร์ฟเวอร์ในกลุ่มทรัพยากรที่ได้รับอนุญาตจากผู้ดูแลระบบ"
+" หากคุณได้รับอนุญาตให้เลือกหลายกลุ่มทรัพยากร "
+"คุณสามารถเลือกกลุ่มใดก็ได้ที่คุณต้องการ "
+"แต่คุณไม่สามารถเปลี่ยนได้หากคุณมีเพียงกลุ่มเดียว"
+
+#: ../../sessions_all/sessions_all.rst:105
+msgid ""
+"Resource Presets: These templates have pre-defined resource sets, such as "
+"CPU, memory, and GPU, to be allocated to a compute session. Administrators "
+"can define frequently used resource settings in advance. By adjusting the "
+"numerical input or sliding the slider, you can allocate the desired amount "
+"of resources."
+msgstr ""
+"การตั้งค่าทรัพยากร: เทมเพลตเหล่านี้มีชุดทรัพยากรที่กำหนดไว้ล่วงหน้า เช่น "
+"CPU, หน่วยความจำ และ GPU ที่จะถูกจัดสรรให้กับเซสชันการคอมพิวเตอร์ "
+"ผู้ดูแลระบบสามารถกำหนดการตั้งค่าทรัพยากรที่ใช้บ่อยไว้ล่วงหน้า "
+"โดยการปรับค่าตัวเลขหรือลากสไลเดอร์ คุณสามารถจัดสรรทรัพยากรที่ต้องการได้"
+
+#: ../../sessions_all/sessions_all.rst:113
+msgid ""
+"The meaning of each item is as follows, and you can check it by clicking the"
+" Help (?) button as well."
+msgstr ""
+"ความหมายของแต่ละรายการมีดังต่อไปนี้ "
+"และคุณสามารถตรวจสอบได้โดยการคลิกที่ปุ่มช่วยเหลือ (?) ด้วย"
+
+#: ../../sessions_all/sessions_all.rst:116
+msgid ""
+"CPU: The CPU performs basic arithmetic, logic, controlling, and input/output"
+" (I/O) operations specified by the instructions. For high performance "
+"computing workloads, many CPUs are helpful, but the program code must be "
+"written to use multiple CPUs."
+msgstr ""
+"CPU: CPU ทำการคำนวณเชิงพีชคณิตพื้นฐาน การทำงานเชิงตรรกะ การควบคุม "
+"และการป้อนข้อมูล / การส่งออก (I/O) ตามที่ระบุโดยคำสั่ง "
+"สำหรับงานประมวลผลที่มีประสิทธิภาพสูง CPU หลายตัวจะมีประโยชน์ "
+"แต่โค้ดโปรแกรมต้องเขียนขึ้นเพื่อใช้ CPU หลายตัว"
+
+#: ../../sessions_all/sessions_all.rst:120
+msgid ""
+"Memory: Computer memory is a temporary storage area. It holds the data and "
+"instructions that the Central Processing Unit (CPU) needs. When using a GPU "
+"in a machine learning workload, you must allocate at least twice the memory "
+"of the GPU to memory. Otherwise, the GPU's idle time will increase, "
+"resulting in a performance penalty."
+msgstr ""
+"หน่วยความจำ: หน่วยความจำของคอมพิวเตอร์เป็นพื้นที่เก็บข้อมูลชั่วคราว "
+"มันเก็บข้อมูลและคำสั่งที่หน่วยประมวลผลกลาง (CPU) ต้องการ เมื่อใช้ GPU "
+"ในงานการเรียนรู้ของเครื่อง "
+"คุณต้องจัดสรรหน่วยความจำอย่างน้อยสองเท่าของหน่วยความจำ GPU มิฉะนั้นเวลาที่ "
+"GPU ไม่มีงานทำจะเพิ่มขึ้น ซึ่งส่งผลให้เกิดการลงโทษด้านประสิทธิภาพ"
+
+#: ../../sessions_all/sessions_all.rst:125
+msgid ""
+"Shared Memory: The amount of shared memory in GB to allocate for the compute"
+" session. Shared memory will use some part of the memory set in RAM. "
+"Therefore, it cannot be greater than the amount specified in RAM."
+msgstr ""
+"หน่วยความจำที่แชร์: ปริมาณหน่วยความจำที่แชร์ในหน่วย GB "
+"ที่จะจัดสรรสำหรับเซสชันการประมวลผล "
+"หน่วยความจำที่แชร์จะใช้บางส่วนของหน่วยความจำที่ตั้งค่าใน RAM "
+"ดังนั้นจึงไม่สามารถมากกว่าปริมาณที่ระบุใน RAM ได้"
+
+#: ../../sessions_all/sessions_all.rst:128
+msgid ""
+"AI Accelerator: AI accelerators (GPUs or NPUs) are well-suited for the "
+"matrix/vector computations involved in machine learning. AI accelerators "
+"speed up training / inference algorithms by orders of magnitude, reducing "
+"running times from weeks to days."
+msgstr ""
+"AI Accelerator: AI accelerator (GPU หรือ NPU) "
+"เหมาะสำหรับการคำนวณเมทริกซ์/เวกเตอร์ที่เกี่ยวข้องกับการเรียนรู้ของเครื่อง AI"
+" accelerator เร่งความเร็วอัลกอริธึมการฝึกอบรม / การอนุมานโดยมาก "
+"ทำให้เวลาในการประมวลผลลดลงจากหลายสัปดาห์เหลือไม่กี่วัน"
+
+#: ../../sessions_all/sessions_all.rst:132
+msgid ""
+"Sessions: A session is a unit of computational environment that is created "
+"according to a specified environment and resources. If this value is set to "
+"a value greater than 1, multiple sessions corresponding to the resource set "
+"above are created. If there are not enough resources available, requests to "
+"create sessions that cannot be created are put on the waiting queue."
+msgstr ""
+"เซสชัน: "
+"เซสชันเป็นหน่วยของสภาพแวดล้อมการคำนวณที่ถูกสร้างตามสภาพแวดล้อมและทรัพยากรที่ระบุ"
+" หากค่าตั้งไว้มากกว่า 1 จะมีการสร้างเซสชันหลาย ๆ "
+"ตัวที่ตรงกับชุดทรัพยากรที่กล่าวถึงข้างต้น "
+"หากไม่มีทรัพยากรที่เพียงพอสำหรับการสร้างเซสชัน "
+"คำขอในการสร้างเซสชันที่ไม่สามารถสร้างได้จะถูกนำไปไว้ในคิวรอ"
+
+#: ../../sessions_all/sessions_all.rst:137
+msgid ""
+"Cluster mode: Backend.AI supports cluster mode, which allows you to create "
+"multiple compute sessions at once. For more information, see the section "
+":ref:`Overview of Backend.AI cluster compute session<backendai-cluster-"
+"compute-session>`."
+msgstr ""
+"โหมดกลุ่ม: Backend.AI รองรับโหมดกลุ่ม "
+"ซึ่งช่วยให้คุณสามารถสร้างเซสชันการคำนวณหลายเซสชันได้ในคราวเดียว "
+"สำหรับข้อมูลเพิ่มเติม กรุณาดูที่ส่วน :ref:`ภาพรวมของเซสชันการคำนวณกลุ่ม "
+"Backend.AI<backendai-cluster-compute-session>`"
+
+#: ../../sessions_all/sessions_all.rst:141
+msgid ""
+"High-Performance Computing Optimizations: Backend.AI provides configuring "
+"values related to HPC Optimizations. For more information, See the section "
+":ref:`Optimizing Accelerated Computing<optimizing-accelerated-computing>`."
+msgstr ""
+"การปรับแต่งประสิทธิภาพการคอมพิวเตอร์ประสิทธิภาพสูง: Backend.AI "
+"มีการกำหนดค่าที่เกี่ยวข้องกับการปรับแต่ง HPC สำหรับข้อมูลเพิ่มเติม "
+"โปรดดูที่ส่วน :ref:`Optimizing Accelerated Computing<optimizing-accelerated-"
+"computing>`"
+
+#: ../../sessions_all/sessions_all.rst:145
+msgid ""
+"Click the Next button below, or the Data & Storage on the right to proceed "
+"to the next page."
+msgstr ""
+"คลิกที่ปุ่มถัดไปด้านล่าง "
+"หรือที่ข้อมูลและการจัดเก็บทางด้านขวาเพื่อต่อไปยังหน้าถัดไป"
+
+#: ../../sessions_all/sessions_all.rst:151
+msgid ""
+"Here, you can specify the data folders to mount in the compute session. When"
+" a compute session is destroyed, all data is deleted altogether by default, "
+"but the data stored in the mounted folders will survive. Data in those "
+"folders can also be reused by mounting it when creating another compute "
+"session. For the information on how to mount a folder and run a compute "
+"session, see :ref:`Mounting Folders to a Compute Session<session-mounts>`. "
+"Here, we will pass by without mounting any folder. Let's move on to the next"
+" page."
+msgstr ""
+"ที่นี่ คุณสามารถระบุโฟลเดอร์ข้อมูลเพื่อติดตั้งในเซสชันการคอมพิวเตอร์ "
+"เมื่อเซสชันการคอมพิวเตอร์ถูกทำลาย ข้อมูลทั้งหมดจะถูกลบโดยอัตโนมัติ "
+"แต่ข้อมูลที่เก็บไว้ในโฟลเดอร์ที่ติดตั้งจะยังคงอยู่ "
+"ข้อมูลในโฟลเดอร์เหล่านั้นยังสามารถนำกลับมาใช้ใหม่ได้โดยการติดตั้งในขณะที่สร้างเซสชันการคอมพิวเตอร์ใหม่"
+" สำหรับข้อมูลเกี่ยวกับวิธีการติดตั้งโฟลเดอร์และเรียกใช้เซสชันการคอมพิวเตอร์ "
+"ให้ดูที่ :ref:`การติดตั้งโฟลเดอร์ไปยังเซสชันการคอมพิวเตอร์<session-mounts>` "
+"ที่นี่เราจะผ่านไปโดยไม่ติดตั้งโฟลเดอร์ใด ๆ มาต่อไปยังหน้าถัดไปกันเถอะ"
+
+#: ../../sessions_all/sessions_all.rst:163
+msgid ""
+"On the fourth page, you can set Network configurations such as Preopen "
+"Ports."
+msgstr ""
+"ในหน้าที่สี่ คุณสามารถตั้งค่าการกำหนดค่าเครือข่าย เช่น พอร์ตที่เปิดล่วงหน้า"
+
+#: ../../sessions_all/sessions_all.rst:165
+msgid ""
+"Set Preopen Ports: Provides an interface for users to set preopen ports in a"
+" compute session. See the section :ref:`How to add preopen ports before "
+"session creation <set_preopen_ports>` on how to use."
+msgstr ""
+"ตั้งพอร์ตที่เปิดล่วงหน้า: "
+"ให้ความสามารถในการตั้งพอร์ตที่เปิดล่วงหน้าสำหรับผู้ใช้ในเซสชันการคอมพิวเตอร์"
+" ดูส่วน :ref:`วิธีการเพิ่มพอร์ตที่เปิดล่วงหน้าก่อนการสร้างเซสชัน "
+"<set_preopen_ports>` เกี่ยวกับวิธีการใช้งาน."
+
+#: ../../sessions_all/sessions_all.rst:169
+msgid ""
+"If you are done with the network setting, click the Next button below, or "
+"the Confirm and Launch on the right to proceed to the last page."
+msgstr ""
+"หากคุณตั้งค่าเครือข่ายเสร็จแล้ว ให้คลิกปุ่มถัดไปด้านล่าง หรือ "
+"คลิกยืนยันและเริ่มต้นทางด้านขวาเพื่อดำเนินการไปยังหน้าสุดท้าย"
+
+#: ../../sessions_all/sessions_all.rst:175
+msgid ""
+"Now, we have reached the last page. You can view information of session(s) "
+"to create, such as environment itself, allocated resources, mount "
+"information, environment variables set on the previous pages, preopen ports,"
+" etc. After confirming the settings, click the Launch button. If there's "
+"anything you'd like to change, you can return to the previous page by "
+"clicking the Previous button, or click the Edit button located at the top "
+"right of each card to go directly to the relevant page."
+msgstr ""
+"ตอนนี้เรามาถึงหน้าสุดท้ายแล้ว คุณสามารถดูข้อมูลของเซสชันที่สร้างขึ้น เช่น "
+"สภาพแวดล้อมโดยรวม ทรัพยากรที่จัดสรร ข้อมูลการติดตั้ง "
+"ตัวแปรสภาพแวดล้อมที่ตั้งค่าในหน้าก่อนหน้า พอร์ตที่เปิดล่วงหน้า ฯลฯ "
+"หลังจากยืนยันการตั้งค่าแล้ว ให้คลิกปุ่ม Launch "
+"หากมีสิ่งใดที่คุณต้องการเปลี่ยนแปลง "
+"คุณสามารถกลับไปยังหน้าก่อนหน้าโดยการคลิกปุ่ม Previous หรือคลิกปุ่ม Edit "
+"ที่ตั้งอยู่มุมขวาบนของแต่ละการ์ดเพื่อไปยังหน้าที่เกี่ยวข้องโดยตรง"
+
+#: ../../sessions_all/sessions_all.rst:182
+msgid ""
+"If there is an issue with the settings, an error will be displayed as "
+"follows. Please click Edit to correct the settings."
+msgstr ""
+"หากมีปัญหาเกี่ยวกับการตั้งค่า จะแสดงข้อผิดพลาดดังนี้ โปรดคลิก แก้ไข "
+"เพื่อปรับแก้การตั้งค่า"
+
+#: ../../sessions_all/sessions_all.rst:189
+msgid ""
+"A warning dialog appears, stating that there are no mounted folders. Ignore "
+"the warning for now and click the Start button to proceed."
+msgstr ""
+"กล่องโต้ตอบเตือนจะปรากฏขึ้น โดยระบุว่าไม่มีโฟลเดอร์ที่ติดตั้งอยู่ "
+"ในขณะนี้ให้ข้ามการเตือนนี้ไปและคลิกปุ่มเริ่มต้นเพื่อดำเนินการต่อ"
+
+#: ../../sessions_all/sessions_all.rst:197
+msgid "Now a new compute session is created in the RUNNING tab."
+msgstr "ตอนนี้เซสชันการคอมพิวเตอร์ใหม่ถูกสร้างขึ้นในแท็บ RUNNING."
+
+#: ../../sessions_all/sessions_all.rst:201
+msgid ""
+"In the RUNNING tab, you can check the information on the currently running "
+"sessions. It includes both interactive and batch sessions. BATCH tab and "
+"INTERACTIVE tab show only sessions corresponding to each type, but only for "
+"sessions not in terminated status. FINISHED tab shows the list of terminated"
+" sessions and OTHERS tab shows the compute sessions with errors. For each "
+"session, you can check the information such as session environments, the "
+"amount of allocated and used resources, session starting time, etc."
+msgstr ""
+"ในแท็บ RUNNING "
+"คุณสามารถตรวจสอบข้อมูลเกี่ยวกับเซสชันที่กำลังทำงานอยู่ในขณะนี้ "
+"ซึ่งรวมถึงเซสชันแบบโต้ตอบและแบบชุด แท็บ BATCH และแท็บ INTERACTIVE "
+"จะแสดงเฉพาะเซสชันที่ตรงกับแต่ละประเภท "
+"แต่เฉพาะสำหรับเซสชันที่ไม่อยู่ในสถานะสิ้นสุด แท็บ FINISHED "
+"แสดงรายชื่อเซสชันที่ถูกสิ้นสุดและแท็บ OTHERS "
+"แสดงเซสชันการคอมพิวเตอร์ที่มีข้อผิดพลาด สำหรับแต่ละเซสชัน "
+"คุณสามารถตรวจสอบข้อมูล เช่น สภาพแวดล้อมของเซสชัน "
+"ปริมาณทรัพยากรที่จัดสรรและใช้ไป เวลาเริ่มต้นของเซสชัน เป็นต้น"
+
+#: ../../sessions_all/sessions_all.rst:210
+msgid ""
+"Superadmins can query all compute session information currently running (or "
+"terminated) in the cluster, and users can view only the sessions they have "
+"created."
+msgstr ""
+"ซูเปอร์แอดมินสามารถตรวจสอบข้อมูลเซสชันการคอมพิวเตอร์ทั้งหมดที่กำลังทำงานอยู่"
+" (หรือลงท้าย) ในคลัสเตอร์ "
+"และผู้ใช้สามารถดูเฉพาะเซสชันที่พวกเขาได้สร้างขึ้นเท่านั้น"
+
+#: ../../sessions_all/sessions_all.rst:215
+msgid ""
+"Compute session list may not be displayed normally due to intermittent "
+"network connection problems, and etc. This can be solved by refreshing the "
+"browser page."
+msgstr ""
+"รายการเซสชันการคอมพิวเตอร์อาจไม่แสดงผลตามปกติเนื่องจากปัญหาการเชื่อมต่อเครือข่ายที่ไม่สม่ำเสมอและอื่น"
+" ๆ สามารถแก้ไขได้โดยการรีเฟรชหน้าต่างเบราว์เซอร์"
+
+#: ../../sessions_all/sessions_all.rst:224
+msgid ""
+"Backend.AI provides detailed status information for ``PENDING``, "
+"``TERMINATED``, or ``CANCELLED`` sessions. In the case of ``PENDING`` "
+"sessions, in particular, you can check why the session is not scheduled and "
+"stuck in the ``PENDING`` status. You can see the details by clicking the "
+"question mark icon right next to the status of each session."
+msgstr ""
+"Backend.AI ให้ข้อมูลสถานะโดยละเอียดสำหรับเซสชันที่อยู่ในสถานะ ``PENDING`` , "
+"``TERMINATED`` หรือ ``CANCELLED`` ในกรณีของเซสชันที่อยู่ในสถานะ ``PENDING`` "
+"โดยเฉพาะ "
+"คุณสามารถตรวจสอบได้ว่าทำไมเซสชันนั้นจึงไม่ได้ถูกกำหนดเวลาและติดอยู่ในสถานะ "
+"``PENDING`` "
+"คุณสามารถดูรายละเอียดโดยการคลิกที่ไอคอนเครื่องหมายคำถามที่อยู่ถัดจากสถานะของแต่ละเซสชัน"
+
+#: ../../sessions_all/sessions_all.rst:232
+msgid ""
+"The resource statistics are displayed at the top of the screen. You can "
+"check the amount of resources currently used and the total amount of "
+"resources that can be allocated. The display bars are divided into upper and"
+" lower parts. The upper part shows the resource allocation status in the "
+"current scaling group and the lower part shows the allocation status of "
+"total accessible resources."
+msgstr ""
+"สถิติของทรัพยากรถูกแสดงที่ด้านบนของหน้าจอ "
+"คุณสามารถตรวจสอบจำนวนทรัพยากรที่ใช้ไปในปัจจุบันและจำนวนทรัพยากรทั้งหมดที่สามารถจัดสรรได้"
+" แถบการแสดงผลถูกแบ่งออกเป็นส่วนบนและส่วนล่าง "
+"ส่วนบนจะแสดงสถานะการจัดสรรทรัพยากรในกลุ่มการปรับขนาดปัจจุบันและส่วนล่างจะแสดงสถานะการจัดสรรทรัพยากรที่เข้าถึงได้ทั้งหมด"
+
+#: ../../sessions_all/sessions_all.rst:239
+msgid ""
+"Upper: (Resources allocated by the user in the current scaling group) / "
+"(Total resources allocatable by the user in the current scaling group)"
+msgstr ""
+"บน: (ทรัพยากรที่ผู้ใช้กำหนดในกลุ่มการปรับขนาดปัจจุบัน) / "
+"(ทรัพยากรทั้งหมดที่ผู้ใช้สามารถกำหนดในกลุ่มการปรับขนาดปัจจุบัน)"
+
+#: ../../sessions_all/sessions_all.rst:242
+msgid ""
+"Lower: (Resources allocated by the user) / (Resources allocated by the user "
+"+ Total resources allocatable by the user in the current scaling group)"
+msgstr ""
+"ต่ำกว่า: (ทรัพยากรที่ผู้ใช้จัดสรร) / (ทรัพยากรที่ผู้ใช้จัดสรร + "
+"ทรัพยากรทั้งหมดที่สามารถจัดสรรโดยผู้ใช้ในกลุ่มการปรับขนาดปัจจุบัน)"
+
+#: ../../sessions_all/sessions_all.rst:246
+msgid ""
+"If the GPU resource is marked as FGPU, this means that the server is serving"
+" the GPU resources in a virtualized form. Backend.AI supports GPU "
+"virtualization technology that a single physical GPU can be divided and "
+"shared by multiple users for better utilization. Therefore, if you want to "
+"execute a task that does not require a large amount of GPU computation, you "
+"can create a compute session by allocating only a portion of a GPU. The "
+"amount of GPU resources that 1 FGPU actually allocates may vary from system "
+"to system depending on the administrator's setting."
+msgstr ""
+"ถ้าทรัพยากร GPU ถูกทำเครื่องหมายว่า FGPU "
+"หมายความว่าเซิร์ฟเวอร์กำลังให้บริการทรัพยากร GPU ในรูปแบบเสมือน Backend.AI "
+"สนับสนุนเทคโนโลยีการทำให้เสมือน GPU ที่ GPU "
+"ทางกายภาพเดียวสามารถถูกแบ่งและแชร์โดยผู้ใช้หลายคนเพื่อการใช้งานที่ดีกว่า "
+"ดังนั้นถ้าคุณต้องการดำเนินการงานที่ไม่ต้องการการคำนวณ GPU ขนาดใหญ่ "
+"คุณสามารถสร้างเซสชั่นการคำนวณโดยการจัดสรรเพียงแค่บางส่วนของ GPU "
+"จำนวนทรัพยากร GPU ที่ 1 FGPU แบ่งสรรจริงๆ "
+"อาจแตกต่างกันไปตามระบบขึ้นอยู่กับการตั้งค่าของผู้ดูแลระบบ"
+
+#: ../../sessions_all/sessions_all.rst:255
+msgid ""
+"For example, if administrator has set to split one physical GPU into five "
+"pieces, 5 FGPU means 1 physical GPU, or 1 FGPU means 0.2 physical GPU. At "
+"this configuration, if you create a compute session by allocating 1 FGPU, "
+"you can utilize SM (streaming multiprocessor) and GPU memory corresponding "
+"to 0.2 physical GPU for the session."
+msgstr ""
+"ตัวอย่างเช่น หากผู้ดูแลระบบได้กำหนดให้แบ่ง GPU "
+"ทางกายภาพหนึ่งตัวออกเป็นห้าชิ้น 5 FGPU หมายถึง 1 GPU ทางกายภาพ หรือ 1 FGPU "
+"หมายถึง 0.2 GPU ทางกายภาพ ในการกำหนดค่าดังกล่าว "
+"หากคุณสร้างเซสชันการคำนวณโดยการจัดสรร 1 FGPU คุณจะสามารถใช้ SM (Streaming "
+"Multiprocessor) และหน่วยความจำ GPU ที่สอดคล้องกับ 0.2 GPU "
+"ทางกายภาพสำหรับเซสชันนั้นได้"
+
+#: ../../sessions_all/sessions_all.rst:265
+msgid "Use Jupyter Notebook"
+msgstr "ใช้ Jupyter Notebook"
+
+#: ../../sessions_all/sessions_all.rst:267
+msgid ""
+"Let's look at how to use and manage compute sessions that are already "
+"running. If you look at the Control panel of the session list, there are "
+"several icons. When you click the first icon, the app launcher pops up and "
+"shows the available app services as below. The app launcher dialog also "
+"opens automatically just after the compute session is created."
+msgstr ""
+"มาดูกันว่าจะแบ่งปันและจัดการเซสชันการคอมพิวเตอร์ที่กำลังทำงานอยู่ได้อย่างไร "
+"หากคุณมองที่แผงควบคุมของรายการเซสชัน จะมีไอคอนหลายอัน "
+"เมื่อคุณคลิกที่ไอคอนแรก "
+"หน้าต่างการเปิดแอปจะเด้งขึ้นและแสดงบริการแอปที่มีอยู่ตามด้านล่าง "
+"หน้าต่างการเปิดแอปจะเปิดขึ้นโดยอัตโนมัติหลังจากที่เซสชันการคอมพิวเตอร์ถูกสร้างขึ้น"
+
+#: ../../sessions_all/sessions_all.rst:280
+msgid ""
+"There are two check options under the app icons. Opening the app with each "
+"item checked applies the following features, respectively:"
+msgstr ""
+"มีตัวเลือกตรวจสอบสองตัวเลือกใต้ไอคอนแอป "
+"การเปิดแอปด้วยแต่ละรายการที่เลือกจะใช้คุณลักษณะต่อไปนี้ตามลำดับ:"
+
+#: ../../sessions_all/sessions_all.rst:283
+msgid ""
+"Open app to public: Open the app to the public. Basically, web services such"
+" as Terminal and Jupyter Notebook services are not accessible by other "
+"users, even if the user knows the service URL, since they are considered "
+"unauthenticated. However, checking this option makes it possible for anyone "
+"who knows the service URL (and port number) to access and use it. Of course,"
+" the user must have a network path to access the service."
+msgstr ""
+"เปิดแอปให้กับสาธารณะ: เปิดแอปให้กับสาธารณะ โดยพื้นฐานแล้ว บริการเว็บเช่น "
+"Terminal และ Jupyter Notebook จะไม่สามารถเข้าถึงได้โดยผู้ใช้รายอื่น "
+"แม้ว่าผู้ใช้จะทราบ URL ของบริการก็ตาม เนื่องจากถือว่าไม่มีการตรวจสอบสิทธิ์ "
+"อย่างไรก็ตาม การตรวจสอบตัวเลือกนี้ทำให้ใครก็ตามที่ทราบ URL ของบริการ "
+"(และหมายเลขพอร์ต) สามารถเข้าถึงและใช้งานได้ "
+"แน่นอนว่าผู้ใช้ต้องมีเส้นทางเครือข่ายเพื่อเข้าถึงบริการนั้น"
+
+#: ../../sessions_all/sessions_all.rst:289
+msgid ""
+"Try preferred port: Without this option checked, a port number for the web "
+"service is randomly assigned from the port pool prepared in advance by "
+"Backend.AI. If you check this item and enter a specific port number, the "
+"entered port number will be tried first. However, there is no guarantee that"
+" the desired port will always be assigned because the port may not exist at "
+"all in the port pool or another service may already be using the port. In "
+"this case, the port number is randomly assigned."
+msgstr ""
+"ลองพอร์ตที่ต้องการ: หากไม่เลือกตัวเลือกนี้ "
+"หมายเลขพอร์ตสำหรับบริการเว็บจะถูกกำหนดแบบสุ่มจากกลุ่มพอร์ตที่เตรียมไว้ล่วงหน้าโดย"
+" Backend.AI หากคุณเลือกจุดนี้และป้อนหมายเลขพอร์ตเฉพาะ "
+"หมายเลขพอร์ตที่ป้อนจะถูกลองใช้ก่อน อย่างไรก็ตาม "
+"ไม่มีการรับประกันว่าพอร์ตที่ต้องการจะถูกกำหนดเสมอไป "
+"เนื่องจากพอร์ตอาจไม่มีอยู่ในกลุ่มพอร์ตเลยหรือบริการอื่นอาจใช้พอร์ตนั้นอยู่แล้ว"
+" ในกรณีนี้ หมายเลขพอร์ตจะถูกกำหนดแบบสุ่ม"
+
+#: ../../sessions_all/sessions_all.rst:297
+msgid "Depending on the system configuration, these options may not be shown."
+msgstr "ขึ้นอยู่กับการตั้งค่าของระบบ ตัวเลือกเหล่านี้อาจไม่แสดงออกมา"
+
+#: ../../sessions_all/sessions_all.rst:299
+msgid "Let's click on Jupyter Notebook."
+msgstr "ให้คลิกที่ Jupyter Notebook"
+
+#: ../../sessions_all/sessions_all.rst:303
+msgid ""
+"A new window pops up and you can see that Jupyter Notebook is running. This "
+"notebook was created inside a running compute session and can be used easily"
+" with the click of a button without any other settings. Also, there is no "
+"need for a separate package installation process because the language "
+"environment and library provided by the computation session can be used as "
+"it is. For detailed instructions on how to use Jupyter Notebook, please "
+"refer to the official documentation."
+msgstr ""
+"มีหน้าต่างใหม่เด้งขึ้นมาและคุณสามารถเห็นว่า Jupyter Notebook กำลังทำงานอยู่ "
+"โน๊ตบุ๊คนี้ถูกสร้างขึ้นภายในเซสชันการคำนวณที่กำลังทำงานและสามารถใช้งานได้อย่างง่ายดายด้วยการคลิกเพียงปุ่มเดียวโดยไม่ต้องตั้งค่าอื่น"
+" ๆ "
+"นอกจากนี้ยังไม่จำเป็นต้องมีขั้นตอนการติดตั้งแพ็คเกจแยกต่างหากเพราะสภาพแวดล้อมของภาษาและไลบรารีที่จัดเตรียมโดยเซสชันการคำนวณสามารถใช้งานได้ตามปกติ"
+" สำหรับคำแนะนำโดยละเอียดเกี่ยวกับวิธีการใช้งาน Jupyter Notebook "
+"กรุณาอ้างอิงเอกสารทางการ"
+
+#: ../../sessions_all/sessions_all.rst:311
+msgid ""
+"In the notebook's file explorer, the ``id_container file`` contains a "
+"private SSH key. If necessary, you can download it and use it for SSH / SFTP"
+" access to the container."
+msgstr ""
+"ในไฟล์สำรวจไฟล์ของโน้ตบุ๊ก ไฟล์ ``id_container`` จะมีคีย์ SSH ส่วนตัว "
+"หากจำเป็น คุณสามารถดาวน์โหลดมันและใช้สำหรับการเข้าถึง SSH / SFTP "
+"ไปยังคอนเทนเนอร์ได้"
+
+#: ../../sessions_all/sessions_all.rst:315
+msgid ""
+"Click the NEW button at the top right and select the Notebook for "
+"Backend.AI, then the ipynb window appears where you can enter your own code."
+msgstr ""
+"คลิกที่ปุ่ม NEW ที่มุมขวาบนและเลือก Notebook สำหรับ Backend.AI "
+"จากนั้นหน้าต่าง ipynb จะปรากฏขึ้นซึ่งคุณสามารถป้อนโค้ดของคุณเองได้"
+
+#: ../../sessions_all/sessions_all.rst:322
+msgid ""
+"In this window, you can enter and execute any code you want by using the "
+"environment that session provides. The code is executed on one of the "
+"Backend.AI nodes where the compute session is actually created and there is "
+"no need to configure a separate environment on the local machine."
+msgstr ""
+"ในหน้าต่างนี้ "
+"คุณสามารถป้อนและเรียกใช้โค้ดใดก็ได้ที่คุณต้องการโดยใช้สภาพแวดล้อมที่เซสชันจัดเตรียมไว้"
+" โค้ดจะถูกเรียกใช้บนหนึ่งในโหนดของ Backend.AI "
+"ซึ่งเซสชันการคำนวณถูกสร้างขึ้นจริงและไม่จำเป็นต้องตั้งค่าสภาพแวดล้อมแยกต่างหากบนเครื่องท้องถิ่น"
+
+#: ../../sessions_all/sessions_all.rst:329
+msgid ""
+"When you close the window, you can find that the ``Untitled.ipynb`` file is "
+"created in the notebook file explorer. Note that the files created here are "
+"deleted when you terminate the session. The way to preserve those files even"
+" after the session is terminated is described in the Data & Storage Folders "
+"section."
+msgstr ""
+"เมื่อคุณปิดหน้าต่าง คุณจะพบว่าไฟล์ ``Untitled.ipynb`` "
+"ถูกสร้างขึ้นในตัวสำรวจไฟล์โน้ตบุ๊ก "
+"โปรดทราบว่าไฟล์ที่สร้างขึ้นที่นี่จะถูกลบเมื่อคุณสิ้นสุดเซสชัน "
+"วิธีการรักษาไฟล์เหล่านั้นให้คงอยู่ "
+"แม้เมื่อเซสชันสิ้นสุดลงจะถูกอธิบายไว้ในส่วน Data & Storage Folders"
+
+#: ../../sessions_all/sessions_all.rst:338
+msgid "Use web terminal"
+msgstr "ใช้เทอร์มินัลเว็บ"
+
+#: ../../sessions_all/sessions_all.rst:340
+msgid ""
+"Return to the Session list page. This time, let's launch the terminal. Click"
+" the terminal icon (the second button in the Control panel) to use the "
+"container's ttyd app. A terminal will appear in a new window and you can run"
+" shell commands to access the computational session as shown in the "
+"following figure. If you are familiar with using commands, you can easily "
+"run various Linux commands. You may notice that the ``Untitled.ipynb`` file "
+"automatically generated in Jupyter Notebook is listed with the ``ls`` "
+"command. This shows that both apps are running in the same container "
+"environment."
+msgstr ""
+"กลับไปที่หน้ารายการเซสชัน ในครั้งนี้ให้เราลองเรียกใช้เทอร์มินัล "
+"คลิกที่ไอคอนเทอร์มินัล (ปุ่มที่สองในแผงควบคุม) เพื่อใช้แอป ttyd "
+"ของคอนเทนเนอร์ "
+"เทอร์มินัลจะปรากฏในหน้าต่างใหม่และคุณสามารถรันคำสั่งเชลล์เพื่อเข้าถึงเซสชันการคำนวณได้ตามที่แสดงในรูปภาพด้านล่าง"
+" หากคุณคุ้นเคยกับการใช้คำสั่ง คุณสามารถรันคำสั่ง Linux "
+"ได้หลากหลายอย่างง่ายดาย คุณอาจสังเกตเห็นว่าไฟล์ ``Untitled.ipynb`` "
+"ที่สร้างขึ้นโดยอัตโนมัติใน Jupyter Notebook แสดงรายการอยู่ด้วยคำสั่ง ``ls`` "
+"ซึ่งแสดงให้เห็นว่าแอปทั้งสองกำลังทำงานในสภาพแวดล้อมของคอนเทนเนอร์เดียวกัน"
+
+#: ../../sessions_all/sessions_all.rst:351
+msgid ""
+"If you create a file here, you can immediately see it in the Jupyter "
+"Notebook you opened earlier as well. Conversely, changes made to files in "
+"Jupyter Notebook can also be checked right from the terminal. This is "
+"because they are using the same files in the same compute session."
+msgstr ""
+"หากคุณสร้างไฟล์ที่นี่ คุณสามารถดูไฟล์นั้นได้ทันทีใน Jupyter Notebook "
+"ที่คุณเปิดก่อนหน้านี้เช่นกัน ในทางกลับกัน การเปลี่ยนแปลงที่ทำกับไฟล์ใน "
+"Jupyter Notebook ก็สามารถตรวจสอบได้จากเทอร์มินัลโดยตรง "
+"นี่เป็นเพราะพวกเขากำลังใช้ไฟล์เดียวกันในเซสชันการประมวลผลเดียวกัน"
+
+#: ../../sessions_all/sessions_all.rst:356
+msgid ""
+"In addition to this, you can use web-based services such as TensorBoard, "
+"Jupyter Lab, etc., depending on the type of environments provided by the "
+"compute session."
+msgstr ""
+"นอกจากนี้ คุณสามารถใช้บริการที่ใช้บนเว็บ เช่น TensorBoard, Jupyter Lab "
+"และอื่นๆ ตามประเภทของสภาพแวดล้อมที่จัดเตรียมโดยเซสชั่นการคำนวณ"
+
+#: ../../sessions_all/sessions_all.rst:361
+msgid "Query compute session log"
+msgstr "บันทึกเซสชันการคำนวณของการค้นหา"
+
+#: ../../sessions_all/sessions_all.rst:363
+msgid ""
+"You can view the log of the compute session by clicking the last icon in the"
+" Control panel of the running compute session."
+msgstr ""
+"คุณสามารถดูบันทึกของเซสชันการคำนวณได้โดยคลิกที่ไอคอนสุดท้ายในแผงควบคุมของเซสชันการคำนวณที่กำลังทำงานอยู่"
+
+#: ../../sessions_all/sessions_all.rst:369
+msgid ""
+"From 22.09, you can download session log by clicking download button on "
+"upper-right side of the dialog. This feature is helpful for tracking "
+"artifacts."
+msgstr ""
+"ตั้งแต่วันที่ 22.09 เป็นต้นไป "
+"คุณสามารถดาวน์โหลดบันทึกเซสชันได้โดยการคลิกที่ปุ่มดาวน์โหลดที่มุมขวาบนของกล่องโต้ตอบ"
+" ฟีเจอร์นี้มีประโยชน์สำหรับการติดตามสิ่งของต่าง ๆ"
+
+#: ../../sessions_all/sessions_all.rst:373
+msgid "Rename running session"
+msgstr "เปลี่ยนชื่อเซสชันที่กำลังรัน"
+
+#: ../../sessions_all/sessions_all.rst:375
+msgid ""
+"You can change the name of an active session. Just click the edit icon in "
+"the session information column. Write down the new name and click the "
+"confirm button. The new session name should also follow the :ref:`the "
+"authoring rule<session-naming-rule>`."
+msgstr ""
+"คุณสามารถเปลี่ยนชื่อของเซสชันที่กำลังใช้งานอยู่ได้ "
+"เพียงแค่คลิกที่ไอคอนแก้ไขในคอลัมน์ข้อมูลเซสชัน "
+"เขียนชื่อใหม่ลงไปและคลิกปุ่มยืนยัน ชื่อเซสชันใหม่ควรปฏิบัติตาม "
+":ref:`กฎการตั้งชื่อ<session-naming-rule>` ด้วย"
+
+#: ../../sessions_all/sessions_all.rst:385
+msgid "Delete a compute session"
+msgstr "ลบเซสชันการคอมพิวเตอร์"
+
+#: ../../sessions_all/sessions_all.rst:387
+msgid ""
+"To terminate a specific session, simply click on the red power icon and "
+"click OKAY button in the dialog. Since the data in the folder inside the "
+"compute session is deleted as soon as the compute session ends, it is "
+"recommended to move the data to the mounted folder or upload it to the "
+"mounted folder from the beginning if you want to keep it."
+msgstr ""
+"ในการสิ้นสุดเซสชันเฉพาะ เพียงคลิกที่ไอคอนพลังงานสีแดงและคลิกปุ่ม OKAY "
+"ในกล่องโต้ตอบ "
+"เนื่องจากข้อมูลในโฟลเดอร์ภายในเซสชันการคอมพิวเตอร์จะถูกลบทันทีที่เซสชันการคอมพิวเตอร์สิ้นสุดลง"
+" "
+"จึงแนะนำให้ย้ายข้อมูลไปยังโฟลเดอร์ที่เชื่อมต่อหรืออัปโหลดไปยังโฟลเดอร์ที่เชื่อมต่อตั้งแต่ต้นหากคุณต้องการเก็บรักษาไว้"
+
+#: ../../sessions_all/sessions_all.rst:398
+msgid "Idleness Checks"
+msgstr "การตรวจสอบความไม่กระตือรือร้น"
+
+#: ../../sessions_all/sessions_all.rst:400
+msgid ""
+"Backend.AI supports three types of inactivity (idleness) criteria for "
+"automatic garbage collection of compute sessions: Max Session Lifetime, "
+"Network Idle Timeout, and Utilization Checker."
+msgstr ""
+"Backend.AI รองรับเกณฑ์การไร้กิจกรรม (ความเฉยเมย) "
+"สําหรับการเก็บขยะอัตโนมัติของเซสชันการประมวลผลสามประเภท: "
+"อายุขัยสูงสุดของเซสชัน, เวลาเงียบสงบของเครือข่าย, "
+"และการตรวจสอบการใช้ทรัพยากร."
+
+#: ../../sessions_all/sessions_all.rst:404
+msgid ""
+"Idle checkers(inactivity criterion) will be displayed in the idle checks "
+"column of the session list."
+msgstr ""
+"ตัวตรวจสอบที่ไม่ทำงาน (เกณฑ์การไม่มีการใช้งาน) "
+"จะแสดงในคอลัมน์การตรวจสอบความไม่ทำงานของรายการเซสชัน"
+
+#: ../../sessions_all/sessions_all.rst:410
+msgid ""
+"The meaning of idle checkers are as follows, and more detailed explanations "
+"can be found by clicking the information (i) icon in the idle checks column."
+msgstr ""
+"ความหมายของตัวตรวจสอบที่ไม่ทำงานมีดังนี้ "
+"และคำอธิบายเพิ่มเติมสามารถดูได้โดยคลิกที่ไอคอนข้อมูล (i) "
+"ในคอลัมน์การตรวจสอบที่ไม่ทำงาน"
+
+#: ../../sessions_all/sessions_all.rst:413
+msgid ""
+"Max Session Lifetime: Force-terminate sessions after this time from "
+"creation. This measure prevents sessions from running indefinitely."
+msgstr ""
+"อายุการใช้งานเซสชันสูงสุด: บังคับยุติเซสชันหลังจากเวลานี้นับตั้งแต่การสร้าง "
+"มาตรการนี้ป้องกันไม่ให้เซสชันทำงานต่อไปไม่มีที่สิ้นสุด"
+
+#: ../../sessions_all/sessions_all.rst:415
+msgid ""
+"Network Idle Timeout: Force-terminate sessions that do not exchange data "
+"with the user (browser or web app) after this time. Traffic between the user"
+" and the compute session continuously occurs when the user interacts with an"
+" app, like terminal or Jupyter, by keyboard input, Jupyter cell creation, "
+"etc. Jupyter cell creation, etc. If there is no interaction for a certain "
+"period, the condition of garbage collection will be met. Even if there is a "
+"process executing a job in the compute session, it is subject to termination"
+" if there is no user interaction."
+msgstr ""
+"การหมดเวลาขณะว่างในการเชื่อมต่อเครือข่าย: "
+"บังคับยกเลิกเซสชันที่ไม่ได้แลกเปลี่ยนข้อมูลกับผู้ใช้ "
+"(เบราว์เซอร์หรือแอปเว็บ) หลังจากเวลานี้ "
+"การรับส่งข้อมูลระหว่างผู้ใช้และเซสชันการคอมพิวเตอร์จะเกิดขึ้นอย่างต่อเนื่องเมื่อผู้ใช้โต้ตอบกับแอป"
+" เช่น เทอร์มินัลหรือ Jupyter โดยการพิมพ์จากแป้นพิมพ์ การสร้างเซลล์ Jupyter "
+"ฯลฯ การสร้างเซลล์ Jupyter ฯลฯ หากไม่มีการโต้ตอบเป็นระยะเวลาหนึ่ง "
+"สภาวะการเก็บขยะจะถูกตอบสนอง "
+"แม้ว่าจะมีการประมวลผลที่กำลังดำเนินการงานในเซสชันการคอมพิวเตอร์ "
+"แต่ก็จะต้องถูกยกเลิกหากไม่มีการโต้ตอบจากผู้ใช้"
+
+#: ../../sessions_all/sessions_all.rst:421
+msgid ""
+"Utilization Checker: Resources allocated to a compute session are reclaimed "
+"based on the utilization of those resources. The decision to delete is based"
+" on the following two factors:"
+msgstr ""
+"Utilization Checker: "
+"ทรัพยากรที่ถูกจัดสรรให้กับเซสชันการคอมพิวเตอร์จะถูกเรียกคืนตามการใช้ทรัพยากรเหล่านั้น"
+" การตัดสินใจในการลบขึ้นอยู่กับสองปัจจัยดังต่อไปนี้:"
+
+#: ../../sessions_all/sessions_all.rst:425
+msgid ""
+"Grace Period: The time during which the utilization idle checker is "
+"inactive. Even with low usage, the compute session won't be terminated "
+"during this period. However, once the grace period is over, if the average "
+"utilization remain below the threshold during the set idle timeout period, "
+"the system can terminate the session at any time. The grace period is merely"
+" a guaranteed duration during which termination does not occur. This measure"
+" is primarily for efficient management of low-usage GPU resources."
+msgstr ""
+"ระยะเวลาผ่อนผัน: ช่วงเวลาที่ตัวตรวจสอบการใช้งานที่ไม่ได้ใช้งานจะไม่ทำงาน "
+"แม้ว่าจะมีการใช้งานต่ำ เซสชันการคอมพิวเตอร์จะไม่ถูกยุติในระยะเวลานี้ "
+"อย่างไรก็ตาม เมื่อตัวระยะเวลาผ่อนผันสิ้นสุดลง "
+"หากการใช้งานเฉลี่ยยังคงต่ำกว่าค่ากำหนดในช่วงเวลารอที่ตั้งไว้ "
+"ระบบสามารถยุติเซสชันได้ตลอดเวลา "
+"ระยะเวลาผ่อนผันเป็นช่วงเวลาที่รับประกันเท่านั้นที่การยุติจะไม่เกิดขึ้น "
+"มาตรการนี้มีจุดประสงค์หลักเพื่อการจัดการทรัพยากร GPU "
+"ที่มีการใช้งานต่ำอย่างมีประสิทธิภาพ"
+
+#: ../../sessions_all/sessions_all.rst:432
+#, python-format
+msgid ""
+"Utilization Threshold: If the resource utilization of a compute session does"
+" not exceed the set threshold for a certain duration (idle timeout), that "
+"session will be automatically terminated. For example, if the accelerator "
+"utilization threshold is set to 1%, and a compute session shows a "
+"utilization of less than 1% over the idle itmeout, it becomes a target for "
+"termination. Resources with empty values are excluded from the garbage "
+"collection criteria."
+msgstr ""
+"เกณฑ์การใช้ทรัพยากร: "
+"หากการใช้ทรัพยากรของเซสชันการคำนวณเกินเกณฑ์ที่ตั้งไว้เป็นระยะเวลาหนึ่ง "
+"(หมดเวลาไร้การใช้งาน) เซสชันนั้นจะถูกยุติโดยอัตโนมัติ ตัวอย่างเช่น "
+"หากเกณฑ์การใช้ทรัพยากรของอุปกรณ์เร่งความเร็วตั้งไว้ที่ 1% "
+"และเซสชันการคำนวณแสดงการใช้ทรัพยากรน้อยกว่า 1% ตลอดระยะเวลาที่ไม่มีการใช้งาน"
+" จะกลายเป็นเป้าหมายในการยุติ "
+"ทรัพยากรที่มีค่าที่ว่างจะถูกยกเว้นจากเกณฑ์การเก็บขยะแบบอัตโนมัติ"
+
+#: ../../sessions_all/sessions_all.rst:441
+msgid ""
+"After the grace period, sessions can be terminated anytime if utilization "
+"remains low. Briefly using the resources does not extend the grace period. "
+"Only the average utilization over the last idle timeout is considered."
+msgstr ""
+"หลังจากช่วงเวลาให้อภัย เซสชันสามารถถูกยกเลิกได้ทุกเมื่อหากการใช้งานยังคงต่ำ "
+"การใช้ทรัพยากรอย่างสั้นๆ จะไม่ขยายช่วงเวลาให้อภัย "
+"จะพิจารณาเฉพาะการใช้งานเฉลี่ยในช่วงเวลาไม่ใช้งานล่าสุดเท่านั้น"
+
+#: ../../sessions_all/sessions_all.rst:445
+msgid ""
+"Hovering your mouse over the Utilization Checker will display a tooltip with"
+" the utilization and threshold values. The text color changes to yellow and "
+"then red as the current utilization approaches the threshold (indicating low"
+" resource utilization)."
+msgstr ""
+"การนำเมาส์ไปวางบน Utilization Checker จะทำให้แสดงข้อความ tooltip "
+"ที่มีค่าการใช้งานและค่าเกณฑ์ "
+"ค่าอักษรจะเปลี่ยนเป็นสีเหลืองและจากนั้นเป็นสีแดงเมื่อการใช้งานปัจจุบันเข้าใกล้เกณฑ์"
+" (แสดงถึงการใช้งานทรัพยากรต่ำ)"
+
+#: ../../sessions_all/sessions_all.rst:455
+msgid ""
+"Depending on the environment settings, idle checkers and resource types of "
+"utilization checker's tooltip may be different."
+msgstr ""
+"ขึ้นอยู่กับการตั้งค่าของสภาพแวดล้อม "
+"ตัวตรวจสอบที่ไม่ทำงานและประเภทของทรัพยากรในการตรวจสอบการใช้งานอาจแตกต่างกันได้"
+
+#: ../../sessions_all/sessions_all.rst:462
+msgid "How to add environment variable before creating a session"
+msgstr "วิธีการเพิ่มตัวแปรสภาพแวดล้อมก่อนที่จะสร้างเซสชัน"
+
+#: ../../sessions_all/sessions_all.rst:464
+msgid ""
+"To give more convenient workspace for users, Backend.AI supports environment"
+" variable setting in session launching. In this feature, you can add any "
+"envs such as ``PATH`` by filling out variable name and value in environment "
+"configuration dialog."
+msgstr ""
+"เพื่อให้มีพื้นที่ทำงานที่สะดวกสบายมากขึ้นสำหรับผู้ใช้ Backend.AI "
+"รองรับการตั้งค่าตัวแปรสิ่งแวดล้อมในการเริ่มต้นเซสชัน ในฟีเจอร์นี้ "
+"คุณสามารถเพิ่มตัวแปรใดๆ เช่น ``PATH`` "
+"โดยการกรอกชื่อและค่าตัวแปรในกล่องโต้ตอบการกำหนดค่าตัวแปรสิ่งแวดล้อม"
+
+#: ../../sessions_all/sessions_all.rst:468
+msgid ""
+"To add environment variable, simply click + Add environment variables button"
+" of the Variable. Also, you can remove the variable by clicking ``-`` button"
+" of the row that you want to get rid of."
+msgstr ""
+"เพื่อเพิ่มตัวแปรสภาพแวดล้อม เพียงคลิกปุ่ม + เพิ่มตัวแปรสภาพแวดล้อม ของตัวแปร"
+" นอกจากนี้คุณยังสามารถลบตัวแปรได้โดยการคลิกปุ่ม ``-`` "
+"ของแถวที่คุณต้องการลบออก"
+
+#: ../../sessions_all/sessions_all.rst:-1
+msgid "Env Configuration Button"
+msgstr "ปุ่มการกำหนดค่าหมายถึง"
+
+#: ../../sessions_all/sessions_all.rst:475
+msgid ""
+"You can input variable name and value in the same line of the input fields."
+msgstr "คุณสามารถป้อนชื่อและค่าของตัวแปรในบรรทัดเดียวกันของฟิลด์ป้อนข้อมูล"
+
+#: ../../sessions_all/sessions_all.rst:480
+msgid "How to add preopen ports before creating a session"
+msgstr "วิธีการเพิ่มพอร์ตที่เปิดก่อนที่จะสร้างเซสชัน"
+
+#: ../../sessions_all/sessions_all.rst:482
+msgid ""
+"Backend.AI supports preopen ports setting at container startup. When using "
+"this feature, there is no need to build separate images when you want to "
+"expose the serving port."
+msgstr ""
+"Backend.AI "
+"รองรับการตั้งค่าพอร์ตที่เปิดใช้งานล่วงหน้าเมื่อเริ่มต้นคอนเทนเนอร์ "
+"เมื่อใช้ฟีเจอร์นี้ "
+"จะไม่จำเป็นต้องสร้างอิมเมจแยกต่างหากเมื่อคุณต้องการเปิดเผยพอร์ตการบริการ"
+
+#: ../../sessions_all/sessions_all.rst:485
+msgid ""
+"To add preopen ports, simply enter multiple values separated by either a "
+"comma (,) or a space."
+msgstr ""
+"เพื่อเพิ่มพอร์ตที่เปิดล่วงหน้า "
+"เพียงป้อนค่าหลายค่าโดยแยกด้วยเครื่องหมายจุลภาค (,) หรือช่องว่าง"
+
+#: ../../sessions_all/sessions_all.rst:-1
+msgid "Preopen Ports Configuration"
+msgstr "การกำหนดค่าพอร์ตที่เปิดก่อน"
+
+#: ../../sessions_all/sessions_all.rst:491
+msgid ""
+"In the forth page of session creation page, users can add, update and delete"
+" written preopen ports. To see more detail information, please click Help "
+"(?) button."
+msgstr ""
+"ในหน้าที่สี่ของหน้าสร้างเซสชัน ผู้ใช้สามารถเพิ่ม แก้ไข และลบพอร์ต preopen "
+"ที่เขียนไว้แล้ว สำหรับข้อมูลรายละเอียดเพิ่มเติม กรุณาคลิกที่ปุ่มช่วยเหลือ "
+"(?)"
+
+#: ../../sessions_all/sessions_all.rst:494
+msgid ""
+"Users can put port numbers in between 1024 ~ 65535, to the input fields. "
+"Then, click the save button. Users can check the configured preopen ports in"
+" the session app launcher."
+msgstr ""
+"ผู้ใช้สามารถใส่หมายเลขพอร์ตในช่วง 1024 ~ 65535 ลงในช่องข้อมูล "
+"แล้วคลิกที่ปุ่มบันทึก "
+"ผู้ใช้สามารถตรวจสอบพอร์ตที่เปิดใช้งานล่วงหน้าที่กำหนดไว้ในตัวเปิดแอปเซสชันได้"
+
+#: ../../sessions_all/sessions_all.rst:502
+msgid ""
+"The preopen ports are **the internal ports within the container**. "
+"Therefore, unlike other apps, when users click the preopen ports in the "
+"session app launcher, a blank page will appear. Please bind a server to the "
+"respective port before use."
+msgstr ""
+"พอร์ตที่เปิดล่วงหน้าคือ **พอร์ตภายในภาชนะ** ดังนั้น ต่างจากแอปอื่น "
+"เมื่อผู้ใช้คลิกพอร์ตที่เปิดล่วงหน้าในตัวเปิดแอปเซสชัน จะมีหน้าว่างปรากฏขึ้น "
+"กรุณาผูกเซิร์ฟเวอร์กับพอร์ตที่เกี่ยวข้องก่อนใช้งาน"
+
+#: ../../sessions_all/sessions_all.rst:508
+msgid "Save session commit"
+msgstr "บันทึกการทำธุรกรรมการเซสชัน"
+
+#: ../../sessions_all/sessions_all.rst:512
+msgid ""
+"Backend.AI supports \\\"Convert Session to Image\\\" feature from 24.03. "
+"Committing a ``RUNNING`` session will save the current state of the session "
+"as a new image. Clicking the commit button in the control column of "
+"``RUNNING`` session will display a dialog to show the information of the "
+"session. After entering the session name, you can convert the session to a "
+"new image. The session name must be 4 to 32 characters long and can only "
+"contain alphanumeric letters, hyphens (``-``), or underscores (``_``)."
+msgstr ""
+"Backend.AI รองรับฟีเจอร์ \\\"Convert Session to Image\\\" ตั้งแต่ 24.03 "
+"การบันทึกเซสชัน ``RUNNING`` จะบันทึกสถานะปัจจุบันของเซสชันเป็นภาพใหม่ "
+"การคลิกที่ปุ่มคอมมิตในคอลัมน์ควบคุมของเซสชัน ``RUNNING`` "
+"จะเปิดกล่องโต้ตอบเพื่อแสดงข้อมูลของเซสชัน หลังจากกรอกชื่อเซสชันแล้ว "
+"คุณสามารถแปลงเซสชันเป็นภาพใหม่ได้ ชื่อเซสชันต้องมีความยาว 4 ถึง 32 "
+"ตัวอักษรและสามารถมีเฉพาะตัวอักษรที่เป็นตัวเลข ตัวอักษรภาษาอังกฤษ ขีดกลาง "
+"(``-``) หรือขีดล่าง (``_``) เท่านั้น"
+
+#: ../../sessions_all/sessions_all.rst:-1
+msgid "Push session to customized image"
+msgstr "ส่งเซสชันไปยังภาพที่กำหนดเอง"
+
+#: ../../sessions_all/sessions_all.rst:523
+msgid ""
+"After filling out session name in the input field, click the 'PUSH SESSION "
+"TO CUSTOMIZED IMAGE' button. The customized image created in this way can be"
+" used in future session creations. However, directories mounted to the "
+"container for image commits are considered external resources and are not "
+"included in the final image. Remember that ``/home/work`` is a mount folder "
+"(scratch directory), so it is not included."
+msgstr ""
+"หลังจากกรอกชื่อเซสชันในฟิลด์ข้อมูลแล้ว ให้คลิกที่ปุ่ม "
+"'เพิ่มเซสชันไปยังภาพที่ปรับแต่ง' "
+"ภาพที่ปรับแต่งที่สร้างขึ้นในลักษณะนี้สามารถใช้ในการสร้างเซสชันในอนาคตได้ "
+"อย่างไรก็ตาม "
+"โฟลเดอร์ที่ถูกติดตั้งไปยังคอนเทนเนอร์สำหรับการคอมมิตภาพจะถือว่าเป็นทรัพยากรภายนอกและจะไม่รวมอยู่ในภาพสุดท้าย"
+" จำไว้ว่ ``/home/work`` เป็นโฟลเดอร์ที่ติดตั้ง (โฟลเดอร์ชั่วคราว) "
+"ดังนั้นมันจึงไม่ถูกฉายรวมด้วย"
+
+#: ../../sessions_all/sessions_all.rst:529
+msgid ""
+"Currently, Backend.AI supports \"Convert Session to Image\" only when the "
+"session is in ``INTERACTIVE`` mode. To prevent unexpected error, users may "
+"not be able to terminate the session during committing process. To stop the "
+"ongoing process, check the session, and force-terminate it."
+msgstr ""
+"ปัจจุบัน Backend.AI รองรับ \"แปลงเซสชันเป็นภาพ\" "
+"เท่านั้นเมื่อเซสชันอยู่ในโหมด ``INTERACTIVE`` "
+"เพื่อป้องกันข้อผิดพลาดที่ไม่คาดคิด "
+"ผู้ใช้อาจไม่สามารถยุติเซสชันได้ในระหว่างกระบวนการคอมมิท "
+"หากต้องการหยุดกระบวนการที่กำลังดำเนินอยู่ ให้ตรวจสอบเซสชันและบังคับยุติ "
+"เซสชันนั้น"
+
+#: ../../sessions_all/sessions_all.rst:534
+msgid ""
+"The number of times to \"Convert Session to Image\" may be limited by the "
+"user resource policy. In this case, :ref:`remove the existing customized "
+"image<delete-customized-image>` and try again. If this does not resolves the"
+" problem, please contact the administrator."
+msgstr ""
+"จำนวนครั้งในการ \"แปลงเซสชันเป็นภาพ\" อาจถูกจำกัดโดยนโยบายทรัพยากรของผู้ใช้ "
+"ในกรณีนี้ :ref:`ลบภาพที่ปรับแต่งที่มีอยู่<delete-customized-image>` "
+"และลองอีกครั้ง หากยังไม่ได้ผล โปรดติดต่อผู้ดูแลระบบ"
+
+#: ../../sessions_all/sessions_all.rst:540
+msgid "Utilizing converted images of ongoing sessions"
+msgstr "การใช้ภาพที่ถูกแปลงจากเซสชันที่กำลังดำเนินอยู่"
+
+#: ../../sessions_all/sessions_all.rst:542
+msgid ""
+"Converting an ongoing session into an image allows you to select this image "
+"from the environments in the session launcher when creating a new session. "
+"This image is not exposed to other users and is useful for continuing to use"
+" the current session state as is. The converted image is tagged with "
+"``Customized<session name>``."
+msgstr ""
+"การแปลงเซสชันที่กำลังดำเนินอยู่เป็นภาพช่วยให้คุณสามารถเลือกภาพนี้จากสภาพแวดล้อมในตัวเปิดเซสชันเมื่อสร้างเซสชันใหม่"
+" "
+"ภาพนี้จะไม่ถูกเปิดเผยต่อผู้ใช้อื่นและมีประโยชน์ในการใช้สถานะเซสชันปัจจุบันต่อไปตามที่เป็นอยู่"
+" ภาพที่แปลงแล้วจะถูกติดแท็กด้วย ``Customized<session name>``"
+
+#: ../../sessions_all/sessions_all.rst:-1
+msgid "Select customized image"
+msgstr "เลือกภาพที่กำหนดเอง"
+
+#: ../../sessions_all/sessions_all.rst:550
+msgid ""
+"To manually enter the environment name for future session creation, please "
+"click the copy icon."
+msgstr ""
+"ในการป้อนชื่อสภาพแวดล้อมด้วยตนเองเพื่อสร้างเซสชันในอนาคต "
+"โปรดคลิกที่ไอคอนคัดลอก"
+
+#: ../../sessions_all/sessions_all.rst:-1
+msgid "Copy customized image"
+msgstr "คัดลอกภาพที่กำหนดเอง"
+
+#: ../../sessions_all/sessions_all.rst:559
+msgid "Optimizing Accelerated Computing"
+msgstr "การเพิ่มประสิทธิภาพการคำนวณที่เร่งความเร็ว"
+
+#: ../../sessions_all/sessions_all.rst:561
+msgid ""
+"Backend.AI provides configuration UI for internal control variable in "
+"``nthreads-var``. Backend.AI sets this value equal to the number of "
+"session's CPU cores by default, which has the effect of accelerating typical"
+" high-performance computing workloads. Nevertheless, for some multi-thread "
+"workloads, multiple processes using OpenMP are used at same time, resulting "
+"in an abnormally large number of threads and significant performance "
+"degradation. To resolve this issue, setting the number of threads to 1 or 2 "
+"would work."
+msgstr ""
+"Backend.AI มีอินเตอร์เฟซการตั้งค่าสำหรับตัวแปรควบคุมภายในใน ``nthreads-var``"
+" โดยค่าเริ่มต้น Backend.AI จะตั้งค่านี้ให้เท่ากับจำนวนหน่วยประมวลผล CPU "
+"ของเซสชัน ซึ่งจะช่วยเร่งงานประมวลผลที่มีประสิทธิภาพสูง อย่างไรก็ตาม "
+"สำหรับงานหลายเธรดบางประเภท การใช้หลายโปรเซสที่ใช้ OpenMP "
+"ในเวลาเดียวกันจะส่งผลให้มีจำนวนเธรดที่มากผิดปกติและทำให้ประสิทธิภาพลดลงอย่างมาก"
+" เพื่อแก้ไขปัญหานี้ การตั้งค่าจำนวนเธรดเป็น 1 หรือ 2 จะได้ผล"
+
+#: ../../sessions_all/sessions_all.rst:-1
+msgid "Session HPC Optimization"
+msgstr "การเพิ่มประสิทธิภาพเซสชัน HPC"
+
+#: ../../sessions_all/sessions_all.rst:576
+msgid "Advanced web terminal usage"
+msgstr "การใช้งานเทอร์มินัลเว็บขั้นสูง"
+
+#: ../../sessions_all/sessions_all.rst:578
+msgid ""
+"The web-based terminal internally embeds a utility called `tmux "
+"<https://github.com/tmux/tmux/wiki>`_. tmux is a terminal multiplexer that "
+"supports to open multiple shell windows within a single shell, so as to "
+"allow multiple programs to run in foreground simultaneously. If you want to "
+"take advantage of more powerful tmux features, you can refer to the official"
+" tmux documentation and other usage examples on the Internet."
+msgstr ""
+"เทอร์มินัลที่ใช้บนเว็บจะฝังยูทิลิตี้ที่เรียกว่า `tmux "
+"<https://github.com/tmux/tmux/wiki>`_ ภายใน tmux เป็นมัลติพlexer "
+"เทอร์มินัลที่รองรับการเปิดหลายหน้าต่างเชลล์ภายในเชลล์เดียว "
+"เพื่อให้สามารถเรียกใช้งานโปรแกรมหลายโปรแกรมในระดับพื้นหลังพร้อมกันได้ "
+"หากคุณต้องการใช้ประโยชน์จากฟีเจอร์ที่ทรงพลังมากขึ้นของ tmux "
+"คุณสามารถอ้างอิงเอกสารอย่างเป็นทางการของ tmux และตัวอย่างการใช้งานอื่น ๆ "
+"บนอินเทอร์เน็ตได้"
+
+#: ../../sessions_all/sessions_all.rst:585
+msgid "Here we are introducing some simple but useful features."
+msgstr "ที่นี่เรากำลังแนะนำฟีเจอร์ที่ง่ายแต่มีประโยชน์บางอย่าง"
+
+#: ../../sessions_all/sessions_all.rst:588
+msgid "Copy terminal contents"
+msgstr "คัดลอกเนื้อหาของเทอร์มินัล"
+
+#: ../../sessions_all/sessions_all.rst:590
+msgid ""
+"tmux offers a number of useful features, but it's a bit confusing for first-"
+"time users. In particular, tmux has its own clipboard buffer, so when "
+"copying the contents of the terminal, you can suffer from the fact that it "
+"can be pasted only within tmux by default. Furthermore, it is difficult to "
+"expose user system's clipboard to tmux inside web browser, so the terminal "
+"contents cannot be copied and pasted to other programs of user's computer. "
+"The so-called ``Ctrl-C`` / ``Ctrl-V`` is not working with tmux."
+msgstr ""
+"tmux มีฟีเจอร์ที่มีประโยชน์หลายอย่าง "
+"แต่ก็อาจจะสับสนสำหรับผู้ใช้ที่ไม่เคยใช้มาก่อน โดยเฉพาะ tmux "
+"จะมีคลิปบอร์ดของตัวเอง ดังนั้นเมื่อคุณทำการคัดลอกเนื้อหาจากเทอร์มินัล "
+"คุณอาจประสบปัญหาที่ว่ามันสามารถวางได้เฉพาะภายใน tmux ตามค่าเริ่มต้น "
+"นอกจากนี้ยังยากที่จะเปิดเผยคลิปบอร์ดของระบบผู้ใช้งานให้กับ tmux "
+"ภายในเว็บเบราว์เซอร์ "
+"ดังนั้นเนื้อหาในเทอร์มินัลจึงไม่สามารถคัดลอกและวางไปยังโปรแกรมอื่นๆ "
+"ในคอมพิวเตอร์ของผู้ใช้ได้ คำสั่งที่เรียกว่า ``Ctrl-C`` / ``Ctrl-V`` "
+"จึงไม่ทำงานร่วมกับ tmux"
+
+#: ../../sessions_all/sessions_all.rst:598
+msgid ""
+"If you need to copy and paste the terminal contents to your system's "
+"clipboard, you can temporarily turn off tmux's mouse support. First, press "
+"``Ctrl-B`` key to enter tmux control mode. Then type ``:set -g mouse off`` "
+"and press ``Enter`` (note that you have to type the first colon as well). "
+"You can check what you are typing in the status bar at the bottom of the "
+"screen. Then drag the desired text from the terminal with the mouse and "
+"press the ``Ctrl-C`` or ``Cmd-C`` (in Mac) to copy them to the clipboard of "
+"the user's computer."
+msgstr ""
+"หากคุณต้องการคัดลอกและวางเนื้อหาจากเทอร์มินัลไปยังคลิปบอร์ดของระบบของคุณ "
+"คุณสามารถปิดการสนับสนุนเมาส์ของ tmux ชั่วคราวได้ ก่อนอื่นกดปุ่ม ``Ctrl-B`` "
+"เพื่อเข้าสู่โหมดการควบคุม tmux จากนั้นพิมพ์ ``:set -g mouse off`` และกด "
+"``Enter`` (โปรดทราบว่าคุณต้องพิมพ์ colon ตัวแรกด้วย) "
+"คุณสามารถตรวจสอบสิ่งที่คุณพิมพ์ได้ในแถบสถานะที่ด้านล่างของหน้าจอ "
+"จากนั้นลากข้อความที่ต้องการจากเทอร์มินัลด้วยเมาส์และกด ``Ctrl-C`` หรือ "
+"``Cmd-C`` (ใน Mac) เพื่อคัดลอกไปยังคลิปบอร์ดของคอมพิวเตอร์ของผู้ใช้"
+
+#: ../../sessions_all/sessions_all.rst:606
+msgid ""
+"With mouse support turned off, you cannot scroll through the mouse wheel to "
+"see the contents of the previous page from the terminal. In this case, you "
+"can turn on mouse support again. Press ``Ctrl-B``, and this time, type "
+"``:set -g mouse on``. Now you can scroll mouse wheel to see the contents of "
+"the previous page."
+msgstr ""
+"เมื่อการสนับสนุนเมาส์ถูกปิดใช้งาน "
+"คุณไม่สามารถเลื่อนผ่านล้อเมาส์เพื่อดูเนื้อหาของหน้าก่อนหน้าได้จากเทอร์มินัล "
+"ในกรณีนี้ คุณสามารถเปิดการสนับสนุนเมาส์อีกครั้ง กด ``Ctrl-B`` "
+"และในครั้งนี้ให้พิมพ์ ``:set -g mouse on`` "
+"ตอนนี้คุณสามารถเลื่อนล้อเมาส์เพื่อดูเนื้อหาของหน้าก่อนหน้าได้แล้ว"
+
+#: ../../sessions_all/sessions_all.rst:611
+msgid ""
+"If you remember ``:set -g mouse off`` or ``:set -g mouse on`` after "
+"``Ctrl-B``, you can use the web terminal more conveniently."
+msgstr ""
+"หากคุณจำ ``:set -g mouse off`` หรือ ``:set -g mouse on`` หลังจาก ``Ctrl-B`` "
+"ได้ คุณจะสามารถใช้เทอร์มินัลเว็บได้สะดวกมากขึ้น"
+
+#: ../../sessions_all/sessions_all.rst:615
+msgid ""
+"``Ctrl-B`` is tmux's default control mode key. If you set another control "
+"key by modifying ``.tmux.conf`` in user home directory, you should press the"
+" set key combination instead of ``Ctrl-B``."
+msgstr ""
+"``Ctrl-B`` เป็นปุ่มควบคุมโหมดเริ่มต้นของ tmux "
+"หากคุณตั้งค่าปุ่มควบคุมอื่นโดยการแก้ไข ``.tmux.conf`` ในโฟลเดอร์โฮมของผู้ใช้"
+" คุณควรกดการรวมปุ่มที่ตั้งค่าแทน ``Ctrl-B``"
+
+#: ../../sessions_all/sessions_all.rst:620
+msgid "In the Windows environment, refer to the following shortcuts."
+msgstr "ในสภาพแวดล้อม Windows ให้ดูที่ทางลัดต่อไปนี้"
+
+#: ../../sessions_all/sessions_all.rst:622
+msgid "Copy: Hold down ``Shift``, right-click and drag"
+msgstr "คัดลอก: กดปุ่ม ``Shift`` ค้างไว้ คลิกขวาและลาก"
+
+#: ../../sessions_all/sessions_all.rst:623
+msgid "Paste: Press ``Ctrl-Shift-V``"
+msgstr "วาง: กด ``Ctrl-Shift-V``"
+
+#: ../../sessions_all/sessions_all.rst:626
+msgid "Check the terminal history using keyboard"
+msgstr "ตรวจสอบประวัติเทอร์มินัลโดยใช้แป้นพิมพ์"
+
+#: ../../sessions_all/sessions_all.rst:628
+msgid ""
+"There is also a way to copy the terminal contents and check the previous "
+"contents of the terminal simultaneously. It is to check the previous "
+"contents using the keyboard. Again, click ``Ctrl-B`` first, and then press "
+"the ``Page Up`` and/or ``Page Down`` keys. You can see that you navigate "
+"through the terminal's history with just keyboard. To exit search mode, just"
+" press the ``q`` key. With this method, you can check the contents of the "
+"terminal history even when the mouse support is turned off to allow copy and"
+" paste."
+msgstr ""
+"ยังสามารถสำเนาเนื้อหาของเทอร์มินัลและตรวจสอบเนื้อหาก่อนหน้าของเทอร์มินัลได้ในเวลาเดียวกัน"
+" วิธีการคือการตรวจสอบเนื้อหาก่อนหน้าด้วยคีย์บอร์ด ก่อนอื่นให้คลิกที่ "
+"``Ctrl-B`` จากนั้นกดปุ่ม ``Page Up`` และ/หรือ ``Page Down`` "
+"คุณจะเห็นว่าคุณนำทางผ่านประวัติของเทอร์มินัลด้วยคีย์บอร์ดเพียงอย่างเดียว "
+"เมื่อต้องการออกจากโหมดค้นหาเพียงกดปุ่ม ``q`` "
+"วิธีนี้คุณสามารถตรวจสอบเนื้อหาของประวัติเทอร์มินัลแม้ว่าการสนับสนุนเมาส์จะถูกปิดเพื่ออนุญาตการคัดลอกและวาง"
+
+#: ../../sessions_all/sessions_all.rst:637
+msgid "Spawn multiple shells"
+msgstr "สร้างเชลล์หลายตัว"
+
+#: ../../sessions_all/sessions_all.rst:639
+msgid ""
+"The main advantage of tmux is that you can launch and use multiple shells in"
+" one terminal window. Since seeing is believing, let's press the ``Ctrl-B`` "
+"key and then the ``c``. You can see that the contents of the existing window"
+" disappears and a new shell environment appears. But the previous window is "
+"not terminated. Let's press ``Ctrl-B`` and then ``w``. You can now see the "
+"list of shells currently open on tmux like following image. Here, the shell "
+"starting with ``0:`` is the shell environment you first saw, and the shell "
+"starting with ``1:`` is the one you just created. You can move between "
+"shells using the up/down keys. Place the cursor on the shell ``0:`` and "
+"press the Enter key to select it."
+msgstr ""
+"ข้อดีหลักของ tmux "
+"คือคุณสามารถเปิดและใช้งานหลายเชลล์ในหน้าต่างเทอร์มินัลเดียว "
+"ตั้งแต่เห็นก็เชื่อได้ มาเริ่มกดปุ่ม ``Ctrl-B`` และจากนั้นก็กด ``c`` "
+"คุณจะเห็นว่าคอนเทนต์ของหน้าต่างที่มีอยู่หายไปและสภาพแวดล้อมเชลล์ใหม่แสดงขึ้น"
+" แต่หน้าต่างก่อนหน้านี้ไม่ได้ถูกปิดไป มา กด ``Ctrl-B`` และจากนั้นก็กด ``w`` "
+"คุณจะเห็นรายการของเชลล์ที่เปิดอยู่ใน tmux ปัจจุบันตามภาพนี้ ที่นี่ "
+"เชลล์ที่เริ่มต้นด้วย ``0:`` คือสภาพแวดล้อมเชลล์ที่คุณเห็นครั้งแรก "
+"และเชลล์ที่เริ่มต้นด้วย ``1:`` คือเชลล์ที่คุณเพิ่งสร้างขึ้น "
+"คุณสามารถเคลื่อนย้ายระหว่างเชลล์โดยใช้ปุ่มขึ้น/ลง วางเคอร์เซอร์ไปที่เชลล์ "
+"``0:`` และกดปุ่ม Enter เพื่อเลือกมัน"
+
+#: ../../sessions_all/sessions_all.rst:-1
+msgid "tmux's multiple session management"
+msgstr "การจัดการหลายเซสชันของ tmux"
+
+#: ../../sessions_all/sessions_all.rst:653
+msgid ""
+"You can see the first shell environment appears. In this way, you can use "
+"multiple shell environments within a web terminal. To exit or terminate the "
+"current shell, just enter ``exit`` command or press ``Ctrl-B x`` key and "
+"then type ``y``."
+msgstr ""
+"คุณสามารถเห็นสภาพแวดล้อมเชลล์แรกปรากฏขึ้น ในลักษณะนี้ "
+"คุณสามารถใช้สภาพแวดล้อมเชลล์หลายตัวภายในเทอร์มินัลเว็บ "
+"เพื่อออกหรือสิ้นสุดเชลล์ปัจจุบัน เพียงแค่ป้อนคำสั่ง ``exit`` หรือกดปุ่ม "
+"``Ctrl-B x`` จากนั้นพิมพ์ ``y``"
+
+#: ../../sessions_all/sessions_all.rst:658
+msgid "In summary:"
+msgstr "โดยสรุป:"
+
+#: ../../sessions_all/sessions_all.rst:660
+msgid "``Ctrl-B c``: create a new tmux shell"
+msgstr "``Ctrl-B c``: สร้างเซลล์ tmux ใหม่"
+
+#: ../../sessions_all/sessions_all.rst:661
+msgid "``Ctrl-B w``: query current tmux shells and move around among them"
+msgstr ""
+"``Ctrl-B w``: สอบถามเชลล์ tmux ปัจจุบันและเคลื่อนที่ไปรอบ ๆ ระหว่างพวกเขา"
+
+#: ../../sessions_all/sessions_all.rst:662
+msgid "``exit`` or ``Ctrl-B x``: terminate the current shell"
+msgstr "``exit`` หรือ ``Ctrl-B x``: สิ้นสุดเชลล์ปัจจุบัน"
+
+#: ../../sessions_all/sessions_all.rst:664
+msgid ""
+"Combining the above commands allows you to perform various tasks "
+"simultaneously on multiple shells."
+msgstr ""
+"การรวมคำสั่งข้างต้นช่วยให้คุณสามารถทำงานต่าง ๆ ได้พร้อมกันในหลาย ๆ เชลล์"

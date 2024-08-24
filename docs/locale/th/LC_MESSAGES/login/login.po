@@ -1,0 +1,212 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-23 23:02+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../login/login.rst:3
+msgid "Signup and Login"
+msgstr "การลงทะเบียนและการเข้าสู่ระบบ"
+
+#: ../../login/login.rst:6
+msgid "Signup"
+msgstr "สมัครสมาชิก"
+
+#: ../../login/login.rst:8
+msgid ""
+"When you launch the Web-UI, login dialog appears. If you haven't signed up "
+"yet, press the SIGN UP button."
+msgstr ""
+"เมื่อคุณเปิด Web-UI จะมีหน้าต่างเข้าสู่ระบบปรากฏขึ้น "
+"หากคุณยังไม่ได้สมัครสมาชิก ให้กดปุ่ม SIGN UP"
+
+#: ../../login/login.rst:-1
+msgid "Login dialog"
+msgstr "กล่องโต้ตอบการเข้าสู่ระบบ"
+
+#: ../../login/login.rst:16
+msgid ""
+"Enter the required information, read and agree to the Terms of Service / "
+"Privacy Policy, and click the SIGNUP button. Depending on your system "
+"settings, you may need to enter an invitation token to sign up. A "
+"verification email may be sent to verify that the email is yours. If the "
+"verification email is sent, you will need to read the email and click the "
+"link inside to pass verification before you can log in with your account."
+msgstr ""
+"กรอกข้อมูลที่จำเป็น อ่านและยอมรับข้อกำหนดในการให้บริการ / "
+"นโยบายความเป็นส่วนตัว และคลิกปุ่ม SIGNUP ขึ้นอยู่กับการตั้งค่าของระบบของคุณ "
+"อาจต้องกรอกโทเค็นการเชิญเพื่อสมัครสมาชิก "
+"อีเมลยืนยันอาจถูกส่งเพื่อยืนยันว่าอีเมลนั้นเป็นของคุณ หากมีการส่งอีเมลยืนยัน"
+" "
+"คุณจะต้องอ่านอีเมลและคลิกลิงก์ภายในเพื่อผ่านการตรวจสอบก่อนที่คุณจะสามารถเข้าสู่ระบบด้วยบัญชีของคุณได้"
+
+#: ../../login/login.rst:-1
+msgid "Signup dialog"
+msgstr "กล่องโต้ตอบลงทะเบียน"
+
+#: ../../login/login.rst:29
+msgid ""
+"Depending on the server configuration and plugin settings, signing up by "
+"anonymous user may not be allowed. In that case, please contact "
+"administrator of your system."
+msgstr ""
+"ขึ้นอยู่กับการตั้งค่าเซิร์ฟเวอร์และการตั้งค่าปลั๊กอิน "
+"อาจไม่อนุญาตให้ผู้ใช้ที่ไม่ระบุตัวตนลงทะเบียน "
+"ในกรณีนี้โปรดติดต่อผู้ดูแลระบบของระบบของคุณ"
+
+#: ../../login/login.rst:34
+msgid ""
+"To prevent malicious users from guessing user's password, password should be"
+" longer than 8 characters with at least one alphabet(s), number(s), and "
+"special character(s)."
+msgstr ""
+"เพื่อป้องกันไม่ให้ผู้ใช้ที่ไม่หวังดีเดารหัสผ่านของผู้ใช้ "
+"รหัสผ่านควรมีความยาวมากกว่า 8 ตัวอักษร "
+"และมีอักขระหนึ่งตัวขึ้นไปที่เป็นตัวอักษร, ตัวเลข, และอักขระพิเศษ"
+
+#: ../../login/login.rst:39
+msgid "Login"
+msgstr "เข้าสู่ระบบ"
+
+#: ../../login/login.rst:41
+msgid ""
+"Enter your ID and password and press the LOGIN button. In API ENDPOINT, the "
+"URL of Backend.AI Webserver, which relays the request to the Manager, should"
+" be entered."
+msgstr ""
+"ป้อนID และรหัสผ่านของคุณแล้วกดปุ่ม LOGIN ใน API ENDPOINT ควรป้อน URL ของ "
+"Backend.AI Webserver ซึ่งจะทำการส่งต่อคำขอไปยังผู้จัดการ"
+
+#: ../../login/login.rst:46
+msgid ""
+"Depending on the installation and setup environment of the Webserver, the "
+"endpoint might be pinned and not configurable."
+msgstr ""
+"ขึ้นอยู่กับการติดตั้งและสภาพแวดล้อมการตั้งค่าของ Webserver "
+"อาจมีการกำหนดสถานะของ endpoint และไม่สามารถปรับแต่งได้"
+
+#: ../../login/login.rst:50
+msgid ""
+"Backend.AI keeps the user's password securely through a one-way hash. "
+"BCrypt, the default password hash of BSD, is used, so even the server admins"
+" cannot know the user's password."
+msgstr ""
+"Backend.AI เก็บรหัสผ่านของผู้ใช้ไว้เป็นอย่างดีผ่านการแฮชแบบทางเดียว โดยใช้ "
+"BCrypt ซึ่งเป็นแฮชรหัสผ่านเริ่มต้นของ BSD "
+"ดังนั้นแม้แต่ผู้ดูแลเซิร์ฟเวอร์ก็ไม่สามารถทราบรหัสผ่านของผู้ใช้ได้"
+
+#: ../../login/login.rst:54
+msgid ""
+"After login, you can check the information of the current resource usage in "
+"the Summary tab."
+msgstr "หลังจากล็อกอิน คุณสามารถตรวจสอบข้อมูลการใช้งานทรัพยากรในป้ายย่อสรุป"
+
+#: ../../login/login.rst:57
+msgid ""
+"By clicking the icon in the upper-right corner, you will see sub menus. You "
+"can logout by selecting the Log Out menu."
+msgstr ""
+"โดยการคลิกที่ไอคอนในมุมขวาบน คุณจะเห็นเมนูย่อย "
+"คุณสามารถออกจากระบบได้โดยการเลือกเมนูออกจากระบบ"
+
+#: ../../login/login.rst:-1
+msgid "Signout button"
+msgstr "ปุ่มออกจากระบบ"
+
+#: ../../login/login.rst:67
+msgid "When you forgot your password"
+msgstr "เมื่อคุณลืมรหัสผ่านของคุณ"
+
+#: ../../login/login.rst:69
+msgid ""
+"If you have forgotten your password, you can click the CHANGE PASSWORD "
+"button on the login panel to email a link to change password. You can change"
+" your password by reading and following the instruction. Depending on the "
+"server settings, the password change feature may be disabled. In this case, "
+"contact the administrator."
+msgstr ""
+"หากคุณลืมรหัสผ่าน "
+"คุณสามารถคลิกที่ปุ่มเปลี่ยนรหัสผ่านในแผงเข้าสู่ระบบเพื่อส่งอีเมลลิงก์สำหรับเปลี่ยนรหัสผ่าน"
+" คุณสามารถเปลี่ยนรหัสผ่านของคุณโดยการอ่านและปฏิบัติตามคำแนะนำ "
+"ขึ้นอยู่กับการตั้งค่าของเซิร์ฟเวอร์ ฟังก์ชันการเปลี่ยนรหัสผ่านอาจถูกปิด "
+"ในกรณีนี้ให้ติดต่อผู้ดูแลระบบ"
+
+#: ../../login/login.rst:81
+msgid ""
+"This is also a modular feature, so changing password may not be possible in "
+"some systems."
+msgstr ""
+"นี่เป็นฟีเจอร์แบบโมดูลาร์ ดังนั้นการเปลี่ยนรหัสผ่านอาจไม่เป็นไปได้ในบางระบบ"
+
+#: ../../login/login.rst:85
+msgid ""
+"If login failure occures more than 10 times consecutively, access to the "
+"endpoint is temporarily restricted for 20 minutes for security reasons. If "
+"the access restriction continues on more than 20 minutes, please contact "
+"your system administrator."
+msgstr ""
+"หากเกิดความล้มเหลวในการเข้าสู่ระบบมากกว่า 10 ครั้งติดต่อกัน "
+"การเข้าถึงจุดสิ้นสุดจะถูกจำกัดชั่วคราวเป็นเวลา 20 "
+"นาทีเพื่อเหตุผลด้านความปลอดภัย หากการจำกัดการเข้าถึงยังคงมีอยู่เกิน 20 นาที "
+"โปรดติดต่อผู้ดูแลระบบของคุณ"
+
+#: ../../login/login.rst:92
+msgid "Sidebar Menus"
+msgstr "เมนูแถบด้านข้าง"
+
+#: ../../login/login.rst:94
+msgid ""
+"Change the size of the sidebar via the buttons on the right side of the "
+"sidebar. Click it to significantly reduce the width of the sidebar, giving "
+"you a wider view of its contents. Clicking it again will return the sidebar "
+"to its original width."
+msgstr ""
+"เปลี่ยนขนาดของแถบด้านข้างผ่านปุ่มที่ด้านขวาของแถบด้านข้าง "
+"คลิกที่มันเพื่อทำให้ความกว้างของแถบด้านข้างลดลงอย่างมาก "
+"ทำให้คุณมองเห็นเนื้อหาของมันได้กว้างขึ้น "
+"การคลิกอีกครั้งจะทำให้แถบด้านข้างกลับไปที่ความกว้างเดิม"
+
+#: ../../login/login.rst:104
+msgid "Header Events"
+msgstr "หัวข้อเหตุการณ์"
+
+#: ../../login/login.rst:105
+msgid ""
+"The bell shape button is the event notification button. Events that need to "
+"be recorded during Web-UI operation are displayed here. When background "
+"tasks are running, such as creating a compute session, you can check the "
+"jobs here. When the background task is finished."
+msgstr ""
+"ปุ่มรูปทรงกระดิ่งคือปุ่มการแจ้งเตือนเหตุการณ์ "
+"เหตุการณ์ที่ต้องบันทึกในระหว่างการทำงานของ Web-UI จะแสดงที่นี่ "
+"เมื่อมีการทำงานในพื้นหลัง เช่น การสร้างเซสชันการคำนวณ "
+"คุณสามารถตรวจสอบงานที่นี่ได้ เมื่อการทำงานในพื้นหลังเสร็จสิ้น"
+
+#: ../../login/login.rst:114
+msgid ""
+"You can change the theme mode of the Web-UI via the dark mode icon on the "
+"right side of the header."
+msgstr ""
+"คุณสามารถเปลี่ยนโหมดธีมของ Web-UI ผ่านไอคอนโหมดมืดที่ด้านขวาของส่วนหัว"
+
+#: ../../login/login.rst:122
+msgid ""
+"There is a question mark icon at the lower right side of the header. Click "
+"this icon to access the web version of this guide document."
+msgstr ""
+"มีไอคอนเครื่องหมายคำถามที่มุมขวาล่างของส่วนหัว "
+"คลิกที่ไอคอนนี้เพื่อเข้าถึงเอกสารคู่มือนี้ในเวอร์ชันเว็บ"

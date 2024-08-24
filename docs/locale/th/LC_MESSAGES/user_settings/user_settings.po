@@ -1,0 +1,411 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-23 23:02+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../user_settings/user_settings.rst:3
+msgid "User Settings"
+msgstr "การตั้งค่าผู้ใช้"
+
+#: ../../user_settings/user_settings.rst:5
+msgid ""
+"The user settings page is accessed by selecting the Preferences menu that "
+"appears after clicking the person icon at the top right. Users can change "
+"the preferred Environment from the language setting, SSH keypair management,"
+" editing user config script, and even to using Beta features."
+msgstr ""
+"ผู้ใช้สามารถเข้าถึงหน้าการตั้งค่าผ่านการเลือกเมนู Preferences "
+"ที่ปรากฏหลังจากคลิกที่ไอคอนคนที่มุมขวาบน "
+"ผู้ใช้สามารถเปลี่ยนสภาพแวดล้อมที่ต้องการจากการตั้งค่าภาษา, การจัดการ SSH "
+"keypair, การแก้ไขสคริปต์กำหนดค่าผู้ใช้ และแม้กระทั่งการใช้ฟีเจอร์ Beta."
+
+#: ../../user_settings/user_settings.rst:16
+msgid "GENERAL tab"
+msgstr "แท็บทั่วไป"
+
+#: ../../user_settings/user_settings.rst:20
+msgid ""
+"There are lots of preference menu in GENERAL tab. you can search it by "
+"search field on top of the section, or you may just filter that you changed "
+"by clicking `Display Only Changes`. If you want to rollback the changes to "
+"before, click Reset button on the right top of the section."
+msgstr ""
+"มีเมนูการตั้งค่ามากมายในแท็บทั่วไป "
+"คุณสามารถค้นหามันได้โดยใช้ฟิลด์ค้นหาที่ด้านบนของส่วน "
+"หรือคุณอาจเพียงแค่กรองการเปลี่ยนแปลงที่คุณทำโดยการคลิกที่ "
+"`แสดงเฉพาะการเปลี่ยนแปลง` ถ้าคุณต้องการคืนค่าการเปลี่ยนแปลงกลับไปก่อนหน้านี้"
+" ให้คลิกปุ่มรีเซ็ตที่มุมขวาบนของส่วน"
+
+#: ../../user_settings/user_settings.rst:25
+msgid "Desktop Notification"
+msgstr "การแจ้งเตือนบนเดสก์ท็อป"
+
+#: ../../user_settings/user_settings.rst:27
+msgid ""
+"Enables or disables the desktop notification feature. If the browser and "
+"operating system support it, various  messages that appear in the Web-UI "
+"will also appear in the desktop notification panel. If disabled from the "
+"operating system during the first run, the desktop message may not be "
+"displayed even if the option is turned on here. Regardless of the value of "
+"this option, the notification inside the Web-UI still works."
+msgstr ""
+"เปิดหรือปิดฟีเจอร์การแจ้งเตือนบนเดสก์ท็อป "
+"หากเบราว์เซอร์และระบบปฏิบัติการสนับสนุน จะมีข้อความต่างๆ ที่ปรากฏใน Web-UI "
+"แสดงในแผงการแจ้งเตือนบนเดสก์ท็อปด้วย "
+"หากปิดจากระบบปฏิบัติการในครั้งแรกที่ใช้งาน "
+"ข้อความเดสก์ท็อปอาจไม่แสดงแม้ว่าตัวเลือกนี้จะถูกเปิดที่นี่ก็ตาม "
+"ไม่ว่าจะเป็นค่าของตัวเลือกนี้หรือไม่ การแจ้งเตือนภายใน Web-UI "
+"จะยังคงทำงานอยู่"
+
+#: ../../user_settings/user_settings.rst:35
+msgid "Use Compact Sidebar by default"
+msgstr "ใช้แถบด้านข้างแบบกะทัดรัดเป็นค่าเริ่มต้น"
+
+#: ../../user_settings/user_settings.rst:37
+msgid ""
+"When this option is on, the left sidebar will be shown in a compact form "
+"(narrower width).  Change of the option is applied when the browser is "
+"refreshed. If you want to immediately change the type of the sidebar without"
+" refreshing the page, click the leftmost icon at the top of the header."
+msgstr ""
+"เมื่อเปิดใช้งานตัวเลือกนี้แถบด้านซ้ายจะถูกแสดงในรูปแบบกะทัดรัด "
+"(ความกว้างที่แคบกว่า) "
+"การเปลี่ยนแปลงของตัวเลือกจะมีผลเมื่อมีการรีเฟรชเบราว์เซอร์ "
+"หากคุณต้องการเปลี่ยนประเภทของแถบด้านข้างทันทีโดยไม่ต้องรีเฟรชหน้า "
+"ให้คลิกที่ไอคอนทางซ้ายสุดที่ด้านบนของหัวเรื่อง"
+
+#: ../../user_settings/user_settings.rst:43
+msgid "Language"
+msgstr "ภาษา"
+
+#: ../../user_settings/user_settings.rst:45
+msgid ""
+"Set the language displayed on the UI. Currently, Backend.AI supports more "
+"than five languages including English and Korean. However, there may be some"
+" UI items that do not update their language before the page is refreshed."
+msgstr ""
+"ตั้งค่าภาษาที่แสดงบน UI ขณะนี้ Backend.AI "
+"รองรับมากกว่าห้าภาษารวมถึงภาษาอังกฤษและภาษาเกาหลี อย่างไรก็ตาม "
+"อาจมีบางรายการใน UI ที่ไม่ได้อัปเดตภาษาให้ก่อนที่หน้าจะถูกรีเฟรช"
+
+#: ../../user_settings/user_settings.rst:50
+msgid "OS Default: Use the operating system's default language."
+msgstr ""
+"ค่าเริ่มต้นของระบบปฏิบัติการ: ใช้ภาษาที่ตั้งค่าเริ่มต้นของระบบปฏิบัติการ"
+
+#: ../../user_settings/user_settings.rst:51
+msgid "English: Set English as the default language."
+msgstr "ตั้งค่าอังกฤษเป็นภาษาหลัก"
+
+#: ../../user_settings/user_settings.rst:52
+msgid "Korean: Set Korean as the default language."
+msgstr "ตั้งภาษาเกาหลีเป็นภาษาที่ตั้งค่าเริ่มต้น"
+
+#: ../../user_settings/user_settings.rst:53
+msgid ""
+"Brazilian Portuguese: Set Brazilian Portuguese as the default language."
+msgstr "ตั้งค่าภาษาโปรตุเกสบราซิลเป็นภาษาพื้นฐาน"
+
+#: ../../user_settings/user_settings.rst:54
+msgid ""
+"Chinese (Simplified): Set Chinese (Simplified) as the default language."
+msgstr "ตั้งค่าเป็นภาษา จีน (แบบย่อ) เป็นภาษาที่ต้องการเริ่มต้น"
+
+#: ../../user_settings/user_settings.rst:55
+msgid ""
+"Chinese (Traditional): Set Chinese (Traditional) as the default language."
+msgstr "ตั้งค่าเป็นภาษาจีน (ดั้งเดิม) เป็นภาษาพื้นฐาน"
+
+#: ../../user_settings/user_settings.rst:56
+msgid "French: Set French as the default language."
+msgstr "ตั้งค่าเป็นภาษาฝรั่งเศสเป็นภาษาหลัก"
+
+#: ../../user_settings/user_settings.rst:57
+msgid "Finnish: Set Finnish as the default language."
+msgstr "ฟินแลนด์: ตั้งค่าให้ฟินแลนด์เป็นภาษาพื้นฐาน"
+
+#: ../../user_settings/user_settings.rst:58
+msgid "German: Set German as the default language."
+msgstr "เยอรมัน: ตั้งค่าเยอรมันเป็นภาษาหลัก"
+
+#: ../../user_settings/user_settings.rst:59
+msgid "Greek: Set Greek as the default language."
+msgstr "กรีก: ตั้งค่ากรีกเป็นภาษาที่ตั้งไว้เริ่มต้น"
+
+#: ../../user_settings/user_settings.rst:60
+msgid "Indonesian: Set Indonesian as the default language."
+msgstr "อินโดนีเซีย: ตั้งค่าอินโดนีเซียเป็นภาษาพื้นฐาน。"
+
+#: ../../user_settings/user_settings.rst:61
+msgid "Italian: Set Italian as the default language."
+msgstr "อิตาลี: ตั้งค่าอิตาลีเป็นภาษาหลัก"
+
+#: ../../user_settings/user_settings.rst:62
+msgid "Japanese: Set Japanese as the default language."
+msgstr "ญี่ปุ่น: ตั้งค่าให้ภาษาญี่ปุ่นเป็นภาษาพื้นฐาน"
+
+#: ../../user_settings/user_settings.rst:63
+msgid "Mongolian: Set Mongolian as the default language."
+msgstr "มองโกเลีย: ตั้งค่าภาษามองโกเลียเป็นภาษาหลัก"
+
+#: ../../user_settings/user_settings.rst:64
+msgid "Polish: Set Polish as the default language."
+msgstr "โปแลนด์: ตั้งโปแลนด์เป็นภาษาพื้นฐาน"
+
+#: ../../user_settings/user_settings.rst:65
+msgid "Portuguese: Set Portuguese as the default language."
+msgstr "ตั้งภาษาโปรตุเกสเป็นภาษาหลัก"
+
+#: ../../user_settings/user_settings.rst:66
+msgid "Russian: Set Russian as the default language."
+msgstr "รัสเซีย: ตั้งค่ารัสเซียเป็นภาษาหลัก"
+
+#: ../../user_settings/user_settings.rst:67
+msgid "Spanish: Set Spanish as the default language."
+msgstr "ตั้งภาษาสเปนเป็นภาษาที่ตั้งค่าเริ่มต้น"
+
+#: ../../user_settings/user_settings.rst:68
+msgid "Thai: Set Thai as the default language."
+msgstr "ตั้งภาษาไทยเป็นภาษาหลัก"
+
+#: ../../user_settings/user_settings.rst:69
+msgid "Turkish: Set Turkish as the default language."
+msgstr "ตุรกี: ตั้งค่าตุรกีเป็นภาษาที่ตั้งค่าเริ่มต้น"
+
+#: ../../user_settings/user_settings.rst:70
+msgid "Vietnamese: Set Vietnamese as the default language."
+msgstr "ภาษาเวียดนาม: ตั้งค่าให้ภาษาเวียดนามเป็นภาษามาตรฐาน"
+
+#: ../../user_settings/user_settings.rst:74
+msgid ""
+"Some of translated items may be marked as ``__NOT_TRANSLATED__``, which "
+"indicates the item is not yet translated for that language. Since Backend.AI"
+" WebUI is open sourced, anyone who willing to make the translation better "
+"can contribute: https://github.com/lablup/backend.ai-webui."
+msgstr ""
+"บางรายการที่แปลแล้วอาจถูกทำเครื่องหมายว่า ``__NOT_TRANSLATED__`` "
+"ซึ่งบ่งบอกว่ารายการนั้นยังไม่ได้รับการแปลเป็นภาษานั้น เนื่องจาก Backend.AI "
+"WebUI เป็นซอฟต์แวร์โอเพ่นซอร์ส "
+"ผู้ที่ต้องการทำให้การแปลดีขึ้นสามารถมีส่วนร่วมได้ที่: "
+"https://github.com/lablup/backend.ai-webui."
+
+#: ../../user_settings/user_settings.rst:82
+msgid "SSH Keypair Management"
+msgstr "การจัดการคู่กุญแจ SSH"
+
+#: ../../user_settings/user_settings.rst:84
+msgid ""
+"When using the Web-UI app, you can create SSH/SFTP connection directly to "
+"the compute session. Once you signed up for Backend.AI, a public keypair is "
+"provided. If you click the button on the right to the SSH Keypair Management"
+" section, the following dialog appears. Click the copy button on the right "
+"to copy the existing SSH public key. You can update SSH keypair by clicking "
+"GENERATE button at the bottom of the dialog. SSH public/private keys are "
+"randomly generated and stored as user information. Please note that the "
+"secret key cannot be checked again unless it is saved manually immediately "
+"after creation."
+msgstr ""
+"เมื่อใช้แอป Web-UI คุณสามารถสร้างการเชื่อมต่อ SSH/SFTP "
+"โดยตรงกับเซสชันการประมวลผล เมื่อคุณลงทะเบียนใน Backend.AI "
+"จะมีการให้คีย์คู่สาธารณะ หากคุณคลิกที่ปุ่มด้านขวาของส่วนการจัดการ SSH "
+"Keypair จะมีการแสดงกล่องโต้ตอบดังต่อไปนี้ คลิกปุ่มคัดลอกด้านขวาเพื่อคัดลอก "
+"SSH public key ที่มีอยู่ คุณสามารถอัปเดต SSH keypair โดยคลิกที่ปุ่ม GENERATE"
+" ที่ด้านล่างของกล่องโต้ตอบ คีย์ SSH "
+"สาธารณะ/ส่วนตัวจะถูกสร้างขึ้นแบบสุ่มและจัดเก็บเป็นข้อมูลผู้ใช้ "
+"โปรดทราบว่าคีย์ลับไม่สามารถตรวจสอบอีกครั้งได้ "
+"เว้นแต่จะถูกบันทึกด้วยตนเองทันทีหลังจากการสร้าง"
+
+#: ../../user_settings/user_settings.rst:99
+msgid ""
+"SSH/SFTP connection is available only with the Backend.AI GUI desktop app "
+"and is not supported on a web browser."
+msgstr ""
+"การเชื่อมต่อ SSH/SFTP มีให้เฉพาะกับแอพพลิเคชันเดสก์ท็อป Backend.AI GUI "
+"เท่านั้น และไม่รองรับบนเว็บเบราว์เซอร์"
+
+#: ../../user_settings/user_settings.rst:102
+msgid ""
+"Backend.AI uses SSH keypair based on OpenSSH. On Windows, you may convert "
+"this into PPK key."
+msgstr ""
+"Backend.AI ใช้คู่กุญแจ SSH ที่อิงตาม OpenSSH บน Windows "
+"คุณสามารถแปลงสิ่งนี้เป็นกุญแจ PPK ได้"
+
+#: ../../user_settings/user_settings.rst:105
+msgid ""
+"From 22.09, Backend.AI WebUI supports adding your own ssh keypair in order "
+"to provide flexibility such as accessing to a private repository. In order "
+"to add your own ssh keypair, click ``ENTER MANUALLY`` button. Then, you will"
+" see two text area which corresponds to \"public\" and \"private\" key."
+msgstr ""
+"ตั้งแต่วันที่ 22.09, Backend.AI WebUI สนับสนุนการเพิ่ม ssh keypair "
+"ของคุณเองเพื่อให้มีความยืดหยุ่น เช่น การเข้าถึงที่เก็บข้อมูลส่วนตัว "
+"ในการเพิ่ม ssh keypair ของคุณเอง ให้คลิกปุ่ม ``ENTER MANUALLY`` "
+"จากนั้นคุณจะเห็นพื้นที่ข้อความสองช่องซึ่งสอดคล้องกับ \"public\" และ \"private\" "
+"key."
+
+#: ../../user_settings/user_settings.rst:113
+msgid ""
+"please enter the keys inside, and click ``SAVE`` button. Now you can access "
+"to backend.ai session using your own key."
+msgstr ""
+"กรุณาใส่คีย์ด้านในและคลิกปุ่ม ``SAVE`` ตอนนี้คุณสามารถเข้าถึงเซสชัน "
+"backend.ai โดยใช้คีย์ของคุณเองได้แล้ว"
+
+#: ../../user_settings/user_settings.rst:121
+msgid "Automatic Update Check"
+msgstr "การตรวจสอบการอัปเดตอัตโนมัติ"
+
+#: ../../user_settings/user_settings.rst:123
+msgid ""
+"A notification window pops up when a new version of the Web-UI is detected. "
+"It works only in an environment where Internet access is available."
+msgstr ""
+"หน้าต่างแจ้งเตือนจะปรากฏขึ้นเมื่อมีการตรวจพบเวอร์ชันใหม่ของ Web-UI "
+"จะทำงานเฉพาะในสภาพแวดล้อมที่มีการเข้าถึงอินเทอร์เน็ตเท่านั้น"
+
+#: ../../user_settings/user_settings.rst:127
+msgid "Auto logout"
+msgstr "ออกจากระบบอัตโนมัติ"
+
+#: ../../user_settings/user_settings.rst:129
+msgid ""
+"Log out automatically when all Backend.AI Web-UI pages are closed except for"
+" pages created to run apps in session (e.g. jupyter notebook, web terminal, "
+"etc.)."
+msgstr ""
+"ออกจากระบบโดยอัตโนมัติเมื่อปิดหน้าของ Backend.AI Web-UI ทั้งหมด "
+"ยกเว้นหน้าที่สร้างขึ้นเพื่อรันแอปในเซสชัน (เช่น jupyter notebook, web "
+"terminal, เป็นต้น)"
+
+#: ../../user_settings/user_settings.rst:134
+msgid "My Keypair information"
+msgstr "ข้อมูล Keypair ของฉัน"
+
+#: ../../user_settings/user_settings.rst:136
+msgid ""
+"Every user has at least one or more keypairs. you can see access and secret "
+"keypair by clicking Config button below. Remember that main access keypair "
+"is only one."
+msgstr ""
+"ผู้ใช้แต่ละคนมีคีย์คู่คืนหนึ่งคู่หรือมากกว่า "
+"คุณสามารถดูคีย์คู่การเข้าถึงและคีย์ลับได้โดยคลิกที่ปุ่มการตั้งค่าด้านล่าง "
+"จำไว้ว่าคีย์คู่การเข้าถึงหลักมีเพียงหนึ่งคู่เท่านั้น"
+
+#: ../../user_settings/user_settings.rst:-1
+msgid "My Keypair Information"
+msgstr "ข้อมูล Keypair ของฉัน"
+
+#: ../../user_settings/user_settings.rst:146
+msgid "EDIT BOOTSTRAP SCRIPT"
+msgstr "แก้ไขสคริปต์บูตสแตรป"
+
+#: ../../user_settings/user_settings.rst:148
+msgid ""
+"If you want to execute a one-time script just after your compute sessions "
+"started, write down the contents here."
+msgstr ""
+"หากคุณต้องการเรียกใช้งานสคริปต์ครั้งเดียวหลังจากที่เซสชันการประมวลผลของคุณเริ่มต้นขึ้น"
+" ให้เขียนเนื้อหาที่นี่"
+
+#: ../../user_settings/user_settings.rst:156
+msgid ""
+"The compute session will be at the ``PREPARING`` status until the bootstrap "
+"script finishes its execution. Since a user cannot use the session until it "
+"is ``RUNNING``, if the script contains a long-running tasks, it might be "
+"better to remove them out of the bootstrap script and run them in a terminal"
+" app."
+msgstr ""
+"เซสชันการประมวลผลจะอยู่ในสถานะ ``PREPARING`` "
+"จนกว่าสคริปต์การบูตจะเสร็จสิ้นการทำงาน "
+"เนื่องจากผู้ใช้ไม่สามารถใช้เซสชันได้จนกว่าจะเป็น ``RUNNING`` "
+"หากสคริปต์มีงานที่ใช้เวลานาน "
+"ควรพิจารณานำงานเหล่านั้นออกจากสคริปต์การบูตและรันในแอปพลิเคชันเทอร์มินัลแทน"
+
+#: ../../user_settings/user_settings.rst:163
+msgid "EDIT USER CONFIG SCRIPT"
+msgstr "แก้ไขสคริปต์การตั้งค่าผู้ใช้"
+
+#: ../../user_settings/user_settings.rst:165
+msgid ""
+"You can write some config scripts to replace the default ones in a compute "
+"session. Files like ``.bashrc``, ``.tmux.conf.local``, ``.vimrc``, etc. can "
+"be customized. The scripts are saved for each user and can be used when "
+"certain automation tasks are required. For example, you can modify the "
+"``.bashrc`` script to register your command aliases or specify that certain "
+"files are always downloaded to a specific location."
+msgstr ""
+"คุณสามารถเขียนสคริปต์การกำหนดค่าเพื่อแทนที่สคริปต์เริ่มต้นในเซสชั่นการคอมพิวเตอร์"
+" ไฟล์เช่น ``.bashrc``, ``.tmux.conf.local``, ``.vimrc`` เป็นต้น "
+"สามารถปรับแต่งได้ "
+"สคริปต์จะถูกบันทึกไว้สำหรับแต่ละผู้ใช้และสามารถใช้เมื่อจำเป็นต้องทำงานอัตโนมัติบางอย่าง"
+" ตัวอย่างเช่น คุณสามารถแก้ไขสคริปต์ ``.bashrc`` "
+"เพื่อจดทะเบียนอัลลิอัสคำสั่งของคุณหรือระบุว่ามีไฟล์บางอย่างที่ดาวน์โหลดไปยังตำแหน่งเฉพาะเสมอ"
+
+#: ../../user_settings/user_settings.rst:172
+msgid ""
+"Use the drop-down menu at the top to select the type of script you want to "
+"write and then write the content. You can save the script by clicking the "
+"SAVE or SAVE AND CLOSE button. Click the DELETE button to delete the script."
+msgstr ""
+"ใช้เมนูแบบเลื่อนลงที่ด้านบนเพื่อเลือกประเภทของสคริปต์ที่คุณต้องการเขียนแล้วเขียนเนื้อหา"
+" คุณสามารถบันทึกสคริปต์โดยการคลิกปุ่มบันทึก (SAVE) หรือบันทึกและปิด (SAVE "
+"AND CLOSE) คลิกปุ่มลบ (DELETE) เพื่อลบสคริปต์"
+
+#: ../../user_settings/user_settings.rst:182
+msgid "LOGS tab"
+msgstr "แท็บ LOGS"
+
+#: ../../user_settings/user_settings.rst:184
+msgid ""
+"Displays detailed information of various logs recorded on the client side. "
+"You can visit this page to find out more about the errors occurred. You can "
+"search, filter the error logs, refresh and clear the logs by clicking the "
+"Clear Logs button at the top right."
+msgstr ""
+"แสดงข้อมูลรายละเอียดของบันทึกต่างๆ ที่บันทึกไว้ในด้านของลูกค้า "
+"คุณสามารถไปที่หน้านี้เพื่อหาข้อมูลเพิ่มเติมเกี่ยวกับข้อผิดพลาดที่เกิดขึ้น "
+"คุณสามารถค้นหา กรองบันทึกข้อผิดพลาด "
+"อัปเดตและล้างบันทึกโดยการคลิกที่ปุ่มล้างบันทึกที่มุมขวาบน"
+
+#: ../../user_settings/user_settings.rst:192
+msgid ""
+"If you only have one page logged in, clicking the REFRESH button may not "
+"seem to work properly. Logs pages are collection of requests to the server "
+"and responses from the server. If current page is the log page, then it will"
+" not send any requests to the server except refreshing the page explicitly. "
+"To check logs are being stacked properly, please open another page and click"
+" REFRESH button."
+msgstr ""
+"หากคุณล็อกอินอยู่เพียงหน้าหนึ่ง การคลิกที่ปุ่ม REFRESH "
+"อาจไม่แสดงผลอย่างถูกต้อง "
+"หน้าบันทึกเป็นการรวมคำขอไปยังเซิร์ฟเวอร์และการตอบสนองจากเซิร์ฟเวอร์ "
+"หากหน้าปัจจุบันคือหน้าบันทึก มันจะไม่ส่งคำขอใด ๆ "
+"ไปยังเซิร์ฟเวอร์นอกเหนือจากการรีเฟรชหน้าตามที่ระบุ "
+"หากต้องการตรวจสอบว่าบันทึกกำลังถูกจัดเรียงอย่างถูกต้อง "
+"กรุณาเปิดหน้าอื่นและคลิกปุ่ม REFRESH"
+
+#: ../../user_settings/user_settings.rst:199
+msgid ""
+"If you want to hide or show the certain columns, click the gear icon at the "
+"bottom right of the table. Then you can see below dialog to select the "
+"columns you want to see."
+msgstr ""
+"หากคุณต้องการซ่อนหรือแสดงคอลัมน์บางอย่าง "
+"ให้คลิกที่ไอคอนเฟืองที่มุมขวาล่างของตาราง "
+"จากนั้นคุณจะสามารถเห็นกล่องโต้ตอบด้านล่างเพื่อเลือกคอลัมน์ที่คุณต้องการเห็น"

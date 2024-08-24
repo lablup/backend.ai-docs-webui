@@ -1,0 +1,231 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-23 23:02+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../share_vfolder/share_vfolder.rst:3
+msgid "Sharing Storage Folders and Access Control"
+msgstr "การแชร์โฟลเดอร์จัดเก็บข้อมูลและการควบคุมการเข้าถึง"
+
+#: ../../share_vfolder/share_vfolder.rst:5
+msgid ""
+"You may need to share the contents of storage folders with other users or "
+"project members to collaborate. For this purpose, Backend.AI provides "
+"flexible folder sharing feature."
+msgstr ""
+"คุณอาจต้องการแชร์เนื้อหาของโฟลเดอร์เก็บข้อมูลกับผู้ใช้หรือสมาชิกในโครงการคนอื่นเพื่อการทำงานร่วมกัน"
+" สำหรับวัตถุประสงค์นี้ Backend.AI จึงมีฟีเจอร์การแชร์โฟลเดอร์ที่ยืดหยุ่น"
+
+#: ../../share_vfolder/share_vfolder.rst:11
+msgid "Share storage folders with other users"
+msgstr "แชร์โฟลเดอร์สตอเรจกับผู้ใช้อื่น"
+
+#: ../../share_vfolder/share_vfolder.rst:13
+msgid ""
+"Let's learn how to share your personal Storage folder with other users. "
+"First, log in to User A's account and go to the Data & Storage page. There "
+"are several folders, and we want to share a folder named ``tests`` to User "
+"B."
+msgstr ""
+"มาศึกษาวิธีการแชร์โฟลเดอร์จัดเก็บข้อมูลส่วนตัวของคุณให้กับผู้ใช้อื่นกันเถอะ "
+"ก่อนอื่นให้เข้าสู่ระบบด้วยบัญชีของผู้ใช้ A และไปที่หน้า Data & Storage "
+"ที่มีโฟลเดอร์หลายโฟลเดอร์ และเราต้องการแชร์โฟลเดอร์ที่มีชื่อว่า ``tests`` "
+"ให้กับผู้ใช้ B"
+
+#: ../../share_vfolder/share_vfolder.rst:19
+msgid ""
+"Inside the ``tests`` folder you can see files and directories like "
+"``hello.txt`` and ``myfolder``."
+msgstr ""
+"ในโฟลเดอร์ ``tests`` คุณสามารถเห็นไฟล์และไดเรกทอรีเช่น ``hello.txt`` และ "
+"``myfolder`` ได้"
+
+#: ../../share_vfolder/share_vfolder.rst:24
+msgid ""
+"Confirm that the ``tests`` folder is not listed when logging in with User "
+"B's account."
+msgstr "ยืนยันว่าโฟลเดอร์ ``tests`` ไม่ปรากฏเมื่อเข้าสู่ระบบด้วยบัญชีผู้ใช้ B"
+
+#: ../../share_vfolder/share_vfolder.rst:30
+msgid ""
+"If a folder named ``tests`` already exists in User B's account, User A's "
+"``tests`` folder cannot be shared with User B."
+msgstr ""
+"หากโฟลเดอร์ที่ชื่อว่า ``tests`` มีอยู่แล้วในบัญชีของผู้ใช้ B โฟลเดอร์ "
+"``tests`` ของผู้ใช้ A จะไม่สามารถแชร์กับผู้ใช้ B ได้"
+
+#: ../../share_vfolder/share_vfolder.rst:33
+msgid ""
+"Back to User A's account and click the share icon (third icon) in the "
+"Control panel on the right of the ``tests`` folder. Enter User B's email in "
+"the email input field and click the SHARE button to send a sharing "
+"invitation. No actual email is sent, and invitations are generated through "
+"the Backend.AI database. In the case of Permissions, if you check View, it "
+"is shared as read-only, and if you check Edit together, even writing is "
+"allowed to User B. If you want to share with multiple users, you can also "
+"click the + button to enter additional emails."
+msgstr ""
+"กลับไปที่บัญชีผู้ใช้ A และคลิกที่ไอคอนแชร์ (ไอคอนที่สาม) "
+"ในแผงควบคุมที่ด้านขวาของโฟลเดอร์ ``tests`` ใส่อีเมลของผู้ใช้ B "
+"ในช่องป้อนอีเมลและคลิกปุ่ม SHARE เพื่อส่งคำเชิญแชร์ ไม่มีอีเมลจริงส่งออก "
+"และคำเชิญจะถูกสร้างขึ้นผ่านฐานข้อมูลของ Backend.AI ในกรณีของสิทธิ์การเข้าถึง"
+" หากคุณตรวจสอบดู มันจะถูกแชร์เป็นอ่านอย่างเดียว และหากคุณตรวจสอบแก้ไขร่วมกัน"
+" การเขียนก็จะถูกอนุญาตให้กับผู้ใช้ B หากคุณต้องการแชร์กับผู้ใช้หลายคน "
+"คุณยังสามารถคลิกที่ปุ่ม + เพื่อตั้งค่าอีเมลเพิ่มเติมได้อีกด้วย"
+
+#: ../../share_vfolder/share_vfolder.rst:45
+msgid ""
+"Back to User B's account and go to the Summary page. At the bottom of the "
+"page, you can see the invitation arrived. Click the ACCEPT button to accept "
+"the invitation. If you don't see the invitation, go to another page once and"
+" then come back to the Summary page again."
+msgstr ""
+"กลับไปที่บัญชีของผู้ใช้ B และไปที่หน้า สรุป ที่ด้านล่างของหน้า "
+"คุณจะเห็นคำเชิญที่เข้ามา คลิกที่ปุ่ม ยอมรับ เพื่อรับคำเชิญ "
+"หากคุณไม่เห็นคำเชิญ ให้ไปอีกหน้าหนึ่งแล้วกลับมาที่หน้า สรุป อีกครั้ง"
+
+#: ../../share_vfolder/share_vfolder.rst:54
+msgid ""
+"Go to the Data & Storage page and check that the ``tests`` folder is "
+"displayed in the list. If you don't see it on the list, try refreshing your "
+"browser page. Since you have accepted the invitation, you can now view the "
+"contents of User A's ``tests`` folder in User B account. Compared to the "
+"other folders created by User B, the ``tests`` folder has no management icon"
+" in the Control panel. You can also see only the R (read-only) mark "
+"displayed in the Permission panel."
+msgstr ""
+"ไปที่หน้าข้อมูลและพื้นที่จัดเก็บ และตรวจสอบว่าหมายเลข ``tests`` "
+"ปรากฏในรายการ หากคุณไม่เห็นในรายการ ให้ลองรีเฟรชหน้าบราวเซอร์ของคุณ "
+"เนื่องจากคุณได้ตอบรับคำเชิญแล้ว คุณจึงสามารถดูเนื้อหาของหมายเลข ``tests`` "
+"ในบัญชีของผู้ใช้ B ได้ เมื่อเปรียบเทียบกับโฟลเดอร์อื่น ๆ ที่สร้างโดยผู้ใช้ B"
+" หมายเลข ``tests`` ไม่มีไอคอนการจัดการในแผงควบคุม "
+"คุณยังสามารถเห็นเพียงเครื่องหมาย R (อ่านอย่างเดียว) ที่แสดงในแผงสิทธิ์."
+
+#: ../../share_vfolder/share_vfolder.rst:63
+msgid ""
+"Let's navigate inside the ``tests`` folder by clicking the folder icon in "
+"the Control panel of ``tests``. You can check the ``hello.txt`` and "
+"``myfolder`` that you checked in the User A's account again. Let's create a "
+"compute session by mounting this storge folder with the User B's account."
+msgstr ""
+"เรามาเข้าสู่โฟลเดอร์ ``tests`` โดยการคลิกที่ไอคอนโฟลเดอร์ในแผงควบคุมของ "
+"``tests`` คุณสามารถตรวจสอบ ``hello.txt`` และ ``myfolder`` "
+"ที่คุณตรวจสอบในบัญชีผู้ใช้ A อีกครั้ง "
+"มาสร้างเซสชันการคำนวณโดยการเชื่อมต่อโฟลเดอร์จัดเก็บนี้กับบัญชีผู้ใช้ B "
+"กันเถอะ"
+
+#: ../../share_vfolder/share_vfolder.rst:72
+msgid ""
+"After creating a session, open the web terminal and check that the ``tests``"
+" folder is mounted in the home folder. The contents of the ``tests`` folder "
+"are displayed, but attempts to create or delete files are not allowed. This "
+"is because User A shared it as read-only. User B can create a file in the "
+"``tests`` folder if it has been shared including write access."
+msgstr ""
+"หลังจากสร้างเซสชันแล้ว ให้เปิดเทอร์มินัลเว็บและตรวจสอบว่าโฟลเดอร์ ``tests`` "
+"ถูกเมานต์ในโฟลเดอร์โฮม เนื้อหาของโฟลเดอร์ ``tests`` จะแสดง "
+"แต่การพยายามสร้างหรือลบไฟล์จะไม่ถูกอนุญาต นี่เป็นเพราะผู้ใช้ A "
+"แบ่งปันในรูปแบบอ่านอย่างเดียว ผู้ใช้ B สามารถสร้างไฟล์ในโฟลเดอร์ ``tests`` "
+"ได้หากมีการแบ่งปันรวมถึงสิทธิ์ในการเขียน"
+
+#: ../../share_vfolder/share_vfolder.rst:82
+msgid ""
+"If you click the folder icon in the Control panel, you may notice that "
+"UPLOAD FILES button and NEW FOLDER button disappears and READ-ONLY FOLDER "
+"message is shown on that spot. Also modify icon and delete icon in the "
+"Action panel are also disabled since the folder is read-only. User B can "
+"create a file in the ``tests`` folder if it has been shared including write "
+"access."
+msgstr ""
+"ถ้าคุณคลิกที่ไอคอนโฟลเดอร์ในแผงควบคุม คุณอาจสังเกตเห็นว่าปุ่ม UPLOAD FILES "
+"และปุ่ม NEW FOLDER จะหายไปและแสดงข้อความว่า READ-ONLY FOLDER ในจุดนั้น "
+"นอกจากนี้ ไอคอนแก้ไขและไอคอนลบในแผงการดำเนินการก็จะถูกปิดใช้งานเช่นกัน "
+"เนื่องจากโฟลเดอร์เป็นแบบอ่านอย่างเดียว ผู้ใช้ B สามารถสร้างไฟล์ในโฟลเดอร์ "
+"``tests`` ได้หากได้มีการแชร์รวมทั้งการเข้าถึงการเขียน"
+
+#: ../../share_vfolder/share_vfolder.rst:90
+msgid ""
+"This way, you can share your personal storage folders with other users based"
+" on your Backend.AI email account."
+msgstr ""
+"วิธีนี้ "
+"คุณสามารถแบ่งปันโฟลเดอร์พื้นที่เก็บข้อมูลส่วนตัวของคุณกับผู้ใช้อื่นได้ตามบัญชีอีเมลของ"
+" Backend.AI ของคุณ"
+
+#: ../../share_vfolder/share_vfolder.rst:94
+msgid ""
+"Backend.AI also provides sharing project folder to project members. To See "
+"the detail, go to :ref:`sharing a project storage folder with project "
+"members <sharing-a-group-storage>`."
+msgstr ""
+"Backend.AI ยังมีฟีเจอร์การแบ่งปันโฟลเดอร์โปรเจกต์ให้กับสมาชิกโปรเจกต์ "
+"สำหรับรายละเอียดเพิ่มเติมโปรดไปที่ "
+":ref:`การแบ่งปันโฟลเดอร์ที่จัดเก็บโปรเจกต์กับสมาชิกโปรเจกต์ <sharing-a-"
+"group-storage>`"
+
+#: ../../share_vfolder/share_vfolder.rst:99
+msgid "Adjust permission for shared folders"
+msgstr "ปรับแต่งสิทธิ์สำหรับโฟลเดอร์ที่แชร์"
+
+#: ../../share_vfolder/share_vfolder.rst:101
+msgid ""
+"If you click the fourth person icon in the Control panel, you can see a list"
+" of users who have shared the folder. Click Select permission to set the "
+"sharing permission."
+msgstr ""
+"หากคุณคลิกที่ไอคอนคนที่สี่ในแผงควบคุม "
+"คุณจะเห็นรายชื่อผู้ใช้ที่ได้แชร์โฟลเดอร์ "
+"คลิกที่เลือกสิทธิ์เพื่อกำหนดสิทธิ์การแชร์"
+
+#: ../../share_vfolder/share_vfolder.rst:105
+msgid "View: The invited user has read-only access to the folder."
+msgstr "ดู: ผู้ใช้ที่ได้รับเชิญมีสิทธิ์เข้าถึงโฟลเดอร์แบบอ่านอย่างเดียว"
+
+#: ../../share_vfolder/share_vfolder.rst:106
+msgid ""
+"Edit: The invited user has read and write access to the folder. The user "
+"cannot delete folders or files."
+msgstr ""
+"แก้ไข: ผู้ใช้ที่ได้รับเชิญมีสิทธิ์ในการอ่านและเขียนเข้าถึงโฟลเดอร์ "
+"ผู้ใช้ไม่สามารถลบโฟลเดอร์หรือไฟล์ได้"
+
+#: ../../share_vfolder/share_vfolder.rst:108
+msgid ""
+"Edit+Delete: The invited user has full access to the folder and can delete "
+"files or folders."
+msgstr ""
+"แก้ไข+ลบ: "
+"ผู้ใช้ที่ได้รับเชิญมีการเข้าถึงเต็มรูปแบบในโฟลเดอร์และสามารถลบไฟล์หรือโฟลเดอร์ได้"
+
+#: ../../share_vfolder/share_vfolder.rst:110
+msgid ""
+"Kick out user: Retrieves the user's invitation. The user cannot view or use "
+"the folder any more."
+msgstr ""
+"ขับไล่ผู้ใช้: ดึงคำเชิญของผู้ใช้มา "
+"ผู้ใช้งานไม่สามารถดูหรือใช้โฟลเดอร์ได้อีกต่อไป"
+
+#: ../../share_vfolder/share_vfolder.rst:118
+msgid ""
+"Renaming folder itself is available only for the owner, even if the user has"
+" granted Edit or Edit+Delete permission. Please note that Edit permission "
+"does not provide renaming folder."
+msgstr ""
+"การเปลี่ยนชื่อโฟลเดอร์นั้นสามารถทำได้เฉพาะเจ้าของเท่านั้น "
+"แม้ว่าผู้ใช้จะได้รับสิทธิ์ในการแก้ไขหรือสิทธิ์ในการแก้ไข + ลบก็ตาม "
+"โปรดทราบว่าสิทธิ์ในการแก้ไขไม่ได้หมายความว่ามีสิทธิ์ในการเปลี่ยนชื่อโฟลเดอร์"

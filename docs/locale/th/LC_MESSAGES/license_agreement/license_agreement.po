@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-23 23:02+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../license_agreement/license_agreement.rst:3
+msgid "Terms of License Agreement"
+msgstr "ข้อตกลงการอนุญาตใช้งาน"
+
+#: ../../license_agreement/license_agreement.rst:6
+msgid "Backend.AI License (Software)"
+msgstr "ใบอนุญาต Backend.AI (ซอฟต์แวร์)"
+
+#: ../../license_agreement/license_agreement.rst:8
+msgid ""
+"This document defines the terms of the license agreement for the Backend.AI "
+"software. The usage fee and support plan of Backend.AI Cloud service "
+"provided by Lablup is independent of this policy."
+msgstr ""
+"เอกสารนี้กำหนดเงื่อนไขของข้อตกลงใบอนุญาตสำหรับซอฟต์แวร์ Backend.AI "
+"ค่าธรรมเนียมการใช้งานและแผนสนับสนุนบริการ Backend.AI Cloud ที่จัดทำโดย "
+"Lablup เป็นอิสระจากนโยบายนี้"
+
+#: ../../license_agreement/license_agreement.rst:12
+msgid ""
+"Backend.AI server components (hereinafter referred to as \"Backend.AI "
+"Server\") are distributed under the GNU Lesser General Public License v3.0 "
+"(\"LGPL\"), and API Client libraries and auxiliary components for accessing "
+"Backend.AI server (hereinafter \"Backend.AI Client\") are distributed under "
+"the MIT License. Even if LGPL complies, commercial contracts with Lablup "
+"Co., Ltd. (\"Lablup\") are required depending on the conditions when "
+"performing profit activities using the Backend.AI server. Several additional"
+" plug-ins and admin's GUI Control-Panel that apply to Backend.AI enterprise "
+"solutions are not open source, but commercial software."
+msgstr ""
+"ส่วนประกอบเซิร์ฟเวอร์ของ Backend.AI (ต่อไปนี้จะเรียกว่า \"Backend.AI "
+"Server\") กระจายภายใต้ GNU Lesser General Public License v3.0 (\"LGPL\") "
+"และไลบรารี API Client และส่วนประกอบเสริมสำหรับการเข้าถึงเซิร์ฟเวอร์ "
+"Backend.AI (ต่อไปนี้เรียกว่า \"Backend.AI Client\") กระจายภายใต้ MIT License"
+" แม้ว่าจะเป็นไปตาม LGPL แต่ต้องมีสัญญาการค้า กับ Lablup Co., Ltd. "
+"(\"Lablup\") "
+"ขึ้นอยู่กับเงื่อนไขในการดำเนินกิจกรรมที่มุ่งหวังผลกำไรโดยใช้เซิร์ฟเวอร์ "
+"Backend.AI มีปลั๊กอินเพิ่มเติมหลายตัวและแผงควบคุม GUI "
+"ของผู้ดูแลระบบที่ใช้กับโซลูชัน Backend.AI สำหรับองค์กร "
+"ซึ่งไม่ใช่ไม่เปิดเผยซอร์สโค้ด แต่เป็นซอฟต์แวร์เชิงพาณิชย์"
+
+#: ../../license_agreement/license_agreement.rst:22
+msgid "**Term Definition**"
+msgstr "**คำจำกัดความ**"
+
+#: ../../license_agreement/license_agreement.rst:24
+msgid ""
+"Hardware: Includes physical computers, virtual machine and container "
+"environments that users own or lease and have rights to run software."
+msgstr ""
+"ฮาร์ดแวร์: รวมถึงคอมพิวเตอร์ทางกายภาพ, เครื่องเสมือน "
+"และสภาพแวดล้อมของคอนเทนเนอร์ที่ผู้ใช้เป็นเจ้าของหรือเช่าและมีสิทธิในการเรียกใช้ซอฟต์แวร์"
+
+#: ../../license_agreement/license_agreement.rst:26
+msgid ""
+"Organization: Individuals, corporations, organizations, institutions "
+"(including non-profit and commerical organizations; however, subsidiaries "
+"that are separate corporations are not included)"
+msgstr ""
+"องค์กร: บุคคล, บริษัท, องค์กร, สถาบัน "
+"(รวมถึงองค์กรไม่แสวงหาผลกำไรและองค์กรพาณิชย์; อย่างไรก็ตาม "
+"บริษัทลูกที่เป็นร่างกายแยกต่างหากไม่รวมอยู่ด้วย)"
+
+#: ../../license_agreement/license_agreement.rst:30
+msgid ""
+"LGPL must be followed when users use and change Backend.AI Server (Manager /"
+" Agent / Common) or develop and distribute software that uses it. However, "
+"in the case of distributing software which import Backend.AI server as a "
+"module without changing it (e.g. Python import), it is regarded as a dynamic"
+" link and code disclosure under the LGPL is exempted. When Backend.AI server"
+" is installed on the hardware and used by the general public through the "
+"network, there is no obligation under the LGPL."
+msgstr ""
+"LGPL ต้องได้รับการปฏิบัติตามเมื่อผู้ใช้ใช้งานและเปลี่ยนแปลง Backend.AI "
+"Server (Manager / Agent / Common) หรือพัฒนาและจัดจำหน่ายซอฟต์แวร์ที่ใช้มัน "
+"อย่างไรก็ตาม ในกรณีที่จัดจำหน่ายซอฟต์แวร์ที่นำเข้า Backend.AI server "
+"เป็นโมดูลโดยไม่เปลี่ยนแปลง (เช่น Python import) "
+"จะถือว่าเป็นการเชื่อมโยงแบบไดนามิก และการเปิดเผยโค้ตตาม LGPL จะไม่บังคับ "
+"เมื่อ Backend.AI server "
+"ถูกติดตั้งบนฮาร์ดแวร์และใช้งานโดยประชาชนทั่วไปผ่านเครือข่าย "
+"จะไม่มีข้อผูกพันตาม LGPL"
+
+#: ../../license_agreement/license_agreement.rst:38
+msgid ""
+"The correct interpretation of all other cases is subject to the LGPL "
+"original text and court judgment."
+msgstr ""
+"การตีความที่ถูกต้องของกรณีอื่น ๆ ทั้งหมดอยู่ภายใต้ข้อความต้นฉบับของ LGPL "
+"และคำพิพากษาของศาล"
+
+#: ../../license_agreement/license_agreement.rst:41
+msgid ""
+"Apart from LGPL compliance, commercial contracts must be made with Lablup in"
+" the following cases:"
+msgstr ""
+"นอกเหนือจากการปฏิบัติตาม LGPL การทำสัญญาทางการค้าจะต้องทำกับ Lablup "
+"ในกรณีต่อไปนี้:"
+
+#: ../../license_agreement/license_agreement.rst:44
+msgid ""
+"When software that works only after installing the Backend.AI server is sold"
+" to customers outside the organization."
+msgstr ""
+"เมื่อซอฟต์แวร์ที่ทำงานได้เฉพาะหลังจากการติดตั้งเซิร์ฟเวอร์ Backend.AI "
+"ถูกขายให้กับลูกค้านอกองค์กร"
+
+#: ../../license_agreement/license_agreement.rst:46
+msgid ""
+"When hardware including Backend.AI server is sold to customers outside the "
+"organization."
+msgstr ""
+"เมื่อฮาร์ดแวร์รวมถึงเซิร์ฟเวอร์ Backend.AI ถูกขายให้กับลูกค้านอกองค์กร"
+
+#: ../../license_agreement/license_agreement.rst:48
+msgid ""
+"When the Backend.AI server is installed on the hardware and the usage fee is"
+" received from a customer outside the organization that uses it."
+msgstr ""
+"เมื่อเซิร์ฟเวอร์ Backend.AI "
+"ถูกติดตั้งในฮาร์ดแวร์และได้รับค่าธรรมเนียมการใช้งานจากลูกค้านอกองค์กรที่ใช้งานมัน"
+
+#: ../../license_agreement/license_agreement.rst:51
+msgid "In other cases, you can use the Backend.AI server for free."
+msgstr "ในกรณีอื่น ๆ คุณสามารถใช้เซิร์ฟเวอร์ Backend.AI ได้ฟรี"
+
+#: ../../license_agreement/license_agreement.rst:53
+msgid "**Interpretation Example**"
+msgstr "**ตัวอย่างการตีความ**"
+
+#: ../../license_agreement/license_agreement.rst:55
+msgid ""
+"If you distribute Backend.AI server with modifications to outside the "
+"organization, you must disclose the code and apply LGPL the same way. There "
+"is no obligation to disclose the code if it is olny used internally."
+msgstr ""
+"หากคุณกระจายเซิร์ฟเวอร์ Backend.AI ที่มีการปรับเปลี่ยนไปยังภายนอกองค์กร "
+"คุณต้องเปิดเผยโค้ดและใช้ LGPL ในลักษณะเดียวกัน "
+"ไม่มีข้อผูกพันในการเปิดเผยโค้ดหากใช้ภายในองค์กรเท่านั้น"
+
+#: ../../license_agreement/license_agreement.rst:58
+msgid ""
+"When distributing software that uses Backend.AI server as an essential "
+"library,"
+msgstr ""
+"เมื่อมีการจัดจำหน่ายซอฟต์แวร์ที่ใช้เซิร์ฟเวอร์ Backend.AI "
+"เป็นห้องสมุดที่จำเป็น"
+
+#: ../../license_agreement/license_agreement.rst:60
+msgid ""
+"Free distribution: The software does not have to be (L)GPL, and a separate "
+"contract with Lablup is not required."
+msgstr ""
+"การแจกจ่ายฟรี: ซอฟต์แวร์ไม่จำเป็นต้องเป็น (L)GPL "
+"และไม่ต้องมีสัญญาแยกต่างหากกับ Lablup"
+
+#: ../../license_agreement/license_agreement.rst:62
+msgid ""
+"Paid distribution: The software does not need to be (L)GPL, but a commercial"
+" contract with Lablup is required."
+msgstr ""
+"การแจกจ่ายแบบชำระเงิน: ซอฟต์แวร์ไม่จำเป็นต้องเป็น (L)GPL "
+"แต่จำเป็นต้องมีสัญญาการค้าที่ระหว่าง Lablup"
+
+#: ../../license_agreement/license_agreement.rst:65
+msgid ""
+"When Backend.AI server is installed on the hardware and it is used by the "
+"public through network,"
+msgstr ""
+"เมื่อเซิร์ฟเวอร์ Backend.AI "
+"ถูกติดตั้งบนฮาร์ดแวร์และมีการใช้งานโดยสาธารณะผ่านเครือข่าย"
+
+#: ../../license_agreement/license_agreement.rst:68
+#: ../../license_agreement/license_agreement.rst:73
+msgid "Free distribution: No separate contract with Lablup is required."
+msgstr "การแจกจ่ายฟรี: ไม่จำเป็นต้องมีสัญญาแยกต่างหากกับ Lablup"
+
+#: ../../license_agreement/license_agreement.rst:69
+#: ../../license_agreement/license_agreement.rst:74
+msgid "Paid distribution: A commercial contract with Lablup is required."
+msgstr "การจัดจำหน่ายที่ต้องชำระเงิน: จำเป็นต้องมีสัญญาพาณิชย์กับ Lablup"
+
+#: ../../license_agreement/license_agreement.rst:71
+msgid "When distributing hardware in which Backend.AI server is installed,"
+msgstr "เมื่อกระจายฮาร์ดแวร์ที่ติดตั้ง Backend.AI เซิร์ฟเวอร์อยู่"
+
+#: ../../license_agreement/license_agreement.rst:76
+msgid ""
+"Commercial contracts include monthly / annual subscription fees for the "
+"enterprise version by default, but details may vary depending on individual "
+"contracts."
+msgstr ""
+"สัญญาการค้าที่รวมถึงค่าธรรมเนียมการสมัครสมาชิกรายเดือน / "
+"รายปีสำหรับเวอร์ชันองค์กรโดยค่าเริ่มต้น "
+"แต่รายละเอียดอาจแตกต่างกันไปขึ้นอยู่กับสัญญาเฉพาะบุคคล"
