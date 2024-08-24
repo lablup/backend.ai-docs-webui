@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2020, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the GPU Platform Web-UI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 20.09\n"
+"Project-Id-Version: GPU Platform Web-UI User Guide 20.09\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-20 18:06+0900\n"
 "PO-Revision-Date: 2021-03-16 21:05+0900\n"
@@ -20,22 +20,22 @@ msgstr ""
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../cluster_session/cluster_session.rst:3
-msgid "Backend.AI Cluster Compute Session"
-msgstr "Backend.AI 클러스터 연산 세션"
+msgid "GPU Platform Cluster Compute Session"
+msgstr "GPU Platform 클러스터 연산 세션"
 
 #: ../../cluster_session/cluster_session.rst:8
 msgid ""
-"Cluster compute session feature is supported from Backend.AI server 20.09"
+"Cluster compute session feature is supported from GPU Platform server 20.09"
 " or higher."
-msgstr "클러스터 연산 세션 기능은 Backend.AI 서버 20.09 버전 이상부터 지원합니다."
+msgstr "클러스터 연산 세션 기능은 GPU Platform 서버 20.09 버전 이상부터 지원합니다."
 
 #: ../../cluster_session/cluster_session.rst:12
-msgid "Overview of Backend.AI cluster compute session"
-msgstr "Backend.AI 클러스터 연산 세션 개괄"
+msgid "Overview of GPU Platform cluster compute session"
+msgstr "GPU Platform 클러스터 연산 세션 개괄"
 
 #: ../../cluster_session/cluster_session.rst:14
 msgid ""
-"Backend.AI supports cluster compute session to support distributed "
+"GPU Platform supports cluster compute session to support distributed "
 "computing / training tasks. A cluster session consists of multiple "
 "containers, each of which is created across multiple Agent nodes. "
 "Containers under a cluster session are automatically connected each other"
@@ -45,15 +45,15 @@ msgid ""
 "secret keys and various settings for SSH connection between containers "
 "are automatically generated."
 msgstr ""
-"Backend.AI 에서는 분산 연산 및 학습 작업을 지원하기 위해 클러스터 연산 세션을 지원하고 있습니다. 클러스터 세션은 여러 "
+"GPU Platform 에서는 분산 연산 및 학습 작업을 지원하기 위해 클러스터 연산 세션을 지원하고 있습니다. 클러스터 세션은 여러 "
 "개의 컨테이너로 구성되며, 각 컨테이너는 여러 Agent 노드에 걸쳐 생성됩니다. 클러스터 세션으로 묶인 컨테이너는 동적으로 생성된"
 " 사설 네트워크를 통해 자동으로 연결되며, 임시 도메인 이름(``main1``, ``sub1``, ``sub2`` 등)이 부여되어 "
 "간단하게 SSH 접속 등의 네트워킹 작업이 가능합니다. 컨테이너 간 SSH 접속을 위해 필요한 비밀 키 및 각종 설정은 모두 "
 "자동으로 생성됩니다."
 
 #: ../../cluster_session/cluster_session.rst:23
-msgid "For detailed about Backend.AI cluster session, refer to the following."
-msgstr "Backend.AI 클러스터 세션의 상세 특징은 다음을 참고 하십시오."
+msgid "For detailed about GPU Platform cluster session, refer to the following."
+msgstr "GPU Platform 클러스터 세션의 상세 특징은 다음을 참고 하십시오."
 
 #: ../../cluster_session/cluster_session.rst:28
 msgid ""
@@ -227,8 +227,8 @@ msgstr ""
 "``BACKENDAI_SESSION_ID`` 와 같습니다."
 
 #: ../../cluster_session/cluster_session.rst:88
-msgid "Use of Backend.AI cluster compute session"
-msgstr "Backend.AI 클러스터 연산 세션의 사용"
+msgid "Use of GPU Platform cluster compute session"
+msgstr "GPU Platform 클러스터 연산 세션의 사용"
 
 #: ../../cluster_session/cluster_session.rst:90
 msgid ""
@@ -318,20 +318,20 @@ msgstr ""
 
 #: ../../cluster_session/cluster_session.rst:148
 msgid ""
-"In this way, Backend.AI makes it easy to create cluster computing "
+"In this way, GPU Platform makes it easy to create cluster computing "
 "sessions. In order to execute distributed learning and calculation "
 "through a cluster calculation session, a distributed learning module "
 "provided by ML libraries such as TensorFlow/PyTorch, or additional "
 "supporting software such as Horovod, NNI, MLFlow, etc. is required, and "
 "code in a way that can utilize the software. Must be written carefully. "
-"Backend.AI provides a kernel image containing the software required for "
+"GPU Platform provides a kernel image containing the software required for "
 "distributed learning, so you can use that image to create a nice "
 "distributed learning algorithm."
 msgstr ""
-"이런 방식으로 Backend.AI 에서는 클러스터 연산 세션을 손쉽게 생성할 수 있습니다. 클러스터 연산 세션을 통해 분산 학습 및"
+"이런 방식으로 GPU Platform 에서는 클러스터 연산 세션을 손쉽게 생성할 수 있습니다. 클러스터 연산 세션을 통해 분산 학습 및"
 " 연산을 실행하기 위해서는, TensorFlow/PyTorch 등 ML 라이브러리에서 제공하는 분산 학습용 모듈이나 Horovod,"
 " NNI, MLFlow 등과 같은 별도의 지원 소프트웨어가 필요하고, 해당 소프트웨어을 활용할 수 있는 방식으로 코드를 주의깊게 "
-"작성해야 합니다. Backend.AI에서는 분산 학습에 필요한 소프트웨어를 포함하는 커널 이미지를 제공하고 있으므로, 해당 이미지를"
+"작성해야 합니다. GPU Platform에서는 분산 학습에 필요한 소프트웨어를 포함하는 커널 이미지를 제공하고 있으므로, 해당 이미지를"
 " 사용해서 멋진 분산 학습 알고리즘을 만들어 보실 수 있습니다."
 
 #: ../../cluster_session/cluster_session.rst:158

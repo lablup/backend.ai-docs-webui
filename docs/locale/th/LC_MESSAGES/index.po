@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the GPU Platform Web-UI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Project-Id-Version: GPU Platform Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-23 23:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -23,20 +23,20 @@ msgid "Table of Contents"
 msgstr "สารบัญ"
 
 #: ../../index.rst:7
-msgid "Backend.AI Web-UI User Guide"
-msgstr "คู่มือผู้ใช้ Web-UI ของ Backend.AI"
+msgid "GPU Platform Web-UI User Guide"
+msgstr "คู่มือผู้ใช้ Web-UI ของ GPU Platform"
 
 #: ../../index.rst:9
-msgid "User's guide for the Backend.AI Web-UI."
-msgstr "คู่มือผู้ใช้สำหรับ Backend.AI Web-UI."
+msgid "User's guide for the GPU Platform Web-UI."
+msgstr "คู่มือผู้ใช้สำหรับ GPU Platform Web-UI."
 
 #: ../../index.rst:11
 msgid ""
-"Backend.AI Web-UI is a web or app that provides easy-to-use GUI interface to"
-" work with the Backend.AI server."
+"GPU Platform Web-UI is a web or app that provides easy-to-use GUI interface to"
+" work with the GPU Platform server."
 msgstr ""
-"Backend.AI Web-UI เป็นเว็บหรือแอปที่มีอินเทอร์เฟซ GUI "
-"ที่ใช้งานง่ายเพื่อทำงานกับเซิร์ฟเวอร์ Backend.AI"
+"GPU Platform Web-UI เป็นเว็บหรือแอปที่มีอินเทอร์เฟซ GUI "
+"ที่ใช้งานง่ายเพื่อทำงานกับเซิร์ฟเวอร์ GPU Platform"
 
 #: ../../index.rst:14
 msgid "The latest versions of this document can be found from sites below:"

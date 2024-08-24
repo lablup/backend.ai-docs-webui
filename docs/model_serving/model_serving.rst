@@ -10,7 +10,7 @@ Model Service
 .. note::
    This feature is supported in Enterprise version only.
 
-Backend.AI not only facilitates the construction of development environments
+GPU Platform not only facilitates the construction of development environments
 and resource management during the model training phase, but also supports
 the model service feature from version 23.09 onwards. This feature allows
 end-users (such as AI-based mobile apps and web service backends) to make
@@ -83,7 +83,7 @@ Creating a Model Definition File
       regard it as ``model-definition.yml`` or ``model-definition.yaml``.
 
 The model definition file contains the configuration information
-required by the Backend.AI system to automatically start, initialize,
+required by the GPU Platform system to automatically start, initialize,
 and scale the inference session. It is stored in the model type folder
 independently from the container image that contains the inference
 service engine. This allows the engine to serve different models based on
@@ -138,7 +138,7 @@ The model definition file follows the following format:
       - ``max_retries``: Specify the number of retries to be made if there is no response after a request is sent to the service during model serving.
 
 
-**Description for service action supported in Backend.AI Model serving**
+**Description for service action supported in GPU Platform Model serving**
 
 .. _prestart_actions:
 
@@ -269,7 +269,7 @@ resources that can be allocated to the model service.
    It is useful when you trying to create a model service using runtime variant. some runtime variant needs
    certain environment variable setting before execution.
 
-Before creating model service, Backend.AI supports validation feature to check
+Before creating model service, GPU Platform supports validation feature to check
 whether execution is available or not(due to any errors during execution).
 By clicking the 'Validate' button at the bottom-left of the service launcher,
 a new popup for listening to validation events will pop up. In the popup modal,
@@ -403,7 +403,7 @@ Terminating Model Service
 
 The model service periodically runs a scheduler to adjust the routing
 count to match the desired session count. However, this puts a burden on
-the Backend.AI scheduler. Therefore, it is recommended to terminate the
+the GPU Platform scheduler. Therefore, it is recommended to terminate the
 model service if it is no longer needed. To terminate the model service,
 click on the 'trash' button in the Control column. A modal will appear asking
 for confirmation to terminate the model service. Clicking ``OK``

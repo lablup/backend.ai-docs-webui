@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the GPU Platform Web-UI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Project-Id-Version: GPU Platform Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-23 23:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -28,7 +28,7 @@ msgstr "การใช้ GPU เสมือนและการจัดส�
 
 #: ../../appendix/appendix.rst:8
 msgid ""
-"Backend.AI supports GPU virtualization technology which allows single "
+"GPU Platform supports GPU virtualization technology which allows single "
 "physical GPU can be divided and shared by multiple users simultaneously. "
 "Therefore, if you want to execute a task that does not require much GPU "
 "computation capability, you can create a compute session by allocating a "
@@ -40,7 +40,7 @@ msgid ""
 " can utilize the streaming multiprocessor (SM) and GPU memory equivalent to "
 "0.2 physical GPU."
 msgstr ""
-"Backend.AI รองรับเทคโนโลยีการทำเวอร์ชัน GPU ซึ่งอนุญาตให้ GPU "
+"GPU Platform รองรับเทคโนโลยีการทำเวอร์ชัน GPU ซึ่งอนุญาตให้ GPU "
 "ทางกายภาพเพียงตัวเดียวสามารถถูกแบ่งและแชร์โดยผู้ใช้หลายคนในเวลาเดียวกัน "
 "ดังนั้น หากคุณต้องการเรียกใช้งานที่ไม่ต้องใช้ความสามารถในการคำนวณ GPU มากนัก"
 " คุณสามารถสร้างเซสชันการคำนวณโดยการจัดสรรส่วนหนึ่งของ GPU จำนวนทรัพยากร GPU "
@@ -141,7 +141,7 @@ msgstr "การกำหนดตารางงานอัตโนมัต
 
 #: ../../appendix/appendix.rst:76
 msgid ""
-"Backend.AI server has a built-in self-developed task scheduler. It "
+"GPU Platform server has a built-in self-developed task scheduler. It "
 "automatically checks the available resources of all worker nodes and "
 "delegates the request to create a compute session to the worker that meets "
 "the user's resource request. In addition, when resources are insufficient, "
@@ -149,7 +149,7 @@ msgid ""
 "state in the job queue. Later, when the resources become available again, "
 "the pended request is resumed to create a compute session."
 msgstr ""
-"เซิร์ฟเวอร์ Backend.AI มีตัวจัดตารางงานที่พัฒนาขึ้นเองในตัว "
+"เซิร์ฟเวอร์ GPU Platform มีตัวจัดตารางงานที่พัฒนาขึ้นเองในตัว "
 "มันจะตรวจสอบทรัพยากรที่มีอยู่ของโหนดผู้ทำงานทั้งหมดโดยอัตโนมัติและมอบหมายคำขอในการสร้างเซสชันการคอมพิวเตอร์ไปยังผู้ทำงานที่ตรงตามคำขอทรัพยากรของผู้ใช้"
 " นอกจากนี้ เมื่อทรัพยากรไม่เพียงพอ "
 "คำขอของผู้ใช้ในการสร้างเซสชันการคอมพิวเตอร์จะถูกลงทะเบียนในสถานะ PENDING "
@@ -214,12 +214,12 @@ msgstr "การสนับสนุนคอนเทนเนอร์กา
 
 #: ../../appendix/appendix.rst:123
 msgid ""
-"Backend.AI provides variaous pre-built ML and HPC kernel images. Therefore, "
+"GPU Platform provides variaous pre-built ML and HPC kernel images. Therefore, "
 "users can immediately utilize major libraries and packages without having to"
 " install packages by themselves. Here, we'll walk through an example that "
 "takes advantage of multiple versions of the multiple ML library immediately."
 msgstr ""
-"Backend.AI มีภาพเคอร์เนล ML และ HPC ที่สร้างไว้ล่วงหน้าหลายแบบ "
+"GPU Platform มีภาพเคอร์เนล ML และ HPC ที่สร้างไว้ล่วงหน้าหลายแบบ "
 "ผู้ใช้จึงสามารถใช้ห้องสมุดและแพ็คเกจหลักได้ทันทีโดยไม่ต้องติดตั้งแพ็คเกจด้วยตนเอง"
 " ที่นี่เราจะแสดงตัวอย่างที่ใช้ประโยชน์จากหลายเวอร์ชันของห้องสมุด ML "
 "หลายตัวทันที"
@@ -276,11 +276,11 @@ msgstr ""
 #: ../../appendix/appendix.rst:172
 msgid ""
 "Like this, you can utilize various versions of major libraries such as "
-"TensorFlow and PyTorch through Backend.AI without unnecessary effort to "
+"TensorFlow and PyTorch through GPU Platform without unnecessary effort to "
 "install them."
 msgstr ""
 "เช่นนี้ คุณสามารถใช้เวอร์ชันต่าง ๆ ของไลบรารีหลัก เช่น TensorFlow และ "
-"PyTorch ผ่าน Backend.AI โดยไม่ต้องพยายามติดตั้งโดยไม่จำเป็น"
+"PyTorch ผ่าน GPU Platform โดยไม่ต้องพยายามติดตั้งโดยไม่จำเป็น"
 
 #: ../../appendix/appendix.rst:177
 msgid "Convert a compute session to a new private Docker image"
@@ -365,16 +365,16 @@ msgid "A new compute session will be created using the new Docker image."
 msgstr "เซสชั่นการคอมพิวเตอร์ใหม่จะถูกสร้างขึ้นโดยใช้ภาพ Docker ใหม่"
 
 #: ../../appendix/appendix.rst:217
-msgid "Backend.AI Server Installation Guide"
-msgstr "คู่มือการติดตั้งเซิร์ฟเวอร์ Backend.AI"
+msgid "GPU Platform Server Installation Guide"
+msgstr "คู่มือการติดตั้งเซิร์ฟเวอร์ GPU Platform"
 
 #: ../../appendix/appendix.rst:219
 msgid ""
-"For Backend.AI Server daemons/services, following hardware specification "
+"For GPU Platform Server daemons/services, following hardware specification "
 "should be met. For optimal performance, just double the amount of each "
 "resources."
 msgstr ""
-"สำหรับบริการ/daemon ของ Backend.AI Server ควรมีข้อกำหนดฮาร์ดแวร์ดังต่อไปนี้ "
+"สำหรับบริการ/daemon ของ GPU Platform Server ควรมีข้อกำหนดฮาร์ดแวร์ดังต่อไปนี้ "
 "สำหรับประสิทธิภาพที่ดีที่สุด ให้เพิ่มปริมาณของทรัพยากรแต่ละอย่างเป็นสองเท่า"
 
 #: ../../appendix/appendix.rst:222
@@ -457,17 +457,17 @@ msgstr "Etcd: docker (≥19.03), docker-compose (≥1.24)"
 
 #: ../../appendix/appendix.rst:244
 msgid ""
-"For Enterprise version, Backend.AI server daemons are installed by Lablup "
+"For Enterprise version, GPU Platform server daemons are installed by Lablup "
 "support team and following materials/services are provided after initial "
 "installation:"
 msgstr ""
-"สำหรับเวอร์ชัน Enterprise, daemon เซิร์ฟเวอร์ Backend.AI "
+"สำหรับเวอร์ชัน Enterprise, daemon เซิร์ฟเวอร์ GPU Platform "
 "จะถูกติดตั้งโดยทีมสนับสนุนของ Lablup "
 "และเอกสาร/บริการต่อไปนี้จะถูกจัดเตรียมหลังจากการติดตั้งเริ่มต้น:"
 
 #: ../../appendix/appendix.rst:246
-msgid "DVD 1 (includes Backend.AI packages)"
-msgstr "DVD 1 (รวมแพ็คเกจ Backend.AI)"
+msgid "DVD 1 (includes GPU Platform packages)"
+msgstr "DVD 1 (รวมแพ็คเกจ GPU Platform)"
 
 #: ../../appendix/appendix.rst:247
 msgid "User GUI Guide manual"
@@ -513,16 +513,16 @@ msgstr "ตัวอย่างการรวมระบบ"
 msgid ""
 "In this section, we would like to introduce several common examples of "
 "applications, toolkits, and machine learning tools that can be utilized on "
-"the Backend.AI platform. Here, we will provide explanations of the basic "
-"usage of each tool and how to set them up in the Backend.AI environment, "
+"the GPU Platform platform. Here, we will provide explanations of the basic "
+"usage of each tool and how to set them up in the GPU Platform environment, "
 "along with simple examples. We hope this will help you choose and utilize "
 "the tools you need for your projects."
 msgstr ""
 "ในส่วนนี้เราต้องการแนะนำตัวอย่างทั่วไปหลาย ๆ ตัวอย่างของแอปพลิเคชัน "
 "ชุดเครื่องมือ "
-"และเครื่องมือการเรียนรู้ของเครื่องที่สามารถใช้งานได้บนแพลตฟอร์ม Backend.AI "
+"และเครื่องมือการเรียนรู้ของเครื่องที่สามารถใช้งานได้บนแพลตฟอร์ม GPU Platform "
 "ที่นี่เราจะให้คำอธิบายเกี่ยวกับการใช้งานพื้นฐานของแต่ละเครื่องมือและวิธีการตั้งค่าในสภาพแวดล้อมของ"
-" Backend.AI พร้อมกับตัวอย่างง่าย ๆ "
+" GPU Platform พร้อมกับตัวอย่างง่าย ๆ "
 "หวังว่าสิ่งนี้จะช่วยให้คุณเลือกและใช้เครื่องมือที่คุณต้องการสำหรับโครงการของคุณ"
 
 #: ../../appendix/appendix.rst:272
@@ -531,13 +531,13 @@ msgid ""
 "versions of the programs, so the usage may vary in future updates. "
 "Therefore, please use this document for reference and also check the latest "
 "official documentation for any changes. Now, let's take a look at the "
-"powerful tools available for use on Backend.AI one by one. We hope this "
+"powerful tools available for use on GPU Platform one by one. We hope this "
 "section will serve as a useful guide for your research and development."
 msgstr ""
 "โปรดทราบว่าเนื้อหาที่ครอบคลุมในคู่มือนี้อิงตามเวอร์ชันเฉพาะของโปรแกรม "
 "ดังนั้นการใช้งานอาจแตกต่างกันในอัปเดตในอนาคต "
 "ดังนั้นโปรดใช้เอกสารนี้เป็นข้อมูลอ้างอิงและตรวจสอบเอกสารอย่างเป็นทางการล่าสุดสำหรับการเปลี่ยนแปลง"
-" ตอนนี้เรามาดูเครื่องมือที่มีพลังที่สามารถใช้ได้ใน Backend.AI ทีละอย่าง "
+" ตอนนี้เรามาดูเครื่องมือที่มีพลังที่สามารถใช้ได้ใน GPU Platform ทีละอย่าง "
 "เราหวังว่าหมวดหมู่นี้จะเป็นคู่มือที่มีประโยชน์สำหรับการวิจัยและพัฒนาของคุณ"
 
 #: ../../appendix/appendix.rst:279
@@ -546,15 +546,15 @@ msgstr "การใช้ MLFlow"
 
 #: ../../appendix/appendix.rst:281
 msgid ""
-"There are many executable images in Backend.AI supports MLFlow and MLFlow UI"
+"There are many executable images in GPU Platform supports MLFlow and MLFlow UI"
 " as built-in app. But in order to execute it, you may need extra procedures."
 " By following instructions below, you will be able to track parameters and "
-"result at Backend.AI as if you are using it on your local environment."
+"result at GPU Platform as if you are using it on your local environment."
 msgstr ""
-"มีภาพที่สามารถทำงานได้มากมายใน Backend.AI รองรับ MLFlow และ MLFlow UI "
+"มีภาพที่สามารถทำงานได้มากมายใน GPU Platform รองรับ MLFlow และ MLFlow UI "
 "เป็นแอปที่ถูกสร้างขึ้นมา แต่เพื่อที่จะทำการใช้งานมัน "
 "คุณอาจจำเป็นต้องทำตามขั้นตอนเพิ่มเติม โดยการทำตามคำแนะนำด้านล่าง "
-"คุณจะสามารถติดตามพารามิเตอร์และผลลัพธ์ที่ Backend.AI "
+"คุณจะสามารถติดตามพารามิเตอร์และผลลัพธ์ที่ GPU Platform "
 "เหมือนกับว่าคุณกำลังใช้งานอยู่ในสภาพแวดล้อมในเครื่องของคุณ"
 
 #: ../../appendix/appendix.rst:287

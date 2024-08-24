@@ -19,9 +19,9 @@ from datetime import datetime
 
 # -- Project information -----------------------------------------------------
 
-project = "Backend.AI Web-UI User Guide"
+project = "GPU Platform Web-UI User Guide"
 copyright = f"{datetime.now().year}, Lablup Inc."
-author = "Lablup Inc."
+author = ""
 version = "24.03"
 release = "24.03"
 
@@ -82,8 +82,8 @@ latex_engine = "xelatex"
 latex_use_xindy = False
 # resizing it with includegraphics doesn't work properly.
 # just resize it manually instead.
-latex_logo = "_static/backendai_logo.png"
-latex_additional_files = ["_static/lablup_logo.png"]
+# latex_logo = "_static/backendai_logo.png"
+# latex_additional_files = ["_static/lablup_logo.png"]
 latex_elements = {
     "papersize": "a4paper",
     "pointsize": "12pt",
@@ -124,13 +124,13 @@ latex_elements = {
         \begin{titlepage}
             \centering
             \vspace*{15mm}  %% * is used to give space from top
-            \sphinxlogo
-            \textbf{\Huge Backend.AI Web-UI\\User's Guide}\par
+            % \sphinxlogo
+            \textbf{\Huge GPU Platform Web-UI\\User's Guide}\par
             {\LARGE (\version)}\par
             \vspace{25mm}
             \textbf{\LARGE \@author}\par
             \vspace{10mm}
-            \includegraphics[scale=0.1]{lablup_logo}
+            % \includegraphics[scale=0.1]{lablup_logo}
         \end{titlepage}
         \makeatother
     """,
@@ -143,7 +143,7 @@ latex_documents = [
     (
         master_doc,
         "backendaiwebuiuserguide.tex",
-        "Backend.AI Web-UI User's Guide",
+        "GPU Platform Web-UI User's Guide",
         author,
         "manual",
     ),

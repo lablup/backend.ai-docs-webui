@@ -10,7 +10,7 @@ will disappear when the compute session is terminated. This is because compute
 sessions are dynamically created and deleted based on the container. To preserve
 the data inside the container independent of the life cycle of the container, a
 separate host folder must be mounted into the container, and then files must be
-created within the mounted folder. Backend.AI provides a function to mount
+created within the mounted folder. GPU Platform provides a function to mount
 storage folders when creating a compute session.
 
 Let's go to the Sessions page and click the START button to create a new compute
@@ -115,7 +115,7 @@ Install packages via Homebrew
 
 Package managers like Ubuntu ``apt`` or CentOS ``yum`` usually require the
 ``root`` permission. For security reasons, ``sudo`` and ``root`` accesses are
-blocked by default in Backend.AI's compute session (it may be allowed depending
+blocked by default in GPU Platform's compute session (it may be allowed depending
 on the configuration), so we recommend to use `Homebrew on Linux
 <https://docs.brew.sh/Homebrew-on-Linux>`_ which does not require ``sudo``.
 

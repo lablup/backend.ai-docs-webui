@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2020, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Console
+# This file is distributed under the same license as the GPU Platform Console
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Console User Guide 19.09\n"
+"Project-Id-Version: GPU Platform Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-13 11:09+0900\n"
 "PO-Revision-Date: 2023-03-20 19:09+0900\n"
@@ -25,10 +25,10 @@ msgstr "연산 세션에 SSH/SFTP 접속하기 (Linux/Mac/Visual Studio Code)"
 
 #: ../../sftp_to_container/sftp_to_container.rst:7
 msgid ""
-"Backend.AI supports SSH/SFTP connection to the created compute sessions "
+"GPU Platform supports SSH/SFTP connection to the created compute sessions "
 "(containers). In this section, we will learn how to do it."
 msgstr ""
-"Backend.AI는 생성된 연산 세션(컨테이너)에 SSH/SFTP 접속을 지원하고 있습니다. 이번 절에서는 그 방법에 관해 "
+"GPU Platform는 생성된 연산 세션(컨테이너)에 SSH/SFTP 접속을 지원하고 있습니다. 이번 절에서는 그 방법에 관해 "
 "알아봅니다."
 
 #: ../../sftp_to_container/sftp_to_container.rst:11
@@ -48,13 +48,13 @@ msgid ""
 "You can also download the app from https://github.com/lablup/backend.ai-"
 "webui/releases. Make sure to download the compatible version of the Web-"
 "UI in this case. You can check the Web-UI version by clicking on the "
-"\"About Backend.AI\" sub-menu located in the preference menu on the "
+"\"About GPU Platform\" sub-menu located in the preference menu on the "
 "upper-right side of the GUI."
 msgstr ""
 "데스크탑 앱은 https://github.com/lablup/backend.ai-webui/releases 에서도 수동 다운로드 할"
-" 수 있습니다. 이 경우에는 Backend.AI 클러스터 서버 버전과 호환되는 Web-UI 앱을 받아야 최상의 호환성을 유지할 수 "
-"있습니다. Backend.AI 클러스터의 버전은 GUI 우측 상단에 있는 설정 아이콘을 클릭하면 나오는 “About "
-"Backend.AI” 메뉴를 클릭하여 확인할 수 있습니다."
+" 수 있습니다. 이 경우에는 GPU Platform 클러스터 서버 버전과 호환되는 Web-UI 앱을 받아야 최상의 호환성을 유지할 수 "
+"있습니다. GPU Platform 클러스터의 버전은 GUI 우측 상단에 있는 설정 아이콘을 클릭하면 나오는 “About "
+"GPU Platform” 메뉴를 클릭하여 확인할 수 있습니다."
 
 #: ../../sftp_to_container/sftp_to_container.rst:44
 msgid "For Linux / Mac"
@@ -183,7 +183,7 @@ msgstr "Windows / FileZilla 사용 환경"
 
 #: ../../sftp_to_container/sftp_to_container.rst:122
 msgid ""
-"Backend.AI Web-UI app supports OpenSSH-based public key connection "
+"GPU Platform Web-UI app supports OpenSSH-based public key connection "
 "(RSA2048). To access with a client such as PuTTY on Windows, a private "
 "key must be converted into a ``ppk`` file through a program such as "
 "PuTTYgen. You can refer to the following link for the conversion method: "
@@ -191,7 +191,7 @@ msgid ""
 "section will describe how to connect to SFTP through FileZilla client on "
 "Windows."
 msgstr ""
-"Backend.AI Web-UI 앱에서 지원하는 SSH/SFTP 접속 방법은 OpenSSH 기반 public key "
+"GPU Platform Web-UI 앱에서 지원하는 SSH/SFTP 접속 방법은 OpenSSH 기반 public key "
 "접속(RSA2048)입니다. 윈도우즈의 PuTTY 등 클라이언트를 통해 접속하려면 PuTTYgen 등과 같은 프로그램으로 SSH "
 "private key를 ppk 파일로 변환하는 작업이 추가로 합니다. 변환 방법은 다음 링크를 참조 할 수 있습니다: "
 "https://wiki.filezilla-project.org/Howto. 보다 쉬운 설명을 위해 이번 절에서는 Windows에서 "
@@ -272,12 +272,12 @@ msgstr ""
 
 #: ../../sftp_to_container/sftp_to_container.rst:173
 msgid ""
-"Backend.AI supports to develop with the local Visual Studio Code through "
+"GPU Platform supports to develop with the local Visual Studio Code through "
 "SSH/SFTP connection to a compute session. Once connected, you can "
 "interact with files and folders anywhere on the compute session. In this "
 "section, we will learn how to do it."
 msgstr ""
-"로컬 Visual Studio Code에서 SSH/SFTP를 통해 Backend.AI 연산 세션에 접속하여 원격 개발할 수도 "
+"로컬 Visual Studio Code에서 SSH/SFTP를 통해 GPU Platform 연산 세션에 접속하여 원격 개발할 수도 "
 "있습니다. 한번 연결을 하면, 연산 세션 상에 존재하는 모든 파일과 폴더를 활용하여 작업할 수 있습니다. 이번 절에서는 그 방법에 "
 "관해 알아봅니다."
 
@@ -379,8 +379,8 @@ msgid "open remote host file directory"
 msgstr ""
 
 #: ../../sftp_to_container/sftp_to_container.rst:241
-msgid "Establish SSH connection with Backend.AI client package"
-msgstr "Backend.AI Client 패키지를 통해 SSH 접속하는 방법"
+msgid "Establish SSH connection with GPU Platform client package"
+msgstr "GPU Platform Client 패키지를 통해 SSH 접속하는 방법"
 
 #: ../../sftp_to_container/sftp_to_container.rst:243
 msgid ""
@@ -395,16 +395,16 @@ msgid ""
 "accessed directly from the outside. Therefore, in order to establish an "
 "SSH or sFTP connection to a compute session, a local proxy that creates a"
 " tunnel needs to be launched to relay the connection between the user and"
-" the session. Using the Backend.AI Client package, this process is "
+" the session. Using the GPU Platform Client package, this process is "
 "relatively simple to configure."
 msgstr ""
 "일반적으로 연산 세션이 생성된 GPU 노드는 외부에서 직접 접속이 불가능합니다. 따라서 연산 세션에 SSH 또는 sFTP 접속을 "
-"하기 위해서는 사용자 머신과 GPU 노드에 생성된 연산 세션 사이의 터널을 중계하는 로컬 프록시가 필요합니다. Backend.AI "
+"하기 위해서는 사용자 머신과 GPU 노드에 생성된 연산 세션 사이의 터널을 중계하는 로컬 프록시가 필요합니다. GPU Platform "
 "Client 패키지를 활용하면 이 과정을 비교적 간단하게 설정할 수 있습니다."
 
 #: ../../sftp_to_container/sftp_to_container.rst:253
-msgid "Prepare Backend.AI Client package"
-msgstr "Backend.AI Client 패키지 사용 환경 구성"
+msgid "Prepare GPU Platform Client package"
+msgstr "GPU Platform Client 패키지 사용 환경 구성"
 
 #: ../../sftp_to_container/sftp_to_container.rst:256
 msgid "Prepare with Docker image"
@@ -412,19 +412,19 @@ msgstr "Docker image를 이용한 구성"
 
 #: ../../sftp_to_container/sftp_to_container.rst:258
 msgid ""
-"The Backend.AI Client package is available as a Docker image. You can "
+"The GPU Platform Client package is available as a Docker image. You can "
 "pull the image from the Docker Hub with the following command:"
 msgstr ""
-"Backend.AI Client 패키지를 도커 이미지로 다운로드할 수 있습니다. 다음 명령을 실행하여 Docker Hub에서 "
+"GPU Platform Client 패키지를 도커 이미지로 다운로드할 수 있습니다. 다음 명령을 실행하여 Docker Hub에서 "
 "이미지를 다운로드할 수 있습니다:"
 
 #: ../../sftp_to_container/sftp_to_container.rst:268
 msgid ""
-"The version of Backend.AI server can be found in \"About Backend.AI\" "
+"The version of GPU Platform server can be found in \"About GPU Platform\" "
 "menu that appears when you click on the person icon on the top right "
 "corner of the Web UI."
 msgstr ""
-"Backend.AI 서버 버전은 Web UI의 우상단 사람 아이콘을 클릭하면 나오는 “Backend.AI에 대하여”에서 확인할 수 "
+"GPU Platform 서버 버전은 Web UI의 우상단 사람 아이콘을 클릭하면 나오는 “GPU Platform에 대하여”에서 확인할 수 "
 "있습니다."
 
 #: ../../sftp_to_container/sftp_to_container.rst:275
@@ -444,19 +444,19 @@ msgstr "Python 가상환경을 통해 호스트에서 사용 환경 구성하기
 #: ../../sftp_to_container/sftp_to_container.rst:291
 msgid ""
 "If you cannot or do not want to use Docker, you can install the "
-"Backend.AI Client package directly on your host machine. Prerequisites "
+"GPU Platform Client package directly on your host machine. Prerequisites "
 "are:"
 msgstr ""
-"Docker를 사용할 수 없거나 사용하고 싶지 않다면, 호스트 머신에 Backend.AI Client 패키지를 직접 설치할 수도 "
+"Docker를 사용할 수 없거나 사용하고 싶지 않다면, 호스트 머신에 GPU Platform Client 패키지를 직접 설치할 수도 "
 "있습니다. 사전 요구 사항은 다음과 같습니다:"
 
 #: ../../sftp_to_container/sftp_to_container.rst:294
 msgid ""
-"The required version of Python may vary depending on the Backend.AI "
+"The required version of Python may vary depending on the GPU Platform "
 "Client version. You can check the compability matrix at "
 "https://github.com/lablup/backend.ai#python-version-compatibility."
 msgstr ""
-"Python 버전은 Backend.AI Client 버전에 따라 바뀝니다. "
+"Python 버전은 GPU Platform Client 버전에 따라 바뀝니다. "
 "https://github.com/lablup/backend.ai#python-version-compatibility 페이지에서 "
 "호환 매트릭스를 확일할 수 있습니다."
 
@@ -521,13 +521,13 @@ msgstr ""
 
 #: ../../sftp_to_container/sftp_to_container.rst:345
 msgid ""
-"Now, install the Backend.AI Client package. Install the client package "
+"Now, install the GPU Platform Client package. Install the client package "
 "according to the server version. Here, we assume that the version is "
 "23.09. If an installation-related error occurs with the ``netifaces`` "
 "package, you may need to lower the versions of ``pip`` and "
 "``setuptools``. Check if the ``backend.ai`` command is available."
 msgstr ""
-"Backend.AI Client 패키지를 설치합니다. 서버팜에 설치된 서버 버전에 맞추어 클라이언트 패키지를 설치합니다. 여기서는 "
+"GPU Platform Client 패키지를 설치합니다. 서버팜에 설치된 서버 버전에 맞추어 클라이언트 패키지를 설치합니다. 여기서는 "
 "23.09 버전이라고 가정합니다. 만약, ``netifaces`` 라는 패키지 설치 관련 오류가 발생하는 경우, ``pip`` 과 "
 "``setuptools`` 의 버전을 낮추어야할 수도 있습니다."
 

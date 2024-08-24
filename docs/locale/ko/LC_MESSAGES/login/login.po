@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2020, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Console
+# This file is distributed under the same license as the GPU Platform Console
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Console User Guide 19.09\n"
+"Project-Id-Version: GPU Platform Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-13 11:09+0900\n"
 "PO-Revision-Date: 2021-03-02 18:31+0900\n"
@@ -79,10 +79,10 @@ msgstr "로그인"
 #: ../../login/login.rst:41
 msgid ""
 "Enter your ID and password and press the LOGIN button. In API ENDPOINT, "
-"the URL of Backend.AI Webserver, which relays the request to the Manager,"
+"the URL of GPU Platform Webserver, which relays the request to the Manager,"
 " should be entered."
 msgstr ""
-"ID와 암호를 입력하고 LOGIN 버튼을 눌러주세요. ENDPOINT에는 Manager로의 연결을 중계하는 Backend.AI "
+"ID와 암호를 입력하고 LOGIN 버튼을 눌러주세요. ENDPOINT에는 Manager로의 연결을 중계하는 GPU Platform "
 "Webserver가 작동하고 있는 URL을 넣어주시면 됩니다."
 
 #: ../../login/login.rst:46
@@ -93,11 +93,11 @@ msgstr "Webserver의 설치 및 설정 환경에 따라, Endpoint가 고정되�
 
 #: ../../login/login.rst:50
 msgid ""
-"Backend.AI keeps the user's password securely through a one-way hash. "
+"GPU Platform keeps the user's password securely through a one-way hash. "
 "BCrypt, the default password hash of BSD, is used, so even the server "
 "admins cannot know the user's password."
 msgstr ""
-"Backend.AI 는 사용자의 비밀번호를 단방향 해시를 통해 안전하게 보관하고 있습니다. BSD 의 기본 암호 해시인 BCrypt"
+"GPU Platform 는 사용자의 비밀번호를 단방향 해시를 통해 안전하게 보관하고 있습니다. BSD 의 기본 암호 해시인 BCrypt"
 " 를 사용하고 있어, 서버 관리자도 사용자의 비밀번호를 알 수 없습니다."
 
 #: ../../login/login.rst:54

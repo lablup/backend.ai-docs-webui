@@ -2,7 +2,7 @@
 Compute Sessions
 ================
 
-The most visited pages in the Backend.AI Web-UI would be the Sessions and
+The most visited pages in the GPU Platform Web-UI would be the Sessions and
 Data & Storage pages. Here, you will learn how to query and
 create container-based compute sessions and utilize various web applications on
 the Sessions page.
@@ -19,7 +19,7 @@ Sessions page lets you start new sessions or use and manage existing running ses
 
 .. TODO: Please change the link to 23.09. not stable.
 
-Click the START button to start a new compute session. From version 24.03, Backend.AI offers an improved 
+Click the START button to start a new compute session. From version 24.03, GPU Platform offers an improved 
 version of the session launcher (NEO). If you want to use the previous dialog-style session launcher, press
 the Classic button in the notification and create your session. For instructions on how to use it, please 
 refer to the following `link <https://webui.docs.backend.ai/en/23.09_a/sessions_all/sessions_all.html>`_.
@@ -38,7 +38,7 @@ And you can set the session name, which is optional.
 
   - Interactive compute session
 
-    - This type has been supported from the initial version of Backend.AI.
+    - This type has been supported from the initial version of GPU Platform.
     - The compute session is used in a way that the user interacts with after
       creating a session without specifying a pre-defined execution script or
       command.
@@ -47,7 +47,7 @@ And you can set the session name, which is optional.
 
   - Batch compute session
 
-    - This type of session is supported via GUI from Backend.AI 22.03 (CLI has
+    - This type of session is supported via GUI from GPU Platform 22.03 (CLI has
       supported the batch-type session before the 22.03).
     - Pre-define the script that will be executed when a compute session is
       ready.
@@ -134,11 +134,11 @@ refer to the following.
     value greater than 1, multiple sessions corresponding to the resource set above
     are created. If there are not enough resources available, requests to create
     sessions that cannot be created are put on the waiting queue.
-  * Cluster mode: Backend.AI supports cluster mode, which allows you to create
+  * Cluster mode: GPU Platform supports cluster mode, which allows you to create
     multiple compute sessions at once. For more information, see the section
-    :ref:`Overview of Backend.AI cluster compute session<backendai-cluster-compute-session>`.
+    :ref:`Overview of GPU Platform cluster compute session<backendai-cluster-compute-session>`.
   
-* High-Performance Computing Optimizations: Backend.AI provides configuring values
+* High-Performance Computing Optimizations: GPU Platform provides configuring values
   related to HPC Optimizations. For more information, See the section
   :ref:`Optimizing Accelerated Computing<optimizing-accelerated-computing>`.
 
@@ -221,7 +221,7 @@ and used resources, session starting time, etc.
 .. image:: session_status_detail_information.png
    :align: center
 
-Backend.AI provides detailed status information for ``PENDING``, ``TERMINATED``,
+GPU Platform provides detailed status information for ``PENDING``, ``TERMINATED``,
 or ``CANCELLED`` sessions. In the case of ``PENDING`` sessions, in particular,
 you can check why the session is not scheduled and stuck in the ``PENDING``
 status. You can see the details by clicking the question mark icon right next
@@ -244,7 +244,7 @@ accessible resources.
 
 .. note::
    If the GPU resource is marked as FGPU, this means that the server is serving
-   the GPU resources in a virtualized form. Backend.AI supports GPU
+   the GPU resources in a virtualized form. GPU Platform supports GPU
    virtualization technology that a single physical GPU can be divided and
    shared by multiple users for better utilization. Therefore, if you want to
    execute a task that does not require a large amount of GPU computation, you
@@ -287,7 +287,7 @@ after the compute session is created.
      for anyone who knows the service URL (and port number) to access and use it. Of
      course, the user must have a network path to access the service.
    * Try preferred port: Without this option checked, a port number for the web service is randomly
-     assigned from the port pool prepared in advance by Backend.AI.
+     assigned from the port pool prepared in advance by GPU Platform.
      If you check this item and enter a specific port number, the entered
      port number will be tried first. However, there is no guarantee that the desired
      port will always be assigned because the port may not exist at all in the port
@@ -312,7 +312,7 @@ In the notebook's file explorer, the ``id_container file`` contains a private
 SSH key. If necessary, you can download it and use it for SSH / SFTP access to
 the container.
 
-Click the NEW button at the top right and select the Notebook for Backend.AI,
+Click the NEW button at the top right and select the Notebook for GPU Platform,
 then the ipynb window appears where you can enter your own code.
 
 .. image:: backendai_notebook_menu.png
@@ -321,7 +321,7 @@ then the ipynb window appears where you can enter your own code.
 
 In this window, you can enter and execute any code you want by using the
 environment that session provides. The code is executed on one of the
-Backend.AI nodes where the compute session is actually created and there is no
+GPU Platform nodes where the compute session is actually created and there is no
 need to configure a separate environment on the local machine.
 
 .. image:: notebook_code_execution.png
@@ -397,7 +397,7 @@ beginning if you want to keep it.
 Idleness Checks
 ---------------
 
-Backend.AI supports three types of inactivity (idleness) criteria for automatic garbage
+GPU Platform supports three types of inactivity (idleness) criteria for automatic garbage
 collection of compute sessions: Max Session Lifetime, Network Idle Timeout, and Utilization
 Checker.
 
@@ -461,7 +461,7 @@ utilization).
 How to add environment variable before creating a session
 ---------------------------------------------------------
 
-To give more convenient workspace for users, Backend.AI supports environment variable setting
+To give more convenient workspace for users, GPU Platform supports environment variable setting
 in session launching. In this feature, you can add any envs such as ``PATH`` by filling out
 variable name and value in environment configuration dialog.
 
@@ -479,7 +479,7 @@ You can input variable name and value in the same line of the input fields.
 How to add preopen ports before creating a session
 --------------------------------------------------
 
-Backend.AI supports preopen ports setting at container startup. When using this feature, there is no need to build
+GPU Platform supports preopen ports setting at container startup. When using this feature, there is no need to build
 separate images when you want to expose the serving port.
 
 To add preopen ports, simply enter multiple values separated by either a comma (,) or a space.
@@ -509,7 +509,7 @@ Save session commit
 
 .. _session-commit:
 
-Backend.AI supports \"Convert Session to Image\" feature from 24.03. Committing a ``RUNNING`` session will save the 
+GPU Platform supports \"Convert Session to Image\" feature from 24.03. Committing a ``RUNNING`` session will save the 
 current state of the session as a new image. Clicking the commit button in the control column of ``RUNNING`` session will
 display a dialog to show the information of the session. After entering the session name, you can convert the session to 
 a new image. The session name must be 4 to 32 characters long and can only contain alphanumeric letters, hyphens (``-``),
@@ -526,7 +526,7 @@ mounted to the container for image commits are considered external resources and
 the final image. Remember that ``/home/work`` is a mount folder (scratch directory), so it is not included.
 
 .. note::
-   Currently, Backend.AI supports "Convert Session to Image" only when the session is in ``INTERACTIVE`` mode.
+   Currently, GPU Platform supports "Convert Session to Image" only when the session is in ``INTERACTIVE`` mode.
    To prevent unexpected error, users may not be able to terminate the session during committing process.
    To stop the ongoing process, check the session, and force-terminate it.
 
@@ -558,8 +558,8 @@ To manually enter the environment name for future session creation, please click
 Optimizing Accelerated Computing
 --------------------------------
 
-Backend.AI provides configuration UI for internal control variable in ``nthreads-var``.
-Backend.AI sets this value equal to the number of session's CPU cores by default,
+GPU Platform provides configuration UI for internal control variable in ``nthreads-var``.
+GPU Platform sets this value equal to the number of session's CPU cores by default,
 which has the effect of accelerating typical high-performance computing workloads.
 Nevertheless, for some multi-thread workloads, multiple processes using OpenMP are used at same time,
 resulting in an abnormally large number of threads and significant performance degradation.

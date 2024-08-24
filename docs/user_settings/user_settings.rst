@@ -42,7 +42,7 @@ refreshing the page, click the leftmost icon at the top of the header.
 Language
 ^^^^^^^^
 
-Set the language displayed on the UI. Currently, Backend.AI supports more than
+Set the language displayed on the UI. Currently, GPU Platform supports more than
 five languages including English and Korean. However, there may be some UI items
 that do not update their language
 before the page is refreshed.
@@ -72,7 +72,7 @@ before the page is refreshed.
 
 .. note::
    Some of translated items may be marked as ``__NOT_TRANSLATED__``, which
-   indicates the item is not yet translated for that language. Since Backend.AI
+   indicates the item is not yet translated for that language. Since GPU Platform
    WebUI is open sourced, anyone who willing to make the translation better
    can contribute: https://github.com/lablup/backend.ai-webui.
 
@@ -82,7 +82,7 @@ SSH Keypair Management
 ^^^^^^^^^^^^^^^^^^^^^^
 
 When using the Web-UI app, you can create SSH/SFTP connection directly to the
-compute session. Once you signed up for Backend.AI, a public keypair is
+compute session. Once you signed up for GPU Platform, a public keypair is
 provided. If you click the button on the right to the SSH Keypair Management
 section, the following dialog appears. Click the copy button on the right to
 copy the existing SSH public key. You can update SSH keypair by clicking
@@ -96,13 +96,13 @@ creation.
    :align: center
 
 .. note::
-   SSH/SFTP connection is available only with the Backend.AI GUI desktop app and is not supported on a web browser.
+   SSH/SFTP connection is available only with the GPU Platform GUI desktop app and is not supported on a web browser.
 
 .. note::
-   Backend.AI uses SSH keypair based on OpenSSH. On Windows, you may convert
+   GPU Platform uses SSH keypair based on OpenSSH. On Windows, you may convert
    this into PPK key.
 
-From 22.09, Backend.AI WebUI supports adding your own ssh keypair in order to provide
+From 22.09, GPU Platform WebUI supports adding your own ssh keypair in order to provide
 flexibility such as accessing to a private repository. In order to add your own ssh keypair, click ``ENTER MANUALLY`` button. Then, you will see
 two text area which corresponds to "public" and "private" key.
 
@@ -126,7 +126,7 @@ It works only in an environment where Internet access is available.
 Auto logout
 ^^^^^^^^^^^
 
-Log out automatically when all Backend.AI Web-UI pages are closed except for
+Log out automatically when all GPU Platform Web-UI pages are closed except for
 pages created to run apps in session (e.g. jupyter notebook, web terminal,
 etc.).
 

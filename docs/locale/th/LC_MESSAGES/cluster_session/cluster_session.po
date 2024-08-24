@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the GPU Platform Web-UI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Project-Id-Version: GPU Platform Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-23 23:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -19,24 +19,24 @@ msgstr ""
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../cluster_session/cluster_session.rst:3
-msgid "Backend.AI Cluster Compute Session"
-msgstr "เซสชันการคอมพิวเตอร์คลัสเตอร์ Backend.AI"
+msgid "GPU Platform Cluster Compute Session"
+msgstr "เซสชันการคอมพิวเตอร์คลัสเตอร์ GPU Platform"
 
 #: ../../cluster_session/cluster_session.rst:8
 msgid ""
-"Cluster compute session feature is supported from Backend.AI server 20.09 or"
+"Cluster compute session feature is supported from GPU Platform server 20.09 or"
 " higher."
 msgstr ""
 "ฟีเจอร์เซสชันการคอมพิวเตอร์คลัสเตอร์ได้รับการสนับสนุนตั้งแต่เซิร์ฟเวอร์ "
-"Backend.AI 20.09 ขึ้นไป"
+"GPU Platform 20.09 ขึ้นไป"
 
 #: ../../cluster_session/cluster_session.rst:12
-msgid "Overview of Backend.AI cluster compute session"
-msgstr "ภาพรวมของเซสชันการคำนวณคลัสเตอร์ Backend.AI"
+msgid "Overview of GPU Platform cluster compute session"
+msgstr "ภาพรวมของเซสชันการคำนวณคลัสเตอร์ GPU Platform"
 
 #: ../../cluster_session/cluster_session.rst:14
 msgid ""
-"Backend.AI supports cluster compute session to support distributed computing"
+"GPU Platform supports cluster compute session to support distributed computing"
 " / training tasks. A cluster session consists of multiple containers, each "
 "of which is created across multiple Agent nodes. Containers under a cluster "
 "session are automatically connected each other through a dynamically-created"
@@ -45,7 +45,7 @@ msgid ""
 "SSH connection. All the necessary secret keys and various settings for SSH "
 "connection between containers are automatically generated."
 msgstr ""
-"Backend.AI รองรับการทำงานแบบคลัสเตอร์เพื่อสนับสนุนการคอมพิวเตอร์ / "
+"GPU Platform รองรับการทำงานแบบคลัสเตอร์เพื่อสนับสนุนการคอมพิวเตอร์ / "
 "งานฝึกสอนแบบกระจาย งานเซสชันคลัสเตอร์ประกอบด้วยคอนเทนเนอร์หลายตัว "
 "ซึ่งแต่ละตัวถูกสร้างขึ้นจากหลายโหนดตัวแทน "
 "คอนเทนเนอร์ภายใต้เซสชันคลัสเตอร์จะถูกเชื่อมต่อกันโดยอัตโนมัติผ่านเครือข่ายส่วนตัวที่สร้างขึ้นแบบไดนามิก"
@@ -55,9 +55,9 @@ msgstr ""
 "SSH ระหว่างคอนเทนเนอร์จะถูกสร้างขึ้นโดยอัตโนมัติ"
 
 #: ../../cluster_session/cluster_session.rst:23
-msgid "For detailed about Backend.AI cluster session, refer to the following."
+msgid "For detailed about GPU Platform cluster session, refer to the following."
 msgstr ""
-"สำหรับรายละเอียดเกี่ยวกับเซสชันของคลัสเตอร์ Backend.AI โปรดดูที่ด้านล่างนี้"
+"สำหรับรายละเอียดเกี่ยวกับเซสชันของคลัสเตอร์ GPU Platform โปรดดูที่ด้านล่างนี้"
 
 #: ../../cluster_session/cluster_session.rst:28
 msgid ""
@@ -250,8 +250,8 @@ msgstr ""
 "ของคอนเทนเนอร์หลักจะเหมือนกับ ``BACKENDAI_SESSION_ID``."
 
 #: ../../cluster_session/cluster_session.rst:88
-msgid "Use of Backend.AI cluster compute session"
-msgstr "การใช้เซสชันการคอมพิวเตอร์ของคลัสเตอร์ Backend.AI"
+msgid "Use of GPU Platform cluster compute session"
+msgstr "การใช้เซสชันการคอมพิวเตอร์ของคลัสเตอร์ GPU Platform"
 
 #: ../../cluster_session/cluster_session.rst:90
 msgid ""
@@ -358,22 +358,22 @@ msgstr ""
 
 #: ../../cluster_session/cluster_session.rst:148
 msgid ""
-"In this way, Backend.AI makes it easy to create cluster computing sessions. "
+"In this way, GPU Platform makes it easy to create cluster computing sessions. "
 "In order to execute distributed learning and calculation through a cluster "
 "calculation session, a distributed learning module provided by ML libraries "
 "such as TensorFlow/PyTorch, or additional supporting software such as "
 "Horovod, NNI, MLFlow, etc. is required, and code in a way that can utilize "
-"the software. Must be written carefully. Backend.AI provides a kernel image "
+"the software. Must be written carefully. GPU Platform provides a kernel image "
 "containing the software required for distributed learning, so you can use "
 "that image to create a nice distributed learning algorithm."
 msgstr ""
-"ด้วยวิธีนี้ Backend.AI "
+"ด้วยวิธีนี้ GPU Platform "
 "ทำให้การสร้างเซสชันการคอมพิวเตอร์แบบคลัสเตอร์เป็นเรื่องง่าย "
 "เพื่อให้สามารถดำเนินการเรียนรู้และการคำนวณแบบกระจายผ่านเซสชันการคำนวณแบบคลัสเตอร์"
 " จำเป็นต้องใช้โมดูลการเรียนรู้แบบกระจายที่จัดเตรียมโดยไลบรารี ML เช่น "
 "TensorFlow/PyTorch หรือซอฟต์แวร์สนับสนุนเพิ่มเติม เช่น Horovod, NNI, MLFlow "
 "เป็นต้น และต้องเขียนโค้ดในลักษณะที่สามารถใช้ซอฟต์แวร์ได้อย่างระมัดระวัง "
-"Backend.AI มีภาพเคอร์เนลที่มีซอฟต์แวร์ที่จำเป็นสำหรับการเรียนรู้แบบกระจาย "
+"GPU Platform มีภาพเคอร์เนลที่มีซอฟต์แวร์ที่จำเป็นสำหรับการเรียนรู้แบบกระจาย "
 "ดังนั้นคุณจึงสามารถใช้ภาพนั้นในการสร้างอัลกอริธึมการเรียนรู้แบบกระจายที่ดีได้"
 
 #: ../../cluster_session/cluster_session.rst:158

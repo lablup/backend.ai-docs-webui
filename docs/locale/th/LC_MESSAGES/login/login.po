@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the GPU Platform Web-UI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Project-Id-Version: GPU Platform Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-23 23:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -85,11 +85,11 @@ msgstr "เข้าสู่ระบบ"
 #: ../../login/login.rst:41
 msgid ""
 "Enter your ID and password and press the LOGIN button. In API ENDPOINT, the "
-"URL of Backend.AI Webserver, which relays the request to the Manager, should"
+"URL of GPU Platform Webserver, which relays the request to the Manager, should"
 " be entered."
 msgstr ""
 "ป้อนID และรหัสผ่านของคุณแล้วกดปุ่ม LOGIN ใน API ENDPOINT ควรป้อน URL ของ "
-"Backend.AI Webserver ซึ่งจะทำการส่งต่อคำขอไปยังผู้จัดการ"
+"GPU Platform Webserver ซึ่งจะทำการส่งต่อคำขอไปยังผู้จัดการ"
 
 #: ../../login/login.rst:46
 msgid ""
@@ -101,11 +101,11 @@ msgstr ""
 
 #: ../../login/login.rst:50
 msgid ""
-"Backend.AI keeps the user's password securely through a one-way hash. "
+"GPU Platform keeps the user's password securely through a one-way hash. "
 "BCrypt, the default password hash of BSD, is used, so even the server admins"
 " cannot know the user's password."
 msgstr ""
-"Backend.AI เก็บรหัสผ่านของผู้ใช้ไว้เป็นอย่างดีผ่านการแฮชแบบทางเดียว โดยใช้ "
+"GPU Platform เก็บรหัสผ่านของผู้ใช้ไว้เป็นอย่างดีผ่านการแฮชแบบทางเดียว โดยใช้ "
 "BCrypt ซึ่งเป็นแฮชรหัสผ่านเริ่มต้นของ BSD "
 "ดังนั้นแม้แต่ผู้ดูแลเซิร์ฟเวอร์ก็ไม่สามารถทราบรหัสผ่านของผู้ใช้ได้"
 

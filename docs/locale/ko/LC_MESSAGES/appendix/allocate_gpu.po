@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2020, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Console
+# This file is distributed under the same license as the GPU Platform Console
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Console User Guide 20.03\n"
+"Project-Id-Version: GPU Platform Console User Guide 20.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-23 13:53+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: ../../appendix/allocate_gpu.rst:14
 msgid ""
-"Backend.AI supports GPU virtualization technology which allows single "
+"GPU Platform supports GPU virtualization technology which allows single "
 "physical GPU can be divided and shared by multiple users simultaneously. "
 "Therefore, if you want to execute a task that does not require much GPU "
 "computation capability, you can create a compute session by allocating a "

@@ -2,7 +2,7 @@
 Import & Run notebooks and web based Git repositories
 =====================================================
 
-Backend.AI supports executing Jupyter notebook files and importing web based Git repositories
+GPU Platform supports executing Jupyter notebook files and importing web based Git repositories
 such as GitHub and GitLab on the fly. You don't need to create or download into your local storage
 and re-upload it. The only thing you have to do is input a valid URL you want to execute or import,
 and click the button on the right side.
@@ -89,7 +89,7 @@ name.
 Importing GitLab Repositories
 -----------------------------
 
-From 22.03, Backend.AI supports importing from GitLab. It's almost the same as
+From 22.03, GPU Platform supports importing from GitLab. It's almost the same as
 :ref:`Importing GitHub Repositories<importing-github-repositories>`,
 but you need to explicitly set the branch name to import.
 

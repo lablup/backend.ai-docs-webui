@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2020, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Console
+# This file is distributed under the same license as the GPU Platform Console
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web UI User Guide 19.09\n"
+"Project-Id-Version: GPU Platform Web UI User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-21 04:06+0900\n"
 "PO-Revision-Date: 2023-08-07 16:17+0900\n"
@@ -25,7 +25,7 @@ msgstr "데이터 & 폴더 활용하기"
 
 #: ../../vfolder/vfolder.rst:5
 msgid ""
-"Backend.AI supports dedicated storage to preserve user's files. Since the"
+"GPU Platform supports dedicated storage to preserve user's files. Since the"
 " files and directories of a compute session are deleted upon session "
 "termination, it is recommended to save them in a storage folder. List of "
 "storage folders can be found by selecting the Data & Storage page on the "
@@ -33,7 +33,7 @@ msgid ""
 "NFS host name where the folder is located (Location), and folder access "
 "rights (Permission)."
 msgstr ""
-"Backend.AI는 사용자의 파일을 보존할 수 있도록 별도의 저장소를 지원합니다. 연산 세션의 기본 폴더는 세션이 삭제되면 같이 "
+"GPU Platform는 사용자의 파일을 보존할 수 있도록 별도의 저장소를 지원합니다. 연산 세션의 기본 폴더는 세션이 삭제되면 같이 "
 "삭제되므로, 보존해야 하는 파일이 있을 경우 Storage 폴더에 저장하는 것이 좋습니다. Storage 폴더는 좌측 메뉴의 "
 "Storage 탭을 선택하면 조회할 수 있습니다."
 
@@ -529,22 +529,22 @@ msgstr "파일 브라우저 사용하기"
 
 #: ../../vfolder/vfolder.rst:273
 msgid ""
-"Backend.AI supports `FileBrowser <https://filebrowser.org>`_ from version"
+"GPU Platform supports `FileBrowser <https://filebrowser.org>`_ from version"
 " 20.09. FileBrowser is a program that helps you manage files on a remote "
 "server through a web browser. This is especially useful when uploading a "
 "directory from the user's local machine."
 msgstr ""
-"Backend.AI 에서는 20.09 버전부터 `파일 브라우저 <https://filebrowser.org>`_ 를 지원합니다. "
+"GPU Platform 에서는 20.09 버전부터 `파일 브라우저 <https://filebrowser.org>`_ 를 지원합니다. "
 "파일 브라우저는 웹 브라우저를 통해 원격 서버에 있는 파일 관리를 도와주는 프로그램입니다. 특히 사용자의 로컬 머신에 있는 "
 "디렉토리를 업로드 할 때에도 유용하게 사용할 수 있습니다."
 
 #: ../../vfolder/vfolder.rst:278
 msgid ""
-"Currently, Backend.AI provides a FileBrowser as an application of a "
+"Currently, GPU Platform provides a FileBrowser as an application of a "
 "compute session. Therefore, the following conditions are required to "
 "launch it."
 msgstr ""
-"현재 Backend.AI에서는 파일 브라우저를 연산 세션 내에서 실행되는 애플리케이션 형태로 제공합니다. 따라서, 다음과 같은 최소"
+"현재 GPU Platform에서는 파일 브라우저를 연산 세션 내에서 실행되는 애플리케이션 형태로 제공합니다. 따라서, 다음과 같은 최소"
 " 조건이 필요합니다."
 
 #: ../../vfolder/vfolder.rst:281
@@ -618,12 +618,12 @@ msgstr ""
 
 #: ../../vfolder/vfolder.rst:314
 msgid ""
-"When user clicks 'EXECUTE FILEBROWSER' button, Backend.AI automatically "
+"When user clicks 'EXECUTE FILEBROWSER' button, GPU Platform automatically "
 "creates a dedicated compute session for the app. So, in the Sessions "
 "page, you should see FileBrowser compute session. It is user's "
 "responsibility to delete this compute session."
 msgstr ""
-"사용자가 'EXECUTE FILEBROWSER' 버튼을 클릭하면, Backend.AI는 자동으로 파일 브라우저 전용 연산 세션을 "
+"사용자가 'EXECUTE FILEBROWSER' 버튼을 클릭하면, GPU Platform는 자동으로 파일 브라우저 전용 연산 세션을 "
 "하나 생성하게 됩니다. 따라서, Sessions 페이지에서 파일 브라우저 연산 세션이 조회되는 것을 확인할 수 있습니다. 이 연산 "
 "세션을 삭제하는 것은 사용자의 몫입니다."
 
@@ -679,12 +679,12 @@ msgstr "파일 브라우저 기본 사용법"
 
 #: ../../vfolder/vfolder.rst:351
 msgid ""
-"Here, we present some basic usage examples of FileBrowser in Backend.AI. "
+"Here, we present some basic usage examples of FileBrowser in GPU Platform. "
 "Most of the FileBrowser operations are intuitive, but if you need more "
 "detailed guide, please refer to the `FileBrowser documentation "
 "<https://filebrowser.org>`_."
 msgstr ""
-"여기서는 Backend.AI 상에서 파일 브라우저의 간단한 사용 예를 보여 드립니다. 대부분의 파일 브라우저 작업은 매우 "
+"여기서는 GPU Platform 상에서 파일 브라우저의 간단한 사용 예를 보여 드립니다. 대부분의 파일 브라우저 작업은 매우 "
 "직관적이지만, 보다 자세한 가이드가 필요하실 경우 `파일 브라우저 문서 <https://filebrowser.org>`_ 를 "
 "참조하십시오."
 
@@ -769,11 +769,11 @@ msgstr "SFTP 서버 사용"
 
 #: ../../vfolder/vfolder.rst:423
 msgid ""
-"From 22.09, Backend.AI supports SSH / SFTP file upload from both desktop "
+"From 22.09, GPU Platform supports SSH / SFTP file upload from both desktop "
 "app and web-based Web-UI. The SFTP server allows you to upload files "
 "quickly through reliable data streams."
 msgstr ""
-"Backend.AI 22.09 버전부터 데스크탑 앱 및 웹 기반 Web-UI 환경에서 SSH / SFTP 프로토콜을 통해 파일을 "
+"GPU Platform 22.09 버전부터 데스크탑 앱 및 웹 기반 Web-UI 환경에서 SSH / SFTP 프로토콜을 통해 파일을 "
 "업로드 할 수 있는 방법을 제공합니다. SFTP 서버를 사용하여 안정적으로 빠르게 파일을 업로드할 수 있습니다."
 
 #: ../../vfolder/vfolder.rst:428

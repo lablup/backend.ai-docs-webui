@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2020, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Console
+# This file is distributed under the same license as the GPU Platform Console
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Console User Guide 19.09\n"
+"Project-Id-Version: GPU Platform Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-25 23:32+0900\n"
 "PO-Revision-Date: 2023-03-25 23:41+0900\n"
@@ -153,11 +153,11 @@ msgstr "페이지가 이상하게 표시됩니다"
 
 #: ../../trouble_shooting/trouble_shooting.rst:72
 msgid ""
-"Backend.AI Web-UI utilizes the latest modern JavaScript and/or browser "
+"GPU Platform Web-UI utilizes the latest modern JavaScript and/or browser "
 "features. Please use the LATEST versions of moder browsers (such as "
 "Chrome)."
 msgstr ""
-"Backend.AI Web-UI는 최신 JavaScript 와 브라우저의 기능을 적극 활용하고 있습"
+"GPU Platform Web-UI는 최신 JavaScript 와 브라우저의 기능을 적극 활용하고 있습"
 "니다. 가급적 최신 브라우저를 사용하십시오. 특히 Chrome 에서 가장 안정적인 "
 "레이아웃을 보입니다."
 
@@ -217,11 +217,11 @@ msgstr "표시되는 자원 양이 실제 할당된 양과 다릅니다"
 msgid ""
 "Occasionally, due to unstable network connections or container management "
 "problem of Docker daemon, there may be a case where the resource occupied "
-"by Backend.AI does not match with the resource actually used by the "
+"by GPU Platform does not match with the resource actually used by the "
 "container. In this case, follow the steps below."
 msgstr ""
 "가끔 네트워크 연결이 튀거나 Docker 데몬의 컨테이너 관리 지연 등의 사유로 "
-"Backend.AI 가 인식하는 자원의 할당양과 실제 컨테이너가 점유하고 있는 자원"
+"GPU Platform 가 인식하는 자원의 할당양과 실제 컨테이너가 점유하고 있는 자원"
 "의 양이 달라질 수 있습니다. 이런 경우에는 다음 과정을 따라 하십시오."
 
 #: ../../trouble_shooting/trouble_shooting.rst:109
@@ -249,13 +249,13 @@ msgstr "이 기능은 super admin만 사용할 수 있습니다."
 
 #: ../../trouble_shooting/trouble_shooting.rst:119
 msgid ""
-"If a new image is pushed to one of the Backend.AI docker registries, the "
-"image metadata must be updated in Backend.AI to be used in creating a "
+"If a new image is pushed to one of the GPU Platform docker registries, the "
+"image metadata must be updated in GPU Platform to be used in creating a "
 "compute session. Metadata update can be performed by clicking the RESCAN "
 "IMAGES button on the Maintenance page. This will update metadata for every "
 "docker registry, if there are multiple registries."
 msgstr ""
-"사설 도커 레지스트리에 이미지가 새로 등록된 경우 Backend.AI에서 레지스트리 "
+"사설 도커 레지스트리에 이미지가 새로 등록된 경우 GPU Platform에서 레지스트리 "
 "별 이미지 메타 데이터를 업데이트 해야 세션 생성할 때 이용할 수 있습니다. 메"
 "타 데이터 업데이트는 Maintenance 페이지의 RESCAN IMAGES 버튼을 클릭하여 수"
 "행할 수 있습니다. 만약 연결된 도커 레지스트리가 여러 개일 경우, RESCAN "

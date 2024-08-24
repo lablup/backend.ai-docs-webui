@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the GPU Platform Web-UI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Project-Id-Version: GPU Platform Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-23 23:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -32,14 +32,14 @@ msgstr "ฟีเจอร์นี้รองรับเฉพาะในเ
 
 #: ../../model_serving/model_serving.rst:13
 msgid ""
-"Backend.AI not only facilitates the construction of development environments"
+"GPU Platform not only facilitates the construction of development environments"
 " and resource management during the model training phase, but also supports "
 "the model service feature from version 23.09 onwards. This feature allows "
 "end-users (such as AI-based mobile apps and web service backends) to make "
 "inference API calls when they want to deploy the completed model as an "
 "inference service."
 msgstr ""
-"Backend.AI "
+"GPU Platform "
 "ไม่เพียงแต่ช่วยในการสร้างสภาพแวดล้อมการพัฒนาและการจัดการทรัพยากรในระหว่างขั้นตอนการฝึกโมเดลเท่านั้น"
 " แต่ยังรองรับฟีเจอร์บริการโมเดลตั้งแต่เวอร์ชัน 23.09 เป็นต้นไป "
 "ฟีเจอร์นี้ช่วยให้ผู้ใช้ปลายทาง (เช่น แอปพลิเคชันมือถือที่ใช้ AI "
@@ -196,7 +196,7 @@ msgstr ""
 #: ../../model_serving/model_serving.rst:85
 msgid ""
 "The model definition file contains the configuration information required by"
-" the Backend.AI system to automatically start, initialize, and scale the "
+" the GPU Platform system to automatically start, initialize, and scale the "
 "inference session. It is stored in the model type folder independently from "
 "the container image that contains the inference service engine. This allows "
 "the engine to serve different models based on specific requirements and "
@@ -205,7 +205,7 @@ msgid ""
 "network storage, the deployment process can be simplified and optimized "
 "during automatic scaling."
 msgstr ""
-"ไฟล์การกำหนดโมเดลประกอบด้วยข้อมูลการกำหนดค่าที่ระบบ Backend.AI "
+"ไฟล์การกำหนดโมเดลประกอบด้วยข้อมูลการกำหนดค่าที่ระบบ GPU Platform "
 "ต้องการเพื่อเริ่มต้น อ初始化 และปรับขนาดเซสชันการสรุปผลโดยอัตโนมัติ "
 "มันถูกเก็บในโฟลเดอร์ประเภทโมเดลแยกต่างหากจากภาพคอนเทนเนอร์ที่มีเอนจินการบริการการสรุปผล"
 " "
@@ -307,8 +307,8 @@ msgstr ""
 
 #: ../../model_serving/model_serving.rst:142
 msgid ""
-"**Description for service action supported in Backend.AI Model serving**"
-msgstr "**คำอธิบายสำหรับการกระทำบริการที่รองรับใน Backend.AI Model serving**"
+"**Description for service action supported in GPU Platform Model serving**"
+msgstr "**คำอธิบายสำหรับการกระทำบริการที่รองรับใน GPU Platform Model serving**"
 
 #: ../../model_serving/model_serving.rst:146
 msgid ""
@@ -629,7 +629,7 @@ msgstr ""
 
 #: ../../model_serving/model_serving.rst:273
 msgid ""
-"Before creating model service, Backend.AI supports validation feature to "
+"Before creating model service, GPU Platform supports validation feature to "
 "check whether execution is available or not(due to any errors during "
 "execution). By clicking the 'Validate' button at the bottom-left of the "
 "service launcher, a new popup for listening to validation events will pop "
@@ -637,7 +637,7 @@ msgid ""
 "When the result is set to ``Finished``, then the validation check is "
 "finished."
 msgstr ""
-"ก่อนที่จะสร้างบริการโมเดล Backend.AI "
+"ก่อนที่จะสร้างบริการโมเดล GPU Platform "
 "รองรับฟีเจอร์การตรวจสอบเพื่อดูว่าการดำเนินการนั้นสามารถทำได้หรือไม่ "
 "(เนื่องจากข้อผิดพลาดใด ๆ ในระหว่างการดำเนินการ) โดยการคลิกที่ปุ่ม 'Validate'"
 " ที่มุมซ้ายล่างของตัวเปิดบริการ จะปรากฏหน้าต่างป๊อปอัปใหม่เพื่อรListening to"
@@ -862,7 +862,7 @@ msgstr "การยุติบริการโมเดล"
 msgid ""
 "The model service periodically runs a scheduler to adjust the routing count "
 "to match the desired session count. However, this puts a burden on the "
-"Backend.AI scheduler. Therefore, it is recommended to terminate the model "
+"GPU Platform scheduler. Therefore, it is recommended to terminate the model "
 "service if it is no longer needed. To terminate the model service, click on "
 "the 'trash' button in the Control column. A modal will appear asking for "
 "confirmation to terminate the model service. Clicking ``OK`` will terminate "
@@ -871,7 +871,7 @@ msgid ""
 msgstr ""
 "บริการโมเดลจะทำการรันตัวกำหนดเวลาเป็นระยะ ๆ "
 "เพื่อปรับจำนวนการจัดเส้นทางให้ตรงกับจำนวนเซสชันที่ต้องการ อย่างไรก็ตาม "
-"สิ่งนี้สร้างภาระให้กับตัวกำหนดเวลา Backend.AI "
+"สิ่งนี้สร้างภาระให้กับตัวกำหนดเวลา GPU Platform "
 "ดังนั้นจึงแนะนำให้ยกเลิกบริการโมเดลหากไม่จำเป็นอีกต่อไป "
 "เพื่อยกเลิกบริการโมเดล ให้คลิกที่ปุ่ม 'ถังขยะ' ในคอลัมน์การควบคุม "
 "จะมีหน้าต่างป๊อปอัปขึ้นมาเพื่อขอการยืนยันในการยกเลิกบริการโมเดล การคลิก "

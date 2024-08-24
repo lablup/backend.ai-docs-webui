@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the GPU Platform Web-UI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Project-Id-Version: GPU Platform Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-23 23:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -25,11 +25,11 @@ msgstr "การแชร์โฟลเดอร์จัดเก็บข้
 #: ../../share_vfolder/share_vfolder.rst:5
 msgid ""
 "You may need to share the contents of storage folders with other users or "
-"project members to collaborate. For this purpose, Backend.AI provides "
+"project members to collaborate. For this purpose, GPU Platform provides "
 "flexible folder sharing feature."
 msgstr ""
 "คุณอาจต้องการแชร์เนื้อหาของโฟลเดอร์เก็บข้อมูลกับผู้ใช้หรือสมาชิกในโครงการคนอื่นเพื่อการทำงานร่วมกัน"
-" สำหรับวัตถุประสงค์นี้ Backend.AI จึงมีฟีเจอร์การแชร์โฟลเดอร์ที่ยืดหยุ่น"
+" สำหรับวัตถุประสงค์นี้ GPU Platform จึงมีฟีเจอร์การแชร์โฟลเดอร์ที่ยืดหยุ่น"
 
 #: ../../share_vfolder/share_vfolder.rst:11
 msgid "Share storage folders with other users"
@@ -75,7 +75,7 @@ msgid ""
 "Control panel on the right of the ``tests`` folder. Enter User B's email in "
 "the email input field and click the SHARE button to send a sharing "
 "invitation. No actual email is sent, and invitations are generated through "
-"the Backend.AI database. In the case of Permissions, if you check View, it "
+"the GPU Platform database. In the case of Permissions, if you check View, it "
 "is shared as read-only, and if you check Edit together, even writing is "
 "allowed to User B. If you want to share with multiple users, you can also "
 "click the + button to enter additional emails."
@@ -83,7 +83,7 @@ msgstr ""
 "กลับไปที่บัญชีผู้ใช้ A และคลิกที่ไอคอนแชร์ (ไอคอนที่สาม) "
 "ในแผงควบคุมที่ด้านขวาของโฟลเดอร์ ``tests`` ใส่อีเมลของผู้ใช้ B "
 "ในช่องป้อนอีเมลและคลิกปุ่ม SHARE เพื่อส่งคำเชิญแชร์ ไม่มีอีเมลจริงส่งออก "
-"และคำเชิญจะถูกสร้างขึ้นผ่านฐานข้อมูลของ Backend.AI ในกรณีของสิทธิ์การเข้าถึง"
+"และคำเชิญจะถูกสร้างขึ้นผ่านฐานข้อมูลของ GPU Platform ในกรณีของสิทธิ์การเข้าถึง"
 " หากคุณตรวจสอบดู มันจะถูกแชร์เป็นอ่านอย่างเดียว และหากคุณตรวจสอบแก้ไขร่วมกัน"
 " การเขียนก็จะถูกอนุญาตให้กับผู้ใช้ B หากคุณต้องการแชร์กับผู้ใช้หลายคน "
 "คุณยังสามารถคลิกที่ปุ่ม + เพื่อตั้งค่าอีเมลเพิ่มเติมได้อีกด้วย"
@@ -161,19 +161,19 @@ msgstr ""
 #: ../../share_vfolder/share_vfolder.rst:90
 msgid ""
 "This way, you can share your personal storage folders with other users based"
-" on your Backend.AI email account."
+" on your GPU Platform email account."
 msgstr ""
 "วิธีนี้ "
 "คุณสามารถแบ่งปันโฟลเดอร์พื้นที่เก็บข้อมูลส่วนตัวของคุณกับผู้ใช้อื่นได้ตามบัญชีอีเมลของ"
-" Backend.AI ของคุณ"
+" GPU Platform ของคุณ"
 
 #: ../../share_vfolder/share_vfolder.rst:94
 msgid ""
-"Backend.AI also provides sharing project folder to project members. To See "
+"GPU Platform also provides sharing project folder to project members. To See "
 "the detail, go to :ref:`sharing a project storage folder with project "
 "members <sharing-a-group-storage>`."
 msgstr ""
-"Backend.AI ยังมีฟีเจอร์การแบ่งปันโฟลเดอร์โปรเจกต์ให้กับสมาชิกโปรเจกต์ "
+"GPU Platform ยังมีฟีเจอร์การแบ่งปันโฟลเดอร์โปรเจกต์ให้กับสมาชิกโปรเจกต์ "
 "สำหรับรายละเอียดเพิ่มเติมโปรดไปที่ "
 ":ref:`การแบ่งปันโฟลเดอร์ที่จัดเก็บโปรเจกต์กับสมาชิกโปรเจกต์ <sharing-a-"
 "group-storage>`"

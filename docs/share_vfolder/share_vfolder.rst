@@ -3,7 +3,7 @@ Sharing Storage Folders and Access Control
 ========================================================
 
 You may need to share the contents of storage folders with other users or project
-members to collaborate. For this purpose, Backend.AI provides flexible folder
+members to collaborate. For this purpose, GPU Platform provides flexible folder
 sharing feature.
 
 
@@ -33,7 +33,7 @@ account.
 Back to User A's account and click the share icon (third icon) in the Control panel on the
 right of the ``tests`` folder. Enter User B's email in the email input field and
 click the SHARE button to send a sharing invitation. No actual email is sent,
-and invitations are generated through the Backend.AI database. In the case of
+and invitations are generated through the GPU Platform database. In the case of
 Permissions, if you check View, it is shared as read-only, and if you check Edit
 together, even writing is allowed to User B. If you want to share with
 multiple users, you can also click the + button to enter additional emails.
@@ -88,10 +88,10 @@ been shared including write access.
 .. image:: test_vfolder_explorer_B.png
 
 This way, you can share your personal storage folders with other users based on
-your Backend.AI email account.
+your GPU Platform email account.
 
 .. note::
-   Backend.AI also provides sharing project folder to project members.
+   GPU Platform also provides sharing project folder to project members.
    To See the detail, go to :ref:`sharing a project storage folder with project members <sharing-a-group-storage>`.
 
 

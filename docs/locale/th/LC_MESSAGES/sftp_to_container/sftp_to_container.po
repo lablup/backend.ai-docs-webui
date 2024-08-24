@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the GPU Platform Web-UI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Project-Id-Version: GPU Platform Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-23 23:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -24,10 +24,10 @@ msgstr "การเชื่อมต่อ SSH/SFTP ไปยังเซส�
 
 #: ../../sftp_to_container/sftp_to_container.rst:7
 msgid ""
-"Backend.AI supports SSH/SFTP connection to the created compute sessions "
+"GPU Platform supports SSH/SFTP connection to the created compute sessions "
 "(containers). In this section, we will learn how to do it."
 msgstr ""
-"Backend.AI สนับสนุนการเชื่อมต่อ SSH/SFTP "
+"GPU Platform สนับสนุนการเชื่อมต่อ SSH/SFTP "
 "ไปยังเซสชันการคอมพิวเตอร์ที่สร้างขึ้น (คอนเทนเนอร์) "
 "ในส่วนนี้เราจะเรียนรู้วิธีทำเช่นนั้น"
 
@@ -50,13 +50,13 @@ msgid ""
 "You can also download the app from https://github.com/lablup/backend.ai-"
 "webui/releases. Make sure to download the compatible version of the Web-UI "
 "in this case. You can check the Web-UI version by clicking on the \"About "
-"Backend.AI\" sub-menu located in the preference menu on the upper-right side"
+"GPU Platform\" sub-menu located in the preference menu on the upper-right side"
 " of the GUI."
 msgstr ""
 "คุณยังสามารถดาวน์โหลดแอปได้ที่ https://github.com/lablup/backend.ai-"
 "webui/releases โปรดตรวจสอบให้แน่ใจว่าดาวน์โหลดเวอร์ชันที่เข้ากันได้ของ Web-"
 "UI ในกรณีนี้ คุณสามารถตรวจสอบเวอร์ชันของ Web-UI ได้โดยการคลิกที่เมนูย่อย "
-"\"เกี่ยวกับ Backend.AI\" ที่อยู่ในเมนูการตั้งค่าที่มุมขวาบนของ GUI"
+"\"เกี่ยวกับ GPU Platform\" ที่อยู่ในเมนูการตั้งค่าที่มุมขวาบนของ GUI"
 
 #: ../../sftp_to_container/sftp_to_container.rst:44
 msgid "For Linux / Mac"
@@ -202,7 +202,7 @@ msgstr "สำหรับ Windows / FileZilla"
 
 #: ../../sftp_to_container/sftp_to_container.rst:122
 msgid ""
-"Backend.AI Web-UI app supports OpenSSH-based public key connection "
+"GPU Platform Web-UI app supports OpenSSH-based public key connection "
 "(RSA2048). To access with a client such as PuTTY on Windows, a private key "
 "must be converted into a ``ppk`` file through a program such as PuTTYgen. "
 "You can refer to the following link for the conversion method: "
@@ -210,7 +210,7 @@ msgid ""
 "section will describe how to connect to SFTP through FileZilla client on "
 "Windows."
 msgstr ""
-"แอป Backend.AI Web-UI รองรับการเชื่อมต่อด้วยคีย์สาธารณะแบบ OpenSSH (RSA2048)"
+"แอป GPU Platform Web-UI รองรับการเชื่อมต่อด้วยคีย์สาธารณะแบบ OpenSSH (RSA2048)"
 " เพื่อเข้าถึงด้วยไคลเอนต์เช่น PuTTY บน Windows "
 "คีย์ส่วนตัวต้องถูกแปลงเป็นไฟล์ ``ppk`` ผ่านโปรแกรมเช่น PuTTYgen "
 "คุณสามารถดูวิธีการแปลงได้ที่ลิงก์ต่อไปนี้: https://wiki.filezilla-"
@@ -298,12 +298,12 @@ msgstr "สำหรับ Visual Studio Code"
 
 #: ../../sftp_to_container/sftp_to_container.rst:173
 msgid ""
-"Backend.AI supports to develop with the local Visual Studio Code through "
+"GPU Platform supports to develop with the local Visual Studio Code through "
 "SSH/SFTP connection to a compute session. Once connected, you can interact "
 "with files and folders anywhere on the compute session. In this section, we "
 "will learn how to do it."
 msgstr ""
-"Backend.AI รองรับการพัฒนาด้วย Visual Studio Code "
+"GPU Platform รองรับการพัฒนาด้วย Visual Studio Code "
 "ภายในเครื่องผ่านการเชื่อมต่อ SSH/SFTP ไปยังเซสชันการคอมพิวเตอร์ "
 "เมื่อต่อเชื่อมเรียบร้อยแล้ว "
 "คุณสามารถโต้ตอบกับไฟล์และโฟลเดอร์ได้ทุกที่ในเซสชันการคอมพิวเตอร์ "
@@ -416,8 +416,8 @@ msgid "open remote host file directory"
 msgstr "เปิดไดเรกทอรีไฟล์ของโฮสต์ระยะไกล"
 
 #: ../../sftp_to_container/sftp_to_container.rst:241
-msgid "Establish SSH connection with Backend.AI client package"
-msgstr "ตั้งค่าการเชื่อมต่อ SSH กับแพ็คเกจลูกค้า Backend.AI"
+msgid "Establish SSH connection with GPU Platform client package"
+msgstr "ตั้งค่าการเชื่อมต่อ SSH กับแพ็คเกจลูกค้า GPU Platform"
 
 #: ../../sftp_to_container/sftp_to_container.rst:243
 msgid ""
@@ -435,18 +435,18 @@ msgid ""
 "accessed directly from the outside. Therefore, in order to establish an SSH "
 "or sFTP connection to a compute session, a local proxy that creates a tunnel"
 " needs to be launched to relay the connection between the user and the "
-"session. Using the Backend.AI Client package, this process is relatively "
+"session. Using the GPU Platform Client package, this process is relatively "
 "simple to configure."
 msgstr ""
 "โดยทั่วไปแล้ว โหนด GPU ที่เรียกใช้เซสชันการประมวลผล (คอนเทนเนอร์) "
 "จะไม่สามารถเข้าถึงได้โดยตรงจากภายนอก ดังนั้นเพื่อที่จะสร้างการเชื่อมต่อ SSH "
 "หรือ sFTP กับเซสชันการคอมพิวเตอร์ "
 "จะต้องเปิดใช้งานพร็อกซี่ท้องถิ่นที่สร้างอุโมงค์เพื่อส่งต่อการเชื่อมต่อระหว่างผู้ใช้และเซสชัน"
-" โดยใช้แพ็คเกจ Backend.AI Client ขั้นตอนนี้ค่อนข้างง่ายต่อการกำหนดค่า"
+" โดยใช้แพ็คเกจ GPU Platform Client ขั้นตอนนี้ค่อนข้างง่ายต่อการกำหนดค่า"
 
 #: ../../sftp_to_container/sftp_to_container.rst:253
-msgid "Prepare Backend.AI Client package"
-msgstr "เตรียมแพ็คเกจ Backend.AI Client"
+msgid "Prepare GPU Platform Client package"
+msgstr "เตรียมแพ็คเกจ GPU Platform Client"
 
 #: ../../sftp_to_container/sftp_to_container.rst:256
 msgid "Prepare with Docker image"
@@ -454,20 +454,20 @@ msgstr "เตรียมพร้อมด้วย Docker image"
 
 #: ../../sftp_to_container/sftp_to_container.rst:258
 msgid ""
-"The Backend.AI Client package is available as a Docker image. You can pull "
+"The GPU Platform Client package is available as a Docker image. You can pull "
 "the image from the Docker Hub with the following command:"
 msgstr ""
-"แพ็คเกจ Backend.AI Client มีให้บริการในรูปแบบของภาพ Docker "
+"แพ็คเกจ GPU Platform Client มีให้บริการในรูปแบบของภาพ Docker "
 "คุณสามารถดึงภาพจาก Docker Hub ด้วยคำสั่งต่อไปนี้:"
 
 #: ../../sftp_to_container/sftp_to_container.rst:268
 msgid ""
-"The version of Backend.AI server can be found in \"About Backend.AI\" menu "
+"The version of GPU Platform server can be found in \"About GPU Platform\" menu "
 "that appears when you click on the person icon on the top right corner of "
 "the Web UI."
 msgstr ""
-"คุณสามารถค้นหาเวอร์ชันของเซิร์ฟเวอร์ Backend.AI ได้ในเมนู \"เกี่ยวกับ "
-"Backend.AI\" ที่ปรากฏเมื่อคุณคลิกที่ไอคอนคนที่มุมขวาบนของ Web UI"
+"คุณสามารถค้นหาเวอร์ชันของเซิร์ฟเวอร์ GPU Platform ได้ในเมนู \"เกี่ยวกับ "
+"GPU Platform\" ที่ปรากฏเมื่อคุณคลิกที่ไอคอนคนที่มุมขวาบนของ Web UI"
 
 #: ../../sftp_to_container/sftp_to_container.rst:275
 msgid "Run the Docker image with the following command:"
@@ -487,20 +487,20 @@ msgstr "เตรียมจากโฮสต์โดยตรงด้วย
 
 #: ../../sftp_to_container/sftp_to_container.rst:291
 msgid ""
-"If you cannot or do not want to use Docker, you can install the Backend.AI "
+"If you cannot or do not want to use Docker, you can install the GPU Platform "
 "Client package directly on your host machine. Prerequisites are:"
 msgstr ""
-"หากคุณไม่สามารถหรือไม่ต้องการใช้ Docker คุณสามารถติดตั้งแพ็คเกจ Backend.AI "
+"หากคุณไม่สามารถหรือไม่ต้องการใช้ Docker คุณสามารถติดตั้งแพ็คเกจ GPU Platform "
 "Client โดยตรงบนเครื่องโฮสต์ของคุณ ข้อกำหนดเบื้องต้นคือ:"
 
 #: ../../sftp_to_container/sftp_to_container.rst:294
 msgid ""
-"The required version of Python may vary depending on the Backend.AI Client "
+"The required version of Python may vary depending on the GPU Platform Client "
 "version. You can check the compability matrix at "
 "https://github.com/lablup/backend.ai#python-version-compatibility."
 msgstr ""
 "เวอร์ชันของ Python ที่ต้องการอาจแตกต่างกันไปขึ้นอยู่กับเวอร์ชันของ "
-"Backend.AI Client คุณสามารถตรวจสอบตารางความเข้ากันได้ได้ที่ "
+"GPU Platform Client คุณสามารถตรวจสอบตารางความเข้ากันได้ได้ที่ "
 "https://github.com/lablup/backend.ai#python-version-compatibility."
 
 #: ../../sftp_to_container/sftp_to_container.rst:297
@@ -569,13 +569,13 @@ msgstr ""
 
 #: ../../sftp_to_container/sftp_to_container.rst:345
 msgid ""
-"Now, install the Backend.AI Client package. Install the client package "
+"Now, install the GPU Platform Client package. Install the client package "
 "according to the server version. Here, we assume that the version is 23.09. "
 "If an installation-related error occurs with the ``netifaces`` package, you "
 "may need to lower the versions of ``pip`` and ``setuptools``. Check if the "
 "``backend.ai`` command is available."
 msgstr ""
-"ตอนนี้ติดตั้งแพ็คเกจ Backend.AI Client "
+"ตอนนี้ติดตั้งแพ็คเกจ GPU Platform Client "
 "ติดตั้งแพ็คเกจลูกค้าตามเวอร์ชันของเซิร์ฟเวอร์ ที่นี่เราคาดว่าเวอร์ชันคือ "
 "23.09 หากเกิดข้อผิดพลาดที่เกี่ยวข้องกับการติดตั้งกับแพ็คเกจ ``netifaces`` "
 "คุณอาจต้องลดเวอร์ชันของ ``pip`` และ ``setuptools`` ตรวจสอบว่าคำสั่ง "

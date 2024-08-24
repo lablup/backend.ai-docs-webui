@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the GPU Platform Web-UI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Project-Id-Version: GPU Platform Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-23 23:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -23,40 +23,40 @@ msgid "Terms of License Agreement"
 msgstr "ข้อตกลงการอนุญาตใช้งาน"
 
 #: ../../license_agreement/license_agreement.rst:6
-msgid "Backend.AI License (Software)"
-msgstr "ใบอนุญาต Backend.AI (ซอฟต์แวร์)"
+msgid "GPU Platform License (Software)"
+msgstr "ใบอนุญาต GPU Platform (ซอฟต์แวร์)"
 
 #: ../../license_agreement/license_agreement.rst:8
 msgid ""
-"This document defines the terms of the license agreement for the Backend.AI "
-"software. The usage fee and support plan of Backend.AI Cloud service "
+"This document defines the terms of the license agreement for the GPU Platform "
+"software. The usage fee and support plan of GPU Platform Cloud service "
 "provided by Lablup is independent of this policy."
 msgstr ""
-"เอกสารนี้กำหนดเงื่อนไขของข้อตกลงใบอนุญาตสำหรับซอฟต์แวร์ Backend.AI "
-"ค่าธรรมเนียมการใช้งานและแผนสนับสนุนบริการ Backend.AI Cloud ที่จัดทำโดย "
+"เอกสารนี้กำหนดเงื่อนไขของข้อตกลงใบอนุญาตสำหรับซอฟต์แวร์ GPU Platform "
+"ค่าธรรมเนียมการใช้งานและแผนสนับสนุนบริการ GPU Platform Cloud ที่จัดทำโดย "
 "Lablup เป็นอิสระจากนโยบายนี้"
 
 #: ../../license_agreement/license_agreement.rst:12
 msgid ""
-"Backend.AI server components (hereinafter referred to as \"Backend.AI "
+"GPU Platform server components (hereinafter referred to as \"GPU Platform "
 "Server\") are distributed under the GNU Lesser General Public License v3.0 "
 "(\"LGPL\"), and API Client libraries and auxiliary components for accessing "
-"Backend.AI server (hereinafter \"Backend.AI Client\") are distributed under "
+"GPU Platform server (hereinafter \"GPU Platform Client\") are distributed under "
 "the MIT License. Even if LGPL complies, commercial contracts with Lablup "
 "Co., Ltd. (\"Lablup\") are required depending on the conditions when "
-"performing profit activities using the Backend.AI server. Several additional"
-" plug-ins and admin's GUI Control-Panel that apply to Backend.AI enterprise "
+"performing profit activities using the GPU Platform server. Several additional"
+" plug-ins and admin's GUI Control-Panel that apply to GPU Platform enterprise "
 "solutions are not open source, but commercial software."
 msgstr ""
-"ส่วนประกอบเซิร์ฟเวอร์ของ Backend.AI (ต่อไปนี้จะเรียกว่า \"Backend.AI "
+"ส่วนประกอบเซิร์ฟเวอร์ของ GPU Platform (ต่อไปนี้จะเรียกว่า \"GPU Platform "
 "Server\") กระจายภายใต้ GNU Lesser General Public License v3.0 (\"LGPL\") "
 "และไลบรารี API Client และส่วนประกอบเสริมสำหรับการเข้าถึงเซิร์ฟเวอร์ "
-"Backend.AI (ต่อไปนี้เรียกว่า \"Backend.AI Client\") กระจายภายใต้ MIT License"
+"GPU Platform (ต่อไปนี้เรียกว่า \"GPU Platform Client\") กระจายภายใต้ MIT License"
 " แม้ว่าจะเป็นไปตาม LGPL แต่ต้องมีสัญญาการค้า กับ Lablup Co., Ltd. "
 "(\"Lablup\") "
 "ขึ้นอยู่กับเงื่อนไขในการดำเนินกิจกรรมที่มุ่งหวังผลกำไรโดยใช้เซิร์ฟเวอร์ "
-"Backend.AI มีปลั๊กอินเพิ่มเติมหลายตัวและแผงควบคุม GUI "
-"ของผู้ดูแลระบบที่ใช้กับโซลูชัน Backend.AI สำหรับองค์กร "
+"GPU Platform มีปลั๊กอินเพิ่มเติมหลายตัวและแผงควบคุม GUI "
+"ของผู้ดูแลระบบที่ใช้กับโซลูชัน GPU Platform สำหรับองค์กร "
 "ซึ่งไม่ใช่ไม่เปิดเผยซอร์สโค้ด แต่เป็นซอฟต์แวร์เชิงพาณิชย์"
 
 #: ../../license_agreement/license_agreement.rst:22
@@ -83,20 +83,20 @@ msgstr ""
 
 #: ../../license_agreement/license_agreement.rst:30
 msgid ""
-"LGPL must be followed when users use and change Backend.AI Server (Manager /"
+"LGPL must be followed when users use and change GPU Platform Server (Manager /"
 " Agent / Common) or develop and distribute software that uses it. However, "
-"in the case of distributing software which import Backend.AI server as a "
+"in the case of distributing software which import GPU Platform server as a "
 "module without changing it (e.g. Python import), it is regarded as a dynamic"
-" link and code disclosure under the LGPL is exempted. When Backend.AI server"
+" link and code disclosure under the LGPL is exempted. When GPU Platform server"
 " is installed on the hardware and used by the general public through the "
 "network, there is no obligation under the LGPL."
 msgstr ""
-"LGPL ต้องได้รับการปฏิบัติตามเมื่อผู้ใช้ใช้งานและเปลี่ยนแปลง Backend.AI "
+"LGPL ต้องได้รับการปฏิบัติตามเมื่อผู้ใช้ใช้งานและเปลี่ยนแปลง GPU Platform "
 "Server (Manager / Agent / Common) หรือพัฒนาและจัดจำหน่ายซอฟต์แวร์ที่ใช้มัน "
-"อย่างไรก็ตาม ในกรณีที่จัดจำหน่ายซอฟต์แวร์ที่นำเข้า Backend.AI server "
+"อย่างไรก็ตาม ในกรณีที่จัดจำหน่ายซอฟต์แวร์ที่นำเข้า GPU Platform server "
 "เป็นโมดูลโดยไม่เปลี่ยนแปลง (เช่น Python import) "
 "จะถือว่าเป็นการเชื่อมโยงแบบไดนามิก และการเปิดเผยโค้ตตาม LGPL จะไม่บังคับ "
-"เมื่อ Backend.AI server "
+"เมื่อ GPU Platform server "
 "ถูกติดตั้งบนฮาร์ดแวร์และใช้งานโดยประชาชนทั่วไปผ่านเครือข่าย "
 "จะไม่มีข้อผูกพันตาม LGPL"
 
@@ -118,30 +118,30 @@ msgstr ""
 
 #: ../../license_agreement/license_agreement.rst:44
 msgid ""
-"When software that works only after installing the Backend.AI server is sold"
+"When software that works only after installing the GPU Platform server is sold"
 " to customers outside the organization."
 msgstr ""
-"เมื่อซอฟต์แวร์ที่ทำงานได้เฉพาะหลังจากการติดตั้งเซิร์ฟเวอร์ Backend.AI "
+"เมื่อซอฟต์แวร์ที่ทำงานได้เฉพาะหลังจากการติดตั้งเซิร์ฟเวอร์ GPU Platform "
 "ถูกขายให้กับลูกค้านอกองค์กร"
 
 #: ../../license_agreement/license_agreement.rst:46
 msgid ""
-"When hardware including Backend.AI server is sold to customers outside the "
+"When hardware including GPU Platform server is sold to customers outside the "
 "organization."
 msgstr ""
-"เมื่อฮาร์ดแวร์รวมถึงเซิร์ฟเวอร์ Backend.AI ถูกขายให้กับลูกค้านอกองค์กร"
+"เมื่อฮาร์ดแวร์รวมถึงเซิร์ฟเวอร์ GPU Platform ถูกขายให้กับลูกค้านอกองค์กร"
 
 #: ../../license_agreement/license_agreement.rst:48
 msgid ""
-"When the Backend.AI server is installed on the hardware and the usage fee is"
+"When the GPU Platform server is installed on the hardware and the usage fee is"
 " received from a customer outside the organization that uses it."
 msgstr ""
-"เมื่อเซิร์ฟเวอร์ Backend.AI "
+"เมื่อเซิร์ฟเวอร์ GPU Platform "
 "ถูกติดตั้งในฮาร์ดแวร์และได้รับค่าธรรมเนียมการใช้งานจากลูกค้านอกองค์กรที่ใช้งานมัน"
 
 #: ../../license_agreement/license_agreement.rst:51
-msgid "In other cases, you can use the Backend.AI server for free."
-msgstr "ในกรณีอื่น ๆ คุณสามารถใช้เซิร์ฟเวอร์ Backend.AI ได้ฟรี"
+msgid "In other cases, you can use the GPU Platform server for free."
+msgstr "ในกรณีอื่น ๆ คุณสามารถใช้เซิร์ฟเวอร์ GPU Platform ได้ฟรี"
 
 #: ../../license_agreement/license_agreement.rst:53
 msgid "**Interpretation Example**"
@@ -149,20 +149,20 @@ msgstr "**ตัวอย่างการตีความ**"
 
 #: ../../license_agreement/license_agreement.rst:55
 msgid ""
-"If you distribute Backend.AI server with modifications to outside the "
+"If you distribute GPU Platform server with modifications to outside the "
 "organization, you must disclose the code and apply LGPL the same way. There "
 "is no obligation to disclose the code if it is olny used internally."
 msgstr ""
-"หากคุณกระจายเซิร์ฟเวอร์ Backend.AI ที่มีการปรับเปลี่ยนไปยังภายนอกองค์กร "
+"หากคุณกระจายเซิร์ฟเวอร์ GPU Platform ที่มีการปรับเปลี่ยนไปยังภายนอกองค์กร "
 "คุณต้องเปิดเผยโค้ดและใช้ LGPL ในลักษณะเดียวกัน "
 "ไม่มีข้อผูกพันในการเปิดเผยโค้ดหากใช้ภายในองค์กรเท่านั้น"
 
 #: ../../license_agreement/license_agreement.rst:58
 msgid ""
-"When distributing software that uses Backend.AI server as an essential "
+"When distributing software that uses GPU Platform server as an essential "
 "library,"
 msgstr ""
-"เมื่อมีการจัดจำหน่ายซอฟต์แวร์ที่ใช้เซิร์ฟเวอร์ Backend.AI "
+"เมื่อมีการจัดจำหน่ายซอฟต์แวร์ที่ใช้เซิร์ฟเวอร์ GPU Platform "
 "เป็นห้องสมุดที่จำเป็น"
 
 #: ../../license_agreement/license_agreement.rst:60
@@ -183,10 +183,10 @@ msgstr ""
 
 #: ../../license_agreement/license_agreement.rst:65
 msgid ""
-"When Backend.AI server is installed on the hardware and it is used by the "
+"When GPU Platform server is installed on the hardware and it is used by the "
 "public through network,"
 msgstr ""
-"เมื่อเซิร์ฟเวอร์ Backend.AI "
+"เมื่อเซิร์ฟเวอร์ GPU Platform "
 "ถูกติดตั้งบนฮาร์ดแวร์และมีการใช้งานโดยสาธารณะผ่านเครือข่าย"
 
 #: ../../license_agreement/license_agreement.rst:68
@@ -200,8 +200,8 @@ msgid "Paid distribution: A commercial contract with Lablup is required."
 msgstr "การจัดจำหน่ายที่ต้องชำระเงิน: จำเป็นต้องมีสัญญาพาณิชย์กับ Lablup"
 
 #: ../../license_agreement/license_agreement.rst:71
-msgid "When distributing hardware in which Backend.AI server is installed,"
-msgstr "เมื่อกระจายฮาร์ดแวร์ที่ติดตั้ง Backend.AI เซิร์ฟเวอร์อยู่"
+msgid "When distributing hardware in which GPU Platform server is installed,"
+msgstr "เมื่อกระจายฮาร์ดแวร์ที่ติดตั้ง GPU Platform เซิร์ฟเวอร์อยู่"
 
 #: ../../license_agreement/license_agreement.rst:76
 msgid ""

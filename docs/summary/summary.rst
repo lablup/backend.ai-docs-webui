@@ -23,7 +23,7 @@ may be only one default project.
 Click the person icon on the right side of the top bar to see the user menu.
 Each menu item has the following functions.
 
-* About Backend.AI: Displays information such as version of Backend.AI Web-UI,
+* About GPU Platform: Displays information such as version of GPU Platform Web-UI,
   license type, etc.
 * My Account: Check/Update information of current login user
 * Preferences: Go to user settings page
@@ -126,7 +126,7 @@ resources held by that resource group (agents belong to it).
 System Resources
 ^^^^^^^^^^^^^^^^
 
-It shows the number of Agent worker nodes connected to the Backend.AI system and
+It shows the number of Agent worker nodes connected to the GPU Platform system and
 the total number of compute sessions currently created. You can also check the
 CPU, memory, and GPU utilization of the agent node. If you are logged in as a
 normal user, only the number of compute sessions you have created is displayed.
@@ -145,12 +145,12 @@ here. If you accept the share request, you can view and access the shared folder
 in the Data & Storage folder. The access rights are determined by the user who has sent the share request.
 Of course, you can decline the sharing requests.
 
-Download Backend.AI Web UI App
+Download GPU Platform Web UI App
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Backend.AI WebUI supports desktop applications. 
+GPU Platform WebUI supports desktop applications. 
 By using desktop app, you can use desktop app specific features, such as :ref:`SSH/SFTP connection to a Compute Session<ssh-sftp-container>` .
-For now Backend.AI WebUI provides desktop application with following OS:
+For now GPU Platform WebUI provides desktop application with following OS:
 
 * Windows
 * Linux

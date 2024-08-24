@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2020, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Console
+# This file is distributed under the same license as the GPU Platform Console
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Console User Guide 20.03\n"
+"Project-Id-Version: GPU Platform Console User Guide 20.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-23 13:53+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -50,7 +50,7 @@ msgstr ""
 
 #: ../../appendix/resource_and_scheduler.rst:19
 msgid ""
-"Backend.AI GUI Console supports resource monitoring through GUI. After "
+"GPU Platform GUI Console supports resource monitoring through GUI. After "
 "logging in with a user account, create a compute session. Resource "
 "allocation is set as shown in the following figure."
 msgstr ""
@@ -106,7 +106,7 @@ msgstr ""
 
 #: ../../appendix/resource_and_scheduler.rst:66
 msgid ""
-"Backend.AI server has a built-in self-developed task scheduler. It "
+"GPU Platform server has a built-in self-developed task scheduler. It "
 "automatically checks the available resources of all worker nodes and "
 "delegates the request to create a compute session to the worker that "
 "meets the user's resource request. In addition, when resources are "

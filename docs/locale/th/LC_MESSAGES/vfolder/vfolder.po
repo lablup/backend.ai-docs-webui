@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the GPU Platform Web-UI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Project-Id-Version: GPU Platform Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-23 23:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -24,7 +24,7 @@ msgstr "การจัดการข้อมูลและโฟลเดอ
 
 #: ../../vfolder/vfolder.rst:5
 msgid ""
-"Backend.AI supports dedicated storage to preserve user's files. Since the "
+"GPU Platform supports dedicated storage to preserve user's files. Since the "
 "files and directories of a compute session are deleted upon session "
 "termination, it is recommended to save them in a storage folder. List of "
 "storage folders can be found by selecting the Data & Storage page on the "
@@ -32,7 +32,7 @@ msgid ""
 " host name where the folder is located (Location), and folder access rights "
 "(Permission)."
 msgstr ""
-"Backend.AI รองรับการจัดเก็บข้อมูลเฉพาะเพื่อรักษาไฟล์ของผู้ใช้ "
+"GPU Platform รองรับการจัดเก็บข้อมูลเฉพาะเพื่อรักษาไฟล์ของผู้ใช้ "
 "เนื่องจากไฟล์และไดเรกทอรีของเซสชันการคอมพิวเตอร์จะถูกลบเมื่อสิ้นสุดเซสชัน "
 "จึงแนะนำให้บันทึกไว้ในโฟลเดอร์จัดเก็บ "
 "สามารถดูรายการโฟลเดอร์จัดเก็บได้โดยการเลือกหน้าข้อมูลและการจัดเก็บในแถบด้านข้าง"
@@ -594,22 +594,22 @@ msgstr "การใช้ FileBrowser"
 
 #: ../../vfolder/vfolder.rst:274
 msgid ""
-"Backend.AI supports `FileBrowser <https://filebrowser.org>`_ from version "
+"GPU Platform supports `FileBrowser <https://filebrowser.org>`_ from version "
 "20.09. FileBrowser is a program that helps you manage files on a remote "
 "server through a web browser. This is especially useful when uploading a "
 "directory from the user's local machine."
 msgstr ""
-"Backend.AI รองรับ `FileBrowser <https://filebrowser.org>`_ ตั้งแต่เวอร์ชัน "
+"GPU Platform รองรับ `FileBrowser <https://filebrowser.org>`_ ตั้งแต่เวอร์ชัน "
 "20.09 FileBrowser "
 "เป็นโปรแกรมที่ช่วยให้คุณจัดการไฟล์บนเซิร์ฟเวอร์ระยะไกลผ่านเว็บเบราว์เซอร์ "
 "ซึ่งมีประโยชน์โดยเฉพาะเมื่ออัปโหลดไดเรกทอรีจากเครื่องคอมพิวเตอร์ท้องถิ่นของผู้ใช้"
 
 #: ../../vfolder/vfolder.rst:279
 msgid ""
-"Currently, Backend.AI provides a FileBrowser as an application of a compute "
+"Currently, GPU Platform provides a FileBrowser as an application of a compute "
 "session. Therefore, the following conditions are required to launch it."
 msgstr ""
-"ปัจจุบัน Backend.AI มี FileBrowser เป็นแอปพลิเคชันของเซสชันการคำนวณ ดังนั้น "
+"ปัจจุบัน GPU Platform มี FileBrowser เป็นแอปพลิเคชันของเซสชันการคำนวณ ดังนั้น "
 "จึงมีเงื่อนไขต่อไปนี้ที่จำเป็นต้องมีเพื่อเรียกใช้มัน"
 
 #: ../../vfolder/vfolder.rst:282
@@ -689,12 +689,12 @@ msgstr "FileBrowser กับหน้าต่างใหม่"
 
 #: ../../vfolder/vfolder.rst:315
 msgid ""
-"When user clicks 'EXECUTE FILEBROWSER' button, Backend.AI automatically "
+"When user clicks 'EXECUTE FILEBROWSER' button, GPU Platform automatically "
 "creates a dedicated compute session for the app. So, in the Sessions page, "
 "you should see FileBrowser compute session. It is user's responsibility to "
 "delete this compute session."
 msgstr ""
-"เมื่อผู้ใช้คลิกปุ่ม 'EXECUTE FILEBROWSER' ระบบ Backend.AI "
+"เมื่อผู้ใช้คลิกปุ่ม 'EXECUTE FILEBROWSER' ระบบ GPU Platform "
 "จะสร้างเซสชันการคำนวณเฉพาะสำหรับแอปโดยอัตโนมัติ ดังนั้นในหน้าเซสชัน "
 "คุณควรเห็นเซสชันการคำนวณ FileBrowser "
 "เป็นความรับผิดชอบของผู้ใช้ในการลบเซสชันการคำนวณนี้"
@@ -755,12 +755,12 @@ msgstr "ตัวอย่างการใช้งานพื้นฐาน
 
 #: ../../vfolder/vfolder.rst:352
 msgid ""
-"Here, we present some basic usage examples of FileBrowser in Backend.AI. "
+"Here, we present some basic usage examples of FileBrowser in GPU Platform. "
 "Most of the FileBrowser operations are intuitive, but if you need more "
 "detailed guide, please refer to the `FileBrowser documentation "
 "<https://filebrowser.org>`_."
 msgstr ""
-"ที่นี่เรานำเสนอการใช้งานพื้นฐานบางอย่างของ FileBrowser ใน Backend.AI "
+"ที่นี่เรานำเสนอการใช้งานพื้นฐานบางอย่างของ FileBrowser ใน GPU Platform "
 "โดยการดำเนินการของ FileBrowser ส่วนใหญ่จะเป็นไปตามสัญชาตญาณ "
 "แต่หากคุณต้องการคู่มือที่ละเอียดมากขึ้น โปรดดูที่ `เอกสารของ FileBrowser "
 "<https://filebrowser.org>`_."
@@ -854,11 +854,11 @@ msgstr "การใช้ SFTP เซิร์ฟเวอร์"
 
 #: ../../vfolder/vfolder.rst:424
 msgid ""
-"From 22.09, Backend.AI supports SSH / SFTP file upload from both desktop app"
+"From 22.09, GPU Platform supports SSH / SFTP file upload from both desktop app"
 " and web-based Web-UI. The SFTP server allows you to upload files quickly "
 "through reliable data streams."
 msgstr ""
-"ตั้งแต่วันที่ 22.09 เป็นต้นไป Backend.AI รองรับการอัปโหลดไฟล์ผ่าน SSH / SFTP"
+"ตั้งแต่วันที่ 22.09 เป็นต้นไป GPU Platform รองรับการอัปโหลดไฟล์ผ่าน SSH / SFTP"
 " จากทั้งแอปพลิเคชันเดสก์ท็อปและเว็บ UI แบบเว็บ เซิร์ฟเวอร์ SFTP "
 "ช่วยให้คุณสามารถอัปโหลดไฟล์ได้อย่างรวดเร็วผ่านสตรีมข้อมูลที่เชื่อถือได้"
 

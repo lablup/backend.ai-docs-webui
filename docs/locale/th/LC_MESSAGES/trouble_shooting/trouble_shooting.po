@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the GPU Platform Web-UI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Project-Id-Version: GPU Platform Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-23 23:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -151,10 +151,10 @@ msgstr "เลย์เอาต์ของหน้าเสียหาย"
 
 #: ../../trouble_shooting/trouble_shooting.rst:72
 msgid ""
-"Backend.AI Web-UI utilizes the latest modern JavaScript and/or browser "
+"GPU Platform Web-UI utilizes the latest modern JavaScript and/or browser "
 "features. Please use the LATEST versions of moder browsers (such as Chrome)."
 msgstr ""
-"Backend.AI Web-UI ใช้ฟีเจอร์ JavaScript และ/หรือเบราว์เซอร์สมัยใหม่ล่าสุด "
+"GPU Platform Web-UI ใช้ฟีเจอร์ JavaScript และ/หรือเบราว์เซอร์สมัยใหม่ล่าสุด "
 "กรุณาใช้เวอร์ชันล่าสุดของเบราว์เซอร์สมัยใหม่ (เช่น Chrome)"
 
 #: ../../trouble_shooting/trouble_shooting.rst:76
@@ -216,11 +216,11 @@ msgstr "ทรัพยากรที่ระบุไม่ตรงกับ
 msgid ""
 "Occasionally, due to unstable network connections or container management "
 "problem of Docker daemon, there may be a case where the resource occupied by"
-" Backend.AI does not match with the resource actually used by the container."
+" GPU Platform does not match with the resource actually used by the container."
 " In this case, follow the steps below."
 msgstr ""
 "บางครั้งเนื่องจากการเชื่อมต่อเครือข่ายที่ไม่เสถียรหรือปัญหาการจัดการคอนเทนเนอร์ของ"
-" Docker daemon อาจมีกรณีที่ทรัพยากรที่ถูกใช้งานโดย Backend.AI "
+" Docker daemon อาจมีกรณีที่ทรัพยากรที่ถูกใช้งานโดย GPU Platform "
 "ไม่ตรงกับทรัพยากรที่ใช้โดยคอนเทนเนอร์จริง ในกรณีนี้ให้ทำตามขั้นตอนด้านล่าง"
 
 #: ../../trouble_shooting/trouble_shooting.rst:109
@@ -247,14 +247,14 @@ msgstr "ฟีเจอร์นี้มีให้ใช้เฉพาะส
 
 #: ../../trouble_shooting/trouble_shooting.rst:119
 msgid ""
-"If a new image is pushed to one of the Backend.AI docker registries, the "
-"image metadata must be updated in Backend.AI to be used in creating a "
+"If a new image is pushed to one of the GPU Platform docker registries, the "
+"image metadata must be updated in GPU Platform to be used in creating a "
 "compute session. Metadata update can be performed by clicking the RESCAN "
 "IMAGES button on the Maintenance page. This will update metadata for every "
 "docker registry, if there are multiple registries."
 msgstr ""
-"หากมีการดันภาพใหม่ไปยังหนึ่งในรีจิสทรี docker ของ Backend.AI "
-"เมตาดาทาต้องได้รับการอัปเดตใน Backend.AI "
+"หากมีการดันภาพใหม่ไปยังหนึ่งในรีจิสทรี docker ของ GPU Platform "
+"เมตาดาทาต้องได้รับการอัปเดตใน GPU Platform "
 "เพื่อที่จะใช้ในการสร้างเซสชันคอมพิวเตอร์ "
 "การอัปเดตเมตาดาทาสามารถทำได้โดยการคลิกที่ปุ่ม RESCAN IMAGES บนหน้า "
 "Maintenance ซึ่งจะปรับปรุงเมตาดาทาสำหรับรีจิสทรี docker ทุกตัว "

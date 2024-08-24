@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2020, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Console
+# This file is distributed under the same license as the GPU Platform Console
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Console User Guide 19.09\n"
+"Project-Id-Version: GPU Platform Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-31 02:49+0900\n"
 "PO-Revision-Date: 2020-09-12 11:11+0900\n"
@@ -109,7 +109,7 @@ msgstr ""
 #: ../../session_use/session_use.rst:68
 msgid ""
 "Try preferred port: When the web service is opened, a specific port is "
-"assigned from the port pool created in advance by Backend.AI. Users can "
+"assigned from the port pool created in advance by GPU Platform. Users can "
 "use the service only when they connect to the port along with the IP "
 "address or domain name. If you check this item and enter the port number,"
 " the entered port number will be tried. However, there is no guarantee "
@@ -117,7 +117,7 @@ msgid ""
 "all in the port pool, or another service may already be using the port. "
 "In this case, the port number is randomly assigned."
 msgstr ""
-"Try preferred port: 웹 서비스가 뜰 때 Backend.AI가 사전에 생성해 둔 포트 풀(pool)에서 특정 포트를 "
+"Try preferred port: 웹 서비스가 뜰 때 GPU Platform가 사전에 생성해 둔 포트 풀(pool)에서 특정 포트를 "
 "하나 할당받게 됩니다. 사용자는 IP주소 또는 도메인 이름과 함께 해당 포트로 접속을 해야 서비스를 사용할 수 있습니다. 이 항목에"
 " 체크하고 포트 번호를 입력하면 입력한 포트 번호를 우선적으로 할당 시도하게 됩니다. 하지만, 항상 원하는 포트를 할당받는다는 "
 "보장은 없습니다. 포트 풀에 해당 포트가 아예 없을 수도 있고, 다른 서비스가 이미 해당 포트를 할당받아 사용하고 있을 수도 "
@@ -160,17 +160,17 @@ msgstr ""
 #: ../../session_use/session_use.rst:96
 msgid ""
 "Click the NEW button on the upper right corner and select Notebook for "
-"Backend.AI, and ipynb window will pop up where you can enter the new "
+"GPU Platform, and ipynb window will pop up where you can enter the new "
 "code."
 msgstr ""
-"우측 상단의 NEW 버튼을 클릭한 후 Backend.AI 용 Notebook을 선택하면 새로운 코드를 입력할 수 있는 ipynb "
+"우측 상단의 NEW 버튼을 클릭한 후 GPU Platform 용 Notebook을 선택하면 새로운 코드를 입력할 수 있는 ipynb "
 "창이 뜹니다."
 
 #: ../../session_use/session_use.rst:104
 msgid ""
 "In this window, you can enter and execute any code you want by using the "
 "environment that session provides. The code is executed on one of the "
-"Backend.AI nodes where the compute session is actually created, and there"
+"GPU Platform nodes where the compute session is actually created, and there"
 " is no need to configure a separate environment on the local machine."
 msgstr ""
 

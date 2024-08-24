@@ -4,7 +4,7 @@
 SSH/SFTP Connection to a Compute Session
 ==========================================
 
-Backend.AI supports SSH/SFTP connection to the created compute sessions
+GPU Platform supports SSH/SFTP connection to the created compute sessions
 (containers). In this section, we will learn how to do it.
 
    .. note::
@@ -19,7 +19,7 @@ Backend.AI supports SSH/SFTP connection to the created compute sessions
       You can also download the app from
       https://github.com/lablup/backend.ai-webui/releases. Make sure to download
       the compatible version of the Web-UI in this case. You can check the Web-UI
-      version by clicking on the "About Backend.AI" sub-menu located in the
+      version by clicking on the "About GPU Platform" sub-menu located in the
       preference menu on the upper-right side of the GUI.
 
 .. .. note::
@@ -35,7 +35,7 @@ Backend.AI supports SSH/SFTP connection to the created compute sessions
 ..    You can also download the app from
 ..    https://github.com/lablup/backend.ai-webui/releases. Make sure to download
 ..    the compatible version of the Web-UI in this case. You can check the Web-UI
-..    version by clicking on the "About Backend.AI" sub-menu located in the
+..    version by clicking on the "About GPU Platform" sub-menu located in the
 ..    preference menu on the upper-right side of the GUI.
 
 .. _sftp_connection_for_linux_and_mac:
@@ -119,7 +119,7 @@ each FTP client manual for details.
 For Windows / FileZilla
 --------------------------------------------------------------
 
-Backend.AI Web-UI app supports OpenSSH-based public key connection (RSA2048).
+GPU Platform Web-UI app supports OpenSSH-based public key connection (RSA2048).
 To access with a client such as PuTTY on Windows, a private key must be
 converted into a ``ppk`` file through a program such as PuTTYgen. You can refer
 to the following link for the conversion method:
@@ -170,7 +170,7 @@ with this SFTP connection.
 For Visual Studio Code
 --------------------------------------------------------------
 
-Backend.AI supports to develop with the local Visual Studio Code through SSH/SFTP
+GPU Platform supports to develop with the local Visual Studio Code through SSH/SFTP
 connection to a compute session. Once connected, you can interact with files and
 folders anywhere on the compute session. In this section, we will learn how to
 do it.
@@ -237,7 +237,7 @@ Open...` or `File > Open Workspace...` menu just as you usually would do!
    :alt: open remote host file directory
 
 
-Establish SSH connection with Backend.AI client package
+Establish SSH connection with GPU Platform client package
 -------------------------------------------------------
 
 This document describes how to establish an SSH connection to a compute session
@@ -247,15 +247,15 @@ Typically, GPU nodes that runs compute sessions (containers) cannot be accessed
 directly from the outside. Therefore, in order to establish an SSH or sFTP
 connection to a compute session, a local proxy that creates a tunnel needs to be
 launched to relay the connection between the user and the session. Using the
-Backend.AI Client package, this process is relatively simple to configure.
+GPU Platform Client package, this process is relatively simple to configure.
 
-Prepare Backend.AI Client package
+Prepare GPU Platform Client package
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Prepare with Docker image
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Backend.AI Client package is available as a Docker image. You can pull the
+The GPU Platform Client package is available as a Docker image. You can pull the
 image from the Docker Hub with the following command:
 
 .. code-block:: bash
@@ -265,7 +265,7 @@ image from the Docker Hub with the following command:
    $ # If you want to use the specific version, you can pull the image with the following command:
    $ docker pull lablup/backend.ai-client:<version>
 
-The version of Backend.AI server can be found in "About Backend.AI" menu that
+The version of GPU Platform server can be found in "About GPU Platform" menu that
 appears when you click on the person icon on the top right corner of the Web UI.
 
 .. image:: check_backend_server_version.png
@@ -288,10 +288,10 @@ available, the help message will be displayed.
 Prepare directly from host with a Python virtual environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you cannot or do not want to use Docker, you can install the Backend.AI Client
+If you cannot or do not want to use Docker, you can install the GPU Platform Client
 package directly on your host machine. Prerequisites are:
 
-- The required version of Python may vary depending on the Backend.AI Client
+- The required version of Python may vary depending on the GPU Platform Client
   version. You can check the compability matrix at
   https://github.com/lablup/backend.ai#python-version-compatibility.
 - ``clang`` compiler might be needed
@@ -342,7 +342,7 @@ you run the ``pip list`` command.
    pip        24.0
    setuptools 65.5.0
 
-Now, install the Backend.AI Client package. Install the client package according
+Now, install the GPU Platform Client package. Install the client package according
 to the server version. Here, we assume that the version is 23.09. If an
 installation-related error occurs with the ``netifaces`` package, you may need to
 lower the versions of ``pip`` and ``setuptools``. Check if the ``backend.ai``

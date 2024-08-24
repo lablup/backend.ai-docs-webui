@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2020, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Console
+# This file is distributed under the same license as the GPU Platform Console
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Console User Guide 19.09\n"
+"Project-Id-Version: GPU Platform Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-13 11:09+0900\n"
 "PO-Revision-Date: 2023-03-25 23:38+0900\n"
@@ -32,13 +32,13 @@ msgid ""
 "deleted based on the container. To preserve the data inside the container"
 " independent of the life cycle of the container, a separate host folder "
 "must be mounted into the container, and then files must be created within"
-" the mounted folder. Backend.AI provides a function to mount storage "
+" the mounted folder. GPU Platform provides a function to mount storage "
 "folders when creating a compute session."
 msgstr ""
 "연산 세션을 시작하면 사용자는 ``/home/work/`` 폴더에 접근 권한을 가지게 되는데, ``/home/work/`` 및 그 "
 "하위에 생성된 일반 폴더와 파일은 연산 세션이 삭제되면 함께 사라지게 됩니다. 이는 연산 세션이 컨테이너에 기반하여 동적으로 "
 "생성/삭제 되기 때문으로, 컨테이너 내부의 데이터를 컨테이너의 수명 주기와 상관없이 보존하려면 별도의 호스트 폴더를 컨테이너에 "
-"마운트 한 뒤 마운트 된 폴더 내에 파일을 생성해야 합니다. Backend.AI 에서는 Storage 폴더 연산 세션 생성 시 "
+"마운트 한 뒤 마운트 된 폴더 내에 파일을 생성해야 합니다. GPU Platform 에서는 Storage 폴더 연산 세션 생성 시 "
 "마운트 할 수 있는 기능을 제공하고 있습니다."
 
 #: ../../mount_vfolder/mount_vfolder.rst:16
@@ -208,13 +208,13 @@ msgstr "Homebrew를 통해 패키지 설치"
 msgid ""
 "Package managers like Ubuntu ``apt`` or CentOS ``yum`` usually require "
 "the ``root`` permission. For security reasons, ``sudo`` and ``root`` "
-"accesses are blocked by default in Backend.AI's compute session (it may "
+"accesses are blocked by default in GPU Platform's compute session (it may "
 "be allowed depending on the configuration), so we recommend to use "
 "`Homebrew on Linux <https://docs.brew.sh/Homebrew-on-Linux>`_ which does "
 "not require ``sudo``."
 msgstr ""
 "Ubuntu의 ``apt`` 나 CentOS의 ``yum`` 같은 패키지 매니저는 일반적으로 ``root`` 권한을 필요로 합니다."
-" Backend.AI의 연산 세션은 보안을 위해 ``sudo`` 권한 및 ``root`` 접근이 기본적으로 막혀 있기 때문에 "
+" GPU Platform의 연산 세션은 보안을 위해 ``sudo`` 권한 및 ``root`` 접근이 기본적으로 막혀 있기 때문에 "
 "(설정에 따라 접근을 허용할 수도 있습니다), 패키지 설치를 위해 ``sudo`` 접근이 필요하지 않은 `Homebrew on "
 "Linux <https://docs.brew.sh/Homebrew-on-Linux>`_ 사용을 권장하고 있습니다."
 

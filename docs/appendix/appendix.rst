@@ -5,7 +5,7 @@ Appendix
 GPU virtualization and fractional GPU allocation
 ------------------------------------------------
 
-Backend.AI supports GPU virtualization technology which allows single physical
+GPU Platform supports GPU virtualization technology which allows single physical
 GPU can be divided and shared by multiple users simultaneously. Therefore, if
 you want to execute a task that does not require much GPU computation
 capability, you can create a compute session by allocating a portion of the GPU.
@@ -73,7 +73,7 @@ Alternatively, you can run the ``nvidia-smi`` command from the web terminal to q
 Automated job scheduling
 ------------------------------------------------
 
-Backend.AI server has a built-in self-developed task scheduler. It automatically
+GPU Platform server has a built-in self-developed task scheduler. It automatically
 checks the available resources of all worker nodes and delegates the request to
 create a compute session to the worker that meets the user's resource request.
 In addition, when resources are insufficient, the user's request to create a
@@ -120,7 +120,7 @@ and automatically process the requests when resources become available.
 Multi-version machine learning container support
 -------------------------------------------------
 
-Backend.AI provides variaous pre-built ML and HPC kernel images. Therefore,
+GPU Platform provides variaous pre-built ML and HPC kernel images. Therefore,
 users can immediately utilize major libraries and packages without having to
 install packages by themselves. Here, we'll walk through an example that takes
 advantage of multiple versions of the multiple ML library immediately.
@@ -170,7 +170,7 @@ command. You can see that PyTorch 1.8 version is installed.
    :align: center
 
 Like this, you can utilize various versions of major libraries such as
-TensorFlow and PyTorch through Backend.AI without unnecessary effort to install them.
+TensorFlow and PyTorch through GPU Platform without unnecessary effort to install them.
 
 
 Convert a compute session to a new private Docker image
@@ -213,79 +213,79 @@ compute session environment and ask administrators to convert it.
 - A new compute session will be created using the new Docker image.
 
 
-Backend.AI Server Installation Guide
------------------------------------------
-
-For Backend.AI Server daemons/services, following hardware specification should be met. For
-optimal performance, just double the amount of each resources.
-
-* Manager: 2 cores, 4 GiB memory
-* Agent: 4 cores, 32 GiB memory, NVIDIA GPU (for GPU workload), > 512 GiB SSD
-* Webserver: 2 cores, 4 GiB memory
-* WSProxy: 2 cores, 4 GiB memory
-* PostgreSQL DB: 2 cores, 4 GiB memory
-* Redis: 1 core, 2 GiB memory
-* Etcd: 1 core, 2 GiB memory
-
-The essential host dependent packages that must be pre-installed before installing
-each service are:
-
-* Web-UI: Operating system that can run the latest browsers (Windows, Mac
-  OS, Ubuntu, etc.)
-* Manager: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)
-* Agent: docker (≥19.03), CUDA/CUDA Toolkit (≥8, 11 recommend),
-  nvidia-docker v2, Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)
-* Webserver: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)
-* WSProxy: docker (≥19.03), docker-compose (≥1.24)
-* PostgreSQL DB: docker (≥19.03), docker-compose (≥1.24)
-* Redis: docker (≥19.03), docker-compose (≥1.24)
-* Etcd: docker (≥19.03), docker-compose (≥1.24)
-
-For Enterprise version, Backend.AI server daemons are installed by Lablup support team and following materials/services are provided after initial installation:
-
-* DVD 1 (includes Backend.AI packages)
-* User GUI Guide manual
-* Admin GUI Guide manual
-* Installation report
-* First-time user/admin on-site tutorial (3-5 hours)
-
-Product maintenance and support information: the commercial contract includes a
-monthly/annual subscription fee for the Enterprise version by default. Initial
-user/administrator training (1-2 times) and wired/wireless customer support
-services are provided for about 2 weeks after initial installation, minor
-release updater support and customer support services through online channels
-are provided for 3-6 months. Maintenance and support services provided
-afterwards may have different details depending on the terms of the contract.
-
-.. Users of the open source version can also purchase an installation and support
-.. plan separately.
+.. GPU Platform Server Installation Guide
+.. -----------------------------------------
+..
+.. For GPU Platform Server daemons/services, following hardware specification should be met. For
+.. optimal performance, just double the amount of each resources.
+..
+.. * Manager: 2 cores, 4 GiB memory
+.. * Agent: 4 cores, 32 GiB memory, NVIDIA GPU (for GPU workload), > 512 GiB SSD
+.. * Webserver: 2 cores, 4 GiB memory
+.. * WSProxy: 2 cores, 4 GiB memory
+.. * PostgreSQL DB: 2 cores, 4 GiB memory
+.. * Redis: 1 core, 2 GiB memory
+.. * Etcd: 1 core, 2 GiB memory
+..
+.. The essential host dependent packages that must be pre-installed before installing
+.. each service are:
+..
+.. * Web-UI: Operating system that can run the latest browsers (Windows, Mac
+..   OS, Ubuntu, etc.)
+.. * Manager: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)
+.. * Agent: docker (≥19.03), CUDA/CUDA Toolkit (≥8, 11 recommend),
+..   nvidia-docker v2, Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)
+.. * Webserver: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)
+.. * WSProxy: docker (≥19.03), docker-compose (≥1.24)
+.. * PostgreSQL DB: docker (≥19.03), docker-compose (≥1.24)
+.. * Redis: docker (≥19.03), docker-compose (≥1.24)
+.. * Etcd: docker (≥19.03), docker-compose (≥1.24)
+..
+.. For Enterprise version, GPU Platform server daemons are installed by Lablup support team and following materials/services are provided after initial installation:
+..
+.. * DVD 1 (includes GPU Platform packages)
+.. * User GUI Guide manual
+.. * Admin GUI Guide manual
+.. * Installation report
+.. * First-time user/admin on-site tutorial (3-5 hours)
+..
+.. Product maintenance and support information: the commercial contract includes a
+.. monthly/annual subscription fee for the Enterprise version by default. Initial
+.. user/administrator training (1-2 times) and wired/wireless customer support
+.. services are provided for about 2 weeks after initial installation, minor
+.. release updater support and customer support services through online channels
+.. are provided for 3-6 months. Maintenance and support services provided
+.. afterwards may have different details depending on the terms of the contract.
+..
+.. .. Users of the open source version can also purchase an installation and support
+.. .. plan separately.
 
 Integration examples
 --------------------
 
 In this section, we would like to introduce several common examples of applications,
-toolkits, and machine learning tools that can be utilized on the Backend.AI platform. 
-Here, we will provide explanations of the basic usage of each tool and how to set them 
-up in the Backend.AI environment, along with simple examples. We hope this will help 
-you choose and utilize the tools you need for your projects.   
+toolkits, and machine learning tools that can be utilized on the GPU Platform platform.
+Here, we will provide explanations of the basic usage of each tool and how to set them
+up in the GPU Platform environment, along with simple examples. We hope this will help
+you choose and utilize the tools you need for your projects.
 
-Please note that the content covered in this guide is based on specific versions 
-of the programs, so the usage may vary in future updates. Therefore, please use this 
-document for reference and also check the latest official documentation for any changes.   
-Now, let's take a look at the powerful tools available for use on Backend.AI one by one. 
+Please note that the content covered in this guide is based on specific versions
+of the programs, so the usage may vary in future updates. Therefore, please use this
+document for reference and also check the latest official documentation for any changes.
+Now, let's take a look at the powerful tools available for use on GPU Platform one by one.
 We hope this section will serve as a useful guide for your research and development.
 
 Using MLFlow
 ~~~~~~~~~~~~~
 
-There are many executable images in Backend.AI supports MLFlow and MLFlow UI as built-in app.   
-But in order to execute it, you may need extra procedures. By following instructions below, 
-you will be able to track parameters and result at Backend.AI as if you are using it on your 
+There are many executable images in GPU Platform supports MLFlow and MLFlow UI as built-in app.
+But in order to execute it, you may need extra procedures. By following instructions below,
+you will be able to track parameters and result at GPU Platform as if you are using it on your
 local environment.
 
 .. note::
    In this section, we will regard you already created session and about to execute an app in the session.
-   If you don't have any experience in creating session and executing app inside, please have a 
+   If you don't have any experience in creating session and executing app inside, please have a
    look through :ref:`How to create a session<create_session>` section.
 
 First, launch terminal app "console". and execute the command below, It will start mlflow tracking UI server.
@@ -305,7 +305,7 @@ After few moment, you will see a new page for MLFlow UI.
 .. image:: mlflow_UI.png
    :align: center
 
-By using MLFlow, you can track experiments, such as metrics and parameters every time you run.   
+By using MLFlow, you can track experiments, such as metrics and parameters every time you run.
 Let's start tracking experiments from simple example.
 
    .. code-block:: shell

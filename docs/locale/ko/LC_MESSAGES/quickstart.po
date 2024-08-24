@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2022, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the GPU Platform Web-UI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 23.03\n"
+"Project-Id-Version: GPU Platform Web-UI User Guide 23.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-06 14:21+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -23,10 +23,10 @@ msgstr "빠른 시작"
 
 #: ../../quickstart.rst:4
 msgid ""
-"Welcome to Quickstart guide of Backend.AI WebUI. This tutorial will cover"
-" the essentials of using Backend.AI without any knowledge base."
+"Welcome to Quickstart guide of GPU Platform WebUI. This tutorial will cover"
+" the essentials of using GPU Platform without any knowledge base."
 msgstr ""
-"Backend.AI WebUI를 사용하는 빠른 시작 가이드입니다. 이 튜토리얼에서는 다른 지식기반이 없이도 Backend.AI 를 "
+"GPU Platform WebUI를 사용하는 빠른 시작 가이드입니다. 이 튜토리얼에서는 다른 지식기반이 없이도 GPU Platform 를 "
 "사용할 수 있도록 꼭 필요한 내용만을 다룹니다."
 
 #: ../../quickstart.rst:10
@@ -34,8 +34,8 @@ msgid "Objectives"
 msgstr "목표"
 
 #: ../../quickstart.rst:13
-msgid "Part 1. Basic guide to using Backend.AI"
-msgstr "파트 1. Backend.AI 기초 사용 가이드"
+msgid "Part 1. Basic guide to using GPU Platform"
+msgstr "파트 1. GPU Platform 기초 사용 가이드"
 
 #: ../../quickstart.rst:14
 msgid ":ref:`How to create a virtual folder<create_storage_folder>`"
@@ -54,8 +54,8 @@ msgid ":ref:`How to delete a session<delete_session>`"
 msgstr ":ref:`세션 종료하는 방법<delete_session>` "
 
 #: ../../quickstart.rst:20
-msgid "Part 2. Advanced guide to using Backend.AI"
-msgstr "파트 2. Backend.AI 고급 사용 가이드"
+msgid "Part 2. Advanced guide to using GPU Platform"
+msgstr "파트 2. GPU Platform 고급 사용 가이드"
 
 #: ../../quickstart.rst:21
 msgid ":ref:`How to use terminal application with tmux<tmux_guide>`"
@@ -69,7 +69,7 @@ msgstr ":ref:`자동마운트되는 가상폴더를 사용해서 pip 패키지�
 
 #: ../../quickstart.rst:23
 msgid ":ref:`How to use SSH/sFTP <ssh-sftp-container>`"
-msgstr ":ref:`Backend.AI에서 SSH/sFTP 을 사용하는 방법<ssh-sftp-container>` "
+msgstr ":ref:`GPU Platform에서 SSH/sFTP 을 사용하는 방법<ssh-sftp-container>` "
 
 #: ../../quickstart.rst:24
 msgid ":ref:`How to install apt packages<installing_apt_pkg>`"

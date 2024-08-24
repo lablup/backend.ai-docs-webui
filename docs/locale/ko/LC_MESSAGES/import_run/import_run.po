@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2020, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Console
+# This file is distributed under the same license as the GPU Platform Console
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Console User Guide 20.09\n"
+"Project-Id-Version: GPU Platform Console User Guide 20.09\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-13 11:09+0900\n"
 "PO-Revision-Date: 2022-05-17 11:22+0900\n"
@@ -25,13 +25,13 @@ msgstr "Jupyter notebook과 웹 기반 Git 저장소 불러오기 및 실행"
 
 #: ../../import_run/import_run.rst:5
 msgid ""
-"Backend.AI supports executing Jupyter notebook files and importing web "
+"GPU Platform supports executing Jupyter notebook files and importing web "
 "based Git repositories such as GitHub and GitLab on the fly. You don't "
 "need to create or download into your local storage and re-upload it. The "
 "only thing you have to do is input a valid URL you want to execute or "
 "import, and click the button on the right side."
 msgstr ""
-"Backend.AI에서는 즉석으로 Jupyter notebook 파일을 실행하거나 GitHub, GitLab 과 같은 웹 기반 "
+"GPU Platform에서는 즉석으로 Jupyter notebook 파일을 실행하거나 GitHub, GitLab 과 같은 웹 기반 "
 "Git 저장소를 가져올 수 있습니다. 파일을 받거나 실행하기 위해 로컬 저장소에서 직접 생성하거나 다운로드 받고 다시 업로드하지 "
 "않아도 됩니다. 유효한 URL 을 입력하고 각 기능에 해당하는 패널의 우측에 있는 버튼을 클릭하기만 하면 됩니다."
 
@@ -173,11 +173,11 @@ msgstr "GitLab 저장소 불러오기"
 
 #: ../../import_run/import_run.rst:92
 msgid ""
-"From 22.03, Backend.AI supports importing from GitLab. It's almost the "
+"From 22.03, GPU Platform supports importing from GitLab. It's almost the "
 "same as :ref:`Importing GitHub Repositories<importing-github-"
 "repositories>`, but you need to explicitly set the branch name to import."
 msgstr ""
-"Backend.AI 22.03 버전부터 GitLab 저장소 불러오기를 지원합니다. :ref:`GitHub 저장소 불러오기"
+"GPU Platform 22.03 버전부터 GitLab 저장소 불러오기를 지원합니다. :ref:`GitHub 저장소 불러오기"
 "<importing-github-repositories>` 와 거의 같은 방법으로 불러올 수 있지만, GitLab의 경우에는 브랜치"
 " 이름을 명시적으로 지정해야 합니다."
 

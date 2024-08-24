@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the GPU Platform Web-UI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Project-Id-Version: GPU Platform Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-23 23:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -24,11 +24,11 @@ msgstr "เริ่มต้นอย่างรวดเร็ว"
 
 #: ../../quickstart.rst:4
 msgid ""
-"Welcome to Quickstart guide of Backend.AI WebUI. This tutorial will cover "
-"the essentials of using Backend.AI without any knowledge base."
+"Welcome to Quickstart guide of GPU Platform WebUI. This tutorial will cover "
+"the essentials of using GPU Platform without any knowledge base."
 msgstr ""
-"ยินดีต้อนรับสู่คู่มือเริ่มต้นของ Backend.AI WebUI "
-"คู่มือนี้จะครอบคลุมพื้นฐานในการใช้งาน Backend.AI "
+"ยินดีต้อนรับสู่คู่มือเริ่มต้นของ GPU Platform WebUI "
+"คู่มือนี้จะครอบคลุมพื้นฐานในการใช้งาน GPU Platform "
 "โดยไม่จำเป็นต้องมีความรู้พื้นฐาน"
 
 #: ../../quickstart.rst:10
@@ -36,8 +36,8 @@ msgid "Objectives"
 msgstr "วัตถุประสงค์"
 
 #: ../../quickstart.rst:13
-msgid "Part 1. Basic guide to using Backend.AI"
-msgstr "ส่วนที่ 1. คู่มือเบื้องต้นในการใช้ Backend.AI"
+msgid "Part 1. Basic guide to using GPU Platform"
+msgstr "ส่วนที่ 1. คู่มือเบื้องต้นในการใช้ GPU Platform"
 
 #: ../../quickstart.rst:14
 msgid ":ref:`How to create a virtual folder<create_storage_folder>`"
@@ -56,8 +56,8 @@ msgid ":ref:`How to delete a session<delete_session>`"
 msgstr ":ref:`วิธีลบเซสชัน<delete_session>`"
 
 #: ../../quickstart.rst:20
-msgid "Part 2. Advanced guide to using Backend.AI"
-msgstr "ส่วนที่ 2. คู่มือขั้นสูงในการใช้ Backend.AI"
+msgid "Part 2. Advanced guide to using GPU Platform"
+msgstr "ส่วนที่ 2. คู่มือขั้นสูงในการใช้ GPU Platform"
 
 #: ../../quickstart.rst:21
 msgid ":ref:`How to use terminal application with tmux<tmux_guide>`"

@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the GPU Platform Web-UI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Project-Id-Version: GPU Platform Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-23 23:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -24,13 +24,13 @@ msgstr "นำเข้าและรันโน้ตบุ๊คและท
 
 #: ../../import_run/import_run.rst:5
 msgid ""
-"Backend.AI supports executing Jupyter notebook files and importing web based"
+"GPU Platform supports executing Jupyter notebook files and importing web based"
 " Git repositories such as GitHub and GitLab on the fly. You don't need to "
 "create or download into your local storage and re-upload it. The only thing "
 "you have to do is input a valid URL you want to execute or import, and click"
 " the button on the right side."
 msgstr ""
-"Backend.AI รองรับการรันไฟล์ Jupyter notebook และการนำเข้าคลัง Git "
+"GPU Platform รองรับการรันไฟล์ Jupyter notebook และการนำเข้าคลัง Git "
 "ที่เป็นเว็บ เช่น GitHub และ GitLab ได้อย่างทันที "
 "คุณไม่จำเป็นต้องสร้างหรือดาวน์โหลดไปยังที่เก็บข้อมูลในเครื่องแล้วอัปโหลดอีกครั้ง"
 " สิ่งที่คุณต้องทำคือป้อน URL ที่ถูกต้องที่คุณต้องการรันหรือ นำเข้า "
@@ -184,11 +184,11 @@ msgstr "การนำเข้ากระบวนการ GitLab"
 
 #: ../../import_run/import_run.rst:92
 msgid ""
-"From 22.03, Backend.AI supports importing from GitLab. It's almost the same "
+"From 22.03, GPU Platform supports importing from GitLab. It's almost the same "
 "as :ref:`Importing GitHub Repositories<importing-github-repositories>`, but "
 "you need to explicitly set the branch name to import."
 msgstr ""
-"ตั้งแต่วันที่ 22.03 เป็นต้นไป Backend.AI รองรับการนำเข้าจาก GitLab "
+"ตั้งแต่วันที่ 22.03 เป็นต้นไป GPU Platform รองรับการนำเข้าจาก GitLab "
 "ซึ่งคล้ายกับ :ref:`การนำเข้าคลังข้อมูล GitHub<importing-github-"
 "repositories>` แต่คุณต้องกำหนดชื่อสาขาที่จะนำเข้าอย่างชัดเจน"
 

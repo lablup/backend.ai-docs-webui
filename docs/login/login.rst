@@ -39,7 +39,7 @@ Login
 -----
 
 Enter your ID and password and press the LOGIN button. In API ENDPOINT, the URL
-of Backend.AI Webserver, which relays the request to the Manager, should be
+of GPU Platform Webserver, which relays the request to the Manager, should be
 entered.
 
 .. note::
@@ -47,7 +47,7 @@ entered.
    the endpoint might be pinned and not configurable.
 
 .. note::
-   Backend.AI keeps the user's password securely through a one-way hash. BCrypt,
+   GPU Platform keeps the user's password securely through a one-way hash. BCrypt,
    the default password hash of BSD, is used, so even the server admins cannot
    know the user's password.
 

@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2020, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Console
+# This file is distributed under the same license as the GPU Platform Console
 # Essential Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Console Essential Guide Enterprise R2\n"
+"Project-Id-Version: GPU Platform Console Essential Guide Enterprise R2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-20 18:06+0900\n"
 "PO-Revision-Date: 2023-03-25 11:27+0900\n"
@@ -86,12 +86,12 @@ msgstr "언어 설정"
 
 #: ../../user_settings/user_settings.rst:45
 msgid ""
-"Set the language displayed on the UI. Currently, Backend.AI supports more"
+"Set the language displayed on the UI. Currently, GPU Platform supports more"
 " than five languages including English and Korean. However, there may be "
 "some UI items that do not update their language before the page is "
 "refreshed."
 msgstr ""
-"UI 에 출력되는 언어를 설정합니다. 현재 Backend.AI에서는 한국어, 영어를 포함해 다섯 개 이상의 언어를 지원하고 "
+"UI 에 출력되는 언어를 설정합니다. 현재 GPU Platform에서는 한국어, 영어를 포함해 다섯 개 이상의 언어를 지원하고 "
 "있습니다. 다만, 페이지 갱신 전에는 언어가 바뀌지 않는 사용자 인터페이스 항목이 있을 수 있습니다."
 
 #: ../../user_settings/user_settings.rst:50
@@ -182,11 +182,11 @@ msgstr "Vietnamese: 베트남어를 기본 언어로 설정합니다."
 msgid ""
 "Some of translated items may be marked as ``__NOT_TRANSLATED__``, which "
 "indicates the item is not yet translated for that language. Since "
-"Backend.AI WebUI is open sourced, anyone who willing to make the "
+"GPU Platform WebUI is open sourced, anyone who willing to make the "
 "translation better can contribute: https://github.com/lablup/backend.ai-"
 "webui."
 msgstr ""
-"몇몇 언어에서는 ``__NOT_TRANSLATED__`` 로 남아있는 항목이 있을 수 있습니다. Backend.AI는 오픈소스이므로"
+"몇몇 언어에서는 ``__NOT_TRANSLATED__`` 로 남아있는 항목이 있을 수 있습니다. GPU Platform는 오픈소스이므로"
 " 모국어 번역에 직접 참여하고 싶으신 경우에는 다음 저장소를 방문해주세요: "
 "https://github.com/lablup/backend.ai-webui."
 
@@ -197,7 +197,7 @@ msgstr "SSH 키페어 관리"
 #: ../../user_settings/user_settings.rst:84
 msgid ""
 "When using the Web-UI app, you can create SSH/SFTP connection directly to"
-" the compute session. Once you signed up for Backend.AI, a public keypair"
+" the compute session. Once you signed up for GPU Platform, a public keypair"
 " is provided. If you click the button on the right to the SSH Keypair "
 "Management section, the following dialog appears. Click the copy button "
 "on the right to copy the existing SSH public key. You can update SSH "
@@ -207,36 +207,36 @@ msgid ""
 "unless it is saved manually immediately after creation."
 msgstr ""
 "연산 세션에 직접 SSH 로 접속할 때 필요한 SSH 키페어를 조회하고 생성하는 기능입니다. 우측 버튼을 클릭하면 다음과 같은 "
-"다이얼로그가 뜹니다. 우측의 복사 버튼을 클릭하면 현재 존재하는 SSH 공개 키를 복사할 수 있습니다. 처음 Backend.AI 에"
+"다이얼로그가 뜹니다. 우측의 복사 버튼을 클릭하면 현재 존재하는 SSH 공개 키를 복사할 수 있습니다. 처음 GPU Platform 에"
 " 계정을 등록하게 되면, 자동으로 한 쌍의 키페어가 발급되게 됩니다. 갱신하고자 한다면 GENERATE 버튼을 클릭합니다. SSH "
 "공개/비밀 키 는 랜덤으로 생성되어 사용자 정보로 저장되게 됩니다. 비밀키는 생성 직후 따로 저장해두지 않으면 다시 확인할 수 "
 "없음에 주의하십시오."
 
 #: ../../user_settings/user_settings.rst:99
 msgid ""
-"SSH/SFTP connection is available only with the Backend.AI GUI desktop app"
+"SSH/SFTP connection is available only with the GPU Platform GUI desktop app"
 " and is not supported on a web browser."
 msgstr ""
-"SSH/SFTP 접속은 Backend.AI GUI 데스크톱 앱에서만 사용이 가능하며, 웹브라우저에서는 기본적으로 로컬 파일 시스템 "
+"SSH/SFTP 접속은 GPU Platform GUI 데스크톱 앱에서만 사용이 가능하며, 웹브라우저에서는 기본적으로 로컬 파일 시스템 "
 "접근이 어려우므로 지원하지 않습니다."
 
 #: ../../user_settings/user_settings.rst:102
 msgid ""
-"Backend.AI uses SSH keypair based on OpenSSH. On Windows, you may convert"
+"GPU Platform uses SSH keypair based on OpenSSH. On Windows, you may convert"
 " this into PPK key."
 msgstr ""
-"Backend.AI 는 OpenSSH 에 기반한 SSH keypair 를 사용합니다. 윈도우즈에서는 PPK 기반 키로 변환해야 할 "
+"GPU Platform 는 OpenSSH 에 기반한 SSH keypair 를 사용합니다. 윈도우즈에서는 PPK 기반 키로 변환해야 할 "
 "수 있습니다."
 
 #: ../../user_settings/user_settings.rst:105
 msgid ""
-"From 22.09, Backend.AI WebUI supports adding your own ssh keypair in "
+"From 22.09, GPU Platform WebUI supports adding your own ssh keypair in "
 "order to provide flexibility such as accessing to a private repository. "
 "In order to add your own ssh keypair, click ``ENTER MANUALLY`` button. "
 "Then, you will see two text area which corresponds to \"public\" and "
 "\"private\" key."
 msgstr ""
-"22.09 버전부터 Backend.AI WebUI는 사설 저장소에 접근하는 작업과 같은 유연성을 제공하기 위해 사용자가 직접 SSH"
+"22.09 버전부터 GPU Platform WebUI는 사설 저장소에 접근하는 작업과 같은 유연성을 제공하기 위해 사용자가 직접 SSH"
 " 키페어를 추가할 수 있도록 지원하고 있습니다. 직접 SSH 키페어를 추가하려면, ``ENTER MANUALLY`` 버튼을 "
 "클릭하세요. 그다음, public, private 이라고 적혀있는 텍스트 입력 칸을확인하실 수 있습니다. "
 
@@ -245,7 +245,7 @@ msgid ""
 "please enter the keys inside, and click ``SAVE`` button. Now you can "
 "access to backend.ai session using your own key."
 msgstr ""
-"대응하는 키를 입력하고, ``SAVE`` 버튼을 클릭해주세요. 이제 Backend.AI 세션에 여러분이 등록한 키를 바탕으로 손쉽게"
+"대응하는 키를 입력하고, ``SAVE`` 버튼을 클릭해주세요. 이제 GPU Platform 세션에 여러분이 등록한 키를 바탕으로 손쉽게"
 " 접근할 수 있게 됩니다."
 
 #: ../../user_settings/user_settings.rst:121
@@ -265,11 +265,11 @@ msgstr "자동 로그아웃"
 
 #: ../../user_settings/user_settings.rst:129
 msgid ""
-"Log out automatically when all Backend.AI Web-UI pages are closed except "
+"Log out automatically when all GPU Platform Web-UI pages are closed except "
 "for pages created to run apps in session (e.g. jupyter notebook, web "
 "terminal, etc.)."
 msgstr ""
-"세션 내 앱을 실행하기 위해 생성된 페이지를 제외한 모든 Backend.AI Web-UI 페이지가 닫힐 경우 자동으로 로그아웃 "
+"세션 내 앱을 실행하기 위해 생성된 페이지를 제외한 모든 GPU Platform Web-UI 페이지가 닫힐 경우 자동으로 로그아웃 "
 "됩니다. (Jupyter Notebook, Web Terminal 등의 앱 접속은 제외)"
 
 #: ../../user_settings/user_settings.rst:134

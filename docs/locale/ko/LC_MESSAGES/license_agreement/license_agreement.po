@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2020, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Console
+# This file is distributed under the same license as the GPU Platform Console
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Console User Guide 19.09\n"
+"Project-Id-Version: GPU Platform Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-09 18:45+0900\n"
 "PO-Revision-Date: 2021-03-02 18:15+0900\n"
@@ -24,36 +24,36 @@ msgid "Terms of License Agreement"
 msgstr "사용권 계약 조건"
 
 #: ../../license_agreement/license_agreement.rst:6
-msgid "Backend.AI License (Software)"
-msgstr "Backend.AI 라이선스 (소프트웨어)"
+msgid "GPU Platform License (Software)"
+msgstr "GPU Platform 라이선스 (소프트웨어)"
 
 #: ../../license_agreement/license_agreement.rst:8
 msgid ""
 "This document defines the terms of the license agreement for the "
-"Backend.AI software. The usage fee and support plan of Backend.AI Cloud "
+"GPU Platform software. The usage fee and support plan of GPU Platform Cloud "
 "service provided by Lablup is independent of this policy."
 msgstr ""
-"이 문서는 Backend.AI 소프트웨어에 관한 사용권 계약 조건을 정의합니다. 래블업에서 제공하는 Backend.AI Cloud "
+"이 문서는 GPU Platform 소프트웨어에 관한 사용권 계약 조건을 정의합니다. 래블업에서 제공하는 GPU Platform Cloud "
 "서비스의 사용료 및 지원 플랜은 이 정책과 별도입니다."
 
 #: ../../license_agreement/license_agreement.rst:12
 msgid ""
-"Backend.AI server components (hereinafter referred to as \"Backend.AI "
+"GPU Platform server components (hereinafter referred to as \"GPU Platform "
 "Server\") are distributed under the GNU Lesser General Public License "
 "v3.0 (\"LGPL\"), and API Client libraries and auxiliary components for "
-"accessing Backend.AI server (hereinafter \"Backend.AI Client\") are "
+"accessing GPU Platform server (hereinafter \"GPU Platform Client\") are "
 "distributed under the MIT License. Even if LGPL complies, commercial "
 "contracts with Lablup Co., Ltd. (\"Lablup\") are required depending on "
-"the conditions when performing profit activities using the Backend.AI "
+"the conditions when performing profit activities using the GPU Platform "
 "server. Several additional plug-ins and admin's GUI Control-Panel that "
-"apply to Backend.AI enterprise solutions are not open source, but "
+"apply to GPU Platform enterprise solutions are not open source, but "
 "commercial software."
 msgstr ""
-"Backend.AI의 서버 컴포넌트들(이하 “Backend.AI 서버”)은 GNU Lesser General Public "
-"License v3.0(이하 “LGPL”)으로 배포되며, Backend.AI 서버에 접속하기 위한 API Client 라이브러리들 "
-"및 보조 컴포넌트들(이하 “Backend.AI 클라이언트”)은 MIT 라이선스로 배포됩니다. LGPL을 준수하는 경우에도 "
-"Backend.AI 서버를 이용한 수익 활동을 하는 경우 조건에 따라 래블업 주식회사(“래블업”)와의 상용 계약이 필요합니다. "
-"Backend.AI 엔터프라이즈 솔루션을 대상으로 하는 추가적인 몇몇 플러그인 및 관리 허브는 오픈소스가 아니며, 상용 "
+"GPU Platform의 서버 컴포넌트들(이하 “GPU Platform 서버”)은 GNU Lesser General Public "
+"License v3.0(이하 “LGPL”)으로 배포되며, GPU Platform 서버에 접속하기 위한 API Client 라이브러리들 "
+"및 보조 컴포넌트들(이하 “GPU Platform 클라이언트”)은 MIT 라이선스로 배포됩니다. LGPL을 준수하는 경우에도 "
+"GPU Platform 서버를 이용한 수익 활동을 하는 경우 조건에 따라 래블업 주식회사(“래블업”)와의 상용 계약이 필요합니다. "
+"GPU Platform 엔터프라이즈 솔루션을 대상으로 하는 추가적인 몇몇 플러그인 및 관리 허브는 오픈소스가 아니며, 상용 "
 "소프트웨어입니다."
 
 #: ../../license_agreement/license_agreement.rst:22
@@ -75,19 +75,19 @@ msgstr "조직 : 개인, 법인, 단체, 기관 (비영리·영리 모두 포함
 
 #: ../../license_agreement/license_agreement.rst:30
 msgid ""
-"LGPL must be followed when users use and change Backend.AI Server "
+"LGPL must be followed when users use and change GPU Platform Server "
 "(Manager / Agent / Common) or develop and distribute software that uses "
-"it. However, in the case of distributing software which import Backend.AI"
+"it. However, in the case of distributing software which import GPU Platform"
 " server as a module without changing it (e.g. Python import), it is "
 "regarded as a dynamic link and code disclosure under the LGPL is "
-"exempted. When Backend.AI server is installed on the hardware and used by"
+"exempted. When GPU Platform server is installed on the hardware and used by"
 " the general public through the network, there is no obligation under the"
 " LGPL."
 msgstr ""
-"사용자가 Backend.AI Server(Manager / Agent / Common)를 사용 및 변경하거나 이를 이용하는 "
-"소프트웨어를 개발 및 배포하는 경우 LGPL 을 따라야 합니다. 하지만, 배포하는 소프트웨어가 Backend.AI 서버를 변경하지 "
+"사용자가 GPU Platform Server(Manager / Agent / Common)를 사용 및 변경하거나 이를 이용하는 "
+"소프트웨어를 개발 및 배포하는 경우 LGPL 을 따라야 합니다. 하지만, 배포하는 소프트웨어가 GPU Platform 서버를 변경하지 "
 "않고 모듈 형태(Python import 등)로 불러서 사용하는 경우에는, 동적 링크를 사용하는 것으로 보아 LGPL에 따른 코드 "
-"공개 의무가 없다고 간주합니다. Backend.AI 서버를 하드웨어에 설치하여 일반 공중이 네트워크를 통해 사용하는 경우에는 "
+"공개 의무가 없다고 간주합니다. GPU Platform 서버를 하드웨어에 설치하여 일반 공중이 네트워크를 통해 사용하는 경우에는 "
 "LGPL 에 따른 의무가 없습니다."
 
 #: ../../license_agreement/license_agreement.rst:38
@@ -104,25 +104,25 @@ msgstr "LGPL 준수와 별개로, 다음과 같은 경우에는 래블업과 상
 
 #: ../../license_agreement/license_agreement.rst:44
 msgid ""
-"When software that works only after installing the Backend.AI server is "
+"When software that works only after installing the GPU Platform server is "
 "sold to customers outside the organization."
-msgstr "Backend.AI 서버를 설치해야만 동작하는 소프트웨어를 조직 외부 고객에게 판매하는 경우."
+msgstr "GPU Platform 서버를 설치해야만 동작하는 소프트웨어를 조직 외부 고객에게 판매하는 경우."
 
 #: ../../license_agreement/license_agreement.rst:46
 msgid ""
-"When hardware including Backend.AI server is sold to customers outside "
+"When hardware including GPU Platform server is sold to customers outside "
 "the organization."
-msgstr "Backend.AI 서버를 포함한 하드웨어를 조직 외부 고객에게 판매하는 경우."
+msgstr "GPU Platform 서버를 포함한 하드웨어를 조직 외부 고객에게 판매하는 경우."
 
 #: ../../license_agreement/license_agreement.rst:48
 msgid ""
-"When the Backend.AI server is installed on the hardware and the usage fee"
+"When the GPU Platform server is installed on the hardware and the usage fee"
 " is received from a customer outside the organization that uses it."
-msgstr "Backend.AI 서버를 하드웨어에 설치하고 이를 사용하는 조직 외부 고객으로부터 사용료를 받는 경우."
+msgstr "GPU Platform 서버를 하드웨어에 설치하고 이를 사용하는 조직 외부 고객으로부터 사용료를 받는 경우."
 
 #: ../../license_agreement/license_agreement.rst:51
-msgid "In other cases, you can use the Backend.AI server for free."
-msgstr "그 외의 경우에는 Backend.AI 서버를 무료로 사용할 수 있습니다."
+msgid "In other cases, you can use the GPU Platform server for free."
+msgstr "그 외의 경우에는 GPU Platform 서버를 무료로 사용할 수 있습니다."
 
 #: ../../license_agreement/license_agreement.rst:53
 msgid "**Interpretation Example**"
@@ -130,19 +130,19 @@ msgstr "**해석 예시**"
 
 #: ../../license_agreement/license_agreement.rst:55
 msgid ""
-"If you distribute Backend.AI server with modifications to outside the "
+"If you distribute GPU Platform server with modifications to outside the "
 "organization, you must disclose the code and apply LGPL the same way. "
 "There is no obligation to disclose the code if it is olny used "
 "internally."
 msgstr ""
-"Backend.AI 서버를 변경하여 조직 외부로 배포한다면 코드를 공개하고 반드시 LGPL을 똑같이 적용해야 합니다. 조직 "
+"GPU Platform 서버를 변경하여 조직 외부로 배포한다면 코드를 공개하고 반드시 LGPL을 똑같이 적용해야 합니다. 조직 "
 "내부적으로만 사용한다면 코드를 공개할 의무가 없습니다."
 
 #: ../../license_agreement/license_agreement.rst:58
 msgid ""
-"When distributing software that uses Backend.AI server as an essential "
+"When distributing software that uses GPU Platform server as an essential "
 "library,"
-msgstr "Backend.AI 서버를 필수 라이브러리로 사용한 소프트웨어를"
+msgstr "GPU Platform 서버를 필수 라이브러리로 사용한 소프트웨어를"
 
 #: ../../license_agreement/license_agreement.rst:60
 msgid ""
@@ -158,9 +158,9 @@ msgstr "유료 배포하는 경우: 해당 소프트웨어는 (L)GPL이 아니�
 
 #: ../../license_agreement/license_agreement.rst:65
 msgid ""
-"When Backend.AI server is installed on the hardware and it is used by the"
+"When GPU Platform server is installed on the hardware and it is used by the"
 " public through network,"
-msgstr "Backend.AI 서버를 하드웨어에 설치하여 일반 공중이 네트워크를 통해 사용하는 경우."
+msgstr "GPU Platform 서버를 하드웨어에 설치하여 일반 공중이 네트워크를 통해 사용하는 경우."
 
 #: ../../license_agreement/license_agreement.rst:68
 #: ../../license_agreement/license_agreement.rst:73
@@ -173,8 +173,8 @@ msgid "Paid distribution: A commercial contract with Lablup is required."
 msgstr "유료로 사용하게 하는 경우: 래블업과의 상용 계약이 필요합니다."
 
 #: ../../license_agreement/license_agreement.rst:71
-msgid "When distributing hardware in which Backend.AI server is installed,"
-msgstr "Backend.AI 서버가 설치된 하드웨어를 배포하는 경우,"
+msgid "When distributing hardware in which GPU Platform server is installed,"
+msgstr "GPU Platform 서버가 설치된 하드웨어를 배포하는 경우,"
 
 #: ../../license_agreement/license_agreement.rst:76
 #
@@ -186,27 +186,27 @@ msgstr ""
 "상용 계약에는 기본적으로 엔터프라이즈 버전의 월간/연간 구독 사용료가 포함되지만, 개별 계약에 따라 세부 내용은 다를 수 있습니다."
 
 #~ msgid ""
-#~ "Backend.AI server installed hardware - "
+#~ "GPU Platform server installed hardware - "
 #~ "Free distribution: No separate contract "
 #~ "with Lablup is required. - Paid "
 #~ "distribution: A commercial contract with "
 #~ "Lablup is required."
 #~ msgstr ""
-#~ "Backend.AI 서버를 설치한 하드웨어를 - 무료 제공하는"
+#~ "GPU Platform 서버를 설치한 하드웨어를 - 무료 제공하는"
 #~ " 경우: 래블업과의 별도 계약이 필요하지 않습니다. -"
 #~ " 유료 판매하는 경우: 래블업과의 상용 계약이 "
 #~ "필요합니다."
 
 #~ msgid ""
 #~ "LGPL must be followed when users "
-#~ "use and change Backend.AI Server "
+#~ "use and change GPU Platform Server "
 #~ "(Manager / Agent / Common) or "
 #~ "develop and distribute software that "
 #~ "uses it. Below is an example of"
 #~ " when there is no obligation under"
 #~ " the LGPL at this time:"
 #~ msgstr ""
-#~ "사용자가 Backend.AI Server (Manager / Agent"
+#~ "사용자가 GPU Platform Server (Manager / Agent"
 #~ " / Common) 를 사용 및 변경하거나 이를 "
 #~ "이용하는 소프트웨어를 개발 및 배포하는 경우 LGPL을 "
 #~ "따라야 합니다. 아래는 이때 LGPL에 따른 의무가 "
@@ -216,15 +216,15 @@ msgstr ""
 #~ "In case of distributing software which"
 #~ " imports it as a module (eg "
 #~ "Python import) without changing the "
-#~ "Backend.AI server."
-#~ msgstr "Backend.AI 서버를 변경하지 않고 모듈로 불러와서(예: Python import) 사용한 소프트웨어를 배포하는 경우."
+#~ "GPU Platform server."
+#~ msgstr "GPU Platform 서버를 변경하지 않고 모듈로 불러와서(예: Python import) 사용한 소프트웨어를 배포하는 경우."
 
 #~ msgid ""
-#~ "Backend.AI server is installed on the"
+#~ "GPU Platform server is installed on the"
 #~ " hardware and it is distributed to"
 #~ " the public"
-#~ msgstr "Backend.AI 서버를 하드웨어에 설치하고 이를 네트워크를 통해 일반 공중이"
+#~ msgstr "GPU Platform 서버를 하드웨어에 설치하고 이를 네트워크를 통해 일반 공중이"
 
-#~ msgid "Backend.AI server installed hardware"
-#~ msgstr "Backend.AI 서버를 설치한 하드웨어를"
+#~ msgid "GPU Platform server installed hardware"
+#~ msgstr "GPU Platform 서버를 설치한 하드웨어를"
 

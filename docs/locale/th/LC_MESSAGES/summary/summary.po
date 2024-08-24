@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the GPU Platform Web-UI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Project-Id-Version: GPU Platform Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-23 23:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -62,10 +62,10 @@ msgstr ""
 
 #: ../../summary/summary.rst:26
 msgid ""
-"About Backend.AI: Displays information such as version of Backend.AI Web-UI,"
+"About GPU Platform: Displays information such as version of GPU Platform Web-UI,"
 " license type, etc."
 msgstr ""
-"เกี่ยวกับ Backend.AI: แสดงข้อมูลเช่น เวอร์ชันของ Backend.AI Web-UI, "
+"เกี่ยวกับ GPU Platform: แสดงข้อมูลเช่น เวอร์ชันของ GPU Platform Web-UI, "
 "ประเภทใบอนุญาต, เป็นต้น"
 
 #: ../../summary/summary.rst:28
@@ -274,13 +274,13 @@ msgstr "ทรัพยากรระบบ"
 
 #: ../../summary/summary.rst:129
 msgid ""
-"It shows the number of Agent worker nodes connected to the Backend.AI system"
+"It shows the number of Agent worker nodes connected to the GPU Platform system"
 " and the total number of compute sessions currently created. You can also "
 "check the CPU, memory, and GPU utilization of the agent node. If you are "
 "logged in as a normal user, only the number of compute sessions you have "
 "created is displayed."
 msgstr ""
-"จะแสดงจำนวนโหนดของ Agent worker ที่เชื่อมต่อกับระบบ Backend.AI "
+"จะแสดงจำนวนโหนดของ Agent worker ที่เชื่อมต่อกับระบบ GPU Platform "
 "และจำนวนเซสชันการคำนวณทั้งหมดที่สร้างขึ้นในปัจจุบัน "
 "คุณยังสามารถตรวจสอบการใช้ CPU, หน่วยความจำ และ GPU ของโหนดตัวแทนได้ "
 "หากคุณล็อกอินเป็นผู้ใช้ทั่วไป "
@@ -317,19 +317,19 @@ msgstr ""
 "แน่นอนว่าคุณสามารถปฏิเสธคำขอการแชร์ได้"
 
 #: ../../summary/summary.rst:149
-msgid "Download Backend.AI Web UI App"
-msgstr "ดาวน์โหลดแอป Backend.AI Web UI"
+msgid "Download GPU Platform Web UI App"
+msgstr "ดาวน์โหลดแอป GPU Platform Web UI"
 
 #: ../../summary/summary.rst:151
 msgid ""
-"Backend.AI WebUI supports desktop applications. By using desktop app, you "
+"GPU Platform WebUI supports desktop applications. By using desktop app, you "
 "can use desktop app specific features, such as :ref:`SSH/SFTP connection to "
-"a Compute Session<ssh-sftp-container>` . For now Backend.AI WebUI provides "
+"a Compute Session<ssh-sftp-container>` . For now GPU Platform WebUI provides "
 "desktop application with following OS:"
 msgstr ""
-"Backend.AI WebUI รองรับแอปพลิเคชันเดสก์ท็อป โดยการใช้แอปพลิเคชันเดสก์ท็อป "
+"GPU Platform WebUI รองรับแอปพลิเคชันเดสก์ท็อป โดยการใช้แอปพลิเคชันเดสก์ท็อป "
 "คุณสามารถใช้คุณลักษณะเฉพาะของแอปพลิเคชันเดสก์ท็อปได้ เช่น :ref:`การเชื่อมต่อ"
-" SSH/SFTP กับ Compute Session<ssh-sftp-container>` สำหรับตอนนี้ Backend.AI "
+" SSH/SFTP กับ Compute Session<ssh-sftp-container>` สำหรับตอนนี้ GPU Platform "
 "WebUI ให้บริการแอปพลิเคชันเดสก์ท็อปกับระบบปฏิบัติการต่อไปนี้:"
 
 #: ../../summary/summary.rst:155

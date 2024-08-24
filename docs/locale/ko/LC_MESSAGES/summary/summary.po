@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2020, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Console
+# This file is distributed under the same license as the GPU Platform Console
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Console User Guide 19.09\n"
+"Project-Id-Version: GPU Platform Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-13 11:09+0900\n"
 "PO-Revision-Date: 2021-03-02 18:31+0900\n"
@@ -61,9 +61,9 @@ msgstr "상단 바의 우측의 사람 아이콘을 클릭하면 사용자 메�
 
 #: ../../summary/summary.rst:26
 msgid ""
-"About Backend.AI: Displays information such as version of Backend.AI Web-"
+"About GPU Platform: Displays information such as version of GPU Platform Web-"
 "UI, license type, etc."
-msgstr "About Backend.AI: Backend.AI Web-UI의 버전, 라이선스 종류 등과 같은 정보를 표시 합니다."
+msgstr "About GPU Platform: GPU Platform Web-UI의 버전, 라이선스 종류 등과 같은 정보를 표시 합니다."
 
 #: ../../summary/summary.rst:28
 msgid "My Account: Check/Update information of current login user"
@@ -250,13 +250,13 @@ msgstr "시스템 자원"
 
 #: ../../summary/summary.rst:129
 msgid ""
-"It shows the number of Agent worker nodes connected to the Backend.AI "
+"It shows the number of Agent worker nodes connected to the GPU Platform "
 "system and the total number of compute sessions currently created. You "
 "can also check the CPU, memory, and GPU utilization of the agent node. If"
 " you are logged in as a normal user, only the number of compute sessions "
 "you have created is displayed."
 msgstr ""
-"Backend.AI 시스템에 연결된 Agent 워커 노드의 수와 현재 생성되어 있는 전체 연산 세션의 수를 보여줍니다. Agent "
+"GPU Platform 시스템에 연결된 Agent 워커 노드의 수와 현재 생성되어 있는 전체 연산 세션의 수를 보여줍니다. Agent "
 "노드의 CPU, 메모리, GPU 실제 사용량 (utilization) 도 확인할 수 있습니다. 일반 사용자로 로그인 한 경우에는 "
 "자신이 생성한 연산 세션의 숫자만 표시됩니다."
 
@@ -287,18 +287,18 @@ msgstr ""
 "있습니다."
 
 #: ../../summary/summary.rst:149
-msgid "Download Backend.AI Web UI App"
-msgstr "Backend.AI WebUI 앱 다운로드"
+msgid "Download GPU Platform Web UI App"
+msgstr "GPU Platform WebUI 앱 다운로드"
 
 #: ../../summary/summary.rst:151
 msgid ""
-"Backend.AI WebUI supports desktop applications. By using desktop app, you"
+"GPU Platform WebUI supports desktop applications. By using desktop app, you"
 " can use desktop app specific features, such as :ref:`SSH/SFTP connection"
-" to a Compute Session<ssh-sftp-container>` . For now Backend.AI WebUI "
+" to a Compute Session<ssh-sftp-container>` . For now GPU Platform WebUI "
 "provides desktop application with following OS:"
 msgstr ""
-"Backend.AI WebUI 는 데스크톱 앱도 지원합니다. 데스크톱 앱을 사용하면, 데스크톱 앱 전용 기능을 사용할 수 있는데, "
-"그 예로 :ref:`연산 세션에 SSH/SFTP 접속하기<ssh-sftp-container>` 가 있습니다. Backend.AI "
+"GPU Platform WebUI 는 데스크톱 앱도 지원합니다. 데스크톱 앱을 사용하면, 데스크톱 앱 전용 기능을 사용할 수 있는데, "
+"그 예로 :ref:`연산 세션에 SSH/SFTP 접속하기<ssh-sftp-container>` 가 있습니다. GPU Platform "
 "WebUI 에서는 아래 운영체제에서 실행가능한 데스크톱 앱을 지원합니다. "
 
 #: ../../summary/summary.rst:155

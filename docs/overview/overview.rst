@@ -2,13 +2,13 @@
 Overview
 ========
 
-Backend.AI is an open source cloud resource management platform, which makes it
+GPU Platform is an open source cloud resource management platform, which makes it
 easy to utilize virtualized compute resource clusters in a cloud or on-premises
-environment. The container-based GPU virtualization technology of Backend.AI
+environment. The container-based GPU virtualization technology of GPU Platform
 supports the efficient use of GPUs by flexibly dividing one physical GPU, so
 that multiple users can use it at the same time.
 
-Backend.AI offers a variety of performance-driven optimizations for machine
+GPU Platform offers a variety of performance-driven optimizations for machine
 learning and high-performance computing clusters, along with management and
 research features to support a diverse users, including researchers,
 administrators, and DevOps. The Enterprise Edition adds support for multi-domain
@@ -16,10 +16,10 @@ management, a dedicated Control-Panel for superadmins, and the GPU
 virtualization plug-in.
 
 A GUI client package is provided to easily take advantage of the features
-supported by the Backend.AI server. Backend.AI Web-UI is a GUI client in the form
+supported by the GPU Platform server. GPU Platform Web-UI is a GUI client in the form
 of a web service or stand-alone app. It provides a convenient graphical
-interface for accessing the Backend.AI server to utilize computing resources and
-manage its environment. Backend.AI provides pre-made images which enable
+interface for accessing the GPU Platform server to utilize computing resources and
+manage its environment. GPU Platform provides pre-made images which enable
 immediate creation of compute sessions without any need of installing separate
 programs.  Most tasks can be done with mouse clicks and brief typing, which
 achieves more intuitive use.
@@ -31,7 +31,7 @@ Key Concepts
 .. image:: key_concepts_2209.png
    :alt: Diagram explaining key concepts
 
-- User: The user is a person who connects to Backend.AI and performs work.
+- User: The user is a person who connects to GPU Platform and performs work.
   Users are divided into normal users, domain admins, and superadmins according
   to their privileges. While ordinary users can only perform tasks related to
   their computing sessions, domain admins have the authority to perform
@@ -41,11 +41,11 @@ Key Concepts
 - Compute session, container: An isolated virtual environment in which your
   code runs. It looks like a real Linux server with full user rights,
   and you can't see other user's session even if it's running on the same
-  server as your session. Backend.AI implements this virtual environment through
+  server as your session. GPU Platform implements this virtual environment through
   a technology called containers. You can only create compute sessions within
   the domain and projects to which you belong.
 - Domain: This is the top layer for authority and resource control supported by
-  Backend.AI. For companies or organizations, you can view domains as an
+  GPU Platform. For companies or organizations, you can view domains as an
   affiliate and set up per-domain (or per-affiliate) permissions and resource
   policies. Users should belong to only one domain, and can create sessions or
   do some other jobs only in their own domain. A domain can have one domain admin or
@@ -78,7 +78,7 @@ Key Concepts
   client or GUI Web-UI to directly access the desired daemon of the session.
 - Web-UI: A GUI client that is served as a web or stand-alone app.
   You can use the service after logging in by specifying the address of the
-  Backend.AI server and entering the user account information.
+  GPU Platform server and entering the user account information.
 - Local wsproxy: Proxy server built into the Web-UI app. Local wsproxy converts
   general HTTP requests between the server and Web-UI app to websocket and
   delivers the messages. If the Web-UI app loses its connection to wsproxy or
@@ -91,7 +91,7 @@ Key Concepts
   so that the Web-UI app can see the web wsproxy.
 
 
-Backend.AI feature details
+GPU Platform feature details
 --------------------------
 
 +----------------------+-------------------------------------------------------+

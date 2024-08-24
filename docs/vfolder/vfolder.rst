@@ -2,7 +2,7 @@
 Handling Data & Storage Folders
 ===============================
 
-Backend.AI supports dedicated storage to preserve user's files. Since the files
+GPU Platform supports dedicated storage to preserve user's files. Since the files
 and directories of a compute session are deleted upon session termination, it is
 recommended to save them in a storage folder. List of storage folders can be
 found by selecting the Data & Storage page on the sidebar. You can see the information
@@ -271,12 +271,12 @@ If you want to use pre-trained model that you cloned from, then please refer to
 Using FileBrowser
 -----------------
 
-Backend.AI supports `FileBrowser <https://filebrowser.org>`_ from version
+GPU Platform supports `FileBrowser <https://filebrowser.org>`_ from version
 20.09. FileBrowser is a program that helps you manage files on a remote server
 through a web browser. This is especially useful when uploading a directory from
 the user's local machine.
 
-Currently, Backend.AI provides a FileBrowser as an application of a compute
+Currently, GPU Platform provides a FileBrowser as an application of a compute
 session. Therefore, the following conditions are required to launch it.
 
 * User can create at least one compute session.
@@ -312,7 +312,7 @@ and files.
 .. image:: filebrowser_with_new_window.png
    :alt: FileBrowser with new window
 
-When user clicks 'EXECUTE FILEBROWSER' button, Backend.AI automatically creates a
+When user clicks 'EXECUTE FILEBROWSER' button, GPU Platform automatically creates a
 dedicated compute session for the app. So, in the Sessions page, you should see
 FileBrowser compute session. It is user's responsibility to delete this compute
 session.
@@ -349,7 +349,7 @@ every uploaded/updated files will be lost after the session is terminated.
 Basic usage examples of FileBrowser
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Here, we present some basic usage examples of FileBrowser in Backend.AI. Most
+Here, we present some basic usage examples of FileBrowser in GPU Platform. Most
 of the FileBrowser operations are intuitive, but if you need more detailed
 guide, please refer to the
 `FileBrowser documentation <https://filebrowser.org>`_.
@@ -421,7 +421,7 @@ You will see that moving operation is successfully finished.
 Using SFTP Server
 -----------------
 
-From 22.09, Backend.AI supports SSH / SFTP file upload from both desktop app and
+From 22.09, GPU Platform supports SSH / SFTP file upload from both desktop app and
 web-based Web-UI. The SFTP server allows you to upload files quickly through reliable
 data streams.
 
@@ -475,7 +475,7 @@ the session will be terminated when there is no transfer for some time.
 .. --------------------
 
 .. If the underlying file system supports a per-directory or a per-project quota,
-.. such as XFS, Backend.AI can provide a per-folder quota. Administrators can set
+.. such as XFS, GPU Platform can provide a per-folder quota. Administrators can set
 .. the quota limit through a resource policy, so if you want to increase the quota,
 .. contact the administrator. Within the policy limit, users can adjust the quota
 .. of their folders by clicking the setting button for each data folder.
@@ -488,7 +488,7 @@ the session will be terminated when there is no transfer for some time.
 .. For more information on the per-folder quota on XFS, please refer to the
 .. following docs:
 
-.. - `XFS Filesystem Backends Guide in Backend.AI Storage Proxy <https://github.com/lablup/backend.ai-storage-proxy#xfs>`_
+.. - `XFS Filesystem Backends Guide in GPU Platform Storage Proxy <https://github.com/lablup/backend.ai-storage-proxy#xfs>`_
 .. - `Per-folder quota for XFS <https://blog.lablup.com/posts/2022/01/21/xfs-directory-quota>`_
 
 .. You can also see the current usage and capacity of a data folder in information dialog.

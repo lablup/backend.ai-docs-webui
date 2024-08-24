@@ -69,7 +69,7 @@ automount folder and then try to launch Jupyter Notebook again.
 Page layout is broken
 ^^^^^^^^^^^^^^^^^^^^^
 
-Backend.AI Web-UI utilizes the latest modern JavaScript and/or browser features.
+GPU Platform Web-UI utilizes the latest modern JavaScript and/or browser features.
 Please use the LATEST versions of moder browsers (such as Chrome).
 
 SFTP disconnection
@@ -103,7 +103,7 @@ Indicated resources do not match with actual allocation
 
 Occasionally, due to unstable network connections or container management
 problem of Docker daemon, there may be a case where the resource occupied by
-Backend.AI does not match with the resource actually used by the container. In this
+GPU Platform does not match with the resource actually used by the container. In this
 case, follow the steps below.
 
 * Login as admin account.
@@ -116,8 +116,8 @@ Image is not displayed after it is pushed to a docker registry
 .. note::
    This feature is only available for superadmins.
 
-If a new image is pushed to one of the Backend.AI docker registries, the image
-metadata must be updated in Backend.AI to be used in creating a compute session.
+If a new image is pushed to one of the GPU Platform docker registries, the image
+metadata must be updated in GPU Platform to be used in creating a compute session.
 Metadata update can be performed by clicking the RESCAN IMAGES button on the
 Maintenance page. This will update metadata for every docker registry, if
 there are multiple registries.
