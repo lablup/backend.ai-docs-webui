@@ -8,7 +8,7 @@ User's guide for Backend.AI GUI Console.
 We use [poetry](https://github.com/python-poetry/poetry) to manage dependencies
 and packaging. Poetry can be installed by the following command.
 
-```console
+```shell
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
 source ~/.poetry/env  # == export PATH="$HOME/.poetry/bin:$PATH"
 ```
@@ -16,7 +16,7 @@ source ~/.poetry/env  # == export PATH="$HOME/.poetry/bin:$PATH"
 We recommend to use virtualenv. After virtualenv setup, run following command to
 install dependent packages.
 
-```console
+```shell
 poetry install
 ```
 
@@ -27,7 +27,7 @@ To build html documentation, run following command in the `docs` directory. All
 commands should be executed under poetry's virtual environment. For example, you
 can run `poetry shell` to enter a command shell with virtualenv.
 
-```console
+```shell
 make html
 ```
 
@@ -39,13 +39,13 @@ Built documents will be located under `docs/_build`.
 When English document is updated, extract translatable messages into `.pot`
 files. Go to `docs` directory and run following command.
 
-```console
+```shell
 make gettext
 ``````
 
 From those `.pot` files, `.po` message catalogs can be generated:
 
-```console
+```shell
 sphinx-intl update -p _build/gettext -l ko
 ```
 
@@ -58,13 +58,13 @@ Note that a Korean character should not be followed by two backticks(\``)
 
 After translation, run following to build translated html document.
 
-```console
+```shell
 make -e SPHINXOPTS="-D language='ko'" html
 ```
 
 To see the local html documents:
 
-```console
+```shell
 open _build/html/index.html
 ```
 
@@ -81,12 +81,12 @@ MacTex, to make pdf file. The following is a brief preparation steps in Mac:
 
 If prepration is done, execute the following command to generate a pdf document.
 
-```console
+```shell
 cd docs
-./build_local_pdf_kr.sh
+./build_pdf.sh <language-code:en|ko|th|...>
 ```
 
-The generated PDF is located under `_build/latexpdf/`.
+The generated PDF is located under `_build/`.
 
 
 ## References for newcomers

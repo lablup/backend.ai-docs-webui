@@ -4,6 +4,8 @@
 # list see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+from datetime import datetime
+
 # -- Path setup --------------------------------------------------------------
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -18,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = "Backend.AI Web-UI User Guide"
-copyright = "2024, Lablup Inc."
+copyright = f"{datetime.now().year}, Lablup Inc."
 author = "Lablup Inc."
 version = "24.03"
 release = "24.03"
@@ -66,22 +68,13 @@ html_theme = "sphinx_rtd_theme"
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
 html_css_files = ["css/custom.css"]
-
-
-def setup(app):
-    app.add_css_file("css/custom.css")
-
-
 html_style = "css/customTheme.css"
-
 html_js_files = [
     "js/custom.js",
 ]
 
 # excludes smartquotes
-smartquotes_excludes = {
-    'languages': ['en', 'ko']
-}
+smartquotes_excludes = {"languages": ["en", "ko"]}
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -114,19 +107,17 @@ latex_elements = {
         "errorBorderColor={RGB}{240,179,126},"
         "errorBgColor={RGB}{247,229,198},"
     ),
-    "fontpkg": "",
-    "preamble": r"""
-        \usepackage{kotex}
-        \usepackage{setspace}
-
-        \setmainhangulfont{Pretendard}
-        \setsanshangulfont{Pretendard}
+    "fontpkg": r"""
         \setmainfont{Pretendard}
         \setsansfont{Pretendard}
         \setmonofont{JetBrains Mono}
-
+    """,
+    "preamble": r"""
+        \usepackage{fontspec}
+        \usepackage{setspace}
+        \setlength{\headheight}{14.49998pt}
         \setcounter{chapter}{-1}
-        \doublespacing
+        \onehalfspacing
     """,
     "maketitle": r"""
         \makeatletter
@@ -163,3 +154,18 @@ latex_documents = [
 
 locale_dirs = ["locale/"]
 gettext_compact = False
+
+
+# -- App configuration -------------------------------------------------------
+def setup_latex(app, language):
+    if language == "ko":
+        latex_elements["preamble"] += r"""
+            \usepackage{kotex}
+        """
+
+
+def setup(app):
+    language = app.config.language
+
+    app.add_css_file("css/custom.css")
+    setup_latex(app, language)
