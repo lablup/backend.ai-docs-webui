@@ -105,16 +105,14 @@ Backend.AI feature details
 +----------------------+-------------------------------------------------------+
 |                      | GPUDirect storage support                             |
 +----------------------+-------------------------------------------------------+
-|                      |                                                       |
-+----------------------+-------------------------------------------------------+
 |                      | NGC (NVIDIA GPU Cloud) image integration              |
 +----------------------+-------------------------------------------------------+
 |                      | GPU-GPU Network autoconfiguration                     |
 +----------------------+-------------------------------------------------------+
-|| NPU Support         || * Graphcore IPU                                      |
-||                     || * Rebellions ATOM                                    |
-||                     || * FuriosaAI Warboy                                   |
-||                     || * Hyperaccel LPU                                     |
+| NPU Support          | * Graphcore IPU                                       |
+|                      | * Rebellions ATOM                                     |
+|                      | * FuriosaAI Warboy                                    |
+|                      | * Hyperaccel LPU                                      |
 +----------------------+-------------------------------------------------------+
 | Scaling              | On-premise installation on both bare-metal / VM       |
 +----------------------+-------------------------------------------------------+
@@ -134,11 +132,11 @@ Backend.AI feature details
 +----------------------+-------------------------------------------------------+
 | Cluster partitioning | Resource groups by H/W spec and usage                 |
 +----------------------+-------------------------------------------------------+
-||                     || (Enterprise) Access control of users to              |
-||                     || resource group                                       |
+|                      | (Enterprise) Access control of users to               |
+|                      | resource group                                        |
 +----------------------+-------------------------------------------------------+
-||                     || (Enterprise) Access control of project to            |
-||                     || resource group                                       |
+|                      | (Enterprise) Access control of project to             |
+|                      | resource group                                        |
 +----------------------+-------------------------------------------------------+
 | Security             | Sandboxing via hypervisor/container                   |
 +----------------------+-------------------------------------------------------+
@@ -152,18 +150,17 @@ Backend.AI feature details
 +----------------------+-------------------------------------------------------+
 |                      | (Enterprise) MLOps pipeline web interface             |
 +----------------------+-------------------------------------------------------+
-|| Data management     || EFS, NFS, SMB and distributed file system            |
-||                     || (CephFS, GlusterFS, HDFS, etc)                       |
+| Data management      | EFS, NFS, SMB and distributed file system             |
+|                      | (CephFS, GlusterFS, HDFS, etc)                        |
 +----------------------+-------------------------------------------------------+
-||                     || (Enterprise) Storage solution integration:           |
-||                     ||                                                      |
-||                     || * PureStorage FlashBlade                             |
-||                     || * NetApp ONTAP & NetApp XCP                          |
-||                     || * Weka.io                                            |
-||                     || * Dell EMC                                           |
-||                     || * IBM SpectrumScale (GPFS)                           |
-||                     || * Vast Data                                          |
-||                     || * KT Cloud NAS                                       |
+|                      | (Enterprise) Storage solution integration:            |
+|                      |                                                       |
+|                      | - PureStorage FlashBlade                              |
+|                      | - NetApp ONTAP & NetApp XCP                           |
+|                      | - Weka.io                                             |
+|                      | - Dell EMC                                            |
+|                      | - IBM SpectrumScale (GPFS)                            |
+|                      | - Vast Data                                           |
 +----------------------+-------------------------------------------------------+
 |                      | Fine-grained Access control to data by user/project   |
 +----------------------+-------------------------------------------------------+
@@ -171,24 +168,25 @@ Backend.AI feature details
 +----------------------+-------------------------------------------------------+
 | Developer support    | Universal programming languages (Python, C/C++, etc)  |
 +----------------------+-------------------------------------------------------+
-||                     || Interactive web apps (Terminal, Jupyter, VSCode,     |
-||                     || MLFlow, Microsoft NNI, R Studio, etc)                |
+|                      | Interactive web apps (Terminal, Jupyter, VSCode,      |
+|                      | MLFlow, Microsoft NNI, R Studio, etc)                 |
 +----------------------+-------------------------------------------------------+
-||                     || Offering various type of computing sessions tailored |
-||                     || to specific purposes                                 |
-||                     || * Interactive                                        |
-||                     || * Batch                                              |
-||                     || * Inference                                          |
+|                      | Offering various type of computing sessions tailored  |
+|                      | to specific purposes                                  |
+|                      |                                                       |
+|                      | - Interactive                                         |
+|                      | - Batch                                               |
+|                      | - Inference                                           |
 +----------------------+-------------------------------------------------------+
-|| For data scientists || Concurrent user of multiple versions of libraries:   |
-||                     || Tensorflow, PyTorch, etc                             |
+| For data scientists  | Concurrent user of multiple versions of libraries:    |
+|                      | Tensorflow, PyTorch, etc                              |
 +----------------------+-------------------------------------------------------+
-|                      |  Concurrent user of multiple versions of libraries    |
+|                      | Concurrent user of multiple versions of libraries     |
 +----------------------+-------------------------------------------------------+
 |                      | Periodic update of ML libraries                       |
 +----------------------+-------------------------------------------------------+
-|| Customer support    || On-site installation (bare-metal / VM)               |
-|| (Enterprise)        ||                                                      |
+| Customer support     | On-site installation (bare-metal / VM)                |
+| (Enterprise)         |                                                       |
 +----------------------+-------------------------------------------------------+
 |                      | Configuration support (on-premise + cloud)            |
 +----------------------+-------------------------------------------------------+
@@ -198,8 +196,8 @@ Backend.AI feature details
 +----------------------+-------------------------------------------------------+
 |                      | Priority development and escalation                   |
 +----------------------+-------------------------------------------------------+
-||                     || Customized container image / kernel or kernel        |
-||                     || repository                                           |
+|                      | Customized container image / kernel or kernel         |
+|                      | repository                                            |
 +----------------------+-------------------------------------------------------+
 
 * ONLY Available on storage supports directory quota management
