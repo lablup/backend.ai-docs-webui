@@ -51,7 +51,9 @@ sphinx-intl update -p _build/gettext -l ko
 
 Now, `.po` files are generated in `locale/ko/LC_MESSAGES/`. Translate messages
 with them. For eaiser `.po` translation, you may use GUI apps like
-[POEDIT](https://poedit.net/).
+[POEDIT](https://poedit.net/). Or, you may refef to
+[translate_po.py](translate_po.py) for auto translation using external LLM
+services.
 
 Note that a Korean character should not be followed by two backticks(\``)
 **WITHOUT A SPACE**, since that will raise compilation errors.

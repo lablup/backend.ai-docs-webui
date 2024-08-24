@@ -1,0 +1,205 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-23 23:02+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../import_run/import_run.rst:3
+msgid "Import & Run notebooks and web based Git repositories"
+msgstr "นำเข้าและรันโน้ตบุ๊คและที่เก็บ Git แบบเว็บ"
+
+#: ../../import_run/import_run.rst:5
+msgid ""
+"Backend.AI supports executing Jupyter notebook files and importing web based"
+" Git repositories such as GitHub and GitLab on the fly. You don't need to "
+"create or download into your local storage and re-upload it. The only thing "
+"you have to do is input a valid URL you want to execute or import, and click"
+" the button on the right side."
+msgstr ""
+"Backend.AI รองรับการรันไฟล์ Jupyter notebook และการนำเข้าคลัง Git "
+"ที่เป็นเว็บ เช่น GitHub และ GitLab ได้อย่างทันที "
+"คุณไม่จำเป็นต้องสร้างหรือดาวน์โหลดไปยังที่เก็บข้อมูลในเครื่องแล้วอัปโหลดอีกครั้ง"
+" สิ่งที่คุณต้องทำคือป้อน URL ที่ถูกต้องที่คุณต้องการรันหรือ นำเข้า "
+"และคลิกที่ปุ่มด้านขวา"
+
+#: ../../import_run/import_run.rst:11
+msgid "Import and run Jupyter notebooks"
+msgstr "นำเข้าและรันสมุดบันทึก Jupyter"
+
+#: ../../import_run/import_run.rst:13
+msgid ""
+"To import Jupyter notebooks and run, you need one thing, the valid URL for "
+"the notebook file. For example, if you want execute Jupyter notebook that's "
+"in github, you can copy and paste the URL and click IMPORT & RUN button."
+msgstr ""
+"ในการนำเข้าสมุดบันทึก Jupyter และรัน คุณต้องมีสิ่งหนึ่งคือ URL "
+"ที่ถูกต้องสำหรับไฟล์สมุดบันทึก ตัวอย่างเช่น หากคุณต้องการรันสมุดบันทึก "
+"Jupyter ที่อยู่ใน github คุณสามารถคัดลอกและวาง URL แล้วคลิกปุ่ม IMPORT & RUN"
+
+#: ../../import_run/import_run.rst:19
+msgid ""
+"When you trying to IMPORT & RUN Jupyter notebook file with local address, It"
+" will be regarded as invalid. You have to input URL which is not starting "
+"from localhost."
+msgstr ""
+"เมื่อคุณพยายามนำเข้าและเรียกใช้งานไฟล์ Jupyter notebook "
+"ด้วยที่อยู่ภายในเครื่อง มันจะถูกถือว่าไม่ถูกต้อง คุณต้องป้อน URL "
+"ที่ไม่เริ่มต้นจาก localhost"
+
+#: ../../import_run/import_run.rst:-1
+msgid "Import & Run Jupyter notebook"
+msgstr "นำเข้าและรันโน้ตบุ๊ค Jupyter"
+
+#: ../../import_run/import_run.rst:26
+msgid ""
+"After clicking the button, the dialog appears. This is a session launcher "
+"dialog same as when you starts the session at Sessions page or Summary page."
+" Difference between import notebook and starting a new session is that "
+"import notebook automatically imports jupyter notebook in the URL, but "
+"simple starting a new session doesn't do that. the rest is same. Click "
+"LAUNCH button to the notebook after setting the environments and resource "
+"allocation as needed."
+msgstr ""
+"หลังจากคลิกปุ่มแล้ว กล่องโต้ตอบจะปรากฏขึ้น "
+"นี่คือตัวจัดการเซสชันแบบเดียวกับเมื่อคุณเริ่มเซสชันที่หน้าการเซสชันหรือหน้าสรุป"
+" "
+"ความแตกต่างระหว่างการนำเข้าโน้ตบุ๊กและการเริ่มเซสชันใหม่คือการนำเข้าโน้ตบุ๊กจะนำเข้าโน้ตบุ๊ก"
+" Jupyter อัตโนมัติจาก URL แต่การเริ่มเซสชันใหม่อย่างง่ายจะไม่ทำเช่นนั้น "
+"ที่เหลือเหมือนกัน คลิกปุ่ม LAUNCH "
+"ไปยังโน้ตบุ๊กหลังจากตั้งค่าสภาพแวดล้อมและการจัดสรรทรัพยากรตามที่ต้องการ"
+
+#: ../../import_run/import_run.rst:33
+msgid ""
+"The pop-up blocker must be turned off before clicking LAUNCH button to "
+"immediately see the running notebook window. Also, if there's not enough "
+"resources to execute the session, imported Jupyter notebook will not run."
+msgstr ""
+"ต้องปิดการบล็อกป๊อปอัพก่อนคลิกปุ่ม LAUNCH "
+"เพื่อดูหน้าต่างโน้ตบุ๊คที่กำลังทำงานทันที นอกจากนี้ "
+"หากไม่มีทรัพยากรเพียงพอในการดำเนินการเซสชัน โน้ตบุ๊ค Jupyter "
+"ที่นำเข้ามาจะไม่ทำงาน"
+
+#: ../../import_run/import_run.rst:-1
+msgid "Session Launcher In Importing Jupyter notebook"
+msgstr "ตัวโหลดเซสชันในการนำเข้าบันทึกย่อ Jupyter"
+
+#: ../../import_run/import_run.rst:42
+msgid ""
+"You can see the importing operation is successfully completed in Sessions "
+"page."
+msgstr "คุณสามารถเห็นว่าการนำเข้าดำเนินการเสร็จสมบูรณ์แล้วในหน้าเซสชัน"
+
+#: ../../import_run/import_run.rst:-1
+msgid "Session page with imported Jupyter notebook"
+msgstr "หน้าเซสชันที่มีโน้ตบุ๊ก Jupyter ที่นำเข้า"
+
+#: ../../import_run/import_run.rst:48
+msgid "Create executable Jupyter notebook button"
+msgstr "สร้างปุ่ม Jupyter notebook ที่สามารถทำงานได้"
+
+#: ../../import_run/import_run.rst:50
+msgid ""
+"You can also create HTML or Markdown button about Jupyter notebook URL, too."
+" Input a valid Jupyter notebook URL and click CREATE button. It will show "
+"code blocks that directly links to creating a session with notebook. You can"
+" see the badge code working by inserting it in the GitHub repositories or "
+"where it supports html or markdown."
+msgstr ""
+"คุณสามารถสร้างปุ่ม HTML หรือ Markdown เกี่ยวกับ URL ของ Jupyter notebook "
+"ได้เช่นกัน ป้อน URL ของ Jupyter notebook ที่ถูกต้องแล้วคลิกปุ่ม CREATE "
+"จะมีการแสดงบล็อคโค้ดที่เชื่อมโยงโดยตรงไปยังการสร้างเซสชันกับโน้ตบุ๊ค "
+"คุณสามารถดูโค้ดแบดจ์ที่ทำงานโดยการแทรกมันในที่เก็บ GitHub หรือที่ที่รองรับ "
+"HTML หรือ Markdown"
+
+#: ../../import_run/import_run.rst:57
+msgid ""
+"your account must be logined before clicking the button. Otherwise, you have"
+" to login first."
+msgstr ""
+"บัญชีของคุณต้องเข้าสู่ระบบก่อนที่จะคลิกปุ่ม "
+"หากไม่เช่นนั้นคุณต้องเข้าสู่ระบบก่อน"
+
+#: ../../import_run/import_run.rst:-1
+msgid "Create a Jupyter notebook button"
+msgstr "สร้างปุ่ม Jupyter notebook"
+
+#: ../../import_run/import_run.rst:67
+msgid "Importing GitHub Repositories"
+msgstr "การนำเข้าคลังข้อมูล GitHub"
+
+#: ../../import_run/import_run.rst:69
+msgid ""
+"Importing a GitHub repository is similar to import and running jupyter "
+"notebook. All you have to do is to fill out with github repository URL and "
+"click GET TO FOLDER button. If you can access to more than one storage host,"
+" you can select one from the list."
+msgstr ""
+"การนำเข้าที่เก็บ GitHub มีความคล้ายคลึงกับการนำเข้าและรัน jupyter notebook "
+"สิ่งที่คุณต้องทำคือกรอก URL ของที่เก็บ GitHub และคลิกที่ปุ่ม GET TO FOLDER "
+"หากคุณสามารถเข้าถึงโฮสต์ที่เก็บข้อมูลมากกว่าหนึ่งแห่ง "
+"คุณสามารถเลือกหนึ่งในรายการได้"
+
+#: ../../import_run/import_run.rst:-1
+msgid "Import GitHub repository"
+msgstr "นำเข้าคลังข้อมูล GitHub"
+
+#: ../../import_run/import_run.rst:78
+msgid ""
+"If there are not enough resources to start a session or folder count is at "
+"the limit, then importing repository will fail. Please check resource "
+"statistics panel and Data & Storage page before importing the repository."
+msgstr ""
+"หากไม่มีทรัพยากรเพียงพอในการเริ่มเซสชันหรือจำนวนโฟลเดอร์ถึงขีดจำกัด "
+"การนำเข้าของเก็บจะล้มเหลว โปรดตรวจสอบแผงสถิตทรัพยากรและหน้าข้อมูล & "
+"การจัดเก็บก่อนที่จะนำเข้าของเก็บ"
+
+#: ../../import_run/import_run.rst:82
+msgid ""
+"You can see the repository is successfully imported as a data folder with "
+"its name."
+msgstr ""
+"คุณสามารถเห็นได้ว่ารีโพสิตอรีถูกนำเข้าสำเร็จเป็นโฟลเดอร์ข้อมูลพร้อมชื่อของมัน"
+
+#: ../../import_run/import_run.rst:-1
+msgid "Import GitHub repository result"
+msgstr "นำเข้าผลลัพธ์ของที่เก็บ GitHub"
+
+#: ../../import_run/import_run.rst:90
+msgid "Importing GitLab Repositories"
+msgstr "การนำเข้ากระบวนการ GitLab"
+
+#: ../../import_run/import_run.rst:92
+msgid ""
+"From 22.03, Backend.AI supports importing from GitLab. It's almost the same "
+"as :ref:`Importing GitHub Repositories<importing-github-repositories>`, but "
+"you need to explicitly set the branch name to import."
+msgstr ""
+"ตั้งแต่วันที่ 22.03 เป็นต้นไป Backend.AI รองรับการนำเข้าจาก GitLab "
+"ซึ่งคล้ายกับ :ref:`การนำเข้าคลังข้อมูล GitHub<importing-github-"
+"repositories>` แต่คุณต้องกำหนดชื่อสาขาที่จะนำเข้าอย่างชัดเจน"
+
+#: ../../import_run/import_run.rst:-1
+msgid "Import GitLab repository"
+msgstr "นำเข้าคลัง GitLab"
+
+#: ../../import_run/import_run.rst:101
+msgid ""
+"If there's data folder that has the same name already, the system will "
+"append ``_`` (underscore) and number in the imported repository folder."
+msgstr ""
+"หากมีโฟลเดอร์ข้อมูลที่มีชื่อเดียวกันอยู่แล้ว ระบบจะเพิ่ม ``_`` (ขีดล่าง) "
+"และหมายเลขในโฟลเดอร์ที่นำเข้าภายในคลังข้อมูล"

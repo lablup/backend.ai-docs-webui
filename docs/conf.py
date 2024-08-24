@@ -162,6 +162,20 @@ def setup_latex(app, language):
         latex_elements["preamble"] += r"""
             \usepackage{kotex}
         """
+    elif language == "th":
+        latex_elements["fontpkg"] += r"""
+            \setmainfont{Noto Sans Thai}
+            \setsansfont{Noto Sans Thai}
+            \newfontface\THSarabun[Scale=MatchLowercase]{TH Sarabun New}
+            \XeTeXinterchartokenstate=1
+            \XeTeXcharclass `∞ = 1
+            \XeTeXcharclass `≥ = 1
+            \XeTeXinterchartoks 0 1 = {\THSarabun}
+            \XeTeXinterchartoks 1 0 = {\normalfont}
+        """
+        latex_elements["preamble"] += r"""
+            \usepackage{kotex}
+        """
 
 
 def setup(app):

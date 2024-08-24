@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-23 23:02+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../disclaimer.rst:2
+msgid "Disclaimer"
+msgstr "คำชี้แจง"
+
+#: ../../disclaimer.rst:4
+msgid ""
+"The information and contents in this manual are provided on an \"AS IS\" and"
+" \"AS AVAILABLE\" basis for informational and reference purposes only, "
+"without warranty of any kind, either express or implied, including, but not "
+"limited to, the implied warranties of merchantability, fitness for a "
+"particular purpose, and non-infringement. Lablup Inc. is not responsible for"
+" any damages resulting from the use of this manual, including consequential "
+"damages. Although much effort has been made to ensure the accuracy of the "
+"data provided, Lablup Inc. makes no representations, promises, or warranties"
+" with respect to the completeness, accuracy, up-to-dateness or adequacy of "
+"the information, and assumes no responsibility for outdated information or "
+"errors. Lablup Inc. makes no representations or warranties, either expressed"
+" or implied, with respect to the accuracy or completeness of the information"
+" contained in this manual."
+msgstr ""
+"ข้อมูลและเนื้อหาในคู่มือนี้มีให้ในลักษณะ \"ตามที่เป็น\" และ \"ตามที่มี\" "
+"เพื่อวัตถุประสงค์ในการให้ข้อมูลและอ้างอิงเท่านั้น โดยไม่มีการรับประกันใด ๆ "
+"ทั้งแบบชัดแจ้งหรือโดยนัย รวมถึง แต่ไม่จำกัดเพียง "
+"การรับประกันที่โดยนัยเกี่ยวกับการค้า ความเหมาะสมสำหรับวัตถุประสงค์เฉพาะ "
+"และการไม่ละเมิด Lablup Inc. ไม่มีความรับผิดชอบต่อความเสียหายใด ๆ "
+"ที่เกิดจากการใช้คู่มือนี้ รวมถึงความเสียหายที่เกิดขึ้นตามมา "
+"แม้ว่าจะมีความพยายามอย่างมากเพื่อให้แน่ใจในความถูกต้องของข้อมูลที่ให้ไว้ "
+"Lablup Inc. "
+"ไม่ได้มีการแสดงถึงหรือให้สัญญาหรือการรับประกันเกี่ยวกับความสมบูรณ์ "
+"ความถูกต้อง ความทันสมัย หรือความเหมาะสมของข้อมูล "
+"และไม่รับผิดชอบต่อข้อมูลที่ล้าสมัยหรือข้อผิดพลาด Lablup Inc. "
+"ไม่มีการแสดงถึงหรือการรับประกันทั้งแบบชัดแจ้งหรือโดยนัยเกี่ยวกับความถูกต้องหรือความสมบูรณ์ของข้อมูลที่มีอยู่ในคู่มือนี้"
+
+#: ../../disclaimer.rst:16
+msgid ""
+"Please contact us if you believe there are errors in this document that are "
+"different from the facts. We will review it as soon as possible."
+msgstr ""
+"หากคุณเชื่อว่ามีข้อผิดพลาดในเอกสารนี้ที่แตกต่างจากข้อเท็จจริง โปรดติดต่อเรา "
+"เราจะตรวจสอบโดยเร็วที่สุดเท่าที่จะทำได้"
+
+#: ../../disclaimer.rst:19
+msgid ""
+"The product in this manual may subject to change without notice due to "
+"continuous development by open source community and Lablup Inc."
+msgstr ""
+"ผลิตภัณฑ์ในคู่มือนี้อาจมีการเปลี่ยนแปลงโดยไม่ต้องแจ้งล่วงหน้าเนื่องจากการพัฒนาต่อเนื่องโดยชุมชนโอเพ่นซอร์สและบริษัท"
+" Lablup Inc."
+
+#: ../../disclaimer.rst:22
+msgid ""
+"All product and company names mentioned herein may be trademarks of their "
+"respective owners."
+msgstr ""
+"ชื่อผลิตภัณฑ์และบริษัททั้งหมดที่กล่าวถึงในที่นี้อาจเป็นเครื่องหมายการค้าของเจ้าของที่เกี่ยวข้อง"
+
+#: ../../disclaimer.rst:25
+msgid "Backend.AI is a registered trademark of Lablup Inc."
+msgstr "Backend.AI เป็นเครื่องหมายการค้าจดทะเบียนของบริษัท Lablup Inc."
+
+#: ../../disclaimer.rst:26
+msgid "The copyright for Backend.AI™ is owned by Lablup Inc."
+msgstr "ลิขสิทธิ์ของ Backend.AI™ เป็นของ Lablup Inc."
+
+#: ../../disclaimer.rst:28
+msgid "©2015-\\ |year| Lablup Inc. All rights reserved."
+msgstr "©2015-\\ |year| Lablup Inc. สงวนลิขสิทธิ์ทุกประการ."
+
+#: ../../disclaimer.rst:30
+msgid "Document Version: v\\ |version|.\\ |version_date|"
+msgstr "เอกสารเวอร์ชัน: v\\ |version|.\\ |version_date|"
+
+#: ../../disclaimer.rst:31
+msgid "Last Updated (Year/Month/Day): |date|"
+msgstr "อัปเดตล่าสุด (ปี/เดือน/วัน): |date|"

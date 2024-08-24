@@ -1,0 +1,641 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-23 23:02+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../overview/overview.rst:3
+msgid "Overview"
+msgstr "ภาพรวม"
+
+#: ../../overview/overview.rst:5
+msgid ""
+"Backend.AI is an open source cloud resource management platform, which makes"
+" it easy to utilize virtualized compute resource clusters in a cloud or on-"
+"premises environment. The container-based GPU virtualization technology of "
+"Backend.AI supports the efficient use of GPUs by flexibly dividing one "
+"physical GPU, so that multiple users can use it at the same time."
+msgstr ""
+"Backend.AI เป็นแพลตฟอร์มจัดการทรัพยากรคลาวด์ที่เป็นโอเพ่นซอร์ส "
+"ซึ่งทำให้การใช้คลัสเตอร์ทรัพยากรการคำนวณที่เสมือนจริงในสภาพแวดล้อมคลาวด์หรือในสถานที่ทำได้ง่าย"
+" เทคโนโลยีการสร้างเสมือน GPU ที่ใช้คอนเทนเนอร์ของ Backend.AI สนับสนุนการใช้ "
+"GPU อย่างมีประสิทธิภาพโดยการแบ่ง GPU ทางกายภาพหนึ่งตัวอย่างยืดหยุ่น "
+"เพื่อให้ผู้ใช้หลายคนสามารถใช้ร่วมกันได้ในเวลาเดียวกัน"
+
+#: ../../overview/overview.rst:11
+msgid ""
+"Backend.AI offers a variety of performance-driven optimizations for machine "
+"learning and high-performance computing clusters, along with management and "
+"research features to support a diverse users, including researchers, "
+"administrators, and DevOps. The Enterprise Edition adds support for multi-"
+"domain management, a dedicated Control-Panel for superadmins, and the GPU "
+"virtualization plug-in."
+msgstr ""
+"Backend.AI "
+"มีการปรับแต่งที่มุ่งเน้นประสิทธิภาพหลายประเภทสำหรับการเรียนรู้ของเครื่องและคลัสเตอร์การประมวลผลที่มีประสิทธิภาพสูง"
+" พร้อมด้วยฟีเจอร์การจัดการและการวิจัยเพื่อตอบสนองผู้ใช้ที่หลากหลาย "
+"รวมถึงนักวิจัย ผู้ดูแลระบบ และ DevOps รุ่น Enterprise Edition "
+"เพิ่มการสนับสนุนการจัดการหลายโดเมน แผงควบคุมที่เฉพาะสำหรับซูเปอร์แอดมิน "
+"และปลั๊กอินการจำลองเสมือน GPU"
+
+#: ../../overview/overview.rst:18
+msgid ""
+"A GUI client package is provided to easily take advantage of the features "
+"supported by the Backend.AI server. Backend.AI Web-UI is a GUI client in the"
+" form of a web service or stand-alone app. It provides a convenient "
+"graphical interface for accessing the Backend.AI server to utilize computing"
+" resources and manage its environment. Backend.AI provides pre-made images "
+"which enable immediate creation of compute sessions without any need of "
+"installing separate programs.  Most tasks can be done with mouse clicks and "
+"brief typing, which achieves more intuitive use."
+msgstr ""
+"แพ็คเกจไคลเอนต์ GUI "
+"ถูกจัดเตรียมไว้เพื่อให้สามารถใช้ประโยชน์จากฟีเจอร์ที่สนับสนุนโดยเซิร์ฟเวอร์ "
+"Backend.AI ได้อย่างง่ายดาย Backend.AI Web-UI เป็นไคลเอนต์ GUI "
+"ในรูปแบบของบริการเว็บหรือแอปพลิเคชันที่ยืนอยู่คนเดียว "
+"มันให้ส่วนติดต่อกราฟิกที่สะดวกสำหรับการเข้าถึงเซิร์ฟเวอร์ Backend.AI "
+"เพื่อใช้ทรัพยากรการคอมพิวเตอร์และจัดการกับสภาพแวดล้อมของมัน Backend.AI "
+"มีภาพที่ทำไว้ล่วงหน้าซึ่งช่วยให้สามารถสร้างเซสชันการคอมพิวเตอร์ได้ทันทีโดยไม่ต้องติดตั้งโปรแกรมแยกต่างหาก"
+" งานส่วนใหญ่สามารถทำได้ด้วยการคลิกเมาส์และการพิมพ์สั้น ๆ "
+"ซึ่งช่วยให้การใช้งานเป็นไปอย่างชาญฉลาดมากขึ้น"
+
+#: ../../overview/overview.rst:29
+msgid "Key Concepts"
+msgstr "แนวคิดหลัก"
+
+#: ../../overview/overview.rst:-1
+msgid "Diagram explaining key concepts"
+msgstr "แผนภาพที่อธิบายแนวคิดสำคัญ"
+
+#: ../../overview/overview.rst:34
+msgid ""
+"User: The user is a person who connects to Backend.AI and performs work. "
+"Users are divided into normal users, domain admins, and superadmins "
+"according to their privileges. While ordinary users can only perform tasks "
+"related to their computing sessions, domain admins have the authority to "
+"perform tasks within a domain, and superadmins perform almost all tasks "
+"throughout the system. A user belongs to one domain and can belong to "
+"multiple projects within a domain."
+msgstr ""
+"ผู้ใช้: ผู้ใช้คือบุคคลที่เชื่อมต่อกับ Backend.AI และทำงาน "
+"ผู้ใช้จะถูกแบ่งออกเป็นผู้ใช้ทั่วไป, ผู้ดูแลโดเมน "
+"และผู้ดูแลระบบซุปเปอร์ตามสิทธิ์ของพวกเขา "
+"ในขณะที่ผู้ใช้ทั่วไปสามารถทำงานที่เกี่ยวข้องกับเซสชันการคอมพิวเตอร์ของตนได้เท่านั้น"
+" ผู้ดูแลโดเมนมีอำนาจในการทำงานภายในโดเมน "
+"และผู้ดูแลระบบซุปเปอร์สามารถทำงานเกือบทั้งหมดทั่วทั้งระบบ "
+"ผู้ใช้จะต้องเป็นสมาชิกของโดเมนหนึ่งและสามารถเป็นสมาชิกของโครงการหลายโครงการภายในโดเมนได้"
+
+#: ../../overview/overview.rst:41
+msgid ""
+"Compute session, container: An isolated virtual environment in which your "
+"code runs. It looks like a real Linux server with full user rights, and you "
+"can't see other user's session even if it's running on the same server as "
+"your session. Backend.AI implements this virtual environment through a "
+"technology called containers. You can only create compute sessions within "
+"the domain and projects to which you belong."
+msgstr ""
+"เซสชันการประมวลผล, คอนเทนเนอร์: สภาพแวดล้อมเสมือนที่แยกออก "
+"ซึ่งโค้ดของคุณทำงานอยู่ มันมีลักษณะเหมือนเซิร์ฟเวอร์ Linux "
+"จริงที่มีสิทธิ์ผู้ใช้ทั้งหมด และคุณไม่สามารถเห็นเซสชันของผู้ใช้อื่น "
+"แม้ว่ามันจะทำงานอยู่บนเซิร์ฟเวอร์เดียวกันกับเซสชันของคุณ Backend.AI "
+"ใช้เทคโนโลยีที่เรียกว่าคอนเทนเนอร์เพื่อดำเนินการสร้างสภาพแวดล้อมเสมือนนี้ "
+"คุณสามารถสร้างเซสชันการประมวลผลได้เฉพาะในโดเมนและโครงการที่คุณเป็นสมาชิกเท่านั้น"
+
+#: ../../overview/overview.rst:47
+msgid ""
+"Domain: This is the top layer for authority and resource control supported "
+"by Backend.AI. For companies or organizations, you can view domains as an "
+"affiliate and set up per-domain (or per-affiliate) permissions and resource "
+"policies. Users should belong to only one domain, and can create sessions or"
+" do some other jobs only in their own domain. A domain can have one domain "
+"admin or more, who can set policies within the domain or manage sessions. "
+"For example, if you set the total amount of resources available in a domain,"
+" the resources of all containers created by users in the domain cannot be "
+"greater than the amount set."
+msgstr ""
+"โดเมน: นี่คือชั้นบนสุดสำหรับการควบคุมอำนาจและทรัพยากรที่มีการสนับสนุนโดย "
+"Backend.AI สำหรับบริษัทหรือองค์กร "
+"คุณสามารถมองว่าโดเมนเป็นพันธมิตรและตั้งค่าการอนุญาตและนโยบายทรัพยากรต่อโดเมน"
+" (หรือแต่ละพันธมิตร) ผู้ใช้ควรอยู่ในโดเมนเพียงหนึ่งเดียว "
+"และสามารถสร้างเซสชันหรือทำงานอื่น ๆ ได้เฉพาะในโดเมนของตนเอง "
+"โดเมนสามารถมีผู้ดูแลระบบโดเมนหนึ่งคนหรือมากกว่า "
+"ซึ่งสามารถตั้งค้านโยบายภายในโดเมนหรือจัดการเซสชันได้ ตัวอย่างเช่น "
+"หากคุณตั้งจำนวนทรัพยากรทั้งหมดที่พร้อมใช้งานในโดเมน "
+"ทรัพยากรของทุกคอนเทนเนอร์ที่สร้างโดยผู้ใช้ในโดเมนจะต้องไม่มากกว่าจำนวนที่ตั้งไว้"
+
+#: ../../overview/overview.rst:56
+msgid ""
+"Projects: A hierarchy belonging to a domain. Multiple projects can exist in "
+"one domain. You can think of a project as a project working unit. A user can"
+" belong to multiple projects at the same time within a domain. Compute "
+"sessions must belong to one project, and users can only create sessions "
+"within their own projects. Domain admins can set policies or manage sessions"
+" for projects within the domain. For example, if you set the total amount of"
+" resources available within a project, the resources in all containers "
+"created by users in the project cannot be greater than the amount set."
+msgstr ""
+"โครงการ: ลำดับชั้นที่เป็นของโดเมน ซึ่งมีโครงการหลายโครงการในโดเมนเดียว "
+"คุณสามารถคิดว่าโครงการเป็นหน่วยการทำงานของโครงการ "
+"ผู้ใช้สามารถเป็นสมาชิกของโครงการหลายโครงการในเวลาเดียวกันภายในโดเมน "
+"เซสชันการคอมพิวเตอร์ต้องเป็นของโครงการหนึ่งโครงการ "
+"และผู้ใช้สามารถสร้างเซสชันได้ภายในโครงการของตนเองเท่านั้น "
+"ผู้ดูแลระบบโดเมนสามารถตั้งนโยบายหรือจัดการเซสชันสำหรับโครงการภายในโดเมนได้ "
+"ตัวอย่างเช่น หากคุณตั้งจำนวนทรัพยากรทั้งหมดที่มีอยู่ภายในโครงการ "
+"ทรัพยากรในทุกคอนเทนเนอร์ที่สร้างโดยผู้ใช้ในโครงการจะต้องไม่เกินจำนวนที่ตั้งไว้"
+
+#: ../../overview/overview.rst:64
+msgid ""
+"Image: Each container has a pre-installed language-specific runtime and "
+"various computational frameworks. The state of such snapshots before they "
+"are executed is called an image. You can choose to run an image provided by "
+"the cluster admin or create your own image with the software you want to use"
+" and ask the admin to register it."
+msgstr ""
+"ภาพ: "
+"ทุกคอนเทนเนอร์มีการติดตั้งรันไทม์เฉพาะภาษาที่ติดตั้งล่วงหน้าและกรอบการคำนวณต่างๆ"
+" สถานะของภาพถ่ายดังกล่าวก่อนที่พวกเขาจะถูกเรียกใช้งานเรียกว่าภาพ "
+"คุณสามารถเลือกที่จะเรียกใช้ภาพที่ให้โดยผู้ดูแลคลัสเตอร์หรือสร้างภาพของคุณเองด้วยซอฟต์แวร์ที่คุณต้องการใช้และขอให้ผู้ดูแลลงทะเบียนมัน"
+
+#: ../../overview/overview.rst:69
+msgid ""
+"Virtual Folder (vfolder): A \"cloud\" folder that is always accessible and "
+"mountable in a container on a per-user basis, regardless of which node the "
+"container runs on. After creating your own virtual folder, you can upload "
+"your own program code, data, etc. in advance and mount the folder when you "
+"run the compute session to read from and write to it as if it is on your "
+"local disk."
+msgstr ""
+"โฟลเดอร์เสมือน (vfolder): โฟลเดอร์ “คลาวด์” "
+"ที่สามารถเข้าถึงได้ตลอดเวลาและสามารถเชื่อมโยงในคอนเทนเนอร์ตามผู้ใช้รายบุคคล "
+"โดยไม่คำนึงถึงว่าโหนดใดที่คอนเทนเนอร์ทำงานอยู่ "
+"หลังจากสร้างโฟลเดอร์เสมือนของคุณเองแล้ว คุณสามารถอัปโหลดโค้ดโปรแกรม ข้อมูล "
+"ฯลฯ ของคุณล่วงหน้า "
+"และเชื่อมโยงโฟลเดอร์เมื่อคุณเรียกใช้เซสชันการคำนวณเพื่ออ่านเขียนได้เหมือนกับที่อยู่ในดิสก์ท้องถิ่นของคุณ"
+
+#: ../../overview/overview.rst:74
+msgid ""
+"Application service, service port: A feature that allows you to access "
+"various user applications (eg DIGITS, Jupyter Notebook, shell terminal, "
+"TensorBoard, etc.) running within the compute session. You do not need to "
+"know the container's address and port number directly, but you can use the "
+"provided CLI client or GUI Web-UI to directly access the desired daemon of "
+"the session."
+msgstr ""
+"บริการแอพพลิเคชั่น, พอร์ตบริการ: "
+"ฟีเจอร์ที่ช่วยให้คุณเข้าถึงแอพพลิเคชั่นของผู้ใช้ที่หลากหลาย (เช่น DIGITS, "
+"Jupyter Notebook, shell terminal, TensorBoard, ฯลฯ) "
+"ที่ทำงานภายในเซสชันการคำนวณ "
+"คุณไม่จำเป็นต้องรู้ที่อยู่ของคอนเทนเนอร์และหมายเลขพอร์ตโดยตรง "
+"แต่คุณสามารถใช้ CLI client หรือ GUI Web-UI "
+"ที่ให้มาเพื่อเข้าถึงเดมอนที่ต้องการของเซสชันโดยตรง"
+
+#: ../../overview/overview.rst:79
+msgid ""
+"Web-UI: A GUI client that is served as a web or stand-alone app. You can use"
+" the service after logging in by specifying the address of the Backend.AI "
+"server and entering the user account information."
+msgstr ""
+"Web-UI: โปรแกรมคล้าย GUI ที่ให้บริการเป็นเว็บหรือแอปพลิเคชันแบบสแตนด์อโลน "
+"คุณสามารถใช้บริการได้หลังจากเข้าสู่ระบบโดยระบุที่อยู่ของเซิร์ฟเวอร์ "
+"Backend.AI และกรอกข้อมูลบัญชีผู้ใช้"
+
+#: ../../overview/overview.rst:82
+msgid ""
+"Local wsproxy: Proxy server built into the Web-UI app. Local wsproxy "
+"converts general HTTP requests between the server and Web-UI app to "
+"websocket and delivers the messages. If the Web-UI app loses its connection "
+"to wsproxy or the wsproxy server is dead, it will not be possible to access "
+"services such as Jupyter Notebook and Terminal."
+msgstr ""
+"wsproxy ท้องถิ่น: เซิร์ฟเวอร์พร็อกซีที่สร้างขึ้นในแอป Web-UI. wsproxy "
+"ท้องถิ่นจะแปลงคำขอ HTTP ทั่วไประหว่างเซิร์ฟเวอร์กับแอป Web-UI เป็น websocket"
+" และส่งข้อความไปยังกันและกัน หากแอป Web-UI สูญเสียการเชื่อมต่อกับ wsproxy "
+"หรือเซิร์ฟเวอร์ wsproxy หยุดทำงาน จะไม่สามารถเข้าถึงบริการต่างๆ เช่น Jupyter"
+" Notebook และ Terminal ได้."
+
+#: ../../overview/overview.rst:87
+msgid ""
+"Web wsproxy: In the case of the Web-UI provided in a web, the built-in "
+"server cannot be used due to the nature of the browser. In this case, you "
+"can use services such as Jupyter Notebook, Terminal, etc. in the web "
+"environment by making the wsproxy server as a separate web server so that "
+"the Web-UI app can see the web wsproxy."
+msgstr ""
+"Web wsproxy: ในกรณีของ Web-UI ที่จัดเตรียมไว้ในเว็บ "
+"เซิร์ฟเวอร์ที่ติดตั้งมายังไม่สามารถใช้งานได้เนื่องจากธรรมชาติของเบราว์เซอร์ "
+"ในกรณีนี้ คุณสามารถใช้บริการต่าง ๆ เช่น Jupyter Notebook, Terminal, ฯลฯ "
+"ในสภาพแวดล้อมเว็บโดยการทำให้เซิร์ฟเวอร์ wsproxy "
+"เป็นเซิร์ฟเวอร์เว็บแยกที่สามารถทำให้แอป Web-UI มองเห็นเว็บ wsproxy ได้"
+
+#: ../../overview/overview.rst:95
+msgid "Backend.AI feature details"
+msgstr "รายละเอียดฟีเจอร์ของ Backend.AI"
+
+#: ../../overview/overview.rst:98
+msgid "Category"
+msgstr "หมวดหมู่"
+
+#: ../../overview/overview.rst:98
+msgid "Feature"
+msgstr "คุณสมบัติ"
+
+#: ../../overview/overview.rst:100
+msgid "NVIDIA support"
+msgstr "การสนับสนุน NVIDIA"
+
+#: ../../overview/overview.rst:100
+msgid "Container-level multi GPU"
+msgstr "มัลติ GPU ระดับคอนเทนเนอร์"
+
+#: ../../overview/overview.rst:102
+msgid "(Enterprise) Fractional GPU sharing & scaling"
+msgstr "(องค์กร) การแชร์และขยาย GPU แบบห fractional"
+
+#: ../../overview/overview.rst:104
+msgid "Multiple CUDA library version support (8.0 to 12.2)"
+msgstr "การสนับสนุนหลายเวอร์ชันของไลบรารี CUDA (8.0 ถึง 12.2)"
+
+#: ../../overview/overview.rst:106
+msgid "GPUDirect storage support"
+msgstr "การสนับสนุน GPUDirect Storage"
+
+#: ../../overview/overview.rst:110
+msgid "NGC (NVIDIA GPU Cloud) image integration"
+msgstr "การรวมภาพ NGC (NVIDIA GPU Cloud)"
+
+#: ../../overview/overview.rst:112
+msgid "GPU-GPU Network autoconfiguration"
+msgstr "การตั้งค่าอัตโนมัติของเครือข่าย GPU-GPU"
+
+#: ../../overview/overview.rst
+msgid "NPU Support"
+msgstr "การสนับสนุน NPU"
+
+#: ../../overview/overview.rst
+msgid "* Graphcore IPU"
+msgstr "* Graphcore IPU"
+
+#: ../../overview/overview.rst
+msgid "* Rebellions ATOM"
+msgstr "* การกบฏ ATOM"
+
+#: ../../overview/overview.rst
+msgid "* FuriosaAI Warboy"
+msgstr "* FuriosaAI Warboy"
+
+#: ../../overview/overview.rst
+msgid "* Hyperaccel LPU"
+msgstr "* Hyperaccel LPU"
+
+#: ../../overview/overview.rst:119
+msgid "Scaling"
+msgstr "การขยายขนาด"
+
+#: ../../overview/overview.rst:119
+msgid "On-premise installation on both bare-metal / VM"
+msgstr "การติดตั้งในสถานที่บนเซิร์ฟเวอร์เปล่าหรือ VM"
+
+#: ../../overview/overview.rst:121
+msgid "Hybrid cloud (on-premise + cloud)"
+msgstr "ไฮบริดคลาวด์ (ภายในองค์กร + คลาวด์)"
+
+#: ../../overview/overview.rst:123
+msgid "Polycloud (multi-cloud federation)"
+msgstr "โพลีคลาวด์ (การรวมกลุ่มคลาวด์หลายแห่ง)"
+
+#: ../../overview/overview.rst:125
+msgid "Scheduling"
+msgstr "การตั้งเวลา"
+
+#: ../../overview/overview.rst:125
+msgid "Unified scheduling & monitoring with GUI admin"
+msgstr "การจัดตารางเวลาและการติดตามที่รวมกันด้วย GUI admin"
+
+#: ../../overview/overview.rst:127
+msgid "Per-user (keypair) resource policy"
+msgstr "นโยบายทรัพยากรแบบผู้ใช้งาน (คู่กุญแจ)"
+
+#: ../../overview/overview.rst:129
+msgid "(Enterprise) Per-project resource policy"
+msgstr "นโยบายทรัพยากรต่อโครงการ (Enterprise)"
+
+#: ../../overview/overview.rst:131
+msgid "Availability-slot based scheduling"
+msgstr "การจัดตารางเวลาตามช่องว่างในการให้บริการ"
+
+#: ../../overview/overview.rst:133
+msgid "(Enterprise) Utilization based resource management"
+msgstr "(องค์กร) การจัดการทรัพยากรตามการใช้งาน"
+
+#: ../../overview/overview.rst:135
+msgid "Cluster partitioning"
+msgstr "การแบ่งกลุ่มคลัสเตอร์"
+
+#: ../../overview/overview.rst:135
+msgid "Resource groups by H/W spec and usage"
+msgstr "กลุ่มทรัพยากรตามสเปค H/W และการใช้งาน"
+
+#: ../../overview/overview.rst
+msgid "(Enterprise) Access control of users to"
+msgstr "(องค์กร) การควบคุมการเข้าถึงของผู้ใช้ไปยัง"
+
+#: ../../overview/overview.rst
+msgid "resource group"
+msgstr "กลุ่มทรัพยากร"
+
+#: ../../overview/overview.rst
+msgid "(Enterprise) Access control of project to"
+msgstr "(Enterprise) การควบคุมการเข้าถึงโครงการไปยัง"
+
+#: ../../overview/overview.rst:143
+msgid "Security"
+msgstr "ความปลอดภัย"
+
+#: ../../overview/overview.rst:143
+msgid "Sandboxing via hypervisor/container"
+msgstr "การสร้าง Sandbox ผ่าน hypervisor/container"
+
+#: ../../overview/overview.rst:145
+msgid "Access logs for each user"
+msgstr "บันทึกการเข้าถึงสำหรับแต่ละผู้ใช้"
+
+#: ../../overview/overview.rst:147
+msgid "Per session (container) logs"
+msgstr "บันทึกการใช้งานต่อเซสชัน (คอนเทนเนอร์)"
+
+#: ../../overview/overview.rst:149
+msgid "UI / UX"
+msgstr "UI / UX"
+
+#: ../../overview/overview.rst:149
+msgid "GUI web interface"
+msgstr "อินเทอร์เฟซเว็บ GUI"
+
+#: ../../overview/overview.rst:151
+msgid "(Enterprise) Admin GUI web interface"
+msgstr "(Enterprise) อินเทอร์เฟซเว็บ GUI ของผู้ดูแลระบบ"
+
+#: ../../overview/overview.rst:153
+msgid "(Enterprise) MLOps pipeline web interface"
+msgstr "(Enterprise) อินเตอร์เฟซเว็บ MLOps pipeline"
+
+#: ../../overview/overview.rst
+msgid "Data management"
+msgstr "การจัดการข้อมูล"
+
+#: ../../overview/overview.rst
+msgid "EFS, NFS, SMB and distributed file system"
+msgstr "EFS, NFS, SMB และระบบไฟล์ที่กระจาย"
+
+#: ../../overview/overview.rst
+msgid "(CephFS, GlusterFS, HDFS, etc)"
+msgstr "(CephFS, GlusterFS, HDFS, ฯลฯ)"
+
+#: ../../overview/overview.rst
+msgid "(Enterprise) Storage solution integration:"
+msgstr "การรวมโซลูชันการจัดเก็บ (Enterprise):"
+
+#: ../../overview/overview.rst
+msgid "* PureStorage FlashBlade"
+msgstr "* PureStorage FlashBlade"
+
+#: ../../overview/overview.rst
+msgid "* NetApp ONTAP & NetApp XCP"
+msgstr "* NetApp ONTAP & NetApp XCP"
+
+#: ../../overview/overview.rst
+msgid "* Weka.io"
+msgstr "* วีกา.io"
+
+#: ../../overview/overview.rst
+msgid "* Dell EMC"
+msgstr "* Dell EMC"
+
+#: ../../overview/overview.rst
+msgid "* IBM SpectrumScale (GPFS)"
+msgstr "* IBM SpectrumScale (GPFS)"
+
+#: ../../overview/overview.rst
+msgid "* Vast Data"
+msgstr "* ข้อมูลขนาดใหญ่"
+
+#: ../../overview/overview.rst
+msgid "* KT Cloud NAS"
+msgstr "* KT Cloud NAS"
+
+#: ../../overview/overview.rst:168
+msgid "Fine-grained Access control to data by user/project"
+msgstr "การควบคุมการเข้าถึงข้อมูลอย่างละเอียดตามผู้ใช้/โครงการ"
+
+#: ../../overview/overview.rst:170
+msgid "Per user/project based storage quota managment*"
+msgstr "การจัดการโควต้าพื้นที่จัดเก็บข้อมูลตามผู้ใช้/โครงการ*"
+
+#: ../../overview/overview.rst:172
+msgid "Developer support"
+msgstr "การสนับสนุนนักพัฒนา"
+
+#: ../../overview/overview.rst:172
+msgid "Universal programming languages (Python, C/C++, etc)"
+msgstr "ภาษาการเขียนโปรแกรมทั่วไป (Python, C/C++, ฯลฯ)"
+
+#: ../../overview/overview.rst
+msgid "Interactive web apps (Terminal, Jupyter, VSCode,"
+msgstr "แอปเว็บแบบโต้ตอบ (เทอร์มินัล, จูปีเตอร์, VSCode,"
+
+#: ../../overview/overview.rst
+msgid "MLFlow, Microsoft NNI, R Studio, etc)"
+msgstr "MLFlow, Microsoft NNI, R Studio, ฯลฯ"
+
+#: ../../overview/overview.rst
+msgid "Offering various type of computing sessions tailored"
+msgstr "การให้บริการเซสชันการคอมพิวเตอร์ประเภทต่างๆ ที่ปรับแต่งตามความต้องการ"
+
+#: ../../overview/overview.rst
+msgid "to specific purposes"
+msgstr "เพื่อวัตถุประสงค์เฉพาะ"
+
+#: ../../overview/overview.rst
+msgid "* Interactive"
+msgstr "* โต้ตอบ"
+
+#: ../../overview/overview.rst
+msgid "* Batch"
+msgstr "* กลุ่ม"
+
+#: ../../overview/overview.rst
+msgid "* Inference"
+msgstr "* การอนุมาน"
+
+#: ../../overview/overview.rst
+msgid "For data scientists"
+msgstr "สำหรับนักวิทยาศาสตร์ข้อมูล"
+
+#: ../../overview/overview.rst
+msgid "Concurrent user of multiple versions of libraries:"
+msgstr "ผู้ใช้ที่ใช้หลายเวอร์ชันของไลบรารีพร้อมกัน:"
+
+#: ../../overview/overview.rst
+msgid "Tensorflow, PyTorch, etc"
+msgstr "เทนเซอร์ฟโลว์, ไพธอร์ช, ฯลฯ"
+
+#: ../../overview/overview.rst:186
+msgid "Concurrent user of multiple versions of libraries"
+msgstr "ผู้ใช้พร้อมกันของหลายเวอร์ชันของไลบรารี"
+
+#: ../../overview/overview.rst:188
+msgid "Periodic update of ML libraries"
+msgstr "การอัปเดตห้องสมุด ML เป็นระยะ ๆ"
+
+#: ../../overview/overview.rst
+msgid "Customer support"
+msgstr "การสนับสนุนลูกค้า"
+
+#: ../../overview/overview.rst
+msgid "(Enterprise)"
+msgstr "(องค์กร)"
+
+#: ../../overview/overview.rst
+msgid "On-site installation (bare-metal / VM)"
+msgstr "การติดตั้งในสถานที่ (bare-metal / VM)"
+
+#: ../../overview/overview.rst:193
+msgid "Configuration support (on-premise + cloud)"
+msgstr "การสนับสนุนการกำหนดค่า (บน-premise + คลาวด์)"
+
+#: ../../overview/overview.rst:195
+msgid "Admin/user training"
+msgstr "การฝึกอบรมผู้ดูแลระบบ/ผู้ใช้"
+
+#: ../../overview/overview.rst:197
+msgid "Support for updating to latest version"
+msgstr "การสนับสนุนสำหรับการอัปเดตเป็นเวอร์ชันล่าสุด"
+
+#: ../../overview/overview.rst:199
+msgid "Priority development and escalation"
+msgstr "การพัฒนาลำดับความสำคัญและการแก้ไขปัญหา"
+
+#: ../../overview/overview.rst
+msgid "Customized container image / kernel or kernel"
+msgstr "ภาพ контейเนอร์ที่ปรับแต่งหรือเคอร์เนลหรือเคอร์เนล"
+
+#: ../../overview/overview.rst
+msgid "repository"
+msgstr "ที่เก็บข้อมูล"
+
+#: ../../overview/overview.rst:205
+msgid "ONLY Available on storage supports directory quota management"
+msgstr ""
+"สามารถใช้ได้เฉพาะกับพื้นที่เก็บข้อมูลที่รองรับการจัดการโควตาไดเรกทอรีเท่านั้น"
+
+#: ../../overview/overview.rst:208
+msgid "Accessible menu by user role"
+msgstr "เมนูที่สามารถเข้าถึงได้ตามบทบาทผู้ใช้"
+
+#: ../../overview/overview.rst:212
+msgid "Pages with ``*`` mark are in Administration menu."
+msgstr "หน้าที่มีเครื่องหมาย ``*`` อยู่ในเมนูการจัดการ"
+
+#: ../../overview/overview.rst:213
+msgid "Features only for admin are listed in :ref:`admin menu <admin-menu>`."
+msgstr ""
+"ฟีเจอร์ที่มีเฉพาะสำหรับผู้ดูแลระบบจะถูกระบุไว้ใน :ref:`เมนูผู้ดูแลระบบ "
+"<admin-menu>`"
+
+#: ../../overview/overview.rst:216
+msgid "page \\\\ role"
+msgstr "หน้า \\\\ บทบาท"
+
+#: ../../overview/overview.rst:216
+msgid "user"
+msgstr "ผู้ใช้"
+
+#: ../../overview/overview.rst:216
+msgid "admin"
+msgstr "ผู้ดูแลระบบ"
+
+#: ../../overview/overview.rst:218
+msgid "Summary"
+msgstr "สรุป"
+
+#: ../../overview/overview.rst:218 ../../overview/overview.rst:220
+#: ../../overview/overview.rst:222 ../../overview/overview.rst:224
+#: ../../overview/overview.rst:226 ../../overview/overview.rst:228
+#: ../../overview/overview.rst:230 ../../overview/overview.rst:232
+#: ../../overview/overview.rst:234 ../../overview/overview.rst:236
+#: ../../overview/overview.rst:238 ../../overview/overview.rst:240
+#: ../../overview/overview.rst:242 ../../overview/overview.rst:244
+msgid "O"
+msgstr "O"
+
+#: ../../overview/overview.rst:220
+msgid "Sessions"
+msgstr "เซสชัน"
+
+#: ../../overview/overview.rst:222
+msgid "Serving"
+msgstr "การให้บริการ"
+
+#: ../../overview/overview.rst:224
+msgid "Import & run"
+msgstr "นำเข้าและทำงาน"
+
+#: ../../overview/overview.rst:226
+msgid "Data & Storage"
+msgstr "ข้อมูลและการจัดเก็บ"
+
+#: ../../overview/overview.rst:228
+msgid "Agent Summary"
+msgstr "สรุปตัวแทน"
+
+#: ../../overview/overview.rst:230
+msgid "Statistics"
+msgstr "สถิติ"
+
+#: ../../overview/overview.rst:232
+msgid "Users*"
+msgstr "ผู้ใช้*"
+
+#: ../../overview/overview.rst:232 ../../overview/overview.rst:234
+#: ../../overview/overview.rst:236 ../../overview/overview.rst:238
+#: ../../overview/overview.rst:240 ../../overview/overview.rst:242
+msgid "X"
+msgstr "X"
+
+#: ../../overview/overview.rst:234
+msgid "Environments*"
+msgstr "สภาพแวดล้อม*"
+
+#: ../../overview/overview.rst:236
+msgid "Resources*"
+msgstr "ทรัพยากร*"
+
+#: ../../overview/overview.rst:238
+msgid "Configurations*"
+msgstr "การกำหนดค่า*"
+
+#: ../../overview/overview.rst:240
+msgid "Maintenance*"
+msgstr "การบำรุงรักษา*"
+
+#: ../../overview/overview.rst:242
+msgid "Information*"
+msgstr "ข้อมูล*"
+
+#: ../../overview/overview.rst:244
+msgid "UserSettings"
+msgstr "การตั้งค่าผู้ใช้"

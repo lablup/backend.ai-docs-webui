@@ -1,0 +1,612 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-23 23:02+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../appendix/appendix.rst:3
+msgid "Appendix"
+msgstr "ภาคผนวก"
+
+#: ../../appendix/appendix.rst:6
+msgid "GPU virtualization and fractional GPU allocation"
+msgstr "การใช้ GPU เสมือนและการจัดสรร GPU แบบเศษส่วน"
+
+#: ../../appendix/appendix.rst:8
+msgid ""
+"Backend.AI supports GPU virtualization technology which allows single "
+"physical GPU can be divided and shared by multiple users simultaneously. "
+"Therefore, if you want to execute a task that does not require much GPU "
+"computation capability, you can create a compute session by allocating a "
+"portion of the GPU. The amount of GPU resources that 1 fGPU actually "
+"allocates may vary from system to system depending on administrator "
+"settings. For example, if the administrator has set one physical GPU to be "
+"divided into five pieces, 5 fGPU means 1 physical GPU, or 1 fGPU means 0.2 "
+"physical GPU. If you set 1 fGPU when creating a compute session, the session"
+" can utilize the streaming multiprocessor (SM) and GPU memory equivalent to "
+"0.2 physical GPU."
+msgstr ""
+"Backend.AI รองรับเทคโนโลยีการทำเวอร์ชัน GPU ซึ่งอนุญาตให้ GPU "
+"ทางกายภาพเพียงตัวเดียวสามารถถูกแบ่งและแชร์โดยผู้ใช้หลายคนในเวลาเดียวกัน "
+"ดังนั้น หากคุณต้องการเรียกใช้งานที่ไม่ต้องใช้ความสามารถในการคำนวณ GPU มากนัก"
+" คุณสามารถสร้างเซสชันการคำนวณโดยการจัดสรรส่วนหนึ่งของ GPU จำนวนทรัพยากร GPU "
+"ที่ 1 fGPU จริง ๆ จัดสรรอาจแตกต่างกันไปตามระบบ "
+"ขึ้นอยู่กับการตั้งค่าของผู้ดูแลระบบ ตัวอย่างเช่น หากผู้ดูแลระบบตั้งค่าให้ "
+"GPU ทางกายภาพหนึ่งตัวถูกแบ่งเป็นห้าชิ้น 5 fGPU จะหมายถึง 1 GPU ทางกายภาพ "
+"หรือ 1 fGPU จะหมายถึง 0.2 GPU ทางกายภาพ หากคุณตั้งค่า 1 fGPU "
+"เมื่อสร้างเซสชันการคำนวณ เซสชันนั้นสามารถใช้หน่วยประมวลผลแบบสตรีมมิ่ง (SM) "
+"และหน่วยความจำ GPU ที่เทียบเท่ากับ 0.2 GPU ทางกายภาพ"
+
+#: ../../appendix/appendix.rst:19
+msgid ""
+"In this section, we will create a compute session by allocating a portion of"
+" the GPU and then check whether the GPU recognized inside the compute "
+"container really corresponds to the partial physics GPU."
+msgstr ""
+"ในส่วนนี้ เราจะสร้างเซสชันการคำนวณโดยการจัดสรรส่วนหนึ่งของ GPU "
+"แล้วตรวจสอบว่า GPU ที่ถูกตรวจพบภายในคอนเทนเนอร์การคำนวณนั้นตรงกับ GPU "
+"ฟิสิกส์บางส่วนจริงหรือไม่"
+
+#: ../../appendix/appendix.rst:23
+msgid ""
+"First, let's check the type of physical GPU installed in the host node and "
+"the amount of memory. The GPU node used in this guide is equipped with a GPU"
+" with 8 GB of memory as in the following figure. And through the "
+"administrator settings, 1 fGPU is set to an amount equivalent to 0.5 "
+"physical GPU (or 1 physical GPU is 2 fGPU)."
+msgstr ""
+"ก่อนอื่นให้ตรวจสอบประเภทของ GPU "
+"ทางกายภาพที่ติดตั้งในโหนดโฮสต์และปริมาณหน่วยความจำ โหนด GPU "
+"ที่ใช้ในคู่มือนี้ติดตั้งด้วย GPU ขนาด 8 GB ตามภาพด้านล่าง "
+"และผ่านการตั้งค่าของผู้ดูแลระบบ 1 fGPU ถูกตั้งค่าให้มีปริมาณเทียบเท่ากับ 0.5"
+" GPU ทางกายภาพ (หรือ 1 GPU ทางกายภาพเท่ากับ 2 fGPU)"
+
+#: ../../appendix/appendix.rst:33
+msgid ""
+"Now let's go to the Sessions page and create a compute session by allocating"
+" 0.5 fGPU as follows:"
+msgstr ""
+"ตอนนี้ให้เราไปที่หน้า Sessions และสร้างเซสชันการคอมพิวเตอร์โดยการจัดสรร 0.5 "
+"fGPU ตามที่ระบุไว้ดังนี้:"
+
+#: ../../appendix/appendix.rst:40
+msgid ""
+"In the Configuration panel of the session list, you can see that 0.5 fGPU is"
+" allocated."
+msgstr ""
+"ในแผงการตั้งค่าของรายการเซสชัน คุณสามารถเห็นว่าได้มีการจัดสรร 0.5 fGPU"
+
+#: ../../appendix/appendix.rst:45
+msgid ""
+"Now, let's connect directly to the container and check if the allocated GPU "
+"memory is really equivalent to 0.5 units (~2 GB). Let's bring up a web "
+"terminal. When the terminal comes up, run the ``nvidia-smi`` command. As you"
+" can see in the following figure, you can see that about 2 GB of GPU memory "
+"is allocated. This shows that the physical GPU is actually divided into "
+"quarters and allocated inside the container for this compute session, which "
+"is not possible by a way like PCI passthrough."
+msgstr ""
+"ตอนนี้ มาทำการเชื่อมต่อกับคอนเทนเนอร์โดยตรงและตรวจสอบว่าหน่วยความจำ GPU "
+"ที่จัดสรรไปนั้นเท่ากับ 0.5 หน่วย (~2 GB) จริงหรือไม่ "
+"มาทำการเปิดเทอร์มินัลเว็บ เมื่อเทอร์มินัลเปิดขึ้น ให้รันคำสั่ง ``nvidia-"
+"smi`` ดังที่คุณเห็นในรูปด้านล่าง คุณจะเห็นว่ามีการจัดสรรหน่วยความจำ GPU "
+"ประมาณ 2 GB ซึ่งแสดงให้เห็นว่า GPU "
+"ทางกายภาพนั้นถูกแบ่งออกเป็นสี่ส่วนและจัดสรรภายในคอนเทนเนอร์สำหรับเซสชันการคำนวณนี้"
+" ซึ่งเป็นสิ่งที่ไม่สามารถทำได้ด้วยวิธีอย่าง PCI passthrough"
+
+#: ../../appendix/appendix.rst:56
+msgid "Let's open up a Jupyter Notebook and run a simple ML training code."
+msgstr "มาเปิด Jupyter Notebook และรันโค้ดการฝึก ML ง่ายๆ กันเถอะ"
+
+#: ../../appendix/appendix.rst:60
+#, python-format
+msgid ""
+"While training is in progress, connect to the shell of the GPU host node and"
+" execute the ``nvidia-smi`` command. You can see that there is one GPU "
+"attached to the process and this process is occupying about 25% of the "
+"resources of the physical GPU. (GPU occupancy can vary greatly depending on "
+"training code and GPU model.)"
+msgstr ""
+"ในขณะที่การฝึกกำลังดำเนินอยู่ ให้เชื่อมต่อกับเชลล์ของโฮสต์โหนด GPU "
+"และดำเนินการคำสั่ง ``nvidia-smi`` คุณสามารถเห็นว่า มี GPU "
+"หนึ่งตัวที่เชื่อมต่อกับกระบวนการนี้และกระบวนการนี้กำลังใช้งานประมาณ 25% "
+"ของทรัพยากรของ GPU เชิงกายภาพ (การใช้ GPU "
+"อาจแตกต่างกันไปมากขึ้นอยู่กับรหัสการฝึกและโมเดล GPU)"
+
+#: ../../appendix/appendix.rst:70
+msgid ""
+"Alternatively, you can run the ``nvidia-smi`` command from the web terminal "
+"to query the GPU usage history inside the container."
+msgstr ""
+"อีกทางหนึ่ง คุณสามารถรันคำสั่ง ``nvidia-smi`` "
+"จากเว็บเทอร์มินัลเพื่อสอบถามประวัติกระบวนการใช้งาน GPU ภายในคอนเทนเนอร์ได้"
+
+#: ../../appendix/appendix.rst:74
+msgid "Automated job scheduling"
+msgstr "การกำหนดตารางงานอัตโนมัติ"
+
+#: ../../appendix/appendix.rst:76
+msgid ""
+"Backend.AI server has a built-in self-developed task scheduler. It "
+"automatically checks the available resources of all worker nodes and "
+"delegates the request to create a compute session to the worker that meets "
+"the user's resource request. In addition, when resources are insufficient, "
+"the user's request to create a compute session is registered as a PENDING "
+"state in the job queue. Later, when the resources become available again, "
+"the pended request is resumed to create a compute session."
+msgstr ""
+"เซิร์ฟเวอร์ Backend.AI มีตัวจัดตารางงานที่พัฒนาขึ้นเองในตัว "
+"มันจะตรวจสอบทรัพยากรที่มีอยู่ของโหนดผู้ทำงานทั้งหมดโดยอัตโนมัติและมอบหมายคำขอในการสร้างเซสชันการคอมพิวเตอร์ไปยังผู้ทำงานที่ตรงตามคำขอทรัพยากรของผู้ใช้"
+" นอกจากนี้ เมื่อทรัพยากรไม่เพียงพอ "
+"คำขอของผู้ใช้ในการสร้างเซสชันการคอมพิวเตอร์จะถูกลงทะเบียนในสถานะ PENDING "
+"ในคิวงาน ภายหลัง เมื่อทรัพยากรมีให้ใช้งานอีกครั้ง "
+"คำขอที่ถูกระงับจะถูกดำเนินการต่อเพื่อสร้างเซสชันการคอมพิวเตอร์"
+
+#: ../../appendix/appendix.rst:84
+msgid ""
+"You can check the operation of the job scheduler in a simple way from the "
+"user Web-UI. When the GPU host can allocate up to 2 fGPUs, let's create 3 "
+"compute sessions at the same time requesting allocation of 1 fGPU, "
+"respectively. In the Custom allocation section of the session launch dialog,"
+" there are GPU and Sessions sliders. If you specify a value greater than 1 "
+"in Sessions and click the LAUNCH button, the number of sessions will be "
+"requested at the same time. Let's set the GPU and Sessions to 1 and 3, "
+"respectively. This is the situation that 3 sessions requesting a total of 3 "
+"fGPUs are created when only 2 fGPUs exist."
+msgstr ""
+"คุณสามารถตรวจสอบการทำงานของตัวจัดกำหนดงานได้ในลักษณะง่าย ๆ จากผู้ใช้ Web-UI "
+"เมื่อโฮสต์ GPU สามารถจัดสรร fGPU ได้สูงสุด 2 ตัว ให้เราสร้างเซสชันการคำนวณ 3"
+" เซสชันพร้อมกันโดยขอจัดสรร fGPU 1 ตัวตามลำดับ "
+"ในส่วนการจัดสรรแบบกำหนดเองของกล่องโต้ตอบการเปิดเซสชัน จะมีตัวเลื่อนสำหรับ "
+"GPU และเซสชัน หากคุณระบุค่าที่มากกว่า 1 ในเซสชันและคลิกปุ่ม LAUNCH "
+"จำนวนเซสชันจะถูกขอพร้อมกัน ให้เราตั้งค่า GPU และเซสชันเป็น 1 และ 3 ตามลำดับ "
+"นี่คือสถานการณ์ที่มีเซสชัน 3 เซสชันที่ขอ fGPU ทั้งหมด 3 ตัว ในขณะที่มี fGPU "
+"เพียง 2 ตัวเท่านั้น"
+
+#: ../../appendix/appendix.rst:98
+msgid ""
+"Wait for a while and you will see three compute sessions being listed. If "
+"you look closely at the Status panel, you can see that two of the three "
+"compute sessions are in RUNNING state, but the other compute session remains"
+" in PENDING state. This PENDING session is only registered in the job queue "
+"and has not actually been allocated a container due to insufficient GPU "
+"resources."
+msgstr ""
+"รอครู่หนึ่งแล้วคุณจะเห็นการเซสชันการคอมพิวเตอร์สามรายการถูกแสดงอยู่ "
+"ถ้าคุณสังเกตอย่างใกล้ชิดที่แผงสถานะ "
+"คุณจะเห็นว่าการเซสชันการคอมพิวเตอร์สองจากสามรายการอยู่ในสถานะ RUNNING "
+"แต่การเซสชันการคอมพิวเตอร์อีกหนึ่งรายการยังคงอยู่ในสถานะ PENDING การเซสชัน "
+"PENDING "
+"นี้ถูกลงทะเบียนในคิวงานเท่านั้นและยังไม่ได้ถูกจัดสรรคอนเทนเนอร์จริงเนื่องจากทรัพยากร"
+" GPU ไม่เพียงพอ"
+
+#: ../../appendix/appendix.rst:109
+msgid ""
+"Now let's destroy one of the two sessions in RUNNING state. Then you can see"
+" that the compute session in PENDING state is allocated resources by the job"
+" scheduler and converted to RUNNING state soon. In this way, the job "
+"scheduler utilizes the job queue to hold the user's compute session requests"
+" and automatically process the requests when resources become available."
+msgstr ""
+"ตอนนี้เราจะทำลายหนึ่งในสองเซสชันที่อยู่ในสถานะ RUNNING "
+"จากนั้นคุณจะเห็นว่าเซสชันการคอมพิวเตอร์ในสถานะ PENDING "
+"จะถูกจัดสรรทรัพยากรโดยตัวจัดกำหนดงานและเปลี่ยนเป็นสถานะ RUNNING ในไม่ช้า "
+"ในลักษณะนี้ "
+"ตัวจัดกำหนดงานจะใช้คิวงานเพื่อเก็บคำขอเซสชันการคอมพิวเตอร์ของผู้ใช้และประมวลผลคำขอโดยอัตโนมัติเมื่อมีทรัพยากรพร้อมใช้งาน"
+
+#: ../../appendix/appendix.rst:121
+msgid "Multi-version machine learning container support"
+msgstr "การสนับสนุนคอนเทนเนอร์การเรียนรู้ของเครื่องหลายเวอร์ชัน"
+
+#: ../../appendix/appendix.rst:123
+msgid ""
+"Backend.AI provides variaous pre-built ML and HPC kernel images. Therefore, "
+"users can immediately utilize major libraries and packages without having to"
+" install packages by themselves. Here, we'll walk through an example that "
+"takes advantage of multiple versions of the multiple ML library immediately."
+msgstr ""
+"Backend.AI มีภาพเคอร์เนล ML และ HPC ที่สร้างไว้ล่วงหน้าหลายแบบ "
+"ผู้ใช้จึงสามารถใช้ห้องสมุดและแพ็คเกจหลักได้ทันทีโดยไม่ต้องติดตั้งแพ็คเกจด้วยตนเอง"
+" ที่นี่เราจะแสดงตัวอย่างที่ใช้ประโยชน์จากหลายเวอร์ชันของห้องสมุด ML "
+"หลายตัวทันที"
+
+#: ../../appendix/appendix.rst:128
+msgid ""
+"Go to the Sessions page and open the session launch dialog. There may be "
+"various kernel images depending on the installation settings."
+msgstr ""
+"ไปที่หน้า Sessions และเปิดกล่องสนทนาเริ่มต้นเซสชัน "
+"อาจมีภาพเคอร์เนลหลายประเภทขึ้นอยู่กับการตั้งค่าการติดตั้ง"
+
+#: ../../appendix/appendix.rst:135
+msgid ""
+"Here, let's select the TensorFlow 2.3 environment and created a session."
+msgstr "ที่นี่ให้เราเลือกสภาพแวดล้อม TensorFlow 2.3 และสร้างเซสชัน"
+
+#: ../../appendix/appendix.rst:141
+msgid ""
+"Open the web terminal of the created session and run the following Python "
+"command. You can see that TensorFlow 2.3 version is installed."
+msgstr ""
+"เปิดเทอร์มินัลเว็บของเซสชันที่สร้างขึ้นและเรียกใช้คำสั่ง Python ต่อไปนี้ "
+"คุณจะเห็นว่า TensorFlow เวอร์ชัน 2.3 ถูกติดตั้งอยู่"
+
+#: ../../appendix/appendix.rst:147
+msgid ""
+"This time, let's select the TensorFlow 1.15 environment to create a compute "
+"session. If resources are insufficient, delete the previous session."
+msgstr ""
+"ครั้งนี้ให้เลือกสภาพแวดล้อม TensorFlow 1.15 เพื่อสร้างเซสชันการคำนวณ "
+"หากทรัพยากรไม่เพียงพอให้ลบเซสชันก่อนหน้านี้ออก"
+
+#: ../../appendix/appendix.rst:154
+msgid ""
+"Open the web terminal of the created session and run the same Python command"
+" as before. You can see that TensorFlow 1.15(.4) version is installed."
+msgstr ""
+"เปิดเว็บเทอร์มินัลของเซสชันที่สร้างขึ้นและรันคำสั่ง Python เดิมอีกครั้ง "
+"คุณจะเห็นว่าเวอร์ชัน TensorFlow 1.15(.4) ถูกติดตั้งอยู่"
+
+#: ../../appendix/appendix.rst:160
+msgid "Finally, create a compute session using PyTorch version 1.7."
+msgstr "สุดท้าย ให้สร้างเซสชันการคอมพิวเตอร์โดยใช้ PyTorch เวอร์ชัน 1.7"
+
+#: ../../appendix/appendix.rst:166
+msgid ""
+"Open the web terminal of the created session and run the following Python "
+"command. You can see that PyTorch 1.8 version is installed."
+msgstr ""
+"เปิดเทอร์มินัลเว็บของเซสชันที่สร้างขึ้นและรันคำสั่ง Python ต่อไปนี้ "
+"คุณจะเห็นว่า PyTorch เวอร์ชัน 1.8 ถูกติดตั้งอยู่"
+
+#: ../../appendix/appendix.rst:172
+msgid ""
+"Like this, you can utilize various versions of major libraries such as "
+"TensorFlow and PyTorch through Backend.AI without unnecessary effort to "
+"install them."
+msgstr ""
+"เช่นนี้ คุณสามารถใช้เวอร์ชันต่าง ๆ ของไลบรารีหลัก เช่น TensorFlow และ "
+"PyTorch ผ่าน Backend.AI โดยไม่ต้องพยายามติดตั้งโดยไม่จำเป็น"
+
+#: ../../appendix/appendix.rst:177
+msgid "Convert a compute session to a new private Docker image"
+msgstr "แปลงเซสชันการคอมพิวเตอร์เป็นภาพ Docker ส่วนตัวใหม่"
+
+#: ../../appendix/appendix.rst:179
+msgid ""
+"If you want to convert a running compute session (container) to a new Docker"
+" image that you can use later to create a new compute session, you need to "
+"prepare your compute session environment and ask administrators to convert "
+"it."
+msgstr ""
+"หากคุณต้องการแปลงเซสชันการประมวลผลที่กำลังทำงาน (คอนเทนเนอร์) เป็นภาพ Docker"
+" ใหม่ที่คุณสามารถใช้ในภายหลังเพื่อสร้างเซสชันการประมวลผลใหม่ "
+"คุณต้องเตรียมสภาพแวดล้อมของเซสชันการประมวลผลของคุณและขอให้ผู้ดูแลระบบทำการแปลงมัน"
+
+#: ../../appendix/appendix.rst:183
+msgid ""
+"First, prepare your compute session by installing the packages that you need"
+" and adjust the configurations as you like."
+msgstr ""
+"ก่อนอื่น "
+"ให้เตรียมเซสชันการคอมพิวเตอร์ของคุณโดยการติดตั้งแพ็คเกจที่คุณต้องการและปรับแต่งการตั้งค่าตามที่คุณต้องการ"
+
+#: ../../appendix/appendix.rst:188
+msgid ""
+"If you want to install OS packages, for example via ``apt`` command, it "
+"usually requires the ``sudo`` privilege. Depending on the security policy of"
+" the institute, you may not be allowed to use ``sudo`` inside a container."
+msgstr ""
+"หากคุณต้องการติดตั้งแพ็คเกจ OS ตัวอย่างเช่นผ่านคำสั่ง ``apt`` "
+"มักจะต้องใช้สิทธิ ``sudo`` ขึ้นอยู่กับนโยบายความปลอดภัยของสถาบัน "
+"คุณอาจจะไม่ได้รับอนุญาตให้ใช้ ``sudo`` ภายในคอนเทนเนอร์"
+
+#: ../../appendix/appendix.rst:193
+msgid ""
+"It is recommended to use :ref:`automount folder<using-automount-folder>` to "
+"install :ref:`Python packages via pip<install_pip_pkg>`. However, if you "
+"want to add Python packages in a new image, you should install them with "
+"``sudo pip install <package-name>`` to save them not in your home but in the"
+" system directory. The contents in your home directory, usually "
+"``/home/work``, are not saved in converting a compute session to a new "
+"Docker image."
+msgstr ""
+"แนะนำให้ใช้ :ref:`automount folder<using-automount-folder>` เพื่อติดตั้ง "
+":ref:`Python packages via pip<install_pip_pkg>` อย่างไรก็ตาม "
+"หากคุณต้องการเพิ่ม Python packages ในภาพใหม่ คุณควรติดตั้งด้วย ``sudo pip "
+"install <package-name>`` "
+"เพื่อบันทึกไม่ให้อยู่ในโฮมของคุณแต่ในไดเรกทอรีของระบบ "
+"เนื้อหาในไดเรกทอรีโฮมของคุณ ซึ่งปกติจะเป็น ``/home/work`` "
+"จะไม่ได้รับการบันทึกเมื่อแปลงเซสชันการคอมพิวเตอร์เป็นภาพ Docker ใหม่"
+
+#: ../../appendix/appendix.rst:201
+msgid ""
+"When your compute session is prepared, please ask an administrator to "
+"convert it to a new Docker image. You need to inform them the session name "
+"or ID and your email address in the platform."
+msgstr ""
+"เมื่อเซสชันการคอมพิวเตอร์ของคุณถูกเตรียมพร้อมแล้ว "
+"กรุณาขอให้ผู้ดูแลระบบแปลงมันเป็นภาพ Docker ใหม่ "
+"คุณต้องแจ้งให้พวกเขาทราบชื่อหรือ ID "
+"ของเซสชันและที่อยู่อีเมลของคุณในแพลตฟอร์ม"
+
+#: ../../appendix/appendix.rst:204
+msgid ""
+"The administrator will convert your compute session to a new Docker image "
+"and send you the full image name and tag."
+msgstr ""
+"ผู้ดูแลระบบจะเปลี่ยนเซสชันการคอมพิวเตอร์ของคุณเป็นภาพ Docker "
+"ใหม่และส่งชื่อภาพและแท็กทั้งหมดให้คุณ"
+
+#: ../../appendix/appendix.rst:206
+msgid ""
+"You can manually enter the image name in the session launch dialog. The "
+"image is private and not be revealed to other users"
+msgstr ""
+"คุณสามารถป้อนชื่อภาพด้วยมือในกล่องโต้ตอบเปิดเซสชัน "
+"ภาพนี้เป็นส่วนตัวและจะไม่เปิดเผยให้ผู้ใช้อื่นทราบ"
+
+#: ../../appendix/appendix.rst:213
+msgid "A new compute session will be created using the new Docker image."
+msgstr "เซสชั่นการคอมพิวเตอร์ใหม่จะถูกสร้างขึ้นโดยใช้ภาพ Docker ใหม่"
+
+#: ../../appendix/appendix.rst:217
+msgid "Backend.AI Server Installation Guide"
+msgstr "คู่มือการติดตั้งเซิร์ฟเวอร์ Backend.AI"
+
+#: ../../appendix/appendix.rst:219
+msgid ""
+"For Backend.AI Server daemons/services, following hardware specification "
+"should be met. For optimal performance, just double the amount of each "
+"resources."
+msgstr ""
+"สำหรับบริการ/daemon ของ Backend.AI Server ควรมีข้อกำหนดฮาร์ดแวร์ดังต่อไปนี้ "
+"สำหรับประสิทธิภาพที่ดีที่สุด ให้เพิ่มปริมาณของทรัพยากรแต่ละอย่างเป็นสองเท่า"
+
+#: ../../appendix/appendix.rst:222
+msgid "Manager: 2 cores, 4 GiB memory"
+msgstr "ผู้จัดการ: 2 คอร์, 4 GiB หน่วยความจำ"
+
+#: ../../appendix/appendix.rst:223
+msgid ""
+"Agent: 4 cores, 32 GiB memory, NVIDIA GPU (for GPU workload), > 512 GiB SSD"
+msgstr ""
+"เอเจนต์: 4 คอร์, 32 GiB หน่วยความจำ, NVIDIA GPU (สำหรับงานที่ใช้ GPU), > 512"
+" GiB SSD"
+
+#: ../../appendix/appendix.rst:224
+msgid "Webserver: 2 cores, 4 GiB memory"
+msgstr "เว็บเซิร์ฟเวอร์: 2 คอร์, หน่วยความจำ 4 GiB"
+
+#: ../../appendix/appendix.rst:225
+msgid "WSProxy: 2 cores, 4 GiB memory"
+msgstr "WSProxy: 2 คอร์, 4 GiB แรม"
+
+#: ../../appendix/appendix.rst:226
+msgid "PostgreSQL DB: 2 cores, 4 GiB memory"
+msgstr "PostgreSQL DB: 2 คอร์, 4 GiB หน่วยความจำ"
+
+#: ../../appendix/appendix.rst:227
+msgid "Redis: 1 core, 2 GiB memory"
+msgstr "Redis: 1 คอร์, หน่วยความจำ 2 GiB"
+
+#: ../../appendix/appendix.rst:228
+msgid "Etcd: 1 core, 2 GiB memory"
+msgstr "Etcd: 1 คอร์, 2 GiB หน่วยความจำ"
+
+#: ../../appendix/appendix.rst:230
+msgid ""
+"The essential host dependent packages that must be pre-installed before "
+"installing each service are:"
+msgstr ""
+"แพ็คเกจที่จำเป็นต้องขึ้นอยู่กับโฮสต์ซึ่งต้องติดตั้งล่วงหน้าก่อนการติดตั้งแต่ละบริการคือ:"
+
+#: ../../appendix/appendix.rst:233
+msgid ""
+"Web-UI: Operating system that can run the latest browsers (Windows, Mac OS, "
+"Ubuntu, etc.)"
+msgstr ""
+"Web-UI: ระบบปฏิบัติการที่สามารถรันเว็บเบราว์เซอร์ล่าสุด (Windows, Mac OS, "
+"Ubuntu, ฯลฯ)"
+
+#: ../../appendix/appendix.rst:235
+msgid "Manager: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)"
+msgstr "ผู้จัดการ: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)"
+
+#: ../../appendix/appendix.rst:236
+msgid ""
+"Agent: docker (≥19.03), CUDA/CUDA Toolkit (≥8, 11 recommend), nvidia-docker "
+"v2, Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)"
+msgstr ""
+"เอเย่นต์: docker (≥19.03), CUDA/CUDA Toolkit (≥8, แนะนำ 11), nvidia-docker "
+"v2, Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)"
+
+#: ../../appendix/appendix.rst:238
+msgid "Webserver: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)"
+msgstr "เว็บเซิร์ฟเวอร์: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)"
+
+#: ../../appendix/appendix.rst:239
+msgid "WSProxy: docker (≥19.03), docker-compose (≥1.24)"
+msgstr "WSProxy: docker (≥19.03), docker-compose (≥1.24)"
+
+#: ../../appendix/appendix.rst:240
+msgid "PostgreSQL DB: docker (≥19.03), docker-compose (≥1.24)"
+msgstr "PostgreSQL DB: docker (≥19.03), docker-compose (≥1.24)"
+
+#: ../../appendix/appendix.rst:241
+msgid "Redis: docker (≥19.03), docker-compose (≥1.24)"
+msgstr "Redis: docker (≥19.03), docker-compose (≥1.24)"
+
+#: ../../appendix/appendix.rst:242
+msgid "Etcd: docker (≥19.03), docker-compose (≥1.24)"
+msgstr "Etcd: docker (≥19.03), docker-compose (≥1.24)"
+
+#: ../../appendix/appendix.rst:244
+msgid ""
+"For Enterprise version, Backend.AI server daemons are installed by Lablup "
+"support team and following materials/services are provided after initial "
+"installation:"
+msgstr ""
+"สำหรับเวอร์ชัน Enterprise, daemon เซิร์ฟเวอร์ Backend.AI "
+"จะถูกติดตั้งโดยทีมสนับสนุนของ Lablup "
+"และเอกสาร/บริการต่อไปนี้จะถูกจัดเตรียมหลังจากการติดตั้งเริ่มต้น:"
+
+#: ../../appendix/appendix.rst:246
+msgid "DVD 1 (includes Backend.AI packages)"
+msgstr "DVD 1 (รวมแพ็คเกจ Backend.AI)"
+
+#: ../../appendix/appendix.rst:247
+msgid "User GUI Guide manual"
+msgstr "คู่มือการใช้งาน GUI ของผู้ใช้"
+
+#: ../../appendix/appendix.rst:248
+msgid "Admin GUI Guide manual"
+msgstr "คู่มือ Admin GUI Guide"
+
+#: ../../appendix/appendix.rst:249
+msgid "Installation report"
+msgstr "รายงานการติดตั้ง"
+
+#: ../../appendix/appendix.rst:250
+msgid "First-time user/admin on-site tutorial (3-5 hours)"
+msgstr "การฝึกอบรมสำหรับผู้ใช้/ผู้ดูแลระบบมือใหม่ (3-5 ชั่วโมง)"
+
+#: ../../appendix/appendix.rst:252
+msgid ""
+"Product maintenance and support information: the commercial contract "
+"includes a monthly/annual subscription fee for the Enterprise version by "
+"default. Initial user/administrator training (1-2 times) and wired/wireless "
+"customer support services are provided for about 2 weeks after initial "
+"installation, minor release updater support and customer support services "
+"through online channels are provided for 3-6 months. Maintenance and support"
+" services provided afterwards may have different details depending on the "
+"terms of the contract."
+msgstr ""
+"ข้อมูลการบำรุงรักษาและการสนับสนุนผลิตภัณฑ์: "
+"สัญญาทางการค้าจะรวมค่าธรรมเนียมการสมัครสมาชิกแบบรายเดือน/รายปีสำหรับเวอร์ชัน"
+" Enterprise โดยอัตโนมัติ การฝึกอบรมผู้ใช้/ผู้ดูแลระบบเริ่มต้น (1-2 ครั้ง) "
+"และบริการสนับสนุนลูกค้าแบบมีสาย/ไร้สายจะมีให้บริการประมาณ 2 "
+"สัปดาห์หลังจากการติดตั้งเริ่มต้น "
+"การสนับสนุนการอัปเดตเวอร์ชันขนาดเล็กและบริการสนับสนุนลูกค้าผ่านช่องทางออนไลน์จะมีให้บริการเป็นเวลา"
+" 3-6 เดือน "
+"บริการบำรุงรักษาและสนับสนุนที่ให้บริการหลังจากนั้นอาจมีรายละเอียดที่แตกต่างกันไปขึ้นอยู่กับข้อกำหนดในสัญญา"
+
+#: ../../appendix/appendix.rst:264
+msgid "Integration examples"
+msgstr "ตัวอย่างการรวมระบบ"
+
+#: ../../appendix/appendix.rst:266
+msgid ""
+"In this section, we would like to introduce several common examples of "
+"applications, toolkits, and machine learning tools that can be utilized on "
+"the Backend.AI platform. Here, we will provide explanations of the basic "
+"usage of each tool and how to set them up in the Backend.AI environment, "
+"along with simple examples. We hope this will help you choose and utilize "
+"the tools you need for your projects."
+msgstr ""
+"ในส่วนนี้เราต้องการแนะนำตัวอย่างทั่วไปหลาย ๆ ตัวอย่างของแอปพลิเคชัน "
+"ชุดเครื่องมือ "
+"และเครื่องมือการเรียนรู้ของเครื่องที่สามารถใช้งานได้บนแพลตฟอร์ม Backend.AI "
+"ที่นี่เราจะให้คำอธิบายเกี่ยวกับการใช้งานพื้นฐานของแต่ละเครื่องมือและวิธีการตั้งค่าในสภาพแวดล้อมของ"
+" Backend.AI พร้อมกับตัวอย่างง่าย ๆ "
+"หวังว่าสิ่งนี้จะช่วยให้คุณเลือกและใช้เครื่องมือที่คุณต้องการสำหรับโครงการของคุณ"
+
+#: ../../appendix/appendix.rst:272
+msgid ""
+"Please note that the content covered in this guide is based on specific "
+"versions of the programs, so the usage may vary in future updates. "
+"Therefore, please use this document for reference and also check the latest "
+"official documentation for any changes. Now, let's take a look at the "
+"powerful tools available for use on Backend.AI one by one. We hope this "
+"section will serve as a useful guide for your research and development."
+msgstr ""
+"โปรดทราบว่าเนื้อหาที่ครอบคลุมในคู่มือนี้อิงตามเวอร์ชันเฉพาะของโปรแกรม "
+"ดังนั้นการใช้งานอาจแตกต่างกันในอัปเดตในอนาคต "
+"ดังนั้นโปรดใช้เอกสารนี้เป็นข้อมูลอ้างอิงและตรวจสอบเอกสารอย่างเป็นทางการล่าสุดสำหรับการเปลี่ยนแปลง"
+" ตอนนี้เรามาดูเครื่องมือที่มีพลังที่สามารถใช้ได้ใน Backend.AI ทีละอย่าง "
+"เราหวังว่าหมวดหมู่นี้จะเป็นคู่มือที่มีประโยชน์สำหรับการวิจัยและพัฒนาของคุณ"
+
+#: ../../appendix/appendix.rst:279
+msgid "Using MLFlow"
+msgstr "การใช้ MLFlow"
+
+#: ../../appendix/appendix.rst:281
+msgid ""
+"There are many executable images in Backend.AI supports MLFlow and MLFlow UI"
+" as built-in app. But in order to execute it, you may need extra procedures."
+" By following instructions below, you will be able to track parameters and "
+"result at Backend.AI as if you are using it on your local environment."
+msgstr ""
+"มีภาพที่สามารถทำงานได้มากมายใน Backend.AI รองรับ MLFlow และ MLFlow UI "
+"เป็นแอปที่ถูกสร้างขึ้นมา แต่เพื่อที่จะทำการใช้งานมัน "
+"คุณอาจจำเป็นต้องทำตามขั้นตอนเพิ่มเติม โดยการทำตามคำแนะนำด้านล่าง "
+"คุณจะสามารถติดตามพารามิเตอร์และผลลัพธ์ที่ Backend.AI "
+"เหมือนกับว่าคุณกำลังใช้งานอยู่ในสภาพแวดล้อมในเครื่องของคุณ"
+
+#: ../../appendix/appendix.rst:287
+msgid ""
+"In this section, we will regard you already created session and about to "
+"execute an app in the session. If you don't have any experience in creating "
+"session and executing app inside, please have a look through :ref:`How to "
+"create a session<create_session>` section."
+msgstr ""
+"ในส่วนนี้ เราจะถือว่าคุณได้สร้างเซสชันแล้วและกำลังจะเรียกใช้แอปในเซสชันนั้น "
+"หากคุณไม่มีประสบการณ์ในการสร้างเซสชันและเรียกใช้แอปภายในเซสชัน โปรดดูที่ "
+":ref:`วิธีการสร้างเซสชัน<create_session>`"
+
+#: ../../appendix/appendix.rst:291
+msgid ""
+"First, launch terminal app \"console\". and execute the command below, It "
+"will start mlflow tracking UI server."
+msgstr ""
+"ก่อนอื่นให้เปิดแอปพลิเคชันเทอร์มินัล \"console\" และรันคำสั่งด้านล่าง "
+"มันจะเริ่มเซิร์ฟเวอร์ UI การติดตาม mlflow"
+
+#: ../../appendix/appendix.rst:297
+msgid "Then, Click \"MLFlow UI\" app in app launcher dialog."
+msgstr "จากนั้น คลิกที่แอป \"MLFlow UI\" ในกล่องสนทนาแอปเลนเชอร์"
+
+#: ../../appendix/appendix.rst:303
+msgid "After few moment, you will see a new page for MLFlow UI."
+msgstr "หลังจากนั้นสักครู่ คุณจะเห็นหน้าจอใหม่สำหรับ MLFlow UI"
+
+#: ../../appendix/appendix.rst:308
+msgid ""
+"By using MLFlow, you can track experiments, such as metrics and parameters "
+"every time you run. Let's start tracking experiments from simple example."
+msgstr ""
+"ด้วยการใช้ MLFlow คุณสามารถติดตามการทดลอง เช่น "
+"เมตริกและพารามิเตอร์ทุกครั้งที่คุณรัน "
+"มาลองเริ่มติดตามการทดลองจากตัวอย่างง่ายๆ กันเถอะ"
+
+#: ../../appendix/appendix.rst:316
+msgid ""
+"After executing python code, you may see the experiments result in MLFlow."
+msgstr ""
+"หลังจากที่คุณเรียกใช้โค้ด python คุณอาจเห็นผลลัพธ์ของการทดลองใน MLFlow"
+
+#: ../../appendix/appendix.rst:321
+msgid ""
+"You can also set hyperparameter by giving arguments with code execution."
+msgstr ""
+"คุณยังสามารถตั้งค่า hyperparameter ได้โดยการให้พารามิเตอร์พร้อมกับการรันโค้ด"
+
+#: ../../appendix/appendix.rst:327
+msgid "After a few training, you can compare trained models with results."
+msgstr ""
+"หลังจากการฝึกอบรมไม่กี่ครั้ง "
+"คุณสามารถเปรียบเทียบโมเดลที่ฝึกอบรมแล้วกับผลลัพธ์ได้"

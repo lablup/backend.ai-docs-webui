@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-23 23:02+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../quickstart.rst:2
+msgid "Quickstart"
+msgstr "เริ่มต้นอย่างรวดเร็ว"
+
+#: ../../quickstart.rst:4
+msgid ""
+"Welcome to Quickstart guide of Backend.AI WebUI. This tutorial will cover "
+"the essentials of using Backend.AI without any knowledge base."
+msgstr ""
+"ยินดีต้อนรับสู่คู่มือเริ่มต้นของ Backend.AI WebUI "
+"คู่มือนี้จะครอบคลุมพื้นฐานในการใช้งาน Backend.AI "
+"โดยไม่จำเป็นต้องมีความรู้พื้นฐาน"
+
+#: ../../quickstart.rst:10
+msgid "Objectives"
+msgstr "วัตถุประสงค์"
+
+#: ../../quickstart.rst:13
+msgid "Part 1. Basic guide to using Backend.AI"
+msgstr "ส่วนที่ 1. คู่มือเบื้องต้นในการใช้ Backend.AI"
+
+#: ../../quickstart.rst:14
+msgid ":ref:`How to create a virtual folder<create_storage_folder>`"
+msgstr ":ref:`วิธีการสร้างโฟลเดอร์เสมือน<create_storage_folder>`"
+
+#: ../../quickstart.rst:15
+msgid ":ref:`How to create a session<create_session>`"
+msgstr ":ref:`วิธีการสร้างเซสชัน<create_session>`"
+
+#: ../../quickstart.rst:16
+msgid ":ref:`How to use a session<use_session>`"
+msgstr ":ref:`วิธีการใช้เซสชัน<use_session>`"
+
+#: ../../quickstart.rst:17
+msgid ":ref:`How to delete a session<delete_session>`"
+msgstr ":ref:`วิธีลบเซสชัน<delete_session>`"
+
+#: ../../quickstart.rst:20
+msgid "Part 2. Advanced guide to using Backend.AI"
+msgstr "ส่วนที่ 2. คู่มือขั้นสูงในการใช้ Backend.AI"
+
+#: ../../quickstart.rst:21
+msgid ":ref:`How to use terminal application with tmux<tmux_guide>`"
+msgstr ":ref:`วิธีการใช้แอปพลิเคชันเทอร์มินัลกับ tmux<tmux_guide>`"
+
+#: ../../quickstart.rst:22
+msgid ""
+":ref:`How to install extra pip package using automount virtual "
+"folder<install_pip_pkg>`"
+msgstr ""
+":ref:`วิธีติดตั้งแพ็คเกจ pip "
+"เพิ่มเติมโดยใช้โฟลเดอร์เสมือนแบบอัตโนมัต<install_pip_pkg>`"
+
+#: ../../quickstart.rst:23
+msgid ":ref:`How to use SSH/sFTP <ssh-sftp-container>`"
+msgstr ":ref:`วิธีการใช้ SSH/sFTP <ssh-sftp-container>`"
+
+#: ../../quickstart.rst:24
+msgid ":ref:`How to install apt packages<installing_apt_pkg>`"
+msgstr ":ref:`วิธีการติดตั้งแพ็คเกจ apt<installing_apt_pkg>`"

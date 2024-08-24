@@ -1,0 +1,942 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-23 23:02+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../vfolder/vfolder.rst:3
+msgid "Handling Data & Storage Folders"
+msgstr "การจัดการข้อมูลและโฟลเดอร์เก็บข้อมูล"
+
+#: ../../vfolder/vfolder.rst:5
+msgid ""
+"Backend.AI supports dedicated storage to preserve user's files. Since the "
+"files and directories of a compute session are deleted upon session "
+"termination, it is recommended to save them in a storage folder. List of "
+"storage folders can be found by selecting the Data & Storage page on the "
+"sidebar. You can see the information such as the folder name and ID, the NFS"
+" host name where the folder is located (Location), and folder access rights "
+"(Permission)."
+msgstr ""
+"Backend.AI รองรับการจัดเก็บข้อมูลเฉพาะเพื่อรักษาไฟล์ของผู้ใช้ "
+"เนื่องจากไฟล์และไดเรกทอรีของเซสชันการคอมพิวเตอร์จะถูกลบเมื่อสิ้นสุดเซสชัน "
+"จึงแนะนำให้บันทึกไว้ในโฟลเดอร์จัดเก็บ "
+"สามารถดูรายการโฟลเดอร์จัดเก็บได้โดยการเลือกหน้าข้อมูลและการจัดเก็บในแถบด้านข้าง"
+" คุณสามารถดูข้อมูลเช่น ชื่อโฟลเดอร์และ ID, ชื่อโฮสต์ NFS ที่ตั้งของโฟลเดอร์ "
+"(สถานที่), และสิทธิ์การเข้าถึงโฟลเดอร์ (สิทธิ์)"
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "Folder list in Storage page"
+msgstr "รายการโฟลเดอร์ในหน้าเก็บข้อมูล"
+
+#: ../../vfolder/vfolder.rst:16
+msgid ""
+"There are two types of storage folders. User folders can be created by "
+"normal users, and you can see that there is one user button in the Type "
+"column. On the other hand, Project folders can be recognized by an button "
+"with multiple users in the column. Project folders are created by domain "
+"admins, and normal users can only see project folders created for the "
+"project in which the users belong."
+msgstr ""
+"มีโฟลเดอร์เก็บข้อมูลสองประเภท โฟลเดอร์ผู้ใช้สามารถสร้างได้โดยผู้ใช้ทั่วไป "
+"และคุณสามารถเห็นว่ามีปุ่มผู้ใช้หนึ่งปุ่มในคอลัมน์ประเภท ในทางกลับกัน "
+"โฟลเดอร์โปรเจกต์สามารถรู้จักได้จากปุ่มที่มีผู้ใช้หลายคนในคอลัมน์ "
+"โฟลเดอร์โปรเจกต์ถูกสร้างโดยผู้ดูแลระบบโดเมน "
+"และผู้ใช้ทั่วไปสามารถเห็นเฉพาะโฟลเดอร์โปรเจกต์ที่สร้างขึ้นสำหรับโปรเจกต์ที่ผู้ใช้สังกัดเท่านั้น"
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "Storage status in Storage page"
+msgstr "สถานะการจัดเก็บในหน้า Storage"
+
+#: ../../vfolder/vfolder.rst:26
+msgid ""
+"Storage Status on top of the folder list shows the following information:"
+msgstr ""
+"สถานะพื้นที่จัดเก็บที่อยู่ด้านบนของรายการโฟลเดอร์จะแสดงข้อมูลดังต่อไปนี้:"
+
+#: ../../vfolder/vfolder.rst:34
+msgid "Number of folders"
+msgstr "จำนวนโฟลเดอร์"
+
+#: ../../vfolder/vfolder.rst:29
+msgid "Created: The number of folders that the user created."
+msgstr "สร้าง: จำนวนโฟลเดอร์ที่ผู้ใช้สร้างขึ้น。"
+
+#: ../../vfolder/vfolder.rst:30
+msgid ""
+"Limit: The maximum number of folders that the user can create afterwards. "
+"This value depends on the resource policy applied to the user and cannot be "
+"changed without changing the resource policy. Folders that were not created "
+"by the user (eg. folders invited to share, or project folders) are not "
+"counted."
+msgstr ""
+"ข้อจำกัด: จำนวนโฟลเดอร์สูงสุดที่ผู้ใช้สามารถสร้างได้ภายหลัง "
+"ค่าใช้จ่ายนี้ขึ้นอยู่กับนโยบายทรัพยากรที่นำไปใช้กับผู้ใช้และไม่สามารถเปลี่ยนแปลงได้หากไม่เปลี่ยนนโยบายทรัพยากร"
+" โฟลเดอร์ที่ไม่ได้สร้างโดยผู้ใช้ (เช่น โฟลเดอร์ที่ถูกเชิญให้แชร์ "
+"หรือโฟลเดอร์โปรเจกต์) จะไม่ถูกนับรวม"
+
+#: ../../vfolder/vfolder.rst:34
+msgid "Project Folder: The number of project folders that the user created."
+msgstr "โฟลเดอร์โปรเจกต์: จำนวนโฟลเดอร์โปรเจกต์ที่ผู้ใช้สร้างขึ้น"
+
+#: ../../vfolder/vfolder.rst:35
+msgid "Invited: The number of folders that the user was invited to share."
+msgstr "เชิญ: จำนวนโฟลเดอร์ที่ผู้ใช้ได้รับเชิญให้แบ่งปัน"
+
+#: ../../vfolder/vfolder.rst:39
+msgid "Quota per storage volume"
+msgstr "โควตาต่อปริมาตรการจัดเก็บ"
+
+#: ../../vfolder/vfolder.rst:37
+msgid "Host: The name of the storage host."
+msgstr "โฮสต์: ชื่อของโฮสต์ที่เก็บข้อมูล。"
+
+#: ../../vfolder/vfolder.rst:38
+msgid ""
+"Project: Current project folder usage / current project folder quota scope."
+msgstr ""
+"โครงการ: การใช้งานโฟลเดอร์โครงการปัจจุบัน / "
+"ขอบเขตการจัดสรรโฟลเดอร์โครงการปัจจุบัน"
+
+#: ../../vfolder/vfolder.rst:39
+msgid "User: Current user folder usage / current user folder quota scope."
+msgstr ""
+"ผู้ใช้: การใช้งานโฟลเดอร์ของผู้ใช้ปัจจุบัน / "
+"ขอบเขตของโควต้าของโฟลเดอร์ผู้ใช้ปัจจุบัน"
+
+#: ../../vfolder/vfolder.rst:42
+msgid ""
+"Please remind that quota is only available in storage that provides quota "
+"setting (e.g. XFS, CephFS, NetApp, Purestorage, etc.). For the quota "
+"setting, please refer to the :ref:`Quota Setting Panel<quota-setting-panel>`"
+" section."
+msgstr ""
+"โปรดจำไว้ว่าคุณสมบัติการกำหนดโควต้า "
+"มีอยู่เฉพาะในพื้นที่เก็บข้อมูลที่รองรับการตั้งค่าโควต้า (เช่น XFS, CephFS, "
+"NetApp, Purestorage, เป็นต้น) สำหรับการตั้งค่าโควต้า โปรดดูในหัวข้อ "
+":ref:`แผงการตั้งค่าโควต้า<quota-setting-panel>`"
+
+#: ../../vfolder/vfolder.rst:46
+msgid ""
+"Check marks on the Owner column in the folder list indicate the user created"
+" folders."
+msgstr ""
+"เครื่องหมายถูกในคอลัมน์เจ้าของในรายการโฟลเดอร์แสดงถึงผู้ใช้ที่สร้างโฟลเดอร์"
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "Owner panel in Storage page"
+msgstr "แผงเจ้าของในหน้าสตอเรจ"
+
+#: ../../vfolder/vfolder.rst:52
+msgid ""
+"If there are lots of folders in the list, you can filter the list by using "
+"the search boxes on top of the list."
+msgstr ""
+"ถ้ามีโฟลเดอร์จำนวนมากในรายการ "
+"คุณสามารถกรองรายการโดยใช้กล่องค้นหาที่อยู่ด้านบนของรายการ"
+
+#: ../../vfolder/vfolder.rst:59
+msgid "Create storage folder"
+msgstr "สร้างโฟลเดอร์จัดเก็บ"
+
+#: ../../vfolder/vfolder.rst:61
+msgid ""
+"You can create a storage folder with the desired name by clicking the 'NEW "
+"FOLDER' button. Enter the name of the folder to be created in Folder name, "
+"and select one of User / Project for Type. (Depending on the server "
+"settings, only one of User or Project may be selectable.) When creating a "
+"project folder, the Project field must be set. The project folder will be "
+"bound to the project specified in the Project field, and only users "
+"belonging to the project can mount and use the project folder. After setting"
+" the values as desired, you can create a folder by clicking the 'CREATE' "
+"button."
+msgstr ""
+"คุณสามารถสร้างโฟลเดอร์สำหรับจัดเก็บด้วยชื่อที่ต้องการได้โดยการคลิกที่ปุ่ม "
+"'NEW FOLDER' กรอกชื่อของโฟลเดอร์ที่จะสร้างในชื่อโฟลเดอร์ "
+"และเลือกหนึ่งในประเภท User / Project (ขึ้นอยู่กับการตั้งค่าเซิร์ฟเวอร์ "
+"อาจเลือกได้เพียงหนึ่งใน User หรือ Project เท่านั้น) "
+"เมื่อสร้างโฟลเดอร์โครงการฟิลด์ Project จะต้องถูกตั้งค่า "
+"โฟลเดอร์โครงการจะถูกผูกกับโครงการที่ระบุในฟิลด์ Project "
+"และผู้ใช้ที่เป็นสมาชิกของโครงการเท่านั้นจึงจะสามารถติดตั้งและใช้โฟลเดอร์โครงการได้"
+" หลังจากตั้งค่าค่าต่างๆ ตามต้องการแล้ว "
+"คุณสามารถสร้างโฟลเดอร์ได้โดยคลิกที่ปุ่ม 'CREATE'"
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "Folder creation dialog"
+msgstr "กล่องโต้ตอบการสร้างโฟลเดอร์"
+
+#: ../../vfolder/vfolder.rst:75
+msgid ""
+"The meaning of each fields that can be selected in the creation dialog is as"
+" follows."
+msgstr "ความหมายของแต่ละฟิลด์ที่สามารถเลือกได้ในกล่องสนทนาการสร้างมีดังนี้"
+
+#: ../../vfolder/vfolder.rst:78
+msgid ""
+"Folder name: The name of the folder. You can enter up to 64 characters."
+msgstr "ชื่อโฟลเดอร์: ชื่อของโฟลเดอร์ คุณสามารถป้อนตัวอักษรได้สูงสุด 64 ตัว."
+
+#: ../../vfolder/vfolder.rst:79
+msgid ""
+"Host: NFS host to create folder. You can choose one if you have multiple NFS"
+" hosts. You can check whether the selected host has enough capacity "
+"remaining through the indicator."
+msgstr ""
+"โฮสต์: โฮสต์ NFS ที่จะสร้างโฟลเดอร์ คุณสามารถเลือกหนึ่งรายการหากคุณมีโฮสต์ "
+"NFS หลายรายการ "
+"คุณสามารถตรวจสอบว่าโฮสต์ที่เลือกมีความจุเหลืออยู่เพียงพอหรือไม่ผ่านตัวบ่งชี้"
+
+#: ../../vfolder/vfolder.rst:82
+msgid ""
+"Type: Determines the type of folder to be created. It can be set as User or "
+"Project. The User folder is a folder that users can create and use alone and"
+" the Project folder is a folder created by admin and shared by users in the "
+"project."
+msgstr ""
+"ประเภท: กำหนดประเภทของโฟลเดอร์ที่จะสร้าง สามารถตั้งค่าเป็นผู้ใช้หรือโครงการ "
+"โฟลเดอร์ผู้ใช้คือโฟลเดอร์ที่ผู้ใช้สามารถสร้างและใช้งานได้เพียงคนเดียว "
+"และโฟลเดอร์โครงการคือโฟลเดอร์ที่สร้างโดยผู้ดูแลระบบและแชร์โดยผู้ใช้ในโครงการ"
+
+#: ../../vfolder/vfolder.rst:85
+msgid ""
+"Usage Mode: You can set the purpose of the folder. There are three types of "
+"mode: General, Data, and Model. It is classified for the development of "
+"exclusive functions for Data & Model Stores in the future and currently "
+"there is no difference in UI depending on the purpose."
+msgstr ""
+"โหมดการใช้งาน: คุณสามารถตั้งวัตถุประสงค์ของโฟลเดอร์ได้ มีสามประเภทโหมด: "
+"ทั่วไป, ข้อมูล, และโมเดล ซึ่งได้รับการจัดประเภทเพื่อพัฒนาฟังก์ชันเฉพาะสำหรับ"
+" Data & Model Stores ในอนาคต และในปัจจุบันไม่มีความแตกต่างใน UI "
+"ขึ้นอยู่กับวัตถุประสงค์"
+
+#: ../../vfolder/vfolder.rst:89
+msgid ""
+"Project: Designates the project to which the folder belongs when creating a "
+"new project folder. Project folders must belong to a project. However, it "
+"does not play any role when creating a user folder."
+msgstr ""
+"โปรเจกต์: กำหนดโปรเจกต์ที่โฟลเดอร์นั้นสังกัดเมื่อสร้างโฟลเดอร์โปรเจกต์ใหม่ "
+"โฟลเดอร์โปรเจกต์ต้องเป็นของโปรเจกต์หนึ่ง อย่างไรก็ตาม มันไม่มีบทบาทใด ๆ "
+"เมื่อสร้างโฟลเดอร์ผู้ใช้"
+
+#: ../../vfolder/vfolder.rst:92
+msgid ""
+"Permission: Set permission of a project folder for project members. If this "
+"is set to \"Read-Only\", project members cannot write to this folder inside "
+"their compute session."
+msgstr ""
+"สิทธิ์: กำหนดสิทธิ์ของโฟลเดอร์โปรเจกต์สำหรับสมาชิกโปรเจกต์ หากตั้งค่าเป็น "
+"\"อ่านอย่างเดียว\" "
+"สมาชิกโปรเจกต์จะไม่สามารถเขียนลงในโฟลเดอร์นี้ภายในเซสชันการคอมพิวเตอร์ของพวกเขาได้"
+
+#: ../../vfolder/vfolder.rst:97
+msgid "Explore folder"
+msgstr "สำรวจโฟลเดอร์"
+
+#: ../../vfolder/vfolder.rst:99
+msgid ""
+"You can click the folder button in the Control column to bring up a file "
+"explorer where you can view the contents of that folder."
+msgstr ""
+"คุณสามารถคลิกปุ่มโฟลเดอร์ในคอลัมน์การควบคุมเพื่อเปิดโปรแกรมสำรวจไฟล์ที่คุณสามารถดูเนื้อหาของโฟลเดอร์นั้นได้"
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "Controls in folder item"
+msgstr "การควบคุมในรายการโฟลเดอร์"
+
+#: ../../vfolder/vfolder.rst:105
+msgid ""
+"You can see that directories and files inside the folder will be listed, if "
+"exists. Click a directory name in the Name column to move to the directory."
+"  You can click the download button or delete button in the Actions column "
+"to download it or delete it entirely from the directory. You can rename a "
+"file/directory as well. For more detailed file operations, you can mount "
+"this folder when creating a compute session, and then use a service like "
+"Terminal or Jupyter Notebook to do it."
+msgstr ""
+"คุณสามารถเห็นได้ว่าไดเรกทอรีและไฟล์ภายในโฟลเดอร์จะถูกแสดงรายการ หากมีอยู่ "
+"คลิกที่ชื่อไดเรกทอรีในคอลัมน์ชื่อเพื่อย้ายไปยังไดเรกทอรีนั้น "
+"คุณสามารถคลิกที่ปุ่มดาวน์โหลดหรือปุ่มลบในคอลัมน์การกระทำเพื่อลงดาวน์โหลดหรือลบออกจากไดเรกทอรีโดยสิ้นเชิง"
+" คุณสามารถเปลี่ยนชื่อไฟล์/ไดเรกทอรีได้เช่นกัน "
+"สำหรับการดำเนินการไฟล์ที่ละเอียดมากขึ้น "
+"คุณสามารถทำการเมานต์โฟลเดอร์นี้เมื่อสร้างเซสชันการคอมพิวเตอร์ "
+"จากนั้นใช้บริการเช่น Terminal หรือ Jupyter Notebook ทำการดำเนินการดังกล่าว"
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "File explorer of a storage folder"
+msgstr "ตัวสำรวจไฟล์ของโฟลเดอร์เก็บข้อมูล"
+
+#: ../../vfolder/vfolder.rst:116
+msgid ""
+"You can create a new directory on the current path with the 'NEW FOLDER' "
+"button (in the file explorer), or upload a local file with the 'UPLOAD "
+"FILES' button. All of these file operations can also be performed using the "
+"above-described method of mounting folders into a compute session."
+msgstr ""
+"คุณสามารถสร้างไดเรกทอรีใหม่ในเส้นทางปัจจุบันโดยใช้ปุ่ม 'NEW FOLDER' "
+"(ในตัวสำรวจไฟล์) หรืออัปโหลดไฟล์จากเครื่องของคุณโดยใช้ปุ่ม 'UPLOAD FILES' "
+"การดำเนินการเกี่ยวกับไฟล์ทั้งหมดนี้ยังสามารถทำได้โดยใช้วิธีการที่กล่าวถึงข้างต้นในการเชื่อมต่อไดเรกทอรีเข้ากับเซสชันการคำนวณ"
+
+#: ../../vfolder/vfolder.rst:121
+msgid ""
+"The maximum length of file or directory inside a folder may depends on the "
+"host file system. But, it usually cannot exceed 255 characters."
+msgstr ""
+"ความยาวสูงสุดของไฟล์หรือไดเร็กทอรีภายในโฟลเดอร์อาจขึ้นอยู่กับระบบไฟล์ของโฮสต์"
+" แต่โดยปกติจะไม่สามารถเกิน 255 ตัวอักษร"
+
+#: ../../vfolder/vfolder.rst:124
+msgid "To close file explorer, click the X button in the upper right."
+msgstr "ในการปิดตัวสำรวจไฟล์ ให้คลิกที่ปุ่ม X ที่มุมขวาบน"
+
+#: ../../vfolder/vfolder.rst:128
+msgid "Rename folder"
+msgstr "เปลี่ยนชื่อโฟลเดอร์"
+
+#: ../../vfolder/vfolder.rst:130
+msgid ""
+"If you have permission to rename the storage folder, you can rename it by "
+"clicking the edit button in the Control column. When you click the button, a"
+" rename dialog will appear. Write new folder name and then click 'UPDATE' "
+"button."
+msgstr ""
+"ถ้าคุณมีสิทธิ์ในการเปลี่ยนชื่อโฟลเดอร์ที่เก็บข้อมูล "
+"คุณสามารถเปลี่ยนชื่อได้โดยการคลิกปุ่มแก้ไขในคอลัมน์การควบคุม "
+"เมื่อคุณคลิกที่ปุ่ม จะมีหน้าต่างเปลี่ยนชื่อปรากฏขึ้น "
+"ให้เขียนชื่อโฟลเดอร์ใหม่แล้วคลิกปุ่ม 'อัปเดต'"
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "Folder rename dialog"
+msgstr "กล่องโต้ตอบการเปลี่ยนชื่อโฟลเดอร์"
+
+#: ../../vfolder/vfolder.rst:141
+msgid "Delete folder"
+msgstr "ลบโฟลเดอร์"
+
+#: ../../vfolder/vfolder.rst:143
+msgid ""
+"If you have permission to delete the storage folder, you can send the folder"
+" to the 'trash can' tab by clicking the 'trash can' button. Clicking the "
+"'trash can' button in the Control column will open the following modal."
+msgstr ""
+"หากคุณมีสิทธิ์ในการลบโฟลเดอร์เก็บข้อมูล คุณสามารถส่งโฟลเดอร์ไปยังแท็บ "
+"'ถังขยะ' ได้โดยการคลิกที่ปุ่ม 'ถังขยะ' การคลิกที่ปุ่ม 'ถังขยะ' "
+"ในคอลัมน์การควบคุมจะเปิดโมดอลต่อไปนี้"
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "Folder delete notification modal"
+msgstr "โมดัลการแจ้งเตือนลบโฟลเดอร์"
+
+#: ../../vfolder/vfolder.rst:152
+msgid ""
+"Pressing the 'MOVE TO TRASH' button will change the folder's status to "
+"``delete-pending``."
+msgstr ""
+"การกดปุ่ม 'ย้ายไปที่ถังขยะ' จะเปลี่ยนสถานะของโฟลเดอร์เป็น ``delete-"
+"pending``."
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "Trash bin table"
+msgstr "ตารางถังขยะ"
+
+#: ../../vfolder/vfolder.rst:159
+msgid ""
+"In this status, you can restore the folder by clicking restore button in "
+"Control column. If you want to permanently delete the folder, please click "
+"'red trash can' button in the same column. A confirmation modal will pop up "
+"with an input field saying ``Type folder name to delete``. Make sure you "
+"type the exact folder name correctly into the field, and click the red "
+"'DELETE FOREVER' button to permanently delete the folder."
+msgstr ""
+"ในสถานะนี้ คุณสามารถกู้คืนโฟลเดอร์ได้โดยการคลิกปุ่มกู้คืนในคอลัมน์การควบคุม "
+"หากคุณต้องการลบโฟลเดอร์อย่างถาวร โปรดคลิกปุ่ม 'ถังขยะสีแดง' "
+"ในคอลัมน์เดียวกัน "
+"แสดงกล่องตรวจสอบยืนยันที่จะปรากฏขึ้นพร้อมกับฟิลด์ข้อมูลที่เขียนว่า "
+"พิมพ์ชื่อโฟลเดอร์เพื่อลบ "
+"โปรดตรวจสอบให้แน่ใจว่าคุณพิมพ์ชื่อโฟลเดอร์ที่ถูกต้องตรงตามที่กำหนดในฟิลด์ "
+"และคลิกปุ่มสีแดง 'ลบตลอดไป' เพื่อลบโฟลเดอร์อย่างถาวร"
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "Folder deletion dialog"
+msgstr "กล่องโต้ตอบการลบโฟลเดอร์"
+
+#: ../../vfolder/vfolder.rst:169
+msgid ""
+"The folders created here can be mounted when creating a compute session. "
+"Folders are mounted under the user's default working directory, "
+"``/home/work/``, and the file stored in the mounted directory will not be "
+"deleted when the compute session is terminated. (If you delete the folder, "
+"the file will also be deleted.)"
+msgstr ""
+"โฟลเดอร์ที่สร้างขึ้นที่นี่สามารถถูกเมานต์เมื่อสร้างเซสชันการคอมพิวเตอร์ "
+"โฟลเดอร์จะถูกเมานต์ภายใต้ไดเรกทอรีการทำงานเริ่มต้นของผู้ใช้ ``/home/work/`` "
+"และไฟล์ที่ถูกเก็บไว้ในไดเรกทอรีที่เมานต์จะไม่ถูกลบเมื่อเซสชันการคอมพิวเตอร์สิ้นสุดลง"
+" (หากคุณลบโฟลเดอร์ ไฟล์ก็จะถูกลบเช่นกัน)"
+
+#: ../../vfolder/vfolder.rst:175
+msgid "Pipeline folders"
+msgstr "โฟลเดอร์พายป์ไลน์"
+
+#: ../../vfolder/vfolder.rst:177
+msgid ""
+"This tab shows the list of folders that are automatically created when "
+"executing a pipeline in FastTrack. When a pipeline is created, a new folder "
+"is created and mounted under ``/pipeline`` for each instance of work "
+"(computing session)."
+msgstr ""
+"แท็บนี้จะแสดงรายการของโฟลเดอร์ที่ถูกสร้างขึ้นโดยอัตโนมัติเมื่อทำการประมวลผล "
+"Pipeline ใน FastTrack เมื่อมีการสร้าง Pipeline "
+"โฟลเดอร์ใหม่จะถูกสร้างและถูกติดตั้งภายใต้ ``/pipeline`` "
+"สำหรับแต่ละตัวอย่างของงาน (การใช้งานคอมพิวเตอร์)"
+
+#: ../../vfolder/vfolder.rst:-1 ../../vfolder/vfolder.rst:185
+msgid "Automount folders"
+msgstr "การติดตั้งโฟลเดอร์อัตโนมัติ"
+
+#: ../../vfolder/vfolder.rst:187
+msgid ""
+"Data & Storage page has an Automount Folders tab. Click this tab to see a "
+"list of folders whose names prefixed with a dot (``.``). When you create a "
+"folder, if you specify a name that starts with a dot (``.``), it is added to"
+" the Automount Folders tab, not the Folders tab. Automount Folders are "
+"special folders that are automatically mounted in your home directory even "
+"if you do not mount them manually when creating a compute session. By using "
+"this feature, creating and using Storage folders such as ``.local``, "
+"``.linuxbrew``, ``.pyenv``, etc., you can configure a certain user packages "
+"or environments that do not change with different kinds of compute session."
+msgstr ""
+"หน้า Data & Storage มีแท็บ Automount Folders "
+"คลิกที่แท็บนี้เพื่อดูรายการของโฟลเดอร์ที่มีชื่อขึ้นต้นด้วยจุด (``.``) "
+"เมื่อคุณสร้างโฟลเดอร์ หากคุณระบุชื่อที่เริ่มต้นด้วยจุด (``.``) "
+"โฟลเดอร์นั้นจะถูกเพิ่มในแท็บ Automount Folders ไม่ใช่แท็บ Folders โฟลเดอร์ "
+"Automount เป็นโฟลเดอร์พิเศษที่ถูกติดตั้งอัตโนมัติในไดเรกทอรีชื่อบ้านของคุณ "
+"ถึงแม้ว่าคุณจะไม่ติดตั้งมันด้วยตนเองเมื่อสร้างเซสชันการคอมพิวเตอร์ "
+"โดยการใช้ฟีเจอร์นี้ การสร้างและใช้โฟลเดอร์ Storage เช่น ``.local``, "
+"``.linuxbrew``, ``.pyenv`` เป็นต้น "
+"จะช่วยให้คุณสามารถกำหนดแพ็คเกจหรือสภาพแวดล้อมของผู้ใช้บางอย่างที่ไม่เปลี่ยนแปลงกับเซสชันการคอมพิวเตอร์ประเภทต่างๆ"
+" ได้"
+
+#: ../../vfolder/vfolder.rst:197
+msgid ""
+"For more detailed information on the usage of Automount folders, refer to "
+":ref:`examples of using automount folders<using-automount-folder>`."
+msgstr ""
+"สำหรับข้อมูลที่ละเอียดกว่านี้เกี่ยวกับการใช้งานโฟลเดอร์ Automount โปรดดูที่ "
+":ref:`ตัวอย่างการใช้โฟลเดอร์ automount<using-automount-folder>`."
+
+#: ../../vfolder/vfolder.rst:204
+msgid "Models"
+msgstr "โมเดลส์"
+
+#: ../../vfolder/vfolder.rst:205
+msgid ""
+"'Models' The Models tab facilitates straightforward model serving. You can "
+"store the necessary data, including input data for model serving and "
+"training data, in the model folder. To initiate the service, click on the "
+"'Model serving' button located in the control column."
+msgstr ""
+"'โมเดล' แท็บโมเดลช่วยให้การให้บริการโมเดลง่ายดาย "
+"คุณสามารถเก็บข้อมูลที่จำเป็นรวมถึงข้อมูลนำเข้าสำหรับการให้บริการโมเดลและข้อมูลการฝึกอบรมในโฟลเดอร์โมเดล"
+" เพื่อเริ่มบริการ ให้คลิกที่ปุ่ม 'การให้บริการโมเดล' "
+"ที่ตั้งอยู่ในคอลัมน์ควบคุม"
+
+#: ../../vfolder/vfolder.rst:210
+msgid ""
+"Following method is to serve model by pressing the 'Model serving' button in"
+" the 'model_folder' directory."
+msgstr ""
+"วิธีการต่อไปนี้คือการให้บริการโมเดลโดยการกดปุ่ม 'Model serving' ในไดเรกทอรี "
+"'model_folder'。"
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "Hover model serving"
+msgstr "การให้บริการโมเดล Hover"
+
+#: ../../vfolder/vfolder.rst:215
+msgid ""
+"As shown in 'Model Storage To Mount', the 'model_folder' folder is "
+"automatically mounted to enable starting a new service."
+msgstr ""
+"ตามที่แสดงใน 'การจัดเก็บโมเดลเพื่อการติดตั้ง' โฟลเดอร์ 'model_folder' "
+"จะถูกติดตั้งโดยอัตโนมัติเพื่อเปิดใช้งานการเริ่มต้นบริการใหม่"
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "Start new service with mounted folder"
+msgstr "เริ่มบริการใหม่ด้วยโฟลเดอร์ที่ถูกติดตั้ง"
+
+#: ../../vfolder/vfolder.rst:221
+msgid ""
+"If you want to learn more about model serving, please refer to :ref:`this "
+"link<model-serving>`."
+msgstr ""
+"หากคุณต้องการเรียนรู้เพิ่มเติมเกี่ยวกับการให้บริการโมเดล โปรดดูที่ "
+":ref:`ลิงก์นี้<model-serving>`"
+
+#: ../../vfolder/vfolder.rst:-1 ../../vfolder/vfolder.rst:225
+msgid "Model store"
+msgstr "ร้านค้าโมเดล"
+
+#: ../../vfolder/vfolder.rst:226
+msgid ""
+"From the 24.03, You can easily clone models from shared via project. The "
+"model store refers to a storage space and service that stores, manages, "
+"searches, and utilizes various machine learning and deep learning models."
+msgstr ""
+"ตั้งแต่วันที่ 24.03 "
+"คุณสามารถทำการโคลนโมเดลจากที่แชร์ผ่านโครงการได้อย่างง่ายดาย "
+"โมเดลสโตร์หมายถึงพื้นที่เก็บข้อมูลและบริการที่จัดเก็บ จัดการ ค้นหา "
+"และใช้โมเดลการเรียนรู้ของเครื่องและโมเดลการเรียนรู้เชิงลึกต่างๆ"
+
+#: ../../vfolder/vfolder.rst:233
+msgid ""
+"As you can see in the model store section, there are several model cards "
+"that you can access, which are maintained by project admin. Each model card "
+"may contain tags that represent the characteristics of the model itself. "
+"Following method is to clone one from the model cards to try pre-trained "
+"models."
+msgstr ""
+"ดังที่คุณเห็นในส่วนของร้านค้าโมเดล จะมีบัตรโมเดลหลายใบที่คุณสามารถเข้าถึงได้"
+" ซึ่งดูแลโดยผู้ดูแลโครงการ "
+"บัตรโมเดลแต่ละใบอาจมีแท็กที่แสดงถึงลักษณะของโมเดลนั้น ๆ "
+"วิธีการต่อไปคือการโคลนหนึ่งใบจากบัตรโมเดลเพื่อทดลองโมเดลที่ผ่านการฝึกอบรมมาแล้ว"
+
+#: ../../vfolder/vfolder.rst:237
+msgid ""
+"Click one of the model cards and you will see the modal that describes what "
+"is all about the model. If you want to clone the current model card to your "
+"folder, click 'Clone to a folder' button on the right top of the modal."
+msgstr ""
+"คลิกที่การ์ดโมเดลใด ๆ และคุณจะเห็นโมดัลที่อธิบายว่าโมเดลนั้นเกี่ยวกับอะไร "
+"หากคุณต้องการโคลนการ์ดโมเดลปัจจุบันไปยังโฟลเดอร์ของคุณ ให้คลิกที่ปุ่ม 'Clone"
+" to a folder' ที่มุมขวาบนของโมดัล"
+
+#: ../../vfolder/vfolder.rst:241
+msgid ""
+"Only project admin can edit model cards in model store. If you want to add "
+"your own model card and share it to others, please contact your project "
+"admin."
+msgstr ""
+"เฉพาะผู้ดูแลโครงการเท่านั้นที่สามารถแก้ไขการ์ดโมเดลในร้านโมเดลได้ "
+"หากคุณต้องการเพิ่มการ์ดโมเดลของคุณเองและแบ่งปันให้ผู้อื่น "
+"กรุณาติดต่อผู้ดูแลโครงการของคุณ"
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "Model card description"
+msgstr "คำอธิบายบัตรโมเดล"
+
+#: ../../vfolder/vfolder.rst:247
+msgid ""
+"After clicking the button, another modal will appear which configures model "
+"card cloning. Enter the folder name and set the permission as is (if you "
+"want to use it by yourself), and Click 'Clone' button below."
+msgstr ""
+"หลังจากคลิกปุ่มแล้ว "
+"โมดัลอีกอันจะปรากฏขึ้นซึ่งใช้ในการกำหนดค่าการทำซ้ำการ์ดโมเดล "
+"ให้กรอกชื่อโฟลเดอร์และตั้งค่าการอนุญาตตามที่เป็นอยู่ "
+"(หากคุณต้องการใช้ด้วยตนเอง) จากนั้นคลิกปุ่ม 'Clone' ด้านล่าง"
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "Model card clone dialog"
+msgstr "กล่องโต้ตอบการโคลนบัตรโมเดล"
+
+#: ../../vfolder/vfolder.rst:255
+msgid ""
+"After cloning process is successfully done, you can see the new folder has "
+"been created in your folder list. You can find it in 'Models' tab."
+msgstr ""
+"หลังจากกระบวนการโคลนเสร็จสิ้น "
+"คุณจะเห็นว่าโฟลเดอร์ใหม่ได้ถูกสร้างขึ้นในรายการโฟลเดอร์ของคุณ "
+"คุณสามารถค้นหาได้ในแท็บ 'Models'"
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "Model card in folder list"
+msgstr "บัตรโมเดลในรายชื่อโฟลเดอร์"
+
+#: ../../vfolder/vfolder.rst:261
+msgid ""
+"Also, you can check what's inside the model card by accessing the folder you"
+" just cloned."
+msgstr ""
+"นอกจากนี้ "
+"คุณยังสามารถตรวจสอบสิ่งที่อยู่ภายในการ์ดโมเดลโดยการเข้าถึงโฟลเดอร์ที่คุณเพิ่งโคลนมา。"
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "Cloned model card folder explorer"
+msgstr "โฟลเดอร์สำรวจการ์ดโมเดลที่ทำสำเนา"
+
+#: ../../vfolder/vfolder.rst:267
+msgid ""
+"If you want to use pre-trained model that you cloned from, then please refer"
+" to `Model Variant: Easily Serving Various Model Services "
+"<https://www.backend.ai/blog/2024-07-10-various-ways-of-model-serving>`_."
+msgstr ""
+"หากคุณต้องการใช้โมเดลที่ผ่านการฝึกสอนล่วงหน้าซึ่งคุณได้ทำการโคลนจากนั้นกรุณาอ้างอิงไปที่"
+" `Model Variant: Easily Serving Various Model Services "
+"<https://www.backend.ai/blog/2024-07-10-various-ways-of-model-serving>`_."
+
+#: ../../vfolder/vfolder.rst:272
+msgid "Using FileBrowser"
+msgstr "การใช้ FileBrowser"
+
+#: ../../vfolder/vfolder.rst:274
+msgid ""
+"Backend.AI supports `FileBrowser <https://filebrowser.org>`_ from version "
+"20.09. FileBrowser is a program that helps you manage files on a remote "
+"server through a web browser. This is especially useful when uploading a "
+"directory from the user's local machine."
+msgstr ""
+"Backend.AI รองรับ `FileBrowser <https://filebrowser.org>`_ ตั้งแต่เวอร์ชัน "
+"20.09 FileBrowser "
+"เป็นโปรแกรมที่ช่วยให้คุณจัดการไฟล์บนเซิร์ฟเวอร์ระยะไกลผ่านเว็บเบราว์เซอร์ "
+"ซึ่งมีประโยชน์โดยเฉพาะเมื่ออัปโหลดไดเรกทอรีจากเครื่องคอมพิวเตอร์ท้องถิ่นของผู้ใช้"
+
+#: ../../vfolder/vfolder.rst:279
+msgid ""
+"Currently, Backend.AI provides a FileBrowser as an application of a compute "
+"session. Therefore, the following conditions are required to launch it."
+msgstr ""
+"ปัจจุบัน Backend.AI มี FileBrowser เป็นแอปพลิเคชันของเซสชันการคำนวณ ดังนั้น "
+"จึงมีเงื่อนไขต่อไปนี้ที่จำเป็นต้องมีเพื่อเรียกใช้มัน"
+
+#: ../../vfolder/vfolder.rst:282
+msgid "User can create at least one compute session."
+msgstr "ผู้ใช้สามารถสร้างเซสชันการคอมพิวเตอร์ได้อย่างน้อยหนึ่งเซสชัน"
+
+#: ../../vfolder/vfolder.rst:283
+msgid "User can allocated at least 1 core of CPU and 512 MB of memory."
+msgstr ""
+"ผู้ใช้สามารถกำหนดสรรพคุณอย่างน้อย 1 แกนของ CPU และ 512 MB ของหน่วยความจำ"
+
+#: ../../vfolder/vfolder.rst:284
+msgid "Image that supports FileBrowser must be installed."
+msgstr "ภาพที่สนับสนุน FileBrowser ต้องถูกติดตั้ง"
+
+#: ../../vfolder/vfolder.rst:286
+msgid "You can access FileBrowser in two ways."
+msgstr "คุณสามารถเข้าถึง FileBrowser ได้สองวิธี"
+
+#: ../../vfolder/vfolder.rst:288
+msgid ""
+"Execute FileBrowser from file explorer dialog of a data folder in Data & "
+"Storage page."
+msgstr ""
+"เรียกใช้ FileBrowser จากกล่องโต้ตอบสำรวจไฟล์ของโฟลเดอร์ข้อมูลในหน้าข้อมูล & "
+"การจัดเก็บ"
+
+#: ../../vfolder/vfolder.rst:290
+msgid ""
+"Launch a compute session directly from a FileBrowser image on Sessions page."
+msgstr "เริ่มเซสชันการคอมพิวเตอร์โดยตรงจากภาพ FileBrowser ในหน้าเซสชัน"
+
+#: ../../vfolder/vfolder.rst:294
+msgid "Execute FileBrowser from folder explorer dialog in Data & Storage page"
+msgstr ""
+"เรียกใช้ FileBrowser จากกล่องโต้ตอบสำรวจโฟลเดอร์ในหน้าข้อมูลและที่เก็บข้อมูล"
+
+#: ../../vfolder/vfolder.rst:296 ../../vfolder/vfolder.rst:435
+msgid ""
+"Go to the Data & Storage page and open the file explorer dialog of target "
+"data folder. Click the folder button or the folder name to open the file "
+"explorer."
+msgstr ""
+"ไปที่หน้าข้อมูล & การจัดเก็บ "
+"และเปิดกล่องโต้ตอบเรียกดูไฟล์ของโฟลเดอร์ข้อมูลเป้าหมาย "
+"คลิกที่ปุ่มโฟลเดอร์หรือชื่อโฟลเดอร์เพื่อเปิดตัวเรียกดูไฟล์"
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "first step to access FileBrowser"
+msgstr "ขั้นตอนแรกในการเข้าถึง FileBrowser"
+
+#: ../../vfolder/vfolder.rst:302
+msgid ""
+"Click 'EXECUTE FILEBROWSER' button in the upper-right corner of the "
+"explorer."
+msgstr "คลิกปุ่ม 'EXECUTE FILEBROWSER' ที่มุมขวาบนของตัวสำรวจ"
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "Folder explorer with FileBrowser"
+msgstr "การสำรวจโฟลเดอร์ด้วย FileBrowser"
+
+#: ../../vfolder/vfolder.rst:307
+msgid ""
+"You can see the FileBrowser is opened in a new window. You can also see that"
+" the data folder you opened the explorer dialog becomes the root directory. "
+"From the FileBrowser window, you can freely upload, modify, and delete any "
+"directories and files."
+msgstr ""
+"คุณสามารถเห็นว่า FileBrowser ถูกเปิดในหน้าต่างใหม่ "
+"คุณยังสามารถเห็นว่าหมายเหตุข้อมูลที่คุณเปิดหน้าต่างสำรวจกลายเป็นโฟลเดอร์หลัก"
+" จากหน้าต่าง FileBrowser คุณสามารถอัปโหลด แก้ไข และลบโฟลเดอร์และไฟล์ใด ๆ "
+"ได้อย่างอิสระ"
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "FileBrowser with new window"
+msgstr "FileBrowser กับหน้าต่างใหม่"
+
+#: ../../vfolder/vfolder.rst:315
+msgid ""
+"When user clicks 'EXECUTE FILEBROWSER' button, Backend.AI automatically "
+"creates a dedicated compute session for the app. So, in the Sessions page, "
+"you should see FileBrowser compute session. It is user's responsibility to "
+"delete this compute session."
+msgstr ""
+"เมื่อผู้ใช้คลิกปุ่ม 'EXECUTE FILEBROWSER' ระบบ Backend.AI "
+"จะสร้างเซสชันการคำนวณเฉพาะสำหรับแอปโดยอัตโนมัติ ดังนั้นในหน้าเซสชัน "
+"คุณควรเห็นเซสชันการคำนวณ FileBrowser "
+"เป็นความรับผิดชอบของผู้ใช้ในการลบเซสชันการคำนวณนี้"
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "FileBrowser in session page"
+msgstr "FileBrowser ในหน้าเซสชัน"
+
+#: ../../vfolder/vfolder.rst:324
+msgid ""
+"If you accidentally close the FileBrowser window and want to reopen it, just"
+" go to Sessions page and click the FileBrowser application button of the "
+"FileBrowser compute session."
+msgstr ""
+"หากคุณปิดหน้าต่าง FileBrowser โดย accident "
+"และต้องการเปิดใหม่เพียงแค่ไปที่หน้า Sessions และคลิกปุ่มแอปพลิเคชัน "
+"FileBrowser ของเซสชันการคอมพิวเตอร์ FileBrowser"
+
+#: ../../vfolder/vfolder.rst
+msgid ""
+"When you click 'EXECUTE FILEBROWSER' button again in the data folder "
+"explorer, a new compute session will be created and a total of two "
+"FileBrowser sessions will appear."
+msgstr ""
+"เมื่อคุณคลิกที่ปุ่ม 'EXECUTE FILEBROWSER' อีกครั้งในตัวสำรวจโฟลเดอร์ข้อมูล "
+"จะมีการสร้างเซสชันการคำนวณใหม่และจะมีการแสดงเซสชัน FileBrowser "
+"ทั้งหมดสองรายการ"
+
+#: ../../vfolder/vfolder.rst:338
+msgid "Create a compute session with FileBrowser image"
+msgstr "สร้างเซสชันการคำนวณด้วยภาพ FileBrowser"
+
+#: ../../vfolder/vfolder.rst:340
+msgid ""
+"You can directly create a compute session with FileBrowser supported images."
+" You need to mount at least one or more data folders to access them. You can"
+" use FileBrowser without a problem even if you do not mount any data folder,"
+" but every uploaded/updated files will be lost after the session is "
+"terminated."
+msgstr ""
+"คุณสามารถสร้างเซสชันคอมพิวเตอร์ได้โดยตรงด้วยภาพที่รองรับโดย FileBrowser "
+"คุณจำเป็นต้องติดตั้งโฟลเดอร์ข้อมูลอย่างน้อยหนึ่งโฟลเดอร์เพื่อเข้าถึงพวกเขา "
+"คุณสามารถใช้ FileBrowser "
+"ได้โดยไม่มีปัญหาแม้ว่าคุณจะไม่ติดตั้งโฟลเดอร์ข้อมูลใด ๆ "
+"แต่ไฟล์ที่อัปโหลด/อัปเดตทุกไฟล์จะหายไปหลังจากเซสชันสิ้นสุด"
+
+#: ../../vfolder/vfolder.rst:346
+msgid ""
+"The root directory of FileBrowser will be ``/home/work``. Therefore, you can"
+" access any mounted data folders for the compute session."
+msgstr ""
+"ไดเรกทอรีรูทของ FileBrowser จะอยู่ที่ ``/home/work`` "
+"ดังนั้นคุณสามารถเข้าถึงโฟลเดอร์ข้อมูลที่ถูกติดตั้งสำหรับเซสชันการคอมพิวเตอร์ได้ทุกโฟลเดอร์"
+
+#: ../../vfolder/vfolder.rst:350
+msgid "Basic usage examples of FileBrowser"
+msgstr "ตัวอย่างการใช้งานพื้นฐานของ FileBrowser"
+
+#: ../../vfolder/vfolder.rst:352
+msgid ""
+"Here, we present some basic usage examples of FileBrowser in Backend.AI. "
+"Most of the FileBrowser operations are intuitive, but if you need more "
+"detailed guide, please refer to the `FileBrowser documentation "
+"<https://filebrowser.org>`_."
+msgstr ""
+"ที่นี่เรานำเสนอการใช้งานพื้นฐานบางอย่างของ FileBrowser ใน Backend.AI "
+"โดยการดำเนินการของ FileBrowser ส่วนใหญ่จะเป็นไปตามสัญชาตญาณ "
+"แต่หากคุณต้องการคู่มือที่ละเอียดมากขึ้น โปรดดูที่ `เอกสารของ FileBrowser "
+"<https://filebrowser.org>`_."
+
+#: ../../vfolder/vfolder.rst:357
+msgid "**Upload local directory using FileBrowser**"
+msgstr "**อัปโหลดไดเรกทอรีท้องถิ่นโดยใช้ FileBrowser**"
+
+#: ../../vfolder/vfolder.rst:359
+msgid ""
+"FileBrowser supports uploading one or more local directories while "
+"maintaining the tree structure. Click the upload button in the upper right "
+"corner of the window, and click Folder button. Then, local file explorer "
+"dialog will appear and you can select any directory you want to upload."
+msgstr ""
+"FileBrowser "
+"รองรับการอัปโหลดไดเรกทอรีท้องถิ่นหนึ่งหรือหลายไดเรกทอรีในขณะที่รักษาโครงสร้างต้นไม้ไว้"
+" คลิกปุ่มอัปโหลดที่มุมขวาบนของหน้าต่าง จากนั้นคลิกปุ่มโฟลเดอร์ "
+"จะมีการแสดงกล่องโต้ตอบสำรวจไฟล์ท้องถิ่นขึ้นมา "
+"และคุณสามารถเลือกไดเรกทอรีใดก็ได้ที่คุณต้องการอัปโหลด"
+
+#: ../../vfolder/vfolder.rst:365
+msgid ""
+"If you try to upload a file to a read-only folder, FileBrowser will raise a "
+"server error."
+msgstr ""
+"หากคุณพยายามอัปโหลดไฟล์ไปยังโฟลเดอร์ที่มีสถานะเป็นอ่านอย่างเดียว FileBrowser"
+" จะเกิดข้อผิดพลาดของเซิร์ฟเวอร์"
+
+#: ../../vfolder/vfolder.rst:371
+msgid "Let's upload a directory with the following structure."
+msgstr "ให้เราอัปโหลดไดเรกทอรีที่มีโครงสร้างดังต่อไปนี้"
+
+#: ../../vfolder/vfolder.rst:380
+msgid ""
+"After selecting ``foo`` directory, you can see the directory just uploaded "
+"successfully."
+msgstr ""
+"หลังจากที่เลือกไดเรกทอรี ``foo`` แล้ว "
+"คุณจะเห็นว่าไดเรกทอรีที่เพิ่งอัปโหลดสำเร็จแล้ว"
+
+#: ../../vfolder/vfolder.rst:385
+msgid "You can also upload local files and directories by drag and drop."
+msgstr "คุณยังสามารถอัปโหลดไฟล์และไดเรกทอรีในเครื่องได้โดยการลากและวาง"
+
+#: ../../vfolder/vfolder.rst:387
+msgid "**Move files or directories to another directory**"
+msgstr "**ย้ายไฟล์หรือไดเรกทอรีไปยังไดเรกทอรีอื่น**"
+
+#: ../../vfolder/vfolder.rst:389
+msgid ""
+"Moving files or directories in data folder is also possible from "
+"FileBrowser. You can move files or directories by following steps below."
+msgstr ""
+"การย้ายไฟล์หรือไดเรกทอรีในโฟลเดอร์ข้อมูลก็เป็นไปได้จาก FileBrowser "
+"คุณสามารถย้ายไฟล์หรือไดเรกทอรีได้โดยทำตามขั้นตอนด้านล่าง"
+
+#: ../../vfolder/vfolder.rst:392
+msgid "Select directories or files from FileBrowser."
+msgstr "เลือกไดเรกทอรีหรือไฟล์จาก FileBrowser."
+
+#: ../../vfolder/vfolder.rst:397
+msgid "Click the 'arrow' button in the upper right corner of FileBrowser"
+msgstr "คลิกที่ปุ่ม 'ลูกศร' ที่มุมขวาบนของ FileBrowser"
+
+#: ../../vfolder/vfolder.rst:403
+msgid "Select the destination"
+msgstr "เลือกปลายทาง"
+
+#: ../../vfolder/vfolder.rst:409
+msgid "Click 'MOVE' button"
+msgstr "คลิกที่ปุ่ม 'ย้าย'"
+
+#: ../../vfolder/vfolder.rst:411
+msgid "You will see that moving operation is successfully finished."
+msgstr "คุณจะเห็นว่าการดำเนินการย้ายเสร็จสมบูรณ์แล้ว"
+
+#: ../../vfolder/vfolder.rst:417
+msgid ""
+"FileBrowser is provided via application inside a compute session currently. "
+"We are planning to update FileBrowser so that it can run independently "
+"without creating a session."
+msgstr ""
+"FileBrowser จะถูกจัดเตรียมผ่านแอปพลิเคชันภายในเซสชันการคอมพิวเตอร์ในขณะนี้ "
+"เรากำลังวางแผนที่จะอัปเดต FileBrowser "
+"เพื่อให้สามารถทำงานได้เองโดยไม่ต้องสร้างเซสชัน"
+
+#: ../../vfolder/vfolder.rst:422
+msgid "Using SFTP Server"
+msgstr "การใช้ SFTP เซิร์ฟเวอร์"
+
+#: ../../vfolder/vfolder.rst:424
+msgid ""
+"From 22.09, Backend.AI supports SSH / SFTP file upload from both desktop app"
+" and web-based Web-UI. The SFTP server allows you to upload files quickly "
+"through reliable data streams."
+msgstr ""
+"ตั้งแต่วันที่ 22.09 เป็นต้นไป Backend.AI รองรับการอัปโหลดไฟล์ผ่าน SSH / SFTP"
+" จากทั้งแอปพลิเคชันเดสก์ท็อปและเว็บ UI แบบเว็บ เซิร์ฟเวอร์ SFTP "
+"ช่วยให้คุณสามารถอัปโหลดไฟล์ได้อย่างรวดเร็วผ่านสตรีมข้อมูลที่เชื่อถือได้"
+
+#: ../../vfolder/vfolder.rst:429
+msgid ""
+"Depending on the system settings, running SFTP server from the file dialog "
+"may not be allowed."
+msgstr ""
+"ขึ้นอยู่กับการตั้งค่าของระบบ การเรียกใช้งานเซิร์ฟเวอร์ SFTP "
+"จากกล่องโต้ตอบไฟล์อาจไม่อนุญาต"
+
+#: ../../vfolder/vfolder.rst:433
+msgid "Execute SFTP server from folder explorer dialog in Data & Storage page"
+msgstr ""
+"เรียกใช้เซิร์ฟเวอร์ SFTP จากกล่องโต้ตอบสำรวจโฟลเดอร์ในหน้า Data & Storage"
+
+#: ../../vfolder/vfolder.rst:438
+msgid ""
+"Click 'RUN SFTP SERVER' button in the upper-right corner of the explorer."
+msgstr "คลิกปุ่ม 'RUN SFTP SERVER' ที่มุมขวาบนของตัวสำรวจ"
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "Folder explorer with SFTP Server"
+msgstr "ตัวสำรวจโฟลเดอร์ด้วยเซิร์ฟเวอร์ SFTP"
+
+#: ../../vfolder/vfolder.rst:443
+msgid ""
+"You can see the SSH / SFTP connection dialog. And a new SFTP session will be"
+" created automatically. (This session will not affect resource occupancy.)"
+msgstr ""
+"คุณสามารถดูการสนทนาเชื่อมต่อ SSH / SFTP และเซสชัน SFTP "
+"ใหม่จะถูกสร้างขึ้นโดยอัตโนมัติ (เซสชันนี้จะไม่ส่งผลต่อการใช้ทรัพยากร)"
+
+#: ../../vfolder/vfolder.rst:-1
+msgid "SSH / SFTP connection dialog"
+msgstr "กล่องสนทนาเชื่อมต่อ SSH / SFTP"
+
+#: ../../vfolder/vfolder.rst:452
+msgid ""
+"We provide a detailed information about using large file upload via ssh/sftp"
+" connection. For more information, please click the 'Read more' text link to"
+" see all the details of execution."
+msgstr ""
+"เรามีข้อมูลรายละเอียดเกี่ยวกับการอัปโหลดไฟล์ขนาดใหญ่ผ่านการเชื่อมต่อ "
+"ssh/sftp สำหรับข้อมูลเพิ่มเติม กรุณาคลิกที่ลิงก์ข้อความ 'อ่านเพิ่มเติม' "
+"เพื่ดูรายละเอียดทั้งหมดของการดำเนินการ"
+
+#: ../../vfolder/vfolder.rst
+msgid "SSH / SFTP connection dialog expanded"
+msgstr "ขยายกล่องสนทนาเชื่อมต่อ SSH / SFTP"
+
+#: ../../vfolder/vfolder.rst:460
+msgid ""
+"For the connection, click 'DOWNLOAD SSH KEY' button to download the SSH "
+"private key (``id_container``). Also, remember the host and port number. "
+"Then, you can copy your files to the session using the Connection Example "
+"code written in the dialog, or referring to the following guide: "
+":ref:`link<sftp_connection_for_linux_and_mac>`. To preserve the files, you "
+"need to transfer the files to the data folder. Also, the session will be "
+"terminated when there is no transfer for some time."
+msgstr ""
+"สำหรับการเชื่อมต่อ ให้คลิกที่ปุ่ม 'DOWNLOAD SSH KEY' เพื่อลงทุนกุญแจ SSH "
+"ส่วนตัว (``id_container``) นอกจากนี้ให้จดจำหมายเลขโฮสต์และพอร์ต "
+"แล้วคุณสามารถคัดลอกไฟล์ของคุณไปยังเซสชันโดยใช้โค้ดตัวอย่างการเชื่อมต่อที่เขียนในกล่องโต้ตอบ"
+" หรืออ้างอิงจากคำแนะนำต่อไปนี้: "
+":ref:`link<sftp_connection_for_linux_and_mac>` สำหรับการเก็บรักษาไฟล์ "
+"คุณจะต้องโอนย้ายไฟล์ไปยังโฟลเดอร์ข้อมูล นอกจากนี้ "
+"เซสชันจะสิ้นสุดเมื่อไม่มีการถ่ายโอนเป็นเวลานาน"
+
+#: ../../vfolder/vfolder.rst:468
+msgid ""
+"If you upload your SSH keypair, the ``id_container`` will be set with your "
+"own SSH private key. So, you don't need to download it every time you want "
+"to connect via SSH to your container. Please refer to :ref:`managing user's "
+"SSH keypair<user-ssh-keypair-management>`."
+msgstr ""
+"หากคุณอัปโหลดคู่กุญแจ SSH ของคุณ ``id_container`` จะถูกตั้งค่าด้วยกุญแจ SSH "
+"ส่วนตัวของคุณ "
+"ดังนั้นคุณไม่จำเป็นต้องดาวน์โหลดทุกครั้งที่ต้องการเชื่อมต่อผ่าน SSH "
+"กับคอนเทนเนอร์ของคุณ กรุณาอ้างอิงที่ :ref:`การจัดการคู่กุญแจ SSH "
+"ของผู้ใช้<user-ssh-keypair-management>`"

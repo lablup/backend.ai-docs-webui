@@ -1,0 +1,359 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-23 23:02+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../summary/summary.rst:3
+msgid "Summary Page"
+msgstr "หน้าสรุป"
+
+#: ../../summary/summary.rst:5
+msgid ""
+"On the Summary page, users can check resource status and session usage, and "
+"there are shortcut links to frequently used functions."
+msgstr ""
+"ในหน้า สรุป ผู้ใช้สามารถตรวจสอบสถานะของทรัพยากรและการใช้งานเซสชัน "
+"และมีลิงก์ลัดไปยังฟังก์ชันที่ใช้บ่อย"
+
+#: ../../summary/summary.rst:10
+msgid "Topbar"
+msgstr "แถบด้านบน"
+
+#: ../../summary/summary.rst:-1
+msgid "Topbar usermenu"
+msgstr "เมนูผู้ใช้บนแถบด้านบน"
+
+#: ../../summary/summary.rst:17
+msgid ""
+"In the middle of the top bar is a drop-down menu to select the user's "
+"current project. If a user belongs to multiple projects, the user can change"
+" it from here. Each project may have different resource policies, therefore "
+"changing the project also changes the available resource policies. If there "
+"are not many users, there may be only one default project."
+msgstr ""
+"ในกลางแถบด้านบนเป็นเมนูเลื่อนลงเพื่อเลือกโปรเจกต์ปัจจุบันของผู้ใช้ "
+"หากผู้ใช้เป็นสมาชิกของหลายโปรเจกต์ ผู้ใช้สามารถเปลี่ยนได้จากที่นี่ "
+"โปรเจกต์แต่ละโปรเจกต์อาจมีกฎระเบียบด้านทรัพยากรที่แตกต่างกัน "
+"ดังนั้นการเปลี่ยนโปรเจกต์จึงทำให้กฎระเบียบด้านทรัพยากรที่มีอยู่เปลี่ยนแปลงไปด้วย"
+" หากมีผู้ใช้น้อย อาจมีโปรเจกต์เริ่มต้นเพียงโปรเจกต์เดียวเท่านั้น"
+
+#: ../../summary/summary.rst:23
+msgid ""
+"Click the person icon on the right side of the top bar to see the user menu."
+" Each menu item has the following functions."
+msgstr ""
+"คลิกที่ไอคอนคนด้านขวาของแถบด้านบนเพื่อตรวจสอบเมนูผู้ใช้ "
+"รายการเมนูแต่ละรายการมีฟังก์ชันดังต่อไปนี้"
+
+#: ../../summary/summary.rst:26
+msgid ""
+"About Backend.AI: Displays information such as version of Backend.AI Web-UI,"
+" license type, etc."
+msgstr ""
+"เกี่ยวกับ Backend.AI: แสดงข้อมูลเช่น เวอร์ชันของ Backend.AI Web-UI, "
+"ประเภทใบอนุญาต, เป็นต้น"
+
+#: ../../summary/summary.rst:28
+msgid "My Account: Check/Update information of current login user"
+msgstr "บัญชีของฉัน: ตรวจสอบ/ปรับปรุงข้อมูลของผู้ใช้ที่เข้าสู่ระบบปัจจุบัน"
+
+#: ../../summary/summary.rst:29
+msgid "Preferences: Go to user settings page"
+msgstr "การตั้งค่า: ไปที่หน้าการตั้งค่าผู้ใช้"
+
+#: ../../summary/summary.rst:30
+msgid ""
+"Logs / Errors: Go to the log page. You can check the log and error history "
+"recorded on the client side."
+msgstr ""
+"บันทึก / ข้อผิดพลาด: ไปที่หน้าบันทึก "
+"คุณสามารถตรวจสอบประวัติบันทึกและข้อผิดพลาดที่บันทึกไว้ในฝั่งคล้ายได้"
+
+#: ../../summary/summary.rst:32
+msgid ""
+"Log Out: Log out. Users can also logout by clicking the icon on the far "
+"right of the top bar."
+msgstr ""
+"ออกจากระบบ: ออกจากระบบ "
+"ผู้ใช้สามารถออกจากระบบได้โดยการคลิกที่ไอคอนด้านขวาสุดของแถบด้านบน"
+
+#: ../../summary/summary.rst:35
+msgid "If you click My Account, the following dialog appears."
+msgstr "ถ้าคุณคลิกที่ บัญชีของฉัน จะมีหน้าต่างถูกเปิดขึ้นดังนี้"
+
+#: ../../summary/summary.rst:41
+msgid "Each item has the following meaning."
+msgstr "แต่ละรายการมีความหมายดังต่อไปนี้"
+
+#: ../../summary/summary.rst:43
+msgid "Full Name: User's name (up to 64 characters)"
+msgstr "ชื่อเต็ม: ชื่อผู้ใช้งาน (สูงสุด 64 ตัวอักษร)"
+
+#: ../../summary/summary.rst:44
+msgid ""
+"Original password: Original password. Click the right view icon to see the "
+"input contents."
+msgstr "รหัสผ่านเดิม: รหัสผ่านเดิม คลิกที่ไอคอนดูทางขวาเพื่อดูเนื้อหาที่ป้อน"
+
+#: ../../summary/summary.rst:46
+msgid ""
+"New password: New password (8 characters or more containing at least 1 "
+"alphabet, number, and symbol). Click the right view icon to see the input "
+"contents. Ensure this is the same as the Original password."
+msgstr ""
+"รหัสผ่านใหม่: รหัสผ่านใหม่ (8 ตัวอักษรขึ้นไปโดยต้องประกอบด้วยตัวอักษร 1 ตัว "
+"ตัวเลข และสัญลักษณ์อย่างน้อย 1 ตัว) "
+"คลิกที่ไอคอนดูที่ถูกต้องเพื่อดูเนื้อหาที่ป้อน "
+"ตรวจสอบให้แน่ใจว่านี่เหมือนกับรหัสผ่านเดิม"
+
+#: ../../summary/summary.rst:49
+msgid ""
+"2FA Enabled: 2FA activation. The user needs to enter the OTP code when "
+"logging in if it is checked."
+msgstr ""
+"เปิดใช้งาน 2FA: การเปิดใช้งาน 2FA ผู้ใช้จำเป็นต้องป้อนรหัส OTP "
+"เมื่อเข้าสู่ระบบหากมีการเลือกใช้งาน"
+
+#: ../../summary/summary.rst:52
+msgid ""
+"Depending on the plugin settings, the ``2FA Enabled`` column might be "
+"invisible. In that case, please contact administrator of your system."
+msgstr ""
+"ขึ้นอยู่กับการตั้งค่า plugin คอลัมน์ ``2FA Enabled`` อาจไม่แสดงให้เห็น "
+"ในกรณีนั้นกรุณาติดต่อผู้ดูแลระบบของระบบคุณ"
+
+#: ../../summary/summary.rst:55
+msgid ""
+"Enter the desired value and click the UPDATE button to update the user "
+"information."
+msgstr "ป้อนค่าที่ต้องการและคลิกปุ่ม UPDATE เพื่ออัปเดตข้อมูลผู้ใช้。"
+
+#: ../../summary/summary.rst:59
+msgid "2FA Setup"
+msgstr "การตั้งค่า 2FA"
+
+#: ../../summary/summary.rst:60
+msgid ""
+"If you activate the ``2FA Enabled`` switch, the following dialog appears."
+msgstr "ถ้าคุณเปิดสวิตช์ ``2FA Enabled`` กล่องสนทนาดังต่อไปนี้จะแสดงขึ้น."
+
+#: ../../summary/summary.rst:66
+msgid ""
+"Turn on the 2FA application you use and scan the QR code or manually enter "
+"the verification code. There are many 2FA-enabled applications, such as "
+"Google Authenticator, 2STP, 1Password, and Bitwarden."
+msgstr ""
+"เปิดแอปพลิเคชัน 2FA ที่คุณใช้และสแกนรหัส QR หรือป้อนรหัสยืนยันด้วยตนเอง "
+"มีแอปพลิเคชันที่รองรับ 2FA หลายตัว เช่น Google Authenticator, 2STP, "
+"1Password และ Bitwarden"
+
+#: ../../summary/summary.rst:70
+msgid ""
+"Then enter the 6-digit code from the item added to your 2FA application into"
+" the dialog above. 2FA is activated when you press the CONFIRM button."
+msgstr ""
+"จากนั้นให้ป้อนรหัส 6 หลักจากรายการที่เพิ่มไปยังแอปพลิเคชัน 2FA "
+"ของคุณในกล่องโต้ตอบด้านบน 2FA จะถูกเปิดใช้งานเมื่อคุณกดปุ่มยืนยัน"
+
+#: ../../summary/summary.rst:73
+msgid ""
+"When you log in later, if you enter an email and password, an additional "
+"field appears asking for the OTP code."
+msgstr ""
+"เมื่อคุณเข้าสู่ระบบในภายหลัง หากคุณใส่อีเมลและรหัสผ่าน "
+"จะมีฟิลด์เพิ่มเติมปรากฏขึ้นเพื่อขอรหัส OTP"
+
+#: ../../summary/summary.rst:80
+msgid ""
+"To log in, you must open the 2FA application and enter a 6-digit code in the"
+" One-time password field."
+msgstr ""
+"ในการเข้าสู่ระบบ คุณต้องเปิดแอปพลิเคชัน 2FA และป้อนรหัส 6 "
+"หลักในช่องรหัสผ่านใช้ครั้งเดียว"
+
+#: ../../summary/summary.rst:86
+msgid ""
+"If you want to disable 2FA, turn off the ``2FA Enabled`` switch and click "
+"the confirm button in the following dialog."
+msgstr ""
+"หากคุณต้องการปิดการใช้งาน 2FA ให้ปิดสวิตช์ ``2FA Enabled`` "
+"และคลิกปุ่มยืนยันในกล่องโต้ตอบด้านล่างนี้"
+
+#: ../../summary/summary.rst:91
+msgid "Summary panel"
+msgstr "แผงสรุป"
+
+#: ../../summary/summary.rst:-1
+msgid "Dashboard panels"
+msgstr "แผงควบคุม"
+
+#: ../../summary/summary.rst:96
+msgid "Various convenience panels are located under the top bar."
+msgstr "แผงความสะดวกต่างๆ ตั้งอยู่ใต้แถบด้านบน"
+
+#: ../../summary/summary.rst:99
+msgid "Start Menu"
+msgstr "เมนูเริ่มต้น"
+
+#: ../../summary/summary.rst:101
+msgid ""
+"You can start a compute session by clicking on the START button. It is the "
+"same as the feature on the Sessions page, and is a shortcut button that "
+"helps you create a compute session immediately after logging in."
+msgstr ""
+"คุณสามารถเริ่มเซสชันการประมวลผลได้โดยการคลิกที่ปุ่ม START "
+"ซึ่งทำงานเหมือนกับฟีเจอร์ในหน้าเซสชัน "
+"และเป็นปุ่มลัดที่จะช่วยให้คุณสร้างเซสชันการประมวลผลทันทีหลังจากเข้าสู่ระบบ"
+
+#: ../../summary/summary.rst:105
+msgid ""
+"Below the START button are shortcut links to the Data & Storage (Upload "
+"files), Users, and Maintenance pages. Among these, the links to the Users "
+"and to Maintenance pages are only available for the admin account."
+msgstr ""
+"ด้านล่างปุ่ม START จะมีลิงก์ทางลัดไปยังหน้าข้อมูลและการจัดเก็บ "
+"(อัปโหลดไฟล์), ผู้ใช้ และบำรุงรักษา "
+"ในนี้ลิงก์ไปยังหน้าผู้ใช้และหน้าบำรุงรักษาจะมีเฉพาะสำหรับบัญชีผู้ดูแลระบบเท่านั้น"
+
+#: ../../summary/summary.rst:110
+msgid "Resource Statistics"
+msgstr "สถิติทรัพยากร"
+
+#: ../../summary/summary.rst:112
+msgid ""
+"It shows the total amount of resources the user can allocate and the amount "
+"of resources currently allocated. You can check the user's CPU, memory, and "
+"GPU resource occupancy and quota respectively. Also on the Sessions slider, "
+"you can see the maximum number of compute sessions you can create "
+"simultaneously and how many compute sessions are currently running."
+msgstr ""
+"จะแสดงจำนวนรวมของทรัพยากรที่ผู้ใช้สามารถจัดสรรได้และจำนวนทรัพยากรที่ถูกจัดสรรอยู่ในขณะนี้"
+" คุณสามารถตรวจสอบการใช้ทรัพยากร CPU, หน่วยความจำ และ GPU "
+"ของผู้ใช้และโควต้าได้ตามลำดับ นอกจากนี้ในสไลเดอร์ Sessions "
+"คุณยังสามารถดูจำนวนเซสชันการคำนวณสูงสุดที่คุณสามารถสร้างพร้อมกันและจำนวนเซสชันการคำนวณที่กำลังทำงานอยู่ในขณะนี้"
+
+#: ../../summary/summary.rst:118
+msgid ""
+"You can change the resource group by clicking the Resource Group field at "
+"the top. Resource group is a concept to group multiple Agent nodes as a "
+"single resource unit. If you have many agent nodes, you can configure "
+"settings such as assigning them to a specific project for each resource "
+"group. When there is only one agent node, it is normal to see only one "
+"resource group. If you change the resource group, the amount of resources "
+"may change depending on the amount of resources held by that resource group "
+"(agents belong to it)."
+msgstr ""
+"คุณสามารถเปลี่ยนกลุ่มทรัพยากรได้โดยการคลิกที่ฟิลด์กลุ่มทรัพยากรด้านบน "
+"กลุ่มทรัพยากรเป็นแนวคิดในการรวมหน่วยงาน Agent หลาย ๆ "
+"ตัวเป็นหน่วยทรัพยากรเดียว หากคุณมีหน่วยงาน Agent หลายตัว "
+"คุณสามารถตั้งค่าต่าง ๆ เช่น "
+"การกำหนดพวกเขาให้กับโครงการเฉพาะสำหรับแต่ละกลุ่มทรัพยากร เมื่อมีหน่วยงาน "
+"Agent เพียงตัวเดียว จะเป็นเรื่องปกติที่จะเห็นเพียงกลุ่มทรัพยากรเดียว "
+"หากคุณเปลี่ยนกลุ่มทรัพยากร "
+"ปริมาณทรัพยากรอาจเปลี่ยนแปลงไปตามจำนวนทรัพยากรที่กลุ่มทรัพยากรนั้นถืออยู่ "
+"(หน่วยงานที่เป็นของมัน)"
+
+#: ../../summary/summary.rst:127
+msgid "System Resources"
+msgstr "ทรัพยากรระบบ"
+
+#: ../../summary/summary.rst:129
+msgid ""
+"It shows the number of Agent worker nodes connected to the Backend.AI system"
+" and the total number of compute sessions currently created. You can also "
+"check the CPU, memory, and GPU utilization of the agent node. If you are "
+"logged in as a normal user, only the number of compute sessions you have "
+"created is displayed."
+msgstr ""
+"จะแสดงจำนวนโหนดของ Agent worker ที่เชื่อมต่อกับระบบ Backend.AI "
+"และจำนวนเซสชันการคำนวณทั้งหมดที่สร้างขึ้นในปัจจุบัน "
+"คุณยังสามารถตรวจสอบการใช้ CPU, หน่วยความจำ และ GPU ของโหนดตัวแทนได้ "
+"หากคุณล็อกอินเป็นผู้ใช้ทั่วไป "
+"จะมีการแสดงผลเฉพาะจำนวนเซสชันการคำนวณที่คุณสร้างขึ้นเท่านั้น"
+
+#: ../../summary/summary.rst:135
+msgid "Announcement"
+msgstr "ประกาศ"
+
+#: ../../summary/summary.rst:137
+msgid ""
+"Announcements will be displayed here. Announcements can be made through a "
+"separate admin UI (Control-Panel)."
+msgstr ""
+"ประกาศจะถูกแสดงที่นี่ ประกาศสามารถทำได้ผ่านทาง UI ผู้ดูแลระบบแยกต่างหาก "
+"(Control-Panel)"
+
+#: ../../summary/summary.rst:141
+msgid "Invitation"
+msgstr "คำเชิญ"
+
+#: ../../summary/summary.rst:143
+msgid ""
+"If another user has shared their storage folder to you, it will be displayed"
+" here. If you accept the share request, you can view and access the shared "
+"folder in the Data & Storage folder. The access rights are determined by the"
+" user who has sent the share request. Of course, you can decline the sharing"
+" requests."
+msgstr ""
+"หากผู้ใช้คนอื่นได้แชร์โฟลเดอร์ที่เก็บข้อมูลของพวกเขาให้คุณ มันจะแสดงที่นี่ "
+"หากคุณยอมรับคำขอการแชร์ "
+"คุณสามารถดูและเข้าถึงโฟลเดอร์ที่แชร์ในโฟลเดอร์ข้อมูลและที่จัดเก็บ "
+"ข้อสิทธิ์การเข้าถึงจะถูกกำหนดโดยผู้ที่ส่งคำขอการแชร์ "
+"แน่นอนว่าคุณสามารถปฏิเสธคำขอการแชร์ได้"
+
+#: ../../summary/summary.rst:149
+msgid "Download Backend.AI Web UI App"
+msgstr "ดาวน์โหลดแอป Backend.AI Web UI"
+
+#: ../../summary/summary.rst:151
+msgid ""
+"Backend.AI WebUI supports desktop applications. By using desktop app, you "
+"can use desktop app specific features, such as :ref:`SSH/SFTP connection to "
+"a Compute Session<ssh-sftp-container>` . For now Backend.AI WebUI provides "
+"desktop application with following OS:"
+msgstr ""
+"Backend.AI WebUI รองรับแอปพลิเคชันเดสก์ท็อป โดยการใช้แอปพลิเคชันเดสก์ท็อป "
+"คุณสามารถใช้คุณลักษณะเฉพาะของแอปพลิเคชันเดสก์ท็อปได้ เช่น :ref:`การเชื่อมต่อ"
+" SSH/SFTP กับ Compute Session<ssh-sftp-container>` สำหรับตอนนี้ Backend.AI "
+"WebUI ให้บริการแอปพลิเคชันเดสก์ท็อปกับระบบปฏิบัติการต่อไปนี้:"
+
+#: ../../summary/summary.rst:155
+msgid "Windows"
+msgstr "หน้าต่าง"
+
+#: ../../summary/summary.rst:156
+msgid "Linux"
+msgstr "ลินุกซ์"
+
+#: ../../summary/summary.rst:157
+msgid "Mac"
+msgstr "แมค"
+
+#: ../../summary/summary.rst:160
+msgid ""
+"When you click the button that match with your local environment (e.g. OS, "
+"Architecture), It will automatically downloads the same version of current "
+"webUI version. If you want to download later or former version of WebUI as a"
+" desktop app, please visit `here <https://github.com/lablup/backend.ai-"
+"webui/releases?page=1>`_ and download the desired version(s)."
+msgstr ""
+"เมื่อคุณคลิกปุ่มที่ตรงกับสภาพแวดล้อมของคุณ (เช่น OS, สถาปัตยกรรม) "
+"จะมีการดาวน์โหลดเวอร์ชันเดียวกันของเวอร์ชัน webUI ปัจจุบันโดยอัตโนมัติ "
+"หากคุณต้องการดาวน์โหลดเวอร์ชันก่อนหน้านี้หรือเวอร์ชันที่เก่ากว่าเป็นแอปเดสก์ท็อป"
+" โปรดเยี่ยมชม `ที่นี่ <https://github.com/lablup/backend.ai-"
+"webui/releases?page=1>`_ และดาวน์โหลดเวอร์ชันที่ต้องการ"
