@@ -225,8 +225,6 @@ First, provide a service name. For detailed explanations of each item, please re
 
    For example, if you choose ``vLLM`` or ``NVIDIA NIM`` or ``Predefined Image Command`` as a runtime variant of model service,
     there's no need to configure a ``model-definition`` file in your model folder to mount. Instead, you might have to set an additional environment variable.
-   For more information, please take a look at
-   `Model Variant: Easily Serving Various Model Services <https://www.backend.ai/blog/2024-07-10-various-ways-of-model-serving>`_.
 
 -  Model Destination For Model Folder: This option allows aliasing path of
    model storage path to session corresponding to routing, which represents
@@ -355,7 +353,7 @@ item to copy the token, and add it as the value of the following key.
 Key           Value
 ============= ================
 Content-Type  application/json
-Authorization BackendAI
+Authorization Bearer
 ============= ================
 
 Accessing the Model Service Endpoint for End Users
@@ -376,7 +374,7 @@ to model serving endpoint working properly or not.
 
    $ export API_TOKEN="<token>"
    $ curl -H "Content-Type: application/json" -X GET \
-   $ -H "Authorization: BackendAI $API_TOKEN" \
+   $ -H "Authorization: Bearer $API_TOKEN" \
    $ <model-service-endpoint>
 
 .. warning::

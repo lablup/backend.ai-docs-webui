@@ -19,10 +19,9 @@ Sessions page lets you start new sessions or use and manage existing running ses
 
 .. TODO: Please change the link to 23.09. not stable.
 
-Click the START button to start a new compute session. From version 24.03, GPU Platform offers an improved 
+Click the START button to start a new compute session. From version 24.03, GPU Platform offers an improved
 version of the session launcher (NEO). If you want to use the previous dialog-style session launcher, press
-the Classic button in the notification and create your session. For instructions on how to use it, please 
-refer to the following `link <https://webui.docs.backend.ai/en/23.09_a/sessions_all/sessions_all.html>`_.
+the Classic button in the notification and create your session.
 
 .. image:: launch_session_1.png
    :align: center
@@ -80,7 +79,7 @@ refer to the following.
 
   .. image:: launch_session_2.png
      :align: center
-     
+
 * Environments: You can choose the base environment for compute sessions such as
   TensorFlow, PyTorch, C++, etc. When you select TensorFlow, your compute
   session will automatically include the TensorFlow library. If you choose
@@ -137,7 +136,7 @@ refer to the following.
   * Cluster mode: GPU Platform supports cluster mode, which allows you to create
     multiple compute sessions at once. For more information, see the section
     :ref:`Overview of GPU Platform cluster compute session<backendai-cluster-compute-session>`.
-  
+
 * High-Performance Computing Optimizations: GPU Platform provides configuring values
   related to HPC Optimizations. For more information, See the section
   :ref:`Optimizing Accelerated Computing<optimizing-accelerated-computing>`.
@@ -162,7 +161,7 @@ by without mounting any folder. Let's move on to the next page.
 
 On the fourth page, you can set Network configurations such as Preopen Ports.
 
-* Set Preopen Ports: Provides an interface for users to set preopen ports in a 
+* Set Preopen Ports: Provides an interface for users to set preopen ports in a
   compute session. See the section :ref:`How to add preopen ports before session creation
   <set_preopen_ports>` on how to use.
 
@@ -509,9 +508,9 @@ Save session commit
 
 .. _session-commit:
 
-GPU Platform supports \"Convert Session to Image\" feature from 24.03. Committing a ``RUNNING`` session will save the 
+GPU Platform supports \"Convert Session to Image\" feature from 24.03. Committing a ``RUNNING`` session will save the
 current state of the session as a new image. Clicking the commit button in the control column of ``RUNNING`` session will
-display a dialog to show the information of the session. After entering the session name, you can convert the session to 
+display a dialog to show the information of the session. After entering the session name, you can convert the session to
 a new image. The session name must be 4 to 32 characters long and can only contain alphanumeric letters, hyphens (``-``),
 or underscores (``_``).
 

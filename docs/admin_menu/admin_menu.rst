@@ -4,11 +4,11 @@
 Admin Menus
 ===========
 
-Logging in with an admin account will reveal an extra Administration menu on the bottom left of the sidebar. 
-User information registered in GPU Platform is listed in the Users tab. Domain admin can see only the users who belong to the domain, 
+Logging in with an admin account will reveal an extra Administration menu on the bottom left of the sidebar.
+User information registered in GPU Platform is listed in the Users tab. Domain admin can see only the users who belong to the domain,
 while superadmin can see all users' information. Only superadmin can create and deactivate a user.
 
-User ID (email), Name (username), and Main Access Key can be filtered by typing text in the 
+User ID (email), Name (username), and Main Access Key can be filtered by typing text in the
 search box on each column header.
 
 .. image:: admin_user_page.png
@@ -16,7 +16,7 @@ search box on each column header.
 
 .. note::
 
-   Depending on the plugin settings, the ``2FA Enabled`` column might be invisible. In that 
+   Depending on the plugin settings, the ``2FA Enabled`` column might be invisible. In that
    case, please contact administrator of your system.
 
 
@@ -194,8 +194,8 @@ also displayed in the Permission panel.
 Manage Models cards
 -------------------
 
-All of the Model cards in model store are managed by project admin. 
-After uploading model store with model-definition file, any user in the project 
+All of the Model cards in model store are managed by project admin.
+After uploading model store with model-definition file, any user in the project
 can access to model card and clone it if needed.
 
 Following method is to add model cards from the Hugging Face.
@@ -211,7 +211,7 @@ First, Set the project to 'model-store'.
    :alt: Select project to model store
    :align: center
 
-Click the 'Add' button on the right side. Enter the folder name, 
+Click the 'Add' button on the right side. Enter the folder name,
 and set the rest of folder configuration as shown below:
 
    - Type: project
@@ -225,9 +225,9 @@ and set the rest of folder configuration as shown below:
    :alt: Model store folder
    :align: center
 
-After creating the folder, you need to set and upload the model-definition.yaml file 
-to the folder that you've just created. Following is the example of the model-definition file. 
-If you want to know how to write model-definition file, 
+After creating the folder, you need to set and upload the model-definition.yaml file
+to the folder that you've just created. Following is the example of the model-definition file.
+If you want to know how to write model-definition file,
 please refer to :ref:`Model definition guide <model_definition_guide>` section.
 
 .. code:: yaml
@@ -264,11 +264,11 @@ Once the model-definition file is uploaded, the model card will appear in the mo
    :align: center
 
 .. note::
-   You need to download model manually after setting model-definition file. For downloading the model file to folder, 
-   you can mount the model folder to session creation and download file to there by referring 
+   You need to download model manually after setting model-definition file. For downloading the model file to folder,
+   you can mount the model folder to session creation and download file to there by referring
    `Downloading models <https://huggingface.co/docs/hub/models-downloading>`_ .
 
-Clicking on the model card you've just created will display the details of the model-definition file you uploaded. 
+Clicking on the model card you've just created will display the details of the model-definition file you uploaded.
 Now, every member of the project can access the model card and clone it.
 
 .. image:: model_card_detail.png
@@ -283,11 +283,11 @@ Keypair Resource Policy
 
 In GPU Platform, administrators have the ability to set limits on the total resources available for each keypair, user, and project.
 Resource policies enable you to define the maximum allowed resources and other compute session-related settings.
-Additionally, it is possible to create multiple resource policies for different needs, 
-such as user or research requirements, and apply them on an individual basis. 
+Additionally, it is possible to create multiple resource policies for different needs,
+such as user or research requirements, and apply them on an individual basis.
 
-The Resource Policy page allows administrators to view a list of all registered resource policies. 
-Administrators can review the resource policies established for keypairs, users, and projects directly on this page.  
+The Resource Policy page allows administrators to view a list of all registered resource policies.
+Administrators can review the resource policies established for keypairs, users, and projects directly on this page.
 Let's begin by examining the resource policies for keypairs. In the figure below, there are
 three policies in total (gardener, student, default). The infinity symbol (∞)
 indicates that no resource restrictions have been applied to those resources.
@@ -424,7 +424,7 @@ To create a new user resource policy, click the Create button.
   adjusting this setting.
 - Max Customized Image Count: The maximum number of customized images that
   user can create. If user's customized image count exceeds this value,
-  user cannot create a new customized image. If you want to know more about customized 
+  user cannot create a new customized image. If you want to know more about customized
   images, please refer to the :ref:`My Environments<my-environments>` section.
 - ID: The ID of the user resource policy.
 - Created At: The date and time when the user resource policy was created.
@@ -486,12 +486,12 @@ bottom right of the table.
 Exporting current resource policy as CSV
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To save the current resource policy as a file, click on the 'Tools' menu located at the top left of each tab. Once you click the menu, download dialog will appear. 
+To save the current resource policy as a file, click on the 'Tools' menu located at the top left of each tab. Once you click the menu, download dialog will appear.
 
 .. image:: keypair_export.png
    :width: 350
    :align: center
-   :alt: Keypair export 
+   :alt: Keypair export
 
 Manage Images
 -------------
@@ -517,7 +517,7 @@ must be a minimum allocated GPU.) The default value for the minimum resource
 amount is provided as embedded in the image's metadata. If an attempt is made to
 create a compute session with a resource that is less than the amount of
 resources specified in each image, the request is automatically adjusted to the
-minimum resource requirements for the image and then generated, not cancelled. 
+minimum resource requirements for the image and then generated, not cancelled.
 
 .. warning::
    Don't change the minimum resource requirements to an amount less than the
@@ -539,7 +539,7 @@ Once you click the icon, the name of the app and its corresponding port number w
    :align: center
    :alt: Manage app dialog
 
-In this interface, you can add supported custom applications by clicking the 'Add' button below. To delete an application, simply click the 'red trash can' button on the right side of each row. 
+In this interface, you can add supported custom applications by clicking the 'Add' button below. To delete an application, simply click the 'red trash can' button on the right side of each row.
 
 .. note::
    You need to reinstall the image after changing the managed app.
@@ -554,8 +554,7 @@ Manager docker registry
 -----------------------
 
 You can click on the Registries tab in Environments page to see the information
-of the docker registry that are currently connected. ``cr.backend.ai`` is
-registered by default, and it is a registry provided by Harbor.
+of the docker registry that are currently connected.
 
 .. note::
    In the offline environment, the default registry is not accessible, so
@@ -731,7 +730,7 @@ The resource group has further Scheduler Options. The details are described belo
   than the Pending timeout. When you wish to prevent a session from remaining
   PENDING indefinitely, set this time. Set this value to zero (0) if you do not
   want to apply the pending timeout feature.
-* The number of retries to skip pending session: 
+* The number of retries to skip pending session:
   The number of retries the scheduler tries before skipping a PENDING session.
   It can be configured to prevent the situation where one PENDING session blocks
   the scheduling of the subsequent sessions indefinitely (Head-of-line blocking,
@@ -765,12 +764,12 @@ By using this feature, admin can easily manage and monitor the exact amount of s
 In order to set quota, you need to first access to storages tab in resource page.
 And then, click 'Setting (Gear)' in control column.
 
-.. note:: 
-   Please remind that quota setting is only available in storage that provides quota setting 
-   (e.g. XFS, CephFS, NetApp, Purestorage, etc.). Although you can see the usage of storage 
-   in quota setting page regardless of storage, you cannot configure the quota which doesn't 
+.. note::
+   Please remind that quota setting is only available in storage that provides quota setting
+   (e.g. XFS, CephFS, NetApp, Purestorage, etc.). Although you can see the usage of storage
+   in quota setting page regardless of storage, you cannot configure the quota which doesn't
    support quota configuration internally.
-   
+
    .. image:: no_support_quota_setting.png
 
 .. _quota-setting-panel:
@@ -800,14 +799,14 @@ Set User Quota
 ~~~~~~~~~~~~~~~~
 
 In GPU Platform, there are two types of vfolders created by user and admin(project). In this section,
-we would like to show how to check current quota setting per-user and how to configure it.   
-First, make sure the active tab of quota settings panel is ``For User``. Then, select user you desire to 
-check and edit the quota. You can see the quota id that corresponds to user's id and the configuration already set 
-in the table, if you already set the quota.   
+we would like to show how to check current quota setting per-user and how to configure it.
+First, make sure the active tab of quota settings panel is ``For User``. Then, select user you desire to
+check and edit the quota. You can see the quota id that corresponds to user's id and the configuration already set
+in the table, if you already set the quota.
 
 .. image:: per_user_quota.png
 
-Of course, if you want to edit the quota, you can simply click the Edit button in the control column. After Clicking ``Edit`` button, you may see the small modal that enables configuring quota setting. 
+Of course, if you want to edit the quota, you can simply click the Edit button in the control column. After Clicking ``Edit`` button, you may see the small modal that enables configuring quota setting.
 After input the exact amount, don't forget to Click ``OK`` button, unless the changes will not be applied.
 
 .. image:: quota_settings_panel.png
@@ -816,8 +815,8 @@ After input the exact amount, don't forget to Click ``OK`` button, unless the ch
 Set Project Quota
 ~~~~~~~~~~~~~~~~~~
 
-Setting a quota on project-folder is similar to setting a user quota. The difference between setting 
-project quota and user quota is to confirm setting the project quota requires one more procedure, 
+Setting a quota on project-folder is similar to setting a user quota. The difference between setting
+project quota and user quota is to confirm setting the project quota requires one more procedure,
 which is selecting the domain that the project is dependent on. The rest are the same.
 As in the picture below, you need to first select the domain, and then select the project.
 
@@ -830,19 +829,19 @@ As in the picture below, you need to first select the domain, and then select th
 Unset Quota
 ~~~~~~~~~~~~
 
-We also provides the feature to unset the quota. Please remind that after removing the quota setting, quota will automatically follows 
-user or project default quota, which cannot be set in WebUI. If you want to change the default quota setting, you may need to access to admin-only page.   
-By Clicking ``Unset`` button in control column, the small snackbar message will show up and confirm whether you really want to delete the current quota setting. 
-If you click ``OK`` button in the snackbar message, then it will delete the quota setting and automatically reset the quota follows to corresponding quota, 
+We also provides the feature to unset the quota. Please remind that after removing the quota setting, quota will automatically follows
+user or project default quota, which cannot be set in WebUI. If you want to change the default quota setting, you may need to access to admin-only page.
+By Clicking ``Unset`` button in control column, the small snackbar message will show up and confirm whether you really want to delete the current quota setting.
+If you click ``OK`` button in the snackbar message, then it will delete the quota setting and automatically reset the quota follows to corresponding quota,
 which depends on the quota type(user / project).
 
 .. image:: unset_quota.png
 
 
 .. note::
-   
-   If there's no config per user/project, then corresponding values in the user/project resource policy will be set as 
-   a default value. For example, If no hard limit value for quota is set, ``max_vfolder_size`` value in the resource policy 
+
+   If there's no config per user/project, then corresponding values in the user/project resource policy will be set as
+   a default value. For example, If no hard limit value for quota is set, ``max_vfolder_size`` value in the resource policy
    is used as the default value.
 
 

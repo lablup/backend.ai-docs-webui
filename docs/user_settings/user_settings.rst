@@ -2,7 +2,7 @@
 User Settings
 =============
 
-The user settings page is accessed by selecting the Preferences menu that 
+The user settings page is accessed by selecting the Preferences menu that
 appears after clicking the person icon at the top right. Users can change
 the preferred Environment from the language setting, SSH keypair management,
 editing user config script, and even to using Beta features.
@@ -68,13 +68,7 @@ before the page is refreshed.
 * Thai: Set Thai as the default language.
 * Turkish: Set Turkish as the default language.
 * Vietnamese: Set Vietnamese as the default language.
-  
 
-.. note::
-   Some of translated items may be marked as ``__NOT_TRANSLATED__``, which
-   indicates the item is not yet translated for that language. Since GPU Platform
-   WebUI is open sourced, anyone who willing to make the translation better
-   can contribute: https://github.com/lablup/backend.ai-webui.
 
 .. _user-ssh-keypair-management:
 
@@ -110,7 +104,7 @@ two text area which corresponds to "public" and "private" key.
    :width: 400
    :align: center
 
-please enter the keys inside, and click ``SAVE`` button. Now you can access to backend.ai session using your own key.
+please enter the keys inside, and click ``SAVE`` button. Now you can access to compute session using your own key.
 
 .. image:: ssh_keypair_dialog_after.png
    :width: 400
@@ -133,7 +127,7 @@ etc.).
 My Keypair information
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Every user has at least one or more keypairs. you can see access and secret keypair by clicking 
+Every user has at least one or more keypairs. you can see access and secret keypair by clicking
 Config button below. Remember that main access keypair is only one.
 
 .. image:: my_keypair_information.png

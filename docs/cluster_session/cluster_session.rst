@@ -69,19 +69,19 @@ Each container in a cluster session has the following environment variables. You
 can refer to it to check the cluster configuration and currently connected
 container information.
 
-* ``BACKENDAI_CLUSTER_HOST``: the name of the current container (ex. ``main1``)
-* ``BACKENDAI_CLUSTER_HOSTS``: Names of all containers belonging to the current
+* ``*_CLUSTER_HOST``: the name of the current container (ex. ``main1``)
+* ``*_CLUSTER_HOSTS``: Names of all containers belonging to the current
   cluster session (ex. ``main1,sub1,sub2``)
-* ``BACKENDAI_CLUSTER_IDX``: numeric index of the current container (ex. ``1``)
-* ``BACKENDAI_CLUSTER_MODE``: Cluster session mode/type (ex. ``single-node``)
-* ``BACKENDAI_CLUSTER_ROLE``: Type of current container (ex. ``main``)
-* ``BACKENDAI_CLUSTER_SIZE``: Total number of containers belonging to the
+* ``*_CLUSTER_IDX``: numeric index of the current container (ex. ``1``)
+* ``*_CLUSTER_MODE``: Cluster session mode/type (ex. ``single-node``)
+* ``*_CLUSTER_ROLE``: Type of current container (ex. ``main``)
+* ``*_CLUSTER_SIZE``: Total number of containers belonging to the
   current cluster session (ex. ``4``)
-* ``BACKENDAI_KERNEL_ID``: ID of the current container
+* ``*_KERNEL_ID``: ID of the current container
   (ex. ``3614fdf3-0e04-...``)
-* ``BACKENDAI_SESSION_ID``: ID of the cluster session to which the current
+* ``*_SESSION_ID``: ID of the cluster session to which the current
   container belongs (ex. ``3614fdf3-0e04-...``). The main container's
-  ``BACKENDAI_KERNEL_ID`` is the same as ``BACKENDAI_SESSION_ID``.
+  ``*_KERNEL_ID`` is the same as ``*_SESSION_ID``.
 
 
 Use of GPU Platform cluster compute session
@@ -126,7 +126,7 @@ containers.
    cluster_session_created.png
 
 Let's open the terminal app in the compute session we just have created. If you
-look up the environment variables, you can see that the ``BACKENDAI_CLUSTER_*``
+look up the environment variables, you can see that the ``*_CLUSTER_*``
 variables described in the above section are set. Compare the meaning and value
 of each environment variable with the description above.
 
@@ -157,7 +157,7 @@ distributed learning algorithm.
 See logs per container
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-From 24.03, You can check each log of container in logs modal. It will help you 
+From 24.03, You can check each log of container in logs modal. It will help you
 to understand what's going on not only in ``main`` container but also ``sub`` containers.
 
 .. image::

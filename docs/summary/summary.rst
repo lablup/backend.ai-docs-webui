@@ -145,17 +145,3 @@ here. If you accept the share request, you can view and access the shared folder
 in the Data & Storage folder. The access rights are determined by the user who has sent the share request.
 Of course, you can decline the sharing requests.
 
-Download GPU Platform Web UI App
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-GPU Platform WebUI supports desktop applications. 
-By using desktop app, you can use desktop app specific features, such as :ref:`SSH/SFTP connection to a Compute Session<ssh-sftp-container>` .
-For now GPU Platform WebUI provides desktop application with following OS:
-
-* Windows
-* Linux
-* Mac
-
-.. note::
-   When you click the button that match with your local environment (e.g. OS, Architecture), It will automatically downloads the same version of current webUI version.
-   If you want to download later or former version of WebUI as a desktop app, please visit `here <https://github.com/lablup/backend.ai-webui/releases?page=1>`_ and download the desired version(s).

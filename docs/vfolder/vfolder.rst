@@ -26,7 +26,7 @@ belong.
 Storage Status on top of the folder list shows the following information:
 
 * Number of folders
-    * Created: The number of folders that the user created. 
+    * Created: The number of folders that the user created.
     * Limit: The maximum number of folders that the user can create afterwards.
       This value depends on the resource policy applied to the user and cannot be
       changed without changing the resource policy. Folders that were not created by
@@ -38,8 +38,8 @@ Storage Status on top of the folder list shows the following information:
     * Project: Current project folder usage / current project folder quota scope.
     * User: Current user folder usage / current user folder quota scope.
 
-.. note:: 
-   Please remind that quota is only available in storage that provides quota setting 
+.. note::
+   Please remind that quota is only available in storage that provides quota setting
    (e.g. XFS, CephFS, NetApp, Purestorage, etc.). For the quota setting, please refer
    to the :ref:`Quota Setting Panel<quota-setting-panel>` section.
 
@@ -77,7 +77,7 @@ follows.
 
 * Folder name: The name of the folder. You can enter up to 64 characters.
 * Host: NFS host to create folder. You can choose one if you have multiple NFS
-  hosts. You can check whether the selected host has enough capacity remaining through 
+  hosts. You can check whether the selected host has enough capacity remaining through
   the indicator.
 * Type: Determines the type of folder to be created. It can be set as User or
   Project. The User folder is a folder that users can create and use alone
@@ -140,8 +140,8 @@ rename dialog will appear. Write new folder name and then click 'UPDATE' button.
 Delete folder
 -------------
 
-If you have permission to delete the storage folder, you can send the folder to the 'trash can' 
-tab by clicking the 'trash can' button. Clicking the 'trash can' button in the Control column 
+If you have permission to delete the storage folder, you can send the folder to the 'trash can'
+tab by clicking the 'trash can' button. Clicking the 'trash can' button in the Control column
 will open the following modal.
 
 .. image:: move_to_trash.png
@@ -156,9 +156,9 @@ Pressing the 'MOVE TO TRASH' button will change the folder's status to ``delete-
    :align: center
    :alt: Trash bin table
 
-In this status, you can restore the folder by clicking restore button in Control column. If you want to permanently delete the folder, 
-please click 'red trash can' button in the same column. A confirmation modal will pop up with 
-an input field saying ``Type folder name to delete``. Make sure you type the exact folder name correctly 
+In this status, you can restore the folder by clicking restore button in Control column. If you want to permanently delete the folder,
+please click 'red trash can' button in the same column. A confirmation modal will pop up with
+an input field saying ``Type folder name to delete``. Make sure you type the exact folder name correctly
 into the field, and click the red 'DELETE FOREVER' button to permanently delete the folder.
 
 .. image:: vfolder_delete_dialog.png
@@ -166,9 +166,9 @@ into the field, and click the red 'DELETE FOREVER' button to permanently delete 
    :align: center
    :alt: Folder deletion dialog
 
-The folders created here can be mounted when creating a compute session. Folders are mounted 
-under the user's default working directory, ``/home/work/``, and the file stored in the mounted 
-directory will not be deleted when the compute session is terminated. 
+The folders created here can be mounted when creating a compute session. Folders are mounted
+under the user's default working directory, ``/home/work/``, and the file stored in the mounted
+directory will not be deleted when the compute session is terminated.
 (If you delete the folder, the file will also be deleted.)
 
 Pipeline folders
@@ -202,10 +202,10 @@ For more detailed information on the usage of Automount folders, refer to
 
 Models
 ------
-'Models' 
-The Models tab facilitates straightforward model serving. 
-You can store the necessary data, including input data for model serving and training data, in the model folder. 
-To initiate the service, click on the 'Model serving' button located in the control column. 
+'Models'
+The Models tab facilitates straightforward model serving.
+You can store the necessary data, including input data for model serving and training data, in the model folder.
+To initiate the service, click on the 'Model serving' button located in the control column.
 
 Following method is to serve model by pressing the 'Model serving' button in the 'model_folder' directory.
 
@@ -230,23 +230,23 @@ The model store refers to a storage space and service that stores, manages, sear
    :alt: Model store
 
 
-As you can see in the model store section, there are several model cards that you can access, which are maintained by project admin. 
-Each model card may contain tags that represent the characteristics of the model itself. 
+As you can see in the model store section, there are several model cards that you can access, which are maintained by project admin.
+Each model card may contain tags that represent the characteristics of the model itself.
 Following method is to clone one from the model cards to try pre-trained models.
 
-Click one of the model cards and you will see the modal that describes what is all about the model. 
+Click one of the model cards and you will see the modal that describes what is all about the model.
 If you want to clone the current model card to your folder, click 'Clone to a folder' button on the right top of the modal.
 
 .. note::
-   Only project admin can edit model cards in model store. If you want to add your own model card and share it to others, 
+   Only project admin can edit model cards in model store. If you want to add your own model card and share it to others,
    please contact your project admin.
 
 .. image:: model_card_description.png
    :alt: Model card description
 
 After clicking the button, another modal will appear which configures model card cloning.
-Enter the folder name and set the permission as is (if you want to use it by yourself), 
-and Click 'Clone' button below. 
+Enter the folder name and set the permission as is (if you want to use it by yourself),
+and Click 'Clone' button below.
 
 .. image:: model_card_clone_dialog.png
    :width: 500
@@ -263,9 +263,6 @@ Also, you can check what's inside the model card by accessing the folder you jus
 .. image:: cloned_model_card_folder_explorer.png
    :width: 700
    :alt: Cloned model card folder explorer
-
-If you want to use pre-trained model that you cloned from, then please refer to 
-`Model Variant: Easily Serving Various Model Services <https://www.backend.ai/blog/2024-07-10-various-ways-of-model-serving>`_.
 
 
 Using FileBrowser
@@ -484,12 +481,6 @@ the session will be terminated when there is no transfer for some time.
 ..    :width: 400
 ..    :align: center
 ..    :alt: XFS quota setting
-
-.. For more information on the per-folder quota on XFS, please refer to the
-.. following docs:
-
-.. - `XFS Filesystem Backends Guide in GPU Platform Storage Proxy <https://github.com/lablup/backend.ai-storage-proxy#xfs>`_
-.. - `Per-folder quota for XFS <https://blog.lablup.com/posts/2022/01/21/xfs-directory-quota>`_
 
 .. You can also see the current usage and capacity of a data folder in information dialog.
 
