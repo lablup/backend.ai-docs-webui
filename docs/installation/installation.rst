@@ -2,28 +2,22 @@
 Installation
 ============
 
-The Web-UI can be used in two forms. It can be used as a web service by
-connecting to a separate web address prepared by the admins, or as an
-app provided as a stand-alone executable file that does not require separate
-installation.
+Backend.AI WebUI can be used in two different forms. 
+It can be used as a web service by connecting to a seperate web address provided by the admins, 
+or as an form of app provided as a stand-alone executable file which does not require seperate installation.
 
-With the web-based Web-UI, users do not need to install a
-platform-dependent desktop applications and just need the latest versions of
-browsers such as Chrome.
+With web-based form of WebUI, users just need the latest versions of web browsers, no need to install platform-dependent desktop applications.
 
-* Recommended browser: the latest version of Chrome (at least version > 80)
-* Requirement: any machine that runs Web Browser (2 cores, 4 GiB memory)
+* Recommended browser: Latest version of Chrome (at least > 80)
+* Requirement: Any machine that runs web browser (2 cores, 4 GiB memory)
 
 .. note::
-   We do not support MicroSoft Internet Explorer since it
-   is deprecated and does not follow web standard and support up-to-date brower
-   features.
+   We do not support Microsoft Internet Explorer since it
+   is deprecated and does not follow web standard, and does not support up-to-date browser features.
 
-The stand-alone Web-UI app can be downloaded from following address:
+The stand-alone WebUI app can be downloaded from following link:
 https://github.com/lablup/backend.ai-webui/releases
 
 .. note::
-   In the case of an app, depending on the security setting of the
-   desktop OS, it may be recognized as an unsigned executable file
-   and a permission check may be required.
+   Depending on the security settings of the Operating System, our installer may be recognized as an unsigned executable file. Permission check may be required.
 
