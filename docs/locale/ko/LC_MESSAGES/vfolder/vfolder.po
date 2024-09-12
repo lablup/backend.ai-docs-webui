@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web UI User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-21 04:06+0900\n"
+"POT-Creation-Date: 2024-09-12 17:05+0900\n"
 "PO-Revision-Date: 2023-08-07 16:17+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko\n"
@@ -314,7 +314,8 @@ msgid ""
 "Pressing the 'MOVE TO TRASH' button will change the folder's status to "
 "``delete-pending``."
 msgstr ""
-"'MOVE TO TRASH' 버튼을 클릭하면 폴더가 휴지통으로 이동하고, 폴더의 상태는 ``delete-pending`` 상태로 바뀌게 됩ㄴ디ㅏ."
+"'MOVE TO TRASH' 버튼을 클릭하면 폴더가 휴지통으로 이동하고, 폴더의 상태는 ``delete-pending`` 상태로 "
+"바뀌게 됩ㄴ디ㅏ."
 
 #: ../../vfolder/vfolder.rst:-1
 msgid "Trash bin table"
@@ -401,22 +402,28 @@ msgid "Models"
 msgstr "모델 폴더"
 
 #: ../../vfolder/vfolder.rst:205
+
 msgid ""
-"In the 'Models' tab, you can easily serve models. You can store desired "
-"data, such as input data for model serving and model training data, in "
-"the model folder. To quickly start the service, click the 'Model serving'"
-" button in the control column. Let's try pressing the 'Model serving' "
-"button in the 'model_folder' folder."
+"'Models' The Models tab facilitates straightforward model serving. You "
+"can store the necessary data, including input data for model serving and "
+"training data, in the model folder. To initiate the service, click on the"
+" 'Model serving' button located in the control column."
 msgstr ""
-"'Models' 탭은 모델을 서빙하는 데에 필요한 파일들을 저장해두는 곳입니다. 모델 학습이나 서비스를 위한 데이터를 "
-"저장해둘 수 있습니다. 바로 모델 서비스를 시작하려면 제어 열의 '모델 서빙' 버튼을 클릭합니다. "
-"'model_folder' 라는 폴더에 대해 모델 서비스를 시작해봅시다."
+"'Models' 탭은 모델을 서빙하는 데에 필요한 파일들을 저장해두는 곳입니다. 모델 학습이나 서비스를 위한 데이터를 저장해둘 수 "
+"있습니다. 바로 모델 서비스를 시작하려면 제어 열의 '모델 서빙' 버튼을 클릭합니다. 'model_folder' 라는 폴더에 대해 "
+"모델 서비스를 시작해봅시다."
+
+#: ../../vfolder/vfolder.rst:210
+msgid ""
+"Following method is to serve model by pressing the 'Model serving' button"
+" in the 'model_folder' directory."
+msgstr ""
 
 #: ../../vfolder/vfolder.rst:-1
 msgid "Hover model serving"
 msgstr ""
 
-#: ../../vfolder/vfolder.rst:213
+#: ../../vfolder/vfolder.rst:215
 msgid ""
 "As shown in 'Model Storage To Mount', the 'model_folder' folder is "
 "automatically mounted to enable starting a new service."
@@ -428,106 +435,111 @@ msgstr ""
 msgid "Start new service with mounted folder"
 msgstr ""
 
-#: ../../vfolder/vfolder.rst:219
+#: ../../vfolder/vfolder.rst:221
 msgid ""
 "If you want to learn more about model serving, please refer to :ref:`this"
 " link<model-serving>`."
-msgstr ""
-"모델을 서비스하는 것에 대해서 더 자세히 알고 싶다면 여기 :ref:`링크 <model-serving>` 를 참고하십시오."
+msgstr "모델을 서비스하는 것에 대해서 더 자세히 알고 싶다면 여기 :ref:`링크 <model-serving>` 를 참고하십시오."
 
-#: ../../vfolder/vfolder.rst:-1 ../../vfolder/vfolder.rst:223
+#: ../../vfolder/vfolder.rst:-1 ../../vfolder/vfolder.rst:225
 msgid "Model store"
 msgstr "모델 폴더"
 
-#: ../../vfolder/vfolder.rst:224
+#: ../../vfolder/vfolder.rst:226
 msgid ""
 "From the 24.03, You can easily clone models from shared via project. The "
 "model store refers to a storage space and service that stores, manages, "
 "searches, and utilizes various machine learning and deep learning models."
 msgstr ""
-"24.03 부터는 프로젝트를 통해 공유되는 모델을 쉽게 복제할 수 있습니다. 모델 스토어는 다양한 머신러닝, 딥러닝 "
-"모델을 저장하고, 관리하고, 활용할 수 있는 일종의 저장공간 및 서비스 역할을 수행합니다."
+"24.03 부터는 프로젝트를 통해 공유되는 모델을 쉽게 복제할 수 있습니다. 모델 스토어는 다양한 머신러닝, 딥러닝 모델을 "
+"저장하고, 관리하고, 활용할 수 있는 일종의 저장공간 및 서비스 역할을 수행합니다."
 
-#: ../../vfolder/vfolder.rst:232
+#: ../../vfolder/vfolder.rst:233
+
 msgid ""
 "As you can see in the model store section, there are several model cards "
-"that you can access, which are maintained by project admin. For each "
-"model card may contain tags that represents the characteristics of model "
-"itself. Let's clone one from the model cards so that you can try pre-"
-"trained models right away. Click one of the model cards and you will see "
-"the modal that describes what is all about the model. If you want to "
-"clone the current model card to your folder, then click 'Clone to a "
-"folder' button on the right top of the modal."
+"that you can access, which are maintained by project admin. Each model "
+"card may contain tags that represent the characteristics of the model "
+"itself. Following method is to clone one from the model cards to try pre-"
+"trained models."
 msgstr ""
-"모델 스토어 섹션에서 보실 수 있는 것과 같이, 프로젝트 관리자에 의해 관리되는 접근 가능한 여러개의 모델 카드가 있습니다. "
-"각각의 모델 카드는 모델 자체를 대표하는 특징을 태그 형태로 갖고 있습니다. 모델 카드 중 하나를 복제해서 미리 학습된 모델을 "
-"바로 사용해봅시다. 모델 카드 중 하나를 클릭하면, 모델에 대한 모든 정보를 나타내는 모달이 띄워지게 됩니다. "
-"현재 모델 카드를 내 폴더로 가져오고 싶다면, 오른쪽 위의 'Clone to a folder' 버튼을 클릭해주세요."
+"모델 스토어 섹션에서 보실 수 있는 것과 같이, 프로젝트 관리자에 의해 관리되는 접근 가능한 여러개의 모델 카드가 있습니다. 각각의"
+" 모델 카드는 모델 자체를 대표하는 특징을 태그 형태로 갖고 있습니다. 모델 카드 중 하나를 복제해서 미리 학습된 모델을 바로 "
+"사용해봅시다. 모델 카드 중 하나를 클릭하면, 모델에 대한 모든 정보를 나타내는 모달이 띄워지게 됩니다. 현재 모델 카드를 내 "
+"폴더로 가져오고 싶다면, 오른쪽 위의 'Clone to a folder' 버튼을 클릭해주세요."
 
-#: ../../vfolder/vfolder.rst:240
+#: ../../vfolder/vfolder.rst:237
+msgid ""
+"Click one of the model cards and you will see the modal that describes "
+"what is all about the model. If you want to clone the current model card "
+"to your folder, click 'Clone to a folder' button on the right top of the "
+"modal."
+msgstr ""
+
+#: ../../vfolder/vfolder.rst:241
 msgid ""
 "Only project admin can edit model cards in model store. If you want to "
 "add your own model card and share it to others, please contact your "
 "project admin."
 msgstr ""
-"프로젝트 관리자만이 모델 스토어의 모델 카드를 수정할 수 있습니다. 여러분의 모델 카드를 만들고, 공유하고자 한다면, "
-"프로젝트 관리자에게 문의해주세요."
+"프로젝트 관리자만이 모델 스토어의 모델 카드를 수정할 수 있습니다. 여러분의 모델 카드를 만들고, 공유하고자 한다면, 프로젝트 "
+"관리자에게 문의해주세요."
 
 #: ../../vfolder/vfolder.rst:-1
 msgid "Model card description"
 msgstr ""
 
-#: ../../vfolder/vfolder.rst:246
+#: ../../vfolder/vfolder.rst:247
+
 msgid ""
-"After clicking the button, you will see another modal that configures "
-"model card cloning. Input the folder name and set the permission as is "
+"After clicking the button, another modal will appear which configures "
+"model card cloning. Enter the folder name and set the permission as is "
 "(if you want to use it by yourself), and Click 'Clone' button below."
 msgstr ""
-"버튼을 클릭하면, 모델 카드 복제를 위한 설정을 입력하는 또다른 모달이 띄워지게 됩니다. 폴더 명을 입력하고, "
-"(직접 사용하기를 바랄 경우) 접근 권한을 초기 상태 그대로 둔 뒤, 아래 'Clone' 버튼을 클릭합니다."
+"버튼을 클릭하면, 모델 카드 복제를 위한 설정을 입력하는 또다른 모달이 띄워지게 됩니다. 폴더 명을 입력하고, (직접 사용하기를 "
+"바랄 경우) 접근 권한을 초기 상태 그대로 둔 뒤, 아래 'Clone' 버튼을 클릭합니다."
 
 #: ../../vfolder/vfolder.rst:-1
 msgid "Model card clone dialog"
 msgstr ""
 
-#: ../../vfolder/vfolder.rst:254
+#: ../../vfolder/vfolder.rst:255
 msgid ""
 "After cloning process is successfully done, you can see the new folder "
 "has been created in your folder list. You can find it in 'Models' tab."
 msgstr ""
-"복제 과정이 성공적으로 완료되면, 새 폴더가 폴더리스트에 추가된 것을 확인할 수 있습니다. "
-"생성된 폴더는 'Models' 탭에서 찾을 수 있습니다."
+"복제 과정이 성공적으로 완료되면, 새 폴더가 폴더리스트에 추가된 것을 확인할 수 있습니다. 생성된 폴더는 'Models' 탭에서 "
+"찾을 수 있습니다."
 
 #: ../../vfolder/vfolder.rst:-1
 msgid "Model card in folder list"
 msgstr "모델 폴더"
 
-#: ../../vfolder/vfolder.rst:260
+#: ../../vfolder/vfolder.rst:261
 msgid ""
 "Also, you can check what's inside the model card by accessing the folder "
 "you just cloned."
-msgstr ""
-"또한, 폴더에 접근하여 모델 카드에 무엇이 있는지 확인할 수 있습니다."
+msgstr "또한, 폴더에 접근하여 모델 카드에 무엇이 있는지 확인할 수 있습니다."
 
 #: ../../vfolder/vfolder.rst:-1
 msgid "Cloned model card folder explorer"
 msgstr ""
 
-#: ../../vfolder/vfolder.rst:266
+#: ../../vfolder/vfolder.rst:267
 msgid ""
 "If you want to use pre-trained model that you cloned from, then please "
 "refer to `Model Variant: Easily Serving Various Model Services "
 "<https://www.backend.ai/blog/2024-07-10-various-ways-of-model-serving>`_."
 msgstr ""
-"미리 학습된 모델을 복제해서 사용하고자 한다면, "
-"`Model Variant: 손쉽게 대접하는 다양한 모델 서비스 <https://www.backend.ai/blog/2024-07-10-various-ways-of-model-serving>`_ "
+"미리 학습된 모델을 복제해서 사용하고자 한다면, `Model Variant: 손쉽게 대접하는 다양한 모델 서비스 "
+"<https://www.backend.ai/blog/2024-07-10-various-ways-of-model-serving>`_ "
 "를 참고하시기 바랍니다."
 
-#: ../../vfolder/vfolder.rst:271
+#: ../../vfolder/vfolder.rst:272
 msgid "Using FileBrowser"
 msgstr "파일 브라우저 사용하기"
 
-#: ../../vfolder/vfolder.rst:273
+#: ../../vfolder/vfolder.rst:274
 msgid ""
 "Backend.AI supports `FileBrowser <https://filebrowser.org>`_ from version"
 " 20.09. FileBrowser is a program that helps you manage files on a remote "
@@ -538,7 +550,7 @@ msgstr ""
 "파일 브라우저는 웹 브라우저를 통해 원격 서버에 있는 파일 관리를 도와주는 프로그램입니다. 특히 사용자의 로컬 머신에 있는 "
 "디렉토리를 업로드 할 때에도 유용하게 사용할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:278
+#: ../../vfolder/vfolder.rst:279
 msgid ""
 "Currently, Backend.AI provides a FileBrowser as an application of a "
 "compute session. Therefore, the following conditions are required to "
@@ -547,39 +559,39 @@ msgstr ""
 "현재 Backend.AI에서는 파일 브라우저를 연산 세션 내에서 실행되는 애플리케이션 형태로 제공합니다. 따라서, 다음과 같은 최소"
 " 조건이 필요합니다."
 
-#: ../../vfolder/vfolder.rst:281
+#: ../../vfolder/vfolder.rst:282
 msgid "User can create at least one compute session."
 msgstr "최소 1개 이상의 세션을 생성 할 수 있음."
 
-#: ../../vfolder/vfolder.rst:282
+#: ../../vfolder/vfolder.rst:283
 msgid "User can allocated at least 1 core of CPU and 512 MB of memory."
 msgstr "최소 CPU 1 core, RAM 0.5 GB 이상의 여유 자원."
 
-#: ../../vfolder/vfolder.rst:283
+#: ../../vfolder/vfolder.rst:284
 msgid "Image that supports FileBrowser must be installed."
 msgstr "파일 브라우저를 지원하는 이미지가 설치되어 있어야 함."
 
-#: ../../vfolder/vfolder.rst:285
+#: ../../vfolder/vfolder.rst:286
 msgid "You can access FileBrowser in two ways."
 msgstr "파일 브라우저는 두 가지 방법으로 사용할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:287
+#: ../../vfolder/vfolder.rst:288
 msgid ""
 "Execute FileBrowser from file explorer dialog of a data folder in Data & "
 "Storage page."
 msgstr "Data & Storage 메뉴 내 폴더 탐색기 창에서 실행."
 
-#: ../../vfolder/vfolder.rst:289
+#: ../../vfolder/vfolder.rst:290
 msgid ""
 "Launch a compute session directly from a FileBrowser image on Sessions "
 "page."
 msgstr "Sessions 페이지에서 파일 브라우저 이미지로 연산 세션 직접 생성."
 
-#: ../../vfolder/vfolder.rst:293
+#: ../../vfolder/vfolder.rst:294
 msgid "Execute FileBrowser from folder explorer dialog in Data & Storage page"
 msgstr "Data & Storage 페이지의 폴더 탐색기에서 파일 브라우저 실행"
 
-#: ../../vfolder/vfolder.rst:295 ../../vfolder/vfolder.rst:434
+#: ../../vfolder/vfolder.rst:296 ../../vfolder/vfolder.rst:435
 msgid ""
 "Go to the Data & Storage page and open the file explorer dialog of target"
 " data folder. Click the folder button or the folder name to open the file"
@@ -592,7 +604,7 @@ msgstr ""
 msgid "first step to access FileBrowser"
 msgstr ""
 
-#: ../../vfolder/vfolder.rst:301
+#: ../../vfolder/vfolder.rst:302
 msgid ""
 "Click 'EXECUTE FILEBROWSER' button in the upper-right corner of the "
 "explorer."
@@ -602,7 +614,7 @@ msgstr "탐색기 우측 상단의 'EXECUTE FILEBROWSER' 버튼을 클릭해주�
 msgid "Folder explorer with FileBrowser"
 msgstr ""
 
-#: ../../vfolder/vfolder.rst:306
+#: ../../vfolder/vfolder.rst:307
 msgid ""
 "You can see the FileBrowser is opened in a new window. You can also see "
 "that the data folder you opened the explorer dialog becomes the root "
@@ -616,7 +628,7 @@ msgstr ""
 msgid "FileBrowser with new window"
 msgstr ""
 
-#: ../../vfolder/vfolder.rst:314
+#: ../../vfolder/vfolder.rst:315
 msgid ""
 "When user clicks 'EXECUTE FILEBROWSER' button, Backend.AI automatically "
 "creates a dedicated compute session for the app. So, in the Sessions "
@@ -631,7 +643,7 @@ msgstr ""
 msgid "FileBrowser in session page"
 msgstr ""
 
-#: ../../vfolder/vfolder.rst:323
+#: ../../vfolder/vfolder.rst:324
 msgid ""
 "If you accidentally close the FileBrowser window and want to reopen it, "
 "just go to Sessions page and click the FileBrowser application button of "
@@ -649,11 +661,11 @@ msgstr ""
 "만약 탐색기에서 'EXECUTE FILEBROWSER' 버튼을 다시 클릭하면 새로운 세션이 생성되어 총 두 개의 파일 브라우저 연산"
 " 세션이 나타나게 됩니다."
 
-#: ../../vfolder/vfolder.rst:337
+#: ../../vfolder/vfolder.rst:338
 msgid "Create a compute session with FileBrowser image"
 msgstr "파일 브라우저 이미지로 연산 세션 생성하기"
 
-#: ../../vfolder/vfolder.rst:339
+#: ../../vfolder/vfolder.rst:340
 msgid ""
 "You can directly create a compute session with FileBrowser supported "
 "images. You need to mount at least one or more data folders to access "
@@ -665,7 +677,7 @@ msgstr ""
 "폴더를 하나 이상 마운트 하십시오. 아무 데이터 폴더를 마운트 하지 않아도 파일 브라우저 사용에는 문제가 없지만, 연산 세션이 "
 "종료되면 연산 세션에서 작업한 모든 파일이 삭제됩니다."
 
-#: ../../vfolder/vfolder.rst:345
+#: ../../vfolder/vfolder.rst:346
 msgid ""
 "The root directory of FileBrowser will be ``/home/work``. Therefore, you "
 "can access any mounted data folders for the compute session."
@@ -673,11 +685,11 @@ msgstr ""
 "Sessions 페이지에서 생성한 파일 브라우저의 root 디렉토리는 ``/home/work`` 입니다. 따라서, 연산 세션이 "
 "마운트된 모든 데이터 폴더에 자유롭게 접근할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:349
+#: ../../vfolder/vfolder.rst:350
 msgid "Basic usage examples of FileBrowser"
 msgstr "파일 브라우저 기본 사용법"
 
-#: ../../vfolder/vfolder.rst:351
+#: ../../vfolder/vfolder.rst:352
 msgid ""
 "Here, we present some basic usage examples of FileBrowser in Backend.AI. "
 "Most of the FileBrowser operations are intuitive, but if you need more "
@@ -688,11 +700,11 @@ msgstr ""
 "직관적이지만, 보다 자세한 가이드가 필요하실 경우 `파일 브라우저 문서 <https://filebrowser.org>`_ 를 "
 "참조하십시오."
 
-#: ../../vfolder/vfolder.rst:356
+#: ../../vfolder/vfolder.rst:357
 msgid "**Upload local directory using FileBrowser**"
 msgstr "**파일 브라우저로 로컬 디렉토리 업로드 하기**"
 
-#: ../../vfolder/vfolder.rst:358
+#: ../../vfolder/vfolder.rst:359
 msgid ""
 "FileBrowser supports uploading one or more local directories while "
 "maintaining the tree structure. Click the upload button in the upper "
@@ -704,57 +716,57 @@ msgstr ""
 "업로드 버튼을 클릭한 후 Folder 버튼을 클릭하십시오. 로컬 파일 탐색창이 뜨는데, 여기서 업로드 하기 원하는 디렉토리를 "
 "선택하면 됩니다."
 
-#: ../../vfolder/vfolder.rst:364
+#: ../../vfolder/vfolder.rst:365
 msgid ""
 "If you try to upload a file to a read-only folder, FileBrowser will raise"
 " a server error."
 msgstr "읽기 전용 폴더에 파일을 업로드 하는 경우, FileBrowser가 서버 에러를 띄우게 됩니다."
 
-#: ../../vfolder/vfolder.rst:370
+#: ../../vfolder/vfolder.rst:371
 msgid "Let's upload a directory with the following structure."
 msgstr "다음과 같은 구조를 가진 폴더를 업로드 해보겠습니다."
 
-#: ../../vfolder/vfolder.rst:379
+#: ../../vfolder/vfolder.rst:380
 msgid ""
 "After selecting ``foo`` directory, you can see the directory just "
 "uploaded successfully."
 msgstr "``foo`` 디렉토리를 선택한 후 폴더가 성공적으로 업로드 된 것을 확인할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:384
+#: ../../vfolder/vfolder.rst:385
 msgid "You can also upload local files and directories by drag and drop."
 msgstr "또한, 파일과 디렉토를 드래그 앤 드롭 하여 업로드할 수도 있습니다."
 
-#: ../../vfolder/vfolder.rst:386
+#: ../../vfolder/vfolder.rst:387
 msgid "**Move files or directories to another directory**"
 msgstr "**파일 또는 디렉토리를 다른 디렉토리로 옮기기**"
 
-#: ../../vfolder/vfolder.rst:388
+#: ../../vfolder/vfolder.rst:389
 msgid ""
 "Moving files or directories in data folder is also possible from "
 "FileBrowser. You can move files or directories by following steps below."
 msgstr "데이터 폴더 내 파일 또는 디렉토리를 옮기는 것도 가능합니다. 파일 또는 디렉토리의 위치를 변경하는 방법은 다음과 같습니다."
 
-#: ../../vfolder/vfolder.rst:391
+#: ../../vfolder/vfolder.rst:392
 msgid "Select directories or files from FileBrowser."
 msgstr "파일 브라우저에서 원하는 디렉토리나 파일을 선택하십시오."
 
-#: ../../vfolder/vfolder.rst:396
+#: ../../vfolder/vfolder.rst:397
 msgid "Click the 'arrow' button in the upper right corner of FileBrowser"
 msgstr "파일 브라우저 창 우측 상단의 '화살표' 버튼을 클릭합니다."
 
-#: ../../vfolder/vfolder.rst:402
+#: ../../vfolder/vfolder.rst:403
 msgid "Select the destination"
 msgstr "이동할 경로를 선택합니다."
 
-#: ../../vfolder/vfolder.rst:408
+#: ../../vfolder/vfolder.rst:409
 msgid "Click 'MOVE' button"
 msgstr "'MOVE' 버튼을 클릭합니다."
 
-#: ../../vfolder/vfolder.rst:410
+#: ../../vfolder/vfolder.rst:411
 msgid "You will see that moving operation is successfully finished."
 msgstr "옮기기 작업이 성공적으로 완료된 것을 확인할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:416
+#: ../../vfolder/vfolder.rst:417
 msgid ""
 "FileBrowser is provided via application inside a compute session "
 "currently. We are planning to update FileBrowser so that it can run "
@@ -763,11 +775,11 @@ msgstr ""
 "현재 파일 브라우저는 연산 세션 내 애플리케이션 형태로 제공되고 있습니다. 향후 세션을 생성하지 않고 파일 브라우저를 독립적으로 "
 "실행할 수 있는 기능을 추가할 예정입니다."
 
-#: ../../vfolder/vfolder.rst:421
+#: ../../vfolder/vfolder.rst:422
 msgid "Using SFTP Server"
 msgstr "SFTP 서버 사용"
 
-#: ../../vfolder/vfolder.rst:423
+#: ../../vfolder/vfolder.rst:424
 msgid ""
 "From 22.09, Backend.AI supports SSH / SFTP file upload from both desktop "
 "app and web-based Web-UI. The SFTP server allows you to upload files "
@@ -776,17 +788,17 @@ msgstr ""
 "Backend.AI 22.09 버전부터 데스크탑 앱 및 웹 기반 Web-UI 환경에서 SSH / SFTP 프로토콜을 통해 파일을 "
 "업로드 할 수 있는 방법을 제공합니다. SFTP 서버를 사용하여 안정적으로 빠르게 파일을 업로드할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:428
+#: ../../vfolder/vfolder.rst:429
 msgid ""
 "Depending on the system settings, running SFTP server from the file "
 "dialog may not be allowed."
 msgstr "설정에 따라, SFTP 서버 실행하기가 허용되지 않을 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:432
+#: ../../vfolder/vfolder.rst:433
 msgid "Execute SFTP server from folder explorer dialog in Data & Storage page"
 msgstr "Data & Storage 페이지의 폴더 탐색기에서 파일 브라우저 실행"
 
-#: ../../vfolder/vfolder.rst:437
+#: ../../vfolder/vfolder.rst:438
 msgid "Click 'RUN SFTP SERVER' button in the upper-right corner of the explorer."
 msgstr "탐색기 우측 상단의 'RUN SFTP SERVER' 버튼을 클릭해주세요."
 
@@ -794,7 +806,7 @@ msgstr "탐색기 우측 상단의 'RUN SFTP SERVER' 버튼을 클릭해주세�
 msgid "Folder explorer with SFTP Server"
 msgstr ""
 
-#: ../../vfolder/vfolder.rst:442
+#: ../../vfolder/vfolder.rst:443
 msgid ""
 "You can see the SSH / SFTP connection dialog. And a new SFTP session will"
 " be created automatically. (This session will not affect resource "
@@ -807,7 +819,7 @@ msgstr ""
 msgid "SSH / SFTP connection dialog"
 msgstr ""
 
-#: ../../vfolder/vfolder.rst:451
+#: ../../vfolder/vfolder.rst:452
 msgid ""
 "We provide a detailed information about using large file upload via "
 "ssh/sftp connection. For more information, please click the 'Read more' "
@@ -820,7 +832,7 @@ msgstr ""
 msgid "SSH / SFTP connection dialog expanded"
 msgstr ""
 
-#: ../../vfolder/vfolder.rst:459
+#: ../../vfolder/vfolder.rst:460
 msgid ""
 "For the connection, click 'DOWNLOAD SSH KEY' button to download the SSH "
 "private key (``id_container``). Also, remember the host and port number. "
@@ -835,7 +847,7 @@ msgstr ""
 "전송할 수 있습니다. :ref:`link<sftp_connection_for_linux_and_mac>` 파일을 보존하려면 데이터 "
 "폴더로 복사하십시오. 또한, 일정 시간 동안 파일 전송이 없는 경우에는 세션이 삭제될 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:467
+#: ../../vfolder/vfolder.rst:468
 msgid ""
 "If you upload your SSH keypair, the ``id_container`` will be set with "
 "your own SSH private key. So, you don't need to download it every time "
@@ -845,3 +857,4 @@ msgstr ""
 "미리 사용자 SSH 키페어를 업로드 해두면 ``id_container`` 의 내용이 업로드한 SSH 사설키로 채워집니다. 따라서, "
 "연산 세션에 SSH 접속을 할 때마다 파일을 다운로드 할 필요가 없습니다. :ref:`사용자의 SSH 키페어 관리하기<user-"
 "ssh-keypair-management>` 부분을 참고하십시오."
+
