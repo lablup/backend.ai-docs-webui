@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../share_vfolder/share_vfolder.rst:3
+msgid "Sharing Storage Folders and Access Control"
+msgstr "ストレージフォルダの共有とアクセス制御"
+
+#: ../../share_vfolder/share_vfolder.rst:5
+msgid ""
+"You may need to share the contents of storage folders with other users or "
+"project members to collaborate. For this purpose, Backend.AI provides "
+"flexible folder sharing feature."
+msgstr ""
+"ストレージフォルダの内容を他のユーザーやプロジェクトメンバーと共有して共同作業を行う必要があるかもしれません。この目的のために、Backend.AIは柔軟なフォルダ共有機能を提供します。"
+
+#: ../../share_vfolder/share_vfolder.rst:11
+msgid "Share storage folders with other users"
+msgstr "他のユーザーとストレージフォルダーを共有する"
+
+#: ../../share_vfolder/share_vfolder.rst:13
+msgid ""
+"Let's learn how to share your personal Storage folder with other users. "
+"First, log in to User A's account and go to the Data & Storage page. There "
+"are several folders, and we want to share a folder named ``tests`` to User "
+"B."
+msgstr ""
+"他のユーザーと個人用ストレージフォルダを共有する方法を学びましょう。まず、ユーザーAのアカウントにログインし、「データとストレージ」ページに移動します。いくつかのフォルダがありますが、ユーザーBに「tests」という名前のフォルダを共有したいと思います。"
+
+#: ../../share_vfolder/share_vfolder.rst:19
+msgid ""
+"Inside the ``tests`` folder you can see files and directories like "
+"``hello.txt`` and ``myfolder``."
+msgstr ""
+"``tests`` フォルダーの中に ``hello.txt`` や ``myfolder`` のようなファイルとディレクトリーを見ることができます。"
+
+#: ../../share_vfolder/share_vfolder.rst:24
+msgid ""
+"Confirm that the ``tests`` folder is not listed when logging in with User "
+"B's account."
+msgstr "ユーザーBのアカウントでログインしたときに ``tests`` フォルダーが表示されていないことを確認します。"
+
+#: ../../share_vfolder/share_vfolder.rst:30
+msgid ""
+"If a folder named ``tests`` already exists in User B's account, User A's "
+"``tests`` folder cannot be shared with User B."
+msgstr ""
+"User B のアカウントに ``tests`` という名前のフォルダーが既に存在する場合、User A の ``tests`` フォルダーを User"
+" B と共有することはできません。"
+
+#: ../../share_vfolder/share_vfolder.rst:33
+msgid ""
+"Back to User A's account and click the share icon (third icon) in the "
+"Control panel on the right of the ``tests`` folder. Enter User B's email in "
+"the email input field and click the SHARE button to send a sharing "
+"invitation. No actual email is sent, and invitations are generated through "
+"the Backend.AI database. In the case of Permissions, if you check View, it "
+"is shared as read-only, and if you check Edit together, even writing is "
+"allowed to User B. If you want to share with multiple users, you can also "
+"click the + button to enter additional emails."
+msgstr ""
+"ユーザーAのアカウントに戻り、``tests`` "
+"フォルダの右側にあるコントロールパネルで共有アイコン（3番目のアイコン）をクリックします。メール入力フィールドにユーザーBのメールアドレスを入力し、SHAREボタンをクリックして共有招待を送信します。実際のメールは送信されず、招待はBackend.AIデータベースを介して生成されます。権限の場合、Viewをチェックすると読み取り専用で共有され、EditもチェックするとユーザーBが書き込みも許可されます。複数のユーザーと共有する場合は、+ボタンをクリックして追加のメールアドレスを入力することもできます。"
+
+#: ../../share_vfolder/share_vfolder.rst:45
+msgid ""
+"Back to User B's account and go to the Summary page. At the bottom of the "
+"page, you can see the invitation arrived. Click the ACCEPT button to accept "
+"the invitation. If you don't see the invitation, go to another page once and"
+" then come back to the Summary page again."
+msgstr ""
+"ユーザーBのアカウントに戻って、サマリーページに移動します。ページの下部に招待が届いているのが見えます。ACCEPTボタンをクリックして招待を受け入れます。招待が表示されない場合は、一度別のページに移動してから再度サマリーページに戻ってください。"
+
+#: ../../share_vfolder/share_vfolder.rst:54
+msgid ""
+"Go to the Data & Storage page and check that the ``tests`` folder is "
+"displayed in the list. If you don't see it on the list, try refreshing your "
+"browser page. Since you have accepted the invitation, you can now view the "
+"contents of User A's ``tests`` folder in User B account. Compared to the "
+"other folders created by User B, the ``tests`` folder has no management icon"
+" in the Control panel. You can also see only the R (read-only) mark "
+"displayed in the Permission panel."
+msgstr ""
+"Data & "
+"Storageページに移動し、リストに「tests」フォルダが表示されていることを確認します。リストに表示されていない場合は、ブラウザページを更新してみてください。招待を受け入れたため、現在はUser"
+" BアカウントでUser Aの「tests」フォルダの内容を閲覧できます。User "
+"Bによって作成された他のフォルダと比較すると、「tests」フォルダにはコントロールパネルに管理アイコンがありません。また、PermissionパネルにはR（読み取り専用）マークのみが表示されています。"
+
+#: ../../share_vfolder/share_vfolder.rst:63
+msgid ""
+"Let's navigate inside the ``tests`` folder by clicking the folder icon in "
+"the Control panel of ``tests``. You can check the ``hello.txt`` and "
+"``myfolder`` that you checked in the User A's account again. Let's create a "
+"compute session by mounting this storge folder with the User B's account."
+msgstr ""
+"``tests`` フォルダのコントロールパネルでフォルダアイコンをクリックして、``tests`` フォルダの中に移動しましょう。User "
+"Aのアカウントで確認した ``hello.txt`` と ``myfolder`` を再度チェックすることができます。このストレージフォルダをUser "
+"Bのアカウントでマウントして、コンピュートセッションを作成してみましょう。"
+
+#: ../../share_vfolder/share_vfolder.rst:72
+msgid ""
+"After creating a session, open the web terminal and check that the ``tests``"
+" folder is mounted in the home folder. The contents of the ``tests`` folder "
+"are displayed, but attempts to create or delete files are not allowed. This "
+"is because User A shared it as read-only. User B can create a file in the "
+"``tests`` folder if it has been shared including write access."
+msgstr ""
+"セッションを作成した後、ウェブターミナルを開き、``tests`` フォルダーがホームフォルダーにマウントされていることを確認します。``tests``"
+" "
+"フォルダーの内容は表示されますが、ファイルの作成や削除を試みることは許可されていません。これは、ユーザーAがそれを読み取り専用として共有したためです。ユーザーBは、書き込みアクセスを含めて共有されている場合、``tests``"
+" フォルダーにファイルを作成することができます。"
+
+#: ../../share_vfolder/share_vfolder.rst:82
+msgid ""
+"If you click the folder icon in the Control panel, you may notice that "
+"UPLOAD FILES button and NEW FOLDER button disappears and READ-ONLY FOLDER "
+"message is shown on that spot. Also modify icon and delete icon in the "
+"Action panel are also disabled since the folder is read-only. User B can "
+"create a file in the ``tests`` folder if it has been shared including write "
+"access."
+msgstr ""
+"コントロールパネルでフォルダーアイコンをクリックすると、UPLOAD FILESボタンとNEW FOLDERボタンが消え、その場所にREAD-ONLY "
+"FOLDERメッセージが表示されることに気付くでしょう。また、アクションパネルの修正アイコンと削除アイコンも、フォルダーが読み取り専用のため無効になっています。ユーザーBは、書き込みアクセスを含めて共有されている場合、「tests」フォルダーにファイルを作成することができます。"
+
+#: ../../share_vfolder/share_vfolder.rst:90
+msgid ""
+"This way, you can share your personal storage folders with other users based"
+" on your Backend.AI email account."
+msgstr "この方法では、Backend.AIのメールアカウントに基づいて他のユーザーと個人のストレージフォルダを共有することができます。"
+
+#: ../../share_vfolder/share_vfolder.rst:94
+msgid ""
+"Backend.AI also provides sharing project folder to project members. To See "
+"the detail, go to :ref:`sharing a project storage folder with project "
+"members <sharing-a-group-storage>`."
+msgstr ""
+"Backend.AIはプロジェクトメンバーへのプロジェクトフォルダの共有も提供しています。詳細は、:ref:`プロジェクトメンバーとのプロジェクトストレージフォルダの共有"
+" <sharing-a-group-storage>` を参照してください。"
+
+#: ../../share_vfolder/share_vfolder.rst:99
+msgid "Adjust permission for shared folders"
+msgstr "共有フォルダーの権限を調整する"
+
+#: ../../share_vfolder/share_vfolder.rst:101
+msgid ""
+"If you click the fourth person icon in the Control panel, you can see a list"
+" of users who have shared the folder. Click Select permission to set the "
+"sharing permission."
+msgstr ""
+"コントロールパネルの4番目の人のアイコンをクリックすると、フォルダーを共有しているユーザーの一覧が表示されます。共有権限を設定するには、権限を選択をクリックします。"
+
+#: ../../share_vfolder/share_vfolder.rst:105
+msgid "View: The invited user has read-only access to the folder."
+msgstr "閲覧: 招待されたユーザーはフォルダーへの読み取り専用アクセス権を持っています。"
+
+#: ../../share_vfolder/share_vfolder.rst:106
+msgid ""
+"Edit: The invited user has read and write access to the folder. The user "
+"cannot delete folders or files."
+msgstr "編集: 招待されたユーザーはフォルダーへの読み書き権限を持っています。ユーザーはフォルダーやファイルを削除することはできません。"
+
+#: ../../share_vfolder/share_vfolder.rst:108
+msgid ""
+"Edit+Delete: The invited user has full access to the folder and can delete "
+"files or folders."
+msgstr "編集+削除: 招待されたユーザーはフォルダーへのフルアクセス権を持ち、ファイルやフォルダーを削除できます。"
+
+#: ../../share_vfolder/share_vfolder.rst:110
+msgid ""
+"Kick out user: Retrieves the user's invitation. The user cannot view or use "
+"the folder any more."
+msgstr "ユーザーを追い出す: ユーザーの招待状を取得します。ユーザーはこのフォルダーを表示したり使用したりすることができなくなります。"
+
+#: ../../share_vfolder/share_vfolder.rst:118
+msgid ""
+"Renaming folder itself is available only for the owner, even if the user has"
+" granted Edit or Edit+Delete permission. Please note that Edit permission "
+"does not provide renaming folder."
+msgstr ""
+"フォルダーの名前変更は、たとえユーザーに編集または編集＋削除の権限が与えられていても、所有者にのみ可能です。編集権限ではフォルダーの名前変更はできないことに注意してください。"

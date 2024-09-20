@@ -1,0 +1,36 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../agent_summary/agent_summary.rst:3
+msgid "Agent Summary"
+msgstr "エージェント概要"
+
+#: ../../agent_summary/agent_summary.rst:5
+msgid ""
+"For now, users with admin role only can see agent information via "
+"administration menu. From 22.09 Backend.AI WebUI supports showing partial "
+"information of agent node(s) when configuration is set. In Agent summary "
+"menu, you can see the list of agent information including endpoint address, "
+"CPU architecture, resource utilization, and whether the agent is schedulable"
+" or not. This menu is useful to check resource allocation on session "
+"creation."
+msgstr ""
+"現在、エージェント情報は管理メニューを通じて管理者ロールを持つユーザーのみが閲覧できます。22.09から、Backend.AI "
+"WebUIは、設定がされている場合に、エージェントノードの部分的な情報を表示することをサポートしています。エージェント概要メニューでは、エンドポイントアドレス、CPUアーキテクチャ、リソース使用率、およびエージェントがスケジュール可能かどうかを含むエージェント情報の一覧を確認できます。このメニューはセッション作成時のリソース割り当てを確認するのに役立ちます。"

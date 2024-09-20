@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../disclaimer.rst:2
+msgid "Disclaimer"
+msgstr "免責事項"
+
+#: ../../disclaimer.rst:4
+msgid ""
+"The information and contents in this manual are provided on an \"AS IS\" and"
+" \"AS AVAILABLE\" basis for informational and reference purposes only, "
+"without warranty of any kind, either express or implied, including, but not "
+"limited to, the implied warranties of merchantability, fitness for a "
+"particular purpose, and non-infringement. Lablup Inc. is not responsible for"
+" any damages resulting from the use of this manual, including consequential "
+"damages. Although much effort has been made to ensure the accuracy of the "
+"data provided, Lablup Inc. makes no representations, promises, or warranties"
+" with respect to the completeness, accuracy, up-to-dateness or adequacy of "
+"the information, and assumes no responsibility for outdated information or "
+"errors. Lablup Inc. makes no representations or warranties, either expressed"
+" or implied, with respect to the accuracy or completeness of the information"
+" contained in this manual."
+msgstr ""
+"このマニュアルに含まれる情報および内容は、「現状のまま」、および「利用可能な状態で」、情報提供および参考目的のために提供されており、商品性、特定目的への適合性、および非侵害性を含むがこれらに限定されない、明示または黙示のいかなる種類の保証もありません。Lablup"
+" "
+"Inc.は、このマニュアルの使用に起因するいかなる損害にも責任を負いません（結果的損害を含む）。提供されたデータの正確性を確保するために多くの努力が払われていますが、Lablup"
+" "
+"Inc.は情報の完全性、正確性、最新性または適切性に関して、一切の表明、約束または保証を行うことなく、情報の陳腐化または誤りについても責任を負いません。Lablup"
+" Inc.は、本マニュアルに含まれる情報の正確性または完全性に関して、明示または黙示のいかなる表明または保証も行いません。"
+
+#: ../../disclaimer.rst:16
+msgid ""
+"Please contact us if you believe there are errors in this document that are "
+"different from the facts. We will review it as soon as possible."
+msgstr "事実と異なる誤りがこの文書にあると思われる場合は、お問い合わせください。できるだけ早く確認いたします。"
+
+#: ../../disclaimer.rst:19
+msgid ""
+"The product in this manual may subject to change without notice due to "
+"continuous development by open source community and Lablup Inc."
+msgstr ""
+"このマニュアルに記載されている製品は、オープンソースコミュニティとLablup Inc.による継続的な開発により、予告なく変更される場合があります。"
+
+#: ../../disclaimer.rst:22
+msgid ""
+"All product and company names mentioned herein may be trademarks of their "
+"respective owners."
+msgstr "ここに記載されているすべての製品および会社名は、それぞれの所有者の商標である可能性があります。"
+
+#: ../../disclaimer.rst:25
+msgid "Backend.AI is a registered trademark of Lablup Inc."
+msgstr "Backend.AIは、Lablup Inc.の登録商標です。"
+
+#: ../../disclaimer.rst:26
+msgid "The copyright for Backend.AI™ is owned by Lablup Inc."
+msgstr "Backend.AI™の著作権はLablup Inc.が所有しています。"
+
+#: ../../disclaimer.rst:28
+msgid "©2015-\\ |year| Lablup Inc. All rights reserved."
+msgstr "©2015-\\ |year| Lablup Inc. 無断転載を禁じます。"
+
+#: ../../disclaimer.rst:30
+msgid "Document Version: v\\ |version|.\\ |version_date|"
+msgstr "ドキュメントバージョン: v\\ |version|.\\ |version_date|"
+
+#: ../../disclaimer.rst:31
+msgid "Last Updated (Year/Month/Day): |date|"
+msgstr "最終更新日 (年/月/日): |date|"

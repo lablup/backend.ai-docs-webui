@@ -1,0 +1,519 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../appendix/appendix.rst:3
+msgid "Appendix"
+msgstr "付録"
+
+#: ../../appendix/appendix.rst:6
+msgid "GPU virtualization and fractional GPU allocation"
+msgstr "GPU仮想化および分数GPU割り当て"
+
+#: ../../appendix/appendix.rst:8
+msgid ""
+"Backend.AI supports GPU virtualization technology which allows single "
+"physical GPU can be divided and shared by multiple users simultaneously. "
+"Therefore, if you want to execute a task that does not require much GPU "
+"computation capability, you can create a compute session by allocating a "
+"portion of the GPU. The amount of GPU resources that 1 fGPU actually "
+"allocates may vary from system to system depending on administrator "
+"settings. For example, if the administrator has set one physical GPU to be "
+"divided into five pieces, 5 fGPU means 1 physical GPU, or 1 fGPU means 0.2 "
+"physical GPU. If you set 1 fGPU when creating a compute session, the session"
+" can utilize the streaming multiprocessor (SM) and GPU memory equivalent to "
+"0.2 physical GPU."
+msgstr ""
+"Backend.AIはGPU仮想化技術をサポートしており、単一の物理GPUを複数のユーザーで同時に分割して共有することができます。したがって、多くのGPU計算能力を必要としないタスクを実行したい場合、GPUの一部を割り当ててコンピュートセッションを作成できます。1"
+" "
+"fGPUが実際にどれだけのGPUリソースを割り当てるかは、管理者の設定によってシステムごとに異なる場合があります。たとえば、管理者が1つの物理GPUを5つに分割するように設定している場合、5"
+" fGPUは1つの物理GPUを、または1 fGPUは0.2物理GPUを意味します。コンピュートセッションを作成する際に1 "
+"fGPUを設定すると、そのセッションは0.2の物理GPUに相当するストリーミングマルチプロセッサ（SM）とGPUメモリを利用できます。"
+
+#: ../../appendix/appendix.rst:19
+msgid ""
+"In this section, we will create a compute session by allocating a portion of"
+" the GPU and then check whether the GPU recognized inside the compute "
+"container really corresponds to the partial physics GPU."
+msgstr ""
+"このセクションでは、GPUの一部を割り当てて計算セッションを作成し、その計算コンテナ内で認識されたGPUが本当に部分的な物理GPUに対応しているかどうかを確認します。"
+
+#: ../../appendix/appendix.rst:23
+msgid ""
+"First, let's check the type of physical GPU installed in the host node and "
+"the amount of memory. The GPU node used in this guide is equipped with a GPU"
+" with 8 GB of memory as in the following figure. And through the "
+"administrator settings, 1 fGPU is set to an amount equivalent to 0.5 "
+"physical GPU (or 1 physical GPU is 2 fGPU)."
+msgstr ""
+"まず、ホストノードにインストールされている物理GPUのタイプとメモリの量を確認しましょう。このガイドで使用しているGPUノードは、以下の図のように8 "
+"GBのメモリを持つGPUを搭載しています。そして、管理者設定を通じて、1 "
+"fGPUは0.5物理GPUに相当する量に設定されています（または1物理GPUは2 fGPUです）。"
+
+#: ../../appendix/appendix.rst:33
+msgid ""
+"Now let's go to the Sessions page and create a compute session by allocating"
+" 0.5 fGPU as follows:"
+msgstr "次に、セッションページに移動して、次のように0.5 fGPUを割り当てて計算セッションを作成します。"
+
+#: ../../appendix/appendix.rst:40
+msgid ""
+"In the Configuration panel of the session list, you can see that 0.5 fGPU is"
+" allocated."
+msgstr "セッションリストの設定パネルで、0.5 fGPUが割り当てられていることが確認できます。"
+
+#: ../../appendix/appendix.rst:45
+msgid ""
+"Now, let's connect directly to the container and check if the allocated GPU "
+"memory is really equivalent to 0.5 units (~2 GB). Let's bring up a web "
+"terminal. When the terminal comes up, run the ``nvidia-smi`` command. As you"
+" can see in the following figure, you can see that about 2 GB of GPU memory "
+"is allocated. This shows that the physical GPU is actually divided into "
+"quarters and allocated inside the container for this compute session, which "
+"is not possible by a way like PCI passthrough."
+msgstr ""
+"それでは、コンテナに直接接続して、割り当てられたGPUメモリが実際に0.5ユニット（約2 "
+"GB）であるかどうかを確認しましょう。ウェブターミナルを立ち上げます。ターミナルが立ち上がったら、``nvidia-smi`` "
+"コマンドを実行します。以下の図のように、約2 "
+"GBのGPUメモリが割り当てられていることがわかります。これは、物理GPUが実際に4分割され、この計算セッションのためにコンテナ内に割り当てられていることを示しており、PCIパススルーのような方法では実現できません。"
+
+#: ../../appendix/appendix.rst:56
+msgid "Let's open up a Jupyter Notebook and run a simple ML training code."
+msgstr "Jupyter Notebookを開いて、シンプルなMLトレーニングコードを実行しましょう。"
+
+#: ../../appendix/appendix.rst:60
+#, python-format
+msgid ""
+"While training is in progress, connect to the shell of the GPU host node and"
+" execute the ``nvidia-smi`` command. You can see that there is one GPU "
+"attached to the process and this process is occupying about 25% of the "
+"resources of the physical GPU. (GPU occupancy can vary greatly depending on "
+"training code and GPU model.)"
+msgstr ""
+"学習が進行中の間に、GPUホストノードのシェルに接続し、``nvidia-smi`` "
+"コマンドを実行します。プロセスに1つのGPUが接続されており、このプロセスが物理GPUのリソースの約25％を占有していることがわかります。（GPUの占有率は、トレーニングコードやGPUモデルによって大きく異なる場合があります。）"
+
+#: ../../appendix/appendix.rst:70
+msgid ""
+"Alternatively, you can run the ``nvidia-smi`` command from the web terminal "
+"to query the GPU usage history inside the container."
+msgstr "あるいは、ウェブターミナルから ``nvidia-smi`` コマンドを実行して、コンテナ内のGPU使用履歴を確認することができます。"
+
+#: ../../appendix/appendix.rst:74
+msgid "Automated job scheduling"
+msgstr "自動ジョブスケジューリング"
+
+#: ../../appendix/appendix.rst:76
+msgid ""
+"Backend.AI server has a built-in self-developed task scheduler. It "
+"automatically checks the available resources of all worker nodes and "
+"delegates the request to create a compute session to the worker that meets "
+"the user's resource request. In addition, when resources are insufficient, "
+"the user's request to create a compute session is registered as a PENDING "
+"state in the job queue. Later, when the resources become available again, "
+"the pended request is resumed to create a compute session."
+msgstr ""
+"Backend.AIサーバーには、独自開発されたタスクスケジューラーが組み込まれています。これにより、すべてのワーカーノードの利用可能なリソースを自動的にチェックし、ユーザーのリソース要求を満たすワーカーに対してコンピュートセッションの作成を委任します。さらに、リソースが不足している場合、ユーザーのコンピュートセッションの作成要求は、ジョブキューのPENDING状態として登録されます。その後、リソースが再び利用可能になると、保留された要求が再開されてコンピュートセッションの作成が行われます。"
+
+#: ../../appendix/appendix.rst:84
+msgid ""
+"You can check the operation of the job scheduler in a simple way from the "
+"user Web-UI. When the GPU host can allocate up to 2 fGPUs, let's create 3 "
+"compute sessions at the same time requesting allocation of 1 fGPU, "
+"respectively. In the Custom allocation section of the session launch dialog,"
+" there are GPU and Sessions sliders. If you specify a value greater than 1 "
+"in Sessions and click the LAUNCH button, the number of sessions will be "
+"requested at the same time. Let's set the GPU and Sessions to 1 and 3, "
+"respectively. This is the situation that 3 sessions requesting a total of 3 "
+"fGPUs are created when only 2 fGPUs exist."
+msgstr ""
+"ジョブスケジューラの動作は、ユーザーWeb-"
+"UIから簡単に確認することができます。GPUホストが最大2つのfGPUを割り当てることができる場合、それぞれ1つのfGPUの割り当てを要求する3つのコンピュートセッションを同時に作成してみましょう。セッション起動ダイアログのカスタム割り当てセクションには、GPUとセッションのスライダーがあります。セッションに1より大きい値を指定してLAUNCHボタンをクリックすると、セッションの数が同時に要求されます。GPUとセッションをそれぞれ1と3に設定してみましょう。これは、合計3つのfGPUを要求する3つのセッションが、2つのfGPUしか存在しないときに作成される状況です。"
+
+#: ../../appendix/appendix.rst:98
+msgid ""
+"Wait for a while and you will see three compute sessions being listed. If "
+"you look closely at the Status panel, you can see that two of the three "
+"compute sessions are in RUNNING state, but the other compute session remains"
+" in PENDING state. This PENDING session is only registered in the job queue "
+"and has not actually been allocated a container due to insufficient GPU "
+"resources."
+msgstr ""
+"しばらく待つと、3つのコンピュートセッションが一覧表示されるのが見えます。ステータスパネルをよく見ると、3つのコンピュートセッションのうち2つはRUNNING状態ですが、もう1つのコンピュートセッションはPENDING状態のままであることがわかります。このPENDINGセッションはジョブキューに登録されているだけで、不十分なGPUリソースのために実際にはコンテナが割り当てられていません。"
+
+#: ../../appendix/appendix.rst:109
+msgid ""
+"Now let's destroy one of the two sessions in RUNNING state. Then you can see"
+" that the compute session in PENDING state is allocated resources by the job"
+" scheduler and converted to RUNNING state soon. In this way, the job "
+"scheduler utilizes the job queue to hold the user's compute session requests"
+" and automatically process the requests when resources become available."
+msgstr ""
+"それでは、RUNNING状態にある2つのセッションのうち1つを削除しましょう。すると、PENDING状態にあるコンピュートセッションがジョブスケジューラによってリソースが割り当てられ、すぐにRUNNING状態に変わることが確認できます。このようにして、ジョブスケジューラはユーザーのコンピュートセッションリクエストを保持するためにジョブキューを利用し、リソースが利用可能になると自動的にリクエストを処理します。"
+
+#: ../../appendix/appendix.rst:121
+msgid "Multi-version machine learning container support"
+msgstr "マルチバージョン機械学習コンテナサポート"
+
+#: ../../appendix/appendix.rst:123
+msgid ""
+"Backend.AI provides variaous pre-built ML and HPC kernel images. Therefore, "
+"users can immediately utilize major libraries and packages without having to"
+" install packages by themselves. Here, we'll walk through an example that "
+"takes advantage of multiple versions of the multiple ML library immediately."
+msgstr ""
+"Backend.AIは、さまざまなプリビルドのMLおよびHPCカーネルイメージを提供しています。したがって、ユーザーは主要なライブラリやパッケージを自分でインストールすることなく、すぐに利用することができます。ここでは、複数バージョンの複数のMLライブラリを即座に活用する例を説明します。"
+
+#: ../../appendix/appendix.rst:128
+msgid ""
+"Go to the Sessions page and open the session launch dialog. There may be "
+"various kernel images depending on the installation settings."
+msgstr "セッションページに移動し、セッション起動ダイアログを開きます。インストール設定によっては、さまざまなカーネルイメージがあるかもしれません。"
+
+#: ../../appendix/appendix.rst:135
+msgid ""
+"Here, let's select the TensorFlow 2.3 environment and created a session."
+msgstr "ここでは、TensorFlow 2.3 環境を選択し、セッションを作成します。"
+
+#: ../../appendix/appendix.rst:141
+msgid ""
+"Open the web terminal of the created session and run the following Python "
+"command. You can see that TensorFlow 2.3 version is installed."
+msgstr ""
+"作成されたセッションのウェブ端末を開き、次のPythonコマンドを実行します。TensorFlow 2.3 "
+"バージョンがインストールされていることが確認できます。"
+
+#: ../../appendix/appendix.rst:147
+msgid ""
+"This time, let's select the TensorFlow 1.15 environment to create a compute "
+"session. If resources are insufficient, delete the previous session."
+msgstr ""
+"今回は、TensorFlow 1.15 環境を選択して計算セッションを作成します。リソースが不足している場合は、以前のセッションを削除してください。"
+
+#: ../../appendix/appendix.rst:154
+msgid ""
+"Open the web terminal of the created session and run the same Python command"
+" as before. You can see that TensorFlow 1.15(.4) version is installed."
+msgstr ""
+"作成されたセッションのウェブターミナルを開き、以前と同じPythonコマンドを実行します。TensorFlow "
+"1.15(.4)バージョンがインストールされていることが確認できます。"
+
+#: ../../appendix/appendix.rst:160
+msgid "Finally, create a compute session using PyTorch version 1.7."
+msgstr "最後に、PyTorchバージョン1.7を使用してコンピュートセッションを作成します。"
+
+#: ../../appendix/appendix.rst:166
+msgid ""
+"Open the web terminal of the created session and run the following Python "
+"command. You can see that PyTorch 1.8 version is installed."
+msgstr ""
+"作成されたセッションのウェブ端末を開き、次のPythonコマンドを実行します。PyTorch "
+"1.8バージョンがインストールされていることが確認できます。"
+
+#: ../../appendix/appendix.rst:172
+msgid ""
+"Like this, you can utilize various versions of major libraries such as "
+"TensorFlow and PyTorch through Backend.AI without unnecessary effort to "
+"install them."
+msgstr ""
+"このように、TensorFlowやPyTorchなどの主要なライブラリのさまざまなバージョンを、Backend.AIを通じてインストールの手間をかけずに利用することができます。"
+
+#: ../../appendix/appendix.rst:177
+msgid "Convert a compute session to a new private Docker image"
+msgstr "コンピュートセッションを新しいプライベートDockerイメージに変換する"
+
+#: ../../appendix/appendix.rst:179
+msgid ""
+"If you want to convert a running compute session (container) to a new Docker"
+" image that you can use later to create a new compute session, you need to "
+"prepare your compute session environment and ask administrators to convert "
+"it."
+msgstr ""
+"実行中のコンピュートセッション（コンテナ）を、新しいコンピュートセッションを作成するために後で利用できる新しいDockerイメージに変換したい場合は、コンピュートセッション環境を準備し、管理者に変換を依頼する必要があります。"
+
+#: ../../appendix/appendix.rst:183
+msgid ""
+"First, prepare your compute session by installing the packages that you need"
+" and adjust the configurations as you like."
+msgstr "まず、必要なパッケージをインストールし、設定を好みに合わせて調整して、コンピュートセッションを準備します。"
+
+#: ../../appendix/appendix.rst:188
+msgid ""
+"If you want to install OS packages, for example via ``apt`` command, it "
+"usually requires the ``sudo`` privilege. Depending on the security policy of"
+" the institute, you may not be allowed to use ``sudo`` inside a container."
+msgstr ""
+"OSパッケージをインストールしたい場合、たとえば``apt``コマンドを介して、通常は``sudo``特権が必要です。機関のセキュリティポリシーによっては、コンテナ内で``sudo``を使用することが許可されていない場合があります。"
+
+#: ../../appendix/appendix.rst:193
+msgid ""
+"It is recommended to use :ref:`automount folder<using-automount-folder>` to "
+"install :ref:`Python packages via pip<install_pip_pkg>`. However, if you "
+"want to add Python packages in a new image, you should install them with "
+"``sudo pip install <package-name>`` to save them not in your home but in the"
+" system directory. The contents in your home directory, usually "
+"``/home/work``, are not saved in converting a compute session to a new "
+"Docker image."
+msgstr ""
+":ref:`pip を使用して Python パッケージをインストール<install_pip_pkg>`するには、:ref:`automount "
+"フォルダー<using-automount-folder>`を使用することをお勧めします。ただし、新しいイメージに Python "
+"パッケージを追加したい場合は、それらをホームディレクトリではなくシステムディレクトリに保存するために ``sudo pip install "
+"<package-name>`` を使用してインストールする必要があります。通常 ``/home/work`` "
+"にあるホームディレクトリの内容は、計算セッションを新しい Docker イメージに変換する際には保存されません。"
+
+#: ../../appendix/appendix.rst:201
+msgid ""
+"When your compute session is prepared, please ask an administrator to "
+"convert it to a new Docker image. You need to inform them the session name "
+"or ID and your email address in the platform."
+msgstr ""
+"コンピュートセッションが準備できたら、新しいDockerイメージに変換するよう管理者に依頼してください。プラットフォームでセッション名またはID、そしてあなたのメールアドレスを知らせる必要があります。"
+
+#: ../../appendix/appendix.rst:204
+msgid ""
+"The administrator will convert your compute session to a new Docker image "
+"and send you the full image name and tag."
+msgstr "管理者はあなたのコンピュートセッションを新しいDockerイメージに変換し、完全なイメージ名とタグを送信します。"
+
+#: ../../appendix/appendix.rst:206
+msgid ""
+"You can manually enter the image name in the session launch dialog. The "
+"image is private and not be revealed to other users"
+msgstr "セッション起動ダイアログでイメージ名を手動で入力できます。このイメージはプライベートであり、他のユーザーには公開されません。"
+
+#: ../../appendix/appendix.rst:213
+msgid "A new compute session will be created using the new Docker image."
+msgstr "新しい Docker イメージを使用して、新しいコンピュートセッションが作成されます。"
+
+#: ../../appendix/appendix.rst:217
+msgid "Backend.AI Server Installation Guide"
+msgstr "Backend.AI サーバーインストールガイド"
+
+#: ../../appendix/appendix.rst:219
+msgid ""
+"For Backend.AI Server daemons/services, following hardware specification "
+"should be met. For optimal performance, just double the amount of each "
+"resources."
+msgstr ""
+"Backend.AI "
+"サーバーのデーモン/サービスには、以下のハードウェア仕様を満たす必要があります。最適なパフォーマンスのために、各リソースの量を倍増させてください。"
+
+#: ../../appendix/appendix.rst:222
+msgid "Manager: 2 cores, 4 GiB memory"
+msgstr "マネージャー: 2コア、4 GiBメモリ"
+
+#: ../../appendix/appendix.rst:223
+msgid ""
+"Agent: 4 cores, 32 GiB memory, NVIDIA GPU (for GPU workload), > 512 GiB SSD"
+msgstr "エージェント: 4コア、32GiBメモリ、NVIDIA GPU（GPUワークロード用）、> 512GiB SSD"
+
+#: ../../appendix/appendix.rst:224
+msgid "Webserver: 2 cores, 4 GiB memory"
+msgstr "Webサーバー：2コア、4 GiBメモリ"
+
+#: ../../appendix/appendix.rst:225
+msgid "WSProxy: 2 cores, 4 GiB memory"
+msgstr "WSProxy: 2コア、4GiBメモリ"
+
+#: ../../appendix/appendix.rst:226
+msgid "PostgreSQL DB: 2 cores, 4 GiB memory"
+msgstr "PostgreSQL DB: 2コア、4 GiBメモリ"
+
+#: ../../appendix/appendix.rst:227
+msgid "Redis: 1 core, 2 GiB memory"
+msgstr "Redis: 1コア、2GiBメモリ"
+
+#: ../../appendix/appendix.rst:228
+msgid "Etcd: 1 core, 2 GiB memory"
+msgstr "Etcd: 1 コア, 2 GiB メモリ"
+
+#: ../../appendix/appendix.rst:230
+msgid ""
+"The essential host dependent packages that must be pre-installed before "
+"installing each service are:"
+msgstr "各サービスをインストールする前に事前にインストールされている必要があるホスト依存の必須パッケージは次の通りです。"
+
+#: ../../appendix/appendix.rst:233
+msgid ""
+"Web-UI: Operating system that can run the latest browsers (Windows, Mac OS, "
+"Ubuntu, etc.)"
+msgstr "Web-UI: 最新のブラウザを実行できるオペレーティングシステム（Windows、Mac OS、Ubuntu など）"
+
+#: ../../appendix/appendix.rst:235
+msgid "Manager: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)"
+msgstr "マネージャー: Python (>=3.8), pyenv/pyenv-virtualenv (>=1.2)"
+
+#: ../../appendix/appendix.rst:236
+msgid ""
+"Agent: docker (≥19.03), CUDA/CUDA Toolkit (≥8, 11 recommend), nvidia-docker "
+"v2, Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)"
+msgstr ""
+"エージェント: docker (>=19.03), CUDA/CUDA Toolkit (>=8、11 推奨), nvidia-docker v2, "
+"Python (>=3.8), pyenv/pyenv-virtualenv (>=1.2)"
+
+#: ../../appendix/appendix.rst:238
+msgid "Webserver: Python (≥3.8), pyenv/pyenv-virtualenv (≥1.2)"
+msgstr "Webserver: Python (>=3.8)、pyenv/pyenv-virtualenv (>=1.2)"
+
+#: ../../appendix/appendix.rst:239
+msgid "WSProxy: docker (≥19.03), docker-compose (≥1.24)"
+msgstr "WSProxy: docker (>=19.03)、docker-compose (>=1.24)"
+
+#: ../../appendix/appendix.rst:240
+msgid "PostgreSQL DB: docker (≥19.03), docker-compose (≥1.24)"
+msgstr "PostgreSQL DB: docker (>=19.03), docker-compose (>=1.24)"
+
+#: ../../appendix/appendix.rst:241
+msgid "Redis: docker (≥19.03), docker-compose (≥1.24)"
+msgstr "Redis: docker (>=19.03)、docker-compose (>=1.24)"
+
+#: ../../appendix/appendix.rst:242
+msgid "Etcd: docker (≥19.03), docker-compose (≥1.24)"
+msgstr "Etcd: docker (>=19.03), docker-compose (>=1.24)"
+
+#: ../../appendix/appendix.rst:244
+msgid ""
+"For Enterprise version, Backend.AI server daemons are installed by Lablup "
+"support team and following materials/services are provided after initial "
+"installation:"
+msgstr ""
+"エンタープライズバージョンでは、Backend.AI サーバーデーモンは Lablup "
+"サポートチームによってインストールされ、初期インストール後に以下の資料/サービスが提供されます。"
+
+#: ../../appendix/appendix.rst:246
+msgid "DVD 1 (includes Backend.AI packages)"
+msgstr "DVD 1（Backend.AIパッケージを含む）"
+
+#: ../../appendix/appendix.rst:247
+msgid "User GUI Guide manual"
+msgstr "ユーザーGUIガイドマニュアル"
+
+#: ../../appendix/appendix.rst:248
+msgid "Admin GUI Guide manual"
+msgstr "管理者GUIガイドマニュアル"
+
+#: ../../appendix/appendix.rst:249
+msgid "Installation report"
+msgstr "インストールレポート"
+
+#: ../../appendix/appendix.rst:250
+msgid "First-time user/admin on-site tutorial (3-5 hours)"
+msgstr "初めてのユーザー/管理者向け現地チュートリアル（3〜5時間）"
+
+#: ../../appendix/appendix.rst:252
+msgid ""
+"Product maintenance and support information: the commercial contract "
+"includes a monthly/annual subscription fee for the Enterprise version by "
+"default. Initial user/administrator training (1-2 times) and wired/wireless "
+"customer support services are provided for about 2 weeks after initial "
+"installation, minor release updater support and customer support services "
+"through online channels are provided for 3-6 months. Maintenance and support"
+" services provided afterwards may have different details depending on the "
+"terms of the contract."
+msgstr ""
+"製品の保守およびサポート情報: 商用契約には、デフォルトでEnterpriseバージョンの月額/年額サブスクリプション料金が含まれています。 "
+"初期ユーザー/管理者トレーニング（1～2回）および有線/無線の顧客サポートサービスは、初回インストール後約2週間提供され、マイナーリリースのアップデートサポートとオンラインチャネルを通じた顧客サポートサービスは3～6か月提供されます。"
+" その後に提供される保守およびサポートサービスは、契約の条件によって詳細が異なる場合があります。"
+
+#: ../../appendix/appendix.rst:264
+msgid "Integration examples"
+msgstr "統合例"
+
+#: ../../appendix/appendix.rst:266
+msgid ""
+"In this section, we would like to introduce several common examples of "
+"applications, toolkits, and machine learning tools that can be utilized on "
+"the Backend.AI platform. Here, we will provide explanations of the basic "
+"usage of each tool and how to set them up in the Backend.AI environment, "
+"along with simple examples. We hope this will help you choose and utilize "
+"the tools you need for your projects."
+msgstr ""
+"このセクションでは、Backend.AIプラットフォームで利用できる一般的なアプリケーション、ツールキット、機械学習ツールのいくつかの例を紹介します。ここでは、各ツールの基本的な使用法やBackend.AI環境での設定方法を説明し、簡単な例を挙げます。これがプロジェクトに必要なツールを選択し、活用する際の助けになればと思います。"
+
+#: ../../appendix/appendix.rst:272
+msgid ""
+"Please note that the content covered in this guide is based on specific "
+"versions of the programs, so the usage may vary in future updates. "
+"Therefore, please use this document for reference and also check the latest "
+"official documentation for any changes. Now, let's take a look at the "
+"powerful tools available for use on Backend.AI one by one. We hope this "
+"section will serve as a useful guide for your research and development."
+msgstr ""
+"このガイドで扱われている内容は特定のバージョンのプログラムに基づいているため、今後のアップデートで使用方法が異なる場合があります。したがって、このドキュメントを参考にするとともに、最新の公式ドキュメントでの変更点も確認してください。では、Backend.AIで使用可能な強力なツールを一つずつ見ていきましょう。このセクションがあなたの研究開発に役立つガイドとなることを願っています。"
+
+#: ../../appendix/appendix.rst:279
+msgid "Using MLFlow"
+msgstr "MLFlowの使用方法"
+
+#: ../../appendix/appendix.rst:281
+msgid ""
+"There are many executable images in Backend.AI supports MLFlow and MLFlow UI"
+" as built-in app. But in order to execute it, you may need extra procedures."
+" By following instructions below, you will be able to track parameters and "
+"result at Backend.AI as if you are using it on your local environment."
+msgstr ""
+"Backend.AI には多くの実行可能なイメージがあり、MLFlow と MLFlow UI "
+"をビルトインアプリとしてサポートしています。しかし、それを実行するためには追加の手順が必要な場合があります。以下の指示に従うことで、ローカル環境で使用しているかのように、Backend.AI"
+" でパラメータと結果を追跡できるようになります。"
+
+#: ../../appendix/appendix.rst:287
+msgid ""
+"In this section, we will regard you already created session and about to "
+"execute an app in the session. If you don't have any experience in creating "
+"session and executing app inside, please have a look through :ref:`How to "
+"create a session<create_session>` section."
+msgstr ""
+"このセクションでは、セッションを既に作成し、そのセッション内でアプリを実行しようとしているとみなします。もし、セッションの作成やその内部でアプリを実行する経験がない場合は、:ref:`セッションの作成方法<create_session>`"
+" セクションを参照してください。"
+
+#: ../../appendix/appendix.rst:291
+msgid ""
+"First, launch terminal app \"console\". and execute the command below, It "
+"will start mlflow tracking UI server."
+msgstr ""
+"まず、ターミナルアプリ「console」を起動し、以下のコマンドを実行してください。これにより、mlflow トラッキング UI "
+"サーバーが開始されます。"
+
+#: ../../appendix/appendix.rst:297
+msgid "Then, Click \"MLFlow UI\" app in app launcher dialog."
+msgstr "その後、アプリランチャーダイアログで「MLFlow UI」アプリをクリックします。"
+
+#: ../../appendix/appendix.rst:303
+msgid "After few moment, you will see a new page for MLFlow UI."
+msgstr "しばらくすると、MLFlow UIの新しいページが表示されます。"
+
+#: ../../appendix/appendix.rst:308
+msgid ""
+"By using MLFlow, you can track experiments, such as metrics and parameters "
+"every time you run. Let's start tracking experiments from simple example."
+msgstr "MLFlowを使用することで、実行するたびにメトリクスやパラメータなどの実験を追跡できます。シンプルな例から実験の追跡を始めましょう。"
+
+#: ../../appendix/appendix.rst:316
+msgid ""
+"After executing python code, you may see the experiments result in MLFlow."
+msgstr "Pythonコードを実行した後、MLFlowで実験結果を見ることができます。"
+
+#: ../../appendix/appendix.rst:321
+msgid ""
+"You can also set hyperparameter by giving arguments with code execution."
+msgstr "コード実行時に引数を指定することでハイパーパラメータを設定することもできます。"
+
+#: ../../appendix/appendix.rst:327
+msgid "After a few training, you can compare trained models with results."
+msgstr "いくつかのトレーニングを行った後で、結果とともに訓練されたモデルを比較することができます。"

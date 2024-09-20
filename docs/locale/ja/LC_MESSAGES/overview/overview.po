@@ -1,0 +1,560 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../overview/overview.rst:3
+msgid "Overview"
+msgstr "概要"
+
+#: ../../overview/overview.rst:5
+msgid ""
+"Backend.AI is an open source cloud resource management platform, which makes"
+" it easy to utilize virtualized compute resource clusters in a cloud or on-"
+"premises environment. The container-based GPU virtualization technology of "
+"Backend.AI supports the efficient use of GPUs by flexibly dividing one "
+"physical GPU, so that multiple users can use it at the same time."
+msgstr ""
+"Backend.AIは、オープンソースのクラウドリソース管理プラットフォームであり、クラウドやオンプレミス環境で仮想化されたコンピュートリソースクラスターを簡単に利用できるようにします。Backend.AIのコンテナベースのGPU仮想化技術は、1つの物理GPUを柔軟に分割し、複数のユーザーが同時に使用できるようにすることで、GPUの効率的な利用をサポートします。"
+
+#: ../../overview/overview.rst:11
+msgid ""
+"Backend.AI offers a variety of performance-driven optimizations for machine "
+"learning and high-performance computing clusters, along with management and "
+"research features to support a diverse users, including researchers, "
+"administrators, and DevOps. The Enterprise Edition adds support for multi-"
+"domain management, a dedicated Control-Panel for superadmins, and the GPU "
+"virtualization plug-in."
+msgstr ""
+"Backend.AIは、研究者、管理者、DevOpsを含む多様なユーザーをサポートするために、機械学習および高性能コンピューティングクラスターのためのさまざまなパフォーマンス駆動の最適化と、管理および研究機能を提供します。Enterprise"
+" Editionでは、マルチドメイン管理のサポート、スーパ管理者専用のコントロールパネル、GPU仮想化プラグインが追加されます。"
+
+#: ../../overview/overview.rst:18
+msgid ""
+"A GUI client package is provided to easily take advantage of the features "
+"supported by the Backend.AI server. Backend.AI Web-UI is a GUI client in the"
+" form of a web service or stand-alone app. It provides a convenient "
+"graphical interface for accessing the Backend.AI server to utilize computing"
+" resources and manage its environment. Backend.AI provides pre-made images "
+"which enable immediate creation of compute sessions without any need of "
+"installing separate programs.  Most tasks can be done with mouse clicks and "
+"brief typing, which achieves more intuitive use."
+msgstr ""
+"GUIクライアントパッケージは、Backend.AIサーバーがサポートする機能を簡単に利用するために提供されています。Backend.AI Web-"
+"UIは、ウェブサービスまたはスタンドアローンアプリの形をしたGUIクライアントです。計算リソースを利用し、その環境を管理するために、Backend.AIサーバーにアクセスする便利なグラフィカルインターフェースを提供します。Backend.AIはあらかじめ作成されたイメージを提供し、別々のプログラムをインストールすることなく、即座にコンピュートセッションを作成できます。ほとんどのタスクはマウスクリックと簡単な入力で行うことができ、より直感的な使用を実現します。"
+
+#: ../../overview/overview.rst:29
+msgid "Key Concepts"
+msgstr "キーコンセプト"
+
+#: ../../overview/overview.rst:-1
+msgid "Diagram explaining key concepts"
+msgstr "キーコンセプトを説明する図"
+
+#: ../../overview/overview.rst:34
+msgid ""
+"User: The user is a person who connects to Backend.AI and performs work. "
+"Users are divided into normal users, domain admins, and superadmins "
+"according to their privileges. While ordinary users can only perform tasks "
+"related to their computing sessions, domain admins have the authority to "
+"perform tasks within a domain, and superadmins perform almost all tasks "
+"throughout the system. A user belongs to one domain and can belong to "
+"multiple projects within a domain."
+msgstr ""
+"ユーザー: "
+"ユーザーはBackend.AIに接続して作業を行う人物です。ユーザーは権限に応じて、通常のユーザー、ドメイン管理者、およびスーパー管理者に分かれます。通常のユーザーはコンピューティングセッションに関連するタスクのみを実行できますが、ドメイン管理者はドメイン内でタスクを実行する権限があります。スーパー管理者はシステム全体にわたってほぼすべてのタスクを実行します。ユーザーは1つのドメインに所属し、ドメイン内の複数のプロジェクトに所属することができます。"
+
+#: ../../overview/overview.rst:41
+msgid ""
+"Compute session, container: An isolated virtual environment in which your "
+"code runs. It looks like a real Linux server with full user rights, and you "
+"can't see other user's session even if it's running on the same server as "
+"your session. Backend.AI implements this virtual environment through a "
+"technology called containers. You can only create compute sessions within "
+"the domain and projects to which you belong."
+msgstr ""
+"計算セッション、コンテナ: "
+"あなたのコードが実行される、隔離された仮想環境です。これは、完全なユーザー権限を持つ実際のLinuxサーバーのように見え、たとえあなたのセッションと同じサーバー上で実行されていても、他のユーザーのセッションを見ることはできません。Backend.AIはこの仮想環境をコンテナと呼ばれる技術を通じて実装しています。あなたが作成できる計算セッションは、所属するドメインおよびプロジェクト内に限られます。"
+
+#: ../../overview/overview.rst:47
+msgid ""
+"Domain: This is the top layer for authority and resource control supported "
+"by Backend.AI. For companies or organizations, you can view domains as an "
+"affiliate and set up per-domain (or per-affiliate) permissions and resource "
+"policies. Users should belong to only one domain, and can create sessions or"
+" do some other jobs only in their own domain. A domain can have one domain "
+"admin or more, who can set policies within the domain or manage sessions. "
+"For example, if you set the total amount of resources available in a domain,"
+" the resources of all containers created by users in the domain cannot be "
+"greater than the amount set."
+msgstr ""
+"ドメイン: "
+"これはBackend.AIがサポートする権限とリソース管理の最上位レイヤーです。企業や組織において、ドメインを系列会社として見なし、各ドメイン（または系列会社）ごとに権限とリソースポリシーを設定することができます。ユーザーは一つのドメインにのみ所属するべきであり、自分のドメイン内でのみセッションを作成したり、他の作業を行ったりすることができます。ドメインには1人以上のドメイン管理者が存在し、ドメイン内でポリシーを設定したり、セッションを管理したりすることができます。たとえば、ドメインで利用可能なリソースの総量を設定した場合、ドメイン内のユーザーによって作成されるすべてのコンテナのリソースは設定された量を超えることはできません。"
+
+#: ../../overview/overview.rst:56
+msgid ""
+"Projects: A hierarchy belonging to a domain. Multiple projects can exist in "
+"one domain. You can think of a project as a project working unit. A user can"
+" belong to multiple projects at the same time within a domain. Compute "
+"sessions must belong to one project, and users can only create sessions "
+"within their own projects. Domain admins can set policies or manage sessions"
+" for projects within the domain. For example, if you set the total amount of"
+" resources available within a project, the resources in all containers "
+"created by users in the project cannot be greater than the amount set."
+msgstr ""
+"プロジェクト: "
+"ドメインに属する階層構造。一つのドメインには複数のプロジェクトが存在できます。プロジェクトを作業単位として考えることができます。ユーザーは一つのドメイン内で複数のプロジェクトに同時に所属することができます。コンピュートセッションは一つのプロジェクトに属し、ユーザーは自分の所属するプロジェクト内でのみセッションを作成できます。ドメイン管理者はドメイン内のプロジェクトに対してポリシーを設定したり、セッションを管理したりすることができます。例えば、プロジェクト内で利用可能なリソースの総量を設定した場合、プロジェクト内のユーザーによって作成されたすべてのコンテナのリソースは、設定された量を超えることはできません。"
+
+#: ../../overview/overview.rst:64
+msgid ""
+"Image: Each container has a pre-installed language-specific runtime and "
+"various computational frameworks. The state of such snapshots before they "
+"are executed is called an image. You can choose to run an image provided by "
+"the cluster admin or create your own image with the software you want to use"
+" and ask the admin to register it."
+msgstr ""
+"イメージ: "
+"各コンテナには、言語専用のランタイムとさまざまな計算フレームワークが事前にインストールされています。それらのスナップショットが実行される前の状態をイメージと呼びます。クラスタ管理者が提供するイメージを実行するか、自分が使用したいソフトウェアを搭載したイメージを作成して、管理者に登録を依頼することができます。"
+
+#: ../../overview/overview.rst:69
+msgid ""
+"Virtual Folder (vfolder): A \"cloud\" folder that is always accessible and "
+"mountable in a container on a per-user basis, regardless of which node the "
+"container runs on. After creating your own virtual folder, you can upload "
+"your own program code, data, etc. in advance and mount the folder when you "
+"run the compute session to read from and write to it as if it is on your "
+"local disk."
+msgstr ""
+"バーチャルフォルダ（vfolder）：コンテナがどのノードで実行されているかに関わらず、常にアクセス可能でコンテナ内にマウント可能な「クラウド」フォルダ（ユーザごとに個別）。自分のバーチャルフォルダを作成した後、自分のプログラムコードやデータなどを事前にアップロードし、計算セッションを実行する際にフォルダをマウントして、あたかもローカルディスクであるかのように読み書きすることができます。"
+
+#: ../../overview/overview.rst:74
+msgid ""
+"Application service, service port: A feature that allows you to access "
+"various user applications (eg DIGITS, Jupyter Notebook, shell terminal, "
+"TensorBoard, etc.) running within the compute session. You do not need to "
+"know the container's address and port number directly, but you can use the "
+"provided CLI client or GUI Web-UI to directly access the desired daemon of "
+"the session."
+msgstr ""
+"アプリケーションサービス、サービスポート: コンピュートセッション内で実行されているさまざまなユーザーアプリケーション（例: "
+"DIGITS、Jupyter "
+"Notebook、シェルターミナル、TensorBoardなど）にアクセスする機能です。コンテナのアドレスやポート番号を直接知る必要はなく、提供されたCLIクライアントまたはGUI"
+" Web-UIを使用して、セッションの目的のデーモンに直接アクセスできます。"
+
+#: ../../overview/overview.rst:79
+msgid ""
+"Web-UI: A GUI client that is served as a web or stand-alone app. You can use"
+" the service after logging in by specifying the address of the Backend.AI "
+"server and entering the user account information."
+msgstr ""
+"Web-UI: "
+"Webまたはスタンドアロンアプリとして提供されるGUIクライアントです。Backend.AIサーバーのアドレスを指定し、ユーザーアカウント情報を入力してログインすることでサービスを利用できます。"
+
+#: ../../overview/overview.rst:82
+msgid ""
+"Local wsproxy: Proxy server built into the Web-UI app. Local wsproxy "
+"converts general HTTP requests between the server and Web-UI app to "
+"websocket and delivers the messages. If the Web-UI app loses its connection "
+"to wsproxy or the wsproxy server is dead, it will not be possible to access "
+"services such as Jupyter Notebook and Terminal."
+msgstr ""
+"ローカル wsproxy: Web-UI アプリに組み込まれたプロキシサーバー。ローカル wsproxy は、サーバーと Web-UI "
+"アプリ間の一般的な HTTP リクエストを WebSocket に変換し、メッセージを送信します。Web-UI アプリが wsproxy "
+"への接続を失うか、wsproxy サーバーが停止すると、Jupyter Notebook やターミナルなどのサービスにアクセスすることはできません。"
+
+#: ../../overview/overview.rst:87
+msgid ""
+"Web wsproxy: In the case of the Web-UI provided in a web, the built-in "
+"server cannot be used due to the nature of the browser. In this case, you "
+"can use services such as Jupyter Notebook, Terminal, etc. in the web "
+"environment by making the wsproxy server as a separate web server so that "
+"the Web-UI app can see the web wsproxy."
+msgstr ""
+"Web wsproxy: Web上で提供されるWeb-"
+"UIの場合、ブラウザの特性上、組み込みサーバーを使用することはできません。この場合、wsproxyサーバーを別のWebサーバーとして設定し、Web-"
+"UIアプリがWeb wsproxyを参照できるようにすることで、Jupyter NotebookやターミナルなどのサービスをWeb環境で使用できます。"
+
+#: ../../overview/overview.rst:95
+msgid "Backend.AI feature details"
+msgstr "Backend.AI 機能の詳細"
+
+#: ../../overview/overview.rst:98
+msgid "Category"
+msgstr "カテゴリー"
+
+#: ../../overview/overview.rst:98
+msgid "Feature"
+msgstr "機能"
+
+#: ../../overview/overview.rst:100
+msgid "NVIDIA support"
+msgstr "NVIDIAサポート"
+
+#: ../../overview/overview.rst:100
+msgid "Container-level multi GPU"
+msgstr "コンテナー・レベルのマルチGPU"
+
+#: ../../overview/overview.rst:102
+msgid "(Enterprise) Fractional GPU sharing & scaling"
+msgstr "(エンタープライズ) フラクショナルGPUの共有とスケーリング"
+
+#: ../../overview/overview.rst:104
+msgid "Multiple CUDA library version support (8.0 to 12.2)"
+msgstr "複数のCUDAライブラリバージョンのサポート（8.0から12.2）"
+
+#: ../../overview/overview.rst:106
+msgid "GPUDirect storage support"
+msgstr "GPUDirectストレージサポート"
+
+#: ../../overview/overview.rst:108
+msgid "NGC (NVIDIA GPU Cloud) image integration"
+msgstr "NGC (NVIDIA GPU Cloud) イメージ統合"
+
+#: ../../overview/overview.rst:110
+msgid "GPU-GPU Network autoconfiguration"
+msgstr "GPU-GPUネットワーク自動構成"
+
+#: ../../overview/overview.rst:112
+msgid "NPU Support"
+msgstr "NPUサポート"
+
+#: ../../overview/overview.rst:112
+msgid "Graphcore IPU"
+msgstr "Graphcore IPU"
+
+#: ../../overview/overview.rst:113
+msgid "Rebellions ATOM"
+msgstr "反乱 ATOM"
+
+#: ../../overview/overview.rst:114
+msgid "FuriosaAI Warboy"
+msgstr "FuriosaAI Warboy"
+
+#: ../../overview/overview.rst:115
+msgid "Hyperaccel LPU"
+msgstr "ハイパーアクセル LPU"
+
+#: ../../overview/overview.rst:117
+msgid "Scaling"
+msgstr "スケーリング"
+
+#: ../../overview/overview.rst:117
+msgid "On-premise installation on both bare-metal / VM"
+msgstr "ベアメタル / VM のオンプレミスインストール"
+
+#: ../../overview/overview.rst:119
+msgid "Hybrid cloud (on-premise + cloud)"
+msgstr "ハイブリッドクラウド（オンプレミス + クラウド）"
+
+#: ../../overview/overview.rst:121
+msgid "Polycloud (multi-cloud federation)"
+msgstr "ポリクラウド（マルチクラウドフェデレーション）"
+
+#: ../../overview/overview.rst:123
+msgid "Scheduling"
+msgstr "スケジューリング"
+
+#: ../../overview/overview.rst:123
+msgid "Unified scheduling & monitoring with GUI admin"
+msgstr "GUI管理を用いた統合スケジューリングとモニタリング"
+
+#: ../../overview/overview.rst:125
+msgid "Per-user (keypair) resource policy"
+msgstr "ユーザーごと（キーペア）のリソースポリシー"
+
+#: ../../overview/overview.rst:127
+msgid "(Enterprise) Per-project resource policy"
+msgstr "(エンタープライズ) プロジェクトごとのリソースポリシー"
+
+#: ../../overview/overview.rst:129
+msgid "Availability-slot based scheduling"
+msgstr "利用可能スロットベースのスケジューリング"
+
+#: ../../overview/overview.rst:131
+msgid "(Enterprise) Utilization based resource management"
+msgstr "(エンタープライズ) 利用率に基づくリソース管理"
+
+#: ../../overview/overview.rst:133
+msgid "Cluster partitioning"
+msgstr "クラスターのパーティショニング"
+
+#: ../../overview/overview.rst:133
+msgid "Resource groups by H/W spec and usage"
+msgstr "H/W仕様と使用状況によるリソースグループ"
+
+#: ../../overview/overview.rst:135
+msgid "(Enterprise) Access control of users to resource group"
+msgstr "(エンタープライズ) リソースグループへのユーザーアクセス制御"
+
+#: ../../overview/overview.rst:138
+msgid "(Enterprise) Access control of project to resource group"
+msgstr "(エンタープライズ) リソースグループへのプロジェクトのアクセス制御"
+
+#: ../../overview/overview.rst:141
+msgid "Security"
+msgstr "セキュリティ"
+
+#: ../../overview/overview.rst:141
+msgid "Sandboxing via hypervisor/container"
+msgstr "ハイパーバイザー/コンテナによるサンドボックス化"
+
+#: ../../overview/overview.rst:143
+msgid "Access logs for each user"
+msgstr "各ユーザーのアクセスログ"
+
+#: ../../overview/overview.rst:145
+msgid "Per session (container) logs"
+msgstr "セッション（コンテナ）ごとのログ"
+
+#: ../../overview/overview.rst:147
+msgid "UI / UX"
+msgstr "UI / UX"
+
+#: ../../overview/overview.rst:147
+msgid "GUI web interface"
+msgstr "GUIウェブインターフェース"
+
+#: ../../overview/overview.rst:149
+msgid "(Enterprise) Admin GUI web interface"
+msgstr "(エンタープライズ) 管理者GUIウェブインターフェース"
+
+#: ../../overview/overview.rst:151
+msgid "(Enterprise) MLOps pipeline web interface"
+msgstr "(エンタープライズ) MLOps パイプライン Web インターフェース"
+
+#: ../../overview/overview.rst:153
+msgid "Data management"
+msgstr "データ管理"
+
+#: ../../overview/overview.rst:153
+msgid ""
+"EFS, NFS, SMB and distributed file system (CephFS, GlusterFS, HDFS, etc)"
+msgstr "EFS、NFS、SMB、および分散ファイルシステム（CephFS、GlusterFS、HDFS など）"
+
+#: ../../overview/overview.rst:156
+msgid "(Enterprise) Storage solution integration:"
+msgstr "(エンタープライズ) ストレージソリューションの統合:"
+
+#: ../../overview/overview.rst:158
+msgid "PureStorage FlashBlade"
+msgstr "PureStorage FlashBlade"
+
+#: ../../overview/overview.rst:159
+msgid "NetApp ONTAP & NetApp XCP"
+msgstr "NetApp ONTAP & NetApp XCP"
+
+#: ../../overview/overview.rst:160
+msgid "Weka.io"
+msgstr "Weka.io"
+
+#: ../../overview/overview.rst:161
+msgid "Dell EMC"
+msgstr "デルEMC"
+
+#: ../../overview/overview.rst:162
+msgid "IBM SpectrumScale (GPFS)"
+msgstr "IBM SpectrumScale (GPFS)"
+
+#: ../../overview/overview.rst:163
+msgid "Vast Data"
+msgstr "広大なデータ"
+
+#: ../../overview/overview.rst:165
+msgid "Fine-grained Access control to data by user/project"
+msgstr "ユーザー/プロジェクトによるデータへの細かいアクセス制御"
+
+#: ../../overview/overview.rst:167
+msgid "Per user/project based storage quota managment*"
+msgstr "ユーザー/プロジェクト単位のストレージクォータ管理*"
+
+#: ../../overview/overview.rst:169
+msgid "Developer support"
+msgstr "開発者サポート"
+
+#: ../../overview/overview.rst:169
+msgid "Universal programming languages (Python, C/C++, etc)"
+msgstr "ユニバーサルプログラミング言語（Python、C/C++、など）"
+
+#: ../../overview/overview.rst:171
+msgid ""
+"Interactive web apps (Terminal, Jupyter, VSCode, MLFlow, Microsoft NNI, R "
+"Studio, etc)"
+msgstr ""
+"インタラクティブなウェブアプリ（Terminal、Jupyter、VSCode、MLFlow、Microsoft NNI、R Studio など）"
+
+#: ../../overview/overview.rst:174
+msgid ""
+"Offering various type of computing sessions tailored to specific purposes"
+msgstr "特定の目的に合わせて調整されたさまざまなタイプのコンピューティングセッションを提供"
+
+#: ../../overview/overview.rst:177
+msgid "Interactive"
+msgstr "インタラクティブ"
+
+#: ../../overview/overview.rst:178
+msgid "Batch"
+msgstr "バッチ"
+
+#: ../../overview/overview.rst:179
+msgid "Inference"
+msgstr "推論"
+
+#: ../../overview/overview.rst:181
+msgid "For data scientists"
+msgstr "データサイエンティスト向け"
+
+#: ../../overview/overview.rst:181
+msgid ""
+"Concurrent user of multiple versions of libraries: Tensorflow, PyTorch, etc"
+msgstr "ライブラリの複数バージョンを同時に使用するユーザー: Tensorflow、PyTorch など"
+
+#: ../../overview/overview.rst:184
+msgid "Concurrent user of multiple versions of libraries"
+msgstr "複数バージョンのライブラリの同時使用者"
+
+#: ../../overview/overview.rst:186
+msgid "Periodic update of ML libraries"
+msgstr "MLライブラリの定期的な更新"
+
+#: ../../overview/overview.rst:188
+msgid "Customer support (Enterprise)"
+msgstr "カスタマーサポート（エンタープライズ）"
+
+#: ../../overview/overview.rst:188
+msgid "On-site installation (bare-metal / VM)"
+msgstr "オンサイトインストール（ベアメタル / VM）"
+
+#: ../../overview/overview.rst:191
+msgid "Configuration support (on-premise + cloud)"
+msgstr "設定サポート（オンプレミス + クラウド）"
+
+#: ../../overview/overview.rst:193
+msgid "Admin/user training"
+msgstr "管理者/ユーザー トレーニング"
+
+#: ../../overview/overview.rst:195
+msgid "Support for updating to latest version"
+msgstr "最新バージョンへの更新サポート"
+
+#: ../../overview/overview.rst:197
+msgid "Priority development and escalation"
+msgstr "優先開発とエスカレーション"
+
+#: ../../overview/overview.rst:199
+msgid "Customized container image / kernel or kernel repository"
+msgstr "カスタマイズされたコンテナイメージ / カーネルまたはカーネルリポジトリ"
+
+#: ../../overview/overview.rst:203
+msgid "ONLY Available on storage supports directory quota management"
+msgstr "ディレクトリクォータ管理をサポートするストレージでのみ利用可能"
+
+#: ../../overview/overview.rst:206
+msgid "Accessible menu by user role"
+msgstr "ユーザーロールによるアクセス可能なメニュー"
+
+#: ../../overview/overview.rst:210
+msgid "Pages with ``*`` mark are in Administration menu."
+msgstr "「*」マークのあるページは管理メニューにあります。"
+
+#: ../../overview/overview.rst:211
+msgid "Features only for admin are listed in :ref:`admin menu <admin-menu>`."
+msgstr "管理者専用の機能は、:ref:`admin menu <admin-menu>` にリストされています。"
+
+#: ../../overview/overview.rst:214
+msgid "page \\\\ role"
+msgstr "ページ \\\\ ロール"
+
+#: ../../overview/overview.rst:214
+msgid "user"
+msgstr "ユーザー"
+
+#: ../../overview/overview.rst:214
+msgid "admin"
+msgstr "管理者"
+
+#: ../../overview/overview.rst:216
+msgid "Summary"
+msgstr "サマリー"
+
+#: ../../overview/overview.rst:216 ../../overview/overview.rst:218
+#: ../../overview/overview.rst:220 ../../overview/overview.rst:222
+#: ../../overview/overview.rst:224 ../../overview/overview.rst:226
+#: ../../overview/overview.rst:228 ../../overview/overview.rst:230
+#: ../../overview/overview.rst:232 ../../overview/overview.rst:234
+#: ../../overview/overview.rst:236 ../../overview/overview.rst:238
+#: ../../overview/overview.rst:240 ../../overview/overview.rst:242
+msgid "O"
+msgstr "O"
+
+#: ../../overview/overview.rst:218
+msgid "Sessions"
+msgstr "セッション"
+
+#: ../../overview/overview.rst:220
+msgid "Serving"
+msgstr "サービス提供"
+
+#: ../../overview/overview.rst:222
+msgid "Import & run"
+msgstr "インポート＆実行"
+
+#: ../../overview/overview.rst:224
+msgid "Data & Storage"
+msgstr "データとストレージ"
+
+#: ../../overview/overview.rst:226
+msgid "Agent Summary"
+msgstr "エージェントサマリー"
+
+#: ../../overview/overview.rst:228
+msgid "Statistics"
+msgstr "統計"
+
+#: ../../overview/overview.rst:230
+msgid "Users*"
+msgstr "ユーザー*"
+
+#: ../../overview/overview.rst:230 ../../overview/overview.rst:232
+#: ../../overview/overview.rst:234 ../../overview/overview.rst:236
+#: ../../overview/overview.rst:238 ../../overview/overview.rst:240
+msgid "X"
+msgstr "X"
+
+#: ../../overview/overview.rst:232
+msgid "Environments*"
+msgstr "*エンvironments"
+
+#: ../../overview/overview.rst:234
+msgid "Resources*"
+msgstr "リソース*"
+
+#: ../../overview/overview.rst:236
+msgid "Configurations*"
+msgstr "構成*"
+
+#: ../../overview/overview.rst:238
+msgid "Maintenance*"
+msgstr "メンテナンス*"
+
+#: ../../overview/overview.rst:240
+msgid "Information*"
+msgstr "情報*"
+
+#: ../../overview/overview.rst:242
+msgid "UserSettings"
+msgstr "ユーザー設定"
