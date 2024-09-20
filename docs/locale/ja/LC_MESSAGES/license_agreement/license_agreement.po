@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../license_agreement/license_agreement.rst:3
+msgid "Terms of License Agreement"
+msgstr "ライセンス契約の条件"
+
+#: ../../license_agreement/license_agreement.rst:6
+msgid "Backend.AI License (Software)"
+msgstr "Backend.AI ライセンス (ソフトウェア)"
+
+#: ../../license_agreement/license_agreement.rst:8
+msgid ""
+"This document defines the terms of the license agreement for the Backend.AI "
+"software. The usage fee and support plan of Backend.AI Cloud service "
+"provided by Lablup is independent of this policy."
+msgstr ""
+"このドキュメントは、Backend.AI ソフトウェアのライセンス契約の条件を定義しています。Lablup によって提供される Backend.AI "
+"クラウドサービスの使用料およびサポートプランは、このポリシーとは無関係です。"
+
+#: ../../license_agreement/license_agreement.rst:12
+msgid ""
+"Backend.AI server components (hereinafter referred to as \"Backend.AI "
+"Server\") are distributed under the GNU Lesser General Public License v3.0 "
+"(\"LGPL\"), and API Client libraries and auxiliary components for accessing "
+"Backend.AI server (hereinafter \"Backend.AI Client\") are distributed under "
+"the MIT License. Even if LGPL complies, commercial contracts with Lablup "
+"Co., Ltd. (\"Lablup\") are required depending on the conditions when "
+"performing profit activities using the Backend.AI server. Several additional"
+" plug-ins and admin's GUI Control-Panel that apply to Backend.AI enterprise "
+"solutions are not open source, but commercial software."
+msgstr ""
+"Backend.AIサーバーコンポーネント（以下「Backend.AIサーバー」）はGNU Lesser General Public License "
+"v3.0（「LGPL」）のもとで配布されており、Backend.AIサーバーにアクセスするためのAPIクライアントライブラリおよび補助コンポーネント（以下「Backend.AIクライアント」）はMITライセンスで配布されています。たとえLGPLに準拠していても、Backend.AIサーバーを使用して利益活動を行う際の条件により、Lablup"
+" Co., "
+"Ltd.（「Lablup」）との商業契約が必要です。Backend.AIエンタープライズソリューションに適用されるいくつかの追加プラグインおよび管理者用GUIコントロールパネルはオープンソースではなく、商用ソフトウェアです。"
+
+#: ../../license_agreement/license_agreement.rst:22
+msgid "**Term Definition**"
+msgstr "**用語の定義**"
+
+#: ../../license_agreement/license_agreement.rst:24
+msgid ""
+"Hardware: Includes physical computers, virtual machine and container "
+"environments that users own or lease and have rights to run software."
+msgstr "ハードウェア: 所有またはリースし、ソフトウェアを実行する権利がある物理コンピュータ、仮想マシン、およびコンテナ環境を含みます。"
+
+#: ../../license_agreement/license_agreement.rst:26
+msgid ""
+"Organization: Individuals, corporations, organizations, institutions "
+"(including non-profit and commerical organizations; however, subsidiaries "
+"that are separate corporations are not included)"
+msgstr "組織: 個人、法人、団体、機関（非営利および商業組織を含む。ただし、独立した法人である子会社は含まれない）"
+
+#: ../../license_agreement/license_agreement.rst:30
+msgid ""
+"LGPL must be followed when users use and change Backend.AI Server (Manager /"
+" Agent / Common) or develop and distribute software that uses it. However, "
+"in the case of distributing software which import Backend.AI server as a "
+"module without changing it (e.g. Python import), it is regarded as a dynamic"
+" link and code disclosure under the LGPL is exempted. When Backend.AI server"
+" is installed on the hardware and used by the general public through the "
+"network, there is no obligation under the LGPL."
+msgstr ""
+"LGPL は、ユーザーが Backend.AI Server（Manager / Agent / "
+"Common）を使用および変更する場合、またはそれを使用するソフトウェアを開発および配布する場合に従わなければなりません。ただし、Backend.AI "
+"サーバーをモジュールとしてインポートし、変更せずにソフトウェアを配布する場合（例：Python のインポート）、それは動的リンクと見なされ、LGPL "
+"に基づくコードの公開は免除されます。Backend.AI サーバーがハードウェアにインストールされ、ネットワークを通じて一般に使用される場合、LGPL "
+"に基づく義務はありません。"
+
+#: ../../license_agreement/license_agreement.rst:38
+msgid ""
+"The correct interpretation of all other cases is subject to the LGPL "
+"original text and court judgment."
+msgstr "他のすべてのケースの正しい解釈は、LGPLの原文と裁判所の判断に従います。"
+
+#: ../../license_agreement/license_agreement.rst:41
+msgid ""
+"Apart from LGPL compliance, commercial contracts must be made with Lablup in"
+" the following cases:"
+msgstr "LGPLコンプライアンスとは別に、以下の場合はLablupとの商業契約を結ぶ必要があります。"
+
+#: ../../license_agreement/license_agreement.rst:44
+msgid ""
+"When software that works only after installing the Backend.AI server is sold"
+" to customers outside the organization."
+msgstr "Backend.AIサーバーをインストールした後にのみ動作するソフトウェアが、組織外の顧客に販売される場合。"
+
+#: ../../license_agreement/license_agreement.rst:46
+msgid ""
+"When hardware including Backend.AI server is sold to customers outside the "
+"organization."
+msgstr "組織外の顧客にBackend.AIサーバーを含むハードウェアが販売される場合。"
+
+#: ../../license_agreement/license_agreement.rst:48
+msgid ""
+"When the Backend.AI server is installed on the hardware and the usage fee is"
+" received from a customer outside the organization that uses it."
+msgstr "Backend.AIサーバーがハードウェアにインストールされ、それを使用する組織外の顧客から使用料金が受け取られる場合。"
+
+#: ../../license_agreement/license_agreement.rst:51
+msgid "In other cases, you can use the Backend.AI server for free."
+msgstr "その他のケースでは、無料でBackend.AIサーバーを利用できます。"
+
+#: ../../license_agreement/license_agreement.rst:53
+msgid "**Interpretation Example**"
+msgstr "**解釈例**"
+
+#: ../../license_agreement/license_agreement.rst:55
+msgid ""
+"If you distribute Backend.AI server with modifications to outside the "
+"organization, you must disclose the code and apply LGPL the same way. There "
+"is no obligation to disclose the code if it is olny used internally."
+msgstr ""
+"Backend.AIサーバーを組織外に修正して配布する場合、コードを公開し、同じ方法でLGPLを適用する必要があります。内部でのみ使用する場合、コードを公開する義務はありません。"
+
+#: ../../license_agreement/license_agreement.rst:58
+msgid ""
+"When distributing software that uses Backend.AI server as an essential "
+"library,"
+msgstr "Backend.AIサーバーを主要なライブラリとして使用するソフトウェアを配布する際には、"
+
+#: ../../license_agreement/license_agreement.rst:60
+msgid ""
+"Free distribution: The software does not have to be (L)GPL, and a separate "
+"contract with Lablup is not required."
+msgstr "無償配布: ソフトウェアは (L)GPL である必要はなく、Lablup との別途契約も必要ありません。"
+
+#: ../../license_agreement/license_agreement.rst:62
+msgid ""
+"Paid distribution: The software does not need to be (L)GPL, but a commercial"
+" contract with Lablup is required."
+msgstr "有料配布: ソフトウェアは (L)GPL である必要はありませんが、Lablup と商業契約が必要です。"
+
+#: ../../license_agreement/license_agreement.rst:65
+msgid ""
+"When Backend.AI server is installed on the hardware and it is used by the "
+"public through network,"
+msgstr "Backend.AIサーバーがハードウェアにインストールされ、ネットワークを通じて一般に使用される場合、"
+
+#: ../../license_agreement/license_agreement.rst:68
+#: ../../license_agreement/license_agreement.rst:73
+msgid "Free distribution: No separate contract with Lablup is required."
+msgstr "無料配布: Lablupとの別途契約は必要ありません。"
+
+#: ../../license_agreement/license_agreement.rst:69
+#: ../../license_agreement/license_agreement.rst:74
+msgid "Paid distribution: A commercial contract with Lablup is required."
+msgstr "有料配布: Lablupとの商業契約が必要です。"
+
+#: ../../license_agreement/license_agreement.rst:71
+msgid "When distributing hardware in which Backend.AI server is installed,"
+msgstr "Backend.AIサーバーがインストールされているハードウェアを配布する際に、"
+
+#: ../../license_agreement/license_agreement.rst:76
+msgid ""
+"Commercial contracts include monthly / annual subscription fees for the "
+"enterprise version by default, but details may vary depending on individual "
+"contracts."
+msgstr ""
+"商業契約には、デフォルトでエンタープライズ版の月額／年額サブスクリプション料金が含まれていますが、詳細は個々の契約によって異なる場合があります。"

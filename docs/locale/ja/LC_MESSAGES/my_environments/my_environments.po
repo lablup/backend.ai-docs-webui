@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../my_environments/my_environments.rst:-1
+#: ../../my_environments/my_environments.rst:5
+msgid "My Environments"
+msgstr "マイ環境"
+
+#: ../../my_environments/my_environments.rst:7
+msgid ""
+"From 24.03, a new \\\"My Environments\\\" page for users has been "
+"introduced. This page displays contents such as a list of images created by "
+"the user's :ref:`session commits<session-commit>`."
+msgstr ""
+"24.03から、ユーザー向けの新しい「マイ環境」ページが導入されました。このページでは、ユーザーの :ref:`セッションコミット<session-"
+"commit>` によって作成されたイメージのリストなどのコンテンツが表示されます。"
+
+#: ../../my_environments/my_environments.rst:11
+msgid ""
+"On the Images tab of the My Environments page, users can manage customized "
+"images used in creating compute sessions. This tab displays metadata "
+"information of images converted from computational sessions to images. User "
+"can view details such as the registry, architecture, namespace, language, "
+"version, base, constraint, digest, and other information for each image."
+msgstr ""
+"My "
+"EnvironmentsページのImagesタブでは、ユーザーはコンピュートセッションの作成に使用されるカスタマイズされたイメージを管理できます。このタブには、計算セッションからイメージに変換されたイメージのメタデータ情報が表示されます。ユーザーは、各イメージのレジストリ、アーキテクチャ、ネームスペース、言語、バージョン、ベース、制約、ダイジェスト、その他の情報を確認できます。"
+
+#: ../../my_environments/my_environments.rst:19
+msgid ""
+"To delete an image, click on the red trash button in the control column. "
+"After deletion, you will not be able to create a new session using that "
+"image."
+msgstr ""
+"イメージを削除するには、コントロール列の赤いゴミ箱ボタンをクリックします。削除後は、そのイメージを使用して新しいセッションを作成することはできません。"
+
+#: ../../my_environments/my_environments.rst:25
+msgid ""
+"You can also copy the my environment image and create session with manual "
+"image. Click 'Copy' button in the control column, and go to sessions page "
+"and create a session. Fill the input of manual image by pasting the image "
+"that you copied."
+msgstr ""
+"マイ環境イメージをコピーし、手動イメージでセッションを作成することもできます。コントロール列の「コピー」ボタンをクリックし、セッションページに移動してセッションを作成します。コピーしたイメージを貼り付けて手動イメージの入力欄に記入します。"
+
+#: ../../my_environments/my_environments.rst:-1
+msgid "Copy image name manual"
+msgstr "画像名のコピー手順"
+
+#: ../../my_environments/my_environments.rst:32
+msgid ""
+"If you want to hide or show the certain columns, click the gear icon at the "
+"bottom right of the table. Then you can see below dialog to select the "
+"columns you want to see."
+msgstr ""
+"特定の列を非表示または表示する場合は、テーブルの右下にある歯車アイコンをクリックしてください。すると、表示したい列を選択するための以下のダイアログが表示されます。"
+
+#: ../../my_environments/my_environments.rst:-1
+msgid "Table Setting"
+msgstr "テーブル設定"

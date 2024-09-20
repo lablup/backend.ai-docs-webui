@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../login/login.rst:3
+msgid "Signup and Login"
+msgstr "サインアップとログイン"
+
+#: ../../login/login.rst:6
+msgid "Signup"
+msgstr "サインアップ"
+
+#: ../../login/login.rst:8
+msgid ""
+"When you launch the Web-UI, login dialog appears. If you haven't signed up "
+"yet, press the SIGN UP button."
+msgstr "Web-UIを起動すると、ログインダイアログが表示されます。まだサインアップしていない場合は、サインアップボタンを押してください。"
+
+#: ../../login/login.rst:-1
+msgid "Login dialog"
+msgstr "ログインダイアログ"
+
+#: ../../login/login.rst:16
+msgid ""
+"Enter the required information, read and agree to the Terms of Service / "
+"Privacy Policy, and click the SIGNUP button. Depending on your system "
+"settings, you may need to enter an invitation token to sign up. A "
+"verification email may be sent to verify that the email is yours. If the "
+"verification email is sent, you will need to read the email and click the "
+"link inside to pass verification before you can log in with your account."
+msgstr ""
+"必要な情報を入力し、利用規約/プライバシーポリシーを読み同意した上で、SIGNUPボタンをクリックしてください。システム設定によっては、サインアップに招待トークンを入力する必要がある場合があります。あなたのメールアドレスであることを確認するための確認メールが送信されることがあります。確認メールが送信された場合は、メールを読んで内部のリンクをクリックし、検証を通過した後にアカウントでログインする必要があります。"
+
+#: ../../login/login.rst:-1
+msgid "Signup dialog"
+msgstr "サインアップダイアログ"
+
+#: ../../login/login.rst:29
+msgid ""
+"Depending on the server configuration and plugin settings, signing up by "
+"anonymous user may not be allowed. In that case, please contact "
+"administrator of your system."
+msgstr ""
+"サーバーの構成およびプラグインの設定によっては、匿名ユーザーによるサインアップが許可されていない場合があります。その場合は、システムの管理者に連絡してください。"
+
+#: ../../login/login.rst:34
+msgid ""
+"To prevent malicious users from guessing user's password, password should be"
+" longer than 8 characters with at least one alphabet(s), number(s), and "
+"special character(s)."
+msgstr ""
+"悪意のあるユーザーがユーザーのパスワードを推測するのを防ぐために、パスワードは8文字以上で、少なくとも1つのアルファベット、数字、特殊文字を含むべきです。"
+
+#: ../../login/login.rst:39
+msgid "Login"
+msgstr "ログイン"
+
+#: ../../login/login.rst:41
+msgid ""
+"Enter your ID and password and press the LOGIN button. In API ENDPOINT, the "
+"URL of Backend.AI Webserver, which relays the request to the Manager, should"
+" be entered."
+msgstr ""
+"IDとパスワードを入力し、LOGINボタンを押してください。API ENDPOINTには、リクエストをマネージャーに中継するBackend.AI "
+"WebserverのURLを入力する必要があります。"
+
+#: ../../login/login.rst:46
+msgid ""
+"Depending on the installation and setup environment of the Webserver, the "
+"endpoint might be pinned and not configurable."
+msgstr "Webサーバーのインストールおよびセットアップ環境によっては、エンドポイントが固定されており、構成ができない場合があります。"
+
+#: ../../login/login.rst:50
+msgid ""
+"Backend.AI keeps the user's password securely through a one-way hash. "
+"BCrypt, the default password hash of BSD, is used, so even the server admins"
+" cannot know the user's password."
+msgstr ""
+"Backend.AI "
+"は、ユーザーのパスワードを一方向ハッシュを通じて安全に保持します。BSDのデフォルトパスワードハッシュであるBCryptが使用されるため、サーバーの管理者でもユーザーのパスワードを知ることはできません。"
+
+#: ../../login/login.rst:54
+msgid ""
+"After login, you can check the information of the current resource usage in "
+"the Summary tab."
+msgstr "ログイン後、[概要]タブで現在のリソース使用状況を確認できます。"
+
+#: ../../login/login.rst:57
+msgid ""
+"By clicking the icon in the upper-right corner, you will see sub menus. You "
+"can logout by selecting the Log Out menu."
+msgstr "右上のアイコンをクリックすると、サブメニューが表示されます。ログアウトメニューを選択するとログアウトできます。"
+
+#: ../../login/login.rst:-1
+msgid "Signout button"
+msgstr "サインアウトボタン"
+
+#: ../../login/login.rst:67
+msgid "When you forgot your password"
+msgstr "パスワードを忘れた場合"
+
+#: ../../login/login.rst:69
+msgid ""
+"If you have forgotten your password, you can click the CHANGE PASSWORD "
+"button on the login panel to email a link to change password. You can change"
+" your password by reading and following the instruction. Depending on the "
+"server settings, the password change feature may be disabled. In this case, "
+"contact the administrator."
+msgstr ""
+"パスワードを忘れた場合は、ログインパネルで「パスワードを変更する」ボタンをクリックして、パスワードを変更するためのリンクをメールで送信できます。指示を読んで従うことで、パスワードを変更できます。サーバー設定によっては、パスワード変更機能が無効になっている場合があります。その場合は、管理者に連絡してください。"
+
+#: ../../login/login.rst:81
+msgid ""
+"This is also a modular feature, so changing password may not be possible in "
+"some systems."
+msgstr "これはモジュール式の機能でもあるため、システムによってはパスワード変更ができない場合があります。"
+
+#: ../../login/login.rst:85
+msgid ""
+"If login failure occures more than 10 times consecutively, access to the "
+"endpoint is temporarily restricted for 20 minutes for security reasons. If "
+"the access restriction continues on more than 20 minutes, please contact "
+"your system administrator."
+msgstr ""
+"ログイン失敗が10回以上連続して発生した場合、セキュリティ上の理由から、エンドポイントへのアクセスが一時的に20分間制限されます。アクセス制限が20分以上続く場合は、システム管理者に連絡してください。"
+
+#: ../../login/login.rst:92
+msgid "Sidebar Menus"
+msgstr "サイドバーメニュー"
+
+#: ../../login/login.rst:94
+msgid ""
+"Change the size of the sidebar via the buttons on the right side of the "
+"sidebar. Click it to significantly reduce the width of the sidebar, giving "
+"you a wider view of its contents. Clicking it again will return the sidebar "
+"to its original width."
+msgstr ""
+"サイドバーの右側にあるボタンを使って、サイドバーのサイズを変更します。これをクリックすると、サイドバーの幅が大幅に減少し、内容をより広範囲に表示できます。もう一度クリックすると、サイドバーは元の幅に戻ります。"
+
+#: ../../login/login.rst:104
+msgid "Header Events"
+msgstr "ヘッダーイベント"
+
+#: ../../login/login.rst:105
+msgid ""
+"The bell shape button is the event notification button. Events that need to "
+"be recorded during Web-UI operation are displayed here. When background "
+"tasks are running, such as creating a compute session, you can check the "
+"jobs here. When the background task is finished."
+msgstr ""
+"ベル形のボタンはイベント通知ボタンです。Web-"
+"UIの操作中に記録が必要なイベントがここに表示されます。計算セッションの作成などのバックグラウンドタスクが実行されているときには、ここでジョブを確認できます。バックグラウンドタスクが完了したとき。"
+
+#: ../../login/login.rst:114
+msgid ""
+"You can change the theme mode of the Web-UI via the dark mode icon on the "
+"right side of the header."
+msgstr "Web-UIのテーマモードは、ヘッダーの右側にあるダークモードアイコンを使って変更できます。"
+
+#: ../../login/login.rst:122
+msgid ""
+"There is a question mark icon at the lower right side of the header. Click "
+"this icon to access the web version of this guide document."
+msgstr ""
+"ヘッダーの右下には、クエスチョンマークのアイコンがあります。このアイコンをクリックすると、このガイドドキュメントのウェブ版にアクセスできます。"

@@ -1,0 +1,176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../import_run/import_run.rst:3
+msgid "Import & Run notebooks and web based Git repositories"
+msgstr "ノートブックとウェブベースのGitリポジトリをインポートして実行"
+
+#: ../../import_run/import_run.rst:5
+msgid ""
+"Backend.AI supports executing Jupyter notebook files and importing web based"
+" Git repositories such as GitHub and GitLab on the fly. You don't need to "
+"create or download into your local storage and re-upload it. The only thing "
+"you have to do is input a valid URL you want to execute or import, and click"
+" the button on the right side."
+msgstr ""
+"Backend.AIは、Jupyterノートブックファイルの実行や、GitHubやGitLabなどのウェブベースのGitリポジトリの即時インポートをサポートしています。ローカルストレージに作成またはダウンロードして再アップロードする必要はありません。実行またはインポートしたい有効なURLを入力し、右側のボタンをクリックするだけです。"
+
+#: ../../import_run/import_run.rst:11
+msgid "Import and run Jupyter notebooks"
+msgstr "Jupyterノートブックをインポートして実行する"
+
+#: ../../import_run/import_run.rst:13
+msgid ""
+"To import Jupyter notebooks and run, you need one thing, the valid URL for "
+"the notebook file. For example, if you want execute Jupyter notebook that's "
+"in github, you can copy and paste the URL and click IMPORT & RUN button."
+msgstr ""
+"Jupyterノートブックをインポートして実行するには、ノートブックファイルの有効なURLが必要です。たとえば、GitHubにあるJupyterノートブックを実行したい場合は、URLをコピーして貼り付け、「IMPORT"
+" & RUN」ボタンをクリックできます。"
+
+#: ../../import_run/import_run.rst:19
+msgid ""
+"When you trying to IMPORT & RUN Jupyter notebook file with local address, It"
+" will be regarded as invalid. You have to input URL which is not starting "
+"from localhost."
+msgstr ""
+"ローカルアドレスでJupyterノートブックファイルをインポート＆実行しようとする場合、それは無効と見なされます。localhostで始まらないURLを入力する必要があります。"
+
+#: ../../import_run/import_run.rst:-1
+msgid "Import & Run Jupyter notebook"
+msgstr "Jupyterノートブックをインポート＆実行"
+
+#: ../../import_run/import_run.rst:26
+msgid ""
+"After clicking the button, the dialog appears. This is a session launcher "
+"dialog same as when you starts the session at Sessions page or Summary page."
+" Difference between import notebook and starting a new session is that "
+"import notebook automatically imports jupyter notebook in the URL, but "
+"simple starting a new session doesn't do that. the rest is same. Click "
+"LAUNCH button to the notebook after setting the environments and resource "
+"allocation as needed."
+msgstr ""
+"ボタンをクリックすると、ダイアログが表示されます。これは、セッションページやサマリーページでセッションを開始するときと同じセッションランチャーダイアログです。ノートブックのインポートと新しいセッションの開始の違いは、ノートブックのインポートではURL内のjupyterノートブックが自動的にインポートされますが、新しいセッションを単に開始した場合はそれが行われない点です。その他の点は同じです。必要に応じて環境設定とリソース割り当てを行った後、LAUNCHボタンをクリックしてノートブックを起動します。"
+
+#: ../../import_run/import_run.rst:33
+msgid ""
+"The pop-up blocker must be turned off before clicking LAUNCH button to "
+"immediately see the running notebook window. Also, if there's not enough "
+"resources to execute the session, imported Jupyter notebook will not run."
+msgstr ""
+"ポップアップブロッカーは、LAUNCHボタンをクリックしてすぐに稼働中のノートブックウィンドウを表示するためにオフにする必要があります。また、セッションを実行するのに十分なリソースがない場合は、インポートされたJupyterノートブックは実行されません。"
+
+#: ../../import_run/import_run.rst:-1
+msgid "Session Launcher In Importing Jupyter notebook"
+msgstr "Jupyterノートブックのインポートにおけるセッションランチャー"
+
+#: ../../import_run/import_run.rst:42
+msgid ""
+"You can see the importing operation is successfully completed in Sessions "
+"page."
+msgstr "セッションページでインポート操作が正常に完了したことが確認できます。"
+
+#: ../../import_run/import_run.rst:-1
+msgid "Session page with imported Jupyter notebook"
+msgstr "インポートされたJupyterノートブックを使用したセッションページ"
+
+#: ../../import_run/import_run.rst:48
+msgid "Create executable Jupyter notebook button"
+msgstr "実行可能なJupyterノートブックボタンの作成"
+
+#: ../../import_run/import_run.rst:50
+msgid ""
+"You can also create HTML or Markdown button about Jupyter notebook URL, too."
+" Input a valid Jupyter notebook URL and click CREATE button. It will show "
+"code blocks that directly links to creating a session with notebook. You can"
+" see the badge code working by inserting it in the GitHub repositories or "
+"where it supports html or markdown."
+msgstr ""
+"JupyterノートブックURLに関するHTMLまたはMarkdownボタンを作成することもできます。有効なJupyterノートブックURLを入力し、CREATEボタンをクリックしてください。ノートブックとセッションを直接リンクするコードブロックが表示されます。GitHubリポジトリやhtmlまたはmarkdownをサポートしている場所にバッジコードを挿入することで、バッジコードが機能する様子を見ることができます。"
+
+#: ../../import_run/import_run.rst:57
+msgid ""
+"your account must be logined before clicking the button. Otherwise, you have"
+" to login first."
+msgstr "ボタンをクリックする前に、アカウントにログインしている必要があります。そうでない場合は、まずログインする必要があります。"
+
+#: ../../import_run/import_run.rst:-1
+msgid "Create a Jupyter notebook button"
+msgstr "Jupyterノートブックボタンを作成"
+
+#: ../../import_run/import_run.rst:67
+msgid "Importing GitHub Repositories"
+msgstr "GitHub リポジトリをインポートする"
+
+#: ../../import_run/import_run.rst:69
+msgid ""
+"Importing a GitHub repository is similar to import and running jupyter "
+"notebook. All you have to do is to fill out with github repository URL and "
+"click GET TO FOLDER button. If you can access to more than one storage host,"
+" you can select one from the list."
+msgstr ""
+"GitHubリポジトリのインポートは、Jupyterノートブックをインポートして実行するのと似ています。必要なのはGitHubリポジトリのURLを入力し、GET"
+" TO FOLDERボタンをクリックすることだけです。複数のストレージホストにアクセスできる場合は、リストから1つ選択することができます。"
+
+#: ../../import_run/import_run.rst:-1
+msgid "Import GitHub repository"
+msgstr "GitHubリポジトリをインポート"
+
+#: ../../import_run/import_run.rst:78
+msgid ""
+"If there are not enough resources to start a session or folder count is at "
+"the limit, then importing repository will fail. Please check resource "
+"statistics panel and Data & Storage page before importing the repository."
+msgstr ""
+"セッションを開始するためのリソースが不足しているか、フォルダ数が制限に達している場合、リポジトリのインポートは失敗します。リポジトリをインポートする前に、リソース統計パネルとデータ"
+" & ストレージページを確認してください。"
+
+#: ../../import_run/import_run.rst:82
+msgid ""
+"You can see the repository is successfully imported as a data folder with "
+"its name."
+msgstr "リポジトリがその名前でデータフォルダとして正常にインポートされていることが確認できます。"
+
+#: ../../import_run/import_run.rst:-1
+msgid "Import GitHub repository result"
+msgstr "GitHub リポジトリのインポート結果"
+
+#: ../../import_run/import_run.rst:90
+msgid "Importing GitLab Repositories"
+msgstr "GitLabリポジトリのインポート"
+
+#: ../../import_run/import_run.rst:92
+msgid ""
+"From 22.03, Backend.AI supports importing from GitLab. It's almost the same "
+"as :ref:`Importing GitHub Repositories<importing-github-repositories>`, but "
+"you need to explicitly set the branch name to import."
+msgstr ""
+"22.03から、Backend.AIはGitLabからのインポートをサポートしています。これはほとんどの場合、 :ref:`GitHubリポジトリのインポート<importing-"
+"github-repositories>` と同じですが、インポートするブランチ名を明示的に設定する必要があります。"
+
+#: ../../import_run/import_run.rst:-1
+msgid "Import GitLab repository"
+msgstr "GitLabリポジトリをインポート"
+
+#: ../../import_run/import_run.rst:101
+msgid ""
+"If there's data folder that has the same name already, the system will "
+"append ``_`` (underscore) and number in the imported repository folder."
+msgstr "同じ名前のデータフォルダがすでにある場合、システムはインポートされたリポジトリフォルダに「_」（アンダースコア）と番号を追加します。"

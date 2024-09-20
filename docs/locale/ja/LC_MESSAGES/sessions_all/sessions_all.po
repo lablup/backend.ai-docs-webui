@@ -1,0 +1,1108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../sessions_all/sessions_all.rst:3
+msgid "Compute Sessions"
+msgstr "コンピュートセッション"
+
+#: ../../sessions_all/sessions_all.rst:5
+msgid ""
+"The most visited pages in the Backend.AI Web-UI would be the Sessions and "
+"Data & Storage pages. Here, you will learn how to query and create "
+"container-based compute sessions and utilize various web applications on the"
+" Sessions page."
+msgstr ""
+"Backend.AI Web-UIで最もよく訪問されるページは、セッションとデータ & "
+"ストレージのページです。ここでは、セッションページでコンテナベースのコンピュートセッションをクエリおよび作成し、さまざまなウェブアプリケーションを利用する方法を学びます。"
+
+#: ../../sessions_all/sessions_all.rst:13
+msgid "Start a new session"
+msgstr "新しいセッションを開始"
+
+#: ../../sessions_all/sessions_all.rst:15
+msgid ""
+"After logging in with a user account, click Sessions on the left sidebar to "
+"visit the Sessions page. Sessions page lets you start new sessions or use "
+"and manage existing running sessions."
+msgstr ""
+"ユーザーアカウントでログインした後、左のサイドバーで「Sessions」をクリックして、Sessionsページに移動します。Sessionsページでは、新しいセッションを開始したり、既存の実行中のセッションを使用および管理したりできます。"
+
+#: ../../sessions_all/sessions_all.rst:22
+msgid ""
+"Click the START button to start a new compute session. From version 24.03, "
+"Backend.AI offers an improved version of the session launcher (NEO). If you "
+"want to use the previous dialog-style session launcher, press the Classic "
+"button in the notification and create your session. For instructions on how "
+"to use it, please refer to the following `link "
+"<https://webui.docs.backend.ai/en/23.09_a/sessions_all/sessions_all.html>`_."
+msgstr ""
+"STARTボタンをクリックして、新しい計算セッションを開始します。バージョン24.03から、Backend.AIはセッションランチャーの改良版（NEO）を提供しています。以前のダイアログスタイルのセッションランチャーを使用したい場合は、通知でClassicボタンを押してセッションを作成してください。使用方法についての詳細は、次の `リンク <https://webui.docs.backend.ai/en/23.09_a/sessions_all/sessions_all.html>`_ を参照してください。"
+
+#: ../../sessions_all/sessions_all.rst:30
+msgid ""
+"In the first page, you need to choose the type of session, interactive or "
+"batch. And you can set the session name, which is optional."
+msgstr ""
+"最初のページでは、セッションのタイプをインタラクティブまたはバッチから選択する必要があります。また、オプションでセッション名を設定することができます。"
+
+#: ../../sessions_all/sessions_all.rst:35
+msgid ""
+"Session type: Determines the type of the session. \"Interactive\" and "
+"\"Batch\" are the two session types currently available. The following are "
+"the primary distinctions between the two types:"
+msgstr ""
+"セッションタイプ: "
+"セッションのタイプを決定します。現在利用可能なセッションタイプは「インタラクティブ」と「バッチ」の2つです。以下は、この2つのタイプの主な違いです。"
+
+#: ../../sessions_all/sessions_all.rst:39
+msgid "Interactive compute session"
+msgstr "インタラクティブ計算セッション"
+
+#: ../../sessions_all/sessions_all.rst:41
+msgid "This type has been supported from the initial version of Backend.AI."
+msgstr "このタイプは、Backend.AIの初期バージョンからサポートされています。"
+
+#: ../../sessions_all/sessions_all.rst:42
+msgid ""
+"The compute session is used in a way that the user interacts with after "
+"creating a session without specifying a pre-defined execution script or "
+"command."
+msgstr "コンピュートセッションは、ユーザーが事前定義された実行スクリプトやコマンドを指定せずにセッションを作成した後に対話する方法で使用されます。"
+
+#: ../../sessions_all/sessions_all.rst:45
+msgid ""
+"The session is not terminated automatically unless user explicitly destroys "
+"the session or session garbage collectors are set by the admin."
+msgstr ""
+"セッションは、ユーザーが明示的にセッションを破壊するか、または管理者によってセッションガーベジコレクタが設定されない限り、自動的に終了しません。"
+
+#: ../../sessions_all/sessions_all.rst:48
+msgid "Batch compute session"
+msgstr "バッチ計算セッション"
+
+#: ../../sessions_all/sessions_all.rst:50
+msgid ""
+"This type of session is supported via GUI from Backend.AI 22.03 (CLI has "
+"supported the batch-type session before the 22.03)."
+msgstr ""
+"このタイプのセッションは、Backend.AI "
+"22.03からGUIを通じてサポートされています（CLIは22.03以前からバッチタイプのセッションをサポートしていました）。"
+
+#: ../../sessions_all/sessions_all.rst:52
+msgid ""
+"Pre-define the script that will be executed when a compute session is ready."
+msgstr "計算セッションの準備が整ったときに実行されるスクリプトを事前定義します。"
+
+#: ../../sessions_all/sessions_all.rst:54
+msgid ""
+"Executes the script as soon as the compute session is ready, and then "
+"automatically terminates the session as soon as the execution finishes. So, "
+"it will more efficiently and flexibly utilize the server farm's resources if"
+" a user can write the execution script in advance or is building a pipeline "
+"of workloads."
+msgstr ""
+"コンピュートセッションの準備が整ったらすぐにスクリプトを実行し、実行が終了すると同時にセッションを自動的に終了します。そのため、ユーザーが実行スクリプトを事前に書くことができる場合や、ワークロードのパイプラインを構築している場合に、より効率的かつ柔軟にサーバーファームのリソースを活用できます。"
+
+#: ../../sessions_all/sessions_all.rst:59
+msgid ""
+"You can set the start time of a batch-type compute session. However, it does"
+" not guarantee the session will be created at that time. It may still be "
+"PENDING due to the lack of resources, etc. Rather, it guarantees that the "
+"session WILL NOT run until the start time."
+msgstr ""
+"バッチタイプのコンピュートセッションの開始時間を設定できます。しかし、その時間にセッションが作成されることを保証するものではありません。リソースの不足などにより、まだPENDINGのままである可能性があります。むしろ、開始時間まではセッションが実行されないことを保証します。"
+
+#: ../../sessions_all/sessions_all.rst:67
+msgid ""
+"Session name: You can specify the name of the compute session to be created."
+" If set, this name appears in Session Info, so it is easy to distinguish "
+"among multiple computation sessions. If not specified, a random word is "
+"assigned automatically. Session names only accept alphanumeric characters "
+"between 4 and 64 without spaces."
+msgstr ""
+"セッション名: "
+"作成されるコンピューティングセッションの名前を指定できます。設定した場合、この名前はセッション情報に表示されるため、複数のコンピューティングセッションの中で区別しやすくなります。指定しない場合、ランダムな単語が自動的に割り当てられます。セッション名には、スペースのない4〜64文字の英数字のみが使用できます。"
+
+#: ../../sessions_all/sessions_all.rst:73
+msgid ""
+"Click the Next button below, or the Environments & Resource allocation on "
+"the right to proceed to the next page. If you want to create a session "
+"without any further settings, press the Skip to review button. button. In "
+"this case, the settings on the other pages will all use the default values."
+msgstr ""
+"下の「次へ」ボタンをクリックするか、右側の「環境設定とリソース割り当て」をクリックして次のページに進んでください。これ以上の設定をせずにセッションを作成したい場合は、「スキップしてレビューへ」ボタンを押してください。この場合、他のページの設定はすべてデフォルト値が使用されます。"
+
+#: ../../sessions_all/sessions_all.rst:78
+msgid ""
+"For detailed explanations of each item that can be set on the second page, "
+"please refer to the following."
+msgstr "2ページ目で設定できる各項目の詳細な説明については、以下を参照してください。"
+
+#: ../../sessions_all/sessions_all.rst:84
+msgid ""
+"Environments: You can choose the base environment for compute sessions such "
+"as TensorFlow, PyTorch, C++, etc. When you select TensorFlow, your compute "
+"session will automatically include the TensorFlow library. If you choose "
+"another environment, the corresponding packages will be installed by "
+"default."
+msgstr ""
+"環境: TensorFlow、PyTorch、C++ など、計算セッションの基本環境を選択できます。TensorFlow "
+"を選択すると、計算セッションには自動的に TensorFlow "
+"ライブラリが含まれます。他の環境を選択した場合、対応するパッケージがデフォルトでインストールされます。"
+
+#: ../../sessions_all/sessions_all.rst:88
+msgid ""
+"Version: Selects the version of the environment. For example, you can select"
+" different versions, such as 1.15, 2.3, etc., for the TensorFlow "
+"environment."
+msgstr ""
+"バージョン: 環境のバージョンを選択します。たとえば、TensorFlow 環境の異なるバージョンとして、1.15 や 2.3 などを選択できます。"
+
+#: ../../sessions_all/sessions_all.rst:90
+msgid ""
+"Image Name: You can specify the name of the image to be used for the compute"
+" session. Depending on your environment settings, this configurations may "
+"not be available."
+msgstr "イメージ名: コンピュートセッションで使用するイメージの名前を指定できます。環境設定によっては、この設定が利用できない場合があります。"
+
+#: ../../sessions_all/sessions_all.rst:93
+msgid ""
+"Set Environment Variable: Provides an interface for users to set environment"
+" variables in a compute session. See the section :ref:`How to add "
+"environment variables before session creation<set-environment-variables>` on"
+" how to use."
+msgstr ""
+"環境変数を設定する: コンピュートセッションでユーザーが環境変数を設定するためのインターフェースを提供します。使用方法については、セクション "
+":ref:`セッション作成前に環境変数を追加する方法<set-environment-variables>` を参照してください。"
+
+#: ../../sessions_all/sessions_all.rst:97
+msgid ""
+"Resource Group: Specifies the resource group in which to create a compute "
+"session. A resource group is a unit that groups host servers that each user "
+"can access. Usually, servers in a resource group would have the same type of"
+" GPU resources. Administrators can classify servers by any criteria, group "
+"them into one or more resource groups, and configure which resource groups a"
+" user can use. Users can launch a compute session only on servers in "
+"resource groups allowed by the administrator. If you are allowed multiple "
+"resource groups, you can select any group you want, but you cannot change it"
+" if you have only one."
+msgstr ""
+"リソースグループ: "
+"コンピュートセッションを作成するリソースグループを指定します。リソースグループは、各ユーザーがアクセスできるホストサーバーをグループ化する単位です。通常、リソースグループ内のサーバーは同じ種類のGPUリソースを持ちます。管理者は任意の基準でサーバーを分類し、それらを1つ以上のリソースグループにまとめ、ユーザーが使用できるリソースグループを設定できます。ユーザーは、管理者によって許可されたリソースグループ内のサーバーでのみコンピュートセッションを起動できます。複数のリソースグループが許可されている場合、任意のグループを選択できますが、1つしかない場合は変更できません。"
+
+#: ../../sessions_all/sessions_all.rst:105
+msgid ""
+"Resource Presets: These templates have pre-defined resource sets, such as "
+"CPU, memory, and GPU, to be allocated to a compute session. Administrators "
+"can define frequently used resource settings in advance. By adjusting the "
+"numerical input or sliding the slider, you can allocate the desired amount "
+"of resources."
+msgstr ""
+"リソースプリセット: "
+"これらのテンプレートは、計算セッションに割り当てるCPU、メモリ、GPUなどの事前定義されたリソースセットを持っています。管理者は、頻繁に使用されるリソース設定を事前に定義できます。数値入力を調整するかスライダーをスライドさせることで、希望のリソース量を割り当てることができます。"
+
+#: ../../sessions_all/sessions_all.rst:113
+msgid ""
+"The meaning of each item is as follows, and you can check it by clicking the"
+" Help (?) button as well."
+msgstr "各項目の意味は以下の通りで、ヘルプ（?）ボタンをクリックすることでも確認できます。"
+
+#: ../../sessions_all/sessions_all.rst:116
+msgid ""
+"CPU: The CPU performs basic arithmetic, logic, controlling, and input/output"
+" (I/O) operations specified by the instructions. For high performance "
+"computing workloads, many CPUs are helpful, but the program code must be "
+"written to use multiple CPUs."
+msgstr ""
+"CPU: CPU は、基本的な算術、論理、制御、および指示によって指定された入出力 (I/O) 操作を実行します。 "
+"高性能コンピューティングのワークロードでは、多くの CPU が役立ちますが、プログラムコードは複数の CPU "
+"を使用するように書かれている必要があります。"
+
+#: ../../sessions_all/sessions_all.rst:120
+msgid ""
+"Memory: Computer memory is a temporary storage area. It holds the data and "
+"instructions that the Central Processing Unit (CPU) needs. When using a GPU "
+"in a machine learning workload, you must allocate at least twice the memory "
+"of the GPU to memory. Otherwise, the GPU's idle time will increase, "
+"resulting in a performance penalty."
+msgstr ""
+"メモリ：コンピュータメモリは一時的な記憶領域です。中央処理装置（CPU）が必要とするデータと命令を保持します。機械学習のワークロードでGPUを使用する場合、GPUの少なくとも2倍のメモリをメモリに割り当てる必要があります。それ以外の場合、GPUのアイドル時間が増え、パフォーマンスの低下を招くことになります。"
+
+#: ../../sessions_all/sessions_all.rst:125
+msgid ""
+"Shared Memory: The amount of shared memory in GB to allocate for the compute"
+" session. Shared memory will use some part of the memory set in RAM. "
+"Therefore, it cannot be greater than the amount specified in RAM."
+msgstr ""
+"共有メモリ: "
+"コンピュートセッションに割り当てる共有メモリの量をGB単位で指定します。共有メモリはRAMに設定されたメモリの一部を使用します。したがって、RAMで指定された量を超えることはできません。"
+
+#: ../../sessions_all/sessions_all.rst:128
+msgid ""
+"AI Accelerator: AI accelerators (GPUs or NPUs) are well-suited for the "
+"matrix/vector computations involved in machine learning. AI accelerators "
+"speed up training / inference algorithms by orders of magnitude, reducing "
+"running times from weeks to days."
+msgstr ""
+"AIアクセラレータ: "
+"AIアクセラレータ（GPUまたはNPU）は、機械学習に関与する行列/ベクトル計算に適しています。AIアクセラレータは、トレーニング/推論アルゴリズムをオーダーで高速化し、実行時間を数週間から数日に短縮します。"
+
+#: ../../sessions_all/sessions_all.rst:132
+msgid ""
+"Sessions: A session is a unit of computational environment that is created "
+"according to a specified environment and resources. If this value is set to "
+"a value greater than 1, multiple sessions corresponding to the resource set "
+"above are created. If there are not enough resources available, requests to "
+"create sessions that cannot be created are put on the waiting queue."
+msgstr ""
+"セッション: "
+"セッションは、指定された環境とリソースに基づいて作成される計算環境の単位です。この値が1より大きい値に設定されている場合、上記のリソースセットに対応する複数のセッションが作成されます。利用可能なリソースが不足している場合、作成できないセッションを作成するリクエストは待機キューに入れられます。"
+
+#: ../../sessions_all/sessions_all.rst:137
+msgid ""
+"Cluster mode: Backend.AI supports cluster mode, which allows you to create "
+"multiple compute sessions at once. For more information, see the section "
+":ref:`Overview of Backend.AI cluster compute session<backendai-cluster-"
+"compute-session>`."
+msgstr ""
+"クラスターモード: "
+"Backend.AIはクラスターモードをサポートしており、一度に複数のコンピュートセッションを作成することができます。詳しくは、セクション "
+":ref:`Backend.AI クラスターコンピュートセッションの概要<backendai-cluster-compute-"
+"session>` を参照してください。"
+
+#: ../../sessions_all/sessions_all.rst:141
+msgid ""
+"High-Performance Computing Optimizations: Backend.AI provides configuring "
+"values related to HPC Optimizations. For more information, See the section "
+":ref:`Optimizing Accelerated Computing<optimizing-accelerated-computing>`."
+msgstr ""
+"高性能コンピューティング最適化: Backend.AI は HPC "
+"最適化に関連する値を設定する機能を提供します。詳細は、:ref:`Optimizing Accelerated "
+"Computing<optimizing-accelerated-computing>` のセクションを参照してください。"
+
+#: ../../sessions_all/sessions_all.rst:145
+msgid ""
+"Click the Next button below, or the Data & Storage on the right to proceed "
+"to the next page."
+msgstr "次へ進むには、下の「次へ」ボタンをクリックするか、右の「データ & ストレージ」をクリックしてください。"
+
+#: ../../sessions_all/sessions_all.rst:151
+msgid ""
+"Here, you can specify the data folders to mount in the compute session. When"
+" a compute session is destroyed, all data is deleted altogether by default, "
+"but the data stored in the mounted folders will survive. Data in those "
+"folders can also be reused by mounting it when creating another compute "
+"session. For the information on how to mount a folder and run a compute "
+"session, see :ref:`Mounting Folders to a Compute Session<session-mounts>`. "
+"Here, we will pass by without mounting any folder. Let's move on to the next"
+" page."
+msgstr ""
+"ここでは、計算セッションにマウントするデータフォルダを指定できます。計算セッションが破壊されると、デフォルトではすべてのデータが一緒に削除されますが、マウントされたフォルダに保存されたデータは生き残ります。それらのフォルダのデータは、別の計算セッションを作成する際にマウントすることで再利用できます。フォルダのマウント方法や計算セッションの実行についての詳細は、:ref:`計算セッションへのフォルダのマウント<session-"
+"mounts>` を参照してください。ここでは、フォルダをマウントせずに進みます。次のページに進みましょう。"
+
+#: ../../sessions_all/sessions_all.rst:163
+msgid ""
+"On the fourth page, you can set Network configurations such as Preopen "
+"Ports."
+msgstr "4 ページ目では、Preopen Ports などのネットワーク構成を設定できます。"
+
+#: ../../sessions_all/sessions_all.rst:165
+msgid ""
+"Set Preopen Ports: Provides an interface for users to set preopen ports in a"
+" compute session. See the section :ref:`How to add preopen ports before "
+"session creation <set_preopen_ports>` on how to use."
+msgstr ""
+"事前オープンポートの設定: 計算セッションで事前オープンポートを設定するためのインターフェースを提供します。使用方法については、セクション "
+":ref:`セッション作成前に事前オープンポートを追加する方法 <set_preopen_ports>` を参照してください。"
+
+#: ../../sessions_all/sessions_all.rst:169
+msgid ""
+"If you are done with the network setting, click the Next button below, or "
+"the Confirm and Launch on the right to proceed to the last page."
+msgstr "ネットワーク設定が完了したら、下の「次へ」ボタン、または右側の「確認して起動」ボタンをクリックして最後のページに進んでください。"
+
+#: ../../sessions_all/sessions_all.rst:175
+msgid ""
+"Now, we have reached the last page. You can view information of session(s) "
+"to create, such as environment itself, allocated resources, mount "
+"information, environment variables set on the previous pages, preopen ports,"
+" etc. After confirming the settings, click the Launch button. If there's "
+"anything you'd like to change, you can return to the previous page by "
+"clicking the Previous button, or click the Edit button located at the top "
+"right of each card to go directly to the relevant page."
+msgstr ""
+"さて、最後のページに到達しました。ここでは、環境自体、割り当てられたリソース、マウント情報、前のページで設定した環境変数、事前開放ポートなど、作成するセッションの情報を確認できます。設定を確認後、Launchボタンをクリックしてください。変更したいことがある場合は、Previousボタンをクリックして前のページに戻るか、各カードの右上にあるEditボタンをクリックして該当ページに直接移動できます。"
+
+#: ../../sessions_all/sessions_all.rst:182
+msgid ""
+"If there is an issue with the settings, an error will be displayed as "
+"follows. Please click Edit to correct the settings."
+msgstr "設定に問題がある場合、次のようにエラーが表示されます。設定を修正するには、[編集]をクリックしてください。"
+
+#: ../../sessions_all/sessions_all.rst:189
+msgid ""
+"A warning dialog appears, stating that there are no mounted folders. Ignore "
+"the warning for now and click the Start button to proceed."
+msgstr ""
+"警告ダイアログが表示され、マウントされたフォルダがないことを示しています。今はその警告を無視して、進めるために「開始」ボタンをクリックしてください。"
+
+#: ../../sessions_all/sessions_all.rst:197
+msgid "Now a new compute session is created in the RUNNING tab."
+msgstr "新しいコンピュートセッションが RUNNING タブに作成されます。"
+
+#: ../../sessions_all/sessions_all.rst:201
+msgid ""
+"In the RUNNING tab, you can check the information on the currently running "
+"sessions. It includes both interactive and batch sessions. BATCH tab and "
+"INTERACTIVE tab show only sessions corresponding to each type, but only for "
+"sessions not in terminated status. FINISHED tab shows the list of terminated"
+" sessions and OTHERS tab shows the compute sessions with errors. For each "
+"session, you can check the information such as session environments, the "
+"amount of allocated and used resources, session starting time, etc."
+msgstr ""
+"RUNNINGタブでは、現在実行中のセッションの情報を確認できます。これには、インタラクティブおよびバッチセッションの両方が含まれます。BATCHタブおよびINTERACTIVEタブは、それぞれのタイプに対応するセッションのみを表示しますが、終了状態にないセッションのみです。FINISHEDタブは終了したセッションのリストを表示し、OTHERSタブはエラーを含むコンピュートセッションを表示します。各セッションについて、セッション環境、割り当てられたリソースと使用されたリソースの量、セッションの開始時間などの情報を確認できます。"
+
+#: ../../sessions_all/sessions_all.rst:210
+msgid ""
+"Superadmins can query all compute session information currently running (or "
+"terminated) in the cluster, and users can view only the sessions they have "
+"created."
+msgstr ""
+"スーパー管理者は、クラスタ内で現在実行中（または終了済み）のすべてのコンピュートセッション情報を問い合わせることができ、ユーザーは自分が作成したセッションのみを閲覧できます。"
+
+#: ../../sessions_all/sessions_all.rst:215
+msgid ""
+"Compute session list may not be displayed normally due to intermittent "
+"network connection problems, and etc. This can be solved by refreshing the "
+"browser page."
+msgstr ""
+"コンピュートセッションリストが、断続的なネットワーク接続の問題などにより正常に表示されないことがあります。これはブラウザのページをリフレッシュすることで解決できます。"
+
+#: ../../sessions_all/sessions_all.rst:224
+msgid ""
+"Backend.AI provides detailed status information for ``PENDING``, "
+"``TERMINATED``, or ``CANCELLED`` sessions. In the case of ``PENDING`` "
+"sessions, in particular, you can check why the session is not scheduled and "
+"stuck in the ``PENDING`` status. You can see the details by clicking the "
+"question mark icon right next to the status of each session."
+msgstr ""
+"Backend.AI は、``PENDING``、``TERMINATED``、または ``CANCELLED`` "
+"セッションの詳細なステータス情報を提供します。特に ``PENDING`` セッションの場合、セッションがスケジュールされずに ``PENDING`` "
+"ステータスのままとなっている理由を確認できます。各セッションのステータスのすぐ横にあるクエスチョンマークアイコンをクリックすると、詳細を確認できます。"
+
+#: ../../sessions_all/sessions_all.rst:232
+msgid ""
+"The resource statistics are displayed at the top of the screen. You can "
+"check the amount of resources currently used and the total amount of "
+"resources that can be allocated. The display bars are divided into upper and"
+" lower parts. The upper part shows the resource allocation status in the "
+"current scaling group and the lower part shows the allocation status of "
+"total accessible resources."
+msgstr ""
+"リソース統計は画面の上部に表示されます。現在使用中のリソースの量と、割り当て可能なリソースの総量を確認できます。表示バーは上下に分かれています。上部は現在のスケーリンググループにおけるリソース割り当ての状況を示し、下部はアクセス可能なリソース全体の割り当て状況を示しています。"
+
+#: ../../sessions_all/sessions_all.rst:239
+msgid ""
+"Upper: (Resources allocated by the user in the current scaling group) / "
+"(Total resources allocatable by the user in the current scaling group)"
+msgstr ""
+"上限: (現在のスケーリンググループでユーザーによって割り当てられたリソース) / (現在のスケーリンググループでユーザーが割り当て可能な総リソース)"
+
+#: ../../sessions_all/sessions_all.rst:242
+msgid ""
+"Lower: (Resources allocated by the user) / (Resources allocated by the user "
+"+ Total resources allocatable by the user in the current scaling group)"
+msgstr ""
+"低い: (ユーザーによって割り当てられたリソース) / (ユーザーによって割り当てられたリソース + "
+"現在のスケーリンググループでユーザーが割り当て可能なリソースの合計)"
+
+#: ../../sessions_all/sessions_all.rst:246
+msgid ""
+"If the GPU resource is marked as FGPU, this means that the server is serving"
+" the GPU resources in a virtualized form. Backend.AI supports GPU "
+"virtualization technology that a single physical GPU can be divided and "
+"shared by multiple users for better utilization. Therefore, if you want to "
+"execute a task that does not require a large amount of GPU computation, you "
+"can create a compute session by allocating only a portion of a GPU. The "
+"amount of GPU resources that 1 FGPU actually allocates may vary from system "
+"to system depending on the administrator's setting."
+msgstr ""
+"GPUリソースがFGPUとしてマークされている場合、これはサーバーがGPUリソースを仮想化形式で提供していることを意味します。Backend.AIは、単一の物理GPUを分割して複数のユーザーで共有することができるGPU仮想化技術をサポートしています。したがって、大量のGPU計算を必要としないタスクを実行したい場合、GPUの一部のみを割り当ててコンピュートセッションを作成できます。1"
+" FGPUが実際に割り当てるGPUリソースの量は、管理者の設定によってシステムごとに異なる場合があります。"
+
+#: ../../sessions_all/sessions_all.rst:255
+msgid ""
+"For example, if administrator has set to split one physical GPU into five "
+"pieces, 5 FGPU means 1 physical GPU, or 1 FGPU means 0.2 physical GPU. At "
+"this configuration, if you create a compute session by allocating 1 FGPU, "
+"you can utilize SM (streaming multiprocessor) and GPU memory corresponding "
+"to 0.2 physical GPU for the session."
+msgstr ""
+"たとえば、管理者が1つの物理GPUを5つに分割するように設定している場合、5 FGPUは1つの物理GPU、または1 "
+"FGPUは0.2物理GPUを意味します。この設定では、1 "
+"FGPUを割り当てて計算セッションを作成すると、そのセッションに対して0.2物理GPUに対応するSM（ストリーミングマルチプロセッサ）とGPUメモリを利用できます。"
+
+#: ../../sessions_all/sessions_all.rst:265
+msgid "Use Jupyter Notebook"
+msgstr "Jupyter Notebook を使用する"
+
+#: ../../sessions_all/sessions_all.rst:267
+msgid ""
+"Let's look at how to use and manage compute sessions that are already "
+"running. If you look at the Control panel of the session list, there are "
+"several icons. When you click the first icon, the app launcher pops up and "
+"shows the available app services as below. The app launcher dialog also "
+"opens automatically just after the compute session is created."
+msgstr ""
+"すでに実行中のコンピュートセッションの使用方法と管理について見てみましょう。セッションリストのコントロールパネルを見ると、いくつかのアイコンがあります。最初のアイコンをクリックすると、アプリランチャーが表示され、以下のように利用可能なアプリサービスが表示されます。アプリランチャーダイアログは、コンピュートセッションが作成された直後にも自動的に開きます。"
+
+#: ../../sessions_all/sessions_all.rst:280
+msgid ""
+"There are two check options under the app icons. Opening the app with each "
+"item checked applies the following features, respectively:"
+msgstr "アプリアイコンの下に2つのチェックオプションがあります。各項目にチェックを入れてアプリを開くと、次の機能がそれぞれ適用されます。"
+
+#: ../../sessions_all/sessions_all.rst:283
+msgid ""
+"Open app to public: Open the app to the public. Basically, web services such"
+" as Terminal and Jupyter Notebook services are not accessible by other "
+"users, even if the user knows the service URL, since they are considered "
+"unauthenticated. However, checking this option makes it possible for anyone "
+"who knows the service URL (and port number) to access and use it. Of course,"
+" the user must have a network path to access the service."
+msgstr ""
+"アプリを公開する: アプリを一般に公開します。基本的に、Terminal や Jupyter Notebook "
+"サービスなどのウェブサービスは、認証されていないと見なされるため、たとえユーザーがサービス URL "
+"を知っていても他のユーザーがアクセスできません。ただし、このオプションをチェックすると、サービスの URL (およびポート番号) "
+"を知っている人であれば誰でもアクセスして使用することが可能になります。もちろん、ユーザーはサービスにアクセスするためのネットワークパスを持っている必要があります。"
+
+#: ../../sessions_all/sessions_all.rst:289
+msgid ""
+"Try preferred port: Without this option checked, a port number for the web "
+"service is randomly assigned from the port pool prepared in advance by "
+"Backend.AI. If you check this item and enter a specific port number, the "
+"entered port number will be tried first. However, there is no guarantee that"
+" the desired port will always be assigned because the port may not exist at "
+"all in the port pool or another service may already be using the port. In "
+"this case, the port number is randomly assigned."
+msgstr ""
+"優先ポートを試す: "
+"このオプションをチェックしない場合、Webサービスのポート番号はBackend.AIによって事前に用意されたポートプールからランダムに割り当てられます。この項目にチェックを入れ、特定のポート番号を入力した場合は、まずそのポート番号が試されます。しかし、ポートプールにそのポートが存在しない場合や、他のサービスがすでにそのポートを使用している場合があるため、必ずしも希望するポートが割り当てられる保証はありません。この場合、ポート番号はランダムに割り当てられます。"
+
+#: ../../sessions_all/sessions_all.rst:297
+msgid "Depending on the system configuration, these options may not be shown."
+msgstr "システムの構成によっては、これらのオプションが表示されない場合があります。"
+
+#: ../../sessions_all/sessions_all.rst:299
+msgid "Let's click on Jupyter Notebook."
+msgstr "Jupyter Notebook をクリックしましょう。"
+
+#: ../../sessions_all/sessions_all.rst:303
+msgid ""
+"A new window pops up and you can see that Jupyter Notebook is running. This "
+"notebook was created inside a running compute session and can be used easily"
+" with the click of a button without any other settings. Also, there is no "
+"need for a separate package installation process because the language "
+"environment and library provided by the computation session can be used as "
+"it is. For detailed instructions on how to use Jupyter Notebook, please "
+"refer to the official documentation."
+msgstr ""
+"新しいウィンドウがポップアップし、Jupyter "
+"Notebookが実行中であることが確認できます。このノートブックは、実行中のコンピュートセッション内で作成され、ボタンをクリックするだけで他の設定なしで簡単に使用できます。また、コンピュートセッションで提供される言語環境とライブラリをそのまま使用できるため、別途パッケージのインストールプロセスは必要ありません。Jupyter"
+" Notebookの詳細な使用方法については、公式ドキュメントを参照してください。"
+
+#: ../../sessions_all/sessions_all.rst:311
+msgid ""
+"In the notebook's file explorer, the ``id_container file`` contains a "
+"private SSH key. If necessary, you can download it and use it for SSH / SFTP"
+" access to the container."
+msgstr ""
+"ノートブックのファイルエクスプローラーで、``id_container file`` "
+"はプライベートSSHキーを含んでいます。必要に応じてこれをダウンロードし、コンテナへのSSH / SFTPアクセスに使用することができます。"
+
+#: ../../sessions_all/sessions_all.rst:315
+msgid ""
+"Click the NEW button at the top right and select the Notebook for "
+"Backend.AI, then the ipynb window appears where you can enter your own code."
+msgstr ""
+"右上のNEWボタンをクリックし、Backend.AIのNotebookを選択すると、自分のコードを入力できるipynbウィンドウが表示されます。"
+
+#: ../../sessions_all/sessions_all.rst:322
+msgid ""
+"In this window, you can enter and execute any code you want by using the "
+"environment that session provides. The code is executed on one of the "
+"Backend.AI nodes where the compute session is actually created and there is "
+"no need to configure a separate environment on the local machine."
+msgstr ""
+"このウィンドウでは、セッションが提供する環境を使用して、任意のコードを入力して実行することができます。コードは、計算セッションが実際に作成されているBackend.AIノードの1つで実行され、ローカルマシンに別の環境を設定する必要はありません。"
+
+#: ../../sessions_all/sessions_all.rst:329
+msgid ""
+"When you close the window, you can find that the ``Untitled.ipynb`` file is "
+"created in the notebook file explorer. Note that the files created here are "
+"deleted when you terminate the session. The way to preserve those files even"
+" after the session is terminated is described in the Data & Storage Folders "
+"section."
+msgstr ""
+"ウィンドウを閉じると、ノートブックファイルエクスプローラに``Untitled.ipynb``ファイルが作成されていることが確認できます。ここで作成されたファイルは、セッションを終了すると削除されることに注意してください。セッション終了後もこれらのファイルを保存する方法については、「データとストレージフォルダ」セクションで説明しています。"
+
+#: ../../sessions_all/sessions_all.rst:338
+msgid "Use web terminal"
+msgstr "ウェブターミナルを使用する"
+
+#: ../../sessions_all/sessions_all.rst:340
+msgid ""
+"Return to the Session list page. This time, let's launch the terminal. Click"
+" the terminal icon (the second button in the Control panel) to use the "
+"container's ttyd app. A terminal will appear in a new window and you can run"
+" shell commands to access the computational session as shown in the "
+"following figure. If you are familiar with using commands, you can easily "
+"run various Linux commands. You may notice that the ``Untitled.ipynb`` file "
+"automatically generated in Jupyter Notebook is listed with the ``ls`` "
+"command. This shows that both apps are running in the same container "
+"environment."
+msgstr ""
+"セッション一覧ページに戻ります。今回はターミナルを起動してみましょう。コントロールパネルの2番目のボタンであるターミナルアイコンをクリックして、コンテナのttydアプリを利用します。新しいウィンドウにターミナルが表示され、シェルコマンドを実行して計算セッションにアクセスすることができます。次の図に示すように、コマンドの使用に慣れている場合は、さまざまなLinuxコマンドを簡単に実行できます。Jupyter"
+" "
+"Notebookで自動生成された``Untitled.ipynb``ファイルが``ls``コマンドによってリスト表示されることに気づくかもしれません。これは、両方のアプリが同じコンテナ環境で実行されていることを示しています。"
+
+#: ../../sessions_all/sessions_all.rst:351
+msgid ""
+"If you create a file here, you can immediately see it in the Jupyter "
+"Notebook you opened earlier as well. Conversely, changes made to files in "
+"Jupyter Notebook can also be checked right from the terminal. This is "
+"because they are using the same files in the same compute session."
+msgstr ""
+"ここでファイルを作成すると、先に開いたJupyter Notebookですぐに確認できます。逆に、Jupyter "
+"Notebookでファイルに加えた変更も、端末から直接確認できます。これは、同じ計算セッションで同じファイルを使用しているためです。"
+
+#: ../../sessions_all/sessions_all.rst:356
+msgid ""
+"In addition to this, you can use web-based services such as TensorBoard, "
+"Jupyter Lab, etc., depending on the type of environments provided by the "
+"compute session."
+msgstr ""
+"これに加えて、計算セッションによって提供される環境の種類に応じて、TensorBoard、Jupyter "
+"Labなどのウェブベースのサービスを使用することができます。"
+
+#: ../../sessions_all/sessions_all.rst:361
+msgid "Query compute session log"
+msgstr "コンピュートセッションログをクエリする"
+
+#: ../../sessions_all/sessions_all.rst:363
+msgid ""
+"You can view the log of the compute session by clicking the last icon in the"
+" Control panel of the running compute session."
+msgstr "実行中のコンピュートセッションのコントロールパネルで最後のアイコンをクリックすることで、コンピュートセッションのログを表示できます。"
+
+#: ../../sessions_all/sessions_all.rst:369
+msgid ""
+"From 22.09, you can download session log by clicking download button on "
+"upper-right side of the dialog. This feature is helpful for tracking "
+"artifacts."
+msgstr ""
+"22.09 "
+"から、ダイアログの右上にあるダウンロードボタンをクリックしてセッションログをダウンロードすることができます。この機能はアーティファクトを追跡するのに役立ちます。"
+
+#: ../../sessions_all/sessions_all.rst:373
+msgid "Rename running session"
+msgstr "実行中のセッションの名前を変更"
+
+#: ../../sessions_all/sessions_all.rst:375
+msgid ""
+"You can change the name of an active session. Just click the edit icon in "
+"the session information column. Write down the new name and click the "
+"confirm button. The new session name should also follow the :ref:`the "
+"authoring rule<session-naming-rule>`."
+msgstr ""
+"アクティブなセッションの名前を変更できます。セッション情報欄の編集アイコンをクリックするだけです。新しい名前を入力し、確認ボタンをクリックします。新しいセッション名も"
+" :ref:`作成規則<session-naming-rule>` に従う必要があります。"
+
+#: ../../sessions_all/sessions_all.rst:385
+msgid "Delete a compute session"
+msgstr "コンピュートセッションを削除"
+
+#: ../../sessions_all/sessions_all.rst:387
+msgid ""
+"To terminate a specific session, simply click on the red power icon and "
+"click OKAY button in the dialog. Since the data in the folder inside the "
+"compute session is deleted as soon as the compute session ends, it is "
+"recommended to move the data to the mounted folder or upload it to the "
+"mounted folder from the beginning if you want to keep it."
+msgstr ""
+"特定のセッションを終了するには、赤い電源アイコンをクリックし、ダイアログでOKAYボタンをクリックします。コンピュートセッションが終了する際にその内部のフォルダ内のデータは削除されるため、データを保持したい場合は、最初からマウントされたフォルダにデータを移動するか、マウントされたフォルダにアップロードすることをお勧めします。"
+
+#: ../../sessions_all/sessions_all.rst:398
+msgid "Idleness Checks"
+msgstr "アイドル状態のチェック"
+
+#: ../../sessions_all/sessions_all.rst:400
+msgid ""
+"Backend.AI supports three types of inactivity (idleness) criteria for "
+"automatic garbage collection of compute sessions: Max Session Lifetime, "
+"Network Idle Timeout, and Utilization Checker."
+msgstr ""
+"Backend.AIは、コンピュートセッションの自動ガベージコレクションのために、最大セッションの有効期間、ネットワークアイドルタイムアウト、利用率チェッカーの3種類の非アクティブ状態（アイドル）基準をサポートしています。"
+
+#: ../../sessions_all/sessions_all.rst:404
+msgid ""
+"Idle checkers(inactivity criterion) will be displayed in the idle checks "
+"column of the session list."
+msgstr "アイドルチェッカー（非アクティブ基準）は、セッションリストのアイドルチェック列に表示されます。"
+
+#: ../../sessions_all/sessions_all.rst:410
+msgid ""
+"The meaning of idle checkers are as follows, and more detailed explanations "
+"can be found by clicking the information (i) icon in the idle checks column."
+msgstr "アイドルチェッカーの意味は以下の通りであり、詳細な説明はアイドルチェック列の情報 (i) アイコンをクリックすることで確認できます。"
+
+#: ../../sessions_all/sessions_all.rst:413
+msgid ""
+"Max Session Lifetime: Force-terminate sessions after this time from "
+"creation. This measure prevents sessions from running indefinitely."
+msgstr "最大セッション寿命: 作成からこの時間経過後にセッションを強制終了します。この対策により、セッションが無期限に実行されることを防ぎます。"
+
+#: ../../sessions_all/sessions_all.rst:415
+msgid ""
+"Network Idle Timeout: Force-terminate sessions that do not exchange data "
+"with the user (browser or web app) after this time. Traffic between the user"
+" and the compute session continuously occurs when the user interacts with an"
+" app, like terminal or Jupyter, by keyboard input, Jupyter cell creation, "
+"etc. Jupyter cell creation, etc. If there is no interaction for a certain "
+"period, the condition of garbage collection will be met. Even if there is a "
+"process executing a job in the compute session, it is subject to termination"
+" if there is no user interaction."
+msgstr ""
+"ネットワークアイドルタイムアウト: "
+"この時間が経過すると、ユーザー（ブラウザやウェブアプリ）とデータを交換しないセッションを強制終了します。ユーザーがアプリと対話する際、例えばキーボード入力やJupyterセルの作成などを通じて、ユーザーと計算セッション間で継続的にトラフィックが発生します。一定期間、相互作用がない場合、ガベージコレクションの条件が満たされます。計算セッション内でジョブを実行しているプロセスがあったとしても、ユーザーの相互作用がない場合は終了の対象となります。"
+
+#: ../../sessions_all/sessions_all.rst:421
+msgid ""
+"Utilization Checker: Resources allocated to a compute session are reclaimed "
+"based on the utilization of those resources. The decision to delete is based"
+" on the following two factors:"
+msgstr ""
+"利用率チェッカー: "
+"コンピュートセッションに割り当てられたリソースは、それらのリソースの利用率に基づいて回収されます。削除の決定は次の2つの要因に基づいています:"
+
+#: ../../sessions_all/sessions_all.rst:425
+msgid ""
+"Grace Period: The time during which the utilization idle checker is "
+"inactive. Even with low usage, the compute session won't be terminated "
+"during this period. However, once the grace period is over, if the average "
+"utilization remain below the threshold during the set idle timeout period, "
+"the system can terminate the session at any time. The grace period is merely"
+" a guaranteed duration during which termination does not occur. This measure"
+" is primarily for efficient management of low-usage GPU resources."
+msgstr ""
+"猶予期間: "
+"利用率アイドルチェッカーが無効化されている期間。この期間中は使用率が低くても計算セッションは終了されません。しかし、猶予期間が終了した後、設定されたアイドルタイムアウト期間中に平均利用率が閾値を下回った場合、システムはいつでもセッションを終了することができます。猶予期間は終了が発生しないことが保証される期間にすぎません。この措置は主に低利用のGPUリソースの効果的な管理を目的としています。"
+
+#: ../../sessions_all/sessions_all.rst:432
+#, python-format
+msgid ""
+"Utilization Threshold: If the resource utilization of a compute session does"
+" not exceed the set threshold for a certain duration (idle timeout), that "
+"session will be automatically terminated. For example, if the accelerator "
+"utilization threshold is set to 1%, and a compute session shows a "
+"utilization of less than 1% over the idle itmeout, it becomes a target for "
+"termination. Resources with empty values are excluded from the garbage "
+"collection criteria."
+msgstr ""
+"使用率の閾値: "
+"コンピュートセッションのリソース使用率が一定期間（アイドルタイムアウト）にわたって設定された閾値を超えない場合、そのセッションは自動的に終了されます。例えば、アクセラレータ使用率の閾値が1%に設定されていて、コンピュートセッションがアイドルタイムアウト中に1%未満の使用率を示す場合、それは終了の対象となります。値が空のリソースはガベージコレクションの基準から除外されます。"
+
+#: ../../sessions_all/sessions_all.rst:441
+msgid ""
+"After the grace period, sessions can be terminated anytime if utilization "
+"remains low. Briefly using the resources does not extend the grace period. "
+"Only the average utilization over the last idle timeout is considered."
+msgstr ""
+"猶予期間が過ぎると、利用率が低いままである場合にはセッションがいつでも終了される可能性があります。リソースを一時的に使用しても、猶予期間は延長されません。直近のアイドルタイムアウトにおける平均利用率のみが考慮されます。"
+
+#: ../../sessions_all/sessions_all.rst:445
+msgid ""
+"Hovering your mouse over the Utilization Checker will display a tooltip with"
+" the utilization and threshold values. The text color changes to yellow and "
+"then red as the current utilization approaches the threshold (indicating low"
+" resource utilization)."
+msgstr ""
+"ユーティライゼーションチェッカーにマウスをホバーすると、使用率と閾値の値が表示されたツールチップが表示されます。現在の使用率が閾値に近づくにつれて、テキストの色は黄色から赤色に変わります（低リソース使用率を示します）。"
+
+#: ../../sessions_all/sessions_all.rst:455
+msgid ""
+"Depending on the environment settings, idle checkers and resource types of "
+"utilization checker's tooltip may be different."
+msgstr "環境設定によって、アイドルチェッカーや利用率チェッカーのツールチップのリソースタイプが異なる場合があります。"
+
+#: ../../sessions_all/sessions_all.rst:462
+msgid "How to add environment variable before creating a session"
+msgstr "セッションを作成する前に環境変数を追加する方法"
+
+#: ../../sessions_all/sessions_all.rst:464
+msgid ""
+"To give more convenient workspace for users, Backend.AI supports environment"
+" variable setting in session launching. In this feature, you can add any "
+"envs such as ``PATH`` by filling out variable name and value in environment "
+"configuration dialog."
+msgstr ""
+"ユーザーにより便利なワークスペースを提供するために、Backend.AIはセッションの起動時に環境変数の設定をサポートしています。この機能では、環境設定ダイアログに変数名と値を入力することにより、``PATH``"
+" などの任意の環境変数を追加できます。"
+
+#: ../../sessions_all/sessions_all.rst:468
+msgid ""
+"To add environment variable, simply click + Add environment variables button"
+" of the Variable. Also, you can remove the variable by clicking ``-`` button"
+" of the row that you want to get rid of."
+msgstr ""
+"環境変数を追加するには、変数の + Add environment variables ボタンをクリックします。また、削除したい行の ``-`` "
+"ボタンをクリックすることで変数を削除することもできます。"
+
+#: ../../sessions_all/sessions_all.rst:-1
+msgid "Env Configuration Button"
+msgstr "環境設定ボタン"
+
+#: ../../sessions_all/sessions_all.rst:475
+msgid ""
+"You can input variable name and value in the same line of the input fields."
+msgstr "入力フィールドの同じ行に変数名と値を入力できます。"
+
+#: ../../sessions_all/sessions_all.rst:480
+msgid "How to add preopen ports before creating a session"
+msgstr "セッションを作成する前にpreopenポートを追加する方法"
+
+#: ../../sessions_all/sessions_all.rst:482
+msgid ""
+"Backend.AI supports preopen ports setting at container startup. When using "
+"this feature, there is no need to build separate images when you want to "
+"expose the serving port."
+msgstr ""
+"Backend.AIはコンテナ起動時にプリオープンポートの設定をサポートしています。この機能を使用すると、サービングポートを公開したいときに別々のイメージを作成する必要がありません。"
+
+#: ../../sessions_all/sessions_all.rst:485
+msgid ""
+"To add preopen ports, simply enter multiple values separated by either a "
+"comma (,) or a space."
+msgstr "プレオープンポートを追加するには、単にカンマ（,）またはスペースで区切って複数の値を入力します。"
+
+#: ../../sessions_all/sessions_all.rst:-1
+msgid "Preopen Ports Configuration"
+msgstr "事前オープンポートの設定"
+
+#: ../../sessions_all/sessions_all.rst:491
+msgid ""
+"In the forth page of session creation page, users can add, update and delete"
+" written preopen ports. To see more detail information, please click Help "
+"(?) button."
+msgstr ""
+"セッション作成ページの4ページ目では、ユーザーは記述されたプレオープンポートを追加、更新、削除することができます。詳細情報を見るには、ヘルプ（？）ボタンをクリックしてください。"
+
+#: ../../sessions_all/sessions_all.rst:494
+msgid ""
+"Users can put port numbers in between 1024 ~ 65535, to the input fields. "
+"Then, click the save button. Users can check the configured preopen ports in"
+" the session app launcher."
+msgstr ""
+"ユーザーはポート番号を1024から65535の間で入力フィールドに入力できます。それから、保存ボタンをクリックします。ユーザーはセッションアプリランチャーで設定された事前オープンポートを確認できます。"
+
+#: ../../sessions_all/sessions_all.rst:502
+msgid ""
+"The preopen ports are **the internal ports within the container**. "
+"Therefore, unlike other apps, when users click the preopen ports in the "
+"session app launcher, a blank page will appear. Please bind a server to the "
+"respective port before use."
+msgstr ""
+"プリオープンポートは、**コンテナ内の内部ポート** です。したがって、他のアプリと異なり、ユーザーがセッションアプリランチャーでプリオープンポートをクリックすると、空白のページが表示されます。使用前に、それぞれのポートにサーバーをバインドしてください。"
+
+#: ../../sessions_all/sessions_all.rst:508
+msgid "Save session commit"
+msgstr "セッションのコミットを保存"
+
+#: ../../sessions_all/sessions_all.rst:512
+msgid ""
+"Backend.AI supports \\\"Convert Session to Image\\\" feature from 24.03. "
+"Committing a ``RUNNING`` session will save the current state of the session "
+"as a new image. Clicking the commit button in the control column of "
+"``RUNNING`` session will display a dialog to show the information of the "
+"session. After entering the session name, you can convert the session to a "
+"new image. The session name must be 4 to 32 characters long and can only "
+"contain alphanumeric letters, hyphens (``-``), or underscores (``_``)."
+msgstr ""
+"Backend.AIは24.03から「セッションをイメージに変換」機能をサポートしています。``RUNNING`` セッションをコミットすると、セッションの現在の状態が新しいイメージとして保存されます。``RUNNING`` セッションのコントロール列でコミットボタンをクリックすると、セッションの情報を表示するダイアログが表示されます。セッション名を入力すると、セッションを新しいイメージに変換できます。セッション名は4から32文字の長さで、英数字、ハイフン（``-``）、アンダースコア（``_``）のみを含めることができます。"
+
+#: ../../sessions_all/sessions_all.rst:-1
+msgid "Push session to customized image"
+msgstr "カスタマイズされたイメージにセッションをプッシュ"
+
+#: ../../sessions_all/sessions_all.rst:523
+msgid ""
+"After filling out session name in the input field, click the 'PUSH SESSION "
+"TO CUSTOMIZED IMAGE' button. The customized image created in this way can be"
+" used in future session creations. However, directories mounted to the "
+"container for image commits are considered external resources and are not "
+"included in the final image. Remember that ``/home/work`` is a mount folder "
+"(scratch directory), so it is not included."
+msgstr ""
+"入力フィールドにセッション名を入力した後、「PUSH SESSION TO CUSTOMIZED "
+"IMAGE」ボタンをクリックします。このようにして作成されたカスタマイズされたイメージは、今後のセッション作成に使用できます。ただし、イメージコミットのためにコンテナにマウントされたディレクトリは外部リソースと見なされ、最終イメージには含まれません。``/home/work``"
+" はマウントフォルダ（スクラッチディレクトリ）であることを忘れないでください、したがって、それは含まれていません。"
+
+#: ../../sessions_all/sessions_all.rst:529
+msgid ""
+"Currently, Backend.AI supports \"Convert Session to Image\" only when the "
+"session is in ``INTERACTIVE`` mode. To prevent unexpected error, users may "
+"not be able to terminate the session during committing process. To stop the "
+"ongoing process, check the session, and force-terminate it."
+msgstr ""
+"現在、Backend.AI はセッションが ``INTERACTIVE`` モードのときにのみ「Convert Session to "
+"Image」をサポートしています。予期しないエラーを防ぐため、ユーザーはコミット処理中にセッションを終了できない場合があります。進行中のプロセスを停止するには、セッションを確認し、強制終了してください。"
+
+#: ../../sessions_all/sessions_all.rst:534
+msgid ""
+"The number of times to \"Convert Session to Image\" may be limited by the "
+"user resource policy. In this case, :ref:`remove the existing customized "
+"image<delete-customized-image>` and try again. If this does not resolves the"
+" problem, please contact the administrator."
+msgstr ""
+"「Convert Session to "
+"Image」の回数は、ユーザーリソースポリシーによって制限される場合があります。この場合、:ref:`既存のカスタマイズイメージを削除<delete-"
+"customized-image>`して再試行してください。これで問題が解決しない場合は、管理者に連絡してください。"
+
+#: ../../sessions_all/sessions_all.rst:540
+msgid "Utilizing converted images of ongoing sessions"
+msgstr "実行中のセッションの変換されたイメージを利用する"
+
+#: ../../sessions_all/sessions_all.rst:542
+msgid ""
+"Converting an ongoing session into an image allows you to select this image "
+"from the environments in the session launcher when creating a new session. "
+"This image is not exposed to other users and is useful for continuing to use"
+" the current session state as is. The converted image is tagged with "
+"``Customized<session name>``."
+msgstr ""
+"進行中のセッションをイメージに変換すると、新しいセッションを作成する際にセッションランチャーの環境からこのイメージを選択することができます。このイメージは他のユーザーには公開されず、現在のセッションの状態をそのまま利用し続けるのに便利です。変換されたイメージには ``Customized<session"
+" name>`` というタグが付けられます。"
+
+#: ../../sessions_all/sessions_all.rst:-1
+msgid "Select customized image"
+msgstr "カスタマイズされたイメージを選択"
+
+#: ../../sessions_all/sessions_all.rst:550
+msgid ""
+"To manually enter the environment name for future session creation, please "
+"click the copy icon."
+msgstr "将来のセッション作成のために環境名を手動で入力するには、コピーアイコンをクリックしてください。"
+
+#: ../../sessions_all/sessions_all.rst:-1
+msgid "Copy customized image"
+msgstr "カスタマイズされたイメージをコピー"
+
+#: ../../sessions_all/sessions_all.rst:559
+msgid "Optimizing Accelerated Computing"
+msgstr "アクセラレーテッドコンピューティングの最適化"
+
+#: ../../sessions_all/sessions_all.rst:561
+msgid ""
+"Backend.AI provides configuration UI for internal control variable in "
+"``nthreads-var``. Backend.AI sets this value equal to the number of "
+"session's CPU cores by default, which has the effect of accelerating typical"
+" high-performance computing workloads. Nevertheless, for some multi-thread "
+"workloads, multiple processes using OpenMP are used at same time, resulting "
+"in an abnormally large number of threads and significant performance "
+"degradation. To resolve this issue, setting the number of threads to 1 or 2 "
+"would work."
+msgstr ""
+"Backend.AI は内部制御変数のための構成UIとして ``nthreads-var`` を提供します。Backend.AI "
+"は、この値をセッションのCPUコア数と同じに設定するのがデフォルトであり、これにより一般的な高性能コンピューティングのワークロードを加速させる効果があります。しかし、一部のマルチスレッドワークロードでは、複数のプロセスが"
+" OpenMP "
+"を同時に使用するため、異常に大量のスレッドが生成され、パフォーマンスが大幅に低下します。この問題を解決するには、スレッドの数を1または2に設定すると効果的です。"
+
+#: ../../sessions_all/sessions_all.rst:-1
+msgid "Session HPC Optimization"
+msgstr "セッション HPC 最適化"
+
+#: ../../sessions_all/sessions_all.rst:576
+msgid "Advanced web terminal usage"
+msgstr "高度なウェブターミナルの使用"
+
+#: ../../sessions_all/sessions_all.rst:578
+msgid ""
+"The web-based terminal internally embeds a utility called `tmux "
+"<https://github.com/tmux/tmux/wiki>`_. tmux is a terminal multiplexer that "
+"supports to open multiple shell windows within a single shell, so as to "
+"allow multiple programs to run in foreground simultaneously. If you want to "
+"take advantage of more powerful tmux features, you can refer to the official"
+" tmux documentation and other usage examples on the Internet."
+msgstr ""
+"ウェブベースのターミナルには内部で `tmux <https://github.com/tmux/tmux/wiki>`_ "
+"というユーティリティが組み込まれています。tmux "
+"はターミナルマルチプレクサであり、単一のシェル内で複数のシェルウィンドウを開くことをサポートしているため、複数のプログラムを同時にフォアグラウンドで実行できます。より強力な"
+" tmux の機能を利用したい場合は、公式の tmux ドキュメントやインターネット上のその他の使用例を参照することができます。"
+
+#: ../../sessions_all/sessions_all.rst:585
+msgid "Here we are introducing some simple but useful features."
+msgstr "ここでは、いくつかのシンプルですが便利な機能を紹介します。"
+
+#: ../../sessions_all/sessions_all.rst:588
+msgid "Copy terminal contents"
+msgstr "端末の内容をコピーする"
+
+#: ../../sessions_all/sessions_all.rst:590
+msgid ""
+"tmux offers a number of useful features, but it's a bit confusing for first-"
+"time users. In particular, tmux has its own clipboard buffer, so when "
+"copying the contents of the terminal, you can suffer from the fact that it "
+"can be pasted only within tmux by default. Furthermore, it is difficult to "
+"expose user system's clipboard to tmux inside web browser, so the terminal "
+"contents cannot be copied and pasted to other programs of user's computer. "
+"The so-called ``Ctrl-C`` / ``Ctrl-V`` is not working with tmux."
+msgstr ""
+"tmuxは多くの便利な機能を提供しますが、初めてのユーザーには少し混乱を招くかもしれません。特に、tmuxは独自のクリップボードバッファを持っているため、ターミナルの内容をコピーする際、デフォルトではtmux内でしか貼り付けることができないという問題に直面することがあります。さらに、ユーザーシステムのクリップボードをウェブブラウザ内のtmuxに公開するのは難しいため、ターミナルの内容をユーザーのコンピューターの他のプログラムにコピー＆ペーストすることができません。いわゆる ``Ctrl-C``"
+" / ``Ctrl-V`` はtmuxでは機能しません。"
+
+#: ../../sessions_all/sessions_all.rst:598
+msgid ""
+"If you need to copy and paste the terminal contents to your system's "
+"clipboard, you can temporarily turn off tmux's mouse support. First, press "
+"``Ctrl-B`` key to enter tmux control mode. Then type ``:set -g mouse off`` "
+"and press ``Enter`` (note that you have to type the first colon as well). "
+"You can check what you are typing in the status bar at the bottom of the "
+"screen. Then drag the desired text from the terminal with the mouse and "
+"press the ``Ctrl-C`` or ``Cmd-C`` (in Mac) to copy them to the clipboard of "
+"the user's computer."
+msgstr ""
+"ターミナルの内容をシステムのクリップボードにコピー＆ペーストする必要がある場合、一時的にtmuxのマウスサポートをオフにすることができます。まず、``Ctrl-B`` キーを押してtmuxコントロールモードに入り、次に ``:set"
+" -g mouse "
+"off`` と入力して ``Enter`` を押します（最初のコロンも含めて入力する必要があります）。画面の下部のステータスバーで入力した内容を確認できます。次に、マウスでターミナルから目的のテキストをドラッグし、``Ctrl-C`` または（Macの場合） ``Cmd-C`` を押して、ユーザーのコンピュータのクリップボードにコピーします。"
+
+#: ../../sessions_all/sessions_all.rst:606
+msgid ""
+"With mouse support turned off, you cannot scroll through the mouse wheel to "
+"see the contents of the previous page from the terminal. In this case, you "
+"can turn on mouse support again. Press ``Ctrl-B``, and this time, type "
+"``:set -g mouse on``. Now you can scroll mouse wheel to see the contents of "
+"the previous page."
+msgstr ""
+"マウスサポートがオフの場合、ターミナルで前のページの内容をマウスホイールでスクロールして見ることはできません。この場合、もう一度マウスサポートをオンにすることができます。``Ctrl-B`` を押して、今回は ``:set"
+" -g mouse on`` と入力します。これで、マウスホイールで前のページの内容をスクロールして見ることができます。"
+
+#: ../../sessions_all/sessions_all.rst:611
+msgid ""
+"If you remember ``:set -g mouse off`` or ``:set -g mouse on`` after "
+"``Ctrl-B``, you can use the web terminal more conveniently."
+msgstr ""
+"``Ctrl-B`` の後に ``:set -g mouse off`` または ``:set -g mouse on`` "
+"を覚えておくと、Webターミナルをより便利に使用できます。"
+
+#: ../../sessions_all/sessions_all.rst:615
+msgid ""
+"``Ctrl-B`` is tmux's default control mode key. If you set another control "
+"key by modifying ``.tmux.conf`` in user home directory, you should press the"
+" set key combination instead of ``Ctrl-B``."
+msgstr ""
+"``Ctrl-B`` は、tmux のデフォルトの制御モードキーです。ユーザーホームディレクトリの ``.tmux.conf`` "
+"を変更して別の制御キーを設定した場合は、``Ctrl-B`` の代わりに設定されたキーの組み合わせを押す必要があります。"
+
+#: ../../sessions_all/sessions_all.rst:620
+msgid "In the Windows environment, refer to the following shortcuts."
+msgstr "Windows環境では、以下のショートカットを参照してください。"
+
+#: ../../sessions_all/sessions_all.rst:622
+msgid "Copy: Hold down ``Shift``, right-click and drag"
+msgstr "コピー: ``Shift`` を押しながら右クリックしてドラッグ"
+
+#: ../../sessions_all/sessions_all.rst:623
+msgid "Paste: Press ``Ctrl-Shift-V``"
+msgstr "貼り付け: ``Ctrl-Shift-V`` を押します。"
+
+#: ../../sessions_all/sessions_all.rst:626
+msgid "Check the terminal history using keyboard"
+msgstr "キーボードを使用してターミナル履歴を確認する"
+
+#: ../../sessions_all/sessions_all.rst:628
+msgid ""
+"There is also a way to copy the terminal contents and check the previous "
+"contents of the terminal simultaneously. It is to check the previous "
+"contents using the keyboard. Again, click ``Ctrl-B`` first, and then press "
+"the ``Page Up`` and/or ``Page Down`` keys. You can see that you navigate "
+"through the terminal's history with just keyboard. To exit search mode, just"
+" press the ``q`` key. With this method, you can check the contents of the "
+"terminal history even when the mouse support is turned off to allow copy and"
+" paste."
+msgstr ""
+"ターミナルの内容をコピーして、同時に以前の内容を確認する方法もあります。それはキーボードを使用して以前の内容を確認する方法です。再度、まず "
+"``Ctrl-B`` をクリックし、次に ``Page Up`` および/または ``Page Down`` "
+"キーを押します。キーボードだけでターミナルの履歴をナビゲートできることがわかります。検索モードを終了するには、``q`` "
+"キーを押すだけです。この方法を使用すると、コピー&ペーストを可能にするためにマウスサポートをオフにした場合でも、ターミナルの履歴の内容を確認できます。"
+
+#: ../../sessions_all/sessions_all.rst:637
+msgid "Spawn multiple shells"
+msgstr "複数のシェルを生成"
+
+#: ../../sessions_all/sessions_all.rst:639
+msgid ""
+"The main advantage of tmux is that you can launch and use multiple shells in"
+" one terminal window. Since seeing is believing, let's press the ``Ctrl-B`` "
+"key and then the ``c``. You can see that the contents of the existing window"
+" disappears and a new shell environment appears. But the previous window is "
+"not terminated. Let's press ``Ctrl-B`` and then ``w``. You can now see the "
+"list of shells currently open on tmux like following image. Here, the shell "
+"starting with ``0:`` is the shell environment you first saw, and the shell "
+"starting with ``1:`` is the one you just created. You can move between "
+"shells using the up/down keys. Place the cursor on the shell ``0:`` and "
+"press the Enter key to select it."
+msgstr ""
+"tmuxの主な利点は、一つのターミナルウィンドウで複数のシェルを起動して使用できることです。百聞は一見に如かず、まずは ``Ctrl-B`` キーを押してから ``c`` を押してみましょう。既存のウィンドウの内容が消えて、新しいシェル環境が表示されます。しかし、前のウィンドウは終了されていません。``Ctrl-B`` を押してから ``w`` を押してみましょう。現在tmuxで開いているシェルのリストが次の画像のように表示されます。ここで、``0:`` で始まるシェルは最初に見たシェル環境で、``1:`` で始まるシェルは今作成したものです。上下のキーを使ってシェル間を移動できます。カーソルを ``0:`` シェルの上に置いてEnterキーを押して選択しましょう。"
+
+#: ../../sessions_all/sessions_all.rst:-1
+msgid "tmux's multiple session management"
+msgstr "tmuxの複数セッション管理"
+
+#: ../../sessions_all/sessions_all.rst:653
+msgid ""
+"You can see the first shell environment appears. In this way, you can use "
+"multiple shell environments within a web terminal. To exit or terminate the "
+"current shell, just enter ``exit`` command or press ``Ctrl-B x`` key and "
+"then type ``y``."
+msgstr ""
+"最初のシェル環境が表示されます。このように、ウェブターミナル内で複数のシェル環境を使用することができます。現在のシェルを終了または終了するには、``exit``"
+" コマンドを入力するか、``Ctrl-B x`` キーを押してから ``y`` を入力します。"
+
+#: ../../sessions_all/sessions_all.rst:658
+msgid "In summary:"
+msgstr "まとめ:"
+
+#: ../../sessions_all/sessions_all.rst:660
+msgid "``Ctrl-B c``: create a new tmux shell"
+msgstr "``Ctrl-B c``: 新しい tmux シェルを作成"
+
+#: ../../sessions_all/sessions_all.rst:661
+msgid "``Ctrl-B w``: query current tmux shells and move around among them"
+msgstr "``Ctrl-B w``: 現在の tmux シェルを照会し、その間を移動します"
+
+#: ../../sessions_all/sessions_all.rst:662
+msgid "``exit`` or ``Ctrl-B x``: terminate the current shell"
+msgstr "``exit`` または ``Ctrl-B x``: 現在のシェルを終了します"
+
+#: ../../sessions_all/sessions_all.rst:664
+msgid ""
+"Combining the above commands allows you to perform various tasks "
+"simultaneously on multiple shells."
+msgstr "上記のコマンドを組み合わせることで、複数のシェルで同時にさまざまなタスクを実行できます。"

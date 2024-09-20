@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../statistics/statistics.rst:3
+msgid "Statistics Page"
+msgstr "統計ページ"
+
+#: ../../statistics/statistics.rst:5
+msgid ""
+"On the Statistics page, you can check simple statistics related to the use "
+"of compute sessions via a graph. You can check the statistics for a day or a"
+" week by selecting the usage period from the select period menu on the upper"
+" left. Displayed items are as follows."
+msgstr ""
+"[統計]ページでは、グラフを通じてコンピュートセッションの使用に関連する簡単な統計を確認できます。左上の選択期間メニューから使用期間を選択することで、一日または一週間の統計を確認できます。表示される項目は以下の通りです。"
+
+#: ../../statistics/statistics.rst:9
+msgid "Sessions: The number of compute sessions created."
+msgstr "セッション: 作成されたコンピュートセッションの数。"
+
+#: ../../statistics/statistics.rst:10
+msgid "CPU: The number of CPU cores allocated to the compute sessions."
+msgstr "CPU: コンピュートセッションに割り当てられたCPUコアの数。"
+
+#: ../../statistics/statistics.rst:11
+msgid "Memory: The amount of memory allocated to the compute sessions."
+msgstr "メモリ: コンピュートセッションに割り当てられたメモリの量。"
+
+#: ../../statistics/statistics.rst:12
+msgid ""
+"GPU: The number of GPU units allocated to the compute sessions. If the "
+"Fractional GPU feature is enabled, it may not match the physics GPU."
+msgstr ""
+"GPU: コンピュートセッションに割り当てられたGPUユニットの数。Fractional "
+"GPU機能が有効になっている場合、物理的なGPUと一致しないことがあります。"
+
+#: ../../statistics/statistics.rst:14
+msgid "IO-Read: The amount of data read from the storage."
+msgstr "IO-Read: ストレージから読み取られたデータの量。"
+
+#: ../../statistics/statistics.rst:15
+msgid "IO-Write: The amount of data written to the storage."
+msgstr "IO-Write: ストレージに書き込まれたデータの量。"
+
+#: ../../statistics/statistics.rst:17
+msgid ""
+"Note that the statistics shown here are based on terminated compute "
+"sessions. Also, one week statistics may not be shown for the users whose "
+"account is created no longer than a week."
+msgstr ""
+"ここに表示されている統計は、終了したコンピュートセッションに基づいていることに注意してください。また、アカウントが作成されてから1週間以内のユーザーについては、1週間の統計が表示されない場合があります。"
+
+#: ../../statistics/statistics.rst:21
+msgid "More detailed statistics are shown in the admin-only Control-Panel."
+msgstr "より詳細な統計情報は、管理者専用のコントロールパネルに表示されます。"

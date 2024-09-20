@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../index.rst:19
+msgid "Table of Contents"
+msgstr "目次"
+
+#: ../../index.rst:7
+msgid "Backend.AI Web-UI User Guide"
+msgstr "Backend.AI Web-UI ユーザーガイド"
+
+#: ../../index.rst:9
+msgid "User's guide for the Backend.AI Web-UI."
+msgstr "Backend.AI Web-UI ユーザーガイド。"
+
+#: ../../index.rst:11
+msgid ""
+"Backend.AI Web-UI is a web or app that provides easy-to-use GUI interface to"
+" work with the Backend.AI server."
+msgstr ""
+"Backend.AI Web-UIは、Backend.AIサーバーと連携するための使いやすいGUIインターフェースを提供するウェブまたはアプリです。"
+
+#: ../../index.rst:14
+msgid "The latest versions of this document can be found from sites below:"
+msgstr "このドキュメントの最新バージョンは、以下のサイトから入手できます。"
+
+#: ../../index.rst:16
+msgid "https://webui.docs.backend.ai/en/latest (English)"
+msgstr ""
+"申し訳ありませんが、提供されたリンクから内容を直接翻訳することはできません。ただし、特定のテキストまたはセクションをここに入力していただければ、その内容を翻訳いたします。"
+
+#: ../../index.rst:17
+msgid "https://webui.docs.backend.ai/ko/latest (Korean)"
+msgstr ""
+"申し訳ありませんが、そのリンクを直接翻訳することはできません。提供された具体的なテキストや文章を翻訳することができますので、お手数ですが翻訳が必要なテキストをこちらにコピーしていただけますか？"

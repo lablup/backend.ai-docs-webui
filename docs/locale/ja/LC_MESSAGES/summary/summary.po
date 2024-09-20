@@ -1,0 +1,307 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../summary/summary.rst:3
+msgid "Summary Page"
+msgstr "サマリーページ"
+
+#: ../../summary/summary.rst:5
+msgid ""
+"On the Summary page, users can check resource status and session usage, and "
+"there are shortcut links to frequently used functions."
+msgstr "概要ページでは、ユーザーはリソースの状態とセッションの使用状況を確認でき、よく使われる機能へのショートカットリンクがあります。"
+
+#: ../../summary/summary.rst:10
+msgid "Topbar"
+msgstr "トップバー"
+
+#: ../../summary/summary.rst:-1
+msgid "Topbar usermenu"
+msgstr "トップバーユーザーメニュー"
+
+#: ../../summary/summary.rst:17
+msgid ""
+"In the middle of the top bar is a drop-down menu to select the user's "
+"current project. If a user belongs to multiple projects, the user can change"
+" it from here. Each project may have different resource policies, therefore "
+"changing the project also changes the available resource policies. If there "
+"are not many users, there may be only one default project."
+msgstr ""
+"トップバーの中央に、ユーザーの現在のプロジェクトを選択するためのドロップダウンメニューがあります。ユーザーが複数のプロジェクトに属している場合は、ここからプロジェクトを変更できます。各プロジェクトは異なるリソースポリシーを持つことがあるため、プロジェクトを変更すると利用可能なリソースポリシーも変更されます。ユーザーがそれほど多くない場合は、デフォルトプロジェクトが1つしかないかもしれません。"
+
+#: ../../summary/summary.rst:23
+msgid ""
+"Click the person icon on the right side of the top bar to see the user menu."
+" Each menu item has the following functions."
+msgstr "上部バーの右側にある人型のアイコンをクリックすると、ユーザーメニューが表示されます。各メニュー項目の機能は次のとおりです。"
+
+#: ../../summary/summary.rst:26
+msgid ""
+"About Backend.AI: Displays information such as version of Backend.AI Web-UI,"
+" license type, etc."
+msgstr "Backend.AIについて: Backend.AI Web-UIのバージョンやライセンスタイプなどの情報を表示します。"
+
+#: ../../summary/summary.rst:28
+msgid "My Account: Check/Update information of current login user"
+msgstr "マイアカウント: 現在のログインユーザーの情報を確認/更新する"
+
+#: ../../summary/summary.rst:29
+msgid "Preferences: Go to user settings page"
+msgstr "設定: ユーザー設定ページへ移動"
+
+#: ../../summary/summary.rst:30
+msgid ""
+"Logs / Errors: Go to the log page. You can check the log and error history "
+"recorded on the client side."
+msgstr "ログ/エラー: ログページに移動します。クライアント側に記録されたログとエラーの履歴を確認できます。"
+
+#: ../../summary/summary.rst:32
+msgid ""
+"Log Out: Log out. Users can also logout by clicking the icon on the far "
+"right of the top bar."
+msgstr "ログアウト: ログアウトします。ユーザーは、トップバーの右端にあるアイコンをクリックすることでもログアウトできます。"
+
+#: ../../summary/summary.rst:35
+msgid "If you click My Account, the following dialog appears."
+msgstr "My Accountをクリックすると、次のダイアログが表示されます。"
+
+#: ../../summary/summary.rst:41
+msgid "Each item has the following meaning."
+msgstr "各項目には以下の意味があります。"
+
+#: ../../summary/summary.rst:43
+msgid "Full Name: User's name (up to 64 characters)"
+msgstr "フルネーム: ユーザーの名前 (最大64文字)"
+
+#: ../../summary/summary.rst:44
+msgid ""
+"Original password: Original password. Click the right view icon to see the "
+"input contents."
+msgstr "元のパスワード：元のパスワード。入力内容を確認するには、右側のビューアイコンをクリックしてください。"
+
+#: ../../summary/summary.rst:46
+msgid ""
+"New password: New password (8 characters or more containing at least 1 "
+"alphabet, number, and symbol). Click the right view icon to see the input "
+"contents. Ensure this is the same as the Original password."
+msgstr ""
+"新しいパスワード: "
+"新しいパスワード（少なくとも1つのアルファベット、数字、記号を含む8文字以上）。右側の表示アイコンをクリックして入力内容を確認します。元のパスワードと同じであることを確認してください。"
+
+#: ../../summary/summary.rst:49
+msgid ""
+"2FA Enabled: 2FA activation. The user needs to enter the OTP code when "
+"logging in if it is checked."
+msgstr "2FA 有効: 2FA の有効化。チェックされている場合、ユーザーはログイン時に OTP コードを入力する必要があります。"
+
+#: ../../summary/summary.rst:52
+msgid ""
+"Depending on the plugin settings, the ``2FA Enabled`` column might be "
+"invisible. In that case, please contact administrator of your system."
+msgstr "プラグイン設定によっては、「2FA 有効」列が表示されないことがあります。その場合は、システムの管理者に連絡してください。"
+
+#: ../../summary/summary.rst:55
+msgid ""
+"Enter the desired value and click the UPDATE button to update the user "
+"information."
+msgstr "希望する値を入力し、UPDATEボタンをクリックしてユーザー情報を更新します。"
+
+#: ../../summary/summary.rst:59
+msgid "2FA Setup"
+msgstr "2FA 設定"
+
+#: ../../summary/summary.rst:60
+msgid ""
+"If you activate the ``2FA Enabled`` switch, the following dialog appears."
+msgstr "``2FA Enabled`` スイッチを有効にすると、次のダイアログが表示されます。"
+
+#: ../../summary/summary.rst:66
+msgid ""
+"Turn on the 2FA application you use and scan the QR code or manually enter "
+"the verification code. There are many 2FA-enabled applications, such as "
+"Google Authenticator, 2STP, 1Password, and Bitwarden."
+msgstr ""
+"使用している2FAアプリケーションを起動し、QRコードをスキャンするか、手動で検証コードを入力します。2FA対応のアプリケーションには、Google "
+"Authenticator、2STP、1Password、Bitwardenなどがあります。"
+
+#: ../../summary/summary.rst:70
+msgid ""
+"Then enter the 6-digit code from the item added to your 2FA application into"
+" the dialog above. 2FA is activated when you press the CONFIRM button."
+msgstr ""
+"次に、お使いの2FAアプリケーションに追加された項目から6桁のコードを上記のダイアログに入力します。「確認」ボタンを押すと、2FAが有効になります。"
+
+#: ../../summary/summary.rst:73
+msgid ""
+"When you log in later, if you enter an email and password, an additional "
+"field appears asking for the OTP code."
+msgstr "後でログインする際に、メールアドレスとパスワードを入力すると、OTPコードを求める追加フィールドが表示されます。"
+
+#: ../../summary/summary.rst:80
+msgid ""
+"To log in, you must open the 2FA application and enter a 6-digit code in the"
+" One-time password field."
+msgstr "ログインするには、2FAアプリケーションを開き、ワンタイムパスワードフィールドに6桁のコードを入力する必要があります。"
+
+#: ../../summary/summary.rst:86
+msgid ""
+"If you want to disable 2FA, turn off the ``2FA Enabled`` switch and click "
+"the confirm button in the following dialog."
+msgstr "2FA を無効にしたい場合は、``2FA Enabled`` スイッチをオフにし、次のダイアログで確認ボタンをクリックしてください。"
+
+#: ../../summary/summary.rst:91
+msgid "Summary panel"
+msgstr "サマリーパネル"
+
+#: ../../summary/summary.rst:-1
+msgid "Dashboard panels"
+msgstr "ダッシュボードパネル"
+
+#: ../../summary/summary.rst:96
+msgid "Various convenience panels are located under the top bar."
+msgstr "トップバーの下にさまざまな便利なパネルがあります。"
+
+#: ../../summary/summary.rst:99
+msgid "Start Menu"
+msgstr "スタートメニュー"
+
+#: ../../summary/summary.rst:101
+msgid ""
+"You can start a compute session by clicking on the START button. It is the "
+"same as the feature on the Sessions page, and is a shortcut button that "
+"helps you create a compute session immediately after logging in."
+msgstr ""
+"STARTボタンをクリックすることで、計算セッションを開始できます。これはセッションページの機能と同じで、ログイン直後に計算セッションをすぐに作成できるショートカットボタンです。"
+
+#: ../../summary/summary.rst:105
+msgid ""
+"Below the START button are shortcut links to the Data & Storage (Upload "
+"files), Users, and Maintenance pages. Among these, the links to the Users "
+"and to Maintenance pages are only available for the admin account."
+msgstr ""
+"STARTボタンの下には、データ＆ストレージ（ファイルのアップロード）、ユーザー、およびメンテナンスページへのショートカットリンクがあります。この中で、ユーザーおよびメンテナンスページへのリンクは管理者アカウントのみに利用可能です。"
+
+#: ../../summary/summary.rst:110
+msgid "Resource Statistics"
+msgstr "リソース統計情報"
+
+#: ../../summary/summary.rst:112
+msgid ""
+"It shows the total amount of resources the user can allocate and the amount "
+"of resources currently allocated. You can check the user's CPU, memory, and "
+"GPU resource occupancy and quota respectively. Also on the Sessions slider, "
+"you can see the maximum number of compute sessions you can create "
+"simultaneously and how many compute sessions are currently running."
+msgstr ""
+"ユーザーが割り当てることができるリソースの総量と、現在割り当てられているリソースの量を表示します。ユーザーのCPU、メモリ、およびGPUリソースの占有率とクォータをそれぞれ確認できます。また、セッションスライダーでは、同時に作成できるコンピュートセッションの最大数と、現在実行中のコンピュートセッションの数を確認できます。"
+
+#: ../../summary/summary.rst:118
+msgid ""
+"You can change the resource group by clicking the Resource Group field at "
+"the top. Resource group is a concept to group multiple Agent nodes as a "
+"single resource unit. If you have many agent nodes, you can configure "
+"settings such as assigning them to a specific project for each resource "
+"group. When there is only one agent node, it is normal to see only one "
+"resource group. If you change the resource group, the amount of resources "
+"may change depending on the amount of resources held by that resource group "
+"(agents belong to it)."
+msgstr ""
+"リソースグループは、上部のリソースグループフィールドをクリックすることで変更できます。リソースグループは、複数のエージェントノードを単一のリソース単位としてグループ化するための概念です。多数のエージェントノードがある場合、それらを特定のプロジェクトに割り当てるなど、各リソースグループに対して設定を構成できます。エージェントノードが1つしかない場合、1つのリソースグループしか表示されないのが通常です。リソースグループを変更すると、そのリソースグループが保有するリソース（エージェントが属する）によって、リソースの量が変わる場合があります。"
+
+#: ../../summary/summary.rst:127
+msgid "System Resources"
+msgstr "システムリソース"
+
+#: ../../summary/summary.rst:129
+msgid ""
+"It shows the number of Agent worker nodes connected to the Backend.AI system"
+" and the total number of compute sessions currently created. You can also "
+"check the CPU, memory, and GPU utilization of the agent node. If you are "
+"logged in as a normal user, only the number of compute sessions you have "
+"created is displayed."
+msgstr ""
+"それは、Backend.AI "
+"システムに接続されているエージェントワーカーノードの数と、現在作成されている計算セッションの総数を表示します。エージェントノードの "
+"CPU、メモリ、GPU の利用率も確認できます。通常のユーザーとしてログインしている場合は、作成した計算セッションの数のみが表示されます。"
+
+#: ../../summary/summary.rst:135
+msgid "Announcement"
+msgstr "お知らせ"
+
+#: ../../summary/summary.rst:137
+msgid ""
+"Announcements will be displayed here. Announcements can be made through a "
+"separate admin UI (Control-Panel)."
+msgstr "お知らせはここに表示されます。お知らせは別の管理者UI（コントロールパネル）を通じて行うことができます。"
+
+#: ../../summary/summary.rst:141
+msgid "Invitation"
+msgstr "招待"
+
+#: ../../summary/summary.rst:143
+msgid ""
+"If another user has shared their storage folder to you, it will be displayed"
+" here. If you accept the share request, you can view and access the shared "
+"folder in the Data & Storage folder. The access rights are determined by the"
+" user who has sent the share request. Of course, you can decline the sharing"
+" requests."
+msgstr ""
+"他のユーザーがストレージフォルダを共有した場合、ここに表示されます。共有リクエストを承認すると、データ & "
+"ストレージフォルダ内で共有フォルダを閲覧およびアクセスできます。アクセス権は、共有リクエストを送信したユーザーによって決まります。もちろん、共有リクエストを拒否することもできます。"
+
+#: ../../summary/summary.rst:149
+msgid "Download Backend.AI Web UI App"
+msgstr "Backend.AI Web UI アプリのダウンロード"
+
+#: ../../summary/summary.rst:151
+msgid ""
+"Backend.AI WebUI supports desktop applications. By using desktop app, you "
+"can use desktop app specific features, such as :ref:`SSH/SFTP connection to "
+"a Compute Session<ssh-sftp-container>` . For now Backend.AI WebUI provides "
+"desktop application with following OS:"
+msgstr ""
+"Backend.AI "
+"WebUIはデスクトップアプリケーションをサポートしています。デスクトップアプリを使用することで、:ref:`計算セッションへのSSH/SFTP接続<ssh-"
+"sftp-container>` のようなデスクトップアプリ固有の機能を利用できます。現在、Backend.AI "
+"WebUIは以下のOSでデスクトップアプリケーションを提供しています:"
+
+#: ../../summary/summary.rst:155
+msgid "Windows"
+msgstr "ウィンドウズ"
+
+#: ../../summary/summary.rst:156
+msgid "Linux"
+msgstr "Linux"
+
+#: ../../summary/summary.rst:157
+msgid "Mac"
+msgstr "マック"
+
+#: ../../summary/summary.rst:160
+msgid ""
+"When you click the button that match with your local environment (e.g. OS, "
+"Architecture), It will automatically downloads the same version of current "
+"webUI version. If you want to download later or former version of WebUI as a"
+" desktop app, please visit `here <https://github.com/lablup/backend.ai-"
+"webui/releases?page=1>`_ and download the desired version(s)."
+msgstr ""
+"ボタンをクリックしてローカル環境（例：OS、アーキテクチャ）に一致させると、現在のWebUIバージョンと同じバージョンが自動的にダウンロードされます。後でWebUIのバージョンや以前のバージョンをデスクトップアプリとしてダウンロードしたい場合は、`こちら"
+" <https://github.com/lablup/backend.ai-webui/releases?page=1>`_ "
+"を訪れて、希望のバージョンをダウンロードしてください。"

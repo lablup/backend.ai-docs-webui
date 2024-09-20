@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI Web-UI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../references/references.rst:3
+msgid "References"
+msgstr "参考文献"
+
+#: ../../references/references.rst:5
+msgid "Online API Manual: https://docs.backend.ai"
+msgstr "オンラインAPIマニュアル: https://docs.backend.ai"
+
+#: ../../references/references.rst:6
+msgid "Online Client SDK Manual: https://docs.backend.ai/en/latest/client"
+msgstr "オンラインクライアントSDKマニュアル: https://docs.backend.ai/en/latest/client"
+
+#: ../../references/references.rst:8
+msgid "The latest versions of this document can be found from sites below:"
+msgstr "このドキュメントの最新バージョンは、以下のサイトから見つけることができます。"
+
+#: ../../references/references.rst:10
+msgid "https://webui.docs.backend.ai/en/latest (English)"
+msgstr ""
+"申し訳ありませんが、リンク先のWebページ全体を翻訳することはできません。翻訳が必要な特定のテキストを提供していただければ、そのテキストを翻訳いたします。"
+
+#: ../../references/references.rst:11
+msgid "https://webui.docs.backend.ai/ko/latest (Korean)"
+msgstr "https://webui.docs.backend.ai/ko/latest (Korean)"
