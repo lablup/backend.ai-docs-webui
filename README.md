@@ -90,7 +90,7 @@ cd docs
 
 The generated PDF is located under `_build/`.
 
-## Example of building PDF document via LLM
+### Example of building PDF document via LLM
 
 This is AI era, so we provide an example to machine-translate and build Japanese (ja)
 PDF document here for reference:
