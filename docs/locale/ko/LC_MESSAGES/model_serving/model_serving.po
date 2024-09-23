@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 23.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-12 17:05+0900\n"
+"POT-Creation-Date: 2024-09-23 15:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -458,8 +458,8 @@ msgstr ""
 "예를 들어, 'vLLM'이나 'NVIDIA NIM', 또는 '미리 정의된 이미지 명령어' 를 모델 서비스의 런타임 배리언트로 "
 "선택한다면, 'model-definition' 파일을 마운트할 모델 폴더에 업로드할 필요가 없습니다. 그 대신, 별도의 환경변수 를"
 " 설정해야 할 수도 있습니다. 더 자세한 정보를 확인하려면, `모델 배리언트: 쉽게 서빙하는 다양한 모델 서비스 "
-"<https://www.backend.ai/blog/2024-07-10-various-ways-of-model-serving>`_ "
-" 포스팅을 확인하시기 바랍니다."
+"<https://www.backend.ai/blog/2024-07-10-various-ways-of-model-serving>`_"
+"  포스팅을 확인하시기 바랍니다."
 
 #: ../../model_serving/model_serving.rst:231
 msgid ""
@@ -629,11 +629,11 @@ msgstr ""
 msgid "Refresh button"
 msgstr "새로고침 버튼"
 
-#: ../../model_serving/model_serving.rst:322
+#: ../../model_serving/model_serving.rst:324
 msgid "Generating Tokens"
 msgstr "토큰 발급하기"
 
-#: ../../model_serving/model_serving.rst:324
+#: ../../model_serving/model_serving.rst:326
 msgid ""
 "Once the model service is successfully executed, the status will be set "
 "to ``HEALTHY``. In this case, you can click on the corresponding endpoint"
@@ -655,7 +655,7 @@ msgstr ""
 msgid "Routing page"
 msgstr ""
 
-#: ../../model_serving/model_serving.rst:338
+#: ../../model_serving/model_serving.rst:340
 msgid ""
 "Click the 'Generate Token' button located to the right of the generated "
 "token list in the routing information. In the modal that appears for "
@@ -668,7 +668,7 @@ msgstr ""
 msgid "Token generation dialog"
 msgstr ""
 
-#: ../../model_serving/model_serving.rst:347
+#: ../../model_serving/model_serving.rst:349
 msgid ""
 "The issued token will be added to the list of generated tokens. Click the"
 " 'copy' button in the token item to copy the token, and add it as the "
@@ -681,35 +681,35 @@ msgstr ""
 msgid "Generated token copy"
 msgstr "토큰 발급하기"
 
-#: ../../model_serving/model_serving.rst:355
+#: ../../model_serving/model_serving.rst:357
 msgid "Key"
 msgstr "키"
 
-#: ../../model_serving/model_serving.rst:355
+#: ../../model_serving/model_serving.rst:357
 msgid "Value"
 msgstr "값"
 
-#: ../../model_serving/model_serving.rst:357
+#: ../../model_serving/model_serving.rst:359
 msgid "Content-Type"
 msgstr "Content-Type"
 
-#: ../../model_serving/model_serving.rst:357
+#: ../../model_serving/model_serving.rst:359
 msgid "application/json"
 msgstr "application/json"
 
-#: ../../model_serving/model_serving.rst:358
+#: ../../model_serving/model_serving.rst:360
 msgid "Authorization"
 msgstr "Authorization"
 
-#: ../../model_serving/model_serving.rst:358
+#: ../../model_serving/model_serving.rst:360
 msgid "BackendAI"
 msgstr "BackendAI"
 
-#: ../../model_serving/model_serving.rst:362
+#: ../../model_serving/model_serving.rst:364
 msgid "Accessing the Model Service Endpoint for End Users"
 msgstr "(엔드유저 전용) 모델 서비스에 대응하는 엔드포인트에 접속하여 서비스 확인하기"
 
-#: ../../model_serving/model_serving.rst:364
+#: ../../model_serving/model_serving.rst:366
 msgid ""
 "To complete the model serving, you need to share information with the "
 "actual end users so that they can access the server where the model "
@@ -723,13 +723,13 @@ msgstr ""
 " 때 서비스 생성시 Open to Public 값이 활성화한 경우라면 라우팅 정보 페이지의 서비스 엔드포인트 값을 공유하면 됩니다."
 " 만일 비활성화 한 채로 서비스를 생성한 경우라면 서비스 엔드포인트 값과 앞서 생성한 토큰 값을 공유하면 됩니다."
 
-#: ../../model_serving/model_serving.rst:372
+#: ../../model_serving/model_serving.rst:374
 msgid ""
 "Here's the simple command using ``curl`` command whether to check sending"
 " any requests to model serving endpoint working properly or not."
 msgstr "``curl`` 명령어를 사용해서 모델 서빙 엔드포인트에 보내는 요청이 제대로 동작하는 지 아닌지 확인할 수 있습니다."
 
-#: ../../model_serving/model_serving.rst:383
+#: ../../model_serving/model_serving.rst:385
 msgid ""
 "By default, end users must be on a network that can access the endpoint. "
 "If the service was created in a closed network, only end users who have "
@@ -738,11 +738,94 @@ msgstr ""
 "기본적으로 엔드 유저는 엔드포인트에 접근이 가능한 네트워크 망에 있어야 합니다. 만일 폐쇄망에서 서비스를 생성한 경우, 폐쇄망 내 "
 "접근이 가능한 엔드 유저만 접근이 가능합니다."
 
-#: ../../model_serving/model_serving.rst:389
+#: ../../model_serving/model_serving.rst:391
+msgid "Using the LLM model directly."
+msgstr "LLM 모델 바로 사용하기"
+
+#: ../../model_serving/model_serving.rst:393
+msgid ""
+"If you have created an LLM(Large Language Model) model service, you can "
+"try using the LLM model in real-time. Click the 'LLM Chat Test' button in"
+" the Service Endpoint column."
+msgstr ""
+"LLM(Large Language Model) 모델 서비스를 생성했다면, 실시간으로 LLM 모델을 사용해 볼 수 있습니다. 서비스 엔드포인트 "
+"컬럼의 'LLM Chat Test' 버튼을 클릭합니다."
+
+#: ../../model_serving/model_serving.rst:-1
+msgid "LLM Chat Test"
+msgstr "LLM Chat Test"
+
+#: ../../model_serving/model_serving.rst:401
+msgid ""
+"Then, a modal for chatting will appear as shown below. You can input the "
+"text you want to chat with the LLM model and click the 'Send' button or "
+"press 'Enter'. The LLM model will respond to the text you entered."
+msgstr ""
+"그러면 아래와 같이 채팅을 할 수 있는 모달이 뜨게 됩니다. LLM 모델과 대화할 텍스트를 입력하고 '전송' 버튼을 클릭하거나 "
+"'Enter' 키를 누르면, LLM 모델이 입력한 텍스트에 대한 응답할 것입니다."
+
+#: ../../model_serving/model_serving.rst:-1
+msgid "LLM Chat Dialog"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:409
+msgid ""
+"If you encounter issues connecting to the API, a custom modal will appear"
+" allowing you to manually specify model settings. To use the model, you "
+"will need the following information:"
+msgstr ""
+"API에 연결하는 데 문제가 발생하는 경우, 사용자 정의 모달이 나타나며 모델 설정을 수동으로 지정할 수 있습니다. 모델을 사용하려면 "
+"다음 정보가 필요합니다:"
+
+#: ../../model_serving/model_serving.rst:412
+msgid ""
+"baseURL: The base URL of the server where the model is located. Please "
+"ensure that the version information is included. For example, if using "
+"the OpenAI API, you would enter https://api.openai.com/v1."
+msgstr ""
+"baseURL: 모델이 위치한 서버의 기본 URL. 버전 정보가 포함되어 있는지 확인해야 합니다. 예를 들어, OpenAI API를 사용하는 경우, "
+"https://api.openai.com/v1 을 입력합니다."
+
+#: ../../model_serving/model_serving.rst:415
+msgid ""
+"Model ID: The unique identifier of the model you want to use. For "
+"example, for GPT-4, you would enter gpt-4o."
+msgstr ""
+"Model ID: 사용하려는 모델의 고유 식별자. 예를 들어, GPT-4의 경우 gpt-4o를 입력합니다."
+
+#: ../../model_serving/model_serving.rst:417
+msgid ""
+"token (optional): An authentication key to access the model service. "
+"Tokens can be generated from various services, not just Backend.AI. The "
+"format and generation process may vary depending on the service. Always "
+"refer to the specific service's guide for details. For instance, when "
+"using the service generated by Backend.AI, please refer to the "
+":ref:`Generating Tokens<generating-tokens>` section for instructions on "
+"how to generate one."
+msgstr ""
+"token (선택사항): 모델 서비스에 접근하기 위한 인증 키. 토큰은 Backend.AI 뿐만 아니라 다양한 서비스에서 생성할 수 있습니다. "
+"토큰 생성 방법은 서비스에 따라 다를 수 있습니다. 자세한 내용은 해당 서비스의 안내를 참조하십시오. 예를 들어, Backend.AI에서 "
+"생성한 서비스를 사용하는 경우, 토큰 생성 방법은 :ref:`토큰 발급하기<generating-tokens>` 섹션을 참조하십시오."
+
+#: ../../model_serving/model_serving.rst:-1
+msgid "LLM Chat Dialog Custom"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:428
+msgid ""
+"Click the 'More' button in the upper left corner to access additional "
+"features. Compare with other LLM models, delete chat history, and more. "
+"For more information on 'Compare with other models', please refer to the "
+":ref:`LLM Playground<LLM-playground>` section."
+msgstr ""
+"더 많은 기능을 사용하려면 왼쪽 상단의 '더보기' 버튼을 클릭합니다. 다른 LLM 모델과 비교, 채팅 기록 삭제 등을 할 수 있습니다. "
+"'다른 모델과 비교'에 대한 자세한 내용은 :ref:`LLM Playground<LLM-playground>` 섹션을 참조하십시오."
+
+#: ../../model_serving/model_serving.rst:433
 msgid "Modifying Model Service"
 msgstr "모델 서비스 수정하기"
 
-#: ../../model_serving/model_serving.rst:391
+#: ../../model_serving/model_serving.rst:435
 msgid ""
 "Click on the wrench icon in the Control tab to open a modal where you can"
 " change the model service. The format is identical to the model service "
@@ -759,11 +842,11 @@ msgstr ""
 msgid "Edit model service dialog"
 msgstr "모델 서비스"
 
-#: ../../model_serving/model_serving.rst:402
+#: ../../model_serving/model_serving.rst:446
 msgid "Terminating Model Service"
 msgstr "모델 서비스 종료하기"
 
-#: ../../model_serving/model_serving.rst:404
+#: ../../model_serving/model_serving.rst:448
 msgid ""
 "The model service periodically runs a scheduler to adjust the routing "
 "count to match the desired session count. However, this puts a burden on "
