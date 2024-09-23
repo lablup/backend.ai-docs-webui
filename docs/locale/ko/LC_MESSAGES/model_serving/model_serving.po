@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 23.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-23 15:24+0900\n"
+"POT-Creation-Date: 2024-09-23 16:40+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -748,8 +748,8 @@ msgid ""
 "try using the LLM model in real-time. Click the 'LLM Chat Test' button in"
 " the Service Endpoint column."
 msgstr ""
-"LLM(Large Language Model) 모델 서비스를 생성했다면, 실시간으로 LLM 모델을 사용해 볼 수 있습니다. 서비스 엔드포인트 "
-"컬럼의 'LLM Chat Test' 버튼을 클릭합니다."
+"LLM(Large Language Model) 모델 서비스를 생성했다면, 실시간으로 LLM 모델을 사용해 볼 수 있습니다. 서비스 "
+"엔드포인트 컬럼의 'LLM Chat Test' 버튼을 클릭합니다."
 
 #: ../../model_serving/model_serving.rst:-1
 msgid "LLM Chat Test"
@@ -774,8 +774,8 @@ msgid ""
 " allowing you to manually specify model settings. To use the model, you "
 "will need the following information:"
 msgstr ""
-"API에 연결하는 데 문제가 발생하는 경우, 사용자 정의 모달이 나타나며 모델 설정을 수동으로 지정할 수 있습니다. 모델을 사용하려면 "
-"다음 정보가 필요합니다:"
+"API에 연결하는 데 문제가 발생하는 경우, 사용자 정의 모달이 나타나며 모델 설정을 수동으로 지정할 수 있습니다. 모델을 "
+"사용하려면 다음 정보가 필요합니다:"
 
 #: ../../model_serving/model_serving.rst:412
 msgid ""
@@ -783,15 +783,14 @@ msgid ""
 "ensure that the version information is included. For example, if using "
 "the OpenAI API, you would enter https://api.openai.com/v1."
 msgstr ""
-"baseURL: 모델이 위치한 서버의 기본 URL. 버전 정보가 포함되어 있는지 확인해야 합니다. 예를 들어, OpenAI API를 사용하는 경우, "
-"https://api.openai.com/v1 을 입력합니다."
+"baseURL: 모델이 위치한 서버의 기본 URL. 버전 정보가 포함되어 있는지 확인해야 합니다. 예를 들어, OpenAI API를"
+" 사용하는 경우, https://api.openai.com/v1 을 입력합니다."
 
 #: ../../model_serving/model_serving.rst:415
 msgid ""
 "Model ID: The unique identifier of the model you want to use. For "
 "example, for GPT-4, you would enter gpt-4o."
-msgstr ""
-"Model ID: 사용하려는 모델의 고유 식별자. 예를 들어, GPT-4의 경우 gpt-4o를 입력합니다."
+msgstr "Model ID: 사용하려는 모델의 고유 식별자. 예를 들어, GPT-4의 경우 gpt-4o를 입력합니다."
 
 #: ../../model_serving/model_serving.rst:417
 msgid ""
@@ -803,9 +802,10 @@ msgid ""
 ":ref:`Generating Tokens<generating-tokens>` section for instructions on "
 "how to generate one."
 msgstr ""
-"token (선택사항): 모델 서비스에 접근하기 위한 인증 키. 토큰은 Backend.AI 뿐만 아니라 다양한 서비스에서 생성할 수 있습니다. "
-"토큰 생성 방법은 서비스에 따라 다를 수 있습니다. 자세한 내용은 해당 서비스의 안내를 참조하십시오. 예를 들어, Backend.AI에서 "
-"생성한 서비스를 사용하는 경우, 토큰 생성 방법은 :ref:`토큰 발급하기<generating-tokens>` 섹션을 참조하십시오."
+"token (선택사항): 모델 서비스에 접근하기 위한 인증 키. 토큰은 Backend.AI 뿐만 아니라 다양한 서비스에서 생성할 수"
+" 있습니다. 토큰 생성 방법은 서비스에 따라 다를 수 있습니다. 자세한 내용은 해당 서비스의 안내를 참조하십시오. 예를 들어, "
+"Backend.AI에서 생성한 서비스를 사용하는 경우, 토큰 생성 방법은 :ref:`토큰 발급하기<generating-"
+"tokens>` 섹션을 참조하십시오."
 
 #: ../../model_serving/model_serving.rst:-1
 msgid "LLM Chat Dialog Custom"
@@ -818,14 +818,19 @@ msgid ""
 "For more information on 'Compare with other models', please refer to the "
 ":ref:`LLM Playground<LLM-playground>` section."
 msgstr ""
-"더 많은 기능을 사용하려면 왼쪽 상단의 '더보기' 버튼을 클릭합니다. 다른 LLM 모델과 비교, 채팅 기록 삭제 등을 할 수 있습니다. "
-"'다른 모델과 비교'에 대한 자세한 내용은 :ref:`LLM Playground<LLM-playground>` 섹션을 참조하십시오."
+"더 많은 기능을 사용하려면 왼쪽 상단의 '더보기' 버튼을 클릭합니다. 다른 LLM 모델과 비교, 채팅 기록 삭제 등을 할 수 "
+"있습니다. '다른 모델과 비교'에 대한 자세한 내용은 :ref:`LLM Playground<LLM-playground>` 섹션을 "
+"참조하십시오."
 
-#: ../../model_serving/model_serving.rst:433
+#: ../../model_serving/model_serving.rst:-1
+msgid "LLM Chat Dialog extra features"
+msgstr ""
+
+#: ../../model_serving/model_serving.rst:437
 msgid "Modifying Model Service"
 msgstr "모델 서비스 수정하기"
 
-#: ../../model_serving/model_serving.rst:435
+#: ../../model_serving/model_serving.rst:439
 msgid ""
 "Click on the wrench icon in the Control tab to open a modal where you can"
 " change the model service. The format is identical to the model service "
@@ -842,11 +847,11 @@ msgstr ""
 msgid "Edit model service dialog"
 msgstr "모델 서비스"
 
-#: ../../model_serving/model_serving.rst:446
+#: ../../model_serving/model_serving.rst:450
 msgid "Terminating Model Service"
 msgstr "모델 서비스 종료하기"
 
-#: ../../model_serving/model_serving.rst:448
+#: ../../model_serving/model_serving.rst:452
 msgid ""
 "The model service periodically runs a scheduler to adjust the routing "
 "count to match the desired session count. However, this puts a burden on "
