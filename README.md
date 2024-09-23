@@ -90,6 +90,18 @@ cd docs
 
 The generated PDF is located under `_build/`.
 
+## Example of building PDF document via LLM
+
+This is AI era, so we provide an example to machine-translate and build Japanese (ja)
+PDF document here for reference:
+```shell
+cd docs
+make gettext
+sphinx-intl update -p _build/gettext -l ja
+find docs/locale/ja/LC_MESSAGES -name "*.po" -type f | xargs -I {} sh -c 'python ../translate_po.py "{}" "{}"'
+# Configurating latexpdf build configs (in conf.py) may take some time.
+./build_pdf.sh ja
+```
 
 ## References for newcomers
 
