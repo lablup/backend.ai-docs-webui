@@ -43,7 +43,9 @@ msgid ""
 "SSH connection. All the necessary secret keys and various settings for SSH "
 "connection between containers are automatically generated."
 msgstr ""
-"Backend.AIは、分散コンピューティング/トレーニングタスクをサポートするためにクラスターコンピュートセッションをサポートしています。クラスターセッションは、複数のエージェントノードにまたがって作成された複数のコンテナで構成されます。クラスターセッションの下にあるコンテナは、動的に作成されたプライベートネットワークを通じて自動的に接続されます。また、一時的なドメイン名（``main1``、``sub1``、``sub2`` など）が与えられ、SSH接続などのネットワーキングタスクを簡単に実行できるようになります。コンテナ間のSSH接続に必要なすべての秘密鍵やさまざまな設定は自動的に生成されます。"
+"Backend.AIは、分散コンピューティング/トレーニングタスクをサポートするためにクラスターコンピュートセッションをサポートしています。クラスターセッションは、複数のエージェントノードにまたがって作成された複数のコンテナで構成されます。クラスターセッションの下にあるコンテナは、動的に作成されたプライベートネットワークを通じて自動的に接続されます。また、一時的なドメイン名（``main1``、``sub1``、``sub2``"
+" "
+"など）が与えられ、SSH接続などのネットワーキングタスクを簡単に実行できるようになります。コンテナ間のSSH接続に必要なすべての秘密鍵やさまざまな設定は自動的に生成されます。"
 
 #: ../../cluster_session/cluster_session.rst:23
 msgid "For detailed about Backend.AI cluster session, refer to the following."

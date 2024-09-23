@@ -43,7 +43,8 @@ msgid ""
 "before, click Reset button on the right top of the section."
 msgstr ""
 "GENERALタブには多くの設定メニューがあります。セクションの上部にある検索フィールドを使用して検索することができますし、`Display Only "
-"Changes` をクリックすることで変更した内容だけをフィルタリングすることもできます。以前の状態に戻したい場合は、セクションの右上にあるリセットボタンをクリックしてください。"
+"Changes` "
+"をクリックすることで変更した内容だけをフィルタリングすることもできます。以前の状態に戻したい場合は、セクションの右上にあるリセットボタンをクリックしてください。"
 
 #: ../../user_settings/user_settings.rst:25
 msgid "Desktop Notification"
@@ -292,7 +293,9 @@ msgid ""
 "better to remove them out of the bootstrap script and run them in a terminal"
 " app."
 msgstr ""
-"コンピュートセッションは、ブートストラップスクリプトの実行が完了するまで ``PREPARING`` ステータスのままです。ユーザーはセッションが ``RUNNING`` になるまで使用できないため、スクリプトに長時間実行されるタスクが含まれている場合、それらをブートストラップスクリプトから外し、ターミナルアプリで実行する方が良いかもしれません。"
+"コンピュートセッションは、ブートストラップスクリプトの実行が完了するまで ``PREPARING`` ステータスのままです。ユーザーはセッションが "
+"``RUNNING`` "
+"になるまで使用できないため、スクリプトに長時間実行されるタスクが含まれている場合、それらをブートストラップスクリプトから外し、ターミナルアプリで実行する方が良いかもしれません。"
 
 #: ../../user_settings/user_settings.rst:163
 msgid "EDIT USER CONFIG SCRIPT"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"POT-Creation-Date: 2024-09-24 01:16+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,52 +23,65 @@ msgid "Installation"
 msgstr "インストール"
 
 #: ../../installation/installation.rst:5
+#, fuzzy
 msgid ""
-"The Web-UI can be used in two forms. It can be used as a web service by "
-"connecting to a separate web address prepared by the admins, or as an app "
-"provided as a stand-alone executable file that does not require separate "
-"installation."
+"Backend.AI WebUI can be used in two different forms. It can be used as a web"
+" service by connecting to a seperate web address provided by the admins, or "
+"as an form of app provided as a stand-alone executable file which does not "
+"require seperate installation."
 msgstr ""
-"Web-"
-"UIは2つの形式で使用できます。管理者によって用意された別のウェブアドレスに接続してウェブサービスとして使用することができ、また、個別のインストールが不要なスタンドアロンの実行可能ファイルとして提供されるアプリとして使用することもできます。"
+"Backend.AI "
+"WebUIは、2つの異なる形態で使用できます。管理者によって提供される別のウェブアドレスに接続することでウェブサービスとして使用するか、別途インストールを必要としないスタンドアロンの実行可能ファイルとして提供されるアプリケーションの形式で使用できます。"
 
-#: ../../installation/installation.rst:10
+#: ../../installation/installation.rst:9
 msgid ""
-"With the web-based Web-UI, users do not need to install a platform-dependent"
-" desktop applications and just need the latest versions of browsers such as "
-"Chrome."
+"With web-based form of WebUI, users just need the latest versions of web "
+"browsers, no need to install platform-dependent desktop applications."
 msgstr ""
-"WebベースのWeb-"
-"UIを使用すれば、ユーザーはプラットフォーム依存のデスクトップアプリケーションをインストールする必要がなく、Chromeなどの最新バージョンのブラウザだけで済みます。"
+"WebUIのウェブベースの形式では、ユーザーは最新バージョンのウェブブラウザだけが必要であり、プラットフォームに依存するデスクトップアプリケーションをインストールする必要はありません。"
 
-#: ../../installation/installation.rst:14
-msgid ""
-"Recommended browser: the latest version of Chrome (at least version > 80)"
-msgstr "推奨ブラウザ: Chrome の最新バージョン (少なくともバージョン > 80)"
+#: ../../installation/installation.rst:11
+#, fuzzy
+msgid "Recommended browser: Latest version of Chrome (at least > 80)"
+msgstr "推奨ブラウザー: 最新バージョンのChrome (少なくとも > 80)"
+
+#: ../../installation/installation.rst:12
+#, fuzzy
+msgid "Requirement: Any machine that runs web browser (2 cores, 4 GiB memory)"
+msgstr "要件: ウェブブラウザを実行する任意のマシン (2コア、4 GiBメモリ)"
 
 #: ../../installation/installation.rst:15
-msgid "Requirement: any machine that runs Web Browser (2 cores, 4 GiB memory)"
-msgstr "要件: Webブラウザを実行する任意のマシン (2コア、4 GiBメモリ)"
+#, fuzzy
+msgid ""
+"We do not support Microsoft Internet Explorer since it is deprecated and "
+"does not follow web standard, and does not support up-to-date browser "
+"features."
+msgstr ""
+"Microsoft Internet Explorer "
+"は廃止され、ウェブ標準に従わず、最新のブラウザ機能をサポートしていないため、サポートしていません。"
 
 #: ../../installation/installation.rst:18
+#, fuzzy
 msgid ""
-"We do not support MicroSoft Internet Explorer since it is deprecated and "
-"does not follow web standard and support up-to-date brower features."
+"The stand-alone WebUI app can be downloaded from following link: "
+"https://github.com/lablup/backend.ai-webui/releases"
 msgstr ""
-"マイクロソフトのインターネットエクスプローラーは廃止されており、Web標準に従っておらず最新のブラウザ機能もサポートしていないため、私たちはサポートしていません。"
+"スタンドアロンのWebUIアプリは次のリンクからダウンロードできます: https://github.com/lablup/backend.ai-"
+"webui/releases"
 
 #: ../../installation/installation.rst:22
+#, fuzzy
 msgid ""
-"The stand-alone Web-UI app can be downloaded from following address: "
-"https://github.com/lablup/backend.ai-webui/releases"
+"Depending on the security settings of the Operating System, our installer "
+"may be recognized as an unsigned executable file. Permission check may be "
+"required."
 msgstr ""
-"スタンドアロンのWeb-UIアプリは、以下のアドレスからダウンロードできます: "
-"https://github.com/lablup/backend.ai-webui/releases"
+"オペレーティングシステムのセキュリティ設定によっては、インストーラーが署名されていない実行可能ファイルとして認識される場合があります。権限の確認が必要になることがあります。"
 
-#: ../../installation/installation.rst:26
-msgid ""
-"In the case of an app, depending on the security setting of the desktop OS, "
-"it may be recognized as an unsigned executable file and a permission check "
-"may be required."
-msgstr ""
-"アプリの場合、デスクトップOSのセキュリティ設定によっては、署名されていない実行ファイルとして認識され、権限の確認が必要になる場合があります。"
+#~ msgid ""
+#~ "With the web-based Web-UI, users do not need to install a platform-dependent"
+#~ " desktop applications and just need the latest versions of browsers such as "
+#~ "Chrome."
+#~ msgstr ""
+#~ "WebベースのWeb-"
+#~ "UIを使用すれば、ユーザーはプラットフォーム依存のデスクトップアプリケーションをインストールする必要がなく、Chromeなどの最新バージョンのブラウザだけで済みます。"

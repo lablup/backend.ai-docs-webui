@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"POT-Creation-Date: 2024-09-24 01:16+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -272,8 +272,8 @@ msgid ""
 "``write_file``: This is an action to create a file with the given file name "
 "and append control to it. the default access permission is ``644``."
 msgstr ""
-"``write_file``: "
-"これは、指定されたファイル名でファイルを作成し、そのファイルに制御を追加するアクションです。デフォルトのアクセス権限は ``644`` です。"
+"``write_file``: これは、指定されたファイル名でファイルを作成し、そのファイルに制御を追加するアクションです。デフォルトのアクセス権限は "
+"``644`` です。"
 
 #: ../../model_serving/model_serving.rst:148
 msgid "``arg/filename``: Specify the file name"
@@ -302,7 +302,8 @@ msgid ""
 "mode, the default access permission is ``644``."
 msgstr ""
 "``write_tempfile``: "
-"これは、一時的なファイル名（``.py``）でファイルを作成し、その内容を追加するアクションです。モードに値が指定されていない場合、デフォルトのアクセス許可は ``644`` です。"
+"これは、一時的なファイル名（``.py``）でファイルを作成し、その内容を追加するアクションです。モードに値が指定されていない場合、デフォルトのアクセス許可は"
+" ``644`` です。"
 
 #: ../../model_serving/model_serving.rst:159
 msgid ""
@@ -359,8 +360,9 @@ msgid ""
 "on how to create a folder."
 msgstr ""
 "モデル定義ファイル（``model-"
-"definition.yml``）をモデルタイプフォルダにアップロードするには、仮想フォルダを作成する必要があります。仮想フォルダを作成する際、デフォルトの ``general`` タイプではなく、``model`` タイプを選択します。フォルダの作成方法については、データ"
-" & フォルダーページの :ref:`ストレージフォルダの作成<create_storage_folder>` セクションを参照してください。"
+"definition.yml``）をモデルタイプフォルダにアップロードするには、仮想フォルダを作成する必要があります。仮想フォルダを作成する際、デフォルトの"
+" ``general`` タイプではなく、``model`` タイプを選択します。フォルダの作成方法については、データ & フォルダーページの "
+":ref:`ストレージフォルダの作成<create_storage_folder>` セクションを参照してください。"
 
 #: ../../model_serving/model_serving.rst:-1
 msgid "Model type folder creation"
@@ -606,11 +608,11 @@ msgstr ""
 msgid "Refresh button"
 msgstr "更新ボタン"
 
-#: ../../model_serving/model_serving.rst:322
+#: ../../model_serving/model_serving.rst:324
 msgid "Generating Tokens"
 msgstr "トークンの生成"
 
-#: ../../model_serving/model_serving.rst:324
+#: ../../model_serving/model_serving.rst:326
 msgid ""
 "Once the model service is successfully executed, the status will be set to "
 "``HEALTHY``. In this case, you can click on the corresponding endpoint name "
@@ -631,7 +633,7 @@ msgstr ""
 msgid "Routing page"
 msgstr "ルーティングページ"
 
-#: ../../model_serving/model_serving.rst:338
+#: ../../model_serving/model_serving.rst:340
 msgid ""
 "Click the 'Generate Token' button located to the right of the generated "
 "token list in the routing information. In the modal that appears for token "
@@ -643,7 +645,7 @@ msgstr ""
 msgid "Token generation dialog"
 msgstr "トークン生成ダイアログ"
 
-#: ../../model_serving/model_serving.rst:347
+#: ../../model_serving/model_serving.rst:349
 msgid ""
 "The issued token will be added to the list of generated tokens. Click the "
 "'copy' button in the token item to copy the token, and add it as the value "
@@ -655,35 +657,35 @@ msgstr ""
 msgid "Generated token copy"
 msgstr "生成されたトークンをコピー"
 
-#: ../../model_serving/model_serving.rst:355
+#: ../../model_serving/model_serving.rst:357
 msgid "Key"
 msgstr "キー"
 
-#: ../../model_serving/model_serving.rst:355
+#: ../../model_serving/model_serving.rst:357
 msgid "Value"
 msgstr "値"
 
-#: ../../model_serving/model_serving.rst:357
+#: ../../model_serving/model_serving.rst:359
 msgid "Content-Type"
 msgstr "コンテンツタイプ"
 
-#: ../../model_serving/model_serving.rst:357
+#: ../../model_serving/model_serving.rst:359
 msgid "application/json"
 msgstr "アプリケーション/JSON"
 
-#: ../../model_serving/model_serving.rst:358
+#: ../../model_serving/model_serving.rst:360
 msgid "Authorization"
 msgstr "認可"
 
-#: ../../model_serving/model_serving.rst:358
+#: ../../model_serving/model_serving.rst:360
 msgid "BackendAI"
 msgstr "BackendAI"
 
-#: ../../model_serving/model_serving.rst:362
+#: ../../model_serving/model_serving.rst:364
 msgid "Accessing the Model Service Endpoint for End Users"
 msgstr "エンドユーザー向けモデルサービスエンドポイントへのアクセス"
 
-#: ../../model_serving/model_serving.rst:364
+#: ../../model_serving/model_serving.rst:366
 msgid ""
 "To complete the model serving, you need to share information with the actual"
 " end users so that they can access the server where the model service is "
@@ -695,7 +697,7 @@ msgid ""
 msgstr ""
 "モデルサービングを完了するには、実際のエンドユーザーに情報を共有し、モデルサービスが実行されているサーバーにアクセスできるようにする必要があります。サービス作成時に公開するオプションが有効になっている場合は、ルーティング情報ページからサービスエンドポイントの値を共有できます。オプションが無効で作成されたサービスの場合は、以前に生成されたトークンとともにサービスエンドポイントの値を共有することができます。"
 
-#: ../../model_serving/model_serving.rst:372
+#: ../../model_serving/model_serving.rst:374
 msgid ""
 "Here's the simple command using ``curl`` command whether to check sending "
 "any requests to model serving endpoint working properly or not."
@@ -703,7 +705,7 @@ msgstr ""
 "モデル提供エンドポイントにリクエストを送信することが適切に機能しているかどうかを確認するための、``curl`` "
 "コマンドを使用した簡単なコマンドはこちらです。"
 
-#: ../../model_serving/model_serving.rst:383
+#: ../../model_serving/model_serving.rst:385
 msgid ""
 "By default, end users must be on a network that can access the endpoint. If "
 "the service was created in a closed network, only end users who have access "
@@ -711,11 +713,101 @@ msgid ""
 msgstr ""
 "デフォルトでは、エンドユーザーはエンドポイントにアクセスできるネットワーク上になければなりません。サービスが閉じたネットワークで作成された場合、その閉じたネットワーク内にアクセスできるエンドユーザーのみがサービスにアクセスできます。"
 
-#: ../../model_serving/model_serving.rst:389
+#: ../../model_serving/model_serving.rst:391
+msgid "Using the Large Language Model"
+msgstr "大規模言語モデルの使用"
+
+#: ../../model_serving/model_serving.rst:393
+msgid ""
+"If you've created a Large Language Model (LLM) service, you can test the LLM"
+" in real-time. Simply click the 'LLM Chat Test' button located in the "
+"Service Endpoint column."
+msgstr ""
+"大規模言語モデル (LLM) サービスを作成した場合、リアルタイムで LLM をテストできます。サービスエンドポイント列にある 'LLM "
+"チャットテスト' ボタンをクリックするだけです。"
+
+#: ../../model_serving/model_serving.rst:-1
+msgid "LLM Chat Test"
+msgstr "LLMチャットテスト"
+
+#: ../../model_serving/model_serving.rst:401
+msgid ""
+"Then, a modal for chatting will appear as shown below. You can input the "
+"text you want to chat with the LLM model and click the 'Send' button or "
+"press 'Enter'. The LLM model will respond to the text you entered."
+msgstr ""
+"その後、下記のようにチャット用のモーダルが表示されます。 "
+"LLMモデルとチャットしたいテキストを入力し、『送信』ボタンをクリックするか、『Enter』キーを押してください。 "
+"LLMモデルは、あなたが入力したテキストに応答します。"
+
+#: ../../model_serving/model_serving.rst:-1
+msgid "LLM Chat Dialog"
+msgstr "LLMチャットダイアログ"
+
+#: ../../model_serving/model_serving.rst:409
+msgid ""
+"If you encounter issues connecting to the API, a custom modal will appear "
+"allowing you to manually specify model settings. To use the model, you will "
+"need the following information:"
+msgstr ""
+"APIに接続する際に問題が発生した場合、カスタムモーダルが表示され、モデル設定を手動で指定できるようになります。モデルを使用するには、次の情報が必要です。"
+
+#: ../../model_serving/model_serving.rst:412
+msgid ""
+"baseURL: Base URL of the server where the model is located. Make sure to "
+"include the version information. For instance, when utilizing the OpenAI "
+"API, you should enter https://api.openai.com/v1."
+msgstr ""
+"baseURL: モデルが配置されているサーバーのベースURL。バージョン情報を含めることを忘れないでください。例えば、OpenAI "
+"APIを利用する場合は、 https://api.openai.com/v1 を入力してください。"
+
+#: ../../model_serving/model_serving.rst:415
+msgid ""
+"Model ID: Unique identifier of the model. To specify the model you wish to "
+"use, you would provide its unique identifier. For instance, for GPT-4, you "
+"would input 'gpt-4o'."
+msgstr ""
+"モデルID: モデルのユニークな識別子。使用したいモデルを指定するには、そのユニークな識別子を提供します。例えば、GPT-4の場合は、 'gpt-4o'"
+" を入力します。"
+
+#: ../../model_serving/model_serving.rst:417
+msgid ""
+"Token (optional): An authentication key to access the model service. Tokens "
+"can be generated from various services, not just Backend.AI. The format and "
+"generation process may vary depending on the service. Always refer to the "
+"specific service's guide for details. For instance, when using the service "
+"generated by Backend.AI, please refer to the :ref:`Generating "
+"Tokens<generating-tokens>` section for instructions on how to generate "
+"tokens."
+msgstr ""
+"トークン（オプション）: モデルサービスにアクセスするための認証キー。トークンは、Backend.AI "
+"だけでなく様々なサービスから生成することができます。フォーマットや生成プロセスはサービスによって異なる場合があります。詳細については常に特定のサービスのガイドを参照してください。例えば、Backend.AI"
+" によって生成されるサービスを使用する場合、トークンの生成方法については :ref:`Generating Tokens<generating-"
+"tokens>` のセクションを参照してください。"
+
+#: ../../model_serving/model_serving.rst:-1
+msgid "LLM Chat Dialog Custom"
+msgstr "LLMチャットダイアログカスタム"
+
+#: ../../model_serving/model_serving.rst:428
+msgid ""
+"Click the 'More' button in the upper left corner to access additional "
+"features. Compare with other LLM models, delete chat history, and more. For "
+"more information on 'Compare with other models', please refer to the "
+":ref:`LLM Playground<LLM-playground>` section."
+msgstr ""
+"左上の「その他」ボタンをクリックして追加機能にアクセスします。他のLLMモデルと比較したり、チャット履歴を削除したりすることができます。「他のモデルと比較」の詳細については、"
+" :ref:`LLM Playground<LLM-playground>` セクションを参照してください。"
+
+#: ../../model_serving/model_serving.rst:-1
+msgid "LLM Chat Dialog extra features"
+msgstr "LLM チャットダイアログ追加機能"
+
+#: ../../model_serving/model_serving.rst:437
 msgid "Modifying Model Service"
 msgstr "モデルサービスの修正"
 
-#: ../../model_serving/model_serving.rst:391
+#: ../../model_serving/model_serving.rst:439
 msgid ""
 "Click on the wrench icon in the Control tab to open a modal where you can "
 "change the model service. The format is identical to the model service start"
@@ -729,11 +821,11 @@ msgstr ""
 msgid "Edit model service dialog"
 msgstr "モデルサービス編集ダイアログ"
 
-#: ../../model_serving/model_serving.rst:402
+#: ../../model_serving/model_serving.rst:450
 msgid "Terminating Model Service"
 msgstr "モデルサービスの終了"
 
-#: ../../model_serving/model_serving.rst:404
+#: ../../model_serving/model_serving.rst:452
 msgid ""
 "The model service periodically runs a scheduler to adjust the routing count "
 "to match the desired session count. However, this puts a burden on the "

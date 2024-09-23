@@ -162,8 +162,9 @@ msgid ""
 "as :ref:`Importing GitHub Repositories<importing-github-repositories>`, but "
 "you need to explicitly set the branch name to import."
 msgstr ""
-"22.03から、Backend.AIはGitLabからのインポートをサポートしています。これはほとんどの場合、 :ref:`GitHubリポジトリのインポート<importing-"
-"github-repositories>` と同じですが、インポートするブランチ名を明示的に設定する必要があります。"
+"22.03から、Backend.AIはGitLabからのインポートをサポートしています。これはほとんどの場合、 "
+":ref:`GitHubリポジトリのインポート<importing-github-repositories>` "
+"と同じですが、インポートするブランチ名を明示的に設定する必要があります。"
 
 #: ../../import_run/import_run.rst:-1
 msgid "Import GitLab repository"
