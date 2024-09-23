@@ -388,7 +388,7 @@ to model serving endpoint working properly or not.
    service.
 
 Using the Large Language Model
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you've created a Large Language Model (LLM) service, you can test the LLM in real-time. 
 Simply click the 'LLM Chat Test' button located in the Service Endpoint column. 
