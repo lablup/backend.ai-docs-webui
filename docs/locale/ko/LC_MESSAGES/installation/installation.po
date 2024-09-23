@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 19.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-02 18:11+0900\n"
+"POT-Creation-Date: 2024-09-23 15:24+0900\n"
 "PO-Revision-Date: 2021-03-02 18:16+0900\n"
 "Last-Translator: \n"
 "Language: ko\n"
@@ -17,63 +17,76 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
-"X-Generator: Poedit 2.4.2\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../installation/installation.rst:3
 msgid "Installation"
 msgstr "설치"
 
 #: ../../installation/installation.rst:5
+#, fuzzy
 msgid ""
-"The Web-UI can be used in two forms. It can be used as a web service by "
-"connecting to a separate web address prepared by the admins, or as an app "
-"provided as a stand-alone executable file that does not require separate "
-"installation."
+"Backend.AI WebUI can be used in two different forms. It can be used as a "
+"web service by connecting to a seperate web address provided by the "
+"admins, or as an form of app provided as a stand-alone executable file "
+"which does not require seperate installation."
 msgstr ""
-"Web-UI는 두 가지 형태로 사용할 수 있습니다. 관리자가 설치한 별도의 웹 주소로 접"
-"속하여 웹 서비스 형태로 이용할 수 있고, 별도 설치가 필요 없는 standalone 실행파"
-"일로 제공되는 앱 형태로 이용할 수도 있습니다."
+"Web-UI는 두 가지 형태로 사용할 수 있습니다. 관리자가 설치한 별도의 웹 주소로 접속하여 웹 서비스 형태로 이용할 수 있고, "
+"별도 설치가 필요 없는 standalone 실행파일로 제공되는 앱 형태로 이용할 수도 있습니다."
 
-#: ../../installation/installation.rst:10
+#: ../../installation/installation.rst:9
 msgid ""
-"With the web-based Web-UI, users do not need to install a platform-dependent "
-"desktop applications and just need the latest versions of browsers such as "
-"Chrome."
+"With web-based form of WebUI, users just need the latest versions of web "
+"browsers, no need to install platform-dependent desktop applications."
 msgstr ""
-"Web-UI는 관리자가 제공하는 별도의 웹 주소로 접속하여 웹 서비스 형태로 이용할 수 "
-"있습니다. 사용자는 플랫폼 의존적인 데스크톱 앱을 따로 설치할 필요가 없으며, "
-"Chrome 등과 같은 최신 브라우저만 있으면 설치하면 됩니다."
 
-#: ../../installation/installation.rst:14
-msgid "Recommended browser: the latest version of Chrome (at least version > 80)"
+#: ../../installation/installation.rst:11
+#, fuzzy
+msgid "Recommended browser: Latest version of Chrome (at least > 80)"
 msgstr "권장 브라우저: 최신 크롬 (최소한 버전 80 이상)"
 
-#: ../../installation/installation.rst:15
-msgid "Requirement: any machine that runs Web Browser (2 cores, 4 GiB memory)"
+#: ../../installation/installation.rst:12
+#, fuzzy
+msgid "Requirement: Any machine that runs web browser (2 cores, 4 GiB memory)"
 msgstr "요구사항: 웹 브라우저를 구동할 수 있는 머신 (2 코어, 4 GiB 메모리)"
 
-#: ../../installation/installation.rst:18
+#: ../../installation/installation.rst:15
+#, fuzzy
 msgid ""
-"We do not support MicroSoft Internet Explorer since it is deprecated and does "
-"not follow web standard and support up-to-date brower features."
+"We do not support Microsoft Internet Explorer since it is deprecated and "
+"does not follow web standard, and does not support up-to-date browser "
+"features."
 msgstr ""
-"마이크로소프트의 Internet Explorer 브라우저 개발이 중단되었고 웹 표준 및 최신 "
-"브라우저 기능을 충실히 따르지 않으므로 지원하지 않습니다."
+"마이크로소프트의 Internet Explorer 브라우저 개발이 중단되었고 웹 표준 및 최신 브라우저 기능을 충실히 따르지 않으므로"
+" 지원하지 않습니다."
+
+#: ../../installation/installation.rst:18
+#, fuzzy
+msgid ""
+"The stand-alone WebUI app can be downloaded from following link: "
+"https://github.com/lablup/backend.ai-webui/releases"
+msgstr ""
+"단독 앱 형태의 Web-UI는 다음 주소에서 다운로드할 수 있습니다: https://github.com/lablup/backend"
+".ai-webui/releases"
 
 #: ../../installation/installation.rst:22
+#, fuzzy
 msgid ""
-"The stand-alone Web-UI app can be downloaded from following address: https://"
-"github.com/lablup/backend.ai-webui/releases"
-msgstr ""
-"단독 앱 형태의 Web-UI는 다음 주소에서 다운로드할 수 있습니다: https://github."
-"com/lablup/backend.ai-webui/releases"
+"Depending on the security settings of the Operating System, our installer"
+" may be recognized as an unsigned executable file. Permission check may "
+"be required."
+msgstr "앱 형태의 경우 데스크톱 운영체제의 보안 설정에 따라 서명되지 않은 실행파일로 인식되어 권한 허용 절차가 필요할 수 있습니다."
 
-#: ../../installation/installation.rst:26
-msgid ""
-"In the case of an app, depending on the security setting of the desktop OS, it "
-"may be recognized as an unsigned executable file and a permission check may be "
-"required."
-msgstr ""
-"앱 형태의 경우 데스크톱 운영체제의 보안 설정에 따라 서명되지 않은 실행파일로 인"
-"식되어 권한 허용 절차가 필요할 수 있습니다."
+#~ msgid ""
+#~ "With the web-based Web-UI, users"
+#~ " do not need to install a "
+#~ "platform-dependent desktop applications and "
+#~ "just need the latest versions of "
+#~ "browsers such as Chrome."
+#~ msgstr ""
+#~ "Web-UI는 관리자가 제공하는 별도의 웹 주소로 "
+#~ "접속하여 웹 서비스 형태로 이용할 수 있습니다. "
+#~ "사용자는 플랫폼 의존적인 데스크톱 앱을 따로 설치할 "
+#~ "필요가 없으며, Chrome 등과 같은 최신 브라우저만 "
+#~ "있으면 설치하면 됩니다."
+
