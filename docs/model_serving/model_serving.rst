@@ -188,7 +188,13 @@ instructions on how to create a folder.
 
 After creating the folder, select the 'MODELS' tab in the Data & Folders
 page, click on the recently created model type folder icon to open the
-folder explorer, and upload the model definition file.
+folder explorer, and upload the model definition file. 
+For more information on how to use the folder explorer, 
+please refer :ref:`Explore Folder<explore_folder>` section.
+
+.. image:: model-type-folder-list.png
+   :width: 100%
+   :align: center
 
 .. image:: model-definition-file-upload.png
    :align: center
@@ -203,6 +209,10 @@ model type, you are ready to create the model service.
 Click the 'Start Service' button on the Model Serving page. This will
 bring up a page where you can enter the required settings for creating
 the service.
+
+.. image:: serving-list-page.png
+   :width: 100%
+   :align: center
 
 .. image:: service-launcher1.png
    :width: 700
