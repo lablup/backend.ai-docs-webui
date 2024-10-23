@@ -14,6 +14,7 @@ editing user config script, and even to using Beta features.
 
 GENERAL tab
 -----------
+.. _general-settings:
 
 .. image:: user_settings_page.png
 

@@ -21,7 +21,7 @@ will need to read the email and click the link inside to pass verification
 before you can log in with your account.
 
 .. image:: signup_dialog.png
-   :width: 350
+   :width: 400
    :align: center
    :alt: Signup dialog
 

@@ -17,14 +17,14 @@ Sessions page lets you start new sessions or use and manage existing running ses
 
 .. image:: sessions_page.png
 
-.. TODO: Please change the link to 23.09. not stable.
+From version 24.09, Backend.AI offers an improved version of the session launcher (NEO) as default. 
+If you want to use the previous dialog-style session launcher, please refer :ref:`User Setting Guide <general-settings>`. 
+For instructions on how to use it, please refer to the following `link <https://webui.docs.backend.ai/en/23.09_a/sessions_all/sessions_all.html>`_.
 
-Click the START button to start a new compute session. From version 24.03, Backend.AI offers an improved 
-version of the session launcher (NEO). If you want to use the previous dialog-style session launcher, press
-the Classic button in the notification and create your session. For instructions on how to use it, please 
-refer to the following `link <https://webui.docs.backend.ai/en/23.09_a/sessions_all/sessions_all.html>`_.
+Click the START button to start a new compute session.
 
 .. image:: launch_session_1.png
+   :width: 850
    :align: center
 
 In the first page, you need to choose the type of session, interactive or batch.
@@ -70,9 +70,24 @@ And you can set the session name, which is optional.
   word is assigned automatically. Session names only accept alphanumeric
   characters between 4 and 64 without spaces.
 
+If you are creating a session with the ``super admin`` or ``admin`` account, 
+you can additionally assign a session owner. If you enable the toggle, 
+a user email field will appear. 
+
+   .. image:: admin_launch_session_1.png
+      :align: center
+
+Enter the email of the user you want to assign the session to, 
+click the search button, and the user's access key will be automatically registered. 
+You can also select a project and resource group. 
+
+   .. image:: admin_launch_session_2.png
+      :align: center
+      :width: 800
+
 Click the Next button below, or the Environments & Resource allocation on the right
 to proceed to the next page. If you want to create a session without any further
-settings, press the Skip to review button. button. In this case, the settings on the
+settings, press the Skip to review button. In this case, the settings on the
 other pages will all use the default values.
 
 For detailed explanations of each item that can be set on the second page, please
@@ -146,10 +161,26 @@ Click the Next button below, or the Data & Storage on the right to proceed to th
 next page.
 
 .. image:: launch_session_3.png
+   :width: 850
    :align: center
 
-Here, you can specify the data folders to mount in the compute session. When a
-compute session is destroyed, all data is deleted altogether by default, but the
+Here, you can specify the data folders to mount in the compute session. 
+You can use the folder explorer by clicking folder name. For more information on how to use it, 
+please refer :ref:`Explore Folder<explore_folder>` section.
+
+.. image:: open_folder_explorer.png
+   :width: 100%
+   :align: center
+
+You can also create a new folder by clicking the + button next to the searcher.
+If you create a new folder, it will automatically be selected as the folder to mount. 
+For more information on how to use it, please refer :ref:`Create Storage Folder<create_storage_folder>` section.
+
+.. image:: folder_create_modal.png
+   :width: 100%
+   :align: center
+
+When a compute session is destroyed, all data is deleted altogether by default, but the
 data stored in the mounted folders will survive. Data in those folders can also
 be reused by mounting it when creating another compute session. For the
 information on how to mount a folder and run a compute session, see
@@ -157,6 +188,7 @@ information on how to mount a folder and run a compute session, see
 by without mounting any folder. Let's move on to the next page.
 
 .. image:: launch_session_4.png
+   :width: 100%
    :align: center
 
 
@@ -206,6 +238,20 @@ FINISHED tab shows the list of terminated sessions and OTHERS tab shows the comp
 For each session, you can check the information such as session environments, the amount of allocated
 and used resources, session starting time, etc.
 
+The Session Launcher page provides a set of options for creating sessions. As of 24.09, 
+a ``Recent History`` feature has been added to the top right corner to remember information about previously created sessions. 
+
+.. image:: recent_history.png
+   :width: 800
+   :align: center
+
+.. image:: session_history.png
+   :width: 800
+   :align: center
+
+The Recent History modal remembers information about the five most recently created sessions. 
+If you select the one you want to create and click the apply button to be taken to the final step, the ``Confirm and Launch`` page. 
+
 .. note::
    Superadmins can query all compute session information currently running (or
    terminated) in the cluster, and users can view only the sessions they have
@@ -216,18 +262,16 @@ and used resources, session starting time, etc.
    network connection problems, and etc. This can be solved by refreshing the
    browser page.
 
-.. image:: session_list_status.png
-
-.. image:: session_status_detail_information.png
-   :align: center
-
 Backend.AI provides detailed status information for ``PENDING``, ``TERMINATED``,
 or ``CANCELLED`` sessions. In the case of ``PENDING`` sessions, in particular,
 you can check why the session is not scheduled and stuck in the ``PENDING``
 status. You can see the details by clicking the question mark icon right next
 to the status of each session.
 
-.. image:: resource_stat_and_session_list.png
+.. image:: session_list_status.png
+
+.. image:: session_status_detail_information.png
+   :align: center
 
 The resource statistics are displayed at the top of the screen. You can check the
 amount of resources currently used and the total amount of resources
@@ -241,6 +285,8 @@ accessible resources.
 
 * Lower: (Resources allocated by the user) / (Resources allocated by the user +
   Total resources allocatable by the user in the current scaling group)
+
+.. image:: resource_stat_and_session_list.png
 
 .. note::
    If the GPU resource is marked as FGPU, this means that the server is serving
