@@ -58,16 +58,16 @@ Check marks on the Owner column in the folder list indicate the user created fol
 Create storage folder
 ---------------------
 
-You can create a storage folder with the desired name by clicking the 'NEW FOLDER'
+You can create a storage folder with the desired name by clicking the '+ Add'
 button. Enter the name of the folder to be created in Folder name, and select
 one of User / Project for Type. (Depending on the server settings, only one of
-User or Project may be selectable.) When creating a project folder, the Project field
-must be set. The project folder will be bound to the project specified in the Project
+User or Project may be selectable.) If you selected a project folder, the select project field
+will appear. The project folder will be bound to the project specified in the Project
 field, and only users belonging to the project can mount and use the project folder.
 After setting the values as desired, you can create a folder by clicking the
 'CREATE' button.
 
-.. image:: vfolder_create_dialog.png
+.. image:: vfolder_create_modal.png
    :width: 400
    :align: center
    :alt: Folder creation dialog
@@ -79,19 +79,22 @@ follows.
 * Host: NFS host to create folder. You can choose one if you have multiple NFS
   hosts. You can check whether the selected host has enough capacity remaining through 
   the indicator.
-* Type: Determines the type of folder to be created. It can be set as User or
-  Project. The User folder is a folder that users can create and use alone
-  and the Project folder is a folder created by admin and shared by users in the project.
 * Usage Mode: You can set the purpose of the folder. There are three types of mode:
   General, Data, and Model. It is classified for the development of exclusive functions
   for Data & Model Stores in the future and currently there is no
-  difference in UI depending on the purpose.
-* Project: Designates the project to which the folder belongs when creating a new project folder.
+  difference in UI depending on the purpose.  
+* Type: Determines the type of folder to be created. It can be set as User or
+  Project. The User folder is a folder that users can create and use alone
+  and the Project folder is a folder created by admin and shared by users in the project.
+* Project: Shown only when you select project type.  
+  Designates the project to which the folder belongs when creating a new project folder.
   Project folders must belong to a project. However, it does not play any
   role when creating a user folder.
 * Permission: Set permission of a project folder for project members. If this is
   set to "Read-Only", project members cannot write to this folder inside their
   compute session.
+* Cloneable: Shown only when you select usage model to "Model". 
+  Select whether the vfolder to be created is cloneable. 
 
 Explore folder
 --------------
@@ -115,8 +118,8 @@ do it.
 .. image:: folderexplorer_with_filebrowser.png
    :alt: File explorer of a storage folder
 
-You can create a new directory on the current path with the 'NEW FOLDER' button
-(in the file explorer), or upload a local file with the 'UPLOAD FILES' button. All
+You can create a new directory on the current path with the 'Create' button
+(in the folder explorer), or upload a local file or folder with the 'Upload' button. All
 of these file operations can also be performed using the above-described method
 of mounting folders into a compute session.
 
@@ -252,18 +255,22 @@ and Click 'Clone' button below.
 
 .. image:: model_card_clone_dialog.png
    :width: 500
+   :align: center
    :alt: Model card clone dialog
 
 After cloning process is successfully done, you can see the new folder has been created in your folder list.
 You can find it in 'Models' tab.
 
 .. image:: model_card_in_folder_list.png
+   :width: 700
+   :align: center
    :alt: Model card in folder list
 
 Also, you can check what's inside the model card by accessing the folder you just cloned.
 
 .. image:: cloned_model_card_folder_explorer.png
    :width: 700
+   :align: center
    :alt: Cloned model card folder explorer
 
 If you want to use pre-trained model that you cloned from, then please refer to 
