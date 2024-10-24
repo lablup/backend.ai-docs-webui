@@ -97,9 +97,6 @@ creation.
    :align: center
 
 .. note::
-   SSH/SFTP connection is available only with the Backend.AI GUI desktop app and is not supported on a web browser.
-
-.. note::
    Backend.AI uses SSH keypair based on OpenSSH. On Windows, you may convert
    this into PPK key.
 

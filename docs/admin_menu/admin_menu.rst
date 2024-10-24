@@ -82,6 +82,9 @@ Each of the three items at the bottom of the dialog has the following functions.
   When using two-factor authentication, users are additionally required to enter an
   OTP code when logging in. Administrators can only disable two-factor authentication
   for other users.
+* Resource Policy: From Backend.AI version 24.09, you can select the user resource policy 
+  to which the user belongs. For more information about user resource policies, please 
+  refer :ref:`user resource policy <user-resource-policy>` section.
 
 Inactivate user account
 -----------------------
@@ -181,7 +184,7 @@ the folder.  Let's select the project to which User B belongs for this example
 to work. Permission is set to Read-Only.
 
 .. image:: group_folder_creation.png
-   :width: 400
+   :width: 800
    :align: center
 
 After confirming that the folder has been created, log in with the User B's
@@ -221,7 +224,7 @@ and set the rest of folder configuration as shown below:
    - Cloneable: True
 
 .. image:: model_store_folder.png
-   :width: 500
+   :width: 800
    :alt: Model store folder
    :align: center
 
@@ -395,6 +398,8 @@ table. This will bring up a dialog where you can select the columns you want to 
 User Resource Policy
 ~~~~~~~~~~~~~~~~~~~~
 
+.. _user-resource-policy:
+
 Starting from version 24.03, Backend.AI supports user resource policy management. While each
 user can have multiple keypairs, a user can only have one user resource policy. In the user
 resource policy page, users can set restrictions on various settings related to folders such as
@@ -519,17 +524,17 @@ create a compute session with a resource that is less than the amount of
 resources specified in each image, the request is automatically adjusted to the
 minimum resource requirements for the image and then generated, not cancelled. 
 
+.. image:: update_image_resource_setting.png
+   :width: 500
+   :align: center
+   :alt: Update image resource setting
+
 .. warning::
    Don't change the minimum resource requirements to an amount less than the
    predefined value! The minimum resource requirements included in the image
    metadata are values that have been tested and determined. If you are not
    really sure about the minimum amount of resources you want to change, leave
    it in the default.
-
-.. image:: update_image_resource_setting.png
-   :width: 500
-   :align: center
-   :alt: Update image resource setting
 
 Additionally, you can add or modify the supported apps for each image by clicking the 'Apps' icon located in the Controls column.
 Once you click the icon, the name of the app and its corresponding port number will be displayed accordingly.
@@ -602,7 +607,7 @@ allocation panel when creating a compute session. Superadmin can manage these
 resource presets.
 
 .. image:: resource_presets_in_resource_monitor.png
-   :width: 350
+   :width: 500
    :align: center
    :alt: Resource presets in compute session launch dialog
 
@@ -614,15 +619,15 @@ of currently defined resource presets.
 
 You can set resources such as CPU, RAM, fGPU, etc. to be provided by the
 resource preset by clicking the 'Setting (Gear)' (cogwheel) in the Controls panel.
-In the example below, the GPU field is disabled since the GPU provision mode of
-the Backend.AI server is set to "fractional". After setting the resources with
-the desired values, save it and check if the corresponding preset is displayed
+Create or Modify Resource Preset modal shows fields of the resources currently available. 
+Depending on your server's settings, certain resources may not be visible. 
+After setting the resources with the desired values, save it and check if the corresponding preset is displayed
 when creating a compute session. If available resources are less
 than the amount of resources defined in the preset, the corresponding preset
 would not be shown.
 
 .. image:: modify_resource_preset_dialog.png
-   :width: 350
+   :width: 500
    :align: center
    :alt: Modify resource preset dialog
 
@@ -632,7 +637,7 @@ preset name that already exists, since it is the key value for distinguishing
 each resource preset.
 
 .. image:: create_resource_preset_dialog.png
-   :width: 350
+   :width: 500
    :align: center
    :alt: Create resource preset dialog
 
