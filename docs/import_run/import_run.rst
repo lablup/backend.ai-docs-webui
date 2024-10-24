@@ -35,7 +35,7 @@ the notebook after setting the environments and resource allocation as needed.
    imported Jupyter notebook will not run.
 
 .. image:: session_launcher_in_importing_notebook.png
-   :width: 350
+   :width: 100%
    :align: center
    :alt: Session Launcher In Importing Jupyter notebook
 
