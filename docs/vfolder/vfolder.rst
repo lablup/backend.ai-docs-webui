@@ -96,6 +96,8 @@ follows.
 Explore folder
 --------------
 
+.. _explore_folder:
+
 You can click the folder button in the Control column to bring up a file explorer
 where you can view the contents of that folder.
 

@@ -30,6 +30,14 @@ session.
    mount. For example, project folders used by other projects are not exposed in
    Folders to mount. The storage host for each folder is also displayed under
    the folder's name.
+.. note::
+   By clicking on a folder name, you can use ''Folder Explore''' to view the 
+   stored files or folders inside the folder or upload new files or folders.
+   For more information on how to use it, please refer :ref:`Explore Folder<explore_folder>` section.
+
+   Alternatively, you can create a new virtual folder by clicking the '+' button. 
+   For more information on how to create a new folder in session launcher page, 
+   please refer :ref:`Create storage folder<create_storage_folder>` section.
 
 Now, open the terminal by clicking the terminal icon in the created session. If
 you run ``ls`` command in the terminal, you can see that the ``user1-ml-test``
