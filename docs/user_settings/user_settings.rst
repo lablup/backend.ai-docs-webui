@@ -16,6 +16,8 @@ GENERAL tab
 -----------
 .. _general-settings:
 
+.. _general-settings:
+
 .. image:: user_settings_page.png
 
 There are lots of preference menu in GENERAL tab. you can search it by search field on top of the section,
