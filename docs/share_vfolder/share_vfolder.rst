@@ -66,8 +66,14 @@ that you checked in the User A's account again. Let's create a compute session
 by mounting this storge folder with the User B's account.
 
 .. image:: launch_session_with_test_mounted_B.png
-   :width: 350
+   :width: 100%
    :align: center
+
+.. note::
+   From version 24.09, Backend.AI offers an improved version of the session launcher (NEO)
+   as default. If you want to use the previous session launcher, please refer :ref:`User Settings<general-settings>` 
+   section. For instructions on how to use it, please refer to the following `link <https://webui.docs.backend.ai/en/23.09_a/sessions_all/sessions_all.html>`_. 
+   If you want to know more about the NEO session launcher, please refer :ref:`Create Session<create_session>`
 
 After creating a session, open the web terminal and check that the ``tests``
 folder is mounted in the home folder. The contents of the ``tests`` folder are
@@ -76,16 +82,8 @@ because User A shared it as read-only. User B can create a file in the ``tests``
 folder if it has been shared including write access.
 
 .. image:: file_operations_on_shared_test_folder.png
-   :width: 450
+   :width: 100%
    :align: center
-
-If you click the folder icon in the Control panel, you may notice that UPLOAD FILES button and
-NEW FOLDER button disappears and READ-ONLY FOLDER message is shown on that
-spot. Also modify icon and delete icon in the Action panel are also disabled since the
-folder is read-only. User B can create a file in the ``tests`` folder if it has
-been shared including write access.
-
-.. image:: test_vfolder_explorer_B.png
 
 This way, you can share your personal storage folders with other users based on
 your Backend.AI email account.
@@ -98,7 +96,7 @@ your Backend.AI email account.
 Adjust permission for shared folders
 ------------------------------------
 
-If you click the fourth person icon in the Control panel, you can see a list of
+If you click the ''person icon'' in the Control panel, you can see a list of
 users who have shared the folder. Click Select permission to set the sharing
 permission.
 
