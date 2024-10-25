@@ -2,43 +2,40 @@
 Compute Sessions
 ================
 
-The most visited pages in the Backend.AI Web-UI would be the Sessions and
-Data & Storage pages. Here, you will learn how to query and
-create container-based compute sessions and utilize various web applications on
-the Sessions page.
+The most visited pages in the Backend.AI Web-UI would be the 'Sessions' and 'Data & Storage' pages. 
+This document will cover how to query and create container-based compute sessions and utilize various web applications on the 'Sessions' page.
 
 .. _create_session:
 
 Start a new session
 -------------------
 
-After logging in with a user account, click Sessions on the left sidebar to visit the Sessions page.
-Sessions page lets you start new sessions or use and manage existing running sessions.
+After logging in with a user account, click 'Sessions' on the left sidebar.
+'Sessions' page lets you start new sessions or use and manage existing running sessions.
 
 .. image:: sessions_page.png
 
-From version 24.09, Backend.AI offers an improved version of the session launcher (NEO) as default. 
-If you want to use the previous dialog-style session launcher, please refer :ref:`User Setting Guide <general-settings>`. 
-For instructions on how to use it, please refer to the following `link <https://webui.docs.backend.ai/en/23.09_a/sessions_all/sessions_all.html>`_.
+From version 24.09, improved version of the session launcher (NEO) is set to default. This enables user to create, manage sessions according to the step-by-step logic.  
+To use dialog-style old version of the session launcher, please refer to :ref:`User Setting Guide <general-settings>`. 
+For more instructions, please refer to the following `link <https://webui.docs.backend.ai/en/23.09_a/sessions_all/sessions_all.html>`_.
 
-Click the START button to start a new compute session.
+Click the 'START' button to start a new compute session.
 
 .. image:: launch_session_1.png
    :width: 850
    :align: center
 
-In the first page, you need to choose the type of session, interactive or batch.
-And you can set the session name, which is optional.
+In ther first page, users can select the type of session, 'interactive' or 'batch'. 
+If needed, setting the name of the session (optional) is also available. 
 
 .. _session-naming-rule:
 
-* Session type: Determines the type of the session. "Interactive" and
-  "Batch" are the two session types currently available. The following are the
-  primary distinctions between the two types:
+* Session type: Determines the type of the session. There are two different types of session, \"Interactive\" and \"Batch\". 
+  The following are the primary distinctions between the two types:
 
   - Interactive compute session
 
-    - This type has been supported from the initial version of Backend.AI.
+    - This is the type which has been supported from the initial version of the Backend.AI.
     - The compute session is used in a way that the user interacts with after
       creating a session without specifying a pre-defined execution script or
       command.
@@ -51,27 +48,26 @@ And you can set the session name, which is optional.
       supported the batch-type session before the 22.03).
     - Pre-define the script that will be executed when a compute session is
       ready.
-    - Executes the script as soon as the compute session is ready, and then
-      automatically terminates the session as soon as the execution finishes.
-      So, it will more efficiently and flexibly utilize the server farm's
-      resources if a user can write the execution script in advance or is
+    - This session will execute the script as soon as the compute session is ready, and then
+      automatically terminates the session as soon as the execution finishes. 
+      It will utilize the server farm's resources efficiently and flexibly if a user can write the execution script in advance or is 
       building a pipeline of workloads.
-    - You can set the start time of a batch-type compute session. However, it
-      does not guarantee the session will be created at that time. It may still
-      be PENDING due to the lack of resources, etc. Rather, it guarantees that
+    - Users can set the start time of a batch-type compute session. 
+      However, keep in mind that this feature does not guarantee that the session will start at the registered time. 
+      It may still stay at 'PENDING' due to the lack of resources, etc. Rather, it guarantees that
       the session WILL NOT run until the start time.
 
     .. image:: session_type_batch.png
        :align: center
 
-* Session name: You can specify the name of the compute session to be
-  created. If set, this name appears in Session Info, so it is easy to
-  distinguish among multiple computation sessions. If not specified, a random
-  word is assigned automatically. Session names only accept alphanumeric
+* Session name: Users can specify the name of the compute session to be
+  created. If set, this name appears in Session Info, so it is 
+  distinguishable among multiple compute sessions. If not specified, random
+  word will be assigned automatically. Session names only accept alphanumeric
   characters between 4 and 64 without spaces.
 
-If you are creating a session with the ``super admin`` or ``admin`` account, 
-you can additionally assign a session owner. If you enable the toggle, 
+If users create a session with the ``super admin`` or ``admin`` account, 
+they can additionally assign a session owner. If you enable the toggle, 
 a user email field will appear. 
 
    .. image:: admin_launch_session_1.png
@@ -85,58 +81,54 @@ You can also select a project and resource group.
       :align: center
       :width: 800
 
-Click the Next button below, or the Environments & Resource allocation on the right
+Click the 'Next' button below, or the 'Environments & Resource allocation' menu on the right
 to proceed to the next page. If you want to create a session without any further
-settings, press the Skip to review button. In this case, the settings on the
+settings, press the 'Skip to review' button. In this case, settings on the
 other pages will all use the default values.
 
 For detailed explanations of each item that can be set on the second page, please
-refer to the following.
+refer to the following:
 
   .. image:: launch_session_2.png
      :align: center
      
-* Environments: You can choose the base environment for compute sessions such as
-  TensorFlow, PyTorch, C++, etc. When you select TensorFlow, your compute
-  session will automatically include the TensorFlow library. If you choose
-  another environment, the corresponding packages will be installed by default.
-* Version: Selects the version of the environment. For example, you can select
-  different versions, such as 1.15, 2.3, etc., for the TensorFlow environment.
-* Image Name: You can specify the name of the image to be used for the
-  compute session. Depending on your environment settings, this configurations
-  may not be available.
+* Environments: Users can select the base environment for compute sessions such as
+  TensorFlow, PyTorch, C++, etc. The compute session will automatically included into the base environment library. 
+  If users choose another environment, the corresponding packages will be installed by default.
+* Version: Users can specify the version of the environment. 
+  There are multiple versions in a single environment. For example, TensorFlow has multiple versions such as 1.15, 2.3, etc.,
+* Image Name: Users can specify the name of the image to be used for the
+  compute session. This configuration may not be available depending on the environment settings.
 * Set Environment Variable: Provides an interface for users to set environment
-  variables in a compute session. See the section
+  variables in a compute session. Refer to the 
   :ref:`How to add environment variables before session creation<set-environment-variables>`
-  on how to use.
+  section to learn more.
 * Resource Group: Specifies the resource group in which to create a compute
   session. A resource group is a unit that groups host servers that each user
   can access. Usually, servers in a resource group would have the same type of
   GPU resources. Administrators can classify servers by any criteria, group them
-  into one or more resource groups, and configure which resource groups a user
+  into one or more resource groups, configure which resource groups a user
   can use. Users can launch a compute session only on servers in resource groups
-  allowed by the administrator. If you are allowed multiple resource groups, you
-  can select any group you want, but you cannot change it if you have only one.
+  allowed by the administrator. If multiple resource groups are allowed, users could select any group they want.
+  However, it cannot be changed when system only allows single-setting.
 * Resource Presets: These templates have pre-defined resource sets, such as
   CPU, memory, and GPU, to be allocated to a compute session. Administrators can
   define frequently used resource settings in advance. By adjusting the numerical
-  input or sliding the slider, you can allocate the desired amount of resources.
+  input or sliding the slider, users can allocate the desired amount of resources.
 
   .. image:: resource_presets.png
      :align: center
 
-  The meaning of each item is as follows, and you can check it by clicking the
-  Help (?) button as well.
-
+  The meaning of each item is as follows. 
+  Clicking the Help (?) button will also give more information. 
   * CPU: The CPU performs basic arithmetic, logic, controlling, and input/output
-    (I/O) operations specified by the instructions. For high performance computing
-    workloads, many CPUs are helpful, but the program code must be written to use
-    multiple CPUs.
+    (I/O) operations specified by the instructions. In general, more CPUs are beneficial for high-performance computing workloads.
+    But, to reflect the advantage of more CPUs, program code must be written to adapt multiple CPUs.
   * Memory: Computer memory is a temporary storage area. It holds the data and
     instructions that the Central Processing Unit (CPU) needs. When using a GPU in
-    a machine learning workload, you must allocate at least twice the memory of the
-    GPU to memory. Otherwise, the GPU's idle time will increase, resulting in a
-    performance penalty.
+    a machine learning workload, at least twice the memory of the
+    GPU to memory need to be allocated. Otherwise, GPU's idle time will increase, resulting 
+    penalty in a performance.
   * Shared Memory: The amount of shared memory in GB to allocate for the compute
     session. Shared memory will use some part of the memory set in RAM. Therefore,
     it cannot be greater than the amount specified in RAM.
@@ -144,75 +136,72 @@ refer to the following.
     matrix/vector computations involved in machine learning. AI accelerators speed
     up training / inference algorithms by orders of magnitude, reducing running
     times from weeks to days.
-  * Sessions: A session is a unit of computational environment that is created
+  * Sessions: Session is a unit of computational environment that is created
     according to a specified environment and resources. If this value is set to a
     value greater than 1, multiple sessions corresponding to the resource set above
     are created. If there are not enough resources available, requests to create
     sessions that cannot be created are put on the waiting queue.
-  * Cluster mode: Backend.AI supports cluster mode, which allows you to create
-    multiple compute sessions at once. For more information, see the section
+  * Cluster mode: Cluster mode allows users to create
+    multiple compute sessions at once. For more information, refer to the 
     :ref:`Overview of Backend.AI cluster compute session<backendai-cluster-compute-session>`.
   
 * High-Performance Computing Optimizations: Backend.AI provides configuring values
   related to HPC Optimizations. For more information, See the section
   :ref:`Optimizing Accelerated Computing<optimizing-accelerated-computing>`.
 
-Click the Next button below, or the Data & Storage on the right to proceed to the
-next page.
+Click the 'Next' button below, or the 'Data & Storage' menu on the right to proceed to the next page.
 
 .. image:: launch_session_3.png
    :width: 850
    :align: center
 
-Here, you can specify the data folders to mount in the compute session. 
-You can use the folder explorer by clicking folder name. For more information on how to use it, 
+Here, users can specify the data folders to mount in the compute session. 
+Folder explorer can be used by clicking folder name. For further information, 
 please refer :ref:`Explore Folder<explore_folder>` section.
 
 .. image:: open_folder_explorer.png
    :width: 100%
    :align: center
 
-You can also create a new folder by clicking the + button next to the searcher.
-If you create a new folder, it will automatically be selected as the folder to mount. 
-For more information on how to use it, please refer :ref:`Create Storage Folder<create_storage_folder>` section.
+New folder can be created by clicking the '+ Add' button next to the searcher.
+When new folder is created, it will automatically be selected as the folder to mount. 
+For further information, please refer :ref:`Create Storage Folder<create_storage_folder>` section.
 
 .. image:: folder_create_modal.png
    :width: 100%
-   :align: center
+   :align: center 
 
-When a compute session is destroyed, all data is deleted altogether by default, but the
-data stored in the mounted folders will survive. Data in those folders can also
-be reused by mounting it when creating another compute session. For the
-information on how to mount a folder and run a compute session, see
-:ref:`Mounting Folders to a Compute Session<session-mounts>`. Here, we will pass
-by without mounting any folder. Let's move on to the next page.
+When a compute session is destroyed, data deletion is set to default. 
+However, data stored in the mounted folders will survive.
+Data in those folders can also be reused by mounting it when creating another compute session. 
+For further information on how to mount a folder and run a compute session, refer to
+:ref:`Mounting Folders to a Compute Session<session-mounts>`. 
 
 .. image:: launch_session_4.png
    :width: 100%
    :align: center
 
 
-On the fourth page, you can set Network configurations such as Preopen Ports.
+On the fourth page, Network configuration can be done such as Preopen Ports.
 
 * Set Preopen Ports: Provides an interface for users to set preopen ports in a 
-  compute session. See the section :ref:`How to add preopen ports before session creation
-  <set_preopen_ports>` on how to use.
+  compute session. Refer to the :ref:`How to add preopen ports before session creation
+  <set_preopen_ports>` ofor further information.
 
-If you are done with the network setting, click the Next button below, or the
-Confirm and Launch on the right to proceed to the last page.
+If you are done with the network setting, click the 'Next' button below, or 
+'Confirm and Launch' button on the right to proceed to the last page.
 
 .. image:: launch_session_5.png
    :align: center
 
-Now, we have reached the last page. You can view information of session(s) to create,
+On the last page, users could view information of session(s) to create,
 such as environment itself, allocated resources, mount information,
-environment variables set on the previous pages, preopen ports, etc.
-After confirming the settings, click the Launch button. If there's anything you'd like
-to change, you can return to the previous page by clicking the Previous button, or click
-the Edit button located at the top right of each card to go directly to the relevant page.
+environment variables set on the previous pages, preopen ports, etc.,
+Review the settings, users could launch the session by clicking 'Launch' button. 
+Click the 'Edit' button located at the top right of each card to redirect to relevent page.
 
-If there is an issue with the settings, an error will be displayed as follows. Please
-click Edit to correct the settings.
+If there is an issue with the settings, an error message will be displayed as follows. 
+Users can edit their settings when this happens.
 
 .. image:: launch_session_error_card.png
    :width: 350
@@ -230,16 +219,15 @@ Now a new compute session is created in the RUNNING tab.
 
 .. image:: session_created.png
 
-In the RUNNING tab, you can check the information on the currently running
-sessions. It includes both interactive and batch sessions.
-BATCH tab and INTERACTIVE tab show only sessions corresponding to each type,
-but only for sessions not in terminated status.
-FINISHED tab shows the list of terminated sessions and OTHERS tab shows the compute sessions with errors.
-For each session, you can check the information such as session environments, the amount of allocated
+In the RUNNING tab, users can check the information on the currently running
+sessions. This includes both interactive and batch sessions.
+'BATCH' tab and 'INTERACTIVE' tab only show sessions corresponding to each type, not in terminated status.
+'FINISHED' tab shows the list of terminated sessions and OTHERS tab shows the compute sessions with errors.
+For each session, users can check the information such as session environments, the amount of allocated
 and used resources, session starting time, etc.
 
-The Session Launcher page provides a set of options for creating sessions. As of 24.09, 
-a ``Recent History`` feature has been added to the top right corner to remember information about previously created sessions. 
+'Session Launcher' page provides a set of options for creating sessions. As of 24.09, 
+``Recent History`` feature has been added to remember information about previously created sessions. 
 
 .. image:: recent_history.png
    :width: 800
@@ -250,17 +238,17 @@ a ``Recent History`` feature has been added to the top right corner to remember 
    :align: center
 
 The Recent History modal remembers information about the five most recently created sessions. 
-If you select the one you want to create and click the apply button to be taken to the final step, the ``Confirm and Launch`` page. 
+If users select the one they want to create, click the 'Apply' button to redirect ``Confirm and Launch`` page. 
 
 .. note::
    Superadmins can query all compute session information currently running (or
-   terminated) in the cluster, and users can view only the sessions they have
+   terminated) in the cluster, and users can only view the sessions they have
    created.
 
 .. note::
    Compute session list may not be displayed normally due to intermittent
    network connection problems, and etc. This can be solved by refreshing the
-   browser page.
+   browser.
 
 Backend.AI provides detailed status information for ``PENDING``, ``TERMINATED``,
 or ``CANCELLED`` sessions. In the case of ``PENDING`` sessions, in particular,
@@ -273,9 +261,9 @@ to the status of each session.
 .. image:: session_status_detail_information.png
    :align: center
 
-The resource statistics are displayed at the top of the screen. You can check the
+The resource statistics are displayed at the top of the screen. Users can check the
 amount of resources currently used and the total amount of resources
-that can be allocated. The display bars are divided into upper and
+that can be allocated. Display bars are divided into upper and
 lower parts. The upper part shows the resource allocation status in the current
 scaling group and the lower part shows the allocation status of total
 accessible resources.
@@ -289,18 +277,17 @@ accessible resources.
 .. image:: resource_stat_and_session_list.png
 
 .. note::
-   If the GPU resource is marked as FGPU, this means that the server is serving
-   the GPU resources in a virtualized form. Backend.AI supports GPU
-   virtualization technology that a single physical GPU can be divided and
-   shared by multiple users for better utilization. Therefore, if you want to
-   execute a task that does not require a large amount of GPU computation, you
+   Backend.AI supports GPU virtualization technology that a single physical GPU can be divided and
+   shared by multiple users for better utilization. If the GPU resource is marked as FGPU, 
+   this means that the server is serving the GPU resources in a virtualized form. 
+   Therefore, if users want to execute a task that does not require a large amount of GPU computation, users
    can create a compute session by allocating only a portion of a GPU. The
    amount of GPU resources that 1 FGPU actually allocates may vary from system
    to system depending on the administrator's setting.
 
    For example, if administrator has set to split one physical GPU into five pieces,
    5 FGPU means 1 physical GPU, or 1 FGPU means 0.2 physical GPU. At this
-   configuration, if you create a compute session by allocating 1 FGPU, you can
+   configuration, if users create a compute session by allocating 1 FGPU, they can
    utilize SM (streaming multiprocessor) and GPU memory corresponding to 0.2
    physical GPU for the session.
 
@@ -310,9 +297,9 @@ accessible resources.
 Use Jupyter Notebook
 ----------------------
 
-Let's look at how to use and manage compute sessions that are already running.
-If you look at the Control panel of the session list, there are several icons.
-When you click the first icon, the app launcher pops up and shows the available
+This section is about isong and managing compute sessions that are already running.
+On Control panel, there are several icons in the session list.
+When users click the first icon, the app launcher pops up and shows the available
 app services as below. The app launcher dialog also opens automatically just
 after the compute session is created.
 
@@ -346,35 +333,33 @@ Let's click on Jupyter Notebook.
 
 .. image:: jupyter_app.png
 
-A new window pops up and you can see that Jupyter Notebook is running. This
+Pop up windows will show that Jupyter Notebook is running. This
 notebook was created inside a running compute session and can be used easily
-with the click of a button without any other settings. Also, there is no need
-for a separate package installation process because the language environment and
+with the click of a button. Also, there is no need for a separate package installation process because the language environment and
 library provided by the computation session can be used as it is. For detailed
-instructions on how to use Jupyter Notebook, please refer to the official
+instructions on how to use Jupyter Notebook, please refer to the official Jupyter Notebook
 documentation.
 
-In the notebook's file explorer, the ``id_container file`` contains a private
-SSH key. If necessary, you can download it and use it for SSH / SFTP access to
+``id_container file`` in the notebook's file explorer, contains a private
+SSH key. If necessary, users can download it and use it for SSH / SFTP access to
 the container.
 
-Click the NEW button at the top right and select the Notebook for Backend.AI,
-then the ipynb window appears where you can enter your own code.
+Click the 'NEW' button at the top right and select the Notebook for Backend.AI,
+then the ipynb window appears where users can enter their own code. 
 
 .. image:: backendai_notebook_menu.png
    :width: 400
    :align: center
 
-In this window, you can enter and execute any code you want by using the
+In this window, users can enter and execute any code that they want by using the
 environment that session provides. The code is executed on one of the
 Backend.AI nodes where the compute session is actually created and there is no
 need to configure a separate environment on the local machine.
 
 .. image:: notebook_code_execution.png
 
-When you close the window, you can find that the ``Untitled.ipynb`` file is
-created in the notebook file explorer. Note that the files created here are
-deleted when you terminate the session. The way to preserve those files even
+When window is closed, ``Untitled.ipynb`` file can be founded in the notebook file explorer. 
+Note that the files created here are deleted when session is terminated. The way to preserve those files even
 after the session is terminated is described in the Data & Storage Folders section.
 
 .. image:: untitled_ipynb_created.png
@@ -383,44 +368,41 @@ after the session is terminated is described in the Data & Storage Folders secti
 Use web terminal
 ----------------
 
-Return to the Session list page. This time, let's launch the terminal. Click the
-terminal icon (the second button in the Control panel) to use the container's
-ttyd app. A terminal will appear in a new window and you can run shell commands
-to access the computational session as shown in the following figure. If you are
-familiar with using commands, you can easily run various Linux commands. You may
-notice that the ``Untitled.ipynb`` file automatically generated in Jupyter Notebook
-is listed with the ``ls`` command. This shows that both apps are running in the
+This section will explain how to use the web terminal. Click the 
+terminal icon(second button in the Control panel) to use the container's
+ttyd app. A terminal will appear in a new window and users can run shell commands
+to access the computational session as shown in the following figure. If familiar with the commands,
+users can easily run various Linux commands. ``Untitled.ipynb`` file can be found in Jupyter Notebook, which is 
+listed with the ``ls`` command. This shows that both apps are running in the
 same container environment.
 
 .. image:: session_terminal.png
 
-If you create a file here, you can immediately see it in the Jupyter Notebook
-you opened earlier as well. Conversely, changes made to files in Jupyter
-Notebook can also be checked right from the terminal. This is because they are
-using the same files in the same compute session.
+Files created here can also be immediately seen in the Jupyter Notebook as well. Conversely, changes made to files in Jupyter
+Notebook can also be checked right from the terminal. This is because they are using the same files in the same compute session.
 
-In addition to this, you can use web-based services such as TensorBoard, Jupyter
+In addition to this, users can use web-based services such as TensorBoard, Jupyter
 Lab, etc., depending on the type of environments provided by the compute session.
 
 
 Query compute session log
 -------------------------
 
-You can view the log of the compute session by clicking the last icon in the
+Users can view the log of the compute session by clicking the last icon in the
 Control panel of the running compute session.
 
 .. image:: session_log.png
 
 .. note::
-   From 22.09, you can download session log by clicking download button on upper-right side of the dialog.
+   From 22.09, users can download session log by clicking download button on upper-right side of the dialog.
    This feature is helpful for tracking artifacts.
 
 Rename running session
 ----------------------
 
-You can change the name of an active session. Just click the edit icon in the
-session information column. Write down the new name and click the confirm button.
-The new session name should also follow the :ref:`the authoring rule<session-naming-rule>`.
+Name of the active session can be changed. Click the 'Edit' icon in the 
+session information column. Write down a new name and click the 'Confirm' button.
+New session name should also follow the :ref:`the authoring rule<session-naming-rule>`.
 
 .. image:: session_renaming.png
 
@@ -434,7 +416,7 @@ To terminate a specific session, simply click on the red power icon and click
 OKAY button in the dialog. Since the data in the folder inside the compute
 session is deleted as soon as the compute session ends, it is recommended to
 move the data to the mounted folder or upload it to the mounted folder from the
-beginning if you want to keep it.
+beginning.
 
 .. image:: session_destroy_dialog.png
    :width: 500
@@ -488,7 +470,7 @@ found by clicking the information (i) icon in the idle checks column.
       remains low. Briefly using the resources does not extend the grace period.
       Only the average utilization over the last idle timeout is considered.
 
-Hovering your mouse over the Utilization Checker will display a tooltip with the
+Hovering the mouse over the Utilization Checker will display a tooltip with the
 utilization and threshold values. The text color changes to yellow and then red
 as the current utilization approaches the threshold (indicating low resource
 utilization).
@@ -508,7 +490,7 @@ How to add environment variable before creating a session
 ---------------------------------------------------------
 
 To give more convenient workspace for users, Backend.AI supports environment variable setting
-in session launching. In this feature, you can add any envs such as ``PATH`` by filling out
+in session launching. In this feature, users can add any envs such as ``PATH`` by filling out
 variable name and value in environment configuration dialog.
 
 To add environment variable, simply click + Add environment variables button of the Variable.
@@ -518,7 +500,7 @@ Also, you can remove the variable by clicking ``-`` button of the row that you w
    :align: center
    :alt: Env Configuration Button
 
-You can input variable name and value in the same line of the input fields.
+You can write down variable name and value in the same line of the input fields.
 
 .. _set_preopen_ports:
 
@@ -557,7 +539,7 @@ Save session commit
 
 Backend.AI supports \"Convert Session to Image\" feature from 24.03. Committing a ``RUNNING`` session will save the 
 current state of the session as a new image. Clicking the commit button in the control column of ``RUNNING`` session will
-display a dialog to show the information of the session. After entering the session name, you can convert the session to 
+display a dialog to show the information of the session. After entering the session name, users can convert the session to 
 a new image. The session name must be 4 to 32 characters long and can only contain alphanumeric letters, hyphens (``-``),
 or underscores (``_``).
 
@@ -585,7 +567,7 @@ the final image. Remember that ``/home/work`` is a mount folder (scratch directo
 Utilizing converted images of ongoing sessions
 ----------------------------------------------
 
-Converting an ongoing session into an image allows you to select this image from the environments in the session launcher
+Converting an ongoing session into an image allows users to select this image from the environments in the session launcher
 when creating a new session. This image is not exposed to other users and is useful for continuing to use the current session
 state as is. The converted image is tagged with ``Customized<session name>``.
 
@@ -624,8 +606,8 @@ Advanced web terminal usage
 The web-based terminal internally embeds a utility called
 `tmux <https://github.com/tmux/tmux/wiki>`_. tmux is a terminal multiplexer that
 supports to open multiple shell windows within a single shell, so as to allow
-multiple programs to run in foreground simultaneously. If you want to take
-advantage of more powerful tmux features, you can refer to the official tmux
+multiple programs to run in foreground simultaneously. If users want to take
+advantage of more powerful tmux features, they can refer to the official tmux
 documentation and other usage examples on the Internet.
 
 Here we are introducing some simple but useful features.
@@ -635,31 +617,31 @@ Copy terminal contents
 
 tmux offers a number of useful features, but it's a bit confusing for first-time
 users. In particular, tmux has its own clipboard buffer, so when copying the
-contents of the terminal, you can suffer from the fact that it can be pasted
+contents of the terminal, users can suffer from the fact that it can be pasted
 only within tmux by default. Furthermore, it is difficult to expose user
 system's clipboard to tmux inside web browser, so the terminal
 contents cannot be copied and pasted to other programs of user's computer. The
 so-called ``Ctrl-C`` / ``Ctrl-V`` is not working with tmux.
 
-If you need to copy and paste the terminal contents to your system's clipboard,
-you can temporarily turn off tmux's mouse support. First, press ``Ctrl-B`` key
+If copy and paste of terminal contents is needed to system's clipboard,
+users can temporarily turn off tmux's mouse support. First, press ``Ctrl-B`` key
 to enter tmux control mode. Then type ``:set -g mouse off`` and press ``Enter``
-(note that you have to type the first colon as well). You can check what you are
+(note to type the first colon as well). Users can check what they are
 typing in the status bar at the bottom of the screen. Then drag the desired text
 from the terminal with the mouse and press the ``Ctrl-C`` or ``Cmd-C`` (in Mac)
 to copy them to the clipboard of the user's computer.
 
-With mouse support turned off, you cannot scroll through the mouse wheel to see
-the contents of the previous page from the terminal. In this case, you can turn
-on mouse support again. Press ``Ctrl-B``, and this time, type ``:set -g mouse
-on``. Now you can scroll mouse wheel to see the contents of the previous page.
+With mouse support turned off, scrolling through the mouse wheel is not supprted, to see
+the contents of the previous page from the terminal. In this case, users can turn
+on mouse support. Press ``Ctrl-B``, and this time, type ``:set -g mouse
+on``. Now scrolling through mouse wheelis available to see the contents of the previous page.
 
 If you remember ``:set -g mouse off`` or ``:set -g mouse on`` after ``Ctrl-B``,
 you can use the web terminal more conveniently.
 
 .. note::
-   ``Ctrl-B`` is tmux's default control mode key. If you set another control key
-   by modifying ``.tmux.conf`` in user home directory, you should press the set
+   ``Ctrl-B`` is tmux's default control mode key. If users set another control key
+   by modifying ``.tmux.conf`` in user home directory, they should press the set
    key combination instead of ``Ctrl-B``.
 
 .. note::
@@ -674,30 +656,26 @@ Check the terminal history using keyboard
 There is also a way to copy the terminal contents and check the previous
 contents of the terminal simultaneously. It is to check the previous contents
 using the keyboard. Again, click ``Ctrl-B`` first, and then press the ``Page
-Up`` and/or ``Page Down`` keys. You can see that you navigate through the
-terminal's history with just keyboard. To exit search mode, just press the ``q``
-key. With this method, you can check the contents of the terminal history even
-when the mouse support is turned off to allow copy and paste.
+Up`` and/or ``Page Down`` keys. To exit search mode, just press the ``q``
+key. With this method, users can check the contents of the terminal history even
+when the mouse support is turned off.
 
 Spawn multiple shells
 ~~~~~~~~~~~~~~~~~~~~~
 
-The main advantage of tmux is that you can launch and use multiple shells in one
-terminal window. Since seeing is believing, let's press the ``Ctrl-B`` key and
-then the ``c``. You can see that the contents of the existing window disappears
-and a new shell environment appears. But the previous window is not terminated.
-Let's press ``Ctrl-B`` and then ``w``. You can now see the
-list of shells currently open on tmux like following image. Here, the shell
-starting with ``0:`` is the shell environment you first saw, and the shell
-starting with ``1:`` is the one you just created. You can move between shells
+The main advantage of tmux is to launch and use multiple shells in one
+terminal window. Pressing ``Ctrl-B`` key and ``c``. will show the new shell environment.
+Previous window is not visible at this point, but is not terminated.
+Press ``Ctrl-B`` and ``w``. List of shells currently open on tmux is shown.
+Shell starting with ``0:`` is the initial shell environment, and the shell
+starting with ``1:`` is the one just created. Users can move between shells
 using the up/down keys. Place the cursor on the shell ``0:`` and press the Enter
 key to select it.
 
 .. image:: tmux_multi_session_pane.png
    :alt: tmux's multiple session management
 
-You can see the first shell environment appears. In this way, you can
-use multiple shell environments within a web terminal. To exit or terminate the
+In this way, users can use multiple shell environments within a web terminal. To exit or terminate the
 current shell, just enter ``exit`` command or press ``Ctrl-B x`` key and then
 type ``y``.
 
@@ -707,5 +685,5 @@ In summary:
 - ``Ctrl-B w``: query current tmux shells and move around among them
 - ``exit`` or ``Ctrl-B x``: terminate the current shell
 
-Combining the above commands allows you to perform various tasks simultaneously
+Combining the above commands allows users to perform various tasks simultaneously
 on multiple shells.
