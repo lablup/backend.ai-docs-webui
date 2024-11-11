@@ -25,7 +25,7 @@ Click the 'START' button to start a new compute session.
    :width: 850
    :align: center
 
-In ther first page, users can select the type of session, 'interactive' or 'batch'. 
+In the first page, users can select the type of session, 'interactive' or 'batch'. 
 If needed, setting the name of the session (optional) is also available. 
 
 .. _session-naming-rule:
