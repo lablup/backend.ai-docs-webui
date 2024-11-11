@@ -121,6 +121,7 @@ refer to the following:
 
   The meaning of each item is as follows. 
   Clicking the Help (?) button will also give more information. 
+  
   * CPU: The CPU performs basic arithmetic, logic, controlling, and input/output
     (I/O) operations specified by the instructions. In general, more CPUs are beneficial for high-performance computing workloads.
     But, to reflect the advantage of more CPUs, program code must be written to adapt multiple CPUs.
@@ -198,7 +199,7 @@ On the last page, users could view information of session(s) to create,
 such as environment itself, allocated resources, mount information,
 environment variables set on the previous pages, preopen ports, etc.,
 Review the settings, users could launch the session by clicking 'Launch' button. 
-Click the 'Edit' button located at the top right of each card to redirect to relevent page.
+Click the 'Edit' button located at the top right of each card to redirect to relevant page.
 
 If there is an issue with the settings, an error message will be displayed as follows. 
 Users can edit their settings when this happens.
@@ -461,7 +462,7 @@ found by clicking the information (i) icon in the idle checks column.
     not exceed the set threshold for a certain duration (idle timeout), that
     session will be automatically terminated. For example, if the accelerator
     utilization threshold is set to 1%, and a compute session shows a
-    utilization of less than 1% over the idle itmeout, it becomes a target for
+    utilization of less than 1% over the idle timeout, it becomes a target for
     termination. Resources with empty values are excluded from the garbage
     collection criteria.
 
