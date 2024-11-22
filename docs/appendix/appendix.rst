@@ -207,7 +207,7 @@ compute session environment and ask administrators to convert it.
   is private and not be revealed to other users
 
   .. image:: session-creation-by-specifying-image-name.png
-     :width: 400
+     :width: 600
      :align: center
 
 - A new compute session will be created using the new Docker image.
