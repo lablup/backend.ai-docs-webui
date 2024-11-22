@@ -4,69 +4,70 @@
 Mounting Folders to a Compute Session
 =============================================
 
-When you start a compute session, the user has access to the ``/home/work/``
-directory, and the normal directories and files created under ``/home/work/``
-will disappear when the compute session is terminated. This is because compute
-sessions are dynamically created and deleted based on the container. To preserve
-the data inside the container independent of the life cycle of the container, a
-separate host folder must be mounted into the container, and then files must be
-created within the mounted folder. Backend.AI provides a function to mount
-storage folders when creating a compute session.
+Backend.AI provides a function to mount storage folders when creating a compute session.
+When new compute session is started, user will have access to the``/home/work/`` directory.
+Normal directories and files created under ``/home/work/`` will disappear when the compute session is terminated.
+This is because compute sessions are dynamically created and deleted based on the container.
+To preserve data inside a container regardless of the container's lifecycle, a separate host folder must be mounted in the container, and then files must be created within the mounted folder.
 
-Let's go to the Sessions page and click the START button to create a new compute
-session. In the Folders to mount panel in the session creation dialog, you can
-see a list of storage folders that can be mount. By clicking the folder you
-want to mount, you can mount it. You can also mount multiple folders
-simultaneously by clicking multiple items. In this example, we will mount two
-folders, ``user1-ml-test`` and ``user2-vfolder``, and then create a compute
-session.
+Go to 'Sessions' page and click the 'Start' button. 
+After filling out the 'Session Type', 'Environments & Resource allocation' pages, 
+navigate to the 'Data & Folders' page to see a list of folders that users can mount. 
+From this list, choose the folders to mount and add them, or select multiple folders to mount more. 
+The documentation will explain how to mount two folders, ``user1-ml-test`` and ``user2-vfolder``, 
+and then create a session. 
 
 .. image:: create_session_with_folders.png
    :align: center
    :alt: Launch a compute session with storage folders
 
 .. note::
-   Folders to mount only lists the data folders that the user can currently
-   mount. For example, project folders used by other projects are not exposed in
-   Folders to mount. The storage host for each folder is also displayed under
-   the folder's name.
+   By looking at the data and folder information within that project, users can see information such as usage mode, 
+   the storage host the folder belongs to, permissions, and more. 
+   Note that the 'Data & Folders' page only outputs data folders that are mountable by the current user. 
+   For example, folders that belong to other projects cannot be viewed. 
+.. note::
+   Accessing the 'Data & Storage' side menu will show the information related to the folders. 
+   From this menu, users can view the folders that have been created, create new folders, and upload files. 
+   For more detailed instructions related to folders, please refer :ref:`Explore Folder<explore_folder>` section. 
 
-Now, open the terminal by clicking the terminal icon in the created session. If
-you run ``ls`` command in the terminal, you can see that the ``user1-ml-test``
-and ``user2-vfolder`` folders are mounted under the home directory.
+   Alternatively, a new virtual folder can be created by clicking the '+ Add' button. 
+   For further information on how to create a new folder in session launcher page, 
+   please refer :ref:`Create storage folder<create_storage_folder>` section. 
+
+In the created session, screen terminal window can be brought up by clicking the terminal icon. 
+``ls`` command will mount ``user1-ml-test` folder and ``user2-vfolder`` under the ``user1-ml-test`` 
+and ``user2-vfolder`` folders are mounted under the home directory. 
 
 .. note::
-   The selected folder, by default, will be mounted with its name under
-   ``/home/work/`` inside the compute session. For example, if a folder's name
-   is ``test``, it is mounted on ``/home/work/test``. In case you want to
-   customize the mount path, write the absolute path in the Path & Alias input
-   field. If you write ``/workspace`` in the input field for the ``test`` folder,
-   it will be mounted on ``/workspace`` inside the session. Writing a relative
-   path will mount the folder under ``/home/work/`` with the path.
+   The selected folder will be mounted with its name under ``/home/work/`` inside the compute session, by its default. 
+   For example, if folder's name is ``test``, it is mounted on ``/home/work/test``. 
+   To customize the mount path, write an absolute path in the 'Path and Alias' input fields. 
+   Writing ``/workspace`` in the input field of the ``test`` folder will mount to ``/workspace`` inside the session. 
+   Writing a relative path will mount the folder under ``/home/work/`` with the path. 
 
-Let's create a ``test_file`` under ``user2-vfolder`` to see if the file can be
-preserved after the compute session is terminated. The contents of this file
-will be "file inside user2-vfolder".
+Backend.AI gives an option to preserve files in folders when a compute session is deleted. 
+The example below illustrates what's happening. 
+
+Under the ``user2-vfolder``, create a ``test_file``.
+Fill the contents with \"file inside user2-vfolder\".
 
 .. image:: mounted_folders_in_terminal.png
    :alt: Mounted folders in terminal
 
-If you run ``ls`` command against ``user2-vfolder``, you can see that the file
-was created successfully. Also note the contents of the file with the ``cat``
-command.
+Running ``ls`` command against ``user2-vfolder``, users can confirm the file was created successfully. 
+Please note the contents of the file can be chekced with ``cat`` command. 
 
-Now delete the compute session and go to the Storage page. Locate the
-``user2-vfolder folder``, open a file explorer and check that the file
-``test_file`` exists. Click the file download button in Actions to download the
-file to the local machine and open it to confirm that the contents
-of the file are "file inside user2-vfolder".
+Now delete the compute session and go to the Storage page. 
+Locate the ``user2-vfolder folder``, open a file explorer and check that the ``test_file`` exists. 
+Click the 'download' button in 'Actions' tab to download the file to the local machine and open it 
+to confirm that the contents are \"file inside user2-vfolder\".
 
 .. image:: download_file_from_folder.png
    :alt: Download icon in the folder explorer
 
-Like this, when creating a compute session, you can mount storage folders and
-perform any file operations on those mounted folders to save data even after the
-compute session termination.
+Performing file management on a mounted folder when you create a compute session, 
+data can be preserved even after users ends the compute session. 
 
 
 .. _using-automount-folder:
@@ -74,52 +75,43 @@ compute session termination.
 Configure a compute session environment using an automount folder
 -------------------------------------------------------------------
 
-Sometimes you need a new program or library that is not pre-installed in a
-compute session. In that case, you can install packages and configure a certain
-environment regardless of the type of compute session by using the Storage
-folder, which persists independent of session lifecycle, and the :ref:`automount
-folder<automount-folder>`.
+If a new program or library is required that is not pre-installed in a compute session, a Storage folder attribute and :ref:`automount-folder<automount-folder>`, 
+which is independent of the compute session lifecycle, can be used to install the package. 
+Configure a consistent environment regardless of the type of compute session. 
 
 .. _using-pip-with-automountfolder:
 
 Install Python packages via pip
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Creating a folder named ``.local`` allows a user to install Python user packages
-in that folder. This is because ``pip`` by default installs the packages in the
-``.local`` folder under the user's home folder (note that automount folder is
-mounted under user's home folder). So, if you want to install and keep the
-Python package ``tqdm`` regardless of the type of computing environment, you can
-issue the following command in your terminal:
+Creating a folder named ``.local`` allows a user to install Python user packages in same folder. 
+``pip`` by default installs the packages in the ``.local`` folder under the user's home folder 
+(Please note that automount folder is mounted under user's home folder). 
+So, to keep a Python package called ``tqdm`` installed at all times, regardless of the computing environment, 
+a command like the following could be issued from the terminal: 
 
 .. code-block:: shell
 
    pip install tqdm
 
-After that, when a new compute session is created, the ``.local`` folder where
-the ``tqdm`` package is installed is automatically mounted, so you can use the
-``tqdm`` package without reinstalling.
+After that, when a new compute session is created, the ``.local`` folder where the ``tqdm`` package 
+is installed is automatically mounted, so users can use it without reinstalling the ``tqdm`` package.
 
 .. warning::
 
-   If you spawn multiple sessions that use different Python versions, there may
-   be compatibility issues with the packages. This can be circumvented by
-   branching ``PYTHONPATH`` environment variable via the ``.bashrc``. This is
-   because the user's ``pip`` package is installed in the path specified in the
-   ``PYTHONPATH``.
+   When using multiple Python versions or sessions with different Python versions, packages may have compatibility issues. 
+   This can be circumvented by branching ``PYTHONPATH`` environment variable via the ``.bashrc``. 
+   This is because the user's ``pip`` package is installed in the path specified in the ``PYTHONPATH``.
 
 .. _using-linuxbrew-with-automountfolder:
 
 Install packages via Homebrew
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Package managers like Ubuntu ``apt`` or CentOS ``yum`` usually require the
-``root`` permission. For security reasons, ``sudo`` and ``root`` accesses are
-blocked by default in Backend.AI's compute session (it may be allowed depending
-on the configuration), so we recommend to use `Homebrew on Linux
-<https://docs.brew.sh/Homebrew-on-Linux>`_ which does not require ``sudo``.
+Package managers like Ubuntu ``apt`` or CentOS ``yum`` usually require the ``root`` permission. 
+For security reasons, ``sudo`` and ``root`` accesses are blocked by default in Backend.AI's compute session (Depending on the configuration, this may be allowed), so we recommend to use `Homebrew on Linux <https://docs.brew.sh/Homebrew-on-Linux>`_ which does not require ``sudo``.
 
-Homebrew can be configured as follows:
+Homebrew can be configured as follows: 
 
 - Create ``.linuxbrew`` folder in Data & Storage page.
 - Create a compute session (``.linuxbrew`` folder is automatically mounted at
@@ -130,7 +122,7 @@ Homebrew can be configured as follows:
 
       $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-- Homebrew packages can be installed like:
+- Homebrew packages can be installed like following:
 
    .. code-block:: shell
 
@@ -138,7 +130,5 @@ Homebrew can be configured as follows:
       $ hello
       Hello, world!
 
-``brew`` installs packages under ``/home/linuxbrew/.linuxbrew`` which is
-automatically mounted when ``.linuxbrew`` folder exists. So, if you create a
-automount folder named ``.linuxbrew``, Homebrew packages can be kept after the
-compute session is destroyed and then reused for the next compute session.
+``brew`` installs packages under ``/home/linuxbrew/.linuxbrew`` which is automatically mounted when ``.linuxbrew`` folder exists. 
+So, if an automount folder named ''.linuxbrew'' is created, the Homebrew packages previously installed can be used again, even if the compute session is deleted and a new compute session is created. 

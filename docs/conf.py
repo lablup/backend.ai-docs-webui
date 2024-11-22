@@ -22,8 +22,8 @@ from datetime import datetime
 project = "Backend.AI Web-UI User Guide"
 copyright = f"{datetime.now().year}, Lablup Inc."
 author = "Lablup Inc."
-version = "24.03"
-release = "24.03"
+version = "24.09"
+release = "24.09"
 
 # -- General configuration ---------------------------------------------------
 
