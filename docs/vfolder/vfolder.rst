@@ -431,7 +431,7 @@ Using SFTP Server
 -----------------
 
 From 22.09, Backend.AI supports SSH / SFTP file upload from both desktop app and
-web-based Web-UI. The SFTP server allows you to upload files quickly through reliable
+web-based WebUI. The SFTP server allows you to upload files quickly through reliable
 data streams.
 
 .. note::

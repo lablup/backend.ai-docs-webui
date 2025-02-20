@@ -1,14 +1,14 @@
-.. Backend.AI Web-UI User Guide master file, created by
+.. Backend.AI WebUI User Guide master file, created by
    sphinx-quickstart on Wed Feb  5 01:58:48 2020.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Backend.AI Web-UI User Guide
+Backend.AI WebUI User Guide
 =================================
 
-User's guide for the Backend.AI Web-UI.
+User's guide for the Backend.AI WebUI.
 
-Backend.AI Web-UI is a web or app that provides easy-to-use GUI interface
+Backend.AI WebUI is a web or app that provides easy-to-use GUI interface
 to work with the Backend.AI server.
 
 The latest versions of this document can be found from sites below:

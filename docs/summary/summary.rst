@@ -23,7 +23,7 @@ may be only one default project.
 Click the person icon on the right side of the top bar to see the user menu.
 Each menu item has the following functions.
 
-* About Backend.AI: Displays information such as version of Backend.AI Web-UI,
+* About Backend.AI: Displays information such as version of Backend.AI WebUI,
   license type, etc.
 * My Account: Check/Update information of current login user
 * Preferences: Go to user settings page

@@ -26,11 +26,11 @@ Desktop Notification
 ^^^^^^^^^^^^^^^^^^^^
 
 Enables or disables the desktop notification feature. If the browser and
-operating system support it, various  messages that appear in the Web-UI
+operating system support it, various  messages that appear in the WebUI
 will also appear in the desktop notification panel. If disabled from the
 operating system during the first run, the desktop message may not be displayed
 even if the option is turned on here. Regardless of the value of this option,
-the notification inside the Web-UI still works.
+the notification inside the WebUI still works.
 
 Use Compact Sidebar by default
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -77,12 +77,36 @@ before the page is refreshed.
    WebUI is open sourced, anyone who willing to make the translation better
    can contribute: https://github.com/lablup/backend.ai-webui.
 
+Automatic Update Check
+^^^^^^^^^^^^^^^^^^^^^^
+
+A notification window pops up when a new WebUI version is detected.
+It works only in an environment where Internet access is available.
+
+Auto logout
+^^^^^^^^^^^
+
+Log out automatically when all Backend.AI WebUI pages are closed except for
+pages created to run apps in session (e.g. jupyter notebook, web terminal,
+etc.).
+
+My Keypair information
+^^^^^^^^^^^^^^^^^^^^^^
+
+Every user has at least one or more keypairs. you can see access and secret keypair by clicking 
+Config button below. Remember that main access keypair is only one.
+
+.. image:: my_keypair_information.png
+   :width: 700
+   :align: center
+   :alt: My Keypair Information
+
 .. _user-ssh-keypair-management:
 
 SSH Keypair Management
 ^^^^^^^^^^^^^^^^^^^^^^
 
-When using the Web-UI app, you can create SSH/SFTP connection directly to the
+When using the WebUI app, you can create SSH/SFTP connection directly to the
 compute session. Once you signed up for Backend.AI, a public keypair is
 provided. If you click the button on the right to the SSH Keypair Management
 section, the following dialog appears. Click the copy button on the right to
@@ -114,31 +138,13 @@ please enter the keys inside, and click ``SAVE`` button. Now you can access to b
    :width: 400
    :align: center
 
+Classic Session Launcher
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-Automatic Update Check
-^^^^^^^^^^^^^^^^^^^^^^
-
-A notification window pops up when a new version of the Web-UI is detected.
-It works only in an environment where Internet access is available.
-
-Auto logout
-^^^^^^^^^^^
-
-Log out automatically when all Backend.AI Web-UI pages are closed except for
-pages created to run apps in session (e.g. jupyter notebook, web terminal,
-etc.).
-
-My Keypair information
-^^^^^^^^^^^^^^^^^^^^^^
-
-Every user has at least one or more keypairs. you can see access and secret keypair by clicking 
-Config button below. Remember that main access keypair is only one.
-
-.. image:: my_keypair_information.png
-   :width: 700
-   :align: center
-   :alt: My Keypair Information
-
+From version 24.09, Backend.AI offers an improved version of the session launcher (NEO) as default.
+If you want to use the classic session launcher, you can turn on this option. 
+For instructions on how to use the classic session launcher, please refer to the following 
+`link <https://webui.docs.backend.ai/en/23.09_a/sessions_all/sessions_all.html>`_.
 
 EDIT BOOTSTRAP SCRIPT
 ^^^^^^^^^^^^^^^^^^^^^^^
