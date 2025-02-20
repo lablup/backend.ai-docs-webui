@@ -647,7 +647,7 @@ Manage agent nodes
 
 Superadmins can view the list of agent worker nodes, currently connected to
 Backend.AI, by visiting the Resources page. You can check agent node's IP,
-connecting time, actual resources currently in use, etc. The Web-UI does
+connecting time, actual resources currently in use, etc. The WebUI does
 not provide the function to manipulate agent nodes.
 
 Query agent nodes
@@ -697,7 +697,7 @@ V100 agents into one resource group, and the remaining two P100 agents into
 another resource group.
 
 Adding a specific agent to a specific resource group is not currently handled in
-the Web-UI, and it can be done by editing agent config file from the installation
+the WebUI, and it can be done by editing agent config file from the installation
 location and restart the agent daemon. Management of the resource groups is
 possible in Resource Group tab of the Resource page.
 

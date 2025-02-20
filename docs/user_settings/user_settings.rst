@@ -26,11 +26,11 @@ Desktop Notification
 ^^^^^^^^^^^^^^^^^^^^
 
 Enables or disables the desktop notification feature. If the browser and
-operating system support it, various  messages that appear in the Web-UI
+operating system support it, various  messages that appear in the WebUI
 will also appear in the desktop notification panel. If disabled from the
 operating system during the first run, the desktop message may not be displayed
 even if the option is turned on here. Regardless of the value of this option,
-the notification inside the Web-UI still works.
+the notification inside the WebUI still works.
 
 Use Compact Sidebar by default
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -106,7 +106,7 @@ Config button below. Remember that main access keypair is only one.
 SSH Keypair Management
 ^^^^^^^^^^^^^^^^^^^^^^
 
-When using the Web-UI app, you can create SSH/SFTP connection directly to the
+When using the WebUI app, you can create SSH/SFTP connection directly to the
 compute session. Once you signed up for Backend.AI, a public keypair is
 provided. If you click the button on the right to the SSH Keypair Management
 section, the following dialog appears. Click the copy button on the right to

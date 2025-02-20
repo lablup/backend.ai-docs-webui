@@ -19,7 +19,7 @@ from datetime import datetime
 
 # -- Project information -----------------------------------------------------
 
-project = "Backend.AI Web-UI User Guide"
+project = "Backend.AI WebUI User Guide"
 copyright = f"{datetime.now().year}, Lablup Inc."
 author = "Lablup Inc."
 version = "24.09"
@@ -121,7 +121,7 @@ latex_elements = {
             \centering
             \vspace*{15mm}  %% * is used to give space from top
             \sphinxlogo
-            \textbf{\Huge Backend.AI Web-UI\\User's Guide}\par
+            \textbf{\Huge Backend.AI WebUI\\User's Guide}\par
             {\LARGE (\version)}\par
             \vspace{25mm}
             \textbf{\LARGE \@author}\par
@@ -139,7 +139,7 @@ latex_documents = [
     (
         master_doc,
         "backendaiwebuiuserguide.tex",
-        "Backend.AI Web-UI User's Guide",
+        "Backend.AI WebUI User's Guide",
         author,
         "manual",
     ),

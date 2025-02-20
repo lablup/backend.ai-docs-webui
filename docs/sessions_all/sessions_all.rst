@@ -2,7 +2,7 @@
 Compute Sessions
 ================
 
-The most visited pages in the Backend.AI Web-UI would be the 'Sessions' and 'Data & Storage' pages. 
+The most visited pages in the Backend.AI WebUI would be the 'Sessions' and 'Data & Storage' pages. 
 This document will cover how to query and create container-based compute sessions and utilize various web applications on the 'Sessions' page.
 
 .. _create_session:

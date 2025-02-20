@@ -29,9 +29,9 @@ msgstr "가입"
 
 #: ../../login/login.rst:8
 msgid ""
-"When you launch the Web-UI, login dialog appears. If you haven't signed "
+"When you launch the WebUI, login dialog appears. If you haven't signed "
 "up yet, press the SIGN UP button."
-msgstr "Web-UI를 실행하면 다음과 같은 로그인 대화창이 뜹니다. 아직 가입을 하지 않은 경우에는 SIGN UP 버튼을 눌러주세요."
+msgstr "WebUI를 실행하면 다음과 같은 로그인 대화창이 뜹니다. 아직 가입을 하지 않은 경우에는 SIGN UP 버튼을 눌러주세요."
 
 #: ../../login/login.rst:-1
 msgid "Login dialog"
@@ -171,18 +171,18 @@ msgstr "헤더 이벤트"
 #: ../../login/login.rst:105
 msgid ""
 "The bell shape button is the event notification button. Events that need "
-"to be recorded during Web-UI operation are displayed here. When "
+"to be recorded during WebUI operation are displayed here. When "
 "background tasks are running, such as creating a compute session, you can"
 " check the jobs here. When the background task is finished."
 msgstr ""
-"종 모양의 버튼은 이벤트 알림 버튼입니다. Web-UI 동작 중 기록해둘 필요가 있는 이벤트 내역이 여기에 표시 됩니다. 연산 "
+"종 모양의 버튼은 이벤트 알림 버튼입니다. WebUI 동작 중 기록해둘 필요가 있는 이벤트 내역이 여기에 표시 됩니다. 연산 "
 "세션을 생성 중에 있는 등 백그라운드 작업이 돌아가고 있을 때 여기에서 그 내역을 확인할 수 있습니다."
 
 #: ../../login/login.rst:114
 msgid ""
-"You can change the theme mode of the Web-UI via the dark mode icon on the"
+"You can change the theme mode of the WebUI via the dark mode icon on the"
 " right side of the header."
-msgstr "헤더의 우측에 있는 다크모드 아이콘을 통하여 Web-UI 의 테마를 변경할 수 있습니다."
+msgstr "헤더의 우측에 있는 다크모드 아이콘을 통하여 WebUI 의 테마를 변경할 수 있습니다."
 
 #: ../../login/login.rst:122
 msgid ""

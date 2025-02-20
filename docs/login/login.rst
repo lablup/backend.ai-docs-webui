@@ -5,7 +5,7 @@ Signup and Login
 Signup
 ------
 
-When you launch the Web-UI, login dialog appears. If you haven't signed up
+When you launch the WebUI, login dialog appears. If you haven't signed up
 yet, press the SIGN UP button.
 
 .. image:: login_dialog.png
@@ -103,7 +103,7 @@ Clicking it again will return the sidebar to its original width.
 Header Events
 ----------------
 The bell shape button is the event notification button.
-Events that need to be recorded during Web-UI operation are displayed here.
+Events that need to be recorded during WebUI operation are displayed here.
 When background tasks are running, such as creating a compute session,
 you can check the jobs here. When the background task is finished.
 
@@ -111,7 +111,7 @@ you can check the jobs here. When the background task is finished.
    :align: center
    :width: 600
 
-You can change the theme mode of the Web-UI via the dark mode icon on the
+You can change the theme mode of the WebUI via the dark mode icon on the
 right side of the header.
 
 .. image:: theme_mode.png
