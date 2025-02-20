@@ -9,216 +9,234 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"POT-Creation-Date: 2025-02-20 14:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../mount_vfolder/mount_vfolder.rst:5
 msgid "Mounting Folders to a Compute Session"
 msgstr "コンピュートセッションへのフォルダのマウント"
 
 #: ../../mount_vfolder/mount_vfolder.rst:7
+#, fuzzy
 msgid ""
-"When you start a compute session, the user has access to the ``/home/work/``"
-" directory, and the normal directories and files created under "
+"Backend.AI provides a function to mount storage folders when creating a "
+"compute session. When new compute session is started, user will have access "
+"to the``/home/work/`` directory. Normal directories and files created under "
 "``/home/work/`` will disappear when the compute session is terminated. This "
 "is because compute sessions are dynamically created and deleted based on the"
-" container. To preserve the data inside the container independent of the "
-"life cycle of the container, a separate host folder must be mounted into the"
-" container, and then files must be created within the mounted folder. "
-"Backend.AI provides a function to mount storage folders when creating a "
-"compute session."
+" container. To preserve data inside a container regardless of the "
+"container's lifecycle, a separate host folder must be mounted in the "
+"container, and then files must be created within the mounted folder."
 msgstr ""
-"計算セッションを開始すると、ユーザーは ``/home/work/`` ディレクトリにアクセスでき、``/home/work/`` "
-"以下で作成された通常のディレクトリやファイルは計算セッションが終了すると消えてしまいます。これは、計算セッションがコンテナに基づいて動的に作成および削除されるためです。コンテナ内のデータをコンテナのライフサイクルに依存せずに保持するには、別のホストフォルダをコンテナにマウントし、マウントされたフォルダ内にファイルを作成する必要があります。Backend.AI"
-" は、計算セッションを作成する際にストレージフォルダをマウントする機能を提供しています。"
+"Backend.AIは、計算セッションを作成する際にストレージフォルダーをマウントする機能を提供します。新しい計算セッションが開始されると、ユーザーは``/home/work/``ディレクトリにアクセスできるようになります。``/home/work/``の下に作成された通常のディレクトリやファイルは、計算セッションが終了すると消えてしまいます。これは、計算セッションがコンテナに基づいて動的に作成および削除されるためです。コンテナのライフサイクルに関係なくコンテナ内のデータを保持するには、別のホストフォルダーをコンテナにマウントし、その後、マウントされたフォルダー内でファイルを作成する必要があります。"
 
-#: ../../mount_vfolder/mount_vfolder.rst:16
+#: ../../mount_vfolder/mount_vfolder.rst:13
 msgid ""
-"Let's go to the Sessions page and click the START button to create a new "
-"compute session. In the Folders to mount panel in the session creation "
-"dialog, you can see a list of storage folders that can be mount. By clicking"
-" the folder you want to mount, you can mount it. You can also mount multiple"
-" folders simultaneously by clicking multiple items. In this example, we will"
-" mount two folders, ``user1-ml-test`` and ``user2-vfolder``, and then create"
-" a compute session."
+"Go to 'Sessions' page and click the 'Start' button. After filling out the "
+"'Session Type', 'Environments & Resource allocation' pages, navigate to the "
+"'Data & Folders' page to see a list of folders that users can mount. From "
+"this list, choose the folders to mount and add them, or select multiple "
+"folders to mount more. The documentation will explain how to mount two "
+"folders, ``user1-ml-test`` and ``user2-vfolder``, and then create a session."
 msgstr ""
-"セッションページに移動し、STARTボタンをクリックして新しいコンピュートセッションを作成します。セッション作成ダイアログの「フォルダをマウント」パネルでは、マウント可能なストレージフォルダのリストが表示されます。マウントしたいフォルダをクリックすることでマウントが可能です。複数のアイテムをクリックすることで、複数のフォルダを同時にマウントすることもできます。この例では、``user1-ml-"
-"test`` と ``user2-vfolder`` の2つのフォルダをマウントし、その後にコンピュートセッションを作成します。"
+"「セッション」ページに移動し、「スタート」ボタンをクリックします。「セッションタイプ」、「環境およびリソース割り当て」ページを入力した後、「データ＆フォルダ」ページに移動して、ユーザーがマウントできるフォルダの一覧を確認します。この一覧からマウントするフォルダを選択して追加するか、複数のフォルダを選択してさらにマウントします。ドキュメントでは、2つのフォルダ「user1-ml-"
+"test」と「user2-vfolder」をマウントし、セッションを作成する方法を説明します。"
 
 #: ../../mount_vfolder/mount_vfolder.rst:-1
 msgid "Launch a compute session with storage folders"
 msgstr "ストレージフォルダを使用してコンピュートセッションを開始します"
 
-#: ../../mount_vfolder/mount_vfolder.rst:29
+#: ../../mount_vfolder/mount_vfolder.rst:25
 msgid ""
-"Folders to mount only lists the data folders that the user can currently "
-"mount. For example, project folders used by other projects are not exposed "
-"in Folders to mount. The storage host for each folder is also displayed "
-"under the folder's name."
+"By looking at the data and folder information within that project, users can"
+" see information such as usage mode, the storage host the folder belongs to,"
+" permissions, and more. Note that the 'Data & Folders' page only outputs "
+"data folders that are mountable by the current user. For example, folders "
+"that belong to other projects cannot be viewed."
 msgstr ""
-"マウントするフォルダには、ユーザーが現在マウントできるデータフォルダのみが一覧表示されます。例えば、他のプロジェクトで使用されているプロジェクトフォルダは、マウントするフォルダには表示されません。各フォルダのストレージホストは、そのフォルダの名前の下に表示されます。"
+"そのプロジェクト内のデータとフォルダー情報を見ることで、ユーザーは使用モード、フォルダーが所属するストレージホスト、権限などの情報を確認できます。「データ＆フォルダー」ページは、現在のユーザーによってマウント可能なデータフォルダーのみを出力することに注意してください。たとえば、他のプロジェクトに属するフォルダーは表示できません。"
+
+#: ../../mount_vfolder/mount_vfolder.rst:30
+msgid ""
+"Accessing the 'Data & Storage' side menu will show the information related "
+"to the folders. From this menu, users can view the folders that have been "
+"created, create new folders, and upload files. For more detailed "
+"instructions related to folders, please refer :ref:`Explore "
+"Folder<explore_folder>` section."
+msgstr ""
+"「データとストレージ」のサイドメニューにアクセスすると、フォルダに関連する情報が表示されます。このメニューから、ユーザーは作成されたフォルダを表示したり、新しいフォルダを作成したり、ファイルをアップロードしたりできます。フォルダに関連する詳細な手順については、:ref:`Explore"
+" Folder<explore_folder>` セクションを参照してください。"
 
 #: ../../mount_vfolder/mount_vfolder.rst:34
 msgid ""
-"Now, open the terminal by clicking the terminal icon in the created session."
-" If you run ``ls`` command in the terminal, you can see that the ``user1-ml-"
-"test`` and ``user2-vfolder`` folders are mounted under the home directory."
+"Alternatively, a new virtual folder can be created by clicking the '+ Add' "
+"button. For further information on how to create a new folder in session "
+"launcher page, please refer :ref:`Create storage "
+"folder<create_storage_folder>` section."
 msgstr ""
-"作成したセッションで端末アイコンをクリックして端末を開きます。端末で ``ls`` コマンドを実行すると、``user1-ml-test`` "
-"フォルダーと ``user2-vfolder`` フォルダーがホームディレクトリにマウントされていることが確認できます。"
+"代わりに、「+ "
+"追加」ボタンをクリックすることで新しい仮想フォルダーを作成することができます。セッションランチャーページで新しいフォルダーを作成する方法の詳細については、:ref:`ストレージフォルダーの作成<create_storage_folder>`セクションを参照してください。"
 
-#: ../../mount_vfolder/mount_vfolder.rst:39
+#: ../../mount_vfolder/mount_vfolder.rst:38
+#, fuzzy
 msgid ""
-"The selected folder, by default, will be mounted with its name under "
-"``/home/work/`` inside the compute session. For example, if a folder's name "
-"is ``test``, it is mounted on ``/home/work/test``. In case you want to "
-"customize the mount path, write the absolute path in the Path & Alias input "
-"field. If you write ``/workspace`` in the input field for the ``test`` "
-"folder, it will be mounted on ``/workspace`` inside the session. Writing a "
-"relative path will mount the folder under ``/home/work/`` with the path."
+"In the created session, screen terminal window can be brought up by clicking"
+" the terminal icon. ``ls`` command will mount ``user1-ml-test` folder and "
+"``user2-vfolder`` under the ``user1-ml-test`` and ``user2-vfolder`` folders "
+"are mounted under the home directory."
 msgstr ""
-"選択されたフォルダは、デフォルトで計算セッション内の ``/home/work/`` の下にその名前でマウントされます。例えば、フォルダの名前が "
-"``test`` の場合、それは ``/home/work/test`` にマウントされます。マウントパスをカスタマイズしたい場合は、Path & "
-"Alias 入力フィールドに絶対パスを書き込んでください。例えば、``test`` フォルダの入力フィールドに ``/workspace`` "
-"と書くと、それはセッション内で ``/workspace`` にマウントされます。相対パスを書くと、そのパスで ``/home/work/`` "
-"の下にフォルダがマウントされます。"
+"作成されたセッションでは、ターミナルアイコンをクリックすることで画面ターミナルウィンドウを表示できます。 ``ls`` コマンドは "
+"``user1-ml-test`` フォルダをマウントし、``user2-vfolder`` はホームディレクトリの下にマウントされます。"
 
-#: ../../mount_vfolder/mount_vfolder.rst:47
+#: ../../mount_vfolder/mount_vfolder.rst:43
+#, fuzzy
 msgid ""
-"Let's create a ``test_file`` under ``user2-vfolder`` to see if the file can "
-"be preserved after the compute session is terminated. The contents of this "
-"file will be \"file inside user2-vfolder\"."
+"The selected folder will be mounted with its name under ``/home/work/`` "
+"inside the compute session, by its default. For example, if folder's name is"
+" ``test``, it is mounted on ``/home/work/test``. To customize the mount "
+"path, write an absolute path in the 'Path and Alias' input fields. Writing "
+"``/workspace`` in the input field of the ``test`` folder will mount to "
+"``/workspace`` inside the session. Writing a relative path will mount the "
+"folder under ``/home/work/`` with the path."
 msgstr ""
-"``user2-vfolder`` の下に ``test_file`` "
-"を作成し、コンピュートセッションが終了した後もファイルが保持されるかどうかを確認してみましょう。このファイルの内容は \"file inside "
-"user2-vfolder\" です。"
+"選択したフォルダーは、デフォルトで計算セッション内の``/home/work/``の下にその名前でマウントされます。たとえば、フォルダーの名前が``test``の場合、``/home/work/test``にマウントされます。マウントパスをカスタマイズするには、「パスとエイリアス」入力フィールドに絶対パスを書くことができます。``test``フォルダーの入力フィールドに``/workspace``と書くと、セッション内の``/workspace``にマウントされます。相対パスを書くと、フォルダーはそのパスで``/home/work/``の下にマウントされます。"
+
+#: ../../mount_vfolder/mount_vfolder.rst:49
+msgid ""
+"Backend.AI gives an option to preserve files in folders when a compute "
+"session is deleted. The example below illustrates what's happening."
+msgstr ""
+"Backend.AIは、計算セッションが削除される際にフォルダー内のファイルを保持するオプションを提供します。以下の例は、何が起こっているかを示しています。"
+
+#: ../../mount_vfolder/mount_vfolder.rst:52
+msgid ""
+"Under the ``user2-vfolder``, create a ``test_file``. Fill the contents with "
+"\\\"file inside user2-vfolder\\\"."
+msgstr ""
+"``user2-vfolder``の下に``test_file``を作成します。内容を「user2-vfolderの中のファイル」で埋めます。"
 
 #: ../../mount_vfolder/mount_vfolder.rst:-1
 msgid "Mounted folders in terminal"
 msgstr "端末にマウントされたフォルダ"
 
-#: ../../mount_vfolder/mount_vfolder.rst:54
-msgid ""
-"If you run ``ls`` command against ``user2-vfolder``, you can see that the "
-"file was created successfully. Also note the contents of the file with the "
-"``cat`` command."
-msgstr ""
-"``user2-vfolder`` に対して ``ls`` コマンドを実行すると、ファイルが正常に作成されたことが確認できます。また、``cat`` "
-"コマンドを使用してファイルの内容を確認してください。"
-
 #: ../../mount_vfolder/mount_vfolder.rst:58
+#, fuzzy
+msgid ""
+"Running ``ls`` command against ``user2-vfolder``, users can confirm the file"
+" was created successfully. Please note the contents of the file can be "
+"chekced with ``cat`` command."
+msgstr ""
+"``user2-vfolder``に対して``ls``コマンドを実行すると、ユーザーはファイルが正常に作成されたことを確認できます。ファイルの内容は``cat``コマンドで確認できることに注意してください。"
+
+#: ../../mount_vfolder/mount_vfolder.rst:61
+#, fuzzy
 msgid ""
 "Now delete the compute session and go to the Storage page. Locate the "
-"``user2-vfolder folder``, open a file explorer and check that the file "
-"``test_file`` exists. Click the file download button in Actions to download "
-"the file to the local machine and open it to confirm that the contents of "
-"the file are \"file inside user2-vfolder\"."
+"``user2-vfolder folder``, open a file explorer and check that the "
+"``test_file`` exists. Click the 'download' button in 'Actions' tab to "
+"download the file to the local machine and open it to confirm that the "
+"contents are \\\"file inside user2-vfolder\\\"."
 msgstr ""
-"コンピュートセッションを削除し、ストレージページに移動します。``user2-vfolder folder`` "
-"を見つけ、ファイルエクスプローラーを開いてファイル ``test_file`` "
-"が存在することを確認します。アクション内のファイルダウンロードボタンをクリックして、ファイルをローカルマシンにダウンロードし、開いてファイルの内容が「file"
-" inside user2-vfolder」であることを確認します。"
+"次に、コンピュートセッションを削除し、ストレージページに移動します。 "
+"``user2-vfolderフォルダー``を見つけ、ファイルエクスプローラーを開いて``test_file``が存在することを確認します。 "
+"'アクション'タブの'ダウンロード'ボタンをクリックして、ファイルをローカルマシンにダウンロードし、内容が「file inside "
+"user2-vfolder」であることを確認します。"
 
 #: ../../mount_vfolder/mount_vfolder.rst:-1
 msgid "Download icon in the folder explorer"
 msgstr "フォルダーエクスプローラーのダウンロードアイコン"
 
-#: ../../mount_vfolder/mount_vfolder.rst:67
+#: ../../mount_vfolder/mount_vfolder.rst:69
 msgid ""
-"Like this, when creating a compute session, you can mount storage folders "
-"and perform any file operations on those mounted folders to save data even "
-"after the compute session termination."
+"Performing file management on a mounted folder when you create a compute "
+"session, data can be preserved even after users ends the compute session."
 msgstr ""
-"このように、コンピュートセッションを作成する際にストレージフォルダをマウントし、マウントされたフォルダ上で任意のファイル操作を実行することで、コンピュートセッション終了後もデータを保存することができます。"
+"コンピュートセッションを作成するときにマウントされたフォルダでファイル管理を行うと、ユーザーがコンピュートセッションを終了した後でもデータが保持されることがあります。"
 
-#: ../../mount_vfolder/mount_vfolder.rst:75
+#: ../../mount_vfolder/mount_vfolder.rst:76
 msgid "Configure a compute session environment using an automount folder"
 msgstr "自動マウントフォルダを使用して計算セッション環境を構成する"
 
-#: ../../mount_vfolder/mount_vfolder.rst:77
+#: ../../mount_vfolder/mount_vfolder.rst:78
 msgid ""
-"Sometimes you need a new program or library that is not pre-installed in a "
-"compute session. In that case, you can install packages and configure a "
-"certain environment regardless of the type of compute session by using the "
-"Storage folder, which persists independent of session lifecycle, and the "
-":ref:`automount folder<automount-folder>`."
+"If a new program or library is required that is not pre-installed in a "
+"compute session, a Storage folder attribute and :ref:`automount-"
+"folder<automount-folder>`, which is independent of the compute session "
+"lifecycle, can be used to install the package. Configure a consistent "
+"environment regardless of the type of compute session."
 msgstr ""
-"コンピュートセッションに事前インストールされていない新しいプログラムやライブラリが必要な場合があります。その場合、Storageフォルダ（セッションのライフサイクルに依存しない保持機能を持つ）と"
-" :ref:`automount フォルダ<automount-folder>` "
-"を使用することで、コンピュートセッションの種類に関係なくパッケージをインストールし、特定の環境を構成することができます。"
+"コンピューティングセッションにプリインストールされていない新しいプログラムやライブラリが必要な場合、ストレージフォルダー属性と "
+":ref:`automount-folder<automount-folder>` "
+"を使用して、コンピューティングセッションのライフサイクルとは独立してパッケージをインストールできます。コンピューティングセッションのタイプに関係なく、一貫した環境を構成します。"
 
-#: ../../mount_vfolder/mount_vfolder.rst:86
+#: ../../mount_vfolder/mount_vfolder.rst:85
 msgid "Install Python packages via pip"
 msgstr "pipでPythonパッケージをインストールする"
 
-#: ../../mount_vfolder/mount_vfolder.rst:88
+#: ../../mount_vfolder/mount_vfolder.rst:87
+#, fuzzy
 msgid ""
 "Creating a folder named ``.local`` allows a user to install Python user "
-"packages in that folder. This is because ``pip`` by default installs the "
-"packages in the ``.local`` folder under the user's home folder (note that "
-"automount folder is mounted under user's home folder). So, if you want to "
-"install and keep the Python package ``tqdm`` regardless of the type of "
-"computing environment, you can issue the following command in your terminal:"
+"packages in same folder. ``pip`` by default installs the packages in the "
+"``.local`` folder under the user's home folder (Please note that automount "
+"folder is mounted under user's home folder). So, to keep a Python package "
+"called ``tqdm`` installed at all times, regardless of the computing "
+"environment, a command like the following could be issued from the terminal:"
 msgstr ""
-"``.local`` "
-"という名前のフォルダーを作成すると、そのフォルダーにPythonユーザーパッケージをインストールすることができます。これは、``pip`` "
-"がデフォルトでユーザーホームフォルダー（オートマウントフォルダーがユーザーホームフォルダーの下にママウントされている点ウントされている点に注意）内の "
-"``.local`` フォルダーにパッケージをインストールするためです。したがって、コンピューティング環境の種類に関係なくPythonパッケージ "
-"``tqdm`` をインストールして保持したい場合、次のコマンドをターミナルで発行できます。"
+"``.local``という名前のフォルダーを作成すると、ユーザーは同じフォルダー内にPythonユーザーパッケージをインストールできます。デフォルトでは``pip``はユーザーのホームフォルダー内の``.local``フォルダーにパッケージをインストールします（自動マウントフォルダーはユーザーのホームフォルダーの下にマウントされることに注意してください）。したがって、計算環境に関係なく常に``tqdm``というPythonパッケージをインストールしておくには、ターミナルから次のようなコマンドを発行できます："
 
-#: ../../mount_vfolder/mount_vfolder.rst:99
+#: ../../mount_vfolder/mount_vfolder.rst:97
+#, fuzzy
 msgid ""
 "After that, when a new compute session is created, the ``.local`` folder "
-"where the ``tqdm`` package is installed is automatically mounted, so you can"
-" use the ``tqdm`` package without reinstalling."
+"where the ``tqdm`` package is installed is automatically mounted, so users "
+"can use it without reinstalling the ``tqdm`` package."
 msgstr ""
-"その後、新しいコンピュートセッションが作成されると、``tqdm`` パッケージがインストールされている ``.local`` "
-"フォルダが自動的にマウントされるため、再インストールすることなく ``tqdm`` パッケージを使用できます。"
+"その後、新しい計算セッションが作成されると、``tqdm``パッケージがインストールされている``.local``フォルダーが自動的にマウントされるため、ユーザーは``tqdm``パッケージを再インストールすることなく使用できます。"
 
-#: ../../mount_vfolder/mount_vfolder.rst:105
+#: ../../mount_vfolder/mount_vfolder.rst:102
+#, fuzzy
 msgid ""
-"If you spawn multiple sessions that use different Python versions, there may"
-" be compatibility issues with the packages. This can be circumvented by "
-"branching ``PYTHONPATH`` environment variable via the ``.bashrc``. This is "
-"because the user's ``pip`` package is installed in the path specified in the"
-" ``PYTHONPATH``."
+"When using multiple Python versions or sessions with different Python "
+"versions, packages may have compatibility issues. This can be circumvented "
+"by branching ``PYTHONPATH`` environment variable via the ``.bashrc``. This "
+"is because the user's ``pip`` package is installed in the path specified in "
+"the ``PYTHONPATH``."
 msgstr ""
-"異なるPythonバージョンを使用する複数のセッションを生成した場合、パッケージに互換性の問題が発生する可能性があります。これは、``.bashrc``"
-" を介して ``PYTHONPATH`` 環境変数を分岐させることで回避できます。これは、ユーザーの ``pip`` パッケージが "
-"``PYTHONPATH`` で指定されたパスにインストールされるためです。"
+"複数のPythonバージョンや異なるPythonバージョンのセッションを使用する場合、パッケージに互換性の問題が生じることがあります。これは、``.bashrc``を介して``PYTHONPATH``環境変数を分岐させることで回避できます。これは、ユーザーの``pip``パッケージが``PYTHONPATH``で指定されたパスにインストールされるためです。"
 
-#: ../../mount_vfolder/mount_vfolder.rst:114
+#: ../../mount_vfolder/mount_vfolder.rst:109
 msgid "Install packages via Homebrew"
 msgstr "Homebrew を介してパッケージをインストールする"
 
-#: ../../mount_vfolder/mount_vfolder.rst:116
+#: ../../mount_vfolder/mount_vfolder.rst:111
+#, fuzzy
 msgid ""
 "Package managers like Ubuntu ``apt`` or CentOS ``yum`` usually require the "
 "``root`` permission. For security reasons, ``sudo`` and ``root`` accesses "
-"are blocked by default in Backend.AI's compute session (it may be allowed "
-"depending on the configuration), so we recommend to use `Homebrew on Linux "
-"<https://docs.brew.sh/Homebrew-on-Linux>`_ which does not require ``sudo``."
+"are blocked by default in Backend.AI's compute session (Depending on the "
+"configuration, this may be allowed), so we recommend to use `Homebrew on "
+"Linux <https://docs.brew.sh/Homebrew-on-Linux>`_ which does not require "
+"``sudo``."
 msgstr ""
-"Ubuntuの ``apt`` やCentOSの ``yum`` のようなパッケージマネージャーは通常 ``root`` "
-"の権限を必要とします。セキュリティ上の理由から、Backend.AIのコンピュートセッションではデフォルトで ``sudo`` と ``root`` "
-"のアクセスはブロックされています（設定に応じて許可される場合もあります）が、``sudo`` を必要としない `Homebrew on Linux "
-"<https://docs.brew.sh/Homebrew-on-Linux>`_ の使用を推奨します。"
+"Ubuntuの``apt``やCentOSの``yum``のようなパッケージマネージャは、通常``root``の権限を必要とします。セキュリティ上の理由から、Backend.AIの計算セッションではデフォルトで``sudo``および``root``アクセスがブロックされています（設定に応じて許可される場合もあります）。そのため、``sudo``を必要としない"
+" `Homebrew on Linux <https://docs.brew.sh/Homebrew-on-Linux>`_ の使用をお勧めします。"
 
-#: ../../mount_vfolder/mount_vfolder.rst:122
+#: ../../mount_vfolder/mount_vfolder.rst:114
 msgid "Homebrew can be configured as follows:"
 msgstr "Homebrewは次のように設定できます。"
 
-#: ../../mount_vfolder/mount_vfolder.rst:124
+#: ../../mount_vfolder/mount_vfolder.rst:116
 msgid "Create ``.linuxbrew`` folder in Data & Storage page."
 msgstr "Data & Storageページで ``.linuxbrew`` フォルダーを作成します。"
 
-#: ../../mount_vfolder/mount_vfolder.rst:125
+#: ../../mount_vfolder/mount_vfolder.rst:117
 msgid ""
 "Create a compute session (``.linuxbrew`` folder is automatically mounted at "
 "``/home/linuxbrew/.linuxbrew``)."
@@ -226,23 +244,72 @@ msgstr ""
 "コンピュートセッションを作成します（``.linuxbrew`` フォルダは自動的に ``/home/linuxbrew/.linuxbrew`` "
 "にマウントされます）。"
 
-#: ../../mount_vfolder/mount_vfolder.rst:127
+#: ../../mount_vfolder/mount_vfolder.rst:119
 msgid "Install Homebrew in the compute session, if not yet installed."
 msgstr "まだインストールされていない場合は、計算セッションにHomebrewをインストールします。"
 
-#: ../../mount_vfolder/mount_vfolder.rst:133
-msgid "Homebrew packages can be installed like:"
-msgstr "Homebrew パッケージは次のようにインストールできます:"
+#: ../../mount_vfolder/mount_vfolder.rst:125
+#, fuzzy
+msgid "Homebrew packages can be installed like following:"
+msgstr "Homebrew パッケージは以下のようにインストールできます:"
 
-#: ../../mount_vfolder/mount_vfolder.rst:141
+#: ../../mount_vfolder/mount_vfolder.rst:133
+#, fuzzy
 msgid ""
 "``brew`` installs packages under ``/home/linuxbrew/.linuxbrew`` which is "
-"automatically mounted when ``.linuxbrew`` folder exists. So, if you create a"
-" automount folder named ``.linuxbrew``, Homebrew packages can be kept after "
-"the compute session is destroyed and then reused for the next compute "
-"session."
+"automatically mounted when ``.linuxbrew`` folder exists. So, if an automount"
+" folder named ''.linuxbrew'' is created, the Homebrew packages previously "
+"installed can be used again, even if the compute session is deleted and a "
+"new compute session is created."
 msgstr ""
-"``brew`` はパッケージを ``/home/linuxbrew/.linuxbrew`` の下にインストールしますが、これは "
-"``.linuxbrew`` フォルダが存在する場合に自動的にマウントされます。したがって、``.linuxbrew`` "
-"という名前の自動マウントフォルダを作成すると、計算セッションが終了しても Homebrew "
-"パッケージを保持し、次の計算セッションで再利用することができます。"
+"``brew`` は ``/home/linuxbrew/.linuxbrew`` "
+"の下にパッケージをインストールします。このフォルダが存在する場合に自動的にマウントされます。したがって、''.linuxbrew'' "
+"という名前の自動マウントフォルダが作成されると、以前にインストールされた Homebrew "
+"パッケージを再び使用することができます。たとえ計算セッションが削除されて新しい計算セッションが作成されても、です。"
+
+#~ msgid ""
+#~ "Let's go to the Sessions page and click the START button to create a new "
+#~ "compute session. In the Folders to mount panel in the session creation "
+#~ "dialog, you can see a list of storage folders that can be mount. By clicking"
+#~ " the folder you want to mount, you can mount it. You can also mount multiple"
+#~ " folders simultaneously by clicking multiple items. In this example, we will"
+#~ " mount two folders, ``user1-ml-test`` and ``user2-vfolder``, and then create"
+#~ " a compute session."
+#~ msgstr ""
+#~ "セッションページに移動し、STARTボタンをクリックして新しいコンピュートセッションを作成します。セッション作成ダイアログの「フォルダをマウント」パネルでは、マウント可能なストレージフォルダのリストが表示されます。マウントしたいフォルダをクリックすることでマウントが可能です。複数のアイテムをクリックすることで、複数のフォルダを同時にマウントすることもできます。この例では、``user1-ml-"
+#~ "test`` と ``user2-vfolder`` の2つのフォルダをマウントし、その後にコンピュートセッションを作成します。"
+
+#~ msgid ""
+#~ "Folders to mount only lists the data folders that the user can currently "
+#~ "mount. For example, project folders used by other projects are not exposed "
+#~ "in Folders to mount. The storage host for each folder is also displayed "
+#~ "under the folder's name."
+#~ msgstr ""
+#~ "マウントするフォルダには、ユーザーが現在マウントできるデータフォルダのみが一覧表示されます。例えば、他のプロジェクトで使用されているプロジェクトフォルダは、マウントするフォルダには表示されません。各フォルダのストレージホストは、そのフォルダの名前の下に表示されます。"
+
+#~ msgid ""
+#~ "Let's create a ``test_file`` under ``user2-vfolder`` to see if the file can "
+#~ "be preserved after the compute session is terminated. The contents of this "
+#~ "file will be \"file inside user2-vfolder\"."
+#~ msgstr ""
+#~ "``user2-vfolder`` の下に ``test_file`` "
+#~ "を作成し、コンピュートセッションが終了した後もファイルが保持されるかどうかを確認してみましょう。このファイルの内容は \"file inside "
+#~ "user2-vfolder\" です。"
+
+#~ msgid ""
+#~ "Like this, when creating a compute session, you can mount storage folders "
+#~ "and perform any file operations on those mounted folders to save data even "
+#~ "after the compute session termination."
+#~ msgstr ""
+#~ "このように、コンピュートセッションを作成する際にストレージフォルダをマウントし、マウントされたフォルダ上で任意のファイル操作を実行することで、コンピュートセッション終了後もデータを保存することができます。"
+
+#~ msgid ""
+#~ "Sometimes you need a new program or library that is not pre-installed in a "
+#~ "compute session. In that case, you can install packages and configure a "
+#~ "certain environment regardless of the type of compute session by using the "
+#~ "Storage folder, which persists independent of session lifecycle, and the "
+#~ ":ref:`automount folder<automount-folder>`."
+#~ msgstr ""
+#~ "コンピュートセッションに事前インストールされていない新しいプログラムやライブラリが必要な場合があります。その場合、Storageフォルダ（セッションのライフサイクルに依存しない保持機能を持つ）と"
+#~ " :ref:`automount フォルダ<automount-folder>` "
+#~ "を使用することで、コンピュートセッションの種類に関係なくパッケージをインストールし、特定の環境を構成することができます。"

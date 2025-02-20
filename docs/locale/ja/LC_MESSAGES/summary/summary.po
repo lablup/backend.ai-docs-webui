@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"POT-Creation-Date: 2025-02-20 14:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../summary/summary.rst:3
 msgid "Summary Page"
@@ -53,10 +53,11 @@ msgid ""
 msgstr "上部バーの右側にある人型のアイコンをクリックすると、ユーザーメニューが表示されます。各メニュー項目の機能は次のとおりです。"
 
 #: ../../summary/summary.rst:26
+#, fuzzy
 msgid ""
-"About Backend.AI: Displays information such as version of Backend.AI Web-UI,"
-" license type, etc."
-msgstr "Backend.AIについて: Backend.AI Web-UIのバージョンやライセンスタイプなどの情報を表示します。"
+"About Backend.AI: Displays information such as version of Backend.AI WebUI, "
+"license type, etc."
+msgstr "Backend.AIについて: Backend.AI WebUIのバージョン、ライセンスの種類などの情報を表示します。"
 
 #: ../../summary/summary.rst:28
 msgid "My Account: Check/Update information of current login user"

@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"POT-Creation-Date: 2025-02-20 14:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../vfolder/vfolder.rst:3
 msgid "Handling Data & Storage Folders"
@@ -134,19 +134,20 @@ msgid "Create storage folder"
 msgstr "ストレージフォルダを作成"
 
 #: ../../vfolder/vfolder.rst:61
+#, fuzzy
 msgid ""
-"You can create a storage folder with the desired name by clicking the 'NEW "
-"FOLDER' button. Enter the name of the folder to be created in Folder name, "
-"and select one of User / Project for Type. (Depending on the server "
-"settings, only one of User or Project may be selectable.) When creating a "
-"project folder, the Project field must be set. The project folder will be "
+"You can create a storage folder with the desired name by clicking the '+ "
+"Add' button. Enter the name of the folder to be created in Folder name, and "
+"select one of User / Project for Type. (Depending on the server settings, "
+"only one of User or Project may be selectable.) If you selected a project "
+"folder, the select project field will appear. The project folder will be "
 "bound to the project specified in the Project field, and only users "
 "belonging to the project can mount and use the project folder. After setting"
 " the values as desired, you can create a folder by clicking the 'CREATE' "
 "button."
 msgstr ""
-"「NEW "
-"FOLDER」ボタンをクリックすることで、望む名前でストレージフォルダを作成できます。フォルダ名に作成するフォルダの名前を入力し、タイプとしてユーザー／プロジェクトのいずれかを選択します。（サーバーの設定によっては、ユーザーまたはプロジェクトのいずれかのみ選択可能な場合があります。）プロジェクトフォルダを作成する場合、プロジェクト欄を設定する必要があります。プロジェクトフォルダはプロジェクト欄で指定されたプロジェクトに紐づけられ、そのプロジェクトに属するユーザーのみがプロジェクトフォルダをマウントして使用できます。希望する値を設定した後、「CREATE」ボタンをクリックすることでフォルダを作成することができます。"
+"希望する名前でストレージフォルダーを作成するには、「+ "
+"追加」ボタンをクリックします。作成するフォルダーの名前をフォルダー名に入力し、タイプとしてユーザーまたはプロジェクトのいずれかを選択します。（サーバー設定によっては、ユーザーまたはプロジェクトのいずれか一方しか選択できない場合があります。）プロジェクトフォルダーを選択した場合、選択プロジェクトフィールドが表示されます。プロジェクトフォルダーは、プロジェクトフィールドで指定されたプロジェクトにバインドされ、プロジェクトに所属するユーザーのみがそのプロジェクトフォルダーをマウントおよび使用できます。希望する値を設定したら、「CREATE」ボタンをクリックしてフォルダーを作成できます。"
 
 #: ../../vfolder/vfolder.rst:-1
 msgid "Folder creation dialog"
@@ -174,16 +175,6 @@ msgstr ""
 
 #: ../../vfolder/vfolder.rst:82
 msgid ""
-"Type: Determines the type of folder to be created. It can be set as User or "
-"Project. The User folder is a folder that users can create and use alone and"
-" the Project folder is a folder created by admin and shared by users in the "
-"project."
-msgstr ""
-"種類: "
-"作成するフォルダーの種類を決定します。ユーザーまたはプロジェクトとして設定できます。ユーザーフォルダーは、ユーザーが自身で作成して使用できるフォルダーであり、プロジェクトフォルダーは管理者によって作成され、プロジェクト内のユーザーと共有されるフォルダーです。"
-
-#: ../../vfolder/vfolder.rst:85
-msgid ""
 "Usage Mode: You can set the purpose of the folder. There are three types of "
 "mode: General, Data, and Model. It is classified for the development of "
 "exclusive functions for Data & Model Stores in the future and currently "
@@ -192,16 +183,27 @@ msgstr ""
 "使用モード: "
 "フォルダーの目的を設定できます。モードには、一般、データ、モデルの3種類があります。これは、将来的なデータ＆モデルストアの専用機能の開発のために分類されており、現在は目的に応じたUIの違いはありません。"
 
-#: ../../vfolder/vfolder.rst:89
+#: ../../vfolder/vfolder.rst:86
 msgid ""
-"Project: Designates the project to which the folder belongs when creating a "
-"new project folder. Project folders must belong to a project. However, it "
-"does not play any role when creating a user folder."
+"Type: Determines the type of folder to be created. It can be set as User or "
+"Project. The User folder is a folder that users can create and use alone and"
+" the Project folder is a folder created by admin and shared by users in the "
+"project."
 msgstr ""
-"プロジェクト: "
-"新しいプロジェクトフォルダーを作成する際に、フォルダーが属するプロジェクトを指定します。プロジェクトフォルダーは必ずプロジェクトに属さなければなりません。ただし、ユーザーフォルダーを作成する際には役割を果たしません。"
+"種類: "
+"作成するフォルダーの種類を決定します。ユーザーまたはプロジェクトとして設定できます。ユーザーフォルダーは、ユーザーが自身で作成して使用できるフォルダーであり、プロジェクトフォルダーは管理者によって作成され、プロジェクト内のユーザーと共有されるフォルダーです。"
 
-#: ../../vfolder/vfolder.rst:92
+#: ../../vfolder/vfolder.rst:89
+#, fuzzy
+msgid ""
+"Project: Shown only when you select project type. Designates the project to "
+"which the folder belongs when creating a new project folder. Project folders"
+" must belong to a project. However, it does not play any role when creating "
+"a user folder."
+msgstr ""
+"プロジェクト：プロジェクトタイプを選択したときにのみ表示されます。新しいプロジェクトフォルダを作成するときに、フォルダが属するプロジェクトを指定します。プロジェクトフォルダは、プロジェクトに属する必要があります。ただし、ユーザーフォルダを作成する際には、役割を果たしません。"
+
+#: ../../vfolder/vfolder.rst:93
 msgid ""
 "Permission: Set permission of a project folder for project members. If this "
 "is set to \"Read-Only\", project members cannot write to this folder inside "
@@ -210,11 +212,17 @@ msgstr ""
 "パーミッション: "
 "プロジェクトフォルダのプロジェクトメンバーに対するパーミッションを設定します。これが「読み取り専用」に設定されている場合、プロジェクトメンバーは計算セッション内でこのフォルダに書き込みを行うことができません。"
 
-#: ../../vfolder/vfolder.rst:97
+#: ../../vfolder/vfolder.rst:96
+msgid ""
+"Cloneable: Shown only when you select usage model to \"Model\". Select "
+"whether the vfolder to be created is cloneable."
+msgstr "クローン可能: 使用モデルを「モデル」に選択したときのみ表示されます。作成されるvfolderがクローン可能かどうかを選択します。"
+
+#: ../../vfolder/vfolder.rst:100
 msgid "Explore folder"
 msgstr "フォルダーを探索"
 
-#: ../../vfolder/vfolder.rst:99
+#: ../../vfolder/vfolder.rst:104
 msgid ""
 "You can click the folder button in the Control column to bring up a file "
 "explorer where you can view the contents of that folder."
@@ -224,7 +232,7 @@ msgstr "コントロール列のフォルダボタンをクリックすると、
 msgid "Controls in folder item"
 msgstr "フォルダー項目のコントロール"
 
-#: ../../vfolder/vfolder.rst:105
+#: ../../vfolder/vfolder.rst:110
 msgid ""
 "You can see that directories and files inside the folder will be listed, if "
 "exists. Click a directory name in the Name column to move to the directory."
@@ -241,32 +249,32 @@ msgstr ""
 msgid "File explorer of a storage folder"
 msgstr "ストレージフォルダのファイルエクスプローラー"
 
-#: ../../vfolder/vfolder.rst:116
-msgid ""
-"You can create a new directory on the current path with the 'NEW FOLDER' "
-"button (in the file explorer), or upload a local file with the 'UPLOAD "
-"FILES' button. All of these file operations can also be performed using the "
-"above-described method of mounting folders into a compute session."
-msgstr ""
-"現在のパスに新しいディレクトリを作成するには、（ファイルエクスプローラー内の）「NEW FOLDER」ボタンを使用します。また、「UPLOAD "
-"FILES」ボタンを使ってローカルファイルをアップロードすることもできます。これらのファイル操作は、計算セッションにフォルダをマウントする上述の方法を使用して実行することもできます。"
-
 #: ../../vfolder/vfolder.rst:121
+#, fuzzy
+msgid ""
+"You can create a new directory on the current path with the 'Create' button "
+"(in the folder explorer), or upload a local file or folder with the 'Upload'"
+" button. All of these file operations can also be performed using the above-"
+"described method of mounting folders into a compute session."
+msgstr ""
+"現在のパスに新しいディレクトリを作成するには、「作成」ボタン（フォルダーエクスプローラー内）を使用するか、ローカルファイルやフォルダーをアップロードするには「アップロード」ボタンを使用します。これらのファイル操作は、上記のフォルダーをコンピューターセッションにマウントする方法を使用して実行することもできます。"
+
+#: ../../vfolder/vfolder.rst:126
 msgid ""
 "The maximum length of file or directory inside a folder may depends on the "
 "host file system. But, it usually cannot exceed 255 characters."
 msgstr ""
 "フォルダ内のファイルまたはディレクトリの最大長は、ホストファイルシステムに依存することがあります。しかし、通常は255文字を超えることはできません。"
 
-#: ../../vfolder/vfolder.rst:124
+#: ../../vfolder/vfolder.rst:129
 msgid "To close file explorer, click the X button in the upper right."
 msgstr "ファイルエクスプローラーを閉じるには、右上のXボタンをクリックします。"
 
-#: ../../vfolder/vfolder.rst:128
+#: ../../vfolder/vfolder.rst:133
 msgid "Rename folder"
 msgstr "フォルダー名を変更"
 
-#: ../../vfolder/vfolder.rst:130
+#: ../../vfolder/vfolder.rst:135
 msgid ""
 "If you have permission to rename the storage folder, you can rename it by "
 "clicking the edit button in the Control column. When you click the button, a"
@@ -279,11 +287,11 @@ msgstr ""
 msgid "Folder rename dialog"
 msgstr "フォルダー名変更ダイアログ"
 
-#: ../../vfolder/vfolder.rst:141
+#: ../../vfolder/vfolder.rst:146
 msgid "Delete folder"
 msgstr "フォルダーを削除"
 
-#: ../../vfolder/vfolder.rst:143
+#: ../../vfolder/vfolder.rst:148
 msgid ""
 "If you have permission to delete the storage folder, you can send the folder"
 " to the 'trash can' tab by clicking the 'trash can' button. Clicking the "
@@ -295,7 +303,7 @@ msgstr ""
 msgid "Folder delete notification modal"
 msgstr "フォルダ削除通知モーダル"
 
-#: ../../vfolder/vfolder.rst:152
+#: ../../vfolder/vfolder.rst:157
 msgid ""
 "Pressing the 'MOVE TO TRASH' button will change the folder's status to "
 "``delete-pending``."
@@ -305,7 +313,7 @@ msgstr "「ゴミ箱に移動」ボタンを押すと、フォルダーのステ
 msgid "Trash bin table"
 msgstr "ごみ箱テーブル"
 
-#: ../../vfolder/vfolder.rst:159
+#: ../../vfolder/vfolder.rst:164
 msgid ""
 "In this status, you can restore the folder by clicking restore button in "
 "Control column. If you want to permanently delete the folder, please click "
@@ -320,7 +328,7 @@ msgstr ""
 msgid "Folder deletion dialog"
 msgstr "フォルダー削除ダイアログ"
 
-#: ../../vfolder/vfolder.rst:169
+#: ../../vfolder/vfolder.rst:174
 msgid ""
 "The folders created here can be mounted when creating a compute session. "
 "Folders are mounted under the user's default working directory, "
@@ -332,11 +340,11 @@ msgstr ""
 "``/home/work/`` "
 "にマウントされ、マウントされたディレクトリに保存されたファイルはコンピュートセッションが終了しても削除されません。（フォルダを削除した場合、ファイルも削除されます。）"
 
-#: ../../vfolder/vfolder.rst:175
+#: ../../vfolder/vfolder.rst:180
 msgid "Pipeline folders"
 msgstr "パイプラインフォルダー"
 
-#: ../../vfolder/vfolder.rst:177
+#: ../../vfolder/vfolder.rst:182
 msgid ""
 "This tab shows the list of folders that are automatically created when "
 "executing a pipeline in FastTrack. When a pipeline is created, a new folder "
@@ -345,11 +353,11 @@ msgid ""
 msgstr ""
 "このタブには、FastTrackでパイプラインを実行した際に自動的に作成されるフォルダの一覧が表示されます。パイプラインが作成されると、作業の各インスタンス（コンピューティングセッション）ごとに新しいフォルダが作成され、「/pipeline」にマウントされます。"
 
-#: ../../vfolder/vfolder.rst:-1 ../../vfolder/vfolder.rst:185
+#: ../../vfolder/vfolder.rst:-1 ../../vfolder/vfolder.rst:190
 msgid "Automount folders"
 msgstr "自動マウントフォルダー"
 
-#: ../../vfolder/vfolder.rst:187
+#: ../../vfolder/vfolder.rst:192
 msgid ""
 "Data & Storage page has an Automount Folders tab. Click this tab to see a "
 "list of folders whose names prefixed with a dot (``.``). When you create a "
@@ -365,7 +373,7 @@ msgstr ""
 "ストレージページには、自動マウントフォルダーのタブがあります。このタブをクリックすると、名前がドット（``.``）で始まるフォルダーの一覧が表示されます。フォルダーを作成する際、名前をドット（``.``）で始めると、そのフォルダーはフォルダータブではなく自動マウントフォルダータブに追加されます。自動マウントフォルダーは、計算セッションを作成するときに手動でマウントしなくても、ホームディレクトリに自動的にマウントされる特別なフォルダーです。この機能を使用することで、``.local``、``.linuxbrew``、``.pyenv``"
 " などのストレージフォルダーを作成・使用し、異なる種類の計算セッションでも変更されない特定のユーザーパッケージや環境を設定できます。"
 
-#: ../../vfolder/vfolder.rst:197
+#: ../../vfolder/vfolder.rst:202
 msgid ""
 "For more detailed information on the usage of Automount folders, refer to "
 ":ref:`examples of using automount folders<using-automount-folder>`."
@@ -373,11 +381,11 @@ msgstr ""
 "Automountフォルダの使用に関する詳細情報については、:ref:`automountフォルダの使用例<using-automount-"
 "folder>` を参照してください。"
 
-#: ../../vfolder/vfolder.rst:204
+#: ../../vfolder/vfolder.rst:209
 msgid "Models"
 msgstr "モデル一覧"
 
-#: ../../vfolder/vfolder.rst:205
+#: ../../vfolder/vfolder.rst:210
 msgid ""
 "'Models' The Models tab facilitates straightforward model serving. You can "
 "store the necessary data, including input data for model serving and "
@@ -387,7 +395,7 @@ msgstr ""
 "'モデル' "
 "モデルタブでは、簡単なモデル提供を可能にします。モデルフォルダにモデル提供用の入力データや学習データなどの必要なデータを保存できます。サービスを開始するには、コントロール列にある「モデル提供」ボタンをクリックしてください。"
 
-#: ../../vfolder/vfolder.rst:210
+#: ../../vfolder/vfolder.rst:215
 msgid ""
 "Following method is to serve model by pressing the 'Model serving' button in"
 " the 'model_folder' directory."
@@ -397,7 +405,7 @@ msgstr "次の方法は、'model_folder' ディレクトリ内の 'Model serving
 msgid "Hover model serving"
 msgstr "ホバーモデルサービング"
 
-#: ../../vfolder/vfolder.rst:215
+#: ../../vfolder/vfolder.rst:220
 msgid ""
 "As shown in 'Model Storage To Mount', the 'model_folder' folder is "
 "automatically mounted to enable starting a new service."
@@ -409,17 +417,17 @@ msgstr ""
 msgid "Start new service with mounted folder"
 msgstr "マウントされたフォルダーで新しいサービスを開始"
 
-#: ../../vfolder/vfolder.rst:221
+#: ../../vfolder/vfolder.rst:226
 msgid ""
 "If you want to learn more about model serving, please refer to :ref:`this "
 "link<model-serving>`."
 msgstr "モデルサービングについて詳しく知りたい場合は、:ref:`this link<model-serving>` を参照してください。"
 
-#: ../../vfolder/vfolder.rst:-1 ../../vfolder/vfolder.rst:225
+#: ../../vfolder/vfolder.rst:-1 ../../vfolder/vfolder.rst:230
 msgid "Model store"
 msgstr "モデルストア"
 
-#: ../../vfolder/vfolder.rst:226
+#: ../../vfolder/vfolder.rst:231
 msgid ""
 "From the 24.03, You can easily clone models from shared via project. The "
 "model store refers to a storage space and service that stores, manages, "
@@ -427,7 +435,7 @@ msgid ""
 msgstr ""
 "24.03以降、プロジェクトを介して共有されたモデルを簡単にクローンできます。モデルストアは、さまざまな機械学習および深層学習モデルを保存、管理、検索、利用するストレージスペースおよびサービスを指します。"
 
-#: ../../vfolder/vfolder.rst:233
+#: ../../vfolder/vfolder.rst:238
 msgid ""
 "As you can see in the model store section, there are several model cards "
 "that you can access, which are maintained by project admin. Each model card "
@@ -437,7 +445,7 @@ msgid ""
 msgstr ""
 "モデルストアセクションでご覧のとおり、プロジェクト管理者によって維持されている複数のモデルカードにアクセスできます。各モデルカードには、モデル自体の特性を表すタグが含まれている場合があります。以下の方法で、モデルカードの1つをクローンして、事前訓練済みモデルを試すことができます。"
 
-#: ../../vfolder/vfolder.rst:237
+#: ../../vfolder/vfolder.rst:242
 msgid ""
 "Click one of the model cards and you will see the modal that describes what "
 "is all about the model. If you want to clone the current model card to your "
@@ -445,7 +453,7 @@ msgid ""
 msgstr ""
 "モデルカードの1つをクリックすると、モデルに関する説明が表示されるモーダルが表示されます。現在のモデルカードを自分のフォルダにクローンしたい場合は、モーダルの右上にある「フォルダにクローン」ボタンをクリックしてください。"
 
-#: ../../vfolder/vfolder.rst:241
+#: ../../vfolder/vfolder.rst:246
 msgid ""
 "Only project admin can edit model cards in model store. If you want to add "
 "your own model card and share it to others, please contact your project "
@@ -457,7 +465,7 @@ msgstr ""
 msgid "Model card description"
 msgstr "モデルカードの説明"
 
-#: ../../vfolder/vfolder.rst:247
+#: ../../vfolder/vfolder.rst:252
 msgid ""
 "After clicking the button, another modal will appear which configures model "
 "card cloning. Enter the folder name and set the permission as is (if you "
@@ -469,7 +477,7 @@ msgstr ""
 msgid "Model card clone dialog"
 msgstr "モデルカードクローンダイアログ"
 
-#: ../../vfolder/vfolder.rst:255
+#: ../../vfolder/vfolder.rst:261
 msgid ""
 "After cloning process is successfully done, you can see the new folder has "
 "been created in your folder list. You can find it in 'Models' tab."
@@ -480,7 +488,7 @@ msgstr ""
 msgid "Model card in folder list"
 msgstr "フォルダリスト内のモデルカード"
 
-#: ../../vfolder/vfolder.rst:261
+#: ../../vfolder/vfolder.rst:269
 msgid ""
 "Also, you can check what's inside the model card by accessing the folder you"
 " just cloned."
@@ -490,7 +498,7 @@ msgstr "また、クローンしたフォルダーにアクセスして、モデ
 msgid "Cloned model card folder explorer"
 msgstr "クローンされたモデルカードフォルダエクスプローラー"
 
-#: ../../vfolder/vfolder.rst:267
+#: ../../vfolder/vfolder.rst:276
 msgid ""
 "If you want to use pre-trained model that you cloned from, then please refer"
 " to `Model Variant: Easily Serving Various Model Services "
@@ -500,11 +508,11 @@ msgstr ""
 "<https://www.backend.ai/blog/2024-07-10-various-ways-of-model-serving>`_ "
 "を参照してください。"
 
-#: ../../vfolder/vfolder.rst:272
+#: ../../vfolder/vfolder.rst:281
 msgid "Using FileBrowser"
 msgstr "ファイルブラウザの使用"
 
-#: ../../vfolder/vfolder.rst:274
+#: ../../vfolder/vfolder.rst:283
 msgid ""
 "Backend.AI supports `FileBrowser <https://filebrowser.org>`_ from version "
 "20.09. FileBrowser is a program that helps you manage files on a remote "
@@ -514,45 +522,45 @@ msgstr ""
 "Backend.AIはバージョン20.09から `FileBrowser <https://filebrowser.org>`_ "
 "をサポートしています。FileBrowserは、ウェブブラウザを通じてリモートサーバー上のファイルを管理するのに役立つプログラムです。特にユーザーのローカルマシンからディレクトリをアップロードする際に便利です。"
 
-#: ../../vfolder/vfolder.rst:279
+#: ../../vfolder/vfolder.rst:288
 msgid ""
 "Currently, Backend.AI provides a FileBrowser as an application of a compute "
 "session. Therefore, the following conditions are required to launch it."
 msgstr ""
 "現在、Backend.AIは計算セッションのアプリケーションとしてFileBrowserを提供しています。したがって、それを起動するためには以下の条件が必要です。"
 
-#: ../../vfolder/vfolder.rst:282
+#: ../../vfolder/vfolder.rst:291
 msgid "User can create at least one compute session."
 msgstr "ユーザーは、少なくとも1つのコンピュートセッションを作成できます。"
 
-#: ../../vfolder/vfolder.rst:283
+#: ../../vfolder/vfolder.rst:292
 msgid "User can allocated at least 1 core of CPU and 512 MB of memory."
 msgstr "ユーザーは少なくとも1コアのCPUと512 MBのメモリを割り当てることができる。"
 
-#: ../../vfolder/vfolder.rst:284
+#: ../../vfolder/vfolder.rst:293
 msgid "Image that supports FileBrowser must be installed."
 msgstr "FileBrowser をサポートするイメージをインストールする必要があります。"
 
-#: ../../vfolder/vfolder.rst:286
+#: ../../vfolder/vfolder.rst:295
 msgid "You can access FileBrowser in two ways."
 msgstr "ファイルブラウザには2つの方法でアクセスできます。"
 
-#: ../../vfolder/vfolder.rst:288
+#: ../../vfolder/vfolder.rst:297
 msgid ""
 "Execute FileBrowser from file explorer dialog of a data folder in Data & "
 "Storage page."
 msgstr "Data & StorageページのデータフォルダのファイルエクスプローラーダイアログからFileBrowserを実行します。"
 
-#: ../../vfolder/vfolder.rst:290
+#: ../../vfolder/vfolder.rst:299
 msgid ""
 "Launch a compute session directly from a FileBrowser image on Sessions page."
 msgstr "セッションページのFileBrowserイメージから直接コンピュートセッションを起動します。"
 
-#: ../../vfolder/vfolder.rst:294
+#: ../../vfolder/vfolder.rst:303
 msgid "Execute FileBrowser from folder explorer dialog in Data & Storage page"
 msgstr "データ＆ストレージページのフォルダーエクスプローラーダイアログからFileBrowserを実行"
 
-#: ../../vfolder/vfolder.rst:296 ../../vfolder/vfolder.rst:435
+#: ../../vfolder/vfolder.rst:305 ../../vfolder/vfolder.rst:444
 msgid ""
 "Go to the Data & Storage page and open the file explorer dialog of target "
 "data folder. Click the folder button or the folder name to open the file "
@@ -565,7 +573,7 @@ msgstr ""
 msgid "first step to access FileBrowser"
 msgstr "FileBrowserにアクセスする最初のステップ"
 
-#: ../../vfolder/vfolder.rst:302
+#: ../../vfolder/vfolder.rst:311
 msgid ""
 "Click 'EXECUTE FILEBROWSER' button in the upper-right corner of the "
 "explorer."
@@ -575,7 +583,7 @@ msgstr "エクスプローラーの右上にある「EXECUTE FILEBROWSER」ボ�
 msgid "Folder explorer with FileBrowser"
 msgstr "FileBrowserによるフォルダーエクスプローラー"
 
-#: ../../vfolder/vfolder.rst:307
+#: ../../vfolder/vfolder.rst:316
 msgid ""
 "You can see the FileBrowser is opened in a new window. You can also see that"
 " the data folder you opened the explorer dialog becomes the root directory. "
@@ -588,7 +596,7 @@ msgstr ""
 msgid "FileBrowser with new window"
 msgstr "新しいウィンドウでファイルブラウザ"
 
-#: ../../vfolder/vfolder.rst:315
+#: ../../vfolder/vfolder.rst:324
 msgid ""
 "When user clicks 'EXECUTE FILEBROWSER' button, Backend.AI automatically "
 "creates a dedicated compute session for the app. So, in the Sessions page, "
@@ -603,7 +611,7 @@ msgstr ""
 msgid "FileBrowser in session page"
 msgstr "セッションページのファイルブラウザ"
 
-#: ../../vfolder/vfolder.rst:324
+#: ../../vfolder/vfolder.rst:333
 msgid ""
 "If you accidentally close the FileBrowser window and want to reopen it, just"
 " go to Sessions page and click the FileBrowser application button of the "
@@ -620,11 +628,11 @@ msgstr ""
 "データフォルダーエクスプローラーで 'EXECUTE FILEBROWSER' "
 "ボタンを再度クリックすると、新しいコンピュートセッションが作成され、合計で2つのFileBrowserセッションが表示されます。"
 
-#: ../../vfolder/vfolder.rst:338
+#: ../../vfolder/vfolder.rst:347
 msgid "Create a compute session with FileBrowser image"
 msgstr "FileBrowserイメージでコンピュートセッションを作成する"
 
-#: ../../vfolder/vfolder.rst:340
+#: ../../vfolder/vfolder.rst:349
 msgid ""
 "You can directly create a compute session with FileBrowser supported images."
 " You need to mount at least one or more data folders to access them. You can"
@@ -634,7 +642,7 @@ msgid ""
 msgstr ""
 "FileBrowser対応のイメージを使用して直接コンピュートセッションを作成できます。アクセスするには、1つ以上のデータフォルダをマウントする必要があります。どのデータフォルダもマウントしなくても問題なくFileBrowserを使用できますが、セッション終了後にアップロード/更新されたファイルはすべて失われます。"
 
-#: ../../vfolder/vfolder.rst:346
+#: ../../vfolder/vfolder.rst:355
 msgid ""
 "The root directory of FileBrowser will be ``/home/work``. Therefore, you can"
 " access any mounted data folders for the compute session."
@@ -642,11 +650,11 @@ msgstr ""
 "FileBrowserのルートディレクトリは ``/home/work`` "
 "になります。したがって、計算セッションでマウントされたデータフォルダにアクセスできます。"
 
-#: ../../vfolder/vfolder.rst:350
+#: ../../vfolder/vfolder.rst:359
 msgid "Basic usage examples of FileBrowser"
 msgstr "FileBrowserの基本的な使用例"
 
-#: ../../vfolder/vfolder.rst:352
+#: ../../vfolder/vfolder.rst:361
 msgid ""
 "Here, we present some basic usage examples of FileBrowser in Backend.AI. "
 "Most of the FileBrowser operations are intuitive, but if you need more "
@@ -656,11 +664,11 @@ msgstr ""
 "ここでは、Backend.AIにおけるFileBrowserの基本的な使用例を紹介します。FileBrowserの操作のほとんどは直感的ですが、より詳細なガイドが必要な場合は、`FileBrowserのドキュメント"
 " <https://filebrowser.org>`_ を参照してください。"
 
-#: ../../vfolder/vfolder.rst:357
+#: ../../vfolder/vfolder.rst:366
 msgid "**Upload local directory using FileBrowser**"
 msgstr "**FileBrowserを使用してローカルディレクトリをアップロード**"
 
-#: ../../vfolder/vfolder.rst:359
+#: ../../vfolder/vfolder.rst:368
 msgid ""
 "FileBrowser supports uploading one or more local directories while "
 "maintaining the tree structure. Click the upload button in the upper right "
@@ -669,58 +677,58 @@ msgid ""
 msgstr ""
 "FileBrowserは、ツリー構造を維持したまま、1つ以上のローカルディレクトリのアップロードをサポートしています。ウィンドウの右上隅にあるアップロードボタンをクリックし、フォルダボタンをクリックします。すると、ローカルファイルエクスプローラのダイアログが表示され、アップロードしたいディレクトリを選択できます。"
 
-#: ../../vfolder/vfolder.rst:365
+#: ../../vfolder/vfolder.rst:374
 msgid ""
 "If you try to upload a file to a read-only folder, FileBrowser will raise a "
 "server error."
 msgstr "読み取り専用フォルダーにファイルをアップロードしようとすると、FileBrowser がサーバーエラーを発生させます。"
 
-#: ../../vfolder/vfolder.rst:371
+#: ../../vfolder/vfolder.rst:380
 msgid "Let's upload a directory with the following structure."
 msgstr "次の構造を持つディレクトリをアップロードしましょう。"
 
-#: ../../vfolder/vfolder.rst:380
+#: ../../vfolder/vfolder.rst:389
 msgid ""
 "After selecting ``foo`` directory, you can see the directory just uploaded "
 "successfully."
 msgstr "``foo`` ディレクトリを選択すると、アップロードが完了したディレクトリが表示されます。"
 
-#: ../../vfolder/vfolder.rst:385
+#: ../../vfolder/vfolder.rst:394
 msgid "You can also upload local files and directories by drag and drop."
 msgstr "ドラッグアンドドロップでローカルファイルやディレクトリをアップロードすることもできます。"
 
-#: ../../vfolder/vfolder.rst:387
+#: ../../vfolder/vfolder.rst:396
 msgid "**Move files or directories to another directory**"
 msgstr "**ファイルまたはディレクトリを別のディレクトリに移動**"
 
-#: ../../vfolder/vfolder.rst:389
+#: ../../vfolder/vfolder.rst:398
 msgid ""
 "Moving files or directories in data folder is also possible from "
 "FileBrowser. You can move files or directories by following steps below."
 msgstr ""
 "データフォルダー内のファイルまたはディレクトリを移動することも、FileBrowserから可能です。以下の手順に従ってファイルまたはディレクトリを移動できます。"
 
-#: ../../vfolder/vfolder.rst:392
+#: ../../vfolder/vfolder.rst:401
 msgid "Select directories or files from FileBrowser."
 msgstr "ファイルブラウザからディレクトリまたはファイルを選択します。"
 
-#: ../../vfolder/vfolder.rst:397
+#: ../../vfolder/vfolder.rst:406
 msgid "Click the 'arrow' button in the upper right corner of FileBrowser"
 msgstr "FileBrowserの右上隅にある「矢印」ボタンをクリックします"
 
-#: ../../vfolder/vfolder.rst:403
+#: ../../vfolder/vfolder.rst:412
 msgid "Select the destination"
 msgstr "宛先を選択"
 
-#: ../../vfolder/vfolder.rst:409
+#: ../../vfolder/vfolder.rst:418
 msgid "Click 'MOVE' button"
 msgstr "「移動」ボタンをクリック"
 
-#: ../../vfolder/vfolder.rst:411
+#: ../../vfolder/vfolder.rst:420
 msgid "You will see that moving operation is successfully finished."
 msgstr "移動操作が正常に完了したことが確認できます。"
 
-#: ../../vfolder/vfolder.rst:417
+#: ../../vfolder/vfolder.rst:426
 msgid ""
 "FileBrowser is provided via application inside a compute session currently. "
 "We are planning to update FileBrowser so that it can run independently "
@@ -729,30 +737,31 @@ msgstr ""
 "現在、FileBrowser はコンピュートセッション内のアプリケーションを通じて提供されています。私たちは、FileBrowser "
 "がセッションを作成せずに単独で実行できるように更新する予定です。"
 
-#: ../../vfolder/vfolder.rst:422
+#: ../../vfolder/vfolder.rst:431
 msgid "Using SFTP Server"
 msgstr "SFTPサーバーの使用"
 
-#: ../../vfolder/vfolder.rst:424
+#: ../../vfolder/vfolder.rst:433
+#, fuzzy
 msgid ""
 "From 22.09, Backend.AI supports SSH / SFTP file upload from both desktop app"
-" and web-based Web-UI. The SFTP server allows you to upload files quickly "
+" and web-based WebUI. The SFTP server allows you to upload files quickly "
 "through reliable data streams."
 msgstr ""
-"22.09から、Backend.AIはデスクトップアプリとウェブベースのWeb-"
-"UIの両方からのSSH/SFTPファイルアップロードをサポートしています。SFTPサーバーは、信頼性の高いデータストリームを通じてファイルを迅速にアップロードすることを可能にします。"
+"2022年9月22日から、Backend.AIはデスクトップアプリおよびWebベースのWebUIの両方からSSH / "
+"SFTPファイルアップロードをサポートしています。SFTPサーバーは、信頼性の高いデータストリームを介してファイルを迅速にアップロードすることを可能にします。"
 
-#: ../../vfolder/vfolder.rst:429
+#: ../../vfolder/vfolder.rst:438
 msgid ""
 "Depending on the system settings, running SFTP server from the file dialog "
 "may not be allowed."
 msgstr "システム設定によっては、ファイルダイアログからSFTPサーバーを実行することが許可されていない場合があります。"
 
-#: ../../vfolder/vfolder.rst:433
+#: ../../vfolder/vfolder.rst:442
 msgid "Execute SFTP server from folder explorer dialog in Data & Storage page"
 msgstr "データとストレージページのフォルダエクスプローラーダイアログからSFTPサーバーを実行します"
 
-#: ../../vfolder/vfolder.rst:438
+#: ../../vfolder/vfolder.rst:447
 msgid ""
 "Click 'RUN SFTP SERVER' button in the upper-right corner of the explorer."
 msgstr "エクスプローラの右上隅にある「RUN SFTP SERVER」ボタンをクリックします。"
@@ -761,7 +770,7 @@ msgstr "エクスプローラの右上隅にある「RUN SFTP SERVER」ボタン
 msgid "Folder explorer with SFTP Server"
 msgstr "SFTPサーバーによるフォルダエクスプローラー"
 
-#: ../../vfolder/vfolder.rst:443
+#: ../../vfolder/vfolder.rst:452
 msgid ""
 "You can see the SSH / SFTP connection dialog. And a new SFTP session will be"
 " created automatically. (This session will not affect resource occupancy.)"
@@ -773,7 +782,7 @@ msgstr ""
 msgid "SSH / SFTP connection dialog"
 msgstr "SSH / SFTP 接続ダイアログ"
 
-#: ../../vfolder/vfolder.rst:452
+#: ../../vfolder/vfolder.rst:461
 msgid ""
 "We provide a detailed information about using large file upload via ssh/sftp"
 " connection. For more information, please click the 'Read more' text link to"
@@ -785,7 +794,7 @@ msgstr ""
 msgid "SSH / SFTP connection dialog expanded"
 msgstr "SSH / SFTP 接続ダイアログが展開されました"
 
-#: ../../vfolder/vfolder.rst:460
+#: ../../vfolder/vfolder.rst:469
 msgid ""
 "For the connection, click 'DOWNLOAD SSH KEY' button to download the SSH "
 "private key (``id_container``). Also, remember the host and port number. "
@@ -799,7 +808,7 @@ msgstr ""
 "プライベートキー（``id_container``）をダウンロードします。また、ホストとポート番号も記憶してください。それから、ダイアログに書かれている接続例コードを使用するか、以下のガイドを参照してセッションにファイルをコピーできます。:ref:`link<sftp_connection_for_linux_and_mac>`"
 " ファイルを保存するには、データフォルダーにファイルを転送する必要があります。また、しばらく転送がないと、セッションは終了します。"
 
-#: ../../vfolder/vfolder.rst:468
+#: ../../vfolder/vfolder.rst:477
 msgid ""
 "If you upload your SSH keypair, the ``id_container`` will be set with your "
 "own SSH private key. So, you don't need to download it every time you want "

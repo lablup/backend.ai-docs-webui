@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-24 01:16+0900\n"
+"POT-Creation-Date: 2025-02-20 14:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../model_serving/model_serving.rst:5
 msgid "Model Serving"
@@ -369,29 +369,32 @@ msgid "Model type folder creation"
 msgstr "モデルタイプフォルダの作成"
 
 #: ../../model_serving/model_serving.rst:189
+#, fuzzy
 msgid ""
 "After creating the folder, select the 'MODELS' tab in the Data & Folders "
 "page, click on the recently created model type folder icon to open the "
-"folder explorer, and upload the model definition file."
+"folder explorer, and upload the model definition file. For more information "
+"on how to use the folder explorer, please refer :ref:`Explore "
+"Folder<explore_folder>` section."
 msgstr ""
-"フォルダを作成した後、データ & "
-"フォルダページで「MODELS」タブを選択し、最近作成したモデルタイプのフォルダアイコンをクリックしてフォルダエクスプローラーを開き、モデル定義ファイルをアップロードします。"
+"フォルダを作成したら、データとフォルダのページで「MODELS」タブを選択し、最近作成したモデルタイプのフォルダアイコンをクリックしてフォルダエクスプローラーを開き、モデル定義ファイルをアップロードします。フォルダエクスプローラーの使い方については、:ref:`Explore"
+" Folder<explore_folder>` セクションを参照してください。"
 
 #: ../../model_serving/model_serving.rst:-1
 msgid "Model definition file upload"
 msgstr "モデル定義ファイルのアップロード"
 
-#: ../../model_serving/model_serving.rst:198
+#: ../../model_serving/model_serving.rst:204
 msgid "Creating/Validating Model Service"
 msgstr "モデルサービスの作成/検証"
 
-#: ../../model_serving/model_serving.rst:200
+#: ../../model_serving/model_serving.rst:206
 msgid ""
 "Once the model definition file is uploaded to the virtual folder of the "
 "model type, you are ready to create the model service."
 msgstr "モデル定義ファイルがモデルタイプの仮想フォルダにアップロードされると、モデルサービスを作成する準備が整います。"
 
-#: ../../model_serving/model_serving.rst:203
+#: ../../model_serving/model_serving.rst:209
 msgid ""
 "Click the 'Start Service' button on the Model Serving page. This will bring "
 "up a page where you can enter the required settings for creating the "
@@ -403,13 +406,13 @@ msgstr ""
 msgid "Service launcher"
 msgstr "サービスランチャー"
 
-#: ../../model_serving/model_serving.rst:212
+#: ../../model_serving/model_serving.rst:222
 msgid ""
 "First, provide a service name. For detailed explanations of each item, "
 "please refer to the following:"
 msgstr "まず、サービス名を提供します。それぞれの項目の詳細については、以下を参照してください。"
 
-#: ../../model_serving/model_serving.rst:214
+#: ../../model_serving/model_serving.rst:224
 msgid ""
 "Open To Public: This option allows access to the model service without any "
 "separate token on the server where the service is to be hosted. By default, "
@@ -418,13 +421,13 @@ msgstr ""
 "パブリックに公開: "
 "このオプションを使用すると、サービスをホストするサーバー上で、個別のトークンなしにモデルサービスへのアクセスが可能になります。デフォルトでは無効化されています。"
 
-#: ../../model_serving/model_serving.rst:217
+#: ../../model_serving/model_serving.rst:227
 msgid ""
 "Model Storage To Mount: This is model folder to mount, which contains model "
 "definition file inside the directory."
 msgstr "マウントするモデルストレージ: これはディレクトリ内にモデル定義ファイルを含むモデルフォルダーです。"
 
-#: ../../model_serving/model_serving.rst:219
+#: ../../model_serving/model_serving.rst:229
 msgid ""
 "Inference Runtime Variant: This categorizes the type of models into four: "
 "``vLLM``, ``NVIDIA NIM``, ``Predefined Image Command``, ``Custom``."
@@ -436,7 +439,7 @@ msgstr ""
 msgid "Runtime Variant"
 msgstr "ランタイムバリアント"
 
-#: ../../model_serving/model_serving.rst:226
+#: ../../model_serving/model_serving.rst:236
 msgid ""
 "For example, if you choose ``vLLM`` or ``NVIDIA NIM`` or ``Predefined Image "
 "Command`` as a runtime variant of model service, there's no need to "
@@ -453,7 +456,7 @@ msgstr ""
 "<https://www.backend.ai/blog/2024-07-10-various-ways-of-model-serving>`_ "
 "をご覧ください。"
 
-#: ../../model_serving/model_serving.rst:231
+#: ../../model_serving/model_serving.rst:241
 msgid ""
 "Model Destination For Model Folder: This option allows aliasing path of "
 "model storage path to session corresponding to routing, which represents the"
@@ -462,7 +465,7 @@ msgstr ""
 "モデルフォルダーのモデルの保存先: "
 "このオプションにより、サービスを表すルーティングに対応するセッションへのモデルストレージパスのエイリアスを設定できます。デフォルト値は``/models``です。"
 
-#: ../../model_serving/model_serving.rst:234
+#: ../../model_serving/model_serving.rst:244
 msgid ""
 "Model Definition File Path: You can also set model definition file as you "
 "uploaded in model storage path. The default value is ``model-"
@@ -471,7 +474,7 @@ msgstr ""
 "モデル定義ファイルパス: モデルストレージパスにアップロードしたモデル定義ファイルを設定することもできます。デフォルトの値は ``model-"
 "definition.yaml`` です。"
 
-#: ../../model_serving/model_serving.rst:236
+#: ../../model_serving/model_serving.rst:246
 msgid ""
 "Additional Mounts: Likewise session, service provides additional mounts. "
 "Please make sure that only you can mount general/data usage mode folder, not"
@@ -480,7 +483,7 @@ msgstr ""
 "追加マウント: "
 "同様にセッション、サービスは追加のマウントを提供します。一般/データ使用モードフォルダのみをマウントできるようにし、追加モデルフォルダをマウントできないようにしてください。"
 
-#: ../../model_serving/model_serving.rst:239
+#: ../../model_serving/model_serving.rst:249
 msgid ""
 "Desired Routing Count: This setting serves as the basis for determining the "
 "number of routing sessions to maintain for the current service. If you "
@@ -491,13 +494,13 @@ msgstr ""
 "希望ルーティング数: "
 "この設定は現在のサービスのために維持するルーティングセッションの数を決定する基準となります。この設定値を変更すると、マネージャーは既存のレプリカセッションの数を参照して新しいレプリカセッションを作成したり、実行中のセッションを終了したりできます。"
 
-#: ../../model_serving/model_serving.rst:249
+#: ../../model_serving/model_serving.rst:259
 msgid ""
 "Then select a resource group. The resource group is a collection of "
 "resources that can be allocated to the model service."
 msgstr "次にリソースグループを選択します。リソースグループとは、モデルサービスに割り当てることができるリソースの集合です。"
 
-#: ../../model_serving/model_serving.rst:252
+#: ../../model_serving/model_serving.rst:262
 msgid ""
 "Environment / Version: You can configure the execution environment for the "
 "dedicated server of the model service. Currently, even if the service has "
@@ -508,7 +511,7 @@ msgstr ""
 "環境 / バージョン: "
 "モデルサービスの専用サーバーの実行環境を設定することができます。現在、サービスが複数のルーティングを持っていても、単一の環境でのみ実行されます。（複数の実行環境のサポートは、今後のアップデートで追加される予定です）"
 
-#: ../../model_serving/model_serving.rst:257
+#: ../../model_serving/model_serving.rst:267
 msgid ""
 "Resource Presets: Allows you to select the amount of resources to allocate "
 "from the model service. Resource contains CPU, RAM, and AI accelerator, as "
@@ -517,19 +520,19 @@ msgstr ""
 "リソースプリセット: "
 "モデルサービスから割り当てるリソースの量を選択できます。リソースには、CPU、RAM、AIアクセラレータ（GPUとして知られる）が含まれます。"
 
-#: ../../model_serving/model_serving.rst:264
+#: ../../model_serving/model_serving.rst:274
 msgid ""
 "Single Node: When running a session, the managed node and worker nodes are "
 "placed on a single physical node or virtual machine."
 msgstr "シングルノード: セッションを実行する際、管理ノードとワーカーノードは単一の物理ノードまたは仮想マシン上に配置されます。"
 
-#: ../../model_serving/model_serving.rst:266
+#: ../../model_serving/model_serving.rst:276
 msgid ""
 "Multi Node: When running a session, one managed node and one or more worker "
 "nodes are split across multiple physical nodes or virtual machines."
 msgstr "マルチノード: セッションを実行する際、1つの管理ノードと1つ以上のワーカーノードが複数の物理ノードまたは仮想マシンに分割されます。"
 
-#: ../../model_serving/model_serving.rst:268
+#: ../../model_serving/model_serving.rst:278
 msgid ""
 "Variable: In this section, you can set environment variable when starting a "
 "model service. It is useful when you trying to create a model service using "
@@ -539,7 +542,7 @@ msgstr ""
 "変数: "
 "このセクションでは、モデルサービスを開始する際に環境変数を設定できます。これは、ランタイムバリアントを使用してモデルサービスを作成しようとする際に便利です。いくつかのランタイムバリアントは、実行前に特定の環境変数の設定が必要です。"
 
-#: ../../model_serving/model_serving.rst:272
+#: ../../model_serving/model_serving.rst:282
 msgid ""
 "Before creating model service, Backend.AI supports validation feature to "
 "check whether execution is available or not(due to any errors during "
@@ -551,40 +554,40 @@ msgid ""
 msgstr ""
 "モデルサービスを作成する前に、Backend.AIは実行が可能かどうか（実行中のエラーによる）を確認するためのバリデーション機能をサポートしています。サービスランチャーの左下にある「Validate」ボタンをクリックすると、バリデーションイベントをリスニングするための新しいポップアップが表示されます。このポップアップモーダル内で、コンテナログを通じてステータスを確認できます。結果が「Finished」に設定されると、バリデーションチェックが完了です。"
 
-#: ../../model_serving/model_serving.rst:286
+#: ../../model_serving/model_serving.rst:296
 msgid ""
 "The result ``Finished`` doesn't guarantee that the execution is successfully"
 " done. Instead, please check the container log."
 msgstr "結果 ``Finished`` は実行が成功したことを保証するものではありません。代わりに、コンテナログを確認してください。"
 
-#: ../../model_serving/model_serving.rst:290
+#: ../../model_serving/model_serving.rst:300
 msgid "**Handling Failed Model Service Creation**"
 msgstr "**失敗したモデルサービスの作成の処理**"
 
-#: ../../model_serving/model_serving.rst:292
+#: ../../model_serving/model_serving.rst:302
 msgid ""
 "If the status of the model service remains ``UNHEALTHY``, it indicates that "
 "the model service cannot be executed properly."
 msgstr "モデルサービスのステータスが``UNHEALTHY``のままである場合、それはモデルサービスが正しく実行できないことを示しています。"
 
-#: ../../model_serving/model_serving.rst:295
+#: ../../model_serving/model_serving.rst:305
 msgid ""
 "The common reasons for creation failure and their solutions are as follows:"
 msgstr "作成失敗の一般的な理由とその解決策は以下の通りです。"
 
-#: ../../model_serving/model_serving.rst:298
+#: ../../model_serving/model_serving.rst:308
 msgid ""
 "Insufficient allocated resources for the routing when creating the model "
 "service"
 msgstr "モデルサービスを作成する際にルーティングのために割り当てられたリソースが不足しています。"
 
-#: ../../model_serving/model_serving.rst:301
+#: ../../model_serving/model_serving.rst:311
 msgid ""
 "Solution: Terminate the problematic service and recreate it with an "
 "allocation of more sufficient resources than the previous settings."
 msgstr "解決策: 問題のあるサービスを終了し、前の設定よりも十分なリソースを割り当てて再作成してください。"
 
-#: ../../model_serving/model_serving.rst:305
+#: ../../model_serving/model_serving.rst:315
 msgid ""
 "Incorrect format of the model definition file (``model-definition.yml``)"
 msgstr "モデル定義ファイル（``model-definition.yml``）の形式が正しくありません"
@@ -593,7 +596,7 @@ msgstr "モデル定義ファイル（``model-definition.yml``）の形式が正
 msgid "Serving route error"
 msgstr "サービングルートエラー"
 
-#: ../../model_serving/model_serving.rst:312
+#: ../../model_serving/model_serving.rst:322
 msgid ""
 "Solution: Verify :ref:`the format of the model definition file "
 "<model_definition_guide>` and if any key-value pairs are incorrect, modify "
@@ -608,11 +611,11 @@ msgstr ""
 msgid "Refresh button"
 msgstr "更新ボタン"
 
-#: ../../model_serving/model_serving.rst:324
+#: ../../model_serving/model_serving.rst:334
 msgid "Generating Tokens"
 msgstr "トークンの生成"
 
-#: ../../model_serving/model_serving.rst:326
+#: ../../model_serving/model_serving.rst:336
 msgid ""
 "Once the model service is successfully executed, the status will be set to "
 "``HEALTHY``. In this case, you can click on the corresponding endpoint name "
@@ -633,7 +636,7 @@ msgstr ""
 msgid "Routing page"
 msgstr "ルーティングページ"
 
-#: ../../model_serving/model_serving.rst:340
+#: ../../model_serving/model_serving.rst:350
 msgid ""
 "Click the 'Generate Token' button located to the right of the generated "
 "token list in the routing information. In the modal that appears for token "
@@ -645,7 +648,7 @@ msgstr ""
 msgid "Token generation dialog"
 msgstr "トークン生成ダイアログ"
 
-#: ../../model_serving/model_serving.rst:349
+#: ../../model_serving/model_serving.rst:359
 msgid ""
 "The issued token will be added to the list of generated tokens. Click the "
 "'copy' button in the token item to copy the token, and add it as the value "
@@ -657,35 +660,35 @@ msgstr ""
 msgid "Generated token copy"
 msgstr "生成されたトークンをコピー"
 
-#: ../../model_serving/model_serving.rst:357
+#: ../../model_serving/model_serving.rst:367
 msgid "Key"
 msgstr "キー"
 
-#: ../../model_serving/model_serving.rst:357
+#: ../../model_serving/model_serving.rst:367
 msgid "Value"
 msgstr "値"
 
-#: ../../model_serving/model_serving.rst:359
+#: ../../model_serving/model_serving.rst:369
 msgid "Content-Type"
 msgstr "コンテンツタイプ"
 
-#: ../../model_serving/model_serving.rst:359
+#: ../../model_serving/model_serving.rst:369
 msgid "application/json"
 msgstr "アプリケーション/JSON"
 
-#: ../../model_serving/model_serving.rst:360
+#: ../../model_serving/model_serving.rst:370
 msgid "Authorization"
 msgstr "認可"
 
-#: ../../model_serving/model_serving.rst:360
+#: ../../model_serving/model_serving.rst:370
 msgid "BackendAI"
 msgstr "BackendAI"
 
-#: ../../model_serving/model_serving.rst:364
+#: ../../model_serving/model_serving.rst:374
 msgid "Accessing the Model Service Endpoint for End Users"
 msgstr "エンドユーザー向けモデルサービスエンドポイントへのアクセス"
 
-#: ../../model_serving/model_serving.rst:366
+#: ../../model_serving/model_serving.rst:376
 msgid ""
 "To complete the model serving, you need to share information with the actual"
 " end users so that they can access the server where the model service is "
@@ -697,7 +700,7 @@ msgid ""
 msgstr ""
 "モデルサービングを完了するには、実際のエンドユーザーに情報を共有し、モデルサービスが実行されているサーバーにアクセスできるようにする必要があります。サービス作成時に公開するオプションが有効になっている場合は、ルーティング情報ページからサービスエンドポイントの値を共有できます。オプションが無効で作成されたサービスの場合は、以前に生成されたトークンとともにサービスエンドポイントの値を共有することができます。"
 
-#: ../../model_serving/model_serving.rst:374
+#: ../../model_serving/model_serving.rst:384
 msgid ""
 "Here's the simple command using ``curl`` command whether to check sending "
 "any requests to model serving endpoint working properly or not."
@@ -705,7 +708,7 @@ msgstr ""
 "モデル提供エンドポイントにリクエストを送信することが適切に機能しているかどうかを確認するための、``curl`` "
 "コマンドを使用した簡単なコマンドはこちらです。"
 
-#: ../../model_serving/model_serving.rst:385
+#: ../../model_serving/model_serving.rst:395
 msgid ""
 "By default, end users must be on a network that can access the endpoint. If "
 "the service was created in a closed network, only end users who have access "
@@ -713,11 +716,11 @@ msgid ""
 msgstr ""
 "デフォルトでは、エンドユーザーはエンドポイントにアクセスできるネットワーク上になければなりません。サービスが閉じたネットワークで作成された場合、その閉じたネットワーク内にアクセスできるエンドユーザーのみがサービスにアクセスできます。"
 
-#: ../../model_serving/model_serving.rst:391
+#: ../../model_serving/model_serving.rst:401
 msgid "Using the Large Language Model"
 msgstr "大規模言語モデルの使用"
 
-#: ../../model_serving/model_serving.rst:393
+#: ../../model_serving/model_serving.rst:403
 msgid ""
 "If you've created a Large Language Model (LLM) service, you can test the LLM"
 " in real-time. Simply click the 'LLM Chat Test' button located in the "
@@ -730,7 +733,7 @@ msgstr ""
 msgid "LLM Chat Test"
 msgstr "LLMチャットテスト"
 
-#: ../../model_serving/model_serving.rst:401
+#: ../../model_serving/model_serving.rst:411
 msgid ""
 "Then, a modal for chatting will appear as shown below. You can input the "
 "text you want to chat with the LLM model and click the 'Send' button or "
@@ -744,7 +747,7 @@ msgstr ""
 msgid "LLM Chat Dialog"
 msgstr "LLMチャットダイアログ"
 
-#: ../../model_serving/model_serving.rst:409
+#: ../../model_serving/model_serving.rst:419
 msgid ""
 "If you encounter issues connecting to the API, a custom modal will appear "
 "allowing you to manually specify model settings. To use the model, you will "
@@ -752,7 +755,7 @@ msgid ""
 msgstr ""
 "APIに接続する際に問題が発生した場合、カスタムモーダルが表示され、モデル設定を手動で指定できるようになります。モデルを使用するには、次の情報が必要です。"
 
-#: ../../model_serving/model_serving.rst:412
+#: ../../model_serving/model_serving.rst:422
 msgid ""
 "baseURL: Base URL of the server where the model is located. Make sure to "
 "include the version information. For instance, when utilizing the OpenAI "
@@ -761,7 +764,7 @@ msgstr ""
 "baseURL: モデルが配置されているサーバーのベースURL。バージョン情報を含めることを忘れないでください。例えば、OpenAI "
 "APIを利用する場合は、 https://api.openai.com/v1 を入力してください。"
 
-#: ../../model_serving/model_serving.rst:415
+#: ../../model_serving/model_serving.rst:425
 msgid ""
 "Model ID: Unique identifier of the model. To specify the model you wish to "
 "use, you would provide its unique identifier. For instance, for GPT-4, you "
@@ -770,7 +773,7 @@ msgstr ""
 "モデルID: モデルのユニークな識別子。使用したいモデルを指定するには、そのユニークな識別子を提供します。例えば、GPT-4の場合は、 'gpt-4o'"
 " を入力します。"
 
-#: ../../model_serving/model_serving.rst:417
+#: ../../model_serving/model_serving.rst:427
 msgid ""
 "Token (optional): An authentication key to access the model service. Tokens "
 "can be generated from various services, not just Backend.AI. The format and "
@@ -789,7 +792,7 @@ msgstr ""
 msgid "LLM Chat Dialog Custom"
 msgstr "LLMチャットダイアログカスタム"
 
-#: ../../model_serving/model_serving.rst:428
+#: ../../model_serving/model_serving.rst:438
 msgid ""
 "Click the 'More' button in the upper left corner to access additional "
 "features. Compare with other LLM models, delete chat history, and more. For "
@@ -803,11 +806,11 @@ msgstr ""
 msgid "LLM Chat Dialog extra features"
 msgstr "LLM チャットダイアログ追加機能"
 
-#: ../../model_serving/model_serving.rst:437
+#: ../../model_serving/model_serving.rst:447
 msgid "Modifying Model Service"
 msgstr "モデルサービスの修正"
 
-#: ../../model_serving/model_serving.rst:439
+#: ../../model_serving/model_serving.rst:449
 msgid ""
 "Click on the wrench icon in the Control tab to open a modal where you can "
 "change the model service. The format is identical to the model service start"
@@ -821,11 +824,11 @@ msgstr ""
 msgid "Edit model service dialog"
 msgstr "モデルサービス編集ダイアログ"
 
-#: ../../model_serving/model_serving.rst:450
+#: ../../model_serving/model_serving.rst:460
 msgid "Terminating Model Service"
 msgstr "モデルサービスの終了"
 
-#: ../../model_serving/model_serving.rst:452
+#: ../../model_serving/model_serving.rst:462
 msgid ""
 "The model service periodically runs a scheduler to adjust the routing count "
 "to match the desired session count. However, this puts a burden on the "

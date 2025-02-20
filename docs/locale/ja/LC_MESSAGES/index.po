@@ -9,33 +9,36 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"POT-Creation-Date: 2025-02-20 14:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../index.rst:19
 msgid "Table of Contents"
 msgstr "目次"
 
 #: ../../index.rst:7
-msgid "Backend.AI Web-UI User Guide"
-msgstr "Backend.AI Web-UI ユーザーガイド"
+#, fuzzy
+msgid "Backend.AI WebUI User Guide"
+msgstr "Backend.AI WebUI ユーザーガイド"
 
 #: ../../index.rst:9
-msgid "User's guide for the Backend.AI Web-UI."
-msgstr "Backend.AI Web-UI ユーザーガイド。"
+#, fuzzy
+msgid "User's guide for the Backend.AI WebUI."
+msgstr "Backend.AI WebUIのユーザーガイド。"
 
 #: ../../index.rst:11
+#, fuzzy
 msgid ""
-"Backend.AI Web-UI is a web or app that provides easy-to-use GUI interface to"
-" work with the Backend.AI server."
+"Backend.AI WebUI is a web or app that provides easy-to-use GUI interface to "
+"work with the Backend.AI server."
 msgstr ""
-"Backend.AI Web-UIは、Backend.AIサーバーと連携するための使いやすいGUIインターフェースを提供するウェブまたはアプリです。"
+"Backend.AI WebUIは、Backend.AIサーバーと連携するための使いやすいGUIインターフェースを提供するウェブまたはアプリです。"
 
 #: ../../index.rst:14
 msgid "The latest versions of this document can be found from sites below:"
