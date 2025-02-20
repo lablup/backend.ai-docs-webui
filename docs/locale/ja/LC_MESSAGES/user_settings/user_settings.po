@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"POT-Creation-Date: 2025-02-20 15:07+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../user_settings/user_settings.rst:3
 msgid "User Settings"
@@ -35,7 +35,7 @@ msgstr ""
 msgid "GENERAL tab"
 msgstr "一般タブ"
 
-#: ../../user_settings/user_settings.rst:20
+#: ../../user_settings/user_settings.rst:21
 msgid ""
 "There are lots of preference menu in GENERAL tab. you can search it by "
 "search field on top of the section, or you may just filter that you changed "
@@ -46,28 +46,27 @@ msgstr ""
 "Changes` "
 "をクリックすることで変更した内容だけをフィルタリングすることもできます。以前の状態に戻したい場合は、セクションの右上にあるリセットボタンをクリックしてください。"
 
-#: ../../user_settings/user_settings.rst:25
+#: ../../user_settings/user_settings.rst:26
 msgid "Desktop Notification"
 msgstr "デスクトップ通知"
 
-#: ../../user_settings/user_settings.rst:27
+#: ../../user_settings/user_settings.rst:28
+#, fuzzy
 msgid ""
 "Enables or disables the desktop notification feature. If the browser and "
-"operating system support it, various  messages that appear in the Web-UI "
-"will also appear in the desktop notification panel. If disabled from the "
+"operating system support it, various  messages that appear in the WebUI will"
+" also appear in the desktop notification panel. If disabled from the "
 "operating system during the first run, the desktop message may not be "
 "displayed even if the option is turned on here. Regardless of the value of "
-"this option, the notification inside the Web-UI still works."
+"this option, the notification inside the WebUI still works."
 msgstr ""
-"デスクトップ通知機能を有効または無効にします。ブラウザとオペレーティングシステムがサポートしている場合、Web "
-"UIに表示されるさまざまなメッセージがデスクトップ通知パネルにも表示されます。初回実行時にオペレーティングシステムから無効にした場合、ここでオプションをオンにしてもデスクトップメッセージは表示されないことがあります。このオプションの値に関係なく、Web"
-" UI 内の通知は引き続き機能します。"
+"デスクトップ通知機能を有効または無効にします。ブラウザとオペレーティングシステムがそれをサポートしている場合、WebUIに表示されるさまざまなメッセージがデスクトップ通知パネルにも表示されます。最初の実行時にオペレーティングシステムから無効化されている場合、ここでオプションがオンになっていてもデスクトップメッセージは表示されないことがあります。このオプションの値に関係なく、WebUI内の通知は引き続き機能します。"
 
-#: ../../user_settings/user_settings.rst:35
+#: ../../user_settings/user_settings.rst:36
 msgid "Use Compact Sidebar by default"
 msgstr "デフォルトでコンパクトサイドバーを使用"
 
-#: ../../user_settings/user_settings.rst:37
+#: ../../user_settings/user_settings.rst:38
 msgid ""
 "When this option is on, the left sidebar will be shown in a compact form "
 "(narrower width).  Change of the option is applied when the browser is "
@@ -76,11 +75,11 @@ msgid ""
 msgstr ""
 "このオプションがオンの場合、左のサイドバーはコンパクトな形式（幅が狭く）で表示されます。オプションの変更は、ブラウザを更新すると適用されます。ページを更新せずにサイドバーのタイプを直ちに変更したい場合は、ヘッダー上部の最も左のアイコンをクリックしてください。"
 
-#: ../../user_settings/user_settings.rst:43
+#: ../../user_settings/user_settings.rst:44
 msgid "Language"
 msgstr "言語"
 
-#: ../../user_settings/user_settings.rst:45
+#: ../../user_settings/user_settings.rst:46
 msgid ""
 "Set the language displayed on the UI. Currently, Backend.AI supports more "
 "than five languages including English and Korean. However, there may be some"
@@ -88,94 +87,94 @@ msgid ""
 msgstr ""
 "UIに表示される言語を設定します。現在、Backend.AIは英語と韓国語を含む5つ以上の言語をサポートしています。ただし、ページを更新する前に言語が更新されないUIアイテムがある場合があります。"
 
-#: ../../user_settings/user_settings.rst:50
+#: ../../user_settings/user_settings.rst:51
 msgid "OS Default: Use the operating system's default language."
 msgstr "OS デフォルト: オペレーティングシステムのデフォルト言語を使用します。"
 
-#: ../../user_settings/user_settings.rst:51
+#: ../../user_settings/user_settings.rst:52
 msgid "English: Set English as the default language."
 msgstr "English: デフォルト言語として英語を設定します。"
 
-#: ../../user_settings/user_settings.rst:52
+#: ../../user_settings/user_settings.rst:53
 msgid "Korean: Set Korean as the default language."
 msgstr "韓国語: 基本言語を韓国語に設定します"
 
-#: ../../user_settings/user_settings.rst:53
+#: ../../user_settings/user_settings.rst:54
 msgid ""
 "Brazilian Portuguese: Set Brazilian Portuguese as the default language."
 msgstr "ブラジルポルトガル語: デフォルト言語としてブラジルポルトガル語を設定します。"
 
-#: ../../user_settings/user_settings.rst:54
+#: ../../user_settings/user_settings.rst:55
 msgid ""
 "Chinese (Simplified): Set Chinese (Simplified) as the default language."
 msgstr "中国語（簡体字）：中国語（簡体字）をデフォルトの言語に設定します。"
 
-#: ../../user_settings/user_settings.rst:55
+#: ../../user_settings/user_settings.rst:56
 msgid ""
 "Chinese (Traditional): Set Chinese (Traditional) as the default language."
 msgstr "中国語（繁体字）：デフォルト言語として中国語（繁体字）を設定します。"
 
-#: ../../user_settings/user_settings.rst:56
+#: ../../user_settings/user_settings.rst:57
 msgid "French: Set French as the default language."
 msgstr "French: デフォルトの言語をフランス語に設定します。"
 
-#: ../../user_settings/user_settings.rst:57
+#: ../../user_settings/user_settings.rst:58
 msgid "Finnish: Set Finnish as the default language."
 msgstr "フィンランド語: デフォルト言語としてフィンランド語を設定します。"
 
-#: ../../user_settings/user_settings.rst:58
+#: ../../user_settings/user_settings.rst:59
 msgid "German: Set German as the default language."
 msgstr "ドイツ語: ドイツ語をデフォルトの言語に設定します。"
 
-#: ../../user_settings/user_settings.rst:59
+#: ../../user_settings/user_settings.rst:60
 msgid "Greek: Set Greek as the default language."
 msgstr "ギリシャ語: デフォルト言語としてギリシャ語を設定します。"
 
-#: ../../user_settings/user_settings.rst:60
+#: ../../user_settings/user_settings.rst:61
 msgid "Indonesian: Set Indonesian as the default language."
 msgstr "インドネシア語: インドネシア語をデフォルトの言語として設定します。"
 
-#: ../../user_settings/user_settings.rst:61
+#: ../../user_settings/user_settings.rst:62
 msgid "Italian: Set Italian as the default language."
 msgstr "イタリア語: デフォルト言語をイタリア語に設定します。"
 
-#: ../../user_settings/user_settings.rst:62
+#: ../../user_settings/user_settings.rst:63
 msgid "Japanese: Set Japanese as the default language."
 msgstr "日本語: デフォルト言語として日本語を設定します。"
 
-#: ../../user_settings/user_settings.rst:63
+#: ../../user_settings/user_settings.rst:64
 msgid "Mongolian: Set Mongolian as the default language."
 msgstr "モンゴル語: デフォルトの言語としてモンゴル語を設定します。"
 
-#: ../../user_settings/user_settings.rst:64
+#: ../../user_settings/user_settings.rst:65
 msgid "Polish: Set Polish as the default language."
 msgstr "ポーランド語: デフォルト言語としてポーランド語を設定します。"
 
-#: ../../user_settings/user_settings.rst:65
+#: ../../user_settings/user_settings.rst:66
 msgid "Portuguese: Set Portuguese as the default language."
 msgstr "ポルトガル語: ポルトガル語をデフォルト言語に設定します。"
 
-#: ../../user_settings/user_settings.rst:66
+#: ../../user_settings/user_settings.rst:67
 msgid "Russian: Set Russian as the default language."
 msgstr "ロシア語: ロシア語をデフォルト言語に設定します。"
 
-#: ../../user_settings/user_settings.rst:67
+#: ../../user_settings/user_settings.rst:68
 msgid "Spanish: Set Spanish as the default language."
 msgstr "Spanish: スペイン語をデフォルトの言語に設定します。"
 
-#: ../../user_settings/user_settings.rst:68
+#: ../../user_settings/user_settings.rst:69
 msgid "Thai: Set Thai as the default language."
 msgstr "Thai: デフォルトの言語としてタイ語を設定します。"
 
-#: ../../user_settings/user_settings.rst:69
+#: ../../user_settings/user_settings.rst:70
 msgid "Turkish: Set Turkish as the default language."
 msgstr "トルコ語: トルコ語をデフォルト言語に設定します。"
 
-#: ../../user_settings/user_settings.rst:70
+#: ../../user_settings/user_settings.rst:71
 msgid "Vietnamese: Set Vietnamese as the default language."
 msgstr "ベトナム語: デフォルトの言語としてベトナム語を設定します。"
 
-#: ../../user_settings/user_settings.rst:74
+#: ../../user_settings/user_settings.rst:75
 msgid ""
 "Some of translated items may be marked as ``__NOT_TRANSLATED__``, which "
 "indicates the item is not yet translated for that language. Since Backend.AI"
@@ -186,84 +185,36 @@ msgstr ""
 " WebUIはオープンソースであるため、翻訳をより良くしようとする意欲のある人なら誰でも貢献できます: "
 "https://github.com/lablup/backend.ai-webui。"
 
-#: ../../user_settings/user_settings.rst:82
-msgid "SSH Keypair Management"
-msgstr "SSH キーペア管理"
-
-#: ../../user_settings/user_settings.rst:84
-msgid ""
-"When using the Web-UI app, you can create SSH/SFTP connection directly to "
-"the compute session. Once you signed up for Backend.AI, a public keypair is "
-"provided. If you click the button on the right to the SSH Keypair Management"
-" section, the following dialog appears. Click the copy button on the right "
-"to copy the existing SSH public key. You can update SSH keypair by clicking "
-"GENERATE button at the bottom of the dialog. SSH public/private keys are "
-"randomly generated and stored as user information. Please note that the "
-"secret key cannot be checked again unless it is saved manually immediately "
-"after creation."
-msgstr ""
-"Web-"
-"UIアプリを使用すると、コンピュートセッションに直接SSH/SFTP接続を作成できます。Backend.AIにサインアップすると、公開鍵ペアが提供されます。SSHキーペア管理セクションの右側にあるボタンをクリックすると、次のダイアログが表示されます。右側のコピー按鈕をクリックして、既存のSSH公開鍵をコピーしてください。ダイアログの一番下にあるGENERATEボタンをクリックすると、SSHキーペアを更新できます。SSHの公開/秘密鍵はランダムに生成され、ユーザー情報として保存されます。秘密鍵は作成直後に手動で保存しない限り再度確認できないことに注意してください。"
-
-#: ../../user_settings/user_settings.rst:99
-msgid ""
-"SSH/SFTP connection is available only with the Backend.AI GUI desktop app "
-"and is not supported on a web browser."
-msgstr "SSH/SFTP接続は、Backend.AI GUIデスクトップアプリでのみ利用可能であり、ウェブブラウザではサポートされていません。"
-
-#: ../../user_settings/user_settings.rst:102
-msgid ""
-"Backend.AI uses SSH keypair based on OpenSSH. On Windows, you may convert "
-"this into PPK key."
-msgstr "Backend.AIはOpenSSHに基づいたSSHキーペアを使用します。Windowsでは、これをPPKキーに変換することができます。"
-
-#: ../../user_settings/user_settings.rst:105
-msgid ""
-"From 22.09, Backend.AI WebUI supports adding your own ssh keypair in order "
-"to provide flexibility such as accessing to a private repository. In order "
-"to add your own ssh keypair, click ``ENTER MANUALLY`` button. Then, you will"
-" see two text area which corresponds to \"public\" and \"private\" key."
-msgstr ""
-"22.09から、Backend.AI "
-"WebUIはプライベートリポジトリへのアクセスなどの柔軟性を提供するために、独自のSSHキーペアを追加することをサポートしています。独自のSSHキーペアを追加するには、``ENTER"
-" MANUALLY`` ボタンをクリックしてください。すると、「公開」と「非公開」の鍵に対応する2つのテキストエリアが表示されます。"
-
-#: ../../user_settings/user_settings.rst:113
-msgid ""
-"please enter the keys inside, and click ``SAVE`` button. Now you can access "
-"to backend.ai session using your own key."
-msgstr ""
-"キーを入力し、「保存」ボタンをクリックしてください。これで、自分のキーを使用してBackend.AIセッションにアクセスすることができます。"
-
-#: ../../user_settings/user_settings.rst:121
+#: ../../user_settings/user_settings.rst:81
 msgid "Automatic Update Check"
 msgstr "自動更新チェック"
 
-#: ../../user_settings/user_settings.rst:123
+#: ../../user_settings/user_settings.rst:83
+#, fuzzy
 msgid ""
-"A notification window pops up when a new version of the Web-UI is detected. "
-"It works only in an environment where Internet access is available."
-msgstr "新しいバージョンのWeb-UIが検出されると、通知ウィンドウが表示されます。インターネットアクセスが利用可能な環境でのみ動作します。"
+"A notification window pops up when a new WebUI version is detected. It works"
+" only in an environment where Internet access is available."
+msgstr "新しいWebUIバージョンが検出されると、通知ウィンドウがポップアップします。これは、インターネット接続が利用可能な環境でのみ動作します。"
 
-#: ../../user_settings/user_settings.rst:127
+#: ../../user_settings/user_settings.rst:87
 msgid "Auto logout"
 msgstr "自動ログアウト"
 
-#: ../../user_settings/user_settings.rst:129
+#: ../../user_settings/user_settings.rst:89
+#, fuzzy
 msgid ""
-"Log out automatically when all Backend.AI Web-UI pages are closed except for"
-" pages created to run apps in session (e.g. jupyter notebook, web terminal, "
+"Log out automatically when all Backend.AI WebUI pages are closed except for "
+"pages created to run apps in session (e.g. jupyter notebook, web terminal, "
 "etc.)."
 msgstr ""
-"すべてのBackend.AI Web-"
-"UIページが閉じられたとき、自動的にログアウトします。ただし、セッション内でアプリを実行するために作成されたページ（例: jupyter "
-"notebook、ウェブ端末など）は除きます。"
+"セッション内でアプリを実行するために作成されたページ（例：Jupyterノートブック、ウェブ端末など）を除き、すべてのBackend.AI "
+"WebUIページが閉じられると、自動的にログアウトされます。"
 
-#: ../../user_settings/user_settings.rst:134
+#: ../../user_settings/user_settings.rst:94
 msgid "My Keypair information"
 msgstr "私のキーペア情報"
 
-#: ../../user_settings/user_settings.rst:136
+#: ../../user_settings/user_settings.rst:96
 msgid ""
 "Every user has at least one or more keypairs. you can see access and secret "
 "keypair by clicking Config button below. Remember that main access keypair "
@@ -275,17 +226,76 @@ msgstr ""
 msgid "My Keypair Information"
 msgstr "マイキーペア情報"
 
-#: ../../user_settings/user_settings.rst:146
+#: ../../user_settings/user_settings.rst:107
+msgid "SSH Keypair Management"
+msgstr "SSH キーペア管理"
+
+#: ../../user_settings/user_settings.rst:109
+#, fuzzy
+msgid ""
+"When using the WebUI app, you can create SSH/SFTP connection directly to the"
+" compute session. Once you signed up for Backend.AI, a public keypair is "
+"provided. If you click the button on the right to the SSH Keypair Management"
+" section, the following dialog appears. Click the copy button on the right "
+"to copy the existing SSH public key. You can update SSH keypair by clicking "
+"GENERATE button at the bottom of the dialog. SSH public/private keys are "
+"randomly generated and stored as user information. Please note that the "
+"secret key cannot be checked again unless it is saved manually immediately "
+"after creation."
+msgstr ""
+"WebUIアプリを使用する際、コンピュートセッションに直接SSH/SFTP接続を作成できます。Backend.AIにサインアップすると、公開鍵ペアが提供されます。SSHキーペア管理セクションの右側にあるボタンをクリックすると、次のダイアログが表示されます。右側のコピーボタンをクリックして、既存のSSH公開鍵をコピーできます。ダイアログの下部にあるGENERATEボタンをクリックすると、SSHキーペアを更新できます。SSH公開/秘密鍵はランダムに生成され、ユーザー情報として保存されます。秘密鍵は作成後すぐに手動で保存しない限り、再確認できないことに注意してください。"
+
+#: ../../user_settings/user_settings.rst:124
+msgid ""
+"Backend.AI uses SSH keypair based on OpenSSH. On Windows, you may convert "
+"this into PPK key."
+msgstr "Backend.AIはOpenSSHに基づいたSSHキーペアを使用します。Windowsでは、これをPPKキーに変換することができます。"
+
+#: ../../user_settings/user_settings.rst:127
+msgid ""
+"From 22.09, Backend.AI WebUI supports adding your own ssh keypair in order "
+"to provide flexibility such as accessing to a private repository. In order "
+"to add your own ssh keypair, click ``ENTER MANUALLY`` button. Then, you will"
+" see two text area which corresponds to \"public\" and \"private\" key."
+msgstr ""
+"22.09から、Backend.AI "
+"WebUIはプライベートリポジトリへのアクセスなどの柔軟性を提供するために、独自のSSHキーペアを追加することをサポートしています。独自のSSHキーペアを追加するには、``ENTER"
+" MANUALLY`` ボタンをクリックしてください。すると、「公開」と「非公開」の鍵に対応する2つのテキストエリアが表示されます。"
+
+#: ../../user_settings/user_settings.rst:135
+msgid ""
+"please enter the keys inside, and click ``SAVE`` button. Now you can access "
+"to backend.ai session using your own key."
+msgstr ""
+"キーを入力し、「保存」ボタンをクリックしてください。これで、自分のキーを使用してBackend.AIセッションにアクセスすることができます。"
+
+#: ../../user_settings/user_settings.rst:142
+msgid "Classic Session Launcher"
+msgstr "クラシックセッションランチャー"
+
+#: ../../user_settings/user_settings.rst:144
+msgid ""
+"From version 24.09, Backend.AI offers an improved version of the session "
+"launcher (NEO) as default. If you want to use the classic session launcher, "
+"you can turn on this option. For instructions on how to use the classic "
+"session launcher, please refer to the following `link "
+"<https://webui.docs.backend.ai/en/23.09_a/sessions_all/sessions_all.html>`_."
+msgstr ""
+"バージョン24.09から、Backend.AIはデフォルトとして改善されたセッションランチャー（NEO）を提供します。クラシックセッションランチャーを使用したい場合は、このオプションをオンにすることができます。クラシックセッションランチャーの使用方法については、次の`リンク"
+" "
+"<https://webui.docs.backend.ai/en/23.09_a/sessions_all/sessions_all.html>`_を参照してください。"
+
+#: ../../user_settings/user_settings.rst:150
 msgid "EDIT BOOTSTRAP SCRIPT"
 msgstr "ブートストラップスクリプトを編集"
 
-#: ../../user_settings/user_settings.rst:148
+#: ../../user_settings/user_settings.rst:152
 msgid ""
 "If you want to execute a one-time script just after your compute sessions "
 "started, write down the contents here."
 msgstr "計算セッションが開始された直後に一度だけスクリプトを実行したい場合は、ここに内容を書いてください。"
 
-#: ../../user_settings/user_settings.rst:156
+#: ../../user_settings/user_settings.rst:160
 msgid ""
 "The compute session will be at the ``PREPARING`` status until the bootstrap "
 "script finishes its execution. Since a user cannot use the session until it "
@@ -297,11 +307,11 @@ msgstr ""
 "``RUNNING`` "
 "になるまで使用できないため、スクリプトに長時間実行されるタスクが含まれている場合、それらをブートストラップスクリプトから外し、ターミナルアプリで実行する方が良いかもしれません。"
 
-#: ../../user_settings/user_settings.rst:163
+#: ../../user_settings/user_settings.rst:167
 msgid "EDIT USER CONFIG SCRIPT"
 msgstr "ユーザー設定スクリプトを編集"
 
-#: ../../user_settings/user_settings.rst:165
+#: ../../user_settings/user_settings.rst:169
 msgid ""
 "You can write some config scripts to replace the default ones in a compute "
 "session. Files like ``.bashrc``, ``.tmux.conf.local``, ``.vimrc``, etc. can "
@@ -314,7 +324,7 @@ msgstr ""
 " などのファイルはカスタマイズ可能です。スクリプトはユーザーごとに保存され、特定の自動化タスクが必要なときに使用できます。例えば、``.bashrc``"
 " スクリプトを修正してコマンドエイリアスを登録したり、特定のファイルが常に特定の場所にダウンロードされるように指定したりすることができます。"
 
-#: ../../user_settings/user_settings.rst:172
+#: ../../user_settings/user_settings.rst:176
 msgid ""
 "Use the drop-down menu at the top to select the type of script you want to "
 "write and then write the content. You can save the script by clicking the "
@@ -323,11 +333,11 @@ msgstr ""
 "上部のドロップダウンメニューを使用して作成したいスクリプトのタイプを選択し、内容を記述します。スクリプトは、SAVE または SAVE AND "
 "CLOSE ボタンをクリックして保存できます。DELETE ボタンをクリックするとスクリプトを削除できます。"
 
-#: ../../user_settings/user_settings.rst:182
+#: ../../user_settings/user_settings.rst:186
 msgid "LOGS tab"
 msgstr "LOGSタブ"
 
-#: ../../user_settings/user_settings.rst:184
+#: ../../user_settings/user_settings.rst:188
 msgid ""
 "Displays detailed information of various logs recorded on the client side. "
 "You can visit this page to find out more about the errors occurred. You can "
@@ -337,7 +347,7 @@ msgstr ""
 "クライアント側で記録されたさまざまなログの詳細情報を表示します。このページを訪れることで、発生したエラーについて詳しく知ることができます。エラーログを検索したり、フィルタリングしたり、ログを更新したり、右上の「Clear"
 " Logs」ボタンをクリックしてログをクリアしたりすることができます。"
 
-#: ../../user_settings/user_settings.rst:192
+#: ../../user_settings/user_settings.rst:196
 msgid ""
 "If you only have one page logged in, clicking the REFRESH button may not "
 "seem to work properly. Logs pages are collection of requests to the server "
@@ -348,10 +358,15 @@ msgid ""
 msgstr ""
 "1つのページにしかログインしていない場合、REFRESHボタンをクリックしても正しく機能していないように見えるかもしれません。ログページはサーバーへのリクエストとサーバーからのレスポンスの集まりです。現在のページがログページである場合、ページを明示的にリフレッシュする以外にサーバーへのリクエストは送信されません。ログが正しく積み重ねられているか確認するには、別のページを開いてREFRESHボタンをクリックしてください。"
 
-#: ../../user_settings/user_settings.rst:199
+#: ../../user_settings/user_settings.rst:203
 msgid ""
 "If you want to hide or show the certain columns, click the gear icon at the "
 "bottom right of the table. Then you can see below dialog to select the "
 "columns you want to see."
 msgstr ""
 "特定の列を非表示にしたり表示したりしたい場合は、テーブルの右下にある歯車アイコンをクリックしてください。すると、以下のダイアログが表示され、表示したい列を選択することができます。"
+
+#~ msgid ""
+#~ "SSH/SFTP connection is available only with the Backend.AI GUI desktop app "
+#~ "and is not supported on a web browser."
+#~ msgstr "SSH/SFTP接続は、Backend.AI GUIデスクトップアプリでのみ利用可能であり、ウェブブラウザではサポートされていません。"

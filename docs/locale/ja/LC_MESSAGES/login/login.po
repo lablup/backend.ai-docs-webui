@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"POT-Creation-Date: 2025-02-20 14:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../login/login.rst:3
 msgid "Signup and Login"
@@ -27,10 +27,11 @@ msgid "Signup"
 msgstr "サインアップ"
 
 #: ../../login/login.rst:8
+#, fuzzy
 msgid ""
-"When you launch the Web-UI, login dialog appears. If you haven't signed up "
+"When you launch the WebUI, login dialog appears. If you haven't signed up "
 "yet, press the SIGN UP button."
-msgstr "Web-UIを起動すると、ログインダイアログが表示されます。まだサインアップしていない場合は、サインアップボタンを押してください。"
+msgstr "WebUIを起動すると、ログインダイアログが表示されます。まだサインアップしていない場合は、SIGN UPボタンを押してください。"
 
 #: ../../login/login.rst:-1
 msgid "Login dialog"
@@ -158,20 +159,21 @@ msgid "Header Events"
 msgstr "ヘッダーイベント"
 
 #: ../../login/login.rst:105
+#, fuzzy
 msgid ""
 "The bell shape button is the event notification button. Events that need to "
-"be recorded during Web-UI operation are displayed here. When background "
-"tasks are running, such as creating a compute session, you can check the "
-"jobs here. When the background task is finished."
+"be recorded during WebUI operation are displayed here. When background tasks"
+" are running, such as creating a compute session, you can check the jobs "
+"here. When the background task is finished."
 msgstr ""
-"ベル形のボタンはイベント通知ボタンです。Web-"
-"UIの操作中に記録が必要なイベントがここに表示されます。計算セッションの作成などのバックグラウンドタスクが実行されているときには、ここでジョブを確認できます。バックグラウンドタスクが完了したとき。"
+"ベル型のボタンはイベント通知ボタンです。WebUIの操作中に記録する必要があるイベントがここに表示されます。コンピュートセッションの作成など、バックグラウンドタスクが実行されている場合、ここでジョブを確認できます。バックグラウンドタスクが完了したとき。"
 
 #: ../../login/login.rst:114
+#, fuzzy
 msgid ""
-"You can change the theme mode of the Web-UI via the dark mode icon on the "
+"You can change the theme mode of the WebUI via the dark mode icon on the "
 "right side of the header."
-msgstr "Web-UIのテーマモードは、ヘッダーの右側にあるダークモードアイコンを使って変更できます。"
+msgstr "ヘッダーの右側にあるダークモードアイコンを使って、WebUIのテーマモードを変更できます。"
 
 #: ../../login/login.rst:122
 msgid ""

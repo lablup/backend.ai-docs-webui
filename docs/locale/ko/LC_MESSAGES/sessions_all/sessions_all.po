@@ -24,14 +24,13 @@ msgid "Compute Sessions"
 msgstr "연산 세션"
 
 #: ../../sessions_all/sessions_all.rst:5
-#, fuzzy
 msgid ""
 "The most visited pages in the Backend.AI WebUI would be the 'Sessions' "
 "and 'Data & Storage' pages. This document will cover how to query and "
 "create container-based compute sessions and utilize various web "
 "applications on the 'Sessions' page."
 msgstr ""
-"Backend.AI Web-UI 에서 가장 많이 방문하게 될 페이지는 Sessions 와 Storage 페이지입니다. "
+"Backend.AI WebUI 에서 가장 많이 방문하게 될 페이지는 Sessions 와 Storage 페이지입니다. "
 "Sessions 페이지에서는 컨테이너 기반의 연산 세션을 조회하거나 생성 및 사용할 수 있고, Storage 페이지에서는 데이터를 "
 "보관하는 저장 폴더를 생성할 수 있습니다. 여기서는 Sessions 페이지에서 컨테이너 기반의 연산 세션을 생성하고 각종 웹 "
 "애플리케이션을 활용하는 방법을 알아봅니다."

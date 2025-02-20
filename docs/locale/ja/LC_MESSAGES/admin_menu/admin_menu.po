@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-20 16:05+0900\n"
+"POT-Creation-Date: 2025-02-20 18:45+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../admin_menu/admin_menu.rst:5
 msgid "Admin Menus"
@@ -150,11 +150,21 @@ msgstr ""
 "2FA Enabled: "
 "ユーザーが2要素認証を使用しているかどうかを示すフラグ。2要素認証を使用する場合、ユーザーはログイン時にOTPコードも入力する必要があります。管理者は他のユーザーに対してのみ2要素認証を無効にすることができます。"
 
-#: ../../admin_menu/admin_menu.rst:87
+#: ../../admin_menu/admin_menu.rst:85
+msgid ""
+"Resource Policy: From Backend.AI version 24.09, you can select the user "
+"resource policy to which the user belongs. For more information about user "
+"resource policies, please refer :ref:`user resource policy <user-resource-"
+"policy>` section."
+msgstr ""
+"リソースポリシー：Backend.AIバージョン24.09から、ユーザーが属するユーザーリソースポリシーを選択できるようになりました。ユーザーリソースポリシーの詳細については、:ref:`ユーザーリソースポリシー"
+" <user-resource-policy>`セクションを参照してください。"
+
+#: ../../admin_menu/admin_menu.rst:90
 msgid "Inactivate user account"
 msgstr "ユーザーアカウントを無効化する"
 
-#: ../../admin_menu/admin_menu.rst:89
+#: ../../admin_menu/admin_menu.rst:92
 msgid ""
 "Deleting user accounts is not allowed even for superadmins, to track usage "
 "statistics per user, metric retention, and accidental account loss. Instead,"
@@ -168,14 +178,14 @@ msgstr ""
 msgid "Deactivating user account"
 msgstr "ユーザーアカウントの無効化"
 
-#: ../../admin_menu/admin_menu.rst:100
+#: ../../admin_menu/admin_menu.rst:103
 msgid ""
 "To re-activate users, go to Users - Inactive tab, and select the status of "
 "the target user to ``Active``."
 msgstr ""
 "ユーザーを再アクティベートするには、Users - Inactive タブに移動し、対象ユーザーのステータスを「Active」に選択します。"
 
-#: ../../admin_menu/admin_menu.rst:105
+#: ../../admin_menu/admin_menu.rst:108
 msgid ""
 "Please note that inactivating the user changes all of credentials to be "
 "inactive, but reactivating the user does not reactivate the inactivated "
@@ -184,11 +194,11 @@ msgid ""
 msgstr ""
 "ユーザーを非アクティブ化すると、すべての資格情報が非アクティブになりますが、ユーザーを再アクティブ化しても非アクティブ化された資格情報は再アクティブ化されません。なぜなら、ユーザーアカウントは複数のキーペアを持つことができ、どの資格情報を再アクティブ化すべきかを決定するのが難しいためです。"
 
-#: ../../admin_menu/admin_menu.rst:112
+#: ../../admin_menu/admin_menu.rst:115
 msgid "Manage User's Keypairs"
 msgstr "ユーザーのキーペアを管理"
 
-#: ../../admin_menu/admin_menu.rst:114
+#: ../../admin_menu/admin_menu.rst:117
 msgid ""
 "Each user account usually have one or more keypairs. A keypair is used for "
 "API authentication to the Backend.AI server, after user logs in. Login "
@@ -197,7 +207,7 @@ msgid ""
 msgstr ""
 "各ユーザーアカウントには通常、1つ以上のキーペアがあります。キーペアは、ユーザーがログインした後、Backend.AIサーバーへのAPI認証に使用されます。ログインには、ユーザーのメールアドレスとパスワードを介した認証が必要ですが、ユーザーがサーバーに送信するすべてのリクエストはキーペアに基づいて認証されます。"
 
-#: ../../admin_menu/admin_menu.rst:119
+#: ../../admin_menu/admin_menu.rst:122
 msgid ""
 "A user can have multiple keypairs, but to reduce the user's burden of "
 "managing keypairs, we are currently using only one of the user's keypairs to"
@@ -207,7 +217,7 @@ msgid ""
 msgstr ""
 "ユーザーは複数のキーペアを持つことができますが、キーペアの管理におけるユーザーの負担を減らすために、現在はユーザーのキーペアのうちの1つだけを使用してリクエストを送信しています。また、新しいユーザーを作成すると、キーペアが自動的に作成されるため、ほとんどの場合、手動でキーペアを作成して割り当てる必要はありません。"
 
-#: ../../admin_menu/admin_menu.rst:124
+#: ../../admin_menu/admin_menu.rst:127
 msgid ""
 "Keypairs can be listed on the Credentials tab of in the Users page. Active "
 "keypairs are shown immediately, and to see the inactive keypairs, click the "
@@ -219,7 +229,7 @@ msgstr ""
 msgid "Credential list page"
 msgstr "資格情報リストページ"
 
-#: ../../admin_menu/admin_menu.rst:131
+#: ../../admin_menu/admin_menu.rst:134
 msgid ""
 "Like in Users tab, you can use the buttons in the Controls panel to view or "
 "update keypair details. Click the blue trash button to disable that keypair,"
@@ -234,7 +244,7 @@ msgstr ""
 " "
 "CREDENTIALボタンをクリックしてユーザーのキーペアを再作成できます。必要に応じて、高度なパネルをクリックしてアクセスキーとシークレットキーを明示的に入力することもできます。"
 
-#: ../../admin_menu/admin_menu.rst:140
+#: ../../admin_menu/admin_menu.rst:143
 msgid ""
 "The Rate Limit field is where you specify the maximum number of requests "
 "that can be sent to the Backend.AI server in 15 minutes. For example, if set"
@@ -250,23 +260,11 @@ msgstr ""
 msgid "Add keypair dialog"
 msgstr "鍵ペア追加ダイアログ"
 
-#: ../../admin_menu/admin_menu.rst:154
-msgid ""
-"In each of USERS, CREDENTIALS tabs, there is an icon (``...``) on the right "
-"side of the tab header. Clicking this shows export CSV menu, which again "
-"brings up a CSV export dialog for each tabs. By giving an appropriate file "
-"name, if necessary, and clicking EXPORT CSV FILE button, you can download "
-"the list of users, keypairs."
-msgstr ""
-"USERS、CREDENTIALS "
-"タブのそれぞれに、タブヘッダーの右側にアイコン（``...``）があります。これをクリックするとCSVエクスポートメニューが表示され、再び各タブのCSVエクスポートダイアログが表示されます。必要に応じて適切なファイル名を指定し、EXPORT"
-" CSV FILEボタンをクリックすると、ユーザーやキーペアのリストをダウンロードできます。"
-
-#: ../../admin_menu/admin_menu.rst:166
+#: ../../admin_menu/admin_menu.rst:171
 msgid "Share project storage folders with project members"
 msgstr "プロジェクトメンバーとプロジェクトストレージフォルダーを共有する"
 
-#: ../../admin_menu/admin_menu.rst:168
+#: ../../admin_menu/admin_menu.rst:173
 msgid ""
 "Backend.AI provides storage folders for projects, in addition to user's own "
 "storage folder. A project storage folder is a folder belonging to a specific"
@@ -275,7 +273,7 @@ msgid ""
 msgstr ""
 "Backend.AIは、ユーザー自身のストレージフォルダに加えて、プロジェクト用のストレージフォルダを提供します。プロジェクトストレージフォルダは特定のユーザーではなく特定のプロジェクトに属しており、そのプロジェクト内のすべてのユーザーがアクセス可能です。"
 
-#: ../../admin_menu/admin_menu.rst:173
+#: ../../admin_menu/admin_menu.rst:178
 msgid ""
 "Project folders can be created only by administrators. Normal users can only"
 " access the contents of the project folder created by the administrator. "
@@ -283,7 +281,7 @@ msgid ""
 msgstr ""
 "プロジェクトフォルダーは管理者のみが作成できます。一般ユーザーは管理者によって作成されたプロジェクトフォルダーの内容のみアクセスできます。システム設定によっては、プロジェクトフォルダーが許可されていない場合もあります。"
 
-#: ../../admin_menu/admin_menu.rst:177
+#: ../../admin_menu/admin_menu.rst:182
 msgid ""
 "First, log in with an admin account and create a project folder. After "
 "moving to the Data & Storage page, click NEW FOLDER to open the folder "
@@ -295,7 +293,7 @@ msgstr ""
 "FOLDERをクリックしてフォルダ作成ダイアログを開きます。フォルダ名を入力し、タイプをプロジェクトに設定し、フォルダを共有するプロジェクトを選択します。この例では、User"
 " Bが属するプロジェクトを選択しましょう。権限は読み取り専用に設定します。"
 
-#: ../../admin_menu/admin_menu.rst:187
+#: ../../admin_menu/admin_menu.rst:192
 msgid ""
 "After confirming that the folder has been created, log in with the User B's "
 "account and check that the project folder just created on the Data & Storage"
@@ -306,11 +304,11 @@ msgstr ""
 "ストレージページで作成されたばかりのプロジェクトフォルダーが招待手続きなしで表示されることを確認します。[権限]パネルにR (読み取り専用) "
 "が表示されていることも確認できます。"
 
-#: ../../admin_menu/admin_menu.rst:195
+#: ../../admin_menu/admin_menu.rst:200
 msgid "Manage Models cards"
 msgstr "モデルカードを管理"
 
-#: ../../admin_menu/admin_menu.rst:197
+#: ../../admin_menu/admin_menu.rst:202
 msgid ""
 "All of the Model cards in model store are managed by project admin. After "
 "uploading model store with model-definition file, any user in the project "
@@ -318,11 +316,11 @@ msgid ""
 msgstr ""
 "モデルストア内のすべてのモデルカードはプロジェクト管理者によって管理されます。モデル定義ファイルでモデルストアをアップロードした後、プロジェクト内の任意のユーザーがモデルカードにアクセスし、必要に応じてそれをクローンすることができます。"
 
-#: ../../admin_menu/admin_menu.rst:201
+#: ../../admin_menu/admin_menu.rst:206
 msgid "Following method is to add model cards from the Hugging Face."
 msgstr "以下の方法は、Hugging Faceからモデルカードを追加するためのものです。"
 
-#: ../../admin_menu/admin_menu.rst:204
+#: ../../admin_menu/admin_menu.rst:209
 msgid ""
 "Before creating a model card, getting an access to the specific model on "
 "Hugging Face is needed. For more information, please refer to `Gated models "
@@ -331,7 +329,7 @@ msgstr ""
 "モデルカードを作成する前に、Hugging Faceで特定のモデルへのアクセスを取得する必要があります。詳細については、`Gated models "
 "<https://huggingface.co/docs/hub/models-gated>`_ を参照してください。"
 
-#: ../../admin_menu/admin_menu.rst:207
+#: ../../admin_menu/admin_menu.rst:212
 msgid "First, Set the project to 'model-store'."
 msgstr "まず、プロジェクトを 'model-store' に設定します。"
 
@@ -339,29 +337,29 @@ msgstr "まず、プロジェクトを 'model-store' に設定します。"
 msgid "Select project to model store"
 msgstr "モデルストアにプロジェクトを選択"
 
-#: ../../admin_menu/admin_menu.rst:214
+#: ../../admin_menu/admin_menu.rst:219
 msgid ""
 "Click the 'Add' button on the right side. Enter the folder name, and set the"
 " rest of folder configuration as shown below:"
 msgstr "右側の「追加」ボタンをクリックします。フォルダ名を入力し、以下に示すようにフォルダ設定の残りを設定します。"
 
-#: ../../admin_menu/admin_menu.rst:217
+#: ../../admin_menu/admin_menu.rst:222
 msgid "Type: project"
 msgstr "タイプ: プロジェクト"
 
-#: ../../admin_menu/admin_menu.rst:218
+#: ../../admin_menu/admin_menu.rst:223
 msgid "Project: 'model-store'"
 msgstr "プロジェクト: 'model-store'"
 
-#: ../../admin_menu/admin_menu.rst:219
+#: ../../admin_menu/admin_menu.rst:224
 msgid "Usage Mode: Model"
 msgstr "使用モード：モデル"
 
-#: ../../admin_menu/admin_menu.rst:220
+#: ../../admin_menu/admin_menu.rst:225
 msgid "Permission: Read-Write"
 msgstr "権限: 読み書き"
 
-#: ../../admin_menu/admin_menu.rst:221
+#: ../../admin_menu/admin_menu.rst:226
 msgid "Cloneable: True"
 msgstr "クローン可能: 真"
 
@@ -369,7 +367,7 @@ msgstr "クローン可能: 真"
 msgid "Model store folder"
 msgstr "モデルストアフォルダ"
 
-#: ../../admin_menu/admin_menu.rst:228
+#: ../../admin_menu/admin_menu.rst:233
 msgid ""
 "After creating the folder, you need to set and upload the model-"
 "definition.yaml file to the folder that you've just created. Following is "
@@ -381,7 +379,7 @@ msgstr ""
 "ファイルを設定し、作成したばかりのフォルダーにアップロードする必要があります。以下はモデル定義ファイルの例です。モデル定義ファイルの書き方については、:ref:`モデル定義ガイド"
 " <model_definition_guide>` セクションを参照してください。"
 
-#: ../../admin_menu/admin_menu.rst:260
+#: ../../admin_menu/admin_menu.rst:265
 msgid ""
 "Once the model-definition file is uploaded, the model card will appear in "
 "the model store section."
@@ -391,7 +389,7 @@ msgstr "モデル定義ファイルがアップロードされると、モデル
 msgid "Model card added"
 msgstr "モデルカードが追加されました"
 
-#: ../../admin_menu/admin_menu.rst:267
+#: ../../admin_menu/admin_menu.rst:272
 msgid ""
 "You need to download model manually after setting model-definition file. For"
 " downloading the model file to folder, you can mount the model folder to "
@@ -402,7 +400,7 @@ msgstr ""
 " models <https://huggingface.co/docs/hub/models-downloading>`_ "
 "を参照してそこにファイルをダウンロードできます。"
 
-#: ../../admin_menu/admin_menu.rst:271
+#: ../../admin_menu/admin_menu.rst:276
 msgid ""
 "Clicking on the model card you've just created will display the details of "
 "the model-definition file you uploaded. Now, every member of the project can"
@@ -414,15 +412,15 @@ msgstr ""
 msgid "Model card detail"
 msgstr "モデルカードの詳細"
 
-#: ../../admin_menu/admin_menu.rst:279
+#: ../../admin_menu/admin_menu.rst:284
 msgid "Manage Resource Policy"
 msgstr "リソースポリシーの管理"
 
-#: ../../admin_menu/admin_menu.rst:282
+#: ../../admin_menu/admin_menu.rst:287
 msgid "Keypair Resource Policy"
 msgstr "キーペアリソースポリシー"
 
-#: ../../admin_menu/admin_menu.rst:284
+#: ../../admin_menu/admin_menu.rst:289
 msgid ""
 "In Backend.AI, administrators have the ability to set limits on the total "
 "resources available for each keypair, user, and project. Resource policies "
@@ -433,7 +431,7 @@ msgid ""
 msgstr ""
 "Backend.AIでは、管理者は各キーペア、ユーザー、およびプロジェクトに対して利用可能な総リソースに制限を設定することができます。リソースポリシーを使用すると、許可される最大リソースやその他のコンピュートセッションに関連する設定を定義することができます。さらに、ユーザーや研究の要件に応じて複数のリソースポリシーを作成し、個別に適用することも可能です。"
 
-#: ../../admin_menu/admin_menu.rst:289
+#: ../../admin_menu/admin_menu.rst:294
 msgid ""
 "The Resource Policy page allows administrators to view a list of all "
 "registered resource policies. Administrators can review the resource "
@@ -449,7 +447,7 @@ msgstr ""
 msgid "Resource policy page"
 msgstr "リソースポリシーページ"
 
-#: ../../admin_menu/admin_menu.rst:298
+#: ../../admin_menu/admin_menu.rst:303
 msgid ""
 "The user account being used in this guide is currently assigned to the "
 "default resource policy. This can be verified in the Credentials tab on the "
@@ -458,7 +456,7 @@ msgid ""
 msgstr ""
 "このガイドで使用されるユーザーアカウントは、現在デフォルトのリソースポリシーに割り当てられています。これは、ユーザーページの資格情報タブで確認できます。リソースポリシーパネルでは、すべてのリソースがハードウェアの制限（∞）まで利用可能であることも確認できます。"
 
-#: ../../admin_menu/admin_menu.rst:305
+#: ../../admin_menu/admin_menu.rst:310
 msgid ""
 "To modify resource policies, click the 'Setting (Gear)' in the Control "
 "column of the default policy group. In the Update Resource Policy dialog, "
@@ -476,28 +474,28 @@ msgstr ""
 msgid "Update resource policy dialog"
 msgstr "リソースポリシー更新ダイアログ"
 
-#: ../../admin_menu/admin_menu.rst:319
+#: ../../admin_menu/admin_menu.rst:324
 msgid ""
 "About details of each option in resource policy dialog, see the description "
 "below."
 msgstr "リソースポリシーダイアログ内の各オプションの詳細については、以下の説明を参照してください。"
 
-#: ../../admin_menu/admin_menu.rst:330
+#: ../../admin_menu/admin_menu.rst:335
 msgid "Resource Policy"
 msgstr "リソースポリシー"
 
-#: ../../admin_menu/admin_menu.rst:322
+#: ../../admin_menu/admin_menu.rst:327
 msgid "CPU: Specify the maximum amount of CPU cores. (max value: 512)"
 msgstr "CPU: 最大CPUコア数を指定します。（最大値: 512）"
 
-#: ../../admin_menu/admin_menu.rst:323
+#: ../../admin_menu/admin_menu.rst:328
 msgid ""
 "Memory: Specify the maximum amount of memory in GB. It would be good "
 "practice to set memory twice as large as the maximum value of GPU memory. "
 "(max value: 1024)"
 msgstr "メモリ: メモリの最大量をGB単位で指定します。GPUメモリの最大値の2倍のメモリを設定することは良い習慣です。（最大値: 1024）"
 
-#: ../../admin_menu/admin_menu.rst:325
+#: ../../admin_menu/admin_menu.rst:330
 msgid ""
 "CUDA-capable GPU: Specify the maximum amount of physical GPUs. If fractional"
 " GPU is enabled by the server, this setting has no effect. (max value: 64)"
@@ -505,7 +503,7 @@ msgstr ""
 "CUDA対応GPU: 物理GPUの最大数量を指定します。サーバーがフラクショナルGPUを有効にしている場合、この設定は影響を与えません。（最大値: "
 "64）"
 
-#: ../../admin_menu/admin_menu.rst:327
+#: ../../admin_menu/admin_menu.rst:332
 msgid ""
 "CUDA-capable GPU (fractional): Fractional GPU (fGPU) is literally split a "
 "single GPU to multiple partitions in order to use GPU efficiently. Notice "
@@ -517,11 +515,11 @@ msgstr ""
 "フラクショナルGPU（fGPU）は、GPUを効率よく使用するために、1台のGPUを複数のパーティションに文字通り分割します。fGPUの最小必要量は各イメージによって異なることに注意してください。サーバーでフラクショナルGPUが有効になっていない場合、この設定は効果がありません。（最大値:"
 " 256）"
 
-#: ../../admin_menu/admin_menu.rst:348
+#: ../../admin_menu/admin_menu.rst:353
 msgid "Sessions"
 msgstr "セッション"
 
-#: ../../admin_menu/admin_menu.rst:333
+#: ../../admin_menu/admin_menu.rst:338
 msgid ""
 "Container Per Session: The maximum number of containers per session. To make"
 " a user to create a cluster session, this value should be greater than 1. "
@@ -530,7 +528,7 @@ msgstr ""
 "セッションごとのコンテナ数: セッションごとに作成できる最大コンテナ数。この値が1より大きい場合、ユーザーはクラスタセッションを作成できます。（最大値:"
 " 100）"
 
-#: ../../admin_menu/admin_menu.rst:336
+#: ../../admin_menu/admin_menu.rst:341
 msgid ""
 "Session Lifetime (sec.): Limits the maximum lifetime of a compute session "
 "from the reservation in the active status, including ``PENDING`` and "
@@ -541,7 +539,7 @@ msgstr ""
 "セッションの有効期間 (秒): ``PENDING`` や ``RUNNING`` "
 "のステータスを含む、アクティブな状態でのリザベーションから計算セッションの最大有効期間を制限します。この時間が経過すると、セッションは完全に利用されている場合でも強制終了されます。これにより、セッションが無制限に実行されるのを防ぐことができます。"
 
-#: ../../admin_menu/admin_menu.rst:341
+#: ../../admin_menu/admin_menu.rst:346
 msgid ""
 "Concurrent Jobs: Maximum number of concurrent compute session per keypair. "
 "If this value is set to 3, for example, users bound to this resource policy "
@@ -551,7 +549,7 @@ msgstr ""
 "キーペアごとの同時コンピュートセッションの最大数。この値が例えば3に設定されている場合、このリソースポリシーに結び付けられたユーザーは同時に3つ以上のコンピュートセッションを作成することはできません。（最大値:"
 " 100）"
 
-#: ../../admin_menu/admin_menu.rst:344
+#: ../../admin_menu/admin_menu.rst:349
 msgid ""
 "Idle timeout (sec.): Configurable period of time during which the user can "
 "leave their session untouched. If there is no activity at all on a compute "
@@ -562,11 +560,11 @@ msgstr ""
 "アイドルタイムアウト (秒): "
 "ユーザーがセッションを操作せずに放置できる設定可能な時間の期間です。計算セッションでアイドルタイムアウト中に全くアクティビティがない場合、セッションはガベージコレクションされ、自動的に破棄されます。「アイドル状態」の基準は様々であり、管理者によって設定されます。（最大値：15552000（約180日））"
 
-#: ../../admin_menu/admin_menu.rst:355
+#: ../../admin_menu/admin_menu.rst:360
 msgid "Folders"
 msgstr "フォルダー"
 
-#: ../../admin_menu/admin_menu.rst:351
+#: ../../admin_menu/admin_menu.rst:356
 msgid ""
 "Allowed hosts: Backend.AI supports many NFS mountpoint. This field limits "
 "the accessibility to them. Even if a NFS named \"data-1\" is mounted on "
@@ -576,25 +574,25 @@ msgstr ""
 "\"data-1\" "
 "という名前のNFSがBackend.AIにマウントされていても、リソースポリシーで許可されていない限り、ユーザーはアクセスできません。"
 
-#: ../../admin_menu/admin_menu.rst:354
+#: ../../admin_menu/admin_menu.rst:359
 msgid ""
 "(Deprecated since 23.09.4) Max. #: the maximum number of storage folders "
 "that can be created/invited. (max value: 100)."
 msgstr "(23.09.4より非推奨) Max. #: 作成/招待可能なストレージフォルダーの最大数。(最大値: 100)。"
 
-#: ../../admin_menu/admin_menu.rst:357
+#: ../../admin_menu/admin_menu.rst:362
 msgid ""
 "In the keypair resource policy list, check that the Resources value of the "
 "default policy has been updated."
 msgstr "キーペアリソースポリシー一覧で、デフォルトポリシーのResources値が更新されていることを確認します。"
 
-#: ../../admin_menu/admin_menu.rst:364
+#: ../../admin_menu/admin_menu.rst:369
 msgid ""
 "You can create a new resource policy by clicking the Create button. Each "
 "setting value is the same as described above."
 msgstr "新しいリソースポリシーを作成するには、作成ボタンをクリックします。各設定値は前述の説明と同じです。"
 
-#: ../../admin_menu/admin_menu.rst:367
+#: ../../admin_menu/admin_menu.rst:372
 msgid ""
 "To create a resource policy and associate it with a keypair, go to the "
 "Credentials tab of the Users page, click the gear button located in the "
@@ -603,7 +601,7 @@ msgid ""
 msgstr ""
 "リソースポリシーを作成し、それをキーペアに関連付けるには、ユーザーページの認証情報タブに移動し、目的のキーペアのコントロール列にある歯車ボタンをクリックして、ポリシー選択フィールドをクリックし、選択してください。"
 
-#: ../../admin_menu/admin_menu.rst:372
+#: ../../admin_menu/admin_menu.rst:377
 msgid ""
 "You can also delete each of resource keypairs by clicking trash can icon in "
 "the Control column. When you click the icon, the confirmation popup will "
@@ -613,7 +611,7 @@ msgstr ""
 "列にあるゴミ箱アイコンをクリックして削除することもできます。アイコンをクリックすると、確認ポップアップが表示されます。[Delete] "
 "ボタンをクリックして消去します。"
 
-#: ../../admin_menu/admin_menu.rst:382
+#: ../../admin_menu/admin_menu.rst:387
 msgid ""
 "If there's any users (including inactive users) following a resource policy "
 "to be deleted, deletion may not be done. Before deleting a resource policy, "
@@ -621,7 +619,7 @@ msgid ""
 msgstr ""
 "削除されるリソースポリシーをフォローしているユーザー（非アクティブなユーザーを含む）がいる場合、削除は行われない場合があります。リソースポリシーを削除する前に、そのリソースポリシーに属するユーザーがいないことを確認してください。"
 
-#: ../../admin_menu/admin_menu.rst:386
+#: ../../admin_menu/admin_menu.rst:391
 msgid ""
 "If you want to hide or show specific columns, click the 'Setting (Gear)' at "
 "the bottom right of the table. This will bring up a dialog where you can "
@@ -633,11 +631,11 @@ msgstr ""
 msgid "Keypair resource policy table settings"
 msgstr "キーペアリソースポリシーテーブル設定"
 
-#: ../../admin_menu/admin_menu.rst:396
+#: ../../admin_menu/admin_menu.rst:401
 msgid "User Resource Policy"
 msgstr "ユーザーリソースポリシー"
 
-#: ../../admin_menu/admin_menu.rst:398
+#: ../../admin_menu/admin_menu.rst:405
 msgid ""
 "Starting from version 24.03, Backend.AI supports user resource policy "
 "management. While each user can have multiple keypairs, a user can only have"
@@ -652,7 +650,7 @@ msgstr ""
 msgid "User resource policy list"
 msgstr "ユーザーリソースポリシーリスト"
 
-#: ../../admin_menu/admin_menu.rst:407
+#: ../../admin_menu/admin_menu.rst:414
 msgid "To create a new user resource policy, click the Create button."
 msgstr "新しいユーザーリソースポリシーを作成するには、作成ボタンをクリックします。"
 
@@ -660,11 +658,11 @@ msgstr "新しいユーザーリソースポリシーを作成するには、作
 msgid "Create user resource policy dialog"
 msgstr "ユーザーリソースポリシーダイアログを作成"
 
-#: ../../admin_menu/admin_menu.rst:414
+#: ../../admin_menu/admin_menu.rst:421
 msgid "Name: The name of the user resource policy."
 msgstr "名前: ユーザーリソースポリシーの名前。"
 
-#: ../../admin_menu/admin_menu.rst:415
+#: ../../admin_menu/admin_menu.rst:422
 msgid ""
 "Max Folder Count: The maximum number of folders that the user can create. If"
 " the user's folder count exceeds this value, user cannot create a new "
@@ -673,7 +671,7 @@ msgstr ""
 "最大フォルダ数: "
 "ユーザーが作成できるフォルダの最大数。この値を超えると、新しいフォルダを作成することはできません。「無制限」に設定されている場合、「∞」と表示されます。"
 
-#: ../../admin_menu/admin_menu.rst:418
+#: ../../admin_menu/admin_menu.rst:425
 msgid ""
 "Max Folder Size: The maximum size of the user's storage space. If user's "
 "storage space exceeds this value, user cannot create a new data folder. If "
@@ -682,7 +680,7 @@ msgstr ""
 "最大フォルダサイズ: "
 "ユーザのストレージスペースの最大サイズ。この値を超えた場合、ユーザは新しいデータフォルダを作成することができません。「無制限」に設定されている場合、「∞」と表示されます。"
 
-#: ../../admin_menu/admin_menu.rst:421
+#: ../../admin_menu/admin_menu.rst:428
 msgid ""
 "Max Session Count Per Model Session: The maximum number of available "
 "sessions per model service created by a user. Increasing this value can put "
@@ -692,7 +690,7 @@ msgstr ""
 "モデルセッションあたりの最大セッション数: "
 "ユーザーによって作成されたモデルサービスごとの利用可能なセッションの最大数。この値を増やすとセッションスケジューラに大きな負荷がかかり、システムダウンにつながる可能性があるので、この設定を調整する際は注意してください。"
 
-#: ../../admin_menu/admin_menu.rst:425
+#: ../../admin_menu/admin_menu.rst:432
 msgid ""
 "Max Customized Image Count: The maximum number of customized images that "
 "user can create. If user's customized image count exceeds this value, user "
@@ -704,28 +702,28 @@ msgstr ""
 "ユーザーが作成できるカスタマイズイメージの最大数です。ユーザーのカスタマイズイメージ数がこの値を超えると、新しいカスタマイズイメージを作成できません。カスタマイズイメージについて詳しく知りたい場合は、:ref:`My"
 " Environments<my-environments>` セクションを参照してください。"
 
-#: ../../admin_menu/admin_menu.rst:429
+#: ../../admin_menu/admin_menu.rst:436
 msgid "ID: The ID of the user resource policy."
 msgstr "ID：ユーザーリソースポリシーのID。"
 
-#: ../../admin_menu/admin_menu.rst:430
+#: ../../admin_menu/admin_menu.rst:437
 msgid ""
 "Created At: The date and time when the user resource policy was created."
 msgstr "作成日: ユーザーリソースポリシーが作成された日時。"
 
-#: ../../admin_menu/admin_menu.rst:433
+#: ../../admin_menu/admin_menu.rst:440
 msgid ""
 "To update, click the 'Setting (Gear)' button in the control column. To "
 "delete, click the trash can button."
 msgstr "更新するには、コントロール列の「設定（ギア）」ボタンをクリックします。削除するには、ゴミ箱ボタンをクリックします。"
 
-#: ../../admin_menu/admin_menu.rst:438 ../../admin_menu/admin_menu.rst:480
+#: ../../admin_menu/admin_menu.rst:445 ../../admin_menu/admin_menu.rst:487
 msgid ""
 "Changing a resource policy may affect all users who use that policy, so use "
 "it with caution."
 msgstr "リソースポリシーを変更すると、そのポリシーを使用しているすべてのユーザーに影響を及ぼす可能性があるため、注意して使用してください。"
 
-#: ../../admin_menu/admin_menu.rst:441
+#: ../../admin_menu/admin_menu.rst:448
 msgid ""
 "Similar to keypair resource policy, users can select and display only "
 "columns users want by clicking the 'Setting (Gear)' button at the bottom "
@@ -733,11 +731,11 @@ msgid ""
 msgstr ""
 "キーペアリソースポリシーと同様に、ユーザーはテーブルの右下にある「設定（ギア）」ボタンをクリックすることで、必要な列だけを選択して表示できます。"
 
-#: ../../admin_menu/admin_menu.rst:446
+#: ../../admin_menu/admin_menu.rst:453
 msgid "Project Resource Policy"
 msgstr "プロジェクトリソースポリシー"
 
-#: ../../admin_menu/admin_menu.rst:448
+#: ../../admin_menu/admin_menu.rst:455
 msgid ""
 "Starting from version 24.03, Backend.AI supports project resource policy "
 "management. Project resource policies manage storage space (quota) and "
@@ -745,7 +743,7 @@ msgid ""
 msgstr ""
 "バージョン24.03から、Backend.AIはプロジェクトリソースポリシー管理をサポートしています。プロジェクトリソースポリシーは、プロジェクトのストレージスペース（クォータ）およびフォルダ関連の制限を管理します。"
 
-#: ../../admin_menu/admin_menu.rst:451
+#: ../../admin_menu/admin_menu.rst:458
 msgid ""
 "When clicking the Project tab of the Resource Policy page, you can see the "
 "list of project resource policy."
@@ -755,7 +753,7 @@ msgstr "リソースポリシーページのプロジェクトタブをクリッ
 msgid "Project resource policy list"
 msgstr "プロジェクトリソースポリシー一覧"
 
-#: ../../admin_menu/admin_menu.rst:457
+#: ../../admin_menu/admin_menu.rst:464
 msgid ""
 "To create a new project resource policy, click the 'Create' button at the "
 "top right of the table."
@@ -765,11 +763,11 @@ msgstr "新しいプロジェクトリソースポリシーを作成するには
 msgid "Create project resource policy dialog"
 msgstr "プロジェクトリソースポリシーダイアログを作成"
 
-#: ../../admin_menu/admin_menu.rst:464
+#: ../../admin_menu/admin_menu.rst:471
 msgid "Name: The name of the project resource policy."
 msgstr "名前: プロジェクトリソースポリシーの名前。"
 
-#: ../../admin_menu/admin_menu.rst:465
+#: ../../admin_menu/admin_menu.rst:472
 msgid ""
 "Max Folder Count: The maximum number of project folders that an "
 "administrator can create. If the project folder count exceeds this value, "
@@ -779,7 +777,7 @@ msgstr ""
 "Max Folder Count: "
 "管理者が作成できるプロジェクトフォルダーの最大数。この値を超えると、管理者は新しいプロジェクトフォルダーを作成できなくなります。「Unlimited」に設定されている場合、「∞」として表示されます。"
 
-#: ../../admin_menu/admin_menu.rst:468
+#: ../../admin_menu/admin_menu.rst:475
 msgid ""
 "Max Folder Size: The maximum size of the project's storage space. If the "
 "project's storage space exceeds this value, the administrator cannot create "
@@ -788,7 +786,7 @@ msgstr ""
 "最大フォルダーサイズ: "
 "プロジェクトのストレージスペースの最大サイズ。この値を超えると、管理者は新しいプロジェクトフォルダーを作成できません。無制限に設定されている場合は、「∞」と表示されます。"
 
-#: ../../admin_menu/admin_menu.rst:472
+#: ../../admin_menu/admin_menu.rst:479
 msgid ""
 "The meaning of each field is similar to the user resource policy. The "
 "difference is that the project resource policy is applied to the project "
@@ -796,7 +794,7 @@ msgid ""
 msgstr ""
 "各フィールドの意味はユーザーリソースポリシーと類似しています。違いは、プロジェクトリソースポリシーがプロジェクトフォルダに適用されるのに対し、ユーザーリソースポリシーはユーザーフォルダに適用される点です。"
 
-#: ../../admin_menu/admin_menu.rst:476
+#: ../../admin_menu/admin_menu.rst:483
 msgid ""
 "If you want to make changes, click the 'Setting (Gear)' button in the "
 "control column. Resource policy names cannot be edited. Deletion can be done"
@@ -804,17 +802,17 @@ msgid ""
 msgstr ""
 "変更を加えたい場合は、コントロール列の「設定（ギア）」ボタンをクリックします。リソースポリシー名は編集できません。削除はゴミ箱アイコンボタンをクリックすることで行えます。"
 
-#: ../../admin_menu/admin_menu.rst:483
+#: ../../admin_menu/admin_menu.rst:490
 msgid ""
 "You can select and display only the columns you want by clicking the "
 "'Setting (Gear)' button at the bottom right of the table."
 msgstr "テーブルの右下にある「設定（ギア）」ボタンをクリックすると、表示したい列を選択して表示できます。"
 
-#: ../../admin_menu/admin_menu.rst:487
+#: ../../admin_menu/admin_menu.rst:494
 msgid "Exporting current resource policy as CSV"
 msgstr "現在のリソースポリシーをCSVとしてエクスポート"
 
-#: ../../admin_menu/admin_menu.rst:489
+#: ../../admin_menu/admin_menu.rst:496
 msgid ""
 "To save the current resource policy as a file, click on the 'Tools' menu "
 "located at the top left of each tab. Once you click the menu, download "
@@ -826,11 +824,11 @@ msgstr ""
 msgid "Keypair export"
 msgstr "キーペアのエクスポート"
 
-#: ../../admin_menu/admin_menu.rst:497
+#: ../../admin_menu/admin_menu.rst:504
 msgid "Manage Images"
 msgstr "イメージを管理"
 
-#: ../../admin_menu/admin_menu.rst:499
+#: ../../admin_menu/admin_menu.rst:506
 msgid ""
 "Admins can manage images, which are used in creating a compute session, in "
 "the Images tab of the Environments page. In the tab, meta information of all"
@@ -842,7 +840,7 @@ msgid ""
 msgstr ""
 "管理者は、環境ページの「Images」タブで計算セッションの作成に使用されるイメージを管理できます。このタブでは、現在Backend.AIサーバーにあるすべてのイメージのメタ情報が表示されます。レジストリ、ネームスペース、イメージ名、イメージのベースOS、ダイジェスト、および各イメージに必要な最小リソースなどの情報を確認できます。1つ以上のエージェントノードにダウンロードされたイメージの場合、各ステータス列に「installed」タグが表示されます。"
 
-#: ../../admin_menu/admin_menu.rst:507
+#: ../../admin_menu/admin_menu.rst:514
 msgid ""
 "The feature to install images by selecting specific agents is currently "
 "under development."
@@ -852,7 +850,7 @@ msgstr "特定のエージェントを選択してイメージをインストー
 msgid "Image list page"
 msgstr "イメージリストページ"
 
-#: ../../admin_menu/admin_menu.rst:513
+#: ../../admin_menu/admin_menu.rst:520
 msgid ""
 "You can change the minimum resource requirements for each image by clicking "
 "the 'Setting (Gear)' in the Controls panel. Each image has hardware and "
@@ -866,7 +864,11 @@ msgid ""
 msgstr ""
 "「コントロールパネル」で「設定（歯車）」をクリックすることで、各イメージの最小リソース要件を変更できます。各イメージには最小限の操作のためのハードウェアおよびリソース要件があります。（例えば、GPUのみのイメージの場合、最小限割り当てられたGPUが必要です。）最小リソース量のデフォルト値は、イメージのメタデータに埋め込まれています。もし各イメージで指定されたリソースよりも少ないリソースでコンピュートセッションの作成が試みられた場合、リクエストは自動的にそのイメージの最小リソース要件に調整され、生成され、中止されることはありません。"
 
-#: ../../admin_menu/admin_menu.rst:523
+#: ../../admin_menu/admin_menu.rst:-1
+msgid "Update image resource setting"
+msgstr "イメージリソース設定を更新する"
+
+#: ../../admin_menu/admin_menu.rst:535
 msgid ""
 "Don't change the minimum resource requirements to an amount less than the "
 "predefined value! The minimum resource requirements included in the image "
@@ -876,11 +878,7 @@ msgid ""
 msgstr ""
 "最小リソース要件を事前定義された値よりも少なくしないでください！イメージメタデータに含まれる最小リソース要件は、テストされ決定された値です。変更したい最小リソース量について確信がない場合は、デフォルトのままにしておいてください。"
 
-#: ../../admin_menu/admin_menu.rst:-1
-msgid "Update image resource setting"
-msgstr "イメージリソース設定を更新する"
-
-#: ../../admin_menu/admin_menu.rst:534
+#: ../../admin_menu/admin_menu.rst:541
 msgid ""
 "Additionally, you can add or modify the supported apps for each image by "
 "clicking the 'Apps' icon located in the Controls column. Once you click the "
@@ -893,7 +891,7 @@ msgstr ""
 msgid "Manage app dialog"
 msgstr "アプリ管理ダイアログ"
 
-#: ../../admin_menu/admin_menu.rst:542
+#: ../../admin_menu/admin_menu.rst:549
 msgid ""
 "In this interface, you can add supported custom applications by clicking the"
 " 'Add' button below. To delete an application, simply click the 'red trash "
@@ -901,7 +899,7 @@ msgid ""
 msgstr ""
 "このインターフェースでは、下の「追加」ボタンをクリックしてサポートされているカスタムアプリケーションを追加できます。アプリケーションを削除するには、各行の右側にある「赤いゴミ箱」ボタンをクリックするだけです。"
 
-#: ../../admin_menu/admin_menu.rst:545
+#: ../../admin_menu/admin_menu.rst:552
 msgid "You need to reinstall the image after changing the managed app."
 msgstr "管理されたアプリを変更した後は、イメージを再インストールする必要があります。"
 
@@ -909,11 +907,11 @@ msgstr "管理されたアプリを変更した後は、イメージを再イン
 msgid "Confirmation dialog for manage app change in image"
 msgstr "画像の管理アプリの変更に関する確認ダイアログ"
 
-#: ../../admin_menu/admin_menu.rst:554
+#: ../../admin_menu/admin_menu.rst:561
 msgid "Manager docker registry"
 msgstr "マネージャードッカーレジストリ"
 
-#: ../../admin_menu/admin_menu.rst:556
+#: ../../admin_menu/admin_menu.rst:563
 msgid ""
 "You can click on the Registries tab in Environments page to see the "
 "information of the docker registry that are currently connected. "
@@ -923,13 +921,13 @@ msgstr ""
 "EnvironmentsページのRegistriesタブをクリックすると、現在接続されているDockerレジストリの情報を確認できます。``cr.backend.ai``"
 " はデフォルトで登録されており、Harborによって提供されるレジストリです。"
 
-#: ../../admin_menu/admin_menu.rst:561
+#: ../../admin_menu/admin_menu.rst:568
 msgid ""
 "In the offline environment, the default registry is not accessible, so click"
 " the trash icon on the right to delete it."
 msgstr "オフライン環境では、デフォルトレジストリにアクセスできないため、右側のゴミ箱アイコンをクリックして削除します。"
 
-#: ../../admin_menu/admin_menu.rst:564
+#: ../../admin_menu/admin_menu.rst:571
 msgid ""
 "Click the refresh icon in Controls to update image metadata for Backend.AI "
 "from the connected registry. Image information which does not have labels "
@@ -941,7 +939,7 @@ msgstr ""
 msgid "Registries page"
 msgstr "レジストリーページ"
 
-#: ../../admin_menu/admin_menu.rst:571
+#: ../../admin_menu/admin_menu.rst:578
 msgid ""
 "You can add your own private docker registry by clicking the ADD REGISTRY "
 "button. Note that Registry Hostname and Registry URL address must be set "
@@ -960,13 +958,13 @@ msgstr ""
 msgid "Add registry dialog"
 msgstr "レジストリ追加ダイアログ"
 
-#: ../../admin_menu/admin_menu.rst:584
+#: ../../admin_menu/admin_menu.rst:591
 msgid ""
 "You can also update the information of an existing registry, except the "
 "hostname."
 msgstr "既存のレジストリの情報も更新できますが、ホスト名は除きます。"
 
-#: ../../admin_menu/admin_menu.rst:587
+#: ../../admin_menu/admin_menu.rst:594
 msgid ""
 "Even if you created a registry and update meta information, users cannot use"
 " the images in the registry, immediately. Just as you had to register the "
@@ -980,11 +978,11 @@ msgid ""
 msgstr ""
 "レジストリを作成してメタ情報を更新しても、ユーザーはすぐにはレジストリ内のイメージを使用することはできません。ストレージホストを使用するために許可されたホストを登録しなければならないのと同様に、レジストリを登録した後に、ドメインまたはプロジェクトレベルで許可されたDockerレジストリフィールドにレジストリを登録して、ドメインまたはプロジェクトのユーザーがレジストリイメージにアクセスできるようにする必要があります。許可されたDockerレジストリは、ドメインとプロジェクト管理を使ってコントロールパネルから登録できます。キーのリソースポリシーで許可されたDockerレジストリを設定する機能はまだ提供されていません。"
 
-#: ../../admin_menu/admin_menu.rst:598
+#: ../../admin_menu/admin_menu.rst:605
 msgid "Manage resource preset"
 msgstr "リソースプリセットを管理"
 
-#: ../../admin_menu/admin_menu.rst:600
+#: ../../admin_menu/admin_menu.rst:607
 msgid ""
 "The following predefined resource presets are displayed in the Resource "
 "allocation panel when creating a compute session. Superadmin can manage "
@@ -996,7 +994,7 @@ msgstr ""
 msgid "Resource presets in compute session launch dialog"
 msgstr "計算セッション起動ダイアログのリソースプリセット"
 
-#: ../../admin_menu/admin_menu.rst:609
+#: ../../admin_menu/admin_menu.rst:616
 msgid ""
 "Go to the Resource Presets tab on the Environment page. You can check the "
 "list of currently defined resource presets."
@@ -1006,24 +1004,26 @@ msgstr "環境ページのリソースプリセットタブに移動します。
 msgid "Resource presets tab"
 msgstr "リソースプリセットタブ"
 
-#: ../../admin_menu/admin_menu.rst:615
+#: ../../admin_menu/admin_menu.rst:622
+#, fuzzy
 msgid ""
 "You can set resources such as CPU, RAM, fGPU, etc. to be provided by the "
 "resource preset by clicking the 'Setting (Gear)' (cogwheel) in the Controls "
-"panel. In the example below, the GPU field is disabled since the GPU "
-"provision mode of the Backend.AI server is set to \"fractional\". After "
-"setting the resources with the desired values, save it and check if the "
-"corresponding preset is displayed when creating a compute session. If "
-"available resources are less than the amount of resources defined in the "
-"preset, the corresponding preset would not be shown."
+"panel. Create or Modify Resource Preset modal shows fields of the resources "
+"currently available. Depending on your server's settings, certain resources "
+"may not be visible. After setting the resources with the desired values, "
+"save it and check if the corresponding preset is displayed when creating a "
+"compute session. If available resources are less than the amount of "
+"resources defined in the preset, the corresponding preset would not be "
+"shown."
 msgstr ""
-"リソースプリセットによって提供されるCPU、RAM、fGPUなどのリソースを設定するには、コントロールパネルの「設定（ギア）」(歯車)をクリックします。以下の例では、Backend.AIサーバーのGPUプロビジョンモードが「fractional」に設定されているため、GPUフィールドが無効になっています。希望する値でリソースを設定した後、それを保存し、コンピュートセッションを作成する際に対応するプリセットが表示されるか確認します。利用可能なリソースがプリセットで定義されたリソース量より少ない場合、対応するプリセットは表示されません。"
+"リソースプリセットによって提供されるCPU、RAM、fGPUなどのリソースを設定するには、コントロールパネルの「設定（ギア）」(歯車)をクリックします。リソースプリセットの作成または変更モーダルには、現在利用可能なリソースのフィールドが表示されます。サーバーの設定によっては、特定のリソースが表示されない場合があります。希望する値でリソースを設定したら、それを保存し、計算セッションを作成する際に対応するプリセットが表示されるか確認してください。利用可能なリソースがプリセットで定義されたリソースの量よりも少ない場合、対応するプリセットは表示されません。"
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Modify resource preset dialog"
 msgstr "リソースプリセットダイアログを変更"
 
-#: ../../admin_menu/admin_menu.rst:629
+#: ../../admin_menu/admin_menu.rst:636
 msgid ""
 "Also you can create resource preset by Clicking CREATE PRESETS button in the"
 " right top of the Resource Presets tab. You cannot create the same resource "
@@ -1037,21 +1037,21 @@ msgstr ""
 msgid "Create resource preset dialog"
 msgstr "リソースプリセット作成ダイアログ"
 
-#: ../../admin_menu/admin_menu.rst:641
+#: ../../admin_menu/admin_menu.rst:648
 msgid "Manage agent nodes"
 msgstr "エージェントノードを管理"
 
-#: ../../admin_menu/admin_menu.rst:643
+#: ../../admin_menu/admin_menu.rst:650
+#, fuzzy
 msgid ""
 "Superadmins can view the list of agent worker nodes, currently connected to "
 "Backend.AI, by visiting the Resources page. You can check agent node's IP, "
-"connecting time, actual resources currently in use, etc. The Web-UI does not"
-" provide the function to manipulate agent nodes."
+"connecting time, actual resources currently in use, etc. The WebUI does not "
+"provide the function to manipulate agent nodes."
 msgstr ""
-"スーパー管理者は、Resourcesページにアクセスすることで、Backend.AIに現在接続されているエージェントワーカーノードのリストを確認できます。エージェントノードのIP、接続時間、現在使用中の実際のリソースなどを確認できます。Web-"
-"UIにはエージェントノードを操作する機能は提供されていません。"
+"スーパーユーザーは、リソースページを訪れることで、Backend.AIに現在接続されているエージェントワーカーノードの一覧を表示できます。エージェントノードのIP、接続時刻、現在使用中の実際のリソースなどを確認できます。WebUIはエージェントノードを操作する機能を提供していません。"
 
-#: ../../admin_menu/admin_menu.rst:649
+#: ../../admin_menu/admin_menu.rst:656
 msgid "Query agent nodes"
 msgstr "エージェントノードを照会"
 
@@ -1059,7 +1059,7 @@ msgstr "エージェントノードを照会"
 msgid "Agent node list"
 msgstr "エージェントノードリスト"
 
-#: ../../admin_menu/admin_menu.rst:654
+#: ../../admin_menu/admin_menu.rst:661
 msgid ""
 "Also You can see exact usage about the resources in the agent worker node by"
 " Click note icon in the Control panel."
@@ -1069,7 +1069,7 @@ msgstr "また、コントロールパネルのノートアイコンをクリッ
 msgid "Detailed agent node usage information"
 msgstr "詳細なエージェントノード使用情報"
 
-#: ../../admin_menu/admin_menu.rst:662
+#: ../../admin_menu/admin_menu.rst:669
 msgid ""
 "On Terminated tab, you can check the information of the agents that has been"
 " connected once and then terminated or disconnected. It can be used as a "
@@ -1082,11 +1082,11 @@ msgstr ""
 msgid "Terminated agent node list"
 msgstr "終了したエージェントノードのリスト"
 
-#: ../../admin_menu/admin_menu.rst:671
+#: ../../admin_menu/admin_menu.rst:678
 msgid "Set schedulable status of agent nodes"
 msgstr "エージェントノードのスケジュール可能状態を設定する"
 
-#: ../../admin_menu/admin_menu.rst:673
+#: ../../admin_menu/admin_menu.rst:680
 msgid ""
 "You may want to prevent new compute sessions from being scheduled to an "
 "Agent service without stopping it. In this case, you can disable the "
@@ -1099,11 +1099,11 @@ msgstr ""
 msgid "Agent settings"
 msgstr "エージェント設定"
 
-#: ../../admin_menu/admin_menu.rst:686
+#: ../../admin_menu/admin_menu.rst:693
 msgid "Manage resource group"
 msgstr "リソースグループを管理する"
 
-#: ../../admin_menu/admin_menu.rst:688
+#: ../../admin_menu/admin_menu.rst:695
 msgid ""
 "Agents can be grouped into units called resource (scaling) groups. For "
 "example, let's say there are 3 agents with V100 GPUs and 2 agents with P100 "
@@ -1114,21 +1114,21 @@ msgstr ""
 "エージェントはリソース（スケーリング）グループと呼ばれるユニットにグループ化できます。例えば、V100 GPUを持つエージェントが3つあり、P100 "
 "GPUを持つエージェントが2つあるとします。ユーザーに対して2種類のGPUを別々に提供したい場合、3つのV100エージェントを1つのリソースグループに、残りの2つのP100エージェントを別のリソースグループにグループ化することができます。"
 
-#: ../../admin_menu/admin_menu.rst:694
+#: ../../admin_menu/admin_menu.rst:701
+#, fuzzy
 msgid ""
 "Adding a specific agent to a specific resource group is not currently "
-"handled in the Web-UI, and it can be done by editing agent config file from "
+"handled in the WebUI, and it can be done by editing agent config file from "
 "the installation location and restart the agent daemon. Management of the "
 "resource groups is possible in Resource Group tab of the Resource page."
 msgstr ""
-"特定のエージェントを特定のリソースグループに追加することは現在Web-"
-"UIでは対応しておらず、インストール場所からエージェントの設定ファイルを編集し、エージェントデーモンを再起動することで行えます。リソースグループの管理は、リソースページのリソースグループタブで可能です。"
+"特定のエージェントを特定のリソースグループに追加することは現在WebUIでは対応していませんが、インストール場所からエージェントの設定ファイルを編集し、エージェントダイモンを再起動することで行うことができます。リソースグループの管理は、リソースページのリソースグループタブで可能です。"
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Resource group tab"
 msgstr "リソースグループタブ"
 
-#: ../../admin_menu/admin_menu.rst:702
+#: ../../admin_menu/admin_menu.rst:709
 msgid ""
 "You can edit a resource group by clicking the 'Setting (Gear)' in the "
 "Control panel. In the Select scheduler field, you can choose the scheduling "
@@ -1149,7 +1149,7 @@ msgstr ""
 msgid "Modify resource group dialog"
 msgstr "リソースグループの変更ダイアログ"
 
-#: ../../admin_menu/admin_menu.rst:715
+#: ../../admin_menu/admin_menu.rst:722
 msgid ""
 "WSProxy Server Address sets the WSProxy address for the resource group's "
 "Agents to use. If you set a URL in this field, WSProxy will relay the "
@@ -1167,13 +1167,13 @@ msgstr ""
 "APIを有効にすると、アプリサービスを使用する際のマネージャーの負担を軽減することができます。また、サービスの展開時に効率とスケーラビリティを向上させることができます。ただし、WSProxyからエージェントノードへの直接接続が利用できない場合は、このフィールドを空にして、従来の方法でトラフィックをマネージャー経由で中継するv1"
 " APIにフォールバックしてください。"
 
-#: ../../admin_menu/admin_menu.rst:724
+#: ../../admin_menu/admin_menu.rst:731
 msgid ""
 "The resource group has further Scheduler Options. The details are described "
 "below."
 msgstr "リソースグループは、さらにスケジューラーオプションを持っています。詳細は以下に記載されています。"
 
-#: ../../admin_menu/admin_menu.rst:726
+#: ../../admin_menu/admin_menu.rst:733
 msgid ""
 "Allowed session types: Since user can choose the type of session, resource "
 "group can allow certain type of session. You should allow at lest one "
@@ -1183,7 +1183,7 @@ msgstr ""
 "許可されるセッションタイプ: "
 "ユーザーがセッションのタイプを選択できるので、リソースグループは特定のタイプのセッションを許可できます。少なくとも一つのセッションタイプを許可する必要があります。許可されるセッションタイプは、インタラクティブ、バッチ、およびインファレンスです。"
 
-#: ../../admin_menu/admin_menu.rst:729
+#: ../../admin_menu/admin_menu.rst:736
 msgid ""
 "Pending timeout: A compute session will be canceled if it stays ``PENDING`` "
 "status for longer than the Pending timeout. When you wish to prevent a "
@@ -1194,7 +1194,7 @@ msgstr ""
 "ステータスのまま保留タイムアウトを超えている場合、そのセッションはキャンセルされます。セッションが無期限にPENDINGのまま残らないようにしたい場合は、この時間を設定してください。保留タイムアウト機能を適用したくない場合は、この値をゼロ"
 " (0) に設定します。"
 
-#: ../../admin_menu/admin_menu.rst:734
+#: ../../admin_menu/admin_menu.rst:741
 msgid ""
 "The number of retries to skip pending session: The number of retries the "
 "scheduler tries before skipping a PENDING session. It can be configured to "
@@ -1211,7 +1211,7 @@ msgstr ""
 msgid "Modify resource group scheduler options"
 msgstr "リソースグループのスケジューラーオプションを修正"
 
-#: ../../admin_menu/admin_menu.rst:746
+#: ../../admin_menu/admin_menu.rst:753
 msgid ""
 "You can create a new resource policy by clicking the CREATE button. Likewise"
 " other creating options, you cannot create a resource policy with the name "
@@ -1223,11 +1223,11 @@ msgstr ""
 msgid "Create resource group dialog"
 msgstr "リソースグループ作成ダイアログ"
 
-#: ../../admin_menu/admin_menu.rst:757
+#: ../../admin_menu/admin_menu.rst:764
 msgid "Storages"
 msgstr "ストレージ"
 
-#: ../../admin_menu/admin_menu.rst:759
+#: ../../admin_menu/admin_menu.rst:766
 msgid ""
 "On STORAGES tab, you can see what kind of mount volumes (usually NFS) exist."
 " From 23.03 version, We provide per-user/per-project quota setting on "
@@ -1237,14 +1237,14 @@ msgid ""
 msgstr ""
 "STORAGESタブでは、どのようなマウントボリューム（通常はNFS）が存在するかを確認できます。バージョン23.03から、クォータ管理をサポートするストレージ上で、ユーザーごと、プロジェクトごとのクォータ設定を提供しています。この機能を使用することで、管理者は各ユーザーおよびプロジェクトに基づいたフォルダごとの正確なストレージ使用量を簡単に管理および監視できます。"
 
-#: ../../admin_menu/admin_menu.rst:765
+#: ../../admin_menu/admin_menu.rst:772
 msgid ""
 "In order to set quota, you need to first access to storages tab in resource "
 "page. And then, click 'Setting (Gear)' in control column."
 msgstr ""
 "クォータを設定するには、まずリソースページのストレージタブにアクセスする必要があります。その後、コントロール列の「設定（ギア）」をクリックします。"
 
-#: ../../admin_menu/admin_menu.rst:769
+#: ../../admin_menu/admin_menu.rst:776
 msgid ""
 "Please remind that quota setting is only available in storage that provides "
 "quota setting (e.g. XFS, CephFS, NetApp, Purestorage, etc.). Although you "
@@ -1255,66 +1255,66 @@ msgstr ""
 "クォータ設定は、クォータ設定を提供するストレージ（例：XFS、CephFS、NetApp、Purestorage "
 "など）でのみ利用可能であることに注意してください。ストレージに関係なくクォータ設定ページでストレージの使用状況を確認できますが、内部でクォータ設定をサポートしていないクォータの設定は構成できません。"
 
-#: ../../admin_menu/admin_menu.rst:779
+#: ../../admin_menu/admin_menu.rst:786
 msgid "Quota Setting Panel"
 msgstr "クオータ設定パネル"
 
-#: ../../admin_menu/admin_menu.rst:781
+#: ../../admin_menu/admin_menu.rst:788
 msgid ""
 "In Quota setting page, there are two panels that represent the corresponding"
 " items for each panel's title."
 msgstr "Quota設定ページには、各パネルのタイトルに対応するアイテムを表す2つのパネルがあります。"
 
-#: ../../admin_menu/admin_menu.rst:789
+#: ../../admin_menu/admin_menu.rst:796
 msgid "Overview panel"
 msgstr "概要パネル"
 
-#: ../../admin_menu/admin_menu.rst:786
+#: ../../admin_menu/admin_menu.rst:793
 msgid "Usage: Shows the actual amount usage of the selected storage."
 msgstr "使用量: 選択したストレージの実際の使用量を表示します。"
 
-#: ../../admin_menu/admin_menu.rst:787
+#: ../../admin_menu/admin_menu.rst:794
 msgid "Endpoint: Represents the mount point of the selected storage."
 msgstr "エンドポイント: 選択されたストレージのマウントポイントを表します。"
 
-#: ../../admin_menu/admin_menu.rst:788
+#: ../../admin_menu/admin_menu.rst:795
 msgid "Backend Type: The type of storage."
 msgstr "バックエンドタイプ: ストレージのタイプ。"
 
-#: ../../admin_menu/admin_menu.rst:789
+#: ../../admin_menu/admin_menu.rst:796
 msgid "Capabilities: The supported feature of the selected storage."
 msgstr "機能: 選択されたストレージのサポートされている機能。"
 
-#: ../../admin_menu/admin_menu.rst:797
+#: ../../admin_menu/admin_menu.rst:804
 msgid "Quota Settings"
 msgstr "クォータ設定"
 
-#: ../../admin_menu/admin_menu.rst:792
+#: ../../admin_menu/admin_menu.rst:799
 msgid "For User: Configure per-user quota setting here."
 msgstr "ユーザー向け: ここでユーザーごとのクォータ設定を構成します。"
 
-#: ../../admin_menu/admin_menu.rst:793
+#: ../../admin_menu/admin_menu.rst:800
 msgid "For Project: Configure per-project quota(project-folder) setting here."
 msgstr "プロジェクトの場合: ここでプロジェクトごとのクォータ（project-folder）設定を構成します。"
 
-#: ../../admin_menu/admin_menu.rst:794
+#: ../../admin_menu/admin_menu.rst:801
 msgid "ID: Corresponds to user or project id."
 msgstr "ID: ユーザーまたはプロジェクトのIDに対応します。"
 
-#: ../../admin_menu/admin_menu.rst:795
+#: ../../admin_menu/admin_menu.rst:802
 msgid "Hard Limit (GB): Currently set hard limit quota for selected quota."
 msgstr "ハードリミット (GB): 選択されたクォータに対して現在設定されているハードリミットクォータ。"
 
-#: ../../admin_menu/admin_menu.rst:796
+#: ../../admin_menu/admin_menu.rst:803
 msgid ""
 "Control: Provides editing the hard limit or even deleting the quota setting."
 msgstr "制御: ハードリミットの編集やクォータ設定の削除を行う機能を提供します。"
 
-#: ../../admin_menu/admin_menu.rst:800
+#: ../../admin_menu/admin_menu.rst:807
 msgid "Set User Quota"
 msgstr "ユーザークォータを設定"
 
-#: ../../admin_menu/admin_menu.rst:802
+#: ../../admin_menu/admin_menu.rst:809
 msgid ""
 "In Backend.AI, there are two types of vfolders created by user and "
 "admin(project). In this section, we would like to show how to check current "
@@ -1330,7 +1330,7 @@ msgstr ""
 "になっていることを確認してください。次に、確認して編集したいユーザーを選択します。すでにクオータを設定している場合、ユーザーの id に対応するクオータ"
 " id と、その設定がテーブルに表示されています。"
 
-#: ../../admin_menu/admin_menu.rst:810
+#: ../../admin_menu/admin_menu.rst:817
 msgid ""
 "Of course, if you want to edit the quota, you can simply click the Edit "
 "button in the control column. After Clicking ``Edit`` button, you may see "
@@ -1342,11 +1342,11 @@ msgstr ""
 "ボタンをクリックすると、クォータ設定を構成できる小さなモーダルが表示されます。正確な値を入力した後、``OK`` "
 "ボタンをクリックすることを忘れないでください、さもなければ変更は適用されません。"
 
-#: ../../admin_menu/admin_menu.rst:817
+#: ../../admin_menu/admin_menu.rst:824
 msgid "Set Project Quota"
 msgstr "プロジェクトクォータを設定"
 
-#: ../../admin_menu/admin_menu.rst:819
+#: ../../admin_menu/admin_menu.rst:826
 msgid ""
 "Setting a quota on project-folder is similar to setting a user quota. The "
 "difference between setting project quota and user quota is to confirm "
@@ -1357,11 +1357,11 @@ msgid ""
 msgstr ""
 "プロジェクトフォルダにクォータを設定することは、ユーザークォータを設定することと似ています。プロジェクトクォータとユーザークォータの設定の違いは、プロジェクトクォータを設定するには、プロジェクトが依存しているドメインを選択するという追加の手続きが必要であることです。それ以外は同じです。下の図のように、まずドメインを選択し、その後プロジェクトを選択する必要があります。"
 
-#: ../../admin_menu/admin_menu.rst:831
+#: ../../admin_menu/admin_menu.rst:838
 msgid "Unset Quota"
 msgstr "クォータの解除"
 
-#: ../../admin_menu/admin_menu.rst:833
+#: ../../admin_menu/admin_menu.rst:840
 msgid ""
 "We also provides the feature to unset the quota. Please remind that after "
 "removing the quota setting, quota will automatically follows user or project"
@@ -1376,7 +1376,7 @@ msgstr ""
 "また、クォータを解除する機能も提供しています。クォータ設定を解除すると、クォータは自動的にユーザーまたはプロジェクトのデフォルトクォータに従うことになりますが、これはWebUIでは設定できないことを覚えておいてください。デフォルトクォータ設定を変更したい場合は、管理者専用ページにアクセスする必要があるかもしれません。コントロール列の「解除」ボタンをクリックすると、小さなスナックバーのメッセージが表示され、現在のクォータ設定を本当に削除したいか確認します。スナックバーのメッセージで「OK」ボタンをクリックすると、クォータ設定が削除され、クォータタイプ（ユーザー"
 " / プロジェクト）に応じた対応するクォータに自動的にリセットされます。"
 
-#: ../../admin_menu/admin_menu.rst:844
+#: ../../admin_menu/admin_menu.rst:851
 msgid ""
 "If there's no config per user/project, then corresponding values in the "
 "user/project resource policy will be set as a default value. For example, If"
@@ -1385,11 +1385,11 @@ msgid ""
 msgstr ""
 "ユーザー/プロジェクトごとに設定がない場合、ユーザー/プロジェクトのリソースポリシー内の対応する値がデフォルト値として設定されます。例えば、クォータのハードリミット値が設定されていない場合、リソースポリシー内の``max_vfolder_size``の値がデフォルト値として使用されます。"
 
-#: ../../admin_menu/admin_menu.rst:852
+#: ../../admin_menu/admin_menu.rst:859
 msgid "Download session lists"
 msgstr "セッションリストをダウンロード"
 
-#: ../../admin_menu/admin_menu.rst:854
+#: ../../admin_menu/admin_menu.rst:861
 msgid ""
 "There's additional feature in Session page for admin. On the right side of "
 "the FINISHED tab there is a menu marked with ``...``. When you click this "
@@ -1397,7 +1397,7 @@ msgid ""
 msgstr ""
 "管理者用のセッションページに追加機能があります。FINISHEDタブの右側には「...」でマーキングされたメニューがあります。このメニューをクリックすると、サブメニューとしてCSVのエクスポートが表示されます。"
 
-#: ../../admin_menu/admin_menu.rst:860
+#: ../../admin_menu/admin_menu.rst:867
 msgid ""
 "If you click this menu, you can download the information of the comcpute "
 "sessions created so far in CSV format. After the following dialog opens, "
@@ -1407,11 +1407,11 @@ msgid ""
 msgstr ""
 "このメニューをクリックすると、これまでに作成された計算セッションの情報をCSV形式でダウンロードすることができます。次のダイアログが開いたら、適切なファイル名を入力し（必要に応じて）、EXPORTボタンをクリックするとCSVファイルが取得できます。ファイル名は最大255文字まで指定できることに注意してください。"
 
-#: ../../admin_menu/admin_menu.rst:871
+#: ../../admin_menu/admin_menu.rst:878
 msgid "System settings"
 msgstr "システム設定"
 
-#: ../../admin_menu/admin_menu.rst:873
+#: ../../admin_menu/admin_menu.rst:880
 msgid ""
 "In the Configuration page, you can see main settings of Backend.AI server. "
 "Currently, it provides several controls which can change and list settings."
@@ -1419,7 +1419,7 @@ msgstr ""
 "設定ページでは、Backend.AI "
 "サーバーの主な設定を確認できます。現在、設定を変更および一覧表示するためのいくつかのコントロールが提供されています。"
 
-#: ../../admin_menu/admin_menu.rst:877
+#: ../../admin_menu/admin_menu.rst:884
 msgid ""
 "You can change image auto install and update rule by selecting one option "
 "from ``Digest``, ``Tag``, ``None``. ``Digest`` is kind of checksum for the "
@@ -1432,7 +1432,7 @@ msgstr ""
 "はイメージの整合性を検証し、重複したレイヤーを再利用することでイメージのダウンロード効率を向上させる一種のチェックサムです。``Tag`` "
 "は開発時のオプション専用であり、イメージの整合性を保証しません。"
 
-#: ../../admin_menu/admin_menu.rst:885
+#: ../../admin_menu/admin_menu.rst:892
 msgid ""
 "Don't change rule selection unless you completely understand the meaning of "
 "each rule."
@@ -1442,7 +1442,7 @@ msgstr "各ルールの意味を完全に理解している場合を除き、ル
 msgid "System setting about image"
 msgstr "イメージに関するシステム設定"
 
-#: ../../admin_menu/admin_menu.rst:890
+#: ../../admin_menu/admin_menu.rst:897
 msgid "You can also change settings for scaling and plugins."
 msgstr "スケーリングとプラグインの設定も変更できます。"
 
@@ -1450,7 +1450,7 @@ msgstr "スケーリングとプラグインの設定も変更できます。"
 msgid "System setting about scaling and plugins"
 msgstr "スケーリングおよびプラグインに関するシステム設定"
 
-#: ../../admin_menu/admin_menu.rst:895
+#: ../../admin_menu/admin_menu.rst:902
 msgid ""
 "When a user launches a multi-node cluster session, which is introduced at "
 "version 20.09, Backend.AI will dynamically create an overlay network to "
@@ -1465,7 +1465,7 @@ msgstr ""
 msgid "Overlay network setting dialog"
 msgstr "オーバーレイネットワーク設定ダイアログ"
 
-#: ../../admin_menu/admin_menu.rst:907
+#: ../../admin_menu/admin_menu.rst:914
 msgid ""
 "For more information about Backend.AI Cluster session, please refer to "
 ":ref:`Backend.AI Cluster Compute Session<backendai-cluster-compute-session>`"
@@ -1474,7 +1474,7 @@ msgstr ""
 "Backend.AI クラスターセッションの詳細については、:ref:`Backend.AI クラスターコンピュートセッション<backendai-"
 "cluster-compute-session>` セクションを参照してください。"
 
-#: ../../admin_menu/admin_menu.rst:910
+#: ../../admin_menu/admin_menu.rst:917
 msgid ""
 "You can edit the configuration per job scheduler by clicking the Scheduler's"
 " config button. The values in the scheduler setting are the defaults to use "
@@ -1486,7 +1486,7 @@ msgstr ""
 ":ref:`resource group<scheduling-methods>` "
 "にスケジューラー設定がない場合に使用されるデフォルトです。リソースグループ固有の設定がある場合、この値は無視されます。"
 
-#: ../../admin_menu/admin_menu.rst:915
+#: ../../admin_menu/admin_menu.rst:922
 msgid ""
 "Currently supported scheduling methods include ``FIFO``, ``LIFO``, and "
 "``DRF``. Each method of scheduling is exactly the same as the "
@@ -1505,27 +1505,27 @@ msgstr ""
 msgid "System setting dialog scheduler settings"
 msgstr "システム設定ダイアログ スケジューラー設定"
 
-#: ../../admin_menu/admin_menu.rst:928
+#: ../../admin_menu/admin_menu.rst:935
 msgid "We will continue to add broader range of setting controls."
 msgstr "私たちは引き続き、より幅広い設定コントロールを追加していきます。"
 
-#: ../../admin_menu/admin_menu.rst:931
+#: ../../admin_menu/admin_menu.rst:938
 msgid ""
 "System settings are default settings. If resource group has certain value, "
 "then it overrides configured value in system settings."
 msgstr "システム設定はデフォルト設定です。リソースグループに特定の値がある場合、それがシステム設定で構成された値を上書きします。"
 
-#: ../../admin_menu/admin_menu.rst:936
+#: ../../admin_menu/admin_menu.rst:943
 msgid "Server management"
 msgstr "サーバー管理"
 
-#: ../../admin_menu/admin_menu.rst:938
+#: ../../admin_menu/admin_menu.rst:945
 msgid ""
 "Go to the Maintenance page and you will see some buttons to manage the "
 "server."
 msgstr "メンテナンスページにアクセスすると、サーバーを管理するためのいくつかのボタンが表示されます。"
 
-#: ../../admin_menu/admin_menu.rst:940
+#: ../../admin_menu/admin_menu.rst:947
 msgid ""
 "RECALCULATE USAGE: Occasionally, due to unstable network connections or "
 "container management problem of Docker daemon, there may be a case where the"
@@ -1536,7 +1536,7 @@ msgstr ""
 "使用量を再計算: "
 "不安定なネットワーク接続やDockerデーモンのコンテナ管理の問題によって、Backend.AIが占有しているリソースが実際にコンテナで使用されているリソースと一致しない場合があります。この場合、使用量を再計算ボタンをクリックしてリソースの占有状況を手動で修正してください。"
 
-#: ../../admin_menu/admin_menu.rst:945
+#: ../../admin_menu/admin_menu.rst:952
 msgid ""
 "RESCAN IMAGES: Update image meta information from all registered Docker "
 "registries. It can be used when a new image is pushed to a Backend.AI-"
@@ -1549,17 +1549,17 @@ msgstr ""
 msgid "Maintenance page"
 msgstr "メンテナンスページ"
 
-#: ../../admin_menu/admin_menu.rst:955
+#: ../../admin_menu/admin_menu.rst:962
 msgid ""
 "We will continue to add other settings needed for management, such as "
 "removing unused images or registering periodic maintenance schedules."
 msgstr "未使用のイメージの削除や定期的なメンテナンススケジュールの登録など、管理に必要な他の設定を追加し続けます。"
 
-#: ../../admin_menu/admin_menu.rst:960
+#: ../../admin_menu/admin_menu.rst:967
 msgid "Detailed Information"
 msgstr "詳細情報"
 
-#: ../../admin_menu/admin_menu.rst:962
+#: ../../admin_menu/admin_menu.rst:969
 msgid ""
 "In Information page, you can see several detailed information and status of "
 "each feature. To see Manager version and API version, check the Core panel. "
@@ -1568,7 +1568,7 @@ msgid ""
 msgstr ""
 "情報ページでは、各機能の詳細情報とステータスを確認できます。マネージャのバージョンとAPIバージョンを確認するには、Coreパネルをチェックしてください。Backend.AIの各コンポーネントが互換性があるかどうか確認するには、Componentパネルをチェックしてください。"
 
-#: ../../admin_menu/admin_menu.rst:968
+#: ../../admin_menu/admin_menu.rst:975
 msgid "This page is only for showing current information."
 msgstr "このページは現在の情報を表示するためだけのものです。"
 
@@ -1579,3 +1579,14 @@ msgstr "インフォメーションページ"
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Information page 2"
 msgstr "情報ページ 2"
+
+#~ msgid ""
+#~ "In each of USERS, CREDENTIALS tabs, there is an icon (``...``) on the right "
+#~ "side of the tab header. Clicking this shows export CSV menu, which again "
+#~ "brings up a CSV export dialog for each tabs. By giving an appropriate file "
+#~ "name, if necessary, and clicking EXPORT CSV FILE button, you can download "
+#~ "the list of users, keypairs."
+#~ msgstr ""
+#~ "USERS、CREDENTIALS "
+#~ "タブのそれぞれに、タブヘッダーの右側にアイコン（``...``）があります。これをクリックするとCSVエクスポートメニューが表示され、再び各タブのCSVエクスポートダイアログが表示されます。必要に応じて適切なファイル名を指定し、EXPORT"
+#~ " CSV FILEボタンをクリックすると、ユーザーやキーペアのリストをダウンロードできます。"
