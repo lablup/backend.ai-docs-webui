@@ -292,6 +292,20 @@ accessible resources.
    utilize SM (streaming multiprocessor) and GPU memory corresponding to 0.2
    physical GPU for the session.
 
+
+See Session details
+-------------------
+
+.. image:: session_detail.png
+   :width: 100%
+   :align: center
+
+For detailed information on the session, click the session name in the session list.
+The session details page shows the information of the session, such as the
+session ID, status, type, environment, mount information, resource allocation, reserved time, 
+elapsed time, and resource usage including network I/O. 
+
+
 .. _use_session:
 
 

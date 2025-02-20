@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 24.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-20 14:43+0900\n"
+"POT-Creation-Date: 2025-02-20 18:40+0900\n"
 "PO-Revision-Date: 2024-03-05 16:00+0900\n"
 "Last-Translator: \n"
 "Language: ko_KR\n"
@@ -565,11 +565,27 @@ msgstr ""
 "0.2 물리 GPU 를 뜻합니다. 이 때 1 FGPU 를 설정하여 연산 세션을 생성하면, 그 세션에서는 0.2 물리 GPU 에 "
 "해당하는 SM(streaming multiprocessor) 과 GPU 메모리를 활용할 수 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:299
+#: ../../sessions_all/sessions_all.rst:297
+msgid "See Session details"
+msgstr "세션 상세정보 확인하기"
+
+#: ../../sessions_all/sessions_all.rst:303
+msgid ""
+"For detailed information on the session, click the session name in the "
+"session list. The session details page shows the information of the "
+"session, such as the session ID, status, type, environment, mount "
+"information, resource allocation, reserved time, elapsed time, and "
+"resource usage including network I/O."
+msgstr ""
+"세션에 대한 상세정보를 확인하려면, 세션 리스트의 세션명을 클릭하십시오. "
+"세션 디테일 페이지는 세션ID, 타입, 실행환경, 마운트정보, 할당된 자원, 예약된 시간과, 경과 시간, 그리고 "
+"네트워크 I/O를 포함한 자원 사용량과 같은 세션 정보를 보여줍니다." 
+
+#: ../../sessions_all/sessions_all.rst:313
 msgid "Use Jupyter Notebook"
 msgstr "Jupyter Notebook 사용하기"
 
-#: ../../sessions_all/sessions_all.rst:301
+#: ../../sessions_all/sessions_all.rst:315
 msgid ""
 "This section is about isong and managing compute sessions that are "
 "already running. On Control panel, there are several icons in the session"
@@ -581,13 +597,13 @@ msgstr ""
 "있습니다. 제일 첫 아이콘을 클릭하면 다음 그림과 같이 앱 런처가 뜨면서 해당 세션이 지원하는 몇 가지 앱 서비스가 뜨게 됩니다. "
 "앱 런처 대화창은 연산 세션 생성 직후 자동으로 열리기도 합니다."
 
-#: ../../sessions_all/sessions_all.rst:314
+#: ../../sessions_all/sessions_all.rst:328
 msgid ""
 "There are two check options under the app icons. Opening the app with "
 "each item checked applies the following features, respectively:"
 msgstr "앱 아이콘 아래에는 두 가지 체크 옵션이 있습니다. 각 항목을 체크하고 앱을 띄우면 다음과 같은 기능이 반영됩니다:"
 
-#: ../../sessions_all/sessions_all.rst:317
+#: ../../sessions_all/sessions_all.rst:331
 msgid ""
 "Open app to public: Open the app to the public. Basically, web services "
 "such as Terminal and Jupyter Notebook services are not accessible by "
@@ -602,7 +618,7 @@ msgstr ""
 "서비스 URL(및 포트 번호)을 아는 사람이 접근하고 사용할 수 있습니다. 물론 사용자가 서비스에 접근하려면 네트워크 경로가 "
 "있어야합니다."
 
-#: ../../sessions_all/sessions_all.rst:323
+#: ../../sessions_all/sessions_all.rst:337
 msgid ""
 "Try preferred port: Without this option checked, a port number for the "
 "web service is randomly assigned from the port pool prepared in advance "
@@ -617,15 +633,15 @@ msgstr ""
 " 풀에 존재하지 않거나 다른 서비스가 이미 포트를 사용 중일 수 있기 때문에 원하는 포트가 항상 할당된다는 보장은 없습니다. 이 "
 "경우 포트 번호는 임의로 할당됩니다."
 
-#: ../../sessions_all/sessions_all.rst:331
+#: ../../sessions_all/sessions_all.rst:345
 msgid "Depending on the system configuration, these options may not be shown."
 msgstr "시스템 설정에 따라, 이 옵션들은 보이지 않을 수도 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:333
+#: ../../sessions_all/sessions_all.rst:347
 msgid "Let's click on Jupyter Notebook."
 msgstr "Jupyter Notebook 을 클릭해봅시다."
 
-#: ../../sessions_all/sessions_all.rst:337
+#: ../../sessions_all/sessions_all.rst:351
 msgid ""
 "Pop up windows will show that Jupyter Notebook is running. This notebook "
 "was created inside a running compute session and can be used easily with "
@@ -640,7 +656,7 @@ msgstr ""
 "제공하는 언어 환경 및 라이브러리를 그대로 활용할 수 있어 별도의 패키지 설치 과정이 필요 없습니다. 자세한 Jupyter "
 "Notebook 사용 법은 공식 문서 등을 참고하시기 바랍니다."
 
-#: ../../sessions_all/sessions_all.rst:344
+#: ../../sessions_all/sessions_all.rst:358
 msgid ""
 "``id_container file`` in the notebook's file explorer, contains a private"
 " SSH key. If necessary, users can download it and use it for SSH / SFTP "
@@ -649,7 +665,7 @@ msgstr ""
 "Notebook 의 파일 탐색기에서 ``id_container`` 파일은 private SSH key 를 담고 있습니다. 필요할 "
 "경우 다운로드 하여 컨테이너로의 SSH/SFTP 접속에 이용할 수 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:348
+#: ../../sessions_all/sessions_all.rst:362
 msgid ""
 "Click the 'NEW' button at the top right and select the Notebook for "
 "Backend.AI, then the ipynb window appears where users can enter their own"
@@ -658,7 +674,7 @@ msgstr ""
 "우측 상단의 NEW 버튼을 클릭한 후 Backend.AI 용 Notebook 을 선택하면 새로운 코드를 입력할 수 있는 ipynb "
 "창이 뜹니다."
 
-#: ../../sessions_all/sessions_all.rst:355
+#: ../../sessions_all/sessions_all.rst:369
 msgid ""
 "In this window, users can enter and execute any code that they want by "
 "using the environment that session provides. The code is executed on one "
@@ -669,7 +685,7 @@ msgstr ""
 "이 창에서 세션 환경에 맞는 코드를 입력하고 실행해볼 수 있습니다. 코드는 Backend.AI 서버를 구성하는 노드 중 연산 세션이"
 " 실제로 생성된 노드에서 실행이 되며, 로컬 머신에는 별도 환경을 구성할 필요가 없습니다."
 
-#: ../../sessions_all/sessions_all.rst:362
+#: ../../sessions_all/sessions_all.rst:376
 msgid ""
 "When window is closed, ``Untitled.ipynb`` file can be founded in the "
 "notebook file explorer. Note that the files created here are deleted when"
@@ -680,11 +696,11 @@ msgstr ""
 "있습니다. 여기 생성된 파일은 세션을 삭제할 경우 같이 삭제되는 것에 주의하십시오. 생성된 파일을 세션이 사라지더라도 보존하는 "
 "방법은 폴더 섹션에서 설명합니다."
 
-#: ../../sessions_all/sessions_all.rst:370
+#: ../../sessions_all/sessions_all.rst:384
 msgid "Use web terminal"
 msgstr "웹 터미널 활용"
 
-#: ../../sessions_all/sessions_all.rst:372
+#: ../../sessions_all/sessions_all.rst:386
 msgid ""
 "This section will explain how to use the web terminal. Click the terminal"
 " icon(second button in the Control panel) to use the container's ttyd "
@@ -701,7 +717,7 @@ msgstr ""
 "``Untitled.ipynb`` 파일이 ``ls`` 명령과 함께 나열되는 것을 볼 수 있습니다. 이는 두 앱이 동일한 컨테이너 "
 "환경에서 실행되고 있음을 보여줍니다."
 
-#: ../../sessions_all/sessions_all.rst:382
+#: ../../sessions_all/sessions_all.rst:396
 msgid ""
 "Files created here can also be immediately seen in the Jupyter Notebook "
 "as well. Conversely, changes made to files in Jupyter Notebook can also "
@@ -712,7 +728,7 @@ msgstr ""
 "Jupyter Notebook 에서 편집한 파일의 변경 사항도 터미널에서 바로 확인할 수 있습니다. 같은 연산 세션을 사용하고 있기"
 " 때문입니다."
 
-#: ../../sessions_all/sessions_all.rst:385
+#: ../../sessions_all/sessions_all.rst:399
 msgid ""
 "In addition to this, users can use web-based services such as "
 "TensorBoard, Jupyter Lab, etc., depending on the type of environments "
@@ -721,17 +737,17 @@ msgstr ""
 "이 외에도 연산 세션이 제공하는 서비스의 종류에 따라 TensorBoard, Jupyter Lab 등과 같은 웹 기반 서비스를 "
 "이용할 수 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:390
+#: ../../sessions_all/sessions_all.rst:404
 msgid "Query compute session log"
 msgstr "연산 세션 로그 조회"
 
-#: ../../sessions_all/sessions_all.rst:392
+#: ../../sessions_all/sessions_all.rst:406
 msgid ""
 "Users can view the log of the compute session by clicking the last icon "
 "in the Control panel of the running compute session."
 msgstr "돌아가고 있는 연산 세션의 Control 열의 마지막 아이콘을 클릭하면 연산 세션의 로그를 조회할 수 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:398
+#: ../../sessions_all/sessions_all.rst:412
 msgid ""
 "From 22.09, users can download session log by clicking download button on"
 " upper-right side of the dialog. This feature is helpful for tracking "
@@ -740,11 +756,11 @@ msgstr ""
 "22.09 버전부터, 다이얼로그 우상단에 위치한 다운로드 버튼을 클릭해 세션 컨테이너 로그를 내려받을 수 있습니다. 이 기능은 "
 "산출물 추적에 유용하게 사용됩니다."
 
-#: ../../sessions_all/sessions_all.rst:402
+#: ../../sessions_all/sessions_all.rst:416
 msgid "Rename running session"
 msgstr "실행중인 세션 이름 변경하기"
 
-#: ../../sessions_all/sessions_all.rst:404
+#: ../../sessions_all/sessions_all.rst:418
 msgid ""
 "Name of the active session can be changed. Click the 'Edit' icon in the "
 "session information column. Write down a new name and click the 'Confirm'"
@@ -755,11 +771,11 @@ msgstr ""
 "누르기만 하면 됩니다. 다만, 새로운 세션 이름도 :ref:`세션 이름 작성 규칙<session-naming-rule>` 은 따라야"
 " 합니다."
 
-#: ../../sessions_all/sessions_all.rst:414
+#: ../../sessions_all/sessions_all.rst:428
 msgid "Delete a compute session"
 msgstr "연산 세션 삭제하기"
 
-#: ../../sessions_all/sessions_all.rst:416
+#: ../../sessions_all/sessions_all.rst:430
 msgid ""
 "To terminate a specific session, simply click on the red power icon and "
 "click OKAY button in the dialog. Since the data in the folder inside the "
@@ -770,11 +786,11 @@ msgstr ""
 "특정 세션을 삭제하기 위해서는 빨간색 전원 아이콘을 누르면 됩니다. 연산 세션 내부 폴더의 데이터는 연산 세션이 종료되는 순간 같이"
 " 삭제되므로, 계속 유지해야 하는 데이터라면 마운트 한 폴더에 옮기거나 처음부터 폴더에 업로드하는 것을 권합니다."
 
-#: ../../sessions_all/sessions_all.rst:427
+#: ../../sessions_all/sessions_all.rst:441
 msgid "Idleness Checks"
 msgstr "유휴 상태 검사"
 
-#: ../../sessions_all/sessions_all.rst:429
+#: ../../sessions_all/sessions_all.rst:443
 msgid ""
 "Backend.AI supports three types of inactivity (idleness) criteria for "
 "automatic garbage collection of compute sessions: Max Session Lifetime, "
@@ -783,20 +799,20 @@ msgstr ""
 "Backend.AI는 최대 세션 수명 시간, 네트워크 트래픽 기반 유휴 시간, 사용량 기반 자원 수거를 기준으로 세션이 자동으로 "
 "삭제될 수 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:433
+#: ../../sessions_all/sessions_all.rst:447
 msgid ""
 "Idle checkers(inactivity criterion) will be displayed in the idle checks "
 "column of the session list."
 msgstr "연산 세션 종료 기준은 유휴 상태 검사 컬럼에서 확인할 수 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:439
+#: ../../sessions_all/sessions_all.rst:453
 msgid ""
 "The meaning of idle checkers are as follows, and more detailed "
 "explanations can be found by clicking the information (i) icon in the "
 "idle checks column."
 msgstr "각 항목의 의미는 다음과 같으며, 우측의 정보(i) 버튼을 클릭해서 자세한 설명을 확인할 수도 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:442
+#: ../../sessions_all/sessions_all.rst:456
 msgid ""
 "Max Session Lifetime: Force-terminate sessions after this time from "
 "creation. This measure prevents sessions from running indefinitely."
@@ -804,7 +820,7 @@ msgstr ""
 "최대 세션 수명 시간: 세션 생성 후 이 시간이 지나면 세션을 강제 종료합니다. 이는 세션이 무한히 실행되는 것을 방지하기 위한 "
 "조치입니다."
 
-#: ../../sessions_all/sessions_all.rst:444
+#: ../../sessions_all/sessions_all.rst:458
 msgid ""
 "Network Idle Timeout: Force-terminate sessions that do not exchange data "
 "with the user (browser or web app) after this time. Traffic between the "
@@ -821,7 +837,7 @@ msgstr ""
 "않으면 자동 삭제 조건을 만족하게 됩니다. 연산 세션에서 작업을 수행 중인 프로세스가 있더라도, 사용자와의 상호작용이 없는 경우에는"
 " 삭제 대상입니다."
 
-#: ../../sessions_all/sessions_all.rst:450
+#: ../../sessions_all/sessions_all.rst:464
 msgid ""
 "Utilization Checker: Resources allocated to a compute session are "
 "reclaimed based on the utilization of those resources. The decision to "
@@ -830,7 +846,7 @@ msgstr ""
 "사용량 기반 자원 수거: 연산 세션에 할당된 자원을 자원의 활용률을 기준으로 회수합니다. 연산 세션의 삭제 여부는 다음 두 가지 "
 "요소에 따라 결정됩니다:"
 
-#: ../../sessions_all/sessions_all.rst:454
+#: ../../sessions_all/sessions_all.rst:468
 msgid ""
 "Grace Period: The time during which the utilization idle checker is "
 "inactive. Even with low usage, the compute session won't be terminated "
@@ -846,7 +862,7 @@ msgstr ""
 "자원 사용률이 기준에 미치지 못하는 경우 해당 세션이 삭제될 수 있습니다. 유예 기간은 세션 종료가 이루어지지 않는 것을 보장하는 "
 "시간일 뿐입니다. 이는 주로 사용률이 낮은 GPU 자원을 효율적으로 관리하기 위한 조치입니다."
 
-#: ../../sessions_all/sessions_all.rst:461
+#: ../../sessions_all/sessions_all.rst:475
 #, python-format
 msgid ""
 "Utilization Threshold: If the resource utilization of a compute session "
@@ -861,7 +877,7 @@ msgstr ""
 "자동으로 삭제됩니다. 예를 들어, 가속 장치 사용률 기준을 1%로 설정했다면 idle timeout 시간 동안 평균 가속 장치 "
 "사용률이 1% 미만인 연산 세션은 삭제 대상이 됩니다. 값이 설정되지 않는 자원은 자동 삭제 기준에서 제외됩니다."
 
-#: ../../sessions_all/sessions_all.rst:470
+#: ../../sessions_all/sessions_all.rst:484
 msgid ""
 "After the grace period, sessions can be terminated anytime if utilization"
 " remains low. Briefly using the resources does not extend the grace "
@@ -871,7 +887,7 @@ msgstr ""
 "유예 기간이 지난 후에는 사용량이 낮으면 언제든지 삭제될 수 있습니다. 자원을 잠깐 사용했다고 해서 유예 기간이 연장되지 않습니다."
 " 오직 현 시점으로부터 지난 idle timeout 시간 동안의 평균 자원 사용률만이 고려됩니다."
 
-#: ../../sessions_all/sessions_all.rst:474
+#: ../../sessions_all/sessions_all.rst:488
 msgid ""
 "Hovering the mouse over the Utilization Checker will display a tooltip "
 "with the utilization and threshold values. The text color changes to "
@@ -881,17 +897,17 @@ msgstr ""
 "사용량 기반 자원 수거에 마우스를 가져가면, 사용률과 수거 기준값을 보여주는 툴팁이 나타납니다. 현재 사용률이 수거 기준값에 "
 "접근할수록(사용량이 저조할수록) 글자 색이 노란색, 빨간색 순으로 변하게 됩니다."
 
-#: ../../sessions_all/sessions_all.rst:484
+#: ../../sessions_all/sessions_all.rst:498
 msgid ""
 "Depending on the environment settings, idle checkers and resource types "
 "of utilization checker's tooltip may be different."
 msgstr "환경 설정 값에 따라, 유휴 상태 검사 기준과 사용량 기반 자원 수거 툴팁에 나타나는 자원 항목이 다르게 보일 수 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:491
+#: ../../sessions_all/sessions_all.rst:505
 msgid "How to add environment variable before creating a session"
 msgstr "세션 생성하기 전에 환경 변수를 추가하는 방법"
 
-#: ../../sessions_all/sessions_all.rst:493
+#: ../../sessions_all/sessions_all.rst:507
 msgid ""
 "To give more convenient workspace for users, Backend.AI supports "
 "environment variable setting in session launching. In this feature, users"
@@ -902,7 +918,7 @@ msgstr ""
 "지원합니다. 이 기능에서 여러분은 ``PATH`` 를 비롯한 모든 환경 변수를 환경변수 설정 다이얼로그에서 환경 변수명과 환경 변수"
 " 값을 입력해서 추가할 수 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:497
+#: ../../sessions_all/sessions_all.rst:511
 msgid ""
 "To add environment variable, simply click + Add environment variables "
 "button of the Variable. Also, you can remove the variable by clicking "
@@ -916,17 +932,17 @@ msgstr ""
 msgid "Env Configuration Button"
 msgstr ""
 
-#: ../../sessions_all/sessions_all.rst:504
+#: ../../sessions_all/sessions_all.rst:518
 msgid ""
 "You can write down variable name and value in the same line of the input "
 "fields."
 msgstr "환경 변수 명과 값을 같은 행의 입력 필드에 입력할 수 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:509
+#: ../../sessions_all/sessions_all.rst:523
 msgid "How to add preopen ports before creating a session"
 msgstr "세션 생성하기 전에 사전 개방 포트를 추가하는 방법"
 
-#: ../../sessions_all/sessions_all.rst:511
+#: ../../sessions_all/sessions_all.rst:525
 msgid ""
 "Backend.AI supports preopen ports setting at container startup. When "
 "using this feature, there is no need to build separate images when you "
@@ -935,7 +951,7 @@ msgstr ""
 "Backend.AI는 컨테이너 시작 전 사전 개방 포트를 설정하는 것을 지원합니다. 이 기능을 사용하면, 서빙 포트를 노출하기 위해"
 " 별도의 이미지를 추가로 빌드할 필요가 없습니다."
 
-#: ../../sessions_all/sessions_all.rst:514
+#: ../../sessions_all/sessions_all.rst:528
 msgid ""
 "To add preopen ports, simply enter multiple values separated by either a "
 "comma (,) or a space."
@@ -945,7 +961,7 @@ msgstr "사전 개방 포트를 추가하려면 쉼표(,)나 공백으로 구분
 msgid "Preopen Ports Configuration"
 msgstr ""
 
-#: ../../sessions_all/sessions_all.rst:520
+#: ../../sessions_all/sessions_all.rst:534
 msgid ""
 "In the forth page of session creation page, users can add, update and "
 "delete written preopen ports. To see more detail information, please "
@@ -954,7 +970,7 @@ msgstr ""
 "해당 다이얼로그에서 사전 개방 포트를 추가하거나, 작성한 사전 개방 포트를 갱신, 삭제할 수 있습니다. 더욱 자세한 설명이 필요한 "
 "경우, 다이얼로그 헤더 부분에 있는 도움말 (?) 버튼을 클릭해주세요."
 
-#: ../../sessions_all/sessions_all.rst:523
+#: ../../sessions_all/sessions_all.rst:537
 msgid ""
 "Users can put port numbers in between 1024 ~ 65535, to the input fields. "
 "Then, click the save button. Users can check the configured preopen ports"
@@ -963,7 +979,7 @@ msgstr ""
 "입력란에 1024 ~ 65535 사이의 포트값을 입력한 뒤, SAVE 버튼을 클릭하세요. 설정된 사전 개방 포트값은 세션 앱 "
 "런처에서 확인할 수 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:531
+#: ../../sessions_all/sessions_all.rst:545
 msgid ""
 "The preopen ports are **the internal ports within the container**. "
 "Therefore, unlike other apps, when users click the preopen ports in the "
@@ -973,11 +989,11 @@ msgstr ""
 "사전 개방 포트는 **컨테이너 내부 포트** 입니다. 따라서, 다른 앱들과 달리 세션 앱 런처에서 사전 개방 포트를 클릭하면 빈 "
 "페이지가 나타납니다."
 
-#: ../../sessions_all/sessions_all.rst:537
+#: ../../sessions_all/sessions_all.rst:551
 msgid "Save session commit"
 msgstr "세션 커밋 저장하기"
 
-#: ../../sessions_all/sessions_all.rst:541
+#: ../../sessions_all/sessions_all.rst:555
 msgid ""
 "Backend.AI supports \\\"Convert Session to Image\\\" feature from 24.03. "
 "Committing a ``RUNNING`` session will save the current state of the "
@@ -997,7 +1013,7 @@ msgstr ""
 msgid "Push session to customized image"
 msgstr "사용자 정의 이미지를 세션으로 푸시"
 
-#: ../../sessions_all/sessions_all.rst:552
+#: ../../sessions_all/sessions_all.rst:566
 msgid ""
 "After filling out session name in the input field, click the 'PUSH "
 "SESSION TO CUSTOMIZED IMAGE' button. The customized image created in this"
@@ -1012,7 +1028,7 @@ msgstr ""
 " 리소스로 간주되어 최종 이미지에 포함되지 않습니다. ``/home/work`` 디렉토리가 마운트된 폴더(스크래치 디렉토리)임을 "
 "기억해주세요."
 
-#: ../../sessions_all/sessions_all.rst:558
+#: ../../sessions_all/sessions_all.rst:572
 msgid ""
 "Currently, Backend.AI supports \"Convert Session to Image\" only when the"
 " session is in ``INTERACTIVE`` mode. To prevent unexpected error, users "
@@ -1023,7 +1039,7 @@ msgstr ""
 "프로세스 중에 예기치 않은 오류를 방지하기 위해, 세션 종료를 명령하더라도 실제로는 종료되지 않을 수 있습니다. 진행 중인 "
 "프로세스를 중지하려면 세션을 확인하고 강제로 종료하세요."
 
-#: ../../sessions_all/sessions_all.rst:563
+#: ../../sessions_all/sessions_all.rst:577
 msgid ""
 "The number of times to \"Convert Session to Image\" may be limited by the"
 " user resource policy. In this case, :ref:`remove the existing customized"
@@ -1033,11 +1049,11 @@ msgstr ""
 "사용자 자원 정책에 의해 “세션을 이미지로 변환“ 작업 횟수가 제한될 수 있습니다. 이 경우, :ref:`기존 사용자 정의 이미지를"
 " 제거<delete-customized-image>` 한 후 다시 시도하거나 관리자에게 문의하세요."
 
-#: ../../sessions_all/sessions_all.rst:569
+#: ../../sessions_all/sessions_all.rst:583
 msgid "Utilizing converted images of ongoing sessions"
 msgstr "진행 중인 세션의 변환된 이미지 활용"
 
-#: ../../sessions_all/sessions_all.rst:571
+#: ../../sessions_all/sessions_all.rst:585
 msgid ""
 "Converting an ongoing session into an image allows users to select this "
 "image from the environments in the session launcher when creating a new "
@@ -1053,7 +1069,7 @@ msgstr ""
 msgid "Select customized image"
 msgstr "사용자 정의 이미지 선택"
 
-#: ../../sessions_all/sessions_all.rst:579
+#: ../../sessions_all/sessions_all.rst:593
 msgid ""
 "To manually enter the environment name for future session creation, "
 "please click the copy icon."
@@ -1063,11 +1079,11 @@ msgstr "향후 세션 생성을 위해 환경 이름을 수동으로 입력하�
 msgid "Copy customized image"
 msgstr "사용자 정의 이미지 복사"
 
-#: ../../sessions_all/sessions_all.rst:588
+#: ../../sessions_all/sessions_all.rst:602
 msgid "Optimizing Accelerated Computing"
 msgstr "가속 컴퓨팅 최적화하기"
 
-#: ../../sessions_all/sessions_all.rst:590
+#: ../../sessions_all/sessions_all.rst:604
 msgid ""
 "Backend.AI provides configuration UI for internal control variable in "
 "``nthreads-var``. Backend.AI sets this value equal to the number of "
@@ -1087,11 +1103,11 @@ msgstr ""
 msgid "Session HPC Optimization"
 msgstr "세션 HPC 최적화"
 
-#: ../../sessions_all/sessions_all.rst:605
+#: ../../sessions_all/sessions_all.rst:619
 msgid "Advanced web terminal usage"
 msgstr "웹 터미널 고급 사용법"
 
-#: ../../sessions_all/sessions_all.rst:607
+#: ../../sessions_all/sessions_all.rst:621
 msgid ""
 "The web-based terminal internally embeds a utility called `tmux "
 "<https://github.com/tmux/tmux/wiki>`_. tmux is a terminal multiplexer "
@@ -1106,15 +1122,15 @@ msgstr ""
 "terminal multiplexer 로, 쉘이 닫히더라도 작업하던 내용을 보존할 수 있는 등 다양한 장점을 가지고 있습니다. 보다"
 " 강력한 터미널 기능을 활용하고 싶다면 tmux 공식 문서 및 기타 인터넷 상의 다양한 사용 예제를 참고하십시오."
 
-#: ../../sessions_all/sessions_all.rst:614
+#: ../../sessions_all/sessions_all.rst:628
 msgid "Here we are introducing some simple but useful features."
 msgstr "여기서는 몇 가지 간단하지만 유용한 기능을 소개하겠습니다."
 
-#: ../../sessions_all/sessions_all.rst:617
+#: ../../sessions_all/sessions_all.rst:631
 msgid "Copy terminal contents"
 msgstr "터미널 내용 복사하기"
 
-#: ../../sessions_all/sessions_all.rst:619
+#: ../../sessions_all/sessions_all.rst:633
 msgid ""
 "tmux offers a number of useful features, but it's a bit confusing for "
 "first-time users. In particular, tmux has its own clipboard buffer, so "
@@ -1131,7 +1147,7 @@ msgstr ""
 "쉘을 사용하고 있는 상태에서는 마우스 드래그를 통해 터미널 내용을 복사한 후 사용자 컴퓨터의 다른 프로그램에 붙여넣을 수가 "
 "없습니다. 소위 말하는 ``Ctrl-C`` / ``Ctrl-V`` 가 작동하지 않는 것입니다."
 
-#: ../../sessions_all/sessions_all.rst:627
+#: ../../sessions_all/sessions_all.rst:641
 msgid ""
 "If copy and paste of terminal contents is needed to system's clipboard, "
 "users can temporarily turn off tmux's mouse support. First, press "
@@ -1148,7 +1164,7 @@ msgstr ""
 " 그 후 터미널에서 마우스로 원하는 텍스트를 드래그 하고 ``Ctrl-C`` 또는 ``Cmd-C`` 키를 누르면 사용자 컴퓨터의 "
 "클립보드에 해당 내용이 복사 됩니다."
 
-#: ../../sessions_all/sessions_all.rst:635
+#: ../../sessions_all/sessions_all.rst:649
 msgid ""
 "With mouse support turned off, scrolling through the mouse wheel is not "
 "supprted, to see the contents of the previous page from the terminal. In "
@@ -1160,7 +1176,7 @@ msgstr ""
 "켜면 됩니다. ``Ctrl-B`` 를 누른 후 이번에는 ``:set -g mouse on`` 을 입력해봅시다. 이제 마우스 휠을 "
 "스크롤하여 이전 페이지의 내용을 볼 수 있게 되었습니다."
 
-#: ../../sessions_all/sessions_all.rst:640
+#: ../../sessions_all/sessions_all.rst:654
 msgid ""
 "If you remember ``:set -g mouse off`` or ``:set -g mouse on`` after "
 "``Ctrl-B``, you can use the web terminal more conveniently."
@@ -1168,7 +1184,7 @@ msgstr ""
 "이와 같이 ``Ctrl-B`` 후 ``:set -g mouse off`` 또는 ``:set -g mouse on`` 을 기억하면 "
 "조금 더 편리하게 웹 터미널을 활용할 수 있습니다."
 
-#: ../../sessions_all/sessions_all.rst:644
+#: ../../sessions_all/sessions_all.rst:658
 msgid ""
 "``Ctrl-B`` is tmux's default control mode key. If users set another "
 "control key by modifying ``.tmux.conf`` in user home directory, they "
@@ -1177,23 +1193,23 @@ msgstr ""
 "``Ctrl-B`` 키는 tmux 의 기본 제어 모드 키입니다. 만약 홈 디렉토리의 ``.tmux.conf`` 를 수정하여 다른 "
 "제어 키를 설정한 경우에는, ``Ctrl-B`` 대신 설정된 키 조합을 눌러야 합니다."
 
-#: ../../sessions_all/sessions_all.rst:649
+#: ../../sessions_all/sessions_all.rst:663
 msgid "In the Windows environment, refer to the following shortcuts."
 msgstr "윈도우즈 환경에서는 다음 단축키를 참고하세요."
 
-#: ../../sessions_all/sessions_all.rst:651
+#: ../../sessions_all/sessions_all.rst:665
 msgid "Copy: Hold down ``Shift``, right-click and drag"
 msgstr "복사: ``Shift`` 키를 누른 상태에서 마우스 우클릭해서 드래그"
 
-#: ../../sessions_all/sessions_all.rst:652
+#: ../../sessions_all/sessions_all.rst:666
 msgid "Paste: Press ``Ctrl-Shift-V``"
 msgstr "불여넣기: ``Ctrl-Shift-V`` 키를 누름"
 
-#: ../../sessions_all/sessions_all.rst:655
+#: ../../sessions_all/sessions_all.rst:669
 msgid "Check the terminal history using keyboard"
 msgstr "키보드를 이용해 터미널 이전 내용 확인하기"
 
-#: ../../sessions_all/sessions_all.rst:657
+#: ../../sessions_all/sessions_all.rst:671
 msgid ""
 "There is also a way to copy the terminal contents and check the previous "
 "contents of the terminal simultaneously. It is to check the previous "
@@ -1207,11 +1223,11 @@ msgstr ""
 " 봅시다. 키보드 만으로 터미널의 이전 내용을 탐색할 수 있다는 것을 확인할 수 있습니다. 탐색 모드에서 빠져 나오려면 ``q`` "
 "키를 눌러주면 됩니다. 이 방법을 이용하면 마우스 지원을 끈 상태에서도 터미널 이전 내용 확인이 가능합니다."
 
-#: ../../sessions_all/sessions_all.rst:665
+#: ../../sessions_all/sessions_all.rst:679
 msgid "Spawn multiple shells"
 msgstr "여러 개의 쉘 띄우기"
 
-#: ../../sessions_all/sessions_all.rst:667
+#: ../../sessions_all/sessions_all.rst:681
 msgid ""
 "The main advantage of tmux is to launch and use multiple shells in one "
 "terminal window. Pressing ``Ctrl-B`` key and ``c``. will show the new "
@@ -1233,7 +1249,7 @@ msgstr ""
 msgid "tmux's multiple session management"
 msgstr ""
 
-#: ../../sessions_all/sessions_all.rst:679
+#: ../../sessions_all/sessions_all.rst:693
 msgid ""
 "In this way, users can use multiple shell environments within a web "
 "terminal. To exit or terminate the current shell, just enter ``exit`` "
@@ -1242,23 +1258,23 @@ msgstr ""
 "첫 번째 쉘 환경이 나타나는 것을 볼 수 있습니다. 이러한 방식으로 웹 터미널 내에서 여러 쉘 환경을 사용할 수 있습니다. 현재 "
 "쉘을 종료하려면 ``exit`` 명령을 입력하거나 ``Ctrl-B x`` 키를 누른 다음 ``y`` 를 입력하십시오."
 
-#: ../../sessions_all/sessions_all.rst:683
+#: ../../sessions_all/sessions_all.rst:697
 msgid "In summary:"
 msgstr "정리하면 다음과 같습니다:"
 
-#: ../../sessions_all/sessions_all.rst:685
+#: ../../sessions_all/sessions_all.rst:699
 msgid "``Ctrl-B c``: create a new tmux shell"
 msgstr "``Ctrl-B c``: 새로운 tmux 쉘 생성"
 
-#: ../../sessions_all/sessions_all.rst:686
+#: ../../sessions_all/sessions_all.rst:700
 msgid "``Ctrl-B w``: query current tmux shells and move around among them"
 msgstr "``Ctrl-B w``: tmux 쉘 조회 및 이동/선택"
 
-#: ../../sessions_all/sessions_all.rst:687
+#: ../../sessions_all/sessions_all.rst:701
 msgid "``exit`` or ``Ctrl-B x``: terminate the current shell"
 msgstr "``exit`` 또는 ``Ctrl-B x``: 현재 tmux 쉘 종료"
 
-#: ../../sessions_all/sessions_all.rst:689
+#: ../../sessions_all/sessions_all.rst:703
 msgid ""
 "Combining the above commands allows users to perform various tasks "
 "simultaneously on multiple shells."
