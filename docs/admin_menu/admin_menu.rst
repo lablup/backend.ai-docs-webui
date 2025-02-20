@@ -152,16 +152,18 @@ according to the user's pattern.
    :align: center
    :alt: Add keypair dialog
 
-.. note::
 
-   In each of USERS, CREDENTIALS tabs, there is an icon (``...``) on the right side of the tab
-   header. Clicking this shows export CSV menu, which again brings up a CSV export dialog for
-   each tabs. By giving an appropriate file name, if necessary, and clicking EXPORT CSV FILE
-   button, you can download the list of users, keypairs.
 
-    .. image:: export_csv_user.png
-       :width: 400
-       :align: center
+.. .. note::
+
+..    In each of USERS, CREDENTIALS tabs, there is an icon (``...``) on the right side of the tab
+..    header. Clicking this shows export CSV menu, which again brings up a CSV export dialog for
+..    each tabs. By giving an appropriate file name, if necessary, and clicking EXPORT CSV FILE
+..    button, you can download the list of users, keypairs.
+
+..     .. image:: export_csv_user.png
+..        :width: 400
+..        :align: center
 
 .. _sharing-a-group-storage:
 
