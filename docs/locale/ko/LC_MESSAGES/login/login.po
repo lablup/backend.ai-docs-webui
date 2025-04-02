@@ -6,11 +6,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Console User Guide 19.09\n"
+"Project-Id-Version: Backend.AI Console User Guide 25.05\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-13 11:09+0900\n"
+"POT-Creation-Date: 2025-04-02 13:28+0900\n"
 "PO-Revision-Date: 2021-03-02 18:31+0900\n"
-"Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
+"Last-Translator: Sungchul Hong <sungchul@lablup.com>\n"
 "Language: ko\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -29,8 +29,8 @@ msgstr "가입"
 
 #: ../../login/login.rst:8
 msgid ""
-"When you launch the WebUI, login dialog appears. If you haven't signed "
-"up yet, press the SIGN UP button."
+"When you launch the WebUI, login dialog appears. If you haven't signed up"
+" yet, press the SIGN UP button."
 msgstr "WebUI를 실행하면 다음과 같은 로그인 대화창이 뜹니다. 아직 가입을 하지 않은 경우에는 SIGN UP 버튼을 눌러주세요."
 
 #: ../../login/login.rst:-1
@@ -159,29 +159,32 @@ msgid ""
 "Change the size of the sidebar via the buttons on the right side of the "
 "sidebar. Click it to significantly reduce the width of the sidebar, "
 "giving you a wider view of its contents. Clicking it again will return "
-"the sidebar to its original width."
+"the sidebar to its original width. You can also use the shortcut keys ( "
+"``[`` and ``]`` ) to toggle between the narrow and original sidebar "
+"widths."
 msgstr ""
 "사이드바의 우측에 위치한 버튼을 통하여 사이드바의 크기를 변경합니다. 클릭하면 사이드바의 폭이 크게 줄어들면서 내용을 보다 넓게 볼"
 " 수 있습니다. 다시 한 번 클릭하면 사이드바의 폭이 다시 원래대로 돌아옵니다."
+" 또한, 단축키 ( ``[`` 와 ``]``)를 사용하여 사이드바의 너비를 변경할 수도 있습니다. 
 
-#: ../../login/login.rst:104
+#: ../../login/login.rst:105
 msgid "Header Events"
 msgstr "헤더 이벤트"
 
-#: ../../login/login.rst:105
+#: ../../login/login.rst:106
 msgid ""
 "The bell shape button is the event notification button. Events that need "
-"to be recorded during WebUI operation are displayed here. When "
-"background tasks are running, such as creating a compute session, you can"
-" check the jobs here. When the background task is finished."
+"to be recorded during WebUI operation are displayed here. When background"
+" tasks are running, such as creating a compute session, you can check the"
+" jobs here. When the background task is finished."
 msgstr ""
-"종 모양의 버튼은 이벤트 알림 버튼입니다. WebUI 동작 중 기록해둘 필요가 있는 이벤트 내역이 여기에 표시 됩니다. 연산 "
-"세션을 생성 중에 있는 등 백그라운드 작업이 돌아가고 있을 때 여기에서 그 내역을 확인할 수 있습니다."
+"종 모양의 버튼은 이벤트 알림 버튼입니다. WebUI 동작 중 기록해둘 필요가 있는 이벤트 내역이 여기에 표시 됩니다. 연산 세션을"
+" 생성 중에 있는 등 백그라운드 작업이 돌아가고 있을 때 여기에서 그 내역을 확인할 수 있습니다."
 
-#: ../../login/login.rst:114
+#: ../../login/login.rst:115
 msgid ""
-"You can change the theme mode of the WebUI via the dark mode icon on the"
-" right side of the header."
+"You can change the theme mode of the WebUI via the dark mode icon on the "
+"right side of the header."
 msgstr "헤더의 우측에 있는 다크모드 아이콘을 통하여 WebUI 의 테마를 변경할 수 있습니다."
 
 #: ../../login/login.rst:122

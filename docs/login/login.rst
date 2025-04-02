@@ -94,9 +94,10 @@ Sidebar Menus
 Change the size of the sidebar via the buttons on the right side of the sidebar.
 Click it to significantly reduce the width of the sidebar, giving you a wider view of its contents.
 Clicking it again will return the sidebar to its original width.
+You can also use the shortcut keys ( ``[`` and ``]`` ) to toggle between the narrow and original sidebar widths.
 
 
-.. image:: ui_menu.png
+.. image:: menu_collapse.png
    :align: center
    :width: 600
 
@@ -116,7 +117,6 @@ right side of the header.
 
 .. image:: theme_mode.png
    :align: center
-   :width: 800
 
 
 There is a question mark icon at the lower right side of the header.
