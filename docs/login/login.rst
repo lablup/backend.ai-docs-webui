@@ -94,30 +94,9 @@ Sidebar Menus
 Change the size of the sidebar via the buttons on the right side of the sidebar.
 Click it to significantly reduce the width of the sidebar, giving you a wider view of its contents.
 Clicking it again will return the sidebar to its original width.
-You can also use the shortcut keys ( ``[`` and ``]`` ) to toggle between the narrow and original sidebar widths.
+You can also use the shortcut key ( ``[`` ) to toggle between the narrow and original sidebar widths.
 
 
 .. image:: menu_collapse.png
    :align: center
    :width: 600
-
-Header Events
-----------------
-The bell shape button is the event notification button.
-Events that need to be recorded during WebUI operation are displayed here.
-When background tasks are running, such as creating a compute session,
-you can check the jobs here. When the background task is finished.
-
-.. image:: notification.png
-   :align: center
-   :width: 600
-
-You can change the theme mode of the WebUI via the dark mode icon on the
-right side of the header.
-
-.. image:: theme_mode.png
-   :align: center
-
-
-There is a question mark icon at the lower right side of the header.
-Click this icon to access the web version of this guide document.

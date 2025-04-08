@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 25.05\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-02 13:28+0900\n"
+"POT-Creation-Date: 2025-04-14 14:40+0900\n"
 "PO-Revision-Date: 2021-03-02 18:31+0900\n"
 "Last-Translator: Sungchul Hong <sungchul@lablup.com>\n"
 "Language: ko\n"
@@ -31,7 +31,7 @@ msgstr "가입"
 msgid ""
 "When you launch the WebUI, login dialog appears. If you haven't signed up"
 " yet, press the SIGN UP button."
-msgstr "WebUI를 실행하면 다음과 같은 로그인 대화창이 뜹니다. 아직 가입을 하지 않은 경우에는 SIGN UP 버튼을 눌러주세요."
+msgstr "WebUI를 실행하면 다음과 같은 로그인 대화창이 뜹니다. 아직 가입을 하지 않은 경우에는 가입하기 버튼을 눌러주세요."
 
 #: ../../login/login.rst:-1
 msgid "Login dialog"
@@ -47,10 +47,10 @@ msgid ""
 " link inside to pass verification before you can log in with your "
 "account."
 msgstr ""
-"이메일과 사용자 이름, 비밀번호 등의 정보를 입력하고 약관과 개인정보보호정책을 읽고 동의한 뒤 SIGNUP 버튼을 클릭합니다. "
-"시스템 설정에 따라 가입하기 위해 별도의 초대 토큰을 입력 해야할 수도 있습니다. 또한, 이메일이 본인의 것이 맞는지 검증하는 "
-"이메일이 전송될 수도 있 습니다. 검증 이메일이 전송되는 경우, 이메일을 읽고 확인 링크를 클릭해서 검증을 통과해야만 가입한 "
-"계정으로 로그인 할 수 있습니다."
+"이메일과 사용자 이름, 비밀번호 등의 정보를 입력하고 약관과 개인정보보호정책을 읽고 동의한 뒤 가입하기 버튼을 클릭합니다. 시스템 "
+"설정에 따라 가입하기 위해 별도의 초대 토큰을 입력 해야할 수도 있습니다. 또한, 이메일이 본인의 것이 맞는지 검증하는 이메일이 "
+"전송될 수도 있 습니다. 검증 이메일이 전송되는 경우, 이메일을 읽고 확인 링크를 클릭해서 검증을 통과해야만 가입한 계정으로 로그인"
+" 할 수 있습니다."
 
 #: ../../login/login.rst:-1
 msgid "Signup dialog"
@@ -82,14 +82,14 @@ msgid ""
 "the URL of Backend.AI Webserver, which relays the request to the Manager,"
 " should be entered."
 msgstr ""
-"ID와 암호를 입력하고 LOGIN 버튼을 눌러주세요. ENDPOINT에는 Manager로의 연결을 중계하는 Backend.AI "
+"ID와 암호를 입력하고 로그인 버튼을 눌러주세요. 엔드포인트에는 Manager로의 연결을 중계하는 Backend.AI "
 "Webserver가 작동하고 있는 URL을 넣어주시면 됩니다."
 
 #: ../../login/login.rst:46
 msgid ""
 "Depending on the installation and setup environment of the Webserver, the"
 " endpoint might be pinned and not configurable."
-msgstr "Webserver의 설치 및 설정 환경에 따라, Endpoint가 고정되어 있을 수 있습니다."
+msgstr "Webserver의 설치 및 설정 환경에 따라, 엔드포인트가 고정되어 있을 수 있습니다."
 
 #: ../../login/login.rst:50
 msgid ""
@@ -104,15 +104,14 @@ msgstr ""
 msgid ""
 "After login, you can check the information of the current resource usage "
 "in the Summary tab."
-msgstr "로그인이 완료되면 Summary 탭에서 현재 사용하고 있는 자원량 등의 정보를 확인할 수 있습니다."
+msgstr "로그인이 완료되면 요약 탭에서 현재 사용하고 있는 자원량 등의 정보를 확인할 수 있습니다."
 
 #: ../../login/login.rst:57
 msgid ""
 "By clicking the icon in the upper-right corner, you will see sub menus. "
 "You can logout by selecting the Log Out menu."
 msgstr ""
-"우측 상단의 아이콘을 클릭하면 하위 메뉴가 나옵니다. Log Out 버튼을 클릭해서 로그아웃 할 수 있습니다. 또한 LogOut 이"
-" 쓰여진 곳의 아이콘을 클릭해서 로그아웃 할 수도 있습니다."
+"우측 상단의 아이콘을 클릭하면 하위 메뉴가 나옵니다. 로그아웃 버튼을 클릭해서 로그아웃 할 수 있습니다. "
 
 #: ../../login/login.rst:-1
 msgid "Signout button"
@@ -130,9 +129,9 @@ msgid ""
 "on the server settings, the password change feature may be disabled. In "
 "this case, contact the administrator."
 msgstr ""
-"비밀번호를 잊어버렸을 경우, 로그인 패널의 CHANGE PASSWORD 버튼을 클릭하여 비밀번호 변경 링크를 이메일로 전송할 수 "
-"있습니다. 이메일을 읽고 지시대로 따라하면 비밀번호를 변경할 수 있습니다. 서버 설정에 따라 비밀번호 변경 기능이 비활성화 되어있을"
-" 수 있습니다. 이 경우에는 관리자에게 문의 하십시오."
+"비밀번호를 잊어버렸을 경우, 로그인 패널의 비밀번호 재설정 버튼을 클릭하여 비밀번호 변경 링크를 이메일로 전송할 수 있습니다. "
+"이메일을 읽고 지시대로 따라하면 비밀번호를 변경할 수 있습니다. 서버 설정에 따라 비밀번호 변경 기능이 비활성화 되어있을 수 "
+"있습니다. 이 경우에는 관리자에게 문의 하십시오."
 
 #: ../../login/login.rst:81
 msgid ""
@@ -159,43 +158,10 @@ msgid ""
 "Change the size of the sidebar via the buttons on the right side of the "
 "sidebar. Click it to significantly reduce the width of the sidebar, "
 "giving you a wider view of its contents. Clicking it again will return "
-"the sidebar to its original width. You can also use the shortcut keys ( "
-"``[`` and ``]`` ) to toggle between the narrow and original sidebar "
-"widths."
+"the sidebar to its original width. You can also use the shortcut key ( "
+"``[`` ) to toggle between the narrow and original sidebar widths."
 msgstr ""
 "사이드바의 우측에 위치한 버튼을 통하여 사이드바의 크기를 변경합니다. 클릭하면 사이드바의 폭이 크게 줄어들면서 내용을 보다 넓게 볼"
-" 수 있습니다. 다시 한 번 클릭하면 사이드바의 폭이 다시 원래대로 돌아옵니다."
-" 또한, 단축키 ( ``[`` 와 ``]``)를 사용하여 사이드바의 너비를 변경할 수도 있습니다. 
-
-#: ../../login/login.rst:105
-msgid "Header Events"
-msgstr "헤더 이벤트"
-
-#: ../../login/login.rst:106
-msgid ""
-"The bell shape button is the event notification button. Events that need "
-"to be recorded during WebUI operation are displayed here. When background"
-" tasks are running, such as creating a compute session, you can check the"
-" jobs here. When the background task is finished."
-msgstr ""
-"종 모양의 버튼은 이벤트 알림 버튼입니다. WebUI 동작 중 기록해둘 필요가 있는 이벤트 내역이 여기에 표시 됩니다. 연산 세션을"
-" 생성 중에 있는 등 백그라운드 작업이 돌아가고 있을 때 여기에서 그 내역을 확인할 수 있습니다."
-
-#: ../../login/login.rst:115
-msgid ""
-"You can change the theme mode of the WebUI via the dark mode icon on the "
-"right side of the header."
-msgstr "헤더의 우측에 있는 다크모드 아이콘을 통하여 WebUI 의 테마를 변경할 수 있습니다."
-
-#: ../../login/login.rst:122
-msgid ""
-"There is a question mark icon at the lower right side of the header. "
-"Click this icon to access the web version of this guide document."
-msgstr "헤더의 우측에는 물음표 아이콘이 있습니다. 이 아이콘을 클릭하면 본 가이드 문서의 웹 버전에 접속할 수 있습니다."
-
-#~ msgid "Signup dialog"
-#~ msgstr "가입 및 로그인"
-
-#~ msgid "가입 및 로그인"
-#~ msgstr ""
+" 수 있습니다. 다시 한 번 클릭하면 사이드바의 폭이 다시 원래대로 돌아옵니다. 또한, 단축키 ( ``[`` )를 "
+"사용하여 사이드바의 너비를 변경할 수도 있습니다. "
 
