@@ -28,11 +28,11 @@ The latest versions of this document can be found from sites below:
    header/header
    start/start
    summary/summary
+   vfolder/vfolder
    sessions_all/sessions_all
    model_serving/model_serving
    LLM_playground/LLM_playground
    import_run/import_run
-   vfolder/vfolder
    mount_vfolder/mount_vfolder
    share_vfolder/share_vfolder
    my_environments/my_environments
