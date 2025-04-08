@@ -6,9 +6,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Console User Guide 19.09\n"
+"Project-Id-Version: Backend.AI Console User Guide\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-08 16:15+0900\n"
+"POT-Creation-Date: 2025-04-08 17:22+0900\n"
 "PO-Revision-Date: 2021-03-02 18:31+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko_KR\n"
@@ -21,55 +21,18 @@ msgstr ""
 
 #: ../../summary/summary.rst:3
 msgid "Summary Page"
-msgstr "Summary 페이지"
+msgstr "요약 페이지"
 
 #: ../../summary/summary.rst:5
-msgid ""
-"On the Summary page, users can check resource status and session usage, "
-"and there are shortcut links to frequently used functions."
+msgid "On the Summary page, users can check resource status and session usage."
 msgstr ""
-"Summary 페이지에서는 사용자의 자원 사용 상태 및 연산 세션 현황 등의 정보를 확인할 수 있고, 자주 사용되는 기능 또는 "
-"페이지에 대한 단축 링크가 있습니다."
+"Summary 페이지에서는 사용자의 자원 사용 상태 및 연산 세션 현황 등의 정보를 확인할 수 있습니다. "
 
-#: ../../summary/summary.rst:9
-msgid "Summary panel"
-msgstr "Summary 패널"
-
-#: ../../summary/summary.rst:-1
-msgid "Dashboard panels"
-msgstr "Dashboard 패널"
-
-#: ../../summary/summary.rst:14
-msgid "Various convenience panels are located under the top bar."
-msgstr "상단 바 아래에는 각종 편의 패널이 위치합니다."
-
-#: ../../summary/summary.rst:17
-msgid "Start Menu"
-msgstr "시작"
-
-#: ../../summary/summary.rst:19
-msgid ""
-"You can start a compute session by clicking on the START button. It is "
-"the same as the feature on the Sessions page, and is a shortcut button "
-"that helps you create a compute session immediately after logging in."
-msgstr ""
-"START 버튼을 클릭하여 연산 세션을 시작할 수 있습니다. Sessions 페이지에 있는 연산 세션 생성 기능과 동일하며, 처음 "
-"로그인 하자마자 바로 연산 세션을 생성할 수 있도록 돕는 단축 버튼입니다."
-
-#: ../../summary/summary.rst:23
-msgid ""
-"Below the START button are shortcut links to the Data & Storage (Upload "
-"files), Users, and Maintenance pages. Among these, the links to the Users"
-" and to Maintenance pages are only available for the admin account."
-msgstr ""
-"START 버튼 하단에는 Data & Storage, Users, Maintenance 페이지로 이동할 수 있는 단 축 링크가 "
-"있습니다. 이 중 Users, Maintenance 페이지로 이동하는 링크는 관리자 계정으로 로그인 했을 때만 보입니다."
-
-#: ../../summary/summary.rst:28
+#: ../../summary/summary.rst:12
 msgid "Resource Statistics"
 msgstr "자원 사용량"
 
-#: ../../summary/summary.rst:30
+#: ../../summary/summary.rst:14
 msgid ""
 "It shows the total amount of resources the user can allocate and the "
 "amount of resources currently allocated. You can check the user's CPU, "
@@ -82,7 +45,7 @@ msgstr ""
 "점유량 및 할당량을 각각 확인할 수 있습니다. 또한, Sessions 슬라이더에서 사용자가 동시에 생성 가능한 연산 세션의 수 및 "
 "현재 작동 중인 연산 세션의 수를 확인할 수 있습니다."
 
-#: ../../summary/summary.rst:36
+#: ../../summary/summary.rst:20
 msgid ""
 "You can change the resource group by clicking the Resource Group field at"
 " the top. Resource group is a concept to group multiple Agent nodes as a "
@@ -98,11 +61,11 @@ msgstr ""
 "경우, 각 자원 그룹 별로 특정 사용자 그룹에 독접 할당하는 등의 설정이 가능합니다. Agent 노드가 한 대인 경우에는 하나의 "
 "자원 그룹만 보이는 것이 보통입니다. 자원 그룹을 변경하면, 해당 자원의 자원 보유량에 따라 자원량이 변할 수 있습니다."
 
-#: ../../summary/summary.rst:45
+#: ../../summary/summary.rst:29
 msgid "System Resources"
 msgstr "시스템 자원"
 
-#: ../../summary/summary.rst:47
+#: ../../summary/summary.rst:31
 msgid ""
 "It shows the number of Agent worker nodes connected to the Backend.AI "
 "system and the total number of compute sessions currently created. You "
@@ -114,21 +77,11 @@ msgstr ""
 "노드의 CPU, 메모리, GPU 실제 사용량 (utilization) 도 확인할 수 있습니다. 일반 사용자로 로그인 한 경우에는 "
 "자신이 생성한 연산 세션의 숫자만 표시됩니다."
 
-#: ../../summary/summary.rst:53
-msgid "Announcement"
-msgstr "공지"
-
-#: ../../summary/summary.rst:55
-msgid ""
-"Announcements will be displayed here. Announcements can be made through a"
-" separate admin UI (Control-Panel)."
-msgstr "공지사항이 있을 경우 여기에 표시됩니다. 공지사항은 별도의 관리자 Control-Panel GUI를 통해서 작성 가능 합니다."
-
-#: ../../summary/summary.rst:59
+#: ../../summary/summary.rst:37
 msgid "Invitation"
 msgstr "초대"
 
-#: ../../summary/summary.rst:61
+#: ../../summary/summary.rst:39
 msgid ""
 "If another user has shared their storage folder to you, it will be "
 "displayed here. If you accept the share request, you can view and access "
@@ -140,11 +93,11 @@ msgstr ""
 "폴더를 조회하고 접근할 수 있습니다. 접근 권한은 공유한 사용자가 지정한 설정에 따릅니다. 물론, 공유 요청을 거절할 수도 "
 "있습니다."
 
-#: ../../summary/summary.rst:67
+#: ../../summary/summary.rst:45
 msgid "Download Backend.AI Web UI App"
 msgstr "Backend.AI WebUI 앱 다운로드"
 
-#: ../../summary/summary.rst:69
+#: ../../summary/summary.rst:47
 msgid ""
 "Backend.AI WebUI supports desktop applications. By using desktop app, you"
 " can use desktop app specific features, such as :ref:`SSH/SFTP connection"
@@ -155,19 +108,19 @@ msgstr ""
 "그 예로 :ref:`연산 세션에 SSH/SFTP 접속하기<ssh-sftp-container>` 가 있습니다. Backend.AI "
 "WebUI 에서는 아래 운영체제에서 실행가능한 데스크톱 앱을 지원합니다. "
 
-#: ../../summary/summary.rst:73
+#: ../../summary/summary.rst:51
 msgid "Windows"
 msgstr ""
 
-#: ../../summary/summary.rst:74
+#: ../../summary/summary.rst:52
 msgid "Linux"
 msgstr ""
 
-#: ../../summary/summary.rst:75
+#: ../../summary/summary.rst:53
 msgid "Mac"
 msgstr ""
 
-#: ../../summary/summary.rst:78
+#: ../../summary/summary.rst:56
 msgid ""
 "When you click the button that match with your local environment (e.g. "
 "OS, Architecture), It will automatically downloads the same version of "
