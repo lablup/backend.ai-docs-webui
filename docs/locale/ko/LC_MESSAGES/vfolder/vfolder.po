@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web UI User Guide 25.05\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-10 14:26+0900\n"
+"POT-Creation-Date: 2025-04-10 14:38+0900\n"
 "PO-Revision-Date: 2023-08-07 16:17+0900\n"
 "Last-Translator: Jinho Heo <jinho@lablup.com>\n"
 "Language: ko\n"
@@ -715,8 +715,8 @@ msgid ""
 "For more detailed information on the usage of Automount folders, refer to"
 " :ref:`examples of using automount folders<using-automount-folder>`."
 msgstr ""
-"자동 마운트 사용에 관한 보다 자세한 내용은 :ref:`자동 마운트 폴더 사용 예제<using-"
-"automount-folder>` 섹션을 참고하십시오."
+"자동 마운트 사용에 관한 보다 자세한 내용은 :ref:`자동 마운트 폴더 사용 예제<using-automount-folder>` "
+"섹션을 참고하십시오."
 
 #: ../../vfolder/vfolder.rst:407
 msgid "Models"
@@ -728,5 +728,11 @@ msgid ""
 "can store the necessary data, including input data for :ref:`model "
 "serving <model-serving>` and training data, in the model folder."
 msgstr ""
-"'모델' 탭은 모델을 :ref:`서빙 <model-serving>` 하는 데에 필요한 파일들을 저장해두는 곳입니다. 모델 "
-"학습이나 서비스를 위한 데이터를 저장해둘 수 있습니다."
+"'모델' 탭은 모델을 :ref:`서빙 <model-serving>` 하는 데에 필요한 파일들을 저장해두는 곳입니다. 모델 학습이나 "
+"서비스를 위한 데이터를 저장해둘 수 있습니다."
+
+#: ../../vfolder/vfolder.rst:-1
+#, fuzzy
+msgid "Models tab"
+msgstr "모델 폴더"
+

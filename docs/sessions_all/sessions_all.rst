@@ -2,13 +2,13 @@
 Compute Sessions
 ================
 
-The most visited pages in the Backend.AI WebUI would be the 'Sessions' and 'Data & Storage' pages. 
+The most visited pages in the Backend.AI WebUI would be the 'Sessions' and 'Data' pages. 
 This document will cover how to query and create container-based compute sessions and utilize various web applications on the 'Sessions' page.
-
-.. _create_session:
 
 Start a new session
 -------------------
+
+.. _create_session:
 
 After logging in with a user account, click 'Sessions' on the left sidebar.
 'Sessions' page lets you start new sessions or use and manage existing running sessions.
@@ -21,9 +21,12 @@ For more instructions, please refer to the following `link <https://webui.docs.b
 
 Click the 'START' button to start a new compute session.
 
-.. image:: launch_session_1.png
+.. image:: launch_session_type.png
    :width: 850
    :align: center
+
+Session Type
+^^^^^^^^^^^^^
 
 In the first page, users can select the type of session, 'interactive' or 'batch'. 
 If needed, setting the name of the session (optional) is also available. 
@@ -56,8 +59,11 @@ If needed, setting the name of the session (optional) is also available.
       However, keep in mind that this feature does not guarantee that the session will start at the registered time. 
       It may still stay at 'PENDING' due to the lack of resources, etc. Rather, it guarantees that
       the session WILL NOT run until the start time.
+    - Users can also set the 'Timeout Duration' of a batch-type compute session.
+      When users set the timeout duration, The session will automatically terminate if the specified time is exceeded.
 
     .. image:: session_type_batch.png
+       :width: 800
        :align: center
 
 * Session name: Users can specify the name of the compute session to be
@@ -70,27 +76,37 @@ If users create a session with the ``super admin`` or ``admin`` account,
 they can additionally assign a session owner. If you enable the toggle, 
 a user email field will appear. 
 
-   .. image:: admin_launch_session_1.png
+   .. image:: admin_launch_session_owner.png
       :align: center
 
 Enter the email of the user you want to assign the session to, 
-click the search button, and the user's access key will be automatically registered. 
+click the 'search' button, and the user's access key will be automatically registered. 
 You can also select a project and resource group. 
 
-   .. image:: admin_launch_session_2.png
+   .. image:: admin_launch_session_owner_project.png
       :align: center
       :width: 800
+
+Environments & Resource allocation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _session-environments-resource:
 
 Click the 'Next' button below, or the 'Environments & Resource allocation' menu on the right
 to proceed to the next page. If you want to create a session without any further
 settings, press the 'Skip to review' button. In this case, settings on the
 other pages will all use the default values.
 
+  .. image:: launch_session_environments_and_resource.png
+     :align: center
+
+Environments
+^^^^^^^^^^^^^^^^
+
+.. _session-environments:
+
 For detailed explanations of each item that can be set on the second page, please
 refer to the following:
-
-  .. image:: launch_session_2.png
-     :align: center
      
 * Environments: Users can select the base environment for compute sessions such as
   TensorFlow, PyTorch, C++, etc. The compute session will automatically included into the base environment library. 
@@ -99,10 +115,19 @@ refer to the following:
   There are multiple versions in a single environment. For example, TensorFlow has multiple versions such as 1.15, 2.3, etc.,
 * Image Name: Users can specify the name of the image to be used for the
   compute session. This configuration may not be available depending on the environment settings.
-* Set Environment Variable: Provides an interface for users to set environment
-  variables in a compute session. Refer to the 
-  :ref:`How to add environment variables before session creation<set-environment-variables>`
-  section to learn more.
+* Set Environment Variable: To give more convenient workspace for users, Backend.AI supports environment variable setting
+  in session launching. In this feature, users can add any envs such as ``PATH`` by filling out
+  variable name and value in environment configuration dialog.
+
+  .. image:: launch_session_environments.png
+     :width: 800
+     :align: center
+
+Resource allocation
+^^^^^^^^^^^^^^^^^^^^^
+
+.. _resource-allocation:
+
 * Resource Group: Specifies the resource group in which to create a compute
   session. A resource group is a unit that groups host servers that each user
   can access. Usually, servers in a resource group would have the same type of
@@ -116,11 +141,11 @@ refer to the following:
   define frequently used resource settings in advance. By adjusting the numerical
   input or sliding the slider, users can allocate the desired amount of resources.
 
-  .. image:: resource_presets.png
+  .. image:: launch_session_resource.png
      :align: center
 
   The meaning of each item is as follows. 
-  Clicking the Help (?) button will also give more information. 
+  Clicking the 'Help (?)' button will also give more information. 
   
   * CPU: The CPU performs basic arithmetic, logic, controlling, and input/output
     (I/O) operations specified by the instructions. In general, more CPUs are beneficial for high-performance computing workloads.
@@ -142,35 +167,42 @@ refer to the following:
     value greater than 1, multiple sessions corresponding to the resource set above
     are created. If there are not enough resources available, requests to create
     sessions that cannot be created are put on the waiting queue.
+
+  .. image:: launce_session_resource_2.png
+     :width: 600
+     :align: center
+
+  * Select Agent: Select the agent to be assigned. By default, the agent is automatically selected
+    by the scheduler. The agent selector displays the actual amount of available resources for each agent. 
+    Currently, this feature is only supported in single-node, single-container environments.
   * Cluster mode: Cluster mode allows users to create
     multiple compute sessions at once. For more information, refer to the 
     :ref:`Overview of Backend.AI cluster compute session<backendai-cluster-compute-session>`.
+
+  .. note::
+     The Agent Select feature may not be available depending on the server environment.
   
 * High-Performance Computing Optimizations: Backend.AI provides configuring values
-  related to HPC Optimizations. For more information, See the section
-  :ref:`Optimizing Accelerated Computing<optimizing-accelerated-computing>`.
+  related to HPC Optimizations. 
+
+  Backend.AI provides configuration UI for internal control variable in ``nthreads-var``.
+  Backend.AI sets this value equal to the number of session's CPU cores by default,
+  which has the effect of accelerating typical high-performance computing workloads.
+  Nevertheless, for some multi-thread workloads, multiple processes using OpenMP are used at same time,
+  resulting in an abnormally large number of threads and significant performance degradation.
+  To resolve this issue, setting the number of threads to 1 or 2 would work.
+
+.. image:: session_hpc_optimization.png
+   :width: 600
+   :align: center
+   :alt: Session HPC Optimization
+
+Data & Storage
+^^^^^^^^^^^^^^^
+
+.. _data_and_storage:
 
 Click the 'Next' button below, or the 'Data & Storage' menu on the right to proceed to the next page.
-
-.. image:: launch_session_3.png
-   :width: 850
-   :align: center
-
-Here, users can specify the data folders to mount in the compute session. 
-Folder explorer can be used by clicking folder name. For further information, 
-please refer :ref:`Explore Folder<explore_folder>` section.
-
-.. image:: open_folder_explorer.png
-   :width: 100%
-   :align: center
-
-New folder can be created by clicking the '+ Add' button next to the searcher.
-When new folder is created, it will automatically be selected as the folder to mount. 
-For further information, please refer :ref:`Create Storage Folder<create_storage_folder>` section.
-
-.. image:: folder_create_modal.png
-   :width: 100%
-   :align: center 
 
 When a compute session is destroyed, data deletion is set to default. 
 However, data stored in the mounted folders will survive.
@@ -178,28 +210,59 @@ Data in those folders can also be reused by mounting it when creating another co
 For further information on how to mount a folder and run a compute session, refer to
 :ref:`Mounting Folders to a Compute Session<session-mounts>`. 
 
-.. image:: launch_session_4.png
-   :width: 100%
+.. image:: launch_session_data.png
+   :width: 850
    :align: center
 
+users can specify the data folders to mount in the compute session. 
+Folder explorer can be used by clicking folder name. For further information, 
+please refer :ref:`Explore Folder<explore_folder>` section.
 
-On the fourth page, Network configuration can be done such as Preopen Ports.
+.. image:: folder_explorer.png
+   :width: 850
+   :align: center
+
+New folder can be created by clicking the '+' button next to the search box.
+When new folder is created, it will automatically be selected as the folder to mount. 
+For further information, please refer :ref:`Create Storage Folder<create_storage_folder>` section.
+
+.. image:: folder_create_modal.png
+   :width: 600
+   :align: center 
+
+Network
+^^^^^^^^^
+
+Click the 'Next' button below, or the 'Network' menu on the right to proceed to the next page.
+On this page, Network configuration can be done such as Preopen Ports.
 
 * Set Preopen Ports: Provides an interface for users to set preopen ports in a 
   compute session. Refer to the :ref:`How to add preopen ports before session creation
-  <set_preopen_ports>` ofor further information.
+  <set_preopen_ports>` for further information.
+
+.. _network:
+
+.. image:: launch_session_network.png
+   :width: 850
+   :align: center
+
+Confirm and Launch
+^^^^^^^^^^^^^^^^^^^^
+
+.. _confirm_and_launch:
 
 If you are done with the network setting, click the 'Next' button below, or 
 'Confirm and Launch' button on the right to proceed to the last page.
-
-.. image:: launch_session_5.png
-   :align: center
 
 On the last page, users could view information of session(s) to create,
 such as environment itself, allocated resources, mount information,
 environment variables set on the previous pages, preopen ports, etc.,
 Review the settings, users could launch the session by clicking 'Launch' button. 
 Click the 'Edit' button located at the top right of each card to redirect to relevant page.
+
+.. image:: launch_session_confirm.png
+   :width: 850
+   :align: center
 
 If there is an issue with the settings, an error message will be displayed as follows. 
 Users can edit their settings when this happens.
@@ -208,24 +271,30 @@ Users can edit their settings when this happens.
    :width: 350
    :align: center
 
-A warning dialog appears, stating that there are no mounted folders. Ignore the
-warning for now and click the Start button to proceed.
+When you click the 'Launch' button, a warning dialog appears stating that there are no mounted folders. 
+If folder mounting is not required, you can ignore the warning and click the 'Start' button in the dialog to proceed.
 
-.. image:: no_vfolder_notification_dialog.png
+.. image:: no_folder_notification_dialog.png
    :width: 350
    :align: center
-
 
 Now a new compute session is created in the RUNNING tab.
 
 .. image:: session_created.png
+   :align: center
+   :width: 100%
 
 In the RUNNING tab, users can check the information on the currently running
 sessions. This includes both interactive and batch sessions.
 'BATCH' tab and 'INTERACTIVE' tab only show sessions corresponding to each type, not in terminated status.
-'FINISHED' tab shows the list of terminated sessions and OTHERS tab shows the compute sessions with errors.
+'FINISHED' tab shows the list of terminated sessions.
 For each session, users can check the information such as session environments, the amount of allocated
 and used resources, session starting time, etc.
+
+Recent History
+^^^^^^^^^^^^^^^^
+
+.. _recent-history:
 
 'Session Launcher' page provides a set of options for creating sessions. As of 24.09, 
 ``Recent History`` feature has been added to remember information about previously created sessions. 
@@ -234,7 +303,7 @@ and used resources, session starting time, etc.
    :width: 800
    :align: center
 
-.. image:: session_history.png
+.. image:: recent_history_modal.png
    :width: 800
    :align: center
 
@@ -251,6 +320,9 @@ If users select the one they want to create, click the 'Apply' button to redirec
    network connection problems, and etc. This can be solved by refreshing the
    browser.
 
+Session information
+-------------------
+
 Backend.AI provides detailed status information for ``PENDING``, ``TERMINATED``,
 or ``CANCELLED`` sessions. In the case of ``PENDING`` sessions, in particular,
 you can check why the session is not scheduled and stuck in the ``PENDING``
@@ -260,6 +332,7 @@ to the status of each session.
 .. image:: session_list_status.png
 
 .. image:: session_status_detail_information.png
+   :width: 700
    :align: center
 
 The resource statistics are displayed at the top of the screen. Users can check the
@@ -292,18 +365,17 @@ accessible resources.
    utilize SM (streaming multiprocessor) and GPU memory corresponding to 0.2
    physical GPU for the session.
 
-
-See Session details
--------------------
-
-.. image:: session_detail.png
-   :width: 100%
-   :align: center
+Session Detail Panel
+^^^^^^^^^^^^^^^^^^^^^
 
 For detailed information on the session, click the session name in the session list.
-The session details page shows the information of the session, such as the
+The session details panel shows the information of the session, such as the
 session ID, status, type, environment, mount information, resource allocation, reserved time, 
 elapsed time, and resource usage including network I/O. 
+
+.. image:: session_detail.png
+   :width: 850
+   :align: center
 
 
 .. _use_session:
@@ -408,10 +480,6 @@ Control panel of the running compute session.
 
 .. image:: session_log.png
 
-.. note::
-   From 22.09, users can download session log by clicking download button on upper-right side of the dialog.
-   This feature is helpful for tracking artifacts.
-
 Rename running session
 ----------------------
 
@@ -428,7 +496,7 @@ Delete a compute session
 ------------------------
 
 To terminate a specific session, simply click on the red power icon and click
-OKAY button in the dialog. Since the data in the folder inside the compute
+'OKAY' button in the dialog. Since the data in the folder inside the compute
 session is deleted as soon as the compute session ends, it is recommended to
 move the data to the mounted folder or upload it to the mounted folder from the
 beginning.
@@ -508,10 +576,10 @@ To give more convenient workspace for users, Backend.AI supports environment var
 in session launching. In this feature, users can add any envs such as ``PATH`` by filling out
 variable name and value in environment configuration dialog.
 
-To add environment variable, simply click + Add environment variables button of the Variable.
-Also, you can remove the variable by clicking ``-`` button of the row that you want to get rid of.
+To add environment variable, simply click '+ Add environment variables' button of the Variable.
+Also, you can remove the variable by clicking '-' button of the row that you want to get rid of.
 
-.. image:: env-config-start.png
+.. image:: launch_session_env.png
    :align: center
    :alt: Env Configuration Button
 
@@ -532,10 +600,10 @@ To add preopen ports, simply enter multiple values separated by either a comma (
    :alt: Preopen Ports Configuration
 
 In the forth page of session creation page, users can add, update and delete written preopen ports. To see more detail
-information, please click Help (?) button.
+information, please click 'Help (?)'' button.
 
-Users can put port numbers in between 1024 ~ 65535, to the input fields. Then, click the save button. Users can check
-the configured preopen ports in the session app launcher.
+Users can put port numbers in between 1024 ~ 65535, to the input fields. Then, press 'Enter'. Users can specify multiple ports, separated by commas (,). 
+Users can check the configured preopen ports in the session app launcher.
 
 .. image:: session_app_launcher.png
    :width: 400
@@ -553,7 +621,7 @@ Save session commit
 .. _session-commit:
 
 Backend.AI supports \"Convert Session to Image\" feature from 24.03. Committing a ``RUNNING`` session will save the 
-current state of the session as a new image. Clicking the commit button in the control column of ``RUNNING`` session will
+current state of the session as a new image. Clicking the 'commit' button in the control column of ``RUNNING`` session will
 display a dialog to show the information of the session. After entering the session name, users can convert the session to 
 a new image. The session name must be 4 to 32 characters long and can only contain alphanumeric letters, hyphens (``-``),
 or underscores (``_``).
@@ -587,31 +655,16 @@ when creating a new session. This image is not exposed to other users and is use
 state as is. The converted image is tagged with ``Customized<session name>``.
 
 .. image:: select_customized_image.png
+   :width: 850
    :align: center
    :alt: Select customized image
 
 To manually enter the environment name for future session creation, please click the copy icon.
 
 .. image:: copy_customized_image.png
+   :width: 850
    :align: center
    :alt: Copy customized image
-
-.. _optimizing-accelerated-computing:
-
-Optimizing Accelerated Computing
---------------------------------
-
-Backend.AI provides configuration UI for internal control variable in ``nthreads-var``.
-Backend.AI sets this value equal to the number of session's CPU cores by default,
-which has the effect of accelerating typical high-performance computing workloads.
-Nevertheless, for some multi-thread workloads, multiple processes using OpenMP are used at same time,
-resulting in an abnormally large number of threads and significant performance degradation.
-To resolve this issue, setting the number of threads to 1 or 2 would work.
-
-.. image:: session_hpc_optimization.png
-   :align: center
-   :alt: Session HPC Optimization
-
 
 .. _tmux_guide:
 
