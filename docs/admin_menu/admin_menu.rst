@@ -92,8 +92,8 @@ Inactivate user account
 Deleting user accounts is not allowed even for superadmins, to track usage
 statistics per user, metric retention, and accidental account loss. Instead,
 admins can inactivate user accounts to keep users from logging in. Click the
-trash icon in the Controls panel. A dialog asking confirmation appears, and
-you can inactivate the user by clicking the OKAY button.
+delete icon in the Controls panel. A popover asking confirmation appears, and
+you can deactivate the user by clicking the Deactivate button.
 
 .. image:: user_deactivate_confirmation.png
    :width: 600
@@ -105,7 +105,7 @@ the target user to ``Active``.
 
 .. warning::
 
-   Please note that inactivating the user changes all of credentials to be inactive,
+   Please note that deactivating the user changes all of credentials to be inactive,
    but reactivating the user does not reactivate the inactivated credentials, since the user
    account can have multiple keypairs, which brings it hard to decide which credential
    should be reactivated.
@@ -262,7 +262,7 @@ please refer to :ref:`Model definition guide <model_definition_guide>` section.
    model_path: /models
    name: Meta-Llama-3-8B-Instruct
 
-Once the model-definition file is uploaded, the model card will appear in the model store section.
+Once the model-definition file is uploaded, the model card will appear in the model store page.
 
 .. image:: model_card_added.png
    :alt: Model card added
@@ -302,8 +302,7 @@ indicates that no resource restrictions have been applied to those resources.
 
 The user account being used in this guide is currently assigned to the default
 resource policy. This can be verified in the Credentials tab on the Users page.
-In the Resource Policy panel, you can also observe that all resources can be
-utilized up to the hardware limit (∞).
+You can also confirm that all resource policies are set to default in the Resource Policy panel.
 
 .. image:: credentials.png
 
@@ -433,8 +432,6 @@ To create a new user resource policy, click the Create button.
   user can create. If user's customized image count exceeds this value,
   user cannot create a new customized image. If you want to know more about customized 
   images, please refer to the :ref:`My Environments<my-environments>` section.
-- ID: The ID of the user resource policy.
-- Created At: The date and time when the user resource policy was created.
 
 
 To update, click the 'Setting (Gear)' button in the control column. To delete, click the trash can
@@ -475,6 +472,7 @@ To create a new project resource policy, click the 'Create' button at the top ri
 - Max Folder Size: The maximum size of the project's storage space. If the project's storage
   space exceeds this value, the administrator cannot create a new project folder. If set to
   Unlimited, it is displayed as "∞".
+- Max Network Count: The maximum number of networks that can be created for the project since Backend.AI version 24.12. If set to Unlimited, it is displayed as "∞".
 
 The meaning of each field is similar to the user resource policy. The difference is that the
 project resource policy is applied to the project folders, while the user resource policy is
@@ -576,12 +574,12 @@ Backend.AI among the images stored in the registry is not updated.
    :alt: Registries page
 
 You can add your own private docker registry by clicking the ADD REGISTRY
-button. Note that Registry Hostname and Registry URL address must be set
+button. Note that Registry Name and Registry URL address must be set
 identically, and in the case of Registry URL, a scheme such as ``http://`` or
 ``https://`` must be explicitly attached. Also, images stored in the registry
-must have a name prefixed with Registry Hostname. Username and Password are
+must have a name prefixed with Registry Name. Username and Password are
 optional and can be filled in if you set separate authentication settings in the
-registry.
+registry. In Extra Information, you can pass additional information needed for each registry type as a JSON string
 
 .. image:: add_registry_dialog.png
    :width: 350
@@ -589,7 +587,7 @@ registry.
    :alt: Add registry dialog
 
 You can also update the information of an existing registry, except the
-hostname.
+Registry Name.
 
 Even if you created a registry and update meta information, users cannot use the
 images in the registry, immediately. Just as you had to register the allowed hosts
@@ -894,7 +892,7 @@ guarantee the Integrity of the image.
 .. image:: system_setting_about_image.png
    :alt: System setting about image
 
-You can also change settings for scaling and plugins.
+You can also change settings for scaling, plugins and enterprise features.
 
 .. image:: system_setting_about_scaling_plugins.png
    :alt: System setting about scaling and plugins
