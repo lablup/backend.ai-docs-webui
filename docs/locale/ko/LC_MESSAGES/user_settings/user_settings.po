@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console Essential Guide Enterprise R2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-20 14:48+0900\n"
+"POT-Creation-Date: 2025-04-10 23:44+0900\n"
 "PO-Revision-Date: 2023-03-25 11:27+0900\n"
 "Last-Translator: \n"
 "Language: ko_KR\n"
@@ -214,8 +214,9 @@ msgstr ""
 "세션 내 앱을 실행하기 위해 생성된 페이지를 제외한 모든 Backend.AI WebUI 페이지가 닫힐 경우, 자동으로 로그아웃 "
 "됩니다. (Jupyter Notebook, Web Terminal 등의 앱을 접속하는 경우에는 로그아웃이 되지 않습니다.)"
 
+#: ../../user_settings/user_settings.rst:-1
 #: ../../user_settings/user_settings.rst:94
-msgid "My Keypair information"
+msgid "My Keypair Information"
 msgstr "내 키페어 정보"
 
 #: ../../user_settings/user_settings.rst:96
@@ -227,19 +228,15 @@ msgstr ""
 "모든 사용자는 하나 이상의 키페어를 가지고 있습니다. 아래의 구성 버튼을 클릭하면 액세스 및 비밀 키페어를 확인할 수 있습니다. "
 "기본 액세스 키페어는 하나만 존재합니다. "
 
-#: ../../user_settings/user_settings.rst:-1
-msgid "My Keypair Information"
-msgstr ""
-
 #: ../../user_settings/user_settings.rst:107
 msgid "SSH Keypair Management"
 msgstr "SSH 키페어 관리"
 
 #: ../../user_settings/user_settings.rst:109
 msgid ""
-"When using the WebUI app, you can create SSH/SFTP connection directly to"
-" the compute session. Once you signed up for Backend.AI, a public keypair"
-" is provided. If you click the button on the right to the SSH Keypair "
+"When using the WebUI app, you can create SSH/SFTP connection directly to "
+"the compute session. Once you signed up for Backend.AI, a public keypair "
+"is provided. If you click the button on the right to the SSH Keypair "
 "Management section, the following dialog appears. Click the copy button "
 "on the right to copy the existing SSH public key. You can update SSH "
 "keypair by clicking GENERATE button at the bottom of the dialog. SSH "
@@ -299,7 +296,7 @@ msgstr ""
 " 를 참고하세요. "
 
 #: ../../user_settings/user_settings.rst:150
-msgid "EDIT BOOTSTRAP SCRIPT"
+msgid "Edit Bootstrap Script"
 msgstr "부트스트랩 스크립트 수정"
 
 #: ../../user_settings/user_settings.rst:152
@@ -321,7 +318,7 @@ msgstr ""
 "``RUNNING`` 상태가 된 후 터미널 앱을 열고 실행하는 것이 나을 수 있습니다."
 
 #: ../../user_settings/user_settings.rst:167
-msgid "EDIT USER CONFIG SCRIPT"
+msgid "Edit User Config Script"
 msgstr "사용자 환경 스크립트 수정"
 
 #: ../../user_settings/user_settings.rst:169
@@ -349,10 +346,21 @@ msgstr ""
 "AND CLOSE 버튼을 클릭해서 스크립트를 저장할 수 있습니다. DELETE 버튼을 클릭하면 해당 스크립트를 삭제할 수 있습니다."
 
 #: ../../user_settings/user_settings.rst:186
+msgid "Experimental Features"
+msgstr "실험적 기능"
+
+#: ../../user_settings/user_settings.rst:188
+msgid ""
+"You can enable or disable experimental features before they are "
+"officially released."
+msgstr ""
+"실험적 기능들이 정식으로 출시되기 전에 활성화하거나 비활성화할 수 있습니다."
+
+#: ../../user_settings/user_settings.rst:195
 msgid "LOGS tab"
 msgstr "LOGS 탭"
 
-#: ../../user_settings/user_settings.rst:188
+#: ../../user_settings/user_settings.rst:197
 msgid ""
 "Displays detailed information of various logs recorded on the client "
 "side. You can visit this page to find out more about the errors occurred."
@@ -363,7 +371,7 @@ msgstr ""
 " 방문할 수 있습니다. 우측 상단의 버튼을 이용해서 로그를 검색하거나 에러 메시지를 필터링하고, 로그를 새로고침하거나 지울 수 "
 "있습니다."
 
-#: ../../user_settings/user_settings.rst:196
+#: ../../user_settings/user_settings.rst:205
 msgid ""
 "If you only have one page logged in, clicking the REFRESH button may not "
 "seem to work properly. Logs pages are collection of requests to the "
@@ -376,7 +384,7 @@ msgstr ""
 " 서버에 대한 요청과 서버의 응답을 모아둔 것이며, 현재 페이지가 로그 페이지인 경우 명시적으로 페이지를 새로 고침하는 것 외에는 "
 "서버에 요청을 보내지 않습니다. 로그가 제대로 쌓이는지 확인하려면 다른 페이지를 열고 REFRESH 버튼을 클릭하십시오."
 
-#: ../../user_settings/user_settings.rst:203
+#: ../../user_settings/user_settings.rst:212
 msgid ""
 "If you want to hide or show the certain columns, click the gear icon at "
 "the bottom right of the table. Then you can see below dialog to select "

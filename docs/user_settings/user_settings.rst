@@ -90,7 +90,7 @@ Log out automatically when all Backend.AI WebUI pages are closed except for
 pages created to run apps in session (e.g. jupyter notebook, web terminal,
 etc.).
 
-My Keypair information
+My Keypair Information
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Every user has at least one or more keypairs. you can see access and secret keypair by clicking 
@@ -146,7 +146,7 @@ If you want to use the classic session launcher, you can turn on this option.
 For instructions on how to use the classic session launcher, please refer to the following 
 `link <https://webui.docs.backend.ai/en/23.09_a/sessions_all/sessions_all.html>`_.
 
-EDIT BOOTSTRAP SCRIPT
+Edit Bootstrap Script
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 If you want to execute a one-time script just after your compute sessions
@@ -163,7 +163,7 @@ started, write down the contents here.
    better to remove them out of the bootstrap script and run them in a terminal
    app.
 
-EDIT USER CONFIG SCRIPT
+Edit User Config Script
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 You can write some config scripts to replace the default ones in a compute
@@ -179,6 +179,15 @@ clicking the SAVE or SAVE AND CLOSE button. Click the DELETE button to delete
 the script.
 
 .. image:: edit_user_config_script.png
+   :width: 700
+   :align: center
+
+Experimental Features
+^^^^^^^^^^^^^^^^^^^^^
+
+You can enable or disable experimental features before they are officially released.
+
+.. image:: experimental_features.png
    :width: 700
    :align: center
 
