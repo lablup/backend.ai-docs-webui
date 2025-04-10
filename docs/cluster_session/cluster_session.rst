@@ -118,9 +118,8 @@ be created including the main container. These three containers are bound under
 a private network to form one compute session.
 
 Click the LAUNCH button to send a request to create a compute session, and wait
-for a while to get a cluster session. In the Session Info column, make sure
-there is a "Single-node" or "Multi-node" tag indicating the number of
-containers.
+for a while to get a cluster session. After the session is created, you can view 
+the created containers on the session details page.
 
 .. image::
    cluster_session_created.png
