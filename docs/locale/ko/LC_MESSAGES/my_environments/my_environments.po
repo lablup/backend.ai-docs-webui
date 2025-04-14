@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2023, Lablup Inc.
+# Copyright (C) 2025, Lablup Inc.
 # This file is distributed under the same license as the Backend.AI WebUI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI WebUI User Guide 23.09\n"
+"Project-Id-Version: Backend.AI WebUI User Guide 25.05\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-21 04:06+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
