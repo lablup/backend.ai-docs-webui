@@ -2,27 +2,11 @@
 Summary Page
 ============
 
-On the Summary page, users can check resource status and session usage, and
-there are shortcut links to frequently used functions.
+On the Summary page, users can check resource status and session usage.
 
-Summary panel
--------------
-
-.. image:: dashboard.png
-   :alt: Dashboard panels
-
-Various convenience panels are located under the top bar.
-
-Start Menu
-^^^^^^^^^^
-
-You can start a compute session by clicking on the START button. It is the same
-as the feature on the Sessions page, and is a shortcut button that helps you
-create a compute session immediately after logging in.
-
-Below the START button are shortcut links to the Data & Storage (Upload files), Users, and
-Maintenance pages. Among these, the links to the Users and to Maintenance pages are
-only available for the admin account.
+.. image:: summary.png
+   :width: 100%
+   :alt: summary page
 
 Resource Statistics
 ^^^^^^^^^^^^^^^^^^^
@@ -48,12 +32,6 @@ It shows the number of Agent worker nodes connected to the Backend.AI system and
 the total number of compute sessions currently created. You can also check the
 CPU, memory, and GPU utilization of the agent node. If you are logged in as a
 normal user, only the number of compute sessions you have created is displayed.
-
-Announcement
-^^^^^^^^^^^^
-
-Announcements will be displayed here. Announcements can be made through a
-separate admin UI (Control-Panel).
 
 Invitation
 ^^^^^^^^^^
