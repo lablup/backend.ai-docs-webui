@@ -37,7 +37,7 @@ fGPU as follows:
    :width: 600
    :align: center
 
-In the Configuration panel of the session list, you can see that
+In the AI Accelerator panel of the session list, you can see that
 0.5 fGPU is allocated.
 
 .. image:: session_list_with_gpu.png
