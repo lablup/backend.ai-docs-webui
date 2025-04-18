@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 20.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-13 11:09+0900\n"
+"POT-Creation-Date: 2025-04-10 18:25+0900\n"
 "PO-Revision-Date: 2022-05-17 11:22+0900\n"
 "Last-Translator: \n"
 "Language: ko\n"
@@ -23,34 +23,35 @@ msgstr ""
 msgid "Import & Run notebooks and web based Git repositories"
 msgstr "Jupyter notebook과 웹 기반 Git 저장소 불러오기 및 실행"
 
-#: ../../import_run/import_run.rst:5
+#: ../../import_run/import_run.rst:7
 msgid ""
-"Backend.AI supports executing Jupyter notebook files and importing web "
-"based Git repositories such as GitHub and GitLab on the fly. You don't "
-"need to create or download into your local storage and re-upload it. The "
-"only thing you have to do is input a valid URL you want to execute or "
-"import, and click the button on the right side."
+"On the 'Import & Run' page, Backend.AI supports executing Jupyter "
+"notebook files and importing web based Git repositories such as GitHub "
+"and GitLab on the fly. You don't need to create or download into your "
+"local storage and re-upload it. The only thing you have to do is input a "
+"valid URL you want to execute or import, and click the button on the "
+"right side."
 msgstr ""
-"Backend.AI에서는 즉석으로 Jupyter notebook 파일을 실행하거나 GitHub, GitLab 과 같은 웹 기반 "
-"Git 저장소를 가져올 수 있습니다. 파일을 받거나 실행하기 위해 로컬 저장소에서 직접 생성하거나 다운로드 받고 다시 업로드하지 "
-"않아도 됩니다. 유효한 URL 을 입력하고 각 기능에 해당하는 패널의 우측에 있는 버튼을 클릭하기만 하면 됩니다."
+"'가져오기 & 실행' 페이지 에서, 즉석으로 Jupyter notebook 파일을 실행하거나 GitHub, GitLab 과 같은 웹"
+" 기반 Git 저장소를 가져올 수 있습니다. 파일을 받거나 실행하기 위해 로컬 저장소에서 직접 생성하거나 다운로드 받고 다시 "
+"업로드하지 않아도 됩니다. 유효한 URL 을 입력하고 각 기능에 해당하는 패널의 우측에 있는 버튼을 클릭하기만 하면 됩니다."
 
-#: ../../import_run/import_run.rst:11
+#: ../../import_run/import_run.rst:13
 msgid "Import and run Jupyter notebooks"
 msgstr "Jupyter notebook 파일 가져오기 및 실행"
 
-#: ../../import_run/import_run.rst:13
+#: ../../import_run/import_run.rst:15
 msgid ""
 "To import Jupyter notebooks and run, you need one thing, the valid URL "
 "for the notebook file. For example, if you want execute Jupyter notebook "
-"that's in github, you can copy and paste the URL and click IMPORT & RUN "
-"button."
+"that's in github, you can copy and paste the URL and click 'IMPORT & RUN'"
+" button."
 msgstr ""
 "Jupyter notebook 파일을 가져와서 실행하기 위해서는 notebook 파일에 대한 유효한 URL이 필요합니다. "
 "GitHub에 있는 Jupyter notebook을 실행하고자 한다면, 입력 필드에 해당 파일의 URL을 복사해서 붙여넣은 뒤, "
-"IMPORT & RUN 버튼을 클릭하면 됩니다."
+"'가져와서 실행' 버튼을 클릭하면 됩니다."
 
-#: ../../import_run/import_run.rst:19
+#: ../../import_run/import_run.rst:21
 msgid ""
 "When you trying to IMPORT & RUN Jupyter notebook file with local address,"
 " It will be regarded as invalid. You have to input URL which is not "
@@ -63,24 +64,24 @@ msgstr ""
 msgid "Import & Run Jupyter notebook"
 msgstr "Jupyter notebook 파일 가져오기 및 실행"
 
-#: ../../import_run/import_run.rst:26
+#: ../../import_run/import_run.rst:29
 msgid ""
 "After clicking the button, the dialog appears. This is a session launcher"
 " dialog same as when you starts the session at Sessions page or Summary "
 "page. Difference between import notebook and starting a new session is "
 "that import notebook automatically imports jupyter notebook in the URL, "
 "but simple starting a new session doesn't do that. the rest is same. "
-"Click LAUNCH button to the notebook after setting the environments and "
+"Click 'LAUNCH' button to the notebook after setting the environments and "
 "resource allocation as needed."
 msgstr ""
 "버튼을 클릭하면 다이얼로그가 띄워집니다. 이 다이얼로그는 세션 페이지나 요약 페이지에서 세션 시작시 나타나는 다이얼로그와 같습니다."
 " 다만 notebook 불러오기에서는 세션을 시작하면서 불러온 jupyter notebook을 자동으로 실행하는 것이지만, 단순히 "
-"세션을 시작하는 것은 그렇지 않다는 점이 다릅니다. 나머지는 동일합니다.실행 환경과 필요한 자원 할당을 완료한 뒤 LAUNCH "
-"버튼을 클릭하여 세션을 생성합니다."
+"세션을 시작하는 것은 그렇지 않다는 점이 다릅니다. 나머지는 동일합니다.실행 환경과 필요한 자원 할당을 완료한 뒤 '시작' 버튼을 "
+"클릭하여 세션을 생성합니다."
 
-#: ../../import_run/import_run.rst:33
+#: ../../import_run/import_run.rst:36
 msgid ""
-"The pop-up blocker must be turned off before clicking LAUNCH button to "
+"The pop-up blocker must be turned off before clicking 'LAUNCH' button to "
 "immediately see the running notebook window. Also, if there's not enough "
 "resources to execute the session, imported Jupyter notebook will not run."
 msgstr ""
@@ -91,7 +92,7 @@ msgstr ""
 msgid "Session Launcher In Importing Jupyter notebook"
 msgstr ""
 
-#: ../../import_run/import_run.rst:42
+#: ../../import_run/import_run.rst:45
 msgid ""
 "You can see the importing operation is successfully completed in Sessions"
 " page."
@@ -101,24 +102,24 @@ msgstr "세션 페이지에서 불러오기 작업이 성공적으로 완료된 
 msgid "Session page with imported Jupyter notebook"
 msgstr ""
 
-#: ../../import_run/import_run.rst:48
+#: ../../import_run/import_run.rst:51
 msgid "Create executable Jupyter notebook button"
 msgstr "Jupyter notebook을 바로 실행할 수 있는 버튼 생성하기"
 
-#: ../../import_run/import_run.rst:50
+#: ../../import_run/import_run.rst:53
 msgid ""
 "You can also create HTML or Markdown button about Jupyter notebook URL, "
-"too. Input a valid Jupyter notebook URL and click CREATE button. It will "
-"show code blocks that directly links to creating a session with notebook."
-" You can see the badge code working by inserting it in the GitHub "
-"repositories or where it supports html or markdown."
+"too. Input a valid Jupyter notebook URL and click 'CREATE' button. It "
+"will show code blocks that directly links to creating a session with "
+"notebook. You can see the badge code working by inserting it in the "
+"GitHub repositories or where it supports html or markdown."
 msgstr ""
 "Jupyter notebook URL에 대해 HTML이나 Markdown에 삽입할 수 있는 버튼도 만들 수 있습니다. 유효한 "
-"Jupyter notebook URL을 입력 필드 란에 기입하고, CREATE 버튼을 클릭하십시오. 노트북 파일을 바로 실행하는 "
-"세션을 생셩해주는 코드 블록이 생성됩니다. 배지 코드가 잘 동작하는 것을 GitHub 저장소 또는 html이나 markdown "
-"파일을 지원하는 그 어떤 곳에서도 사용이 가능합니다."
+"Jupyter notebook URL을 입력 필드 란에 기입하고, '배지 코드 생성' 버튼을 클릭하십시오. 노트북 파일을 바로 "
+"실행하는 세션을 생셩해주는 코드 블록이 생성됩니다. 배지 코드가 잘 동작하는 것을 GitHub 저장소 또는 html이나 "
+"markdown 파일을 지원하는 그 어떤 곳에서도 사용이 가능합니다."
 
-#: ../../import_run/import_run.rst:57
+#: ../../import_run/import_run.rst:60
 msgid ""
 "your account must be logined before clicking the button. Otherwise, you "
 "have to login first."
@@ -128,36 +129,35 @@ msgstr "버튼 클릭 전 반드시 로그인이 되어있어야 합니다. 아�
 msgid "Create a Jupyter notebook button"
 msgstr "Jupyter notebook을 바로 실행할 수 있는 버튼 생성하기"
 
-#: ../../import_run/import_run.rst:67
+#: ../../import_run/import_run.rst:70
 msgid "Importing GitHub Repositories"
 msgstr "GitHub 저장소 불러오기"
 
-#: ../../import_run/import_run.rst:69
+#: ../../import_run/import_run.rst:72
 msgid ""
 "Importing a GitHub repository is similar to import and running jupyter "
 "notebook. All you have to do is to fill out with github repository URL "
-"and click GET TO FOLDER button. If you can access to more than one "
+"and click 'GET TO FOLDER' button. If you can access to more than one "
 "storage host, you can select one from the list."
 msgstr ""
 "GitHub 저장소 불러오기는 Jupyter notebook 불러오기 및 실행하기와 비슷합니다. GitHub 저장소의 URL을 입력"
-" 필드에 적은 뒤 GET TO FOLDER 버튼을 클릭하면 됩니다. 하나 이상의 스토리지 호스트를 사용하는 경우에는 Host "
-"목록에서 하나를 선택하십시오."
+" 필드에 적은 뒤 '가져오기' 버튼을 클릭하면 됩니다. 하나 이상의 스토리지 호스트를 사용하는 경우에는 Host 목록에서 하나를 "
+"선택하십시오."
 
 #: ../../import_run/import_run.rst:-1
 msgid "Import GitHub repository"
 msgstr "GitHub 저장소 불러오기"
 
-#: ../../import_run/import_run.rst:78
+#: ../../import_run/import_run.rst:81
 msgid ""
 "If there are not enough resources to start a session or folder count is "
 "at the limit, then importing repository will fail. Please check resource "
 "statistics panel and Data & Storage page before importing the repository."
 msgstr ""
 "만약 세션을 생성할 수 있는 충분한 자원이 없거나, 폴더 생성 가능한 갯수가 최대 값에 도달했을 경우, 저장소 불러오기 작업은 "
-"불가능합니다. 저장소를 불러오기 전 반드시 Resource statistics 패널과 Data & Storage 페이지를 확인하시기"
-" 바랍니다."
+"불가능합니다. 저장소를 불러오기 전 반드시 Resource statistics 패널과 데이터 페이지를 확인하시기 바랍니다."
 
-#: ../../import_run/import_run.rst:82
+#: ../../import_run/import_run.rst:85
 msgid ""
 "You can see the repository is successfully imported as a data folder with"
 " its name."
@@ -167,11 +167,11 @@ msgstr "저장소가 하나의 폴더로써 성공적으로 불러와진 것을 
 msgid "Import GitHub repository result"
 msgstr "GitHub 저장소 불러오기"
 
-#: ../../import_run/import_run.rst:90
+#: ../../import_run/import_run.rst:93
 msgid "Importing GitLab Repositories"
 msgstr "GitLab 저장소 불러오기"
 
-#: ../../import_run/import_run.rst:92
+#: ../../import_run/import_run.rst:95
 msgid ""
 "From 22.03, Backend.AI supports importing from GitLab. It's almost the "
 "same as :ref:`Importing GitHub Repositories<importing-github-"
@@ -185,10 +185,11 @@ msgstr ""
 msgid "Import GitLab repository"
 msgstr "GitLab 저장소 불러오기"
 
-#: ../../import_run/import_run.rst:101
+#: ../../import_run/import_run.rst:104
 msgid ""
 "If there's data folder that has the same name already, the system will "
 "append ``_`` (underscore) and number in the imported repository folder."
 msgstr ""
 "이미 동일한 이름의 데이터 폴더가 존재할 경우, 시스템에서는 자동으로 불러오는 저장소 명 뒤에 ``_`` (밑줄)과 번호를 추가하게"
 " 됩니다."
+
