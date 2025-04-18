@@ -25,6 +25,7 @@ The latest versions of this document can be found from sites below:
    overview/overview
    installation/installation
    login/login
+   start/start
    summary/summary
    sessions_all/sessions_all
    model_serving/model_serving

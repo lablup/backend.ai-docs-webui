@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI WebUI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI WebUI User Guide\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-10 14:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: SungChul Hong <sungchul@lablup.com>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../start/start.rst:3
+msgid "Start Page"
+msgstr "시작 페이지"
+
+#: ../../start/start.rst:5
+msgid ""
+"On the Start page, users can quickly access frequently used WebUI "
+"features. Currently, shortcuts are available for :ref:`creating storage "
+"folders <create_storage_folder>`, :ref:`launching interactive or batch "
+"session <create_session>`, and :ref:`creating model service <model-"
+"serving>`."
+msgstr ""
+"시작 페이지에서는 자주 사용되는 기능에 대한 바로가기를 제공합니다. 현재는 :ref:`스토리지 폴더 생성 "
+"<create_storage_folder>`, :ref:`Interactive/Batch 세션 생성 "
+"<create_session>`, :ref:`모델 서비스 생성 <model-serving>` 기능이 제공됩니다."
+
+#: ../../start/start.rst:-1
+msgid "Start page"
+msgstr ""
+
+#: ../../start/start.rst:14
+msgid ""
+"Depending on the server configuration, the model service feature may not "
+"be available. If you want to use model service feature, please contact "
+"your system administrator."
+msgstr ""
+"서버 설치 및 설정 환경에 따라, 모델 서비스 기능이 비활성화되어 있을 수 있습니다. 모델 서비스 사용을 원하시는 경우, 시스템 "
+"관리자에게 문의하십시오."
+
