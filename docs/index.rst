@@ -31,10 +31,10 @@ The latest versions of this document can be found from sites below:
    vfolder/vfolder
    sessions_all/sessions_all
    mount_vfolder/mount_vfolder
+   share_vfolder/share_vfolder
    model_serving/model_serving
    chat/chat
    import_run/import_run
-   share_vfolder/share_vfolder
    my_environments/my_environments
    agent_summary/agent_summary
    statistics/statistics

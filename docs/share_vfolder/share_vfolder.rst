@@ -11,7 +11,7 @@ Share storage folders with other users
 -----------------------------------------------
 
 Let's learn how to share your personal Storage folder with other users. First,
-log in to User A's account and go to the Data & Storage page. There are several
+log in to User A's account and go to the Data page. There are several
 folders, and we want to share a folder named ``tests`` to User B.
 
 .. image:: list_of_vfolders_A.png
@@ -30,39 +30,45 @@ account.
    If a folder named ``tests`` already exists in User B's account, User A's
    ``tests`` folder cannot be shared with User B.
 
-Back to User A's account and click the share icon (third icon) in the Control panel on the
-right of the ``tests`` folder. Enter User B's email in the email input field and
-click the SHARE button to send a sharing invitation. No actual email is sent,
-and invitations are generated through the Backend.AI database. In the case of
-Permissions, if you check View, it is shared as read-only, and if you check Edit
-together, even writing is allowed to User B. If you want to share with
-multiple users, you can also click the + button to enter additional emails.
+Back to User A's account,click the 'share' button in the Control column on the 
+'tests' folder in the list.
+
+.. image:: share_button_on_list.png
+   :alt: share button
+
+In the 'Invite User' section of the modal, enter User B's email address and 
+select the desired permission level. If you choose 'Read Only', User B will be 
+able to only view the folder but not modify it. If you select 'Read & Write', 
+User B will be able to both view and modify the folder.
 
 .. image:: send_vfolder_invitation.png
-   :width: 350
+   :width: 600
    :align: center
 
-Back to User B's account and go to the Summary page. At the bottom of the
-page, you can see the invitation arrived. Click the ACCEPT button to accept the invitation.
-If you don't see the invitation, go to another page once and then come back to the Summary
-page again.
+Switch back to User B's account and navigate to the Summary page. In the 
+Invitation section of the Summary page, you will see the folder invitation. 
+Click the 'Accept' button to accept the invitation.
 
 .. image:: invitation_accept.png
    :width: 350
    :align: center
 
-Go to the Data & Storage page and check that the ``tests`` folder is displayed in
+Go to the Data page and check that the ``tests`` folder is displayed in
 the list. If you don't see it on the list, try refreshing your browser page.
 Since you have accepted the invitation, you can now view the contents of User
-A's ``tests`` folder in User B account. Compared to the other folders created by
-User B, the ``tests`` folder has no management icon in the Control panel. You
-can also see only the R (read-only) mark displayed in the Permission panel.
+A's ``tests`` folder in User B account. Unlike folders created by User B, 
+shared folders appear without the check icon in the Owner column. You 
+can also see the 'Read only' mark displayed in the Mount Permission column.
 
 .. image:: test_vfolder_listed_in_B.png
 
 Let's navigate inside the ``tests`` folder by clicking the folder icon in the
 Control panel of ``tests``. You can check the ``hello.txt`` and ``myfolder``
-that you checked in the User A's account again. Let's create a compute session
+that you checked in the User A's account again. 
+
+.. image:: folder_explorer_in_B.png
+
+Let's create a compute session
 by mounting this storge folder with the User B's account.
 
 .. image:: launch_session_with_test_mounted_B.png
@@ -82,7 +88,7 @@ because User A shared it as read-only. User B can create a file in the ``tests``
 folder if it has been shared including write access.
 
 .. image:: file_operations_on_shared_test_folder.png
-   :width: 100%
+   :width: 80%
    :align: center
 
 This way, you can share your personal storage folders with other users based on
@@ -96,17 +102,13 @@ your Backend.AI email account.
 Adjust permission for shared folders
 ------------------------------------
 
-If you click the ''person icon'' in the Control panel, you can see a list of
-users who have shared the folder. Click Select permission to set the sharing
-permission.
+You can modify the permissions of a shared user from the folder sharing modal. 
+Click Select permission to set the sharing permission. You can also remove an invited users 
+by clicking the 'x' button next to their permission. 
 
 * View: The invited user has read-only access to the folder.
 * Edit: The invited user has read and write access to the folder. The user
   cannot delete folders or files.
-* Edit+Delete: The invited user has full access to the folder and can delete
-  files or folders.
-* Kick out user: Retrieves the user's invitation. The user cannot view or
-  use the folder any more.
 
 .. image:: modify_perm.png
    :width: 500
@@ -114,5 +116,5 @@ permission.
 
 .. note::
    Renaming folder itself is available only for the owner, even if the user has granted
-   Edit or Edit+Delete permission. Please note that Edit permission does not provide
+   Edit permission. Please note that Edit permission does not provide
    renaming folder.
