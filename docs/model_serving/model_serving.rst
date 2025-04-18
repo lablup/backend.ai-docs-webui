@@ -178,25 +178,25 @@ To upload the model definition file (``model-definition.yml``) to the
 model type folder, you need to create a virtual folder. When creating
 the virtual folder, select the ``model`` type instead of the default
 ``general`` type. Refer to the section on :ref:`creating a storage
-folder<create_storage_folder>` in the Data & Folders page for
+folder<create_storage_folder>` in the Data page for
 instructions on how to create a folder.
 
-.. image:: model-type-folder-creation.png
+.. image:: model_type_folder_creation.png
    :width: 500
    :align: center
    :alt: Model type folder creation
 
-After creating the folder, select the 'MODELS' tab in the Data & Folders
+After creating the folder, select the 'MODELS' tab in the Data 
 page, click on the recently created model type folder icon to open the
 folder explorer, and upload the model definition file. 
 For more information on how to use the folder explorer, 
 please refer :ref:`Explore Folder<explore_folder>` section.
 
-.. image:: model-type-folder-list.png
+.. image:: model_type_folder_list.png
    :width: 100%
    :align: center
 
-.. image:: model-definition-file-upload.png
+.. image:: model_definition_file_upload.png
    :align: center
    :alt: Model definition file upload
 
@@ -210,14 +210,9 @@ Click the 'Start Service' button on the Model Serving page. This will
 bring up a page where you can enter the required settings for creating
 the service.
 
-.. image:: serving-list-page.png
+.. image:: serving_list_page.png
    :width: 100%
    :align: center
-
-.. image:: service-launcher1.png
-   :width: 700
-   :align: center
-   :alt: Service launcher
 
 First, provide a service name. For detailed explanations of each item, please refer to the following:
 
@@ -228,15 +223,20 @@ First, provide a service name. For detailed explanations of each item, please re
    model definition file inside the directory.
 -  Inference Runtime Variant: This categorizes the type of models into four: ``vLLM``, ``NVIDIA NIM``, ``Predefined Image Command``, ``Custom``.
 
-   .. image:: service-launcher-runtime-variant.png
-      :width: 700
-      :align: center
-      :alt: Runtime Variant
+.. image:: service_launcher1.png
+   :width: 700
+   :align: center
+   :alt: Service launcher
 
-   For example, if you choose ``vLLM`` or ``NVIDIA NIM`` or ``Predefined Image Command`` as a runtime variant of model service,
-   there's no need to configure a ``model-definition`` file in your model folder to mount. Instead, you might have to set an additional environment variable.
-   For more information, please take a look at
-   `Model Variant: Easily Serving Various Model Services <https://www.backend.ai/blog/2024-07-10-various-ways-of-model-serving>`_.
+For example, if you choose ``vLLM`` or ``NVIDIA NIM`` or ``Predefined Image Command`` as a runtime variant of model service,
+there's no need to configure a ``model-definition`` file in your model folder to mount. Instead, you might have to set an additional environment variable.
+For more information, please take a look at
+`Model Variant: Easily Serving Various Model Services <https://www.backend.ai/blog/2024-07-10-various-ways-of-model-serving>`_.
+
+.. image:: service_launcher_runtime_variant.png
+   :width: 700
+   :align: center
+   :alt: Runtime Variant
 
 -  Model Destination For Model Folder: This option allows aliasing path of
    model storage path to session corresponding to routing, which represents
@@ -246,30 +246,37 @@ First, provide a service name. For detailed explanations of each item, please re
 -  Additional Mounts: Likewise session, service provides additional mounts.
    Please make sure that only you can mount general/data usage mode folder, not additional
    model folder.
--  Desired Routing Count: This setting serves as the basis for determining the number
+
+.. image:: service_launcher2.png
+   :width: 700
+   :align: center
+   :alt: Model Definition and Mounts
+
+Then set number of replicas and select environments and resource group. The resource group is a collection of
+resources that can be allocated to the model service.
+
+-  Number of replicas: This setting serves as the basis for determining the number
    of routing sessions to maintain for the current service. If you change the value of this
    setting, the manager can create a new replica session or terminate a running session
    by referring to the number of existing replica sessions.
-
-.. image:: service-launcher2.png
-   :width: 700
-   :align: center
-   :alt: Service launcher
-
-Then select a resource group. The resource group is a collection of
-resources that can be allocated to the model service.
-
 -  Environment / Version: You can configure the execution environment
    for the dedicated server of the model service. Currently, even if the
    service has multiple routings, it will be executed in a single
    environment only. (Support for multiple execution environments will
    be added in a future update)
+
+.. image:: service_launcher3.png
+   :width: 700
+   :align: center
+   :alt: Service launcher
+   
 -  Resource Presets: Allows you to select the amount of resources to allocate from the model service.
    Resource contains CPU, RAM, and AI accelerator, as known as GPU.
 
-.. image:: cluster_mode.png
+.. image:: service_launcher4.png
    :width: 700
    :align: center
+   :alt: Service launcher
 
 -  Single Node: When running a session, the managed node and worker nodes are
    placed on a single physical node or virtual machine.
@@ -278,6 +285,10 @@ resources that can be allocated to the model service.
 -  Variable: In this section, you can set environment variable when starting a model service.
    It is useful when you trying to create a model service using runtime variant. some runtime variant needs
    certain environment variable setting before execution.
+
+.. image:: cluster_mode.png
+   :width: 700
+   :align: center
 
 Before creating model service, Backend.AI supports validation feature to check
 whether execution is available or not(due to any errors during execution).
@@ -324,11 +335,58 @@ follows:
       Then, click 'Clear error and Retry' button to remove all the error stacked in routes info
       table and ensure that the routing of the model service is set correctly.
 
-      .. image:: refresh-button.png
-         :align: center
-         :alt: Refresh button
+   .. image:: refresh_button.png
+      :align: center
+      :alt: Refresh button
 
 .. _generating-tokens:
+
+Auto Scaling Rules
+~~~~~~~~~~~~~~~~~~~
+You can configure auto scaling rules for the model service. 
+Based on the defined rules, the number of replicas is automatically reduced during low using to conserve resources,
+and increased during high usage to prevent request delays of failures.
+
+.. image:: auto_scaling_rules.png
+   :width: 1000
+   :align: center
+   :alt: Auto scaling rules
+
+Click the 'Add Rules' button to add a new rule. When you click the button, a modal appears 
+when you can add a rule. Each field in the modal is described below:
+
+- Type: Define the rule. Select either 'Scale Up' or 'Scale Down' based on the scope of the rule.
+
+- Metric Source: Inference Framework or kernel.
+
+   - Inference Framework: Average value taken from every replicas. Supported only if both AppProxy reports the inference metrics.
+   - Kernel: Average value taken from every kernels backing the endpoint.
+
+- Condition: Set the condition under which the auto scaling rule will be applied.
+
+   - Metric Name: The name of the metric to be compared. You can freely input any metric supported by the runtime environment. 
+   - Comparator: Method to compare live metrics with threshold value.
+
+      - LESS_THAN: Rule triggered when current metric value goes below the threshold defined
+      - LESS_THAN_OR_EQUAL: Rule triggered when current metric value goes below or equals the threshold defined
+      - GREATER_THAN: Rule triggered when current metric value goes above the threshold defined
+      - GREATER_THAN_OR_EQUAL: Rule triggered when current metric value goes above or equals the threshold defined
+
+   - Threshold: A reference value to determine whether the scaling condition is met.
+
+- Step Size: Size of step of the replica count to be changed when rule is triggered. 
+  Can be represented as both positive and negative value. 
+  when defined as negative, the rule will decrease number of replicas.
+
+- Max/Min Replicas: Sets a maximum/minimum value for the replica count of the endpoint. 
+  Rule will not be triggered if the potential replica count gets above/below this value.
+
+- CoolDown Seconds: Durations in seconds to skip reapplying the rule right after rule is first triggered.
+
+.. image:: auto_scaling_rules_modal.png
+   :width: 500
+   :align: center
+   :alt: Auto scaling rules modal
 
 Generating Tokens
 ~~~~~~~~~~~~~~~~~
@@ -343,7 +401,8 @@ accessible without any separate token, and end users can access it.
 However, if it is disabled, you can issue a token as described below to
 verify that the service is running properly.
 
-.. image:: routing-page.png
+.. image:: generate_token.png
+   :width: 1000
    :align: center
    :alt: Routing page
 
@@ -351,7 +410,7 @@ Click the 'Generate Token' button located to the right of the generated
 token list in the routing information. In the modal that appears for
 token creation, enter the expiration date.
 
-.. image:: token-generation-dialog.png
+.. image:: token_generation_dialog.png
    :width: 500
    :align: center
    :alt: Token generation dialog
@@ -359,7 +418,7 @@ token creation, enter the expiration date.
 The issued token will be added to the list of generated tokens. Click the 'copy' button in the token
 item to copy the token, and add it as the value of the following key.
 
-.. image:: generated-token-copy.png
+.. image:: generated_token_copy.png
    :align: center
    :alt: Generated token copy
 
@@ -403,21 +462,20 @@ Using the Large Language Model
 If you've created a Large Language Model (LLM) service, you can test the LLM in real-time. 
 Simply click the 'LLM Chat Test' button located in the Service Endpoint column. 
 
-.. image:: LLM-chat-test.png
+.. image:: LLM_chat_test.png
    :align: center
    :width: 500
    :alt: LLM Chat Test
 
-Then, a modal for chatting will appear as shown below. You can input the text you want to
-chat with the LLM model and click the 'Send' button or press 'Enter'. The LLM model will
-respond to the text you entered.
+Then, You will be redirected to the Chat page, where the model you created is automatically selected.
+Using the chat interface provided on the Chat page, you can test the LLM model. 
+For more information about the chat feature, please refer to the :ref:`Chat page <chat_page>`
 
-.. image:: LLM-chat-modal.png
-   :align: center
-   :alt: LLM Chat Dialog
+.. image:: LLM_chat.png
+   :alt: LLM Chat
 
-If you encounter issues connecting to the API, a custom modal will appear allowing you to
-manually specify model settings. To use the model, you will need the following information:
+If you encounter issues connecting to the API, the Chat page will display options that allow you to manually configure the model settings. 
+To use the model, you will need the following information:
 
 - baseURL: Base URL of the server where the model is located. 
   Make sure to include the version information. 
@@ -430,29 +488,19 @@ manually specify model settings. To use the model, you will need the following i
   For instance, when using the service generated by Backend.AI, please refer to the
   :ref:`Generating Tokens<generating-tokens>` section for instructions on how to generate tokens.
 
-
-.. image:: custom-model.png
-   :align: center
-   :alt: LLM Chat Dialog Custom
-
-Click the 'More' button in the upper left corner to access additional features. Compare with
-other LLM models, delete chat history, and more. For more information on 'Compare with other
-models', please refer to the :ref:`LLM Playground<LLM-playground>` section.
-
-.. image:: extra-features.png
-   :align: center
-   :alt: LLM Chat Dialog extra features
+.. image:: LLM_chat_custom_model.png
+   :alt: LLM Chat Custom Model
 
 Modifying Model Service
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Click on the wrench icon in the Control tab to open a modal where you can change
-the model service. The format is identical to the model service start modal, with
+Click on the wrench icon in the Control tab to modify a model service you want to update. 
+The format is identical to the model service start modal, with
 previously entered fields already filled in. You can optionally modify only the
 fields you wish to change. After modifying the fields, click the 'confirm' button.
 The changes will be adjusted accordingly.
 
-.. image:: edit-service-launcher.png
+.. image:: edit_model_service.png
    :align: center
    :alt: Edit model service dialog
 
@@ -464,11 +512,11 @@ count to match the desired session count. However, this puts a burden on
 the Backend.AI scheduler. Therefore, it is recommended to terminate the
 model service if it is no longer needed. To terminate the model service,
 click on the 'trash' button in the Control column. A modal will appear asking
-for confirmation to terminate the model service. Clicking ``OK``
+for confirmation to terminate the model service. Clicking ``Delete``
 will terminate the model service. The terminated model service will be
 removed from the list of model services.
 
-.. image:: terminate-model-service-dialog.png
+.. image:: terminate_model_service_dialog.png
    :width: 500
    :align: center
    :alt: Terminate model service dialog

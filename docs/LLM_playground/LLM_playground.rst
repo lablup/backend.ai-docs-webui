@@ -1,4 +1,4 @@
-.. _LLM-playground:
+.. _chat_page:
 
 ==============
 LLM Playground
