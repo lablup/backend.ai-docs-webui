@@ -1,19 +1,27 @@
-===============================
+============
+Data Page
+============
+
 Handling Data & Storage Folders
-===============================
+================================
+
+.. _data_page:
 
 Backend.AI supports dedicated storage to preserve user's files. Since the files
 and directories of a compute session are deleted upon session termination, it is
 recommended to save them in a storage folder. List of storage folders can be
-found by selecting the Data & Storage page on the sidebar. You can see the information
+found by selecting the Data page on the sidebar. You can see the information
 such as the folder name and ID, the NFS host name where the folder is located
 (Location), and folder access rights (Permission).
 
 
-.. image:: vfolder_list.png
-   :alt: Folder list in Storage page
+.. image:: data_page.png
+   :width: 100%
+   :alt: data page
 
-There are two types of storage folders. User folders can be created by
+There are two types of storage folders, ``user`` and ``project``. 
+
+User folders can be created by
 normal users, and you can see that there is one user button in the Type column.
 On the other hand, Project folders can be recognized by an button with multiple
 users in the column. Project folders are created by domain admins, and normal
@@ -23,16 +31,15 @@ belong.
 .. image:: vfolder_status.png
    :alt: Storage status in Storage page
 
-Storage Status on top of the folder list shows the following information:
+The Storage Status and Quota per storage volume show the following information:
 
-* Number of folders
-    * Created: The number of folders that the user created. 
-    * Limit: The maximum number of folders that the user can create afterwards.
-      This value depends on the resource policy applied to the user and cannot be
-      changed without changing the resource policy. Folders that were not created by
-      the user (eg. folders invited to share, or project folders) are not counted.
-    * Project Folder: The number of project folders that the user created.
-    * Invited: The number of folders that the user was invited to share.
+* Storage Status
+    - Created Folders: The number of folders that the user created.
+
+         - Limit: The maximum number of folders that the user can create afterwards. This value depends on the resource policy applied to the user and cannot be changed without changing the resource policy. Folders that were not created by the user (eg. folders invited to share, or project folders) are not counted.
+
+    * Project Folders: The number of project folders that the user created.
+    * Invited Folders: The number of folders that the user was invited to share.
 * Quota per storage volume
     * Host: The name of the storage host.
     * Project: Current project folder usage / current project folder quota scope.
@@ -43,22 +50,12 @@ Storage Status on top of the folder list shows the following information:
    (e.g. XFS, CephFS, NetApp, Purestorage, etc.). For the quota setting, please refer
    to the :ref:`Quota Setting Panel<quota-setting-panel>` section.
 
-Check marks on the Owner column in the folder list indicate the user created folders.
-
-.. image:: owner_panel.png
-   :alt: Owner panel in Storage page
-
-.. tip::
-   If there are lots of folders in the list, you can filter the list by using the
-   search boxes on top of the list.
-
-
-.. _create_storage_folder:
-
 Create storage folder
 ---------------------
 
-You can create a storage folder with the desired name by clicking the '+ Add'
+.. _create_storage_folder:
+
+You can create a storage folder with the desired name by clicking the 'Create Folder'
 button. Enter the name of the folder to be created in Folder name, and select
 one of User / Project for Type. (Depending on the server settings, only one of
 User or Project may be selectable.) If you selected a project folder, the select project field
@@ -76,7 +73,7 @@ The meaning of each fields that can be selected in the creation dialog is as
 follows.
 
 * Folder name: The name of the folder. You can enter up to 64 characters.
-* Host: NFS host to create folder. You can choose one if you have multiple NFS
+* Location: NFS host to create folder. You can choose one if you have multiple NFS
   hosts. You can check whether the selected host has enough capacity remaining through 
   the indicator.
 * Usage Mode: You can set the purpose of the folder. There are three types of mode:
@@ -94,18 +91,22 @@ follows.
   set to "Read-Only", project members cannot write to this folder inside their
   compute session.
 * Cloneable: Shown only when you select usage model to "Model". 
-  Select whether the vfolder to be created is cloneable. 
+  Select whether the vfolder you are creating should be cloneable.
+
+The folders created here can be :ref:`mounted <session-mounts>` when creating a compute session. Folders are mounted 
+under the user's default working directory, ``/home/work/``, and the file stored in the mounted 
+directory will not be deleted when the compute session is terminated. 
+(If you delete the folder, the file will also be deleted.)
 
 Explore folder
---------------
+---------------
 
 .. _explore_folder:
 
-You can click the folder button in the Control column to bring up a file explorer
-where you can view the contents of that folder.
+Click the folder name to open a file explorer and view the contents of the folder.
 
-.. image:: vfolder_item_with_controls.png
-   :alt: Controls in folder item
+.. image:: click_folder_name.png
+   :alt: vfolder list
 
 You can see that directories and files inside the folder will be listed, if
 exists. Click a directory name in the Name column to move to the directory.  You
@@ -115,8 +116,8 @@ well. For more detailed file operations, you can mount this folder when creating
 a compute session, and then use a service like Terminal or Jupyter Notebook to
 do it.
 
-.. image:: folderexplorer_with_filebrowser.png
-   :alt: File explorer of a storage folder
+.. image:: folder_explorer.png
+   :alt: folder explorer
 
 You can create a new directory on the current path with the 'Create' button
 (in the folder explorer), or upload a local file or folder with the 'Upload' button. All
@@ -126,159 +127,48 @@ of mounting folders into a compute session.
 The maximum length of file or directory inside a folder may depends on the host
 file system. But, it usually cannot exceed 255 characters.
 
-To close file explorer, click the X button in the upper right.
-
-
 Rename folder
--------------
+---------------
+
+.. _rename_folder:
 
 If you have permission to rename the storage folder, you can rename it by
-clicking the edit button in the Control column. When you click the button, a
-rename dialog will appear. Write new folder name and then click 'UPDATE' button.
+clicking the edit button.
 
-.. image:: vfolder_rename_dialog.png
-   :width: 400
-   :align: center
+.. image:: rename_vfolder.png
    :alt: Folder rename dialog
 
 
 Delete folder
--------------
+---------------
 
-If you have permission to delete the storage folder, you can send the folder to the 'trash can' 
-tab by clicking the 'trash can' button. Clicking the 'trash can' button in the Control column 
-will open the following modal.
+.. _delete_folder:
+
+If you have permission to delete the storage folder, you can send the folder to the 'Trash' 
+tab by clicking the 'trash bin' button. When you move a folder to the Trash tab, it is marked as delete-pending.
 
 .. image:: move_to_trash.png
-   :width: 400
-   :align: center
-   :alt: Folder delete notification modal
-
-Pressing the 'MOVE TO TRASH' button will change the folder's status to ``delete-pending``.
-
-.. image:: trash_bin_table.png
-   :width: 800
-   :align: center
-   :alt: Trash bin table
+   :alt: move to trash
 
 In this status, you can restore the folder by clicking restore button in Control column. If you want to permanently delete the folder, 
-please click 'red trash can' button in the same column. A confirmation modal will pop up with 
+please click 'trash bin' button in the same column. 
+
+.. image:: vfolder_trash_list.png
+   :alt: trash tab list
+
+A confirmation modal will pop up with 
 an input field saying ``Type folder name to delete``. Make sure you type the exact folder name correctly 
 into the field, and click the red 'DELETE FOREVER' button to permanently delete the folder.
 
 .. image:: vfolder_delete_dialog.png
-   :width: 400
+   :width: 600
    :align: center
    :alt: Folder deletion dialog
 
-The folders created here can be mounted when creating a compute session. Folders are mounted 
-under the user's default working directory, ``/home/work/``, and the file stored in the mounted 
-directory will not be deleted when the compute session is terminated. 
-(If you delete the folder, the file will also be deleted.)
-
-Pipeline folders
-----------------
-
-This tab shows the list of folders that are automatically created when executing a
-pipeline in FastTrack. When a pipeline is created, a new folder is created and mounted
-under ``/pipeline`` for each instance of work (computing session).
-
-
-.. _automount-folder:
-
-Automount folders
------------------
-
-Data & Storage page has an Automount Folders tab. Click this tab to see a
-list of folders whose names prefixed with a dot (``.``). When you create a folder,
-if you specify a name that starts with a dot (``.``), it is added to the Automount
-Folders tab, not the Folders tab. Automount Folders are special folders that are
-automatically mounted in your home directory even if you do not mount them
-manually when creating a compute session. By using this feature, creating and
-using Storage folders such as ``.local``, ``.linuxbrew``, ``.pyenv``, etc.,
-you can configure a certain user packages or environments that do not change
-with different kinds of compute session.
-
-For more detailed information on the usage of Automount folders, refer to
-:ref:`examples of using automount folders<using-automount-folder>`.
-
-.. image:: vfolder_automount_folders.png
-   :alt: Automount folders
-
-Models
-------
-'Models' 
-The Models tab facilitates straightforward model serving. 
-You can store the necessary data, including input data for model serving and training data, in the model folder. 
-To initiate the service, click on the 'Model serving' button located in the control column. 
-
-Following method is to serve model by pressing the 'Model serving' button in the 'model_folder' directory.
-
-.. image:: hover_model_serving.png
-   :alt: Hover model serving
-
-As shown in 'Model Storage To Mount', the 'model_folder' folder is automatically mounted
-to enable starting a new service.
-
-.. image:: start_new_service_with_mounted_folder.png
-   :alt: Start new service with mounted folder
-
-If you want to learn more about model serving, please refer to :ref:`this link<model-serving>`.
-
-
-Model store
------------
-From the 24.03, You can easily clone models from shared via project.
-The model store refers to a storage space and service that stores, manages, searches, and utilizes various machine learning and deep learning models.
-
-.. image:: model_store.png
-   :alt: Model store
-
-
-As you can see in the model store section, there are several model cards that you can access, which are maintained by project admin. 
-Each model card may contain tags that represent the characteristics of the model itself. 
-Following method is to clone one from the model cards to try pre-trained models.
-
-Click one of the model cards and you will see the modal that describes what is all about the model. 
-If you want to clone the current model card to your folder, click 'Clone to a folder' button on the right top of the modal.
-
-.. note::
-   Only project admin can edit model cards in model store. If you want to add your own model card and share it to others, 
-   please contact your project admin.
-
-.. image:: model_card_description.png
-   :alt: Model card description
-
-After clicking the button, another modal will appear which configures model card cloning.
-Enter the folder name and set the permission as is (if you want to use it by yourself), 
-and Click 'Clone' button below. 
-
-.. image:: model_card_clone_dialog.png
-   :width: 500
-   :align: center
-   :alt: Model card clone dialog
-
-After cloning process is successfully done, you can see the new folder has been created in your folder list.
-You can find it in 'Models' tab.
-
-.. image:: model_card_in_folder_list.png
-   :width: 700
-   :align: center
-   :alt: Model card in folder list
-
-Also, you can check what's inside the model card by accessing the folder you just cloned.
-
-.. image:: cloned_model_card_folder_explorer.png
-   :width: 700
-   :align: center
-   :alt: Cloned model card folder explorer
-
-If you want to use pre-trained model that you cloned from, then please refer to 
-`Model Variant: Easily Serving Various Model Services <https://www.backend.ai/blog/2024-07-10-various-ways-of-model-serving>`_.
-
-
 Using FileBrowser
 -----------------
+
+.. _using-filebrowser:
 
 Backend.AI supports `FileBrowser <https://filebrowser.org>`_ from version
 20.09. FileBrowser is a program that helps you manage files on a remote server
@@ -294,23 +184,22 @@ session. Therefore, the following conditions are required to launch it.
 
 You can access FileBrowser in two ways.
 
-* Execute FileBrowser from file explorer dialog of a data folder in Data &
-  Storage page.
+* Execute FileBrowser from file explorer dialog of a data folder.
 * Launch a compute session directly from a FileBrowser image on Sessions page.
 
 
-Execute FileBrowser from folder explorer dialog in Data & Storage page
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Execute FileBrowser from folder explorer dialog
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Go to the Data & Storage page and open the file explorer dialog of target
-data folder. Click the folder button or the folder name to open the file explorer.
+Go to the Data page and open the file explorer dialog of target
+data folder. Click the folder name to open the file explorer.
 
-.. image:: first_step_to_access_filebrowser.png
+.. image:: click_folder_name.png
    :alt: first step to access FileBrowser
 
-Click 'EXECUTE FILEBROWSER' button in the upper-right corner of the explorer.
+Click 'Execute filebrowser' button in the upper-right corner of the explorer.
 
-.. image:: folderexplorer_with_filebrowser.png
+.. image:: folder_explorer.png
    :alt: Folder explorer with FileBrowser
 
 You can see the FileBrowser is opened in a new window. You can also see that the
@@ -430,6 +319,8 @@ You will see that moving operation is successfully finished.
 Using SFTP Server
 -----------------
 
+.. _sftp_server:
+
 From 22.09, Backend.AI supports SSH / SFTP file upload from both desktop app and
 web-based WebUI. The SFTP server allows you to upload files quickly through reliable
 data streams.
@@ -438,15 +329,15 @@ data streams.
    Depending on the system settings, running SFTP server from the file dialog may not
    be allowed.
 
-Execute SFTP server from folder explorer dialog in Data & Storage page
+Execute SFTP server from folder explorer dialog in Data page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Go to the Data & Storage page and open the file explorer dialog of target data folder.
+Go to the Data page and open the file explorer dialog of target data folder.
 Click the folder button or the folder name to open the file explorer.
 
-Click 'RUN SFTP SERVER' button in the upper-right corner of the explorer.
+Click 'Run SFTP server' button in the upper-right corner of the explorer.
 
-.. image:: folderexplorer_with_filebrowser.png
+.. image:: folder_explorer.png
    :alt: Folder explorer with SFTP Server
 
 You can see the SSH / SFTP connection dialog. And a new SFTP session will be created
@@ -478,6 +369,51 @@ the session will be terminated when there is no transfer for some time.
    own SSH private key. So, you don't need to download it every time you
    want to connect via SSH to your container. Please refer to
    :ref:`managing user's SSH keypair<user-ssh-keypair-management>`.
+
+Folder Categories
+===================
+
+.. _folder-categories:
+
+Pipeline folders
+----------------
+
+This tab shows the list of folders that are automatically created when executing a
+pipeline in FastTrack. When a pipeline is created, a new folder is created and mounted
+under ``/pipeline`` for each instance of work (computing session).
+
+Automount folders
+-----------------
+
+.. _automount-folder:
+
+Data page has an Automount Folders tab. Click this tab to see a
+list of folders whose names prefixed with a dot (``.``). When you create a folder,
+if you specify a name that starts with a dot (``.``), it is added to the Automount
+Folders tab, not the Folders tab. Automount Folders are special folders that are
+automatically mounted in your home directory even if you do not mount them
+manually when creating a compute session. By using this feature, creating and
+using Storage folders such as ``.local``, ``.linuxbrew``, ``.pyenv``, etc.,
+you can configure a certain user packages or environments that do not change
+with different kinds of compute session.
+
+For more detailed information on the usage of Automount folders, refer to
+:ref:`examples of using automount folders<using-automount-folder>`.
+
+.. image:: vfolder_automount_folders.png
+   :alt: Automount folders
+
+Models
+------
+
+.. _models:
+
+'Models' 
+The Models tab facilitates straightforward model serving. 
+You can store the necessary data, including input data for :ref:`model serving <model-serving>` and training data, in the model folder. 
+
+.. image:: models.png
+   :alt: Models tab
 
 
 .. Setting quota on XFS
