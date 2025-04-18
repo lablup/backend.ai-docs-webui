@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI WebUI User Guide 20.09\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-20 18:06+0900\n"
+"POT-Creation-Date: 2025-04-18 15:32+0900\n"
 "PO-Revision-Date: 2021-03-16 21:05+0900\n"
 "Last-Translator: \n"
 "Language: ko_KR\n"
@@ -287,14 +287,13 @@ msgstr ""
 #: ../../cluster_session/cluster_session.rst:120
 msgid ""
 "Click the LAUNCH button to send a request to create a compute session, "
-"and wait for a while to get a cluster session. In the Session Info "
-"column, make sure there is a \"Single-node\" or \"Multi-node\" tag "
-"indicating the number of containers."
+"and wait for a while to get a cluster session. After the session is "
+"created, you can view the created containers on the session details page."
 msgstr ""
-"LAUNCH 버튼을 클릭하여 연산 세션 생성 요청을 보내고 잠시 기다리면 클러스터 세션이 생성됩니다. Session Info 열에서"
-" 구성 컨테이너의 숫자를 표시하는 “Single-node” 또는 “Multi-node” 태그가 있는지 확인 하십시오."
+"LAUNCH 버튼을 클릭하여 연산 세션 생성 요청을 보내고 잠시 기다리면 클러스터 세션이 생성됩니다. 세션 생성 이후에,"
+" 세션 상세 페이지에서 생성된 3개의 컨테이너를 확인할 수 있습니다."
 
-#: ../../cluster_session/cluster_session.rst:128
+#: ../../cluster_session/cluster_session.rst:127
 msgid ""
 "Let's open the terminal app in the compute session we just have created. "
 "If you look up the environment variables, you can see that the "
@@ -306,7 +305,7 @@ msgstr ""
 "``BACKENDAI_CLUSTER_*`` 변수가 설정된 것을 확인할 수 있습니다. 각 환경 변수의 의미와 값을 위 설명과 대조해 "
 "보십시오."
 
-#: ../../cluster_session/cluster_session.rst:138
+#: ../../cluster_session/cluster_session.rst:137
 msgid ""
 "You can also SSH into the ``sub1`` container. No separate SSH setting is "
 "required, just issue the command ``ssh sub1`` and you are done. You can "
@@ -316,7 +315,7 @@ msgstr ""
 "``sub1`` 컨테이너로 SSH 접속을 할 수도 있습니다. 별도의 SSH 설정 없이 ``ssh sub1`` 이라는 명령만 내리면 "
 "끝입니다. ``work@`` 뒤의 호스트 이름이 변한 것을 볼 수 있습니다. sub1 컨테이너의 쉘로 접속한 것입니다."
 
-#: ../../cluster_session/cluster_session.rst:148
+#: ../../cluster_session/cluster_session.rst:147
 msgid ""
 "In this way, Backend.AI makes it easy to create cluster computing "
 "sessions. In order to execute distributed learning and calculation "
@@ -334,11 +333,11 @@ msgstr ""
 "작성해야 합니다. Backend.AI에서는 분산 학습에 필요한 소프트웨어를 포함하는 커널 이미지를 제공하고 있으므로, 해당 이미지를"
 " 사용해서 멋진 분산 학습 알고리즘을 만들어 보실 수 있습니다."
 
-#: ../../cluster_session/cluster_session.rst:158
+#: ../../cluster_session/cluster_session.rst:157
 msgid "See logs per container"
 msgstr "컨테이너 별 로그 확인하기"
 
-#: ../../cluster_session/cluster_session.rst:160
+#: ../../cluster_session/cluster_session.rst:159
 msgid ""
 "From 24.03, You can check each log of container in logs modal. It will "
 "help you to understand what's going on not only in ``main`` container but"
