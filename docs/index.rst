@@ -31,7 +31,7 @@ The latest versions of this document can be found from sites below:
    vfolder/vfolder
    sessions_all/sessions_all
    model_serving/model_serving
-   LLM_playground/LLM_playground
+   chat/chat
    import_run/import_run
    mount_vfolder/mount_vfolder
    share_vfolder/share_vfolder
