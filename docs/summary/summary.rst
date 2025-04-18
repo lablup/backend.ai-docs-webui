@@ -5,7 +5,6 @@ Summary Page
 On the Summary page, users can check resource status and session usage, and
 there are shortcut links to frequently used functions.
 
-
 Topbar
 ------
 
