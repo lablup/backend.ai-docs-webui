@@ -25,6 +25,7 @@ The latest versions of this document can be found from sites below:
    overview/overview
    installation/installation
    login/login
+   header/header
    start/start
    summary/summary
    sessions_all/sessions_all
