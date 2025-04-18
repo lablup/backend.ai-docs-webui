@@ -1,8 +1,8 @@
-.. _session-mounts:
-
 =============================================
 Mounting Folders to a Compute Session
 =============================================
+
+.. _session-mounts:
 
 Backend.AI provides a function to mount storage folders when creating a compute session.
 When new compute session is started, user will have access to the``/home/work/`` directory.
@@ -11,8 +11,8 @@ This is because compute sessions are dynamically created and deleted based on th
 To preserve data inside a container regardless of the container's lifecycle, a separate host folder must be mounted in the container, and then files must be created within the mounted folder.
 
 Go to 'Sessions' page and click the 'Start' button. 
-After filling out the 'Session Type', 'Environments & Resource allocation' pages, 
-navigate to the 'Data & Folders' page to see a list of folders that users can mount. 
+After filling out the 'Session Type', 'Environments & Resource allocation' steps, 
+navigate to the 'Data & Storage' step to see a list of folders that users can mount. 
 From this list, choose the folders to mount and add them, or select multiple folders to mount more. 
 The documentation will explain how to mount two folders, ``user1-ml-test`` and ``user2-vfolder``, 
 and then create a session. 
@@ -24,20 +24,23 @@ and then create a session.
 .. note::
    By looking at the data and folder information within that project, users can see information such as usage mode, 
    the storage host the folder belongs to, permissions, and more. 
-   Note that the 'Data & Folders' page only outputs data folders that are mountable by the current user. 
+   Note that the 'Data & Storage' step only outputs data folders that are mountable by the current user. 
    For example, folders that belong to other projects cannot be viewed. 
 .. note::
-   Accessing the 'Data & Storage' side menu will show the information related to the folders. 
-   From this menu, users can view the folders that have been created, create new folders, and upload files. 
+   Clicking a 'folder name' in the 'Data & Storage' step will open the folder explorer for that folder. 
+   From this, users can view the folders that have been created, create new folders, and upload files. 
    For more detailed instructions related to folders, please refer :ref:`Explore Folder<explore_folder>` section. 
 
-   Alternatively, a new virtual folder can be created by clicking the '+ Add' button. 
+   Alternatively, a new virtual folder can be created by clicking the '+' button. 
    For further information on how to create a new folder in session launcher page, 
    please refer :ref:`Create storage folder<create_storage_folder>` section. 
 
 In the created session, screen terminal window can be brought up by clicking the terminal icon. 
 ``ls`` command will mount ``user1-ml-test` folder and ``user2-vfolder`` under the ``user1-ml-test`` 
 and ``user2-vfolder`` folders are mounted under the home directory. 
+
+.. image:: execute_terminal_app.png
+   :alt: Execute terminal app
 
 .. note::
    The selected folder will be mounted with its name under ``/home/work/`` inside the compute session, by its default. 

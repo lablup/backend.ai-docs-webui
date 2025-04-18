@@ -30,10 +30,10 @@ The latest versions of this document can be found from sites below:
    summary/summary
    vfolder/vfolder
    sessions_all/sessions_all
+   mount_vfolder/mount_vfolder
    model_serving/model_serving
    chat/chat
    import_run/import_run
-   mount_vfolder/mount_vfolder
    share_vfolder/share_vfolder
    my_environments/my_environments
    agent_summary/agent_summary
