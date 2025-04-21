@@ -155,30 +155,40 @@ gettext_compact = False
 # -- App configuration -------------------------------------------------------
 def setup_latex(app, language):
     if language == "ko":
-        latex_elements["fontpkg"] += r"""
+        latex_elements[
+            "fontpkg"
+        ] += r"""
             \setmainfont{Pretendard}
             \setsansfont{Pretendard}
             \setmonofont{JetBrains Mono}
         """
-        latex_elements["preamble"] += r"""
+        latex_elements[
+            "preamble"
+        ] += r"""
             \usepackage{kotex}
             \usepackage{fontspec}
         """
     elif language == "ja":
         global latex_engine
         latex_engine = "platex"
-        latex_elements["fontpkg"] += r"""
+        latex_elements[
+            "fontpkg"
+        ] += r"""
             \usepackage[utf8]{inputenc}
             \usepackage{hyperref}
             \usepackage{pxjahyper}
             \usepackage{graphicx}
             \usepackage{txfonts}  % general fonts
         """
-        latex_elements["preamble"] += r"""
+        latex_elements[
+            "preamble"
+        ] += r"""
             \setlength{\headheight}{16pt}
         """
     elif language == "th":
-        latex_elements["fontpkg"] += r"""
+        latex_elements[
+            "fontpkg"
+        ] += r"""
             \setmainfont{Noto Sans Thai}
             \setsansfont{Noto Sans Thai}
             \setmonofont{JetBrains Mono}
@@ -189,7 +199,25 @@ def setup_latex(app, language):
             \XeTeXinterchartoks 0 1 = {\THSarabun}
             \XeTeXinterchartoks 1 0 = {\normalfont}
         """
-        latex_elements["preamble"] += r"""
+        latex_elements[
+            "preamble"
+        ] += r"""
+            \usepackage{kotex}
+            \usepackage{fontspec}
+        """
+    else:
+        latex_elements[
+            "fontpkg"
+        ] += r"""
+            \setmainfont{Pretendard}
+            \setsansfont{Pretendard}
+            \setmainfont{Ubuntu}
+            \setsansfont{Ubuntu}
+            \setmonofont{JetBrains Mono}
+        """
+        latex_elements[
+            "preamble"
+        ] += r"""
             \usepackage{kotex}
             \usepackage{fontspec}
         """

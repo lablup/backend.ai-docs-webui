@@ -2,7 +2,7 @@
 Chat Page
 ==============
 
-.. _chat:
+.. _chat_page:
 
 Starting from version 25.05, the 'LLM Playground' feature has been separated into its own page and renamed to Chat. 
 Chat page enables users to conveniently compare and interact with different LLM models all in one location.
