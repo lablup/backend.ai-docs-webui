@@ -77,7 +77,7 @@ Each menu item has the following functions.
   recorded on the client side.
 
 My Account
-^^^^^^^^^
+^^^^^^^^^^
 
 If you click My Account, the following dialog appears.
 

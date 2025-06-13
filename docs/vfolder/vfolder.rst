@@ -19,14 +19,13 @@ such as the folder name and ID, the NFS host name where the folder is located
    :width: 100%
    :alt: data page
 
-There are two types of storage folders, ``user`` and ``project``. 
+There are two types of storage folders: ``User`` and ``Project``. You can
+distinguish between them in the 'Type' column.
 
-User folders can be created by
-normal users, and you can see that there is one user button in the Type column.
-On the other hand, Project folders can be recognized by an button with multiple
-users in the column. Project folders are created by domain admins, and normal
-users can only see project folders created for the project in which the users
-belong.
+A User folder is created directly by an individual user for personal use.
+A Project folder is created by a domain administrator for each project.
+Regular users cannot create project folders themselves; they can only use
+project folders that have been created by an administrator.
 
 .. image:: vfolder_status.png
    :alt: Storage status in Storage page
@@ -55,43 +54,29 @@ Create storage folder
 
 .. _create_storage_folder:
 
-You can create a storage folder with the desired name by clicking the 'Create Folder'
-button. Enter the name of the folder to be created in Folder name, and select
-one of User / Project for Type. (Depending on the server settings, only one of
-User or Project may be selectable.) If you selected a project folder, the select project field
-will appear. The project folder will be bound to the project specified in the Project
-field, and only users belonging to the project can mount and use the project folder.
-After setting the values as desired, you can create a folder by clicking the
-'CREATE' button.
+
+To create a new folder, click 'Create Folder' on the Data page. Fill in the fields in
+the creation dialog as follows:
 
 .. image:: vfolder_create_modal.png
    :width: 400
    :align: center
    :alt: Folder creation dialog
 
-The meaning of each fields that can be selected in the creation dialog is as
-follows.
+The meaning of each field in the creation dialog is as follows.
 
-* Folder name: The name of the folder. You can enter up to 64 characters.
-* Location: NFS host to create folder. You can choose one if you have multiple NFS
-  hosts. You can check whether the selected host has enough capacity remaining through 
-  the indicator.
-* Usage Mode: You can set the purpose of the folder. There are three types of mode:
-  General, Data, and Model. It is classified for the development of exclusive functions
-  for Data & Model Stores in the future and currently there is no
-  difference in UI depending on the purpose.  
-* Type: Determines the type of folder to be created. It can be set as User or
-  Project. The User folder is a folder that users can create and use alone
-  and the Project folder is a folder created by admin and shared by users in the project.
-* Project: Shown only when you select project type.  
-  Designates the project to which the folder belongs when creating a new project folder.
-  Project folders must belong to a project. However, it does not play any
-  role when creating a user folder.
-* Permission: Set permission of a project folder for project members. If this is
-  set to "Read-Only", project members cannot write to this folder inside their
-  compute session.
-* Cloneable: Shown only when you select usage model to "Model". 
-  Select whether the vfolder you are creating should be cloneable.
+* Usage Mode: Set the purpose of the folder.
+
+   * General: Defines a folder for storing various data in a general-purpose manner.
+   * Models: Defines a folder specialized for model serving and management. If this mode is selected, it is also possible to toggle the folder's copy availability.
+   * Auto Mount: Folders automatically mounted when a session is created. If selected, the folder name must start with a dot ('.').
+    
+* Folder name: The name of the folder (up to 64 characters).
+* Location: Select the NFS host where the folder will be created. If there are multiple hosts, choose one. An indicator will show if there is enough available space.
+* Type: Determines the type of folder to be created. It can be set as User or Project. The User folder is a folder that users can create and use alone and the Project folder is a folder created by admin and shared by users in the project.
+* Project: Shown only when you select project type. Designates the project to which the folder belongs when creating a new project folder. Project folders must belong to a project. However, it does not play any role when creating a user folder.
+* Permission: Set permission of a project folder for project members. If this is set to "Read-Only", project members cannot write to this folder inside their compute session.
+* Cloneable: Shown only when you select usage model to "Model". Select whether the vfolder you are creating should be cloneable.
 
 The folders created here can be :ref:`mounted <session-mounts>` when creating a compute session. Folders are mounted 
 under the user's default working directory, ``/home/work/``, and the file stored in the mounted 
@@ -99,7 +84,7 @@ directory will not be deleted when the compute session is terminated.
 (If you delete the folder, the file will also be deleted.)
 
 Explore folder
----------------
+--------------
 
 .. _explore_folder:
 
@@ -127,8 +112,14 @@ of mounting folders into a compute session.
 The maximum length of file or directory inside a folder may depends on the host
 file system. But, it usually cannot exceed 255 characters.
 
+.. note::
+   To ensure smooth performance, the screen limits the maximum number of files that can be displayed when a
+   directory contains an excessive number of files. If a folder contains a large number of files, some may
+   not be shown on the screen. In such cases, please use the terminal or other applications to view all files
+   in the directory.
+
 Rename folder
----------------
+-------------
 
 .. _rename_folder:
 
@@ -189,7 +180,7 @@ You can access FileBrowser in two ways.
 
 
 Execute FileBrowser from folder explorer dialog
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Go to the Data page and open the file explorer dialog of target
 data folder. Click the folder name to open the file explorer.
@@ -330,7 +321,7 @@ data streams.
    be allowed.
 
 Execute SFTP server from folder explorer dialog in Data page
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Go to the Data page and open the file explorer dialog of target data folder.
 Click the folder button or the folder name to open the file explorer.
@@ -371,7 +362,7 @@ the session will be terminated when there is no transfer for some time.
    :ref:`managing user's SSH keypair<user-ssh-keypair-management>`.
 
 Folder Categories
-===================
+=================
 
 .. _folder-categories:
 

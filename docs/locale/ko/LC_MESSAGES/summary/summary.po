@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 25.05\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-08 17:34+0900\n"
+"POT-Creation-Date: 2025-06-12 16:28+0900\n"
 "PO-Revision-Date: 2021-03-02 18:31+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko_KR\n"
@@ -25,11 +25,11 @@ msgstr "요약 페이지"
 
 #: ../../summary/summary.rst:5
 msgid "On the Summary page, users can check resource status and session usage."
-msgstr "Summary 페이지에서는 사용자의 자원 사용 상태 및 연산 세션 현황 등의 정보를 확인할 수 있습니다. "
+msgstr "요약 페이지에서는 사용자의 자원 사용 상태 및 연산 세션 사용량을 확인할 수 있습니다."
 
 #: ../../summary/summary.rst:-1
 msgid "summary page"
-msgstr "Summary 페이지"
+msgstr "요약 페이지"
 
 #: ../../summary/summary.rst:12
 msgid "Resource Statistics"
