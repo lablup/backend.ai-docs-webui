@@ -681,7 +681,7 @@ documentation and other usage examples on the Internet.
 Here we are introducing some simple but useful features.
 
 Copy terminal contents
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 
 tmux offers a number of useful features, but it's a bit confusing for first-time
 users. In particular, tmux has its own clipboard buffer, so when copying the
@@ -719,7 +719,7 @@ you can use the web terminal more conveniently.
    * Paste: Press ``Ctrl-Shift-V``
 
 Check the terminal history using keyboard
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 There is also a way to copy the terminal contents and check the previous
 contents of the terminal simultaneously. It is to check the previous contents
@@ -729,7 +729,7 @@ key. With this method, users can check the contents of the terminal history even
 when the mouse support is turned off.
 
 Spawn multiple shells
-~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^
 
 The main advantage of tmux is to launch and use multiple shells in one
 terminal window. Pressing ``Ctrl-B`` key and ``c``. will show the new shell environment.

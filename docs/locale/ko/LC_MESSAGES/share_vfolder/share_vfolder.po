@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console Essential Guide Enterprise 25.05\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-14 11:34+0900\n"
+"POT-Creation-Date: 2025-06-13 17:41+0900\n"
 "PO-Revision-Date: 2021-01-21 11:13+0900\n"
 "Last-Translator: \n"
 "Language: ko_KR\n"
@@ -89,14 +89,23 @@ msgstr ""
 
 #: ../../share_vfolder/share_vfolder.rst:48
 msgid ""
-"Switch back to User B's account and navigate to the Summary page. In the "
-"Invitation section of the Summary page, you will see the folder "
-"invitation. Click the 'Accept' button to accept the invitation."
+"Switch back to User B's account and navigate to the Data page. The number"
+" of invited folders can be checked in the Storage Status panel."
 msgstr ""
-"다시 사용자B의 계정으로 전환한 뒤, 요약 페이지에 접속합니다. 요약 페이지의 초대 영역에서 폴더 초대가 도착한 것을 확인할 수 "
-"있으며, '수락' 버튼을 클릭해 초대를 수락합니다. "
+"사용자B의 계정으로 전환한 후 데이터 페이지로 이동합니다. 스토리지 상태 패널에서 초대된 폴더의 개수를 확인할 "
+"수 있습니다."
 
-#: ../../share_vfolder/share_vfolder.rst:56
+#: ../../share_vfolder/share_vfolder.rst:-1
+msgid "Pending invitations modal"
+msgstr "대기 중인 초대 모달"
+
+#: ../../share_vfolder/share_vfolder.rst:54
+msgid ""
+"Clicking the badge opens an invitation list modal, where pending folder "
+"invitations can be accepted or declined."
+msgstr "뱃지를 클릭하면 초대 리스트 모달이 열리며, 대기 중인 폴더 초대를 승낙하거나 거절할 수 있습니다."
+
+#: ../../share_vfolder/share_vfolder.rst:61
 msgid ""
 "Go to the Data page and check that the ``tests`` folder is displayed in "
 "the list. If you don't see it on the list, try refreshing your browser "
@@ -111,7 +120,7 @@ msgstr ""
 "있습니다. 사용자B가 생성한 다른 폴더와 비교해 ``tests`` 폴더는 제어 열에 관리 아이콘이 빠진 것을 확인할 수 있습니다. "
 "마운트 권한 열에는 읽기 전용 표시만 떠 있는 것도 볼 수 있습니다."
 
-#: ../../share_vfolder/share_vfolder.rst:65
+#: ../../share_vfolder/share_vfolder.rst:70
 msgid ""
 "Let's navigate inside the ``tests`` folder by clicking the folder icon in"
 " the Control panel of ``tests``. You can check the ``hello.txt`` and "
@@ -120,13 +129,13 @@ msgstr ""
 "``tests`` 의 Control 패널에서 폴더 아이콘을 클릭하여 ``tests`` 폴더 내부를 탐색 해 보겠습니다. 사용자 A의"
 " 계정에서 확인한 ``hello.txt`` 와 ``myfolder`` 를 다시 확인할 수 있습니다. "
 
-#: ../../share_vfolder/share_vfolder.rst:71
+#: ../../share_vfolder/share_vfolder.rst:76
 msgid ""
 "Let's create a compute session by mounting this storge folder with the "
 "User B's account."
 msgstr "이 스토리지 폴더를 사용자 B의 계정으로 마운트하여 컴퓨팅 세션을 생성 해 보겠습니다."
 
-#: ../../share_vfolder/share_vfolder.rst:79
+#: ../../share_vfolder/share_vfolder.rst:84
 msgid ""
 "From version 24.09, Backend.AI offers an improved version of the session "
 "launcher (NEO) as default. If you want to use the previous session "
@@ -142,7 +151,7 @@ msgstr ""
 "<https://webui.docs.backend.ai/en/23.09_a/sessions_all/sessions_all.html>`_"
 " 를 참고하세요. "
 
-#: ../../share_vfolder/share_vfolder.rst:84
+#: ../../share_vfolder/share_vfolder.rst:89
 msgid ""
 "After creating a session, open the web terminal and check that the "
 "``tests`` folder is mounted in the home folder. The contents of the "
@@ -155,13 +164,13 @@ msgstr ""
 " 되지만, 파일을 생성하거나 삭제하려는 시도는 허용되지 않습니다. 사용자A가 읽기 전용으로 공유했기 때문입니다. 만약 쓰기 권한까지"
 " 포함하여 공유했다면 사용자B도 ``tests`` 폴더에 파일을 생성할 수 있습니다."
 
-#: ../../share_vfolder/share_vfolder.rst:94
+#: ../../share_vfolder/share_vfolder.rst:99
 msgid ""
 "This way, you can share your personal storage folders with other users "
 "based on your Backend.AI email account."
 msgstr "이렇게 개인 폴더를 Backend.AI 이메일 계정 기반으로 다른 사용자에게 공유할 수 있습니다."
 
-#: ../../share_vfolder/share_vfolder.rst:98
+#: ../../share_vfolder/share_vfolder.rst:103
 msgid ""
 "Backend.AI also provides sharing project folder to project members. To "
 "See the detail, go to :ref:`sharing a project storage folder with project"
@@ -170,36 +179,54 @@ msgstr ""
 "Backend.AI는 또한 프로젝트 구성원에게 공유 프로젝트 폴더를 제공합니다. 자세한 내용을 보려면 :ref:`프로젝트 구성원과 "
 "프로젝트 스토리지 폴더 공유 <sharing-a-group-storage>` 로 이동하십시오."
 
-#: ../../share_vfolder/share_vfolder.rst:103
+#: ../../share_vfolder/share_vfolder.rst:108
 msgid "Adjust permission for shared folders"
 msgstr "공유 폴더 권한 조정"
 
-#: ../../share_vfolder/share_vfolder.rst:105
+#: ../../share_vfolder/share_vfolder.rst:110
 msgid ""
 "You can modify the permissions of a shared user from the folder sharing "
-"modal. Click Select permission to set the sharing permission. You can "
-"also remove an invited users by clicking the 'x' button next to their "
-"permission."
+"modal. Click Select permission to set the sharing permission."
 msgstr ""
-"마찬가지로, 폴더 공유 모달에서 공유된 사용자의 권한을 수정할 수 있습니다. 권한 선택란을 클릭해 공유 권한을 설정합니다. 권한 "
-"옆의 'x' 버튼을 클릭하면, 초대한 사용자를 제거할 수도 있습니다. "
+"마찬가지로, 폴더 공유 모달에서 공유된 사용자의 권한을 수정할 수 있습니다. 권한 선택란을 클릭해 공유 권한을 설정합니다."
 
-#: ../../share_vfolder/share_vfolder.rst:109
+#: ../../share_vfolder/share_vfolder.rst:113
 msgid "View: The invited user has read-only access to the folder."
 msgstr "읽기 전용: 초대된 사용자는 폴더에 대한 읽기 전용 접근 권한을 갖습니다."
 
-#: ../../share_vfolder/share_vfolder.rst:110
+#: ../../share_vfolder/share_vfolder.rst:114
 msgid ""
 "Edit: The invited user has read and write access to the folder. The user "
 "cannot delete folders or files."
 msgstr "수정: 초대된 사용자에게 폴더에 대한 읽기 및 쓰기 권한이 있습니다. 사용자는 폴더나 파일을 삭제할 수 없습니다."
 
-#: ../../share_vfolder/share_vfolder.rst:118
+#: ../../share_vfolder/share_vfolder.rst:122
 msgid ""
 "Renaming folder itself is available only for the owner, even if the user "
 "has granted Edit permission. Please note that Edit permission does not "
 "provide renaming folder."
 msgstr ""
-"사용자가 수정 권한을 부여한 경우에도 폴더 자체 이름 변경은 소유자만 사용할 수 있습니다. 편집 "
-"권한은 폴더 이름 변경을 제공하지 않습니다."
+"사용자가 수정 권한을 부여한 경우에도 폴더 자체 이름 변경은 소유자만 사용할 수 있습니다. 편집 권한은 폴더 이름 변경을 제공하지 "
+"않습니다."
 
+#: ../../share_vfolder/share_vfolder.rst:128
+msgid "Stop sharing a folder"
+msgstr "공유 중지"
+
+#: ../../share_vfolder/share_vfolder.rst:130
+msgid ""
+"To stop sharing a folder as the inviter, open the file list and click the"
+" 'Share' button in the control column for the folder. In the permission "
+"settings modal, click the 'Stop sharing' button next to the permission "
+"selector."
+msgstr ""
+"폴더 초대자가 공유를 중단하려면, 파일 목록 컨트롤 열에서 해당 폴더의 '공유' 버튼을 누릅니다. 권한 수정 모달에서 권한 선택기 옆에 "
+"있는 '공유 중지' 버튼을 클릭하면 됩니다."
+
+#: ../../share_vfolder/share_vfolder.rst:138
+msgid ""
+"If access to a shared folder is no longer needed as an invitee, select "
+"the 'Share' button next to the folder in the folder list, then click "
+"'Leave the shared folder' to remove access."
+msgstr ""
+"초대받은 사람이 더 이상 공유 폴더를 이용하지 않는 경우, 폴더 리스트에서 해당 폴더의 '공유' 버튼을 누른 후 '공유 폴더 나가기' 버튼을 클릭하세요."

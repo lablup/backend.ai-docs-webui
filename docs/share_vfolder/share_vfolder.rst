@@ -45,9 +45,14 @@ User B will be able to both view and modify the folder.
    :width: 600
    :align: center
 
-Switch back to User B's account and navigate to the Summary page. In the 
-Invitation section of the Summary page, you will see the folder invitation. 
-Click the 'Accept' button to accept the invitation.
+Switch back to User B's account and navigate to the Data page.
+The number of invited folders can be checked in the Storage Status panel.
+
+.. image:: pending_invitations.png
+   :alt: Pending invitations modal
+
+Clicking the badge opens an invitation list modal, where pending folder invitations
+can be accepted or declined.
 
 .. image:: invitation_accept.png
    :width: 350
@@ -103,8 +108,7 @@ Adjust permission for shared folders
 ------------------------------------
 
 You can modify the permissions of a shared user from the folder sharing modal. 
-Click Select permission to set the sharing permission. You can also remove an invited users 
-by clicking the 'x' button next to their permission. 
+Click Select permission to set the sharing permission.
 
 * View: The invited user has read-only access to the folder.
 * Edit: The invited user has read and write access to the folder. The user
@@ -118,3 +122,22 @@ by clicking the 'x' button next to their permission.
    Renaming folder itself is available only for the owner, even if the user has granted
    Edit permission. Please note that Edit permission does not provide
    renaming folder.
+
+
+Stop sharing a folder
+---------------------
+
+To stop sharing a folder as the inviter, open the file list and click the 'Share' button in the
+control column for the folder. In the permission settings modal, click the 'Stop sharing' button
+next to the permission selector.
+
+.. image:: modify_permission_and_stop_sharing.png
+   :width: 500
+   :align: center
+
+If access to a shared folder is no longer needed as an invitee, select the 'Share' button next to
+the folder in the folder list, then click 'Leave the shared folder' to remove access.
+
+.. image:: leave_shared_folder.png
+   :width: 500
+   :align: center
