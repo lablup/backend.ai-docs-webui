@@ -222,7 +222,7 @@ msgid ""
 "container belongs (ex. ``3614fdf3-0e04-...``). The main container's "
 "``BACKENDAI_KERNEL_ID`` is the same as ``BACKENDAI_SESSION_ID``."
 msgstr ""
-"``BACKENdAI_SESSION_ID``: 현재 컨테이너가 속한 클러스터 세션의 ID (ex. "
+"``BACKENDAI_SESSION_ID``: 현재 컨테이너가 속한 클러스터 세션의 ID (ex. "
 "``3614fdf3-0e04-…``). 메인 컨테이너의 ``BACKENDAI_KERNEL_ID`` 는 "
 "``BACKENDAI_SESSION_ID`` 와 같습니다."
 
