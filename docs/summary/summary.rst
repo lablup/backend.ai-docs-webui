@@ -1,3 +1,7 @@
+.. warning::
+   This feature is deprecated, so please use the :ref:`dashboard<dashboard>` page going forward. Also, technical support
+   and bug fixes for this feature are no longer provided. Please understand that issues may not be addressed.
+
 ============
 Summary Page
 ============

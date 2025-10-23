@@ -28,12 +28,10 @@ msgid "Backend.AI WebUI User Guide"
 msgstr ""
 
 #: ../../index.rst:9
-#, fuzzy
 msgid "User's guide for the Backend.AI WebUI."
 msgstr "Backend.AI Web-UI의 사용자 가이드입니다."
 
 #: ../../index.rst:11
-#, fuzzy
 msgid ""
 "Backend.AI WebUI is a web or app that provides easy-to-use GUI interface "
 "to work with the Backend.AI server."
