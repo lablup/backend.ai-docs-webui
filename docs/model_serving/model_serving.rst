@@ -477,11 +477,9 @@ For more information about the chat feature, please refer to the :ref:`Chat page
 If you encounter issues connecting to the API, the Chat page will display options that allow you to manually configure the model settings. 
 To use the model, you will need the following information:
 
-- baseURL: Base URL of the server where the model is located. 
+- baseURL (optional): Base URL of the server where the model is located. 
   Make sure to include the version information. 
   For instance, when utilizing the OpenAI API, you should enter https://api.openai.com/v1.
-- Model ID: Unique identifier of the model. To specify the model you wish to use, you would provide its unique identifier. 
-  For instance, for GPT-4, you would input 'gpt-4o'. 
 - Token (optional): An authentication key to access the model service. Tokens can be 
   generated from various services, not just Backend.AI. The format and generation process
   may vary depending on the service. Always refer to the specific service's guide for details.
