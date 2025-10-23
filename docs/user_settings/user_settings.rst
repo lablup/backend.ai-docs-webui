@@ -1,6 +1,7 @@
 =============
 User Settings
 =============
+.. _user-settings:
 
 The user settings page is accessed by selecting the Preferences menu that 
 appears after clicking the person icon at the top right. Users can change
