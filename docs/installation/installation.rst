@@ -3,8 +3,8 @@ Installation
 ============
 
 Backend.AI WebUI can be used in two different forms. 
-It can be used as a web service by connecting to a seperate web address provided by the admins, 
-or as an form of app provided as a stand-alone executable file which does not require seperate installation.
+It can be used as a web service by connecting to a separate web address provided by the admins, 
+or as an form of app provided as a stand-alone executable file which does not require separate installation.
 
 With web-based form of WebUI, users just need the latest versions of web browsers, no need to install platform-dependent desktop applications.
 
