@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 25.05\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-12 17:05+0900\n"
+"POT-Creation-Date: 2025-10-23 15:26+0900\n"
 "PO-Revision-Date: 2021-03-02 20:43+0900\n"
 "Last-Translator: \n"
 "Language: ko\n"
@@ -219,496 +219,482 @@ msgstr ""
 msgid "Backend.AI feature details"
 msgstr "Backend.AI 기능 상세"
 
-#: ../../overview/overview.rst:98
+#: ../../overview/overview.rst:97
+msgid "**Accelerator Support**"
+msgstr "**가속기 지원**"
+
+#: ../../overview/overview.rst:100 ../../overview/overview.rst:142
 msgid "Category"
-msgstr ""
-
-#: ../../overview/overview.rst:98
-msgid "Feature"
-msgstr ""
+msgstr "카테고리"
 
 #: ../../overview/overview.rst:100
-msgid "NVIDIA support"
-msgstr ""
+msgid "Minimum"
+msgstr "최소"
 
 #: ../../overview/overview.rst:100
-msgid "Container-level multi GPU"
+msgid "Dedicated features"
+msgstr "전용 기능"
+
+#: ../../overview/overview.rst:102
+msgid "AMD"
 msgstr ""
 
 #: ../../overview/overview.rst:102
-msgid "(Enterprise) Fractional GPU sharing & scaling"
+msgid "MI250X or later"
+msgstr "MI250X 이상"
+
+#: ../../overview/overview.rst:104
+msgid "Furiosa"
 msgstr ""
 
 #: ../../overview/overview.rst:104
-msgid "Multiple CUDA library version support (8.0 to 12.2)"
+msgid "Warboy / RNGD"
 msgstr ""
 
 #: ../../overview/overview.rst:106
-msgid "GPUDirect storage support"
+msgid "Graphcore"
+msgstr ""
+
+#: ../../overview/overview.rst:106
+msgid "IPU"
 msgstr ""
 
 #: ../../overview/overview.rst:108
-msgid "NGC (NVIDIA GPU Cloud) image integration"
+msgid "Groq"
+msgstr ""
+
+#: ../../overview/overview.rst:108
+msgid "Groqcard"
 msgstr ""
 
 #: ../../overview/overview.rst:110
-msgid "GPU-GPU Network autoconfiguration"
+msgid "HyperAccel"
 msgstr ""
 
 #: ../../overview/overview.rst:112
-msgid "NPU Support"
+msgid "Intel"
 msgstr ""
 
 #: ../../overview/overview.rst:112
-msgid "Graphcore IPU"
-msgstr ""
+msgid "Gaudi 2 and 3"
+msgstr "Gaudi 2 및 3"
 
-#: ../../overview/overview.rst:113
-msgid "Rebellions ATOM"
-msgstr ""
+#: ../../overview/overview.rst:112
+msgid "Memory usage based automatic idle resource reclamation"
+msgstr "메모리 사용 기반 자동 유휴 자원 회수"
 
 #: ../../overview/overview.rst:114
-msgid "FuriosaAI Warboy"
+msgid "NVIDIA support"
+msgstr "NVIDIA 지원"
+
+#: ../../overview/overview.rst:114
+msgid "CUDA compute capability 7.5 or later"
+msgstr "CUDA 컴퓨팅 기능 7.5 이상"
+
+#: ../../overview/overview.rst:116
+msgid ""
+"Model inference: NVIDIA Hopper or later (depending on the target "
+"quantization)"
+msgstr "모델 추론: NVIDIA Hopper 이상 (대상 양자화에 따라 다름)"
+
+#: ../../overview/overview.rst:118
+msgid "Model training: NVIDIA Ampere or later"
+msgstr "모델 학습: NVIDIA Ampere 이상"
+
+#: ../../overview/overview.rst:114
+msgid "(Enterprise) Fractional GPU virtualization and sharing for containers"
+msgstr "(엔터프라이즈) 컨테이너용 분할 GPU 가상화 및 공유"
+
+#: ../../overview/overview.rst:120
+msgid "Container-level multi GPU"
+msgstr "컨테이너 레벨 멀티 GPU"
+
+#: ../../overview/overview.rst:122
+msgid "Multiple CUDA library version support"
+msgstr "여러 CUDA 라이브러리 버전 지원"
+
+#: ../../overview/overview.rst:124
+msgid "GPUDirect storage support"
+msgstr "GPUDirect 스토리지 지원"
+
+#: ../../overview/overview.rst:126
+msgid "NGC (NVIDIA GPU Cloud) image integration"
+msgstr "NGC (NVIDIA GPU Cloud) 이미지 통합"
+
+#: ../../overview/overview.rst:128
+msgid "GPU-GPU Network auto configuration"
+msgstr "GPU-GPU 네트워크 자동 구성"
+
+#: ../../overview/overview.rst:130
+msgid "Rebellions"
 msgstr ""
 
-#: ../../overview/overview.rst:115
-msgid "Hyperaccel LPU"
+#: ../../overview/overview.rst:130
+msgid "ATOM / ATOM+"
 msgstr ""
 
-#: ../../overview/overview.rst:117
+#: ../../overview/overview.rst:132
+msgid "SambaNova"
+msgstr ""
+
+#: ../../overview/overview.rst:132
+msgid "SN30/40L"
+msgstr ""
+
+#: ../../overview/overview.rst:134
+msgid "Sapeon"
+msgstr ""
+
+#: ../../overview/overview.rst:134
+msgid "X220 / X330"
+msgstr ""
+
+#: ../../overview/overview.rst:136
+msgid "Tenstorrent"
+msgstr ""
+
+#: ../../overview/overview.rst:136
+msgid "Wormhole"
+msgstr ""
+
+#: ../../overview/overview.rst:139
+msgid "**Other Features**"
+msgstr "**기타 기능**"
+
+#: ../../overview/overview.rst:142
+msgid "Feature"
+msgstr "기능"
+
+#: ../../overview/overview.rst:144
 msgid "Scaling"
-msgstr ""
+msgstr "스케일링"
 
-#: ../../overview/overview.rst:117
+#: ../../overview/overview.rst:144
 msgid "On-premise installation on both bare-metal / VM"
-msgstr ""
+msgstr "베어 메탈 / VM 온프레미스 설치"
 
-#: ../../overview/overview.rst:119
+#: ../../overview/overview.rst:146
 msgid "Hybrid cloud (on-premise + cloud)"
-msgstr ""
+msgstr "하이브리드 클라우드 (온프레미스 + 클라우드)"
 
-#: ../../overview/overview.rst:121
+#: ../../overview/overview.rst:148
 msgid "Polycloud (multi-cloud federation)"
-msgstr ""
+msgstr "폴리클라우드 (멀티 클라우드 페더레이션)"
 
-#: ../../overview/overview.rst:123
+#: ../../overview/overview.rst:150
 msgid "Scheduling"
-msgstr ""
+msgstr "스케줄링"
 
-#: ../../overview/overview.rst:123
+#: ../../overview/overview.rst:150
 msgid "Unified scheduling & monitoring with GUI admin"
-msgstr ""
+msgstr "GUI 관리자를 통한 통합 스케줄링 및 모니터링"
 
-#: ../../overview/overview.rst:125
-msgid "Per-user (keypair) resource policy"
-msgstr ""
+#: ../../overview/overview.rst:152
+msgid "Per-user resource policy"
+msgstr "유저별 자원 정책"
 
-#: ../../overview/overview.rst:127
-msgid "(Enterprise) Per-project resource policy"
-msgstr ""
+#: ../../overview/overview.rst:154
+msgid "Per-keypair resource policy"
+msgstr "키페어별 자원 정책"
 
-#: ../../overview/overview.rst:129
+#: ../../overview/overview.rst:156
+msgid "Per-project resource policy"
+msgstr "프로젝트별 자원 정책"
+
+#: ../../overview/overview.rst:158
 msgid "Availability-slot based scheduling"
-msgstr ""
+msgstr "가용성 슬롯 기반 스케줄링"
 
-#: ../../overview/overview.rst:131
+#: ../../overview/overview.rst:160
 msgid "(Enterprise) Utilization based resource management"
-msgstr ""
+msgstr "(엔터프라이즈) 활용 기반 자원 관리"
 
-#: ../../overview/overview.rst:133
+#: ../../overview/overview.rst:162
 msgid "Cluster partitioning"
-msgstr ""
+msgstr "클러스터 파티셔닝"
 
-#: ../../overview/overview.rst:133
+#: ../../overview/overview.rst:162
 msgid "Resource groups by H/W spec and usage"
-msgstr ""
+msgstr "H/W 사양 및 사용량에 따른 자원 그룹"
 
-#: ../../overview/overview.rst:135
+#: ../../overview/overview.rst:164
 msgid "(Enterprise) Access control of users to resource group"
-msgstr ""
+msgstr "(엔터프라이즈) 사용자에 대한 자원 그룹 접근 제어"
 
-#: ../../overview/overview.rst:138
+#: ../../overview/overview.rst:167
 msgid "(Enterprise) Access control of project to resource group"
-msgstr ""
+msgstr "(엔터프라이즈) 프로젝트에 대한 자원 그룹 접근 제어"
 
-#: ../../overview/overview.rst:141
+#: ../../overview/overview.rst:170
 msgid "Security"
-msgstr ""
+msgstr "보안"
 
-#: ../../overview/overview.rst:141
+#: ../../overview/overview.rst:170
 msgid "Sandboxing via hypervisor/container"
-msgstr ""
+msgstr "하이퍼바이저/컨테이너를 통한 샌드박스"
 
-#: ../../overview/overview.rst:143
+#: ../../overview/overview.rst:172
 msgid "Access logs for each user"
-msgstr ""
+msgstr "각 사용자에 대한 접근 로그"
 
-#: ../../overview/overview.rst:145
+#: ../../overview/overview.rst:174
 msgid "Per session (container) logs"
-msgstr ""
+msgstr "세션 (컨테이너) 별 로그"
 
-#: ../../overview/overview.rst:147
+#: ../../overview/overview.rst:176
 msgid "UI / UX"
 msgstr ""
 
-#: ../../overview/overview.rst:147
+#: ../../overview/overview.rst:176
 msgid "GUI web interface"
-msgstr ""
-
-#: ../../overview/overview.rst:149
-msgid "(Enterprise) Admin GUI web interface"
-msgstr ""
-
-#: ../../overview/overview.rst:151
-msgid "(Enterprise) MLOps pipeline web interface"
-msgstr ""
-
-#: ../../overview/overview.rst:153
-msgid "Data management"
-msgstr ""
-
-#: ../../overview/overview.rst:153
-msgid "EFS, NFS, SMB and distributed file system (CephFS, GlusterFS, HDFS, etc)"
-msgstr ""
-
-#: ../../overview/overview.rst:156
-msgid "(Enterprise) Storage solution integration:"
-msgstr ""
-
-#: ../../overview/overview.rst:158
-msgid "PureStorage FlashBlade"
-msgstr ""
-
-#: ../../overview/overview.rst:159
-msgid "NetApp ONTAP & NetApp XCP"
-msgstr ""
-
-#: ../../overview/overview.rst:160
-msgid "Weka.io"
-msgstr ""
-
-#: ../../overview/overview.rst:161
-msgid "Dell EMC"
-msgstr ""
-
-#: ../../overview/overview.rst:162
-msgid "IBM SpectrumScale (GPFS)"
-msgstr ""
-
-#: ../../overview/overview.rst:163
-msgid "Vast Data"
-msgstr ""
-
-#: ../../overview/overview.rst:165
-msgid "Fine-grained Access control to data by user/project"
-msgstr ""
-
-#: ../../overview/overview.rst:167
-msgid "Per user/project based storage quota managment*"
-msgstr ""
-
-#: ../../overview/overview.rst:169
-msgid "Developer support"
-msgstr ""
-
-#: ../../overview/overview.rst:169
-msgid "Universal programming languages (Python, C/C++, etc)"
-msgstr ""
-
-#: ../../overview/overview.rst:171
-msgid ""
-"Interactive web apps (Terminal, Jupyter, VSCode, MLFlow, Microsoft NNI, R"
-" Studio, etc)"
-msgstr ""
-
-#: ../../overview/overview.rst:174
-msgid "Offering various type of computing sessions tailored to specific purposes"
-msgstr ""
-
-#: ../../overview/overview.rst:177
-#, fuzzy
-msgid "Interactive"
-msgstr "관리 (Maintenance)*"
+msgstr "GUI 웹 인터페이스"
 
 #: ../../overview/overview.rst:178
-msgid "Batch"
-msgstr ""
+msgid "(Enterprise) Admin GUI web interface"
+msgstr "(엔터프라이즈) 관리자 GUI 웹 인터페이스"
 
-#: ../../overview/overview.rst:179
-msgid "Inference"
-msgstr ""
+#: ../../overview/overview.rst:180
+msgid "(Enterprise) MLOps pipeline web interface"
+msgstr "(엔터프라이즈) MLOps 파이프라인 웹 인터페이스"
 
-#: ../../overview/overview.rst:181
-msgid "For data scientists"
-msgstr ""
+#: ../../overview/overview.rst:182
+msgid "Data management"
+msgstr "데이터 관리"
 
-#: ../../overview/overview.rst:181
-msgid ""
-"Concurrent user of multiple versions of libraries: Tensorflow, PyTorch, "
-"etc"
-msgstr ""
+#: ../../overview/overview.rst:182
+msgid "EFS, NFS, SMB and distributed file system (CephFS, GlusterFS, HDFS, etc)"
+msgstr "EFS, NFS, SMB 및 분산 파일 시스템 (CephFS, GlusterFS, HDFS 등)"
 
-#: ../../overview/overview.rst:184
-msgid "Concurrent user of multiple versions of libraries"
-msgstr ""
+#: ../../overview/overview.rst:185
+msgid "(Enterprise) Storage solution integration:"
+msgstr "(엔터프라이즈) 스토리지 솔루션 통합:"
 
-#: ../../overview/overview.rst:186
-msgid "Periodic update of ML libraries"
-msgstr ""
-
-#: ../../overview/overview.rst:188
-msgid "Customer support (Enterprise)"
+#: ../../overview/overview.rst:187
+msgid "CephFS"
 msgstr ""
 
 #: ../../overview/overview.rst:188
-msgid "On-site installation (bare-metal / VM)"
+msgid "Dell PowerScale"
+msgstr ""
+
+#: ../../overview/overview.rst:189
+msgid "IBM SpectrumScale"
+msgstr ""
+
+#: ../../overview/overview.rst:190
+msgid "NetApp"
 msgstr ""
 
 #: ../../overview/overview.rst:191
-msgid "Configuration support (on-premise + cloud)"
+msgid "PureStorage"
 msgstr ""
 
-#: ../../overview/overview.rst:193
-msgid "Admin/user training"
+#: ../../overview/overview.rst:192
+msgid "WEKA"
 msgstr ""
 
-#: ../../overview/overview.rst:195
-msgid "Support for updating to latest version"
-msgstr ""
+#: ../../overview/overview.rst:194
+msgid "Fine-grained Access control to data by user/project"
+msgstr "사용자/프로젝트 별 세분화된 데이터 접근 제어"
 
-#: ../../overview/overview.rst:197
-msgid "Priority development and escalation"
-msgstr ""
+#: ../../overview/overview.rst:196
+msgid "Per user/project based storage quota management*"
+msgstr "사용자/프로젝트 별 스토리지 쿼타 관리*"
 
-#: ../../overview/overview.rst:199
-msgid "Customized container image / kernel or kernel repository"
-msgstr ""
+#: ../../overview/overview.rst:198
+msgid "Developer support"
+msgstr "개발자 지원"
+
+#: ../../overview/overview.rst:198
+msgid "Universal programming languages (Python, C/C++, etc)"
+msgstr "범용 프로그래밍 언어 (Python, C/C++ 등)"
+
+#: ../../overview/overview.rst:200
+msgid ""
+"Interactive web apps (Terminal, Jupyter, VSCode, MLFlow, Microsoft NNI, R"
+" Studio, etc)"
+msgstr "대화형 웹 앱 (Terminal, Jupyter, VSCode, MLFlow, Microsoft NNI, R Studio 등)"
 
 #: ../../overview/overview.rst:203
-msgid "ONLY Available on storage supports directory quota management"
-msgstr ""
+msgid "Offering various type of computing sessions tailored to specific purposes"
+msgstr "특정 목적에 맞춘 다양한 유형의 연산 세션 제공"
 
 #: ../../overview/overview.rst:206
+msgid "Interactive"
+msgstr ""
+
+#: ../../overview/overview.rst:207
+msgid "Batch"
+msgstr ""
+
+#: ../../overview/overview.rst:208
+msgid "Inference"
+msgstr ""
+
+#: ../../overview/overview.rst:210
+msgid "For data scientists"
+msgstr "데이터 사이언티스트용"
+
+#: ../../overview/overview.rst:210
+msgid "User running multiple versions of libraries (e.g., TensorFlow, PyTorch)"
+msgstr "TensorFlow나 PyTorch 등 여러 버전의 라이브러리를 동시에 다루는 사용자"
+
+#: ../../overview/overview.rst:213
+msgid "Concurrent user of multiple versions of libraries"
+msgstr "여러 버전의 라이브러리를 동시에 사용하는 사용자"
+
+#: ../../overview/overview.rst:215
+msgid "Periodic update of ML libraries"
+msgstr "ML 라이브러리의 주기적인 업데이트"
+
+#: ../../overview/overview.rst:217
+msgid "Customer support (Enterprise)"
+msgstr "고객 지원 (엔터프라이즈)"
+
+#: ../../overview/overview.rst:217
+msgid "On-site installation (bare-metal / VM)"
+msgstr "온사이트 설치 (베어메탈 / VM)"
+
+#: ../../overview/overview.rst:220
+msgid "Configuration support (on-premise + cloud)"
+msgstr "구성 지원 (온프레미스 + 클라우드)"
+
+#: ../../overview/overview.rst:222
+msgid "Admin / user training"
+msgstr "관리자 / 사용자 교육"
+
+#: ../../overview/overview.rst:224
+msgid "Support for updating to latest version"
+msgstr "최신 버전 업데이트 지원"
+
+#: ../../overview/overview.rst:226
+msgid "Priority development and escalation"
+msgstr "우선 개발 및 에스컬레이션"
+
+#: ../../overview/overview.rst:228
+msgid "Customized container image / kernel or kernel repository"
+msgstr "맞춤형 컨테이너 이미지 / 커널 또는 커널 리포지토리"
+
+#: ../../overview/overview.rst:232
+msgid "ONLY Available on storage supports directory quota management"
+msgstr "디렉토리 쿼타 관리를 지원하는 스토리지에서만 사용 가능"
+
+#: ../../overview/overview.rst:235
 msgid "Accessible menu by user role"
 msgstr "사용자 역할 별 접근 가능한 메뉴 안내"
 
-#: ../../overview/overview.rst:210
+#: ../../overview/overview.rst:239
 msgid "Pages with ``*`` mark are in Administration menu."
 msgstr "``*`` 표시가 붙은 페이지는 관리자용 메뉴입니다."
 
-#: ../../overview/overview.rst:211
+#: ../../overview/overview.rst:240
 msgid "Features only for admin are listed in :ref:`admin menu <admin-menu>`."
 msgstr "관리자 전용 기능은 :ref:`어드민 전용 메뉴 <admin-menu>` 에서 확인할 수 있습니다."
 
-#: ../../overview/overview.rst:214
+#: ../../overview/overview.rst:243
 msgid "page \\\\ role"
 msgstr "페이지 \\\\ 역할"
 
-#: ../../overview/overview.rst:214
+#: ../../overview/overview.rst:243
 msgid "user"
 msgstr "일반 사용자"
 
-#: ../../overview/overview.rst:214
+#: ../../overview/overview.rst:243
 msgid "admin"
 msgstr "어드민"
 
-#: ../../overview/overview.rst:216
-msgid "Summary"
-msgstr "요약 (Summary)"
+#: ../../overview/overview.rst:245
+msgid "Start"
+msgstr "시작"
 
-#: ../../overview/overview.rst:216 ../../overview/overview.rst:218
-#: ../../overview/overview.rst:220 ../../overview/overview.rst:222
-#: ../../overview/overview.rst:224 ../../overview/overview.rst:226
-#: ../../overview/overview.rst:228 ../../overview/overview.rst:230
-#: ../../overview/overview.rst:232 ../../overview/overview.rst:234
-#: ../../overview/overview.rst:236 ../../overview/overview.rst:238
-#: ../../overview/overview.rst:240 ../../overview/overview.rst:242
+#: ../../overview/overview.rst:245 ../../overview/overview.rst:247
+#: ../../overview/overview.rst:249 ../../overview/overview.rst:251
+#: ../../overview/overview.rst:253 ../../overview/overview.rst:255
+#: ../../overview/overview.rst:257 ../../overview/overview.rst:259
+#: ../../overview/overview.rst:261 ../../overview/overview.rst:263
+#: ../../overview/overview.rst:265 ../../overview/overview.rst:267
+#: ../../overview/overview.rst:269 ../../overview/overview.rst:271
+#: ../../overview/overview.rst:273 ../../overview/overview.rst:275
+#: ../../overview/overview.rst:277 ../../overview/overview.rst:279
+#: ../../overview/overview.rst:281 ../../overview/overview.rst:283
 msgid "O"
 msgstr ""
 
-#: ../../overview/overview.rst:218
+#: ../../overview/overview.rst:247
+msgid "Dashboard"
+msgstr "대시보드 (Dashboard)"
+
+#: ../../overview/overview.rst:249
+msgid "Data"
+msgstr "데이터 (Data)"
+
+#: ../../overview/overview.rst:251
 msgid "Sessions"
 msgstr "세션 (Sessions)"
 
-#: ../../overview/overview.rst:220
+#: ../../overview/overview.rst:253 ../../overview/overview.rst:261
 msgid "Serving"
 msgstr "모델 서빙 (Serving)"
 
-#: ../../overview/overview.rst:222
-msgid "Import & run"
-msgstr "가져오기 및 실행하기(Import & Run)"
+#: ../../overview/overview.rst:255
+msgid "Import & Run"
+msgstr "가져오기 및 실행 (Import & Run)"
 
-#: ../../overview/overview.rst:224
-msgid "Data & Storage"
-msgstr "데이터 & 폴더 (Data & Storage)"
+#: ../../overview/overview.rst:257
+msgid "My Environments"
+msgstr "나의 실행 환경 (My Environments)"
 
-#: ../../overview/overview.rst:226
+#: ../../overview/overview.rst:259
+msgid "Chat"
+msgstr "채팅 (Chat)"
+
+#: ../../overview/overview.rst:263
+msgid "Model Store"
+msgstr ""
+
+#: ../../overview/overview.rst:265
 msgid "Agent Summary"
 msgstr "자원 요약 (Agent Summary)"
 
-#: ../../overview/overview.rst:228
+#: ../../overview/overview.rst:267
 msgid "Statistics"
 msgstr "통계 (Statistics)"
 
-#: ../../overview/overview.rst:230
+#: ../../overview/overview.rst:269
 msgid "Users*"
 msgstr "사용자 (Users)*"
 
-#: ../../overview/overview.rst:230 ../../overview/overview.rst:232
-#: ../../overview/overview.rst:234 ../../overview/overview.rst:236
-#: ../../overview/overview.rst:238 ../../overview/overview.rst:240
+#: ../../overview/overview.rst:269 ../../overview/overview.rst:271
+#: ../../overview/overview.rst:273 ../../overview/overview.rst:275
+#: ../../overview/overview.rst:277 ../../overview/overview.rst:279
+#: ../../overview/overview.rst:281 ../../overview/overview.rst:283
 msgid "X"
 msgstr ""
 
-#: ../../overview/overview.rst:232
+#: ../../overview/overview.rst:271
 msgid "Environments*"
 msgstr "실행 환경 (Environments)*"
 
-#: ../../overview/overview.rst:234
+#: ../../overview/overview.rst:273
+msgid "Scheduler*"
+msgstr "스케쥴러 (Scheduler)*"
+
+#: ../../overview/overview.rst:275
+msgid "Resource Policy*"
+msgstr "자원 정책 (Resource Policy)*"
+
+#: ../../overview/overview.rst:277
 msgid "Resources*"
 msgstr "자원 (Resources)*"
 
-#: ../../overview/overview.rst:236
+#: ../../overview/overview.rst:279
 msgid "Configurations*"
 msgstr "환경 설정 (Configurations)*"
 
-#: ../../overview/overview.rst:238
+#: ../../overview/overview.rst:281
 msgid "Maintenance*"
 msgstr "관리 (Maintenance)*"
 
-#: ../../overview/overview.rst:240
+#: ../../overview/overview.rst:283
 msgid "Information*"
 msgstr "정보 (Information)*"
-
-#: ../../overview/overview.rst:242
-msgid "UserSettings"
-msgstr "사용자 설정 (UserSettings)"
-
-#~ msgid "GPU support"
-#~ msgstr ""
-
-#~ msgid "Multiple CUDA library version support (8.0 to 11.5)"
-#~ msgstr ""
-
-#~ msgid "(Enterprise) Access control of users to resource group"
-#~ msgstr ""
-
-#~ msgid "(Enterprise) Access control of project to resource group"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "EFS, NFS, SMB and distributed file "
-#~ "system (CephFS, GlusterFS, HDFS, etc)"
-#~ msgstr ""
-
-#~ msgid "PureStorage FlashBlade"
-#~ msgstr ""
-
-#~ msgid "NetApp ONTAP & NetApp XCP"
-#~ msgstr ""
-
-#~ msgid "Weka.io"
-#~ msgstr ""
-
-#~ msgid "Dell EMC"
-#~ msgstr ""
-
-#~ msgid "Interactive web apps (Terminal, Jupyter, VSCode, etc)"
-#~ msgstr ""
-
-#~ msgid "NGC (NVIDIA GPU CLoud) image integration"
-#~ msgstr ""
-
-#~ msgid "Popular ML libraries: TensorFlow, PyTorch, etc"
-#~ msgstr ""
-
-#~ msgid "Customized container image / kernel or kernel repository"
-#~ msgstr ""
-
-#~ msgid "* Graphcore IPU"
-#~ msgstr ""
-
-#~ msgid "* Rebellions ATOM"
-#~ msgstr ""
-
-#~ msgid "* FuriosaAI Warboy"
-#~ msgstr ""
-
-#~ msgid "* Hyperaccel LPU"
-#~ msgstr ""
-
-#~ msgid "(Enterprise) Access control of users to"
-#~ msgstr ""
-
-#~ msgid "resource group"
-#~ msgstr "자원 그룹 (Resource group)*"
-
-#~ msgid "(Enterprise) Access control of project to"
-#~ msgstr ""
-
-#~ msgid "EFS, NFS, SMB and distributed file system"
-#~ msgstr ""
-
-#~ msgid "(CephFS, GlusterFS, HDFS, etc)"
-#~ msgstr ""
-
-#~ msgid "* PureStorage FlashBlade"
-#~ msgstr ""
-
-#~ msgid "* NetApp ONTAP & NetApp XCP"
-#~ msgstr ""
-
-#~ msgid "* Weka.io"
-#~ msgstr ""
-
-#~ msgid "* Dell EMC"
-#~ msgstr ""
-
-#~ msgid "* IBM SpectrumScale (GPFS)"
-#~ msgstr ""
-
-#~ msgid "* Vast Data"
-#~ msgstr ""
-
-#~ msgid "* KT Cloud NAS"
-#~ msgstr ""
-
-#~ msgid "Interactive web apps (Terminal, Jupyter, VSCode,"
-#~ msgstr ""
-
-#~ msgid "MLFlow, Microsoft NNI, R Studio, etc)"
-#~ msgstr ""
-
-#~ msgid "Offering various type of computing sessions tailored"
-#~ msgstr ""
-
-#~ msgid "to specific purposes"
-#~ msgstr ""
-
-#~ msgid "* Interactive"
-#~ msgstr ""
-
-#~ msgid "* Batch"
-#~ msgstr ""
-
-#~ msgid "* Inference"
-#~ msgstr ""
-
-#~ msgid "Concurrent user of multiple versions of libraries:"
-#~ msgstr ""
-
-#~ msgid "Tensorflow, PyTorch, etc"
-#~ msgstr ""
-
-#~ msgid "Customer support"
-#~ msgstr ""
-
-#~ msgid "(Enterprise)"
-#~ msgstr ""
-
-#~ msgid "Customized container image / kernel or kernel"
-#~ msgstr ""
-
-#~ msgid "repository"
-#~ msgstr ""
-
