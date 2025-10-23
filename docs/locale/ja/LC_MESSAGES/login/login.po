@@ -4,7 +4,6 @@
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
@@ -27,11 +26,10 @@ msgid "Signup"
 msgstr "サインアップ"
 
 #: ../../login/login.rst:8
-#, fuzzy
 msgid ""
 "When you launch the WebUI, login dialog appears. If you haven't signed up "
 "yet, press the SIGN UP button."
-msgstr "WebUIを起動すると、ログインダイアログが表示されます。まだサインアップしていない場合は、SIGN UPボタンを押してください。"
+msgstr "WebUIを起動すると、ログインダイアログが表示されます。まだサインアップしていない場合は、[SIGN UP]ボタンを押してください。"
 
 #: ../../login/login.rst:-1
 msgid "Login dialog"
@@ -159,17 +157,15 @@ msgid "Header Events"
 msgstr "ヘッダーイベント"
 
 #: ../../login/login.rst:105
-#, fuzzy
 msgid ""
 "The bell shape button is the event notification button. Events that need to "
 "be recorded during WebUI operation are displayed here. When background tasks"
 " are running, such as creating a compute session, you can check the jobs "
 "here. When the background task is finished."
 msgstr ""
-"ベル型のボタンはイベント通知ボタンです。WebUIの操作中に記録する必要があるイベントがここに表示されます。コンピュートセッションの作成など、バックグラウンドタスクが実行されている場合、ここでジョブを確認できます。バックグラウンドタスクが完了したとき。"
+"ベル型のボタンは、イベント通知ボタンです。WebUIの操作中に記録する必要があるイベントがここに表示されます。コンピュートセッションの作成など、バックグラウンドタスクが実行されている場合、ここでジョブを確認できます。バックグラウンドタスクが終了したとき。"
 
 #: ../../login/login.rst:114
-#, fuzzy
 msgid ""
 "You can change the theme mode of the WebUI via the dark mode icon on the "
 "right side of the header."
