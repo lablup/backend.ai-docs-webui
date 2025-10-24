@@ -1,11 +1,11 @@
-================
-Signup and Login
-================
+==================
+Sign up and Log in
+==================
 
-Signup
-------
+Sign up
+-------
 
-When you launch the WebUI, login dialog appears. If you haven't signed up
+When you launch the WebUI, log in dialog appears. If you haven't signed up
 yet, press the SIGN UP button.
 
 .. image:: login_dialog.png
@@ -35,8 +35,8 @@ before you can log in with your account.
    than 8 characters with at least one alphabet(s), number(s), and special
    character(s).
 
-Login
------
+Log in
+------
 
 Enter your ID and password and press the LOGIN button. In API ENDPOINT, the URL
 of Backend.AI Webserver, which relays the request to the Manager, should be
@@ -51,7 +51,7 @@ entered.
    the default password hash of BSD, is used, so even the server admins cannot
    know the user's password.
 
-After login, you can check the information of the current resource usage in
+After logging in, you can check the information of the current resource usage in
 the Summary tab.
 
 By clicking the icon in the upper-right corner, you will see sub menus. You
@@ -67,7 +67,7 @@ When you forgot your password
 -----------------------------
 
 If you have forgotten your password, you can click the CHANGE PASSWORD button on
-the login panel to email a link to change password. You can change your password
+the log in panel to email a link to change password. You can change your password
 by reading and following the instruction. Depending on the server settings, the
 password change feature may be disabled. In this case, contact the
 administrator.
@@ -82,7 +82,7 @@ administrator.
    some systems.
 
 .. warning::
-   If login failure occures more than 10 times consecutively, access
+   If log in failure occurs more than 10 times consecutively, access
    to the endpoint is temporarily restricted for 20 minutes for security
    reasons. If the access restriction continues on more than 20 minutes, please contact
    your system administrator.

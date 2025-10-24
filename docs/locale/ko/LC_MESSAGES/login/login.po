@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 25.05\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-14 14:40+0900\n"
+"POT-Creation-Date: 2025-10-23 16:21+0900\n"
 "PO-Revision-Date: 2021-03-02 18:31+0900\n"
 "Last-Translator: Sungchul Hong <sungchul@lablup.com>\n"
 "Language: ko\n"
@@ -20,17 +20,17 @@ msgstr ""
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../login/login.rst:3
-msgid "Signup and Login"
+msgid "Sign up and Log in"
 msgstr "가입 및 로그인"
 
 #: ../../login/login.rst:6
-msgid "Signup"
+msgid "Sign up"
 msgstr "가입"
 
 #: ../../login/login.rst:8
 msgid ""
-"When you launch the WebUI, login dialog appears. If you haven't signed up"
-" yet, press the SIGN UP button."
+"When you launch the WebUI, log in dialog appears. If you haven't signed "
+"up yet, press the SIGN UP button."
 msgstr "WebUI를 실행하면 다음과 같은 로그인 대화창이 뜹니다. 아직 가입을 하지 않은 경우에는 가입하기 버튼을 눌러주세요."
 
 #: ../../login/login.rst:-1
@@ -73,7 +73,7 @@ msgstr ""
 "포함해야 합니다."
 
 #: ../../login/login.rst:39
-msgid "Login"
+msgid "Log in"
 msgstr "로그인"
 
 #: ../../login/login.rst:41
@@ -102,16 +102,15 @@ msgstr ""
 
 #: ../../login/login.rst:54
 msgid ""
-"After login, you can check the information of the current resource usage "
-"in the Summary tab."
+"After logging in, you can check the information of the current resource "
+"usage in the Summary tab."
 msgstr "로그인이 완료되면 요약 탭에서 현재 사용하고 있는 자원량 등의 정보를 확인할 수 있습니다."
 
 #: ../../login/login.rst:57
 msgid ""
 "By clicking the icon in the upper-right corner, you will see sub menus. "
 "You can logout by selecting the Log Out menu."
-msgstr ""
-"우측 상단의 아이콘을 클릭하면 하위 메뉴가 나옵니다. 로그아웃 버튼을 클릭해서 로그아웃 할 수 있습니다. "
+msgstr "우측 상단의 아이콘을 클릭하면 하위 메뉴가 나옵니다. 로그아웃 버튼을 클릭해서 로그아웃 할 수 있습니다. "
 
 #: ../../login/login.rst:-1
 msgid "Signout button"
@@ -124,7 +123,7 @@ msgstr "비밀번호를 잊어버렸을 경우"
 #: ../../login/login.rst:69
 msgid ""
 "If you have forgotten your password, you can click the CHANGE PASSWORD "
-"button on the login panel to email a link to change password. You can "
+"button on the log in panel to email a link to change password. You can "
 "change your password by reading and following the instruction. Depending "
 "on the server settings, the password change feature may be disabled. In "
 "this case, contact the administrator."
@@ -141,7 +140,7 @@ msgstr "이 기능도 모듈화되어 있어 어떤 환경에서는 지원되지
 
 #: ../../login/login.rst:85
 msgid ""
-"If login failure occures more than 10 times consecutively, access to the "
+"If log in failure occurs more than 10 times consecutively, access to the "
 "endpoint is temporarily restricted for 20 minutes for security reasons. "
 "If the access restriction continues on more than 20 minutes, please "
 "contact your system administrator."
@@ -162,6 +161,5 @@ msgid ""
 "``[`` ) to toggle between the narrow and original sidebar widths."
 msgstr ""
 "사이드바의 우측에 위치한 버튼을 통하여 사이드바의 크기를 변경합니다. 클릭하면 사이드바의 폭이 크게 줄어들면서 내용을 보다 넓게 볼"
-" 수 있습니다. 다시 한 번 클릭하면 사이드바의 폭이 다시 원래대로 돌아옵니다. 또한, 단축키 ( ``[`` )를 "
-"사용하여 사이드바의 너비를 변경할 수도 있습니다. "
-
+" 수 있습니다. 다시 한 번 클릭하면 사이드바의 폭이 다시 원래대로 돌아옵니다. 또한, 단축키 ( ``[`` )를 사용하여 "
+"사이드바의 너비를 변경할 수도 있습니다. "
