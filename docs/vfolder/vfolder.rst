@@ -339,16 +339,7 @@ automatically. (This session will not affect resource occupancy.)
    :align: center
    :alt: SSH / SFTP connection dialog
 
-.. note::
-   We provide a detailed information about using large file upload via ssh/sftp connection.
-   For more information, please click the 'Read more' text link to see all the details of execution.
-
-   .. image:: SSH_SFTP_connection_expanded.png
-      :height: 400
-      :align: center
-      :alt: SSH / SFTP connection dialog expanded
-
-For the connection, click 'DOWNLOAD SSH KEY' button to download the SSH private key
+For the connection, click 'Download SSH Key' button to download the SSH private key
 (``id_container``). Also, remember the host and port number. Then, you can copy your
 files to the session using the Connection Example code written in the dialog, or
 referring to the following guide: :ref:`link<sftp_connection_for_linux_and_mac>`.
