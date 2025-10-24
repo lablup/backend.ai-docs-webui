@@ -35,12 +35,19 @@ and then create a session.
    For further information on how to create a new folder in session launcher page, 
    please refer :ref:`Create storage folder<create_storage_folder>` section. 
 
-In the created session, screen terminal window can be brought up by clicking the terminal icon. 
+In the created session, click the created session name to open detail information drawer. Then, 
+click the 'Execute Terminal App' icon button (upper right corner, second from the right) to open terminal app.
+Or you can also open terminal app from the notification.
 ``ls`` command will mount ``user1-ml-test` folder and ``user2-vfolder`` under the ``user1-ml-test`` 
 and ``user2-vfolder`` folders are mounted under the home directory. 
 
 .. image:: execute_terminal_app.png
    :alt: Execute terminal app
+   :width: 100%
+
+.. image:: execute_terminal_app2.png
+   :alt: Mounted folders in terminal
+   :width: 100%
 
 .. note::
    The selected folder will be mounted with its name under ``/home/work/`` inside the compute session, by its default. 
