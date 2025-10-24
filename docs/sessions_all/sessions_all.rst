@@ -15,9 +15,6 @@ After logging in with a user account, click 'Sessions' on the left sidebar.
 
 .. image:: sessions_page.png
 
-From version 24.09, improved version of the session launcher (NEO) is set to default. This enables user to create, manage sessions according to the step-by-step logic.  
-To use dialog-style old version of the session launcher, please refer to :ref:`User Setting Guide <general-settings>`. 
-For more instructions, please refer to the following `link <https://webui.docs.backend.ai/en/23.09_a/sessions_all/sessions_all.html>`_.
 
 Click the 'START' button to start a new compute session.
 
@@ -26,7 +23,7 @@ Click the 'START' button to start a new compute session.
    :align: center
 
 Session Type
-^^^^^^^^^^^^^
+^^^^^^^^^^^^
 
 In the first page, users can select the type of session, 'interactive' or 'batch'. 
 If needed, setting the name of the session (optional) is also available. 
@@ -88,7 +85,7 @@ You can also select a project and resource group.
       :width: 800
 
 Environments & Resource allocation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _session-environments-resource:
 
@@ -101,7 +98,7 @@ other pages will all use the default values.
      :align: center
 
 Environments
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^
 
 .. _session-environments:
 
@@ -124,7 +121,7 @@ refer to the following:
      :align: center
 
 Resource allocation
-^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
 
 .. _resource-allocation:
 
@@ -198,7 +195,7 @@ Resource allocation
    :alt: Session HPC Optimization
 
 Data & Storage
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
 
 .. _data_and_storage:
 
@@ -231,7 +228,7 @@ For further information, please refer :ref:`Create Storage Folder<create_storage
    :align: center 
 
 Network
-^^^^^^^^^
+^^^^^^^
 
 Click the 'Next' button below, or the 'Network' menu on the right to proceed to the next page.
 On this page, Network configuration can be done such as Preopen Ports.
@@ -247,7 +244,7 @@ On this page, Network configuration can be done such as Preopen Ports.
    :align: center
 
 Confirm and Launch
-^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^
 
 .. _confirm_and_launch:
 
@@ -278,21 +275,29 @@ If folder mounting is not required, you can ignore the warning and click the 'St
    :width: 350
    :align: center
 
-Now a new compute session is created in the RUNNING tab.
+When a new compute session is added in the **Running** tab, a notification appears at the bottom-right corner of the screen.  
+The bottom-left area of the notification displays the session status, while the bottom-right area includes buttons for opening the app dialog,
+launching the terminal, viewing container logs, and terminating the session.  
+You can also view this session creation notification by clicking **Notifications** in the header.
 
 .. image:: session_created.png
    :align: center
    :width: 100%
 
-In the RUNNING tab, users can check the information on the currently running
-sessions. This includes both interactive and batch sessions.
-'BATCH' tab and 'INTERACTIVE' tab only show sessions corresponding to each type, not in terminated status.
-'FINISHED' tab shows the list of terminated sessions.
-For each session, users can check the information such as session environments, the amount of allocated
-and used resources, session starting time, etc.
+
+.. image:: session_notification.png
+   :width: 350
+   :align: center
+
+By clicking the app dialog button on the far left, you can view the available app services.
+
+.. image:: app_dialog.png
+   :width: 350
+   :align: center
+
 
 Recent History
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
 
 .. _recent-history:
 
@@ -307,8 +312,9 @@ Recent History
    :width: 800
    :align: center
 
-The Recent History modal remembers information about the five most recently created sessions. 
-If users select the one they want to create, click the 'Apply' button to redirect ``Confirm and Launch`` page. 
+The ``Recent History`` modal stores information about the five most recently created sessions.  
+Clicking a session name takes you to the 'Confirm and Launch' page, which is the final step of session creation.  
+Each item can be renamed or pinned for easier access.
 
 .. note::
    Superadmins can query all compute session information currently running (or
@@ -320,77 +326,35 @@ If users select the one they want to create, click the 'Apply' button to redirec
    network connection problems, and etc. This can be solved by refreshing the
    browser.
 
-Session information
--------------------
-
-Backend.AI provides detailed status information for ``PENDING``, ``TERMINATED``,
-or ``CANCELLED`` sessions. In the case of ``PENDING`` sessions, in particular,
-you can check why the session is not scheduled and stuck in the ``PENDING``
-status. You can see the details by clicking the question mark icon right next
-to the status of each session.
-
-.. image:: session_list_status.png
-
-.. image:: session_status_detail_information.png
-   :width: 700
-   :align: center
-
-The resource statistics are displayed at the top of the screen. Users can check the
-amount of resources currently used and the total amount of resources
-that can be allocated. Display bars are divided into upper and
-lower parts. The upper part shows the resource allocation status in the current
-scaling group and the lower part shows the allocation status of total
-accessible resources.
-
-* Upper: (Resources allocated by the user in the current scaling group) /
-  (Total resources allocatable by the user in the current scaling group)
-
-* Lower: (Resources allocated by the user) / (Resources allocated by the user +
-  Total resources allocatable by the user in the current scaling group)
-
-.. image:: resource_stat_and_session_list.png
-
-.. note::
-   Backend.AI supports GPU virtualization technology that a single physical GPU can be divided and
-   shared by multiple users for better utilization. If the GPU resource is marked as FGPU, 
-   this means that the server is serving the GPU resources in a virtualized form. 
-   Therefore, if users want to execute a task that does not require a large amount of GPU computation, users
-   can create a compute session by allocating only a portion of a GPU. The
-   amount of GPU resources that 1 FGPU actually allocates may vary from system
-   to system depending on the administrator's setting.
-
-   For example, if administrator has set to split one physical GPU into five pieces,
-   5 FGPU means 1 physical GPU, or 1 FGPU means 0.2 physical GPU. At this
-   configuration, if users create a compute session by allocating 1 FGPU, they can
-   utilize SM (streaming multiprocessor) and GPU memory corresponding to 0.2
-   physical GPU for the session.
-
 Session Detail Panel
-^^^^^^^^^^^^^^^^^^^^^
+--------------------
 
 For detailed information on the session, click the session name in the session list.
 The session details panel shows the information of the session, such as the
-session ID, status, type, environment, mount information, resource allocation, reserved time, 
-elapsed time, and resource usage including network I/O. 
+session ID, user ID, status, type, environments, mount information, resource allocation, reserved time,
+elapsed time, agent, cluster mode, resource usage including network I/O, and kernel information.
+
+Click the 'Log' button next to the 'Hostname' in 'Kernels' to view the logs of that kernel directly.
 
 .. image:: session_detail.png
    :width: 850
    :align: center
+
+Backend.AI provides additional information for sessions in ``PENDING``, ``TERMINATED``, or ``CANCELLED`` states.
+Click the 'Info' button to check the details when available.
 
 
 .. _use_session:
 
 
 Use Jupyter Notebook
-----------------------
+--------------------
 
-This section is about isong and managing compute sessions that are already running.
-On Control panel, there are several icons in the session list.
-When users click the first icon, the app launcher pops up and shows the available
-app services as below. The app launcher dialog also opens automatically just
-after the compute session is created.
+Let’s look at how to use and manage an already running compute session.
+Click the first icon in the upper-right corner of the session detail panel to open the app launcher, which shows
+the app services available for that session.
 
-.. image:: app_launch_dialog.png
+.. image:: app_dialog.png
    :width: 400
    :align: center
 
@@ -456,12 +420,11 @@ Use web terminal
 ----------------
 
 This section will explain how to use the web terminal. Click the 
-terminal icon(second button in the Control panel) to use the container's
-ttyd app. A terminal will appear in a new window and users can run shell commands
-to access the computational session as shown in the following figure. If familiar with the commands,
-users can easily run various Linux commands. ``Untitled.ipynb`` file can be found in Jupyter Notebook, which is 
-listed with the ``ls`` command. This shows that both apps are running in the
-same container environment.
+terminal icon(second button) to use the container's ttyd app. A terminal will appear in a new window
+and users can run shell commands to access the computational session as shown in the following figure.
+If familiar with the commands, users can easily run various Linux commands. ``Untitled.ipynb`` file
+can be found in Jupyter Notebook, which is listed with the ``ls`` command. This shows that both apps
+are running in the same container environment.
 
 .. image:: session_terminal.png
 
@@ -483,8 +446,8 @@ Control panel of the running compute session.
 Rename running session
 ----------------------
 
-Name of the active session can be changed. Click the 'Edit' icon in the 
-session information column. Write down a new name and click the 'Confirm' button.
+Name of the active session can be changed. Click the 'Edit' button in the session detail
+panel to change the session name.
 New session name should also follow the :ref:`the authoring rule<session-naming-rule>`.
 
 .. image:: session_renaming.png
@@ -495,8 +458,8 @@ New session name should also follow the :ref:`the authoring rule<session-naming-
 Delete a compute session
 ------------------------
 
-To terminate a specific session, simply click on the red power icon and click
-'OKAY' button in the dialog. Since the data in the folder inside the compute
+To terminate a specific session, simply click on the red power button and click
+'Terminate' button in the dialog. Since the data in the folder inside the compute
 session is deleted as soon as the compute session ends, it is recommended to
 move the data to the mounted folder or upload it to the mounted folder from the
 beginning.
@@ -505,21 +468,20 @@ beginning.
    :width: 500
    :align: center
 
-Idleness Checks
+Idleness checks
 ---------------
 
 Backend.AI supports three types of inactivity (idleness) criteria for automatic garbage
 collection of compute sessions: Max Session Lifetime, Network Idle Timeout, and Utilization
 Checker.
 
-Idle checkers(inactivity criterion) will be displayed in the idle checks column of the session list.
+The criteria for session termination can be found in the 'Idle Checks' section of the session detail panel.
 
 .. image:: idle_checks_column.png
-   :width: 200
    :align: center
 
 The meaning of idle checkers are as follows, and more detailed explanations can be
-found by clicking the information (i) icon in the idle checks column.
+found by clicking the information (i) button in the idle checks section.
 
 * Max Session Lifetime: Force-terminate sessions after this time from creation.
   This measure prevents sessions from running indefinitely.
@@ -557,10 +519,6 @@ Hovering the mouse over the Utilization Checker will display a tooltip with the
 utilization and threshold values. The text color changes to yellow and then red
 as the current utilization approaches the threshold (indicating low resource
 utilization).
-
-.. image:: utilization_checker.png
-   :width: 250
-   :align: center
 
 .. note::
    Depending on the environment settings, idle checkers and resource types of
@@ -621,8 +579,8 @@ Save session commit
 .. _session-commit:
 
 Backend.AI supports \"Convert Session to Image\" feature from 24.03. Committing a ``RUNNING`` session will save the 
-current state of the session as a new image. Clicking the 'commit' button in the control column of ``RUNNING`` session will
-display a dialog to show the information of the session. After entering the session name, users can convert the session to 
+current state of the session as a new image. Click the 'Commit' button (the fourth icon) in the session detail panel
+to open a dialog displaying the session information. After entering the session name, users can convert the session to 
 a new image. The session name must be 4 to 32 characters long and can only contain alphanumeric letters, hyphens (``-``),
 or underscores (``_``).
 

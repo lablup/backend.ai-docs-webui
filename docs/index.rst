@@ -30,6 +30,7 @@ The latest versions of this document can be found from sites below:
    dashboard/dashboard
    summary/summary
    vfolder/vfolder
+   session_page/session_page
    sessions_all/sessions_all
    mount_vfolder/mount_vfolder
    share_vfolder/share_vfolder

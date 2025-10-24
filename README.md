@@ -2,7 +2,6 @@
 
 User's guide for Backend.AI GUI Console.
 
-
 ## Setup build environment
 
 We use [poetry](https://github.com/python-poetry/poetry) to manage dependencies
@@ -20,7 +19,6 @@ install dependent packages.
 poetry install
 ```
 
-
 ## Build documents
 
 To build html documentation, run following command in the `docs` directory. All
@@ -33,7 +31,6 @@ make html
 
 Built documents will be located under `docs/_build`.
 
-
 ## Translation
 
 When English document is updated, extract translatable messages into `.pot`
@@ -41,7 +38,7 @@ files. Go to `docs` directory and run following command.
 
 ```shell
 make gettext
-``````
+```
 
 From those `.pot` files, `.po` message catalogs can be generated:
 
@@ -76,10 +73,9 @@ To build a pdf document, just replace `html` to `latexpdf`. Note, however, that
 your local machine should be prepared with latex generation environment, such as
 MacTex, to make pdf file. The following is a brief preparation steps in Mac:
 
-
-* Install MacTex.
-* Register the path to `texbin`: `export PATH="$PATH:/Library/Tex/texbin"`.
-* Install fonts on the mac for PDF generation. Fonts can be found at `docs/_static/fonts`.
+-   Install MacTex.
+-   Register the path to `texbin`: `export PATH="$PATH:/Library/Tex/texbin"`.
+-   Install fonts on the mac for PDF generation. Fonts can be found at `docs/_static/fonts`.
 
 If prepration is done, execute the following command to generate a pdf document.
 
@@ -94,6 +90,7 @@ The generated PDF is located under `_build/`.
 
 This is AI era, so we provide an example to machine-translate and build Japanese (ja)
 PDF document here for reference:
+
 ```shell
 cd docs
 make gettext
@@ -106,4 +103,3 @@ find docs/locale/ja/LC_MESSAGES -name "*.po" -type f | xargs -I {} sh -c 'python
 ## References for newcomers
 
 http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
-
