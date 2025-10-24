@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI WebUI User Guide 25.05\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-14 12:29+0900\n"
+"POT-Creation-Date: 2025-10-23 16:56+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: SungChul Hong <sungchul@lablup.com>\n"
 "Language: ko\n"
@@ -45,7 +45,7 @@ msgstr ""
 "사용자는 상단 바의 프로젝트 선택기를 통하여 사용자의 현재 프로젝트를 선택할 수 있습니다. 각 프로젝트 별로 다른 자원 정책을 가질"
 " 수 있으므로, 프로젝트를 변경할 경우 가용 가능한 자원 정책이 변경될 수 있습니다. "
 
-#: ../../header/header.rst:-1 ../../header/header.rst:24
+#: ../../header/header.rst:24
 msgid "Notification"
 msgstr "이벤트 알림"
 
@@ -54,26 +54,28 @@ msgid ""
 "The bell shape button is the event notification button. Events that need "
 "to be recorded during WebUI operation are displayed here. When background"
 " tasks are running, such as creating a compute session, you can check the"
-" jobs here. When the background task is finished."
+" jobs here. When the background task is finished. Press the shortcut key "
+"(``]``) to open and close the notification area."
 msgstr ""
 "종 모양의 버튼은 이벤트 알림 버튼입니다. WebUI 동작 과정에서 기록이 필요한 이벤트 내역이 여기에 표시됩니다. 예를 들어, "
-"연산 세션의 생성을 위한 백그라운드 작업이 진행되고 있는 경우, 이벤트 알림에서 해당 내용을 확인할 수 있습니다. "
+"연산 세션의 생성을 위한 백그라운드 작업이 진행되고 있는 경우, 이벤트 알림에서 해당 내용을 확인할 수 있습니다. 백그라운드 작업이"
+" 완료되면 알림이 사라집니다. 단축키 (``]``)를 눌러 알림 영역을 열고 닫을 수 있습니다. "
 
-#: ../../header/header.rst:-1 ../../header/header.rst:39
+#: ../../header/header.rst:-1 ../../header/header.rst:38
 msgid "Theme mode"
 msgstr "테마 모드"
 
-#: ../../header/header.rst:43
+#: ../../header/header.rst:42
 msgid ""
 "You can change the theme mode of the WebUI via the dark mode button on "
 "the right side of the header."
 msgstr "상단 바 우측에 있는 다크모드 버튼을 통하여 WebUI의 테마를 변경할 수 있습니다. "
 
-#: ../../header/header.rst:52
+#: ../../header/header.rst:51
 msgid "Help"
 msgstr "도움말"
 
-#: ../../header/header.rst:56
+#: ../../header/header.rst:55
 msgid ""
 "Click question mark button to access the web version of this guide "
 "document. You will be directed to the appropriate documentation based on "
@@ -82,11 +84,11 @@ msgstr ""
 "상단 바 우측의 물음표 버튼을 통하여, 본 가이드 문서의 웹 버전에 접속할 수 있습니다. 현재 사용자가 접근해 있는 페이지에 따라,"
 " 관련된 문서로 자동 연결됩니다. "
 
-#: ../../header/header.rst:60
+#: ../../header/header.rst:59
 msgid "User Menu"
 msgstr "사용자 메뉴"
 
-#: ../../header/header.rst:64
+#: ../../header/header.rst:63
 msgid ""
 "Click the person button on the right side of the top bar to see the user "
 "menu. Each menu item has the following functions."
@@ -96,31 +98,41 @@ msgstr "상단 바 우측의 사람 아이콘 버튼을 클릭하여, 사용자 
 msgid "user drop down"
 msgstr ""
 
-#: ../../header/header.rst:72
+#: ../../header/header.rst:71
 msgid ""
 "About Backend.AI: Displays information such as version of Backend.AI "
 "WebUI, license type, etc."
 msgstr "Backend.AI에 대하여: Backend.AI Web-UI의 버전, 라이선스 종류 등과 같은 정보를 표시 합니다. "
 
-#: ../../header/header.rst:74
-msgid "My Account: Check/Update information of current login user."
-msgstr "사용자 정보 변경: 현재 로그인된 사용자 정보를 확인/변경합니다. "
+#: ../../header/header.rst:73
+msgid "My Account: Check / Update information of current login user."
+msgstr "사용자 정보 변경: 현재 로그인된 사용자 정보를 확인 / 변경합니다. "
 
-#: ../../header/header.rst:75
+#: ../../header/header.rst:74
 msgid "Preferences: Go to user settings page."
 msgstr "설정: 사용자 설정 페이지로 이동합니다. "
 
-#: ../../header/header.rst:76
+#: ../../header/header.rst:75
 msgid ""
 "Logs / Errors: Go to the log page. You can check the log and error "
 "history recorded on the client side."
 msgstr "로그 / 에러기록: 로그 페이지로 이동합니다. 클라이언트 측에 기록된 로그 및 오류 내역을 확인할 수 있습니다. "
 
-#: ../../header/header.rst:80
+#: ../../header/header.rst:77
+msgid ""
+"Download Desktop App: Download the stand-alone WebUI app for your "
+"platform."
+msgstr "데스크톱 앱 다운로드: 사용자의 플랫폼에 맞는 독립형 WebUI 앱을 다운로드합니다."
+
+#: ../../header/header.rst:78
+msgid "Log Out: Log out of the WebUI."
+msgstr "로그아웃: WebUI에서 로그아웃합니다."
+
+#: ../../header/header.rst:81
 msgid "My Account"
 msgstr "사용자 정보 변경"
 
-#: ../../header/header.rst:82
+#: ../../header/header.rst:83
 msgid "If you click My Account, the following dialog appears."
 msgstr "사용자 정보 변경을 클릭하면, 다음과 같은 다이얼로그가 나타납니다. "
 
@@ -128,36 +140,36 @@ msgstr "사용자 정보 변경을 클릭하면, 다음과 같은 다이얼로�
 msgid "My account information"
 msgstr ""
 
-#: ../../header/header.rst:89
+#: ../../header/header.rst:90
 msgid ""
 "Each item has the following meaning. Enter the desired value and click "
 "the UPDATE button to update the user information."
 msgstr "각 항목은 다음과 같은 의미를 가집니다. "
 
-#: ../../header/header.rst:92
+#: ../../header/header.rst:93
 msgid "Full Name: User's name (up to 64 characters)."
 msgstr "사용자 이름: 사용자의 이름 (최대 64 자). "
 
-#: ../../header/header.rst:93
+#: ../../header/header.rst:94
 msgid ""
 "Original password: Original password. Click the right view button to see "
 "the input contents."
 msgstr "기존 비밀번호: 원래 비밀번호. 우측 보기 버튼을 클릭하면 입력 내용을 볼 수 있습니다. "
 
-#: ../../header/header.rst:95
+#: ../../header/header.rst:96
 msgid ""
 "New password: New password (8 characters or more containing at least 1 "
 "alphabet, number, and symbol). Click the right view button to see the "
 "input contents. Ensure this is the same as the Original password."
 msgstr "새 비밀번호: 새로운 비밀번호 (영문자, 숫자, 기호가 1 개 이상 포함 된 8 글자 이상). "
 
-#: ../../header/header.rst:98
+#: ../../header/header.rst:99
 msgid ""
 "2FA Enabled: 2FA activation. The user needs to enter the OTP code when "
 "logging in if it is checked."
 msgstr "이중 인증 사용: 이중 인증(2FA) 사용 여부. 이중 인증이 활성화 되어 있으면 로그인 시 OTP 코드를 반드시 입력해야 합니다. "
 
-#: ../../header/header.rst:101
+#: ../../header/header.rst:102
 msgid ""
 "Depending on the plugin settings, the ``2FA Enabled`` column might be "
 "invisible. In that case, please contact administrator of your system."
@@ -165,15 +177,15 @@ msgstr ""
 "플러그인 설정에 따라 ``이중 인증 사용`` 항목은 제공되지 않을 수 있습니다. 사용을 원하시는 경우, 시스템 관리자에게 "
 "문의하세요. "
 
-#: ../../header/header.rst:105
+#: ../../header/header.rst:106
 msgid "2FA Setup"
 msgstr "이중 인증 설정"
 
-#: ../../header/header.rst:106
+#: ../../header/header.rst:107
 msgid "If you activate the ``2FA Enabled`` switch, the following dialog appears."
 msgstr "``이중 인증 사용`` 스위치를 켜면 다음과 같은 다이얼로그가 나옵니다."
 
-#: ../../header/header.rst:112
+#: ../../header/header.rst:113
 msgid ""
 "Turn on the 2FA application you use and scan the QR code or manually "
 "enter the verification code. There are many 2FA-enabled applications, "
@@ -182,26 +194,26 @@ msgstr ""
 "사용자가 사용하는 이중 인증 애플리케이션을 켜고 QR 코드를 스캔하거나 인증 코드를 직접 입력합니다. 이중 인증 지원 애플리케이션은"
 " Google Authenticator, 2STP, 1Password, Bitwarden 등이 있습니다. "
 
-#: ../../header/header.rst:116
+#: ../../header/header.rst:117
 msgid ""
 "Then enter the 6-digit code from the item added to your 2FA application "
 "into the dialog above. 2FA is activated when you press the CONFIRM "
 "button."
 msgstr "이중 인증 애플리케이션에 추가된 항목의 6자리 코드를 위 다이얼로그에 입력합니다. 확인 버튼을 누르면 이중 인증 활성화가 완료됩니다."
 
-#: ../../header/header.rst:119
+#: ../../header/header.rst:120
 msgid ""
 "When you log in later, if you enter an email and password, an additional "
 "field appears asking for the OTP code."
 msgstr "이후 해당 사용자의 로그인 과정에서 OTP 코드를 묻는 추가 필드가 나타납니다. "
 
-#: ../../header/header.rst:126
+#: ../../header/header.rst:127
 msgid ""
 "To log in, you must open the 2FA application and enter a 6-digit code in "
 "the One-time password field."
 msgstr "이중 인증 애플리케이션을 열고 One-time password 필드에 6자리 코드를 입력해야 로그인이 가능합니다. "
 
-#: ../../header/header.rst:132
+#: ../../header/header.rst:133
 msgid ""
 "If you want to disable 2FA, turn off the ``2FA Enabled`` switch and click"
 " the confirm button in the following dialog."

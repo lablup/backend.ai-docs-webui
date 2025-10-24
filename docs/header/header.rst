@@ -29,11 +29,10 @@ The bell shape button is the event notification button.
 Events that need to be recorded during WebUI operation are displayed here.
 When background tasks are running, such as creating a compute session,
 you can check the jobs here. When the background task is finished.
+Press the shortcut key (``]``) to open and close the notification area.
 
-.. image:: notification.png
+.. image:: notification_collapse.png
    :align: center
-   :width: 600
-   :alt: Notification
 
 Theme mode
 -----------
@@ -71,10 +70,12 @@ Each menu item has the following functions.
 
 * About Backend.AI: Displays information such as version of Backend.AI WebUI,
   license type, etc.
-* My Account: Check/Update information of current login user.
+* My Account: Check / Update information of current login user.
 * Preferences: Go to user settings page.
 * Logs / Errors: Go to the log page. You can check the log and error history
   recorded on the client side.
+* Download Desktop App: Download the stand-alone WebUI app for your platform.
+* Log Out: Log out of the WebUI.
 
 My Account
 ^^^^^^^^^^
