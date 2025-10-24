@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 25.05\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-18 16:22+0900\n"
+"POT-Creation-Date: 2025-10-23 16:47+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ko\n"
@@ -48,39 +48,29 @@ msgid ""
 "chat card on the Chat page. Clicking the endpoint field allows users to "
 "search for or choose from available endpoints, and the model can be "
 "selected in the same way. If no model is associated with the selected "
-"endpoint, the model will be set to Custom. When the model information "
-"cannot be retrieved, users will need to manually configure the model "
-"settings."
+"endpoint, verify the base path and token compatibility with OpenAI, then "
+"click the 'Refresh model info' button."
 msgstr ""
 "채팅 페이지 카드의 왼쪽 상단에서 엔드포인트와 모델을 선택할 수 있습니다. 엔드포인트 선택란을 클릭하면, 엔드포인트를 직접 "
 "검색하거나 목록에서 선택할 수 있으며, 모델도 동일한 방식으로 선택할 수 있습니다. 단, 선택한 엔드포인트에 해당하는 모델이 없을 "
-"경우, 모델은 Custom으로 설정됩니다. 모델 정보를 불러올 수 없는 경우에는 사용자가 직접 모델을 수동으로 설정해야 합니다."
+"경우, OpenAI 호환 기본 경로와 토큰을 확인후 '모델 정보 새로고침' 버튼을 눌러주세요."
 
-#: ../../chat/chat.rst:25
+#: ../../chat/chat.rst:24
 msgid ""
 "Refer to the description below for the necessary inputs to configure "
 "custom modal settings:"
 msgstr "사용자 정의 모델 설정에 필요한 입력 사항은 다음 설명을 참조하십시오."
 
-#: ../../chat/chat.rst:27
+#: ../../chat/chat.rst:26
 msgid ""
-"baseURL: Base URL of the server where the model is located. Make sure to "
-"include the version information. For instance, when utilizing the OpenAI "
-"API, users should enter https://api.openai.com/v1."
+"baseURL (optional): Base URL of the server where the model is located. "
+"Make sure to include the version information. For instance, when "
+"utilizing the OpenAI API, users should enter https://api.openai.com/v1."
 msgstr ""
-"baseURL: 모델이 위치한 서버의 기본 URL. 해당 URL에는 버전 정보가 포함되어 있어야 합니다. 예를 들어, OpenAI "
-"API를 사용하는 경우, https://api.openai.com/v1 을 입력해야 합니다."
+"baseURL (선택사항): 모델이 위치한 서버의 기본 URL. 해당 URL에는 버전 정보가 포함되어 있어야 합니다. 예를 들어, "
+"OpenAI API를 사용하는 경우, https://api.openai.com/v1 을 입력해야 합니다."
 
-#: ../../chat/chat.rst:30
-msgid ""
-"Model ID: Unique identifier of the model. To specify the model users wish"
-" to use, provide its unique identifier. For instance, for GPT-4, users "
-"would input gpt-4o."
-msgstr ""
-"Model ID: 사용하려는 모델의 고유 식별자. 모델을 지정하려면 고유 식별자를 제공해야 합니다. 예를 들어, GPT-4의 경우 "
-"gpt-4o를 입력합니다."
-
-#: ../../chat/chat.rst:32
+#: ../../chat/chat.rst:29
 msgid ""
 "Token (optional): An authentication key to access the model service. "
 "Tokens can be generated from various services, not just Backend.AI. The "
@@ -92,24 +82,24 @@ msgid ""
 msgstr ""
 "Token (선택사항): 모델 서비스에 접근하기 위한 인증 키. 토큰은 Backend.AI 뿐만 아니라 다양한 서비스에서 생성할 수"
 " 있습니다. 토큰 생성 방법은 서비스에 따라 다를 수 있습니다. 자세한 내용은 해당 서비스의 안내를 참조하십시오. "
-"Backend.AI에서 생성한 서비스를 사용하는 경우, 토큰 생성 방법은 :ref:`토큰 발급하기<generating-tokens>` 섹션을 "
-"참조하십시오."
+"Backend.AI에서 생성한 서비스를 사용하는 경우, 토큰 생성 방법은 :ref:`토큰 발급하기<generating-"
+"tokens>` 섹션을 참조하십시오."
 
-#: ../../chat/chat.rst:39
-msgid "Add or remove chat cards"
-msgstr "채팅 카드 추가 및 삭제"
+#: ../../chat/chat.rst:36
+msgid "Add or remove comparison chat cards"
+msgstr "비교 채팅 카드 추가 및 삭제"
 
-#: ../../chat/chat.rst:41
+#: ../../chat/chat.rst:38
 msgid ""
-"To add new chat cards, click the '+' button located in the top right "
-"corner."
-msgstr "우측 상단의 '+' 버튼을 클릭하여 새로운 채팅 카드를 추가할 수 있습니다."
+"To add new comparison chat cards, click the comparison icon button "
+"located in the top right corner."
+msgstr "우측 상단의 '비교' 아이콘 버튼을 클릭하여 새로운 비교 채팅 카드를 추가할 수 있습니다."
 
 #: ../../chat/chat.rst:-1
 msgid "Add chat cards"
 msgstr "채팅 카드 추가 및 삭제"
 
-#: ../../chat/chat.rst:46
+#: ../../chat/chat.rst:43
 msgid ""
 "To remove a chat session, click on the 'more' button located in the upper"
 " right corner of the chat card. Then a dropdown menu will appear, and "
@@ -124,11 +114,11 @@ msgstr ""
 msgid "Remove chatting cards"
 msgstr "채팅 카드 추가 및 삭제"
 
-#: ../../chat/chat.rst:56
+#: ../../chat/chat.rst:53
 msgid "Clear chat history"
 msgstr "채팅 기록 삭제"
 
-#: ../../chat/chat.rst:58
+#: ../../chat/chat.rst:55
 msgid ""
 "Clicking the 'more' button will reveal the 'Clear chat' option. By "
 "selecting this, users will erase all chat history associated with the "
@@ -141,11 +131,11 @@ msgstr ""
 msgid "Delete chat history"
 msgstr "채팅 기록 삭제"
 
-#: ../../chat/chat.rst:-1 ../../chat/chat.rst:67
+#: ../../chat/chat.rst:-1 ../../chat/chat.rst:64
 msgid "Synchronize input"
 msgstr "입력 연동"
 
-#: ../../chat/chat.rst:69
+#: ../../chat/chat.rst:66
 msgid ""
 "The 'Sync Input' button, located at the top right, enables the "
 "synchronization of input across chat cards where the option is enabled. "
@@ -157,4 +147,46 @@ msgstr ""
 "채팅 카드의 우측 상단의 '동기화' 버튼을 사용하면 '동기화'가 활성화된 모든 채팅 카드의 입력을 동기화할 수 있습니다. "
 "'동기화'가 활성화된 채로, '엔터'를 누르거나 어떤 카드의 '전송' 버튼을 클릭하면 현재 입력 중인 카드의 입력이 일괄 "
 "적용됩니다. 이 기능은 하나의 입력값을 통해 다양한 모델의 응답 결과를 비교하고 싶을 때 유용하게 사용할 수 있습니다."
+
+#: ../../chat/chat.rst:76
+msgid "Parameter adjustment"
+msgstr "파라미터 조정"
+
+#: ../../chat/chat.rst:78
+msgid ""
+"Click the parameter button in the top-right corner to adjust the "
+"parameters for each model. Users can set various values such as Max "
+"Tokens, Temperature, Top P, and Top K. Using the synchronize feature, "
+"users can apply different parameters to the same model and then compare "
+"the results."
+msgstr ""
+"우측 상단의 파라미터 버튼을 클릭하여 각 모델에 대한 파라미터를 조정할 수 있습니다.사용자는 Max Tokens, "
+"Temperature, Top P, Top K와 같은 다양한 값들을 설정할 수 있습니다.동기화 기능을 사용하여 같은 모델들에 대해 "
+"다른 파라미터를 적용하여 결과를 비교할 수 있습니다."
+
+#: ../../chat/chat.rst:-1
+msgid "Parameter settings"
+msgstr "파라미터 설정"
+
+#: ../../chat/chat.rst:-1 ../../chat/chat.rst:86
+msgid "Chat history"
+msgstr "채팅 기록"
+
+#: ../../chat/chat.rst:88
+msgid "To start new chat, click the '+' button located in the top right corner."
+msgstr "우측 상단의 '+' 버튼을 클릭하여 새로운 채팅을 시작할 수 있습니다."
+
+#: ../../chat/chat.rst:-1
+msgid "New chat"
+msgstr "새로운 채팅"
+
+#: ../../chat/chat.rst:94
+msgid ""
+"All chat history is stored in local storage, and users can access "
+"previous chats by clicking the history button in the top-right corner."
+msgstr "모든 채팅 기록은 로컬 스토리지에 저장됩니다. 우측 상단의 '히스토리' 버튼을 클릭하여이전의 채팅 기록에 접근할 수 있습니다."
+
+#: ../../chat/chat.rst:-1
+msgid "History button"
+msgstr "히스토리 버튼"
 
