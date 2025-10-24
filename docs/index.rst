@@ -27,6 +27,7 @@ The latest versions of this document can be found from sites below:
    login/login
    header/header
    start/start
+   dashboard/dashboard
    summary/summary
    vfolder/vfolder
    sessions_all/sessions_all

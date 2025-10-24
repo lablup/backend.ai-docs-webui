@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 25.05\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-12 16:28+0900\n"
+"POT-Creation-Date: 2025-10-23 18:42+0900\n"
 "PO-Revision-Date: 2021-03-02 18:31+0900\n"
 "Last-Translator: Jonghyun Park <jpark@lablup.com>\n"
 "Language: ko_KR\n"
@@ -19,11 +19,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: ../../summary/summary.rst:3
+#: ../../summary/summary.rst:2
+msgid ""
+"This feature is deprecated, so please use the :ref:`dashboard<dashboard>`"
+" page going forward. Also, technical support and bug fixes for this "
+"feature are no longer provided. Please understand that issues may not be "
+"addressed."
+msgstr ""
+"이 기능은 더 이상 사용되지 않으므로, 앞으로는 :ref:`대시보드<dashboard>` 페이지를 이용해 주시기 바랍니다. "
+"또한, 이 기능에 대한 기술 지원 및 버그 수정이 더 이상 제공되지 않음을 양해 부탁드립니다. 문제 해결이 이루어지지 않을 수 있습니다."
+
+#: ../../summary/summary.rst:7
 msgid "Summary Page"
 msgstr "요약 페이지"
 
-#: ../../summary/summary.rst:5
+#: ../../summary/summary.rst:9
 msgid "On the Summary page, users can check resource status and session usage."
 msgstr "요약 페이지에서는 사용자의 자원 사용 상태 및 연산 세션 사용량을 확인할 수 있습니다."
 
@@ -31,11 +41,11 @@ msgstr "요약 페이지에서는 사용자의 자원 사용 상태 및 연산 �
 msgid "summary page"
 msgstr "요약 페이지"
 
-#: ../../summary/summary.rst:12
+#: ../../summary/summary.rst:16
 msgid "Resource Statistics"
 msgstr "자원 사용량"
 
-#: ../../summary/summary.rst:14
+#: ../../summary/summary.rst:18
 msgid ""
 "It shows the total amount of resources the user can allocate and the "
 "amount of resources currently allocated. You can check the user's CPU, "
@@ -48,7 +58,7 @@ msgstr ""
 "점유량 및 할당량을 각각 확인할 수 있습니다. 또한, Sessions 슬라이더에서 사용자가 동시에 생성 가능한 연산 세션의 수 및 "
 "현재 작동 중인 연산 세션의 수를 확인할 수 있습니다."
 
-#: ../../summary/summary.rst:20
+#: ../../summary/summary.rst:24
 msgid ""
 "You can change the resource group by clicking the Resource Group field at"
 " the top. Resource group is a concept to group multiple Agent nodes as a "
@@ -64,11 +74,11 @@ msgstr ""
 "경우, 각 자원 그룹 별로 특정 사용자 그룹에 독접 할당하는 등의 설정이 가능합니다. Agent 노드가 한 대인 경우에는 하나의 "
 "자원 그룹만 보이는 것이 보통입니다. 자원 그룹을 변경하면, 해당 자원의 자원 보유량에 따라 자원량이 변할 수 있습니다."
 
-#: ../../summary/summary.rst:29
+#: ../../summary/summary.rst:33
 msgid "System Resources"
 msgstr "시스템 자원"
 
-#: ../../summary/summary.rst:31
+#: ../../summary/summary.rst:35
 msgid ""
 "It shows the number of Agent worker nodes connected to the Backend.AI "
 "system and the total number of compute sessions currently created. You "
@@ -80,11 +90,11 @@ msgstr ""
 "노드의 CPU, 메모리, GPU 실제 사용량 (utilization) 도 확인할 수 있습니다. 일반 사용자로 로그인 한 경우에는 "
 "자신이 생성한 연산 세션의 숫자만 표시됩니다."
 
-#: ../../summary/summary.rst:37
+#: ../../summary/summary.rst:41
 msgid "Invitation"
 msgstr "초대"
 
-#: ../../summary/summary.rst:39
+#: ../../summary/summary.rst:43
 msgid ""
 "If another user has shared their storage folder to you, it will be "
 "displayed here. If you accept the share request, you can view and access "
@@ -96,11 +106,11 @@ msgstr ""
 "폴더를 조회하고 접근할 수 있습니다. 접근 권한은 공유한 사용자가 지정한 설정에 따릅니다. 물론, 공유 요청을 거절할 수도 "
 "있습니다."
 
-#: ../../summary/summary.rst:45
+#: ../../summary/summary.rst:49
 msgid "Download Backend.AI Web UI App"
 msgstr "Backend.AI WebUI 앱 다운로드"
 
-#: ../../summary/summary.rst:47
+#: ../../summary/summary.rst:51
 msgid ""
 "Backend.AI WebUI supports desktop applications. By using desktop app, you"
 " can use desktop app specific features, such as :ref:`SSH/SFTP connection"
@@ -111,19 +121,19 @@ msgstr ""
 "그 예로 :ref:`연산 세션에 SSH/SFTP 접속하기<ssh-sftp-container>` 가 있습니다. Backend.AI "
 "WebUI 에서는 아래 운영체제에서 실행가능한 데스크톱 앱을 지원합니다. "
 
-#: ../../summary/summary.rst:51
+#: ../../summary/summary.rst:55
 msgid "Windows"
 msgstr ""
 
-#: ../../summary/summary.rst:52
+#: ../../summary/summary.rst:56
 msgid "Linux"
 msgstr ""
 
-#: ../../summary/summary.rst:53
+#: ../../summary/summary.rst:57
 msgid "Mac"
 msgstr ""
 
-#: ../../summary/summary.rst:56
+#: ../../summary/summary.rst:60
 msgid ""
 "When you click the button that match with your local environment (e.g. "
 "OS, Architecture), It will automatically downloads the same version of "
