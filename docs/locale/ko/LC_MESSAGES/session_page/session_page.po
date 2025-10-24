@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Lablup Inc.
+# This file is distributed under the same license as the Backend.AI WebUI
+# User Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Backend.AI WebUI User Guide 25.15\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-24 16:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../session_page/session_page.rst:3
+msgid "Session Page"
+msgstr "세션 페이지"
+
+#: ../../session_page/session_page.rst:5
+msgid ""
+"In Backend.AI, a ``session`` represents an isolated compute environment "
+"where users can run code, train models, or perform data analysis using "
+"allocated resources. Each session is created based on user-defined "
+"configurations such as runtime image, resource size, and environment "
+"settings. Once started, the session provides access to interactive "
+"applications, terminals, and logs, allowing users to manage and monitor "
+"their workloads efficiently."
+msgstr ""
+"Backend.AI에서 ``세션`` 은 사용자가 할당된 자원을 이용해 코드 실행, 모델 학습, 데이터 분석 등을 수행할 수 있는 독립적인 컴퓨팅 환경을 의미합니다. "
+"세션은 런타임 이미지, 자원 크기, 환경 설정 등 사용자가 정의한 구성에 따라 생성됩니다. "  
+"세션이 시작되면 인터랙티브 앱, 터미널, 로그 등을 통해 작업을 관리하고 모니터링할 수 있습니다. "
+"작업 유형에 따라 세션은 ``Interactive``, ``Batch``, ``Inference`` 형태로 구분됩니다. "
+
+#: ../../session_page/session_page.rst:15
+msgid "Resource Summary Panels"
+msgstr "자원 요약 패널"
+
+#: ../../session_page/session_page.rst:16
+msgid ""
+"At the top of the 'Sessions' page, you can find panels displaying your "
+"available computing resources such as CPU, RAM, and AI Accelerators. "
+"Different panel views — 'My Total Resources Limit', 'My Resources in "
+"Resource Group', and 'Total Resources in Resource Group' — can be "
+"selected depending on the information needed. Use the 'Settings' button "
+"to change which panel is displayed."
+msgstr ""
+"‘세션’ 페이지 상단에는 CPU, RAM, AI 가속기 등 사용 가능한 컴퓨팅 자원을 표시하는 패널이 있습니다. "
+"필요한 정보에 따라 \'나의 총자원 제한\', \'자원 그룹별 나의 자원\', \'자원 그룹별 총자원\' 등 다양한 패널로 전환하여 필요한 정보를 확인할 수 있습니다. "
+"표시할 패널을 변경하려면 \'설정\' 버튼을 사용하세요."
+
+
+#: ../../session_page/session_page.rst:24
+msgid ""
+"For more detailed information about resource panels and their metrics, "
+"please refer to the :ref:`dashboard` page."
+msgstr ""
+"자원 패널 및 해당 지표에 대한 자세한 정보는 :ref:`대시보드<dashboard>` 페이지를 참조하세요."
+
+#: ../../session_page/session_page.rst:28
+msgid "Session list"
+msgstr "세션 목록"
+
+#: ../../session_page/session_page.rst:29
+msgid ""
+"The 'Sessions' section displays a list of all active and completed "
+"compute sessions. You can filter sessions by type — ``Interactive``, "
+"``Batch``, ``Inference``, or ``Upload Sessions`` — and switch between "
+"``Running`` and ``Finished`` tabs to manage sessions."
+msgstr ""
+"\'Sessions\' 섹션에서는 실행 중이거나 완료된 연산 세션 목록을 확인할 수 있습니다. "
+"세션 유형별로 ``Interactive``, ``Batch``, ``Inference``, ``Upload Sessions`` 를 필터링할 수 있으며, ``실행중`` 과 ``종료됨`` 탭을 전환하여 세션 상태를 구분해 관리할 수 있습니다. "
+
+#: ../../session_page/session_page.rst:33
+msgid ""
+"By default, you can view the following columns: session name, status, "
+"allocated resources (AI Accelerators, CPU, Memory), elapsed time, and for"
+" super admins, agent and owner email. Additional columns can be shown or "
+"specific ones hidden by clicking the 'Settings' button at the bottom "
+"right of the table to customize the view."
+msgstr ""
+"기본적으로 세션 이름, 상태, 할당된 자원(AI 가속기, CPU, 메모리), 경과 시간, 슈퍼 관리자용 에이전트 및 소유자 이메일 등을 볼 수 있습니다. "
+"테이블 오른쪽 하단의 \'설정\' 버튼을 클릭하여 더 많은 컬럼을 보이게 하거나 특정 컬럼을 숨길 수 있습니다."
