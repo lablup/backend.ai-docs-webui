@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web UI User Guide 25.05\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-13 17:41+0900\n"
+"POT-Creation-Date: 2025-10-24 13:54+0900\n"
 "PO-Revision-Date: 2023-08-07 16:17+0900\n"
 "Last-Translator: Jinho Heo <jinho@lablup.com>\n"
 "Language: ko\n"
@@ -640,22 +640,9 @@ msgstr ""
 msgid "SSH / SFTP connection dialog"
 msgstr ""
 
-#: ../../vfolder/vfolder.rst:343
+#: ../../vfolder/vfolder.rst:342
 msgid ""
-"We provide a detailed information about using large file upload via "
-"ssh/sftp connection. For more information, please click the 'Read more' "
-"text link to see all the details of execution."
-msgstr ""
-"대용량 파일 업로드를 SSH/SFTP 연결을 통해 수행하는 방법을 상세히 제공하고 있습니다. 자세한 정보를 확인하시려면, '더 "
-"알아보기' 텍스트 링크를 클릭하여 실행에 대한 상세 정보를 확인해주시기 바랍니다."
-
-#: ../../vfolder/vfolder.rst
-msgid "SSH / SFTP connection dialog expanded"
-msgstr ""
-
-#: ../../vfolder/vfolder.rst:351
-msgid ""
-"For the connection, click 'DOWNLOAD SSH KEY' button to download the SSH "
+"For the connection, click 'Download SSH Key' button to download the SSH "
 "private key (``id_container``). Also, remember the host and port number. "
 "Then, you can copy your files to the session using the Connection Example"
 " code written in the dialog, or referring to the following guide: "
@@ -668,7 +655,7 @@ msgstr ""
 "있습니다. :ref:`link<sftp_connection_for_linux_and_mac>` 파일을 보존하려면 터 폴더로 "
 "복사하십시오. 또한, 일정 시간 동안 파일 전송이 없는 경우에는 세션이 삭제될 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:359
+#: ../../vfolder/vfolder.rst:350
 msgid ""
 "If you upload your SSH keypair, the ``id_container`` will be set with "
 "your own SSH private key. So, you don't need to download it every time "
@@ -679,15 +666,15 @@ msgstr ""
 "연산 세션에 SSH 접속을 할 때마다 파일을 다운로드 할 필요가 없습니다. :ref:`사용자의 SSH 키페어 관리하기<user-"
 "ssh-keypair-management>` 부분을 참고하십시오."
 
-#: ../../vfolder/vfolder.rst:365
+#: ../../vfolder/vfolder.rst:356
 msgid "Folder Categories"
 msgstr "폴더 카테고리"
 
-#: ../../vfolder/vfolder.rst:370
+#: ../../vfolder/vfolder.rst:361
 msgid "Pipeline folders"
 msgstr "파이프라인 폴더"
 
-#: ../../vfolder/vfolder.rst:372
+#: ../../vfolder/vfolder.rst:363
 msgid ""
 "This tab shows the list of folders that are automatically created when "
 "executing a pipeline in FastTrack. When a pipeline is created, a new "
@@ -697,11 +684,11 @@ msgstr ""
 "이 탭은 FastTrack에서 파이프라인을 실행할 때 자동으로 생성되는 폴더 목록을 보여줍니다. 파이프라인을 만들면 각 태스크 "
 "인스턴스(연산 세션)에 대응되는 컨테이너의 ``/pipeline`` 위치에 새 폴더가 생성되고 마운트됩니다."
 
-#: ../../vfolder/vfolder.rst:-1 ../../vfolder/vfolder.rst:377
+#: ../../vfolder/vfolder.rst:-1 ../../vfolder/vfolder.rst:368
 msgid "Automount folders"
 msgstr "자동 마운트 폴더"
 
-#: ../../vfolder/vfolder.rst:381
+#: ../../vfolder/vfolder.rst:372
 msgid ""
 "Data page has an Automount Folders tab. Click this tab to see a list of "
 "folders whose names prefixed with a dot (``.``). When you create a "
@@ -720,7 +707,7 @@ msgstr ""
 "이용하여, ``.local``, ``.linuxbrew``, ``.pyenv`` 등과 같은 스토리지 폴더를 생성해서 사용하면 연산 "
 "세션에 관계없이 늘 일정한 사용자 패키지 또는 환경을 구성할 수 있습니다."
 
-#: ../../vfolder/vfolder.rst:391
+#: ../../vfolder/vfolder.rst:382
 msgid ""
 "For more detailed information on the usage of Automount folders, refer to"
 " :ref:`examples of using automount folders<using-automount-folder>`."
@@ -728,11 +715,11 @@ msgstr ""
 "자동 마운트 사용에 관한 보다 자세한 내용은 :ref:`자동 마운트 폴더 사용 예제<using-automount-folder>` "
 "섹션을 참고하십시오."
 
-#: ../../vfolder/vfolder.rst:398
+#: ../../vfolder/vfolder.rst:389
 msgid "Models"
 msgstr "모델 폴더"
 
-#: ../../vfolder/vfolder.rst:402
+#: ../../vfolder/vfolder.rst:393
 msgid ""
 "'Models' The Models tab facilitates straightforward model serving. You "
 "can store the necessary data, including input data for :ref:`model "
@@ -744,3 +731,4 @@ msgstr ""
 #: ../../vfolder/vfolder.rst:-1
 msgid "Models tab"
 msgstr "모델 탭"
+
