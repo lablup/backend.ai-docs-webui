@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console Essential Guide Enterprise 25.05\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-10 23:44+0900\n"
+"POT-Creation-Date: 2025-10-24 16:01+0900\n"
 "PO-Revision-Date: 2023-03-25 11:27+0900\n"
 "Last-Translator: \n"
 "Language: ko_KR\n"
@@ -49,8 +49,8 @@ msgstr ""
 "버튼을 클릭합니다."
 
 #: ../../user_settings/user_settings.rst:26
-msgid "Desktop Notification"
-msgstr "데스크톱 알림"
+msgid "Enables Desktop Notifications"
+msgstr "데스크톱 알림 활성화"
 
 #: ../../user_settings/user_settings.rst:28
 msgid ""
@@ -66,8 +66,8 @@ msgstr ""
 "출력되지 않을 수 있습니다. 이 옵션 설정과 관계없이, WebUI 내부의 알림 기능은 그대로 동작합니다."
 
 #: ../../user_settings/user_settings.rst:36
-msgid "Use Compact Sidebar by default"
-msgstr "간결한 사이드바 기본 사용"
+msgid "Set Compact Sidebar as Default"
+msgstr "간결한 사이드바를 기본값으로 설정"
 
 #: ../../user_settings/user_settings.rst:38
 msgid ""
@@ -96,8 +96,8 @@ msgstr ""
 "있습니다. 다만, 페이지 갱신 전에는 언어가 바뀌지 않는 사용자 인터페이스 항목이 있을 수 있습니다."
 
 #: ../../user_settings/user_settings.rst:51
-msgid "OS Default: Use the operating system's default language."
-msgstr "OS Default: 운영체제 기본 설정된 언어를 사용합니다."
+msgid "Default: Use the operating system's default language."
+msgstr "Default: 운영체제 기본 설정된 언어를 사용합니다."
 
 #: ../../user_settings/user_settings.rst:52
 msgid "English: Set English as the default language."
@@ -279,33 +279,26 @@ msgstr ""
 " 있습니다."
 
 #: ../../user_settings/user_settings.rst:142
-msgid "Classic Session Launcher"
-msgstr "Classic 세션 런처"
+msgid "Switch back to the Classic UI"
+msgstr "Classic UI로 돌아가기"
 
 #: ../../user_settings/user_settings.rst:144
 msgid ""
-"From version 24.09, Backend.AI offers an improved version of the session "
-"launcher (NEO) as default. If you want to use the classic session "
-"launcher, you can turn on this option. For instructions on how to use the"
-" classic session launcher, please refer to the following `link "
-"<https://webui.docs.backend.ai/en/23.09_a/sessions_all/sessions_all.html>`_."
-msgstr ""
-"Backend.AI 24.90 버전 이후부터, 세션 런처(NEO)의 개선된 버전을 기본 세션 런처로 제공합니다. 이전의 대화식 세션"
-" 런처를 사용하고 싶다면, 이 옵션을 활성화 하세요. Classic session launcher의 사용방법에 대해선 다음 `링크 "
-"<https://webui.docs.backend.ai/en/23.09_a/sessions_all/sessions_all.html>`_"
-" 를 참고하세요. "
+"If you want to switch back to the classic Backend.AI interface, enable "
+"the following options."
+msgstr "Classic Backend.AI 인터페이스로 돌아가고 싶다면 다음 설정을 활성화해 주세요."
 
-#: ../../user_settings/user_settings.rst:150
+#: ../../user_settings/user_settings.rst:151
 msgid "Edit Bootstrap Script"
 msgstr "부트스트랩 스크립트 수정"
 
-#: ../../user_settings/user_settings.rst:152
+#: ../../user_settings/user_settings.rst:153
 msgid ""
 "If you want to execute a one-time script just after your compute sessions"
 " started, write down the contents here."
 msgstr "연산 세션 시작 후 한 번만 스크립트를 실행하고자 할 경우, 여기에 그 내용을 작성해주십시오."
 
-#: ../../user_settings/user_settings.rst:160
+#: ../../user_settings/user_settings.rst:161
 msgid ""
 "The compute session will be at the ``PREPARING`` status until the "
 "bootstrap script finishes its execution. Since a user cannot use the "
@@ -317,11 +310,11 @@ msgstr ""
 " 사용할 수 없습니다. 따라서, 오랫동안 실행해야 하는 작업이 있다면, 부트스트랩 스크립트에 작성하는 대신 연산 세션이 "
 "``RUNNING`` 상태가 된 후 터미널 앱을 열고 실행하는 것이 나을 수 있습니다."
 
-#: ../../user_settings/user_settings.rst:167
+#: ../../user_settings/user_settings.rst:168
 msgid "Edit User Config Script"
 msgstr "사용자 환경 스크립트 수정"
 
-#: ../../user_settings/user_settings.rst:169
+#: ../../user_settings/user_settings.rst:170
 msgid ""
 "You can write some config scripts to replace the default ones in a "
 "compute session. Files like ``.bashrc``, ``.tmux.conf.local``, "
@@ -335,7 +328,7 @@ msgstr ""
 " 별로 저장되며, 일정한 자동화 작업이 필요할 때 활용할 수 있습니다. 예를 들어, ``.bashrc`` 스크립트를 수정하여 원하는"
 " 명령 alias 를 등록하거나 특정 파일을 특정 위치에 항상 다운로드 하도록 지정해둘 수 있습니다."
 
-#: ../../user_settings/user_settings.rst:176
+#: ../../user_settings/user_settings.rst:177
 msgid ""
 "Use the drop-down menu at the top to select the type of script you want "
 "to write and then write the content. You can save the script by clicking "
@@ -345,22 +338,21 @@ msgstr ""
 "상단의 드롭다운 메뉴를 활용해서 작성할 스크립트의 종류를 선택한 후 내용을 작성하십시오. 작성이 완료되면 SAVE 또는 SAVE "
 "AND CLOSE 버튼을 클릭해서 스크립트를 저장할 수 있습니다. DELETE 버튼을 클릭하면 해당 스크립트를 삭제할 수 있습니다."
 
-#: ../../user_settings/user_settings.rst:186
+#: ../../user_settings/user_settings.rst:187
 msgid "Experimental Features"
 msgstr "실험적 기능"
 
-#: ../../user_settings/user_settings.rst:188
+#: ../../user_settings/user_settings.rst:189
 msgid ""
 "You can enable or disable experimental features before they are "
 "officially released."
-msgstr ""
-"실험적 기능들이 정식으로 출시되기 전에 활성화하거나 비활성화할 수 있습니다."
+msgstr "실험적 기능들이 정식으로 출시되기 전에 활성화하거나 비활성화할 수 있습니다."
 
-#: ../../user_settings/user_settings.rst:195
+#: ../../user_settings/user_settings.rst:196
 msgid "LOGS tab"
 msgstr "LOGS 탭"
 
-#: ../../user_settings/user_settings.rst:197
+#: ../../user_settings/user_settings.rst:198
 msgid ""
 "Displays detailed information of various logs recorded on the client "
 "side. You can visit this page to find out more about the errors occurred."
@@ -371,7 +363,7 @@ msgstr ""
 " 방문할 수 있습니다. 우측 상단의 버튼을 이용해서 로그를 검색하거나 에러 메시지를 필터링하고, 로그를 새로고침하거나 지울 수 "
 "있습니다."
 
-#: ../../user_settings/user_settings.rst:205
+#: ../../user_settings/user_settings.rst:206
 msgid ""
 "If you only have one page logged in, clicking the REFRESH button may not "
 "seem to work properly. Logs pages are collection of requests to the "
@@ -384,7 +376,7 @@ msgstr ""
 " 서버에 대한 요청과 서버의 응답을 모아둔 것이며, 현재 페이지가 로그 페이지인 경우 명시적으로 페이지를 새로 고침하는 것 외에는 "
 "서버에 요청을 보내지 않습니다. 로그가 제대로 쌓이는지 확인하려면 다른 페이지를 열고 REFRESH 버튼을 클릭하십시오."
 
-#: ../../user_settings/user_settings.rst:212
+#: ../../user_settings/user_settings.rst:213
 msgid ""
 "If you want to hide or show the certain columns, click the gear icon at "
 "the bottom right of the table. Then you can see below dialog to select "
@@ -393,4 +385,22 @@ msgstr ""
 "특정 열을 숨기거나 보이게 하려면, 테이블 우측 하단의 기어 아이콘을 클릭하십시오. 그러면 아래와 같은 다이얼로그가 나타나며, 보고"
 " 싶은 열을 선택할 수 있습니다."
 
+#~ msgid ""
+#~ "If you want to switch back to "
+#~ "the classic Backend.AI interface, enable "
+#~ "the following options. .. image:: "
+#~ "switch_classic_ui.png"
+#~ msgstr ""
+
+#~ msgid "width"
+#~ msgstr ""
+
+#~ msgid "700"
+#~ msgstr ""
+
+#~ msgid "align"
+#~ msgstr ""
+
+#~ msgid "center"
+#~ msgstr ""
 

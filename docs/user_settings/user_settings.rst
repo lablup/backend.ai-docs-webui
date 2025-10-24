@@ -23,8 +23,8 @@ There are lots of preference menu in GENERAL tab. you can search it by search fi
 or you may just filter that you changed by clicking `Display Only Changes`. If you want to rollback the changes to before,
 click Reset button on the right top of the section.
 
-Desktop Notification
-^^^^^^^^^^^^^^^^^^^^
+Enables Desktop Notifications
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Enables or disables the desktop notification feature. If the browser and
 operating system support it, various  messages that appear in the WebUI
@@ -33,7 +33,7 @@ operating system during the first run, the desktop message may not be displayed
 even if the option is turned on here. Regardless of the value of this option,
 the notification inside the WebUI still works.
 
-Use Compact Sidebar by default
+Set Compact Sidebar as Default
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When this option is on, the left sidebar will be shown in a compact form
@@ -49,7 +49,7 @@ five languages including English and Korean. However, there may be some UI items
 that do not update their language
 before the page is refreshed.
 
-* OS Default: Use the operating system's default language.
+* Default: Use the operating system's default language.
 * English: Set English as the default language.
 * Korean: Set Korean as the default language.
 * Brazilian Portuguese: Set Brazilian Portuguese as the default language.
@@ -139,14 +139,6 @@ please enter the keys inside, and click ``SAVE`` button. Now you can access to b
    :width: 400
    :align: center
 
-Classic Session Launcher
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-From version 24.09, Backend.AI offers an improved version of the session launcher (NEO) as default.
-If you want to use the classic session launcher, you can turn on this option. 
-For instructions on how to use the classic session launcher, please refer to the following 
-`link <https://webui.docs.backend.ai/en/23.09_a/sessions_all/sessions_all.html>`_.
-
 Edit Bootstrap Script
 ^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -180,6 +172,15 @@ clicking the SAVE or SAVE AND CLOSE button. Click the DELETE button to delete
 the script.
 
 .. image:: edit_user_config_script.png
+   :width: 700
+   :align: center
+
+Switch back to the Classic UI
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you want to switch back to the classic Backend.AI interface, enable the following options.
+
+.. image:: switch_classic_ui.png
    :width: 700
    :align: center
 
