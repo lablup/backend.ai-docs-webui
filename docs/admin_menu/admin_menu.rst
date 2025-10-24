@@ -5,25 +5,19 @@ Admin Menus
 ===========
 
 Logging in with an admin account will reveal an extra Administration menu on the bottom left of the sidebar. 
-User information registered in Backend.AI is listed in the Users tab. Domain admin can see only the users who belong to the domain, 
-while superadmin can see all users' information. Only superadmin can create and deactivate a user.
+User information registered in Backend.AI is listed in the Users tab.
+super-admin role user can see all users' information, create and deactivate a user.
 
-User ID (email), Name (username), and Main Access Key can be filtered by typing text in the 
+User ID (email), Name (username), Role and Description(User Description) can be filtered by typing text in the 
 search box on each column header.
 
 .. image:: admin_user_page.png
    :alt: User management page
 
-.. note::
-
-   Depending on the plugin settings, the ``2FA Enabled`` column might be invisible. In that 
-   case, please contact administrator of your system.
-
-
 Create and update users
 -----------------------
 
-A user can be created by clicking the CREATE USER button. Note that the password
+A user can be created by clicking the '+Create User' button. Note that the password
 must be longer or equal to 8 characters and at least 1 alphabet/special
 character/ number should be included. The maximum length allowed for E-Mail and Username is 64.
 
@@ -59,7 +53,7 @@ already exists. User's name, password, activation state, etc. can be changed. Us
    :align: center
    :alt: User update dialog
 
-Each of the three items at the bottom of the dialog has the following functions.
+Each of the five items at the bottom of the dialog has the following functions.
 
 * User Status: Indicates the user's status. Inactive users cannot log
   in. Before Verification is a status indicates that a user needs an additional
@@ -103,10 +97,14 @@ you can deactivate the user by clicking the Deactivate button.
 To re-activate users, go to Users - Inactive tab, and select the status of
 the target user to ``Active``.
 
+.. image:: user_inactivate_confirmation.png
+   :width: 600
+   :align: center
+   :alt: Reactivating user account
+
 .. warning::
 
-   Please note that deactivating the user changes all of credentials to be inactive,
-   but reactivating the user does not reactivate the inactivated credentials, since the user
+   Please note that deactivating or reactivating the user does not change the user's credentials, since the user
    account can have multiple keypairs, which brings it hard to decide which credential
    should be reactivated.
 
@@ -132,13 +130,40 @@ Inactive panel at the bottom.
    :alt: Credential list page
 
 Like in Users tab, you can use the buttons in the Controls panel to view or
-update keypair details. Click the blue trash button to disable that keypair, or
-click the red trash button to completely delete the keypair. However, if you
-have created a compute session using a keypair, you cannot delete it. If you
+update keypair details. Click the green info icon button to see specific details of the keypair.
+If necessary, you can copy the secret key by clicking the copy button. 
+
+.. image:: keypair_detail_dialog.png
+   :width: 400
+   :align: center
+   :alt: Keypair detail dialog
+
+You can modify the resource policy and rate limit of the keypair by clicking the blue 'Setting (Gear)' button.
+Please keep in mind that if the 'Rate Limit' value is small, API operations such as login may be blocked.
+
+.. image:: keypair_update_dialog.png
+   :width: 400
+   :align: center
+   :alt: Keypair update dialog
+
+You can also deactivate or reactivate the keypair by clicking red 'Deactivate' button or black 'Activate' button in control column.
+Unlike the User tab, the Inactive tab allows permanent deletion of key pairs. 
+However, you cannot permanently delete a key pair if it is currently being used as a user's main access key.
+
+.. image:: keypair_delete_button.png
+   :width: 100%
+   :align: center
+   :alt: Keypair delete button
+
+.. image:: keypair_delete_confirmation.png
+   :width: 400
+   :align: center
+   :alt: Keypair delete confirmation dialog
+
+
+If you
 accidentally deleted a keypair, you can re-create keypair for the user by
-clicking the ADD CREDENTIAL button at the upper right corner. If necessary, you
-can also explicitly enter the access key and secret key by clicking the Advanced
-panel.
+clicking the '+ ADD CREDENTIAL' button at the upper right corner.
 
 The Rate Limit field is where you specify the maximum number of requests that
 can be sent to the Backend.AI server in 15 minutes. For example, if set to 1000,
@@ -151,7 +176,6 @@ according to the user's pattern.
    :width: 400
    :align: center
    :alt: Add keypair dialog
-
 
 
 .. .. note::
@@ -180,10 +204,10 @@ project, not a specific user, and can be accessed by all users in that project.
    Depending on the system settings, project folders may not be allowed.
 
 First, log in with an admin account and create a project folder. After moving to
-the Data & Storage page, click NEW FOLDER to open the folder creation dialog.
-Enter the folder name, set the Type to Project, and select the project to share
-the folder.  Let's select the project to which User B belongs for this example
-to work. Permission is set to Read-Only.
+the Data page, click 'Create Folder' to open the folder creation dialog.
+Enter the folder name, set the Type to Project. When the type is set to Project, 
+it will be automatically assigned to the project selected in the project selector in the header.
+Permission is set to Read-Only.
 
 .. image:: group_folder_creation.png
    :width: 800
@@ -216,12 +240,11 @@ First, Set the project to 'model-store'.
    :alt: Select project to model store
    :align: center
 
-Click the 'Add' button on the right side. Enter the folder name, 
+Move to data page and click the 'Create Folder' button on the right side. Enter the folder name, 
 and set the rest of folder configuration as shown below:
 
-   - Type: project
-   - Project: 'model-store'
    - Usage Mode: Model
+   - Type: project
    - Permission: Read-Write
    - Cloneable: True
 
@@ -238,29 +261,41 @@ please refer to :ref:`Model definition guide <model_definition_guide>` section.
 .. code:: yaml
 
    models:
-   - metadata:
-      architecture: LlamaForCausalLM
-      author: meta-llama
-      category: huggingface
-      created_at: '2024-04-17 09:35:12'
-      description: Meta's Llama 3 by AI@Meta are dialogue-optimized, safe large language
-         models in 8B and 70B sizes.
-      framework:
-      - transformers
-      label:
-      - facebook
-      - meta
-      - pytorch
-      - llama
-      - llama-3
-      license: llama3
-      min_resource:
-         cuda.shares: 2.4305981636047362
-      modified_at: '2024-05-29 12:27:16'
-      task: text-generation
-      title: meta-llama/Meta-Llama-3-8B-Instruct
-   model_path: /models
-   name: Meta-Llama-3-8B-Instruct
+   - name: "Llama-3.1-8B-Instruct"
+      model_path: "/models/Llama-3.1-8B-Instruct"
+      service:
+         pre_start_actions:
+         - action: run_command
+            args:
+               command:
+               - huggingface-cli
+               - download
+               - --local-dir
+               - /models/Llama-3.1-8B-Instruct
+               - --token
+               - hf_****
+               - meta-llama/Llama-3.1-8B-Instruct
+            start_command:
+            - /usr/bin/python
+            - -m
+            - vllm.entrypoints.openai.api_server
+            - --model
+            - /models/Llama-3.1-8B-Instruct
+            - --served-model-name
+            - Llama-3.1-8B-Instruct
+            - --tensor-parallel-size
+            - "1"
+            - --host
+            - "0.0.0.0"
+            - --port
+            - "8000"
+            - --max-model-len
+            - "4096"
+         port: 8000
+         health_check:
+            path: /v1/models
+            max_retries: 500
+ 
 
 Once the model-definition file is uploaded, the model card will appear in the model store page.
 
@@ -305,6 +340,8 @@ resource policy. This can be verified in the Credentials tab on the Users page.
 You can also confirm that all resource policies are set to default in the Resource Policy panel.
 
 .. image:: credentials.png
+   :width: 400
+   :align: center
 
 To modify resource policies, click the 'Setting (Gear)' in the Control column of the
 default policy group. In the Update Resource Policy dialog, every option is
@@ -334,14 +371,15 @@ About details of each option in resource policy dialog, see the description belo
      by the server, this settings has no effect. (max value: 256)
 
 * Sessions
-   * Container Per Session: The maximum number of containers per session.
-     To make a user to create a cluster session, this value should be greater than 1.
-     (max value: 100)
+   * Cluster Size: Set the maximum limit for the number of multi-containers or 
+     multi-nodes that can be configured when creating a session.
    * Session Lifetime (sec.): Limits the maximum lifetime of a compute session
      from the reservation in the active status, including ``PENDING`` and
      ``RUNNING`` statuses. After this time, the session will be force-terminated
      even if it is fully utilized. This will be useful to prevent the session
      from running indefinitely.
+   * Max Pending Session Count: Maximum number of compute sessions that can be in
+     the ``PENDING`` status simultaneously.
    * Concurrent Jobs: Maximum number of concurrent compute session per keypair.
      If this value is set to 3, for example, users bound to this resource policy
      cannot create more than 3 compute sessions simultaneously. (max value: 100)
@@ -350,6 +388,7 @@ About details of each option in resource policy dialog, see the description belo
      compute session for idle timeout, the session will be garbage collected
      and destroyed automatically. The criteria of the "idleness" can be
      various and set by the administrators. (max value: 15552000 (approx. 180 days))
+   * Max Concurrent SFTP Sessions: Maximum number of concurrent SFTP sessions.
 
 * Folders
    * Allowed hosts: Backend.AI supports many NFS mountpoint. This field limits
@@ -361,11 +400,11 @@ About details of each option in resource policy dialog, see the description belo
 In the keypair resource policy list, check that the Resources value of the default
 policy has been updated.
 
-.. image:: update_check.png
+.. image:: keypair_resource_policy_update_check.png
    :width: 400
    :align: center
 
-You can create a new resource policy by clicking the Create button. Each setting
+You can create a new resource policy by clicking the '+ Create' button. Each setting
 value is the same as described above.
 
 To create a resource policy and associate it with a keypair, go to the
@@ -458,7 +497,7 @@ resource policy.
 .. image:: project_resource_policy_list.png
    :alt: Project resource policy list
 
-To create a new project resource policy, click the 'Create' button at the top right of the table.
+To create a new project resource policy, click the '+ Create' button at the top right of the table.
 
 .. image:: create_project_resource_policy.png
    :width: 350
@@ -488,15 +527,26 @@ names cannot be edited. Deletion can be done by clicking the trash can icon butt
 You can select and display only the columns you want by clicking the 'Setting (Gear)' button at the
 bottom right of the table.
 
-Exporting current resource policy as CSV
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 To save the current resource policy as a file, click on the 'Tools' menu located at the top left of each tab. Once you click the menu, download dialog will appear. 
 
 .. image:: keypair_export.png
-   :width: 350
    :align: center
    :alt: Keypair export 
+
+Unified View for Pending Sessions
+--------------------------------
+
+From Backend.AI version 25.13.0, a unified view for pending sessions is available in the Admin Menu.
+Unlike the Session page, the Scheduler page provides a unified view of all pending sessions within a 
+selected resource group. The index number displayed next th the status indicates the queue position in 
+witch the session will be created once sufficient resources become available.
+
+.. image:: scheduler_page.png
+   :align: center
+   :alt: Scheduler page
+
+Similar to the Session page, you can click the session name to open a drawer that 
+displays detailed information about the session.
 
 Manage Images
 -------------
@@ -544,7 +594,7 @@ Once you click the icon, the name of the app and its corresponding port number w
    :align: center
    :alt: Manage app dialog
 
-In this interface, you can add supported custom applications by clicking the 'Add' button below. To delete an application, simply click the 'red trash can' button on the right side of each row. 
+In this interface, you can add supported custom applications by clicking the '+ Add' button below. To delete an application, simply click the 'red trash can' button on the right side of each row. 
 
 .. note::
    You need to reinstall the image after changing the managed app.
@@ -573,7 +623,7 @@ Backend.AI among the images stored in the registry is not updated.
 .. image:: image_registries_page.png
    :alt: Registries page
 
-You can add your own private docker registry by clicking the ADD REGISTRY
+You can add your own private docker registry by clicking the '+ Add Registry'
 button. Note that Registry Name and Registry URL address must be set
 identically, and in the case of Registry URL, a scheme such as ``http://`` or
 ``https://`` must be explicitly attached. Also, images stored in the registry
@@ -631,7 +681,7 @@ would not be shown.
    :align: center
    :alt: Modify resource preset dialog
 
-Also you can create resource preset by Clicking CREATE PRESETS button in the
+Also you can create resource preset by Clicking '+ Create Presets' button in the
 right top of the Resource Presets tab. You cannot create the same resource
 preset name that already exists, since it is the key value for distinguishing
 each resource preset.
@@ -701,7 +751,7 @@ the WebUI, and it can be done by editing agent config file from the installation
 location and restart the agent daemon. Management of the resource groups is
 possible in Resource Group tab of the Resource page.
 
-.. image:: scaling_group_tab.png
+.. image:: resource_group_page.png
    :alt: Resource group tab
 
 You can edit a resource group by clicking the 'Setting (Gear)' in the Control
@@ -736,19 +786,14 @@ The resource group has further Scheduler Options. The details are described belo
   than the Pending timeout. When you wish to prevent a session from remaining
   PENDING indefinitely, set this time. Set this value to zero (0) if you do not
   want to apply the pending timeout feature.
-* The number of retries to skip pending session: 
+* Retries to skip pending session: 
   The number of retries the scheduler tries before skipping a PENDING session.
   It can be configured to prevent the situation where one PENDING session blocks
   the scheduling of the subsequent sessions indefinitely (Head-of-line blocking,
   HOL). If no value is specified, the global value in Etcd will be used (``num
   retries to skip``, default three times).
 
-.. image:: modify_resource_group_scheduler_options.png
-   :width: 350
-   :align: center
-   :alt: Modify resource group scheduler options
-
-You can create a new resource policy by clicking the CREATE button.
+You can create a new resource policy by clicking the '+ Create' button.
 Likewise other creating options, you cannot create a resource policy with the name
 that already exists, since name is the key value.
 
@@ -783,7 +828,7 @@ And then, click 'Setting (Gear)' in control column.
 Quota Setting Panel
 ~~~~~~~~~~~~~~~~~~~~
 
-In Quota setting page, there are two panels that represent the corresponding items for each panel's title.
+In Quota setting page, there are two panels.
 
 .. image:: quota_setting_page.png
 
@@ -816,7 +861,9 @@ Of course, if you want to edit the quota, you can simply click the Edit button i
 After input the exact amount, don't forget to Click ``OK`` button, unless the changes will not be applied.
 
 .. image:: quota_settings_panel.png
-
+   :width: 350
+   :align: center
+   :alt: Quota settings panel
 
 Set Project Quota
 ~~~~~~~~~~~~~~~~~~
@@ -827,10 +874,6 @@ which is selecting the domain that the project is dependent on. The rest are the
 As in the picture below, you need to first select the domain, and then select the project.
 
 .. image:: per_project_quota.png
-
-
-.. image:: per_project_quota_2.png
-
 
 Unset Quota
 ~~~~~~~~~~~~
@@ -855,6 +898,10 @@ which depends on the quota type(user / project).
 
 Download session lists
 ----------------------
+.. note::
+   This feature is currently not available on the default Session page. 
+   To use this feature, please enable 'Classic Session list page' option in the 'Switch back to the Classic UI' section 
+   on the User Setting page. For more details, please refer to :ref:`Backend.AI User Settings<user-settings>` section.
 
 There's additional feature in Session page for admin.
 On the right side of the FINISHED tab there is a menu marked with ``...``.
@@ -975,7 +1022,3 @@ for Backend.AI is compatible or not, check the Component panel.
 .. image:: information_page.png
    :align: center
    :alt: Information page
-
-.. image:: information_page_2.png
-   :align: center
-   :alt: Information page 2
