@@ -68,7 +68,7 @@ msgid ""
 "UI app interacts with the daemon through a local proxy service."
 msgstr ""
 "먼저 연산 세션을 하나 생성한 후 Control의 앱 아이콘(첫 번째 버튼)을 클릭하고 SSH / SFTP 아이콘을 클릭합니다. "
-"그러면 해당 컨테이너 내부에서 SSH/SFTP 접속을 할 수 있도록 해주는 데몬(demon)이 뜨게 되고, 로컬 proxy를 통해 "
+"그러면 해당 컨테이너 내부에서 SSH/SFTP 접속을 할 수 있도록 해주는 데몬(daemon)이 뜨게 되고, 로컬 proxy를 통해 "
 "Web-UI 앱과 컨테이너 내부의 데몬이 연결됩니다."
 
 #: ../../sftp_to_container/sftp_to_container.rst:52
