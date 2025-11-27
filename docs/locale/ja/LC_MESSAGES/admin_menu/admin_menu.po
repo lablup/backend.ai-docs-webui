@@ -4,7 +4,6 @@
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
@@ -1005,7 +1004,6 @@ msgid "Resource presets tab"
 msgstr "リソースプリセットタブ"
 
 #: ../../admin_menu/admin_menu.rst:622
-#, fuzzy
 msgid ""
 "You can set resources such as CPU, RAM, fGPU, etc. to be provided by the "
 "resource preset by clicking the 'Setting (Gear)' (cogwheel) in the Controls "
@@ -1042,7 +1040,6 @@ msgid "Manage agent nodes"
 msgstr "エージェントノードを管理"
 
 #: ../../admin_menu/admin_menu.rst:650
-#, fuzzy
 msgid ""
 "Superadmins can view the list of agent worker nodes, currently connected to "
 "Backend.AI, by visiting the Resources page. You can check agent node's IP, "
@@ -1115,7 +1112,6 @@ msgstr ""
 "GPUを持つエージェントが2つあるとします。ユーザーに対して2種類のGPUを別々に提供したい場合、3つのV100エージェントを1つのリソースグループに、残りの2つのP100エージェントを別のリソースグループにグループ化することができます。"
 
 #: ../../admin_menu/admin_menu.rst:701
-#, fuzzy
 msgid ""
 "Adding a specific agent to a specific resource group is not currently "
 "handled in the WebUI, and it can be done by editing agent config file from "

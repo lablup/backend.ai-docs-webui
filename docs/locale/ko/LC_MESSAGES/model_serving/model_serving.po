@@ -57,7 +57,7 @@ msgid ""
 msgstr ""
 "모델 서비스는 기존의 학습용 연산 세션 기능을 확장하여, 자동화된 유지·보수 및 스케일링을 가능하게 하고 프로덕션 서비스를 위한 "
 "영구적인 포트 및 엔드포인트 주소 매핑을 제공합니다. 개발자나 관리자가 연산 세션을 수동으로 생성·삭제할 필요 없이 모델 서비스에 "
-"필요한 스케일링 파라미터를 지정해주기만 하면 됩니다."
+"필요한 스케일링 파라미터를 지정해 주기만 하면 됩니다."
 
 #: ../../model_serving/model_serving.rst:33
 msgid "Configuring and limitations of model service in version 23.03 and earlier"
@@ -155,7 +155,7 @@ msgstr "(모델 서비스가 공개되지 않은 경우) 토큰 발급하기"
 msgid ""
 "(For end users) Access the endpoint corresponding to the Model Service to"
 " verify the service."
-msgstr "(엔드유저 전용) 모델 서비스에 대응하는 엔드포인트에 접속하여 서비스 확인하기"
+msgstr "(엔드 유저 전용) 모델 서비스에 대응하는 엔드포인트에 접속하여 서비스 확인하기"
 
 #: ../../model_serving/model_serving.rst:74
 msgid "(If needed) Modify the Model Service."
@@ -176,7 +176,7 @@ msgid ""
 " system will regard it as ``model-definition.yml`` or ``model-"
 "definition.yaml``."
 msgstr ""
-"24.03 버전부터는 모델 정의 파일명을 지정할 수 있습니다. 단, 모델 정의 파일 경로를 입력하는 란에 아무것도 입력하지 않을 "
+"24.03버전부터는 모델 정의 파일명을 지정할 수 있습니다. 단, 모델 정의 파일 경로를 입력하는 란에 아무것도 입력하지 않을 "
 "경우, 시스템에서는 모델 파일명을 ``model-definition.yml`` 또는 ``model-definition.yaml`` "
 "로 간주하게 됩니다."
 
@@ -298,7 +298,7 @@ msgstr "``body``: 파일에 추가할 내용을 적습니다."
 #: ../../model_serving/model_serving.rst:150
 #: ../../model_serving/model_serving.rst:157
 msgid "``mode``: Specify the file's access permissions."
-msgstr "``mode``: 파일의 접근권한을 적습니다."
+msgstr "``mode``: 파일의 접근 권한을 적습니다."
 
 #: ../../model_serving/model_serving.rst:151
 msgid ""
@@ -386,7 +386,7 @@ msgid ""
 "Folder<explore_folder>` section."
 msgstr ""
 "폴더를 생성한 뒤, 데이터 페이지에서 '모델' 탭을 선택, 방금 생성한 모델 타입 폴더 아이콘을 클릭하여 폴더 탐색기를 엽니다. "
-"이후 모델 정의 파일을 업로드 합니다. 폴더 탐색기에 대한 자세한 사용 방법은 :ref:`폴더 탐색기 "
+"이후 모델 정의 파일을 업로드합니다. 폴더 탐색기에 대한 자세한 사용 방법은 :ref:`폴더 탐색기 "
 "<explore_folder>` 를 확인하세요."
 
 #: ../../model_serving/model_serving.rst:-1
@@ -414,7 +414,7 @@ msgstr "모델 서빙 페이지에서 '서비스 시작' 버튼을 클릭하면,
 msgid ""
 "First, provide a service name. For detailed explanations of each item, "
 "please refer to the following:"
-msgstr "먼저, 서비스 이름을 입력합니다. 각 항목에 대한 자세한 설명은 아래 내용을 참고 하십시오."
+msgstr "먼저, 서비스 이름을 입력합니다. 각 항목에 대한 자세한 설명은 아래 내용을 참고하십시오."
 
 #: ../../model_serving/model_serving.rst:219
 msgid ""
@@ -423,7 +423,7 @@ msgid ""
 "default, it is disabled."
 msgstr ""
 "앱을 외부에 공개: 모델 서비스 생성 후 서비스하고자 하는 서버에 별도의 토큰이 없이도 접근할 수 있도록 하는 옵션. 기본적으로 "
-"비활성화 되어있음."
+"비활성화 되어 있음."
 
 #: ../../model_serving/model_serving.rst:222
 msgid ""
@@ -568,14 +568,14 @@ msgstr ""
 "모델 서비스를 생성하기 전, Backend.AI에서는 성공적으로 실행이 가능한지 아닌지(실행중 발생하는 어떤 에러로 인해 실행이 "
 "불가능한 경우) 를 체크하는 유효성 검사를 지원합니다. 서비스 런쳐의 좌측 하단에 위치한 ``Validate`` 버튼을 클릭하면 "
 "유효성 검사 이벤트를 확인하는 팝업창이 새로 뜨게 됩니다. 이 팝업 창에서, 여러분은 컨테이너 로그로 상태를 확인할 수 있습니다. "
-"결과 값이 ``Finished`` 로 뜨게 되면, 유효성 검사가 끝난 것을 의미합니다."
+"결괏값이 ``Finished`` 로 뜨게 되면, 유효성 검사가 끝난 것을 의미합니다."
 
 #: ../../model_serving/model_serving.rst:307
 msgid ""
 "The result ``Finished`` doesn't guarantee that the execution is "
 "successfully done. Instead, please check the container log."
 msgstr ""
-"``Finished`` 결과 값이 실행이 성공적으로 종료되었음을 의미하지는 않습니다. 그 대신, 컨테이너 로그를 반드시 확인하시기 "
+"``Finished`` 결괏값이 실행이 성공적으로 종료되었음을 의미하지는 않습니다. 그 대신, 컨테이너 로그를 반드시 확인하시기 "
 "바랍니다."
 
 #: ../../model_serving/model_serving.rst:311
@@ -673,12 +673,12 @@ msgid ""
 "Inference Framework: Average value taken from every replicas. Supported "
 "only if both AppProxy reports the inference metrics."
 msgstr ""
-"Inference Framework: 모든 복제본에 대해 계산된 평균값 입니다. 모든 앱 프록시 인스턴스가 추론 메트릭을 보고하는 "
+"Inference Framework: 모든 복제본에 대해 계산된 평균값입니다. 모든 앱 프록시 인스턴스가 추론 메트릭을 보고하는 "
 "경우에만 지원됩니다. "
 
 #: ../../model_serving/model_serving.rst:363
 msgid "Kernel: Average value taken from every kernels backing the endpoint."
-msgstr "Kernel: 해당 엔드포인트를 구성하는 모든 커널의 값에 대해 계산된 평균값 입니다. "
+msgstr "Kernel: 해당 엔드포인트를 구성하는 모든 커널의 값에 대해 계산된 평균값입니다. "
 
 #: ../../model_serving/model_serving.rst:365
 msgid ""
@@ -732,8 +732,8 @@ msgid ""
 "triggered. Can be represented as both positive and negative value. when "
 "defined as negative, the rule will decrease number of replicas."
 msgstr ""
-"단게 크기: 규칙이 실행될 때 변경될 복제본 수 입니다. 양수 또는 음수로 설정할 수 있으며, 음수로 설정된 경우 복제본 수가 "
-"갑소합니다. "
+"단게 크기: 규칙이 실행될 때 변경될 복제본 수입니다. 양수 또는 음수로 설정할 수 있으며, 음수로 설정된 경우 복제본 수가 "
+"감소합니다. "
 
 #: ../../model_serving/model_serving.rst:381
 msgid ""
@@ -773,7 +773,7 @@ msgstr ""
 "모델 서비스를 성공적으로 실행한 경우, 상태는 ``HEALTHY`` 에 속하게 됩니다. 이 경우 모델 서비스 탭에서 해당하는 "
 "엔드포인트 명을 클릭해 모델 서비스의 상세 정보를 확인할 수 있습니다. 이후 모델 서비스의 라우팅 정보에서 서비스 엔드포인트를 "
 "확인할 수 있는데, 이 엔드포인트는 서비스 생성시 외부에 공개할 수 있는 'Open to Public' 값이 활성화 된 경우, "
-"엔드포인트가 공개되어 별도의 토큰이 없이도 최종 엔드유저가 엔드포인트에 접근할 수 있습니다. 하지만 비활성화 된 경우는 토큰 발급 "
+"엔드포인트가 공개되어 별도의 토큰이 없이도 최종 엔드 유저가 엔드포인트에 접근할 수 있습니다. 하지만 비활성화 된 경우는 토큰 발급 "
 "후 토큰을 아래와 같은 형태로 추가해서 서비스가 정상적으로 실행되고 있는지 확인할 수 있습니다."
 
 #: ../../model_serving/model_serving.rst:-1
@@ -832,7 +832,7 @@ msgstr "BackendAI"
 
 #: ../../model_serving/model_serving.rst:433
 msgid "Accessing the Model Service Endpoint for End Users"
-msgstr "(엔드유저 전용) 모델 서비스에 대응하는 엔드포인트에 접속하여 서비스 확인하기"
+msgstr "(엔드 유저 전용) 모델 서비스에 대응하는 엔드포인트에 접속하여 서비스 확인하기"
 
 #: ../../model_serving/model_serving.rst:435
 msgid ""
@@ -968,7 +968,7 @@ msgid ""
 " will be removed from the list of model services."
 msgstr ""
 "모델 서비스는 주기적으로 스케줄러를 실행하여, 원하는 세션 수와 실제 대응하는 라우팅 수가 원하는 세션 수에 맞춰지도록 "
-"스케줄링합니다. 다만, 이 경우 Backend.AI 스케줄러에 부하가 가는 것은 불가피 합니다. 따라서 모델 서비스를 더 이상 "
+"스케줄링합니다. 다만, 이 경우 Backend.AI 스케줄러에 부하가 가는 것은 불가피합니다. 따라서 모델 서비스를 더 이상 "
 "사용하지 않는 경우라면, 모델 서비스를 종료하는 것이 좋습니다. 모델 서비스를 종료하려면, 제어 탭에서 휴지통 아이콘을 클릭합니다."
 " 이후 모델 서비스를 종료하는 것이 맞는지 확인하는 모달이 뜨게 됩니다. 삭제 버튼을 누를 경우 모델 서비스는 종료됩니다. 종료된 "
 "모델 서비스의 경우 모델 서비스 목록에서 제거됩니다."

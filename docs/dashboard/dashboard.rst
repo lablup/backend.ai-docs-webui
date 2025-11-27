@@ -8,7 +8,7 @@ The **Dashboard** provides an at-a-glance summary of your current resource usage
 available limits, and session information across all your projects and resource groups.
 It helps you quickly understand how your computing resources are being utilized
 and monitor your recent activities in the system.
-Click the refresh icon (⟳) in any panel to update the displayed data if it seems outdated.
+Click the refresh icon in any panel to update the displayed data if it seems outdated.
 
 .. image:: dashboard.png
    :width: 100%

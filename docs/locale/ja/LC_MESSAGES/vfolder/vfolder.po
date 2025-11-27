@@ -4,7 +4,7 @@
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
+
 msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
@@ -134,7 +134,7 @@ msgid "Create storage folder"
 msgstr "ストレージフォルダを作成"
 
 #: ../../vfolder/vfolder.rst:61
-#, fuzzy
+
 msgid ""
 "You can create a storage folder with the desired name by clicking the '+ "
 "Add' button. Enter the name of the folder to be created in Folder name, and "
@@ -194,7 +194,7 @@ msgstr ""
 "作成するフォルダーの種類を決定します。ユーザーまたはプロジェクトとして設定できます。ユーザーフォルダーは、ユーザーが自身で作成して使用できるフォルダーであり、プロジェクトフォルダーは管理者によって作成され、プロジェクト内のユーザーと共有されるフォルダーです。"
 
 #: ../../vfolder/vfolder.rst:89
-#, fuzzy
+
 msgid ""
 "Project: Shown only when you select project type. Designates the project to "
 "which the folder belongs when creating a new project folder. Project folders"
@@ -250,7 +250,7 @@ msgid "File explorer of a storage folder"
 msgstr "ストレージフォルダのファイルエクスプローラー"
 
 #: ../../vfolder/vfolder.rst:121
-#, fuzzy
+
 msgid ""
 "You can create a new directory on the current path with the 'Create' button "
 "(in the folder explorer), or upload a local file or folder with the 'Upload'"
@@ -742,7 +742,7 @@ msgid "Using SFTP Server"
 msgstr "SFTPサーバーの使用"
 
 #: ../../vfolder/vfolder.rst:433
-#, fuzzy
+
 msgid ""
 "From 22.09, Backend.AI supports SSH / SFTP file upload from both desktop app"
 " and web-based WebUI. The SFTP server allows you to upload files quickly "

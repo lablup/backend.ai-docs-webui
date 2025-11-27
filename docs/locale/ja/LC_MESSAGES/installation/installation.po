@@ -4,7 +4,6 @@
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
@@ -23,7 +22,6 @@ msgid "Installation"
 msgstr "インストール"
 
 #: ../../installation/installation.rst:5
-#, fuzzy
 msgid ""
 "Backend.AI WebUI can be used in two different forms. It can be used as a web"
 " service by connecting to a seperate web address provided by the admins, or "
@@ -41,17 +39,17 @@ msgstr ""
 "WebUIのウェブベースの形式では、ユーザーは最新バージョンのウェブブラウザだけが必要であり、プラットフォームに依存するデスクトップアプリケーションをインストールする必要はありません。"
 
 #: ../../installation/installation.rst:11
-#, fuzzy
+
 msgid "Recommended browser: Latest version of Chrome (at least > 80)"
 msgstr "推奨ブラウザー: 最新バージョンのChrome (少なくとも > 80)"
 
 #: ../../installation/installation.rst:12
-#, fuzzy
+
 msgid "Requirement: Any machine that runs web browser (2 cores, 4 GiB memory)"
 msgstr "要件: ウェブブラウザを実行する任意のマシン (2コア、4 GiBメモリ)"
 
 #: ../../installation/installation.rst:15
-#, fuzzy
+
 msgid ""
 "We do not support Microsoft Internet Explorer since it is deprecated and "
 "does not follow web standard, and does not support up-to-date browser "
@@ -61,7 +59,7 @@ msgstr ""
 "は廃止され、ウェブ標準に従わず、最新のブラウザ機能をサポートしていないため、サポートしていません。"
 
 #: ../../installation/installation.rst:18
-#, fuzzy
+
 msgid ""
 "The stand-alone WebUI app can be downloaded from following link: "
 "https://github.com/lablup/backend.ai-webui/releases"
@@ -70,7 +68,7 @@ msgstr ""
 "webui/releases"
 
 #: ../../installation/installation.rst:22
-#, fuzzy
+
 msgid ""
 "Depending on the security settings of the Operating System, our installer "
 "may be recognized as an unsigned executable file. Permission check may be "
