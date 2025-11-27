@@ -4,7 +4,7 @@
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
+
 msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
@@ -161,7 +161,7 @@ msgid "Adjust permission for shared folders"
 msgstr "共有フォルダーの権限を調整する"
 
 #: ../../share_vfolder/share_vfolder.rst:99
-#, fuzzy
+
 msgid ""
 "If you click the ''person icon'' in the Control panel, you can see a list of"
 " users who have shared the folder. Click Select permission to set the "

@@ -28,7 +28,7 @@ the URL and click 'IMPORT & RUN' button.
 
 After clicking the button, the dialog appears. This is a session launcher dialog same as
 when you starts the session at Sessions page or Summary page. Difference between import notebook
-and starting a new session is that import notebook automatically imports jupyter notebook in the
+and starting a new session is that import notebook automatically imports Jupyter notebook in the
 URL, but simple starting a new session doesn't do that. the rest is same. Click 'LAUNCH' button to
 the notebook after setting the environments and resource allocation as needed.
 
@@ -69,7 +69,7 @@ the GitHub repositories or where it supports html or markdown.
 Importing GitHub Repositories
 -----------------------------
 
-Importing a GitHub repository is similar to import and running jupyter notebook.
+Importing a GitHub repository is similar to import and running Jupyter notebook.
 All you have to do is to fill out with github repository URL and click 'GET TO
 FOLDER' button. If you can access to more than one storage host, you can select one from the list.
 

@@ -4,7 +4,7 @@
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
+
 msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
@@ -369,7 +369,7 @@ msgid "Model type folder creation"
 msgstr "モデルタイプフォルダの作成"
 
 #: ../../model_serving/model_serving.rst:189
-#, fuzzy
+
 msgid ""
 "After creating the folder, select the 'MODELS' tab in the Data & Folders "
 "page, click on the recently created model type folder icon to open the "

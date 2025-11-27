@@ -4,7 +4,7 @@
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
+
 msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
@@ -286,11 +286,11 @@ msgstr "ออกจากระบบอัตโนมัติ"
 #: ../../user_settings/user_settings.rst:129
 msgid ""
 "Log out automatically when all Backend.AI Web-UI pages are closed except for"
-" pages created to run apps in session (e.g. jupyter notebook, web terminal, "
+" pages created to run apps in session (e.g. Jupyter notebook, web terminal, "
 "etc.)."
 msgstr ""
 "ออกจากระบบโดยอัตโนมัติเมื่อปิดหน้าของ Backend.AI Web-UI ทั้งหมด "
-"ยกเว้นหน้าที่สร้างขึ้นเพื่อรันแอปในเซสชัน (เช่น jupyter notebook, web "
+"ยกเว้นหน้าที่สร้างขึ้นเพื่อรันแอปในเซสชัน (เช่น Jupyter notebook, web "
 "terminal, เป็นต้น)"
 
 #: ../../user_settings/user_settings.rst:134

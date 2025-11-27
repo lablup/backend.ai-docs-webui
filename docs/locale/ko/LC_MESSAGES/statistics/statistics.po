@@ -72,7 +72,7 @@ msgid ""
 "sessions. Also, one week statistics may not be shown for the users whose "
 "account is created no longer than a week."
 msgstr ""
-"여기에 나타나는 통계는 종료된 연산 세션을 기준으로 합니다. 또한, 가입 일주일 미만의 사용 자에게는 주간 통계 조회 메뉴가 "
+"여기에 나타나는 통계는 종료된 연산 세션을 기준으로 합니다. 또한, 가입 일주일 미만의 사용자에게는 주간 통계 조회 메뉴가 "
 "출력되지 않을 수 있습니다."
 
 #: ../../statistics/statistics.rst:-1

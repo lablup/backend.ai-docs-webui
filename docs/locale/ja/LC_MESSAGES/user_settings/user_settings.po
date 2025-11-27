@@ -4,7 +4,7 @@
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
+
 msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
@@ -51,7 +51,7 @@ msgid "Desktop Notification"
 msgstr "デスクトップ通知"
 
 #: ../../user_settings/user_settings.rst:28
-#, fuzzy
+
 msgid ""
 "Enables or disables the desktop notification feature. If the browser and "
 "operating system support it, various  messages that appear in the WebUI will"
@@ -190,7 +190,7 @@ msgid "Automatic Update Check"
 msgstr "自動更新チェック"
 
 #: ../../user_settings/user_settings.rst:83
-#, fuzzy
+
 msgid ""
 "A notification window pops up when a new WebUI version is detected. It works"
 " only in an environment where Internet access is available."
@@ -201,10 +201,10 @@ msgid "Auto logout"
 msgstr "自動ログアウト"
 
 #: ../../user_settings/user_settings.rst:89
-#, fuzzy
+
 msgid ""
 "Log out automatically when all Backend.AI WebUI pages are closed except for "
-"pages created to run apps in session (e.g. jupyter notebook, web terminal, "
+"pages created to run apps in session (e.g. Jupyter notebook, web terminal, "
 "etc.)."
 msgstr ""
 "セッション内でアプリを実行するために作成されたページ（例：Jupyterノートブック、ウェブ端末など）を除き、すべてのBackend.AI "
@@ -231,7 +231,7 @@ msgid "SSH Keypair Management"
 msgstr "SSH キーペア管理"
 
 #: ../../user_settings/user_settings.rst:109
-#, fuzzy
+
 msgid ""
 "When using the WebUI app, you can create SSH/SFTP connection directly to the"
 " compute session. Once you signed up for Backend.AI, a public keypair is "

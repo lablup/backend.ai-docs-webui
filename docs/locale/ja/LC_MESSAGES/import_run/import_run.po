@@ -4,7 +4,6 @@
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
@@ -62,12 +61,12 @@ msgid ""
 "After clicking the button, the dialog appears. This is a session launcher "
 "dialog same as when you starts the session at Sessions page or Summary page."
 " Difference between import notebook and starting a new session is that "
-"import notebook automatically imports jupyter notebook in the URL, but "
+"import notebook automatically imports Jupyter notebook in the URL, but "
 "simple starting a new session doesn't do that. the rest is same. Click "
 "LAUNCH button to the notebook after setting the environments and resource "
 "allocation as needed."
 msgstr ""
-"ボタンをクリックすると、ダイアログが表示されます。これは、セッションページやサマリーページでセッションを開始するときと同じセッションランチャーダイアログです。ノートブックのインポートと新しいセッションの開始の違いは、ノートブックのインポートではURL内のjupyterノートブックが自動的にインポートされますが、新しいセッションを単に開始した場合はそれが行われない点です。その他の点は同じです。必要に応じて環境設定とリソース割り当てを行った後、LAUNCHボタンをクリックしてノートブックを起動します。"
+"ボタンをクリックすると、ダイアログが表示されます。これは、セッションページやサマリーページでセッションを開始するときと同じセッションランチャーダイアログです。ノートブックのインポートと新しいセッションの開始の違いは、ノートブックのインポートではURL内のJupyterノートブックが自動的にインポートされますが、新しいセッションを単に開始した場合はそれが行われない点です。その他の点は同じです。必要に応じて環境設定とリソース割り当てを行った後、LAUNCHボタンをクリックしてノートブックを起動します。"
 
 #: ../../import_run/import_run.rst:33
 msgid ""
@@ -121,7 +120,7 @@ msgstr "GitHub リポジトリをインポートする"
 
 #: ../../import_run/import_run.rst:69
 msgid ""
-"Importing a GitHub repository is similar to import and running jupyter "
+"Importing a GitHub repository is similar to import and running Jupyter "
 "notebook. All you have to do is to fill out with github repository URL and "
 "click GET TO FOLDER button. If you can access to more than one storage host,"
 " you can select one from the list."

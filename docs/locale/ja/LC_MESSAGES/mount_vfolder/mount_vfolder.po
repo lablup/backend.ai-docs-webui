@@ -4,7 +4,7 @@
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
+
 msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
@@ -23,7 +23,7 @@ msgid "Mounting Folders to a Compute Session"
 msgstr "コンピュートセッションへのフォルダのマウント"
 
 #: ../../mount_vfolder/mount_vfolder.rst:7
-#, fuzzy
+
 msgid ""
 "Backend.AI provides a function to mount storage folders when creating a "
 "compute session. When new compute session is started, user will have access "
@@ -84,7 +84,7 @@ msgstr ""
 "追加」ボタンをクリックすることで新しい仮想フォルダーを作成することができます。セッションランチャーページで新しいフォルダーを作成する方法の詳細については、:ref:`ストレージフォルダーの作成<create_storage_folder>`セクションを参照してください。"
 
 #: ../../mount_vfolder/mount_vfolder.rst:38
-#, fuzzy
+
 msgid ""
 "In the created session, screen terminal window can be brought up by clicking"
 " the terminal icon. ``ls`` command will mount ``user1-ml-test` folder and "
@@ -95,7 +95,7 @@ msgstr ""
 "``user1-ml-test`` フォルダをマウントし、``user2-vfolder`` はホームディレクトリの下にマウントされます。"
 
 #: ../../mount_vfolder/mount_vfolder.rst:43
-#, fuzzy
+
 msgid ""
 "The selected folder will be mounted with its name under ``/home/work/`` "
 "inside the compute session, by its default. For example, if folder's name is"
@@ -126,7 +126,7 @@ msgid "Mounted folders in terminal"
 msgstr "端末にマウントされたフォルダ"
 
 #: ../../mount_vfolder/mount_vfolder.rst:58
-#, fuzzy
+
 msgid ""
 "Running ``ls`` command against ``user2-vfolder``, users can confirm the file"
 " was created successfully. Please note the contents of the file can be "
@@ -135,7 +135,7 @@ msgstr ""
 "``user2-vfolder``に対して``ls``コマンドを実行すると、ユーザーはファイルが正常に作成されたことを確認できます。ファイルの内容は``cat``コマンドで確認できることに注意してください。"
 
 #: ../../mount_vfolder/mount_vfolder.rst:61
-#, fuzzy
+
 msgid ""
 "Now delete the compute session and go to the Storage page. Locate the "
 "``user2-vfolder folder``, open a file explorer and check that the "
@@ -180,7 +180,7 @@ msgid "Install Python packages via pip"
 msgstr "pipでPythonパッケージをインストールする"
 
 #: ../../mount_vfolder/mount_vfolder.rst:87
-#, fuzzy
+
 msgid ""
 "Creating a folder named ``.local`` allows a user to install Python user "
 "packages in same folder. ``pip`` by default installs the packages in the "
@@ -192,7 +192,7 @@ msgstr ""
 "``.local``という名前のフォルダーを作成すると、ユーザーは同じフォルダー内にPythonユーザーパッケージをインストールできます。デフォルトでは``pip``はユーザーのホームフォルダー内の``.local``フォルダーにパッケージをインストールします（自動マウントフォルダーはユーザーのホームフォルダーの下にマウントされることに注意してください）。したがって、計算環境に関係なく常に``tqdm``というPythonパッケージをインストールしておくには、ターミナルから次のようなコマンドを発行できます："
 
 #: ../../mount_vfolder/mount_vfolder.rst:97
-#, fuzzy
+
 msgid ""
 "After that, when a new compute session is created, the ``.local`` folder "
 "where the ``tqdm`` package is installed is automatically mounted, so users "
@@ -201,7 +201,7 @@ msgstr ""
 "その後、新しい計算セッションが作成されると、``tqdm``パッケージがインストールされている``.local``フォルダーが自動的にマウントされるため、ユーザーは``tqdm``パッケージを再インストールすることなく使用できます。"
 
 #: ../../mount_vfolder/mount_vfolder.rst:102
-#, fuzzy
+
 msgid ""
 "When using multiple Python versions or sessions with different Python "
 "versions, packages may have compatibility issues. This can be circumvented "
@@ -216,7 +216,7 @@ msgid "Install packages via Homebrew"
 msgstr "Homebrew を介してパッケージをインストールする"
 
 #: ../../mount_vfolder/mount_vfolder.rst:111
-#, fuzzy
+
 msgid ""
 "Package managers like Ubuntu ``apt`` or CentOS ``yum`` usually require the "
 "``root`` permission. For security reasons, ``sudo`` and ``root`` accesses "
@@ -249,12 +249,12 @@ msgid "Install Homebrew in the compute session, if not yet installed."
 msgstr "まだインストールされていない場合は、計算セッションにHomebrewをインストールします。"
 
 #: ../../mount_vfolder/mount_vfolder.rst:125
-#, fuzzy
+
 msgid "Homebrew packages can be installed like following:"
 msgstr "Homebrew パッケージは以下のようにインストールできます:"
 
 #: ../../mount_vfolder/mount_vfolder.rst:133
-#, fuzzy
+
 msgid ""
 "``brew`` installs packages under ``/home/linuxbrew/.linuxbrew`` which is "
 "automatically mounted when ``.linuxbrew`` folder exists. So, if an automount"

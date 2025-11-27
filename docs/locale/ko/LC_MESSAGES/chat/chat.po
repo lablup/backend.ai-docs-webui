@@ -184,7 +184,7 @@ msgstr "새로운 채팅"
 msgid ""
 "All chat history is stored in local storage, and users can access "
 "previous chats by clicking the history button in the top-right corner."
-msgstr "모든 채팅 기록은 로컬 스토리지에 저장됩니다. 우측 상단의 '히스토리' 버튼을 클릭하여이전의 채팅 기록에 접근할 수 있습니다."
+msgstr "모든 채팅 기록은 로컬 스토리지에 저장됩니다. 우측 상단의 '히스토리' 버튼을 클릭하여 이전의 채팅 기록에 접근할 수 있습니다."
 
 #: ../../chat/chat.rst:-1
 msgid "History button"

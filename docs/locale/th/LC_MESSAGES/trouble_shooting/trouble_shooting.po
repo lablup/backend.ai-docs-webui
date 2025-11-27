@@ -4,7 +4,7 @@
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
+
 msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
@@ -131,16 +131,16 @@ msgstr "ฉันได้สร้างเซสชันการคอมพ
 
 #: ../../trouble_shooting/trouble_shooting.rst:63
 msgid ""
-"If you installed a jupyter package with pip by yourself, it may be conflict "
-"with the jupyter package that a compute session provides by default. "
+"If you installed a Jupyter package with pip by yourself, it may be conflict "
+"with the Jupyter package that a compute session provides by default. "
 "Especially, if you have created ``~/.local`` directory, the manually "
-"installed jupyter packages persists for every compute session. In this case,"
+"installed Jupyter packages persists for every compute session. In this case,"
 " try to remove the ``.local`` automount folder and then try to launch "
 "Jupyter Notebook again."
 msgstr ""
-"หากคุณติดตั้งแพ็คเกจ jupyter ด้วย pip ด้วยตนเอง อาจเกิดความขัดแย้งกับแพ็คเกจ"
-" jupyter ที่เซสชันการคอมพิวเตอร์ให้มาโดยค่าเริ่มต้น โดยเฉพาะอย่างยิ่ง "
-"หากคุณได้สร้างไดเรกทอรี ``~/.local`` แพ็คเกจ jupyter "
+"หากคุณติดตั้งแพ็คเกจ Jupyter ด้วย pip ด้วยตนเอง อาจเกิดความขัดแย้งกับแพ็คเกจ"
+" Jupyter ที่เซสชันการคอมพิวเตอร์ให้มาโดยค่าเริ่มต้น โดยเฉพาะอย่างยิ่ง "
+"หากคุณได้สร้างไดเรกทอรี ``~/.local`` แพ็คเกจ Jupyter "
 "ที่ติดตั้งด้วยตนเองจะคงอยู่สำหรับทุกเซสชันการคอมพิวเตอร์ ในกรณีนี้ "
 "ให้ลองลบโฟลเดอร์ automount ``.local`` และจากนั้นลองเปิด Jupyter Notebook "
 "อีกครั้ง"

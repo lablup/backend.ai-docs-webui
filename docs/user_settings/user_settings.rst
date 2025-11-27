@@ -88,7 +88,7 @@ Auto logout
 ^^^^^^^^^^^
 
 Log out automatically when all Backend.AI WebUI pages are closed except for
-pages created to run apps in session (e.g. jupyter notebook, web terminal,
+pages created to run apps in session (e.g. Jupyter notebook, web terminal,
 etc.).
 
 My Keypair Information

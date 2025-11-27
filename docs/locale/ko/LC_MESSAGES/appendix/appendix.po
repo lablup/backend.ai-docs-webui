@@ -73,7 +73,7 @@ msgstr ""
 msgid ""
 "Now let's go to the Sessions page and create a compute session by "
 "allocating 0.5 fGPU as follows:"
-msgstr "이제 Sessions 페이지로 이동하여 다음과 같이 0.5 개의 fGPU 를 할당하여 연산 세션을 생성 해봅시다:"
+msgstr "이제 Sessions 페이지로 이동하여 다음과 같이 0.5 개의 fGPU 를 할당하여 연산 세션을 생성해봅시다."
 
 #: ../../appendix/appendix.rst:40
 msgid ""
@@ -93,7 +93,7 @@ msgid ""
 msgstr ""
 "이제 컨테이너에 직접 연결하여 할당 된 GPU 메모리가 실제로 0.5 단위 (~ 2GB)와 동일한지 확인하겠습니다. 웹 터미널을 "
 "띄웁니다. 터미널이 나타나면 ``nvidia-smi`` 명령을 실행합니다. 다음 그림에서 볼 수 있듯이 약 2GB의 GPU 메모리가 "
-"할당 되었음을 알 수 있습니다. 이는 물리적 GPU가 실제로 네 부분으로 나뉘어 이 연산 세션에 할당되었음을 보여줍니다. 이는 "
+"할당 되었음을 알 수 있습니다. 이는 물리적 GPU가 실제로 네 부분으로 나뉘어 이 연산 세션에 할당되었음을 보여 줍니다. 이는 "
 "PCI 패스스루(passthrough0와 같은 방식으로는 불가능합니다."
 
 #: ../../appendix/appendix.rst:56
@@ -118,7 +118,7 @@ msgid ""
 "Alternatively, you can run the ``nvidia-smi`` command from the web "
 "terminal to query the GPU usage history inside the container."
 msgstr ""
-"또는, 아까 띄워둔 웹 터미널에서 ``nvidia-smi`` 명령을 내려 컨테이너 내부에서 인식하는 GPU 사용 내역을 조회해보는 "
+"또는, 아까 띄워둔 웹 터미널에서 ``nvidia-smi`` 명령을 내려 컨테이너 내부에서 인식하는 GPU 사용 내역을 조회해 보는 "
 "것도 가능합니다."
 
 #: ../../appendix/appendix.rst:74
@@ -181,9 +181,9 @@ msgid ""
 "requests and automatically process the requests when resources become "
 "available."
 msgstr ""
-"이제 RUNNING 상태의 세션 두 개 중 하나를 삭제 해보겠습니다. 그러면 PENDING 상태의 연산 세션은 곧 작업 스케줄러에 "
+"이제 RUNNING 상태의 세션 두 개 중 하나를 삭제해보겠습니다. 그러면 PENDING 상태의 연산 세션은 곧 작업 스케줄러에 "
 "의해 자원을 할당 받고 RUNNING 상태로 변환되는 것을 볼 수 있습니다. 이처럼, 작업 스케줄러는 작업 큐를 활용해 사용자의 "
-"연산 세션 요청을 간직하고 있다가 자원이 가용해질 때 자동으로 요청을 처리하게 됩니다."
+"연산 세션 요청을 간직하고 있다가 가용 자원이 있을 때 자동으로 요청을 처리하게 됩니다."
 
 #: ../../appendix/appendix.rst:121
 msgid "Multi-version machine learning container support"
@@ -197,8 +197,8 @@ msgid ""
 "through an example that takes advantage of multiple versions of the "
 "multiple ML library immediately."
 msgstr ""
-"Backend.AI 는 다양한 ML 및 HPC 커널 이미지를 사전 빌드하여 제공 합니다. 따라서, 사용 자는 스스로 패키지 설치를 "
-"굳이 하지 않더라도 주요 라이브러리 및 패키지를 즉시 활용할 수 있습니다. 여기서는 다종 ML 라이브러리의 여러 버전을 즉시 "
+"Backend.AI 는 다양한 ML 및 HPC 커널 이미지를 사전 빌드하여 제공합니다. 따라서, 사용자는 패키지 설치를 "
+"하지 않더라도 주요 라이브러리 및 패키지를 즉시 활용할 수 있습니다. 여기서는 다종 ML 라이브러리의 여러 버전을 즉시 "
 "활용하는 예제를 진행합니다."
 
 #: ../../appendix/appendix.rst:128
@@ -211,7 +211,7 @@ msgstr ""
 
 #: ../../appendix/appendix.rst:135
 msgid "Here, let's select the TensorFlow 2.3 environment and created a session."
-msgstr "여기서는 TensorFlow 2.3 환경을 선택하고 세션을 생성해보았습니다."
+msgstr "여기서는 TensorFlow 2.3 환경을 선택하고 세션을 생성해 보았습니다."
 
 #: ../../appendix/appendix.rst:141
 msgid ""
@@ -504,9 +504,9 @@ msgid ""
 "parameters and result at Backend.AI as if you are using it on your local "
 "environment."
 msgstr ""
-"Backend.AI 에서 제공하는 대부분의 이미지는 MLFlow 와 MLFlow UI 를 빌트인 앱으로 지원합니다.하지만 실행하기 "
+"Backend.AI 에서 제공하는 대부분의 이미지는 MLFlow 와 MLFlow UI 를 빌트인 앱으로 지원합니다. 하지만 실행하기 "
 "위해서는 기존 앱과 다르게 몇가지 추가 작업이 필요합니다. 아래의 설명을 따라하면, 로컬 환경에서 MLFlow를 사용하셨던 것처럼 "
-"Backend.AI 에서도 파라미터와 결과 값을 추적하실 수 있습니다. "
+"Backend.AI 에서도 파라미터와 결괏값을 추적할 수 있습니다. "
 
 #: ../../appendix/appendix.rst:287
 msgid ""
@@ -516,7 +516,7 @@ msgid ""
 ":ref:`How to create a session<create_session>` section."
 msgstr ""
 "이 섹션에서는, 세션을 이미 성공적으로 생성하고, 세션 내 앱을 실행할 수 있는 상태라고 가정합니다. 만약 세션을 생성하고 세션 "
-"내에서 앱을 실행하는 방법을 모르신다면, :ref:`세션 생성하기<create_session>` 를 반드시 먼저 보고 오시기 "
+"내에서 앱을 실행하는 방법을 모른다면, :ref:`세션 생성하기<create_session>` 를 반드시 먼저 보고 오길 "
 "바랍니다."
 
 #: ../../appendix/appendix.rst:291
@@ -540,11 +540,11 @@ msgid ""
 "simple example."
 msgstr ""
 "MLFlow 를 사용함으로써, 매번 학습할 때마다 메트릭이나 파라미터 값과 같은 실험 결과를 추적할 수 있습니다. 아주 간단한 "
-"예제로 실험 결과를 확인해봅시다."
+"예제로 실험 결과를 확인해 봅시다."
 
 #: ../../appendix/appendix.rst:316
 msgid "After executing python code, you may see the experiments result in MLFlow."
-msgstr "Python 코드를 실행하면, MLFlow 에서 결과값을 확인할 수 있습니다."
+msgstr "Python 코드를 실행하면, MLFlow에서 결괏값을 확인할 수 있습니다."
 
 #: ../../appendix/appendix.rst:321
 msgid "You can also set hyperparameter by giving arguments with code execution."
@@ -552,5 +552,5 @@ msgstr "코드 실행시 인자값을 주어 하이퍼파라미터를 직접 설
 
 #: ../../appendix/appendix.rst:327
 msgid "After a few training, you can compare trained models with results."
-msgstr "몇번의 학습이 끝나면, 모델 학습 결과 값들을 서로 비교해볼 수 있습니다."
+msgstr "몇 번의 학습이 끝나면, 모델 학습 결괏값들을 서로 비교해 볼 수 있습니다."
 

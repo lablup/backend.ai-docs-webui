@@ -4,7 +4,7 @@
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
+
 msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
@@ -53,7 +53,7 @@ msgid ""
 msgstr "上部バーの右側にある人型のアイコンをクリックすると、ユーザーメニューが表示されます。各メニュー項目の機能は次のとおりです。"
 
 #: ../../summary/summary.rst:26
-#, fuzzy
+
 msgid ""
 "About Backend.AI: Displays information such as version of Backend.AI WebUI, "
 "license type, etc."

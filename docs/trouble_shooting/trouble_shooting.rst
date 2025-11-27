@@ -60,9 +60,9 @@ packages with automount folder<using-pip-with-automountfolder>`.
 I have created a compute session, but cannot launch Jupyter Notebook
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you installed a jupyter package with pip by yourself, it may be conflict with
-the jupyter package that a compute session provides by default. Especially, if you
-have created ``~/.local`` directory, the manually installed jupyter packages
+If you installed a Jupyter package with pip by yourself, it may be conflict with
+the Jupyter package that a compute session provides by default. Especially, if you
+have created ``~/.local`` directory, the manually installed Jupyter packages
 persists for every compute session. In this case, try to remove the ``.local``
 automount folder and then try to launch Jupyter Notebook again.
 
