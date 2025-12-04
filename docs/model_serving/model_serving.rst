@@ -166,6 +166,7 @@ manages traffic routing based on their health status.
          ▼
    ┌─────────────────────────────────┐
    │  Wait for initial_delay (60s)   │  ← Model loading, GPU init, warmup
+   │  Status: DEGRADED               │
    │  No health checks during this   │
    └─────────────────────────────────┘
          │
@@ -207,8 +208,13 @@ manages traffic routing based on their health status.
                   │           │
                   ▼           ▼
              UNHEALTHY      Keep current
-             (remove        status
-             from traffic)
+             (removed       status
+             from traffic
+             internally)
+
+.. note::
+   The internal health status (used for traffic routing) may not be immediately
+   synchronized with the status displayed in the user interface.
 
 **Time to UNHEALTHY**:
 
@@ -220,45 +226,6 @@ manages traffic routing based on their health status.
 
   Example with defaults: 10 × 11 = **110 seconds** (about 2 minutes)
 
-.. _health_check_examples:
-
-**Health Check Configuration Examples**
-
-For large language models (70B+ parameters) that require extended loading time:
-
-.. code:: yaml
-
-   health_check:
-     path: "/health"
-     interval: 30.0          # Check every 30 seconds
-     max_retries: 5          # Allow 5 consecutive failures
-     max_wait_time: 60.0     # Wait up to 60 seconds (inference may be slow)
-     expected_status_code: 200
-     initial_delay: 300.0    # Wait 5 minutes for model loading
-
-For medium-sized models (7B-13B parameters):
-
-.. code:: yaml
-
-   health_check:
-     path: "/health"
-     interval: 15.0
-     max_retries: 10
-     max_wait_time: 30.0
-     expected_status_code: 200
-     initial_delay: 120.0    # Wait 2 minutes
-
-For fast-starting services with pre-loaded models:
-
-.. code:: yaml
-
-   health_check:
-     path: "/ready"
-     interval: 5.0           # Check frequently
-     max_retries: 3          # Fail fast
-     max_wait_time: 5.0
-     expected_status_code: 200
-     initial_delay: 30.0     # 30 seconds warmup
 
 **Description for service action supported in Backend.AI Model serving**
 
