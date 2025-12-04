@@ -8628,7 +8628,7 @@ a .rst-content tt {
 .rst-content kbd,
 .rst-content pre,
 .rst-content samp {
-  /* font-family: SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,Courier,monospace */
+  font-family: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Courier, monospace;
 }
 
 .rst-content a code,
