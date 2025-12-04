@@ -193,6 +193,5 @@ body {
 
 pre,
 .pre {
-  /* font-family: "JetBrains Mono"; */
-  font-family: "Pretendard", sans-serif;
+  font-family: "JetBrains Mono", Menlo, Consolas, Monaco, "Courier New", monospace;
 }

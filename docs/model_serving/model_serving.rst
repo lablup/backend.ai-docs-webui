@@ -110,14 +110,18 @@ The model definition file follows the following format:
          port: 8000
          health_check:
            path: /
-           max_retries: 5
+           interval: 10.0
+           max_retries: 10
+           max_wait_time: 15.0
+           expected_status_code: 200
+           initial_delay: 60.0
 
 .. _model_definition_guide:
 
 **Key-Value Descriptions for Model Definition File**
 
    .. note::
-      Fields without "(Required)" mark is optional
+      Fields without "(Required)" mark are optional.
 
 - ``name`` (Required): Defines the name of the model.
 - ``model_path`` (Required): Addresses the path of where model is defined.
@@ -130,12 +134,97 @@ The model definition file follows the following format:
       - ``args/*``: Further information and description is in :ref:`here <prestart_actions>`.
 
    - ``start_command`` (Required): Specify the command to be executed in model serving.
-   - ``port`` (Required): Specify the ports to be opened in accordance with the commands executed during model serving at the container.
-   - ``health_check``: Item for checking whether service is running without
-     any error according to defined period.
+     Can be a string or a list of strings.
+   - ``port`` (Required): Container port for the model service (e.g., ``8000``, ``8080``).
+   - ``health_check``: Configuration for periodic health monitoring of the model service.
+     When configured, the system automatically checks if the service is responding correctly
+     and removes unhealthy instances from traffic routing.
 
-      - ``path``: Specify the path for verifying that the service is running properly in model serving.
-      - ``max_retries``: Specify the number of retries to be made if there is no response after a request is sent to the service during model serving.
+      - ``path`` (Required): HTTP endpoint path for health check requests (e.g., ``/health``, ``/v1/health``).
+      - ``interval`` (default: ``10.0``): Time in seconds between consecutive health checks.
+      - ``max_retries`` (default: ``10``): Number of consecutive failures allowed before marking
+        the service as ``UNHEALTHY``. The service continues receiving traffic until this threshold is exceeded.
+      - ``max_wait_time`` (default: ``15.0``): Timeout in seconds for each health check HTTP request.
+        If no response is received within this time, the check is considered failed.
+      - ``expected_status_code`` (default: ``200``): HTTP status code that indicates a healthy response.
+        Common values: ``200`` (OK), ``204`` (No Content).
+      - ``initial_delay`` (default: ``60.0``): Time in seconds to wait after container creation
+        before starting health checks. This allows time for model loading, GPU initialization,
+        and service warmup. Set higher values for large models (e.g., ``300.0`` for 70B+ LLMs).
+
+.. _health_check_behavior:
+
+**Understanding Health Check Behavior**
+
+The health check system monitors individual model service containers and automatically
+manages traffic routing based on their health status.
+
+.. code::
+
+   Container Created
+         │
+         ▼
+   ┌─────────────────────────────────┐
+   │  Wait for initial_delay (60s)   │  ← Model loading, GPU init, warmup
+   │  Status: DEGRADED               │
+   │  No health checks during this   │
+   └─────────────────────────────────┘
+         │
+         ▼
+   Start Health Check Cycle
+         │
+         ▼
+   ┌─────────────────────────────────┐
+   │  Every interval (10s):          │
+   │  HTTP GET → path ("/health")    │
+   └─────────────────────────────────┘
+         │
+         ▼
+   Wait up to max_wait_time (15s)
+                   │
+        ┌──────────┴──────────┐
+        ▼                     ▼
+     Response             Timeout/Error
+        │                     │
+        ▼                     │
+     Status ==                │
+     expected?                │
+        │                     │
+       ┌┴┐                    │
+       ▼ ▼                    │
+       Y N                    │
+       │ │                    │
+       │ └─────────┬──────────┘
+       │           ▼
+       │      Consecutive
+       │      failures +1
+       │           │
+       ▼           ▼
+    HEALTHY     Failures > max_retries?
+    (reset              │
+    failures)     ┌─────┴─────┐
+                  ▼           ▼
+                 Yes          No
+                  │           │
+                  ▼           ▼
+             UNHEALTHY      Keep current
+             (removed       status
+             from traffic
+             internally)
+
+.. note::
+   The internal health status (used for traffic routing) may not be immediately
+   synchronized with the status displayed in the user interface.
+
+**Time to UNHEALTHY**:
+
+- Initial startup: ``initial_delay + interval × (max_retries + 1)``
+
+  Example with defaults: 60 + 10 × 11 = **170 seconds** (about 3 minutes)
+
+- During operation (after healthy): ``interval × (max_retries + 1)``
+
+  Example with defaults: 10 × 11 = **110 seconds** (about 2 minutes)
 
 
 **Description for service action supported in Backend.AI Model serving**
@@ -186,10 +275,10 @@ instructions on how to create a folder.
    :align: center
    :alt: Model type folder creation
 
-After creating the folder, select the 'MODELS' tab in the Data 
+After creating the folder, select the 'MODELS' tab in the Data
 page, click on the recently created model type folder icon to open the
-folder explorer, and upload the model definition file. 
-For more information on how to use the folder explorer, 
+folder explorer, and upload the model definition file.
+For more information on how to use the folder explorer,
 please refer :ref:`Explore Folder<explore_folder>` section.
 
 .. image:: model_type_folder_list.png
@@ -269,7 +358,7 @@ resources that can be allocated to the model service.
    :width: 700
    :align: center
    :alt: Service launcher
-   
+
 -  Resource Presets: Allows you to select the amount of resources to allocate from the model service.
    Resource contains CPU, RAM, and AI accelerator, as known as GPU.
 
@@ -343,7 +432,7 @@ follows:
 
 Auto Scaling Rules
 ~~~~~~~~~~~~~~~~~~~
-You can configure auto scaling rules for the model service. 
+You can configure auto scaling rules for the model service.
 Based on the defined rules, the number of replicas is automatically reduced during low using to conserve resources,
 and increased during high usage to prevent request delays of failures.
 
@@ -352,7 +441,7 @@ and increased during high usage to prevent request delays of failures.
    :align: center
    :alt: Auto scaling rules
 
-Click the 'Add Rules' button to add a new rule. When you click the button, a modal appears 
+Click the 'Add Rules' button to add a new rule. When you click the button, a modal appears
 when you can add a rule. Each field in the modal is described below:
 
 - Type: Define the rule. Select either 'Scale Up' or 'Scale Down' based on the scope of the rule.
@@ -364,7 +453,7 @@ when you can add a rule. Each field in the modal is described below:
 
 - Condition: Set the condition under which the auto scaling rule will be applied.
 
-   - Metric Name: The name of the metric to be compared. You can freely input any metric supported by the runtime environment. 
+   - Metric Name: The name of the metric to be compared. You can freely input any metric supported by the runtime environment.
    - Comparator: Method to compare live metrics with threshold value.
 
       - LESS_THAN: Rule triggered when current metric value goes below the threshold defined
@@ -374,11 +463,11 @@ when you can add a rule. Each field in the modal is described below:
 
    - Threshold: A reference value to determine whether the scaling condition is met.
 
-- Step Size: Size of step of the replica count to be changed when rule is triggered. 
-  Can be represented as both positive and negative value. 
+- Step Size: Size of step of the replica count to be changed when rule is triggered.
+  Can be represented as both positive and negative value.
   when defined as negative, the rule will decrease number of replicas.
 
-- Max/Min Replicas: Sets a maximum/minimum value for the replica count of the endpoint. 
+- Max/Min Replicas: Sets a maximum/minimum value for the replica count of the endpoint.
   Rule will not be triggered if the potential replica count gets above/below this value.
 
 - CoolDown Seconds: Durations in seconds to skip reapplying the rule right after rule is first triggered.
@@ -459,8 +548,8 @@ to model serving endpoint working properly or not.
 Using the Large Language Model
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you've created a Large Language Model (LLM) service, you can test the LLM in real-time. 
-Simply click the 'LLM Chat Test' button located in the Service Endpoint column. 
+If you've created a Large Language Model (LLM) service, you can test the LLM in real-time.
+Simply click the 'LLM Chat Test' button located in the Service Endpoint column.
 
 .. image:: LLM_chat_test.png
    :align: center
@@ -468,19 +557,19 @@ Simply click the 'LLM Chat Test' button located in the Service Endpoint column.
    :alt: LLM Chat Test
 
 Then, You will be redirected to the Chat page, where the model you created is automatically selected.
-Using the chat interface provided on the Chat page, you can test the LLM model. 
+Using the chat interface provided on the Chat page, you can test the LLM model.
 For more information about the chat feature, please refer to the :ref:`Chat page <chat_page>`
 
 .. image:: LLM_chat.png
    :alt: LLM Chat
 
-If you encounter issues connecting to the API, the Chat page will display options that allow you to manually configure the model settings. 
+If you encounter issues connecting to the API, the Chat page will display options that allow you to manually configure the model settings.
 To use the model, you will need the following information:
 
-- baseURL (optional): Base URL of the server where the model is located. 
-  Make sure to include the version information. 
+- baseURL (optional): Base URL of the server where the model is located.
+  Make sure to include the version information.
   For instance, when utilizing the OpenAI API, you should enter https://api.openai.com/v1.
-- Token (optional): An authentication key to access the model service. Tokens can be 
+- Token (optional): An authentication key to access the model service. Tokens can be
   generated from various services, not just Backend.AI. The format and generation process
   may vary depending on the service. Always refer to the specific service's guide for details.
   For instance, when using the service generated by Backend.AI, please refer to the
@@ -492,7 +581,7 @@ To use the model, you will need the following information:
 Modifying Model Service
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Click on the wrench icon in the Control tab to modify a model service you want to update. 
+Click on the wrench icon in the Control tab to modify a model service you want to update.
 The format is identical to the model service start modal, with
 previously entered fields already filled in. You can optionally modify only the
 fields you wish to change. After modifying the fields, click the 'confirm' button.
