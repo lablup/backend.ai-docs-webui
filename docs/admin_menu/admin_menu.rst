@@ -4,11 +4,11 @@
 Admin Menus
 ===========
 
-Logging in with an admin account will reveal an extra Administration menu on the bottom left of the sidebar. 
+Logging in with an admin account will reveal an extra Administration menu on the bottom left of the sidebar.
 User information registered in Backend.AI is listed in the Users tab.
 super-admin role user can see all users' information, create and deactivate a user.
 
-User ID (email), Name (username), Role and Description(User Description) can be filtered by typing text in the 
+User ID (email), Name (username), Role and Description(User Description) can be filtered by typing text in the
 search box on each column header.
 
 .. image:: admin_user_page.png
@@ -76,8 +76,8 @@ Each of the five items at the bottom of the dialog has the following functions.
   When using two-factor authentication, users are additionally required to enter an
   OTP code when logging in. Administrators can only disable two-factor authentication
   for other users.
-* Resource Policy: From Backend.AI version 24.09, you can select the user resource policy 
-  to which the user belongs. For more information about user resource policies, please 
+* Resource Policy: From Backend.AI version 24.09, you can select the user resource policy
+  to which the user belongs. For more information about user resource policies, please
   refer :ref:`user resource policy <user-resource-policy>` section.
 
 Inactivate user account
@@ -131,7 +131,7 @@ Inactive panel at the bottom.
 
 Like in Users tab, you can use the buttons in the Controls panel to view or
 update keypair details. Click the green info icon button to see specific details of the keypair.
-If necessary, you can copy the secret key by clicking the copy button. 
+If necessary, you can copy the secret key by clicking the copy button.
 
 .. image:: keypair_detail_dialog.png
    :width: 400
@@ -147,7 +147,7 @@ Please keep in mind that if the 'Rate Limit' value is small, API operations such
    :alt: Keypair update dialog
 
 You can also deactivate or reactivate the keypair by clicking red 'Deactivate' button or black 'Activate' button in control column.
-Unlike the User tab, the Inactive tab allows permanent deletion of key pairs. 
+Unlike the User tab, the Inactive tab allows permanent deletion of key pairs.
 However, you cannot permanently delete a key pair if it is currently being used as a user's main access key.
 
 .. image:: keypair_delete_button.png
@@ -205,7 +205,7 @@ project, not a specific user, and can be accessed by all users in that project.
 
 First, log in with an admin account and create a project folder. After moving to
 the Data page, click 'Create Folder' to open the folder creation dialog.
-Enter the folder name, set the Type to Project. When the type is set to Project, 
+Enter the folder name, set the Type to Project. When the type is set to Project,
 it will be automatically assigned to the project selected in the project selector in the header.
 Permission is set to Read-Only.
 
@@ -223,8 +223,8 @@ also displayed in the Permission panel.
 Manage Models cards
 -------------------
 
-All of the Model cards in model store are managed by project admin. 
-After uploading model store with model-definition file, any user in the project 
+All of the Model cards in model store are managed by project admin.
+After uploading model store with model-definition file, any user in the project
 can access to model card and clone it if needed.
 
 Following method is to add model cards from the Hugging Face.
@@ -240,7 +240,7 @@ First, Set the project to 'model-store'.
    :alt: Select project to model store
    :align: center
 
-Move to data page and click the 'Create Folder' button on the right side. Enter the folder name, 
+Move to data page and click the 'Create Folder' button on the right side. Enter the folder name,
 and set the rest of folder configuration as shown below:
 
    - Usage Mode: Model
@@ -253,9 +253,9 @@ and set the rest of folder configuration as shown below:
    :alt: Model store folder
    :align: center
 
-After creating the folder, you need to set and upload the model-definition.yaml file 
-to the folder that you've just created. Following is the example of the model-definition file. 
-If you want to know how to write model-definition file, 
+After creating the folder, you need to set and upload the model-definition.yaml file
+to the folder that you've just created. Following is the example of the model-definition file.
+If you want to know how to write model-definition file,
 please refer to :ref:`Model definition guide <model_definition_guide>` section.
 
 .. code:: yaml
@@ -295,7 +295,7 @@ please refer to :ref:`Model definition guide <model_definition_guide>` section.
          health_check:
             path: /v1/models
             max_retries: 500
- 
+
 
 Once the model-definition file is uploaded, the model card will appear in the model store page.
 
@@ -304,11 +304,11 @@ Once the model-definition file is uploaded, the model card will appear in the mo
    :align: center
 
 .. note::
-   You need to download model manually after setting model-definition file. For downloading the model file to folder, 
-   you can mount the model folder to session creation and download file to there by referring 
+   You need to download model manually after setting model-definition file. For downloading the model file to folder,
+   you can mount the model folder to session creation and download file to there by referring
    `Downloading models <https://huggingface.co/docs/hub/models-downloading>`_ .
 
-Clicking on the model card you've just created will display the details of the model-definition file you uploaded. 
+Clicking on the model card you've just created will display the details of the model-definition file you uploaded.
 Now, every member of the project can access the model card and clone it.
 
 .. image:: model_card_detail.png
@@ -323,11 +323,11 @@ Keypair Resource Policy
 
 In Backend.AI, administrators have the ability to set limits on the total resources available for each keypair, user, and project.
 Resource policies enable you to define the maximum allowed resources and other compute session-related settings.
-Additionally, it is possible to create multiple resource policies for different needs, 
-such as user or research requirements, and apply them on an individual basis. 
+Additionally, it is possible to create multiple resource policies for different needs,
+such as user or research requirements, and apply them on an individual basis.
 
-The Resource Policy page allows administrators to view a list of all registered resource policies. 
-Administrators can review the resource policies established for keypairs, users, and projects directly on this page.  
+The Resource Policy page allows administrators to view a list of all registered resource policies.
+Administrators can review the resource policies established for keypairs, users, and projects directly on this page.
 Let's begin by examining the resource policies for keypairs. In the figure below, there are
 three policies in total (gardener, student, default). The infinity symbol (∞)
 indicates that no resource restrictions have been applied to those resources.
@@ -371,7 +371,7 @@ About details of each option in resource policy dialog, see the description belo
      by the server, this settings has no effect. (max value: 256)
 
 * Sessions
-   * Cluster Size: Set the maximum limit for the number of multi-containers or 
+   * Cluster Size: Set the maximum limit for the number of multi-containers or
      multi-nodes that can be configured when creating a session.
    * Session Lifetime (sec.): Limits the maximum lifetime of a compute session
      from the reservation in the active status, including ``PENDING`` and
@@ -469,7 +469,7 @@ To create a new user resource policy, click the Create button.
   adjusting this setting.
 - Max Customized Image Count: The maximum number of customized images that
   user can create. If user's customized image count exceeds this value,
-  user cannot create a new customized image. If you want to know more about customized 
+  user cannot create a new customized image. If you want to know more about customized
   images, please refer to the :ref:`My Environments<my-environments>` section.
 
 
@@ -527,25 +527,25 @@ names cannot be edited. Deletion can be done by clicking the trash can icon butt
 You can select and display only the columns you want by clicking the 'Setting (Gear)' button at the
 bottom right of the table.
 
-To save the current resource policy as a file, click on the 'Tools' menu located at the top left of each tab. Once you click the menu, download dialog will appear. 
+To save the current resource policy as a file, click on the 'Tools' menu located at the top left of each tab. Once you click the menu, download dialog will appear.
 
 .. image:: keypair_export.png
    :align: center
-   :alt: Keypair export 
+   :alt: Keypair export
 
 Unified View for Pending Sessions
 --------------------------------
 
 From Backend.AI version 25.13.0, a unified view for pending sessions is available in the Admin Menu.
-Unlike the Session page, the Scheduler page provides a unified view of all pending sessions within a 
-selected resource group. The index number displayed next th the status indicates the queue position in 
-witch the session will be created once sufficient resources become available.
+Unlike the Session page, the Scheduler page provides a unified view of all pending sessions within a
+selected resource group. The index number displayed next to the status indicates the queue position in
+which the session will be created once sufficient resources become available.
 
 .. image:: scheduler_page.png
    :align: center
    :alt: Scheduler page
 
-Similar to the Session page, you can click the session name to open a drawer that 
+Similar to the Session page, you can click the session name to open a drawer that
 displays detailed information about the session.
 
 Manage Images
@@ -572,7 +572,7 @@ must be a minimum allocated GPU.) The default value for the minimum resource
 amount is provided as embedded in the image's metadata. If an attempt is made to
 create a compute session with a resource that is less than the amount of
 resources specified in each image, the request is automatically adjusted to the
-minimum resource requirements for the image and then generated, not cancelled. 
+minimum resource requirements for the image and then generated, not cancelled.
 
 .. image:: update_image_resource_setting.png
    :width: 500
@@ -594,7 +594,7 @@ Once you click the icon, the name of the app and its corresponding port number w
    :align: center
    :alt: Manage app dialog
 
-In this interface, you can add supported custom applications by clicking the '+ Add' button below. To delete an application, simply click the 'red trash can' button on the right side of each row. 
+In this interface, you can add supported custom applications by clicking the '+ Add' button below. To delete an application, simply click the 'red trash can' button on the right side of each row.
 
 .. note::
    You need to reinstall the image after changing the managed app.
@@ -605,8 +605,8 @@ In this interface, you can add supported custom applications by clicking the '+ 
       :alt: Confirmation dialog for manage app change in image
 
 
-Manager docker registry
------------------------
+Manage docker registry
+----------------------
 
 You can click on the Registries tab in Environments page to see the information
 of the docker registry that are currently connected. ``cr.backend.ai`` is
@@ -629,24 +629,52 @@ identically, and in the case of Registry URL, a scheme such as ``http://`` or
 ``https://`` must be explicitly attached. Also, images stored in the registry
 must have a name prefixed with Registry Name. Username and Password are
 optional and can be filled in if you set separate authentication settings in the
-registry. In Extra Information, you can pass additional information needed for each registry type as a JSON string
+registry. In Extra Information, you can pass additional information needed for each registry type as a JSON string.
 
 .. image:: add_registry_dialog.png
    :width: 350
    :align: center
    :alt: Add registry dialog
 
+.. _gitlab-registry-configuration:
+
+GitLab Container Registry Configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+When adding a GitLab container registry, you must specify the ``api_endpoint``
+in the Extra Information field. This is required because GitLab uses separate
+endpoints for the container registry and the GitLab API.
+
+For **GitLab.com (public instance)**:
+
+- Registry URL: ``https://registry.gitlab.com``
+- Extra Information: ``{"api_endpoint": "https://gitlab.com"}``
+
+For **self-hosted (on-premise) GitLab**:
+
+- Registry URL: Your GitLab registry URL (e.g., ``https://registry.example.com``)
+- Extra Information: ``{"api_endpoint": "https://gitlab.example.com"}``
+
+  The ``api_endpoint`` should point to your GitLab instance URL, not the registry URL.
+
+Additional configuration notes:
+
+- **Project path format**: When specifying the project, use the full path including
+  namespace and project name (e.g., ``namespace/project-name``). Both components
+  are required for the registry to function correctly.
+
+- **Access token permissions**: The access token used for the registry must have
+  both ``read_registry`` and ``read_api`` scopes. The ``read_api`` scope is
+  required for Backend.AI to query the GitLab API for image metadata during
+  rescan operations.
+
 You can also update the information of an existing registry, except the
 Registry Name.
 
-Even if you created a registry and update meta information, users cannot use the
-images in the registry, immediately. Just as you had to register the allowed hosts
-to use the storage host, you must register the registry in the allowed docker
-registries field at the domain or project level, after registering the registry,
-so that users in the domain or project can access the registry image. Allowed
-docker registries can be registered using the Control-Panel with domain and project
-management. The function to set the allowed docker registries in the keypair's
-resource policy is not provided yet.
+After creating a registry and updating the image metadata, users still cannot
+use the images immediately. You must enable the registry by toggling the
+Enabled switch in the registry list to allow users to access images from
+the registry.
 
 
 Manage resource preset
@@ -669,8 +697,8 @@ of currently defined resource presets.
 
 You can set resources such as CPU, RAM, fGPU, etc. to be provided by the
 resource preset by clicking the 'Setting (Gear)' (cogwheel) in the Controls panel.
-Create or Modify Resource Preset modal shows fields of the resources currently available. 
-Depending on your server's settings, certain resources may not be visible. 
+Create or Modify Resource Preset modal shows fields of the resources currently available.
+Depending on your server's settings, certain resources may not be visible.
 After setting the resources with the desired values, save it and check if the corresponding preset is displayed
 when creating a compute session. If available resources are less
 than the amount of resources defined in the preset, the corresponding preset
@@ -786,7 +814,7 @@ The resource group has further Scheduler Options. The details are described belo
   than the Pending timeout. When you wish to prevent a session from remaining
   PENDING indefinitely, set this time. Set this value to zero (0) if you do not
   want to apply the pending timeout feature.
-* Retries to skip pending session: 
+* Retries to skip pending session:
   The number of retries the scheduler tries before skipping a PENDING session.
   It can be configured to prevent the situation where one PENDING session blocks
   the scheduling of the subsequent sessions indefinitely (Head-of-line blocking,
@@ -815,12 +843,12 @@ By using this feature, admin can easily manage and monitor the exact amount of s
 In order to set quota, you need to first access to storages tab in resource page.
 And then, click 'Setting (Gear)' in control column.
 
-.. note:: 
-   Please remind that quota setting is only available in storage that provides quota setting 
-   (e.g. XFS, CephFS, NetApp, Purestorage, etc.). Although you can see the usage of storage 
-   in quota setting page regardless of storage, you cannot configure the quota which doesn't 
+.. note::
+   Please remind that quota setting is only available in storage that provides quota setting
+   (e.g. XFS, CephFS, NetApp, Purestorage, etc.). Although you can see the usage of storage
+   in quota setting page regardless of storage, you cannot configure the quota which doesn't
    support quota configuration internally.
-   
+
    .. image:: no_support_quota_setting.png
 
 .. _quota-setting-panel:
@@ -850,14 +878,14 @@ Set User Quota
 ~~~~~~~~~~~~~~~~
 
 In Backend.AI, there are two types of vfolders created by user and admin(project). In this section,
-we would like to show how to check current quota setting per-user and how to configure it.   
-First, make sure the active tab of quota settings panel is ``For User``. Then, select user you desire to 
-check and edit the quota. You can see the quota id that corresponds to user's id and the configuration already set 
-in the table, if you already set the quota.   
+we would like to show how to check current quota setting per-user and how to configure it.
+First, make sure the active tab of quota settings panel is ``For User``. Then, select user you desire to
+check and edit the quota. You can see the quota id that corresponds to user's id and the configuration already set
+in the table, if you already set the quota.
 
 .. image:: per_user_quota.png
 
-Of course, if you want to edit the quota, you can simply click the Edit button in the control column. After Clicking ``Edit`` button, you may see the small modal that enables configuring quota setting. 
+Of course, if you want to edit the quota, you can simply click the Edit button in the control column. After Clicking ``Edit`` button, you may see the small modal that enables configuring quota setting.
 After input the exact amount, don't forget to Click ``OK`` button, unless the changes will not be applied.
 
 .. image:: quota_settings_panel.png
@@ -868,8 +896,8 @@ After input the exact amount, don't forget to Click ``OK`` button, unless the ch
 Set Project Quota
 ~~~~~~~~~~~~~~~~~~
 
-Setting a quota on project-folder is similar to setting a user quota. The difference between setting 
-project quota and user quota is to confirm setting the project quota requires one more procedure, 
+Setting a quota on project-folder is similar to setting a user quota. The difference between setting
+project quota and user quota is to confirm setting the project quota requires one more procedure,
 which is selecting the domain that the project is dependent on. The rest are the same.
 As in the picture below, you need to first select the domain, and then select the project.
 
@@ -878,19 +906,19 @@ As in the picture below, you need to first select the domain, and then select th
 Unset Quota
 ~~~~~~~~~~~~
 
-We also provides the feature to unset the quota. Please remind that after removing the quota setting, quota will automatically follows 
-user or project default quota, which cannot be set in WebUI. If you want to change the default quota setting, you may need to access to admin-only page.   
-By Clicking ``Unset`` button in control column, the small snackbar message will show up and confirm whether you really want to delete the current quota setting. 
-If you click ``OK`` button in the snackbar message, then it will delete the quota setting and automatically reset the quota follows to corresponding quota, 
+We also provides the feature to unset the quota. Please remind that after removing the quota setting, quota will automatically follows
+user or project default quota, which cannot be set in WebUI. If you want to change the default quota setting, you may need to access to admin-only page.
+By Clicking ``Unset`` button in control column, the small snackbar message will show up and confirm whether you really want to delete the current quota setting.
+If you click ``OK`` button in the snackbar message, then it will delete the quota setting and automatically reset the quota follows to corresponding quota,
 which depends on the quota type(user / project).
 
 .. image:: unset_quota.png
 
 
 .. note::
-   
-   If there's no config per user/project, then corresponding values in the user/project resource policy will be set as 
-   a default value. For example, If no hard limit value for quota is set, ``max_vfolder_size`` value in the resource policy 
+
+   If there's no config per user/project, then corresponding values in the user/project resource policy will be set as
+   a default value. For example, If no hard limit value for quota is set, ``max_vfolder_size`` value in the resource policy
    is used as the default value.
 
 
@@ -899,8 +927,8 @@ which depends on the quota type(user / project).
 Download session lists
 ----------------------
 .. note::
-   This feature is currently not available on the default Session page. 
-   To use this feature, please enable 'Classic Session list page' option in the 'Switch back to the Classic UI' section 
+   This feature is currently not available on the default Session page.
+   To use this feature, please enable 'Classic Session list page' option in the 'Switch back to the Classic UI' section
    on the User Setting page. For more details, please refer to :ref:`Backend.AI User Settings<user-settings>` section.
 
 There's additional feature in Session page for admin.
