@@ -538,8 +538,8 @@ Unified View for Pending Sessions
 
 From Backend.AI version 25.13.0, a unified view for pending sessions is available in the Admin Menu.
 Unlike the Session page, the Scheduler page provides a unified view of all pending sessions within a
-selected resource group. The index number displayed next th the status indicates the queue position in
-witch the session will be created once sufficient resources become available.
+selected resource group. The index number displayed next to the status indicates the queue position in
+which the session will be created once sufficient resources become available.
 
 .. image:: scheduler_page.png
    :align: center
