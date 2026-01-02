@@ -11,6 +11,7 @@ build:
   tools:
     python: "3.11"
   jobs:
+    # Install custom fonts before building the documentation
     pre_build:
       - mkdir -p ~/.fonts
       - cp docs/_static/fonts/*.ttf ~/.fonts/
