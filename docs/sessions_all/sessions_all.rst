@@ -382,7 +382,7 @@ the app services available for that session.
 
 Let's click on Jupyter Notebook.
 
-.. image:: Jupyter_app.png
+.. image:: jupyter_app.png
 
 Pop up windows will show that Jupyter Notebook is running. This
 notebook was created inside a running compute session and can be used easily
