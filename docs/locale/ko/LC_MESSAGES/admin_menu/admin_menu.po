@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Console User Guide 25.05\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-19 17:59+0900\n"
+"POT-Creation-Date: 2026-01-16 17:23+0900\n"
 "PO-Revision-Date: 2022-05-17 22:53+0900\n"
 "Last-Translator: \n"
 "Language: ko\n"
@@ -930,12 +930,13 @@ msgid "Unified View for Pending Sessions"
 msgstr "Pending 상태 세션 통합 뷰"
 
 #: ../../admin_menu/admin_menu.rst:539
+#, fuzzy
 msgid ""
 "From Backend.AI version 25.13.0, a unified view for pending sessions is "
 "available in the Admin Menu. Unlike the Session page, the Scheduler page "
 "provides a unified view of all pending sessions within a selected "
-"resource group. The index number displayed next th the status indicates "
-"the queue position in witch the session will be created once sufficient "
+"resource group. The index number displayed next to the status indicates "
+"the queue position in which the session will be created once sufficient "
 "resources become available."
 msgstr ""
 "Backend.AI 25.13.0 버전부터 Pending 상태의 세션에 대한 스케쥴러 페이지가 관리자 메뉴로 제공됩니다. 세션 "
@@ -1185,9 +1186,8 @@ msgid ""
 "toggling the Enabled switch in the registry list to allow users to access"
 " images from the registry."
 msgstr ""
-"레지스트리를 생성하고 이미지 메타데이터를 업데이트한 후에도 사용자는 바로 이미지를 사용할 "
-"수 없습니다. 레지스트리 목록에서 Enabled 스위치를 켜야 사용자가 해당 레지스트리의 "
-"이미지에 접근할 수 있습니다."
+"레지스트리를 생성하고 이미지 메타데이터를 업데이트한 후에도 사용자는 바로 이미지를 사용할 수 없습니다. 레지스트리 목록에서 "
+"Enabled 스위치를 켜야 사용자가 해당 레지스트리의 이미지에 접근할 수 있습니다."
 
 #: ../../admin_menu/admin_menu.rst:681
 msgid "Manage resource preset"
@@ -1391,7 +1391,98 @@ msgstr ""
 "Agent 가 설치된 노드로 직접적인 네트워크 연결이 불가능한 경우에는, 이 필드를 빈 값으로 설정하여 Manager 를 거쳐 "
 "컨테이너로 트래픽을 중계하는 v1 API 를 사용할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:807
+#: ../../admin_menu/admin_menu.rst:808
+msgid "Agent Selection Strategy"
+msgstr "에이전트 선택 전략"
+
+#: ../../admin_menu/admin_menu.rst:810
+msgid ""
+"When scheduling a session, Backend.AI determines which agent (node) "
+"should host the session based on the configured strategy. There are two "
+"strategies available:"
+msgstr ""
+"세션을 스케줄링할 때, Backend.AI는 설정된 전략에 따라 세션을 호스팅할 에이전트(노드)를 결정합니다. "
+"두 가지 전략을 사용할 수 있습니다:"
+
+#: ../../admin_menu/admin_menu.rst:817
+msgid "Strategy"
+msgstr "전략"
+
+#: ../../admin_menu/admin_menu.rst:818
+msgid "Description"
+msgstr "설명"
+
+#: ../../admin_menu/admin_menu.rst:819
+msgid "Use Cases"
+msgstr "사용 사례"
+
+#: ../../admin_menu/admin_menu.rst:820
+msgid "**Dispersed** (default)"
+msgstr "**Dispersed** (기본값)"
+
+#: ../../admin_menu/admin_menu.rst:821
+msgid ""
+"Distributes workloads across multiple agents, preferring agents with more"
+" available resources for balanced GPU utilization."
+msgstr ""
+"여러 에이전트에 워크로드를 분산하며, 가용 리소스가 많은 에이전트를 우선 선택하여 "
+"GPU 사용률을 균등하게 유지합니다."
+
+#: ../../admin_menu/admin_menu.rst:823
+msgid "Even resource distribution, balanced GPU usage across nodes"
+msgstr "균등한 리소스 분배, 노드 간 균형 잡힌 GPU 사용"
+
+#: ../../admin_menu/admin_menu.rst:824
+msgid "**Concentrated**"
+msgstr "**Concentrated**"
+
+#: ../../admin_menu/admin_menu.rst:825
+msgid ""
+"Packs workloads onto fewer agents, preferring agents already in use to "
+"keep other nodes idle and available for scale-down."
+msgstr ""
+"적은 수의 에이전트에 워크로드를 집중하며, 이미 사용 중인 에이전트를 우선 선택하여 "
+"다른 노드는 유휴 상태로 유지하고 축소(scale-down)가 가능하도록 합니다."
+
+#: ../../admin_menu/admin_menu.rst:827
+msgid ""
+"Cloud environments with autoscaling, reducing active node count, cost "
+"optimization"
+msgstr "오토스케일링이 적용된 클라우드 환경, 활성 노드 수 감소, 비용 최적화"
+
+#: ../../admin_menu/admin_menu.rst:830
+msgid "**Example**: With 4 GPU nodes and 2 session requests:"
+msgstr "**예시**: 4개의 GPU 노드에서 2개의 세션을 요청하는 경우:"
+
+#: ../../admin_menu/admin_menu.rst:832
+msgid ""
+"**Dispersed**: Places sessions on Node 1 and Node 2 (distributed across "
+"nodes)"
+msgstr "**Dispersed**: 노드 1과 노드 2에 각각 세션 배치 (노드 간 분산)"
+
+#: ../../admin_menu/admin_menu.rst:833
+msgid ""
+"**Concentrated**: Places both sessions on Node 1 (packed, Node 2-4 remain"
+" idle)"
+msgstr "**Concentrated**: 노드 1에 두 세션 모두 배치 (집중, 노드 2-4는 유휴 상태 유지)"
+
+#: ../../admin_menu/admin_menu.rst:836
+msgid ""
+"For Inference sessions, the ``enforce_spreading_endpoint_replica`` option"
+" can be enabled to spread replicas across different agents even when "
+"using the Concentrated strategy. This ensures model serving replicas are "
+"not all on the same node."
+msgstr ""
+"Inference 세션의 경우, Concentrated 전략을 사용하더라도 "
+"``enforce_spreading_endpoint_replica`` 옵션을 활성화하면 replica를 "
+"여러 에이전트에 분산할 수 있습니다. 이를 통해 모델 서빙 replica가 "
+"모두 동일한 노드에 배치되는 것을 방지할 수 있습니다."
+
+#: ../../admin_menu/admin_menu.rst:842
+msgid "Scheduler Options"
+msgstr "스케줄러 옵션"
+
+#: ../../admin_menu/admin_menu.rst:844
 msgid ""
 "The resource group has further Scheduler Options. The details are "
 "described below."
@@ -1399,7 +1490,7 @@ msgstr ""
 "리소스 그룹에서 스케줄러 관련 옵션(Scheduler Options)을 추가 설정할 수도 있습니다. 각 항목별 설정은 아래 내용을 "
 "참고하세요."
 
-#: ../../admin_menu/admin_menu.rst:809
+#: ../../admin_menu/admin_menu.rst:846
 msgid ""
 "Allowed session types: Since user can choose the type of session, "
 "resource group can allow certain type of session. You should allow at "
@@ -1410,7 +1501,7 @@ msgstr ""
 "타입의 세션만 허용할 수 있음. 하나 이상의 세션 타입을 허용해야 하며, 허용되는 타입은 Interactive, Batch, "
 "Inference 임."
 
-#: ../../admin_menu/admin_menu.rst:812
+#: ../../admin_menu/admin_menu.rst:849
 msgid ""
 "Pending timeout: A compute session will be canceled if it stays "
 "``PENDING`` status for longer than the Pending timeout. When you wish to "
@@ -1422,7 +1513,7 @@ msgstr ""
 "경우, 해당 세션을 취소함. 무한히 PENDING 상태에 머무르는 세션을 방지하고자 할 때 기준 시간을 설정할 수 있음. 0을 "
 "설정하면 Pending timeout이 적용되지 않음."
 
-#: ../../admin_menu/admin_menu.rst:817
+#: ../../admin_menu/admin_menu.rst:854
 msgid ""
 "Retries to skip pending session: The number of retries the scheduler "
 "tries before skipping a PENDING session. It can be configured to prevent "
@@ -1436,7 +1527,7 @@ msgstr ""
 "(Head-of-line blocking, HOL)를 방지하기 위해 설정할 수 있음. 따로 설정하지 않는 경우에는 Etcd 에 "
 "설정된 글로벌 값 (num_retries_to_skip, 기본 3 회)을 사용함."
 
-#: ../../admin_menu/admin_menu.rst:824
+#: ../../admin_menu/admin_menu.rst:861
 msgid ""
 "You can create a new resource policy by clicking the '+ Create' button. "
 "Likewise other creating options, you cannot create a resource policy with"
@@ -1449,11 +1540,11 @@ msgstr ""
 msgid "Create resource group dialog"
 msgstr "자원 그룹 생성 다이얼로그"
 
-#: ../../admin_menu/admin_menu.rst:835
+#: ../../admin_menu/admin_menu.rst:872
 msgid "Storages"
 msgstr "저장소"
 
-#: ../../admin_menu/admin_menu.rst:837
+#: ../../admin_menu/admin_menu.rst:874
 msgid ""
 "On STORAGES tab, you can see what kind of mount volumes (usually NFS) "
 "exist. From 23.03 version, We provide per-user/per-project quota setting "
@@ -1465,13 +1556,13 @@ msgstr ""
 "쿼타 관리를 지원하는 스토리지에 대해 사용자별/프로젝트별 쿼타 설정이 가능합니다. 이 기능을 사용함으로써, 관리자는 좀 더 손쉽게 "
 "사용자와 프로젝트용 폴더가 스토리지 내에서 얼마만큼 공간을 차지하고 있는지 확인하고 관리할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:843
+#: ../../admin_menu/admin_menu.rst:880
 msgid ""
 "In order to set quota, you need to first access to storages tab in "
 "resource page. And then, click 'Setting (Gear)' in control column."
 msgstr "쿼타를 설정하기 위해서는 자원 페이지의 '저장소(Storage)' 탭을 누르고, 컨트롤 컬럼의 '설정' 버튼을 클릭합니다. "
 
-#: ../../admin_menu/admin_menu.rst:847
+#: ../../admin_menu/admin_menu.rst:884
 msgid ""
 "Please remind that quota setting is only available in storage that "
 "provides quota setting (e.g. XFS, CephFS, NetApp, Purestorage, etc.). "
@@ -1483,65 +1574,65 @@ msgstr ""
 "가능합니다. 저장소의 쿼타 설정 기능 제공 여부에 관계없이 쿼타 설정 페이지를 제공하지만, 내부적으로 쿼타 설정을 지원하지 않는 "
 "저장소에 대해서는 쿼타를 설정할 수 없습니다."
 
-#: ../../admin_menu/admin_menu.rst:857
+#: ../../admin_menu/admin_menu.rst:894
 msgid "Quota Setting Panel"
 msgstr "쿼타 설정 패널"
 
-#: ../../admin_menu/admin_menu.rst:859
+#: ../../admin_menu/admin_menu.rst:896
 msgid "In Quota setting page, there are two panels."
 msgstr "쿼타 설정 페이지에는 두개의 패널이 있습니다. "
 
-#: ../../admin_menu/admin_menu.rst:867
+#: ../../admin_menu/admin_menu.rst:904
 msgid "Overview panel"
 msgstr "스토리지 정보 패널"
 
-#: ../../admin_menu/admin_menu.rst:864
+#: ../../admin_menu/admin_menu.rst:901
 msgid "Usage: Shows the actual amount usage of the selected storage."
 msgstr "사용량: 선택된 저장소에서의 실제 사용량"
 
-#: ../../admin_menu/admin_menu.rst:865
+#: ../../admin_menu/admin_menu.rst:902
 msgid "Endpoint: Represents the mount point of the selected storage."
 msgstr "엔드포인트: 선택된 저장소가 스토리지 노드에 마운트된 경로"
 
-#: ../../admin_menu/admin_menu.rst:866
+#: ../../admin_menu/admin_menu.rst:903
 msgid "Backend Type: The type of storage."
 msgstr "백엔드 타입: 저장소의 타입"
 
-#: ../../admin_menu/admin_menu.rst:867
+#: ../../admin_menu/admin_menu.rst:904
 msgid "Capabilities: The supported feature of the selected storage."
 msgstr "지원 기능: 선택된 저장소에서 지원하는 기능"
 
-#: ../../admin_menu/admin_menu.rst:875
+#: ../../admin_menu/admin_menu.rst:912
 msgid "Quota Settings"
 msgstr "시스템 설정 조회"
 
-#: ../../admin_menu/admin_menu.rst:870
+#: ../../admin_menu/admin_menu.rst:907
 msgid "For User: Configure per-user quota setting here."
 msgstr "사용자 대상: 사용자별로 쿼타를 설정합니다."
 
-#: ../../admin_menu/admin_menu.rst:871
+#: ../../admin_menu/admin_menu.rst:908
 msgid "For Project: Configure per-project quota(project-folder) setting here."
 msgstr "프로젝트 대상: 프로젝트별로 쿼타(프로젝트-폴더) 를 설정합니다."
 
-#: ../../admin_menu/admin_menu.rst:872
+#: ../../admin_menu/admin_menu.rst:909
 msgid "ID: Corresponds to user or project id."
 msgstr "ID: 사용자나 프로젝트 ID에 대응합니다."
 
-#: ../../admin_menu/admin_menu.rst:873
+#: ../../admin_menu/admin_menu.rst:910
 msgid "Hard Limit (GB): Currently set hard limit quota for selected quota."
 msgstr "Hard Limit (GB): 선택된 쿼타에서 현재 설정된 Hard Limit 쿼타를 표시합니다."
 
-#: ../../admin_menu/admin_menu.rst:874
+#: ../../admin_menu/admin_menu.rst:911
 msgid ""
 "Control: Provides editing the hard limit or even deleting the quota "
 "setting."
 msgstr "설정: Hard limit 과 같은 설정값을 수정하거나, 쿼타 설정값을 삭제하는 기능을 제공합니다."
 
-#: ../../admin_menu/admin_menu.rst:878
+#: ../../admin_menu/admin_menu.rst:915
 msgid "Set User Quota"
 msgstr "사용자 쿼타 설정하기"
 
-#: ../../admin_menu/admin_menu.rst:880
+#: ../../admin_menu/admin_menu.rst:917
 msgid ""
 "In Backend.AI, there are two types of vfolders created by user and "
 "admin(project). In this section, we would like to show how to check "
@@ -1556,7 +1647,7 @@ msgstr ""
 "확인해주세요. 그 다음, 쿼타를 수정하고 확인할 대상인 사용자를 선택해주세요. 만일 쿼타가 이미 설정되어 있다면, 사용자 ID와 "
 "동일한 쿼타 ID 값이 테이블에 표시된 것을 확인할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:888
+#: ../../admin_menu/admin_menu.rst:925
 msgid ""
 "Of course, if you want to edit the quota, you can simply click the Edit "
 "button in the control column. After Clicking ``Edit`` button, you may see"
@@ -1572,11 +1663,11 @@ msgstr ""
 msgid "Quota settings panel"
 msgstr "쿼타 설정 패널"
 
-#: ../../admin_menu/admin_menu.rst:897
+#: ../../admin_menu/admin_menu.rst:934
 msgid "Set Project Quota"
 msgstr "프로젝트 쿼타 설정하기"
 
-#: ../../admin_menu/admin_menu.rst:899
+#: ../../admin_menu/admin_menu.rst:936
 msgid ""
 "Setting a quota on project-folder is similar to setting a user quota. The"
 " difference between setting project quota and user quota is to confirm "
@@ -1589,11 +1680,11 @@ msgstr ""
 "차이점은, 프로젝트별로 적용되는 쿼타에서는 프로젝트가 소속되어 있는 도메인을 우선 선택하는 과정이 추가되었다는 것입니다. 그 이후 "
 "과정은 동일합니다. 하단 그림에서 볼 수 있듯이, 우선 도메인을 선택하고, 적용할 프로젝트를 선택하면 됩니다."
 
-#: ../../admin_menu/admin_menu.rst:907
+#: ../../admin_menu/admin_menu.rst:944
 msgid "Unset Quota"
 msgstr "쿼타 해제하기"
 
-#: ../../admin_menu/admin_menu.rst:909
+#: ../../admin_menu/admin_menu.rst:946
 msgid ""
 "We also provides the feature to unset the quota. Please remind that after"
 " removing the quota setting, quota will automatically follows user or "
@@ -1613,7 +1704,7 @@ msgstr ""
 "클릭하게 되면, 쿼타 설정값이 삭제되고, 자동으로 쿼타 설정값은 쿼타의 타입(사용자 / 프로젝트)에 대응하는 값으로 적용되게 "
 "됩니다."
 
-#: ../../admin_menu/admin_menu.rst:920
+#: ../../admin_menu/admin_menu.rst:957
 msgid ""
 "If there's no config per user/project, then corresponding values in the "
 "user/project resource policy will be set as a default value. For example,"
@@ -1624,11 +1715,11 @@ msgstr ""
 "예를 들어 쿼타에서 hard limit 값이 설정되어 있지 않다면, 자원 정책 내 ``max_vfolder_size`` 값이 기본 "
 "값으로 쓰이게 됩니다."
 
-#: ../../admin_menu/admin_menu.rst:928
+#: ../../admin_menu/admin_menu.rst:965
 msgid "Download session lists"
 msgstr "세션 자원 다운로드"
 
-#: ../../admin_menu/admin_menu.rst:930
+#: ../../admin_menu/admin_menu.rst:967
 msgid ""
 "This feature is currently not available on the default Session page. To "
 "use this feature, please enable 'Classic Session list page' option in the"
@@ -1641,7 +1732,7 @@ msgstr ""
 ":ref:`Backend.AI 사용자 설정 페이지` Backend.AI 클러스터 세션에 대해 더 자세한 정보를 확인하시려면, "
 ":ref:`Backend.AI 사용자 설정 페이지<user-settings>` 섹션을 참고하십시오. "
 
-#: ../../admin_menu/admin_menu.rst:934
+#: ../../admin_menu/admin_menu.rst:971
 msgid ""
 "There's additional feature in Session page for admin. On the right side "
 "of the FINISHED tab there is a menu marked with ``...``. When you click "
@@ -1650,7 +1741,7 @@ msgstr ""
 "세션 페이지에는 관리자를 위한 추가 기능이 있습니다. FINISHED 탭 우측을 보면 ``…`` 으로 표시된 메뉴가 있습니다. 이 "
 "메뉴를 클릭하면 export CSV 라는 하위 메뉴가 나옵니다."
 
-#: ../../admin_menu/admin_menu.rst:940
+#: ../../admin_menu/admin_menu.rst:977
 msgid ""
 "If you click this menu, you can download the information of the comcpute "
 "sessions created so far in CSV format. After the following dialog opens, "
@@ -1662,11 +1753,11 @@ msgstr ""
 "후, (필요한 경우) 적당한 파일 이름을 입력하고 EXPORT 버튼을 클릭하십시오. 파일 이름은 최대 255 자까지만 입력 가능한 "
 "점에 유의하십시오. 곧 CSV 파일 하나가 다운로드 될 것입니다."
 
-#: ../../admin_menu/admin_menu.rst:951
+#: ../../admin_menu/admin_menu.rst:988
 msgid "System settings"
 msgstr "시스템 설정 조회"
 
-#: ../../admin_menu/admin_menu.rst:953
+#: ../../admin_menu/admin_menu.rst:990
 msgid ""
 "In the Configuration page, you can see main settings of Backend.AI "
 "server. Currently, it provides several controls which can change and list"
@@ -1675,7 +1766,7 @@ msgstr ""
 "Configuration 페이지에서 Backend.AI에 설정된 주요 설정값을 조회할 수 있습니다. 현재는 몇가지 변경 기능 및 "
 "설정 조회 기능을 제공하고 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:957
+#: ../../admin_menu/admin_menu.rst:994
 msgid ""
 "You can change image auto install and update rule by selecting one option"
 " from ``Digest``, ``Tag``, ``None``. ``Digest`` is kind of checksum for "
@@ -1689,7 +1780,7 @@ msgstr ""
 "다운로드의 효율성을 높이는데에 사용됩니다. ``Tag`` 는 개발용 옵션에만 사용할 수 있는데, 태그는 이미지의 무결성을 보장하지 "
 "않기 때문입니다."
 
-#: ../../admin_menu/admin_menu.rst:965
+#: ../../admin_menu/admin_menu.rst:1002
 msgid ""
 "Don't change rule selection unless you completely understand the meaning "
 "of each rule."
@@ -1699,7 +1790,7 @@ msgstr "각 규칙에 대해 완전히 이해하고 있지 않는 한 선택된 
 msgid "System setting about image"
 msgstr "이미지 내 자원 제한 값 수정"
 
-#: ../../admin_menu/admin_menu.rst:970
+#: ../../admin_menu/admin_menu.rst:1007
 msgid "You can also change settings for scaling, plugins and enterprise features."
 msgstr "스케일링과 플러그인, 엔터프라이즈 기능에 대한 설정도 변경할 수 있습니다."
 
@@ -1707,7 +1798,7 @@ msgstr "스케일링과 플러그인, 엔터프라이즈 기능에 대한 설정
 msgid "System setting about scaling and plugins"
 msgstr ""
 
-#: ../../admin_menu/admin_menu.rst:975
+#: ../../admin_menu/admin_menu.rst:1012
 msgid ""
 "When a user launches a multi-node cluster session, which is introduced at"
 " version 20.09, Backend.AI will dynamically create an overlay network to "
@@ -1724,7 +1815,7 @@ msgstr ""
 msgid "Overlay network setting dialog"
 msgstr ""
 
-#: ../../admin_menu/admin_menu.rst:987
+#: ../../admin_menu/admin_menu.rst:1024
 msgid ""
 "For more information about Backend.AI Cluster session, please refer to "
 ":ref:`Backend.AI Cluster Compute Session<backendai-cluster-compute-"
@@ -1733,7 +1824,7 @@ msgstr ""
 "Backend.AI 클러스터 세션에 대해 더 자세한 정보를 확인하시려면, :ref:`Backend.AI 클러스터 연산 세션"
 "<backendai-cluster-compute-session>` 섹션을 참고하십시오."
 
-#: ../../admin_menu/admin_menu.rst:990
+#: ../../admin_menu/admin_menu.rst:1027
 msgid ""
 "You can edit the configuration per job scheduler by clicking the "
 "Scheduler's config button. The values in the scheduler setting are the "
@@ -1745,7 +1836,7 @@ msgstr ""
 "그룹<scheduling-methods>` 의 스케줄러 설정값이 없을 때 사용하는 기본 값을 의미합니다. 자원 그룹에 설정한 값이 "
 "있을 경우, 이 값은 무시됩니다."
 
-#: ../../admin_menu/admin_menu.rst:995
+#: ../../admin_menu/admin_menu.rst:1032
 msgid ""
 "Currently supported scheduling methods include ``FIFO``, ``LIFO``, and "
 "``DRF``. Each method of scheduling is exactly the same as the "
@@ -1765,27 +1856,27 @@ msgstr ""
 msgid "System setting dialog scheduler settings"
 msgstr ""
 
-#: ../../admin_menu/admin_menu.rst:1008
+#: ../../admin_menu/admin_menu.rst:1045
 msgid "We will continue to add broader range of setting controls."
 msgstr "향후 CLI에서 지원하는 다양한 설정 변경 기능을 GUI에도 계속 추가할 예정입니다."
 
-#: ../../admin_menu/admin_menu.rst:1011
+#: ../../admin_menu/admin_menu.rst:1048
 msgid ""
 "System settings are default settings. If resource group has certain "
 "value, then it overrides configured value in system settings."
 msgstr "시스템 설정값은 기본 설정입니다. 자원 그룹에서 특정 값이 설정된 경우, 시스템 설정값이 아닌 자원 그룹 설정값을 적용합니다."
 
-#: ../../admin_menu/admin_menu.rst:1016
+#: ../../admin_menu/admin_menu.rst:1053
 msgid "Server management"
 msgstr "서버 관리 메뉴"
 
-#: ../../admin_menu/admin_menu.rst:1018
+#: ../../admin_menu/admin_menu.rst:1055
 msgid ""
 "Go to the Maintenance page and you will see some buttons to manage the "
 "server."
 msgstr "Maintenance 페이지로 이동하면 서버를 관리할 수 있는 몇 가지 버튼을 볼 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:1020
+#: ../../admin_menu/admin_menu.rst:1057
 msgid ""
 "RECALCULATE USAGE: Occasionally, due to unstable network connections or "
 "container management problem of Docker daemon, there may be a case where "
@@ -1797,7 +1888,7 @@ msgstr ""
 "Backend.AI에서 출력되는 자원 점유량이 일치하지 않는 경우가 있을 수 있습니다. 그 때 RECALCULATE USAGE "
 "버튼을 클릭하면 자원 점유량을 수동 보정할 수 있습니다."
 
-#: ../../admin_menu/admin_menu.rst:1025
+#: ../../admin_menu/admin_menu.rst:1062
 msgid ""
 "RESCAN IMAGES: Update image meta information from all registered Docker "
 "registries. It can be used when a new image is pushed to a Backend.AI-"
@@ -1810,17 +1901,17 @@ msgstr ""
 msgid "Maintenance page"
 msgstr ""
 
-#: ../../admin_menu/admin_menu.rst:1035
+#: ../../admin_menu/admin_menu.rst:1072
 msgid ""
 "We will continue to add other settings needed for management, such as "
 "removing unused images or registering periodic maintenance schedules."
 msgstr "사용하지 않는 이미지를 제거하거나, 주기적 관리 일정 등록 등 기타 관리에 필요한 설정이 계속 추가될 예정입니다."
 
-#: ../../admin_menu/admin_menu.rst:1040
+#: ../../admin_menu/admin_menu.rst:1077
 msgid "Detailed Information"
 msgstr "상세 정보"
 
-#: ../../admin_menu/admin_menu.rst:1042
+#: ../../admin_menu/admin_menu.rst:1079
 msgid ""
 "In Information page, you can see several detailed information and status "
 "of each feature. To see Manager version and API version, check the Core "
@@ -1831,7 +1922,7 @@ msgstr ""
 "Core 패널을 확인하십시오. Backend.AI를 구성하는 각 컴포넌트의 호환 가능 여부를 보려면 Component 패널을 "
 "확인하십시오."
 
-#: ../../admin_menu/admin_menu.rst:1048
+#: ../../admin_menu/admin_menu.rst:1085
 msgid "This page is only for showing current information."
 msgstr "이 페이지는 현재 정보를 보여주기 위한 것입니다."
 
