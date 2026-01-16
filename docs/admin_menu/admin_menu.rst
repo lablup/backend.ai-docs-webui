@@ -804,6 +804,43 @@ the services. If a direct connection from WSProxy to the Agent node is not
 available, however, please leave this field blank to fall back to the v1 API,
 which relays the traffic through Manager in a traditional way.
 
+Agent Selection Strategy
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+When scheduling a session, Backend.AI determines which agent (node) should host
+the session based on the configured strategy. There are two strategies available:
+
+.. list-table::
+   :header-rows: 1
+   :widths: 20 40 40
+
+   * - Strategy
+     - Description
+     - Use Cases
+   * - **Dispersed** (default)
+     - Distributes workloads across multiple agents, preferring agents with
+       more available resources for balanced GPU utilization.
+     - Even resource distribution, balanced GPU usage across nodes
+   * - **Concentrated**
+     - Packs workloads onto fewer agents, preferring agents already in use
+       to keep other nodes idle and available for scale-down.
+     - Cloud environments with autoscaling, reducing active node count,
+       cost optimization
+
+**Example**: With 4 GPU nodes and 2 session requests:
+
+- **Dispersed**: Places sessions on Node 1 and Node 2 (distributed across nodes)
+- **Concentrated**: Places both sessions on Node 1 (packed, Node 2-4 remain idle)
+
+.. note::
+   For Inference sessions, the ``enforce_spreading_endpoint_replica`` option can
+   be enabled to spread replicas across different agents even when using the
+   Concentrated strategy. This ensures model serving replicas are not all on
+   the same node.
+
+Scheduler Options
+~~~~~~~~~~~~~~~~~
+
 The resource group has further Scheduler Options. The details are described below.
 
 * Allowed session types:

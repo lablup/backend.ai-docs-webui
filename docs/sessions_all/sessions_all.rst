@@ -2,7 +2,7 @@
 Compute Sessions
 ================
 
-The most visited pages in the Backend.AI WebUI would be the 'Sessions' and 'Data' pages. 
+The most visited pages in the Backend.AI WebUI would be the 'Sessions' and 'Data' pages.
 This document will cover how to query and create container-based compute sessions and utilize various web applications on the 'Sessions' page.
 
 Start a new session
@@ -25,13 +25,16 @@ Click the 'START' button to start a new compute session.
 Session Type
 ^^^^^^^^^^^^
 
-In the first page, users can select the type of session, 'interactive' or 'batch'. 
-If needed, setting the name of the session (optional) is also available. 
+In the first page, users can select the type of session.
+If needed, setting the name of the session (optional) is also available.
 
 .. _session-naming-rule:
 
-* Session type: Determines the type of the session. There are two different types of session, \"Interactive\" and \"Batch\". 
-  The following are the primary distinctions between the two types:
+* Session type: Determines the type of the session. Backend.AI supports four
+  session types: Interactive, Batch, Inference, and System. Users can select
+  from Interactive, Batch, and Inference types, while System sessions are
+  managed automatically by the platform.
+  The following are the primary distinctions between each type:
 
   - Interactive compute session
 
@@ -49,11 +52,11 @@ If needed, setting the name of the session (optional) is also available.
     - Pre-define the script that will be executed when a compute session is
       ready.
     - This session will execute the script as soon as the compute session is ready, and then
-      automatically terminates the session as soon as the execution finishes. 
-      It will utilize the server farm's resources efficiently and flexibly if a user can write the execution script in advance or is 
+      automatically terminates the session as soon as the execution finishes.
+      It will utilize the server farm's resources efficiently and flexibly if a user can write the execution script in advance or is
       building a pipeline of workloads.
-    - Users can set the start time of a batch-type compute session. 
-      However, keep in mind that this feature does not guarantee that the session will start at the registered time. 
+    - Users can set the start time of a batch-type compute session.
+      However, keep in mind that this feature does not guarantee that the session will start at the registered time.
       It may still stay at 'PENDING' due to the lack of resources, etc. Rather, it guarantees that
       the session WILL NOT run until the start time.
     - Users can also set the 'Timeout Duration' of a batch-type compute session.
@@ -63,22 +66,39 @@ If needed, setting the name of the session (optional) is also available.
        :width: 800
        :align: center
 
+  - Inference session
+
+    - Inference sessions are designed for model serving and production AI deployments.
+    - Unlike interactive sessions, inference sessions provide automatic recovery if
+      terminated unexpectedly, enabling disaster recovery for production services.
+    - Features persistent endpoint URLs, auto-scaling, and health checks for
+      reliable model serving infrastructure.
+    - Requires a model definition file for configuration. See
+      :ref:`Model Serving <model-serving>` section for details.
+
+  - System session
+
+    - System sessions are used internally for infrastructure operations such as
+      sFTP file uploads.
+    - These sessions are not created directly by users; they are managed
+      automatically by the system.
+
 * Session name: Users can specify the name of the compute session to be
-  created. If set, this name appears in Session Info, so it is 
+  created. If set, this name appears in Session Info, so it is
   distinguishable among multiple compute sessions. If not specified, random
   word will be assigned automatically. Session names only accept alphanumeric
   characters between 4 and 64 without spaces.
 
-If users create a session with the ``super admin`` or ``admin`` account, 
-they can additionally assign a session owner. If you enable the toggle, 
-a user email field will appear. 
+If users create a session with the ``super admin`` or ``admin`` account,
+they can additionally assign a session owner. If you enable the toggle,
+a user email field will appear.
 
    .. image:: admin_launch_session_owner.png
       :align: center
 
-Enter the email of the user you want to assign the session to, 
-click the 'search' button, and the user's access key will be automatically registered. 
-You can also select a project and resource group. 
+Enter the email of the user you want to assign the session to,
+click the 'search' button, and the user's access key will be automatically registered.
+You can also select a project and resource group.
 
    .. image:: admin_launch_session_owner_project.png
       :align: center
@@ -104,11 +124,11 @@ Environments
 
 For detailed explanations of each item that can be set on the second page, please
 refer to the following:
-     
+
 * Environments: Users can select the base environment for compute sessions such as
-  TensorFlow, PyTorch, C++, etc. The compute session will automatically included into the base environment library. 
+  TensorFlow, PyTorch, C++, etc. The compute session will automatically included into the base environment library.
   If users choose another environment, the corresponding packages will be installed by default.
-* Version: Users can specify the version of the environment. 
+* Version: Users can specify the version of the environment.
   There are multiple versions in a single environment. For example, TensorFlow has multiple versions such as 1.15, 2.3, etc.,
 * Image Name: Users can specify the name of the image to be used for the
   compute session. This configuration may not be available depending on the environment settings.
@@ -141,16 +161,16 @@ Resource allocation
   .. image:: launch_session_resource.png
      :align: center
 
-  The meaning of each item is as follows. 
-  Clicking the 'Help (?)' button will also give more information. 
-  
+  The meaning of each item is as follows.
+  Clicking the 'Help (?)' button will also give more information.
+
   * CPU: The CPU performs basic arithmetic, logic, controlling, and input/output
     (I/O) operations specified by the instructions. In general, more CPUs are beneficial for high-performance computing workloads.
     But, to reflect the advantage of more CPUs, program code must be written to adapt multiple CPUs.
   * Memory: Computer memory is a temporary storage area. It holds the data and
     instructions that the Central Processing Unit (CPU) needs. When using a GPU in
     a machine learning workload, at least twice the memory of the
-    GPU to memory need to be allocated. Otherwise, GPU's idle time will increase, resulting 
+    GPU to memory need to be allocated. Otherwise, GPU's idle time will increase, resulting
     penalty in a performance.
   * Shared Memory: The amount of shared memory in GB to allocate for the compute
     session. Shared memory will use some part of the memory set in RAM. Therefore,
@@ -170,17 +190,17 @@ Resource allocation
      :align: center
 
   * Select Agent: Select the agent to be assigned. By default, the agent is automatically selected
-    by the scheduler. The agent selector displays the actual amount of available resources for each agent. 
+    by the scheduler. The agent selector displays the actual amount of available resources for each agent.
     Currently, this feature is only supported in single-node, single-container environments.
   * Cluster mode: Cluster mode allows users to create
-    multiple compute sessions at once. For more information, refer to the 
+    multiple compute sessions at once. For more information, refer to the
     :ref:`Overview of Backend.AI cluster compute session<backendai-cluster-compute-session>`.
 
   .. note::
      The Agent Select feature may not be available depending on the server environment.
-  
+
 * High-Performance Computing Optimizations: Backend.AI provides configuring values
-  related to HPC Optimizations. 
+  related to HPC Optimizations.
 
   Backend.AI provides configuration UI for internal control variable in ``nthreads-var``.
   Backend.AI sets this value equal to the number of session's CPU cores by default,
@@ -201,18 +221,18 @@ Data & Storage
 
 Click the 'Next' button below, or the 'Data & Storage' menu on the right to proceed to the next page.
 
-When a compute session is destroyed, data deletion is set to default. 
+When a compute session is destroyed, data deletion is set to default.
 However, data stored in the mounted folders will survive.
-Data in those folders can also be reused by mounting it when creating another compute session. 
+Data in those folders can also be reused by mounting it when creating another compute session.
 For further information on how to mount a folder and run a compute session, refer to
-:ref:`Mounting Folders to a Compute Session<session-mounts>`. 
+:ref:`Mounting Folders to a Compute Session<session-mounts>`.
 
 .. image:: launch_session_data.png
    :width: 850
    :align: center
 
-users can specify the data folders to mount in the compute session. 
-Folder explorer can be used by clicking folder name. For further information, 
+users can specify the data folders to mount in the compute session.
+Folder explorer can be used by clicking folder name. For further information,
 please refer :ref:`Explore Folder<explore_folder>` section.
 
 .. image:: folder_explorer.png
@@ -220,12 +240,12 @@ please refer :ref:`Explore Folder<explore_folder>` section.
    :align: center
 
 New folder can be created by clicking the '+' button next to the search box.
-When new folder is created, it will automatically be selected as the folder to mount. 
+When new folder is created, it will automatically be selected as the folder to mount.
 For further information, please refer :ref:`Create Storage Folder<create_storage_folder>` section.
 
 .. image:: folder_create_modal.png
    :width: 600
-   :align: center 
+   :align: center
 
 Network
 ^^^^^^^
@@ -233,7 +253,7 @@ Network
 Click the 'Next' button below, or the 'Network' menu on the right to proceed to the next page.
 On this page, Network configuration can be done such as Preopen Ports.
 
-* Set Preopen Ports: Provides an interface for users to set preopen ports in a 
+* Set Preopen Ports: Provides an interface for users to set preopen ports in a
   compute session. Refer to the :ref:`How to add preopen ports before session creation
   <set_preopen_ports>` for further information.
 
@@ -248,36 +268,36 @@ Confirm and Launch
 
 .. _confirm_and_launch:
 
-If you are done with the network setting, click the 'Next' button below, or 
+If you are done with the network setting, click the 'Next' button below, or
 'Confirm and Launch' button on the right to proceed to the last page.
 
 On the last page, users could view information of session(s) to create,
 such as environment itself, allocated resources, mount information,
 environment variables set on the previous pages, preopen ports, etc.,
-Review the settings, users could launch the session by clicking 'Launch' button. 
+Review the settings, users could launch the session by clicking 'Launch' button.
 Click the 'Edit' button located at the top right of each card to redirect to relevant page.
 
 .. image:: launch_session_confirm.png
    :width: 850
    :align: center
 
-If there is an issue with the settings, an error message will be displayed as follows. 
+If there is an issue with the settings, an error message will be displayed as follows.
 Users can edit their settings when this happens.
 
 .. image:: launch_session_error_card.png
    :width: 350
    :align: center
 
-When you click the 'Launch' button, a warning dialog appears stating that there are no mounted folders. 
+When you click the 'Launch' button, a warning dialog appears stating that there are no mounted folders.
 If folder mounting is not required, you can ignore the warning and click the 'Start' button in the dialog to proceed.
 
 .. image:: no_folder_notification_dialog.png
    :width: 350
    :align: center
 
-When a new compute session is added in the **Running** tab, a notification appears at the bottom-right corner of the screen.  
+When a new compute session is added in the **Running** tab, a notification appears at the bottom-right corner of the screen.
 The bottom-left area of the notification displays the session status, while the bottom-right area includes buttons for opening the app dialog,
-launching the terminal, viewing container logs, and terminating the session.  
+launching the terminal, viewing container logs, and terminating the session.
 You can also view this session creation notification by clicking **Notifications** in the header.
 
 .. image:: session_created.png
@@ -301,8 +321,8 @@ Recent History
 
 .. _recent-history:
 
-'Session Launcher' page provides a set of options for creating sessions. As of 24.09, 
-``Recent History`` feature has been added to remember information about previously created sessions. 
+'Session Launcher' page provides a set of options for creating sessions. As of 24.09,
+``Recent History`` feature has been added to remember information about previously created sessions.
 
 .. image:: recent_history.png
    :width: 800
@@ -312,8 +332,8 @@ Recent History
    :width: 800
    :align: center
 
-The ``Recent History`` modal stores information about the five most recently created sessions.  
-Clicking a session name takes you to the 'Confirm and Launch' page, which is the final step of session creation.  
+The ``Recent History`` modal stores information about the five most recently created sessions.
+Clicking a session name takes you to the 'Confirm and Launch' page, which is the final step of session creation.
 Each item can be renamed or pinned for easier access.
 
 .. note::
@@ -396,7 +416,7 @@ SSH key. If necessary, users can download it and use it for SSH / SFTP access to
 the container.
 
 Click the 'NEW' button at the top right and select the Notebook for Backend.AI,
-then the ipynb window appears where users can enter their own code. 
+then the ipynb window appears where users can enter their own code.
 
 .. image:: backendai_notebook_menu.png
    :width: 400
@@ -409,7 +429,7 @@ need to configure a separate environment on the local machine.
 
 .. image:: notebook_code_execution.png
 
-When window is closed, ``Untitled.ipynb`` file can be founded in the notebook file explorer. 
+When window is closed, ``Untitled.ipynb`` file can be founded in the notebook file explorer.
 Note that the files created here are deleted when session is terminated. The way to preserve those files even
 after the session is terminated is described in the Data & Storage Folders section.
 
@@ -419,7 +439,7 @@ after the session is terminated is described in the Data & Storage Folders secti
 Use web terminal
 ----------------
 
-This section will explain how to use the web terminal. Click the 
+This section will explain how to use the web terminal. Click the
 terminal icon(second button) to use the container's ttyd app. A terminal will appear in a new window
 and users can run shell commands to access the computational session as shown in the following figure.
 If familiar with the commands, users can easily run various Linux commands. ``Untitled.ipynb`` file
@@ -560,7 +580,7 @@ To add preopen ports, simply enter multiple values separated by either a comma (
 In the forth page of session creation page, users can add, update and delete written preopen ports. To see more detail
 information, please click 'Help (?)'' button.
 
-Users can put port numbers in between 1024 ~ 65535, to the input fields. Then, press 'Enter'. Users can specify multiple ports, separated by commas (,). 
+Users can put port numbers in between 1024 ~ 65535, to the input fields. Then, press 'Enter'. Users can specify multiple ports, separated by commas (,).
 Users can check the configured preopen ports in the session app launcher.
 
 .. image:: session_app_launcher.png
@@ -578,9 +598,9 @@ Save session commit
 
 .. _session-commit:
 
-Backend.AI supports \"Convert Session to Image\" feature from 24.03. Committing a ``RUNNING`` session will save the 
+Backend.AI supports \"Convert Session to Image\" feature from 24.03. Committing a ``RUNNING`` session will save the
 current state of the session as a new image. Click the 'Commit' button (the fourth icon) in the session detail panel
-to open a dialog displaying the session information. After entering the session name, users can convert the session to 
+to open a dialog displaying the session information. After entering the session name, users can convert the session to
 a new image. The session name must be 4 to 32 characters long and can only contain alphanumeric letters, hyphens (``-``),
 or underscores (``_``).
 
