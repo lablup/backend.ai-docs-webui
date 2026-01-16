@@ -67,11 +67,14 @@ msgstr ""
 #: ../../sessions_all/sessions_all.rst:33
 msgid ""
 "Session type: Determines the type of the session. Backend.AI supports "
-"four session types: Interactive, Batch, Inference, and System. The "
-"following are the primary distinctions between each type:"
+"four session types: Interactive, Batch, Inference, and System. Users can "
+"select from Interactive, Batch, and Inference types, while System "
+"sessions are managed automatically by the platform. The following are the "
+"primary distinctions between each type:"
 msgstr ""
 "세션 타입: 세션의 형태를 결정합니다. Backend.AI는 Interactive, Batch, Inference, System의 "
-"네 가지 세션 형태를 지원합니다. 각 형태의 주요한 차이점은 다음과 같습니다:"
+"네 가지 세션 형태를 지원합니다. 사용자는 Interactive, Batch, Inference 타입 중에서 선택할 수 "
+"있으며, System 세션은 플랫폼에서 자동으로 관리됩니다. 각 형태의 주요한 차이점은 다음과 같습니다:"
 
 #: ../../sessions_all/sessions_all.rst:37
 msgid "Interactive compute session"

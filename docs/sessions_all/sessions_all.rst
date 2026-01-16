@@ -31,7 +31,9 @@ If needed, setting the name of the session (optional) is also available.
 .. _session-naming-rule:
 
 * Session type: Determines the type of the session. Backend.AI supports four
-  session types: Interactive, Batch, Inference, and System.
+  session types: Interactive, Batch, Inference, and System. Users can select
+  from Interactive, Batch, and Inference types, while System sessions are
+  managed automatically by the platform.
   The following are the primary distinctions between each type:
 
   - Interactive compute session
