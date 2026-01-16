@@ -154,13 +154,11 @@ The model definition file follows the following format:
 
    .. note::
       Health checks are triggered by the app proxy coordinator's background task,
-      which runs at ``health_check_timer_interval`` (default: ``30`` seconds)
-      to efficiently manage all model services together.
-      If the model's ``interval`` is shorter than this trigger interval,
-      checks will occur at the coordinator's interval instead.
+      which runs at ``health_check_timer_interval`` (default: ``30`` seconds).
+      If the model's ``interval`` is shorter than this, checks occur at the
+      coordinator's interval instead.
 
-      For example, ``interval: 10.0`` with the default coordinator setting
-      results in 30-second checks.
+      The examples below assume ``health_check_timer_interval`` ≤ ``interval``.
 
 .. _health_check_behavior:
 
