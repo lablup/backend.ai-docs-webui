@@ -319,7 +319,28 @@ msgstr ""
 "로딩, GPU 초기화, 서비스 워밍업 시간을 확보합니다. 대형 모델의 경우 더 높은 값을 설정하세요 (예: 70B+ LLM의 경우 "
 "``300.0``)."
 
-#: ../../model_serving/model_serving.rst:157
+#: ../../model_serving/model_serving.rst:155
+msgid ""
+"Health checks are triggered by the app proxy coordinator's background task, "
+"which runs at ``health_check_timer_interval`` (default: ``30`` seconds) "
+"to efficiently manage all model services together. "
+"If the model's ``interval`` is shorter than this trigger interval, "
+"checks will occur at the coordinator's interval instead."
+msgstr ""
+"상태 확인은 app proxy coordinator의 백그라운드 태스크에 의해 트리거되며, "
+"이 태스크는 모든 모델 서비스를 효율적으로 관리하기 위해 ``health_check_timer_interval`` "
+"(기본값: ``30`` 초) 주기로 실행됩니다. 모델의 ``interval`` 설정이 이 트리거 주기보다 짧은 경우, "
+"상태 확인은 coordinator의 주기에 따라 수행됩니다."
+
+#: ../../model_serving/model_serving.rst:161
+msgid ""
+"For example, ``interval: 10.0`` with the default coordinator setting "
+"results in 30-second checks."
+msgstr ""
+"예를 들어, coordinator가 기본값일 때 ``interval: 10.0``으로 설정하면 "
+"실제로는 30초마다 상태 확인이 수행됩니다."
+
+#: ../../model_serving/model_serving.rst:165
 msgid "**Understanding Health Check Behavior**"
 msgstr "**상태 확인 동작 이해하기**"
 
