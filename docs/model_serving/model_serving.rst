@@ -152,6 +152,14 @@ The model definition file follows the following format:
         before starting health checks. This allows time for model loading, GPU initialization,
         and service warmup. Set higher values for large models (e.g., ``300.0`` for 70B+ LLMs).
 
+   .. note::
+      Health checks are triggered by the app proxy coordinator's background task,
+      which runs at ``health_check_timer_interval`` (default: ``30`` seconds).
+      If the model's ``interval`` is shorter than this, checks occur at the
+      coordinator's interval instead.
+
+      The examples below assume ``health_check_timer_interval`` ≤ ``interval``.
+
 .. _health_check_behavior:
 
 **Understanding Health Check Behavior**
