@@ -19,17 +19,18 @@ msgstr ""
 
 #: ../../appendix/resource_and_scheduler.rst:3
 msgid "Resource Monitoring and Automated Job Scheduling"
-msgstr ""
+msgstr "자원 모니터링 및 자동 작업 스케줄링"
 
 #: ../../appendix/resource_and_scheduler.rst:5
 msgid "Objectives"
-msgstr ""
+msgstr "목표"
 
 #: ../../appendix/resource_and_scheduler.rst:7
 msgid ""
 "Confirm that the change in resource usage status is displayed on the GUI "
 "after creating a compute session."
 msgstr ""
+"연산 세션 생성 후 GUI에서 자원 사용 상태의 변화가 표시되는 것을 확인합니다."
 
 #: ../../appendix/resource_and_scheduler.rst:9
 msgid ""
@@ -37,16 +38,20 @@ msgid ""
 "allowed amounts, the scheduler keeps the request on the job queue and "
 "marks it as in the PENDING state."
 msgstr ""
+"허용된 양 이상의 자원을 설정하여 연산 세션을 생성할 경우, 스케줄러가 해당 "
+"요청을 작업 큐에 보관하고 PENDING 상태로 표시하는 것을 확인합니다."
 
 #: ../../appendix/resource_and_scheduler.rst:12
 msgid ""
 "Check that the PENDING session is automatically scheduled and converted "
 "to the RUNNING state just after resources are available."
 msgstr ""
+"자원이 가용 상태가 되면 PENDING 세션이 자동으로 스케줄링되어 RUNNING "
+"상태로 전환되는 것을 확인합니다."
 
 #: ../../appendix/resource_and_scheduler.rst:17
 msgid "Resource monitoring through GUI"
-msgstr ""
+msgstr "GUI를 통한 자원 모니터링"
 
 #: ../../appendix/resource_and_scheduler.rst:19
 msgid ""
@@ -54,6 +59,8 @@ msgid ""
 "logging in with a user account, create a compute session. Resource "
 "allocation is set as shown in the following figure."
 msgstr ""
+"Backend.AI GUI 콘솔은 GUI를 통한 자원 모니터링을 지원합니다. 사용자 계정으로 "
+"로그인한 후 연산 세션을 생성합니다. 자원 할당은 다음 그림과 같이 설정합니다."
 
 #: ../../appendix/resource_and_scheduler.rst:27
 msgid ""
@@ -66,32 +73,43 @@ msgid ""
 "group, and the lower part shows the allocation status of total accessible"
 " resources."
 msgstr ""
+"LAUNCH 버튼을 클릭하여 연산 세션을 생성한 후 상단의 자원 표시기에서 CPU, RAM, "
+"FGPU에 할당된 자원량이 증가한 것을 확인할 수 있습니다. 현재 사용 중인 자원량과 "
+"할당 가능한 총 자원량을 확인할 수 있습니다. 표시 바는 상단과 하단 두 부분으로 "
+"나뉘어 있습니다. 상단 부분은 현재 스케일링 그룹 내의 자원 할당 상태를, 하단 "
+"부분은 접근 가능한 전체 자원의 할당 상태를 보여줍니다."
 
 #: ../../appendix/resource_and_scheduler.rst:35
 msgid "Upper: Allocated and available resources within the current scaling group"
-msgstr ""
+msgstr "상단: 현재 스케일링 그룹 내 할당된 자원 및 가용 자원"
 
 #: ../../appendix/resource_and_scheduler.rst:37
 msgid ""
 "(Resources allocated by the user in the current scaling group) / (Total "
 "resources allocatable by the user in the current scaling group)"
 msgstr ""
+"(현재 스케일링 그룹에서 사용자가 할당한 자원) / (현재 스케일링 그룹에서 "
+"사용자가 할당 가능한 총 자원)"
 
 #: ../../appendix/resource_and_scheduler.rst:40
 msgid "Lower: Total allocated and available resources"
-msgstr ""
+msgstr "하단: 전체 할당된 자원 및 가용 자원"
 
 #: ../../appendix/resource_and_scheduler.rst:42
 msgid ""
 "(Resources allocated by the user) / (Resources allocated by the user + "
 "Total resources allocatable by the user in the current scaling group)"
 msgstr ""
+"(사용자가 할당한 자원) / (사용자가 할당한 자원 + 현재 스케일링 그룹에서 "
+"사용자가 할당 가능한 총 자원)"
 
 #: ../../appendix/resource_and_scheduler.rst:48
 msgid ""
 "Next, let's delete the compute session we just created. End the session "
 "by pressing the red power button in the Control column."
 msgstr ""
+"다음으로 방금 생성한 연산 세션을 삭제해 보겠습니다. Control 열의 빨간색 전원 "
+"버튼을 눌러 세션을 종료합니다."
 
 #: ../../appendix/resource_and_scheduler.rst:55
 msgid ""
@@ -99,10 +117,12 @@ msgid ""
 "CPU, RAM, and FGPU of the resource indicator decrease by the exact amount"
 " of resources."
 msgstr ""
+"연산 세션이 목록에서 사라진 후, 자원 표시기의 CPU, RAM, FGPU가 해당 자원량만큼 "
+"정확히 감소하는 것을 확인할 수 있습니다."
 
 #: ../../appendix/resource_and_scheduler.rst:64
 msgid "Job scheduler"
-msgstr ""
+msgstr "작업 스케줄러"
 
 #: ../../appendix/resource_and_scheduler.rst:66
 msgid ""
@@ -115,6 +135,11 @@ msgid ""
 "becomes available again, the PENDING request is activated to perform "
 "compute session creation."
 msgstr ""
+"Backend.AI 서버는 자체 개발한 작업 스케줄러를 내장하고 있습니다. 자동으로 모든 "
+"워커 노드의 가용 자원을 확인하여 사용자의 자원 요청에 부합하는 워커로 연산 세션 "
+"생성 요청을 위임합니다. 또한, 자원이 부족한 경우 사용자의 연산 세션 생성 요청을 "
+"작업 큐에 PENDING 상태로 등록하고, 이후 자원이 다시 가용 상태가 되면 PENDING "
+"요청을 활성화하여 연산 세션 생성을 수행합니다."
 
 #: ../../appendix/resource_and_scheduler.rst:74
 msgid ""
@@ -129,6 +154,13 @@ msgid ""
 "fGPUs exists, 3 sessions requesting a total of 3 fGPU resources are "
 "created."
 msgstr ""
+"사용자 GUI 콘솔에서도 간단한 방법으로 작업 스케줄러의 동작을 확인할 수 있습니다. "
+"현재 GPU 호스트에서 최대 2 fGPU의 자원을 할당할 수 있다고 가정합니다. 이제 1 "
+"fGPU에 해당하는 자원 할당을 요청하는 연산 세션 3개를 동시에 생성해 보겠습니다. "
+"세션 시작 다이얼로그 하단에 GPU 및 Sessions 슬라이더가 있습니다. Sessions에서 "
+"1보다 큰 값을 지정하고 LAUNCH 버튼을 클릭하면 해당 수만큼의 세션이 동시에 "
+"요청됩니다. GPU와 Sessions를 각각 1과 3으로 설정해 봅시다. fGPU가 2 단위밖에 "
+"없는 상황에서 총 3 fGPU 자원을 요청하는 3개의 세션이 생성됩니다."
 
 #: ../../appendix/resource_and_scheduler.rst:88
 msgid ""
@@ -139,6 +171,11 @@ msgid ""
 "only registered in the job queue and has not actually been allocated a "
 "container due to insufficient GPU resources."
 msgstr ""
+"잠시 기다리면 세 개의 연산 세션이 목록에 나타납니다. 이 때 Status 열을 자세히 "
+"살펴보면, 세 개의 연산 세션 중 두 개는 RUNNING 상태이지만 나머지 하나는 "
+"PENDING 상태로 남아 있는 것을 확인할 수 있습니다. 이 PENDING 세션은 작업 "
+"큐에만 등록되어 있으며, GPU 자원 부족으로 인해 실제 컨테이너를 할당받지 "
+"못한 상태입니다."
 
 #: ../../appendix/resource_and_scheduler.rst:99
 msgid ""
@@ -149,4 +186,9 @@ msgid ""
 "user's compute session requests, and then automatically process the "
 "requests when resources become available."
 msgstr ""
+"이제 RUNNING 상태의 두 세션 중 하나를 삭제해 봅시다. 그러면 PENDING 상태였던 "
+"연산 세션이 곧 작업 스케줄러에 의해 자원을 할당받고 RUNNING 상태로 전환되는 "
+"것을 확인할 수 있습니다. 이처럼 작업 스케줄러는 작업 큐를 활용하여 사용자의 "
+"연산 세션 요청을 보관하고, 자원이 가용 상태가 되면 자동으로 요청을 "
+"처리합니다."
 

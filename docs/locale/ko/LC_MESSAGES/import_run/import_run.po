@@ -90,7 +90,7 @@ msgstr ""
 
 #: ../../import_run/import_run.rst:-1
 msgid "Session Launcher In Importing Jupyter notebook"
-msgstr ""
+msgstr "Jupyter notebook 가져오기 시 세션 런처"
 
 #: ../../import_run/import_run.rst:45
 msgid ""
@@ -100,7 +100,7 @@ msgstr "세션 페이지에서 불러오기 작업이 성공적으로 완료된 
 
 #: ../../import_run/import_run.rst:-1
 msgid "Session page with imported Jupyter notebook"
-msgstr ""
+msgstr "Jupyter notebook을 가져온 후의 세션 페이지"
 
 #: ../../import_run/import_run.rst:51
 msgid "Create executable Jupyter notebook button"

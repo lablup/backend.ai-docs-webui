@@ -25,7 +25,7 @@ msgstr "목차"
 
 #: ../../index.rst:7
 msgid "Backend.AI WebUI User Guide"
-msgstr ""
+msgstr "Backend.AI WebUI 사용자 가이드"
 
 #: ../../index.rst:9
 msgid "User's guide for the Backend.AI WebUI."

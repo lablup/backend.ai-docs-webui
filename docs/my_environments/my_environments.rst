@@ -4,7 +4,7 @@
 My Environments
 ===============
 
-From 24.03, a new \"My Environments\" page for users has been introduced.
+From 24.03, a new **My Environments** page for users has been introduced.
 This page displays contents such as a list of images created by the user's
 :ref:`session commits<session-commit>`.
 

@@ -173,6 +173,8 @@ msgid ""
 "Backend.AI nodes where the compute session is actually created, and there"
 " is no need to configure a separate environment on the local machine."
 msgstr ""
+"이 창에서 세션이 제공하는 환경을 활용하여 원하는 코드를 자유롭게 입력하고 실행할 수 있습니다. 코드는 실제로 연산 세션이 "
+"생성되어 있는 Backend.AI 노드에서 실행되며, 로컬 머신에 별도의 환경을 구성할 필요가 없습니다."
 
 #: ../../session_use/session_use.rst:112
 msgid ""

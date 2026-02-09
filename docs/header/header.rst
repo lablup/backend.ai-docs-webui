@@ -4,7 +4,7 @@ Top Bar Features
 
 .. _top-bar-features:
 
-The tob bar includes various features that support use of the WebUI.
+The top bar includes various features that support use of the WebUI.
 
 .. image:: header.png
    :align: center

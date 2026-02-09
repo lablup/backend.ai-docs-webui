@@ -19,8 +19,8 @@ GENERAL tab
 
 .. image:: user_settings_page.png
 
-There are lots of preference menu in GENERAL tab. you can search it by search field on top of the section,
-or you may just filter that you changed by clicking `Display Only Changes`. If you want to rollback the changes to before,
+The **GENERAL** tab contains many preference options. You can search for a specific setting using the search field at the top of the section,
+or filter to show only the settings you have changed by clicking 'Display Only Changes'. If you want to rollback the changes to before,
 click Reset button on the right top of the section.
 
 Enables Desktop Notifications
@@ -94,7 +94,7 @@ etc.).
 My Keypair Information
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Every user has at least one or more keypairs. you can see access and secret keypair by clicking 
+Every user has at least one or more keypairs. You can view the access and secret keypair by clicking 
 Config button below. Remember that main access keypair is only one.
 
 .. image:: my_keypair_information.png
@@ -133,7 +133,7 @@ two text area which corresponds to "public" and "private" key.
    :width: 400
    :align: center
 
-please enter the keys inside, and click ``SAVE`` button. Now you can access to backend.ai session using your own key.
+Enter the keys in the corresponding fields, and click the ``SAVE`` button. Now you can access to backend.ai session using your own key.
 
 .. image:: ssh_keypair_dialog_after.png
    :width: 400

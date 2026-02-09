@@ -74,7 +74,7 @@ that you checked in the User A's account again.
 .. image:: folder_explorer_in_B.png
 
 Let's create a compute session
-by mounting this storge folder with the User B's account.
+by mounting this storage folder with the User B's account.
 
 .. image:: launch_session_with_test_mounted_B.png
    :width: 100%

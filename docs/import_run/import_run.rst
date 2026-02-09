@@ -6,13 +6,13 @@ Import & Run notebooks and web based Git repositories
 
 On the 'Import & Run' page, Backend.AI supports executing Jupyter notebook files and importing web based Git repositories
 such as GitHub and GitLab on the fly. You don't need to create or download into your local storage
-and re-upload it. The only thing you have to do is input a valid URL you want to execute or import,
+and re-upload it. Simply input a valid URL you want to execute or import,
 and click the button on the right side.
 
 Import and run Jupyter notebooks
 ----------------------------------
 
-To import Jupyter notebooks and run, you need one thing, the valid URL for the notebook file.
+To import Jupyter notebooks and run, you need a valid URL for the notebook file.
 For example, if you want execute Jupyter notebook that's in github, you can copy and paste
 the URL and click 'IMPORT & RUN' button.
 
@@ -57,7 +57,7 @@ the GitHub repositories or where it supports html or markdown.
 
 .. note::
 
-   your account must be logined before clicking the button. Otherwise, you have to login first.
+   You must be logged in before clicking the button. Otherwise, you have to login first.
 
 .. image:: create_notebook_button.png
    :width: 350

@@ -5,7 +5,7 @@ Mounting Folders to a Compute Session
 .. _session-mounts:
 
 Backend.AI provides a function to mount storage folders when creating a compute session.
-When new compute session is started, user will have access to the``/home/work/`` directory.
+When new compute session is started, user will have access to the ``/home/work/`` directory.
 Normal directories and files created under ``/home/work/`` will disappear when the compute session is terminated.
 This is because compute sessions are dynamically created and deleted based on the container.
 To preserve data inside a container regardless of the container's lifecycle, a separate host folder must be mounted in the container, and then files must be created within the mounted folder.
@@ -38,7 +38,7 @@ and then create a session.
 In the created session, click the created session name to open detail information drawer. Then, 
 click the 'Execute Terminal App' icon button (upper right corner, second from the right) to open terminal app.
 Or you can also open terminal app from the notification.
-``ls`` command will mount ``user1-ml-test` folder and ``user2-vfolder`` under the ``user1-ml-test`` 
+``ls`` command will mount ``user1-ml-test`` folder and ``user2-vfolder`` under the ``user1-ml-test`` 
 and ``user2-vfolder`` folders are mounted under the home directory. 
 
 .. image:: execute_terminal_app.png
@@ -60,18 +60,18 @@ Backend.AI gives an option to preserve files in folders when a compute session i
 The example below illustrates what's happening. 
 
 Under the ``user2-vfolder``, create a ``test_file``.
-Fill the contents with \"file inside user2-vfolder\".
+Fill the contents with "file inside user2-vfolder".
 
 .. image:: mounted_folders_in_terminal.png
    :alt: Mounted folders in terminal
 
 Running ``ls`` command against ``user2-vfolder``, users can confirm the file was created successfully. 
-Please note the contents of the file can be chekced with ``cat`` command. 
+Please note the contents of the file can be checked with ``cat`` command. 
 
 Now delete the compute session and go to the Storage page. 
 Locate the ``user2-vfolder folder``, open a file explorer and check that the ``test_file`` exists. 
 Click the 'download' button in 'Actions' tab to download the file to the local machine and open it 
-to confirm that the contents are \"file inside user2-vfolder\".
+to confirm that the contents are "file inside user2-vfolder".
 
 .. image:: download_file_from_folder.png
    :alt: Download icon in the folder explorer
@@ -119,7 +119,7 @@ Install packages via Homebrew
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Package managers like Ubuntu ``apt`` or CentOS ``yum`` usually require the ``root`` permission. 
-For security reasons, ``sudo`` and ``root`` accesses are blocked by default in Backend.AI's compute session (Depending on the configuration, this may be allowed), so we recommend to use `Homebrew on Linux <https://docs.brew.sh/Homebrew-on-Linux>`_ which does not require ``sudo``.
+For security reasons, ``sudo`` and ``root`` accesses are blocked by default in Backend.AI's compute session (Depending on the configuration, this may be allowed), it is recommended to use `Homebrew on Linux <https://docs.brew.sh/Homebrew-on-Linux>`_ which does not require ``sudo``.
 
 Homebrew can be configured as follows: 
 

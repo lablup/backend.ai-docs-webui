@@ -5,8 +5,8 @@ Compute Sessions
 The most visited pages in the Backend.AI WebUI would be the 'Sessions' and 'Data' pages.
 This document will cover how to query and create container-based compute sessions and utilize various web applications on the 'Sessions' page.
 
-Start a new session
--------------------
+Starting a New Session
+----------------------
 
 .. _create_session:
 
@@ -367,8 +367,8 @@ Click the 'Info' button to check the details when available.
 .. _use_session:
 
 
-Use Jupyter Notebook
---------------------
+Using Jupyter Notebook
+----------------------
 
 Let’s look at how to use and manage an already running compute session.
 Click the first icon in the upper-right corner of the session detail panel to open the app launcher, which shows
@@ -429,15 +429,15 @@ need to configure a separate environment on the local machine.
 
 .. image:: notebook_code_execution.png
 
-When window is closed, ``Untitled.ipynb`` file can be founded in the notebook file explorer.
+When window is closed, ``Untitled.ipynb`` file can be found in the notebook file explorer.
 Note that the files created here are deleted when session is terminated. The way to preserve those files even
 after the session is terminated is described in the Data & Storage Folders section.
 
 .. image:: untitled_ipynb_created.png
 
 
-Use web terminal
-----------------
+Using the Web Terminal
+----------------------
 
 This section will explain how to use the web terminal. Click the
 terminal icon(second button) to use the container's ttyd app. A terminal will appear in a new window
@@ -455,16 +455,16 @@ In addition to this, users can use web-based services such as TensorBoard, Jupyt
 Lab, etc., depending on the type of environments provided by the compute session.
 
 
-Query compute session log
--------------------------
+Viewing Compute Session Logs
+----------------------------
 
 Users can view the log of the compute session by clicking the last icon in the
 Control panel of the running compute session.
 
 .. image:: session_log.png
 
-Rename running session
-----------------------
+Renaming a Running Session
+--------------------------
 
 Name of the active session can be changed. Click the 'Edit' button in the session detail
 panel to change the session name.
@@ -475,8 +475,8 @@ New session name should also follow the :ref:`the authoring rule<session-naming-
 
 .. _delete_session:
 
-Delete a compute session
-------------------------
+Deleting a Compute Session
+--------------------------
 
 To terminate a specific session, simply click on the red power button and click
 'Terminate' button in the dialog. Since the data in the folder inside the compute
@@ -593,8 +593,8 @@ Users can check the configured preopen ports in the session app launcher.
    before use.
 
 
-Save session commit
--------------------
+Saving a Session Commit
+-----------------------
 
 .. _session-commit:
 
@@ -658,8 +658,8 @@ documentation and other usage examples on the Internet.
 
 Here we are introducing some simple but useful features.
 
-Copy terminal contents
-^^^^^^^^^^^^^^^^^^^^^^
+Copying Terminal Contents
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 tmux offers a number of useful features, but it's a bit confusing for first-time
 users. In particular, tmux has its own clipboard buffer, so when copying the
@@ -677,10 +677,10 @@ typing in the status bar at the bottom of the screen. Then drag the desired text
 from the terminal with the mouse and press the ``Ctrl-C`` or ``Cmd-C`` (in Mac)
 to copy them to the clipboard of the user's computer.
 
-With mouse support turned off, scrolling through the mouse wheel is not supprted, to see
+With mouse support turned off, scrolling through the mouse wheel is not supported, to see
 the contents of the previous page from the terminal. In this case, users can turn
 on mouse support. Press ``Ctrl-B``, and this time, type ``:set -g mouse
-on``. Now scrolling through mouse wheelis available to see the contents of the previous page.
+on``. Now scrolling through the mouse wheel is available to see the contents of the previous page.
 
 If you remember ``:set -g mouse off`` or ``:set -g mouse on`` after ``Ctrl-B``,
 you can use the web terminal more conveniently.
@@ -696,8 +696,8 @@ you can use the web terminal more conveniently.
    * Copy: Hold down ``Shift``, right-click and drag
    * Paste: Press ``Ctrl-Shift-V``
 
-Check the terminal history using keyboard
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Checking Terminal History with Keyboard
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 There is also a way to copy the terminal contents and check the previous
 contents of the terminal simultaneously. It is to check the previous contents
@@ -706,8 +706,8 @@ Up`` and/or ``Page Down`` keys. To exit search mode, just press the ``q``
 key. With this method, users can check the contents of the terminal history even
 when the mouse support is turned off.
 
-Spawn multiple shells
-^^^^^^^^^^^^^^^^^^^^^
+Spawning Multiple Shells
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 The main advantage of tmux is to launch and use multiple shells in one
 terminal window. Pressing ``Ctrl-B`` key and ``c``. will show the new shell environment.

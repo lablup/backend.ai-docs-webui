@@ -87,7 +87,7 @@ msgstr "Backend.AI™에 대한 저작권은 Lablup Inc.에서 소유하고 있�
 
 #: ../../disclaimer.rst:28
 msgid "©2015-\\ |year| Lablup Inc. All rights reserved."
-msgstr ""
+msgstr "©2015-\\ |year| Lablup Inc. All rights reserved."
 
 #: ../../disclaimer.rst:30
 msgid "Document Version: v\\ |version|.\\ |version_date|"

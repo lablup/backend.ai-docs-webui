@@ -75,7 +75,7 @@ msgstr "사용자A의 계정으로 전환한 후, 리스트에 있는 ``tests`` 
 
 #: ../../share_vfolder/share_vfolder.rst:-1
 msgid "share button"
-msgstr ""
+msgstr "공유 버튼"
 
 #: ../../share_vfolder/share_vfolder.rst:39
 msgid ""

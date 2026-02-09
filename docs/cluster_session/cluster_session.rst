@@ -26,7 +26,7 @@ For detailed about Backend.AI cluster session, refer to the following.
    overview_cluster_session.png
 
 * Containers under a cluster session are created across one or more Agent
-  nodes which belon to a resource group.
+  nodes which belong to a resource group.
 * A cluster session consists of one main container (``main1``) and one or more
   sub containers (``subX``).
 * All containers under a cluster session are created by allocating the same

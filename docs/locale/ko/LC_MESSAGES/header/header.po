@@ -29,7 +29,7 @@ msgstr "상단 바에는 WebUI 사용을 지원하는 다양한 기능이 포함
 
 #: ../../header/header.rst:-1
 msgid "WebUI Top Bar"
-msgstr ""
+msgstr "WebUI 상단 바"
 
 #: ../../header/header.rst:15
 msgid "Project selector"
@@ -96,7 +96,7 @@ msgstr "상단 바 우측의 사람 아이콘 버튼을 클릭하여, 사용자 
 
 #: ../../header/header.rst:-1
 msgid "user drop down"
-msgstr ""
+msgstr "사용자 드롭다운 메뉴"
 
 #: ../../header/header.rst:71
 msgid ""
@@ -138,7 +138,7 @@ msgstr "사용자 정보 변경을 클릭하면, 다음과 같은 다이얼로�
 
 #: ../../header/header.rst:-1
 msgid "My account information"
-msgstr ""
+msgstr "내 계정 정보"
 
 #: ../../header/header.rst:90
 msgid ""

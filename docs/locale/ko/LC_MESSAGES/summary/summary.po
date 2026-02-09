@@ -123,15 +123,15 @@ msgstr ""
 
 #: ../../summary/summary.rst:55
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../summary/summary.rst:56
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: ../../summary/summary.rst:57
 msgid "Mac"
-msgstr ""
+msgstr "Mac"
 
 #: ../../summary/summary.rst:60
 msgid ""

@@ -207,9 +207,8 @@ msgid "**Key-Value Descriptions for Model Definition File**"
 msgstr "**모델 정의 파일에 대한 키-값 설명**"
 
 #: ../../model_serving/model_serving.rst:124
-#, fuzzy
 msgid "Fields without \"(Required)\" mark are optional."
-msgstr "\"(필수)\" 항목이 기재되어 있지 않은 항목은 선택 입력입니다."
+msgstr "\"(필수)\" 표시가 없는 항목은 선택 입력입니다."
 
 #: ../../model_serving/model_serving.rst:126
 msgid "``name`` (Required): Defines the name of the model."
@@ -474,7 +473,7 @@ msgstr ""
 
 #: ../../model_serving/model_serving.rst:-1
 msgid "Model type folder creation"
-msgstr ""
+msgstr "모델 타입 폴더 생성"
 
 #: ../../model_serving/model_serving.rst:278
 msgid ""
@@ -540,7 +539,7 @@ msgstr ""
 
 #: ../../model_serving/model_serving.rst:-1
 msgid "Service launcher"
-msgstr ""
+msgstr "서비스 런처"
 
 #: ../../model_serving/model_serving.rst:320
 msgid ""
@@ -560,7 +559,7 @@ msgstr ""
 
 #: ../../model_serving/model_serving.rst:-1
 msgid "Runtime Variant"
-msgstr ""
+msgstr "런타임 배리언트"
 
 #: ../../model_serving/model_serving.rst:330
 msgid ""
@@ -713,7 +712,7 @@ msgstr "모델 정의 파일(``model-definition.yml``) 의 형식이 잘못된 �
 
 #: ../../model_serving/model_serving.rst
 msgid "Serving route error"
-msgstr ""
+msgstr "서빙 라우트 오류"
 
 #: ../../model_serving/model_serving.rst:422
 msgid ""
@@ -748,7 +747,7 @@ msgstr ""
 
 #: ../../model_serving/model_serving.rst:-1
 msgid "Auto scaling rules"
-msgstr ""
+msgstr "오토스케일링 규칙"
 
 #: ../../model_serving/model_serving.rst:444
 msgid ""
@@ -851,7 +850,7 @@ msgstr "쿨다운 시간(초): 규칙이 한 번 실행된 후, 일정 시간(�
 
 #: ../../model_serving/model_serving.rst:-1
 msgid "Auto scaling rules modal"
-msgstr ""
+msgstr "오토스케일링 규칙 모달"
 
 #: ../../model_serving/model_serving.rst:481
 msgid "Generating Tokens"
@@ -877,7 +876,7 @@ msgstr ""
 
 #: ../../model_serving/model_serving.rst:-1
 msgid "Routing page"
-msgstr ""
+msgstr "라우팅 페이지"
 
 #: ../../model_serving/model_serving.rst:498
 msgid ""
@@ -890,7 +889,7 @@ msgstr ""
 
 #: ../../model_serving/model_serving.rst:-1
 msgid "Token generation dialog"
-msgstr ""
+msgstr "토큰 생성 대화 상자"
 
 #: ../../model_serving/model_serving.rst:507
 msgid ""

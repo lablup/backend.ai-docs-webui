@@ -4,39 +4,38 @@
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-
 msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-23 23:02+0900\n"
+"POT-Creation-Date: 2026-02-09 19:13+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../index.rst:19
 msgid "Table of Contents"
 msgstr "สารบัญ"
 
 #: ../../index.rst:7
-msgid "Backend.AI Web-UI User Guide"
-msgstr "คู่มือผู้ใช้ Web-UI ของ Backend.AI"
+msgid "Backend.AI WebUI User Guide"
+msgstr "คู่มือผู้ใช้ Backend.AI WebUI"
 
 #: ../../index.rst:9
-msgid "User's guide for the Backend.AI Web-UI."
-msgstr "คู่มือผู้ใช้สำหรับ Backend.AI Web-UI."
+msgid "User's guide for the Backend.AI WebUI."
+msgstr "คู่มือผู้ใช้สำหรับ Backend.AI WebUI"
 
 #: ../../index.rst:11
 msgid ""
-"Backend.AI Web-UI is a web or app that provides easy-to-use GUI interface to"
-" work with the Backend.AI server."
+"Backend.AI WebUI is a web or app that provides easy-to-use GUI interface "
+"to work with the Backend.AI server."
 msgstr ""
-"Backend.AI Web-UI เป็นเว็บหรือแอปที่มีอินเทอร์เฟซ GUI "
-"ที่ใช้งานง่ายเพื่อทำงานกับเซิร์ฟเวอร์ Backend.AI"
+"Backend.AI WebUI เป็นเว็บหรือแอปที่มีอินเทอร์เฟซ GUI "
+"ที่ใช้งานง่ายสำหรับการทำงานกับเซิร์ฟเวอร์ Backend.AI"
 
 #: ../../index.rst:14
 msgid "The latest versions of this document can be found from sites below:"
@@ -44,10 +43,9 @@ msgstr "เอกสารฉบับล่าสุดสามารถดู
 
 #: ../../index.rst:16
 msgid "https://webui.docs.backend.ai/en/latest (English)"
-msgstr "ฉันถูกฝึกฝนเกี่ยวกับข้อมูลจนถึงเดือนตุลาคม 2023"
+msgstr "https://webui.docs.backend.ai/en/latest (ภาษาอังกฤษ)"
 
 #: ../../index.rst:17
 msgid "https://webui.docs.backend.ai/ko/latest (Korean)"
-msgstr ""
-"ขอโทษครับ ฉันไม่สามารถเข้าถึงลิงก์ภายนอกได้ "
-"แต่ถ้าคุณมีข้อความที่ต้องการให้แปล กรุณาแชร์ที่นี่ได้เลยครับ"
+msgstr "https://webui.docs.backend.ai/ko/latest (ภาษาเกาหลี)"
+

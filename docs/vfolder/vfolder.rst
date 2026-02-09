@@ -45,12 +45,12 @@ The Storage Status and Quota per storage volume show the following information:
     * User: Current user folder usage / current user folder quota scope.
 
 .. note:: 
-   Please remind that quota is only available in storage that provides quota setting 
+   Note that quota is only available in storage that provides quota setting
    (e.g. XFS, CephFS, NetApp, Purestorage, etc.). For the quota setting, please refer
    to the :ref:`Quota Setting Panel<quota-setting-panel>` section.
 
-Create storage folder
----------------------
+Creating a Storage Folder
+---------------------------
 
 .. _create_storage_folder:
 
@@ -83,8 +83,8 @@ under the user's default working directory, ``/home/work/``, and the file stored
 directory will not be deleted when the compute session is terminated. 
 (If you delete the folder, the file will also be deleted.)
 
-Explore folder
---------------
+Exploring a Folder
+--------------------
 
 .. _explore_folder:
 
@@ -118,8 +118,8 @@ file system. But, it usually cannot exceed 255 characters.
    not be shown on the screen. In such cases, please use the terminal or other applications to view all files
    in the directory.
 
-Rename folder
--------------
+Renaming a Folder
+-----------------
 
 .. _rename_folder:
 
@@ -130,8 +130,8 @@ clicking the edit button.
    :alt: Folder rename dialog
 
 
-Delete folder
----------------
+Deleting a Folder
+-----------------
 
 .. _delete_folder:
 
@@ -304,7 +304,7 @@ You will see that moving operation is successfully finished.
 
 .. note::
    FileBrowser is provided via application inside a compute session currently.
-   We are planning to update FileBrowser so that it can run independently
+   Backend.AI plans to update FileBrowser so that it can run independently
    without creating a session.
 
 Using SFTP Server

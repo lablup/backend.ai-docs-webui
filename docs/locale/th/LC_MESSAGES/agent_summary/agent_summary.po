@@ -4,19 +4,18 @@
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-
 msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-23 23:02+0900\n"
+"POT-Creation-Date: 2026-02-09 19:13+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../agent_summary/agent_summary.rst:3
 msgid "Agent Summary"
@@ -24,19 +23,67 @@ msgstr "สรุปตัวแทน"
 
 #: ../../agent_summary/agent_summary.rst:5
 msgid ""
-"For now, users with admin role only can see agent information via "
-"administration menu. From 22.09 Backend.AI WebUI supports showing partial "
-"information of agent node(s) when configuration is set. In Agent summary "
-"menu, you can see the list of agent information including endpoint address, "
-"CPU architecture, resource utilization, and whether the agent is schedulable"
-" or not. This menu is useful to check resource allocation on session "
-"creation."
+"If you have admin privileges, you can access full agent information via "
+"the **Administration** menu. From version 22.09, Backend.AI WebUI also "
+"supports displaying partial agent node information for non-admin users "
+"when the server configuration allows it. On the **Agent Summary** page, "
+"you can view agent information including endpoint address, CPU "
+"architecture, resource allocation, and whether the agent is schedulable. "
+"This page is useful for checking resource availability before creating a "
+"compute session."
 msgstr ""
-"ขณะนี้ "
-"ผู้ใช้ที่มีบทบาทผู้ดูแลระบบเท่านั้นที่สามารถเห็นข้อมูลเอเจนท์ผ่านเมนูการจัดการ"
-" จากวันที่ 22.09 Backend.AI WebUI "
-"สนับสนุนการแสดงข้อมูลบางส่วนของโหนดเอเจนท์เมื่อมีการตั้งค่าคอนฟิก "
-"ในเมนูสรุปเอเจนท์ คุณสามารถเห็นรายการข้อมูลเอเจนท์รวมถึงที่อยู่จุดสิ้นสุด "
-"สถาปัตยกรรม CPU การใช้ทรัพยากร "
-"และว่าเอเจนท์นั้นสามารถกำหนดตารางเวลาได้หรือไม่ "
-"เมนูนี้มีประโยชน์ในการตรวจสอบการจัดสรรทรัพยากรในการสร้างเซสชัน"
+"หากคุณมีสิทธิ์ผู้ดูแลระบบ คุณสามารถเข้าถึงข้อมูลเอเจนต์ทั้งหมดได้ผ่านเมนู "
+"**การจัดการ** ตั้งแต่เวอร์ชัน 22.09 Backend.AI WebUI "
+"ยังรองรับการแสดงข้อมูลบางส่วนของโหนดเอเจนต์สำหรับผู้ใช้ที่ไม่ใช่ผู้ดูแลระบบ "
+"เมื่อการกำหนดค่าเซิร์ฟเวอร์อนุญาต ในหน้า **สรุปเอเจนต์** "
+"คุณสามารถดูข้อมูลเอเจนต์ได้ รวมถึงที่อยู่ endpoint สถาปัตยกรรม CPU "
+"การจัดสรรทรัพยากร และว่าเอเจนต์สามารถกำหนดตารางเวลาได้หรือไม่ "
+"หน้านี้มีประโยชน์สำหรับการตรวจสอบทรัพยากรที่มีอยู่ก่อนสร้างเซสชันการประมวลผล"
+
+#: ../../agent_summary/agent_summary.rst:14
+msgid "Agent Information"
+msgstr "ข้อมูลเอเจนต์"
+
+#: ../../agent_summary/agent_summary.rst:16
+msgid ""
+"The agent list displays the following information for each connected "
+"agent node:"
+msgstr "รายการเอเจนต์จะแสดงข้อมูลต่อไปนี้สำหรับโหนดเอเจนต์แต่ละตัวที่เชื่อมต่ออยู่:"
+
+#: ../../agent_summary/agent_summary.rst:18
+msgid "**Endpoint**: The network address of the agent node."
+msgstr "**Endpoint**: ที่อยู่เครือข่ายของโหนดเอเจนต์"
+
+#: ../../agent_summary/agent_summary.rst:19
+msgid ""
+"**CPU Architecture**: The CPU architecture of the agent (e.g., "
+"``x86_64``, ``aarch64``)."
+msgstr ""
+"**CPU Architecture**: สถาปัตยกรรม CPU ของเอเจนต์ (เช่น "
+"``x86_64``, ``aarch64``)"
+
+#: ../../agent_summary/agent_summary.rst:20
+msgid ""
+"**Resource Allocation**: A summary of the resources currently allocated "
+"and available on the agent, including CPU, memory, and AI accelerators."
+msgstr ""
+"**Resource Allocation**: สรุปทรัพยากรที่จัดสรรอยู่ในปัจจุบัน"
+"และที่มีอยู่บนเอเจนต์ รวมถึง CPU หน่วยความจำ และตัวเร่ง AI"
+
+#: ../../agent_summary/agent_summary.rst:21
+msgid ""
+"**Schedulable**: Indicates whether the agent is available for scheduling "
+"new compute sessions. If the agent is not schedulable, new sessions "
+"cannot be placed on it."
+msgstr ""
+"**Schedulable**: ระบุว่าเอเจนต์พร้อมสำหรับการกำหนดตารางเซสชันการประมวลผลใหม่หรือไม่ "
+"หากเอเจนต์ไม่สามารถกำหนดตารางได้ จะไม่สามารถวางเซสชันใหม่บนเอเจนต์นั้นได้"
+
+#: ../../agent_summary/agent_summary.rst:24
+msgid ""
+"Depending on the server configuration, the agent summary feature may not "
+"be available. In that case, please contact your system administrator."
+msgstr ""
+"ขึ้นอยู่กับการกำหนดค่าเซิร์ฟเวอร์ ฟีเจอร์สรุปเอเจนต์อาจไม่พร้อมใช้งาน "
+"ในกรณีนั้น โปรดติดต่อผู้ดูแลระบบของคุณ"
+

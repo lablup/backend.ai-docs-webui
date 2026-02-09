@@ -16,6 +16,9 @@ myst-parser = "^2.0.0"
 sphinx_rtd_theme = "^2.0.0"
 sphinx-intl = "^2.1.0"
 
+[tool.poetry.scripts]
+post_install_nltk = "scripts.download_nltk:main"
+
 [tool.poetry.dev-dependencies]
 # pytest = "^4.6"
 

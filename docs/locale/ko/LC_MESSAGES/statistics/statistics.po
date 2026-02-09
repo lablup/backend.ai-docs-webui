@@ -25,7 +25,7 @@ msgstr "Statistics 페이지"
 
 #: ../../statistics/statistics.rst:6
 msgid "Allocation history"
-msgstr ""
+msgstr "할당 기록"
 
 #: ../../statistics/statistics.rst:8
 msgid ""
@@ -77,11 +77,11 @@ msgstr ""
 
 #: ../../statistics/statistics.rst:-1
 msgid "Usage Panel"
-msgstr ""
+msgstr "사용량 패널"
 
 #: ../../statistics/statistics.rst:29
 msgid "User session history"
-msgstr ""
+msgstr "사용자 세션 기록"
 
 #: ../../statistics/statistics.rst:31
 msgid ""

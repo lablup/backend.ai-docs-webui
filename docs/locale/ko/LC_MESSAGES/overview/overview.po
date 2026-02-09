@@ -72,7 +72,7 @@ msgstr "주요 개념"
 
 #: ../../overview/overview.rst:-1
 msgid "Diagram explaining key concepts"
-msgstr ""
+msgstr "주요 개념 설명 다이어그램"
 
 #: ../../overview/overview.rst:34
 msgid ""
@@ -237,7 +237,7 @@ msgstr "전용 기능"
 
 #: ../../overview/overview.rst:102
 msgid "AMD"
-msgstr ""
+msgstr "AMD"
 
 #: ../../overview/overview.rst:102
 msgid "MI250X or later"
@@ -245,35 +245,35 @@ msgstr "MI250X 이상"
 
 #: ../../overview/overview.rst:104
 msgid "Furiosa"
-msgstr ""
+msgstr "Furiosa"
 
 #: ../../overview/overview.rst:104
 msgid "Warboy / RNGD"
-msgstr ""
+msgstr "Warboy / RNGD"
 
 #: ../../overview/overview.rst:106
 msgid "Graphcore"
-msgstr ""
+msgstr "Graphcore"
 
 #: ../../overview/overview.rst:106
 msgid "IPU"
-msgstr ""
+msgstr "IPU"
 
 #: ../../overview/overview.rst:108
 msgid "Groq"
-msgstr ""
+msgstr "Groq"
 
 #: ../../overview/overview.rst:108
 msgid "Groqcard"
-msgstr ""
+msgstr "Groqcard"
 
 #: ../../overview/overview.rst:110
 msgid "HyperAccel"
-msgstr ""
+msgstr "HyperAccel"
 
 #: ../../overview/overview.rst:112
 msgid "Intel"
-msgstr ""
+msgstr "Intel"
 
 #: ../../overview/overview.rst:112
 msgid "Gaudi 2 and 3"
@@ -327,35 +327,35 @@ msgstr "GPU-GPU 네트워크 자동 구성"
 
 #: ../../overview/overview.rst:130
 msgid "Rebellions"
-msgstr ""
+msgstr "Rebellions"
 
 #: ../../overview/overview.rst:130
 msgid "ATOM / ATOM+"
-msgstr ""
+msgstr "ATOM / ATOM+"
 
 #: ../../overview/overview.rst:132
 msgid "SambaNova"
-msgstr ""
+msgstr "SambaNova"
 
 #: ../../overview/overview.rst:132
 msgid "SN30/40L"
-msgstr ""
+msgstr "SN30/40L"
 
 #: ../../overview/overview.rst:134
 msgid "Sapeon"
-msgstr ""
+msgstr "Sapeon"
 
 #: ../../overview/overview.rst:134
 msgid "X220 / X330"
-msgstr ""
+msgstr "X220 / X330"
 
 #: ../../overview/overview.rst:136
 msgid "Tenstorrent"
-msgstr ""
+msgstr "Tenstorrent"
 
 #: ../../overview/overview.rst:136
 msgid "Wormhole"
-msgstr ""
+msgstr "Wormhole"
 
 #: ../../overview/overview.rst:139
 msgid "**Other Features**"
@@ -443,7 +443,7 @@ msgstr "세션 (컨테이너) 별 로그"
 
 #: ../../overview/overview.rst:176
 msgid "UI / UX"
-msgstr ""
+msgstr "UI / UX"
 
 #: ../../overview/overview.rst:176
 msgid "GUI web interface"
@@ -471,27 +471,27 @@ msgstr "(엔터프라이즈) 스토리지 솔루션 통합:"
 
 #: ../../overview/overview.rst:187
 msgid "CephFS"
-msgstr ""
+msgstr "CephFS"
 
 #: ../../overview/overview.rst:188
 msgid "Dell PowerScale"
-msgstr ""
+msgstr "Dell PowerScale"
 
 #: ../../overview/overview.rst:189
 msgid "IBM SpectrumScale"
-msgstr ""
+msgstr "IBM SpectrumScale"
 
 #: ../../overview/overview.rst:190
 msgid "NetApp"
-msgstr ""
+msgstr "NetApp"
 
 #: ../../overview/overview.rst:191
 msgid "PureStorage"
-msgstr ""
+msgstr "PureStorage"
 
 #: ../../overview/overview.rst:192
 msgid "WEKA"
-msgstr ""
+msgstr "WEKA"
 
 #: ../../overview/overview.rst:194
 msgid "Fine-grained Access control to data by user/project"
@@ -521,15 +521,15 @@ msgstr "특정 목적에 맞춘 다양한 유형의 연산 세션 제공"
 
 #: ../../overview/overview.rst:206
 msgid "Interactive"
-msgstr ""
+msgstr "대화형 (Interactive)"
 
 #: ../../overview/overview.rst:207
 msgid "Batch"
-msgstr ""
+msgstr "배치 (Batch)"
 
 #: ../../overview/overview.rst:208
 msgid "Inference"
-msgstr ""
+msgstr "추론 (Inference)"
 
 #: ../../overview/overview.rst:210
 msgid "For data scientists"
@@ -618,7 +618,7 @@ msgstr "시작"
 #: ../../overview/overview.rst:277 ../../overview/overview.rst:279
 #: ../../overview/overview.rst:281 ../../overview/overview.rst:283
 msgid "O"
-msgstr ""
+msgstr "O"
 
 #: ../../overview/overview.rst:247
 msgid "Dashboard"
@@ -650,7 +650,7 @@ msgstr "채팅 (Chat)"
 
 #: ../../overview/overview.rst:263
 msgid "Model Store"
-msgstr ""
+msgstr "모델 스토어 (Model Store)"
 
 #: ../../overview/overview.rst:265
 msgid "Agent Summary"
@@ -669,7 +669,7 @@ msgstr "사용자 (Users)*"
 #: ../../overview/overview.rst:277 ../../overview/overview.rst:279
 #: ../../overview/overview.rst:281 ../../overview/overview.rst:283
 msgid "X"
-msgstr ""
+msgstr "X"
 
 #: ../../overview/overview.rst:271
 msgid "Environments*"

@@ -48,7 +48,7 @@ How to install packages with pip?
 By default, when you install a pip package, it will be installed under
 ``~/.local``. So, if you create a automount data folder named ``.local``, you
 can keep the installed packages after a compute session is destroyed, and then
-reus them for the next compute session. Just install the packages with pip like:
+reuse them for the next compute session. Just install the packages with pip like:
 
 .. code-block:: shell
 
@@ -70,7 +70,7 @@ Page layout is broken
 ^^^^^^^^^^^^^^^^^^^^^
 
 Backend.AI Web-UI utilizes the latest modern JavaScript and/or browser features.
-Please use the LATEST versions of moder browsers (such as Chrome).
+Please use the LATEST versions of modern browsers (such as Chrome).
 
 SFTP disconnection
 ^^^^^^^^^^^^^^^^^^

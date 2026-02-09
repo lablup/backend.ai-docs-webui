@@ -4,49 +4,53 @@
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-
 msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-23 23:02+0900\n"
+"POT-Creation-Date: 2026-02-09 19:13+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../statistics/statistics.rst:3
 msgid "Statistics Page"
 msgstr "หน้าสถิติ"
 
-#: ../../statistics/statistics.rst:5
-msgid ""
-"On the Statistics page, you can check simple statistics related to the use "
-"of compute sessions via a graph. You can check the statistics for a day or a"
-" week by selecting the usage period from the select period menu on the upper"
-" left. Displayed items are as follows."
-msgstr ""
-"ในหน้า สถิติ "
-"คุณสามารถตรวจสอบสถิติที่เกี่ยวข้องกับการใช้เซสชันการคอมพิวเตอร์ผ่านกราฟได้ "
-"คุณสามารถตรวจสอบสถิติสำหรับวันหนึ่งหรือสัปดาห์หนึ่งโดยการเลือกช่วงเวลาการใช้งานจากเมนูเลือกช่วงเวลาที่มุมซ้ายบน"
-" รายการที่แสดงมีดังนี้"
+#: ../../statistics/statistics.rst:6
+msgid "Allocation history"
+msgstr "ประวัติการจัดสรร"
 
-#: ../../statistics/statistics.rst:9
+#: ../../statistics/statistics.rst:8
+msgid ""
+"On the Statistics page, under the Allocation History tab, you can check "
+"simple statistics related to the use of compute sessions via a graph. You"
+" can check the statistics for a day or a week by selecting the usage "
+"period from the select period menu on the upper left. Displayed items are"
+" as follows."
+msgstr ""
+"ในหน้าสถิติ ภายใต้แท็บประวัติการจัดสรร "
+"คุณสามารถตรวจสอบสถิติอย่างง่ายที่เกี่ยวข้องกับการใช้เซสชันการประมวลผลผ่านกราฟได้ "
+"คุณสามารถตรวจสอบสถิติสำหรับหนึ่งวันหรือหนึ่งสัปดาห์โดยการเลือกช่วงเวลาการใช้งาน"
+"จากเมนูเลือกช่วงเวลาที่มุมซ้ายบน รายการที่แสดงมีดังนี้"
+
+#: ../../statistics/statistics.rst:12
 msgid "Sessions: The number of compute sessions created."
 msgstr "เซสชัน: จำนวนเซสชันการประมวลผลที่สร้างขึ้น。"
 
-#: ../../statistics/statistics.rst:10
+#: ../../statistics/statistics.rst:13
 msgid "CPU: The number of CPU cores allocated to the compute sessions."
 msgstr "CPU: จำนวนของคอร์ CPU ที่จัดสรรให้กับเซสชันการคำนวณ"
 
-#: ../../statistics/statistics.rst:11
+#: ../../statistics/statistics.rst:14
 msgid "Memory: The amount of memory allocated to the compute sessions."
 msgstr "หน่วยความจำ: ปริมาณหน่วยความจำที่จัดสรรให้กับเซสชันการประมวลผล。"
 
-#: ../../statistics/statistics.rst:12
+#: ../../statistics/statistics.rst:15
 msgid ""
 "GPU: The number of GPU units allocated to the compute sessions. If the "
 "Fractional GPU feature is enabled, it may not match the physics GPU."
@@ -54,15 +58,15 @@ msgstr ""
 "GPU: จำนวนหน่วย GPU ที่จัดสรรให้กับเซสชันการประมวลผล หากคุณสมบัติ GPU "
 "แบบเศษเสี้ยวถูกเปิดใช้งาน อาจไม่ตรงกับ GPU ทางฟิสิกส์"
 
-#: ../../statistics/statistics.rst:14
+#: ../../statistics/statistics.rst:17
 msgid "IO-Read: The amount of data read from the storage."
 msgstr "IO-อ่าน: ปริมาณข้อมูลที่อ่านจากที่เก็บข้อมูล"
 
-#: ../../statistics/statistics.rst:15
+#: ../../statistics/statistics.rst:18
 msgid "IO-Write: The amount of data written to the storage."
 msgstr "IO-Write: ปริมาณข้อมูลที่เขียนลงในพื้นที่เก็บข้อมูล."
 
-#: ../../statistics/statistics.rst:17
+#: ../../statistics/statistics.rst:20
 msgid ""
 "Note that the statistics shown here are based on terminated compute "
 "sessions. Also, one week statistics may not be shown for the users whose "
@@ -72,7 +76,62 @@ msgstr ""
 " นอกจากนี้ "
 "สถิติหนึ่งสัปดาห์อาจไม่แสดงสำหรับผู้ใช้ที่บัญชีของพวกเขาถูกสร้างขึ้นไม่เกินหนึ่งสัปดาห์"
 
-#: ../../statistics/statistics.rst:21
-msgid "More detailed statistics are shown in the admin-only Control-Panel."
+#: ../../statistics/statistics.rst:-1
+msgid "Usage Panel"
+msgstr "แผงการใช้งาน"
+
+#: ../../statistics/statistics.rst:29
+msgid "User session history"
+msgstr "ประวัติเซสชันผู้ใช้"
+
+#: ../../statistics/statistics.rst:31
+msgid ""
+"In the User Session History tab of the Statistics page, users can view "
+"statistics on various resources used by sessions through graphs. Users "
+"can check the statistics for a selected period using the Select Period "
+"menu at the upper left. The displayed items are as follows."
 msgstr ""
-"ข้อมูลสถิติที่ละเอียดกว่านั้นจะแสดงในแผงควบคุมที่เฉพาะสำหรับผู้ดูแลระบบเท่านั้น"
+"ในแท็บประวัติเซสชันผู้ใช้ของหน้าสถิติ ผู้ใช้สามารถดูสถิติเกี่ยวกับทรัพยากรต่างๆ "
+"ที่เซสชันใช้งานผ่านกราฟได้ ผู้ใช้สามารถตรวจสอบสถิติสำหรับช่วงเวลาที่เลือกได้"
+"โดยใช้เมนูเลือกช่วงเวลาที่มุมซ้ายบน รายการที่แสดงมีดังนี้"
+
+#: ../../statistics/statistics.rst:34
+msgid "CPU Util: The amount of CPU time used by the sessions."
+msgstr "CPU Util: ปริมาณเวลา CPU ที่เซสชันใช้งาน"
+
+#: ../../statistics/statistics.rst:35
+msgid "Memory: The amount of memory used by the sessions."
+msgstr "Memory: ปริมาณหน่วยความจำที่เซสชันใช้งาน"
+
+#: ../../statistics/statistics.rst:36
+msgid "Net Rx: The rate at which the container is receiving network data."
+msgstr "Net Rx: อัตราที่คอนเทนเนอร์ได้รับข้อมูลเครือข่าย"
+
+#: ../../statistics/statistics.rst:37
+msgid "Net Tx: The rate at which the container is sending network data."
+msgstr "Net Tx: อัตราที่คอนเทนเนอร์ส่งข้อมูลเครือข่าย"
+
+#: ../../statistics/statistics.rst:38
+msgid "IO Read: The amount of data read from the storage by the sessions."
+msgstr "IO Read: ปริมาณข้อมูลที่เซสชันอ่านจากที่เก็บข้อมูล"
+
+#: ../../statistics/statistics.rst:39
+msgid "IO Write: The amount of data written to the storage by the sessions."
+msgstr "IO Write: ปริมาณข้อมูลที่เซสชันเขียนลงในที่เก็บข้อมูล"
+
+#: ../../statistics/statistics.rst:41
+msgid ""
+"In addition, depending on the available resources, additional items such "
+"as CUDA-capable GPU Util and CUDA-capable GPU Mem may be displayed."
+msgstr ""
+"นอกจากนี้ ขึ้นอยู่กับทรัพยากรที่มีอยู่ อาจมีรายการเพิ่มเติม เช่น "
+"CUDA-capable GPU Util และ CUDA-capable GPU Mem แสดงด้วย"
+
+#: ../../statistics/statistics.rst:43
+msgid "More detailed statistics are shown in the admin-only Control-Panel."
+msgstr "ข้อมูลสถิติที่ละเอียดกว่านั้นจะแสดงในแผงควบคุมที่เฉพาะสำหรับผู้ดูแลระบบเท่านั้น"
+
+#: ../../statistics/statistics.rst:-1
+msgid "User Session History"
+msgstr "ประวัติเซสชันผู้ใช้"
+

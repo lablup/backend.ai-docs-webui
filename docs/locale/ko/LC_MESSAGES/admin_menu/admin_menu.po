@@ -70,7 +70,7 @@ msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Create user dialog"
-msgstr ""
+msgstr "사용자 생성 다이얼로그"
 
 #: ../../admin_menu/admin_menu.rst:34
 msgid "Check if the user is created."
@@ -100,7 +100,7 @@ msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "User update dialog"
-msgstr ""
+msgstr "사용자 정보 수정 다이얼로그"
 
 #: ../../admin_menu/admin_menu.rst:56
 msgid ""
@@ -248,7 +248,7 @@ msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Credential list page"
-msgstr ""
+msgstr "자격 증명 목록 페이지"
 
 #: ../../admin_menu/admin_menu.rst:132
 msgid ""
@@ -262,7 +262,7 @@ msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Keypair detail dialog"
-msgstr ""
+msgstr "키페어 상세 정보 다이얼로그"
 
 #: ../../admin_menu/admin_menu.rst:141
 msgid ""
@@ -276,7 +276,7 @@ msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Keypair update dialog"
-msgstr ""
+msgstr "키페어 수정 다이얼로그"
 
 #: ../../admin_menu/admin_menu.rst:149
 msgid ""
@@ -292,11 +292,11 @@ msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Keypair delete button"
-msgstr ""
+msgstr "키페어 삭제 버튼"
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Keypair delete confirmation dialog"
-msgstr ""
+msgstr "키페어 삭제 확인 다이얼로그"
 
 #: ../../admin_menu/admin_menu.rst:164
 msgid ""
@@ -320,7 +320,7 @@ msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Add keypair dialog"
-msgstr ""
+msgstr "키페어 추가 다이얼로그"
 
 #: ../../admin_menu/admin_menu.rst:195
 msgid "Share project storage folders with project members"
@@ -402,7 +402,7 @@ msgstr "'model-store' 로 프로젝트를 변경합니다. "
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Select project to model store"
-msgstr ""
+msgstr "모델 스토어 프로젝트 선택"
 
 #: ../../admin_menu/admin_menu.rst:243
 msgid ""
@@ -429,7 +429,7 @@ msgstr "복사 가능 여부 (Cloneable): True"
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Model store folder"
-msgstr ""
+msgstr "모델 스토어 폴더"
 
 #: ../../admin_menu/admin_menu.rst:256
 msgid ""
@@ -451,7 +451,7 @@ msgstr "model-definition 파일 업로드가 끝나면, 모델 스토어 페이�
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Model card added"
-msgstr ""
+msgstr "모델 카드 추가 완료"
 
 #: ../../admin_menu/admin_menu.rst:307
 msgid ""
@@ -475,7 +475,7 @@ msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Model card detail"
-msgstr ""
+msgstr "모델 카드 상세 정보"
 
 #: ../../admin_menu/admin_menu.rst:319
 msgid "Manage Resource Policy"
@@ -923,14 +923,13 @@ msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Keypair export"
-msgstr ""
+msgstr "키페어 내보내기"
 
 #: ../../admin_menu/admin_menu.rst:537
 msgid "Unified View for Pending Sessions"
 msgstr "Pending 상태 세션 통합 뷰"
 
 #: ../../admin_menu/admin_menu.rst:539
-#, fuzzy
 msgid ""
 "From Backend.AI version 25.13.0, a unified view for pending sessions is "
 "available in the Admin Menu. Unlike the Session page, the Scheduler page "
@@ -939,13 +938,13 @@ msgid ""
 "the queue position in which the session will be created once sufficient "
 "resources become available."
 msgstr ""
-"Backend.AI 25.13.0 버전부터 Pending 상태의 세션에 대한 스케쥴러 페이지가 관리자 메뉴로 제공됩니다. 세션 "
-"페이지와는 다르게, 스케쥴러 페이지에서는 선택된 자원 그룹에 대해 Pending 상태의 세션만 확인할 수 있습니다. "
-"상태(status) 컬럼의 인덱스(#) 번호는 세션 생성에 대한 자원이 확보 되었을 때 생성될 순서를 나타냅니다. "
+"Backend.AI 25.13.0 버전부터 Pending 상태의 세션에 대한 통합 뷰가 관리자 메뉴에서 제공됩니다. 세션 페이지와는 "
+"다르게, 스케줄러 페이지에서는 선택된 자원 그룹 내의 모든 Pending 상태 세션을 통합하여 확인할 수 있습니다. 상태(status)"
+" 옆에 표시되는 인덱스 번호는 충분한 자원이 확보되었을 때 세션이 생성될 대기열 순서를 나타냅니다."
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Scheduler page"
-msgstr ""
+msgstr "스케줄러 페이지"
 
 #: ../../admin_menu/admin_menu.rst:548
 msgid ""
@@ -1043,7 +1042,7 @@ msgstr "이미지에서 지원하는 앱을 수정할 경우에는 이미지 재
 
 #: ../../admin_menu/admin_menu.rst
 msgid "Confirmation dialog for manage app change in image"
-msgstr ""
+msgstr "이미지 앱 변경 확인 다이얼로그"
 
 #: ../../admin_menu/admin_menu.rst:609
 msgid "Manage docker registry"
@@ -1078,7 +1077,7 @@ msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Registries page"
-msgstr ""
+msgstr "레지스트리 페이지"
 
 #: ../../admin_menu/admin_menu.rst:626
 msgid ""
@@ -1101,7 +1100,7 @@ msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Add registry dialog"
-msgstr ""
+msgstr "레지스트리 추가 다이얼로그"
 
 #: ../../admin_menu/admin_menu.rst:642
 msgid "GitLab Container Registry Configuration"
@@ -1204,7 +1203,7 @@ msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Resource presets in compute session launch dialog"
-msgstr ""
+msgstr "연산 세션 생성 다이얼로그의 자원 프리셋"
 
 #: ../../admin_menu/admin_menu.rst:692
 msgid ""
@@ -1796,7 +1795,7 @@ msgstr "스케일링과 플러그인, 엔터프라이즈 기능에 대한 설정
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "System setting about scaling and plugins"
-msgstr ""
+msgstr "스케일링 및 플러그인 시스템 설정"
 
 #: ../../admin_menu/admin_menu.rst:1012
 msgid ""
@@ -1813,7 +1812,7 @@ msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Overlay network setting dialog"
-msgstr ""
+msgstr "오버레이 네트워크 설정 다이얼로그"
 
 #: ../../admin_menu/admin_menu.rst:1024
 msgid ""
@@ -1854,7 +1853,7 @@ msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "System setting dialog scheduler settings"
-msgstr ""
+msgstr "시스템 설정 다이얼로그 스케줄러 설정"
 
 #: ../../admin_menu/admin_menu.rst:1045
 msgid "We will continue to add broader range of setting controls."
@@ -1899,7 +1898,7 @@ msgstr ""
 
 #: ../../admin_menu/admin_menu.rst:-1
 msgid "Maintenance page"
-msgstr ""
+msgstr "관리 페이지"
 
 #: ../../admin_menu/admin_menu.rst:1072
 msgid ""

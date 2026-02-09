@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web UI User Guide 25.05\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-24 13:54+0900\n"
+"POT-Creation-Date: 2026-02-09 19:13+0900\n"
 "PO-Revision-Date: 2023-08-07 16:17+0900\n"
 "Last-Translator: Jinho Heo <jinho@lablup.com>\n"
 "Language: ko\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../vfolder/vfolder.rst:3
 msgid "Data Page"
-msgstr ""
+msgstr "데이터 페이지"
 
 #: ../../vfolder/vfolder.rst:6
 msgid "Handling Data & Storage Folders"
@@ -44,7 +44,7 @@ msgstr ""
 
 #: ../../vfolder/vfolder.rst:-1
 msgid "data page"
-msgstr ""
+msgstr "데이터 페이지"
 
 #: ../../vfolder/vfolder.rst:22
 msgid ""
@@ -66,7 +66,7 @@ msgstr ""
 
 #: ../../vfolder/vfolder.rst:-1
 msgid "Storage status in Storage page"
-msgstr ""
+msgstr "스토리지 페이지의 저장소 상태"
 
 #: ../../vfolder/vfolder.rst:33
 msgid ""
@@ -121,16 +121,16 @@ msgstr "사용자: 현재 사용자의 폴더 사용량 / 현재 사용자의 �
 
 #: ../../vfolder/vfolder.rst:48
 msgid ""
-"Please remind that quota is only available in storage that provides quota"
-" setting (e.g. XFS, CephFS, NetApp, Purestorage, etc.). For the quota "
-"setting, please refer to the :ref:`Quota Setting Panel<quota-setting-"
-"panel>` section."
+"Note that quota is only available in storage that provides quota setting "
+"(e.g. XFS, CephFS, NetApp, Purestorage, etc.). For the quota setting, "
+"please refer to the :ref:`Quota Setting Panel<quota-setting-panel>` "
+"section."
 msgstr ""
 "쿼타(가용량)는 쿼타 설정을 제공하는 스토리지에서만 사용할 수 있습니다(XFS, CephFS, NetApp, Purestorage "
-"등). 가용량 설정에 대해서는 :ref:`쿼타 설정 패널<quota-setting-panel>` 섹션을 참고하십시오."
+"등). 쿼타 설정에 대해서는 :ref:`쿼타 설정 패널<quota-setting-panel>` 섹션을 참고하십시오."
 
 #: ../../vfolder/vfolder.rst:53
-msgid "Create storage folder"
+msgid "Creating a Storage Folder"
 msgstr "스토리지 폴더 생성"
 
 #: ../../vfolder/vfolder.rst:58
@@ -141,7 +141,7 @@ msgstr "새 폴더를 만들려면 데이터 페이지에서 '폴더 생성'을 
 
 #: ../../vfolder/vfolder.rst:-1
 msgid "Folder creation dialog"
-msgstr ""
+msgstr "폴더 생성 다이얼로그"
 
 #: ../../vfolder/vfolder.rst:66
 msgid "The meaning of each field in the creation dialog is as follows."
@@ -231,7 +231,7 @@ msgstr ""
 " (단, 폴더 자체를 삭제하면 사라지게 됩니다.) "
 
 #: ../../vfolder/vfolder.rst:87
-msgid "Explore folder"
+msgid "Exploring a Folder"
 msgstr "폴더 내용 조회하기"
 
 #: ../../vfolder/vfolder.rst:91
@@ -242,7 +242,7 @@ msgstr "폴더 이름을 클릭하여 해당 폴더의 내용을 조회할 수 �
 
 #: ../../vfolder/vfolder.rst:-1
 msgid "vfolder list"
-msgstr ""
+msgstr "가상 폴더 목록"
 
 #: ../../vfolder/vfolder.rst:96
 msgid ""
@@ -261,7 +261,7 @@ msgstr ""
 
 #: ../../vfolder/vfolder.rst:-1
 msgid "folder explorer"
-msgstr ""
+msgstr "폴더 탐색기"
 
 #: ../../vfolder/vfolder.rst:107
 msgid ""
@@ -295,7 +295,7 @@ msgstr ""
 "주세요."
 
 #: ../../vfolder/vfolder.rst:122
-msgid "Rename folder"
+msgid "Renaming a Folder"
 msgstr "폴더 이름 변경"
 
 #: ../../vfolder/vfolder.rst:126
@@ -308,10 +308,10 @@ msgstr ""
 
 #: ../../vfolder/vfolder.rst:-1
 msgid "Folder rename dialog"
-msgstr ""
+msgstr "폴더 이름 변경 다이얼로그"
 
 #: ../../vfolder/vfolder.rst:134
-msgid "Delete folder"
+msgid "Deleting a Folder"
 msgstr "폴더 삭제하기"
 
 #: ../../vfolder/vfolder.rst:138
@@ -352,7 +352,7 @@ msgstr ""
 
 #: ../../vfolder/vfolder.rst:-1
 msgid "Folder deletion dialog"
-msgstr ""
+msgstr "폴더 삭제 다이얼로그"
 
 #: ../../vfolder/vfolder.rst:160
 msgid "Using FileBrowser"
@@ -416,7 +416,7 @@ msgstr "데이터 페이지로 이동 후 원하는 데이터 폴더의 탐색�
 
 #: ../../vfolder/vfolder.rst:-1
 msgid "first step to access FileBrowser"
-msgstr ""
+msgstr "파일 브라우저 접근 첫 번째 단계"
 
 #: ../../vfolder/vfolder.rst:191
 msgid ""
@@ -426,7 +426,7 @@ msgstr "탐색기 우측 상단의 '파일브라우저 실행' 버튼을 클릭�
 
 #: ../../vfolder/vfolder.rst:-1
 msgid "Folder explorer with FileBrowser"
-msgstr ""
+msgstr "파일 브라우저가 포함된 폴더 탐색기"
 
 #: ../../vfolder/vfolder.rst:196
 msgid ""
@@ -440,7 +440,7 @@ msgstr ""
 
 #: ../../vfolder/vfolder.rst:-1
 msgid "FileBrowser with new window"
-msgstr ""
+msgstr "새 창에서 열린 파일 브라우저"
 
 #: ../../vfolder/vfolder.rst:204
 msgid ""
@@ -455,7 +455,7 @@ msgstr ""
 
 #: ../../vfolder/vfolder.rst:-1
 msgid "FileBrowser in session page"
-msgstr ""
+msgstr "세션 페이지의 파일 브라우저"
 
 #: ../../vfolder/vfolder.rst:213
 msgid ""
@@ -488,8 +488,8 @@ msgid ""
 "session is terminated."
 msgstr ""
 "파일 브라우저를 지원하는 이미지를 선택해서 연산 세션을 직접 생성할 수도 있습니다. 연산 세션 생성 시 작업하기 원하는 데이터 "
-"폴더를 하나 이상 마운트하십시오. 아무 데이터 폴더를 마운트하지 않아도 파일 브라우저 사용에는 문제가 없지만, 연산 세션이 "
-"종료되면 연산 세션에서 작업한 모든 파일이 삭제됩니다."
+"폴더를 하나 이상 마운트하십시오. 아무 데이터 폴더를 마운트하지 않아도 파일 브라우저 사용에는 문제가 없지만, 연산 세션이 종료되면"
+" 연산 세션에서 작업한 모든 파일이 삭제됩니다."
 
 #: ../../vfolder/vfolder.rst:235
 msgid ""
@@ -583,11 +583,11 @@ msgstr "옮기기 작업이 성공적으로 완료된 것을 확인할 수 있�
 #: ../../vfolder/vfolder.rst:306
 msgid ""
 "FileBrowser is provided via application inside a compute session "
-"currently. We are planning to update FileBrowser so that it can run "
+"currently. Backend.AI plans to update FileBrowser so that it can run "
 "independently without creating a session."
 msgstr ""
-"현재 파일 브라우저는 연산 세션 내 애플리케이션 형태로 제공되고 있습니다. 향후 세션을 생성하지 않고 파일 브라우저를 독립적으로 "
-"실행할 수 있는 기능을 추가할 예정입니다."
+"현재 파일 브라우저는 연산 세션 내 애플리케이션 형태로 제공되고 있습니다. 향후 세션을 생성하지 않고도 파일 브라우저를 독립적으로 "
+"실행할 수 있도록 업데이트할 예정입니다."
 
 #: ../../vfolder/vfolder.rst:311
 msgid "Using SFTP Server"
@@ -625,7 +625,7 @@ msgstr "탐색기 우측 상단의 'SFTP 서버 사용' 버튼을 클릭해주�
 
 #: ../../vfolder/vfolder.rst:-1
 msgid "Folder explorer with SFTP Server"
-msgstr ""
+msgstr "SFTP 서버가 포함된 폴더 탐색기"
 
 #: ../../vfolder/vfolder.rst:334
 msgid ""
@@ -638,7 +638,7 @@ msgstr ""
 
 #: ../../vfolder/vfolder.rst:-1
 msgid "SSH / SFTP connection dialog"
-msgstr ""
+msgstr "SSH / SFTP 연결 다이얼로그"
 
 #: ../../vfolder/vfolder.rst:342
 msgid ""

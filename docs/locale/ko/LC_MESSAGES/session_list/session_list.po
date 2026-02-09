@@ -53,6 +53,9 @@ msgid ""
 "allocation status in the current scaling group, and the lower part shows "
 "the allocation status of total accessible resources."
 msgstr ""
+"화면 상단에는 자원 표시부가 출력됩니다. 현재 사용 중인 자원의 양과 할당 가능한 총 자원의 양을 확인할 수 있습니다. 표시바는 "
+"위, 아래 두 부분으로 나누어져 있는데, 위쪽은 현재 스케일링 그룹 내에서의 자원 할당 상태를, 아래쪽은 접근 가능한 전체 자원의 "
+"할당 상태를 표시합니다."
 
 #: ../../session_list/session_list.rst:25
 msgid "Upper: Allocated and available resources within the current scaling group"

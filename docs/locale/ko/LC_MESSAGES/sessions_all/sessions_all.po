@@ -975,7 +975,7 @@ msgstr ""
 
 #: ../../sessions_all/sessions_all.rst:-1
 msgid "Env Configuration Button"
-msgstr ""
+msgstr "환경 변수 설정 버튼"
 
 #: ../../sessions_all/sessions_all.rst:562
 msgid ""
@@ -1004,7 +1004,7 @@ msgstr "사전 개방 포트를 추가하려면 쉼표(,)나 공백으로 구분
 
 #: ../../sessions_all/sessions_all.rst:-1
 msgid "Preopen Ports Configuration"
-msgstr ""
+msgstr "사전 개방 포트 설정"
 
 #: ../../sessions_all/sessions_all.rst:578
 msgid ""
@@ -1149,7 +1149,7 @@ msgstr "여기서는 몇 가지 간단하지만 유용한 기능을 소개하겠
 
 #: ../../sessions_all/sessions_all.rst:660
 msgid "Copy terminal contents"
-msgstr ""
+msgstr "터미널 내용 복사"
 
 #: ../../sessions_all/sessions_all.rst:662
 msgid ""
@@ -1228,7 +1228,7 @@ msgstr "불여넣기: ``Ctrl-Shift-V`` 키를 누름"
 
 #: ../../sessions_all/sessions_all.rst:698
 msgid "Check the terminal history using keyboard"
-msgstr ""
+msgstr "키보드를 이용한 터미널 히스토리 확인"
 
 #: ../../sessions_all/sessions_all.rst:700
 msgid ""
@@ -1246,7 +1246,7 @@ msgstr ""
 
 #: ../../sessions_all/sessions_all.rst:708
 msgid "Spawn multiple shells"
-msgstr ""
+msgstr "여러 쉘 동시에 띄우기"
 
 #: ../../sessions_all/sessions_all.rst:710
 msgid ""
@@ -1268,7 +1268,7 @@ msgstr ""
 
 #: ../../sessions_all/sessions_all.rst:-1
 msgid "tmux's multiple session management"
-msgstr ""
+msgstr "tmux의 다중 세션 관리"
 
 #: ../../sessions_all/sessions_all.rst:722
 msgid ""

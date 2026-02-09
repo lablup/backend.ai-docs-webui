@@ -348,5 +348,5 @@ msgstr ""
 
 #: ../../cluster_session/cluster_session.rst:-1
 msgid "Log modal per container"
-msgstr ""
+msgstr "컨테이너별 로그 모달"
 

@@ -175,7 +175,7 @@ msgstr ""
 
 #: ../../sftp_to_container/sftp_to_container.rst
 msgid "Permissions Warning Message"
-msgstr ""
+msgstr "권한 경고 메시지"
 
 #: ../../sftp_to_container/sftp_to_container.rst:120
 msgid "For Windows / FileZilla"
@@ -218,7 +218,7 @@ msgstr ""
 
 #: ../../sftp_to_container/sftp_to_container.rst:-1
 msgid "SSH key conversion with PuttyGen"
-msgstr ""
+msgstr "PuTTYgen을 이용한 SSH 키 변환"
 
 #: ../../sftp_to_container/sftp_to_container.rst:141
 msgid ""
@@ -231,7 +231,7 @@ msgstr ""
 
 #: ../../sftp_to_container/sftp_to_container.rst:-1
 msgid "Filezilla settings to connect to compute session"
-msgstr ""
+msgstr "연산 세션 접속을 위한 FileZilla 설정"
 
 #: ../../sftp_to_container/sftp_to_container.rst:148
 msgid ""
@@ -241,7 +241,7 @@ msgstr "사이트 관리자를 열고 새 사이트를 하나 만든 후 다음�
 
 #: ../../sftp_to_container/sftp_to_container.rst:-1
 msgid "Filezilla site setting"
-msgstr ""
+msgstr "FileZilla 사이트 설정"
 
 #: ../../sftp_to_container/sftp_to_container.rst:154
 msgid ""
@@ -251,7 +251,7 @@ msgstr "해당 컨테이너에 처음 접속하는 경우 다음과 같은 확�
 
 #: ../../sftp_to_container/sftp_to_container.rst:-1
 msgid "Unknown Host Key dialog"
-msgstr ""
+msgstr "알 수 없는 호스트 키 다이얼로그"
 
 #: ../../sftp_to_container/sftp_to_container.rst:162
 msgid ""
@@ -264,11 +264,11 @@ msgstr ""
 
 #: ../../sftp_to_container/sftp_to_container.rst:-1
 msgid "Filezilla connection established"
-msgstr ""
+msgstr "FileZilla 접속 완료"
 
 #: ../../sftp_to_container/sftp_to_container.rst:171
 msgid "For Visual Studio Code"
-msgstr ""
+msgstr "Visual Studio Code 환경"
 
 #: ../../sftp_to_container/sftp_to_container.rst:173
 msgid ""
@@ -293,7 +293,7 @@ msgstr "링크: https://aka.ms/vscode-remote/download/extension"
 
 #: ../../sftp_to_container/sftp_to_container.rst:-1
 msgid "Install remote ssh plugin on Visual Studio Code"
-msgstr ""
+msgstr "Visual Studio Code에 Remote SSH 플러그인 설치"
 
 #: ../../sftp_to_container/sftp_to_container.rst:186
 msgid ""
@@ -307,7 +307,7 @@ msgstr ""
 
 #: ../../sftp_to_container/sftp_to_container.rst:-1
 msgid "Download SSH Key"
-msgstr ""
+msgstr "SSH 키 다운로드"
 
 #: ../../sftp_to_container/sftp_to_container.rst:195
 msgid ""
@@ -328,7 +328,7 @@ msgstr "이제 Visual Studio Code의 `View` - `Command Palette…` 메뉴를 선
 
 #: ../../sftp_to_container/sftp_to_container.rst:211
 msgid "View > comma"
-msgstr ""
+msgstr "View > Command Palette 메뉴"
 
 #: ../../sftp_to_container/sftp_to_container.rst:214
 msgid ""
@@ -340,7 +340,7 @@ msgstr ""
 
 #: ../../sftp_to_container/sftp_to_container.rst:217
 msgid "SSH connect"
-msgstr ""
+msgstr "SSH 접속"
 
 #: ../../sftp_to_container/sftp_to_container.rst:220
 msgid ""
@@ -350,7 +350,7 @@ msgstr "여기서는 ``.ssh/config`` 의 호스트 목록을 볼 수 있습니�
 
 #: ../../sftp_to_container/sftp_to_container.rst:223
 msgid "Select remote ssh select Host"
-msgstr ""
+msgstr "Remote SSH 호스트 선택"
 
 #: ../../sftp_to_container/sftp_to_container.rst:226
 msgid ""
@@ -363,7 +363,7 @@ msgstr ""
 
 #: ../../sftp_to_container/sftp_to_container.rst:230
 msgid "Finished remote ssh connection"
-msgstr ""
+msgstr "Remote SSH 접속 완료"
 
 #: ../../sftp_to_container/sftp_to_container.rst:233
 msgid ""
@@ -376,7 +376,7 @@ msgstr ""
 
 #: ../../sftp_to_container/sftp_to_container.rst:236
 msgid "open remote host file directory"
-msgstr ""
+msgstr "원격 호스트의 파일 디렉토리 열기"
 
 #: ../../sftp_to_container/sftp_to_container.rst:241
 msgid "Establish SSH connection with Backend.AI client package"
@@ -483,7 +483,7 @@ msgstr ""
 
 #: ../../sftp_to_container/sftp_to_container.rst:305
 msgid "https://github.com/indygreg/python-build-standalone/releases"
-msgstr ""
+msgstr "https://github.com/indygreg/python-build-standalone/releases"
 
 #: ../../sftp_to_container/sftp_to_container.rst:306
 msgid ""

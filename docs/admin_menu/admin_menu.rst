@@ -4,9 +4,9 @@
 Admin Menus
 ===========
 
-Logging in with an admin account will reveal an extra Administration menu on the bottom left of the sidebar.
-User information registered in Backend.AI is listed in the Users tab.
-super-admin role user can see all users' information, create and deactivate a user.
+When you log in with an admin account, an extra Administration menu appears on the bottom left of the sidebar.
+You can view registered user information in the Users tab.
+A superadmin can see all users' information, create and deactivate a user.
 
 User ID (email), Name (username), Role and Description(User Description) can be filtered by typing text in the
 search box on each column header.
@@ -14,24 +14,24 @@ search box on each column header.
 .. image:: admin_user_page.png
    :alt: User management page
 
-Create and update users
------------------------
+Creating and Updating Users
+---------------------------
 
-A user can be created by clicking the '+Create User' button. Note that the password
+Click '+Create User' to create a new user. Note that the password
 must be longer or equal to 8 characters and at least 1 alphabet/special
 character/ number should be included. The maximum length allowed for E-Mail and Username is 64.
 
 .. note::
 
    If a user with the same email or username already exists, it is not possible to
-   creat user account. Please try other email and username.
+   create a user account. Please try a different email or username.
 
 .. image:: create_user_dialog.png
    :width: 500
    :align: center
    :alt: Create user dialog
 
-Check if the user is created.
+Verify that the user has been created.
 
 .. image:: check_if_user_created.png
    :alt: User management page
@@ -45,8 +45,7 @@ user belongs.
    :align: center
    :alt: Detailed information of a user
 
-Click the 'Setting (Gear)' in the Controls panel to update information of a user who
-already exists. User's name, password, activation state, etc. can be changed. User ID cannot be changed.
+Click 'Setting (Gear)' in the Controls panel to update an existing user's information. You can change the user's name, password, activation state, and other details. User ID cannot be changed.
 
 .. image:: user_update_dialog.png
    :width: 350
@@ -56,7 +55,7 @@ already exists. User's name, password, activation state, etc. can be changed. Us
 Each of the five items at the bottom of the dialog has the following functions.
 
 * User Status: Indicates the user's status. Inactive users cannot log
-  in. Before Verification is a status indicates that a user needs an additional
+  in. Before Verification indicates that the user needs an additional
   step to activate the account such as email verification or an approval from an
   admin. Note that the inactive users are listed in the Inactive tab separately.
 
@@ -80,8 +79,8 @@ Each of the five items at the bottom of the dialog has the following functions.
   to which the user belongs. For more information about user resource policies, please
   refer :ref:`user resource policy <user-resource-policy>` section.
 
-Inactivate user account
------------------------
+Deactivating a User Account
+---------------------------
 
 Deleting user accounts is not allowed even for superadmins, to track usage
 statistics per user, metric retention, and accidental account loss. Instead,
@@ -109,16 +108,16 @@ the target user to ``Active``.
    should be reactivated.
 
 
-Manage User's Keypairs
+Managing User Keypairs
 ----------------------
 
-Each user account usually have one or more keypairs. A keypair is used for API
+Each user account usually has one or more keypairs. A keypair is used for API
 authentication to the Backend.AI server, after user logs in. Login requires
 authentication via user email and password, but every request the user sends to
 the server is authenticated based on the keypair.
 
 A user can have multiple keypairs, but to reduce the user's burden of managing
-keypairs, we are currently using only one of the user's keypairs to send requests.
+keypairs, Backend.AI currently uses only one of the user's keypairs to send requests.
 Also, when you create a new user, a keypair is automatically created, so you do
 not need to create and assign a keypair manually in most cases.
 
@@ -220,10 +219,10 @@ also displayed in the Permission panel.
 
 .. image:: group_folder_listed_in_B.png
 
-Manage Models cards
--------------------
+Managing Model Cards
+--------------------
 
-All of the Model cards in model store are managed by project admin.
+All model cards in the model store are managed by the project admin.
 After uploading model store with model-definition file, any user in the project
 can access to model card and clone it if needed.
 
@@ -414,7 +413,7 @@ choose it.
 
 You can also delete each of resource keypairs by clicking trash can icon
 in the Control column. When you click the icon, the confirmation popup will appears.
-Click 'Delete' button to erase."
+Click 'Delete' button to erase.
 
 .. image:: resource_policy_delete_dialog.png
    :width: 350
@@ -534,7 +533,7 @@ To save the current resource policy as a file, click on the 'Tools' menu located
    :alt: Keypair export
 
 Unified View for Pending Sessions
---------------------------------
+----------------------------------
 
 From Backend.AI version 25.13.0, a unified view for pending sessions is available in the Admin Menu.
 Unlike the Session page, the Scheduler page provides a unified view of all pending sessions within a
@@ -548,8 +547,8 @@ which the session will be created once sufficient resources become available.
 Similar to the Session page, you can click the session name to open a drawer that
 displays detailed information about the session.
 
-Manage Images
--------------
+Managing Images
+---------------
 
 Admins can manage images, which are used in creating a compute session, in the
 Images tab of the Environments page. In the tab, meta information of all images
@@ -605,8 +604,8 @@ In this interface, you can add supported custom applications by clicking the '+ 
       :alt: Confirmation dialog for manage app change in image
 
 
-Manage docker registry
-----------------------
+Managing Docker Registry
+------------------------
 
 You can click on the Registries tab in Environments page to see the information
 of the docker registry that are currently connected. ``cr.backend.ai`` is
@@ -677,8 +676,8 @@ Enabled switch in the registry list to allow users to access images from
 the registry.
 
 
-Manage resource preset
-----------------------
+Managing Resource Presets
+-------------------------
 
 The following predefined resource presets are displayed in the Resource
 allocation panel when creating a compute session. Superadmin can manage these
@@ -720,22 +719,21 @@ each resource preset.
    :alt: Create resource preset dialog
 
 
-Manage agent nodes
-------------------
+Managing Agent Nodes
+--------------------
 
 Superadmins can view the list of agent worker nodes, currently connected to
 Backend.AI, by visiting the Resources page. You can check agent node's IP,
 connecting time, actual resources currently in use, etc. The WebUI does
 not provide the function to manipulate agent nodes.
 
-Query agent nodes
-~~~~~~~~~~~~~~~~~
+Querying Agent Nodes
+~~~~~~~~~~~~~~~~~~~~
 
 .. image:: agent_list.png
    :alt: Agent node list
 
-Also You can see exact usage about the resources in the agent worker node
-by Click note icon in the Control panel.
+You can also see the exact resource usage of the agent worker node by clicking the note icon in the Control panel.
 
 .. image:: detailed_agent_node_usage_information.png
    :width: 350
@@ -765,8 +763,8 @@ preserving the existing sessions on the Agent.
 
 .. _scheduling-methods:
 
-Manage resource group
----------------------
+Managing Resource Groups
+------------------------
 
 Agents can be grouped into units called resource (scaling) groups. For example,
 let's say there are 3 agents with V100 GPUs and 2 agents with P100 GPUs. You
@@ -872,7 +870,7 @@ Storages
 --------
 
 On STORAGES tab, you can see what kind of mount volumes (usually NFS) exist.
-From 23.03 version, We provide per-user/per-project quota setting on storage that supports quota management.
+From 23.03 version, Backend.AI provides per-user/per-project quota setting on storage that supports quota management.
 By using this feature, admin can easily manage and monitor the exact amount of storage usage for each user and project based folder.
 
 .. image:: storage_list.png
@@ -881,7 +879,7 @@ In order to set quota, you need to first access to storages tab in resource page
 And then, click 'Setting (Gear)' in control column.
 
 .. note::
-   Please remind that quota setting is only available in storage that provides quota setting
+   Note that quota setting is only available in storage that provides quota setting
    (e.g. XFS, CephFS, NetApp, Purestorage, etc.). Although you can see the usage of storage
    in quota setting page regardless of storage, you cannot configure the quota which doesn't
    support quota configuration internally.
@@ -943,7 +941,7 @@ As in the picture below, you need to first select the domain, and then select th
 Unset Quota
 ~~~~~~~~~~~~
 
-We also provides the feature to unset the quota. Please remind that after removing the quota setting, quota will automatically follows
+Backend.AI also provides the feature to unset the quota. Please remind that after removing the quota setting, quota will automatically follows
 user or project default quota, which cannot be set in WebUI. If you want to change the default quota setting, you may need to access to admin-only page.
 By Clicking ``Unset`` button in control column, the small snackbar message will show up and confirm whether you really want to delete the current quota setting.
 If you click ``OK`` button in the snackbar message, then it will delete the quota setting and automatically reset the quota follows to corresponding quota,
@@ -961,8 +959,8 @@ which depends on the quota type(user / project).
 
 
 
-Download session lists
-----------------------
+Downloading Session Lists
+-------------------------
 .. note::
    This feature is currently not available on the default Session page.
    To use this feature, please enable 'Classic Session list page' option in the 'Switch back to the Classic UI' section
@@ -974,7 +972,7 @@ When you click this menu, a sub-menu export CSV appears.
 
 .. image:: export_csv_menu.png
 
-If you click this menu, you can download the information of the comcpute sessions
+If you click this menu, you can download the information of the compute sessions
 created so far in CSV format. After the following dialog opens, enter an appropriate
 file name (if necessary), click the EXPORT button and you will get the CSV file.
 Please note that a file name can have up to 255 characters.
@@ -1042,14 +1040,14 @@ only possible when the scheduler is FIFO.
    :alt: System setting dialog scheduler settings
 
 .. note::
-   We will continue to add broader range of setting controls.
+   Backend.AI will continue to add a broader range of setting controls.
 
 .. note::
    System settings are default settings. If resource group has certain value,
    then it overrides configured value in system settings.
 
 
-Server management
+Server Management
 -----------------
 
 Go to the Maintenance page and you will see some buttons to manage the server.
@@ -1069,7 +1067,7 @@ Go to the Maintenance page and you will see some buttons to manage the server.
    :alt: Maintenance page
 
 .. note::
-   We will continue to add other settings needed for management, such as
+   Backend.AI will continue to add other settings needed for management, such as
    removing unused images or registering periodic maintenance schedules.
 
 

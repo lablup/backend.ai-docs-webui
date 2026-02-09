@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Backend.AI Web-UI User Guide 25.05\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-14 11:59+0900\n"
+"POT-Creation-Date: 2026-02-09 19:13+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,24 +23,61 @@ msgstr "자원 요약"
 
 #: ../../agent_summary/agent_summary.rst:5
 msgid ""
-"For now, users with admin role only can see agent information via "
-"administration menu. From 22.09 Backend.AI WebUI supports showing partial"
-" information of agent node(s) when configuration is set. In Agent summary"
-" menu, you can see the list of agent information including endpoint "
-"address, CPU architecture, resource allocation, and whether the agent is "
-"schedulable or not. This menu is useful to check resource allocation on "
-"session creation."
+"If you have admin privileges, you can access full agent information via "
+"the **Administration** menu. From version 22.09, Backend.AI WebUI also "
+"supports displaying partial agent node information for non-admin users "
+"when the server configuration allows it. On the **Agent Summary** page, "
+"you can view agent information including endpoint address, CPU "
+"architecture, resource allocation, and whether the agent is schedulable. "
+"This page is useful for checking resource availability before creating a "
+"compute session."
 msgstr ""
-"지금까지는 관리자 권한을 가진 사용자만 관리자 메뉴를 통해 에이전트 자원 정보를 확인할 수 있었습니다.22.09 버전 부터 "
-"Backend.AI WebUI에서는 설정 값에 따라 에이전트 노드의 부분적인 정보를 제공합니다. 자원 요약 메뉴에서는 에이전트 별 "
-"엔드포인트 주소, CPU 아키텍쳐, 자원 할당량, 그리고 에이전트의 스케줄링 가능 상태 여부와 같은 정보를 확인할 수"
-" 있습니다. 이 메뉴는 세션 생성 시 자원 할당을 하는 데에 유용합니다."
+"관리자 권한이 있는 경우, **관리** 메뉴를 통해 에이전트의 전체 정보를 확인할 수 있습니다. 22.09 버전부터 "
+"Backend.AI WebUI에서는 서버 설정이 허용하는 경우 비관리자 사용자에게도 에이전트 노드의 부분적인 정보를 표시합니다. "
+"**자원 요약** 페이지에서는 에이전트별 엔드포인트 주소, CPU 아키텍처, 자원 할당량, 스케줄링 가능 여부 등의 정보를 확인할 수"
+" 있습니다. 이 페이지는 연산 세션을 생성하기 전에 자원 가용성을 확인하는 데 유용합니다."
 
 #: ../../agent_summary/agent_summary.rst:14
+msgid "Agent Information"
+msgstr "에이전트 정보"
+
+#: ../../agent_summary/agent_summary.rst:16
 msgid ""
-"Depending on the server configuration, the agent summary service feature "
-"may not be available. In that case, please contact administrator of your "
-"system."
-msgstr "서버 설치 및 설정 환경에 따라, 자원 요약 기능이 비활성화되어 있을 수 있습니다. "
-"자원 요약 기능 사용을 원하시는 경우, 시스템 관리자에게 문의하십시오."
+"The agent list displays the following information for each connected "
+"agent node:"
+msgstr "에이전트 목록에는 연결된 각 에이전트 노드에 대해 다음 정보가 표시됩니다:"
+
+#: ../../agent_summary/agent_summary.rst:18
+msgid "**Endpoint**: The network address of the agent node."
+msgstr "**엔드포인트**: 에이전트 노드의 네트워크 주소입니다."
+
+#: ../../agent_summary/agent_summary.rst:19
+msgid ""
+"**CPU Architecture**: The CPU architecture of the agent (e.g., "
+"``x86_64``, ``aarch64``)."
+msgstr ""
+"**CPU 아키텍처**: 에이전트의 CPU 아키텍처입니다 (예: ``x86_64``, ``aarch64``)."
+
+#: ../../agent_summary/agent_summary.rst:20
+msgid ""
+"**Resource Allocation**: A summary of the resources currently allocated "
+"and available on the agent, including CPU, memory, and AI accelerators."
+msgstr ""
+"**자원 할당**: CPU, 메모리, AI 가속기 등 에이전트에 현재 할당된 자원과 사용 가능한 자원의 요약 정보입니다."
+
+#: ../../agent_summary/agent_summary.rst:21
+msgid ""
+"**Schedulable**: Indicates whether the agent is available for scheduling "
+"new compute sessions. If the agent is not schedulable, new sessions "
+"cannot be placed on it."
+msgstr ""
+"**스케줄 가능**: 에이전트가 새로운 연산 세션의 스케줄링에 사용 가능한지 여부를 나타냅니다. 스케줄 불가 상태인 에이전트에는 "
+"새로운 세션을 배치할 수 없습니다."
+
+#: ../../agent_summary/agent_summary.rst:24
+msgid ""
+"Depending on the server configuration, the agent summary feature may not "
+"be available. In that case, please contact your system administrator."
+msgstr ""
+"서버 설정 환경에 따라 자원 요약 기능을 사용할 수 없는 경우가 있습니다. 이 경우, 시스템 관리자에게 문의하십시오."
 
