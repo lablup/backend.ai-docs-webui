@@ -1,0 +1,326 @@
+# docs-mapping.yml
+# Maps webui React source paths to documentation RST files.
+# Used by scripts/analyze_changes.py to determine which docs need updating.
+#
+# Glob patterns are relative to the webui repo root.
+# RST paths are relative to docs-webui/docs/.
+
+meta:
+  version: 1
+  webui_repo: lablup/backend.ai-webui
+  docs_repo: lablup/backend.ai-docs-webui
+
+pages:
+  - route: /start
+    sources:
+      - "react/src/pages/StartPage.tsx"
+    docs:
+      - "start/start.rst"
+
+  - route: /chat
+    sources:
+      - "react/src/pages/ChatPage.tsx"
+    docs:
+      - "chat/chat.rst"
+
+  - route: /dashboard
+    sources:
+      - "react/src/pages/DashboardPage.tsx"
+    docs:
+      - "dashboard/dashboard.rst"
+
+  - route: /admin-dashboard
+    sources:
+      - "react/src/pages/AdminDashboardPage.tsx"
+    docs:
+      - "dashboard/dashboard.rst"
+
+  - route: /session
+    sources:
+      - "react/src/pages/ComputeSessionListPage.tsx"
+      - "react/src/pages/SessionLauncherPage.tsx"
+    docs:
+      - "session_page/session_page.rst"
+      - "sessions_all/sessions_all.rst"
+      - "cluster_session/cluster_session.rst"
+
+  - route: /serving
+    sources:
+      - "react/src/pages/ServingPage.tsx"
+      - "react/src/pages/ServiceLauncherPage.tsx"
+      - "react/src/pages/EndpointDetailPage.tsx"
+    docs:
+      - "model_serving/model_serving.rst"
+
+  - route: /data
+    sources:
+      - "react/src/pages/VFolderNodeListPage.tsx"
+    docs:
+      - "vfolder/vfolder.rst"
+      - "mount_vfolder/mount_vfolder.rst"
+      - "share_vfolder/share_vfolder.rst"
+
+  - route: /my-environment
+    sources:
+      - "react/src/pages/MyEnvironmentPage.tsx"
+    docs:
+      - "my_environments/my_environments.rst"
+
+  - route: /agent-summary
+    sources:
+      - "react/src/pages/AgentSummaryPage.tsx"
+    docs:
+      - "agent_summary/agent_summary.rst"
+
+  - route: /statistics
+    sources:
+      - "react/src/pages/StatisticsPage.tsx"
+    docs:
+      - "statistics/statistics.rst"
+
+  - route: /usersettings
+    sources:
+      - "react/src/pages/UserSettingsPage.tsx"
+    docs:
+      - "user_settings/user_settings.rst"
+
+  - route: /credential
+    sources:
+      - "react/src/pages/UserCredentialsPage.tsx"
+    docs:
+      - "admin_menu/admin_menu.rst"
+
+  - route: /environment
+    sources:
+      - "react/src/pages/EnvironmentPage.tsx"
+    docs:
+      - "admin_menu/admin_menu.rst"
+
+  - route: /agent
+    sources:
+      - "react/src/pages/ResourcesPage.tsx"
+    docs:
+      - "admin_menu/admin_menu.rst"
+
+  - route: /resource-policy
+    sources:
+      - "react/src/pages/ResourcePolicyPage.tsx"
+    docs:
+      - "admin_menu/admin_menu.rst"
+
+  - route: /scheduler
+    sources:
+      - "react/src/pages/SchedulerPage.tsx"
+    docs:
+      - "admin_menu/admin_menu.rst"
+
+  - route: /maintenance
+    sources:
+      - "react/src/pages/MaintenancePage.tsx"
+    docs:
+      - "admin_menu/admin_menu.rst"
+
+  - route: /information
+    sources:
+      - "react/src/pages/ConfigurationsPage.tsx"
+    docs:
+      - "admin_menu/admin_menu.rst"
+
+  - route: /storage-settings
+    sources:
+      - "react/src/pages/StorageHostSettingPage.tsx"
+    docs:
+      - "admin_menu/admin_menu.rst"
+
+  - route: /project
+    sources:
+      - "react/src/pages/ProjectPage.tsx"
+    docs:
+      - "admin_menu/admin_menu.rst"
+
+  - route: /model-store
+    sources:
+      - "react/src/pages/ModelStoreListPage.tsx"
+    docs:
+      - "model_serving/model_serving.rst"
+
+  - route: /interactive-login
+    sources:
+      - "react/src/pages/InteractiveLoginPage.tsx"
+    docs:
+      - "login/login.rst"
+
+  - route: /pipeline
+    sources:
+      - "react/src/pages/ReservoirPage.tsx"
+      - "react/src/pages/ReservoirArtifactDetailPage.tsx"
+    docs: []  # No RST yet
+
+  - route: /branding
+    sources:
+      - "react/src/pages/BrandingPage.tsx"
+    docs: []  # No RST yet
+
+  - route: /ai-agent
+    sources:
+      - "react/src/pages/AIAgentPage.tsx"
+    docs: []  # Experimental, no RST yet
+
+components:
+  - name: session-components
+    sources:
+      - "react/src/components/SessionNodes.tsx"
+      - "react/src/components/SessionDetailContent.tsx"
+      - "react/src/components/SessionDetailDrawer.tsx"
+      - "react/src/components/SessionUsageMonitor.tsx"
+      - "react/src/components/SessionFormItems/**"
+      - "react/src/components/SessionListColums/**"
+      - "react/src/components/ComputeSessionNodeItems/**"
+      - "react/src/components/SessionOwnerSetterCard.tsx"
+      - "react/src/components/PendingSessionNodeList.tsx"
+    docs:
+      - "session_page/session_page.rst"
+      - "sessions_all/sessions_all.rst"
+
+  - name: vfolder-components
+    sources:
+      - "react/src/components/VFolderNodes.tsx"
+      - "react/src/components/VFolderTable.tsx"
+      - "react/src/components/VFolderTableFormItem.tsx"
+      - "react/src/components/FolderCreateModal.tsx"
+      - "react/src/components/DeleteVFolderModal.tsx"
+      - "react/src/components/RestoreVFolderModal.tsx"
+      - "react/src/components/VirtualFolderNodeItems/**"
+      - "react/src/components/InviteFolderSettingModal.tsx"
+      - "react/src/components/SharedFolderPermissionInfoModal.tsx"
+    docs:
+      - "vfolder/vfolder.rst"
+      - "mount_vfolder/mount_vfolder.rst"
+      - "share_vfolder/share_vfolder.rst"
+
+  - name: serving-components
+    sources:
+      - "react/src/components/EndpointList.tsx"
+      - "react/src/components/EndpointStatusTag.tsx"
+      - "react/src/components/EndpointOwnerInfo.tsx"
+      - "react/src/components/EndpointTokenGenerationModal.tsx"
+      - "react/src/components/ServiceLauncherPageContent.tsx"
+      - "react/src/components/ServiceValidationView.tsx"
+      - "react/src/components/AutoScalingRuleEditorModal.tsx"
+    docs:
+      - "model_serving/model_serving.rst"
+
+  - name: dashboard-components
+    sources:
+      - "react/src/components/MyResource.tsx"
+      - "react/src/components/MyResourceWithinResourceGroup.tsx"
+      - "react/src/components/TotalResourceWithinResourceGroup.tsx"
+      - "react/src/components/ConfigurableResourceCard.tsx"
+      - "react/src/components/SessionCountDashboardItem.tsx"
+      - "react/src/components/RecentlyCreatedSession.tsx"
+      - "react/src/components/SummaryPageItems/**"
+      - "react/src/components/SummaryItem.tsx"
+      - "react/src/components/ActiveAgents.tsx"
+      - "react/src/components/AgentStats.tsx"
+    docs:
+      - "dashboard/dashboard.rst"
+      - "summary/summary.rst"
+
+  - name: session-launcher-components
+    sources:
+      - "react/src/components/ImageEnvironmentSelectFormItems.tsx"
+      - "react/src/components/ResourcePresetSelect.tsx"
+      - "react/src/components/SessionLauncherPreview.tsx"
+      - "react/src/components/SessionLauncherFormIncompatibleValueChecker.tsx"
+      - "react/src/components/SessionLauncherErrorTourProps.tsx"
+      - "react/src/components/BatchSessionScheduledTimeSetting.tsx"
+    docs:
+      - "sessions_all/sessions_all.rst"
+
+  - name: user-settings-components
+    sources:
+      - "react/src/components/SettingList.tsx"
+      - "react/src/components/SettingItem.tsx"
+      - "react/src/components/SSHKeypairManagementModal.tsx"
+      - "react/src/components/ShellScriptEditModal.tsx"
+      - "react/src/components/ErrorLogList.tsx"
+    docs:
+      - "user_settings/user_settings.rst"
+
+  - name: admin-components
+    sources:
+      - "react/src/components/UserManagement.tsx"
+      - "react/src/components/UserInfoModal.tsx"
+      - "react/src/components/UserSettingModal.tsx"
+      - "react/src/components/KeypairResourcePolicyList.tsx"
+      - "react/src/components/KeypairResourcePolicySettingModal.tsx"
+      - "react/src/components/ProjectResourcePolicyList.tsx"
+      - "react/src/components/UserResourcePolicyList.tsx"
+      - "react/src/components/ResourceGroupList.tsx"
+      - "react/src/components/ResourceGroupSettingModal.tsx"
+      - "react/src/components/ContainerRegistryList.tsx"
+      - "react/src/components/ContainerRegistryEditorModal.tsx"
+      - "react/src/components/ImageList.tsx"
+      - "react/src/components/AgentList.tsx"
+      - "react/src/components/AgentNodeItems/**"
+      - "react/src/components/MaintenanceSettingList.tsx"
+      - "react/src/components/ConfigurationsSettingList.tsx"
+      - "react/src/components/StorageProxyList.tsx"
+      - "react/src/components/StorageHostSettingsPanel.tsx"
+    docs:
+      - "admin_menu/admin_menu.rst"
+
+  - name: chat-components
+    sources:
+      - "react/src/components/Chat/**"
+      - "react/src/components/ModelCardChat.tsx"
+      - "react/src/components/ModelCardModal.tsx"
+    docs:
+      - "chat/chat.rst"
+
+  - name: sftp-components
+    sources:
+      - "react/src/components/SFTPServerButton.tsx"
+    docs:
+      - "sftp_to_container/sftp_to_container.rst"
+
+  - name: import-components
+    sources:
+      - "react/src/components/ImportNotebookForm.tsx"
+      - "react/src/components/ImportRepoForm.tsx"
+      - "react/src/components/StartFromURLModal.tsx"
+    docs:
+      - "import_run/import_run.rst"
+
+  - name: header-components
+    sources:
+      - "react/src/components/MainLayout/**"
+      - "react/src/components/BAISider.tsx"
+      - "react/src/components/BAIMenu.tsx"
+      - "react/src/components/UserDropdownMenu.tsx"
+      - "react/src/components/BAINotificationButton.tsx"
+      - "react/src/components/AnnouncementAlert.tsx"
+    docs:
+      - "header/header.rst"
+
+  - name: environment-components
+    sources:
+      - "react/src/components/CustomizedImageList.tsx"
+      - "react/src/components/ImageInstallModal.tsx"
+    docs:
+      - "my_environments/my_environments.rst"
+
+  - name: statistics-components
+    sources:
+      - "react/src/components/AllocationHistory.tsx"
+      - "react/src/components/AllocationHistoryStatistics.tsx"
+      - "react/src/components/UserSessionsMetrics.tsx"
+    docs:
+      - "statistics/statistics.rst"
+
+  - name: routing
+    sources:
+      - "react/src/routes.tsx"
+    docs:
+      - "overview/overview.rst"
+      - "header/header.rst"

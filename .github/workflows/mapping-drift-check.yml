@@ -1,0 +1,58 @@
+name: Check docs-mapping.yml for drift
+
+on:
+  schedule:
+    # Weekly on Monday at 09:00 UTC
+    - cron: "0 9 * * 1"
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-mapping-drift:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout docs-webui
+        uses: actions/checkout@v4
+
+      - name: Checkout webui repo
+        uses: actions/checkout@v4
+        with:
+          repository: lablup/backend.ai-webui
+          path: _webui
+          token: ${{ secrets.DOCS_WEBUI_PAT }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Run drift check
+        id: drift
+        run: |
+          python scripts/check_mapping_drift.py \
+            --mapping .github/docs-mapping.yml \
+            --webui-path _webui \
+            --docs-path docs
+
+      - name: Create or update issue if drift detected
+        if: steps.drift.outputs.has_drift == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.DOCS_WEBUI_PAT }}
+        run: |
+          EXISTING=$(gh issue list --state open --label "mapping-drift" --json number --jq '.[0].number // empty')
+          if [ -n "${EXISTING}" ]; then
+            echo "Updating existing drift issue #${EXISTING}"
+            gh issue comment "${EXISTING}" --body-file /tmp/drift_report.md
+          else
+            gh issue create \
+              --title "Docs mapping drift detected" \
+              --body-file /tmp/drift_report.md \
+              --label "documentation,mapping-drift"
+          fi

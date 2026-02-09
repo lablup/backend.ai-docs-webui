@@ -1,0 +1,148 @@
+name: Auto-update docs on webui release
+
+on:
+  repository_dispatch:
+    types: [webui-release]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  analyze-and-create-pr:
+    runs-on: ubuntu-latest
+    env:
+      WEBUI_REPO: lablup/backend.ai-webui
+      COMMIT_SHA: ${{ github.event.client_payload.commit_sha }}
+      CHANGED_FILES: ${{ github.event.client_payload.changed_files }}
+      RELEASE_TAG: ${{ github.event.client_payload.release_tag }}
+      RELEASE_URL: ${{ github.event.client_payload.release_url }}
+
+    steps:
+      - name: Checkout docs-webui
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Checkout webui repo (for diff analysis)
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.WEBUI_REPO }}
+          ref: ${{ env.RELEASE_TAG }}
+          path: _webui
+          token: ${{ secrets.DOCS_WEBUI_PAT }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Analyze changed files
+        id: analyze
+        run: |
+          echo "${CHANGED_FILES}" | tr ',' '\n' | \
+            python scripts/analyze_changes.py \
+              --mapping .github/docs-mapping.yml \
+              --format json > /tmp/analysis.json
+
+          RST_COUNT=$(python3 -c "
+          import json
+          with open('/tmp/analysis.json') as f:
+              data = json.load(f)
+          print(len(data.get('affected_rst', [])))
+          ")
+
+          AFFECTED_RST=$(python3 -c "
+          import json
+          with open('/tmp/analysis.json') as f:
+              data = json.load(f)
+          print(','.join(data.get('affected_rst', [])))
+          ")
+
+          echo "affected_rst=${AFFECTED_RST}" >> "$GITHUB_OUTPUT"
+          echo "rst_count=${RST_COUNT}" >> "$GITHUB_OUTPUT"
+
+      - name: Skip if no docs affected
+        if: steps.analyze.outputs.rst_count == '0'
+        run: echo "No documentation files affected by this release."
+
+      - name: Generate change summary
+        if: steps.analyze.outputs.rst_count != '0'
+        id: summary
+        run: |
+          python3 scripts/generate_pr_summary.py \
+            --analysis /tmp/analysis.json \
+            --changed-files "${CHANGED_FILES}" \
+            --webui-path _webui \
+            --docs-path docs \
+            --release-tag "${RELEASE_TAG}" \
+            --release-url "${RELEASE_URL}" \
+            > /tmp/pr_body.md
+
+      - name: Create branch and push
+        if: steps.analyze.outputs.rst_count != '0'
+        id: branch
+        run: |
+          BRANCH_NAME="docs-update/${RELEASE_TAG}"
+          git checkout -b "${BRANCH_NAME}"
+
+          git config user.name "docs-automation[bot]"
+          git config user.email "docs-automation[bot]@users.noreply.github.com"
+
+          # Empty commit to create the branch
+          git commit --allow-empty -m "docs: update needed for webui ${RELEASE_TAG}"
+          git push origin "${BRANCH_NAME}"
+          echo "branch_name=${BRANCH_NAME}" >> "$GITHUB_OUTPUT"
+
+      - name: Create Draft PR
+        if: steps.analyze.outputs.rst_count != '0'
+        id: create_pr
+        env:
+          GH_TOKEN: ${{ secrets.DOCS_WEBUI_PAT }}
+        run: |
+          gh pr create \
+            --draft \
+            --title "docs: update for webui ${RELEASE_TAG}" \
+            --body-file /tmp/pr_body.md
+
+      - name: Create screenshot issue if page-level changes
+        if: steps.analyze.outputs.rst_count != '0'
+        env:
+          GH_TOKEN: ${{ secrets.DOCS_WEBUI_PAT }}
+        run: |
+          # Check if any page-level files changed
+          PAGE_CHANGES=$(echo "${CHANGED_FILES}" | tr ',' '\n' | grep '/pages/' || true)
+          if [ -z "${PAGE_CHANGES}" ]; then
+            echo "No page-level changes. Skipping screenshot issue."
+            exit 0
+          fi
+
+          AFFECTED="${{ steps.analyze.outputs.affected_rst }}"
+          RST_CHECKLIST=""
+          for rst in $(echo "${AFFECTED}" | tr ',' '\n'); do
+            RST_CHECKLIST="${RST_CHECKLIST}
+          - [ ] \`docs/${rst}\`"
+          done
+
+          gh issue create \
+            --title "Screenshots needed: webui ${RELEASE_TAG}" \
+            --body "$(cat <<EOF
+          ## Screenshots Needed
+
+          WebUI ${RELEASE_TAG} includes page-level UI changes. Update screenshots for:
+          ${RST_CHECKLIST}
+
+          **Instructions:**
+          1. Run webui ${RELEASE_TAG} locally
+          2. Navigate to the affected pages
+          3. Take screenshots following STYLE_GUIDE.md conventions
+          EOF
+          )" \
+            --label "documentation,screenshots-needed" 2>/dev/null || \
+          gh issue create \
+            --title "Screenshots needed: webui ${RELEASE_TAG}" \
+            --body "Page-level UI changes in ${RELEASE_TAG}. Update screenshots for: ${AFFECTED}"

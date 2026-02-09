@@ -136,3 +136,7 @@ dmypy.json
 
 # Mac
 .DS_Store
+
+# Generated analysis reports
+gap_report*.md
+update_plan*.md
