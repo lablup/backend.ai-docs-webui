@@ -39,16 +39,16 @@ Third-person is acceptable for abstract domain definitions:
 | Menu items | Single quotes | Select 'Preferences' from the menu |
 | Page/Tab names | Bold | Navigate to the **Sessions** page |
 | Field labels in forms | Bold | Set **Permission** to Read-Only |
-| Status values | Inline code (double backtick) | The session status changes to ``RUNNING`` |
-| Technical terms, code | Inline code (double backtick) | The ``model-definition.yml`` file |
-| Keyboard shortcuts | Inline code (double backtick) | Press ``Ctrl-R`` to refresh |
-| File paths | Inline code (double backtick) | Files are stored under ``/home/work/`` |
+| Status values | Inline code | The session status changes to `RUNNING` |
+| Technical terms, code | Inline code | The `model-definition.yml` file |
+| Keyboard shortcuts | `<kbd>` tag or inline code | Press <kbd>Ctrl</kbd>+<kbd>R</kbd> to refresh |
+| File paths | Inline code | Files are stored under `/home/work/` |
 
-### Examples in RST
+### Examples
 
-```rst
+```markdown
 Click 'Start' on the **Sessions** page to launch a new compute session.
-The session status will change to ``PREPARING`` and then to ``RUNNING``.
+The session status will change to `PREPARING` and then to `RUNNING`.
 Set the **Folder name** field to your desired name (up to 64 characters).
 ```
 
@@ -56,14 +56,14 @@ Set the **Folder name** field to your desired name (up to 64 characters).
 
 ## Heading Styles
 
-### RST Heading Characters
+### Markdown Heading Levels
 
-| Level | Character | Usage |
-|-------|-----------|-------|
-| H1 (Page title) | `=` (overline + underline) | One per file |
-| H2 (Major section) | `-` (underline) | Primary sections |
-| H3 (Subsection) | `^` (underline) | Subsections |
-| H4 (Sub-subsection) | `~` (underline) | Rarely used |
+| Level | Syntax | Usage |
+|-------|--------|-------|
+| H1 | `#` | Page title — one per file |
+| H2 | `##` | Major section |
+| H3 | `###` | Subsection |
+| H4 | `####` | Sub-subsection (rarely used) |
 
 ### Heading Phrasing
 
@@ -72,7 +72,10 @@ Use **noun phrases** or **gerund phrases** for consistency:
 - **Good**: "Creating a Storage Folder", "Managing Resource Policies", "Resource Summary Panels"
 - **Avoid**: "Create storage folder" (imperative), "How to create a folder" (question-like)
 
-The underline must be at least as long as the heading text.
+### Heading Rules
+- Leave one blank line before and after each heading.
+- Do not skip heading levels (e.g., do not jump from `##` to `####`).
+- Do not add trailing punctuation to headings.
 
 ---
 
@@ -88,22 +91,32 @@ Each documentation page should follow this structure:
 
 ---
 
-## Image Directives
+## Images
 
 ### Rules
-- Always include `:alt:` text describing the image content.
-- Use `:width: 100%` for full-page screenshots.
-- Use `:width: 400` to `:width: 700` for dialogs and partial views.
-- Use `:align: center` for dialog and modal screenshots.
+- Always include alt text describing the image content.
+- Place images on their own line (not inline with text).
+- Use HTML `<img>` tag when you need to control width or alignment.
 
-### Template
+### Markdown Syntax
 
-```rst
-.. image:: screenshot_name.png
-   :width: 100%
-   :align: center
-   :alt: Description of what the screenshot shows
+```markdown
+![Description of what the screenshot shows](images/screenshot_name.png)
 ```
+
+For size control:
+
+```html
+<p align="center">
+  <img src="images/screenshot_name.png" alt="Description" width="100%">
+</p>
+```
+
+| Image Type | Width |
+|-----------|-------|
+| Full-page screenshot | `width="100%"` |
+| Dialog / modal | `width="400"` to `width="700"` |
+| Small icon or button | `width="200"` or less |
 
 ### Screenshot Naming
 
@@ -126,49 +139,97 @@ Use the pattern `<page>_<feature>.png`:
 
 ---
 
-## Admonitions
+## Callouts (Notes and Warnings)
 
-Use Sphinx admonitions sparingly and consistently:
+Use blockquote-based callouts with emoji prefixes:
 
-```rst
-.. note::
-   Additional context or tips that are helpful but not critical.
+```markdown
+> **Note:** Additional context or tips that are helpful but not critical.
 
-.. warning::
-   Important cautions about potential issues or data loss.
+> **Warning:** Important cautions about potential issues or data loss.
 ```
 
-- Use `.. note::` for supplementary information.
-- Use `.. warning::` for cautions about destructive actions or potential problems.
-- Do not use `.. danger::`, `.. tip::`, or `.. attention::` to keep admonition types simple.
+If the documentation framework supports GitHub-style alerts (e.g., MkDocs with appropriate plugin):
+
+```markdown
+> [!NOTE]
+> Additional context or tips that are helpful but not critical.
+
+> [!WARNING]
+> Important cautions about potential issues or data loss.
+```
+
+- Use **Note** for supplementary information.
+- Use **Warning** for cautions about destructive actions or potential problems.
+- Keep callout types simple — avoid using Tip, Danger, or Attention.
 
 ---
 
-## Cross-References
+## Links and Cross-References
 
-Use Sphinx `:ref:` for internal cross-references:
+### Internal Links (within docs)
 
-```rst
-For more details, refer to :ref:`creating-a-storage-folder`.
+```markdown
+For more details, see [Creating a Storage Folder](storage/create-folder.md).
 ```
 
-Each target should be defined with a label above the heading:
+### Anchor Links (within the same page)
 
-```rst
-.. _creating-a-storage-folder:
+```markdown
+See the [Resource Summary Panels](#resource-summary-panels) section below.
+```
 
-Creating a Storage Folder
--------------------------
+Markdown auto-generates anchors from headings by lowercasing and replacing spaces with hyphens.
+
+### External Links
+
+```markdown
+Refer to the [Backend.AI documentation](https://docs.backend.ai) for server-side details.
 ```
 
 ---
 
 ## Lists
 
-- Use bullet lists (`*` or `-`) for unordered items.
+- Use bullet lists (`-`) for unordered items.
 - Use numbered lists (`1.`, `2.`) for sequential steps.
-- Indent nested items by 3 spaces.
+- Indent nested items by 2 spaces.
 - Keep parallel structure within a list (all items start with a verb, or all are noun phrases).
+
+---
+
+## Code Blocks
+
+Use fenced code blocks with language identifiers:
+
+````markdown
+```bash
+pip install backend.ai-client
+```
+
+```yaml
+model-definition:
+  name: my-model
+  runtime: python
+```
+````
+
+For inline code, use single backticks: `config.toml`.
+
+---
+
+## Tables
+
+Use standard Markdown tables with header separators:
+
+```markdown
+| Column A | Column B | Column C |
+|----------|----------|----------|
+| Value 1  | Value 2  | Value 3  |
+```
+
+- Align pipes for readability (optional but recommended).
+- Use inline code in table cells when showing technical values.
 
 ---
 
