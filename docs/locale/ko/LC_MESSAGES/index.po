@@ -29,14 +29,14 @@ msgstr ""
 
 #: ../../index.rst:9
 msgid "User's guide for the Backend.AI WebUI."
-msgstr "Backend.AI Web-UI의 사용자 가이드입니다."
+msgstr "Backend.AI WebUI의 사용자 가이드입니다."
 
 #: ../../index.rst:11
 msgid ""
 "Backend.AI WebUI is a web or app that provides easy-to-use GUI interface "
 "to work with the Backend.AI server."
 msgstr ""
-"Backend.AI Web-UI는 웹 또는 앱 형태의 GUI 클라이언트로, Backend.AI 서버에 접속하여 연산 자원을 활용하고"
+"Backend.AI WebUI는 웹 또는 앱 형태의 GUI 클라이언트로, Backend.AI 서버에 접속하여 연산 자원을 활용하고"
 " 자신의 환경을 관리할 수 있는 편리한 그래픽 인터페이스를 제공합니다."
 
 #: ../../index.rst:14
@@ -51,6 +51,6 @@ msgstr "https://webui.docs.backend.ai/en/latest (영문)"
 msgid "https://webui.docs.backend.ai/ko/latest (Korean)"
 msgstr "https://webui.docs.backend.ai/ko/latest (한글)"
 
-#~ msgid "Backend.AI Web-UI User Guide"
+#~ msgid "Backend.AI WebUI User Guide"
 #~ msgstr ""
 

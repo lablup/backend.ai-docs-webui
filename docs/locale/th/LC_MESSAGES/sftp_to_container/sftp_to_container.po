@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the Backend.AI WebUI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Project-Id-Version: Backend.AI WebUI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-23 23:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -48,14 +48,14 @@ msgstr ""
 #: ../../sftp_to_container/sftp_to_container.rst:19
 msgid ""
 "You can also download the app from https://github.com/lablup/backend.ai-"
-"webui/releases. Make sure to download the compatible version of the Web-UI "
-"in this case. You can check the Web-UI version by clicking on the \"About "
+"webui/releases. Make sure to download the compatible version of the WebUI "
+"in this case. You can check the WebUI version by clicking on the \"About "
 "Backend.AI\" sub-menu located in the preference menu on the upper-right side"
 " of the GUI."
 msgstr ""
 "คุณยังสามารถดาวน์โหลดแอปได้ที่ https://github.com/lablup/backend.ai-"
 "webui/releases โปรดตรวจสอบให้แน่ใจว่าดาวน์โหลดเวอร์ชันที่เข้ากันได้ของ Web-"
-"UI ในกรณีนี้ คุณสามารถตรวจสอบเวอร์ชันของ Web-UI ได้โดยการคลิกที่เมนูย่อย "
+"UI ในกรณีนี้ คุณสามารถตรวจสอบเวอร์ชันของ WebUI ได้โดยการคลิกที่เมนูย่อย "
 "\"เกี่ยวกับ Backend.AI\" ที่อยู่ในเมนูการตั้งค่าที่มุมขวาบนของ GUI"
 
 #: ../../sftp_to_container/sftp_to_container.rst:44
@@ -66,24 +66,24 @@ msgstr "สำหรับ Linux / Mac"
 msgid ""
 "First, create a compute session, then click the app icon (first button) in "
 "Control, followed by SSH / SFTP icon. Then, a daemon that allows SSH/SFTP "
-"access from inside the container will be initiated, and the Web-UI app "
+"access from inside the container will be initiated, and the WebUI app "
 "interacts with the daemon through a local proxy service."
 msgstr ""
 "ก่อนอื่น สร้างเซสชันการคอมพิวเตอร์ จากนั้นคลิกที่ไอคอนแอป (ปุ่มแรก) ใน "
 "Control ตามด้วยไอคอน SSH / SFTP หลังจากนั้นจะมีการเริ่มต้น daemon "
-"ที่อนุญาตให้เข้าถึง SSH/SFTP จากภายในคอนเทนเนอร์ และแอป Web-UI "
+"ที่อนุญาตให้เข้าถึง SSH/SFTP จากภายในคอนเทนเนอร์ และแอป WebUI "
 "จะทำงานร่วมกับ daemon ผ่านบริการพร็อกซีภายในท้องถิ่น"
 
 #: ../../sftp_to_container/sftp_to_container.rst:52
 msgid ""
 "You cannot establish a SSH/SFTP connection to the session until you click "
-"the SSH/SFTP icon. When you close the Web-UI app and launch it again, the "
-"connection between the local proxy and the Web-UI app is initialized, so the"
+"the SSH/SFTP icon. When you close the WebUI app and launch it again, the "
+"connection between the local proxy and the WebUI app is initialized, so the"
 " SSH/SFTP icon must be clicked again."
 msgstr ""
 "คุณไม่สามารถสร้างการเชื่อมต่อ SSH/SFTP ไปยังเซสชันจนกว่าคุณจะคลิกที่ไอคอน "
-"SSH/SFTP เมื่อคุณปิดแอป Web-UI และเปิดใหม่อีกครั้ง "
-"การเชื่อมต่อระหว่างพร็อกซีท้องถิ่นและแอป Web-UI จะถูกสร้างขึ้นใหม่ "
+"SSH/SFTP เมื่อคุณปิดแอป WebUI และเปิดใหม่อีกครั้ง "
+"การเชื่อมต่อระหว่างพร็อกซีท้องถิ่นและแอป WebUI จะถูกสร้างขึ้นใหม่ "
 "ดังนั้นจึงต้องคลิกที่ไอคอน SSH/SFTP อีกครั้ง"
 
 #: ../../sftp_to_container/sftp_to_container.rst:57
@@ -202,7 +202,7 @@ msgstr "สำหรับ Windows / FileZilla"
 
 #: ../../sftp_to_container/sftp_to_container.rst:122
 msgid ""
-"Backend.AI Web-UI app supports OpenSSH-based public key connection "
+"Backend.AI WebUI app supports OpenSSH-based public key connection "
 "(RSA2048). To access with a client such as PuTTY on Windows, a private key "
 "must be converted into a ``ppk`` file through a program such as PuTTYgen. "
 "You can refer to the following link for the conversion method: "
@@ -210,7 +210,7 @@ msgid ""
 "section will describe how to connect to SFTP through FileZilla client on "
 "Windows."
 msgstr ""
-"แอป Backend.AI Web-UI รองรับการเชื่อมต่อด้วยคีย์สาธารณะแบบ OpenSSH (RSA2048)"
+"แอป Backend.AI WebUI รองรับการเชื่อมต่อด้วยคีย์สาธารณะแบบ OpenSSH (RSA2048)"
 " เพื่อเข้าถึงด้วยไคลเอนต์เช่น PuTTY บน Windows "
 "คีย์ส่วนตัวต้องถูกแปลงเป็นไฟล์ ``ppk`` ผ่านโปรแกรมเช่น PuTTYgen "
 "คุณสามารถดูวิธีการแปลงได้ที่ลิงก์ต่อไปนี้: https://wiki.filezilla-"

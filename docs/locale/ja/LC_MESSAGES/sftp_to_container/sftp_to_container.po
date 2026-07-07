@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the Backend.AI WebUI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Project-Id-Version: Backend.AI WebUI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-20 16:05+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -42,8 +42,8 @@ msgstr ""
 #: ../../sftp_to_container/sftp_to_container.rst:19
 msgid ""
 "You can also download the app from https://github.com/lablup/backend.ai-"
-"webui/releases. Make sure to download the compatible version of the Web-UI "
-"in this case. You can check the Web-UI version by clicking on the \"About "
+"webui/releases. Make sure to download the compatible version of the WebUI "
+"in this case. You can check the WebUI version by clicking on the \"About "
 "Backend.AI\" sub-menu located in the preference menu on the upper-right side"
 " of the GUI."
 msgstr ""
@@ -60,7 +60,7 @@ msgstr "Linux / Mac 用"
 msgid ""
 "First, create a compute session, then click the app icon (first button) in "
 "Control, followed by SSH / SFTP icon. Then, a daemon that allows SSH/SFTP "
-"access from inside the container will be initiated, and the Web-UI app "
+"access from inside the container will be initiated, and the WebUI app "
 "interacts with the daemon through a local proxy service."
 msgstr ""
 "まず、計算セッションを作成し、コントロール内のアプリアイコン（最初のボタン）をクリックし、その後にSSH/SFTPアイコンをクリックします。すると、コンテナ内部からのSSH/SFTPアクセスを許可するデーモンが起動し、Web-"
@@ -69,8 +69,8 @@ msgstr ""
 #: ../../sftp_to_container/sftp_to_container.rst:52
 msgid ""
 "You cannot establish a SSH/SFTP connection to the session until you click "
-"the SSH/SFTP icon. When you close the Web-UI app and launch it again, the "
-"connection between the local proxy and the Web-UI app is initialized, so the"
+"the SSH/SFTP icon. When you close the WebUI app and launch it again, the "
+"connection between the local proxy and the WebUI app is initialized, so the"
 " SSH/SFTP icon must be clicked again."
 msgstr ""
 "SSH/SFTP接続は、SSH/SFTPアイコンをクリックするまで、セッションに対して確立できません。Web-"
@@ -175,7 +175,7 @@ msgstr "Windowsの場合 / FileZilla"
 
 #: ../../sftp_to_container/sftp_to_container.rst:122
 msgid ""
-"Backend.AI Web-UI app supports OpenSSH-based public key connection "
+"Backend.AI WebUI app supports OpenSSH-based public key connection "
 "(RSA2048). To access with a client such as PuTTY on Windows, a private key "
 "must be converted into a ``ppk`` file through a program such as PuTTYgen. "
 "You can refer to the following link for the conversion method: "

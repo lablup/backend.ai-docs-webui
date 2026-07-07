@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the Backend.AI WebUI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Project-Id-Version: Backend.AI WebUI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-23 23:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -159,7 +159,7 @@ msgstr ""
 #: ../../appendix/appendix.rst:84
 msgid ""
 "You can check the operation of the job scheduler in a simple way from the "
-"user Web-UI. When the GPU host can allocate up to 2 fGPUs, let's create 3 "
+"user WebUI. When the GPU host can allocate up to 2 fGPUs, let's create 3 "
 "compute sessions at the same time requesting allocation of 1 fGPU, "
 "respectively. In the Custom allocation section of the session launch dialog,"
 " there are GPU and Sessions sliders. If you specify a value greater than 1 "
@@ -168,7 +168,7 @@ msgid ""
 "respectively. This is the situation that 3 sessions requesting a total of 3 "
 "fGPUs are created when only 2 fGPUs exist."
 msgstr ""
-"คุณสามารถตรวจสอบการทำงานของตัวจัดกำหนดงานได้ในลักษณะง่าย ๆ จากผู้ใช้ Web-UI "
+"คุณสามารถตรวจสอบการทำงานของตัวจัดกำหนดงานได้ในลักษณะง่าย ๆ จากผู้ใช้ WebUI "
 "เมื่อโฮสต์ GPU สามารถจัดสรร fGPU ได้สูงสุด 2 ตัว ให้เราสร้างเซสชันการคำนวณ 3"
 " เซสชันพร้อมกันโดยขอจัดสรร fGPU 1 ตัวตามลำดับ "
 "ในส่วนการจัดสรรแบบกำหนดเองของกล่องโต้ตอบการเปิดเซสชัน จะมีตัวเลื่อนสำหรับ "
@@ -417,10 +417,10 @@ msgstr ""
 
 #: ../../appendix/appendix.rst:233
 msgid ""
-"Web-UI: Operating system that can run the latest browsers (Windows, Mac OS, "
+"WebUI: Operating system that can run the latest browsers (Windows, Mac OS, "
 "Ubuntu, etc.)"
 msgstr ""
-"Web-UI: ระบบปฏิบัติการที่สามารถรันเว็บเบราว์เซอร์ล่าสุด (Windows, Mac OS, "
+"WebUI: ระบบปฏิบัติการที่สามารถรันเว็บเบราว์เซอร์ล่าสุด (Windows, Mac OS, "
 "Ubuntu, ฯลฯ)"
 
 #: ../../appendix/appendix.rst:235

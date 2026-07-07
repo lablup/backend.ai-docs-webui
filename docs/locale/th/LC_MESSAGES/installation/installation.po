@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the Backend.AI WebUI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Project-Id-Version: Backend.AI WebUI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-23 23:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -24,23 +24,23 @@ msgstr "การติดตั้ง"
 
 #: ../../installation/installation.rst:5
 msgid ""
-"The Web-UI can be used in two forms. It can be used as a web service by "
+"The WebUI can be used in two forms. It can be used as a web service by "
 "connecting to a separate web address prepared by the admins, or as an app "
 "provided as a stand-alone executable file that does not require separate "
 "installation."
 msgstr ""
-"Web-UI สามารถใช้งานได้ในสองรูปแบบ "
+"WebUI สามารถใช้งานได้ในสองรูปแบบ "
 "สามารถใช้เป็นบริการเว็บโดยเชื่อมต่อกับที่อยู่เว็บแยกต่างหากที่จัดเตรียมโดยผู้ดูแลระบบ"
 " "
 "หรือใช้เป็นแอปพลิเคชันที่ให้มาในรูปแบบไฟล์ที่สามารถรันได้โดยไม่ต้องติดตั้งแยกต่างหาก"
 
 #: ../../installation/installation.rst:10
 msgid ""
-"With the web-based Web-UI, users do not need to install a platform-dependent"
+"With the web-based WebUI, users do not need to install a platform-dependent"
 " desktop applications and just need the latest versions of browsers such as "
 "Chrome."
 msgstr ""
-"ด้วย Web-UI ที่ใช้เบราว์เซอร์ "
+"ด้วย WebUI ที่ใช้เบราว์เซอร์ "
 "ผู้ใช้ไม่จำเป็นต้องติดตั้งแอปพลิเคชันเดสก์ท็อปที่ขึ้นอยู่กับแพลตฟอร์ม "
 "และเพียงแค่ต้องการเวอร์ชันล่าสุดของเบราว์เซอร์ เช่น Chrome."
 
@@ -65,10 +65,10 @@ msgstr ""
 
 #: ../../installation/installation.rst:22
 msgid ""
-"The stand-alone Web-UI app can be downloaded from following address: "
+"The stand-alone WebUI app can be downloaded from following address: "
 "https://github.com/lablup/backend.ai-webui/releases"
 msgstr ""
-"แอป Web-UI แบบสแตนด์อโลนสามารถดาวน์โหลดได้ที่นี่: "
+"แอป WebUI แบบสแตนด์อโลนสามารถดาวน์โหลดได้ที่นี่: "
 "https://github.com/lablup/backend.ai-webui/releases"
 
 #: ../../installation/installation.rst:26

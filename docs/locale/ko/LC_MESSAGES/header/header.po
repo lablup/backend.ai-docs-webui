@@ -102,7 +102,7 @@ msgstr ""
 msgid ""
 "About Backend.AI: Displays information such as version of Backend.AI "
 "WebUI, license type, etc."
-msgstr "Backend.AI에 대하여: Backend.AI Web-UI의 버전, 라이선스 종류 등과 같은 정보를 표시 합니다. "
+msgstr "Backend.AI에 대하여: Backend.AI WebUI의 버전, 라이선스 종류 등과 같은 정보를 표시 합니다. "
 
 #: ../../header/header.rst:73
 msgid "My Account: Check / Update information of current login user."

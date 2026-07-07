@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the Backend.AI WebUI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Project-Id-Version: Backend.AI WebUI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-20 16:05+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -47,7 +47,7 @@ msgstr ""
 #: ../../overview/overview.rst:18
 msgid ""
 "A GUI client package is provided to easily take advantage of the features "
-"supported by the Backend.AI server. Backend.AI Web-UI is a GUI client in the"
+"supported by the Backend.AI server. Backend.AI WebUI is a GUI client in the"
 " form of a web service or stand-alone app. It provides a convenient "
 "graphical interface for accessing the Backend.AI server to utilize computing"
 " resources and manage its environment. Backend.AI provides pre-made images "
@@ -148,42 +148,42 @@ msgid ""
 "various user applications (eg DIGITS, Jupyter Notebook, shell terminal, "
 "TensorBoard, etc.) running within the compute session. You do not need to "
 "know the container's address and port number directly, but you can use the "
-"provided CLI client or GUI Web-UI to directly access the desired daemon of "
+"provided CLI client or GUI WebUI to directly access the desired daemon of "
 "the session."
 msgstr ""
 "アプリケーションサービス、サービスポート: コンピュートセッション内で実行されているさまざまなユーザーアプリケーション（例: "
 "DIGITS、Jupyter "
 "Notebook、シェルターミナル、TensorBoardなど）にアクセスする機能です。コンテナのアドレスやポート番号を直接知る必要はなく、提供されたCLIクライアントまたはGUI"
-" Web-UIを使用して、セッションの目的のデーモンに直接アクセスできます。"
+" WebUIを使用して、セッションの目的のデーモンに直接アクセスできます。"
 
 #: ../../overview/overview.rst:79
 msgid ""
-"Web-UI: A GUI client that is served as a web or stand-alone app. You can use"
+"WebUI: A GUI client that is served as a web or stand-alone app. You can use"
 " the service after logging in by specifying the address of the Backend.AI "
 "server and entering the user account information."
 msgstr ""
-"Web-UI: "
+"WebUI: "
 "Webまたはスタンドアロンアプリとして提供されるGUIクライアントです。Backend.AIサーバーのアドレスを指定し、ユーザーアカウント情報を入力してログインすることでサービスを利用できます。"
 
 #: ../../overview/overview.rst:82
 msgid ""
-"Local wsproxy: Proxy server built into the Web-UI app. Local wsproxy "
-"converts general HTTP requests between the server and Web-UI app to "
-"websocket and delivers the messages. If the Web-UI app loses its connection "
+"Local wsproxy: Proxy server built into the WebUI app. Local wsproxy "
+"converts general HTTP requests between the server and WebUI app to "
+"websocket and delivers the messages. If the WebUI app loses its connection "
 "to wsproxy or the wsproxy server is dead, it will not be possible to access "
 "services such as Jupyter Notebook and Terminal."
 msgstr ""
-"ローカル wsproxy: Web-UI アプリに組み込まれたプロキシサーバー。ローカル wsproxy は、サーバーと Web-UI "
-"アプリ間の一般的な HTTP リクエストを WebSocket に変換し、メッセージを送信します。Web-UI アプリが wsproxy "
+"ローカル wsproxy: WebUI アプリに組み込まれたプロキシサーバー。ローカル wsproxy は、サーバーと WebUI "
+"アプリ間の一般的な HTTP リクエストを WebSocket に変換し、メッセージを送信します。WebUI アプリが wsproxy "
 "への接続を失うか、wsproxy サーバーが停止すると、Jupyter Notebook やターミナルなどのサービスにアクセスすることはできません。"
 
 #: ../../overview/overview.rst:87
 msgid ""
-"Web wsproxy: In the case of the Web-UI provided in a web, the built-in "
+"Web wsproxy: In the case of the WebUI provided in a web, the built-in "
 "server cannot be used due to the nature of the browser. In this case, you "
 "can use services such as Jupyter Notebook, Terminal, etc. in the web "
 "environment by making the wsproxy server as a separate web server so that "
-"the Web-UI app can see the web wsproxy."
+"the WebUI app can see the web wsproxy."
 msgstr ""
 "Web wsproxy: Web上で提供されるWeb-"
 "UIの場合、ブラウザの特性上、組み込みサーバーを使用することはできません。この場合、wsproxyサーバーを別のWebサーバーとして設定し、Web-"

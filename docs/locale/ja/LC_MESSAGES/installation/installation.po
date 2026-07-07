@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the Backend.AI WebUI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Project-Id-Version: Backend.AI WebUI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-24 01:16+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -77,7 +77,7 @@ msgstr ""
 "オペレーティングシステムのセキュリティ設定によっては、インストーラーが署名されていない実行可能ファイルとして認識される場合があります。権限の確認が必要になることがあります。"
 
 #~ msgid ""
-#~ "With the web-based Web-UI, users do not need to install a platform-dependent"
+#~ "With the web-based WebUI, users do not need to install a platform-dependent"
 #~ " desktop applications and just need the latest versions of browsers such as "
 #~ "Chrome."
 #~ msgstr ""

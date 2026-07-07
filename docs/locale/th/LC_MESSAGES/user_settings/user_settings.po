@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the Backend.AI WebUI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Project-Id-Version: Backend.AI WebUI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-23 23:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -58,18 +58,18 @@ msgstr "การแจ้งเตือนบนเดสก์ท็อป"
 #: ../../user_settings/user_settings.rst:27
 msgid ""
 "Enables or disables the desktop notification feature. If the browser and "
-"operating system support it, various  messages that appear in the Web-UI "
+"operating system support it, various  messages that appear in the WebUI "
 "will also appear in the desktop notification panel. If disabled from the "
 "operating system during the first run, the desktop message may not be "
 "displayed even if the option is turned on here. Regardless of the value of "
-"this option, the notification inside the Web-UI still works."
+"this option, the notification inside the WebUI still works."
 msgstr ""
 "เปิดหรือปิดฟีเจอร์การแจ้งเตือนบนเดสก์ท็อป "
-"หากเบราว์เซอร์และระบบปฏิบัติการสนับสนุน จะมีข้อความต่างๆ ที่ปรากฏใน Web-UI "
+"หากเบราว์เซอร์และระบบปฏิบัติการสนับสนุน จะมีข้อความต่างๆ ที่ปรากฏใน WebUI "
 "แสดงในแผงการแจ้งเตือนบนเดสก์ท็อปด้วย "
 "หากปิดจากระบบปฏิบัติการในครั้งแรกที่ใช้งาน "
 "ข้อความเดสก์ท็อปอาจไม่แสดงแม้ว่าตัวเลือกนี้จะถูกเปิดที่นี่ก็ตาม "
-"ไม่ว่าจะเป็นค่าของตัวเลือกนี้หรือไม่ การแจ้งเตือนภายใน Web-UI "
+"ไม่ว่าจะเป็นค่าของตัวเลือกนี้หรือไม่ การแจ้งเตือนภายใน WebUI "
 "จะยังคงทำงานอยู่"
 
 #: ../../user_settings/user_settings.rst:35
@@ -210,7 +210,7 @@ msgstr "การจัดการคู่กุญแจ SSH"
 
 #: ../../user_settings/user_settings.rst:84
 msgid ""
-"When using the Web-UI app, you can create SSH/SFTP connection directly to "
+"When using the WebUI app, you can create SSH/SFTP connection directly to "
 "the compute session. Once you signed up for Backend.AI, a public keypair is "
 "provided. If you click the button on the right to the SSH Keypair Management"
 " section, the following dialog appears. Click the copy button on the right "
@@ -220,7 +220,7 @@ msgid ""
 "secret key cannot be checked again unless it is saved manually immediately "
 "after creation."
 msgstr ""
-"เมื่อใช้แอป Web-UI คุณสามารถสร้างการเชื่อมต่อ SSH/SFTP "
+"เมื่อใช้แอป WebUI คุณสามารถสร้างการเชื่อมต่อ SSH/SFTP "
 "โดยตรงกับเซสชันการประมวลผล เมื่อคุณลงทะเบียนใน Backend.AI "
 "จะมีการให้คีย์คู่สาธารณะ หากคุณคลิกที่ปุ่มด้านขวาของส่วนการจัดการ SSH "
 "Keypair จะมีการแสดงกล่องโต้ตอบดังต่อไปนี้ คลิกปุ่มคัดลอกด้านขวาเพื่อคัดลอก "
@@ -273,10 +273,10 @@ msgstr "การตรวจสอบการอัปเดตอัตโน
 
 #: ../../user_settings/user_settings.rst:123
 msgid ""
-"A notification window pops up when a new version of the Web-UI is detected. "
+"A notification window pops up when a new version of the WebUI is detected. "
 "It works only in an environment where Internet access is available."
 msgstr ""
-"หน้าต่างแจ้งเตือนจะปรากฏขึ้นเมื่อมีการตรวจพบเวอร์ชันใหม่ของ Web-UI "
+"หน้าต่างแจ้งเตือนจะปรากฏขึ้นเมื่อมีการตรวจพบเวอร์ชันใหม่ของ WebUI "
 "จะทำงานเฉพาะในสภาพแวดล้อมที่มีการเข้าถึงอินเทอร์เน็ตเท่านั้น"
 
 #: ../../user_settings/user_settings.rst:127
@@ -285,11 +285,11 @@ msgstr "ออกจากระบบอัตโนมัติ"
 
 #: ../../user_settings/user_settings.rst:129
 msgid ""
-"Log out automatically when all Backend.AI Web-UI pages are closed except for"
+"Log out automatically when all Backend.AI WebUI pages are closed except for"
 " pages created to run apps in session (e.g. Jupyter notebook, web terminal, "
 "etc.)."
 msgstr ""
-"ออกจากระบบโดยอัตโนมัติเมื่อปิดหน้าของ Backend.AI Web-UI ทั้งหมด "
+"ออกจากระบบโดยอัตโนมัติเมื่อปิดหน้าของ Backend.AI WebUI ทั้งหมด "
 "ยกเว้นหน้าที่สร้างขึ้นเพื่อรันแอปในเซสชัน (เช่น Jupyter notebook, web "
 "terminal, เป็นต้น)"
 

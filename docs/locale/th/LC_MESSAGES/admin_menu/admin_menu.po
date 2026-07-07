@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the Backend.AI WebUI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Project-Id-Version: Backend.AI WebUI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-23 23:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -1261,7 +1261,7 @@ msgstr "จัดการโหนดตัวแทน"
 msgid ""
 "Superadmins can view the list of agent worker nodes, currently connected to "
 "Backend.AI, by visiting the Resources page. You can check agent node's IP, "
-"connecting time, actual resources currently in use, etc. The Web-UI does not"
+"connecting time, actual resources currently in use, etc. The WebUI does not"
 " provide the function to manipulate agent nodes."
 msgstr ""
 "ซูเปอร์แอดมินสามารถดูรายชื่อโหนดตัวแทนที่เชื่อมต่อกับ Backend.AI "
@@ -1344,11 +1344,11 @@ msgstr ""
 #: ../../admin_menu/admin_menu.rst:694
 msgid ""
 "Adding a specific agent to a specific resource group is not currently "
-"handled in the Web-UI, and it can be done by editing agent config file from "
+"handled in the WebUI, and it can be done by editing agent config file from "
 "the installation location and restart the agent daemon. Management of the "
 "resource groups is possible in Resource Group tab of the Resource page."
 msgstr ""
-"การเพิ่มตัวแทนเฉพาะไปยังกลุ่มทรัพยากรเฉพาะใน Web-UI ขณะนี้ยังไม่สามารถทำได้ "
+"การเพิ่มตัวแทนเฉพาะไปยังกลุ่มทรัพยากรเฉพาะใน WebUI ขณะนี้ยังไม่สามารถทำได้ "
 "และสามารถทำได้โดยการแก้ไขไฟล์กำหนดค่าตัวแทนจากตำแหน่งที่ติดตั้งและรีสตาร์ทตัวดำเนินการตัวแทน"
 " การจัดการกลุ่มทรัพยากรสามารถทำได้ในแท็บกลุ่มทรัพยากรของหน้าทรัพยากร"
 

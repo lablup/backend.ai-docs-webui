@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Lablup Inc.
-# This file is distributed under the same license as the Backend.AI Web-UI
+# This file is distributed under the same license as the Backend.AI WebUI
 # User Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Backend.AI Web-UI User Guide 24.03\n"
+"Project-Id-Version: Backend.AI WebUI User Guide 24.03\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-23 23:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -28,10 +28,10 @@ msgstr "สมัครสมาชิก"
 
 #: ../../login/login.rst:8
 msgid ""
-"When you launch the Web-UI, login dialog appears. If you haven't signed up "
+"When you launch the WebUI, login dialog appears. If you haven't signed up "
 "yet, press the SIGN UP button."
 msgstr ""
-"เมื่อคุณเปิด Web-UI จะมีหน้าต่างเข้าสู่ระบบปรากฏขึ้น "
+"เมื่อคุณเปิด WebUI จะมีหน้าต่างเข้าสู่ระบบปรากฏขึ้น "
 "หากคุณยังไม่ได้สมัครสมาชิก ให้กดปุ่ม SIGN UP"
 
 #: ../../login/login.rst:-1
@@ -187,21 +187,21 @@ msgstr "หัวข้อเหตุการณ์"
 #: ../../login/login.rst:105
 msgid ""
 "The bell shape button is the event notification button. Events that need to "
-"be recorded during Web-UI operation are displayed here. When background "
+"be recorded during WebUI operation are displayed here. When background "
 "tasks are running, such as creating a compute session, you can check the "
 "jobs here. When the background task is finished."
 msgstr ""
 "ปุ่มรูปทรงกระดิ่งคือปุ่มการแจ้งเตือนเหตุการณ์ "
-"เหตุการณ์ที่ต้องบันทึกในระหว่างการทำงานของ Web-UI จะแสดงที่นี่ "
+"เหตุการณ์ที่ต้องบันทึกในระหว่างการทำงานของ WebUI จะแสดงที่นี่ "
 "เมื่อมีการทำงานในพื้นหลัง เช่น การสร้างเซสชันการคำนวณ "
 "คุณสามารถตรวจสอบงานที่นี่ได้ เมื่อการทำงานในพื้นหลังเสร็จสิ้น"
 
 #: ../../login/login.rst:114
 msgid ""
-"You can change the theme mode of the Web-UI via the dark mode icon on the "
+"You can change the theme mode of the WebUI via the dark mode icon on the "
 "right side of the header."
 msgstr ""
-"คุณสามารถเปลี่ยนโหมดธีมของ Web-UI ผ่านไอคอนโหมดมืดที่ด้านขวาของส่วนหัว"
+"คุณสามารถเปลี่ยนโหมดธีมของ WebUI ผ่านไอคอนโหมดมืดที่ด้านขวาของส่วนหัว"
 
 #: ../../login/login.rst:122
 msgid ""
